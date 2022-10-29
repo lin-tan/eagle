@@ -25,7 +25,7 @@ This repository contains codes for reproducing bugs in the paper EAGLE: Creating
 | Rule 13 | [tfio.image.encode_gif, tf.io.decode_gif](tensorflow/rule_13/rule_13_tf_bug_1.ipynb)        | yes | [Link](https://github.com/tensorflow/tensorflow/issues/54266) |
 | Rule 14 | [tf.image.extract_glimpse](tensorflow/rule_14/rule_14_tf_bug_1.ipynb)                       | no | [Link](https://github.com/tensorflow/tensorflow/issues/38545) |
 | Rule 16 | [tf.keras.Sequential.from_config](tensorflow/rule_16/rule_16_tf_bug_1.ipynb)                | no | [Link](https://github.com/tensorflow/tensorflow/issues/40981) |
-| Rule 16 | [tf.keras.models.save](tensorflow/rule_61/rule_16_tf_bug_2.ipynb)                           | no | [Link](https://github.com/tensorflow/tensorflow/issues/42459) |
+| Rule 16 | [tf.keras.models.save](tensorflow/rule_16/rule_16_tf_bug_2.ipynb)                           | no | [Link](https://github.com/tensorflow/tensorflow/issues/42459) |
 
 ### PyTorch
 
