@@ -2,6 +2,8 @@
 
 This repository contains codes for reproducing bugs in the paper EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries. If a specific input is needed to reproduce a bug, the input file is provided in the same directory as the reproducing code.
 
+The bugs are listed below. There are 24 bugs in the bug list. One inconsistency detected by EAGLE using equivalence rule 13 between [tfio.image.encode_gif, tf.io.decode_gif](tensorflow/rule_13/rule_13_tf_bug_1.ipynb) is later found a false positive because the assumption of lossless conversion is false in this API pair. The detailed discussion can be found [here](https://github.com/tensorflow/tensorflow/issues/54266).
+
 ## The list of bugs
 
 ### TensorFlow
@@ -22,7 +24,6 @@ This repository contains codes for reproducing bugs in the paper EAGLE: Creating
 | Rule 8  | [tf.keras.layers.BatchNormalization](tensorflow/rule_8/rule_8_tf_bug_2.ipynb)               | yes | [Link](https://github.com/keras-team/keras/issues/15009) |
 | Rule 8  | [tf.keras.layers.Dropout](tensorflow/rule_8/rule_8_tf_bug_3.ipynb)                          | no | [Link](https://github.com/tensorflow/tensorflow/issues/25980) |
 | Rule 10 | [tf.keras.layers.Bidirectional](tensorflow/rule_10/rule_10_tf_bug_1.ipynb)                  | no | [Link](https://github.com/tensorflow/tensorflow/issues/39635) |
-| Rule 13 | [tfio.image.encode_gif, tf.io.decode_gif](tensorflow/rule_13/rule_13_tf_bug_1.ipynb)        | yes | [Link](https://github.com/tensorflow/tensorflow/issues/54266) |
 | Rule 14 | [tf.image.extract_glimpse](tensorflow/rule_14/rule_14_tf_bug_1.ipynb)                       | no | [Link](https://github.com/tensorflow/tensorflow/issues/38545) |
 | Rule 16 | [tf.keras.Sequential.from_config](tensorflow/rule_16/rule_16_tf_bug_1.ipynb)                | no | [Link](https://github.com/tensorflow/tensorflow/issues/40981) |
 | Rule 16 | [tf.keras.models.save](tensorflow/rule_16/rule_16_tf_bug_2.ipynb)                           | no | [Link](https://github.com/tensorflow/tensorflow/issues/42459) |
