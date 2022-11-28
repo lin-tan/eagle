@@ -1,6 +1,6 @@
 # EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries
 
-This repository contains codes for reproducing bugs in the paper EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries. If a specific input is needed to reproduce a bug, the input file is provided in the same directory as the reproducing code.
+This repository contains codes for reproducing bugs in the ICSE 2022 paper EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries. If a specific input is needed to reproduce a bug, the input file is provided in the same directory as the reproducing code.
 
 The bugs are listed below. There are 24 bugs in the bug list. One inconsistency detected by EAGLE using equivalence rule 13 between [tfio.image.encode_gif, tf.io.decode_gif](tensorflow/rule_13/rule_13_tf_bug_1.ipynb) is later found a false positive because the assumption of lossless conversion is false in this API pair. The detailed discussion can be found [here](https://github.com/tensorflow/tensorflow/issues/54266).
 
