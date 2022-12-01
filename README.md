@@ -11,7 +11,7 @@ The 24 bugs detected by EAGLE are listed below. One inconsistency included  in t
 
 ### TensorFlow
 
-|Rule|API|New|Link|
+|Rule|API|New|Bug Report|
 |---|---|---|---|
 | Rule 1  | [tf.math.xdivy](tensorflow/rule_1/rule_1_tf_bug_1.ipynb)                                    | yes | [Link](https://github.com/tensorflow/tensorflow/issues/51643) |
 | Rule 1  | [tf.realdiv](tensorflow/rule_1/rule_1_tf_bug_2.ipynb)                                       | yes | [Link](https://github.com/tensorflow/tensorflow/issues/51643) |
@@ -33,7 +33,7 @@ The 24 bugs detected by EAGLE are listed below. One inconsistency included  in t
 
 ### PyTorch
 
-|Rule|API|New|Link|
+|Rule|API|New|Bug Report|
 |---|---|---|---|
 | Rule 8  | [torch.sspaddmm](pytorch/rule_8/rule_8_pt_bug_1.ipynb)                            | no | [Link](https://github.com/pytorch/pytorch/issues/45113) |
 | Rule 8  | [torch.smm](pytorch/rule_8/rule_8_pt_bug_2.ipynb)                                 | no | [Link](https://github.com/pytorch/pytorch/issues/45113) |
