@@ -1,0 +1,17 @@
+append: false
+break: true
+check_dt: false
+direct_map: true
+parse_sent: false
+pat:
+  (matrix|matrices):
+    append: false
+    cnt: 28
+    dtype: numeric
+    overwrite: false
+  weight\s+(of|for):
+    append: false
+    cnt: 2
+    dtype: numeric
+    overwrite: false
+target: dtype

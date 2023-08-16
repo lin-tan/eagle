@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"number of a  to learn. Although it takes an int as input, there is only two values are legitimate: 1, or the number of channels at input. Default: 1",1,prim_dtype,dtype(int),,1
+int,"number of a  to learn. Although it takes an int as input, there is only two values are legitimate: 1, or the number of channels at input. Default: 1",1,shape,ndim(0),,1
+int,"number of a  to learn. Although it takes an int as input, there is only two values are legitimate: 1, or the number of channels at input. Default: 1",1,validvalue,"range([0,inf))",,1

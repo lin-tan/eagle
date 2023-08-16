@@ -1,0 +1,26 @@
+constraints:
+  compression:
+    default: None
+    descp: Optional. The algorithm to use to compress data when writing it. Supported
+      options are GZIP and NONE. Defaults to NONE.
+  dataset:
+    descp: The dataset to save.
+  path:
+    descp: Required. A directory to use for saving the dataset.
+  shard_func:
+    default: None
+    descp: Optional. A function to control the mapping of dataset elements to file
+      shards. The function is expected to map elements of the input dataset to int64
+      shard IDs. If present, the function will be traced and executed as graph computation.
+inputs:
+  optional:
+  - compression
+  - shard_func
+  required:
+  - dataset
+  - path
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/save
+package: tensorflow
+target: save
+title: tf.data.experimental.save
+version: 2.3.0

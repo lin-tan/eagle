@@ -1,0 +1,29 @@
+constraints:
+  keys:
+    descp: A Tensor. Any shape. Keys of the elements to remove.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  table_handle:
+    descp: A Tensor of type resource. Handle to the table.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - keys
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LookupTableRemoveV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: LookupTableRemoveV2
+title: tf.raw_ops.LookupTableRemoveV2
+version: 2.2.0

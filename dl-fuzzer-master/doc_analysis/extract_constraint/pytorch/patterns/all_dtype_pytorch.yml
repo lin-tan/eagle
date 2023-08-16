@@ -1,0 +1,44 @@
+# mainly from https://pytorch.org/docs/stable/tensors.html
+- torch.float32   
+- torch.float64
+- torch.float16
+- torch.uint8
+- torch.int8
+- torch.int16
+- torch.int32
+- torch.int64
+
+- torch.qint8
+- torch.qint16
+- torch.qint32
+
+- torch.quint8
+- torch.quint16
+- torch.quint32
+
+- torch.bool
+- torch.dtype
+- torch.Size  # pytorch version of shapetensor
+- string
+- scalar
+- int
+- numeric
+
+- torch.tensor
+- SparseTensor
+
+- dict
+- list
+- tuple
+- iterable
+# new added structure 
+- array_like    # https://stackoverflow.com/questions/8216975/terminology-python-and-numpy-iterable-versus-array-like
+
+
+# we cannot handle but common
+# - torch.device  
+- callable
+# - torch.layout
+# - nn.Module
+# - timedelta
+# - model

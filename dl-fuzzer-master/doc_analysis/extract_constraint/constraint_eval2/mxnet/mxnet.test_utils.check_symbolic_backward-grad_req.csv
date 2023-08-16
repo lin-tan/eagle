@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, list of str, dict of str to str, optional","Gradient requirements. 'write', 'add' or 'null'.",write,prim_dtype,dtype(string),,1
+"str, list of str, dict of str to str, optional","Gradient requirements. 'write', 'add' or 'null'.",write,nonprim_dtype,"structure(dict(string:string), list(string))",,1
+"str, list of str, dict of str to str, optional","Gradient requirements. 'write', 'add' or 'null'.",write,shape,ndim(1),,1

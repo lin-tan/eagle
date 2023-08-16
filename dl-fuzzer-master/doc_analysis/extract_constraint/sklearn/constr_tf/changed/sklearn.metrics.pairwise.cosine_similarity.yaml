@@ -1,0 +1,40 @@
+constraints:
+  X:
+    descp: 'ndarray or sparse array, shape: (n_samples_X, n_features) Input data.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_x,n_features]'
+  Y:
+    default: None
+    descp: 'ndarray or sparse array, shape: (n_samples_Y, n_features) Input data.
+      If ``None``, the output will be the pairwise similarities between all samples
+      in ``X``.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_y,n_features]'
+  dense_output:
+    default: 'True'
+    descp: boolean (optional), default True Whether to return dense output even when
+      the input is sparse. If ``False``, the output is sparse if both input arrays
+      are sparse.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples_x
+- n_samples_y
+inputs:
+  optional:
+  - Y
+  - dense_output
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: cosine_similarity
+title: sklearn.metrics.pairwise.cosine_similarity
+version: 0.24.X

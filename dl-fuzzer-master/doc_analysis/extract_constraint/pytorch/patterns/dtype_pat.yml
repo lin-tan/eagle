@@ -1,0 +1,203 @@
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: dtype
+findall: True
+
+stop_word:
+    - and
+    - or
+    - etc
+
+sep:
+    - /
+    - '`'
+    - \'
+    - \"
+    - ' '
+    - ','
+
+pat:
+
+    'a\s+number':
+        dtype: int
+        ndim: 0
+
+
+    'single\s+(number|integer)':
+        group: 1
+        ndim: 0
+
+    'whether':
+        dtype: bool
+
+    'if\s+`*(int|float)`*':
+        group: 1
+        ndim: 0
+
+    'if\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    'default:*\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    'defaults\s+to\s+`(false|true)`':
+        dtype: bool
+        ndim: 0
+
+    'if\s+set,': #\s+to\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    'if\s+set\s+to\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    'if\s+autograd\s+should\s+record':
+        dtype: bool
+        ndim: 0
+    
+    'when\s+(true|false)':
+        dtype: bool
+        ndim: 0
+
+    'set\s+(it)?\s*to\s+`*true`*':
+        dtype: bool
+        ndim: 0
+
+    'the\s+output\s+tensor\s+that\s+must\s+be\s+a\s+([\w]+)':
+        group: 1
+
+
+    'quantity\s+of\s+':
+        dtype: int
+        ndim: 0
+        range: 'int:[0,inf)'
+
+    
+    
+    # 'uses\s+the\s+current\s+device':
+    #     dtype: torch.device
+
+    'defaults\s+to\s+the\s+(\w+)\s+of':
+        group: 1
+        ndim: 0
+
+    'the\s+desired\s+(\w+)\s+of':
+        group: 1
+        ndim: 0
+
+    'the\s+desired\s+data\s+type\s+of':
+        dtype: dtype
+
+    # 'the\s+size\s+of\s+(?!`input)':
+    #     dtype: torch.Size
+
+    'the\s+size\s+of\s+returned\s+window':
+        dtype: int
+        range: '[0,inf)'
+
+    '^(the|a|first|second)?\s*dimension\s+(to|along|over)':
+        dtype: int
+        ndim: 0
+
+
+    'a\s+python\s+function':
+        dtype: callable
+    
+    'number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1':
+        dtype: int
+        ndim: 0
+        range: 'int:[-1,inf)'
+    
+
+
+    '^((the|total)\s+)?number\s+(of|to)':
+        prereq: 
+            - 'number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1'
+        dtype: int
+        ndim: 0
+        range: '[0,inf)'
+
+    '^the\s+shape\s+of':
+        dtype: shape
+        ndim: 1
+    
+    'a\s+file-like\s+object':
+        dtype: string
+
+    'the\s+tensor\s+type\s+must\s+be\s+([\w.]+)':
+        group: 1
+        tensor_t: tensor
+
+    # 'selected\s+device':
+    #     dtype: device
+
+
+    '^([\w]+)\s':
+        group: 1
+        ndim: 0
+
+    '^the\s+optional\s+(\w+\s+\w+)':
+        group: 1
+
+
+    # not useful, only two API, all have doc_dtype
+    # '^(a|the)\s+(first)?\s*sparse\s+maxtrix':
+    #     dtype: sparsetensor
+
+    'parameter\s+name':
+        dtype: string
+        ndim: 0
+
+
+
+    '^(source|destination)\s+(tensor)*\s*rank':
+        dtype: int
+        ndim: 0
+        # range: '[0,inf)'
+
+    '^(a|an)\s+(\w+)':
+        group: 2
+        ndim: 0
+    
+    '^the\s+(\w+)\s+(?!of)':
+        group: 1
+
+    '^(\w+)\s':
+        group: 1
+
+    'can\s+be\s+a\s+(((?<!\ba\b|\.).)*)':
+        group: 1
+        update_structure: True
+
+    'a\s+(.*?),\s+or\s+`*[\w.]+`*':
+        group: 1
+        update_structure: True
+    
+
+    'of\s+type\s+([\w.]+)':
+        group: 1
+
+    'must\s+be\s+(a|an)\s+(\w+)':
+        group: 2
+        ndim: 0
+
+    # 'only\s+floating\s+point\s+types\s+are\s+supported':
+    #     dtype: float
+
+
+
+    'a\s+manual\s+rescaling\s+weight':
+        dtype: numeric
+
+    '^input\s+(model)':
+        group: 1
+    
+
+ 

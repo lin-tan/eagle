@@ -1,0 +1,34 @@
+constraints:
+  input:
+    descp: the first input tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the second input tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.atan2.html#torch.atan2#torch.atan2
+package: torch
+ret_type: Tensor
+target: atan2
+title: torch.atan2
+version: 1.7.0

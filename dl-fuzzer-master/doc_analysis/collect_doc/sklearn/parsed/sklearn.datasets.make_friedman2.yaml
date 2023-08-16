@@ -1,0 +1,15 @@
+constraints:
+  n_samples: {default: '100', descp: 'int, optional (default=100) The number of samples.'}
+  noise: {default: '0.0', descp: 'float, optional (default=0.0) The standard deviation
+      of the gaussian noise applied to the output.'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset noise. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+inputs:
+  optional: [n_samples, noise, random_state]
+  required: []
+link: ''
+package: sklearn
+target: make_friedman2
+title: sklearn.datasets.make_friedman2
+version: 0.24.2

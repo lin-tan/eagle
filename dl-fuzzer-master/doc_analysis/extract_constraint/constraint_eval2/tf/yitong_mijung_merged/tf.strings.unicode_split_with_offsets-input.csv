@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An `N` dimensional potentially ragged `string` tensor with shape`[D1...DN]`.  `N` must be statically known.,,prim_dtype,dtype(tf.string),1,1
+,An `N` dimensional potentially ragged `string` tensor with shape`[D1...DN]`.  `N` must be statically known.,,nonprim_dtype,tensor_t(tf.tensor),1,1
+,An `N` dimensional potentially ragged `string` tensor with shape`[D1...DN]`.  `N` must be statically known.,,shape,"shape([...]), ndim(?)",1,1

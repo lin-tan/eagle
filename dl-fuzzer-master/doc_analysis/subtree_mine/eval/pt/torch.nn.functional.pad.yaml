@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: N-dimensional tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  pad:
+    descp: m-elements tuple, where  m/2  <=  input dimensions and m  is even.
+    doc_dtype:
+    - tuple
+    ndim:
+    - '1'
+    shape:
+    - '[m]'
+    structure:
+    - tuple
+title: torch.nn.functional.pad

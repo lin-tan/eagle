@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.numpy_function
+constraints:
+  Tout:
+    descp: A list or tuple of tensorflow data types or a single tensorflow data type
+      if there is only one, indicating what func returns.
+  func:
+    descp: 'A Python function, which accepts numpy.ndarray objects as arguments and
+      returns a list of numpy.ndarray objects (or a single numpy.ndarray). This function
+      must accept as many arguments as there are tensors in inp, and these argument
+      types will match the corresponding tf.Tensor objects in inp. The returns numpy.ndarrays
+      must match the number and types defined Tout. Important Note: Input and output
+      numpy.ndarrays of func are not guaranteed to be copies. In some cases their
+      underlying memory will be shared with the corresponding TensorFlow tensors.
+      In-place modification or storing func input or return values in python datastructures
+      without explicit (np.)copy can have non-deterministic consequences.'
+  inp:
+    descp: A list of tf.Tensor objects.
+  name:
+    default: None
+    descp: (Optional) A name for the operation.
+inputs:
+  optional:
+  - name
+  required:
+  - func
+  - inp
+  - Tout
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/numpy_function
+outputs:
+- Single or list of tf.Tensor which func computes.
+package: tensorflow
+target: numpy_function
+title: tf.numpy_function
+version: 2.2.0

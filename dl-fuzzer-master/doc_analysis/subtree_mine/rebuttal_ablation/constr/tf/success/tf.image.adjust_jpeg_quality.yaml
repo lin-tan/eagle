@@ -1,0 +1,63 @@
+aliases:
+- tf.compat.v1.image.adjust_jpeg_quality
+constraints:
+  image:
+    descp: 3D image. Size of the last dimension must be None, 1 or 3.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  jpeg_quality:
+    descp: Python int or Tensor of type int32. jpeg encoding quality.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.int32
+    enum:
+    - int
+    - int32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- InvalidArgumentError: quality must be in [0,100]
+- InvalidArgumentError: image must have 1 or 3 channels
+inputs:
+  optional:
+  - name
+  required:
+  - image
+  - jpeg_quality
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/adjust_jpeg_quality
+outputs: Adjusted image, same shape and DType as `image`.
+package: tensorflow
+target: adjust_jpeg_quality
+title: tf.image.adjust_jpeg_quality
+version: 2.1.0

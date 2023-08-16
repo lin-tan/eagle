@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  buf:
+    descp: Binary image data as string or numpy ndarray.
+    doc_dtype: str/bytes/bytearray or numpy.ndarray
+    normalized_descp:
+    - Binary image data as D_TYPE or numpy D_STRUCTURE
+    normalized_docdtype: D_TYPE bytes bytearray or numpy D_STRUCTURE
+  flag:
+    default: None
+    descp: 1 for three channel color output. 0 for grayscale output.
+    doc_dtype: int, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - CONSTANT_NUM for three channel color output
+    - CONSTANT_NUM for grayscale output
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: Output buffer. Use None for automatic allocation.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Output buffer
+    - Use None for automatic allocation
+    normalized_docdtype: D_STRUCTURE optional
+  to_rgb:
+    default: None
+    descp: 1 for RGB formatted output (MXNet default). 0 for BGR formatted output
+      (OpenCV default).
+    doc_dtype: int, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - CONSTANT_NUM for RGB formatted output BSTR
+    - CONSTANT_NUM for BGR formatted output BSTR
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - flag
+  - to_rgb
+  - out
+  required:
+  - buf
+  - '*args'
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/image/index.html#mxnet.image.imdecode
+package: mxnet
+target: imdecode
+title: mxnet.image.imdecode
+version: 1.6.0

@@ -1,0 +1,74 @@
+constraints:
+  filters:
+    descp: Integer, the dimensionality of the output space (i.e. the number of output
+      filters in the convolution).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[1,100]'
+  kernel_size:
+    descp: An integer or tuple/list of 2 integers, specifying the height and width
+      of the 2D convolution window. Can be a single integer to specify the same value
+      for all spatial dimensions.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[1,100]'
+    shape:
+    - '[2]'
+    structure:
+    - list(int)
+    - tuple(int)
+  padding:
+    default: valid
+    descp: one of `"valid"` or `"same"` (case-insensitive).
+    dtype:
+    - tf.string
+    enum:
+    - same
+    - valid
+  strides:
+    default: (1, 1)
+    descp: An integer or tuple/list of 2 integers, specifying the strides of the convolution
+      along the height and width. Can be a single integer to specify the same value
+      for all spatial dimensions. Specifying any stride value != 1 is incompatible
+      with specifying any `dilation_rate` value != 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[1,1000]'
+    shape:
+    - '[2]'
+    structure:
+    - list(int)
+    - tuple(int)
+  use_bias:
+    default: 'True'
+    descp: Boolean, whether the layer uses a bias vector.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - strides
+  - padding
+  - use_bias
+  required:
+  - filters
+  - kernel_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/Conv2D
+package: tensorflow
+target: Conv2D
+title: tf.keras.layers.Conv2D
+version: 2.1.0
+layer_constructor: true
+check_nan: true

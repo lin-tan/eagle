@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"scalar integer tensor, size of last dimension of returned tensor. Default is the maximum value in `lengths`.",None,prim_dtype,dtype(int),,1
+,"scalar integer tensor, size of last dimension of returned tensor. Default is the maximum value in `lengths`.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"scalar integer tensor, size of last dimension of returned tensor. Default is the maximum value in `lengths`.",None,shape,ndim(0),,1
+,"scalar integer tensor, size of last dimension of returned tensor. Default is the maximum value in `lengths`.",None,validvalue,"range([0,inf))",,1

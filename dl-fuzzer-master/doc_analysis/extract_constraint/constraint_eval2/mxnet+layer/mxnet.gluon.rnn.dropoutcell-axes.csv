@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of int, default ()","The axes on which dropout mask is shared. If empty, regular dropout is applied.",(),prim_dtype,dtype(int),,1
+"tuple of int, default ()","The axes on which dropout mask is shared. If empty, regular dropout is applied.",(),nonprim_dtype,structure(tuple(int)),,1
+"tuple of int, default ()","The axes on which dropout mask is shared. If empty, regular dropout is applied.",(),shape,ndim(1),,1

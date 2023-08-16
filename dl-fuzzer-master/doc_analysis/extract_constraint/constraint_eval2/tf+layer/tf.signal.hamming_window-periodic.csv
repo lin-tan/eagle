@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A bool `Tensor` indicating whether to generate a periodic or symmetric window. Periodic windows are typically used for spectral analysis while symmetric windows are typically used for digital filter design.,True,prim_dtype,dtype(tf.bool),,1
+,A bool `Tensor` indicating whether to generate a periodic or symmetric window. Periodic windows are typically used for spectral analysis while symmetric windows are typically used for digital filter design.,True,nonprim_dtype,tensor_t(tf.tensor),,1
+,A bool `Tensor` indicating whether to generate a periodic or symmetric window. Periodic windows are typically used for spectral analysis while symmetric windows are typically used for digital filter design.,True,shape,ndim(0),,1

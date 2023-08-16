@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A tensor of positive weights which can be broadcast with x.,,prim_dtype,dtype(numeric),,1
+,A tensor of positive weights which can be broadcast with x.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A tensor of positive weights which can be broadcast with x.,,validvalue,"range((0,inf))",,1

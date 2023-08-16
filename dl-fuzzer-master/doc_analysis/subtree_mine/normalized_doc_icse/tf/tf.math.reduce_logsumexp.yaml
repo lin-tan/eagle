@@ -1,0 +1,42 @@
+aliases:
+- tf.reduce_logsumexp
+constraints:
+  axis:
+    default: None
+    descp: The dimensions to reduce. If `None` (the default), reduces all dimensions.
+      Must be in the range `[-rank(input_tensor), rank(input_tensor))`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The dimensions to reduce
+    - If QSTR BSTR reduces all dimensions
+    - Must be in the range BSTR
+  input_tensor:
+    descp: The tensor to reduce. Should have numeric type.
+    normalized_descp:
+    - The D_STRUCTURE to reduce
+    - Should have D_TYPE type
+  keepdims:
+    default: 'False'
+    descp: If true, retains reduced dimensions with length 1.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL retains reduced dimensions with length CONSTANT_NUM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - axis
+  - keepdims
+  - name
+  required:
+  - input_tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/reduce_logsumexp
+outputs: The reduced tensor.
+package: tensorflow
+target: reduce_logsumexp
+title: tf.math.reduce_logsumexp
+version: 2.1.0

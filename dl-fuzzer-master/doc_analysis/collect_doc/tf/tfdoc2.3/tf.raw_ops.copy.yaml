@@ -1,0 +1,29 @@
+constraints:
+  debug_ops_spec:
+    default: '[]'
+    descp: An optional list of strings. Defaults to []. A list of debug op spec (op,
+      url, gated_grpc) for attached debug ops. Each element of the list has the format
+      ;;, wherein gated_grpc is boolean represented as 0/1. E.g., "DebugIdentity;grpc://foo:3333;1",
+      "DebugIdentity;file:///tmp/tfdbg_1;0".
+  input:
+    descp: A Tensor. Input tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor_name:
+    default: ''
+    descp: An optional string. Defaults to "". The name of the input tensor.
+inputs:
+  optional:
+  - tensor_name
+  - debug_ops_spec
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Copy
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Copy
+title: tf.raw_ops.Copy
+version: 2.3.0

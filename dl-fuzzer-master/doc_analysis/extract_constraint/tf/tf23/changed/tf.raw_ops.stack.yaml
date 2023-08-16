@@ -1,0 +1,34 @@
+constraints:
+  elem_type:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  stack_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - stack_name
+  - name
+  required:
+  - elem_type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Stack
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: Stack
+title: tf.raw_ops.Stack
+version: 2.3.0

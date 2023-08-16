@@ -1,0 +1,43 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  hist:
+    default: None
+    descp: A ndarray/symbol of type float32
+    doc_dtype:
+    - NDArray
+  hist_edges:
+    default: None
+    descp: A ndarray/symbol of type float32
+    doc_dtype:
+    - NDArray
+  name:
+    default: None
+    descp: ''
+  num_quantized_bins:
+    default: _Null
+    descp: The number of quantized bins.
+    doc_dtype:
+    - int
+    - optional
+    - default='255'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+inputs:
+  optional:
+  - hist
+  - hist_edges
+  - num_quantized_bins
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.calibrate_entropy
+package: mxnet
+target: calibrate_entropy
+title: mxnet.ndarray.contrib.calibrate_entropy
+version: 1.6.0

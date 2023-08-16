@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Expected shape of elements of `inputs` (optional). Also controls the output shape of this op, which may affect type inference in other ops. A value of `None` means ""infer the input shape from the shapes in `inputs`"".",None,prim_dtype,dtype(int),,1
+,"Expected shape of elements of `inputs` (optional). Also controls the output shape of this op, which may affect type inference in other ops. A value of `None` means ""infer the input shape from the shapes in `inputs`"".",None,shape,ndim(1),,1
+,"Expected shape of elements of `inputs` (optional). Also controls the output shape of this op, which may affect type inference in other ops. A value of `None` means ""infer the input shape from the shapes in `inputs`"".",None,validvalue,"range([0,inf))",,1

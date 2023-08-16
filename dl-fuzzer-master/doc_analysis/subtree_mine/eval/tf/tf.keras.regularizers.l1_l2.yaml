@@ -1,0 +1,9 @@
+constraints:
+  l1:
+    default: '0.01'
+    descp: Float; L1 regularization factor.
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: tf.keras.regularizers.l1_l2

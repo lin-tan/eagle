@@ -1,0 +1,86 @@
+aliases:
+- tf.as_string
+- tf.compat.v1.as_string
+- tf.compat.v1.dtypes.as_string
+- tf.compat.v1.strings.as_string
+constraints:
+  fill:
+    default: ''
+    descp: An optional `string`. Defaults to `""`. The value to pad if width > -1.  If
+      empty, pads with spaces. Another typical value is '0'.  String cannot be longer
+      than 1 character.
+    normalized_default: ''
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to
+    - The value to pad if PARAM CONSTANT_NUM
+    - If empty, pads with spaces
+    - Another typical value is CONSTANT_NUM
+    - D_TYPE can not be longer than CONSTANT_NUM character
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `int8`, `int16`, `int32`,
+      `int64`, `complex64`, `complex128`, `float32`, `float64`, `bool`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  precision:
+    default: '-1'
+    descp: An optional `int`. Defaults to `-1`. The post-decimal precision to use
+      for floating point numbers. Only used if precision > -1.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+    - The post decimal precision to use for D_TYPE numbers
+    - Only used if precision CONSTANT_NUM
+  scientific:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Use scientific notation for floating
+      point numbers.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - Use scientific notation for D_TYPE numbers
+  shortest:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Use shortest representation (either
+      scientific or standard) for floating point numbers.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - Use shortest representation BSTR for D_TYPE numbers
+  width:
+    default: '-1'
+    descp: An optional `int`. Defaults to `-1`. Pad pre-decimal numbers to this width.
+      Applies to both floating point and integer numbers. Only used if width > -1.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+    - Pad pre decimal numbers to this width
+    - Applies to both D_TYPE numbers
+    - Only used if width CONSTANT_NUM
+inputs:
+  optional:
+  - precision
+  - scientific
+  - shortest
+  - width
+  - fill
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/as_string
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: as_string
+title: tf.strings.as_string
+version: 2.1.0

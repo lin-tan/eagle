@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, RandomState instance or None (default) A pseudo random number generator used for the initialization of the lobpcg eigen vectors decomposition when eigen_solver == 'amg' and by the K-Means initialization. Use an int to make the randomness deterministic. See :term:`Glossary <random_state>`.",None,prim_dtype,dtype(int),,1
+,"int, RandomState instance or None (default) A pseudo random number generator used for the initialization of the lobpcg eigen vectors decomposition when eigen_solver == 'amg' and by the K-Means initialization. Use an int to make the randomness deterministic. See :term:`Glossary <random_state>`.",None,shape,ndim(0),,1

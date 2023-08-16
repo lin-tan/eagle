@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.isnan.html#torch.isnan#torch.isnan
+package: torch
+ret_type: Tensor
+target: isnan
+title: torch.isnan
+version: 1.7.0

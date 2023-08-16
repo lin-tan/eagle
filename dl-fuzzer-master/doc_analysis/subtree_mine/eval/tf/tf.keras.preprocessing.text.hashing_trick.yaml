@@ -1,0 +1,6 @@
+constraints:
+  n:
+    descp: Dimension of the hashing space.
+    dtype:
+    - int
+title: tf.keras.preprocessing.text.hashing_trick

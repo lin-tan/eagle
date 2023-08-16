@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, None","Factor by which to downscale. E.g. 2 will halve the input size. If None, it will default to pool_size.",None,prim_dtype,dtype(int),,1

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An optional `bool`. Defaults to `True`. If true use a slower but nicer upscaling of the chroma planes (yuv420/422 only).,True,prim_dtype,dtype(tf.bool),,1
+,An optional `bool`. Defaults to `True`. If true use a slower but nicer upscaling of the chroma planes (yuv420/422 only).,True,shape,ndim(0),,1

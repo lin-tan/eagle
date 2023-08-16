@@ -1,0 +1,18 @@
+constraints:
+  name:
+    descp: The prefix to use on all names created within the name scope.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/name_scope
+outputs:
+- Name scope context manager.
+package: tensorflow
+target: name_scope
+title: tf.keras.backend.name_scope
+version: 2.3.0

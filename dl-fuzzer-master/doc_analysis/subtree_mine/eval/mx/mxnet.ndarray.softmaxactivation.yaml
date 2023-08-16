@@ -1,0 +1,22 @@
+constraints:
+  mode:
+    default: _Null
+    descp: Specifies how to compute the softmax. If set to `instance`, it computes
+      softmax for each instance. If set to `channel`, It computes cross channel softmax
+      for each position of each instance.
+    doc_dtype:
+    - '{''channel'', ''instance''}'
+    - optional
+    - default='instance'
+    enum:
+    - channel
+    - instance
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.SoftmaxActivation

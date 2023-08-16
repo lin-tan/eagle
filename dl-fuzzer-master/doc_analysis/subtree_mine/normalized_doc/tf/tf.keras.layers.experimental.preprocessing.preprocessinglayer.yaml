@@ -1,0 +1,62 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.PreprocessingLayer
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The data to train on. It can be passed either as a tf.data Dataset, or
+      as a numpy array.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The data to train on
+    - It can be passed either as a tf data Dataset, or as a numpy D_STRUCTURE
+  dtype:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  dynamic:
+    default: 'False'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  reset_state:
+    default: None
+    descp: 'Optional argument specifying whether to clear the state of the layer at
+      the start of the call to `adapt`, or whether to start from the existing state.
+      This argument may not be relevant to all preprocessing layers: a subclass of
+      PreprocessingLayer may choose to throw if ''reset_state'' is set to False.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional argument specifying whether to clear the state of the layer at the
+      start of the call to QSTR , or whether to start from the existing state
+    - This argument may not be relevant to all preprocessing layers a subclass of
+      PreprocessingLayer may choose to throw if QSTR is set to CONSTANT_BOOL
+  trainable:
+    default: 'True'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+inputs:
+  optional:
+  - trainable
+  - name
+  - dtype
+  - dynamic
+  - '**kwargs'
+  - data
+  - reset_state
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/experimental/preprocessing/PreprocessingLayer
+package: tensorflow
+target: PreprocessingLayer
+title: tf.keras.layers.experimental.preprocessing.PreprocessingLayer
+version: 2.1.0

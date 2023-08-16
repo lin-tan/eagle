@@ -1,0 +1,87 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  enable_float_output:
+    default: _Null
+    descp: Whether to enable float32 output
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+  lhs:
+    default: None
+    descp: first input
+    doc_dtype:
+    - NDArray
+  lhs_max:
+    default: None
+    descp: Maximum value of first input.
+    doc_dtype:
+    - NDArray
+  lhs_min:
+    default: None
+    descp: Minimum value of first input.
+    doc_dtype:
+    - NDArray
+  max_calib_range:
+    default: _Null
+    descp: The maximum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to requantize the int8 output data.
+    doc_dtype:
+    - float
+    - None
+    - optional
+    - default=None
+  min_calib_range:
+    default: _Null
+    descp: The minimum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to requantize the int8 output data.
+    doc_dtype:
+    - float
+    - None
+    - optional
+    - default=None
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  rhs:
+    default: None
+    descp: second input
+    doc_dtype:
+    - NDArray
+  rhs_max:
+    default: None
+    descp: Maximum value of second input.
+    doc_dtype:
+    - NDArray
+  rhs_min:
+    default: None
+    descp: Minimum value of second input.
+    doc_dtype:
+    - NDArray
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - lhs_min
+  - lhs_max
+  - rhs_min
+  - rhs_max
+  - min_calib_range
+  - max_calib_range
+  - enable_float_output
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.quantized_elemwise_mul
+package: mxnet
+target: quantized_elemwise_mul
+title: mxnet.contrib.ndarray.quantized_elemwise_mul
+version: 1.7.0

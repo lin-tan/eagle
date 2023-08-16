@@ -1,0 +1,36 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: the scalar multiplier for `other`
+    doc_dtype:
+    - Scalar
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the tensor or scalar to subtract from `input`
+    doc_dtype:
+    - Tensor
+    - Scalar
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - alpha
+  - out
+  optional:
+  - alpha
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.sub.html#torch.sub#torch.sub
+package: torch
+ret_type: Tensor
+target: sub
+title: torch.sub
+version: 1.7.0

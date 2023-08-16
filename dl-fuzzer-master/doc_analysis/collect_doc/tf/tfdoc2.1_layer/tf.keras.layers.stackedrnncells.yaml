@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.layers.StackedRNNCells
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  cells:
+    descp: List of RNN cell instances.
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - cells
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/StackedRNNCells
+package: tensorflow
+target: StackedRNNCells
+title: tf.keras.layers.StackedRNNCells
+version: 2.1.0

@@ -1,0 +1,27 @@
+constraints:
+  activation:
+    default: relu
+    descp: the activation function of intermediate layer, relu or gelu (default=relu).
+  d_model:
+    descp: the number of expected features in the input (required).
+  dim_feedforward:
+    default: '2048'
+    descp: the dimension of the feedforward network model (default=2048).
+  dropout:
+    default: '0.1'
+    descp: the dropout value (default=0.1).
+  nhead:
+    descp: the number of heads in the multiheadattention models (required).
+inputs:
+  optional:
+  - dim_feedforward
+  - dropout
+  - activation
+  required:
+  - d_model
+  - nhead
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.TransformerEncoderLayer.html#torch.nn.TransformerEncoderLayer#torch.nn.TransformerEncoderLayer
+package: torch
+target: TransformerEncoderLayer
+title: torch.nn.TransformerEncoderLayer
+version: 1.6.0

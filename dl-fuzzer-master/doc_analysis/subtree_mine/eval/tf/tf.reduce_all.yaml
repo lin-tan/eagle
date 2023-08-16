@@ -1,0 +1,8 @@
+constraints:
+  input_tensor:
+    descp: The boolean tensor to reduce.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+title: tf.reduce_all

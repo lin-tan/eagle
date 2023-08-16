@@ -1,0 +1,140 @@
+append: false
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)-*(dimensional|d):
+    cnt: 40
+    group: 1
+    prereq:
+    - at\s+least\s+(\d)-*(dimensional|d)
+  (\d)-*d\s*or\s*higher:
+    cnt: 0
+    group: 1
+    prefix: '>='
+  (\d)-*d\s+tensor:
+    cnt: 0
+    group: 1
+  (\d)d\s+(array|feature):
+    cnt: 31
+    group: 1
+  (^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axes\s+:
+    cnt: 0
+    ndim: 1
+  (^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axis\s+:
+    cnt: 1
+    ndim: 0
+  (^|\s|,|.)`*(\d)`*[\s-]?(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 31
+    group: 2
+    keep_shapevar: true
+  (^|\s|,|.)`*(\w+)`*-(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 1
+    group: 2
+    keep_shapevar: true
+  (and|of|with)\s+`*(rank|ndim)\s+`*([><=]+\s(\d))`*:
+    cnt: 0
+    group: 3
+    keep_shapevar: true
+    replace:
+      \s: ''
+  (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    replace:
+      \s: ''
+      '`': ''
+  (and|of|with)\s+rank\s+`(.*?)`:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    replace:
+      \s: ''
+  (a|an)\s+`\(?([\w+-]+?)\)?`[\s-]*(d|dimension|dimensional)\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+  (has|with)\s+same\s+((type|size)\s+and\s+)?rank\s+as\s*`([\w]+)`:
+    cnt: 0
+    dependent: true
+    group: 4
+  ^(\ba\b|an)?\s*(\w)[\s-](d|dimensional|dimension)[\s\.,]:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (\d)-*d\s*or\s*higher
+  ^(a)?\s*(\d)-d:
+    cnt: 0
+    group: 2
+  '`*tensor`*\s+of\s+(\d)\s+dimension':
+    cnt: 0
+    group: 1
+  at\s+least\s+(\d)-*(dimensional|d):
+    cnt: 2
+    group: 1
+    prefix: '>='
+  must\s+be\s+(\d)-*(d|dimension|dimensional):
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+  n-dimensional.*?where\s+n\s*>=\s*(\d):
+    cnt: 0
+    group: 1
+    prefix: '>='
+  n[\s-]dimensional\s+((?!\[).)*?\.:
+    cnt: 1
+    ndim: '?'
+  of\s+at\s+least\s+`(.*)`\s*dimensions:
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+    prefix: '>='
+    replace:
+      \s: ''
+      '`': ''
+  rank[\s+-]`*(\w)`*[\s\.,]:
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    - (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]
+  square\s+matrices:
+    cnt: 0
+    ndim: '3'
+    shape: '[sqmd,sqm,sqm]'
+  square\s+matrix:
+    cnt: 0
+    ndim: 2
+    shape: '[sqm,sqm]'
+  the\s+(first)?\s*["]*vector["]*:
+    cnt: 0
+    ndim: 1
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+- inf
+target: ndim

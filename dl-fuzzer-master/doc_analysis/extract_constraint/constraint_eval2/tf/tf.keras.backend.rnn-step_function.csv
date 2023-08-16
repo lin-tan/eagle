@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"RNN step function. Args;     input; Tensor with shape `(samples, ...)` (no time dimension),         representing input for the batch of samples at a certain         time step.     states; List of tensors. Returns;     output; Tensor with shape `(samples, output_dim)`        (no time dimension).     new_states; List of tensors, same length and shapes         as 'states'. The first state in the list must be the         output tensor at the previous timestep.",,prim_dtype,dtype(callable),,1

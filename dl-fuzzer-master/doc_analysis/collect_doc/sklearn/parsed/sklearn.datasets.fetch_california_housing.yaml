@@ -1,0 +1,17 @@
+constraints:
+  data_home: {default: None, descp: 'optional, default: None Specify another download
+      and cache folder for the datasets. By default all scikit-learn data is stored
+      in ''~/scikit_learn_data'' subfolders.'}
+  download_if_missing: {default: 'True', descp: 'optional, default=True If False,
+      raise a IOError if the data is not locally available instead of trying to download
+      the data from the source site.'}
+  return_X_y: {default: 'False', descp: 'boolean, default=False. If True, returns
+      ``(data.data, data.target)`` instead of a Bunch object.'}
+inputs:
+  optional: [data_home, download_if_missing, return_X_y]
+  required: []
+link: ''
+package: sklearn
+target: fetch_california_housing
+title: sklearn.datasets.fetch_california_housing
+version: 0.24.2

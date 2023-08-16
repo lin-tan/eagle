@@ -1,0 +1,13 @@
+constraints:
+  X: {descp: 'CSR or CSC sparse matrix, shape=(n_samples, n_features) Matrix whose
+      two rows are to be swapped.'}
+  m: {descp: int Index of the row of X to be swapped.}
+  n: {descp: int Index of the row of X to be swapped.}
+inputs:
+  optional: []
+  required: [X, m, n]
+link: ''
+package: sklearn
+target: inplace_swap_row
+title: sklearn.utils.sparsefuncs.inplace_swap_row
+version: 0.24.2

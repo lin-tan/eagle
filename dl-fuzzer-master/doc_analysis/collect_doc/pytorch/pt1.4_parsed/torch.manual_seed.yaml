@@ -1,0 +1,14 @@
+constraints:
+  seed:
+    descp: The desired seed.
+    doc_dtype:
+    - python:int
+inputs:
+  optional: []
+  required:
+  - seed
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.manual_seed
+package: torch
+target: manual_seed
+title: torch.manual_seed
+version: 1.4.0

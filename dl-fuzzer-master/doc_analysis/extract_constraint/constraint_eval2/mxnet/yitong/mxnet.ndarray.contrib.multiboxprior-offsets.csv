@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of <float>, optional, default=[0.5,0.5]","Priorbox center offsets, y and x respectively",_Null,prim_dtype,dtype(float),1,1
+"tuple of <float>, optional, default=[0.5,0.5]","Priorbox center offsets, y and x respectively",_Null,nonprim_dtype,structure(tuple(float)),1,1
+"tuple of <float>, optional, default=[0.5,0.5]","Priorbox center offsets, y and x respectively",_Null,shape,ndim(1),1,1

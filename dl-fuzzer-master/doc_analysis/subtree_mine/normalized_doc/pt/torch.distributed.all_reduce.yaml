@@ -1,0 +1,46 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether this PARAM should be an async PARAM
+    normalized_docdtype: D_TYPE, optional
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup, optional
+  op:
+    default: ReduceOp.SUM
+    descp: One of the values from `torch.distributed.ReduceOp` enum.  Specifies an
+      operation used for element-wise reductions.
+    doc_dtype: optional
+    normalized_default: ReduceOp SUM
+    normalized_descp:
+    - One of the values from torch distributed ReduceOp enum
+    - Specifies an operation used for element wise reductions
+    normalized_docdtype: ONE_WORD optional
+  tensor:
+    descp: Input and output of the collective. The function operates in-place.
+    doc_dtype: Tensor
+    normalized_descp:
+    - Input and output of the collective
+    - The function operates in place
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - op
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.all_reduce
+package: torch
+target: all_reduce
+title: torch.distributed.all_reduce
+version: 1.5.0

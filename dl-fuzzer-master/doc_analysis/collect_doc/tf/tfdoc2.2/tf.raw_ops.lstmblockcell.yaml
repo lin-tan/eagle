@@ -1,0 +1,64 @@
+constraints:
+  b:
+    descp: A Tensor. Must have the same type as x. The bias vector.
+  cell_clip:
+    default: '3'
+    descp: An optional float. Defaults to 3. Value to clip the 'cs' value to.
+  cs_prev:
+    descp: A Tensor. Must have the same type as x. Value of the cell state at previous
+      time step.
+  forget_bias:
+    default: '1'
+    descp: An optional float. Defaults to 1. The forget gate bias.
+  h_prev:
+    descp: A Tensor. Must have the same type as x. Output of the previous cell at
+      previous time step.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  use_peephole:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether to use peephole weights.
+  w:
+    descp: A Tensor. Must have the same type as x. The weight matrix.
+  wcf:
+    descp: A Tensor. Must have the same type as x. The weight matrix for forget gate
+      peephole connection.
+  wci:
+    descp: A Tensor. Must have the same type as x. The weight matrix for input gate
+      peephole connection.
+  wco:
+    descp: A Tensor. Must have the same type as x. The weight matrix for output gate
+      peephole connection.
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, float32. The input
+      to the LSTM cell, shape (batch_size, num_inputs).'
+inputs:
+  optional:
+  - forget_bias
+  - cell_clip
+  - use_peephole
+  - name
+  required:
+  - x
+  - cs_prev
+  - h_prev
+  - w
+  - wci
+  - wcf
+  - wco
+  - b
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LSTMBlockCell
+outputs:
+- A tuple of Tensor objects (i, cs, f, o, ci, co, h).
+- i: A Tensor. Has the same type as x.
+- cs: A Tensor. Has the same type as x.
+- f: A Tensor. Has the same type as x.
+- o: A Tensor. Has the same type as x.
+- ci: A Tensor. Has the same type as x.
+- co: A Tensor. Has the same type as x.
+- h: A Tensor. Has the same type as x.
+package: tensorflow
+target: LSTMBlockCell
+title: tf.raw_ops.LSTMBlockCell
+version: 2.2.0

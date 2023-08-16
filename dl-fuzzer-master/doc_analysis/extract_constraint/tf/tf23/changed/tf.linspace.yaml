@@ -1,0 +1,68 @@
+aliases:
+- tf.compat.v1.lin_space
+- tf.compat.v1.linspace
+constraints:
+  axis:
+    default: '0'
+    descp: Axis along which the operation is performed (used only when N-D tensors
+      are provided).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - n
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D tensor.
+      Number of values to generate.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  start:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, float32, float64.
+      N-D tensor. First entry in the range.'
+    ndim:
+    - n
+    tensor_t:
+    - tf.tensor
+  stop:
+    descp: A Tensor. Must have the same type and shape as start. N-D tensor. Last
+      entry in the range.
+    dtype:
+    - dtype:&start
+    ndim:
+    - n
+    shape:
+    - shape:&start
+    tensor_t:
+    - tf.tensor
+dependency:
+- n
+inputs:
+  optional:
+  - name
+  - axis
+  required:
+  - start
+  - stop
+  - num
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/linspace
+outputs:
+- A Tensor. Has the same type as start.
+package: tensorflow
+target: linspace
+title: tf.linspace
+version: 2.3.0

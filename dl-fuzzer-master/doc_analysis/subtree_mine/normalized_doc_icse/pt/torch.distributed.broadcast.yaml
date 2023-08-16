@@ -1,0 +1,43 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether this op should be an async op
+    normalized_docdtype: D_TYPE optional
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup optional
+  src:
+    descp: Source rank.
+    doc_dtype: int
+    normalized_descp:
+    - Source rank
+    normalized_docdtype: ONE_WORD D_TYPE
+  tensor:
+    descp: Data to be sent if `src` is the rank of current process, and tensor to
+      be used to save received data otherwise.
+    doc_dtype: Tensor
+    normalized_descp:
+    - Data to be sent if PARAM is the rank of current process and D_STRUCTURE to be
+      used to save received data otherwise
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - group
+  - async_op
+  required:
+  - tensor
+  - src
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.broadcast
+package: torch
+target: broadcast
+title: torch.distributed.broadcast
+version: 1.5.0

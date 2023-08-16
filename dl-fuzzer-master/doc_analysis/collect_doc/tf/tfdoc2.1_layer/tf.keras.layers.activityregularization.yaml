@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.layers.ActivityRegularization
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  l1:
+    default: '0.0'
+    descp: L1 regularization factor (positive float).
+  l2:
+    default: '0.0'
+    descp: L2 regularization factor (positive float).
+inputs:
+  optional:
+  - l1
+  - l2
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/ActivityRegularization
+package: tensorflow
+target: ActivityRegularization
+title: tf.keras.layers.ActivityRegularization
+version: 2.1.0

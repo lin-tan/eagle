@@ -1,0 +1,51 @@
+aliases:
+- tf.compat.v1.ragged.constant
+constraints:
+  dtype:
+    default: None
+    descp: The type of elements for the returned RaggedTensor. If not specified, then
+      a default is chosen based on the scalar values in pylist.
+  inner_shape:
+    default: None
+    descp: ''
+  name:
+    default: None
+    descp: ''
+  pylist:
+    descp: A nested list, tuple or np.ndarray. Any nested element that is not a list,
+      tuple or np.ndarray must be a scalar value compatible with dtype.
+  ragged_rank:
+    default: None
+    descp: An integer specifying the ragged rank of the returned RaggedTensor. Must
+      be nonnegative and less than K. Defaults to max(0, K - 1) if inner_shape is
+      not specified. Defaults to `max(0, K 1 - len(inner_shape))ifinner_shapeis specified.
+      </td> </tr><tr> <td>inner_shape</td> <td> A tuple of integers specifying the
+      shape for individual inner values in the returnedRaggedTensor. Defaults to()ifragged_rankis
+      not specified. Ifragged_rankis specified, then a default is chosen based on
+      the contents ofpylist. </td> </tr><tr> <td>name</td> <td> A name prefix for
+      the returned tensor (optional). </td> </tr><tr> <td>row_splits_dtype</td> <td>
+      data type for the constructedRaggedTensor`'s row_splits. One of tf.int32 or
+      tf.int64.
+  row_splits_dtype:
+    default: tf.dtypes.int64
+    descp: ''
+exceptions:
+- ValueError: If the scalar values in pylist have inconsistent nesting depth; or if
+    ragged_rank or inner_shape are incompatible with pylist.
+inputs:
+  optional:
+  - dtype
+  - ragged_rank
+  - inner_shape
+  - name
+  - row_splits_dtype
+  required:
+  - pylist
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/ragged/constant
+outputs:
+- A potentially ragged tensor with rank K and the specified ragged_rank, containing
+  the values from pylist.
+package: tensorflow
+target: constant
+title: tf.ragged.constant
+version: 2.2.0

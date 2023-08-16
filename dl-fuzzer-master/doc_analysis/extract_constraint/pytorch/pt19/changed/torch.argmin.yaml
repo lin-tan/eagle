@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.argmin.html#torch.argmin#torch.argmin
+package: torch
+ret_type: LongTensor
+target: argmin
+title: torch.argmin
+version: 1.9.0

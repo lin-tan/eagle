@@ -1,0 +1,34 @@
+constraints:
+  a:
+    descp: ''
+  b:
+    descp: ''
+    doc_dtype:
+    - a,
+  index:
+    descp: Location of violation
+    doc_dtype:
+    - tuple of coordinate arrays
+  maxError:
+    default: 'False'
+    descp: Flag indicating that maximum error is reporting.
+    doc_dtype:
+    - boolean
+    - optional
+  names:
+    descp: The names of compared arrays.
+    doc_dtype:
+    - tuple of names
+inputs:
+  optional:
+  - maxError
+  required:
+  - a
+  - b
+  - index
+  - names
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.locationError
+package: mxnet
+target: locationError
+title: mxnet.test_utils.locationError
+version: 1.7.0

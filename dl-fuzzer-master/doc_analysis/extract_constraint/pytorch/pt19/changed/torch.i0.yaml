@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: the input tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.i0.html#torch.i0#torch.i0
+package: torch
+ret_type: Tensor
+target: i0
+title: torch.i0
+version: 1.9.0

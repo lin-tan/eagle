@@ -1,0 +1,26 @@
+constraints:
+  input_handle:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListLength
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: TensorListLength
+title: tf.raw_ops.TensorListLength
+version: 2.3.0

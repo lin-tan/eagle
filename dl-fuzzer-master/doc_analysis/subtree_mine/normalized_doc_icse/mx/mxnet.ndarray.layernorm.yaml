@@ -1,0 +1,85 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: The axis to perform layer normalization. Usually, this should be be axis
+      of the channel dimension. Negative values means indexing from right to left.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axis to perform layer normalization
+    - Usually this should be be axis of the channel dimension
+    - Negative values means indexing from right to left
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  beta:
+    default: None
+    descp: beta array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - beta D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data:
+    default: None
+    descp: Input data to layer normalization
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to layer normalization
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: An epsilon parameter to prevent division by 0.
+    doc_dtype: float, optional, default=9.99999975e-06
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - An epsilon parameter to prevent division by CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  gamma:
+    default: None
+    descp: gamma array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - gamma D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  output_mean_var:
+    default: _Null
+    descp: Output the mean and std calculated along the given axis.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output the mean and std calculated along the given PARAM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - gamma
+  - beta
+  - axis
+  - eps
+  - output_mean_var
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.LayerNorm
+package: mxnet
+target: LayerNorm
+title: mxnet.ndarray.LayerNorm
+version: 1.6.0

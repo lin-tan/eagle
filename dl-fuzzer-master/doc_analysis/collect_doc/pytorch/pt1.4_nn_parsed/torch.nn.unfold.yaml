@@ -1,0 +1,38 @@
+constraints:
+  dilation:
+    default: '1'
+    descp: 'a parameter that controls the stride of elements within the neighborhood.
+      Default: 1'
+    doc_dtype:
+    - python:int
+    - tuple
+  kernel_size:
+    descp: the size of the sliding blocks
+    doc_dtype:
+    - python:int
+    - tuple
+  padding:
+    default: '0'
+    descp: 'implicit zero padding to be added on both sides of input. Default: 0'
+    doc_dtype:
+    - python:int
+    - tuple
+  stride:
+    default: '1'
+    descp: 'the stride of the sliding blocks in the input spatial dimensions. Default:
+      1'
+    doc_dtype:
+    - python:int
+    - tuple
+inputs:
+  optional:
+  - dilation
+  - padding
+  - stride
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.Unfold
+package: torch
+target: Unfold
+title: torch.nn.Unfold
+version: 1.4.0

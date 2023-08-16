@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.nn.l2_loss
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  t:
+    descp: 'A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`,
+      `float64`. Typically 2-D, but may have any dimensions.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - Typically CONSTANT_NUM D, but may have any dimensions
+inputs:
+  optional:
+  - name
+  required:
+  - t
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/l2_loss
+outputs: A `Tensor`. Has the same type as `t`.
+package: tensorflow
+target: l2_loss
+title: tf.nn.l2_loss
+version: 2.1.0

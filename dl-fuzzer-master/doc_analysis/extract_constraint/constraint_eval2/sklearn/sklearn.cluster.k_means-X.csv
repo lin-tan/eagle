@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array-like or sparse matrix, shape (n_samples, n_features) The observations to cluster. It must be noted that the data will be converted to C ordering, which will cause a memory copy if the given data is not C-contiguous.",,prim_dtype,dtype(numeric),,1
+,"array-like or sparse matrix, shape (n_samples, n_features) The observations to cluster. It must be noted that the data will be converted to C ordering, which will cause a memory copy if the given data is not C-contiguous.",,shape,"shape([n_samples,n_features]), ndim(2)",,1

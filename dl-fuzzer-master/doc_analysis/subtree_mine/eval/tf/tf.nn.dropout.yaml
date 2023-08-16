@@ -1,0 +1,13 @@
+constraints:
+  rate:
+    descp: A scalar `Tensor` with the same type as x. The probability that each element
+      is dropped. For example, setting rate=0.1 would drop 10% of input elements.
+    dtype:
+    - dtype:&x
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+    range:
+    - '[0,1]'
+title: tf.nn.dropout

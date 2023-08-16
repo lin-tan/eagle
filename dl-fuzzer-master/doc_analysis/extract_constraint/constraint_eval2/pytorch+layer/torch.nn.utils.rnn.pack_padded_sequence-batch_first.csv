@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"if `True`, the input is expected in `B x T x *` format.",False,prim_dtype,dtype(torch.bool),,1
+bool,"if `True`, the input is expected in `B x T x *` format.",False,shape,ndim(0),,1

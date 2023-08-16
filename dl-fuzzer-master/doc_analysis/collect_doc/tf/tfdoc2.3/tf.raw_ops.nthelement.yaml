@@ -1,0 +1,29 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64. 1-D or higher
+      with last dimension at least n+1.'
+  n:
+    descp: A Tensor of type int32. 0-D. Position of sorted vector to select along
+      the last dimension (along each row for matrices). Valid range of n is [0, input.shape[:-1])
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reverse:
+    default: 'False'
+    descp: An optional bool. Defaults to False. When set to True, find the nth-largest
+      value in the vector and vice versa.
+inputs:
+  optional:
+  - reverse
+  - name
+  required:
+  - input
+  - n
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NthElement
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: NthElement
+title: tf.raw_ops.NthElement
+version: 2.3.0

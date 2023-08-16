@@ -1,0 +1,35 @@
+constraints:
+  Tsplits:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int64.'
+  Tvalues:
+    descp: A tf.DType.
+  encoded_ragged:
+    descp: A Tensor of type variant. A variant Tensor containing encoded RaggedTensors.
+  input_ragged_rank:
+    descp: An int that is >= -1. The ragged rank of each encoded RaggedTensor component
+      in the input. If set to -1, this is inferred as output_ragged_rank - rank(encoded_ragged)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_ragged_rank:
+    descp: 'An int that is >= 0. The expected ragged rank of the output RaggedTensor.
+      The following must hold: output_ragged_rank = rank(encoded_ragged) + input_ragged_rank.'
+inputs:
+  optional:
+  - Tsplits
+  - name
+  required:
+  - encoded_ragged
+  - input_ragged_rank
+  - output_ragged_rank
+  - Tvalues
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RaggedTensorFromVariant
+outputs:
+- A tuple of Tensor objects (output_nested_splits, output_dense_values).
+- output_nested_splits: A list of output_ragged_rank Tensor objects with type Tsplits.
+- output_dense_values: A Tensor of type Tvalues.
+package: tensorflow
+target: RaggedTensorFromVariant
+title: tf.raw_ops.RaggedTensorFromVariant
+version: 2.3.0

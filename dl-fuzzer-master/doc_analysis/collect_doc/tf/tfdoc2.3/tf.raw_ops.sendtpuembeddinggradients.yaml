@@ -1,0 +1,33 @@
+constraints:
+  config:
+    descp: A string. Serialized TPUEmbeddingConfiguration proto.
+  inputs:
+    descp: A list of at least 1 Tensor objects with type float32. A TensorList of
+      gradients with which to update embedding tables. This argument has the same
+      length and shapes as the return value of RecvTPUEmbeddingActivations, but contains
+      gradients of the model's loss with respect to the embedding activations. The
+      embedding tables are updated from these gradients via the optimizer specified
+      in the TPU embedding configuration given to tpu.initialize_system.
+  learning_rates:
+    descp: 'A list of Tensor objects with type float32. A TensorList of float32 scalars,
+      one for each dynamic learning rate tag: see the comments in //third_party/tensorflow/core/protobuf/tpu/optimization_parameters.proto.
+      Multiple tables can share the same dynamic learning rate tag as specified in
+      the configuration. If the learning rates for all tables are constant, this list
+      should be empty.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+  - learning_rates
+  - config
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SendTPUEmbeddingGradients
+outputs:
+- The created Operation.
+package: tensorflow
+target: SendTPUEmbeddingGradients
+title: tf.raw_ops.SendTPUEmbeddingGradients
+version: 2.3.0

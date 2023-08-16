@@ -1,0 +1,97 @@
+constraints:
+  center:
+    default: 'True'
+    descp: 'whether to pad `input` on both sides so that the t -th frame is centered
+      at time t  times hop _length . Default: `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to pad PARAM on both sides so that the t th frame is centered at time
+      t times hop length
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  hop_length:
+    default: None
+    descp: 'the distance between neighboring sliding window frames. Default: `None`
+      (treated as equal to `floor(n_fft / 4)`)'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the distance between neighboring sliding PARAM frames
+    - Default QSTR treated as equal to floor BSTR
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  n_fft:
+    descp: size of Fourier transform
+    doc_dtype: int
+    normalized_descp:
+    - size of Fourier transform
+    normalized_docdtype: ONE_WORD D_TYPE
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return the normalized STFT results Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return the normalized STFT results Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  onesided:
+    default: 'True'
+    descp: 'controls whether to return half of results to avoid redundancy Default:
+      `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return D_TYPE of results to avoid redundancy Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  pad_mode:
+    default: reflect
+    descp: 'controls the padding method used when `center` is `True`. Default: `"reflect"`'
+    doc_dtype: string, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - controls the padding method used when PARAM is CONSTANT_BOOL
+    - Default QSTR
+    normalized_docdtype: D_TYPE, optional
+  win_length:
+    default: None
+    descp: 'the size of window frame and STFT filter. Default: `None`  (treated as
+      equal to `n_fft`)'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the size of PARAM frame and STFT filter
+    - Default QSTR BSTR
+    normalized_docdtype: D_TYPE, optional
+  window:
+    default: None
+    descp: 'the optional window function. Default: `None` (treated as window of all
+      1  s)'
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the optional window function
+    - Default QSTR BSTR
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - hop_length
+  - win_length
+  - window
+  - center
+  - pad_mode
+  - normalized
+  - onesided
+  required:
+  - input
+  - n_fft
+link: https://pytorch.org/docs/stable/torch.html#torch.stft
+package: torch
+target: stft
+title: torch.stft
+version: 1.5.0

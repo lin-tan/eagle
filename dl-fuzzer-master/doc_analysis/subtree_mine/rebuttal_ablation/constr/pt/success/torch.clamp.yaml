@@ -1,0 +1,57 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  max:
+    descp: upper-bound of the range to be clamped to
+    doc_dtype: Number
+  min:
+    descp: lower-bound of the range to be clamped to
+    doc_dtype: Number
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - min
+  - max
+link: https://pytorch.org/docs/stable/torch.html#torch.clamp
+package: torch
+ret_type: Tensor
+target: clamp
+title: torch.clamp
+version: 1.5.0

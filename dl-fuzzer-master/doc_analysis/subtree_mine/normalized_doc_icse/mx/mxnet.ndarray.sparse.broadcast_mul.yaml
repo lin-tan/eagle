@@ -1,0 +1,46 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  lhs:
+    default: None
+    descp: First input to the function
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - First input to the function
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  rhs:
+    default: None
+    descp: Second input to the function
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Second input to the function
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.broadcast_mul
+package: mxnet
+target: broadcast_mul
+title: mxnet.ndarray.sparse.broadcast_mul
+version: 1.6.0

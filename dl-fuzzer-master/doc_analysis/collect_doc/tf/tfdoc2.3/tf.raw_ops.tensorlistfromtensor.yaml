@@ -1,0 +1,21 @@
+constraints:
+  element_shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - element_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListFromTensor
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListFromTensor
+title: tf.raw_ops.TensorListFromTensor
+version: 2.3.0

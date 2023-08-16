@@ -1,0 +1,111 @@
+constraints:
+  data_format:
+    default: NDHWC
+    descp: 'An optional string from: "NDHWC", "NCDHW". Defaults to "NDHWC". The data
+      format of the input and output data. With the default format "NDHWC", the data
+      is stored in the order of: [batch, in_depth, in_height, in_width, in_channels].
+      Alternatively, the format could be "NCDHW", the data storage order is: [batch,
+      in_channels, in_depth, in_height, in_width].'
+    dtype:
+    - tf.string
+    enum:
+    - NCDHW
+    - NDHWC
+    ndim:
+    - '0'
+  grad:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32.
+      Output backprop of shape [batch, depth, rows, cols, channels].'
+    ndim:
+    - '5'
+    shape:
+    - '[batch,depth,rows,cols,channels]'
+    tensor_t:
+    - tf.tensor
+  ksize:
+    descp: A list of ints that has length >= 5. 1-D tensor of length 5. The size of
+      the window for each dimension of the input tensor. Must have ksize[0] = ksize[4]
+      = 1.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[4]'
+    - '[5]'
+    - '[>=5]'
+    structure:
+    - list(int)
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  orig_input:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32.
+      The original input tensor.'
+    tensor_t:
+    - tf.tensor
+  orig_output:
+    descp: A Tensor. Must have the same type as orig_input. The original output tensor.
+    dtype:
+    - dtype:&orig_input
+    tensor_t:
+    - tf.tensor
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+    dtype:
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+  strides:
+    descp: A list of ints that has length >= 5. 1-D tensor of length 5. The stride
+      of the sliding window for each dimension of input. Must have strides[0] = strides[4]
+      = 1.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[5]'
+    - '[>=5]'
+    structure:
+    - list(int)
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch
+- channels
+- cols
+- depth
+- rows
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - orig_input
+  - orig_output
+  - grad
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MaxPool3DGrad
+outputs:
+- A Tensor. Has the same type as grad.
+package: tensorflow
+target: MaxPool3DGrad
+title: tf.raw_ops.MaxPool3DGrad
+version: 2.2.0

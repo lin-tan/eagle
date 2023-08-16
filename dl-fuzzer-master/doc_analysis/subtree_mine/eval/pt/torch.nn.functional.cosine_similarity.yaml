@@ -1,0 +1,11 @@
+constraints:
+  dim:
+    default: '1'
+    descp: 'Dimension of vectors. Default: 1'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.nn.functional.cosine_similarity

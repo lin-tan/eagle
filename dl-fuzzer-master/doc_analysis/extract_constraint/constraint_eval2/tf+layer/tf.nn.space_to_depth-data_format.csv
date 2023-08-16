@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `string` from: `""NHWC"", ""NCHW"", ""NCHW_VECT_C""`. Defaults to `""NHWC""`.",NHWC,prim_dtype,dtype(tf.string),,1
+,"An optional `string` from: `""NHWC"", ""NCHW"", ""NCHW_VECT_C""`. Defaults to `""NHWC""`.",NHWC,shape,ndim(0),,1
+,"An optional `string` from: `""NHWC"", ""NCHW"", ""NCHW_VECT_C""`. Defaults to `""NHWC""`.",NHWC,validvalue,"enum(NCHW, NCHW_VECT_C, NHWC)",,1

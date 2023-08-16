@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",,None,prim_dtype,dtype(int),,1
+"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",,None,nonprim_dtype,"structure(dict, list(int))",,1
+"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",,None,shape,ndim(1),,1

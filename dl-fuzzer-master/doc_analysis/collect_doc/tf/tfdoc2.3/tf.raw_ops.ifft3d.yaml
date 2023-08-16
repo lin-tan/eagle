@@ -1,0 +1,19 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: complex64, complex128. A
+      complex tensor.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/IFFT3D
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: IFFT3D
+title: tf.raw_ops.IFFT3D
+version: 2.3.0

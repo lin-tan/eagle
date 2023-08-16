@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor:
+    descp: A Tensor. A Tensor of type T.
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SerializeTensor
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: SerializeTensor
+title: tf.raw_ops.SerializeTensor
+version: 2.2.0

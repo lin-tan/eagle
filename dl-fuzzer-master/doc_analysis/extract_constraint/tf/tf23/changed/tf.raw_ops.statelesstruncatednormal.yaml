@@ -1,0 +1,50 @@
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.half, tf.bfloat16, tf.float32, tf.float64.
+      Defaults to tf.float32. The type of the output.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatelessTruncatedNormal
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatelessTruncatedNormal
+title: tf.raw_ops.StatelessTruncatedNormal
+version: 2.3.0

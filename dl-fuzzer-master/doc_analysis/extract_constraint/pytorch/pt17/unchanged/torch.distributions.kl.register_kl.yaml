@@ -1,0 +1,19 @@
+constraints:
+  type_p:
+    descp: A subclass of `Distribution`.
+    doc_dtype:
+    - type
+  type_q:
+    descp: A subclass of `Distribution`.
+    doc_dtype:
+    - type
+inputs:
+  optional: []
+  required:
+  - type_p
+  - type_q
+link: https://pytorch.org/docs/1.7.0/distributions.html#torch.distributions.kl.register_kl
+package: torch
+target: register_kl
+title: torch.distributions.kl.register_kl
+version: 1.7.0

@@ -1,0 +1,24 @@
+constraints:
+  data:
+    descp: A mutable Tensor. The ref tensor to be forwarded to the appropriate output.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  pred:
+    descp: A Tensor of type bool. A scalar that specifies which output port will receive
+      data.
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RefSwitch
+outputs:
+- A tuple of Tensor objects (output_false, output_true).
+- output_false: A mutable Tensor. Has the same type as data.
+- output_true: A mutable Tensor. Has the same type as data.
+package: tensorflow
+target: RefSwitch
+title: tf.raw_ops.RefSwitch
+version: 2.2.0

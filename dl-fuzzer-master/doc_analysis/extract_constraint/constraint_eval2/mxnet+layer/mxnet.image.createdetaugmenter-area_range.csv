@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple of floats,The cropped area of the image must contain a fraction of the supplied image within in this range.,"(0.05, 3.0)",prim_dtype,dtype(float),,1
+tuple of floats,The cropped area of the image must contain a fraction of the supplied image within in this range.,"(0.05, 3.0)",nonprim_dtype,structure(tuple(float)),,1
+tuple of floats,The cropped area of the image must contain a fraction of the supplied image within in this range.,"(0.05, 3.0)",shape,ndim(1),,1

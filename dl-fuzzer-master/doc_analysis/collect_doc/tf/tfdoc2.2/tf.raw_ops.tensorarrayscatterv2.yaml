@@ -1,0 +1,27 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32.
+  handle:
+    descp: A Tensor of type string.
+  indices:
+    descp: A Tensor of type int32.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  value:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - indices
+  - value
+  - flow_in
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayScatterV2
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: TensorArrayScatterV2
+title: tf.raw_ops.TensorArrayScatterV2
+version: 2.2.0

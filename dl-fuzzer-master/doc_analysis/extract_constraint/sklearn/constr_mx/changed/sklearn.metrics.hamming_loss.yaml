@@ -1,0 +1,32 @@
+constraints:
+  labels:
+    default: None
+    descp: array, shape = [n_labels], optional (default='deprecated') Integer array
+      of labels. If not provided, labels will be inferred from y_true and y_pred.
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+  y_pred:
+    descp: 1d array-like, or label indicator array / sparse matrix Predicted labels,
+      as returned by a classifier.
+    ndim:
+    - '1'
+  y_true:
+    descp: 1d array-like, or label indicator array / sparse matrix Ground truth (correct)
+      labels.
+    ndim:
+    - '1'
+inputs:
+  optional:
+  - labels
+  - sample_weight
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: hamming_loss
+title: sklearn.metrics.hamming_loss
+version: 0.24.X

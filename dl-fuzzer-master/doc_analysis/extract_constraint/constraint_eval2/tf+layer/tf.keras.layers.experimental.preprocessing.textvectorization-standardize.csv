@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional specification for standardization to apply to the input text. Values can be None (no standardization), 'lower_and_strip_punctuation' (lowercase and remove punctuation) or a Callable. Default is 'lower_and_strip_punctuation'.",LOWER_AND_STRIP_PUNCTUATION,prim_dtype,dtype(tf.string),,1

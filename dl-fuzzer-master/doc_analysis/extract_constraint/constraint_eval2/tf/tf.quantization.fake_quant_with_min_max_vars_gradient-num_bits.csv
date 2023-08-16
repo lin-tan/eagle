@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `int`. Defaults to `8`. The bitwidth of the quantization; between 2 and 8, inclusive.",8,prim_dtype,dtype(int),,1
+,"An optional `int`. Defaults to `8`. The bitwidth of the quantization; between 2 and 8, inclusive.",8,shape,ndim(0),,1
+,"An optional `int`. Defaults to `8`. The bitwidth of the quantization; between 2 and 8, inclusive.",8,validvalue,"range([0,inf))",,1

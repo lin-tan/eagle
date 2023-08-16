@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.layers.minimum
+constraints:
+  '**kwargs':
+    descp: Standard layer keyword arguments.
+  inputs:
+    descp: A list of input tensors (at least 2).
+inputs:
+  optional: []
+  required:
+  - inputs
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/minimum
+outputs: A tensor, the element-wise minimum of the inputs.
+package: tensorflow
+target: minimum
+title: tf.keras.layers.minimum
+version: 2.2.0

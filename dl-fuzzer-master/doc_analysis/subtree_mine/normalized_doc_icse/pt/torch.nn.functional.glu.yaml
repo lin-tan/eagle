@@ -1,0 +1,27 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: 'dimension on which to split the input. Default: -1'
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension on which to split the PARAM
+    - Default CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.glu
+package: torch
+ret_type: Tensor
+target: glu
+title: torch.nn.functional.glu
+version: 1.5.0

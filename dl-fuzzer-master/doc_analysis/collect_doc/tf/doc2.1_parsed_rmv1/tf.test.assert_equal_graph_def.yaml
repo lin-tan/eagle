@@ -1,0 +1,18 @@
+constraints:
+  actual:
+    descp: The `GraphDef` we have.
+  expected:
+    descp: The `GraphDef` we expected.
+exceptions:
+- AssertionError: If the `GraphDef`s do not match.
+- TypeError: If either argument is not a `GraphDef`.
+inputs:
+  optional: []
+  required:
+  - expected
+  - actual
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/test/assert_equal_graph_def
+package: tensorflow
+target: assert_equal_graph_def
+title: tf.test.assert_equal_graph_def
+version: 2.1.0

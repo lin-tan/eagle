@@ -1,0 +1,4 @@
+docker build -t equimodel_tf21:latest - < ./docker_files/tf2.1.dockerfile
+docker run -ti --name equimodel_tf21 -v "/local2/wang4524/equivalentmodels_data/":"/mnt/equivalentmodels_data" -v "/local2/wang4524/eagleplus":"/mnt/equivalentmodels_src_jw" equimodel_tf21 /bin/bash
+docker start equimodel_tf21
+docker exec -it equimodel_tf21 bash

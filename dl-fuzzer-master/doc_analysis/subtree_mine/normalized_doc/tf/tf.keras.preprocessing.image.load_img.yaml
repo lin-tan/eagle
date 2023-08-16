@@ -1,0 +1,63 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.load_img
+constraints:
+  color_mode:
+    default: rgb
+    descp: 'One of "grayscale", "rgb", "rgba". Default: "rgb".     The desired image
+      format.'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - One of PARAM, QSTR
+    - Default QSTR
+    - The desired image format
+  grayscale:
+    default: 'False'
+    descp: DEPRECATED use `color_mode="grayscale"`.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - DEPRECATED use PARAM QSTR
+  interpolation:
+    default: nearest
+    descp: Interpolation method used to resample the image if the     target size
+      is different from that of the loaded image.     Supported methods are "nearest",
+      "bilinear", and "bicubic".     If PIL version 1.1.3 or newer is installed, "lanczos"
+      is also     supported. If PIL version 3.4.0 or newer is installed, "box" and     "hamming"
+      are also supported. By default, "nearest" is used.`
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Interpolation method used to resample the image if the target size is different
+      from that of the loaded image
+    - Supported methods are QSTR
+    - If PIL version CONSTANT_FLOAT CONSTANT_NUM or newer is installed, QSTR is also
+      supported
+    - If PIL version CONSTANT_FLOAT CONSTANT_NUM or newer is installed, QSTR are also
+      supported
+    - By default, QSTR is used
+  path:
+    descp: Path to image file.
+    normalized_descp:
+    - Path to image file
+  target_size:
+    default: None
+    descp: Either `None` (default to original size)     or tuple of ints `(img_height,
+      img_width)`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Either QSTR BSTR or D_STRUCTURE of D_TYPE BSTR
+exceptions:
+- ImportError: if PIL is not available.
+- ValueError: if interpolation method is not supported.`
+inputs:
+  optional:
+  - grayscale
+  - color_mode
+  - target_size
+  - interpolation
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/image/load_img
+outputs: '`A PIL Image instance.`'
+package: tensorflow
+target: load_img
+title: tf.keras.preprocessing.image.load_img
+version: 2.1.0

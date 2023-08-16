@@ -1,0 +1,20 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  n:
+    descp: the power to raise the matrix to
+    doc_dtype:
+    - python:int
+inputs:
+  optional: []
+  required:
+  - input
+  - n
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.matrix_power
+package: torch
+ret_type: Tensor
+target: matrix_power
+title: torch.matrix_power
+version: 1.4.0

@@ -1,0 +1,6 @@
+constraints:
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype:
+    - nn.Module
+title: torch.nn.utils.prune.custom_from_mask

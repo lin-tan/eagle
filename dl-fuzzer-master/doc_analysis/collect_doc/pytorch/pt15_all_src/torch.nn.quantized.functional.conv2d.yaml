@@ -1,0 +1,57 @@
+constraints:
+  bias:
+    descp: non-quantized bias tensor of shape (out _channels) . The tensor type must
+      be torch.float.
+  dilation:
+    default: '1'
+    descp: 'the spacing between kernel elements. Can be a single number or a tuple
+      (dH, dW). Default: 1'
+  dtype:
+    default: torch.quint8
+    descp: 'quantization data type to use. Default: `torch.quint8`'
+  groups:
+    default: '1'
+    descp: 'split input into groups, in _channels  should be divisible by the number
+      of groups. Default: 1'
+  input:
+    descp: 'quantized input tensor of shape (minibatch , in _channels , iH , iW) '
+  padding:
+    default: '0'
+    descp: 'implicit paddings on both sides of the input. Can be a single number or
+      a tuple (padH, padW). Default: 0'
+  padding_mode:
+    default: zeros
+    descp: 'the padding mode to use. Only "zeros" is supported for quantized convolution
+      at the moment. Default: "zeros"'
+  scale:
+    default: '1.0'
+    descp: 'quantization scale for the output. Default: 1.0'
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a tuple
+      (sH, sW). Default: 1'
+  weight:
+    descp: 'quantized filters of shape (out _channels ,  in _channels/groups , kH
+      , kW) '
+  zero_point:
+    default: '0'
+    descp: 'quantization zero_point for the output. Default: 0'
+inputs:
+  optional:
+  - stride
+  - padding
+  - dilation
+  - groups
+  - padding_mode
+  - scale
+  - zero_point
+  - dtype
+  required:
+  - input
+  - weight
+  - bias
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.conv2d
+package: torch
+target: conv2d
+title: torch.nn.quantized.functional.conv2d
+version: 1.5.0

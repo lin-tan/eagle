@@ -1,0 +1,17 @@
+constraints:
+  new_state:
+    descp: The desired state
+    doc_dtype:
+    - torch.ByteTensor
+    dtype:
+    - torch.uint8
+inputs:
+  optional: []
+  required:
+  - new_state
+link: https://pytorch.org/docs/1.7.0/random.html#torch.random.set_rng_state
+package: torch
+ret_type: None
+target: set_rng_state
+title: torch.random.set_rng_state
+version: 1.7.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, 1000 by default Maximum number of iterations to perform if `algorithm='lasso_cd'` or `lasso_lars`.",1000,prim_dtype,dtype(int),,1
+,"int, 1000 by default Maximum number of iterations to perform if `algorithm='lasso_cd'` or `lasso_lars`.",1000,shape,ndim(0),,1
+,"int, 1000 by default Maximum number of iterations to perform if `algorithm='lasso_cd'` or `lasso_lars`.",1000,validvalue,"range([0,inf))",,1

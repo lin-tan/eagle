@@ -1,0 +1,25 @@
+aliases:
+- tf.metrics.binary_accuracy
+- tf.compat.v1.keras.metrics.binary_accuracy
+constraints:
+  threshold:
+    default: '0.5'
+    descp: (Optional) Float representing the threshold for deciding whether prediction
+      values are 1 or 0.
+  y_pred:
+    descp: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true:
+    descp: Ground truth values. shape = [batch_size, d0, .. dN].
+inputs:
+  optional:
+  - threshold
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/metrics/binary_accuracy
+outputs:
+- Binary accuracy values. shape = [batch_size, d0, .. dN-1]
+package: tensorflow
+target: binary_accuracy
+title: tf.keras.metrics.binary_accuracy
+version: 2.2.0

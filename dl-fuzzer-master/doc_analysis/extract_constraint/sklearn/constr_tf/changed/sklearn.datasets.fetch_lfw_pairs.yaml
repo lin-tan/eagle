@@ -1,0 +1,70 @@
+constraints:
+  color:
+    default: 'False'
+    descp: boolean, optional, default False Keep the 3 RGB channels instead of averaging
+      them to a single gray level channel. If color is True the shape of the data
+      has one more dimension than the shape with color = False.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  data_home:
+    default: None
+    descp: 'optional, default: None Specify another download and cache folder for
+      the datasets. By default all scikit-learn data is stored in ''~/scikit_learn_data''
+      subfolders.'
+  download_if_missing:
+    default: 'True'
+    descp: optional, True by default If False, raise a IOError if the data is not
+      locally available instead of trying to download the data from the source site.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  funneled:
+    default: 'True'
+    descp: 'boolean, optional, default: True Download and use the funneled variant
+      of the dataset.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  resize:
+    default: '0.5'
+    descp: float, optional, default 0.5 Ratio used to resize the each face picture.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  slice(78, 172, None)):
+    descp: ''
+  slice_:
+    default: (slice(70, 195, None)
+    descp: optional Provide a custom 2D slice (height, width) to extract the 'interesting'
+      part of the jpeg files and avoid use statistical correlation from the background
+    ndim:
+    - '2'
+  subset:
+    default: train
+    descp: 'optional, default: ''train'' Select the dataset to load: ''train'' for
+      the development training set, ''test'' for the development test set, and ''10_folds''
+      for the official evaluation set that is meant to be used with a 10-folds cross
+      validation.'
+    dtype:
+    - string
+inputs:
+  optional:
+  - subset
+  - data_home
+  - funneled
+  - resize
+  - color
+  - slice_
+  - download_if_missing
+  required:
+  - slice(78, 172, None))
+link: ''
+package: scikit-learn
+target: fetch_lfw_pairs
+title: sklearn.datasets.fetch_lfw_pairs
+version: 0.24.X

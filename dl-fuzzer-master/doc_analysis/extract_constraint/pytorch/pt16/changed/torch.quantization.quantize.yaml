@@ -1,0 +1,30 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: carry out model transformations in-place, the original module is mutated
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  mapping:
+    default: None
+    descp: correspondence between original module types and quantized counterparts
+  model:
+    descp: input float model
+  run_args:
+    descp: positional arguments for run_fn
+  run_fn:
+    descp: a calibration function for calibrating the prepared model
+inputs:
+  optional:
+  - mapping
+  - inplace
+  required:
+  - model
+  - run_fn
+  - run_args
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.quantize
+package: torch
+target: quantize
+title: torch.quantization.quantize
+version: 1.6.0

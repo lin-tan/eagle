@@ -1,0 +1,19 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource; The reference to quantile stream resource
+      handle.
+inputs:
+  optional:
+  - name
+  required:
+  - quantile_stream_resource_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/IsBoostedTreesQuantileStreamResourceInitialized
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: IsBoostedTreesQuantileStreamResourceInitialized
+title: tf.raw_ops.IsBoostedTreesQuantileStreamResourceInitialized
+version: 2.2.0

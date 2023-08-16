@@ -1,0 +1,96 @@
+aliases:
+- tf.compat.v1.image.combined_non_max_suppression
+constraints:
+  boxes:
+    descp: A 4-D float `Tensor` of shape `[batch_size, num_boxes, q, 4]`. If `q`is
+      1 then same boxes are used for all classes otherwise, if `q` is equal to number
+      of classes, class-specific boxes are used.
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE of shape BSTR
+    - If QSTR is CONSTANT_NUM then same boxes are used for all classes otherwise if
+      QSTR is equal to number of classes class specific boxes are used
+  clip_boxes:
+    default: 'True'
+    descp: If true, the coordinates of output nmsed boxes will be clipped to [0, 1].
+      If false, output the box coordinates as it is. Defaults to true.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL the coordinates of output nmsed PARAM will be clipped to BSTR
+    - If CONSTANT_BOOL output the box coordinates as it is
+    - Defaults to CONSTANT_BOOL
+  iou_threshold:
+    default: '0.5'
+    descp: A float representing the threshold for deciding whether boxes overlap too
+      much with respect to IOU.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A D_TYPE representing the threshold for deciding whether PARAM overlap too much
+      with respect to IOU
+  max_output_size_per_class:
+    descp: A scalar integer `Tensor` representing the maximum number of boxes to be
+      selected by non max suppression per class
+    normalized_descp:
+    - A scalar D_TYPE D_STRUCTURE representing the maximum number of PARAM to be selected
+      by non max suppression per class
+  max_total_size:
+    descp: A scalar representing maximum number of boxes retained over all classes.
+    normalized_descp:
+    - A scalar representing maximum number of PARAM retained over all classes
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  pad_per_class:
+    default: 'False'
+    descp: If false, the output nmsed boxes, scores and classes are padded/clipped
+      to `max_total_size`. If true, the output nmsed boxes, scores and classes are
+      padded to be of length`max_size_per_class`*`num_classes`, unless it exceeds
+      `max_total_size` in which case it is clipped to `max_total_size`. Defaults to
+      false.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL the output nmsed PARAM PARAM and classes are padded clipped
+      to PARAM
+    - If CONSTANT_BOOL the output nmsed PARAM PARAM and classes are padded to be of
+      length QSTR QSTR unless it exceeds PARAM in which case it is clipped to PARAM
+    - Defaults to CONSTANT_BOOL
+  score_threshold:
+    default: float(-inf)
+    descp: A float representing the threshold for deciding when to remove boxes based
+      on score.
+    normalized_default: D_TYPE BSTR
+    normalized_descp:
+    - A D_TYPE representing the threshold for deciding when to remove PARAM based
+      on score
+  scores:
+    descp: A 3-D float `Tensor` of shape `[batch_size, num_boxes, num_classes]`representing
+      a single score corresponding to each box (each row of boxes).
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE of shape BSTRrepresenting a single score
+      corresponding to each box BSTR
+inputs:
+  optional:
+  - iou_threshold
+  - score_threshold
+  - pad_per_class
+  - clip_boxes
+  - name
+  required:
+  - boxes
+  - scores
+  - max_output_size_per_class
+  - max_total_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/combined_non_max_suppression
+outputs: '''nmsed_boxes'': A [batch_size, max_detections, 4] float32 tensor   containing
+  the non-max suppressed boxes. ''nmsed_scores'': A [batch_size, max_detections] float32
+  tensor containing   the scores for the boxes. ''nmsed_classes'': A [batch_size,
+  max_detections] float32 tensor   containing the class for boxes. ''valid_detections'':
+  A [batch_size] int32 tensor indicating the number of   valid detections per batch
+  item. Only the top valid_detections[i] entries   in nms_boxes[i], nms_scores[i]
+  and nms_class[i] are valid. The rest of the   entries are zero paddings.'
+package: tensorflow
+target: combined_non_max_suppression
+title: tf.image.combined_non_max_suppression
+version: 2.1.0

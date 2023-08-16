@@ -1,0 +1,21 @@
+constraints:
+  y_pred:
+    descp: array-like of shape (n_samples,) Estimated target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array-like of shape (n_samples,) Ground truth (correct) target values.
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: max_error
+title: sklearn.metrics.max_error
+version: 0.24.X

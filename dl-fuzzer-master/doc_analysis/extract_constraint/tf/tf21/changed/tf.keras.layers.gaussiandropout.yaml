@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.layers.GaussianDropout
+constraints:
+  '**kwargs':
+    default:
+    descp: ''
+  rate:
+    descp: Float, drop probability (as with `Dropout`). The multiplicative noise will
+      have standard deviation `sqrt(rate / (1 - rate))`.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - rate
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/GaussianDropout
+package: tensorflow
+target: GaussianDropout
+title: tf.keras.layers.GaussianDropout
+version: 2.1.0
+layer_constructor: true
+check_nan: true

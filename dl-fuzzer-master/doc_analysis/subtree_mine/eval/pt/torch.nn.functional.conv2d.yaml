@@ -1,0 +1,10 @@
+constraints:
+  weight:
+    descp: 'filters of shape (out _channels ,  in _channels/groups , kH , kW) '
+    dtype:
+    - numeric
+    ndim:
+    - '4'
+    shape:
+    - '[out_channels,in_channels/&groups,kh,kw]'
+title: torch.nn.functional.conv2d

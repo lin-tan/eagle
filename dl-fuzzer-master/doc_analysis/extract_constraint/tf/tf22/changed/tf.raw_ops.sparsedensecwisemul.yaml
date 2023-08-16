@@ -1,0 +1,50 @@
+constraints:
+  dense:
+    descp: A Tensor. Must have the same type as sp_values. R-D. The dense Tensor operand.
+    dtype:
+    - dtype:&sp_values
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sp_indices:
+    descp: A Tensor of type int64. 2-D. N x R matrix with the indices of non-empty
+      values in a SparseTensor, possibly not in canonical ordering.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  sp_shape:
+    descp: A Tensor of type int64. 1-D. Shape of the input SparseTensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  sp_values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. 1-D. N non-empty values corresponding to sp_indices.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - sp_indices
+  - sp_values
+  - sp_shape
+  - dense
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseDenseCwiseMul
+outputs:
+- A Tensor. Has the same type as sp_values.
+package: tensorflow
+target: SparseDenseCwiseMul
+title: tf.raw_ops.SparseDenseCwiseMul
+version: 2.2.0

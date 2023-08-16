@@ -1,0 +1,62 @@
+aliases:
+- tf.compat.v1.keras.backend.random_normal_variable
+constraints:
+  dtype:
+    default: None
+    descp: String, dtype of returned Keras variable.
+    dtype:
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  mean:
+    descp: Float, mean of the normal distribution.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: String, name of returned Keras variable.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  scale:
+    descp: Float, standard deviation of the normal distribution.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  seed:
+    default: None
+    descp: Integer, random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shape:
+    descp: Tuple of integers, shape of returned Keras variable.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - dtype
+  - name
+  - seed
+  required:
+  - shape
+  - mean
+  - scale
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/random_normal_variable
+outputs: A Keras variable, filled with drawn samples.
+package: tensorflow
+target: random_normal_variable
+title: tf.keras.backend.random_normal_variable
+version: 2.1.0

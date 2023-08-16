@@ -1,0 +1,45 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: the dimension to reduce.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the result tuple of two output tensors (values, indices)
+    doc_dtype:
+    - tuple
+    structure:
+    - tuple
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - dim
+  - keepdim
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.mode
+package: torch
+ret_type: (Tensor, LongTensor)
+target: mode
+title: torch.mode
+version: 1.5.0

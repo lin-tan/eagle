@@ -1,0 +1,25 @@
+constraints:
+  dtype:
+    descp: A tf.DType. Type of the returned tensor.
+  memory_region_name:
+    descp: A string. Name of readonly memory region used by the tensor, see NewReadOnlyMemoryRegionFromFile
+      in tensorflow::Env.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. Shape of the returned tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - dtype
+  - shape
+  - memory_region_name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ImmutableConst
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: ImmutableConst
+title: tf.raw_ops.ImmutableConst
+version: 2.3.0

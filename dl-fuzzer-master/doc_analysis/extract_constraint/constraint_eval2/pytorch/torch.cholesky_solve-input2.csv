@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions composed of upper or lower triangular Cholesky factor",,prim_dtype,dtype(numeric),,1
+Tensor,"input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions composed of upper or lower triangular Cholesky factor",,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,"input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions composed of upper or lower triangular Cholesky factor",,shape,"shape([...,m,m]), ndim(>=2)",,1

@@ -1,0 +1,35 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  display_name:
+    descp: A string. A human-readable name for the threads that may be visible in
+      some visualizations. threadpool.
+  max_intra_op_parallelism:
+    default: '1'
+    descp: An optional int. Defaults to 1. The maximum degree of parallelism to use
+      within operations that execute on this threadpool.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_threads:
+    descp: An int. The number of threads in the thread pool.
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - max_intra_op_parallelism
+  - container
+  - shared_name
+  - name
+  required:
+  - num_threads
+  - display_name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ThreadPoolHandle
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: ThreadPoolHandle
+title: tf.raw_ops.ThreadPoolHandle
+version: 2.3.0

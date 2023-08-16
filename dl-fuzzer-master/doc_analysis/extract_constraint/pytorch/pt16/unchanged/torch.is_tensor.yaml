@@ -1,0 +1,14 @@
+constraints:
+  obj:
+    descp: Object to test
+    doc_dtype:
+    - Object
+inputs:
+  optional: []
+  required:
+  - obj
+link: https://pytorch.org/docs/1.6.0/generated/torch.is_tensor.html#torch.is_tensor#torch.is_tensor
+package: torch
+target: is_tensor
+title: torch.is_tensor
+version: 1.6.0

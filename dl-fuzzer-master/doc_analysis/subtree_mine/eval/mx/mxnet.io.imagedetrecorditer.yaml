@@ -1,0 +1,26 @@
+constraints:
+  max_random_illumination:
+    default: None
+    descp: 'Augmentation Param: Maximum random value of L channel in HSL color space.'
+    doc_dtype:
+    - int
+    - optional
+    - default='0'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  random_saturation_prob:
+    default: None
+    descp: 'Augmentation Param: Probability to apply random saturation.'
+    doc_dtype:
+    - float
+    - optional
+    - default=0
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+title: mxnet.io.ImageDetRecordIter

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Number of feature batches to prefetch in order to improve performance. Recommended value is the number of batches consumed per training step. Defaults to auto-tune.,None,prim_dtype,dtype(numeric),,1
+,Number of feature batches to prefetch in order to improve performance. Recommended value is the number of batches consumed per training step. Defaults to auto-tune.,None,shape,ndim(0),,1
+,Number of feature batches to prefetch in order to improve performance. Recommended value is the number of batches consumed per training step. Defaults to auto-tune.,None,validvalue,"range([0,inf))",,1

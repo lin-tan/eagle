@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Expint
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: Expint
+title: tf.raw_ops.Expint
+version: 2.2.0

@@ -1,0 +1,14 @@
+constraints:
+  module:
+    descp: object that is either pruned or unpruned
+    doc_dtype:
+    - nn.Module
+inputs:
+  optional: []
+  required:
+  - module
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.prune.is_pruned.html#torch.nn.utils.prune.is_pruned#torch.nn.utils.prune.is_pruned
+package: torch
+target: is_pruned
+title: torch.nn.utils.prune.is_pruned
+version: 1.9.0

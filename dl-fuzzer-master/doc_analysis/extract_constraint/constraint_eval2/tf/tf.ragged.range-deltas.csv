@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Vector or scalar `Tensor`.  Specifies the increment for each range. Defaults to `1`.,1,prim_dtype,dtype(int),,1
+,Vector or scalar `Tensor`.  Specifies the increment for each range. Defaults to `1`.,1,nonprim_dtype,structure(list),,1
+,Vector or scalar `Tensor`.  Specifies the increment for each range. Defaults to `1`.,1,shape,"ndim(0, 1)",,1

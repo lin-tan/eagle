@@ -1,0 +1,14 @@
+constraints:
+  weights:
+    default: None
+    descp: (Optional.) A list of `len(datasets)` floating-point values where`weights[i]`
+      represents the probability with which an element should be sampled from `datasets[i]`,
+      or a `tf.data.Dataset` object where each element is such a list. Defaults to
+      a uniform distribution across`datasets`.
+    dtype:
+    - float
+    structure:
+    - list
+    range:
+    - '[0,1]'
+title: tf.data.experimental.sample_from_datasets

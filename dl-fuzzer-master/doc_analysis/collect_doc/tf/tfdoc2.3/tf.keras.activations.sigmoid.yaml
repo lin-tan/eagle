@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.activations.sigmoid
+constraints:
+  x:
+    descp: Input tensor.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/activations/sigmoid
+outputs:
+- 'Tensor with the sigmoid activation: 1 / (1 + exp(-x)).'
+package: tensorflow
+target: sigmoid
+title: tf.keras.activations.sigmoid
+version: 2.3.0

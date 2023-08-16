@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"positive float, optional The tolerance to declare convergence: if the dual gap goes below this value, iterations are stopped.",0.0001,prim_dtype,dtype(float),,1
+,"positive float, optional The tolerance to declare convergence: if the dual gap goes below this value, iterations are stopped.",0.0001,shape,ndim(0),,1
+,"positive float, optional The tolerance to declare convergence: if the dual gap goes below this value, iterations are stopped.",0.0001,validvalue,"range((0,inf))",,1

@@ -1,0 +1,23 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - shared_name
+  - container
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SummaryWriter
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: SummaryWriter
+title: tf.raw_ops.SummaryWriter
+version: 2.3.0

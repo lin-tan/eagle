@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional The number of samples to use. If not given, all samples are used.",None,prim_dtype,dtype(int),,1
+,"int, optional The number of samples to use. If not given, all samples are used.",None,shape,ndim(0),,1
+,"int, optional The number of samples to use. If not given, all samples are used.",None,validvalue,"range([0,inf))",,1

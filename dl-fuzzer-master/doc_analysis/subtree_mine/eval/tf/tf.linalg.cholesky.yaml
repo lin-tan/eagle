@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float64`, `float32`,
+      `half`, `complex64`, `complex128`. Shape is `[..., M, M]`.'
+    dtype:
+    - tf.complex128
+    - tf.complex64
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,m,m]'
+    tensor_t:
+    - tf.tensor
+title: tf.linalg.cholesky

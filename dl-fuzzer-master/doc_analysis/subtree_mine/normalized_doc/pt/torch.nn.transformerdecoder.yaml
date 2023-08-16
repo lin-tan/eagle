@@ -1,0 +1,26 @@
+constraints:
+  decoder_layer:
+    descp: an instance of the TransformerDecoderLayer() class (required).
+    normalized_descp:
+    - an instance of the TransformerDecoderLayer BSTR
+  norm:
+    default: None
+    descp: the layer normalization component (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the layer normalization component BSTR
+  num_layers:
+    descp: the number of sub-decoder-layers in the decoder (required).
+    normalized_descp:
+    - the number of sub decoder layers in the decoder BSTR
+inputs:
+  optional:
+  - norm
+  required:
+  - decoder_layer
+  - num_layers
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.TransformerDecoder
+package: torch
+target: TransformerDecoder
+title: torch.nn.TransformerDecoder
+version: 1.5.0

@@ -1,0 +1,15 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+inputs:
+  optional:
+  - group
+  required: []
+link: https://pytorch.org/docs/1.4.0/distributed.html#torch.distributed.get_world_size
+package: torch
+target: get_world_size
+title: torch.distributed.get_world_size
+version: 1.4.0

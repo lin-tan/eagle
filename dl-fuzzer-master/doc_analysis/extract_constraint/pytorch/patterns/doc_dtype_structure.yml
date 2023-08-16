@@ -1,0 +1,43 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: structure
+
+pat: 
+    '^([\w]+)$':
+        structure: \1
+
+    '(list|tuple|sequence|iterable)\s+of\s+\(?([\w.:]+)\)?':
+        structure: \1
+        ds_dtype:   # different from dtype (one of the targets)
+            - \2     # if \integer: map group -> check dtype , else -> check dtype
+        ndim: 1
+
+
+    'dict':
+        structure: dict
+
+    'default\s+empty\s+list':
+        structure: list
+
+
+    '(list|iterable|tuple)[\[\(]]?([\w.:]+)[\]\)]?':
+        structure: \1
+        ds_dtype:
+            - \2
+        ndim: 1
+
+    '(\d)-(tuple|list)\s+of\s+([\w.:]+)':
+        structure: \2
+        ds_dtype:
+            - \3
+        ndim: 1
+        len: \1
+
+
+
+
+    

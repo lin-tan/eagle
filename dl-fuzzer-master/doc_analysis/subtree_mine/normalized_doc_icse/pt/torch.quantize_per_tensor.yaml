@@ -1,0 +1,40 @@
+constraints:
+  dtype:
+    descp: 'the desired data type of returned tensor. Has to be one of the quantized
+      dtypes: `torch.quint8`, `torch.qint8`, `torch.qint32`'
+    doc_dtype: '`torch.dtype`'
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Has to be one of the quantized dtypes D_TYPE
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: float tensor to quantize
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_TYPE D_STRUCTURE to quantize
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  scale:
+    descp: scale to apply in quantization formula
+    doc_dtype: float
+    normalized_descp:
+    - scale to apply in quantization formula
+    normalized_docdtype: ONE_WORD D_TYPE
+  zero_point:
+    descp: offset in integer value that maps to float zero
+    doc_dtype: int
+    normalized_descp:
+    - offset in D_TYPE value that maps to D_TYPE zero
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - input
+  - scale
+  - zero_point
+  - dtype
+link: https://pytorch.org/docs/stable/torch.html#torch.quantize_per_tensor
+package: torch
+ret_type: Tensor
+target: quantize_per_tensor
+title: torch.quantize_per_tensor
+version: 1.5.0

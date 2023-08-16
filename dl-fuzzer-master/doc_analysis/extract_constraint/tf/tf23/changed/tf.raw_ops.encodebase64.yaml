@@ -1,0 +1,35 @@
+constraints:
+  input:
+    descp: A Tensor of type string. Strings to be encoded.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  pad:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Bool whether padding is applied at
+      the ends.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - pad
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/EncodeBase64
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: EncodeBase64
+title: tf.raw_ops.EncodeBase64
+version: 2.3.0

@@ -1,0 +1,33 @@
+constraints:
+  _stacklevel:
+    default: '3'
+    descp: ''
+  dim:
+    default: None
+    descp: A dimension along which softmin will be computed (so every slice along
+      dim will sum to 1).
+    doc_dtype:
+    - int
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. If specified, the input tensor
+      is casted to `dtype` before the operation is performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: input
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - dim
+  - _stacklevel
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/nn.functional.html#torch.nn.functional.softmin
+package: torch
+target: softmin
+title: torch.nn.functional.softmin
+version: 1.6.0

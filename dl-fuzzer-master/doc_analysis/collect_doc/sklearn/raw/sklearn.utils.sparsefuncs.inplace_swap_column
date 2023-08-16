@@ -1,0 +1,13 @@
+sklearn.utils.sparsefuncs.inplace_swap_column = inplace_swap_column(X, m, n)
+    Swaps two columns of a CSC/CSR matrix in-place.
+    
+    Parameters
+    ----------
+    X : CSR or CSC sparse matrix, shape=(n_samples, n_features)
+        Matrix whose two columns are to be swapped.
+    
+    m : int
+        Index of the column of X to be swapped.
+    
+    n : int
+        Index of the column of X to be swapped.

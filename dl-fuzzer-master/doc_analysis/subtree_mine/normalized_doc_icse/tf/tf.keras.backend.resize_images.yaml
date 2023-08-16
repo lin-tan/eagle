@@ -1,0 +1,41 @@
+aliases:
+- tf.compat.v1.keras.backend.resize_images
+constraints:
+  data_format:
+    descp: One of `"channels_first"`, `"channels_last"`.
+    normalized_descp:
+    - One of QSTR
+  height_factor:
+    descp: Positive integer.
+    normalized_descp:
+    - Positive D_TYPE
+  interpolation:
+    default: nearest
+    descp: A string, one of `nearest` or `bilinear`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_TYPE one of QSTR
+  width_factor:
+    descp: Positive integer.
+    normalized_descp:
+    - Positive D_TYPE
+  x:
+    descp: Tensor or variable to resize.
+    normalized_descp:
+    - D_STRUCTURE or variable to resize
+exceptions:
+- ValueError: in case of incorrect value for`data_format` or `interpolation`.
+inputs:
+  optional:
+  - interpolation
+  required:
+  - x
+  - height_factor
+  - width_factor
+  - data_format
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/resize_images
+outputs: A tensor.
+package: tensorflow
+target: resize_images
+title: tf.keras.backend.resize_images
+version: 2.1.0

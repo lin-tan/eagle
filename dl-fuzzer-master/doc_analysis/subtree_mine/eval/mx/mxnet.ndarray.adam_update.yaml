@@ -1,0 +1,22 @@
+constraints:
+  lazy_update:
+    default: _Null
+    descp: If true, lazy updates are applied if gradient's stype is row_sparse and
+      all of w, m and v have the same stype
+    doc_dtype:
+    - boolean
+    - optional
+    - default=1
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+title: mxnet.ndarray.adam_update

@@ -1,0 +1,67 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  :\s+\((.*?)\),\s+\(.*?\)\s*or\s*\(.*?\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  :\s+\(([\w\s,]+)\)\s*or\s*\(.*?\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  :\s+\(.*?\),\s+\((.*?)\)\s*or\s*\(.*?\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  :\s+\(.*?\),\s+\(.*?\)\s*or\s*\((.*?)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  :\s+\([\w\s,]+\)\s*or\s*\((.*?)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  ^\((\w,.*?)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  ^shape\s+\((.*?)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  be\s+of\s+length\s+`(.*?)`:
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  of\s+the\s+form\s+\[(.*?)\]:
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      spatial_dim1,\s*spatial_dim2,\s*\.\.\.: '...'
+split_word:
+- ' '
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- '...'
+- /
+target: shape

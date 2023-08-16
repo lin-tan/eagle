@@ -1,0 +1,25 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rt_dense_values:
+    descp: A Tensor. The flat_values for the RaggedTensor.
+  rt_nested_splits:
+    descp: 'A list of at least 1 Tensor objects with the same type in: int32, int64.
+      The row_splits for the RaggedTensor.'
+inputs:
+  optional:
+  - name
+  required:
+  - rt_nested_splits
+  - rt_dense_values
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RaggedTensorToSparse
+outputs:
+- A tuple of Tensor objects (sparse_indices, sparse_values, sparse_dense_shape).
+- sparse_indices: A Tensor of type int64.
+- sparse_values: A Tensor. Has the same type as rt_dense_values.
+- sparse_dense_shape: A Tensor of type int64.
+package: tensorflow
+target: RaggedTensorToSparse
+title: tf.raw_ops.RaggedTensorToSparse
+version: 2.2.0

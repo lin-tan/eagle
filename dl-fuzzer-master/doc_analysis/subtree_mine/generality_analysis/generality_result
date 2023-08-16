@@ -1,0 +1,83 @@
+combining tf+pt
+combine 659 and 398 to form 1030 rules
+
+tf+mx:
+combine 659 and 275 to form 906 rules
+
+pt+mx
+combine 398 and 275 to form 644 rules
+
+
+
+
+
+# Count constraints 
+
+1. tf (use mx and pt rule)
+
+Number of files: 906
+Constraint Count:
+{'dtype': 1912, 'tensor_t': 1220, 'structure': 383, 'shape': 189, 'ndim': 1520, 'enum': 150, 'range': 250, 'total': 5624}
+Grouped result:
+{'dtype': 1912, 'structure': 1446, 'shape': 1520, 'validvalue': 392, 'total': 5270}
+Constraints min: 1 max: 42 (tf.keras.layers.convlstm2d.yaml) avg: 5.816777041942605
+
+2. pt (use tf and mx rule)
+
+Number of files: 500
+Constraint Count:
+{'dtype': 1060, 'tensor_t': 643, 'structure': 198, 'shape': 19, 'ndim': 847, 'enum': 59, 'range': 140, 'total': 2966}
+Grouped result:
+{'dtype': 1060, 'structure': 766, 'shape': 847, 'validvalue': 177, 'total': 2850}
+Constraints min: 1 max: 33 (torch.onnx.export.yaml) avg: 5.7
+
+
+3. mx (use tf and pt)
+
+
+Number of files: 1009
+Constraint Count:
+{'dtype': 2122, 'tensor_t': 96, 'structure': 2483, 'shape': 138, 'ndim': 1917, 'enum': 286, 'range': 273, 'total': 7315}
+Grouped result:
+{'dtype': 2122, 'structure': 2501, 'shape': 1917, 'validvalue': 542, 'total': 7082}
+Constraints min: 1 max: 113 (mxnet.io.imagerecorditer.yaml) avg: 7.018830525272547
+
+
+
+
+# eval
+
+1. tf (use mx and pt rule)
+Precision
+{'dtype': 0.6470588235294118, 'structure': 1.0, 'shape': 0.5679012345679012, 'validvalue': 0.68, 'all': 0.6457399103139013}
+Recall
+{'dtype': 0.4852941176470588, 'structure': 0.8823529411764706, 'shape': 0.39655172413793105, 'validvalue': 0.37777777777777777, 'all': 0.4585987261146497}
+F1
+{'dtype': 0.5546218487394958, 'structure': 0.9375, 'shape': 0.467005076142132, 'validvalue': 0.48571428571428565, 'all': 0.5363128491620112}
+accuracy
+0.32558139534883723
+
+
+2. pt (use tf and mx rule)
+
+Precision
+{'dtype': 0.9285714285714286, 'structure': 0.8, 'shape': 0.8809523809523809, 'validvalue': 0.6, 'all': 0.8699186991869918}
+Recall
+{'dtype': 0.8, 'structure': 0.631578947368421, 'shape': 0.6851851851851852, 'validvalue': 0.2857142857142857, 'all': 0.6729559748427673}
+F1
+{'dtype': 0.859504132231405, 'structure': 0.7058823529411765, 'shape': 0.7708333333333335, 'validvalue': 0.3870967741935483, 'all': 0.7588652482269505}
+accuracy
+0.5833333333333334
+
+
+3. mx (use tf and pt)
+
+
+Precision
+{'dtype': 0.5392156862745098, 'structure': 0.957983193277311, 'shape': 0.7340425531914894, 'validvalue': 0.6, 'all': 0.746268656716418}
+Recall
+{'dtype': 0.4230769230769231, 'structure': 0.9344262295081968, 'shape': 0.8117647058823529, 'validvalue': 0.4, 'all': 0.6811989100817438}
+F1
+{'dtype': 0.4741379310344828, 'structure': 0.9460580912863071, 'shape': 0.7709497206703911, 'validvalue': 0.48, 'all': 0.7122507122507123}
+accuracy
+0.5478260869565217

@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FakeQueue
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: FakeQueue
+title: tf.raw_ops.FakeQueue
+version: 2.3.0

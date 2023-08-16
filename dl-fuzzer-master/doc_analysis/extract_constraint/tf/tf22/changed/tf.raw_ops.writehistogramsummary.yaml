@@ -1,0 +1,44 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  step:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  tag:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64.'
+    tensor_t:
+    - tf.tensor
+  writer:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - step
+  - tag
+  - values
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WriteHistogramSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteHistogramSummary
+title: tf.raw_ops.WriteHistogramSummary
+version: 2.2.0

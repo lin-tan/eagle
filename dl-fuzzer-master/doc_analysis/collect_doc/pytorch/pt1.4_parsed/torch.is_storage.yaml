@@ -1,0 +1,14 @@
+constraints:
+  obj:
+    descp: Object to test
+    doc_dtype:
+    - Object
+inputs:
+  optional: []
+  required:
+  - obj
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.is_storage
+package: torch
+target: is_storage
+title: torch.is_storage
+version: 1.4.0

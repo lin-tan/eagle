@@ -1,0 +1,97 @@
+constraints:
+  data_format:
+    default: NHWC
+    descp: 'An optional string from: "NHWC", "NCHW". Defaults to "NHWC". Specify the
+      data format of the input and output data. With the default format "NHWC", the
+      data is stored in the order of: [batch, in_height, in_width, in_channels]. Alternatively,
+      the format could be "NCHW", the data storage order of: [batch, in_channels,
+      in_height, in_width].'
+    dtype:
+    - tf.string
+    enum:
+    - NCHW
+    - NHWC
+    ndim:
+    - '0'
+  grad:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. 4-D with shape [batch, height, width, channels]. Gradients w.r.t. the
+      output of avg_pool.'
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  ksize:
+    descp: A list of ints that has length >= 4. The size of the sliding window for
+      each dimension of the input.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[>=4]'
+    structure:
+    - list(int)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  orig_input_shape:
+    descp: A Tensor of type int32. 1-D. Shape of the original input to avg_pool.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+    dtype:
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+  strides:
+    descp: A list of ints that has length >= 4. The stride of the sliding window for
+      each dimension of the input.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[>=4]'
+    structure:
+    - list(int)
+dependency:
+- batch
+- channels
+- height
+- width
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - orig_input_shape
+  - grad
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/AvgPoolGrad
+outputs:
+- A Tensor. Has the same type as grad.
+package: tensorflow
+target: AvgPoolGrad
+title: tf.raw_ops.AvgPoolGrad
+version: 2.3.0

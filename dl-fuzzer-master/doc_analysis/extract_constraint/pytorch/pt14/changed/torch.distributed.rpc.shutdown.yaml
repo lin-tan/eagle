@@ -1,0 +1,21 @@
+constraints:
+  graceful:
+    default: 'True'
+    descp: Whether to do a graceful shutdown or not. If True, this will block until
+      all local and remote RPC processes have reached this method and wait for all
+      outstanding work to complete.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - graceful
+  required: []
+link: https://pytorch.org/docs/1.4.0/rpc.html#torch.distributed.rpc.shutdown
+package: torch
+target: shutdown
+title: torch.distributed.rpc.shutdown
+version: 1.4.0

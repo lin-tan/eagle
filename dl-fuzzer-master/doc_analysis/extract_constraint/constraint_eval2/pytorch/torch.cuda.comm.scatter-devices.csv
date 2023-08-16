@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Iterable[int],"iterable of ints, specifying among which devices the tensor should be scattered.",,prim_dtype,"dtype(int, torch.device)",,1
+Iterable[int],"iterable of ints, specifying among which devices the tensor should be scattered.",,nonprim_dtype,structure(iterable(int)),,1
+Iterable[int],"iterable of ints, specifying among which devices the tensor should be scattered.",,shape,ndim(1),,1

@@ -1,0 +1,12 @@
+constraints:
+  '*ys':
+    descp: array-likes
+inputs:
+  optional: []
+  required:
+  - '*ys'
+link: ''
+package: scikit-learn
+target: unique_labels
+title: sklearn.utils.multiclass.unique_labels
+version: 0.24.X

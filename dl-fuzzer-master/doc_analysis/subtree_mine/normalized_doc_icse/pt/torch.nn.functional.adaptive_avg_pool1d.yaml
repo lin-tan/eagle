@@ -1,0 +1,19 @@
+constraints:
+  input:
+    descp: ''
+    normalized_descp: []
+  output_size:
+    descp: the target output size (single integer)
+    normalized_descp:
+    - the target output size BSTR
+inputs:
+  optional: []
+  required:
+  - input
+  - output_size
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_avg_pool1d
+package: torch
+ret_type: Tensor
+target: adaptive_avg_pool1d
+title: torch.nn.functional.adaptive_avg_pool1d
+version: 1.5.0

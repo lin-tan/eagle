@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.keras.datasets.reuters.get_word_index
+constraints:
+  path:
+    default: reuters_word_index.json
+    descp: where to cache the data (relative to `~/.keras/dataset`).
+    normalized_default: reuters_word_index json
+    normalized_descp:
+    - where to cache the data relative to keras dataset
+inputs:
+  optional:
+  - path
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/datasets/reuters/get_word_index
+outputs: The word index dictionary.
+package: tensorflow
+target: get_word_index
+title: tf.keras.datasets.reuters.get_word_index
+version: 2.1.0

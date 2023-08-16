@@ -1,0 +1,16 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+inputs:
+  optional:
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.SELU.html#torch.nn.SELU#torch.nn.SELU
+package: torch
+target: SELU
+title: torch.nn.SELU
+version: 1.6.0

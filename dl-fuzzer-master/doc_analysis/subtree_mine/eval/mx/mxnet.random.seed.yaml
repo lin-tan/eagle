@@ -1,0 +1,10 @@
+constraints:
+  ctx:
+    default: all
+    descp: The device context of the generator. The default is "all" which means seeding
+      random number generators of all devices.
+    doc_dtype:
+    - Context
+    dtype:
+    - string
+title: mxnet.random.seed

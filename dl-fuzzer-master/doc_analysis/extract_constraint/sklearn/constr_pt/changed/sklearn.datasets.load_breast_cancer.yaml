@@ -1,0 +1,18 @@
+constraints:
+  return_X_y:
+    default: 'False'
+    descp: boolean, default=False If True, returns ``(data, target)`` instead of a
+      Bunch object. See below for more information about the `data` and `target` object.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - return_X_y
+  required: []
+link: ''
+package: scikit-learn
+target: load_breast_cancer
+title: sklearn.datasets.load_breast_cancer
+version: 0.24.X

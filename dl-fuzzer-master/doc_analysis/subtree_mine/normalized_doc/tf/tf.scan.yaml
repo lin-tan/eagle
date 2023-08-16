@@ -1,0 +1,95 @@
+aliases:
+- tf.compat.v1.scan
+constraints:
+  back_prop:
+    default: 'True'
+    descp: (optional) True enables support for back propagation.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - BSTR CONSTANT_BOOL enables support for back propagation
+  elems:
+    descp: A tensor or (possibly nested) sequence of tensors, each of which will be
+      unpacked along their first dimension.  The nested sequence of the resulting
+      slices will be the first argument to `fn`.
+    normalized_descp:
+    - A D_STRUCTURE or BSTR D_STRUCTURE of D_STRUCTURE, each of which will be unpacked
+      along their first dimension
+    - The nested D_STRUCTURE of the resulting slices will be the first argument to
+      PARAM
+  fn:
+    descp: The callable to be performed.  It accepts two arguments.  The first will
+      have the same structure as `initializer` if one is provided, otherwise it will
+      have the same structure as `elems`.  The second will have the same (possibly
+      nested) structure as `elems`.  Its output must have the same structure as `initializer`
+      if one is provided, otherwise it must have the same structure as `elems`.
+    normalized_descp:
+    - The callable to be performed
+    - It accepts two arguments
+    - The first will have the same structure as PARAM if one is provided, otherwise
+      it will have the same structure as PARAM
+    - The second will have the same BSTR structure as PARAM
+    - Its output must have the same structure as PARAM if one is provided, otherwise
+      it must have the same structure as PARAM
+  infer_shape:
+    default: 'True'
+    descp: (optional) False disables tests for consistent output shapes.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - BSTR CONSTANT_BOOL disables tests for consistent output shapes
+  initializer:
+    default: None
+    descp: (optional) A tensor or (possibly nested) sequence of tensors, initial value
+      for the accumulator, and the expected output type of `fn`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR D_STRUCTURE of D_STRUCTURE, initial value for the accumulator, and the
+      expected output type of PARAM
+  name:
+    default: None
+    descp: (optional) Name prefix for the returned tensors.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR Name prefix for the returned D_STRUCTURE
+  parallel_iterations:
+    default: '10'
+    descp: (optional) The number of iterations allowed to run in parallel.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - BSTR The number of iterations allowed to run in parallel
+  reverse:
+    default: 'False'
+    descp: (optional) True scans the tensor last to first (instead of first to last).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - ONE_WORD BSTR
+  swap_memory:
+    default: 'False'
+    descp: (optional) True enables GPU-CPU memory swapping.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - BSTR CONSTANT_BOOL enables GPU CPU memory swapping
+exceptions:
+- TypeError: if `fn` is not callable or the structure of the output of`fn` and `initializer`
+    do not match.
+- ValueError: if the lengths of the output of `fn` and `initializer`do not match.
+inputs:
+  optional:
+  - initializer
+  - parallel_iterations
+  - back_prop
+  - swap_memory
+  - infer_shape
+  - reverse
+  - name
+  required:
+  - fn
+  - elems
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/scan
+outputs: A tensor or (possibly nested) sequence of tensors.  Each tensor packs the
+  results of applying `fn` to tensors unpacked from `elems` along the first dimension,
+  and the previous accumulator value(s), from first to last (or last to first, if
+  `reverse=True`).
+package: tensorflow
+target: scan
+title: tf.scan
+version: 2.1.0

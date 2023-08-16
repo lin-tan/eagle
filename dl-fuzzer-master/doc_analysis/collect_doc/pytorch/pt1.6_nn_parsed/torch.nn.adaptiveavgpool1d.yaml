@@ -1,0 +1,13 @@
+constraints:
+  output_size:
+    descp: the target output size H
+    sig_dtype: Union[T,Tuple[T,...]]
+inputs:
+  optional: []
+  required:
+  - output_size
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.AdaptiveAvgPool1d.html#torch.nn.AdaptiveAvgPool1d#torch.nn.AdaptiveAvgPool1d
+package: torch
+target: AdaptiveAvgPool1d
+title: torch.nn.AdaptiveAvgPool1d
+version: 1.6.0

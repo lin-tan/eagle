@@ -1,0 +1,59 @@
+constraints:
+  backend:
+    default: BackendType.PROCESS_GROUP
+    descp: The type of RPC backend implementation. Supported values include `BackendType.PROCESS_GROUP`
+      (the default) and `BackendType.TENSORPIPE`. See Backends for more information.
+    doc_dtype:
+    - BackendType
+  name:
+    descp: a globally unique name of this node. (e.g., `Trainer3`, `ParameterServer2`,
+      `Master`, `Worker1`) Name can only contain number, alphabet, underscore, colon,
+      and/or dash, and must be shorter than 128 characters.
+    doc_dtype:
+    - str
+    dtype:
+    - string
+  rank:
+    default: '-1'
+    descp: a globally unique id/rank of this node.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+  rpc_backend_options:
+    default: None
+    descp: The options passed to the RpcAgent constructor. It must be an agent-specific
+      subclass of `RpcBackendOptions` and contains agent-specific initialization configurations.
+      By default, for all agents, it sets the default timeout to 60 seconds and performs
+      the rendezvous with an underlying process group initialized using `init_method
+      = "env://"`, meaning that environment variables `MASTER_ADDR` and `MASTER_PORT`
+      need to be set properly. See Backends for more information and find which options
+      are available.
+    doc_dtype:
+    - RpcBackendOptions
+  world_size:
+    default: None
+    descp: The number of workers in the group.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - backend
+  - rank
+  - world_size
+  - rpc_backend_options
+  required:
+  - name
+link: https://pytorch.org/docs/1.6.0/rpc.html#torch.distributed.rpc.init_rpc
+package: torch
+target: init_rpc
+title: torch.distributed.rpc.init_rpc
+version: 1.6.0

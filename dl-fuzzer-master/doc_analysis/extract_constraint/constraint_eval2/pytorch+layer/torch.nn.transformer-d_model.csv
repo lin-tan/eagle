@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,the number of expected features in the encoder/decoder inputs (default=512).,512,prim_dtype,dtype(int),,1
+,the number of expected features in the encoder/decoder inputs (default=512).,512,shape,ndim(0),,1
+,the number of expected features in the encoder/decoder inputs (default=512).,512,validvalue,"range([0,inf))",,1

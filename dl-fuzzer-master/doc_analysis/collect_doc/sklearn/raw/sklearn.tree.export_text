@@ -1,0 +1,55 @@
+sklearn.tree.export_text = export_text(decision_tree, feature_names=None, max_depth=10, spacing=3, decimals=2, show_weights=False)
+    Build a text report showing the rules of a decision tree.
+    
+    Note that backwards compatibility may not be supported.
+    
+    Parameters
+    ----------
+    decision_tree : object
+        The decision tree estimator to be exported.
+        It can be an instance of
+        DecisionTreeClassifier or DecisionTreeRegressor.
+    
+    feature_names : list, optional (default=None)
+        A list of length n_features containing the feature names.
+        If None generic names will be used ("feature_0", "feature_1", ...).
+    
+    max_depth : int, optional (default=10)
+        Only the first max_depth levels of the tree are exported.
+        Truncated branches will be marked with "...".
+    
+    spacing : int, optional (default=3)
+        Number of spaces between edges. The higher it is, the wider the result.
+    
+    decimals : int, optional (default=2)
+        Number of decimal digits to display.
+    
+    show_weights : bool, optional (default=False)
+        If true the classification weights will be exported on each leaf.
+        The classification weights are the number of samples each class.
+    
+    Returns
+    -------
+    report : string
+        Text summary of all the rules in the decision tree.
+    
+    Examples
+    --------
+    
+    >>> from sklearn.datasets import load_iris
+    >>> from sklearn.tree import DecisionTreeClassifier
+    >>> from sklearn.tree import export_text
+    >>> iris = load_iris()
+    >>> X = iris['data']
+    >>> y = iris['target']
+    >>> decision_tree = DecisionTreeClassifier(random_state=0, max_depth=2)
+    >>> decision_tree = decision_tree.fit(X, y)
+    >>> r = export_text(decision_tree, feature_names=iris['feature_names'])
+    >>> print(r)
+    |--- petal width (cm) <= 0.80
+    |   |--- class: 0
+    |--- petal width (cm) >  0.80
+    |   |--- petal width (cm) <= 1.75
+    |   |   |--- class: 1
+    |   |--- petal width (cm) >  1.75
+    |   |   |--- class: 2

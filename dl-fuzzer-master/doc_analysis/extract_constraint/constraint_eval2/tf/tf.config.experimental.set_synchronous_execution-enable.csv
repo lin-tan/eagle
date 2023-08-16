@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Whether operations should be dispatched synchronously. Valid values: None: sets the system default.True: executes each operation synchronously.False: executes each operation asynchronously. ,,prim_dtype,dtype(tf.bool),,1

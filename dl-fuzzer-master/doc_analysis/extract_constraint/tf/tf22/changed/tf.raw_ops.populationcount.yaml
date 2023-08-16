@@ -1,0 +1,25 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor. Must be one of the following types: int8, int16, int32, int64,
+      uint8, uint16, uint32, uint64.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/PopulationCount
+outputs:
+- A Tensor of type uint8.
+package: tensorflow
+target: PopulationCount
+title: tf.raw_ops.PopulationCount
+version: 2.2.0

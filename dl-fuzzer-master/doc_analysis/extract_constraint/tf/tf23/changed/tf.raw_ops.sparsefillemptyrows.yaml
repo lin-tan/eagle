@@ -1,0 +1,53 @@
+constraints:
+  default_value:
+    descp: 'A Tensor. Must have the same type as values. 0-D. default value to insert
+      into location [row, 0, ..., 0] for rows missing from the input sparse tensor.
+      output indices: 2-D. the indices of the filled sparse tensor.'
+    dtype:
+    - dtype:&values
+    tensor_t:
+    - tf.tensor
+  dense_shape:
+    descp: A Tensor of type int64. 1-D. the shape of the sparse tensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: A Tensor of type int64. 2-D. the indices of the sparse tensor.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  values:
+    descp: A Tensor. 1-D. the values of the sparse tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - dense_shape
+  - default_value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseFillEmptyRows
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, empty_row_indicator, reverse_index_map).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as values.
+- empty_row_indicator: A Tensor of type bool.
+- reverse_index_map: A Tensor of type int64.
+package: tensorflow
+target: SparseFillEmptyRows
+title: tf.raw_ops.SparseFillEmptyRows
+version: 2.3.0

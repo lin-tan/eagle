@@ -1,0 +1,90 @@
+append: false
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)-*d\s*or\s*higher:
+    cnt: 0
+    group: 1
+    prefix: '>='
+  (^|\s|,|.)`*(\d)`*[\s-]?(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 31
+    group: 2
+    keep_shapevar: true
+  (^|\s|,|.)`*(\w+)`*-(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 1
+    group: 2
+    keep_shapevar: true
+  (and|of|with)\s+`*(rank|ndim)\s+`*([><=]+\s(\d))`*:
+    cnt: 0
+    group: 3
+    keep_shapevar: true
+    replace:
+      \s: ''
+  (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    replace:
+      \s: ''
+      '`': ''
+  (and|of|with)\s+rank\s+`(.*?)`:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    replace:
+      \s: ''
+  (a|an)\s+`\(?([\w+-]+?)\)?`[\s-]*(d|dimension|dimensional)\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+  (has|with)\s+same\s+((type|size)\s+and\s+)?rank\s+as\s*`([\w]+)`:
+    cnt: 0
+    dependent: true
+    group: 4
+  ^(\ba\b|an)?\s*(\w)[\s-](d|dimensional|dimension)[\s\.,]:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (\d)-*d\s*or\s*higher
+  '`*tensor`*\s+of\s+(\d)\s+dimension':
+    cnt: 0
+    group: 1
+  must\s+be\s+(\d)-*(d|dimension|dimensional):
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+  rank[\s+-]`*(\w)`*[\s\.,]:
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    - (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+- inf
+target: ndim

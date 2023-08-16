@@ -1,0 +1,52 @@
+constraints:
+  element_dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  element_shape:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  input_handle:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_elements:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - num_elements
+  - name
+  required:
+  - input_handle
+  - element_shape
+  - element_dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListStack
+outputs:
+- A Tensor of type element_dtype.
+package: tensorflow
+target: TensorListStack
+title: tf.raw_ops.TensorListStack
+version: 2.3.0

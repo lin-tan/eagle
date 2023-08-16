@@ -1,0 +1,10 @@
+constraints:
+  root:
+    default: /home/jenkins_slave/.mxnet/models
+    descp: Location for keeping the model parameters.
+    doc_dtype:
+    - str
+    - default $MXNET_HOME/models
+    dtype:
+    - string
+title: mxnet.gluon.model_zoo.vision.get_vgg

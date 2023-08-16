@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+float,"tolerance for non-determinism. When running identical inputs through the differentiation, the results must either match exactly (default, 0.0) or be within this tolerance. Note that a small amount of nondeterminism in the gradient will lead to larger inaccuracies in the second derivative.",0.0,prim_dtype,dtype(torch.float32),,1
+float,"tolerance for non-determinism. When running identical inputs through the differentiation, the results must either match exactly (default, 0.0) or be within this tolerance. Note that a small amount of nondeterminism in the gradient will lead to larger inaccuracies in the second derivative.",0.0,shape,ndim(0),,1

@@ -1,0 +1,46 @@
+constraints:
+  axis:
+    default: None
+    descp: The dimensions to reduce; list or scalar. If `None` (the default), reduces
+      all dimensions.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The dimensions to reduce D_STRUCTURE or scalar
+    - If QSTR BSTR, reduces all dimensions
+  keepdims:
+    default: None
+    descp: If true, retain reduced dimensions with length 1.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL, retain reduced dimensions with length CONSTANT_NUM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  output_is_sparse:
+    default: 'False'
+    descp: If true, returns a `SparseTensor` instead of a dense`Tensor` (the default).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, returns a D_STRUCTURE instead of a denseD_STRUCTURE BSTR
+  sp_input:
+    descp: The SparseTensor to reduce. Should have numeric type.
+    normalized_descp:
+    - The D_STRUCTURE to reduce
+    - Should have D_TYPE type
+inputs:
+  optional:
+  - axis
+  - keepdims
+  - output_is_sparse
+  - name
+  required:
+  - sp_input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/sparse/reduce_max
+outputs: The reduced Tensor or the reduced SparseTensor if `output_is_sparse` is True.
+package: tensorflow
+target: reduce_max
+title: tf.sparse.reduce_max
+version: 2.1.0

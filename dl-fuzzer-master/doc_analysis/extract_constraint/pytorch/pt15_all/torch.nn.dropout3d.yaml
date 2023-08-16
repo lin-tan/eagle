@@ -1,0 +1,31 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: If set to `True`, will do this operation in-place
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  p:
+    default: '0.5'
+    descp: probability of an element to be zeroed.
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - p
+  - inplace
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Dropout3d
+package: torch
+target: Dropout3d
+title: torch.nn.Dropout3d
+version: 1.5.0
+layer_constructor: true
+check_nan: true

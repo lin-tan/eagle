@@ -1,0 +1,9 @@
+constraints:
+  min:
+    default: '-6'
+    descp: An optional `float`. Defaults to `-6`.
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: tf.quantization.fake_quant_with_min_max_args

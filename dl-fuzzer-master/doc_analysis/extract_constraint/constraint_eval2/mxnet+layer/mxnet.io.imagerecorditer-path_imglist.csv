@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"string, optional, default=''",Path to the image list (.lst) file. Generally created with tools/im2rec.py. Format (Tab separated): <index of record>       <one or more labels>    <relative path from root folder>.,None,prim_dtype,dtype(string),,1

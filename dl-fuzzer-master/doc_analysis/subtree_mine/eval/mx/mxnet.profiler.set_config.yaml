@@ -1,0 +1,23 @@
+constraints:
+  profile_all:
+    default: None
+    descp: all profile types enabled
+    doc_dtype:
+    - boolean,
+    dtype:
+    - boolean
+  profile_memory:
+    default: None
+    descp: whether to profile memory usage
+    doc_dtype:
+    - boolean,
+    dtype:
+    - boolean
+  profile_symbolic:
+    default: None
+    descp: whether to profile symbolic operators
+    doc_dtype:
+    - boolean,
+    dtype:
+    - boolean
+title: mxnet.profiler.set_config

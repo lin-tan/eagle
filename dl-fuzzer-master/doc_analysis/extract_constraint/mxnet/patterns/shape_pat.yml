@@ -1,0 +1,88 @@
+
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: shape
+
+split_word:  # use when parse shape var
+    - ' '
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '...'
+    - '/'
+    # - 'len:'
+    # - 'ndim:'
+    # - 'max_value:'
+
+pat: 
+    '^\((\w,.*?)\)':
+        # replace: 
+        #     '\s_': '_'
+        #     'times': ','
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    # (w,), (h, w) or (d, h, w).
+    ':\s+\((.*?)\),\s+\(.*?\)\s*or\s*\(.*?\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    ':\s+\(.*?\),\s+\((.*?)\)\s*or\s*\(.*?\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    ':\s+\(.*?\),\s+\(.*?\)\s*or\s*\((.*?)\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    # : (h, w) or (d, h, w).
+    ':\s+\(([\w\s,]+)\)\s*or\s*\(.*?\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    ':\s+\([\w\s,]+\)\s*or\s*\((.*?)\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+
+
+
+    
+    '^shape\s+\((.*?)\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+        
+
+    'of\s+the\s+form\s+\[(.*?)\]':
+        replace:
+            'spatial_dim1,\s*spatial_dim2,\s*\.\.\.': '...'
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    'be\s+of\s+length\s+`(.*?)`':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+        
+
+
+    

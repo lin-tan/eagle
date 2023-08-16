@@ -1,0 +1,7 @@
+constraints:
+  padding:
+    descp: '''SAME'' or ''VALID'''
+    enum:
+    - SAME
+    - VALID
+title: tf.nn.conv1d

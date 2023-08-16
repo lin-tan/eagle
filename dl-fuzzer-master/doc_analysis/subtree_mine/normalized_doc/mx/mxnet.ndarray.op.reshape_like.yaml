@@ -1,0 +1,94 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  lhs:
+    default: None
+    descp: First input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - First input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lhs_begin:
+    default: _Null
+    descp: Defaults to 0. The beginning index along which the lhs dimensions are to
+      be reshaped. Supports negative indices.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Defaults to CONSTANT_NUM
+    - The beginning index along which the PARAM dimensions are to be reshaped
+    - Supports negative indices
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+  lhs_end:
+    default: _Null
+    descp: Defaults to None. The ending index along which the lhs dimensions are to
+      be used for reshaping. Supports negative indices.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Defaults to None
+    - The ending index along which the PARAM dimensions are to be used for reshaping
+    - Supports negative indices
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rhs:
+    default: None
+    descp: Second input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Second input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  rhs_begin:
+    default: _Null
+    descp: Defaults to 0. The beginning index along which the rhs dimensions are to
+      be used for reshaping. Supports negative indices.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Defaults to CONSTANT_NUM
+    - The beginning index along which the PARAM dimensions are to be used for reshaping
+    - Supports negative indices
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+  rhs_end:
+    default: _Null
+    descp: Defaults to None. The ending index along which the rhs dimensions are to
+      be used for reshaping. Supports negative indices.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Defaults to None
+    - The ending index along which the PARAM dimensions are to be used for reshaping
+    - Supports negative indices
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - lhs_begin
+  - lhs_end
+  - rhs_begin
+  - rhs_end
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.reshape_like
+package: mxnet
+target: reshape_like
+title: mxnet.ndarray.op.reshape_like
+version: 1.6.0

@@ -1,0 +1,118 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  anchor:
+    default: None
+    descp: Multibox prior anchor boxes
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Multibox prior anchor boxes
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  background_id:
+    default: _Null
+    descp: Background id.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Background id
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  clip:
+    default: _Null
+    descp: Clip out-of-boundary boxes.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip PARAM of boundary boxes
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  cls_prob:
+    default: None
+    descp: Class probabilities.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Class probabilities
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  force_suppress:
+    default: _Null
+    descp: Suppress all detections regardless of class_id.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Suppress all detections regardless of class_id
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  loc_pred:
+    default: None
+    descp: Location regression predictions.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Location regression predictions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  nms_threshold:
+    default: _Null
+    descp: Non-maximum suppression threshold.
+    doc_dtype: float, optional, default=0.5
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Non maximum suppression PARAM
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  nms_topk:
+    default: _Null
+    descp: Keep maximum top k detections before nms, -1 for no limit.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Keep maximum top k detections before nms CONSTANT_NUM for no limit
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  threshold:
+    default: _Null
+    descp: Threshold to be a positive prediction.
+    doc_dtype: float, optional, default=0.00999999978
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Threshold to be a positive prediction
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  variances:
+    default: _Null
+    descp: Variances to be decoded from box regression output.
+    doc_dtype: tuple of <float>, optional, default=[0.1,0.1,0.2,0.2]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Variances to be decoded from box regression output
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+inputs:
+  optional:
+  - cls_prob
+  - loc_pred
+  - anchor
+  - clip
+  - threshold
+  - background_id
+  - nms_threshold
+  - force_suppress
+  - variances
+  - nms_topk
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.MultiBoxDetection
+package: mxnet
+target: MultiBoxDetection
+title: mxnet.contrib.ndarray.MultiBoxDetection
+version: 1.6.0

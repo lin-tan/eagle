@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.keras.models.load_model
+constraints:
+  compile:
+    default: 'True'
+    descp: Boolean, whether to compile the model after loading.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  custom_objects:
+    default: None
+    descp: Optional dictionary mapping names (strings) to custom classes or functions
+      to be considered during deserialization.
+    structure:
+    - dict
+  filepath:
+    descp: 'One of the following: String or pathlib.Path object, path to the saved
+      model h5py.File object from which to load the model'
+exceptions:
+- ImportError: if loading from an hdf5 file and h5py is not available.
+- IOError: In case of an invalid savefile.
+inputs:
+  optional:
+  - custom_objects
+  - compile
+  required:
+  - filepath
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/models/load_model
+outputs:
+- A Keras model instance. If the original model was compiled, and saved with the optimizer,
+  then the returned model will be compiled. Otherwise, the model will be left uncompiled.
+  In the case that an uncompiled model is returned, a warning is displayed if the
+  compile argument is set to True.
+package: tensorflow
+target: load_model
+title: tf.keras.models.load_model
+version: 2.2.0

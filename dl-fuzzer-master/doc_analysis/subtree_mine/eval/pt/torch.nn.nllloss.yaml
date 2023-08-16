@@ -1,0 +1,14 @@
+constraints:
+  reduce:
+    default: None
+    descp: 'Deprecated (see `reduction`). By default, the losses are averaged or summed
+      over observations for each minibatch depending on `size_average`. When `reduce`
+      is `False`, returns a loss per batch element instead and ignores `size_average`.
+      Default: `True`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.nn.NLLLoss

@@ -1,0 +1,39 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor of
+      indices into the first dimension of ref.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. Should be from a Variable node.
+    tensor_t:
+    - tf.tensor
+  updates:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. A tensor of updated values to add to ref.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceScatterMul
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceScatterMul
+title: tf.raw_ops.ResourceScatterMul
+version: 2.2.0

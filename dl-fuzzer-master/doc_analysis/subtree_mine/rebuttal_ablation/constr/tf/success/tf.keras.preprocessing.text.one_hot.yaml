@@ -1,0 +1,74 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.text.one_hot
+constraints:
+  filters:
+    default: '!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n'
+    descp: 'list (or concatenation) of characters to filter out, such as     punctuation.
+      Default: ``!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\t\n``,     includes basic punctuation,
+      tabs, and newlines.'
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - concatenation)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  lower:
+    default: 'True'
+    descp: boolean. Whether to set the text to lowercase.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  n:
+    descp: int. Size of vocabulary.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  split:
+    default: ' '
+    descp: str. Separator for word splitting.`
+    dtype:
+    - tf.dtype
+    - tf.string
+  text:
+    descp: Input text (string).
+inputs:
+  optional:
+  - filters
+  - lower
+  - split
+  required:
+  - text
+  - n
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/text/one_hot
+outputs: '`List of integers in [1, n]. Each integer encodes a word (unicity non-guaranteed).`'
+package: tensorflow
+target: one_hot
+title: tf.keras.preprocessing.text.one_hot
+version: 2.1.0

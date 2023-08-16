@@ -1,0 +1,16 @@
+[torch.distributed.Store.set] Inconsistency detected, arg key doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.set
+[torch.distributed.Store.get] Inconsistency detected, arg key doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.get
+[torch.distributed.Store.add] Inconsistency detected, arg key doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.add
+[torch.distributed.Store.delete_key] Inconsistency detected, arg key doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.delete_key
+[torch.distributed.Store.set_timeout] Inconsistency detected, arg timeout doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.set_timeout
+[torch.distributed.all_reduce_multigpu] Inconsistency detected, arg list doesn't exist https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.all_reduce_multigpu
+[torch.add] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.add.html#torch.add#torch.add
+[torch.atleast_1d] Inconsistency detected, arg input doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.atleast_1d.html#torch.atleast_1d#torch.atleast_1d
+[torch.empty] Inconsistency detected, arg memory_format doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.empty.html#torch.empty#torch.empty
+[torch.lu_solve] Inconsistency detected, arg b doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.lu_solve.html#torch.lu_solve#torch.lu_solve
+[torch.mul] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.mul.html#torch.mul#torch.mul
+[torch.take] Inconsistency detected, arg indices doesn't exist https://pytorch.org/docs/1.7.0/generated/torch.take.html#torch.take#torch.take
+[torch.utils.mobile_optimizer.optimize_for_mobile] Inconsistency detected, arg perserved_methods doesn't exist https://pytorch.org/docs/1.7.0/mobile_optimizer.html#torch.utils.mobile_optimizer.optimize_for_mobile
+[torch.nn.functional.hardsigmoid] Inconsistency detected, arg inplace doesn't exist https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.hardsigmoid
+[torch.nn.functional.embedding_bag] Inconsistency detected, arg last element is the size of the input, or the ending index position of the last bag doesn't exist https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.embedding_bag
+[torch.onnx.export] Inconsistency detected, arg external_data_format doesn't exist https://pytorch.org/docs/1.7.0/onnx.html#torch.onnx.export

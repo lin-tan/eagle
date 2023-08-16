@@ -1,0 +1,24 @@
+constraints:
+  indices:
+    descp: A Tensor of type int32.
+  input_handle:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - tensor
+  - indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListScatterIntoExistingList
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListScatterIntoExistingList
+title: tf.raw_ops.TensorListScatterIntoExistingList
+version: 2.2.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tensor,"the input tensor of size (*, m, n)  where k <= n <= m. When specified, it is used as initial approximation of eigenvectors. X must be a dense tensor.",None,nonprim_dtype,tensor_t(torch.tensor),,1
+tensor,"the input tensor of size (*, m, n)  where k <= n <= m. When specified, it is used as initial approximation of eigenvectors. X must be a dense tensor.",None,shape,"shape([...,m,&n]), ndim(>=2)",,1

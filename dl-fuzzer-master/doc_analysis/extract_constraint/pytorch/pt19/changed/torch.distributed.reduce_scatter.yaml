@@ -1,0 +1,43 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  group:
+    default: <objectobject>
+    descp: The process group to work on.
+    doc_dtype:
+    - ProcessGroup
+  input_list:
+    descp: List of tensors to reduce and scatter.
+    doc_dtype:
+    - list[Tensor]
+    structure:
+    - list(torch.tensor)
+  op:
+    default: ReduceOp.SUM
+    descp: ''
+  output:
+    descp: Output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - op
+  - group
+  - async_op
+  required:
+  - output
+  - input_list
+link: https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.reduce_scatter
+package: torch
+target: reduce_scatter
+title: torch.distributed.reduce_scatter
+version: 1.9.0

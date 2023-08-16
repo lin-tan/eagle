@@ -1,0 +1,33 @@
+constraints:
+  index:
+    descp: A Tensor of type int32. A scalar that determines the input that gets selected.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  inputs:
+    descp: A list of at least 1 mutable Tensor objects with the same type. A list
+      of ref tensors, one of which will be forwarded to output.
+    structure:
+    - list
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - index
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RefSelect
+outputs:
+- A mutable Tensor. Has the same type as inputs.
+package: tensorflow
+target: RefSelect
+title: tf.raw_ops.RefSelect
+version: 2.2.0

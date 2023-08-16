@@ -1,0 +1,30 @@
+constraints:
+  batch_axis:
+    default: None
+    descp: An optional int. Defaults to 0. The dimension along which reversal is performed.
+  input:
+    descp: A Tensor. The input to reverse.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seq_axis:
+    default: None
+    descp: An int. The dimension which is partially reversed.
+  seq_lengths:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 1-D with length
+      input.dims(batch_axis) and max(seq_lengths) <= input.dims(seq_axis)'
+inputs:
+  optional:
+  - seq_axis
+  - batch_axis
+  - name
+  required:
+  - input
+  - seq_lengths
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/reverse_sequence
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: reverse_sequence
+title: tf.reverse_sequence
+version: 2.3.0

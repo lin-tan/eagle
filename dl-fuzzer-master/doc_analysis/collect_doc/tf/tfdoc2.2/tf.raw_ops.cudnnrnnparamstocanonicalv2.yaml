@@ -1,0 +1,66 @@
+constraints:
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+  input_size:
+    descp: A Tensor of type int32.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_layers:
+    descp: A Tensor of type int32.
+  num_params_biases:
+    descp: An int that is >= 1.
+  num_params_weights:
+    descp: An int that is >= 1.
+  num_proj:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  num_units:
+    descp: A Tensor of type int32.
+  params:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - num_proj
+  - name
+  required:
+  - num_layers
+  - num_units
+  - input_size
+  - params
+  - num_params_weights
+  - num_params_biases
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CudnnRNNParamsToCanonicalV2
+outputs:
+- A tuple of Tensor objects (weights, biases).
+- weights: A list of num_params_weights Tensor objects with the same type as params.
+- biases: A list of num_params_biases Tensor objects with the same type as params.
+package: tensorflow
+target: CudnnRNNParamsToCanonicalV2
+title: tf.raw_ops.CudnnRNNParamsToCanonicalV2
+version: 2.2.0

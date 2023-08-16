@@ -1,0 +1,22 @@
+constraints:
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+  name:
+    default: None
+    descp: A name for this operation (optional). Defaults to "assert_integer".
+  x:
+    descp: A Tensor.
+exceptions:
+- TypeError: If x.dtype is not a non-quantized integer type.
+inputs:
+  optional:
+  - message
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/debugging/assert_integer
+package: tensorflow
+target: assert_integer
+title: tf.debugging.assert_integer
+version: 2.2.0

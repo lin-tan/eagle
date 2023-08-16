@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  ref:
+    descp: A mutable Tensor. Should be from a Variable node. May be uninitialized.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - ref
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/IsVariableInitialized
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: IsVariableInitialized
+title: tf.raw_ops.IsVariableInitialized
+version: 2.3.0

@@ -1,0 +1,10 @@
+constraints:
+  max_norm:
+    default: None
+    descp: If given, each embedding vector with norm larger than `max_norm` is renormalized
+      to have norm `max_norm`.
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+title: torch.nn.Embedding

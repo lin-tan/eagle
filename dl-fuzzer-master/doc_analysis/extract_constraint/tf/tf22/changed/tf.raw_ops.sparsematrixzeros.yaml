@@ -1,0 +1,35 @@
+constraints:
+  dense_shape:
+    descp: A Tensor of type int64. The desired matrix shape.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - dense_shape
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixZeros
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixZeros
+title: tf.raw_ops.SparseMatrixZeros
+version: 2.2.0

@@ -1,0 +1,17 @@
+constraints:
+  train_mode:
+    default: 'True'
+    descp: Whether the forward pass is in training or predicting mode. This controls
+      the behavior of some layers such as Dropout, BatchNorm.
+    doc_dtype:
+    - bool
+    - default True
+inputs:
+  optional:
+  - train_mode
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/autograd/index.html#mxnet.autograd.record
+package: mxnet
+target: record
+title: mxnet.autograd.record
+version: 1.6.0

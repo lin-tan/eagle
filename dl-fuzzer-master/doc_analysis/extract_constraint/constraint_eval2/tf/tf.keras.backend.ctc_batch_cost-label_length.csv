@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"tensor `(samples, 1)` containing the sequence length for each batch item in `y_true`.",,prim_dtype,dtype(numeric),,1
+,"tensor `(samples, 1)` containing the sequence length for each batch item in `y_true`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"tensor `(samples, 1)` containing the sequence length for each batch item in `y_true`.",,validvalue,"range([0,inf))",,1

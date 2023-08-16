@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array, shape (n_samples,) Probabilities of the positive class.",,prim_dtype,dtype(float),,1
+,"array, shape (n_samples,) Probabilities of the positive class.",,shape,"shape([n_samples]), ndim(1)",,1
+,"array, shape (n_samples,) Probabilities of the positive class.",,validvalue,"range([0,1])",,1

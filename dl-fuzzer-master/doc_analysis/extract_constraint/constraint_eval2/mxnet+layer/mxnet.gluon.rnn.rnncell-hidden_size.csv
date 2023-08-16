@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,Number of units in output symbol,,prim_dtype,dtype(int),,1
+int,Number of units in output symbol,,shape,ndim(0),,1
+int,Number of units in output symbol,,validvalue,"range([0,inf))",,1

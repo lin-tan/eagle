@@ -1,0 +1,62 @@
+constraints:
+  '**kwds':
+    descp: optional keyword parameters Any further parameters are passed directly
+      to the distance function. If using a scipy.spatial.distance metric, the parameters
+      are still metric dependent. See the scipy docs for usage examples.
+    structure:
+    - list
+  X:
+    descp: array [n_samples_a, n_samples_a] if metric == "precomputed", or,              [n_samples_a,
+      n_features] otherwise Array of pairwise distances between samples, or a feature
+      array.
+  Y:
+    default: None
+    descp: array [n_samples_b, n_features], optional An optional second feature array.
+      Only allowed if metric != "precomputed".
+  force_all_finite:
+    default: 'True'
+    descp: 'boolean or ''allow-nan'', (default=True) Whether to raise an error on
+      np.inf and np.nan in array. The possibilities are: - True: Force all values
+      of array to be finite. - False: accept both np.inf and np.nan in array. - ''allow-nan'':
+      accept only np.nan values in array. Values cannot be infinite.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  metric:
+    default: euclidean
+    descp: string, or callable The metric to use when calculating distance between
+      instances in a feature array. If metric is a string, it must be one of the options
+      allowed by scipy.spatial.distance.pdist for its metric parameter, or a metric
+      listed in pairwise.PAIRWISE_DISTANCE_FUNCTIONS. If metric is "precomputed",
+      X is assumed to be a distance matrix. Alternatively, if metric is a callable
+      function, it is called on each pair of instances (rows) and the resulting value
+      recorded. The callable should take two arrays from X as input and return a value
+      indicating the distance between them.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of jobs to use for the
+      computation. This works by breaking down the pairwise matrix into n_jobs even
+      slices and computing them in parallel. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+inputs:
+  optional:
+  - Y
+  - metric
+  - n_jobs
+  - force_all_finite
+  required:
+  - X
+  - '**kwds'
+link: ''
+package: scikit-learn
+target: pairwise_distances
+title: sklearn.metrics.pairwise_distances
+version: 0.24.X

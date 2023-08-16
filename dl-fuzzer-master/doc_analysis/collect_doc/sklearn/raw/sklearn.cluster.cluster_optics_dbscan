@@ -1,0 +1,27 @@
+sklearn.cluster.cluster_optics_dbscan = cluster_optics_dbscan(reachability, core_distances, ordering, eps)
+    Performs DBSCAN extraction for an arbitrary epsilon.
+    
+    Extracting the clusters runs in linear time. Note that this results in
+    ``labels_`` which are close to a :class:`~sklearn.cluster.DBSCAN` with
+    similar settings and ``eps``, only if ``eps`` is close to ``max_eps``.
+    
+    Parameters
+    ----------
+    reachability : array, shape (n_samples,)
+        Reachability distances calculated by OPTICS (``reachability_``)
+    
+    core_distances : array, shape (n_samples,)
+        Distances at which points become core (``core_distances_``)
+    
+    ordering : array, shape (n_samples,)
+        OPTICS ordered point indices (``ordering_``)
+    
+    eps : float
+        DBSCAN ``eps`` parameter. Must be set to < ``max_eps``. Results
+        will be close to DBSCAN algorithm if ``eps`` and ``max_eps`` are close
+        to one another.
+    
+    Returns
+    -------
+    labels_ : array, shape (n_samples,)
+        The estimated labels.

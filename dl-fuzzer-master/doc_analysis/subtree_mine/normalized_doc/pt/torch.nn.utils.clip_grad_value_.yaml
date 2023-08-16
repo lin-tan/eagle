@@ -1,0 +1,26 @@
+constraints:
+  clip_value:
+    descp: 'maximum allowed value of the gradients. The gradients are clipped in the
+      range   [-clip _value, clip _value  ] '
+    doc_dtype: float or int
+    normalized_descp:
+    - maximum allowed value of the gradients
+    - The gradients are clipped in the range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  parameters:
+    descp: an iterable of Tensors or a single Tensor that will have gradients normalized
+    doc_dtype: Iterable[Tensor] or Tensor
+    normalized_descp:
+    - an D_STRUCTURE of D_STRUCTURE or a single D_STRUCTURE that will have gradients
+      normalized
+    normalized_docdtype: D_STRUCTURE BSTR or D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - parameters
+  - clip_value
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.clip_grad_value_
+package: torch
+target: clip_grad_value_
+title: torch.nn.utils.clip_grad_value_
+version: 1.5.0

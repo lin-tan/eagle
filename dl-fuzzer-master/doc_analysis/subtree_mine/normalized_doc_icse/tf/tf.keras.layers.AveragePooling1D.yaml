@@ -1,0 +1,56 @@
+aliases:
+- tf.keras.layers.AvgPool1D
+- tf.compat.v1.keras.layers.AveragePooling1D
+- tf.compat.v1.keras.layers.AvgPool1D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  data_format:
+    default: channels_last
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      steps, features)` while `channels_first`corresponds to inputs with shape`(batch,
+      features, steps)`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_TYPE one of QSTR BSTR or QSTR
+    - The ordering of the dimensions in the inputs QSTR corresponds to inputs with
+      shape BSTR while QSTR corresponds to inputs with shape BSTR
+  padding:
+    default: valid
+    descp: One of `"valid"` or `"same"` (case-insensitive).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - One of QSTR BSTR
+  pool_size:
+    default: '2'
+    descp: Integer, size of the average pooling windows.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE size of the average pooling windows
+  strides:
+    default: None
+    descp: Integer, or None. Factor by which to downscale. E.g. 2 will halve the input.
+      If None, it will default to `pool_size`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE or None
+    - Factor by which to downscale
+    - E g
+    - CONSTANT_NUM will halve the input
+    - If None it will default to PARAM
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/AveragePooling1D
+package: tensorflow
+target: AveragePooling1D
+title: tf.keras.layers.AveragePooling1D
+version: 2.1.0

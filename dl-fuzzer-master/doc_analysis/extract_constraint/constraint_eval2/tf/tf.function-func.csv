@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"the function to be compiled. If `func` is None, `tf.function` returns a decorator that can be invoked with a single argument - `func`. In other words, `tf.function(input_signature=...)(func)` is equivalent to`tf.function(func, input_signature=...)`. The former can be used as decorator.",None,prim_dtype,dtype(callable),,1

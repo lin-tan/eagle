@@ -1,0 +1,32 @@
+aliases:
+- tf.losses.huber
+constraints:
+  delta:
+    default: '1.0'
+    descp: A float, the point where the Huber loss function changes from a quadratic
+      to linear.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  y_pred:
+    descp: tensor of predicted targets.
+    tensor_t:
+    - tf.tensor
+  y_true:
+    descp: tensor of true targets.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - delta
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/losses/huber
+outputs:
+- Tensor with one scalar loss entry per sample.
+package: tensorflow
+target: huber
+title: tf.keras.losses.huber
+version: 2.3.0

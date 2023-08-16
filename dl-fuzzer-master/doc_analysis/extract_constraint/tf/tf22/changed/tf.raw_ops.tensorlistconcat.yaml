@@ -1,0 +1,47 @@
+constraints:
+  element_dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  element_shape:
+    default: None
+    descp: An optional tf.TensorShape or list of ints. Defaults to None.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  input_handle:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - element_shape
+  - name
+  required:
+  - input_handle
+  - element_dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListConcat
+outputs:
+- A tuple of Tensor objects (tensor, lengths).
+- tensor: A Tensor of type element_dtype.
+- lengths: A Tensor of type int64.
+package: tensorflow
+target: TensorListConcat
+title: tf.raw_ops.TensorListConcat
+version: 2.2.0

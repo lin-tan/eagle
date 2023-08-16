@@ -1,0 +1,52 @@
+append: True
+break: False
+check_dt: False
+direct_map: False
+findall: True
+parse_sent: False
+#save_as_list: True # save as key-value (save only one value)
+target: range
+
+split_word:
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '/'
+    - '>'
+    - '<'
+    - '='
+pat:
+    '^(\[([\w,\s]+)\]),\s*probability':
+        full_range_group: 1
+        range_group: 2
+        brackets: True
+
+    '((?!whether).*)probability\s+(of|to|for)':
+        range: '[0,1]'
+        dtype: float
+
+    'percent':
+        range: '[0,1]'
+        dtype: float
+
+    'value\s+range\s+([\[\(](.*?)[\]\)])':
+        full_range_group: 1
+        range_group: 2
+        brackets: True
+
+    'how\s+many':
+        range: '[0,inf)'
+        dtype: int
+    
+    
+
+    'non-negative':
+        range: '[0,inf)'
+
+
+        

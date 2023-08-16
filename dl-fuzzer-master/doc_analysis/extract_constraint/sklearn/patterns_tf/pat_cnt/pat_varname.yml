@@ -1,0 +1,140 @@
+pat:
+  ^(\w+_)*(width|height)$:
+    append: false
+    cnt: 0
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)*axes$:
+    append: false
+    cnt: 0
+    dtype: int
+    ndim: 1
+    ow: false
+  ^(\w+_)*axis$:
+    append: false
+    cnt: 0
+    dtype: int
+    ndim: 0
+    ow: false
+  ^(\w+_)*id$:
+    append: false
+    cnt: 1
+    dtype: int
+    ow: false
+  ^(\w+_)*ids$:
+    append: false
+    cnt: 0
+    dtype: int
+    ow: false
+  ^(\w+_)*lengths*$:
+    append: false
+    cnt: 3
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)*weights*$:
+    append: false
+    cnt: 42
+    dtype: numeric
+    ow: false
+  ^(\w+_)?(dim|dimension)s*$:
+    append: false
+    cnt: 0
+    dtype: int
+    ow: false
+  ^(\w+_)?(fn|func|function)[\d_]*$:
+    append: false
+    cnt: 0
+    dtype: callable
+    ow: true
+  ^(\w+_)?(index|indices)$:
+    append: false
+    cnt: 2
+    dtype: int
+    ow: false
+  ^(\w+_)?dtypes*$:
+    append: true
+    cnt: 8
+    dtype: dtype
+    ow: true
+  ^(\w+_)?list$:
+    append: false
+    cnt: 0
+    ndim: 1
+    ow: false
+    structure: list
+  ^(\w+_)?name[_]*$:
+    append: true
+    cnt: 6
+    dtype: tf.string
+    ndim: 0
+    ow: true
+  ^(\w+_)?name[s]*$:
+    append: true
+    cnt: 7
+    dtype: tf.string
+    ndim: 1
+    ow: true
+  ^(\w+_)?path$:
+    append: false
+    cnt: 0
+    dtype: tf.string
+    ow: true
+  ^(\w+_)?sizes*$:
+    append: false
+    cnt: 15
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)?tensors*$:
+    append: true
+    cnt: 0
+    ow: true
+    tensor_t: tensor
+  ^(\w+_)?types*$:
+    append: false
+    cnt: 1
+    dtype: dtype
+    ow: false
+  ^\w+_shape$:
+    append: false
+    cnt: 0
+    dtype: tensorshape
+    ndim: 1
+    ow: false
+  ^image$:
+    append: false
+    cnt: 1
+    dtype: image
+    ow: false
+  ^images$:
+    append: false
+    cnt: 0
+    dtype: image
+    ow: false
+    structure: list(image)
+  ^num(_\w+)?$:
+    append: false
+    cnt: 0
+    dtype: int
+    ndim: 0
+    ow: false
+    range: '[0,inf)'
+  ^shape$:
+    append: true
+    cnt: 2
+    dtype: tensorshape
+    ndim: 1
+    ow: true
+  ^strids*$:
+    append: false
+    cnt: 0
+    dtype: int
+    ow: false
+  ^text$:
+    append: true
+    cnt: 0
+    dtype: string
+    ow: true
+target: dtype

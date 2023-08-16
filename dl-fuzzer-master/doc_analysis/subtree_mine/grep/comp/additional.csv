@@ -1,0 +1,532 @@
+File,Arg,Type,Constr,Descp
+mxnet.ndarray.Embedding,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Data type of weight.
+mxnet.ndarray.Embedding,output_dim,nonprim_dtype,['list'],Dimension of the embedding vectors.
+mxnet.ndarray.sparse.Embedding,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Data type of weight.
+mxnet.ndarray.sparse.Embedding,output_dim,nonprim_dtype,['list'],Dimension of the embedding vectors.
+mxnet.contrib.ndarray.dgl_graph_compact,graph_sizes,nonprim_dtype,['tuple'],the number of vertices in each graph.
+mxnet.ndarray.op.scatter_nd,shape,nonprim_dtype,['tuple'],Shape of output.
+mxnet.gluon.model_zoo.vision.vgg19_bn,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.flip,axis,nonprim_dtype,['tuple'],The axis which to reverse elements.
+mxnet.ndarray.op.broadcast_axes,axis,nonprim_dtype,['tuple'],The axes to perform the broadcasting.
+mxnet.ndarray.op.broadcast_axes,size,nonprim_dtype,['tuple'],Target sizes of the broadcasting axes.
+mxnet.ndarray.op.softmin,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.gluon.model_zoo.vision.vgg16,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.arange,infer_range,nonprim_dtype,['tensor'],"Infer the stop position from the start, step, repeat, and output tensor size. Deprecated. Only False is supported."
+mxnet.test_utils.assert_almost_equal_ignore_nan,a,nonprim_dtype,['ndarray'],
+mxnet.test_utils.assert_almost_equal_ignore_nan,b,nonprim_dtype,['ndarray'],
+mxnet.ndarray.multi_mp_sgd_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.multi_mp_sgd_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.multi_mp_sgd_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.multi_mp_sgd_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.contrib.CTCLoss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.gluon.model_zoo.vision.densenet169,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.SequenceReverse,axis,nonprim_dtype,['list'],The sequence axis. Only 0 is currently supported.
+mxnet.ndarray.SequenceReverse,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.gluon.model_zoo.vision.get_mobilenet,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.nn.MaxPool2D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.ndarray.RNN,state_size,prim_dtype,['int'],size of the state for each layer
+mxnet.ndarray.RNN,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.ndarray.contrib.count_sketch,processing_batch_size,nonprim_dtype,['list'],How many sketch vectors to process at one time.
+mxnet.ndarray.GridGenerator,target_shape,nonprim_dtype,['tuple'],"Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored."
+mxnet.ndarray.op.reshape,shape,nonprim_dtype,['tuple'],The target shape
+mxnet.ndarray.op.reshape,target_shape,nonprim_dtype,['tuple'],"(Deprecated! Use `shape` instead.) Target new shape. One and only one dim can be 0, in which case it will be inferred from the rest of dims"
+mxnet.gluon.model_zoo.vision.resnet18_v1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.random_gamma,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_gamma,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.sample_multinomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.uint8']",DType of the output in case this can't be inferred.
+mxnet.ndarray.sample_multinomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.sample_gamma,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_gamma,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.gluon.rnn.LSTM,bidirectional,prim_dtype,['boolean'],"If True, becomes a bidirectional RNN."
+mxnet.gluon.rnn.LSTM,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.LSTM,i2h_bias_initializer,nonprim_dtype,['list'],"Initializer for the bias vector. By default, bias for the forget gate is initialized to 1 while all other biases are initialized to zero."
+mxnet.gluon.rnn.LSTM,state_clip_nan,prim_dtype,['boolean'],"Whether to stop NaN from propagating in state by clipping it to min/max. If the clipping range is not specified, this option is ignored."
+mxnet.ndarray.amp_cast,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.gluon.rnn.LSTMCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.LSTMCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.ndarray.softmin,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.ndarray.op.multi_all_finite,num_arrays,nonprim_dtype,['ndarray'],Number of arrays.
+mxnet.ndarray.broadcast_axes,axis,nonprim_dtype,['tuple'],The axes to perform the broadcasting.
+mxnet.ndarray.broadcast_axes,size,nonprim_dtype,['tuple'],Target sizes of the broadcasting axes.
+mxnet.ndarray.random_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_negative_binomial,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.contrib.ndarray.count_sketch,processing_batch_size,nonprim_dtype,['list'],How many sketch vectors to process at one time.
+mxnet.gluon.rnn.GRU,bidirectional,prim_dtype,['boolean'],"If True, becomes a bidirectional RNN."
+mxnet.gluon.rnn.GRU,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.GRU,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.ndarray.op.ROIPooling,pooled_size,nonprim_dtype,['tuple'],"ROI pooling output shape (h,w)"
+mxnet.ndarray.softmax,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.ndarray.op.softmax,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.ndarray.op.pad,mode,nonprim_dtype,['ndarray'],"Padding type to use. ""constant"" pads with constant_value ""edge"" pads using the edge values of the input array ""reflect"" pads by reflecting values with respect to the edges."
+mxnet.ndarray.Convolution,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.Convolution,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (w,), (h, w) or (d, h, w)"
+mxnet.ndarray.Convolution,num_filter,prim_dtype,['int'],Convolution filter(channel) number
+mxnet.ndarray.Convolution,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (w,), (h, w) or (d, h, w). Defaults to no padding."
+mxnet.ndarray.Convolution,stride,nonprim_dtype,['tuple'],"Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.gluon.nn.Conv3D,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv3D,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.contrib.quantization.quantize_net,calib_data,nonprim_dtype,['list'],A iterable data loading object.
+mxnet.contrib.quantization.quantize_net,network,prim_dtype,['numpy.float32'],Defines the structure of a neural network for FP32 data types.
+mxnet.ndarray.op.multi_mp_sgd_mom_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.op.multi_mp_sgd_mom_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.op.multi_mp_sgd_mom_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.multi_mp_sgd_mom_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.Convolution,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.op.Convolution,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (w,), (h, w) or (d, h, w)"
+mxnet.ndarray.op.Convolution,num_filter,prim_dtype,['int'],Convolution filter(channel) number
+mxnet.ndarray.op.Convolution,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (w,), (h, w) or (d, h, w). Defaults to no padding."
+mxnet.ndarray.op.Convolution,stride,nonprim_dtype,['tuple'],"Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.op.SequenceMask,axis,nonprim_dtype,['list'],The sequence axis. Only values of 0 and 1 are currently supported.
+mxnet.ndarray.op.SequenceMask,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.gluon.model_zoo.vision.alexnet,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.model_zoo.vision.densenet121,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.random_exponential,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_exponential,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.nn.Lambda,function,nonprim_dtype,['ndarray'],"Function used in lambda must be one of the following: 1) the name of an operator that is available in ndarray. For example: block = Lambda('tanh')   <ol class=""arabic"" start=""2""> a function that conforms to `def function(*args)`. For example: block = Lambda(lambda x: nd.LeakyReLU(x, slope=0.1))   "
+mxnet.gluon.contrib.rnn.LSTMPCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.contrib.rnn.LSTMPCell,i2h_bias_initializer,nonprim_dtype,['list'],"Initializer for the bias vector. By default, bias for the forget gate is initialized to 1 while all other biases are initialized to zero."
+mxnet.gluon.model_zoo.vision.vgg11_bn,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.sample_exponential,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_exponential,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.contrib.ndarray.RROIAlign,pooled_size,nonprim_dtype,['tuple'],"RROI align output shape (h,w)"
+mxnet.ndarray.op.slice,begin,nonprim_dtype,['tuple'],"starting indices for the slice operation, supports negative indices."
+mxnet.ndarray.op.slice,end,nonprim_dtype,['tuple'],"ending indices for the slice operation, supports negative indices."
+mxnet.ndarray.op.slice,step,nonprim_dtype,['tuple'],"step for the slice operation, supports negative values."
+mxnet.ndarray.contrib.RROIAlign,pooled_size,nonprim_dtype,['tuple'],"RROI align output shape (h,w)"
+mxnet.ndarray.sample_poisson,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_poisson,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.transpose,axes,nonprim_dtype,['tuple'],Target axis order. By default the axes will be inverted.
+mxnet.contrib.ndarray.quantize_v2,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type. auto can be specified to automatically determine output type according to min_calib_range.
+mxnet.contrib.ndarray.quantized_conv,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.contrib.ndarray.quantized_conv,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (w,), (h, w) or (d, h, w)"
+mxnet.contrib.ndarray.quantized_conv,num_filter,prim_dtype,['int'],Convolution filter(channel) number
+mxnet.contrib.ndarray.quantized_conv,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (w,), (h, w) or (d, h, w). Defaults to no padding."
+mxnet.contrib.ndarray.quantized_conv,stride,nonprim_dtype,['tuple'],"Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.dgl_graph_compact,graph_sizes,nonprim_dtype,['tuple'],the number of vertices in each graph.
+mxnet.ndarray.op.sample_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_negative_binomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.op.topk,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.uint8']","DType of the output indices when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices."
+mxnet.ndarray.random.randn,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by loc.context when loc is an NDArray.
+mxnet.ndarray.random.randn,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.ndarray.sample_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_negative_binomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.contrib.quantize,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.metric.np,numpy_feval,prim_dtype,['float'],Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.
+mxnet.metric.np,numpy_feval,nonprim_dtype,['ndarray'],Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.
+mxnet.ndarray.reshape,shape,nonprim_dtype,['tuple'],The target shape
+mxnet.ndarray.reshape,target_shape,nonprim_dtype,['tuple'],"(Deprecated! Use `shape` instead.) Target new shape. One and only one dim can be 0, in which case it will be inferred from the rest of dims"
+mxnet.gluon.model_zoo.vision.resnet34_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.image.adjust_lighting,alpha,prim_dtype,['float'],"The lighting alphas for the R, G, B channels."
+mxnet.ndarray.image.adjust_lighting,alpha,nonprim_dtype,['tuple'],"The lighting alphas for the R, G, B channels."
+mxnet.ndarray.random.randint,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by low.context when low is an NDArray.
+mxnet.ndarray.random.randint,dtype,prim_dtype,"['numpy.int32', 'numpy.int64']",Data type of output samples. Default is 'int32'
+mxnet.gluon.nn.GroupNorm,center,prim_dtype,['boolean'],"If True, add offset of beta to normalized tensor. If False, beta is ignored."
+mxnet.gluon.nn.GroupNorm,scale,prim_dtype,['boolean'],"If True, multiply by gamma. If False, gamma is not used."
+mxnet.gluon.model_zoo.vision.resnet34_v1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.io.CSVIter,batch_size,prim_dtype,['int'],Batch size.
+mxnet.io.CSVIter,data_shape,nonprim_dtype,['tuple'],The shape of one example.
+mxnet.io.CSVIter,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type. `None` means no change.
+mxnet.io.CSVIter,label_shape,nonprim_dtype,['tuple'],The shape of one label.
+mxnet.ndarray.random_uniform,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_uniform,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.random.generalized_negative_binomial,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by mu.context when mu is an NDArray.
+mxnet.ndarray.random.generalized_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.gluon.nn.Conv2D,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv2D,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.ndarray.image.resize,size,nonprim_dtype,['tuple'],"Size of new image. Could be (width, height) or (size)"
+mxnet.recordio.pack,header,nonprim_dtype,['ndarray'],Header of the image record. `header.label` can be a number or an array. See more detail in `IRHeader`.
+mxnet.ndarray.op.Deconvolution,adj,nonprim_dtype,['tuple'],"Adjustment for output shape: (w,), (h, w) or (d, h, w). If target_shape is set, adj will be ignored and computed accordingly."
+mxnet.ndarray.op.Deconvolution,dilate,nonprim_dtype,['tuple'],"Dilation factor for each dimension of the input: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.op.Deconvolution,kernel,nonprim_dtype,['tuple'],"Deconvolution kernel size: (w,), (h, w) or (d, h, w). This is same as the kernel size used for the corresponding convolution"
+mxnet.ndarray.op.Deconvolution,pad,nonprim_dtype,['tuple'],"The amount of implicit zero padding added during convolution for each dimension of the input: (w,), (h, w) or (d, h, w). `(kernel-1)/2` is usually a good choice. If target_shape is set, pad will be ignored and a padding that will generate the target shape will be used. Defaults to no padding."
+mxnet.ndarray.op.Deconvolution,stride,nonprim_dtype,['tuple'],"The stride used for the corresponding convolution: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.op.Deconvolution,target_shape,nonprim_dtype,"['tensor', 'tuple']","Shape of the output tensor: (w,), (h, w) or (d, h, w)."
+mxnet.contrib.ndarray.MultiBoxTarget,variances,prim_dtype,['float'],Variances to be encoded in box regression target.
+mxnet.contrib.ndarray.MultiBoxTarget,variances,nonprim_dtype,['tuple'],Variances to be encoded in box regression target.
+mxnet.gluon.contrib.rnn.Conv2DRNNCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv2DRNNCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.ndarray.SequenceMask,axis,nonprim_dtype,['list'],The sequence axis. Only values of 0 and 1 are currently supported.
+mxnet.ndarray.SequenceMask,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.gluon.model_zoo.vision.resnet101_v1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.random_randint,dtype,prim_dtype,"['numpy.int32', 'numpy.int64']",DType of the output in case this can't be inferred. Defaults to int32 if not defined (dtype=None).
+mxnet.ndarray.op.random_randint,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.op.log_softmax,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.ndarray.op.sample_normal,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_normal,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.contrib.ndarray.ctc_loss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.ndarray.LRN,nsize,prim_dtype,['int'],normalization window width in elements.
+mxnet.ndarray.sparse.norm,out_dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8']",The data type of the output.
+mxnet.test_utils.check_symbolic_backward,dtype,nonprim_dtype,['ndarray'],Datatype for mx.nd.array.
+mxnet.gluon.model_zoo.vision.squeezenet1_1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.nn.HybridLambda,function,nonprim_dtype,['ndarray'],"Function used in lambda must be one of the following: 1) The name of an operator that is available in both symbol and ndarray. For example: block = HybridLambda('tanh')   <ol class=""arabic"" start=""2""> A function that conforms to `def function(F, data, *args)`. For example: block = HybridLambda(lambda F, x: F.LeakyReLU(x, slope=0.1))   "
+mxnet.ndarray.op.SequenceReverse,axis,nonprim_dtype,['list'],The sequence axis. Only 0 is currently supported.
+mxnet.ndarray.op.SequenceReverse,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.ndarray.image.normalize,mean,prim_dtype,['float'],Sequence of means for each channel. Default value is 0.
+mxnet.ndarray.image.normalize,mean,nonprim_dtype,"['list', 'tuple']",Sequence of means for each channel. Default value is 0.
+mxnet.ndarray.image.normalize,std,prim_dtype,['float'],Sequence of standard deviations for each channel. Default value is 1.
+mxnet.ndarray.image.normalize,std,nonprim_dtype,"['list', 'tuple']",Sequence of standard deviations for each channel. Default value is 1.
+mxnet.gluon.model_zoo.vision.vgg11,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.contrib.ndarray.dequantize,max_range,prim_dtype,['numpy.float32'],The maximum scalar value possibly produced for the input in float32
+mxnet.contrib.ndarray.dequantize,min_range,prim_dtype,['numpy.float32'],The minimum scalar value possibly produced for the input in float32
+mxnet.contrib.ndarray.dequantize,out_type,prim_dtype,['numpy.float32'],Output data type.
+mxnet.contrib.ndarray.DeformableConvolution,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.contrib.ndarray.DeformableConvolution,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (h, w) or (d, h, w)"
+mxnet.contrib.ndarray.DeformableConvolution,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (h, w) or (d, h, w). Defaults to no padding."
+mxnet.contrib.ndarray.DeformableConvolution,stride,nonprim_dtype,['tuple'],"Convolution stride: (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.test_utils.np_reduce,axis,prim_dtype,['int'],Same as NumPy.
+mxnet.test_utils.np_reduce,axis,nonprim_dtype,['list'],Same as NumPy.
+mxnet.test_utils.np_reduce,dat,nonprim_dtype,['ndarray'],Same as NumPy.
+mxnet.gluon.model_zoo.vision.get_model,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.io.ImageRecordIter,aug_seq,nonprim_dtype,['list'],"The augmenter names to represent sequence of augmenters to be applied, seperated by comma. Additional keyword parameters will be seen by these augmenters."
+mxnet.io.ImageRecordIter,batch_size,prim_dtype,['int'],Batch size.
+mxnet.io.ImageRecordIter,data_shape,nonprim_dtype,['tuple'],"The shape of one output image in (channels, height, width) format."
+mxnet.io.ImageRecordIter,device_id,nonprim_dtype,['ndarray'],The device id used to create context for internal NDArray. Setting device_id to -1 will create Context::CPU(0). Setting device_id to valid positive device id will create Context::CPUPinned(device_id). Default is 0.
+mxnet.io.ImageRecordIter,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type. `None` means no change.
+mxnet.io.ImageRecordIter,path_imglist,nonprim_dtype,['list'],Path to the image list (.lst) file. Generally created with tools/im2rec.py. Format (Tab separated): <index of record>       <one or more labels>    <relative path from root folder>.
+mxnet.gluon.nn.Conv1DTranspose,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv1DTranspose,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.ndarray.op.Pooling,kernel,nonprim_dtype,['tuple'],"Pooling kernel size: (y, x) or (d, y, x)"
+mxnet.ndarray.op.Pooling,pad,nonprim_dtype,['tuple'],"Pad for pooling: (y, x) or (d, y, x). Defaults to no padding."
+mxnet.ndarray.op.Pooling,stride,nonprim_dtype,['tuple'],"Stride: for pooling (y, x) or (d, y, x). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.requantize,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type. auto can be specified to automatically determine output type according to min_calib_range.
+mxnet.ndarray.Deconvolution,adj,nonprim_dtype,['tuple'],"Adjustment for output shape: (w,), (h, w) or (d, h, w). If target_shape is set, adj will be ignored and computed accordingly."
+mxnet.ndarray.Deconvolution,dilate,nonprim_dtype,['tuple'],"Dilation factor for each dimension of the input: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.Deconvolution,kernel,nonprim_dtype,['tuple'],"Deconvolution kernel size: (w,), (h, w) or (d, h, w). This is same as the kernel size used for the corresponding convolution"
+mxnet.ndarray.Deconvolution,pad,nonprim_dtype,['tuple'],"The amount of implicit zero padding added during convolution for each dimension of the input: (w,), (h, w) or (d, h, w). `(kernel-1)/2` is usually a good choice. If target_shape is set, pad will be ignored and a padding that will generate the target shape will be used. Defaults to no padding."
+mxnet.ndarray.Deconvolution,stride,nonprim_dtype,['tuple'],"The stride used for the corresponding convolution: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.Deconvolution,target_shape,nonprim_dtype,"['tensor', 'tuple']","Shape of the output tensor: (w,), (h, w) or (d, h, w)."
+mxnet.ndarray.ROIPooling,pooled_size,nonprim_dtype,['tuple'],"ROI pooling output shape (h,w)"
+mxnet.image.fixed_crop,size,nonprim_dtype,['tuple'],"Optional, resize to new size after cropping"
+mxnet.ndarray.slice,begin,nonprim_dtype,['tuple'],"starting indices for the slice operation, supports negative indices."
+mxnet.ndarray.slice,end,nonprim_dtype,['tuple'],"ending indices for the slice operation, supports negative indices."
+mxnet.ndarray.slice,step,nonprim_dtype,['tuple'],"step for the slice operation, supports negative values."
+mxnet.contrib.ndarray.MultiProposal,ratios,prim_dtype,['float'],Used to generate anchor windows by enumerating ratios
+mxnet.contrib.ndarray.MultiProposal,ratios,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating ratios
+mxnet.contrib.ndarray.MultiProposal,scales,prim_dtype,['float'],Used to generate anchor windows by enumerating scales
+mxnet.contrib.ndarray.MultiProposal,scales,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating scales
+mxnet.ndarray.op.sample_generalized_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_generalized_negative_binomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.op.sample_multinomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.uint8']",DType of the output in case this can't be inferred.
+mxnet.ndarray.op.sample_multinomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.contrib.ndarray.BilinearResize2D,mode,prim_dtype,['int'],"resizing mode. ""simple"" - output height equals parameter ""height"" if ""scale_height"" parameter is not defined or input height multiplied by ""scale_height"" otherwise. Same for width;""odd_scale"" - if original height or width is odd, then result height is calculated like result_h = (original_h - 1) * scale + 1; for scale > 1 the result shape would be like if we did deconvolution with kernel = (1, 1) and stride = (height_scale, width_scale); and for scale < 1 shape would be like we did convolution with kernel = (1, 1) and stride = (int(1 / height_scale), int( 1/ width_scale);""like"" - resize first input to the height and width of second input; ""to_even_down"" - resize input to nearest lower even height and width (if original height is odd then result height = original height - 1);""to_even_up"" - resize input to nearest bigger even height and width (if original height is odd then result height = original height + 1);""to_odd_down"" - resize input to nearest odd height and width (if original height is odd then result height = original height - 1);""to_odd_up"" - resize input to nearest odd height and width (if original height is odd then result height = original height + 1);"
+mxnet.ndarray.random_generalized_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_generalized_negative_binomial,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.sample_normal,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_normal,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.op.norm,out_dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8']",The data type of the output.
+mxnet.gluon.model_zoo.vision.vgg13_bn,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.sample_gamma,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_gamma,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.one_hot,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",DType of the output
+mxnet.gluon.nn.BatchNorm,center,prim_dtype,['boolean'],"If True, add offset of beta to normalized tensor. If False, beta is ignored."
+mxnet.gluon.nn.BatchNorm,scale,prim_dtype,['boolean'],"If True, multiply by gamma. If False, gamma is not used. When the next layer is linear (also e.g. nn.relu), this can be disabled since the scaling will be done by the next layer."
+mxnet.gluon.nn.BatchNorm,use_global_stats,prim_dtype,['boolean'],"If True, use global moving statistics instead of local batch-norm. This will force change batch-norm into a scale shift operator. If False, use local batch-norm."
+mxnet.gluon.contrib.rnn.Conv1DGRUCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv1DGRUCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.gluon.model_zoo.vision.squeezenet1_0,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.contrib.rnn.Conv2DLSTMCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv2DLSTMCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.gluon.utils.clip_global_norm,check_isfinite,prim_dtype,['boolean'],"If True, check that the total_norm is finite (not nan or inf). This requires a blocking .asscalar() call."
+mxnet.gluon.contrib.rnn.Conv1DRNNCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv1DRNNCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.gluon.nn.MaxPool3D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.gluon.model_zoo.vision.inception_v3,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.scatter_nd,shape,nonprim_dtype,['tuple'],Shape of output.
+mxnet.ndarray.op.SequenceLast,axis,nonprim_dtype,['list'],The sequence axis. Only values of 0 and 1 are currently supported.
+mxnet.ndarray.op.SequenceLast,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.gluon.nn.MaxPool1D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.ndarray.contrib.Proposal,ratios,prim_dtype,['float'],Used to generate anchor windows by enumerating ratios
+mxnet.ndarray.contrib.Proposal,ratios,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating ratios
+mxnet.ndarray.contrib.Proposal,scales,prim_dtype,['float'],Used to generate anchor windows by enumerating scales
+mxnet.ndarray.contrib.Proposal,scales,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating scales
+mxnet.ndarray.op.random_exponential,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_exponential,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.model_zoo.vision.resnet152_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.broadcast_axis,axis,nonprim_dtype,['tuple'],The axes to perform the broadcasting.
+mxnet.ndarray.broadcast_axis,size,nonprim_dtype,['tuple'],Target sizes of the broadcasting axes.
+mxnet.contrib.ndarray.CTCLoss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.gluon.nn.AvgPool2D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.gluon.nn.AvgPool2D,count_include_pad,prim_dtype,['boolean'],"When 'False', will exclude padding elements when computing the average value."
+mxnet.test_utils.assert_almost_equal,mismatches,nonprim_dtype,['tuple'],Maximum number of mismatches to be printed (mismatches[0]) and determine (mismatches[1])
+mxnet.gluon.nn.InstanceNorm,center,prim_dtype,['boolean'],"If True, add offset of beta to normalized tensor. If False, beta is ignored."
+mxnet.gluon.nn.InstanceNorm,scale,prim_dtype,['boolean'],"If True, multiply by gamma. If False, gamma is not used. When the next layer is linear (also e.g. nn.relu), this can be disabled since the scaling will be done by the next layer."
+mxnet.test_utils.numeric_grad,dtype,nonprim_dtype,['ndarray'],Datatype for mx.nd.array.
+mxnet.gluon.model_zoo.vision.vgg13,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.sample_exponential,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_exponential,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.random_gamma,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_gamma,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.sample_uniform,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_uniform,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.random.negative_binomial,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by k.context when k is an NDArray.
+mxnet.ndarray.random.negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.ndarray.cast,dtype,prim_dtype,"['boolean', 'numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.ndarray.op.random_normal,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_normal,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.model_zoo.vision.vgg16_bn,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.contrib.rnn.Conv2DGRUCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv2DGRUCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.image.imread,to_rgb,prim_dtype,['boolean'],True for RGB formatted output (MXNet default). False for BGR formatted output (OpenCV default).
+mxnet.ndarray.log_softmax,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to the same as input's dtype if not defined (dtype=None).
+mxnet.ndarray.multi_mp_sgd_mom_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.multi_mp_sgd_mom_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.multi_mp_sgd_mom_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.multi_mp_sgd_mom_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.amp_cast,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.contrib.ndarray.quantize,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.ndarray.op.RNN,state_size,prim_dtype,['int'],size of the state for each layer
+mxnet.ndarray.op.RNN,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.recordio.pack_img,header,nonprim_dtype,['ndarray'],Header of the image record. `header.label` can be a number or an array. See more detail in `IRHeader`.
+mxnet.recordio.pack_img,img,nonprim_dtype,['ndarray'],Image to be packed.
+mxnet.image.copyMakeBorder,values,prim_dtype,['numpy.double'],"Fill with value(RGB[A] or gray), up to 4 channels."
+mxnet.image.copyMakeBorder,values,nonprim_dtype,['tuple'],"Fill with value(RGB[A] or gray), up to 4 channels."
+mxnet.gluon.model_zoo.vision.get_resnet,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.io.MNISTIter,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type. `None` means no change.
+mxnet.io.MNISTIter,image,prim_dtype,['string'],Dataset Param: Mnist image path.
+mxnet.io.MNISTIter,label,prim_dtype,['string'],Dataset Param: Mnist label path.
+mxnet.ndarray.op.reverse,axis,nonprim_dtype,['tuple'],The axis which to reverse elements.
+mxnet.ndarray.from_numpy,ndarray,nonprim_dtype,['ndarray'],input data
+mxnet.ndarray.from_numpy,zero_copy,nonprim_dtype,['ndarray'],"Whether we use DLPack's zero-copy conversion to convert to MXNet's NDArray. This is only available for c-contiguous arrays, i.e. array.flags[C_CONTIGUOUS] == True."
+mxnet.ndarray.op.SpatialTransformer,target_shape,nonprim_dtype,['tuple'],"output shape(h, w) of spatial transformer: (y, x)"
+mxnet.ndarray.contrib.ROIAlign,pooled_size,nonprim_dtype,['tuple'],"ROI Align output roi feature map height and width: (h, w)"
+mxnet.gluon.contrib.nn.SyncBatchNorm,center,prim_dtype,['boolean'],"If True, add offset of beta to normalized tensor. If False, beta is ignored."
+mxnet.gluon.contrib.nn.SyncBatchNorm,scale,prim_dtype,['boolean'],"If True, multiply by gamma. If False, gamma is not used. When the next layer is linear (also e.g. nn.relu), this can be disabled since the scaling will be done by the next layer."
+mxnet.gluon.contrib.nn.SyncBatchNorm,use_global_stats,prim_dtype,['boolean'],"If True, use global moving statistics instead of local batch-norm. This will force change batch-norm into a scale shift operator. If False, use local batch-norm."
+mxnet.ndarray.reverse,axis,nonprim_dtype,['tuple'],The axis which to reverse elements.
+mxnet.gluon.model_zoo.vision.resnet152_v1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.model_zoo.vision.densenet161,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.one_hot,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",DType of the output
+mxnet.gluon.utils.download,verify_ssl,prim_dtype,['boolean'],Verify SSL certificates.
+mxnet.gluon.model_zoo.vision.resnet18_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.model_zoo.vision.resnet50_v1,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.GridGenerator,target_shape,nonprim_dtype,['tuple'],"Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored."
+mxnet.contrib.ndarray.Proposal,ratios,prim_dtype,['float'],Used to generate anchor windows by enumerating ratios
+mxnet.contrib.ndarray.Proposal,ratios,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating ratios
+mxnet.contrib.ndarray.Proposal,scales,prim_dtype,['float'],Used to generate anchor windows by enumerating scales
+mxnet.contrib.ndarray.Proposal,scales,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating scales
+mxnet.gluon.contrib.rnn.Conv3DRNNCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv3DRNNCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.ndarray.random_poisson,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_poisson,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.nn.AvgPool3D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.gluon.nn.AvgPool3D,count_include_pad,prim_dtype,['boolean'],"When 'False', will exclude padding elements when computing the average value."
+mxnet.gluon.nn.AvgPool1D,ceil_mode,prim_dtype,['boolean'],"When True, will use ceil instead of floor to compute the output shape."
+mxnet.gluon.nn.AvgPool1D,count_include_pad,prim_dtype,['boolean'],"When 'False', will exclude padding elements when computing the average value."
+mxnet.ndarray.contrib.quantize_v2,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type. auto can be specified to automatically determine output type according to min_calib_range.
+mxnet.ndarray.random.gamma,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by alpha.context when alpha is an NDArray.
+mxnet.ndarray.random.gamma,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.ndarray.Pooling,kernel,nonprim_dtype,['tuple'],"Pooling kernel size: (y, x) or (d, y, x)"
+mxnet.ndarray.Pooling,pad,nonprim_dtype,['tuple'],"Pad for pooling: (y, x) or (d, y, x). Defaults to no padding."
+mxnet.ndarray.Pooling,stride,nonprim_dtype,['tuple'],"Stride: for pooling (y, x) or (d, y, x). Defaults to 1 for each dimension."
+mxnet.ndarray.op.cast,dtype,prim_dtype,"['boolean', 'numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type.
+mxnet.image.CreateAugmenter,inter_method,prim_dtype,['int'],"Interpolation method for all resizing operations Possible values: 0: Nearest Neighbors Interpolation. 1: Bilinear interpolation. 2: Bicubic interpolation over 4x4 pixel neighborhood. 3: Area-based (resampling using pixel area relation). It may be a preferred method for image decimation, as it gives moire-free results. But when the image is zoomed, it is similar to the Nearest Neighbors method. (used by default). 4: Lanczos interpolation over 8x8 pixel neighborhood. 9: Cubic for enlarge, area for shrink, bilinear for others 10: Random select from interpolation method metioned above. Note: When shrinking an image, it will generally look best with AREA-based interpolation, whereas, when enlarging an image, it will generally look best with Bicubic (slow) or Bilinear (faster but still looks OK). "
+mxnet.image.CreateAugmenter,mean,nonprim_dtype,['ndarray'],"Mean pixel values for [r, g, b]"
+mxnet.image.CreateAugmenter,std,nonprim_dtype,['ndarray'],"Standard deviations for [r, g, b]"
+mxnet.ndarray.op.random_generalized_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_generalized_negative_binomial,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.sample_generalized_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.sample_generalized_negative_binomial,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.random.exponential,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by scale.context when scale is an NDArray.
+mxnet.ndarray.random.exponential,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.contrib.ndarray.quantized_pooling,kernel,nonprim_dtype,['tuple'],"Pooling kernel size: (y, x) or (d, y, x)"
+mxnet.contrib.ndarray.quantized_pooling,pad,nonprim_dtype,['tuple'],"Pad for pooling: (y, x) or (d, y, x). Defaults to no padding."
+mxnet.contrib.ndarray.quantized_pooling,stride,nonprim_dtype,['tuple'],"Stride: for pooling (y, x) or (d, y, x). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.MultiBoxPrior,offsets,prim_dtype,['float'],"Priorbox center offsets, y and x respectively"
+mxnet.ndarray.contrib.MultiBoxPrior,offsets,nonprim_dtype,['tuple'],"Priorbox center offsets, y and x respectively"
+mxnet.ndarray.contrib.MultiBoxPrior,ratios,prim_dtype,['float'],List of aspect ratios of generated MultiBoxPriores.
+mxnet.ndarray.contrib.MultiBoxPrior,ratios,nonprim_dtype,"['list', 'tuple']",List of aspect ratios of generated MultiBoxPriores.
+mxnet.ndarray.contrib.MultiBoxPrior,sizes,prim_dtype,['float'],List of sizes of generated MultiBoxPriores.
+mxnet.ndarray.contrib.MultiBoxPrior,sizes,nonprim_dtype,"['list', 'tuple']",List of sizes of generated MultiBoxPriores.
+mxnet.ndarray.contrib.MultiBoxPrior,steps,prim_dtype,['float'],"Priorbox step across y and x, -1 for auto calculation."
+mxnet.ndarray.contrib.MultiBoxPrior,steps,nonprim_dtype,['tuple'],"Priorbox step across y and x, -1 for auto calculation."
+mxnet.gluon.rnn.GRUCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.GRUCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.ndarray.op.LRN,nsize,prim_dtype,['int'],normalization window width in elements.
+mxnet.ndarray.op.random_poisson,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_poisson,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.contrib.SparseEmbedding,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Data type of weight.
+mxnet.ndarray.contrib.SparseEmbedding,output_dim,nonprim_dtype,['list'],Dimension of the embedding vectors.
+mxnet.ndarray.multi_all_finite,num_arrays,nonprim_dtype,['ndarray'],Number of arrays.
+mxnet.gluon.model_zoo.vision.vgg19,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.ctc_loss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.ndarray.contrib.AdaptiveAvgPooling2D,output_size,nonprim_dtype,['tuple'],"int (output size) or a tuple of int for output (height, width)."
+mxnet.image.random_crop,src,nonprim_dtype,['ndarray'],
+mxnet.ndarray.contrib.MultiProposal,ratios,prim_dtype,['float'],Used to generate anchor windows by enumerating ratios
+mxnet.ndarray.contrib.MultiProposal,ratios,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating ratios
+mxnet.ndarray.contrib.MultiProposal,scales,prim_dtype,['float'],Used to generate anchor windows by enumerating scales
+mxnet.ndarray.contrib.MultiProposal,scales,nonprim_dtype,['tuple'],Used to generate anchor windows by enumerating scales
+mxnet.ndarray.SequenceLast,axis,nonprim_dtype,['list'],The sequence axis. Only values of 0 and 1 are currently supported.
+mxnet.ndarray.SequenceLast,use_sequence_length,nonprim_dtype,['list'],"If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence"
+mxnet.contrib.ndarray.MultiBoxPrior,offsets,prim_dtype,['float'],"Priorbox center offsets, y and x respectively"
+mxnet.contrib.ndarray.MultiBoxPrior,offsets,nonprim_dtype,['tuple'],"Priorbox center offsets, y and x respectively"
+mxnet.contrib.ndarray.MultiBoxPrior,ratios,prim_dtype,['float'],List of aspect ratios of generated MultiBoxPriores.
+mxnet.contrib.ndarray.MultiBoxPrior,ratios,nonprim_dtype,"['list', 'tuple']",List of aspect ratios of generated MultiBoxPriores.
+mxnet.contrib.ndarray.MultiBoxPrior,sizes,prim_dtype,['float'],List of sizes of generated MultiBoxPriores.
+mxnet.contrib.ndarray.MultiBoxPrior,sizes,nonprim_dtype,"['list', 'tuple']",List of sizes of generated MultiBoxPriores.
+mxnet.contrib.ndarray.MultiBoxPrior,steps,prim_dtype,['float'],"Priorbox step across y and x, -1 for auto calculation."
+mxnet.contrib.ndarray.MultiBoxPrior,steps,nonprim_dtype,['tuple'],"Priorbox step across y and x, -1 for auto calculation."
+mxnet.gluon.model_zoo.vision.densenet201,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.multi_sgd_mom_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.multi_sgd_mom_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.multi_sgd_mom_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.multi_sgd_mom_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.gluon.model_zoo.vision.resnet50_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.contrib.ndarray.SparseEmbedding,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Data type of weight.
+mxnet.contrib.ndarray.SparseEmbedding,output_dim,nonprim_dtype,['list'],Dimension of the embedding vectors.
+mxnet.ndarray.op.sample_poisson,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_poisson,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.gluon.nn.Conv3DTranspose,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv3DTranspose,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.ndarray.multi_sgd_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.multi_sgd_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.multi_sgd_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.multi_sgd_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.topk,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.uint8']","DType of the output indices when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices."
+mxnet.ndarray.random.uniform,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by low.context when low is an NDArray.
+mxnet.ndarray.random.uniform,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.ndarray.op.multi_mp_sgd_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.op.multi_mp_sgd_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.op.multi_mp_sgd_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.multi_mp_sgd_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.contrib.ndarray.AdaptiveAvgPooling2D,output_size,nonprim_dtype,['tuple'],"int (output size) or a tuple of int for output (height, width)."
+mxnet.ndarray.contrib.quantized_conv,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.quantized_conv,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (w,), (h, w) or (d, h, w)"
+mxnet.ndarray.contrib.quantized_conv,num_filter,prim_dtype,['int'],Convolution filter(channel) number
+mxnet.ndarray.contrib.quantized_conv,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (w,), (h, w) or (d, h, w). Defaults to no padding."
+mxnet.ndarray.contrib.quantized_conv,stride,nonprim_dtype,['tuple'],"Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.random.poisson,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by lam.context when lam is an NDArray.
+mxnet.ndarray.random.poisson,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.ndarray.op.broadcast_axis,axis,nonprim_dtype,['tuple'],The axes to perform the broadcasting.
+mxnet.ndarray.op.broadcast_axis,size,nonprim_dtype,['tuple'],Target sizes of the broadcasting axes.
+mxnet.ndarray.op.Dropout,axes,nonprim_dtype,['tuple'],Axes for variational dropout kernel.
+mxnet.ndarray.expand_dims,axis,nonprim_dtype,['ndarray'],"Position where new axis is to be inserted. Suppose that the input NDArray's dimension is ndim, the range of the inserted axis is [-ndim, ndim]"
+mxnet.gluon.model_zoo.vision.get_model,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.op.expand_dims,axis,nonprim_dtype,['ndarray'],"Position where new axis is to be inserted. Suppose that the input NDArray's dimension is ndim, the range of the inserted axis is [-ndim, ndim]"
+mxnet.ndarray.op.random_negative_binomial,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_negative_binomial,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.nn.Conv2DTranspose,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv2DTranspose,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.contrib.ndarray.ROIAlign,pooled_size,nonprim_dtype,['tuple'],"ROI Align output roi feature map height and width: (h, w)"
+mxnet.gluon.nn.LayerNorm,center,prim_dtype,['boolean'],"If True, add offset of beta to normalized tensor. If False, beta is ignored."
+mxnet.gluon.nn.LayerNorm,scale,prim_dtype,['boolean'],"If True, multiply by gamma. If False, gamma is not used."
+mxnet.ndarray.pad,mode,nonprim_dtype,['ndarray'],"Padding type to use. ""constant"" pads with constant_value ""edge"" pads using the edge values of the input array ""reflect"" pads by reflecting values with respect to the edges."
+mxnet.io.LibSVMIter,batch_size,prim_dtype,['int'],Batch size.
+mxnet.io.LibSVMIter,data_shape,nonprim_dtype,['tuple'],The shape of one example.
+mxnet.io.LibSVMIter,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type. `None` means no change.
+mxnet.io.LibSVMIter,label_shape,nonprim_dtype,['tuple'],The shape of one label.
+mxnet.contrib.ndarray.requantize,out_type,prim_dtype,"['numpy.int8', 'numpy.uint8']",Output data type. auto can be specified to automatically determine output type according to min_calib_range.
+mxnet.ndarray.argsort,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.uint8']","DType of the output indices. It is only valid when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices."
+mxnet.gluon.model_zoo.vision.resnet101_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.visualization.plot_network,hide_weights,nonprim_dtype,"['list', 'tensor']","If True (default), then inputs with names of form _weight (corresponding to weight tensors) or _bias (corresponding to bias vectors) will be hidden for a cleaner visualization."
+mxnet.visualization.plot_network,shape,prim_dtype,['string'],"Specifies the shape of the input tensors. If specified, the visualization will include the shape of the tensors between the nodes. shape is a dictionary mapping input symbol names (str) to the corresponding tensor shape (tuple)."
+mxnet.util.np_array,active,nonprim_dtype,['ndarray'],Indicates whether to activate NumPy-array semantics.
+mxnet.ndarray.contrib.DeformableConvolution,dilate,nonprim_dtype,['tuple'],"Convolution dilate: (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.DeformableConvolution,kernel,nonprim_dtype,['tuple'],"Convolution kernel size: (h, w) or (d, h, w)"
+mxnet.ndarray.contrib.DeformableConvolution,pad,nonprim_dtype,['tuple'],"Zero pad for convolution: (h, w) or (d, h, w). Defaults to no padding."
+mxnet.ndarray.contrib.DeformableConvolution,stride,nonprim_dtype,['tuple'],"Convolution stride: (h, w) or (d, h, w). Defaults to 1 for each dimension."
+mxnet.ndarray.contrib.MultiBoxDetection,variances,prim_dtype,['float'],Variances to be decoded from box regression output.
+mxnet.ndarray.contrib.MultiBoxDetection,variances,nonprim_dtype,['tuple'],Variances to be decoded from box regression output.
+mxnet.ndarray.contrib.BilinearResize2D,mode,prim_dtype,['int'],"resizing mode. ""simple"" - output height equals parameter ""height"" if ""scale_height"" parameter is not defined or input height multiplied by ""scale_height"" otherwise. Same for width;""odd_scale"" - if original height or width is odd, then result height is calculated like result_h = (original_h - 1) * scale + 1; for scale > 1 the result shape would be like if we did deconvolution with kernel = (1, 1) and stride = (height_scale, width_scale); and for scale < 1 shape would be like we did convolution with kernel = (1, 1) and stride = (int(1 / height_scale), int( 1/ width_scale);""like"" - resize first input to the height and width of second input; ""to_even_down"" - resize input to nearest lower even height and width (if original height is odd then result height = original height - 1);""to_even_up"" - resize input to nearest bigger even height and width (if original height is odd then result height = original height + 1);""to_odd_down"" - resize input to nearest odd height and width (if original height is odd then result height = original height - 1);""to_odd_up"" - resize input to nearest odd height and width (if original height is odd then result height = original height + 1);"
+mxnet.contrib.ndarray.MultiBoxDetection,variances,prim_dtype,['float'],Variances to be decoded from box regression output.
+mxnet.contrib.ndarray.MultiBoxDetection,variances,nonprim_dtype,['tuple'],Variances to be decoded from box regression output.
+mxnet.gluon.rnn.RNNCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.RNNCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.ndarray.op.transpose,axes,nonprim_dtype,['tuple'],Target axis order. By default the axes will be inverted.
+mxnet.gluon.contrib.rnn.Conv3DGRUCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv3DGRUCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.ndarray.contrib.MultiBoxTarget,variances,prim_dtype,['float'],Variances to be encoded in box regression target.
+mxnet.ndarray.contrib.MultiBoxTarget,variances,nonprim_dtype,['tuple'],Variances to be encoded in box regression target.
+mxnet.gluon.contrib.rnn.Conv1DLSTMCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv1DLSTMCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.ndarray.op.random_uniform,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.random_uniform,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.gluon.model_zoo.vision.get_vgg,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.gluon.nn.Dense,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Dense,use_bias,prim_dtype,['boolean'],Whether the layer uses a bias vector.
+mxnet.gluon.nn.Dense,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.ndarray.op.sample_uniform,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.op.sample_uniform,shape,nonprim_dtype,['tuple'],Shape to be sampled from each random distribution.
+mxnet.ndarray.CTCLoss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.ndarray.op.multi_sgd_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.op.multi_sgd_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.op.multi_sgd_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.multi_sgd_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.contrib.quantized_pooling,kernel,nonprim_dtype,['tuple'],"Pooling kernel size: (y, x) or (d, y, x)"
+mxnet.ndarray.contrib.quantized_pooling,pad,nonprim_dtype,['tuple'],"Pad for pooling: (y, x) or (d, y, x). Defaults to no padding."
+mxnet.ndarray.contrib.quantized_pooling,stride,nonprim_dtype,['tuple'],"Stride: for pooling (y, x) or (d, y, x). Defaults to 1 for each dimension."
+mxnet.ndarray.norm,out_dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8']",The data type of the output.
+mxnet.ndarray.op.CTCLoss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.gluon.contrib.rnn.Conv3DLSTMCell,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the recurrent convolution bias vectors.
+mxnet.gluon.contrib.rnn.Conv3DLSTMCell,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the input convolution bias vectors.
+mxnet.ndarray.op.flip,axis,nonprim_dtype,['tuple'],The axis which to reverse elements.
+mxnet.test_utils.almost_equal_ignore_nan,a,nonprim_dtype,['ndarray'],
+mxnet.test_utils.almost_equal_ignore_nan,b,nonprim_dtype,['ndarray'],
+mxnet.ndarray.op.multi_sgd_mom_update,lrs,prim_dtype,['float'],Learning rates.
+mxnet.ndarray.op.multi_sgd_mom_update,lrs,nonprim_dtype,['tuple'],Learning rates.
+mxnet.ndarray.op.multi_sgd_mom_update,wds,prim_dtype,['float'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.op.multi_sgd_mom_update,wds,nonprim_dtype,['tuple'],Weight decay augments the objective function with a regularization term that penalizes large weights. The penalty scales with the square of the magnitude of each weight.
+mxnet.ndarray.random_normal,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).
+mxnet.ndarray.random_normal,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.random.normal,ctx,nonprim_dtype,['ndarray'],Device context of output. Default is current context. Overridden by loc.context when loc is an NDArray.
+mxnet.ndarray.random.normal,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64']",Data type of output samples. Default is 'float32'
+mxnet.image.CreateDetAugmenter,inter_method,prim_dtype,['int'],"Interpolation method for all resizing operations Possible values: 0: Nearest Neighbors Interpolation. 1: Bilinear interpolation. 2: Area-based (resampling using pixel area relation). It may be a preferred method for image decimation, as it gives moire-free results. But when the image is zoomed, it is similar to the Nearest Neighbors method. (used by default). 3: Bicubic interpolation over 4x4 pixel neighborhood. 4: Lanczos interpolation over 8x8 pixel neighborhood. 9: Cubic for enlarge, area for shrink, bilinear for others 10: Random select from interpolation method metioned above. Note: When shrinking an image, it will generally look best with AREA-based interpolation, whereas, when enlarging an image, it will generally look best with Bicubic (slow) or Bilinear (faster but still looks OK). "
+mxnet.image.CreateDetAugmenter,mean,nonprim_dtype,['ndarray'],"Mean pixel values for [r, g, b]"
+mxnet.image.CreateDetAugmenter,std,nonprim_dtype,['ndarray'],"Standard deviations for [r, g, b]"
+mxnet.io.ImageDetRecordIter,aug_seq,nonprim_dtype,['list'],"Augmentation Param: the augmenter names to represent sequence of augmenters to be applied, seperated by comma. Additional keyword parameters will be seen by these augmenters. Make sure you don't use normal augmenters for detection tasks."
+mxnet.io.ImageDetRecordIter,batch_size,prim_dtype,['int'],Batch size.
+mxnet.io.ImageDetRecordIter,data_shape,nonprim_dtype,['tuple'],Dataset Param: Shape of each instance generated by the DataIter.
+mxnet.io.ImageDetRecordIter,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Output data type. `None` means no change.
+mxnet.io.ImageDetRecordIter,max_crop_aspect_ratios,prim_dtype,['float'],Augmentation Param: Max crop aspect ratios.
+mxnet.io.ImageDetRecordIter,max_crop_aspect_ratios,nonprim_dtype,['tuple'],Augmentation Param: Max crop aspect ratios.
+mxnet.io.ImageDetRecordIter,max_crop_object_coverages,prim_dtype,['float'],Augmentation Param: Maximum ratio of intersect/gt_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,max_crop_object_coverages,nonprim_dtype,['tuple'],Augmentation Param: Maximum ratio of intersect/gt_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,max_crop_overlaps,prim_dtype,['float'],Augmentation Param: Maximum crop IOU between crop_box and ground-truth.
+mxnet.io.ImageDetRecordIter,max_crop_overlaps,nonprim_dtype,['tuple'],Augmentation Param: Maximum crop IOU between crop_box and ground-truth.
+mxnet.io.ImageDetRecordIter,max_crop_sample_coverages,prim_dtype,['float'],Augmentation Param: Maximum ratio of intersect/crop_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,max_crop_sample_coverages,nonprim_dtype,['tuple'],Augmentation Param: Maximum ratio of intersect/crop_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,max_crop_scales,prim_dtype,['float'],Augmentation Param: Max crop scales.
+mxnet.io.ImageDetRecordIter,max_crop_scales,nonprim_dtype,['tuple'],Augmentation Param: Max crop scales.
+mxnet.io.ImageDetRecordIter,max_crop_trials,nonprim_dtype,['tuple'],Augmentation Param: Skip cropping if fail crop trail count exceeds this number.
+mxnet.io.ImageDetRecordIter,min_crop_aspect_ratios,prim_dtype,['float'],Augmentation Param: Min crop aspect ratios.
+mxnet.io.ImageDetRecordIter,min_crop_aspect_ratios,nonprim_dtype,['tuple'],Augmentation Param: Min crop aspect ratios.
+mxnet.io.ImageDetRecordIter,min_crop_object_coverages,prim_dtype,['float'],Augmentation Param: Minimum ratio of intersect/gt_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_object_coverages,nonprim_dtype,['tuple'],Augmentation Param: Minimum ratio of intersect/gt_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_overlaps,prim_dtype,['float'],Augmentation Param: Minimum crop IOU between crop_box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_overlaps,nonprim_dtype,['tuple'],Augmentation Param: Minimum crop IOU between crop_box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_sample_coverages,prim_dtype,['float'],Augmentation Param: Minimum ratio of intersect/crop_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_sample_coverages,nonprim_dtype,['tuple'],Augmentation Param: Minimum ratio of intersect/crop_area between crop box and ground-truths.
+mxnet.io.ImageDetRecordIter,min_crop_scales,prim_dtype,['float'],Augmentation Param: Min crop scales.
+mxnet.io.ImageDetRecordIter,min_crop_scales,nonprim_dtype,['tuple'],Augmentation Param: Min crop scales.
+mxnet.io.ImageDetRecordIter,path_imgrec,prim_dtype,['string'],Dataset Param: Path to image record file.
+mxnet.ndarray.contrib.dequantize,max_range,prim_dtype,['numpy.float32'],The maximum scalar value possibly produced for the input in float32
+mxnet.ndarray.contrib.dequantize,min_range,prim_dtype,['numpy.float32'],The minimum scalar value possibly produced for the input in float32
+mxnet.ndarray.contrib.dequantize,out_type,prim_dtype,['numpy.float32'],Output data type.
+mxnet.gluon.rnn.RNN,bidirectional,prim_dtype,['boolean'],"If True, becomes a bidirectional RNN."
+mxnet.gluon.rnn.RNN,h2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.rnn.RNN,i2h_bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.ndarray.op.Embedding,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.int8', 'numpy.uint8']",Data type of weight.
+mxnet.ndarray.op.Embedding,output_dim,nonprim_dtype,['list'],Dimension of the embedding vectors.
+mxnet.contrib.onnx.import_to_gluon,ctx,nonprim_dtype,['list'],Loads the model into one or many context(s).
+mxnet.ndarray.op.ctc_loss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.gluon.model_zoo.vision.get_mobilenet_v2,root,prim_dtype,['string'],Location for keeping the model parameters.
+mxnet.ndarray.SpatialTransformer,target_shape,nonprim_dtype,['tuple'],"output shape(h, w) of spatial transformer: (y, x)"
+mxnet.ndarray.random_randint,dtype,prim_dtype,"['numpy.int32', 'numpy.int64']",DType of the output in case this can't be inferred. Defaults to int32 if not defined (dtype=None).
+mxnet.ndarray.random_randint,shape,nonprim_dtype,['tuple'],Shape of the output.
+mxnet.ndarray.sparse.slice,begin,nonprim_dtype,['tuple'],"starting indices for the slice operation, supports negative indices."
+mxnet.ndarray.sparse.slice,end,nonprim_dtype,['tuple'],"ending indices for the slice operation, supports negative indices."
+mxnet.ndarray.sparse.slice,step,nonprim_dtype,['tuple'],"step for the slice operation, supports negative values."
+mxnet.metric.create,**kwargs,prim_dtype,['string'],Additional arguments to metric constructor. Only used when metric is str
+mxnet.metric.create,*args,prim_dtype,['string'],Additional arguments to metric constructor. Only used when metric is str.
+mxnet.ndarray.Dropout,axes,nonprim_dtype,['tuple'],Axes for variational dropout kernel.
+mxnet.ndarray.op.argsort,dtype,prim_dtype,"['numpy.float16', 'numpy.float32', 'numpy.float64', 'numpy.int32', 'numpy.int64', 'numpy.uint8']","DType of the output indices. It is only valid when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices."
+mxnet.ndarray.contrib.ctc_loss,use_data_lengths,nonprim_dtype,['list'],"Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length."
+mxnet.gluon.nn.Conv1D,bias_initializer,nonprim_dtype,['list'],Initializer for the bias vector.
+mxnet.gluon.nn.Conv1D,use_bias,nonprim_dtype,['list'],Whether the layer uses a bias vector.
+mxnet.autograd.pause,train_mode,prim_dtype,['boolean'],Whether to do forward for training or predicting.
+mxnet.gluon.nn.SymbolBlock,inputs,nonprim_dtype,['list'],The Variables in output's argument that should be used as inputs.
+mxnet.gluon.nn.SymbolBlock,outputs,nonprim_dtype,['list'],The desired output for SymbolBlock.
+mxnet.gluon.nn.SymbolBlock,params,nonprim_dtype,['dict'],Parameter dictionary for arguments and auxililary states of outputs that are not inputs.
+mxnet.autograd.record,train_mode,prim_dtype,['boolean'],"Whether the forward pass is in training or predicting mode. This controls the behavior of some layers such as Dropout, BatchNorm."
+mxnet.util.use_np_array,func,nonprim_dtype,['ndarray'],
+mxnet.test_utils.same,a,nonprim_dtype,['ndarray'],
+mxnet.test_utils.same,b,nonprim_dtype,['ndarray'],

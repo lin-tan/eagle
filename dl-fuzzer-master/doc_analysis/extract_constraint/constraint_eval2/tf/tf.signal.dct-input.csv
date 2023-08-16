@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `[..., samples]` `float32`/`float64` `Tensor` containing the signals to take the DCT of.",,prim_dtype,"dtype(tf.float32, tf.float64)",,1
+,"A `[..., samples]` `float32`/`float64` `Tensor` containing the signals to take the DCT of.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `[..., samples]` `float32`/`float64` `Tensor` containing the signals to take the DCT of.",,shape,"shape([...,samples]), ndim(>1)",,1

@@ -1,0 +1,8 @@
+constraints:
+  ctx:
+    default: None
+    descp: running context
+    doc_dtype:
+    - Context
+    - optional
+title: mxnet.test_utils.check_symbolic_forward

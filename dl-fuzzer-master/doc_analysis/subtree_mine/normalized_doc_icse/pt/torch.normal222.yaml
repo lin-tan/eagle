@@ -1,0 +1,42 @@
+constraints:
+  mean:
+    descp: the mean for all distributions
+    doc_dtype: float
+    normalized_descp:
+    - the mean for all distributions
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  size:
+    descp: a sequence of integers defining the shape of the output tensor.
+    doc_dtype: int...
+    normalized_descp:
+    - a D_STRUCTURE of D_TYPE defining the shape of the output D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  std:
+    descp: the standard deviation for all distributions
+    doc_dtype: float
+    normalized_descp:
+    - the standard deviation for all distributions
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - mean
+  - std
+  - size
+link: https://pytorch.org/docs/stable/torch.html#torch.normal
+package: torch
+ret_type: Tensor
+target: normal
+title: torch.normal
+version: 1.5.0

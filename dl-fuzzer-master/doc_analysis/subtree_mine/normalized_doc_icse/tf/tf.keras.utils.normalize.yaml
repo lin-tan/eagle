@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.keras.utils.normalize
+constraints:
+  axis:
+    default: '-1'
+    descp: axis along which to normalize.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - axis along which to normalize
+  order:
+    default: '2'
+    descp: Normalization order (e.g. 2 for L2 norm).
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Normalization order e g
+    - CONSTANT_NUM for L CONSTANT_NUM norm
+  x:
+    descp: Numpy array to normalize.
+    normalized_descp:
+    - Numpy D_STRUCTURE to normalize
+inputs:
+  optional:
+  - axis
+  - order
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/utils/normalize
+outputs: A normalized copy of the array.
+package: tensorflow
+target: normalize
+title: tf.keras.utils.normalize
+version: 2.1.0

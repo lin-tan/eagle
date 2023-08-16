@@ -1,0 +1,154 @@
+aliases:
+- tf.compat.v1.strided_slice
+constraints:
+  begin:
+    descp: An `int32` or `int64` `Tensor`.
+    dtype:
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  begin_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  ellipsis_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  end:
+    descp: An `int32` or `int64` `Tensor`.
+    dtype:
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  end_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  input_:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  new_axis_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  shrink_axis_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  strides:
+    default: None
+    descp: An `int32` or `int64` `Tensor`.
+    dtype:
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  var:
+    default: None
+    descp: The variable corresponding to `input_` or None
+inputs:
+  optional:
+  - strides
+  - begin_mask
+  - end_mask
+  - ellipsis_mask
+  - new_axis_mask
+  - shrink_axis_mask
+  - var
+  - name
+  required:
+  - input_
+  - begin
+  - end
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strided_slice
+outputs: A `Tensor` the same type as `input`.
+package: tensorflow
+target: strided_slice
+title: tf.strided_slice
+version: 2.1.0

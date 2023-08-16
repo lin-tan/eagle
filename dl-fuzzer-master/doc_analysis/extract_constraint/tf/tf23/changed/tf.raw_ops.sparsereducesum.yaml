@@ -1,0 +1,61 @@
+constraints:
+  input_indices:
+    descp: A Tensor of type int64. 2-D. N x R matrix with the indices of non-empty
+      values in a SparseTensor, possibly not in canonical ordering.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  input_shape:
+    descp: A Tensor of type int64. 1-D. Shape of the input SparseTensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  input_values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. 1-D. N non-empty values corresponding to input_indices.'
+    tensor_t:
+    - tf.tensor
+  keep_dims:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, retain reduced dimensions
+      with length 1.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reduction_axes:
+    descp: A Tensor of type int32. 1-D. Length-K vector containing the reduction axes.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - keep_dims
+  - name
+  required:
+  - input_indices
+  - input_values
+  - input_shape
+  - reduction_axes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseReduceSum
+outputs:
+- A Tensor. Has the same type as input_values.
+package: tensorflow
+target: SparseReduceSum
+title: tf.raw_ops.SparseReduceSum
+version: 2.3.0

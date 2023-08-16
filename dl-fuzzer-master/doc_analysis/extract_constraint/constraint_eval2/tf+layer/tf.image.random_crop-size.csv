@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,1-D tensor with size the rank of `value`.,,prim_dtype,dtype(numeric),,1
+,1-D tensor with size the rank of `value`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,1-D tensor with size the rank of `value`.,,shape,ndim(1),,1
+,1-D tensor with size the rank of `value`.,,validvalue,"range([0,inf))",,1

@@ -1,0 +1,5 @@
+constraints:
+  bias_constraint:
+    default: None
+    descp: Constraint function applied to the bias vector.
+title: tf.keras.layers.Conv3DTranspose

@@ -1,0 +1,23 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+  other:
+    descp: the tensor to compute XOR with
+    doc_dtype: Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.logical_xor
+package: torch
+ret_type: Tensor
+target: logical_xor
+title: torch.logical_xor
+version: 1.5.0

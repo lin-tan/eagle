@@ -1,0 +1,13 @@
+constraints:
+  lambd:
+    default: '0.5'
+    descp: 'the  lambda  value for the Softshrink formulation. Default: 0.5'
+inputs:
+  optional:
+  - lambd
+  required: []
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.Softshrink
+package: torch
+target: Softshrink
+title: torch.nn.Softshrink
+version: 1.4.0

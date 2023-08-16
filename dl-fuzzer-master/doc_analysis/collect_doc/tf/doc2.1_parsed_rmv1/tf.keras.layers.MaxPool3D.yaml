@@ -1,0 +1,38 @@
+aliases:
+- tf.keras.layers.MaxPooling3D
+- tf.compat.v1.keras.layers.MaxPool3D
+- tf.compat.v1.keras.layers.MaxPooling3D
+constraints:
+  '**kwargs':
+    descp: ''
+  data_format:
+    default: None
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      spatial_dim1, spatial_dim2, spatial_dim3, channels)`while `channels_first` corresponds
+      to inputs with shape`(batch, channels, spatial_dim1, spatial_dim2, spatial_dim3)`.
+      It defaults to the `image_data_format` value found in your Keras config file
+      at `~/.keras/keras.json`. If you never set it, then it will be "channels_last".
+  padding:
+    default: valid
+    descp: One of `"valid"` or `"same"` (case-insensitive).
+  pool_size:
+    default: (2, 2, 2)
+    descp: Tuple of 3 integers, factors by which to downscale (dim1, dim2, dim3).`(2,
+      2, 2)` will halve the size of the 3D input in each dimension.
+  strides:
+    default: None
+    descp: tuple of 3 integers, or None. Strides values.
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - data_format
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/MaxPool3D
+package: tensorflow
+target: MaxPool3D
+title: tf.keras.layers.MaxPool3D
+version: 2.1.0

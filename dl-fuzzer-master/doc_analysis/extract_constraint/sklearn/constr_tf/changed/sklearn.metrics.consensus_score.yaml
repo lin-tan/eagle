@@ -1,0 +1,27 @@
+constraints:
+  a:
+    descp: (rows, columns) Tuple of row and column indicators for a set of biclusters.
+    ndim:
+    - '1'
+  b:
+    descp: (rows, columns) Another set of biclusters like ``a``.
+  similarity:
+    default: jaccard
+    descp: 'string or function, optional, default: "jaccard" May be the string "jaccard"
+      to use the Jaccard coefficient, or any function that takes four arguments, each
+      of which is a 1d indicator vector: (a_rows, a_columns, b_rows, b_columns).'
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - similarity
+  required:
+  - a
+  - b
+link: ''
+package: scikit-learn
+target: consensus_score
+title: sklearn.metrics.consensus_score
+version: 0.24.X

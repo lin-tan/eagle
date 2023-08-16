@@ -1,0 +1,73 @@
+constraints:
+  clear_after_read:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  dynamic_size:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  element_shape:
+    default: None
+    descp: An optional tf.TensorShape or list of ints. Defaults to None.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  size:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  tensor_array_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - dynamic_size
+  - clear_after_read
+  - tensor_array_name
+  - element_shape
+  - name
+  required:
+  - size
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorArray
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: TensorArray
+title: tf.raw_ops.TensorArray
+version: 2.3.0

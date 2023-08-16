@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"dict, optional","Specifies the attributes for nodes in the generated visualization. node_attrs is a dictionary of Graphviz attribute names and values. For example: node_attrs={""shape"":""oval"",""fixedsize"":""false""}   will use oval shape for nodes and allow variable sized nodes in the visualization. ",{},prim_dtype,dtype(string),,1
+"dict, optional","Specifies the attributes for nodes in the generated visualization. node_attrs is a dictionary of Graphviz attribute names and values. For example: node_attrs={""shape"":""oval"",""fixedsize"":""false""}   will use oval shape for nodes and allow variable sized nodes in the visualization. ",{},nonprim_dtype,structure(dict),,1

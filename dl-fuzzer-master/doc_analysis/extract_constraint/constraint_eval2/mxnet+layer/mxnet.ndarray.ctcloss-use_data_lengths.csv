@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"boolean, optional, default=0","Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length.",_Null,prim_dtype,dtype(boolean),,1
+"boolean, optional, default=0","Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length.",_Null,shape,ndim(0),,1
+"boolean, optional, default=0","Whether the data lenghts are decided by data_lengths. If false, the lengths are equal to the max sequence length.",_Null,validvalue,"range([0,inf))",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A list of `ints` that has length `>= 5`. 1-D of length 5. How far the centers of two consecutive patches are in`input`. Must be: `[1, stride_planes, stride_rows, stride_cols, 1]`.",,prim_dtype,dtype(int),,1
+,"A list of `ints` that has length `>= 5`. 1-D of length 5. How far the centers of two consecutive patches are in`input`. Must be: `[1, stride_planes, stride_rows, stride_cols, 1]`.",,nonprim_dtype,structure(list(int)),,1
+,"A list of `ints` that has length `>= 5`. 1-D of length 5. How far the centers of two consecutive patches are in`input`. Must be: `[1, stride_planes, stride_rows, stride_cols, 1]`.",,shape,"shape([5], [>=5]), ndim(1)",,1

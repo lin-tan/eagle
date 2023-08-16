@@ -1,0 +1,40 @@
+constraints:
+  input:
+    descp: 1-D input vector
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '1'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: optional output matrix
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    tensor_t:
+    - torch.tensor
+  vec2:
+    descp: 1-D input vector
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '1'
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - vec2
+link: https://pytorch.org/docs/1.7.0/generated/torch.outer.html#torch.outer#torch.outer
+package: torch
+ret_type: Tensor
+target: outer
+title: torch.outer
+version: 1.9.0

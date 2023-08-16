@@ -1,0 +1,224 @@
+parse_sent: False   #  whether need to parse sentences to match the pattern
+direct_map: True    # direct map the datatype in dtype
+check_dt: False
+break: True
+append: False
+target: dtype
+
+
+
+pat:    
+    
+    # '[`''"]*tensor[`''"]*':
+    #     dtype: tf.tensor 
+    #     overwrite: False
+
+    '(number|count)\s*of\s*\w+': 
+        dtype: int
+        overwrite: False
+        ndim: 0
+        range: '[0,inf)' 
+        # append: True
+
+    'this\s+many':
+        dtype: int
+        overwrite: False
+        ndim: 0
+        range: '[0,inf)' 
+        # append: True
+            
+    
+    'size\s*of\s*\w+': 
+        dtype: numeric
+        overwrite: False
+        range: '[0,inf)' 
+        # append: True
+
+    '^(the\s+)?dimensions\s+to':
+        dtype: int
+        ndim: 1
+        overwrite: False
+    
+    # overwrite
+    '^the\s+frequency':
+        dtype: int
+        range: '[0,inf)' 
+        overwrite: True
+
+    
+    'shape\s*of\s*\w+':
+        dtype: shape
+        overwrite: False
+
+    '(representing|represents)\s+the\s+(output|tensor)?\s*(shape|size)':
+        dtype: int
+        ndim: 1
+        range: '[0,inf)' 
+        overwrite: False
+
+
+
+    '(axis)\s+(to|along|of|that)':
+        dtype: int
+        overwrite: False
+        append: False
+
+    '(axes)\s+(to|along|of|that)':
+        dtype: int
+        ndim: 1
+        overwrite: False
+        append: False
+
+    '^(the\s+)?(dimension)\s+(to|along|of|that)':
+        dtype: int
+        overwrite: True
+        append: True
+
+    '^(the\s+)?(dimensions)\s+(to|along|of|that)':
+        dtype: int
+        ndim: 1
+        overwrite: True
+        append: True
+    
+
+
+
+
+    # 'the\s+stride\s+of\s+':
+    #     dtype: int
+    #     range: '[0,inf)' 
+    #     overwrite: False
+
+
+    # 'name\s*of\s*\w+':
+    #     dtype: tf.string
+    #     overwrite: False
+    
+    'type\s*of\s*\w+':
+        dtype: dtype
+        overwrite: False
+        ndim: 0
+
+    '(dilation|learning|decay)\s+\brate\b':
+        dtype: numeric
+        range: '[0,1]'
+        overwrite: False
+
+
+        
+    
+
+            
+    '(height|width|size)\s*of\s*\w+': 
+        dtype: numeric
+        overwrite: False
+        ndim: 0
+        range: '[0,inf)' 
+        append: False
+
+
+
+    'the\s+(minimum|maximum)\s+value\s+(of|to)':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+
+    # '(?!return )(?!returns )(?!return a )(?!returns a )[`''"]*(boolean|bool|tf.boolean|tf.bool)[`''"]*':    # boolean/bool/tf.boolean/tf.bool ...
+    #     dtype: tf.bool
+    #     overwrite: False
+
+    '^(lower|upper)?\s*(bound|limit)s*':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '^(width|height)\s+of\s+':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+
+    '^a\s+small\s+constant':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '^an\s+epsilon\s+parameter':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '(^|\.\s+)(the\s+)?((second|first|sequence)\s+)?(axis|axes)\s+':
+        dtype: int
+        overwrite: False
+        append: False
+
+    
+    '^(the\s+)?(maximum|minimum|output)?\s*(value)':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    # '^(width|height)\s+of\s+':
+    #     dtype: numeric
+    #     overwrite: False
+    #     append: False
+
+    '^(the\s+)?(maximum|minimum|output)?\s*(height|width)':
+        dtype: numeric
+        range: '[0,inf)'  # only for height and width
+        overwrite: False
+        append: False
+
+    '^(the\s+)?weight\s+decay':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    'weight\s+matrix':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '^(the\s+)?(moving|running|rgb)?\s*(mean|variance)':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+
+
+    'image\s+size':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '^(batch|maximum|minimum|kernel|the|vocabulary)\s+size':
+        dtype: numeric
+        range: '[0,inf)'
+        overwrite: False
+        append: False
+
+    '^constant':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    'deviation':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    '(matrix|matrices)':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    'weight\s+(of|for)':
+        dtype: numeric
+        overwrite: False
+        append: False
+            
+
+
+

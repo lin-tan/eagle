@@ -1,0 +1,60 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axes:
+    default: _Null
+    descp: List of axes on which input data will be sliced according to the corresponding
+      size of the second input. By default will slice on all axes. Negative axes are
+      supported.
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - D_STRUCTURE of axes on which input PARAM will be sliced according to the corresponding
+      size of the second input
+    - By default will slice on all axes
+    - Negative axes are supported
+    normalized_docdtype: Shape BSTR optional default
+  data:
+    default: None
+    descp: Source input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Source input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  shape_like:
+    default: None
+    descp: Shape like input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape like input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - data
+  - shape_like
+  - axes
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.slice_like
+package: mxnet
+target: slice_like
+title: mxnet.ndarray.op.slice_like
+version: 1.6.0

@@ -1,0 +1,69 @@
+sklearn.cluster.mean_shift = mean_shift(X, bandwidth=None, seeds=None, bin_seeding=False, min_bin_freq=1, cluster_all=True, max_iter=300, n_jobs=None)
+    Perform mean shift clustering of data using a flat kernel.
+    
+    Read more in the :ref:`User Guide <mean_shift>`.
+    
+    Parameters
+    ----------
+    
+    X : array-like of shape (n_samples, n_features)
+        Input data.
+    
+    bandwidth : float, optional
+        Kernel bandwidth.
+    
+        If bandwidth is not given, it is determined using a heuristic based on
+        the median of all pairwise distances. This will take quadratic time in
+        the number of samples. The sklearn.cluster.estimate_bandwidth function
+        can be used to do this more efficiently.
+    
+    seeds : array-like of shape (n_seeds, n_features) or None
+        Point used as initial kernel locations. If None and bin_seeding=False,
+        each data point is used as a seed. If None and bin_seeding=True,
+        see bin_seeding.
+    
+    bin_seeding : boolean, default=False
+        If true, initial kernel locations are not locations of all
+        points, but rather the location of the discretized version of
+        points, where points are binned onto a grid whose coarseness
+        corresponds to the bandwidth. Setting this option to True will speed
+        up the algorithm because fewer seeds will be initialized.
+        Ignored if seeds argument is not None.
+    
+    min_bin_freq : int, default=1
+       To speed up the algorithm, accept only those bins with at least
+       min_bin_freq points as seeds.
+    
+    cluster_all : boolean, default True
+        If true, then all points are clustered, even those orphans that are
+        not within any kernel. Orphans are assigned to the nearest kernel.
+        If false, then orphans are given cluster label -1.
+    
+    max_iter : int, default 300
+        Maximum number of iterations, per seed point before the clustering
+        operation terminates (for that seed point), if has not converged yet.
+    
+    n_jobs : int or None, optional (default=None)
+        The number of jobs to use for the computation. This works by computing
+        each of the n_init runs in parallel.
+    
+        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
+        ``-1`` means using all processors. See :term:`Glossary <n_jobs>`
+        for more details.
+    
+        .. versionadded:: 0.17
+           Parallel Execution using *n_jobs*.
+    
+    Returns
+    -------
+    
+    cluster_centers : array, shape=[n_clusters, n_features]
+        Coordinates of cluster centers.
+    
+    labels : array, shape=[n_samples]
+        Cluster labels for each point.
+    
+    Notes
+    -----
+    For an example, see :ref:`examples/cluster/plot_mean_shift.py
+    <sphx_glr_auto_examples_cluster_plot_mean_shift.py>`.

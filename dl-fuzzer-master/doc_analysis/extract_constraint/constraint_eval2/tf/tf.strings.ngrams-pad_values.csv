@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A tuple of (left_pad_value, right_pad_value), a single string, or None. If None, no padding will be added; if a single string, then that string will be used for both left and right padding. Values must be Python strings.",None,prim_dtype,dtype(tf.string),,1
+,"A tuple of (left_pad_value, right_pad_value), a single string, or None. If None, no padding will be added; if a single string, then that string will be used for both left and right padding. Values must be Python strings.",None,nonprim_dtype,structure(tuple),,1
+,"A tuple of (left_pad_value, right_pad_value), a single string, or None. If None, no padding will be added; if a single string, then that string will be used for both left and right padding. Values must be Python strings.",None,shape,"ndim(0, 1)",,1

@@ -1,0 +1,24 @@
+constraints:
+  '*size':
+    descp: a sequence of integers defining the shape of the output tensor. Can be
+      a variable number of arguments or a collection like a list or tuple.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    structure:
+    - list
+    - tuple
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+title: torch.randn

@@ -1,0 +1,24 @@
+constraints:
+  bias:
+    default: None
+    descp: Bias parameter.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  data:
+    default: None
+    descp: Input data to the DeformableConvolutionOp.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.contrib.DeformableConvolution

@@ -1,0 +1,18 @@
+constraints:
+  dilation_rate:
+    default: (1, 1, 1)
+    descp: an integer or tuple/list of 3 integers, specifying the dilation rate to
+      use for dilated convolution. Can be a single integer to specify the same value
+      for all spatial dimensions. Currently, specifying any `dilation_rate` value
+      != 1 is incompatible with specifying any stride value != 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[3]'
+    structure:
+    - list
+    - tuple
+title: tf.keras.layers.Conv3D

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int Number of bins. A bigger number requires more data. Bins with no data points (i.e. without corresponding values in y_prob) will not be returned, thus there may be fewer than n_bins in the return value.",5,prim_dtype,dtype(int),,1
+,"int Number of bins. A bigger number requires more data. Bins with no data points (i.e. without corresponding values in y_prob) will not be returned, thus there may be fewer than n_bins in the return value.",5,shape,ndim(0),,1
+,"int Number of bins. A bigger number requires more data. Bins with no data points (i.e. without corresponding values in y_prob) will not be returned, thus there may be fewer than n_bins in the return value.",5,validvalue,"range([0,inf))",,1

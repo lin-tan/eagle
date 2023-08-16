@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.backend.tanh
+constraints:
+  x:
+    descp: A tensor or variable.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/tanh
+outputs: A tensor.
+package: tensorflow
+target: tanh
+title: tf.keras.backend.tanh
+version: 2.1.0

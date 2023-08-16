@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"0-D (scalar). Specifies the dimension index at which to expand the shape of `input`. Must be in the range `[-rank(sp_input) - 1, rank(sp_input)]`.",None,prim_dtype,dtype(int),1,1
+,"0-D (scalar). Specifies the dimension index at which to expand the shape of `input`. Must be in the range `[-rank(sp_input) - 1, rank(sp_input)]`.",None,shape,ndim(0),1,1
+,"0-D (scalar). Specifies the dimension index at which to expand the shape of `input`. Must be in the range `[-rank(sp_input) - 1, rank(sp_input)]`.",None,validvalue,"range([-ndim:&sp_input-1,ndim:&sp_input])",1,1

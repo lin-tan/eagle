@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: None
+    descp: Name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.linalg.matvec

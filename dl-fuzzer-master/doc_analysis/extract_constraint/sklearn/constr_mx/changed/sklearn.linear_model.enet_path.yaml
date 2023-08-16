@@ -1,0 +1,113 @@
+constraints:
+  '**params':
+    descp: kwargs Keyword arguments passed to the coordinate descent solver.
+    structure:
+    - list
+  X:
+    descp: '{array-like}, shape (n_samples, n_features) Training data. Pass directly
+      as Fortran-contiguous data to avoid unnecessary memory duplication. If ``y``
+      is mono-output then ``X`` can be sparse.'
+  Xy:
+    default: None
+    descp: array-like, optional Xy = np.dot(X.T, y) that can be precomputed. It is
+      useful only when the Gram matrix is precomputed.
+  alphas:
+    default: None
+    descp: ndarray, optional List of alphas where to compute the models. If None alphas
+      are set automatically.
+  check_input:
+    default: 'True'
+    descp: bool, default True Skip input validation checks, including the Gram matrix
+      when provided assuming there are handled by the caller when check_input=False.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  coef_init:
+    default: None
+    descp: array, shape (n_features, ) | None The initial values of the coefficients.
+  copy_X:
+    default: 'True'
+    descp: bool, optional, default True If ``True``, X will be copied; else, it may
+      be overwritten.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  eps:
+    default: '0.001'
+    descp: float Length of the path. ``eps=1e-3`` means that ``alpha_min / alpha_max
+      = 1e-3``.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  l1_ratio:
+    default: '0.5'
+    descp: float, optional Number between 0 and 1 passed to elastic net (scaling between
+      l1 and l2 penalties). ``l1_ratio=1`` corresponds to the Lasso.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n_alphas:
+    default: '100'
+    descp: int, optional Number of alphas along the regularization path.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  positive:
+    default: 'False'
+    descp: bool, default False If set to True, forces coefficients to be positive.
+      (Only allowed when ``y.ndim == 1``).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  precompute:
+    default: auto
+    descp: True | False | 'auto' | array-like Whether to use a precomputed Gram matrix
+      to speed up calculations. If set to ``'auto'`` let us decide. The Gram matrix
+      can also be passed as argument.
+    dtype:
+    - string
+  return_n_iter:
+    default: 'False'
+    descp: bool Whether to return the number of iterations or not.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  verbose:
+    default: 'False'
+    descp: bool or int Amount of verbosity.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  y:
+    descp: ndarray, shape (n_samples,) or (n_samples, n_outputs) Target values.
+inputs:
+  optional:
+  - l1_ratio
+  - eps
+  - n_alphas
+  - alphas
+  - precompute
+  - Xy
+  - copy_X
+  - coef_init
+  - verbose
+  - return_n_iter
+  - positive
+  - check_input
+  required:
+  - X
+  - y
+  - '**params'
+link: ''
+package: scikit-learn
+target: enet_path
+title: sklearn.linear_model.enet_path
+version: 0.24.X

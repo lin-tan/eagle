@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.keras.applications.imagenet_utils.preprocess_input
+constraints:
+  data_format:
+    default: None
+    descp: Optional data format of the image tensor/array. Defaults to None, in which
+      case the global setting tf.keras.backend.image_data_format() is used (unless
+      you changed it, it defaults to "channels_last").
+  mode:
+    default: caffe
+    descp: 'One of "caffe", "tf" or "torch". caffe: will convert the images from RGB
+      to BGR, then will zero-center each color channel with respect to the ImageNet
+      dataset, without scaling. tf: will scale pixels between -1 and 1, sample-wise.
+      torch: will scale pixels between 0 and 1 and then will normalize each channel
+      with respect to the ImageNet dataset.'
+  x:
+    descp: A floating point numpy.array or a tf.Tensor, 3D or 4D with 3 color channels,
+      with values in the range [0, 255]. The preprocessed data are written over the
+      input data if the data types are compatible. To avoid this behaviour, numpy.copy(x)
+      can be used.
+exceptions:
+- ValueError: In case of unknown data_format argument.
+inputs:
+  optional:
+  - data_format
+  - mode
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/applications/imagenet_utils/preprocess_input
+outputs:
+- Preprocessed numpy.array or a tf.Tensor with type float32.
+package: tensorflow
+target: preprocess_input
+title: tf.keras.applications.imagenet_utils.preprocess_input
+version: 2.2.0

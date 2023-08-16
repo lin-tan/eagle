@@ -1,0 +1,27 @@
+constraints:
+  csr_sparse_matrix:
+    descp: A Tensor of type variant. A batched CSRSparseMatrix.
+  index:
+    descp: A Tensor of type int32. The index in csr_sparse_matrix's batch.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+inputs:
+  optional:
+  - name
+  required:
+  - csr_sparse_matrix
+  - index
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CSRSparseMatrixComponents
+outputs:
+- A tuple of Tensor objects (row_ptrs, col_inds, values).
+- row_ptrs: A Tensor of type int32.
+- col_inds: A Tensor of type int32.
+- values: A Tensor of type type.
+package: tensorflow
+target: CSRSparseMatrixComponents
+title: tf.raw_ops.CSRSparseMatrixComponents
+version: 2.2.0

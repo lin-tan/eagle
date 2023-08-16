@@ -1,0 +1,12 @@
+constraints:
+  dims:
+    default: None
+    descp: Axis along which to roll
+    doc_dtype:
+    - int
+    - tuple of python:ints
+    dtype:
+    - int
+    structure:
+    - tuple
+title: torch.roll

@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.ones
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: Optional DType of an element in the resulting Tensor. Default is tf.float32.
+  name:
+    default: None
+    descp: Optional string. A name for the operation.
+  shape:
+    descp: A list of integers, a tuple of integers, or a 1-D Tensor of type int32.
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/ones
+outputs:
+- A Tensor with all elements set to one (1).
+package: tensorflow
+target: ones
+title: tf.ones
+version: 2.3.0

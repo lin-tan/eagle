@@ -1,0 +1,22 @@
+constraints:
+  lhs:
+    descp: First array to be compared.
+    doc_dtype:
+    - scalar
+    - mxnet.ndarray.array
+  rhs:
+    descp: Second array to be compared. If `lhs.shape != rhs.shape`, they must be
+      broadcastable to a common shape.
+    doc_dtype:
+    - scalar
+    - mxnet.ndarray.array
+inputs:
+  optional: []
+  required:
+  - lhs
+  - rhs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.not_equal
+package: mxnet
+target: not_equal
+title: mxnet.ndarray.not_equal
+version: 1.6.0

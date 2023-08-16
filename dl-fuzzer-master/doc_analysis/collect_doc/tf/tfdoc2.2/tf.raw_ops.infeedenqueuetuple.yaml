@@ -1,0 +1,37 @@
+constraints:
+  device_ordinal:
+    default: '-1'
+    descp: An optional int. Defaults to -1. The TPU device to use. This should be
+      -1 when the Op is running on a TPU device, and >= 0 when the Op is running on
+      the CPU device.
+  inputs:
+    descp: A list of Tensor objects. A list of tensors that will be provided using
+      the infeed mechanism.
+  layouts:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. A vector holding the requested
+      layout in minor-to-major sequence for all the tuple shapes, in the order the
+      shapes appear in the "shapes" input. The layout elements for a sub-shape can
+      be set to -1, in which case the corresponding layout will be computed by the
+      infeed operation.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints). The shapes of
+      each tensor in inputs.
+inputs:
+  optional:
+  - layouts
+  - device_ordinal
+  - name
+  required:
+  - inputs
+  - shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/InfeedEnqueueTuple
+outputs:
+- The created Operation.
+package: tensorflow
+target: InfeedEnqueueTuple
+title: tf.raw_ops.InfeedEnqueueTuple
+version: 2.2.0

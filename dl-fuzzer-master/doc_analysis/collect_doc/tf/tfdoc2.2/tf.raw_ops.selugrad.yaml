@@ -1,0 +1,23 @@
+constraints:
+  gradients:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. The backpropagated gradients to the corresponding Selu operation.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  outputs:
+    descp: A Tensor. Must have the same type as gradients. The outputs of the corresponding
+      Selu operation.
+inputs:
+  optional:
+  - name
+  required:
+  - gradients
+  - outputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SeluGrad
+outputs:
+- A Tensor. Has the same type as gradients.
+package: tensorflow
+target: SeluGrad
+title: tf.raw_ops.SeluGrad
+version: 2.2.0

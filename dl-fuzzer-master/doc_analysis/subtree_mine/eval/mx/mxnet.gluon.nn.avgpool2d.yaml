@@ -1,0 +1,19 @@
+constraints:
+  padding:
+    default: '0'
+    descp: If padding is non-zero, then the input is implicitly zero-padded on both
+      sides for padding number of points.
+    doc_dtype:
+    - int
+    - list/tuple of 2 ints,
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple
+    - list
+title: mxnet.gluon.nn.AvgPool2D

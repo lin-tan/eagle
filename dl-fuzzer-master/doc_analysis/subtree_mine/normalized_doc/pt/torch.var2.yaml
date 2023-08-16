@@ -1,0 +1,51 @@
+constraints:
+  dim:
+    descp: the dimension or dimensions to reduce.
+    doc_dtype: int or tuple of python:ints
+    normalized_descp:
+    - the dimension or dimensions to reduce
+    normalized_docdtype: D_TYPE or D_STRUCTURE of python D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether the output D_STRUCTURE has PARAM retained or not
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  unbiased:
+    default: 'True'
+    descp: whether to use the unbiased estimation or not
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to use the unbiased estimation or not
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - keepdim
+  - unbiased
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.var
+package: torch
+ret_type: Tensor
+target: var
+title: torch.var
+version: 1.5.0

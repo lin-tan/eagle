@@ -1,0 +1,60 @@
+constraints:
+  X: {descp: 'array-like or sparse matrix, shape (n_samples, n_features) The observations
+      to cluster. It must be noted that the data will be converted to C ordering,
+      which will cause a memory copy if the given data is not C-contiguous.'}
+  algorithm: {default: auto, descp: '"auto", "full" or "elkan", default="auto" K-means
+      algorithm to use. The classical EM-style algorithm is "full". The "elkan" variation
+      is more efficient by using the triangle inequality, but currently doesn''t support
+      sparse data. "auto" chooses "elkan" for dense data and "full" for sparse data.'}
+  copy_x: {default: 'True', descp: 'bool, optional When pre-computing distances it
+      is more numerically accurate to center the data first.  If copy_x is True (default),
+      then the original data is not modified, ensuring X is C-contiguous.  If False,
+      the original data is modified, and put back before the function returns, but
+      small numerical differences may be introduced by subtracting and then adding
+      the data mean, in this case it will also not ensure that data is C-contiguous
+      which may cause a significant slowdown.'}
+  init: {default: k-means++, descp: '{''k-means++'', ''random'', or ndarray, or a
+      callable}, optional Method for initialization, default to ''k-means++'': ''k-means++''
+      : selects initial cluster centers for k-mean clustering in a smart way to speed
+      up convergence. See section Notes in k_init for more details. ''random'': choose
+      k observations (rows) at random from data for the initial centroids. If an ndarray
+      is passed, it should be of shape (n_clusters, n_features) and gives the initial
+      centers. If a callable is passed, it should take arguments X, k and and a random
+      state and return an initialization.'}
+  max_iter: {default: '300', descp: 'int, optional, default 300 Maximum number of
+      iterations of the k-means algorithm to run.'}
+  n_clusters: {descp: int The number of clusters to form as well as the number of
+      centroids to generate.}
+  n_init: {default: '10', descp: 'int, optional, default: 10 Number of time the k-means
+      algorithm will be run with different centroid seeds. The final results will
+      be the best output of n_init consecutive runs in terms of inertia.'}
+  n_jobs: {default: None, descp: 'int or None, optional (default=None) The number
+      of jobs to use for the computation. This works by computing each of the n_init
+      runs in parallel. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.'}
+  precompute_distances: {default: auto, descp: '{''auto'', True, False} Precompute
+      distances (faster but takes more memory). ''auto'' : do not precompute distances
+      if n_samples * n_clusters > 12 million. This corresponds to about 100MB overhead
+      per job using double precision. True : always precompute distances False : never
+      precompute distances'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for centroid initialization. Use an int
+      to make the randomness deterministic. See :term:`Glossary <random_state>`.'}
+  return_n_iter: {default: 'False', descp: 'bool, optional Whether or not to return
+      the number of iterations.'}
+  sample_weight: {default: None, descp: 'array-like, shape (n_samples,), optional
+      The weights for each observation in X. If None, all observations are assigned
+      equal weight (default: None)'}
+  tol: {default: '0.0001', descp: 'float, optional The relative increment in the results
+      before declaring convergence.'}
+  verbose: {default: 'False', descp: 'boolean, optional Verbosity mode.'}
+inputs:
+  optional: [sample_weight, init, precompute_distances, n_init, max_iter, verbose,
+    tol, random_state, copy_x, n_jobs, algorithm, return_n_iter]
+  required: [X, n_clusters]
+link: ''
+package: sklearn
+target: k_means
+title: sklearn.cluster.k_means
+version: 0.24.2

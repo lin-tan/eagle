@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"the stride of the window. Can be a single number or a tuple (sW,). Default: `kernel_size`",None,prim_dtype,dtype(int),,1
+,"the stride of the window. Can be a single number or a tuple (sW,). Default: `kernel_size`",None,nonprim_dtype,structure(tuple:(sw)),,1
+,"the stride of the window. Can be a single number or a tuple (sW,). Default: `kernel_size`",None,shape,"shape([1]), ndim(0, 1)",,1

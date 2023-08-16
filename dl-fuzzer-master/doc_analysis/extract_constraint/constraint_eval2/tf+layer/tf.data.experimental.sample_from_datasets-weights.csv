@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(Optional.) A list of `len(datasets)` floating-point values where`weights[i]` represents the probability with which an element should be sampled from `datasets[i]`, or a `tf.data.Dataset` object where each element is such a list. Defaults to a uniform distribution across`datasets`.",None,prim_dtype,dtype(numeric),,1
+,"(Optional.) A list of `len(datasets)` floating-point values where`weights[i]` represents the probability with which an element should be sampled from `datasets[i]`, or a `tf.data.Dataset` object where each element is such a list. Defaults to a uniform distribution across`datasets`.",None,nonprim_dtype,structure(list),,1

@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.data.experimental.snapshot
+constraints:
+  compression:
+    default: AUTO
+    descp: Optional. The type of compression to apply to the snapshot written to disk.
+      Supported options are GZIP, SNAPPY, AUTO or None. Defaults to AUTO, which attempts
+      to pick an appropriate compression algorithm for the dataset.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  path:
+    descp: Required. A directory to use for storing / loading the snapshot to / from.
+    dtype:
+    - tf.string
+  reader_func:
+    default: None
+    descp: Optional. A function to control how to read data from snapshot shards.
+    dtype:
+    - callable
+  shard_func:
+    default: None
+    descp: Optional. A function to control how to shard data when writing a snapshot.
+    dtype:
+    - callable
+inputs:
+  optional:
+  - compression
+  - reader_func
+  - shard_func
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/snapshot
+outputs:
+- A Dataset transformation function, which can be passed to tf.data.Dataset.apply.
+package: tensorflow
+target: snapshot
+title: tf.data.experimental.snapshot
+version: 2.3.0

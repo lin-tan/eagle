@@ -1,0 +1,54 @@
+constraints:
+  atol:
+    default: 1e-08
+    descp: 'absolute tolerance. Default: 1e-08'
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - absolute tolerance
+    - Default CONSTANT_FLOAT
+    normalized_docdtype: D_TYPE optional
+  equal_nan:
+    default: 'False'
+    descp: 'if `True`, then two `NaN` s will be compared as equal. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL then two QSTR will be compared as equal
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: first tensor to compare
+    doc_dtype: Tensor
+    normalized_descp:
+    - first D_STRUCTURE to compare
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  other:
+    descp: second tensor to compare
+    doc_dtype: Tensor
+    normalized_descp:
+    - second D_STRUCTURE to compare
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  rtol:
+    default: 1e-05
+    descp: 'relative tolerance. Default: 1e-05'
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - relative tolerance
+    - Default CONSTANT_FLOAT
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - rtol
+  - atol
+  - equal_nan
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.allclose
+package: torch
+ret_type: bool
+target: allclose
+title: torch.allclose
+version: 1.5.0

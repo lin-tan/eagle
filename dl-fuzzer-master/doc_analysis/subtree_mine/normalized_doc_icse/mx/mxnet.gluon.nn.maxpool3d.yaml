@@ -1,0 +1,68 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  ceil_mode:
+    default: 'False'
+    descp: When True, will use ceil instead of floor to compute the output shape.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - When CONSTANT_BOOL will use ceil instead of floor to compute the output shape
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+  layout:
+    default: NCDHW
+    descp: Dimension ordering of data and out ('NCDHW' or 'NDHWC'). 'N', 'C', 'H',
+      'W', 'D' stands for batch, channel, height, width and depth dimensions respectively.
+      padding is applied on 'D', 'H' and 'W' dimension.
+    doc_dtype: str, default 'NCDHW'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Dimension ordering of data and out QSTR
+    - QSTR stands for batch channel height width and depth dimensions respectively
+    - PARAM is applied on QSTR dimension
+    normalized_docdtype: D_TYPE default QSTR
+  padding:
+    default: '0'
+    descp: If padding is non-zero, then the input is implicitly zero-padded on both
+      sides for padding number of points.
+    doc_dtype: int or list/tuple of 3 ints,
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - If padding is non zero then the input is implicitly zero padded on both sides
+      for padding number of points
+    normalized_docdtype: D_TYPE or D_STRUCTURE of CONSTANT_NUM D_TYPE
+  pool_size:
+    default: (2,2,2)
+    descp: Size of the max pooling windows.
+    doc_dtype: int or list/tuple of 3 ints,
+    normalized_default: CONSTANT_NUM CONSTANT_NUM CONSTANT_NUM
+    normalized_descp:
+    - Size of the max pooling windows
+    normalized_docdtype: D_TYPE or D_STRUCTURE of CONSTANT_NUM D_TYPE
+  strides:
+    default: None
+    descp: Factor by which to downscale. E.g. 2 will halve the input size. If None,
+      it will default to pool_size.
+    doc_dtype: int, list/tuple of 3 ints, or None.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Factor by which to downscale
+    - E g
+    - CONSTANT_NUM will halve the input size
+    - If None it will default to PARAM
+    normalized_docdtype: D_TYPE D_STRUCTURE of CONSTANT_NUM D_TYPE or None
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - ceil_mode
+  - layout
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.MaxPool3D
+package: mxnet
+target: MaxPool3D
+title: mxnet.gluon.nn.MaxPool3D
+version: 1.6.0

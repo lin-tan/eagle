@@ -1,0 +1,53 @@
+sklearn.datasets.load_breast_cancer = load_breast_cancer(return_X_y=False)
+    Load and return the breast cancer wisconsin dataset (classification).
+    
+    The breast cancer dataset is a classic and very easy binary classification
+    dataset.
+    
+    =================   ==============
+    Classes                          2
+    Samples per class    212(M),357(B)
+    Samples total                  569
+    Dimensionality                  30
+    Features            real, positive
+    =================   ==============
+    
+    Read more in the :ref:`User Guide <breast_cancer_dataset>`.
+    
+    Parameters
+    ----------
+    return_X_y : boolean, default=False
+        If True, returns ``(data, target)`` instead of a Bunch object.
+        See below for more information about the `data` and `target` object.
+    
+        .. versionadded:: 0.18
+    
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+        'data', the data to learn, 'target', the classification labels,
+        'target_names', the meaning of the labels, 'feature_names', the
+        meaning of the features, and 'DESCR', the full description of
+        the dataset, 'filename', the physical location of
+        breast cancer csv dataset (added in version `0.20`).
+    
+    (data, target) : tuple if ``return_X_y`` is True
+    
+        .. versionadded:: 0.18
+    
+    The copy of UCI ML Breast Cancer Wisconsin (Diagnostic) dataset is
+    downloaded from:
+    https://goo.gl/U2Uwz2
+    
+    Examples
+    --------
+    Let's say you are interested in the samples 10, 50, and 85, and want to
+    know their class name.
+    
+    >>> from sklearn.datasets import load_breast_cancer
+    >>> data = load_breast_cancer()
+    >>> data.target[[10, 50, 85]]
+    array([0, 1, 0])
+    >>> list(data.target_names)
+    ['malignant', 'benign']

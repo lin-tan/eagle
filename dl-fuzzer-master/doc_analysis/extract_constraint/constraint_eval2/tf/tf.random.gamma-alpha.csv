@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A Tensor or Python value or N-D array of type `dtype`. `alpha`provides the shape parameter(s) describing the gamma distribution(s) to sample. Must be broadcastable with `beta`.,,prim_dtype,dtype(tf.dtype),,1
+,A Tensor or Python value or N-D array of type `dtype`. `alpha`provides the shape parameter(s) describing the gamma distribution(s) to sample. Must be broadcastable with `beta`.,,nonprim_dtype,"tensor_t(tf.tensor), structure(list(tf.dtype))",,1
+,A Tensor or Python value or N-D array of type `dtype`. `alpha`provides the shape parameter(s) describing the gamma distribution(s) to sample. Must be broadcastable with `beta`.,,shape,"ndim(1, n)",,1

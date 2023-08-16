@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A list of `strings`. List of strings containing proto field names. An extension field can be decoded by using its full name, e.g. EXT_PACKAGE.EXT_FIELD_NAME.",,prim_dtype,dtype(tf.string),,1
+,"A list of `strings`. List of strings containing proto field names. An extension field can be decoded by using its full name, e.g. EXT_PACKAGE.EXT_FIELD_NAME.",,nonprim_dtype,structure(list(tf.string)),,1
+,"A list of `strings`. List of strings containing proto field names. An extension field can be decoded by using its full name, e.g. EXT_PACKAGE.EXT_FIELD_NAME.",,shape,ndim(1),,1

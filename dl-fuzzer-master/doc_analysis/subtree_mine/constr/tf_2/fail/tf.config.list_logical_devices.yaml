@@ -1,0 +1,19 @@
+aliases:
+- tf.config.experimental.list_logical_devices
+- tf.compat.v1.config.experimental.list_logical_devices
+- tf.compat.v1.config.list_logical_devices
+constraints:
+  device_type:
+    default: None
+    descp: (optional string) Only include devices matching this device type. For example
+      "CPU" or "GPU".
+inputs:
+  optional:
+  - device_type
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/config/list_logical_devices
+outputs: List of initialized `LogicalDevice`s
+package: tensorflow
+target: list_logical_devices
+title: tf.config.list_logical_devices
+version: 2.1.0

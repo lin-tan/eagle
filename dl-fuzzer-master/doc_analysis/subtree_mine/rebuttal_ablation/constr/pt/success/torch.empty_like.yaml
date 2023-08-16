@@ -1,0 +1,153 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, defaults to
+      the device of `input`.'
+    doc_dtype: '`torch.device`, optional'
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: if `None`, defaults
+      to the dtype of `input`.'
+    doc_dtype: '`torch.dtype`, optional'
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  input:
+    descp: the size of `input` will determine size of the output tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  layout:
+    default: None
+    descp: 'the desired layout of returned tensor. Default: if `None`, defaults to
+      the layout of `input`.'
+    doc_dtype: '`torch.layout`, optional'
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  memory_format:
+    default: torch.preserve_format
+    descp: 'the desired memory format of returned Tensor. Default: `torch.preserve_format`.'
+    doc_dtype: '`torch.memory_format`, optional'
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - memory_format
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.empty_like
+package: torch
+ret_type: Tensor
+target: empty_like
+title: torch.empty_like
+version: 1.5.0

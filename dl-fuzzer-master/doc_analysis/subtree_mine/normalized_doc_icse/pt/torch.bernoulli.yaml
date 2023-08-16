@@ -1,0 +1,38 @@
+constraints:
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype: '`torch.Generator`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a pseudorandom number generator for sampling
+    normalized_docdtype: torch Generator optional
+  input:
+    descp: the input tensor of probability values for the Bernoulli distribution
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of probability values for the Bernoulli distribution
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  keyword_only:
+  - generator
+  - out
+  optional:
+  - generator
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.bernoulli
+package: torch
+ret_type: Tensor
+target: bernoulli
+title: torch.bernoulli
+version: 1.5.0

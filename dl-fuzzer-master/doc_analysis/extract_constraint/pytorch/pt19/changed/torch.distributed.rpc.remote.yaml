@@ -1,0 +1,57 @@
+constraints:
+  args:
+    default: None
+    descp: the argument tuple for the `func` invocation.
+    doc_dtype:
+    - tuple
+    structure:
+    - tuple
+  func:
+    descp: a callable function, such as Python callables, builtin operators (e.g.
+      `add()`) and annotated TorchScript functions.
+    doc_dtype:
+    - callable
+    dtype:
+    - callable
+  kwargs:
+    default: None
+    descp: is a dictionary of keyword arguments for the `func` invocation.
+    doc_dtype:
+    - dict
+    structure:
+    - dict
+    - dictionary
+  timeout:
+    default: '-1.0'
+    descp: timeout in seconds for this remote call. If the creation of this `RRef`
+      on worker `to` is not successfully processed on this worker within this timeout,
+      then the next time there is an attempt to use the RRef (such as `to_here()`),
+      a timeout will be raised indicating this failure. A value of 0 indicates an
+      infinite timeout, i.e. a timeout error will never be raised. If not provided,
+      the default value set during initialization or with `_set_rpc_timeout` is used.
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+  to:
+    descp: id or name of the destination worker.
+    doc_dtype:
+    - str
+    - WorkerInfo
+    dtype:
+    - string
+inputs:
+  optional:
+  - args
+  - kwargs
+  - timeout
+  required:
+  - to
+  - func
+link: https://pytorch.org/docs/1.7.0/rpc.html#torch.distributed.rpc.remote
+package: torch
+target: remote
+title: torch.distributed.rpc.remote
+version: 1.9.0

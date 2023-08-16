@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  k:
+    default: _Null
+    descp: Limit of unsuccessful experiments.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Limit of unsuccessful experiments
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  p:
+    default: _Null
+    descp: Failure probability in each experiment.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Failure probability in each experiment
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - k
+  - p
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.negative_binomial_like
+package: mxnet
+target: negative_binomial_like
+title: mxnet.ndarray.random.negative_binomial_like
+version: 1.6.0

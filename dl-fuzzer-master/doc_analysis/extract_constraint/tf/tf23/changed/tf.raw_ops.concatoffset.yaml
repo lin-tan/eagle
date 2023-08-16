@@ -1,0 +1,39 @@
+constraints:
+  concat_dim:
+    descp: A Tensor of type int32. The dimension along which to concatenate.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A list of at least 2 Tensor objects with type int32. The N int32 vectors
+      representing shape of tensors being concatenated.
+    dtype:
+    - int
+    - tf.int32
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+inputs:
+  optional:
+  - name
+  required:
+  - concat_dim
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ConcatOffset
+outputs:
+- A list with the same length as shape of Tensor objects with type int32.
+package: tensorflow
+target: ConcatOffset
+title: tf.raw_ops.ConcatOffset
+version: 2.3.0

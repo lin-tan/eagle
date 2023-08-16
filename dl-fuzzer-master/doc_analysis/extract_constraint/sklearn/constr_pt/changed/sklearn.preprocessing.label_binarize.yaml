@@ -1,0 +1,40 @@
+constraints:
+  classes:
+    descp: array-like of shape [n_classes] Uniquely holds the label for each class.
+  neg_label:
+    default: '0'
+    descp: 'int (default: 0) Value with which negative labels must be encoded.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  pos_label:
+    default: '1'
+    descp: 'int (default: 1) Value with which positive labels must be encoded.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sparse_output:
+    default: 'False'
+    descp: 'boolean (default: False), Set to true if output binary array is desired
+      in CSR sparse format'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  y:
+    descp: array-like Sequence of integer labels or multilabel data to encode.
+inputs:
+  optional:
+  - neg_label
+  - pos_label
+  - sparse_output
+  required:
+  - y
+  - classes
+link: ''
+package: scikit-learn
+target: label_binarize
+title: sklearn.preprocessing.label_binarize
+version: 0.24.X

@@ -1,0 +1,27 @@
+constraints:
+  emp_cov:
+    descp: array-like, shape (n_features, n_features) Covariance matrix to be shrunk
+    ndim:
+    - '2'
+    shape:
+    - '[n_features,n_features]'
+  shrinkage:
+    default: '0.1'
+    descp: float, 0 <= shrinkage <= 1 Coefficient in the convex combination used for
+      the computation of the shrunk estimate.
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+inputs:
+  optional:
+  - shrinkage
+  required:
+  - emp_cov
+link: ''
+package: scikit-learn
+target: shrunk_covariance
+title: sklearn.covariance.shrunk_covariance
+version: 0.24.X

@@ -1,0 +1,60 @@
+constraints:
+  compilation_failure_closes_chips:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  embedding_config:
+    default: ''
+    descp: An optional string. Defaults to "". Reserved. Do not use.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  enable_whole_mesh_compilations:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  is_global_init:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Reserved. Do not use.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tpu_embedding_config:
+    default: ''
+    descp: An optional string. Defaults to "". Serialized tensorflow.tpu.TPUEmbeddingConfiguration
+      that describes the embedding lookups of the program.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - embedding_config
+  - tpu_embedding_config
+  - is_global_init
+  - enable_whole_mesh_compilations
+  - compilation_failure_closes_chips
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ConfigureDistributedTPU
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ConfigureDistributedTPU
+title: tf.raw_ops.ConfigureDistributedTPU
+version: 2.2.0

@@ -1,0 +1,31 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  queue_handle:
+    descp: A Tensor of type resource. Handle to a Queue, with string work items.
+    tensor_t:
+    - tf.tensor
+  reader_handle:
+    descp: A Tensor of type resource. Handle to a Reader.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+  - queue_handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReaderReadV2
+outputs:
+- A tuple of Tensor objects (key, value).
+- key: A Tensor of type string.
+- value: A Tensor of type string.
+package: tensorflow
+target: ReaderReadV2
+title: tf.raw_ops.ReaderReadV2
+version: 2.3.0

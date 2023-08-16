@@ -1,0 +1,34 @@
+constraints:
+  inputs:
+    descp: A Tensor of type float32.
+  max:
+    default: '6'
+    descp: An optional float. Defaults to 6.
+  min:
+    default: '-6'
+    descp: An optional float. Defaults to -6.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  narrow_range:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  num_bits:
+    default: '8'
+    descp: An optional int. Defaults to 8.
+inputs:
+  optional:
+  - min
+  - max
+  - num_bits
+  - narrow_range
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FakeQuantWithMinMaxArgs
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: FakeQuantWithMinMaxArgs
+title: tf.raw_ops.FakeQuantWithMinMaxArgs
+version: 2.3.0

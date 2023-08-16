@@ -1,0 +1,1721 @@
+torch.abs.yaml:
+- input
+- out
+torch.acos.yaml:
+- input
+- out
+torch.add.yaml:
+- alpha
+- input
+- other
+- out
+torch.addbmm.yaml:
+- alpha
+- batch1
+- batch2
+- beta
+- input
+- out
+torch.addcdiv.yaml:
+- input
+- out
+- tensor1
+- tensor2
+- value
+torch.addcmul.yaml:
+- input
+- out
+- tensor1
+- tensor2
+- value
+torch.addmm.yaml:
+- alpha
+- beta
+- input
+- mat1
+- mat2
+- out
+torch.addmv.yaml:
+- alpha
+- beta
+- input
+- mat
+- out
+- vec
+torch.addr.yaml:
+- alpha
+- beta
+- input
+- out
+- vec1
+- vec2
+torch.allclose.yaml:
+- atol
+- equal_nan
+- input
+- other
+- rtol
+torch.angle.yaml:
+- input
+- out
+torch.arange.yaml:
+- device
+- dtype
+- end
+- layout
+- out
+- requires_grad
+- start
+- step
+torch.argmax.yaml:
+- input
+torch.argmax2.yaml:
+- dim
+- input
+- keepdim
+torch.argmin.yaml:
+- input
+torch.argmin2.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.argsort.yaml:
+- descending
+- dim
+- input
+torch.as_strided.yaml:
+- input
+- storage_offset
+- stride
+torch.as_tensor.yaml:
+- data
+- device
+- dtype
+torch.asin.yaml:
+- input
+- out
+torch.atan.yaml:
+- input
+- out
+torch.atan2.yaml:
+- input
+- other
+- out
+torch.autograd.backward.yaml:
+- create_graph
+- grad_tensors
+- grad_variables
+- retain_graph
+- tensors
+torch.autograd.functional.hessian.yaml:
+- create_graph
+- func
+- inputs
+- strict
+torch.autograd.functional.hvp.yaml:
+- create_graph
+- func
+- inputs
+- strict
+- v
+torch.autograd.functional.jacobian.yaml:
+- create_graph
+- func
+- inputs
+- strict
+torch.autograd.functional.jvp.yaml:
+- create_graph
+- func
+- inputs
+- strict
+- v
+torch.autograd.functional.vhp.yaml:
+- create_graph
+- func
+- inputs
+- strict
+- v
+torch.autograd.functional.vjp.yaml:
+- create_graph
+- func
+- inputs
+- strict
+- v
+torch.autograd.grad.yaml:
+- allow_unused
+- create_graph
+- grad_outputs
+- inputs
+- only_inputs
+- outputs
+- retain_graph
+torch.autograd.gradcheck.yaml:
+- atol
+- check_sparse_nnz
+- eps
+- func
+- inputs
+- nondet_tol
+- raise_exception
+- rtol
+torch.autograd.gradgradcheck.yaml:
+- atol
+- eps
+- func
+- gen_non_contig_grad_outputs
+- grad_outputs
+- inputs
+- nondet_tol
+- raise_exception
+- rtol
+torch.autograd.profiler.load_nvprof.yaml:
+- path
+torch.baddbmm.yaml:
+- alpha
+- batch1
+- batch2
+- beta
+- input
+- out
+torch.bartlett_window.yaml:
+- device
+- dtype
+- layout
+- periodic
+- requires_grad
+torch.bernoulli.yaml:
+- generator
+- input
+- out
+torch.bincount.yaml:
+- input
+- minlength
+- weights
+torch.bitwise_and.yaml:
+- input
+- other
+- out
+torch.bitwise_not.yaml:
+- input
+- out
+torch.bitwise_or.yaml:
+- input
+- other
+- out
+torch.bitwise_xor.yaml:
+- input
+- other
+- out
+torch.blackman_window.yaml:
+- device
+- dtype
+- layout
+- periodic
+- requires_grad
+torch.bmm.yaml:
+- input
+- mat2
+- out
+torch.cat.yaml:
+- dim
+- out
+- tensors
+torch.cdist.yaml:
+- compute_mode
+- x1
+- x2
+torch.ceil.yaml:
+- input
+- out
+torch.cholesky.yaml:
+- input
+- out
+- upper
+torch.cholesky_inverse.yaml:
+- input
+- out
+- upper
+torch.cholesky_solve.yaml:
+- input
+- input2
+- out
+- upper
+torch.chunk.yaml:
+- dim
+- input
+torch.clamp.yaml:
+- input
+- max
+- min
+- out
+torch.combinations.yaml:
+- input
+- with_replacement
+torch.conj.yaml:
+- input
+- out
+torch.cos.yaml:
+- input
+- out
+torch.cosh.yaml:
+- input
+- out
+torch.cross.yaml:
+- dim
+- input
+- other
+- out
+torch.cuda.comm.broadcast.yaml:
+- devices
+- tensor
+torch.cuda.comm.broadcast_coalesced.yaml:
+- devices
+- tensors
+torch.cuda.comm.gather.yaml:
+- destination
+- dim
+- tensors
+torch.cuda.comm.reduce_add.yaml:
+- destination
+- inputs
+torch.cuda.comm.scatter.yaml:
+- chunk_sizes
+- devices
+- dim
+- streams
+- tensor
+torch.cuda.current_stream.yaml:
+- device
+torch.cuda.default_stream.yaml:
+- device
+torch.cuda.get_device_capability.yaml:
+- device
+torch.cuda.get_device_name.yaml:
+- device
+torch.cuda.get_rng_state.yaml:
+- device
+torch.cuda.manual_seed.yaml:
+- seed
+torch.cuda.manual_seed_all.yaml:
+- seed
+torch.cuda.max_memory_allocated.yaml:
+- device
+torch.cuda.max_memory_reserved.yaml:
+- device
+torch.cuda.memory_allocated.yaml:
+- device
+torch.cuda.memory_reserved.yaml:
+- device
+torch.cuda.memory_stats.yaml:
+- device
+torch.cuda.memory_summary.yaml:
+- abbreviated
+- device
+torch.cuda.nvtx.mark.yaml:
+- msg
+torch.cuda.nvtx.range_push.yaml:
+- msg
+torch.cuda.reset_max_memory_allocated.yaml:
+- device
+torch.cuda.reset_max_memory_cached.yaml:
+- device
+torch.cuda.set_device.yaml:
+- device
+torch.cuda.set_rng_state.yaml:
+- device
+- new_state
+torch.cuda.synchronize.yaml:
+- device
+torch.cummax.yaml:
+- dim
+- input
+- out
+torch.cummin.yaml:
+- dim
+- input
+- out
+torch.cumprod.yaml:
+- dim
+- dtype
+- input
+- out
+torch.cumsum.yaml:
+- dim
+- dtype
+- input
+- out
+torch.det.yaml:
+- input
+torch.diag.yaml:
+- diagonal
+- input
+- out
+torch.diag_embed.yaml:
+- dim1
+- dim2
+- input
+- offset
+torch.diagflat.yaml:
+- input
+- offset
+torch.diagonal.yaml:
+- dim1
+- dim2
+- input
+- offset
+torch.digamma.yaml:
+- input
+- out
+torch.dist.yaml:
+- input
+- other
+- p
+torch.distributed.all_gather.yaml:
+- async_op
+- group
+- tensor
+- tensor_list
+torch.distributed.all_gather_multigpu.yaml:
+- async_op
+- group
+- input_tensor_list
+- output_tensor_lists
+torch.distributed.all_reduce.yaml:
+- async_op
+- group
+- op
+- tensor
+torch.distributed.barrier.yaml:
+- async_op
+- group
+torch.distributed.broadcast.yaml:
+- async_op
+- group
+- src
+- tensor
+torch.distributed.broadcast_multigpu.yaml:
+- async_op
+- group
+- src
+- src_tensor
+- tensor_list
+torch.distributed.gather.yaml:
+- async_op
+- dst
+- gather_list
+- group
+- tensor
+torch.distributed.init_process_group.yaml:
+- backend
+- init_method
+- rank
+- store
+- timeout
+torch.distributed.irecv.yaml:
+- group
+- src
+- tag
+- tensor
+torch.distributed.isend.yaml:
+- dst
+- group
+- tag
+- tensor
+torch.distributed.new_group.yaml:
+- backend
+- ranks
+- timeout
+torch.distributed.recv.yaml:
+- group
+- src
+- tag
+- tensor
+torch.distributed.reduce.yaml:
+- async_op
+- dst
+- group
+- op
+- tensor
+torch.distributed.reduce_multigpu.yaml:
+- async_op
+- dst
+- dst_tensor
+- group
+- op
+- tensor_list
+torch.distributed.scatter.yaml:
+- async_op
+- group
+- scatter_list
+- src
+- tensor
+torch.distributed.send.yaml:
+- dst
+- group
+- tag
+- tensor
+torch.div.yaml:
+- input
+- out
+torch.div2.yaml:
+- input
+- other
+- out
+torch.eig.yaml:
+- eigenvectors
+- input
+- out
+torch.einsum.yaml:
+- equation
+torch.empty_like.yaml:
+- device
+- dtype
+- input
+- layout
+- memory_format
+- requires_grad
+torch.empty_strided.yaml:
+- device
+- dtype
+- layout
+- pin_memory
+- requires_grad
+- stride
+torch.eq.yaml:
+- input
+- other
+- out
+torch.erf.yaml:
+- input
+- out
+torch.erfc.yaml:
+- input
+- out
+torch.erfinv.yaml:
+- input
+- out
+torch.exp.yaml:
+- input
+- out
+torch.expm1.yaml:
+- input
+- out
+torch.eye.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.fft.yaml:
+- input
+- normalized
+torch.flatten.yaml:
+- end_dim
+- input
+- start_dim
+torch.flip.yaml:
+- dims
+- input
+torch.floor.yaml:
+- input
+- out
+torch.floor_divide.yaml:
+- input
+- other
+- out
+torch.fmod.yaml:
+- input
+- other
+- out
+torch.full.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.gather.yaml:
+- dim
+- index
+- input
+- out
+- sparse_grad
+torch.ge.yaml:
+- input
+- other
+- out
+torch.geqrf.yaml:
+- input
+- out
+torch.ger.yaml:
+- input
+- out
+- vec2
+torch.gt.yaml:
+- input
+- other
+- out
+torch.hamming_window.yaml:
+- alpha
+- beta
+- device
+- dtype
+- layout
+- periodic
+- requires_grad
+torch.hann_window.yaml:
+- device
+- dtype
+- layout
+- periodic
+- requires_grad
+torch.histc.yaml:
+- input
+- max
+- min
+- out
+torch.hub.download_url_to_file.yaml:
+- dst
+- hash_prefix
+- progress
+- url
+torch.hub.help.yaml:
+- force_reload
+- github
+- model
+torch.hub.list.yaml:
+- force_reload
+- github
+torch.hub.load.yaml:
+- force_reload
+- github
+- model
+- verbose
+torch.hub.load_state_dict_from_url.yaml:
+- check_hash
+- map_location
+- model_dir
+- progress
+- url
+torch.hub.set_dir.yaml:
+- d
+torch.ifft.yaml:
+- input
+- normalized
+torch.imag.yaml:
+- input
+- out
+torch.index_select.yaml:
+- dim
+- index
+- input
+- out
+torch.inverse.yaml:
+- input
+- out
+torch.irfft.yaml:
+- input
+- normalized
+- onesided
+- signal_sizes
+torch.is_complex.yaml:
+- input
+torch.is_floating_point.yaml:
+- input
+torch.jit.load.yaml:
+- _extra_files
+- f
+- map_location
+torch.jit.save.yaml:
+- _extra_files
+- f
+- m
+torch.jit.script.yaml:
+- obj
+torch.jit.trace.yaml:
+- check_inputs
+- check_tolerance
+- check_trace
+- example_inputs
+- func
+- optimize
+torch.kthvalue.yaml:
+- dim
+- input
+- k
+- keepdim
+- out
+torch.le.yaml:
+- input
+- other
+- out
+torch.lerp.yaml:
+- end
+- input
+- out
+- weight
+torch.lgamma.yaml:
+- input
+- out
+torch.linspace.yaml:
+- device
+- dtype
+- end
+- layout
+- out
+- requires_grad
+- start
+torch.load.yaml:
+- f
+- map_location
+- pickle_module
+torch.lobpcg.yaml:
+- A
+- B
+- X
+- iK
+- largest
+- method
+- n
+- niter
+- ortho_bparams
+- ortho_fparams
+- ortho_iparams
+- tol
+- tracker
+torch.log.yaml:
+- input
+- out
+torch.log10.yaml:
+- input
+- out
+torch.log1p.yaml:
+- input
+- out
+torch.log2.yaml:
+- input
+- out
+torch.logdet.yaml:
+- input
+torch.logical_and.yaml:
+- input
+- other
+- out
+torch.logical_not.yaml:
+- input
+- out
+torch.logical_or.yaml:
+- input
+- other
+- out
+torch.logical_xor.yaml:
+- input
+- other
+- out
+torch.logspace.yaml:
+- base
+- device
+- dtype
+- end
+- layout
+- out
+- requires_grad
+- start
+torch.logsumexp.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.lstsq.yaml:
+- A
+- input
+- out
+torch.lt.yaml:
+- input
+- other
+- out
+torch.lu.yaml:
+- A
+- get_infos
+- out
+- pivot
+torch.lu_unpack.yaml:
+- LU_data
+- LU_pivots
+- unpack_data
+- unpack_pivots
+torch.manual_seed.yaml:
+- seed
+torch.masked_select.yaml:
+- input
+- mask
+- out
+torch.matmul.yaml:
+- input
+- other
+- out
+torch.matrix_power.yaml:
+- input
+- n
+torch.matrix_rank.yaml:
+- input
+- symmetric
+- tol
+torch.max.yaml:
+- input
+torch.max2.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.max22.yaml:
+- input
+- other
+- out
+torch.mean.yaml:
+- input
+torch.mean2.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.median.yaml:
+- input
+torch.median2.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.min.yaml:
+- input
+torch.min2.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.min22.yaml:
+- input
+- other
+- out
+torch.mm.yaml:
+- input
+- mat2
+- out
+torch.mode.yaml:
+- dim
+- input
+- keepdim
+- out
+torch.mul.yaml:
+- input
+- other
+- out
+torch.multinomial.yaml:
+- generator
+- input
+- out
+- replacement
+torch.mv.yaml:
+- input
+- out
+- vec
+torch.mvlgamma.yaml:
+- input
+torch.narrow.yaml:
+- dim
+- input
+- start
+torch.ne.yaml:
+- input
+- other
+- out
+torch.neg.yaml:
+- input
+- out
+torch.nn.functional.adaptive_avg_pool1d.yaml:
+- input
+torch.nn.functional.adaptive_avg_pool2d.yaml:
+- input
+torch.nn.functional.adaptive_avg_pool3d.yaml:
+- input
+torch.nn.functional.adaptive_max_pool1d.yaml:
+- return_indices
+torch.nn.functional.adaptive_max_pool2d.yaml:
+- return_indices
+torch.nn.functional.adaptive_max_pool3d.yaml:
+- return_indices
+torch.nn.functional.affine_grid.yaml:
+- align_corners
+- theta
+torch.nn.functional.avg_pool1d.yaml:
+- ceil_mode
+- count_include_pad
+- input
+- padding
+- stride
+torch.nn.functional.avg_pool2d.yaml:
+- ceil_mode
+- count_include_pad
+- divisor_override
+- input
+- padding
+- stride
+torch.nn.functional.avg_pool3d.yaml:
+- ceil_mode
+- count_include_pad
+- divisor_override
+- input
+- padding
+- stride
+torch.nn.functional.binary_cross_entropy.yaml:
+- input
+- target
+- weight
+torch.nn.functional.binary_cross_entropy_with_logits.yaml:
+- input
+- pos_weight
+- target
+- weight
+torch.nn.functional.conv1d.yaml:
+- bias
+- dilation
+- groups
+- input
+- padding
+- stride
+- weight
+torch.nn.functional.conv2d.yaml:
+- bias
+- dilation
+- groups
+- input
+- padding
+- stride
+- weight
+torch.nn.functional.conv3d.yaml:
+- bias
+- dilation
+- groups
+- input
+- padding
+- stride
+- weight
+torch.nn.functional.conv_transpose1d.yaml:
+- bias
+- dilation
+- groups
+- input
+- output_padding
+- padding
+- stride
+- weight
+torch.nn.functional.conv_transpose2d.yaml:
+- bias
+- dilation
+- groups
+- input
+- output_padding
+- padding
+- stride
+- weight
+torch.nn.functional.conv_transpose3d.yaml:
+- bias
+- dilation
+- groups
+- input
+- output_padding
+- padding
+- stride
+- weight
+torch.nn.functional.cosine_similarity.yaml:
+- dim
+- eps
+- x1
+- x2
+torch.nn.functional.cross_entropy.yaml:
+- ignore_index
+- input
+- target
+- weight
+torch.nn.functional.ctc_loss.yaml:
+- blank
+- input_lengths
+- log_probs
+- target_lengths
+- targets
+- zero_infinity
+torch.nn.functional.dropout.yaml:
+- inplace
+- input
+- p
+- training
+torch.nn.functional.dropout2d.yaml:
+- inplace
+- input
+- p
+- training
+torch.nn.functional.dropout3d.yaml:
+- inplace
+- input
+- p
+- training
+torch.nn.functional.embedding.yaml:
+- input
+- max_norm
+- norm_type
+- padding_idx
+- scale_grad_by_freq
+- sparse
+- weight
+torch.nn.functional.glu.yaml:
+- dim
+- input
+torch.nn.functional.grid_sample.yaml:
+- align_corners
+- grid
+- input
+torch.nn.functional.gumbel_softmax.yaml:
+- dim
+- eps
+- hard
+- logits
+- tau
+torch.nn.functional.interpolate.yaml:
+- align_corners
+- input
+- recompute_scale_factor
+- scale_factor
+torch.nn.functional.kl_div.yaml:
+- input
+- target
+torch.nn.functional.log_softmax.yaml:
+- _stacklevel
+- dim
+- dtype
+- input
+torch.nn.functional.nll_loss.yaml:
+- ignore_index
+- input
+- target
+- weight
+torch.nn.functional.normalize.yaml:
+- dim
+- eps
+- input
+- out
+- p
+torch.nn.functional.one_hot.yaml:
+- tensor
+torch.nn.functional.pad.yaml:
+- input
+- mode
+- pad
+- value
+torch.nn.functional.pdist.yaml:
+- input
+torch.nn.functional.poisson_nll_loss.yaml:
+- eps
+- full
+- input
+- log_input
+- target
+torch.nn.functional.softmax.yaml:
+- _stacklevel
+- dim
+- dtype
+- input
+torch.nn.functional.softmin.yaml:
+- _stacklevel
+- dim
+- dtype
+- input
+torch.nn.init.constant_.yaml:
+- tensor
+- val
+torch.nn.init.dirac_.yaml:
+- tensor
+torch.nn.init.eye_.yaml:
+- tensor
+torch.nn.init.normal_.yaml:
+- mean
+- std
+- tensor
+torch.nn.init.ones_.yaml:
+- tensor
+torch.nn.init.orthogonal_.yaml:
+- gain
+- tensor
+torch.nn.init.sparse_.yaml:
+- sparsity
+- std
+- tensor
+torch.nn.init.uniform_.yaml:
+- a
+- b
+- tensor
+torch.nn.init.xavier_normal_.yaml:
+- gain
+- tensor
+torch.nn.init.xavier_uniform_.yaml:
+- gain
+- tensor
+torch.nn.init.zeros_.yaml:
+- tensor
+torch.nn.parallel.data_parallel.yaml:
+- device_ids
+- dim
+- inputs
+- module
+- module_kwargs
+- output_device
+torch.nn.quantized.functional.adaptive_avg_pool2d.yaml:
+- input
+torch.nn.quantized.functional.avg_pool2d.yaml:
+- ceil_mode
+- count_include_pad
+- divisor_override
+- input
+- padding
+- stride
+torch.nn.quantized.functional.conv2d.yaml:
+- bias
+- dilation
+- dtype
+- groups
+- input
+- padding
+- padding_mode
+- scale
+- stride
+- weight
+- zero_point
+torch.nn.quantized.functional.conv3d.yaml:
+- bias
+- dilation
+- dtype
+- groups
+- input
+- padding
+- padding_mode
+- scale
+- stride
+- weight
+- zero_point
+torch.nn.quantized.functional.interpolate.yaml:
+- align_corners
+- input
+- scale_factor
+torch.nn.quantized.functional.linear.yaml:
+- bias
+- input
+- scale
+- weight
+- zero_point
+torch.nn.quantized.functional.relu.yaml:
+- inplace
+- input
+torch.nn.utils.clip_grad_norm_.yaml:
+- max_norm
+- norm_type
+- parameters
+torch.nn.utils.clip_grad_value_.yaml:
+- clip_value
+- parameters
+torch.nn.utils.parameters_to_vector.yaml:
+- parameters
+torch.nn.utils.prune.custom_from_mask.yaml:
+- mask
+- module
+- name
+torch.nn.utils.prune.global_unstructured.yaml:
+- parameters
+- pruning_method
+torch.nn.utils.prune.identity.yaml:
+- module
+- name
+torch.nn.utils.prune.is_pruned.yaml:
+- module
+torch.nn.utils.prune.l1_unstructured.yaml:
+- module
+- name
+torch.nn.utils.prune.ln_structured.yaml:
+- dim
+- module
+- n
+- name
+torch.nn.utils.prune.random_structured.yaml:
+- dim
+- module
+- name
+torch.nn.utils.prune.random_unstructured.yaml:
+- module
+- name
+torch.nn.utils.prune.remove.yaml:
+- module
+- name
+torch.nn.utils.remove_spectral_norm.yaml:
+- module
+- name
+torch.nn.utils.remove_weight_norm.yaml:
+- module
+- name
+torch.nn.utils.rnn.pack_padded_sequence.yaml:
+- batch_first
+- enforce_sorted
+- input
+- lengths
+torch.nn.utils.rnn.pack_sequence.yaml:
+- enforce_sorted
+- sequences
+torch.nn.utils.rnn.pad_packed_sequence.yaml:
+- batch_first
+- padding_value
+- sequence
+torch.nn.utils.rnn.pad_sequence.yaml:
+- batch_first
+- padding_value
+- sequences
+torch.nn.utils.spectral_norm.yaml:
+- dim
+- eps
+- module
+- name
+torch.nn.utils.vector_to_parameters.yaml:
+- parameters
+- vec
+torch.nn.utils.weight_norm.yaml:
+- dim
+- module
+- name
+torch.nonzero.yaml:
+- as_tuple
+- input
+- out
+torch.norm.yaml:
+- dim
+- dtype
+- input
+- keepdim
+- out
+- p
+torch.normal.yaml:
+- generator
+- mean
+- out
+- std
+torch.normal2.yaml:
+- mean
+- out
+- std
+torch.normal22.yaml:
+- mean
+- out
+- std
+torch.normal222.yaml:
+- mean
+- out
+- std
+torch.numel.yaml:
+- input
+torch.ones.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.ones_like.yaml:
+- device
+- dtype
+- input
+- layout
+- memory_format
+- requires_grad
+torch.onnx.export.yaml:
+- _retain_param_name
+- args
+- aten
+- custom_opsets
+- do_constant_folding
+- dynamic_axes
+- enable_onnx_checker
+- example_outputs
+- export_params
+- export_raw_ir
+- f
+- input_names
+- keep_initializers_as_inputs
+- model
+- operator_export_type
+- opset_version
+- output_names
+- strip_doc_string
+- training
+- use_external_data_format
+- verbose
+torch.orgqr.yaml:
+- input
+- input2
+torch.ormqr.yaml:
+- input
+- input2
+- input3
+- left
+- transpose
+torch.pca_lowrank.yaml:
+- A
+- center
+- q
+torch.pinverse.yaml:
+- input
+- rcond
+torch.polygamma.yaml:
+- input
+- n
+- out
+torch.pow.yaml:
+- exponent
+- input
+- out
+torch.pow2.yaml:
+- exponent
+- out
+- self
+torch.prod.yaml:
+- dtype
+- input
+torch.prod2.yaml:
+- dim
+- dtype
+- input
+- keepdim
+torch.promote_types.yaml:
+- type1
+- type2
+torch.qr.yaml:
+- input
+- out
+- some
+torch.quantization.add_observer_.yaml:
+- module
+torch.quantization.convert.yaml:
+- inplace
+- mapping
+- module
+torch.quantization.fuse_modules.yaml:
+- fuser_func
+- inplace
+- model
+- modules_to_fuse
+torch.quantization.prepare.yaml:
+- inplace
+- model
+torch.quantization.prepare_qat.yaml:
+- inplace
+- mapping
+- model
+torch.quantization.propagate_qconfig_.yaml:
+- module
+- qconfig_dict
+torch.quantization.quantize.yaml:
+- inplace
+- mapping
+- model
+- run_args
+- run_fn
+torch.quantization.quantize_qat.yaml:
+- inplace
+- model
+- run_args
+- run_fn
+torch.quantization.swap_module.yaml:
+- mapping
+- mod
+torch.quantize_per_channel.yaml:
+- axis
+- dtype
+- input
+- scales
+- zero_points
+torch.quantize_per_tensor.yaml:
+- dtype
+- input
+- scale
+- zero_point
+torch.rand.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.rand_like.yaml:
+- device
+- dtype
+- input
+- layout
+- memory_format
+- requires_grad
+torch.randn.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.randn_like.yaml:
+- device
+- dtype
+- input
+- layout
+- memory_format
+- requires_grad
+torch.random.fork_rng.yaml:
+- _caller
+- _devices_kw
+- devices
+- enabled
+torch.random.fork_rng2.yaml:
+- _caller
+- _devices_kw
+- devices
+- enabled
+torch.random.manual_seed.yaml:
+- seed
+torch.random.manual_seed2.yaml:
+- seed
+torch.random.set_rng_state.yaml:
+- new_state
+torch.random.set_rng_state2.yaml:
+- new_state
+torch.randperm.yaml:
+- device
+- dtype
+- layout
+- n
+- out
+- requires_grad
+torch.real.yaml:
+- input
+- out
+torch.reciprocal.yaml:
+- input
+- out
+torch.remainder.yaml:
+- input
+- other
+- out
+torch.renorm.yaml:
+- dim
+- input
+- maxnorm
+- out
+- p
+torch.repeat_interleave.yaml:
+- dim
+- input
+torch.reshape.yaml:
+- input
+- shape
+torch.result_type.yaml:
+- tensor1
+- tensor2
+torch.rfft.yaml:
+- input
+- normalized
+- onesided
+torch.roll.yaml:
+- dims
+- input
+torch.rot90.yaml:
+- dims
+- input
+torch.round.yaml:
+- input
+- out
+torch.rsqrt.yaml:
+- input
+- out
+torch.save.yaml:
+- _use_new_zipfile_serialization
+- f
+- obj
+- pickle_module
+- pickle_protocol
+torch.set_default_dtype.yaml:
+- d
+torch.set_default_tensor_type.yaml:
+- t
+torch.set_flush_denormal.yaml:
+- mode
+torch.set_grad_enabled.yaml:
+- mode
+torch.set_printoptions.yaml:
+- profile
+- sci_mode
+torch.set_rng_state.yaml:
+- new_state
+torch.sigmoid.yaml:
+- input
+- out
+torch.sign.yaml:
+- input
+- out
+torch.sin.yaml:
+- input
+- out
+torch.sinh.yaml:
+- input
+- out
+torch.slogdet.yaml:
+- input
+torch.solve.yaml:
+- A
+- input
+- out
+torch.sort.yaml:
+- descending
+- dim
+- input
+- out
+torch.sparse.addmm.yaml:
+- alpha
+- beta
+- mat
+- mat1
+- mat2
+torch.sparse.mm.yaml:
+- mat1
+- mat2
+torch.sparse.sum.yaml:
+- dim
+- dtype
+- input
+torch.sparse_coo_tensor.yaml:
+- device
+- dtype
+- indices
+- requires_grad
+- values
+torch.split.yaml:
+- dim
+- split_size_or_sections
+- tensor
+torch.sqrt.yaml:
+- input
+- out
+torch.square.yaml:
+- input
+- out
+torch.squeeze.yaml:
+- dim
+- input
+- out
+torch.stack.yaml:
+- dim
+- out
+- tensors
+torch.std.yaml:
+- input
+- unbiased
+torch.std2.yaml:
+- dim
+- input
+- keepdim
+- out
+- unbiased
+torch.std_mean.yaml:
+- input
+- unbiased
+torch.std_mean2.yaml:
+- dim
+- input
+- keepdim
+- unbiased
+torch.stft.yaml:
+- center
+- input
+- n_fft
+- normalized
+- onesided
+- pad_mode
+- window
+torch.sum.yaml:
+- dtype
+- input
+torch.sum2.yaml:
+- dim
+- dtype
+- input
+- keepdim
+torch.svd.yaml:
+- compute_uv
+- input
+- out
+- some
+torch.symeig.yaml:
+- eigenvectors
+- input
+- out
+- upper
+torch.t.yaml:
+- input
+torch.tan.yaml:
+- input
+- out
+torch.tanh.yaml:
+- input
+- out
+torch.tensor.yaml:
+- data
+- device
+- dtype
+- pin_memory
+- requires_grad
+torch.tensordot.yaml:
+- a
+- b
+torch.topk.yaml:
+- dim
+- input
+- k
+- largest
+- out
+- sorted
+torch.transpose.yaml:
+- dim0
+- dim1
+- input
+torch.trapz.yaml:
+- dim
+- x
+- y
+torch.trapz2.yaml:
+- dim
+- dx
+- y
+torch.triangular_solve.yaml:
+- A
+- input
+- transpose
+- unitriangular
+- upper
+torch.tril.yaml:
+- diagonal
+- input
+- out
+torch.tril_indices.yaml:
+- device
+- dtype
+- layout
+- offset
+torch.triu.yaml:
+- diagonal
+- input
+- out
+torch.triu_indices.yaml:
+- device
+- dtype
+- layout
+- offset
+torch.true_divide.yaml:
+- dividend
+- divisor
+torch.trunc.yaml:
+- input
+- out
+torch.unbind.yaml:
+- dim
+- input
+torch.unique.yaml:
+- dim
+- input
+- return_counts
+- return_inverse
+- sorted
+torch.unique_consecutive.yaml:
+- dim
+- input
+- return_counts
+- return_inverse
+torch.unsqueeze.yaml:
+- dim
+- input
+torch.utils.checkpoint.checkpoint.yaml:
+- function
+- preserve_rng_state
+torch.utils.checkpoint.checkpoint_sequential.yaml:
+- functions
+- input
+- preserve_rng_state
+torch.utils.cpp_extension.check_compiler_abi_compatibility.yaml:
+- compiler
+torch.utils.cpp_extension.include_paths.yaml:
+- cuda
+torch.utils.cpp_extension.load.yaml:
+- build_directory
+- extra_cflags
+- extra_cuda_cflags
+- extra_include_paths
+- extra_ldflags
+- is_python_module
+- name
+- sources
+- verbose
+- with_cuda
+torch.utils.cpp_extension.load_inline.yaml:
+- build_directory
+- cpp_sources
+- cuda_sources
+- extra_cflags
+- extra_cuda_cflags
+- extra_include_paths
+- extra_ldflags
+- functions
+- is_python_module
+- name
+- verbose
+- with_cuda
+- with_pytorch_error_handling
+torch.utils.data.random_split.yaml:
+- dataset
+- lengths
+torch.utils.dlpack.to_dlpack.yaml:
+- tensor
+torch.utils.model_zoo.load_url.yaml:
+- check_hash
+- map_location
+- model_dir
+- progress
+- url
+torch.var.yaml:
+- input
+- unbiased
+torch.var2.yaml:
+- dim
+- input
+- keepdim
+- out
+- unbiased
+torch.var_mean.yaml:
+- input
+- unbiased
+torch.var_mean2.yaml:
+- dim
+- input
+- keepdim
+- unbiased
+torch.where.yaml:
+- condition
+- x
+- y
+torch.zeros.yaml:
+- device
+- dtype
+- layout
+- out
+- requires_grad
+torch.zeros_like.yaml:
+- device
+- dtype
+- input
+- layout
+- memory_format
+- requires_grad

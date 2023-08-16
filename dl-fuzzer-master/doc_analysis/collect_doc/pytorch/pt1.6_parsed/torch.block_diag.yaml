@@ -1,0 +1,12 @@
+constraints:
+  '*tensors':
+    descp: One or more tensors with 0, 1, or 2 dimensions.
+inputs:
+  optional: []
+  required:
+  - '*tensors'
+link: https://pytorch.org/docs/1.6.0/generated/torch.block_diag.html#torch.block_diag#torch.block_diag
+package: torch
+target: block_diag
+title: torch.block_diag
+version: 1.6.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,float tensor to quantize,,prim_dtype,dtype(torch.float32),,1
+Tensor,float tensor to quantize,,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,float tensor to quantize,,shape,ndim(0),,1

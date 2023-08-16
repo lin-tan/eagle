@@ -1,0 +1,54 @@
+pat:
+  ^(\w+_)?length$:
+    append: false
+    cnt: 3
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)?size$:
+    append: false
+    cnt: 15
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^dim\d*$:
+    append: true
+    cnt: 1
+    dtype: int
+    ow: true
+  ^dtype$:
+    append: true
+    cnt: 6
+    dtype: dtype
+    ow: true
+  ^f$:
+    append: false
+    cnt: 2
+    dtype: string
+    ow: true
+  ^mat\d*$:
+    append: true
+    cnt: 0
+    dtype: numeric
+    ow: true
+  ^name$:
+    append: true
+    cnt: 4
+    dtype: string
+    ow: true
+  ^vec\d*$:
+    append: true
+    cnt: 0
+    ndim: 1
+    ow: true
+  _lists*$:
+    append: false
+    cnt: 0
+    ow: false
+    structure: list
+  sequence:
+    append: false
+    cnt: 0
+    ow: false
+    structure: sequence
+target: dtype

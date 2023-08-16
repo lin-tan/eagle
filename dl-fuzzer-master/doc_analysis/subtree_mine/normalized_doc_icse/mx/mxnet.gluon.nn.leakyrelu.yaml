@@ -1,0 +1,21 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha:
+    descp: slope coefficient for the negative half axis. Must be >= 0.
+    doc_dtype: float
+    normalized_descp:
+    - slope coefficient for the negative half axis
+    - Must be REXPR
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - alpha
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.LeakyReLU
+package: mxnet
+target: LeakyReLU
+title: mxnet.gluon.nn.LeakyReLU
+version: 1.6.0

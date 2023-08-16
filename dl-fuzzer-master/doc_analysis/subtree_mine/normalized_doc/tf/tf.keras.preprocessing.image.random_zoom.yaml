@@ -1,0 +1,70 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.random_zoom
+constraints:
+  channel_axis:
+    default: '0'
+    descp: Index of axis for channels in the input tensor.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Index of axis for channels in the input D_STRUCTURE
+  col_axis:
+    default: '2'
+    descp: Index of axis for columns in the input tensor.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Index of axis for columns in the input D_STRUCTURE
+  cval:
+    default: '0.0'
+    descp: Value used for points outside the boundaries     of the input if `mode='constant'`.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Value used for points outside the boundaries of the input if mode QSTR
+  fill_mode:
+    default: nearest
+    descp: Points outside the boundaries of the input     are filled according to
+      the given mode     (one of `{'constant', 'nearest', 'reflect', 'wrap'}`).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Points outside the boundaries of the input are filled according to the given
+      mode one of QSTR
+  interpolation_order:
+    default: '1'
+    descp: int, order of spline interpolation.     see `ndimage.interpolation.affine_transform``
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE, order of spline interpolation
+    - see ndimage interpolation affine_transform
+  row_axis:
+    default: '1'
+    descp: Index of axis for rows in the input tensor.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Index of axis for rows in the input D_STRUCTURE
+  x:
+    descp: Input tensor. Must be 3D.
+    normalized_descp:
+    - Input D_STRUCTURE
+    - Must be CONSTANT_NUM D
+  zoom_range:
+    descp: Tuple of floats; zoom range for width and height.
+    normalized_descp:
+    - D_STRUCTURE of D_TYPE zoom range for width and height
+exceptions:
+- ValueError: if `zoom_range` isn't a tuple.`
+inputs:
+  optional:
+  - row_axis
+  - col_axis
+  - channel_axis
+  - fill_mode
+  - cval
+  - interpolation_order
+  required:
+  - x
+  - zoom_range
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/image/random_zoom
+outputs: '`Zoomed Numpy image tensor.`'
+package: tensorflow
+target: random_zoom
+title: tf.keras.preprocessing.image.random_zoom
+version: 2.1.0

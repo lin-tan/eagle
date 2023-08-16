@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array of shape (n_samples_2, n_features)",None,prim_dtype,dtype(int),,1
+,"array of shape (n_samples_2, n_features)",None,nonprim_dtype,structure(list(shape)),,1
+,"array of shape (n_samples_2, n_features)",None,shape,"shape([n_samples_2,n_features]), ndim(1, 2)",,1
+,"array of shape (n_samples_2, n_features)",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,31 @@
+constraints:
+  dim0:
+    descp: the first dimension to be transposed
+    doc_dtype: int
+    normalized_descp:
+    - the first dimension to be transposed
+    normalized_docdtype: ONE_WORD D_TYPE
+  dim1:
+    descp: the second dimension to be transposed
+    doc_dtype: int
+    normalized_descp:
+    - the second dimension to be transposed
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - input
+  - dim0
+  - dim1
+link: https://pytorch.org/docs/stable/torch.html#torch.transpose
+package: torch
+ret_type: Tensor
+target: transpose
+title: torch.transpose
+version: 1.5.0

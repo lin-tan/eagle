@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int or str, default=None The label of the positive class. When ``pos_label=None``, if y_true is in {-1, 1} or {0, 1}, ``pos_label`` is set to 1, otherwise an error will be raised.",None,prim_dtype,"dtype(int, string)",,1
+,"int or str, default=None The label of the positive class. When ``pos_label=None``, if y_true is in {-1, 1} or {0, 1}, ``pos_label`` is set to 1, otherwise an error will be raised.",None,shape,ndim(0),,1

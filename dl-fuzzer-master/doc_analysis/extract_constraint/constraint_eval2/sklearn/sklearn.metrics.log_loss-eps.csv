@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float Log loss is undefined for p=0 or p=1, so probabilities are clipped to max(eps, min(1 - eps, p)).",1e-15,prim_dtype,dtype(float),,1
+,"float Log loss is undefined for p=0 or p=1, so probabilities are clipped to max(eps, min(1 - eps, p)).",1e-15,shape,ndim(0),,1

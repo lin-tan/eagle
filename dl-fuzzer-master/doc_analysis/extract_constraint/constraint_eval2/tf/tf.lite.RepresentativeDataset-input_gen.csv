@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,an input generator that can be used to generate input samples for the model. This must be a callable object that returns an object that supports the `iter()` protocol (e.g. a generator function). The elements generated must have same type and shape as inputs to the model.,,prim_dtype,dtype(callable),,1

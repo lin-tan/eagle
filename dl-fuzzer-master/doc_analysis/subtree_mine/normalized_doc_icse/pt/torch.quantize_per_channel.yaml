@@ -1,0 +1,49 @@
+constraints:
+  axis:
+    descp: dimension on which apply per-channel quantization
+    doc_dtype: int
+    normalized_descp:
+    - dimension on which apply per channel quantization
+    normalized_docdtype: ONE_WORD D_TYPE
+  dtype:
+    descp: 'the desired data type of returned tensor. Has to be one of the quantized
+      dtypes: `torch.quint8`, `torch.qint8`, `torch.qint32`'
+    doc_dtype: '`torch.dtype`'
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Has to be one of the quantized dtypes D_TYPE
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: float tensor to quantize
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_TYPE D_STRUCTURE to quantize
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  scales:
+    descp: float 1D tensor of scales to use, size should match `input.size(axis)`
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_TYPE CONSTANT_NUM D D_STRUCTURE of scales to use size should match PARAM size
+      BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  zero_points:
+    descp: integer 1D tensor of offset to use, size should match `input.size(axis)`
+    doc_dtype: int
+    normalized_descp:
+    - D_TYPE CONSTANT_NUM D D_STRUCTURE of offset to use size should match PARAM size
+      BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - input
+  - scales
+  - zero_points
+  - axis
+  - dtype
+link: https://pytorch.org/docs/stable/torch.html#torch.quantize_per_channel
+package: torch
+ret_type: Tensor
+target: quantize_per_channel
+title: torch.quantize_per_channel
+version: 1.5.0

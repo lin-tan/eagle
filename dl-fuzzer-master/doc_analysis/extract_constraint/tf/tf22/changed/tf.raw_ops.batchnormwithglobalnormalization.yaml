@@ -1,0 +1,86 @@
+constraints:
+  beta:
+    descp: A Tensor. Must have the same type as t. A 1D beta Tensor with size matching
+      the last dimension of t. An offset to be added to the normalized tensor.
+    dtype:
+    - dtype:&t
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  gamma:
+    descp: A Tensor. Must have the same type as t. A 1D gamma Tensor with size matching
+      the last dimension of t. If "scale_after_normalization" is true, this tensor
+      will be multiplied with the normalized tensor.
+    dtype:
+    - dtype:&t
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  m:
+    descp: A Tensor. Must have the same type as t. A 1D mean Tensor with size matching
+      the last dimension of t. This is the first output from tf.nn.moments, or a saved
+      moving average thereof.
+    dtype:
+    - dtype:&t
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  scale_after_normalization:
+    descp: A bool. A bool indicating whether the resulted tensor needs to be multiplied
+      with gamma.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  t:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. A 4D input Tensor.'
+    ndim:
+    - '4'
+    tensor_t:
+    - tf.tensor
+  v:
+    descp: A Tensor. Must have the same type as t. A 1D variance Tensor with size
+      matching the last dimension of t. This is the second output from tf.nn.moments,
+      or a saved moving average thereof.
+    dtype:
+    - dtype:&t
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  variance_epsilon:
+    descp: A float. A small float number to avoid dividing by 0.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - t
+  - m
+  - v
+  - beta
+  - gamma
+  - variance_epsilon
+  - scale_after_normalization
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchNormWithGlobalNormalization
+outputs:
+- A Tensor. Has the same type as t.
+package: tensorflow
+target: BatchNormWithGlobalNormalization
+title: tf.raw_ops.BatchNormWithGlobalNormalization
+version: 2.2.0

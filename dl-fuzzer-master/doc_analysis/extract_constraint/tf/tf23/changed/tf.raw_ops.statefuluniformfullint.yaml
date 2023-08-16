@@ -1,0 +1,51 @@
+constraints:
+  algorithm:
+    descp: A Tensor of type int64. The RNG algorithm.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  dtype:
+    default: tf.dtypes.uint64
+    descp: An optional tf.DType. Defaults to tf.uint64. The type of the output.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. The handle of the resource variable that stores
+      the state of the RNG.
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: A Tensor. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - resource
+  - algorithm
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatefulUniformFullInt
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatefulUniformFullInt
+title: tf.raw_ops.StatefulUniformFullInt
+version: 2.3.0

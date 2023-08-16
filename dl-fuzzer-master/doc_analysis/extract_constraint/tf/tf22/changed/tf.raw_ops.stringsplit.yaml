@@ -1,0 +1,45 @@
+constraints:
+  delimiter:
+    descp: A Tensor of type string. 0-D. Delimiter characters (bytes), or empty string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A Tensor of type string. 1-D. Strings to split.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  skip_empty:
+    default: 'True'
+    descp: An optional bool. Defaults to True. A bool. If True, skip the empty strings
+      from the result.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - skip_empty
+  - name
+  required:
+  - input
+  - delimiter
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StringSplit
+outputs:
+- A tuple of Tensor objects (indices, values, shape).
+- indices: A Tensor of type int64.
+- values: A Tensor of type string.
+- shape: A Tensor of type int64.
+package: tensorflow
+target: StringSplit
+title: tf.raw_ops.StringSplit
+version: 2.2.0

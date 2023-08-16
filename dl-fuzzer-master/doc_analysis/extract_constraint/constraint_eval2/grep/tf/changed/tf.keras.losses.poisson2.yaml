@@ -1,0 +1,28 @@
+aliases:
+- tf.keras.metrics.poisson
+- tf.losses.poisson
+- tf.metrics.poisson
+- tf.compat.v1.keras.losses.poisson
+- tf.compat.v1.keras.metrics.poisson
+constraints:
+  y_pred:
+    descp: Tensor of predicted targets.
+    tensor_t:
+    - tf.tensor
+  y_true:
+    descp: Tensor of true targets.
+    tensor_t:
+    - tf.tensor
+exceptions:
+- InvalidArgumentError: If `y_true` and `y_pred` have incompatible shapes.
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/losses/poisson
+outputs: A `Tensor` with the mean Poisson loss.
+package: tensorflow
+target: poisson
+title: tf.keras.losses.poisson
+version: 2.1.0

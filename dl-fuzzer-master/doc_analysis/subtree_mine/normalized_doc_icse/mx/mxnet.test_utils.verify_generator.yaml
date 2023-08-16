@@ -1,0 +1,74 @@
+constraints:
+  alpha:
+    default: '0.05'
+    descp: The desired threshold for type-I error i.e. when a true null hypothesis
+      is rejected
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - The desired threshold for type I error i e
+    - when a CONSTANT_BOOL null hypothesis is rejected
+    normalized_docdtype: ONE_WORD D_TYPE
+  buckets:
+    descp: 'The buckets to run the chi-square the test. Make sure that the buckets
+      coverthe whole range of the distribution. Also, the buckets must be in ascending
+      order and have no intersection   '
+    doc_dtype: list of tuple or list of number
+    normalized_descp:
+    - The buckets to run the chi square the test
+    - Make sure that the buckets coverthe whole range of the distribution
+    - Also the buckets must be in ascending order and have no intersection
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE of number
+  generator:
+    descp: 'A function that is assumed to generate i.i.d samples from a specific distribution.generator(N)
+      should generate N random samples.   '
+    doc_dtype: function
+    normalized_descp:
+    - A function that is assumed to generate i i d samples from a specific distribution
+      generator BSTR should generate N random samples
+    normalized_docdtype: ONE_WORD function
+  nrepeat:
+    default: '5'
+    descp: The times to repeat the test
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The times to repeat the test
+    normalized_docdtype: ONE_WORD D_TYPE
+  nsamples:
+    default: '1000000'
+    descp: The number of samples to generate for the testing
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The number of samples to generate for the testing
+    normalized_docdtype: ONE_WORD D_TYPE
+  probs:
+    descp: The ground-truth probability of the random value fall in a specific bucket.
+    doc_dtype: list or tuple
+    normalized_descp:
+    - The ground truth probability of the random value fall in a specific bucket
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  success_rate:
+    default: '0.2'
+    descp: The desired success rate
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - The desired success rate
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - nsamples
+  - nrepeat
+  - success_rate
+  - alpha
+  required:
+  - generator
+  - buckets
+  - probs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.verify_generator
+package: mxnet
+target: verify_generator
+title: mxnet.test_utils.verify_generator
+version: 1.6.0

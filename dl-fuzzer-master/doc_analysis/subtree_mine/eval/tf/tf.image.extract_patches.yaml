@@ -1,0 +1,12 @@
+constraints:
+  images:
+    descp: A 4-D Tensor with shape `[batch, in_rows, in_cols, depth]
+    dtype:
+    - numeric
+    ndim:
+    - '4'
+    shape:
+    - '[batch,in_rows,in_cols,depth]'
+    tensor_t:
+    - tf.tensor
+title: tf.image.extract_patches

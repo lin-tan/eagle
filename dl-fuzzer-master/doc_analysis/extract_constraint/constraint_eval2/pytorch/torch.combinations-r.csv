@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,number of elements to combine,2,prim_dtype,dtype(int),,1
+int,number of elements to combine,2,shape,ndim(0),,1
+int,number of elements to combine,2,validvalue,"range([0,inf))",,1

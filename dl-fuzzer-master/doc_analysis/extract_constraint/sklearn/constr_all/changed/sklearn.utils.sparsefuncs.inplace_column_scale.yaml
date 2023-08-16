@@ -1,0 +1,35 @@
+constraints:
+  X:
+    descp: CSC or CSR matrix with shape (n_samples, n_features) Matrix to normalize
+      using the variance of the features.
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  scale:
+    descp: float array with shape (n_features,) Array of precomputed feature-wise
+      values to use for scaling.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[n_features]'
+    structure:
+    - list
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional: []
+  required:
+  - X
+  - scale
+link: ''
+package: sklearn
+target: inplace_column_scale
+title: sklearn.utils.sparsefuncs.inplace_column_scale
+version: 0.24.2

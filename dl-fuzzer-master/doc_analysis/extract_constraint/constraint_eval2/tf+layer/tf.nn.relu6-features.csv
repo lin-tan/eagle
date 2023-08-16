@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` with type `float`, `double`, `int32`, `int64`, `uint8`,`int16`, or `int8`.",,prim_dtype,"dtype(float, tf.float64, tf.int16, tf.int32, tf.int64, tf.int8, tf.uint8)",,1
+,"A `Tensor` with type `float`, `double`, `int32`, `int64`, `uint8`,`int16`, or `int8`.",,nonprim_dtype,tensor_t(tf.tensor),,1

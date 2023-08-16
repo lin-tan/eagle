@@ -1,0 +1,42 @@
+constraints:
+  mod:
+    descp: The module to checkpoint.
+    doc_dtype: subclass of BaseModule
+    normalized_descp:
+    - The module to checkpoint
+    normalized_docdtype: subclass of BaseModule
+  period:
+    default: '1'
+    descp: How many epochs to wait before checkpointing. Defaults to 1.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - How many epochs to wait before checkpointing
+    - Defaults to CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+  prefix:
+    descp: The file prefix for this checkpoint.
+    doc_dtype: str
+    normalized_descp:
+    - The file prefix for this checkpoint
+    normalized_docdtype: ONE_WORD D_TYPE
+  save_optimizer_states:
+    default: 'False'
+    descp: Indicates whether or not to save optimizer states for continued training.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Indicates whether or not to save optimizer states for continued training
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - period
+  - save_optimizer_states
+  required:
+  - mod
+  - prefix
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/callback/index.html#mxnet.callback.module_checkpoint
+package: mxnet
+target: module_checkpoint
+title: mxnet.callback.module_checkpoint
+version: 1.6.0

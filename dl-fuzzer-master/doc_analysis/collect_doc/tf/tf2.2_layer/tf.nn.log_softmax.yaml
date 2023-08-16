@@ -1,0 +1,28 @@
+aliases:
+- tf.math.log_softmax
+constraints:
+  axis:
+    default: None
+    descp: The dimension softmax would be performed on. The default is -1 which indicates
+      the last dimension.
+  logits:
+    descp: 'A non-empty Tensor. Must be one of the following types: half, float32,
+      float64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+exceptions:
+- InvalidArgumentError: if logits is empty or axis is beyond the last dimension of
+    logits.
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - logits
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/log_softmax
+outputs: A Tensor. Has the same type as logits. Same shape as logits.
+package: tensorflow
+target: log_softmax
+title: tf.nn.log_softmax
+version: 2.2.0

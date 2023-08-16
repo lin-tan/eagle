@@ -1,0 +1,8 @@
+tf.transpose-a-tf.float32-tf.float64
+tf.nn.conv2d-input-filters-tf.float32-tf.float64
+tf.nn.batch_normalization-x-mean-variance-offset-scale-variance_epsilon-tf.float32-tf.float64
+tf.nn.fractional_avg_pool-value-tf.float32-tf.float64
+tf.nn.log_softmax-logits-tf.float32-tf.float64
+tf.nn.max_pool2d-input-tf.float32-tf.float64
+tf.nn.relu-input-tf.float32-tf.float64
+tf.argsort-values-tf.float32-tf.float64

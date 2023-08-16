@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.image.random_crop
+- tf.compat.v1.random_crop
+constraints:
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  seed:
+    default: None
+    descp: Python integer. Used to create a random seed. See`tf.compat.v1.set_random_seed`for
+      behavior.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Python D_TYPE
+    - Used to create a random seed
+    - See tf compat v1 set_random_seed for behavior
+  size:
+    descp: 1-D tensor with size the rank of `value`.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE with size the rank of PARAM
+  value:
+    descp: Input tensor to crop.
+    normalized_descp:
+    - Input D_STRUCTURE to crop
+inputs:
+  optional:
+  - seed
+  - name
+  required:
+  - value
+  - size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/random_crop
+outputs: A cropped tensor of the same rank as `value` and shape `size`.
+package: tensorflow
+target: random_crop
+title: tf.image.random_crop
+version: 2.1.0

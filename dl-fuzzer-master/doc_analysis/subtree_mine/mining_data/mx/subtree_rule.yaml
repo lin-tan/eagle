@@ -1,0 +1,1191 @@
+axis the -1 to:
+  dtype:
+  - int
+axis to:
+  dtype:
+  - int
+constant_bool the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_float d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_float d_type -1 default:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_float d_type -1 optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_float d_type -1 optional -1 default:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_float default:
+  ndim:
+  - '0'
+constant_float optional:
+  ndim:
+  - '0'
+constant_float optional -1 default:
+  ndim:
+  - '0'
+constant_num d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_num d_type -1 default:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_num d_type -1 optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_num d_type -1 optional -1 default:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+constant_num default:
+  ndim:
+  - '0'
+constant_num optional:
+  ndim:
+  - '0'
+constant_num optional -1 default:
+  ndim:
+  - '0'
+d_structure a:
+  structure:
+  - D_STRUCTURE
+d_structure d_structure:
+  structure:
+  - D_STRUCTURE
+d_structure d_type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure d_type of:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure hold:
+  structure:
+  - D_STRUCTURE
+d_structure hold result:
+  structure:
+  - D_STRUCTURE
+d_structure hold result the:
+  structure:
+  - D_STRUCTURE
+d_structure hold the:
+  structure:
+  - D_STRUCTURE
+d_structure hold to:
+  structure:
+  - D_STRUCTURE
+d_structure hold to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure hold to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure hold to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure input:
+  structure:
+  - D_STRUCTURE
+d_structure one_word:
+  structure:
+  - D_STRUCTURE
+d_structure output:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold result:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold result the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold to:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 hold to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 to:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure output -1 to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure result:
+  structure:
+  - D_STRUCTURE
+d_structure result the:
+  structure:
+  - D_STRUCTURE
+d_structure the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold to:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 hold to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 input:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold to:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 hold to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 to:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output -1 to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to -1 the:
+  structure:
+  - D_STRUCTURE
+d_structure to:
+  structure:
+  - D_STRUCTURE
+d_structure to -1 result:
+  structure:
+  - D_STRUCTURE
+d_structure to -1 result the:
+  structure:
+  - D_STRUCTURE
+d_structure to -1 the:
+  structure:
+  - D_STRUCTURE
+d_type constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+d_type d_structure:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 of:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type d_type:
+  dtype:
+  - D_TYPE
+d_type d_type of:
+  dtype:
+  - D_TYPE
+d_type initializer:
+  dtype:
+  - D_TYPE
+d_type of:
+  dtype:
+  - D_TYPE
+d_type one_word:
+  dtype:
+  - D_TYPE
+d_type or:
+  dtype:
+  - D_TYPE
+d_type or -1 d_structure:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 of:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_type:
+  dtype:
+  - D_TYPE
+d_type or -1 d_type of:
+  dtype:
+  - D_TYPE
+d_type or -1 initializer:
+  dtype:
+  - D_TYPE
+d_type or -1 none:
+  dtype:
+  - D_TYPE
+d_type or -1 of:
+  dtype:
+  - D_TYPE
+default bstr:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+default bstr -1 optional:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+default d_type:
+  dtype:
+  - D_TYPE
+default d_type -1 optional:
+  dtype:
+  - D_TYPE
+default shape:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+default shape -1 bstr:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+default shape -1 bstr -1 optional:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+default shape -1 optional:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+df_str default:
+  dtype:
+  - string
+  ndim:
+  - '0'
+load for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load to -1 weights the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load weights the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 to -1 weights the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+load whether -1 weights the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+number of:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+number the:
+  ndim:
+  - '0'
+optional d_structure:
+  structure:
+  - D_STRUCTURE
+optional d_type:
+  dtype:
+  - D_TYPE
+qstr d_type:
+  dtype:
+  - D_TYPE
+qstr d_type -1 default:
+  dtype:
+  - D_TYPE
+qstr qstr:
+  enum:
+  - QSTR
+qstr qstr -1 default:
+  enum:
+  - QSTR
+qstr qstr -1 optional:
+  enum:
+  - QSTR
+qstr qstr -1 optional -1 default:
+  enum:
+  - QSTR
+required d_type:
+  dtype:
+  - D_TYPE
+set constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set if -1 constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+value param:
+  dtype:
+  - numeric
+weights for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 pretrained:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 pretrained -1 for:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 pretrained -1 model:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+weights the -1 pretrained -1 model for:
+  dtype:
+  - bool
+  ndim:
+  - '0'

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Shape of the placeholder (integer tuple, may include `None` entries).",None,prim_dtype,dtype(int),,1
+,"Shape of the placeholder (integer tuple, may include `None` entries).",None,shape,ndim(1),,1
+,"Shape of the placeholder (integer tuple, may include `None` entries).",None,validvalue,"range([0,inf))",,1

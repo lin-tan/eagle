@@ -1,0 +1,19 @@
+constraints:
+  encoder_layer:
+    descp: an instance of the TransformerEncoderLayer() class (required).
+  norm:
+    default: None
+    descp: the layer normalization component (optional).
+  num_layers:
+    descp: the number of sub-encoder-layers in the encoder (required).
+inputs:
+  optional:
+  - norm
+  required:
+  - encoder_layer
+  - num_layers
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.TransformerEncoder
+package: torch
+target: TransformerEncoder
+title: torch.nn.TransformerEncoder
+version: 1.5.0

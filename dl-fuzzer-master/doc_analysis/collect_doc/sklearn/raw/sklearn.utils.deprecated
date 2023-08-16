@@ -1,0 +1,42 @@
+sklearn.utils.deprecated = class deprecated(builtins.object)
+ |  Decorator to mark a function or class as deprecated.
+ |  
+ |  Issue a warning when the function is called/the class is instantiated and
+ |  adds a warning to the docstring.
+ |  
+ |  The optional extra argument will be appended to the deprecation message
+ |  and the docstring. Note: to use this with the default value for extra, put
+ |  in an empty of parentheses:
+ |  
+ |  >>> from sklearn.utils import deprecated
+ |  >>> deprecated()
+ |  <sklearn.utils.deprecation.deprecated object at ...>
+ |  
+ |  >>> @deprecated()
+ |  ... def some_function(): pass
+ |  
+ |  Parameters
+ |  ----------
+ |  extra : string
+ |        to be added to the deprecation messages
+ |  
+ |  Methods defined here:
+ |  
+ |  __call__(self, obj)
+ |      Call method
+ |      
+ |      Parameters
+ |      ----------
+ |      obj : object
+ |  
+ |  __init__(self, extra='')
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |  
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |  
+ |  __dict__
+ |      dictionary for instance variables (if defined)
+ |  
+ |  __weakref__
+ |      list of weak references to the object (if defined)

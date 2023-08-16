@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,Score of how likely proposal is object.,None,prim_dtype,dtype(float),,1
+NDArray,Score of how likely proposal is object.,None,nonprim_dtype,structure(ndarray),,1
+NDArray,Score of how likely proposal is object.,None,validvalue,"range([0,1])",,1

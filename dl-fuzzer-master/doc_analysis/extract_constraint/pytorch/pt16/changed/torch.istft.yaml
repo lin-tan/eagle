@@ -1,0 +1,102 @@
+constraints:
+  center:
+    default: 'True'
+    descp: 'Whether `input` was padded on both sides so that the t -th frame is centered
+      at time t  times hop _length . (Default: `True`)'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  hop_length:
+    default: None
+    descp: 'The distance between neighboring sliding window frames. (Default: `n_fft
+      // 4`)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+  input:
+    descp: The input tensor. Expected to be output of `stft()`, either 3D (`fft_size`,
+      `n_frame`, 2) or 4D (`channel`, `fft_size`, `n_frame`, 2).
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '3'
+    - '4'
+    tensor_t:
+    - torch.tensor
+  length:
+    default: None
+    descp: 'The amount to trim the signal by (i.e. the original signal length). (Default:
+      whole signal)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+  n_fft:
+    descp: Size of Fourier transform
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  normalized:
+    default: 'False'
+    descp: 'Whether the STFT was normalized. (Default: `False`)'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  onesided:
+    default: 'True'
+    descp: 'Whether the STFT is onesided. (Default: `True`)'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  win_length:
+    default: None
+    descp: 'The size of window frame and STFT filter. (Default: `n_fft`)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+  window:
+    default: None
+    descp: 'The optional window function. (Default: `torch.ones(win_length)`)'
+    doc_dtype:
+    - Optional[torch.Tensor]
+    dtype:
+    - callable
+inputs:
+  optional:
+  - hop_length
+  - win_length
+  - window
+  - center
+  - normalized
+  - onesided
+  - length
+  required:
+  - input
+  - n_fft
+link: https://pytorch.org/docs/1.6.0/generated/torch.istft.html#torch.istft#torch.istft
+package: torch
+target: istft
+title: torch.istft
+version: 1.6.0

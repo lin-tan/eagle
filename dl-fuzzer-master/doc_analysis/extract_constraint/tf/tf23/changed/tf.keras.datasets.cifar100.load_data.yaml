@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.keras.datasets.cifar100.load_data
+constraints:
+  label_mode:
+    default: fine
+    descp: one of "fine", "coarse". If it is "fine" the category labels are the fine-grained
+      labels, if it is "coarse" the output labels are the coarse-grained superclasses.
+    dtype:
+    - tf.string
+    enum:
+    - coarse
+    - fine
+exceptions:
+- ValueError: in case of invalid label_mode.
+inputs:
+  optional:
+  - label_mode
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/datasets/cifar100/load_data
+outputs:
+- 'Tuple of Numpy arrays: (x_train, y_train), (x_test, y_test). x_train, x_test: uint8
+  arrays of RGB image data with shape (num_samples, 3, 32, 32) if tf.keras.backend.image_data_format()
+  is ''channels_first'', or (num_samples, 32, 32, 3) if the data format is ''channels_last''.
+  y_train, y_test: uint8 arrays of category labels with shape (num_samples, 1).'
+package: tensorflow
+target: load_data
+title: tf.keras.datasets.cifar100.load_data
+version: 2.3.0

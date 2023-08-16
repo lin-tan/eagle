@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,the number of query examples expected per batch. Leave unset for variable batch size (recommended).,None,prim_dtype,dtype(numeric),,1
+,the number of query examples expected per batch. Leave unset for variable batch size (recommended).,None,shape,ndim(0),,1
+,the number of query examples expected per batch. Leave unset for variable batch size (recommended).,None,validvalue,"range([0,inf))",,1

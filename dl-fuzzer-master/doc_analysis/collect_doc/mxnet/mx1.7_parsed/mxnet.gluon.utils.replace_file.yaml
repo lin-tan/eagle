@@ -1,0 +1,19 @@
+constraints:
+  dst:
+    descp: ''
+    doc_dtype:
+    - destination file path
+  src:
+    descp: ''
+    doc_dtype:
+    - source file path
+inputs:
+  optional: []
+  required:
+  - src
+  - dst
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/gluon/utils/index.html#mxnet.gluon.utils.replace_file
+package: mxnet
+target: replace_file
+title: mxnet.gluon.utils.replace_file
+version: 1.7.0

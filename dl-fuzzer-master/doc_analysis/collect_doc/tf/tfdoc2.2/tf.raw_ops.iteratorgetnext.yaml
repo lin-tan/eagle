@@ -1,0 +1,25 @@
+constraints:
+  iterator:
+    descp: A Tensor of type resource.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - iterator
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/IteratorGetNext
+outputs:
+- A list of Tensor objects of type output_types.
+package: tensorflow
+target: IteratorGetNext
+title: tf.raw_ops.IteratorGetNext
+version: 2.2.0

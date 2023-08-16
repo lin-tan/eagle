@@ -1,0 +1,25 @@
+constraints:
+  grad_reqs:
+    default: write
+    descp: ''
+    doc_dtype:
+    - list of string
+  gradients:
+    descp: ''
+    doc_dtype:
+    - list of NDArray
+  variables:
+    descp: ''
+    doc_dtype:
+    - list of NDArray
+inputs:
+  optional:
+  - grad_reqs
+  required:
+  - variables
+  - gradients
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/contrib/autograd/index.html#mxnet.contrib.autograd.mark_variables
+package: mxnet
+target: mark_variables
+title: mxnet.contrib.autograd.mark_variables
+version: 1.7.0

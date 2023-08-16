@@ -1,0 +1,12 @@
+constraints:
+  out_idx:
+    default: tf.dtypes.int32
+    descp: 'An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`.'
+    dtype:
+    - tf.dtype
+    enum:
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+title: tf.unique

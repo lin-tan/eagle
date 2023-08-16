@@ -1,0 +1,37 @@
+constraints:
+  axis:
+    descp: Same as NumPy.
+    doc_dtype: None or int or list-like
+    normalized_descp:
+    - Same as NumPy
+    normalized_docdtype: None or D_TYPE or D_STRUCTURE like
+  dat:
+    descp: Same as NumPy.
+    doc_dtype: np.ndarray
+    normalized_descp:
+    - Same as NumPy
+    normalized_docdtype: np D_STRUCTURE
+  keepdims:
+    descp: Same as NumPy.
+    doc_dtype: bool
+    normalized_descp:
+    - Same as NumPy
+    normalized_docdtype: ONE_WORD D_TYPE
+  numpy_reduce_func:
+    descp: A NumPy reducing function like `np.sum` or `np.max`.
+    doc_dtype: function
+    normalized_descp:
+    - A NumPy reducing function like np sum QSTR np max
+    normalized_docdtype: ONE_WORD function
+inputs:
+  optional: []
+  required:
+  - dat
+  - axis
+  - keepdims
+  - numpy_reduce_func
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.np_reduce
+package: mxnet
+target: np_reduce
+title: mxnet.test_utils.np_reduce
+version: 1.6.0

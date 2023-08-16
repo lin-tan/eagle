@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"0 or 1, optional (1 by default) axis used to normalize the data along. If 1, independently normalize each sample, otherwise (if 0) normalize each feature.",1,prim_dtype,dtype(int),,1
+,"0 or 1, optional (1 by default) axis used to normalize the data along. If 1, independently normalize each sample, otherwise (if 0) normalize each feature.",1,shape,ndim(0),,1

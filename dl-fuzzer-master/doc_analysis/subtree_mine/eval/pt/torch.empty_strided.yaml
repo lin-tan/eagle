@@ -1,0 +1,12 @@
+constraints:
+  pin_memory:
+    default: 'False'
+    descp: 'If set, returned tensor would be allocated in the pinned memory. Works
+      only for CPU tensors. Default: `False`.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.empty_strided

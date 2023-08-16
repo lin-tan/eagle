@@ -1,0 +1,29 @@
+constraints:
+  dim:
+    default: None
+    descp: The dimension along which to repeat values.By default, use the flattened
+      input array, and return a flat outputarray.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  repeats:
+    descp: The number of repetitions for each element.repeats is broadcasted to fit
+      the shape of the given axis.
+    doc_dtype:
+    - Tensor
+    - int
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+  - repeats
+link: https://pytorch.org/docs/stable/torch.html#torch.repeat_interleave
+package: torch
+ret_type: Tensor
+target: repeat_interleave
+title: torch.repeat_interleave
+version: 1.5.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A scalar int64 Tensor (or Python int) containing the new size of the last dimension, `all(0 <= sp_input.values < vocab_size)`.",,prim_dtype,dtype(tf.int64),,1
+,"A scalar int64 Tensor (or Python int) containing the new size of the last dimension, `all(0 <= sp_input.values < vocab_size)`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A scalar int64 Tensor (or Python int) containing the new size of the last dimension, `all(0 <= sp_input.values < vocab_size)`.",,shape,ndim(0),,1
+,"A scalar int64 Tensor (or Python int) containing the new size of the last dimension, `all(0 <= sp_input.values < vocab_size)`.",,validvalue,"range([0,inf))",,1

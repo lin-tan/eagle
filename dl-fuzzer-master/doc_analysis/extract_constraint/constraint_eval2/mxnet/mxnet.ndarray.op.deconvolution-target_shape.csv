@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","Shape of the output tensor: (w,), (h, w) or (d, h, w).",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","Shape of the output tensor: (w,), (h, w) or (d, h, w).",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[]","Shape of the output tensor: (w,), (h, w) or (d, h, w).",_Null,shape,"shape([d,h,w], [h,w], [w]), ndim(1, 2, 3)",,1
+"Shape(tuple), optional, default=[]","Shape of the output tensor: (w,), (h, w) or (d, h, w).",_Null,validvalue,"range([0,inf))",,1

@@ -1,0 +1,44 @@
+constraints:
+  boxes:
+    descp: 'A Tensor. Must be one of the following types: half, float32. A 2-D float
+      tensor of shape [num_boxes, 4].'
+  iou_threshold:
+    descp: 'A Tensor. Must be one of the following types: half, float32. A 0-D float
+      tensor representing the threshold for deciding whether boxes overlap too much
+      with respect to IOU.'
+  max_output_size:
+    descp: A Tensor of type int32. A scalar integer tensor representing the maximum
+      number of boxes to be selected by non max suppression.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  pad_to_max_output_size:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, the output selected_indices
+      is padded to be of length max_output_size. Defaults to false.
+  score_threshold:
+    descp: A Tensor. Must have the same type as iou_threshold. A 0-D float tensor
+      representing the threshold for deciding when to remove boxes based on score.
+  scores:
+    descp: A Tensor. Must have the same type as boxes. A 1-D float tensor of shape
+      [num_boxes] representing a single score corresponding to each box (each row
+      of boxes).
+inputs:
+  optional:
+  - pad_to_max_output_size
+  - name
+  required:
+  - boxes
+  - scores
+  - max_output_size
+  - iou_threshold
+  - score_threshold
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NonMaxSuppressionV4
+outputs:
+- A tuple of Tensor objects (selected_indices, valid_outputs).
+- selected_indices: A Tensor of type int32.
+- valid_outputs: A Tensor of type int32.
+package: tensorflow
+target: NonMaxSuppressionV4
+title: tf.raw_ops.NonMaxSuppressionV4
+version: 2.3.0

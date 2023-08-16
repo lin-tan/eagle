@@ -1,0 +1,55 @@
+constraints:
+  feature_indices:
+    descp: A Tensor of type int32. int32; Rank 2 indices of feature sparse Tensors
+      (shape=[number of sparse entries, 2]). Number of sparse entries across all instances
+      from the batch. The first value is the index of the instance, the second is
+      dimension of the feature. The second axis can only have 2 values, i.e., the
+      input dense version of Tensor can only be matrix.
+  feature_shape:
+    descp: A Tensor of type int32. int32; Rank 1 dense shape of feature sparse Tensors
+      (shape=[2]). The first axis can only have 2 values, [batch_size, feature_dimension].
+  feature_values:
+    descp: A Tensor of type int32. int32; Rank 1 values of feature sparse Tensors
+      (shape=[number of sparse entries]). Number of sparse entries across all instances
+      from the batch. The first value is the index of the instance, the second is
+      dimension of the feature.
+  gradients:
+    descp: A Tensor of type float32. float32; Rank 2 Tensor (shape=[batch_size, logits_dimension])
+      with gradients for each example.
+  hessians:
+    descp: A Tensor of type float32. float32; Rank 2 Tensor (shape=[batch_size, hessian_dimension])
+      with hessians for each example.
+  max_splits:
+    descp: An int that is >= 1. int; the maximum number of splits possible in the
+      whole tree.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  node_ids:
+    descp: A Tensor of type int32. int32; Rank 1 Tensor containing node ids for each
+      example, shape [batch_size].
+  num_buckets:
+    descp: An int that is >= 1. int; equals to the maximum possible value of bucketized
+      feature + 1.
+inputs:
+  optional:
+  - name
+  required:
+  - node_ids
+  - gradients
+  - hessians
+  - feature_indices
+  - feature_values
+  - feature_shape
+  - max_splits
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesSparseAggregateStats
+outputs:
+- A tuple of Tensor objects (stats_summary_indices, stats_summary_values, stats_summary_shape).
+- stats_summary_indices: A Tensor of type int32.
+- stats_summary_values: A Tensor of type float32.
+- stats_summary_shape: A Tensor of type int32.
+package: tensorflow
+target: BoostedTreesSparseAggregateStats
+title: tf.raw_ops.BoostedTreesSparseAggregateStats
+version: 2.2.0

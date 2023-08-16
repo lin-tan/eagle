@@ -1,0 +1,122 @@
+constraints:
+  center:
+    default: 'True'
+    descp: 'whether to pad `input` on both sides so that the t -th frame is centered
+      at time t  times hop _length . Default: `True`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  hop_length:
+    default: None
+    descp: 'the distance between neighboring sliding window frames. Default: `None`
+      (treated as equal to `floor(n_fft / 4)`)'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+    sig_dtype: Optional[int]
+  input:
+    descp: the input tensor
+    doc_dtype:
+    - Tensor
+    sig_dtype: torch.Tensor
+    tensor_t:
+    - torch.tensor
+  n_fft:
+    descp: size of Fourier transform
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    sig_dtype: int
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return the normalized STFT results Default: `False`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  onesided:
+    default: None
+    descp: 'controls whether to return half of results to avoid redundancy for real
+      inputs. Default: `True` for real `input` and `window`, `False` otherwise.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: Optional[bool]
+  pad_mode:
+    default: reflect
+    descp: 'controls the padding method used when `center` is `True`. Default: `"reflect"`'
+    doc_dtype:
+    - string
+    dtype:
+    - string
+    sig_dtype: str
+  return_complex:
+    default: None
+    descp: whether to return a complex tensor, or a real tensor with an extra last
+      dimension for the real and imaginary components.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    sig_dtype: Optional[bool]
+    tensor_t:
+    - torch.tensor
+  win_length:
+    default: None
+    descp: 'the size of window frame and STFT filter. Default: `None`  (treated as
+      equal to `n_fft`)'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+    sig_dtype: Optional[int]
+  window:
+    default: None
+    descp: 'the optional window function. Default: `None` (treated as window of all
+      1  s)'
+    doc_dtype:
+    - Tensor
+    dtype:
+    - callable
+    sig_dtype: Optional[torch.Tensor]
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - hop_length
+  - win_length
+  - window
+  - center
+  - pad_mode
+  - normalized
+  - onesided
+  - return_complex
+  required:
+  - input
+  - n_fft
+link: https://pytorch.org/docs/1.7.0/generated/torch.stft.html#torch.stft#torch.stft
+package: torch
+ret_type: torch.Tensor
+target: stft
+title: torch.stft
+version: 1.9.0

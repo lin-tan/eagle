@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: None
+    descp: Optional name for the operation.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.random.poisson

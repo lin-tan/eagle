@@ -1,0 +1,109 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  anchors:
+    default: None
+    descp: (B, N, 4) encoded in corner
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '3'
+    shape:
+    - '[b,n,4]'
+    structure:
+    - ndarray
+  matches:
+    default: None
+    descp: (B, N) value range [0, M)
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '2'
+    range:
+    - '[0,m)'
+    shape:
+    - '[b,n]'
+    structure:
+    - ndarray
+  means:
+    default: None
+    descp: (4,) Mean value to be subtracted from encoded values
+    doc_dtype:
+    - NDArray
+    dtype:
+    - float
+    ndim:
+    - '1'
+    shape:
+    - '[4]'
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - string
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+  refs:
+    default: None
+    descp: (B, M, 4) encoded in corner
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '3'
+    shape:
+    - '[b,m,4]'
+    structure:
+    - ndarray
+  samples:
+    default: None
+    descp: (B, N) value +1 (positive), -1 (negative), 0 (ignore)
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '2'
+    shape:
+    - '[b,n]'
+    structure:
+    - ndarray
+  stds:
+    default: None
+    descp: (4,) Std value to be divided from encoded values
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '1'
+    shape:
+    - '[4]'
+    structure:
+    - ndarray
+dependency:
+- b
+- m
+- n
+inputs:
+  optional:
+  - samples
+  - matches
+  - anchors
+  - refs
+  - means
+  - stds
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.box_encode
+package: mxnet
+target: box_encode
+title: mxnet.ndarray.contrib.box_encode
+version: 1.6.0

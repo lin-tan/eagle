@@ -1,0 +1,74 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`).'
+    doc_dtype:
+    - torch.dtype
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype:
+    - torch.Generator
+  high:
+    descp: One above the highest integer to be drawn from the distribution.
+    doc_dtype:
+    - python:int
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned Tensor. Default: `torch.strided`.'
+    doc_dtype:
+    - torch.layout
+  low:
+    default: '0'
+    descp: 'Lowest integer to be drawn from the distribution. Default: 0.'
+    doc_dtype:
+    - python:int
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+  size:
+    descp: a tuple defining the shape of the output tensor.
+    doc_dtype:
+    - tuple
+inputs:
+  keyword_only:
+  - generator
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  optional:
+  - low
+  - generator
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - high
+  - size
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.randint
+package: torch
+ret_type: Tensor
+target: randint
+title: torch.randint
+version: 1.4.0

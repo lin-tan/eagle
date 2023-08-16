@@ -1,0 +1,90 @@
+constraints:
+  center_box:
+    default: (-10.0, 10.0)
+    descp: pair of floats (min, max), optional (default=(-10.0, 10.0)) The bounding
+      box for each cluster center when centers are generated at random.
+    dtype:
+    - float
+  centers:
+    default: None
+    descp: int or array of shape [n_centers, n_features], optional (default=None)
+      The number of centers to generate, or the fixed center locations. If n_samples
+      is an int and centers is None, 3 centers are generated. If n_samples is array-like,
+      centers must be either None or an array of length equal to the length of n_samples.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[3]'
+    structure:
+    - ndarray
+  cluster_std:
+    default: '1.0'
+    descp: float or sequence of floats, optional (default=1.0) The standard deviation
+      of the clusters.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+  n_features:
+    default: '2'
+    descp: int, optional (default=2) The number of features for each sample.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_samples:
+    default: '100'
+    descp: int or array-like, optional (default=100) If int, it is the total number
+      of points equally divided among clusters. If array-like, each element of the
+      sequence indicates the number of samples per cluster.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[100]'
+    structure:
+    - list
+    - ndarray
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset creation. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+  shuffle:
+    default: 'True'
+    descp: boolean, optional (default=True) Shuffle the samples.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_samples
+  - n_features
+  - centers
+  - cluster_std
+  - center_box
+  - shuffle
+  - random_state
+  required: []
+link: ''
+package: sklearn
+target: make_blobs
+title: sklearn.datasets.make_blobs
+version: 0.24.2

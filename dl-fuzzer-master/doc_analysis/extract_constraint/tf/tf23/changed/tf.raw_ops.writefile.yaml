@@ -1,0 +1,39 @@
+constraints:
+  contents:
+    descp: A Tensor of type string. scalar. The content to be written to the output
+      file.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  filename:
+    descp: A Tensor of type string. scalar. The name of the file to which we write
+      the contents.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+  - contents
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/WriteFile
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteFile
+title: tf.raw_ops.WriteFile
+version: 2.3.0

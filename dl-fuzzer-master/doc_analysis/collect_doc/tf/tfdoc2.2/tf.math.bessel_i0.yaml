@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.math.bessel_i0
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A Tensor or SparseTensor. Must be one of the following types: half, float32,
+      float64.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/bessel_i0
+outputs:
+- A Tensor or SparseTensor, respectively. Has the same type as x.
+package: tensorflow
+target: bessel_i0
+title: tf.math.bessel_i0
+version: 2.2.0

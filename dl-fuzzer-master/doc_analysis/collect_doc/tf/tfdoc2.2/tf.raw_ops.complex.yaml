@@ -1,0 +1,25 @@
+constraints:
+  Tout:
+    default: tf.dtypes.complex64
+    descp: 'An optional tf.DType from: tf.complex64, tf.complex128. Defaults to tf.complex64.'
+  imag:
+    descp: A Tensor. Must have the same type as real.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  real:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+inputs:
+  optional:
+  - Tout
+  - name
+  required:
+  - real
+  - imag
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Complex
+outputs:
+- A Tensor of type Tout.
+package: tensorflow
+target: Complex
+title: tf.raw_ops.Complex
+version: 2.2.0

@@ -1,0 +1,8 @@
+constraints:
+  data_format:
+    default: None
+    descp: One of `channels_last` or `channels_first`.
+    enum:
+    - channels_first
+    - channels_last
+title: tf.keras.backend.spatial_2d_padding

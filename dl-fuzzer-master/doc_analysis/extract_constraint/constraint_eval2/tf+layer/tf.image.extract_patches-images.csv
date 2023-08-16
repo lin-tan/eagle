@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 4-D Tensor with shape `[batch, in_rows, in_cols, depth]",,prim_dtype,dtype(numeric),,1
+,"A 4-D Tensor with shape `[batch, in_rows, in_cols, depth]",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 4-D Tensor with shape `[batch, in_rows, in_cols, depth]",,shape,"shape([batch,in_rows,in_cols,depth]), ndim(4)",,1

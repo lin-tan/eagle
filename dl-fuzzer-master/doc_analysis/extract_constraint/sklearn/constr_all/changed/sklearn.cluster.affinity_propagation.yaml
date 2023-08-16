@@ -1,0 +1,89 @@
+constraints:
+  S:
+    descp: array-like, shape (n_samples, n_samples) Matrix of similarities between
+      points
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_samples]'
+  convergence_iter:
+    default: '15'
+    descp: 'int, optional, default: 15 Number of iterations with no change in the
+      number of estimated clusters that stops the convergence.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  copy:
+    default: 'True'
+    descp: 'boolean, optional, default: True If copy is False, the affinity matrix
+      is modified inplace by the algorithm, for memory efficiency'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  damping:
+    default: '0.5'
+    descp: 'float, optional, default: 0.5 Damping factor between 0.5 and 1.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  max_iter:
+    default: '200'
+    descp: 'int, optional, default: 200 Maximum number of iterations'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  preference:
+    default: None
+    descp: array-like, shape (n_samples,) or float, optional Preferences for each
+      point - points with larger values of preferences are more likely to be chosen
+      as exemplars. The number of exemplars, i.e. of clusters, is influenced by the
+      input preferences value. If the preferences are not passed as arguments, they
+      will be set to the median of the input similarities (resulting in a moderate
+      number of clusters). For a smaller amount of clusters, this can be set to the
+      minimum value of the similarities.
+    dtype:
+    - numeric
+  return_n_iter:
+    default: 'False'
+    descp: bool, default False Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  verbose:
+    default: 'False'
+    descp: 'boolean, optional, default: False The verbosity level'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - preference
+  - convergence_iter
+  - max_iter
+  - damping
+  - copy
+  - verbose
+  - return_n_iter
+  required:
+  - S
+link: ''
+package: sklearn
+target: affinity_propagation
+title: sklearn.cluster.affinity_propagation
+version: 0.24.2

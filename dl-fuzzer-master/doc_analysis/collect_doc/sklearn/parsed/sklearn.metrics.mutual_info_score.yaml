@@ -1,0 +1,17 @@
+constraints:
+  contingency: {default: None, descp: '{None, array, sparse matrix},                   shape
+      = [n_classes_true, n_classes_pred] A contingency matrix given by the :func:`contingency_matrix`
+      function. If value is ``None``, it will be computed, otherwise the given value
+      is used, with ``labels_true`` and ``labels_pred`` ignored.'}
+  labels_pred: {descp: 'int array-like of shape (n_samples,) A clustering of the data
+      into disjoint subsets.'}
+  labels_true: {descp: 'int array, shape = [n_samples] A clustering of the data into
+      disjoint subsets.'}
+inputs:
+  optional: [contingency]
+  required: [labels_true, labels_pred]
+link: ''
+package: sklearn
+target: mutual_info_score
+title: sklearn.metrics.mutual_info_score
+version: 0.24.2

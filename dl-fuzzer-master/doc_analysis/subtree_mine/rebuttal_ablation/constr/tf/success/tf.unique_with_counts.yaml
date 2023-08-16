@@ -1,0 +1,77 @@
+aliases:
+- tf.compat.v1.unique_with_counts
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  out_idx:
+    default: tf.dtypes.int32
+    descp: 'An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`.'
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - int32
+    - tf.DType
+    - tf.dtypes
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  x:
+    descp: A `Tensor`. 1-D.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '>=1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - out_idx
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/unique_with_counts
+outputs: A tuple of `Tensor` objects (y, idx, count).
+package: tensorflow
+target: unique_with_counts
+title: tf.unique_with_counts
+version: 2.1.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The frame hop size in samples. An integer or scalar `Tensor`.,,prim_dtype,dtype(int),,1
+,The frame hop size in samples. An integer or scalar `Tensor`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,The frame hop size in samples. An integer or scalar `Tensor`.,,shape,ndim(0),,1

@@ -1,0 +1,31 @@
+constraints:
+  dataset:
+    descp: Dataset to be split
+    doc_dtype:
+    - Dataset
+    sig_dtype: torch.utils.data.dataset.Dataset[T]
+  generator:
+    default: <torch._C.Generatorobject>
+    descp: Generator used for the random permutation.
+    doc_dtype:
+    - Generator
+    sig_dtype: Optional[torch._C.Generator]
+  lengths:
+    descp: lengths of splits to be produced
+    doc_dtype:
+    - sequence
+    sig_dtype: Sequence[int]
+    structure:
+    - sequence
+inputs:
+  optional:
+  - generator
+  required:
+  - dataset
+  - lengths
+link: https://pytorch.org/docs/1.7.0/data.html#torch.utils.data.random_split
+package: torch
+ret_type: List[torch.utils.data.dataset.Subset[T]]
+target: random_split
+title: torch.utils.data.random_split
+version: 1.9.0

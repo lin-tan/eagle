@@ -1,0 +1,32 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension along which to split the tensor.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension along which to split the D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  split_size_or_sections:
+    descp: size of a single chunk or list of sizes for each chunk
+    doc_dtype: int) or (list(int
+    normalized_descp:
+    - size of a single chunk or D_STRUCTURE of sizes for each chunk
+    normalized_docdtype: D_TYPE or D_STRUCTURE D_TYPE
+  tensor:
+    descp: tensor to split.
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE to split
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  required:
+  - tensor
+  - split_size_or_sections
+link: https://pytorch.org/docs/stable/torch.html#torch.split
+package: torch
+target: split
+title: torch.split
+version: 1.5.0

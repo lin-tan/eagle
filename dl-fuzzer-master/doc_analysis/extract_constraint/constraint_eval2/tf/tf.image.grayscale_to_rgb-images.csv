@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The Grayscale tensor to convert. Last dimension must be size 1.,,prim_dtype,dtype(image),,1
+,The Grayscale tensor to convert. Last dimension must be size 1.,,nonprim_dtype,tensor_t(tf.tensor),,1

@@ -1,0 +1,77 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: '1'
+    descp: Alpha (dispersion) parameter of the negative binomial distribution.
+    doc_dtype: float or NDArray, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Alpha BSTR parameter of the negative binomial distribution
+    normalized_docdtype: D_TYPE or D_STRUCTURE, optional
+  ctx:
+    default: None
+    descp: Device context of output. Default is current context. Overridden by mu.context
+      when mu is an NDArray.
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context of output
+    - Default is current context
+    - Overridden by PARAM context when PARAM is an D_STRUCTURE
+    normalized_docdtype: Context, optional
+  dtype:
+    default: _Null
+    descp: Data type of output samples. Default is 'float32'
+    doc_dtype: '{''float16'', ''float32'', ''float64''}, optional'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Data type of output samples
+    - Default is QSTR
+    normalized_docdtype: QSTR , optional
+  mu:
+    default: '1'
+    descp: Mean of the negative binomial distribution.
+    doc_dtype: float or NDArray, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Mean of the negative binomial distribution
+    normalized_docdtype: D_TYPE or D_STRUCTURE, optional
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Store output to an existing D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  shape:
+    default: _Null
+    descp: The number of samples to draw. If shape is, e.g., (m, n) and mu and alpha
+      are scalars, output shape will be (m, n). If mu and alpha are NDArrays with
+      shape, e.g., (x, y), then output will have shape (x, y, m, n), where m*n samples
+      are drawn for each [mu, alpha) pair.
+    doc_dtype: int or tuple of ints, optional
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The number of samples to draw
+    - If shape is, e g , BSTR
+    - If PARAM and PARAM are NDArrays with shape, e g , BSTR, where m n samples are
+      drawn for each BSTR pair
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE, optional
+inputs:
+  optional:
+  - mu
+  - alpha
+  - shape
+  - dtype
+  - ctx
+  - out
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.generalized_negative_binomial
+package: mxnet
+target: generalized_negative_binomial
+title: mxnet.ndarray.random.generalized_negative_binomial
+version: 1.6.0

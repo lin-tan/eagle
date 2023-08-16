@@ -1,0 +1,40 @@
+constraints:
+  dtype:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.half, tf.float32, tf.float64, tf.int32,
+      tf.int64. Defaults to tf.int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rate:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      int32, int64. A tensor in which each scalar is a "rate" parameter describing
+      the associated poisson distribution.'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to be non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. A second seed to avoid seed collision.
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 1-D integer
+      tensor. Shape of independent samples to draw from each distribution described
+      by the shape parameters given in rate.'
+inputs:
+  optional:
+  - seed
+  - seed2
+  - dtype
+  - name
+  required:
+  - shape
+  - rate
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RandomPoissonV2
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: RandomPoissonV2
+title: tf.raw_ops.RandomPoissonV2
+version: 2.2.0

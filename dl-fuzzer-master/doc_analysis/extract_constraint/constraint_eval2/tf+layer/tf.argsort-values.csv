@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,1-D or higher numeric `Tensor`.,,prim_dtype,dtype(numeric),,1
+,1-D or higher numeric `Tensor`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,1-D or higher numeric `Tensor`.,,shape,ndim(>=1),,1

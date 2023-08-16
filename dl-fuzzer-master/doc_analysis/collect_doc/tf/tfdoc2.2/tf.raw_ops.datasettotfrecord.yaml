@@ -1,0 +1,27 @@
+constraints:
+  compression_type:
+    descp: A Tensor of type string. A scalar string tensor containing either (i) the
+      empty string (no compression), (ii) "ZLIB", or (iii) "GZIP".
+  filename:
+    descp: A Tensor of type string. A scalar string tensor representing the filename
+      to use.
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the dataset to
+      write.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - filename
+  - compression_type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DatasetToTFRecord
+outputs:
+- The created Operation.
+package: tensorflow
+target: DatasetToTFRecord
+title: tf.raw_ops.DatasetToTFRecord
+version: 2.2.0

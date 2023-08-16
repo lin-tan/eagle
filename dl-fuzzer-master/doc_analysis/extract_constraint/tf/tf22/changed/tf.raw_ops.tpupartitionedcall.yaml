@@ -1,0 +1,54 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes. The types of the outputs of the function.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.dtype)
+  args:
+    descp: A list of Tensor objects. The arguments to the function.
+    structure:
+    - list(tf.tensor)
+  autotuner_thresh:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  device_ordinal:
+    descp: A Tensor of type int32. The TPU device ordinal to run the function on.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  f:
+    descp: A function decorated with @Defun. The function to call.
+    dtype:
+    - callable
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - autotuner_thresh
+  - name
+  required:
+  - args
+  - device_ordinal
+  - Tout
+  - f
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TPUPartitionedCall
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: TPUPartitionedCall
+title: tf.raw_ops.TPUPartitionedCall
+version: 2.2.0

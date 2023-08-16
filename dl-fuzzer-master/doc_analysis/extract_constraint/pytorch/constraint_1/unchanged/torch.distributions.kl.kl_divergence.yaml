@@ -1,0 +1,19 @@
+constraints:
+  p:
+    descp: A `Distribution` object.
+    doc_dtype:
+    - Distribution
+  q:
+    descp: A `Distribution` object.
+    doc_dtype:
+    - Distribution
+inputs:
+  optional: []
+  required:
+  - p
+  - q
+link: https://pytorch.org/docs/stable/distributions.html#torch.distributions.kl.kl_divergence
+package: torch
+target: kl_divergence
+title: torch.distributions.kl.kl_divergence
+version: 1.5.0

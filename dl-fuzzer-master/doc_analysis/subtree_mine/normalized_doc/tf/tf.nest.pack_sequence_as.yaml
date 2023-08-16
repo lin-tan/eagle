@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.nest.pack_sequence_as
+constraints:
+  expand_composites:
+    default: 'False'
+    descp: If true, then composite tensors such as `tf.SparseTensor`and `tf.RaggedTensor`
+      are expanded into their component tensors.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, then composite D_STRUCTURE such as D_STRUCTUREand tf RaggedTensor
+      are expanded into their component D_STRUCTURE
+  flat_sequence:
+    descp: flat sequence to pack.
+    normalized_descp:
+    - flat D_STRUCTURE to pack
+  structure:
+    descp: 'Nested structure, whose structure is given by nested lists, tuples, and
+      dicts. Note: numpy arrays and strings are considered scalars.'
+    normalized_descp:
+    - Nested structure, whose structure is given by nested D_STRUCTURE, tuples, and
+      dicts
+    - Note numpy D_STRUCTURE and D_TYPE are considered scalars
+exceptions:
+- ValueError: If `flat_sequence` and `structure` have different element counts.
+- TypeError: '`structure` is or contains a dict with non-sortable keys.'
+inputs:
+  optional:
+  - expand_composites
+  required:
+  - structure
+  - flat_sequence
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nest/pack_sequence_as
+outputs:
+- packed: '`flat_sequence` converted to have the same recursive structure as`structure`.'
+package: tensorflow
+target: pack_sequence_as
+title: tf.nest.pack_sequence_as
+version: 2.1.0

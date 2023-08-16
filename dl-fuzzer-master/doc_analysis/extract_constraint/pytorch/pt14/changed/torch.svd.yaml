@@ -1,0 +1,56 @@
+constraints:
+  compute_uv:
+    default: 'True'
+    descp: option whether to compute U and V or not
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  input:
+    descp: the input tensor of size (*, m, n)  where * is zero or more batch dimensions
+      consisting of m  times n  matrices.
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,m,n]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tuple of tensors
+    doc_dtype:
+    - tuple
+    structure:
+    - tuple
+    - tuple(torch.tensor)
+  some:
+    default: 'True'
+    descp: controls the shape of returned U and V
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+dependency:
+- m
+- n
+inputs:
+  optional:
+  - some
+  - compute_uv
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.svd
+package: torch
+ret_type: (Tensor, Tensor, Tensor)
+target: svd
+title: torch.svd
+version: 1.4.0

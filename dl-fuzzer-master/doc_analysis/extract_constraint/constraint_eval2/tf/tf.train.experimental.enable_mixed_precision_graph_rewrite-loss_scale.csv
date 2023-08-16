@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Either an int/float, the string `""dynamic""`, or an instance of a`tf.mixed_precision.experimental.LossScale`. The loss scale to use. It is recommended to keep this as its default value of `""dynamic""`, which will adjust the scaling automatically to prevent `Inf` or `NaN` values.",dynamic,prim_dtype,"dtype(float, int)",,1

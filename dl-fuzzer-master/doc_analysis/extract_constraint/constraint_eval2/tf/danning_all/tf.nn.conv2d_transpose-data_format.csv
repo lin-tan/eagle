@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A string. 'NHWC' and 'NCHW' are supported.,NHWC,prim_dtype,dtype(tf.string),1,1
+,A string. 'NHWC' and 'NCHW' are supported.,NHWC,shape,ndim(0),1,1
+,A string. 'NHWC' and 'NCHW' are supported.,NHWC,validvalue,"enum(NCHW, NHWC)",1,1

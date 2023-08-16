@@ -1,0 +1,55 @@
+aliases:
+- tf.compat.v1.io.read_file
+- tf.compat.v1.read_file
+constraints:
+  filename:
+    descp: A `Tensor` of type `string`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/read_file
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: read_file
+title: tf.io.read_file
+version: 2.1.0

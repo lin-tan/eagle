@@ -1,0 +1,27 @@
+constraints:
+  eps:
+    default: '0.1'
+    descp: float or numpy array of float in ]0,1[, optional (default=0.1) Maximum
+      distortion rate as defined by the Johnson-Lindenstrauss lemma. If an array is
+      given, it will compute a safe number of components array-wise.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n_samples:
+    descp: int or numpy array of int greater than 0, Number of samples. If an array
+      is given, it will compute a safe number of components array-wise.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - eps
+  required:
+  - n_samples
+link: ''
+package: scikit-learn
+target: johnson_lindenstrauss_min_dim
+title: sklearn.random_projection.johnson_lindenstrauss_min_dim
+version: 0.24.X

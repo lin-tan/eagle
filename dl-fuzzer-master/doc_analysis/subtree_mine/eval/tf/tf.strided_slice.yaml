@@ -1,0 +1,9 @@
+constraints:
+  shrink_axis_mask:
+    default: '0'
+    descp: An `int32` mask.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+title: tf.strided_slice

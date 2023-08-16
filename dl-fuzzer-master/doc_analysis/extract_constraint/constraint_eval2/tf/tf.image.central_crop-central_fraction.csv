@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float (0, 1], fraction of size to crop Usage Example: `python >> import tensorflow as tf >> x = tf.random.normal(shape=(256, 256, 3)) >> tf.image.central_crop(x, 0.5)`",,prim_dtype,dtype(float),,1
+,"float (0, 1], fraction of size to crop Usage Example: `python >> import tensorflow as tf >> x = tf.random.normal(shape=(256, 256, 3)) >> tf.image.central_crop(x, 0.5)`",,shape,ndim(0),,1

@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.backend.normalize_batch_in_training
+constraints:
+  beta:
+    descp: Tensor with which to center the input.
+  epsilon:
+    default: '0.001'
+    descp: Fuzz factor.
+  gamma:
+    descp: Tensor by which to scale the input.
+  reduction_axes:
+    descp: iterable of integers, axes over which to normalize.
+  x:
+    descp: Input tensor or variable.
+inputs:
+  optional:
+  - epsilon
+  required:
+  - x
+  - gamma
+  - beta
+  - reduction_axes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/normalize_batch_in_training
+outputs:
+- A tuple length of 3, (normalized_tensor, mean, variance).
+package: tensorflow
+target: normalize_batch_in_training
+title: tf.keras.backend.normalize_batch_in_training
+version: 2.3.0

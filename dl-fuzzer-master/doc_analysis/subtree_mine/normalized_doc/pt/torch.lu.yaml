@@ -1,0 +1,62 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  A:
+    default: None
+    descp: 'the tensor to factor of size (*, m, n) '
+    doc_dtype: Tensor
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the D_STRUCTURE to factor of size BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  get_infos:
+    default: None
+    descp: 'if set to `True`, returns an info IntTensor. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - if set to CONSTANT_BOOL, returns an info IntTensor
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  out:
+    default: None
+    descp: 'optional output tuple. If `get_infos` is `True`, then the elements in
+      the tuple are Tensor, IntTensor, and IntTensor. If `get_infos` is `False`, then
+      the elements in the tuple are Tensor, IntTensor. Default: `None`'
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional output D_STRUCTURE
+    - If PARAM is CONSTANT_BOOL, then the elements in the D_STRUCTURE are D_STRUCTURE,
+      IntTensor, and IntTensor
+    - If PARAM is CONSTANT_BOOL, then the elements in the D_STRUCTURE are D_STRUCTURE,
+      IntTensor
+    - Default QSTR
+    normalized_docdtype: D_STRUCTURE, optional
+  pivot:
+    default: None
+    descp: 'controls whether pivoting is done. Default: `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - controls whether pivoting is done
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - A
+  - pivot
+  - get_infos
+  - out
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://pytorch.org/docs/stable/torch.html#torch.lu
+package: torch
+target: lu
+title: torch.lu
+version: 1.5.0

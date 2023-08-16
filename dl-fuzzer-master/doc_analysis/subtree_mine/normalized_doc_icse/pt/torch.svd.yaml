@@ -1,0 +1,46 @@
+constraints:
+  compute_uv:
+    default: 'True'
+    descp: option whether to compute U and V or not
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - option whether to compute U and V or not
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor of size (*, m, n)  where * is zero or more batch dimensions
+      consisting of m  times n  matrices.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of size BSTR where is zero or more batch dimensions consisting
+      of m times n matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tuple of tensors
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE of D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  some:
+    default: 'True'
+    descp: controls the shape of returned U and V
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls the shape of returned U and V
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - some
+  - compute_uv
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.svd
+package: torch
+ret_type: (Tensor, Tensor, Tensor)
+target: svd
+title: torch.svd
+version: 1.5.0

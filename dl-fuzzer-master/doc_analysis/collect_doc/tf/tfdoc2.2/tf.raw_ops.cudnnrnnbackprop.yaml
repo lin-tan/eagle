@@ -1,0 +1,79 @@
+constraints:
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+  input_c:
+    descp: A Tensor. Must have the same type as input.
+  input_h:
+    descp: A Tensor. Must have the same type as input.
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output:
+    descp: A Tensor. Must have the same type as input.
+  output_backprop:
+    descp: A Tensor. Must have the same type as input.
+  output_c:
+    descp: A Tensor. Must have the same type as input.
+  output_c_backprop:
+    descp: A Tensor. Must have the same type as input.
+  output_h:
+    descp: A Tensor. Must have the same type as input.
+  output_h_backprop:
+    descp: A Tensor. Must have the same type as input.
+  params:
+    descp: A Tensor. Must have the same type as input.
+  reserve_space:
+    descp: A Tensor. Must have the same type as input.
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - name
+  required:
+  - input
+  - input_h
+  - input_c
+  - params
+  - output
+  - output_h
+  - output_c
+  - output_backprop
+  - output_h_backprop
+  - output_c_backprop
+  - reserve_space
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CudnnRNNBackprop
+outputs:
+- A tuple of Tensor objects (input_backprop, input_h_backprop, input_c_backprop, params_backprop).
+- input_backprop: A Tensor. Has the same type as input.
+- input_h_backprop: A Tensor. Has the same type as input.
+- input_c_backprop: A Tensor. Has the same type as input.
+- params_backprop: A Tensor. Has the same type as input.
+package: tensorflow
+target: CudnnRNNBackprop
+title: tf.raw_ops.CudnnRNNBackprop
+version: 2.2.0

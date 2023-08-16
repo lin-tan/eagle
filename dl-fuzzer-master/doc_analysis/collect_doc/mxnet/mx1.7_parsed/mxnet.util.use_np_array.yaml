@@ -1,0 +1,15 @@
+constraints:
+  func:
+    descp: ''
+    doc_dtype:
+    - a user-provided callable function
+    - class to be scoped by the NumPy-array semantics.
+inputs:
+  optional: []
+  required:
+  - func
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/util/index.html#mxnet.util.use_np_array
+package: mxnet
+target: use_np_array
+title: mxnet.util.use_np_array
+version: 1.7.0

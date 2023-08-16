@@ -1,0 +1,18 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup optional
+inputs:
+  optional:
+  - group
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_world_size
+package: torch
+target: get_world_size
+title: torch.distributed.get_world_size
+version: 1.5.0

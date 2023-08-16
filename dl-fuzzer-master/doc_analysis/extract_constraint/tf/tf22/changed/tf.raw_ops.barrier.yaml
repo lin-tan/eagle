@@ -1,0 +1,71 @@
+constraints:
+  capacity:
+    default: '-1'
+    descp: An optional int. Defaults to -1. The capacity of the barrier. The default
+      capacity is MAX_INT32, which is the largest capacity of the underlying queue.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  component_types:
+    descp: A list of tf.DTypes that has length >= 1. The type of each component in
+      a value.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this barrier is placed
+      in the given container. Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shapes:
+    default: '[]'
+    descp: An optional list of shapes (each a tf.TensorShape or list of ints). Defaults
+      to []. The shape of each component in a value. Each shape must be 1 in the first
+      dimension. The length of this attr must be the same as the length of component_types.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(int)
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this barrier will be
+      shared under the given name across multiple sessions.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - shapes
+  - capacity
+  - container
+  - shared_name
+  - name
+  required:
+  - component_types
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Barrier
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: Barrier
+title: tf.raw_ops.Barrier
+version: 2.2.0

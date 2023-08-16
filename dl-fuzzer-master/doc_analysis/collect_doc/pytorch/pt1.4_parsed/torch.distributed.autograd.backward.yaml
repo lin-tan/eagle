@@ -1,0 +1,17 @@
+constraints:
+  roots:
+    descp: Tensors which represent the roots of the autograd computation. All the
+      tensors should be scalars.
+    doc_dtype:
+    - list
+    sig_dtype: List[Tensor]
+inputs:
+  optional: []
+  required:
+  - roots
+link: https://pytorch.org/docs/1.4.0/rpc.html#torch.distributed.autograd.backward
+package: torch
+ret_type: None
+target: backward
+title: torch.distributed.autograd.backward
+version: 1.4.0

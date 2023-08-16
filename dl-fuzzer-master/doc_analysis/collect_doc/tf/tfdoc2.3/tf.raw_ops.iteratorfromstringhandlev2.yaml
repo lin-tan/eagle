@@ -1,0 +1,27 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    default: '[]'
+    descp: An optional list of shapes (each a tf.TensorShape or list of ints). Defaults
+      to [].
+  output_types:
+    default: '[]'
+    descp: An optional list of tf.DTypes. Defaults to [].
+  string_handle:
+    descp: A Tensor of type string.
+inputs:
+  optional:
+  - output_types
+  - output_shapes
+  - name
+  required:
+  - string_handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/IteratorFromStringHandleV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: IteratorFromStringHandleV2
+title: tf.raw_ops.IteratorFromStringHandleV2
+version: 2.3.0

@@ -1,0 +1,11 @@
+constraints:
+  batch_first:
+    default: 'False'
+    descp: if `True`, the output will be in `B x T x *` format.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.nn.utils.rnn.pad_packed_sequence

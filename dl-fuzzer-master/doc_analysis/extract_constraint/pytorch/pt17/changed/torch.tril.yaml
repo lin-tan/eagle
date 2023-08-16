@@ -1,0 +1,37 @@
+constraints:
+  diagonal:
+    default: '0'
+    descp: the diagonal to consider
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - diagonal
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.tril.html#torch.tril#torch.tril
+package: torch
+ret_type: Tensor
+target: tril
+title: torch.tril
+version: 1.7.0

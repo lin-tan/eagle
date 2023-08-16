@@ -1,0 +1,35 @@
+constraints:
+  contents:
+    descp: A Tensor of type string. 0-D. The JPEG-encoded image.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32. (Optional)
+      The output type of the operation (int32 or int64). Defaults to int32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - output_type
+  - name
+  required:
+  - contents
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExtractJpegShape
+outputs:
+- A Tensor of type output_type.
+package: tensorflow
+target: ExtractJpegShape
+title: tf.raw_ops.ExtractJpegShape
+version: 2.2.0

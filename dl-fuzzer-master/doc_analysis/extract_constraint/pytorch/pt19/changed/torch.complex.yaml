@@ -1,0 +1,35 @@
+constraints:
+  imag:
+    descp: The imaginary part of the complex tensor. Must be same dtype as `real`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: If the inputs are `torch.float32`, must be `torch.complex64`. If the inputs
+      are `torch.float64`, must be `torch.complex128`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  real:
+    descp: The real part of the complex tensor. Must be float or double.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - real
+  - imag
+link: https://pytorch.org/docs/1.7.0/generated/torch.complex.html#torch.complex#torch.complex
+package: torch
+ret_type: Tensor
+target: complex
+title: torch.complex
+version: 1.9.0

@@ -1,0 +1,82 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta:
+    default: None
+    descp: beta array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - beta D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data:
+    default: None
+    descp: Input data
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: An epsilon parameter to prevent division by 0.
+    doc_dtype: float, optional, default=9.99999975e-06
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - An epsilon parameter to prevent division by CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  gamma:
+    default: None
+    descp: gamma array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - gamma D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  num_groups:
+    default: _Null
+    descp: Total number of groups.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Total number of groups
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  output_mean_var:
+    default: _Null
+    descp: Output the mean and std calculated along the given axis.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output the mean and std calculated along the given axis
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - gamma
+  - beta
+  - num_groups
+  - eps
+  - output_mean_var
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.GroupNorm
+package: mxnet
+target: GroupNorm
+title: mxnet.ndarray.op.GroupNorm
+version: 1.6.0

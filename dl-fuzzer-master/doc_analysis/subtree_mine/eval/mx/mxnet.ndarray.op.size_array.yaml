@@ -1,0 +1,9 @@
+constraints:
+  data:
+    default: None
+    descp: Input Array.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.size_array

@@ -1,0 +1,57 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  format:
+    default: _Null
+    descp: The box encoding type. "corner" means boxes are encoded as [xmin, ymin,
+      xmax, ymax], "center" means boxes are encodes as [x, y, width, height].
+    doc_dtype: '{''center'', ''corner''},optional, default=''corner'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The box encoding type
+    - QSTR means boxes are encoded as BSTR, QSTR means boxes are encodes as BSTR
+    normalized_docdtype: QSTR ,optional, default QSTR
+  lhs:
+    default: None
+    descp: The first input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The first input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rhs:
+    default: None
+    descp: The second input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The second input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - format
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.box_iou
+package: mxnet
+target: box_iou
+title: mxnet.ndarray.contrib.box_iou
+version: 1.6.0

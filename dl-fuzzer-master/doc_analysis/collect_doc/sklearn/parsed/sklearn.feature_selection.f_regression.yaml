@@ -1,0 +1,13 @@
+constraints:
+  X: {descp: '{array-like, sparse matrix}  shape = (n_samples, n_features) The set
+      of regressors that will be tested sequentially.'}
+  center: {default: 'True', descp: 'True, bool, If true, X and y will be centered.'}
+  y: {descp: array of shape(n_samples). The data matrix}
+inputs:
+  optional: [center]
+  required: [X, y]
+link: ''
+package: sklearn
+target: f_regression
+title: sklearn.feature_selection.f_regression
+version: 0.24.2

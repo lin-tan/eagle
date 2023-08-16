@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.layers.ZeroPadding1D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  padding:
+    default: '1'
+    descp: 'Int, or tuple of int (length 2), or dictionary. If int: How many zeros
+      to add at the beginning and end of the padding dimension (axis 1).If tuple of
+      int (length 2): How many zeros to add at the beginning and at the end of the
+      padding dimension (`(left_pad, right_pad)`). '
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE, or D_STRUCTURE of D_TYPE BSTR, or D_STRUCTURE
+    - If D_TYPE How many zeros to add at the beginning and end of the padding dimension
+      BSTR How many zeros to add at the beginning and at the end of the padding dimension
+      BSTR
+inputs:
+  optional:
+  - padding
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/ZeroPadding1D
+package: tensorflow
+target: ZeroPadding1D
+title: tf.keras.layers.ZeroPadding1D
+version: 2.1.0

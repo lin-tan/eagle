@@ -1,0 +1,36 @@
+constraints:
+  input:
+    descp: A Tensor. A tensor, whose shape is to be validated.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A tf.TensorShape or list of ints. The expected (possibly partially specified)
+      shape of the input tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/EnsureShape
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: EnsureShape
+title: tf.raw_ops.EnsureShape
+version: 2.2.0

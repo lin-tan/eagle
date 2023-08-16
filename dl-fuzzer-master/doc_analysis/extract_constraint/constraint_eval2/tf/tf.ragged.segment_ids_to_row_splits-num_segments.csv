@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A scalar integer indicating the number of segments.  Defaults to `max(segment_ids) + 1` (or zero if `segment_ids` is empty).,None,prim_dtype,dtype(int),,1
+,A scalar integer indicating the number of segments.  Defaults to `max(segment_ids) + 1` (or zero if `segment_ids` is empty).,None,shape,ndim(0),,1
+,A scalar integer indicating the number of segments.  Defaults to `max(segment_ids) + 1` (or zero if `segment_ids` is empty).,None,validvalue,"range([0,inf))",,1

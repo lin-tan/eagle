@@ -1,0 +1,47 @@
+constraints:
+  A:
+    descp: 'the input tensor of size (*, m, n) '
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of size BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  center:
+    default: 'True'
+    descp: if True, center the input tensor, otherwise, assume that the input is centered.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL, center the input D_STRUCTURE, otherwise, assume that the input
+      is centered
+    normalized_docdtype: D_TYPE, optional
+  niter:
+    default: '2'
+    descp: the number of subspace iterations to conduct; niter must be a nonnegative
+      integer, and defaults to 2.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the number of subspace iterations to conduct niter must be a nonnegative D_TYPE,
+      and defaults to CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  q:
+    default: None
+    descp: a slightly overestimated rank of A . By default, `q = min(6, m, n)`.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a slightly overestimated rank of A
+    - By default, q min BSTR
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - q
+  - center
+  - niter
+  required:
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.pca_lowrank
+package: torch
+target: pca_lowrank
+title: torch.pca_lowrank
+version: 1.5.0

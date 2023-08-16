@@ -1,0 +1,68 @@
+aliases:
+- tf.compat.v1.tpu.experimental.embedding.TableConfig
+constraints:
+  combiner:
+    default: mean
+    descp: A string specifying how to reduce if there are multiple entries in a single
+      row. Currently 'mean', 'sqrtn', 'sum' are supported, with 'mean' the default.
+      'sqrtn' often achieves good accuracy, in particular with bag-of-words columns.
+      For more information, see tf.nn.embedding_lookup_sparse.
+    dtype:
+    - tf.string
+    enum:
+    - mean
+    - sqrtn
+    - sum
+    ndim:
+    - '0'
+  dim:
+    descp: The embedding dimension (width) of the table.
+    dtype:
+    - int
+  initializer:
+    descp: A callable initializer taking one parameter, the shape of the variable
+      that will be initialized. Will be called once per task, to initialize that task's
+      shard of the embedding table. If not specified, defaults to truncated_normal_initializer
+      with mean 0.0 and standard deviation 1/sqrt(dim).
+    dtype:
+    - callable
+  name:
+    default: None
+    descp: An optional string used to name the table. Useful for debugging.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  optimizer:
+    default: None
+    descp: An optional instance of an optimizer parameters class, instance of one
+      of tf.tpu.experimental.embedding.SGD, tf.tpu.experimental.embedding.Adagrad
+      or tf.tpu.experimental.embedding.Adam. It set will override the global optimizer
+      passed to tf.tpu.experimental.embedding.TPUEmbedding.
+  vocabulary_size:
+    descp: Size of the table's vocabulary (number of rows).
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+exceptions:
+- ValueError: if vocabulary_size is not a positive integer.
+- ValueError: if dim is not a positive integer.
+- ValueError: if initializer is specified and is not callable.
+- ValueError: if combiner is not supported.
+inputs:
+  optional:
+  - optimizer
+  - combiner
+  - name
+  required:
+  - vocabulary_size
+  - dim
+  - initializer
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/tpu/experimental/embedding/TableConfig
+package: tensorflow
+target: TableConfig
+title: tf.tpu.experimental.embedding.TableConfig
+version: 2.3.0

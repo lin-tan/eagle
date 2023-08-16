@@ -1,0 +1,38 @@
+constraints:
+  batched_input:
+    descp: A bool. A bool denoting whether the input is a batched RaggedTensor.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  rt_dense_values:
+    descp: A Tensor. A Tensor representing the values of the input RaggedTensor.
+    tensor_t:
+    - tf.tensor
+  rt_nested_splits:
+    descp: 'A list of Tensor objects with the same type in: int32, int64. A list of
+      one or more Tensors representing the splits of the input RaggedTensor.'
+    structure:
+    - list
+    - list(tf.tensor)
+inputs:
+  optional:
+  - name
+  required:
+  - rt_nested_splits
+  - rt_dense_values
+  - batched_input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RaggedTensorToVariant
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: RaggedTensorToVariant
+title: tf.raw_ops.RaggedTensorToVariant
+version: 2.3.0

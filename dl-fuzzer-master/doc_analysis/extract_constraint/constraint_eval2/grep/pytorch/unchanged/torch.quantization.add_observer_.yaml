@@ -1,0 +1,13 @@
+constraints:
+  module:
+    descp: input module with qconfig attributes for all the leaf modules that we want
+      to quantize
+inputs:
+  optional: []
+  required:
+  - module
+link: https://pytorch.org/docs/stable/quantization.html#torch.quantization.add_observer_
+package: torch
+target: add_observer_
+title: torch.quantization.add_observer_
+version: 1.5.0

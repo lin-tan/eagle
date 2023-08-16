@@ -1,0 +1,14 @@
+sklearn.utils.register_parallel_backend = register_parallel_backend(name, factory, make_default=False)
+    Register a new Parallel backend factory.
+    
+    The new backend can then be selected by passing its name as the backend
+    argument to the Parallel class. Moreover, the default backend can be
+    overwritten globally by setting make_default=True.
+    
+    The factory can be any callable that takes no argument and return an
+    instance of ``ParallelBackendBase``.
+    
+    Warning: this function is experimental and subject to change in a future
+    version of joblib.
+    
+    .. versionadded:: 0.10

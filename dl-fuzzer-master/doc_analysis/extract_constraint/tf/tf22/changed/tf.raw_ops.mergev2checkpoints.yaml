@@ -1,0 +1,44 @@
+constraints:
+  checkpoint_prefixes:
+    descp: A Tensor of type string. prefixes of V2 checkpoints to merge.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  delete_old_dirs:
+    default: 'True'
+    descp: An optional bool. Defaults to True. see above.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  destination_prefix:
+    descp: A Tensor of type string. scalar. The desired final prefix. Allowed to be
+      the same as one of the checkpoint_prefixes.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - delete_old_dirs
+  - name
+  required:
+  - checkpoint_prefixes
+  - destination_prefix
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MergeV2Checkpoints
+outputs:
+- The created Operation.
+package: tensorflow
+target: MergeV2Checkpoints
+title: tf.raw_ops.MergeV2Checkpoints
+version: 2.2.0

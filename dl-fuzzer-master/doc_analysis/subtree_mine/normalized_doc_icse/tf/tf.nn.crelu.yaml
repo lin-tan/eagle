@@ -1,0 +1,31 @@
+constraints:
+  axis:
+    default: '-1'
+    descp: The axis that the output values are concatenated along. Default is -1.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The axis that the output values are concatenated along
+    - Default is CONSTANT_NUM
+  features:
+    descp: A `Tensor` with type `float`, `double`, `int32`, `int64`, `uint8`,`int16`,
+      or `int8`.
+    normalized_descp:
+    - A D_STRUCTURE with type D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - features
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/crelu
+outputs: A `Tensor` with the same type as `features`.
+package: tensorflow
+target: crelu
+title: tf.nn.crelu
+version: 2.1.0

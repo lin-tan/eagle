@@ -1,0 +1,23 @@
+constraints:
+  dtype:
+    default: None
+    descp: A type for the returned Tensor. Must be float16, float32, float64, int8,
+      uint8, int16, uint16, int32, int64, complex64, complex128, bool or string (optional).
+  input:
+    descp: A Tensor or array-like object.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/zeros_like
+outputs:
+- A Tensor with all elements set to zero.
+package: tensorflow
+target: zeros_like
+title: tf.zeros_like
+version: 2.2.0

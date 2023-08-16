@@ -1,0 +1,39 @@
+constraints:
+  f:
+    descp: A function decorated with @Defun.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  other_arguments:
+    descp: A list of Tensor objects.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  preserve_cardinality:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  use_inter_op_parallelism:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - use_inter_op_parallelism
+  - preserve_cardinality
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalMapDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalMapDataset
+title: tf.raw_ops.ExperimentalMapDataset
+version: 2.2.0

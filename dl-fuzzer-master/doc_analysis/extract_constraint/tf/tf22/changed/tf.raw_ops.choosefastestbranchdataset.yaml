@@ -1,0 +1,92 @@
+constraints:
+  branches:
+    descp: A list of functions decorated with @Defun that has length >= 1.
+    structure:
+    - list
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_elements_per_branch:
+    descp: An int that is >= 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  other_arguments:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  other_arguments_lengths:
+    descp: A list of ints that has length >= 1.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(int)
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  ratio_denominator:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  ratio_numerator:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - ratio_numerator
+  - ratio_denominator
+  - other_arguments
+  - num_elements_per_branch
+  - branches
+  - other_arguments_lengths
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ChooseFastestBranchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ChooseFastestBranchDataset
+title: tf.raw_ops.ChooseFastestBranchDataset
+version: 2.2.0

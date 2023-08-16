@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+array_like,"Initial data for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",,prim_dtype,dtype(numeric),,1
+array_like,"Initial data for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",,nonprim_dtype,"structure(array_like, list, tuple)",,1
+array_like,"Initial data for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",,shape,ndim(0),,1

@@ -1,0 +1,34 @@
+constraints:
+  concat_dim:
+    descp: An int. Dimension to concatenate along. Must be in range [-rank, rank),
+      where rank is the number of dimensions in each input SparseTensor.
+  indices:
+    descp: A list of at least 2 Tensor objects with type int64. 2-D. Indices of each
+      input SparseTensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shapes:
+    descp: A list with the same length as indices of Tensor objects with type int64.
+      1-D. Shapes of each SparseTensor.
+  values:
+    descp: A list with the same length as indices of Tensor objects with the same
+      type. 1-D. Non-empty values of each SparseTensor.
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - shapes
+  - concat_dim
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseConcat
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_shape).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as values.
+- output_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseConcat
+title: tf.raw_ops.SparseConcat
+version: 2.2.0

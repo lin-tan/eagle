@@ -1,0 +1,22 @@
+constraints:
+  dy:
+    descp: A Tensor. Must have the same type as y.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  y:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, complex64, complex128.'
+inputs:
+  optional:
+  - name
+  required:
+  - y
+  - dy
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SqrtGrad
+outputs:
+- A Tensor. Has the same type as y.
+package: tensorflow
+target: SqrtGrad
+title: tf.raw_ops.SqrtGrad
+version: 2.3.0

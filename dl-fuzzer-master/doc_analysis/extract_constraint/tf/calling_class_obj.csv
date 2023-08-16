@@ -1,0 +1,101 @@
+API,arg,obj,descp
+declare_key_flag,flag_values,flagvalues," FlagValues, the FlagValues instance in which the flag will be declared as a key flag. This should almost never need to be overridden."
+DEFINE_multi_enum,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+add_to_collection,name,graphkeys," The key for the collection. For example, the `GraphKeys` class contains many standard names for collections."
+DEFINE_flag,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+get_local_variable,initializer,initializer," Initializer for the variable if one is created. Can either be an initializer object or a Tensor. If it's a Tensor, its shape must be known unless validate_shape is False."
+img_to_array,img,image, PIL Image instance.
+dimension_value,dimension,dimension," Either a `Dimension` instance, an integer, or None."
+as_bytes,bytes_or_text,unicode," A `bytearray`, `bytes`, `str`, or `unicode` object."
+while_loop,loop_vars,tensorarray," A (possibly nested) tuple, namedtuple or list of numpy array, `Tensor`, and `TensorArray` objects."
+mark_bool_flags_as_mutual_exclusive,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance where the flags are defined."
+set_global_generator,generator,generator, the new `Generator` object.
+stop_if_higher_hook,estimator,tf.estimator.estimator, A `tf.estimator.Estimator` instance.
+get_collection_ref,key,graphkeys," The key for the collection. For example, the `GraphKeys` class contains many standard names for collections."
+get_variable,initializer,initializer," Initializer for the variable if one is created. Can either be an initializer object or a Tensor. If it's a Tensor, its shape must be known unless validate_shape is False."
+DEFINE,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+DEFINE,serializer,serializer," ArgumentSerializer, the flag serializer instance."
+adopt_module_key_flags,flag_values,flagvalues," FlagValues, the FlagValues instance in which the flags will be declared as key flags. This should almost never need to be overridden."
+adopt_module_key_flags,module,module," module, the module object from which all key flags will be declared as key flags to the current module."
+add_to_collections,names,graphkeys, The key for the collections. The `GraphKeys` class contains many standard names for collections.
+experimental_set_strategy,strategy,tf.distribute.strategy, A `tf.distribute.Strategy` object or None.
+assert_variables_initialized,var_list,variable, List of `Variable` objects to check. Defaults to the value of `global_variables().`
+model_to_dot,model,model, A Keras model instance.
+model_to_dot,subgraph,pydot.cluster, whether to return a `pydot.Cluster` instance.
+raw_rnn,cell,rnncell., An instance of RNNCell.
+raw_rnn,loop_fn,tensorarray," A callable that takes inputs `(time, cell_output, cell_state, loop_state)` and returns the tuple `(finished, next_input, next_cell_state, emit_output, next_loop_state)`. Here `time` is an int32 scalar `Tensor`, `cell_output` is a `Tensor` or (possibly nested) tuple of tensors as determined by `cell.output_size`, and `cell_state` is a `Tensor` or (possibly nested) tuple of tensors, as determined by the `loop_fn` on its first call (and should match `cell.state_size`). The outputs are: `finished`, a boolean `Tensor` of shape `[batch_size]`, `next_input`: the next input to feed to `cell`, `next_cell_state`: the next state to feed to `cell`, and `emit_output`: the output to store for this iteration.  Note that `emit_output` should be a `Tensor` or (possibly nested) tuple of tensors which is aggregated in the `emit_ta` inside the `while_loop`. For the first call to `loop_fn`, the `emit_output` corresponds to the `emit_structure` which is then used to determine the size of the `zero_tensor` for the `emit_ta` (defaults to `cell.output_size`). For the subsequent calls to the `loop_fn`, the `emit_output` corresponds to the actual output tensor that is to be aggregated in the `emit_ta`. The parameter `cell_state` and output `next_cell_state` may be either a single or (possibly nested) tuple of tensors.  The parameter `loop_state` and output `next_loop_state` may be either a single or (possibly nested) tuple of `Tensor` and `TensorArray` objects.  This last parameter may be ignored by `loop_fn` and the return value may be `None`.  If it is not `None`, then the `loop_state` will be propagated through the RNN loop, for use purely by `loop_fn` to keep track of its own state. The `next_loop_state` parameter returned may be `None`.  The first call to `loop_fn` will be `time = 0`, `cell_output = None`, `cell_state = None`, and `loop_state = None`.  For this call: The `next_cell_state` value should be the value with which to initialize the cell's state.  It may be a final state from a previous RNN or it may be the output of `cell.zero_state()`.  It should be a (possibly nested) tuple structure of tensors. If `cell.state_size` is an integer, this must be a `Tensor` of appropriate type and shape `[batch_size, cell.state_size]`. If `cell.state_size` is a `TensorShape`, this must be a `Tensor` of appropriate type and shape `[batch_size] + cell.state_size`. If `cell.state_size` is a (possibly nested) tuple of ints or `TensorShape`, this will be a tuple having the corresponding shapes. The `emit_output` value may be either `None` or a (possibly nested) tuple structure of tensors, e.g., `(tf.zeros(shape_0, dtype=dtype_0), tf.zeros(shape_1, dtype=dtype_1))`. If this first `emit_output` return value is `None`, then the `emit_ta` result of `raw_rnn` will have the same structure and dtypes as `cell.output_size`. Otherwise `emit_ta` will have the same structure, shapes (prepended with a `batch_size` dimension), and dtypes as `emit_output`.  The actual values returned for `emit_output` at this initializing call are ignored. Note, this emit structure must be consistent across all time steps."
+get_next_as_optional,iterator,tf.compat.v1.data.iterator, A `tf.compat.v1.data.Iterator` object.
+save,obj,trackable, A trackable object to export.
+save,options,tf.saved_model.saveoptions," Optional, `tf.saved_model.SaveOptions` object that specifies options for saving."
+save,signatures,tf.function," Optional, either a `tf.function` with an input signature specified or the result of `f.get_concrete_function` on a `@tf.function`-decorated function `f`, in which case `f` will be used to generate a signature for the SavedModel under the default serving signature key. `signatures` may also be a dictionary, in which case it maps from signature keys to either `tf.function` instances with input signatures or concrete functions. The keys of such a dictionary may be arbitrary strings, but will typically be from the `tf.saved_model.signature_constants` module."
+get_collection,key,graphkeys," The key for the collection. For example, the `GraphKeys` class contains many standard names for collections."
+stop_if_no_increase_hook,estimator,tf.estimator.estimator, A `tf.estimator.Estimator` instance.
+dynamic_rnn,cell,rnncell., An instance of RNNCell.
+DEFINE_multi_float,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+import_graph_def,return_elements,operation, A list of strings containing operation names in `graph_def` that will be returned as `Operation` objects; and/or tensor names in `graph_def` that will be returned as `Tensor` objects.
+DEFINE_spaceseplist,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+report_uninitialized_variables,var_list,variable, List of `Variable` objects to check. Defaults to the value of `global_variables() + local_variables()`
+sample_from_datasets,datasets,tf.data.dataset, A list of `tf.data.Dataset` objects with compatible structure.
+sample_from_datasets,weights,tf.data.dataset," (Optional.) A list of `len(datasets)` floating-point values where `weights[i]` represents the probability with which an element should be sampled from `datasets[i]`, or a `tf.data.Dataset` object where each element is such a list. Defaults to a uniform distribution across `datasets`."
+DEFINE_integer,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+save_img,file_format,file," Optional file format override. If omitted, the format to use is determined from the filename extension. If a file object was used instead of a filename, this parameter should always be used."
+save_img,path,file, Path or file object.
+stop_if_no_decrease_hook,estimator,tf.estimator.estimator, A `tf.estimator.Estimator` instance.
+DEFINE_list,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+DEFINE_multi_enum_class,default,enum," Union[Iterable[Enum], Iterable[Text], Enum, Text, None], the default value of the flag; see `DEFINE_multi`; only differences are documented here. If the value is a single Enum, it is treated as a single-item list of that Enum value. If it is an iterable, text values within the iterable will be converted to the equivalent Enum objects."
+DEFINE_multi_enum_class,enum_class,enum," class, the Enum class with all the possible values for the flag. help: str, the help message."
+DEFINE_multi_enum_class,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+global_step,sess,session, A TensorFlow `Session` object.
+DEFINE_multi_integer,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+DEFINE_enum_class,enum_class,enum," class, the Enum class with all the possible values for the flag."
+DEFINE_enum_class,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+py_func,func,ndarray," A Python function, which accepts `ndarray` objects as arguments and returns a list of `ndarray` objects (or a single `ndarray`). This function must accept as many arguments as there are tensors in `inp`, and these argument types will match the corresponding `tf.Tensor` objects in `inp`. The returns `ndarray`s must match the number and types defined `Tout`. Important Note: Input and output numpy `ndarray`s of `func` are not guaranteed to be copies. In some cases their underlying memory will be shared with the corresponding TensorFlow tensors. In-place modification or storing `func` input or return values in python datastructures without explicit (np.)copy can have non-deterministic consequences."
+validator,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance to validate against."
+control_dependencies,control_inputs,operation," A list of `Operation` or `Tensor` objects which must be executed or computed before running the operations defined in the context. Can also be `None` to clear the control dependencies. If eager execution is enabled, any callable object in the `control_inputs` list will be called."
+model_to_estimator,checkpoint_format,saving," Sets the format of the checkpoint saved by the estimator when training. May be `saver` or `checkpoint`, depending on whether to save checkpoints from `tf.compat.v1.train.Saver` or `tf.train.Checkpoint`. The default is `checkpoint`. Estimators use name-based `tf.train.Saver` checkpoints, while Keras models use object-based checkpoints from `tf.train.Checkpoint`. Currently, saving object-based checkpoints from `model_to_estimator` is only supported by Functional and Sequential models."
+model_to_estimator,keras_model,model, A compiled Keras model object. This argument is mutually exclusive with `keras_model_path`.
+mask,a,indexedslices, An `IndexedSlices` instance.
+stop_if_lower_hook,estimator,tf.estimator.estimator, A `tf.estimator.Estimator` instance.
+group_by_reducer,reducer,reducer," An instance of `Reducer`, which captures the reduction logic using the `init_func`, `reduce_func`, and `finalize_func` functions."
+DEFINE_multi,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+DEFINE_multi,serializer,serializer," ArgumentSerializer, the flag serializer instance."
+register_multi_flags_validator,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance to validate against."
+variables_initializer,var_list,variable, List of `Variable` objects to initialize.
+mark_flag_as_required,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance where the flag is defined."
+DEFINE_enum,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+add_n,inputs,tf.indexedslices," A list of `tf.Tensor` or `tf.IndexedSlices` objects, each with same shape and type."
+from_variant,structure,tf.data.experimental.structure, A `tf.data.experimental.Structure` object representing the structure of each element in the dataset.
+DEFINE_multi_string,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+clone_model,clone_function,inputlayer," Callable to be used to clone each layer in the target model (except `InputLayer` instances). It takes as argument the layer instance to be cloned, and returns the corresponding layer instance to be used in the model copy. If unspecified, this callable defaults to the following serialization/deserialization function: `lambda layer: layer.__class__.from_config(layer.get_config())`. By passing a custom callable, you can customize your copy of the model, e.g. by wrapping certain layers of interest (you might want to replace all `LSTM` instances with equivalent `Bidirectional(LSTM(...))` instances, for example)."
+clone_model,clone_function,lstm," Callable to be used to clone each layer in the target model (except `InputLayer` instances). It takes as argument the layer instance to be cloned, and returns the corresponding layer instance to be used in the model copy. If unspecified, this callable defaults to the following serialization/deserialization function: `lambda layer: layer.__class__.from_config(layer.get_config())`. By passing a custom callable, you can customize your copy of the model, e.g. by wrapping certain layers of interest (you might want to replace all `LSTM` instances with equivalent `Bidirectional(LSTM(...))` instances, for example)."
+clone_model,clone_function,layer," Callable to be used to clone each layer in the target model (except `InputLayer` instances). It takes as argument the layer instance to be cloned, and returns the corresponding layer instance to be used in the model copy. If unspecified, this callable defaults to the following serialization/deserialization function: `lambda layer: layer.__class__.from_config(layer.get_config())`. By passing a custom callable, you can customize your copy of the model, e.g. by wrapping certain layers of interest (you might want to replace all `LSTM` instances with equivalent `Bidirectional(LSTM(...))` instances, for example)."
+clone_model,input_tensors,inputlayer," optional list of input tensors or InputLayer objects to build the model upon. If not provided, placeholders will be created."
+multi_flags_validator,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance to validate against."
+decode_json_example,json_examples,json, A `Tensor` of type `string`. Each string is a JSON object serialized according to the JSON mapping of the Example proto.
+DEFINE_float,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+mark_flags_as_mutual_exclusive,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance where the flags are defined."
+is_tensor,x,python, A python object to check.
+as_text,bytes_or_text,unicode," A `bytes`, `str`, or `unicode` object."
+call_logit_fn,config,configuration, The configuration object.
+plot_model,model,model, A Keras model instance
+choose_from_datasets,datasets,tf.data.dataset, A list of `tf.data.Dataset` objects with compatible structure.
+UnknownError,op,tf.operation,"   The operation that failed, if known. <em>N.B.</em> If the failed op was synthesized at runtime, e.g. a `Send` or `Recv` op, there will be no corresponding `tf.Operation` object.  In that case, this will return `None`, and you should instead use the `tf.errors.OpError.node_def` to discover information about the op."
+register_tensor_conversion_function,conversion_func,converts, A function that converts instances of `base_type` to `Tensor`.
+numpy_function,func,numpy.ndarray," A Python function, which accepts `numpy.ndarray` objects as arguments and returns a list of `numpy.ndarray` objects (or a single `numpy.ndarray`). This function must accept as many arguments as there are tensors in `inp`, and these argument types will match the corresponding `tf.Tensor` objects in `inp`. The returns `numpy.ndarray`s must match the number and types defined `Tout`. Important Note: Input and output `numpy.ndarray`s of `func` are not guaranteed to be copies. In some cases their underlying memory will be shared with the corresponding TensorFlow tensors. In-place modification or storing `func` input or return values in python datastructures without explicit (np.)copy can have non-deterministic consequences."
+pandas_input_fn,x,dataframe, pandas `DataFrame` object.
+pandas_input_fn,y,series, pandas `Series` object or `DataFrame`. `None` if absent.
+DEFINE_alias,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+train_and_evaluate,estimator,estimator, An `Estimator` instance to train and evaluate.
+train_and_evaluate,eval_spec,evalspec, A `EvalSpec` instance to specify the evaluation and export specification.
+train_and_evaluate,train_spec,trainspec, A `TrainSpec` instance to specify the training specification.
+MonitoredTrainingSession,chief_only_hooks,sessionrunhook," list of `SessionRunHook` objects. Activate these hooks if `is_chief==True`, ignore otherwise."
+MonitoredTrainingSession,config,tf.compat.v1.configproto, an instance of `tf.compat.v1.ConfigProto` proto used to configure the session. It's the `config` argument of constructor of `tf.compat.v1.Session`.
+MonitoredTrainingSession,hooks,sessionrunhook, Optional list of `SessionRunHook` objects.
+get_single_element,dataset,tf.data.dataset, A `tf.data.Dataset` object containing a single element.
+DEFINE_bool,flag_values,flagvalues," FlagValues, the FlagValues instance with which the flag will be registered. This should almost never need to be overridden."
+mark_flags_as_required,flag_values,flagvalues," flags.FlagValues, optional FlagValues instance where the flags are defined."
+TimeDistributed,layer,layer, a layer instance.
+numpy_input_fn,x,array," numpy array object or dict of numpy array objects. If an array, the array will be treated as a single feature."
+numpy_input_fn,y,array, numpy array object or dict of numpy array object. `None` if absent.
+set_logical_device_configuration,logical_devices,tf.config.logicaldeviceconfiguration," (optional) List of `tf.config.LogicalDeviceConfiguration` objects to allocate for the specified `PhysicalDevice`. If None, the default configuration will be used."
+make_early_stopping_hook,estimator,tf.estimator.estimator, A `tf.estimator.Estimator` instance.

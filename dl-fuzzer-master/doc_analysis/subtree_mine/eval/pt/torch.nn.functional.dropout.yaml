@@ -1,0 +1,11 @@
+constraints:
+  p:
+    default: '0.5'
+    descp: 'probability of an element to be zeroed. Default: 0.5'
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+title: torch.nn.functional.dropout

@@ -1,0 +1,18 @@
+constraints:
+  data:
+    descp: A Tensor. The tensor to be made available to the next iteration.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/NextIteration
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: NextIteration
+title: tf.raw_ops.NextIteration
+version: 2.2.0

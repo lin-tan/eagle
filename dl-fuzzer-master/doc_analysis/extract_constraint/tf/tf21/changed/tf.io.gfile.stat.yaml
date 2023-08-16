@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.io.gfile.stat
+constraints:
+  path:
+    descp: string, path to a file
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+exceptions:
+- errors.OpError: If the operation fails.
+inputs:
+  optional: []
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/gfile/stat
+outputs: FileStatistics struct that contains information about the path
+package: tensorflow
+target: stat
+title: tf.io.gfile.stat
+version: 2.1.0

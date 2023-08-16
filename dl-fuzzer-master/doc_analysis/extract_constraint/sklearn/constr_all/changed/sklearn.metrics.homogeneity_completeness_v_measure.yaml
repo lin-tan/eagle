@@ -1,0 +1,37 @@
+constraints:
+  beta:
+    default: '1.0'
+    descp: float Ratio of weight attributed to ``homogeneity`` vs ``completeness``.
+      If ``beta`` is greater than 1, ``completeness`` is weighted more strongly in
+      the calculation. If ``beta`` is less than 1, ``homogeneity`` is weighted more
+      strongly.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  labels_pred:
+    descp: array-like of shape (n_samples,) cluster labels to evaluate
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  labels_true:
+    descp: int array, shape = [n_samples] ground truth class labels to be used as
+      a reference
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - beta
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: sklearn
+target: homogeneity_completeness_v_measure
+title: sklearn.metrics.homogeneity_completeness_v_measure
+version: 0.24.2

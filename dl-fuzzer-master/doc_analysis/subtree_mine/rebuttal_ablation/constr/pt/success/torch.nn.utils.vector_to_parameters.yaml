@@ -1,0 +1,55 @@
+constraints:
+  parameters:
+    descp: an iterator of Tensors that are the parameters of a model.
+    doc_dtype: Iterable[Tensor]
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[b,p,m]'
+    - '[c]'
+    - '[iterable]'
+    - '[tensor]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+  vec:
+    descp: a single vector represents the parameters of a model.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[c]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - vec
+  - parameters
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.vector_to_parameters
+package: torch
+target: vector_to_parameters
+title: torch.nn.utils.vector_to_parameters
+version: 1.5.0

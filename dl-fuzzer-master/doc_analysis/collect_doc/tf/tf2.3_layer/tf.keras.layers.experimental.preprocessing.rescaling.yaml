@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.Rescaling
+constraints:
+  '**kwargs':
+    descp: ''
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  offset:
+    default: '0.0'
+    descp: Float, the offset to apply to the inputs.
+  scale:
+    descp: Float, the scale to apply to the inputs.
+inputs:
+  optional:
+  - offset
+  - name
+  required:
+  - scale
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Rescaling
+package: tensorflow
+target: Rescaling
+title: tf.keras.layers.experimental.preprocessing.Rescaling
+version: 2.3.0

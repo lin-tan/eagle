@@ -1,0 +1,12 @@
+constraints:
+  step:
+    descp: An int64-castable default step value, or None to unset.
+inputs:
+  optional: []
+  required:
+  - step
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/summary/experimental/set_step
+package: tensorflow
+target: set_step
+title: tf.summary.experimental.set_step
+version: 2.2.0

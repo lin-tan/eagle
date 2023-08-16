@@ -1,0 +1,29 @@
+constraints:
+  input:
+    descp: 1-D input vector
+    doc_dtype: Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: optional output matrix
+    doc_dtype: Tensor, optional
+    tensor_t:
+    - torch.tensor
+  vec2:
+    descp: 1-D input vector
+    doc_dtype: Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - vec2
+link: https://pytorch.org/docs/stable/torch.html#torch.ger
+package: torch
+ret_type: Tensor
+target: ger
+title: torch.ger
+version: 1.5.0

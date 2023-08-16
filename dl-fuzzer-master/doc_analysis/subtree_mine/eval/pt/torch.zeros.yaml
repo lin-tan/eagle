@@ -1,0 +1,9 @@
+constraints:
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+title: torch.zeros

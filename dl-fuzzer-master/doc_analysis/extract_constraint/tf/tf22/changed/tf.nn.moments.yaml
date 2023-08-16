@@ -1,0 +1,45 @@
+constraints:
+  axes:
+    descp: Array of ints. Axes along which to compute mean and variance.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  keepdims:
+    default: 'False'
+    descp: produce moments with the same dimensionality as the input.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: Name used to scope the operations that compute the moments.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shift:
+    default: None
+    descp: Not used in the current implementation.
+  x:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - shift
+  - keepdims
+  - name
+  required:
+  - x
+  - axes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/moments
+outputs:
+- 'Two Tensor objects: mean and variance.'
+package: tensorflow
+target: moments
+title: tf.nn.moments
+version: 2.2.0

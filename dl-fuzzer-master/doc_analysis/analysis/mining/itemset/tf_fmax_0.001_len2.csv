@@ -1,0 +1,687 @@
+,support,itemsets,length
+943,0.06208863536638877,"frozenset({'operation', 'optional', 'name'})",3
+946,0.014480035103115402,"frozenset({'optional', 'tensor', 'SOME_DTYPE'})",3
+940,0.012395787626151821,"frozenset({'optional', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+944,0.01086002632733655,"frozenset({'tensor', 'SOME_DTYPE', 'must'})",3
+838,0.010421237384817903,"frozenset({'variable', 'tensor'})",2
+937,0.009872751206669592,"frozenset({'tensor', 'must', 'type'})",3
+945,0.008885476086002632,"frozenset({'optional', 'SOME_DTYPE', 'name'})",3
+611,0.007788503729706011,"frozenset({'graph', 'default'})",2
+598,0.007459412022817025,"frozenset({'supported', 'SOME_DTYPE'})",2
+931,0.007130320315928039,"frozenset({'input', 'tensor', 'SOME_DTYPE'})",3
+908,0.00669153137340939,"frozenset({'tensor', 'SOME_DTYPE', 'values'})",3
+803,0.0064721369021500655,"frozenset({'false', 'defaults'})",2
+767,0.006252742430890742,"frozenset({'either', 'tensor', 'SOME_DTYPE'})",3
+557,0.006033347959631417,"frozenset({'SOME_DTYPE', 'embedding'})",2
+935,0.005813953488372093,"frozenset({'tensor', 'must', 'shape'})",3
+538,0.005704256252742431,"frozenset({'rate', 'convolution'})",2
+878,0.0055945590171127685,"frozenset({'value', 'none', 'default'})",3
+526,0.005484861781483106,"frozenset({'computation', 'see'})",2
+504,0.005046072838964458,"frozenset({'tensor', 'many', 'entries', 'print'})",4
+503,0.005046072838964458,"frozenset({'argument', 'SOME_DTYPE'})",2
+498,0.004936375603334796,"frozenset({'e', 'g'})",2
+899,0.004826678367705134,"frozenset({'defaults', 'SOME_DTYPE', 'tf'})",3
+852,0.004826678367705134,"frozenset({'input', 'tensor', 'output'})",3
+494,0.0047169811320754715,"frozenset({'samples', 'tensor'})",2
+877,0.004607283896445809,"frozenset({'value', 'none', 'SOME_STRUCTURE'})",3
+487,0.004497586660816147,"frozenset({'never', 'set', 'channels_last'})",3
+470,0.0042781921895568235,"frozenset({'supported', 'currently'})",2
+462,0.004168494953927161,"frozenset({'input', 'stride', 'dimension', 'window', 'sliding', 'tensor'})",6
+791,0.004058797718297499,"frozenset({'tensor', 'SOME_DTYPE', 'shape', 'n'})",4
+644,0.003949100482667837,"frozenset({'message', 'prefix', 'SOME_DTYPE', 'default'})",4
+459,0.003949100482667837,"frozenset({'input', 'factor', 'dimension', 'dilation'})",4
+454,0.003949100482667837,"frozenset({'max', 'SOME_DTYPE'})",2
+455,0.003949100482667837,"frozenset({'new', 'name'})",2
+753,0.0038394032470381746,"frozenset({'values', 'range'})",2
+905,0.0038394032470381746,"frozenset({'tensor', 'values', 'shape'})",3
+832,0.0038394032470381746,"frozenset({'tensor', 'SOME_DTYPE', 'length'})",3
+876,0.0037297060114085123,"frozenset({'tensor', 'none', 'SOME_STRUCTURE'})",3
+851,0.0037297060114085123,"frozenset({'tensor', 'shape', 'output'})",3
+784,0.0037297060114085123,"frozenset({'tensor', 'SOME_DTYPE', 'python', 'number'})",4
+442,0.0037297060114085123,"frozenset({'single', 'row', 'SOME_DTYPE'})",3
+886,0.0036200087757788505,"frozenset({'tensor', 'true'})",2
+662,0.0036200087757788505,"frozenset({'axis', 'along'})",2
+923,0.0036200087757788505,"frozenset({'input', 'value', 'SOME_DTYPE'})",3
+439,0.0036200087757788505,"frozenset({'layer', 'arguments', 'standard', 'keyword'})",4
+595,0.0036200087757788505,"frozenset({'rank', 'optional', 'e', 'dimension', 'dimensions', 'whose', 'corresponding', 'labels', 'must', 'either', 'broadcastable', 'tensor'})",12
+429,0.0035103115401491883,"frozenset({'resulting', 'tensor'})",2
+720,0.0035103115401491883,"frozenset({'single', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+711,0.0035103115401491883,"frozenset({'first', 'tensor', 'dimension'})",3
+719,0.003400614304519526,"frozenset({'single', 'value', 'SOME_DTYPE'})",3
+419,0.003400614304519526,"frozenset({'based', 'SOME_DTYPE'})",2
+422,0.003400614304519526,"frozenset({'boxes', 'tensor', 'SOME_DTYPE', 'representing'})",4
+423,0.003400614304519526,"frozenset({'expected', 'tensor'})",2
+424,0.003400614304519526,"frozenset({'images', 'image'})",2
+922,0.003290917068889864,"frozenset({'value', 'must'})",2
+850,0.003290917068889864,"frozenset({'output', 'SOME_DTYPE', 'type'})",3
+797,0.003290917068889864,"frozenset({'axis', 'tensor', 'SOME_DTYPE'})",3
+875,0.003290917068889864,"frozenset({'SOME_DTYPE', 'none', 'SOME_STRUCTURE'})",3
+411,0.003290917068889864,"frozenset({'see', 'tf', 'convolution', 'details', 'returns', 'section', 'nn'})",7
+747,0.003290917068889864,"frozenset({'either', 'SOME_DTYPE', 'valid'})",3
+885,0.003290917068889864,"frozenset({'defaults', 'true'})",2
+868,0.003181219833260202,"frozenset({'SOME_DTYPE', 'used'})",2
+930,0.003181219833260202,"frozenset({'input', 'tensor', 'shape'})",3
+898,0.003181219833260202,"frozenset({'tf', 'SOME_STRUCTURE'})",2
+618,0.003181219833260202,"frozenset({'tensor', 'reduce'})",2
+739,0.003181219833260202,"frozenset({'x', 'must', 'type'})",3
+401,0.003181219833260202,"frozenset({'SOME_DTYPE', 'specify'})",2
+582,0.00307152259763054,"frozenset({'shape', 'in_channels', 'batch'})",3
+393,0.00307152259763054,"frozenset({'tensor', 'raggedtensor'})",2
+394,0.00307152259763054,"frozenset({'tensor', 'normalized'})",2
+398,0.00307152259763054,"frozenset({'equal', 'must'})",2
+904,0.00307152259763054,"frozenset({'input', 'tensor', 'values'})",3
+699,0.00307152259763054,"frozenset({'name', 'optional', 'prefix', 'returned', 'tensor'})",5
+647,0.00307152259763054,"frozenset({'tensor', 'SOME_DTYPE', 'returns'})",3
+379,0.0029618253620008776,"frozenset({'optional', 'variable_scope', 'name'})",3
+926,0.0029618253620008776,"frozenset({'d', 'tensor', 'must'})",3
+556,0.0029618253620008776,"frozenset({'data', 'dataset', 'tf'})",3
+806,0.0029618253620008776,"frozenset({'size', 'SOME_DTYPE', 'batch'})",3
+617,0.0029618253620008776,"frozenset({'dimensions', 'reduce'})",2
+382,0.0029618253620008776,"frozenset({'reduces', 'dimensions', 'none', 'default'})",4
+380,0.0029618253620008776,"frozenset({'ssparse', 'indices', 'order'})",3
+383,0.0029618253620008776,"frozenset({'false', 'condition', 'tensor', 'print'})",4
+384,0.0029618253620008776,"frozenset({'computation', 'decay'})",2
+386,0.0029618253620008776,"frozenset({'least', 'tensor', 'SOME_STRUCTURE'})",3
+709,0.0029618253620008776,"frozenset({'name', 'SOME_DTYPE', 'flag'})",3
+370,0.0028521281263712154,"frozenset({'value', 'minimum'})",2
+799,0.0028521281263712154,"frozenset({'rank', 'tensor', 'SOME_DTYPE'})",3
+374,0.0028521281263712154,"frozenset({'converted', 'SOME_DTYPE'})",2
+371,0.0028521281263712154,"frozenset({'array', 'numpy'})",2
+372,0.0028521281263712154,"frozenset({'required', 'tensor'})",2
+373,0.0028521281263712154,"frozenset({'possible', 'number'})",2
+915,0.0028521281263712154,"frozenset({'tensor', 'dimension', 'shape'})",3
+376,0.0028521281263712154,"frozenset({'activation', 'function'})",2
+831,0.0028521281263712154,"frozenset({'d', 'tensor', 'length'})",3
+367,0.002742430890741553,"frozenset({'logits', 'tensor'})",2
+360,0.002742430890741553,"frozenset({'data_format', 'value', 'see', 'details', 'order', 'dimension', 'determined'})",7
+815,0.002742430890741553,"frozenset({'input', 'tensor', 'function'})",3
+827,0.002742430890741553,"frozenset({'data', 'SOME_DTYPE', 'type'})",3
+828,0.002742430890741553,"frozenset({'data', 'tensor', 'SOME_DTYPE'})",3
+368,0.002742430890741553,"frozenset({'real', 'SOME_DTYPE'})",2
+856,0.002742430890741553,"frozenset({'SOME_DTYPE', 'number', 'batch'})",3
+929,0.002742430890741553,"frozenset({'input', 'tensor', 'SOME_STRUCTURE'})",3
+903,0.002742430890741553,"frozenset({'value', 'values'})",2
+348,0.0026327336551118913,"frozenset({'tensor', 'computed'})",2
+358,0.0026327336551118913,"frozenset({'ndhwc', 'default'})",2
+346,0.0026327336551118913,"frozenset({'global', 'step'})",2
+591,0.0026327336551118913,"frozenset({'column', 'SOME_DTYPE'})",2
+921,0.0026327336551118913,"frozenset({'value', 'tensor', 'shape'})",3
+934,0.0026327336551118913,"frozenset({'tensor', 'shape', 'SOME_STRUCTURE'})",3
+670,0.0026327336551118913,"frozenset({'containing', 'tensor', 'SOME_DTYPE'})",3
+341,0.002523036419482229,"frozenset({'learning', 'rate'})",2
+344,0.002523036419482229,"frozenset({'retains', 'dimensions', 'reduced', 'length', 'true'})",5
+902,0.002523036419482229,"frozenset({'values', 'dimension'})",2
+783,0.002523036419482229,"frozenset({'d', 'tensor', 'SOME_DTYPE', 'python'})",4
+679,0.002413339183852567,"frozenset({'file', 'SOME_DTYPE'})",2
+802,0.002413339183852567,"frozenset({'false', 'SOME_DTYPE'})",2
+883,0.002413339183852567,"frozenset({'SOME_DTYPE', 'true'})",2
+884,0.002413339183852567,"frozenset({'true', 'default'})",2
+891,0.002413339183852567,"frozenset({'input', 'dimensions'})",2
+544,0.002413339183852567,"frozenset({'use', 'padding', 'algorithm', 'type'})",4
+329,0.002413339183852567,"frozenset({'text', 'SOME_DTYPE'})",2
+326,0.002413339183852567,"frozenset({'default', 'n', 'dimensions', 'c', 'set'})",5
+324,0.002413339183852567,"frozenset({'in_width', 'in_channels', 'order', 'batch', 'data', 'format', 'in_height'})",7
+525,0.002413339183852567,"frozenset({'SOME_DTYPE', 'names', 'SOME_STRUCTURE'})",3
+757,0.0023036419482229046,"frozenset({'SOME_STRUCTURE', 'returned'})",2
+927,0.0023036419482229046,"frozenset({'SOME_DTYPE', 'shape', 'type', 'd', 'tensor'})",5
+615,0.0023036419482229046,"frozenset({'tensor', 'sequence'})",2
+316,0.0023036419482229046,"frozenset({'k', 'dimension', 'element', 'cells', 'filter', 'skipped', 'set'})",7
+936,0.0023036419482229046,"frozenset({'optional', 'type'})",2
+309,0.0023036419482229046,"frozenset({'seed', 'shuffling'})",2
+669,0.0023036419482229046,"frozenset({'containing', 'SOME_STRUCTURE'})",2
+312,0.0023036419482229046,"frozenset({'input_tensor', 'rank', 'must', 'range'})",4
+703,0.0023036419482229046,"frozenset({'height', 'SOME_DTYPE', 'shape', 'd', 'width', 'tensor'})",6
+867,0.0023036419482229046,"frozenset({'used', 'none'})",2
+310,0.0023036419482229046,"frozenset({'function', 'applied', 'regularizer'})",3
+866,0.0023036419482229046,"frozenset({'optional', 'used'})",2
+320,0.0023036419482229046,"frozenset({'known', 'must'})",2
+882,0.002193944712593243,"frozenset({'input', 'true'})",2
+609,0.002193944712593243,"frozenset({'last', 'size', 'tensor', 'dimension'})",4
+752,0.002193944712593243,"frozenset({'input', 'rank', 'must', 'range'})",4
+865,0.002193944712593243,"frozenset({'value', 'used'})",2
+552,0.002193944712593243,"frozenset({'predictions', 'tensor', 'whose', 'shape'})",4
+790,0.002193944712593243,"frozenset({'d', 'tensor', 'n'})",3
+301,0.002193944712593243,"frozenset({'SOME_DTYPE', 'cast'})",2
+303,0.002193944712593243,"frozenset({'gpu', 'cpu'})",2
+299,0.002193944712593243,"frozenset({'experimental', 'none', 'tf'})",3
+302,0.002193944712593243,"frozenset({'collections', 'added', 'optional', 'SOME_STRUCTURE', 'update_op'})",5
+295,0.002193944712593243,"frozenset({'inputs', 'channels', 'ordering', 'corresponds', 'dimensions', 'channels_last', 'shape', 'batch', 'channels_first'})",9
+292,0.002193944712593243,"frozenset({'default', 'order', 'stored', 'batch', 'data', 'format'})",6
+291,0.002193944712593243,"frozenset({'update', 'ops'})",2
+305,0.002193944712593243,"frozenset({'matching', 'tensor'})",2
+535,0.002193944712593243,"frozenset({'num_classes', 'tensor', 'shape'})",3
+811,0.002193944712593243,"frozenset({'function', 'SOME_STRUCTURE'})",2
+812,0.002193944712593243,"frozenset({'function', 'used'})",2
+300,0.002193944712593243,"frozenset({'flagvalues', 'registered', 'instance', 'flag'})",4
+646,0.0020842474769635806,"frozenset({'function', 'returns'})",2
+279,0.0020842474769635806,"frozenset({'encoding', 'SOME_DTYPE'})",2
+801,0.0020842474769635806,"frozenset({'false', 'default'})",2
+874,0.0020842474769635806,"frozenset({'must', 'none'})",2
+634,0.0020842474769635806,"frozenset({'window', 'SOME_DTYPE'})",2
+506,0.0020842474769635806,"frozenset({'path', 'SOME_DTYPE'})",2
+507,0.0020842474769635806,"frozenset({'path', 'file'})",2
+278,0.0020842474769635806,"frozenset({'apply', 'type', 'reduction', 'loss'})",4
+933,0.0020842474769635806,"frozenset({'SOME_DTYPE', 'shape', 'SOME_STRUCTURE'})",3
+284,0.0020842474769635806,"frozenset({'input', 'produce'})",2
+590,0.0020842474769635806,"frozenset({'column', 'tensor'})",2
+585,0.0020842474769635806,"frozenset({'data_format', 'd', 'shape'})",3
+920,0.0020842474769635806,"frozenset({'optional', 'value'})",2
+282,0.0020842474769635806,"frozenset({'takes', 'returns'})",2
+273,0.0020842474769635806,"frozenset({'ncdhw', 'ndhwc'})",2
+280,0.0020842474769635806,"frozenset({'unicode', 'SOME_DTYPE'})",2
+567,0.0020842474769635806,"frozenset({'non', 'tensor', 'SOME_DTYPE'})",3
+281,0.0020842474769635806,"frozenset({'supplied', 'items', 'scope', 'attribute', 'name'})",5
+614,0.0019745502413339184,"frozenset({'SOME_DTYPE', 'sequence'})",2
+566,0.0019745502413339184,"frozenset({'non', 'SOME_DTYPE', 'number'})",3
+522,0.0019745502413339184,"frozenset({'d', 'tensor', 'depth', 'batch'})",4
+528,0.0019745502413339184,"frozenset({'non', 'negative', 'SOME_DTYPE'})",3
+656,0.0019745502413339184,"frozenset({'channels', 'height', 'shape', 'batch', 'd', 'width', 'tensor'})",7
+444,0.0019745502413339184,"frozenset({'following', 'one', 'SOME_DTYPE', 'must', 'bfloat', 'quint', 'qint'})",7
+658,0.0019745502413339184,"frozenset({'tensor', 'may'})",2
+897,0.0019745502413339184,"frozenset({'values', 'tf'})",2
+651,0.0019745502413339184,"frozenset({'SOME_STRUCTURE', 'SOME_DTYPE', 'convolution', 'specifying'})",4
+579,0.0019745502413339184,"frozenset({'SOME_DTYPE', 'summary'})",2
+677,0.0019745502413339184,"frozenset({'tensor', 'SOME_DTYPE', 'corresponding'})",3
+707,0.0019745502413339184,"frozenset({'ssparsetensor', 'SOME_DTYPE', 'shape'})",3
+763,0.0019745502413339184,"frozenset({'set', 'none'})",2
+262,0.0019745502413339184,"frozenset({'defining', 'SOME_DTYPE'})",2
+718,0.0019745502413339184,"frozenset({'single', 'tensor', 'SOME_DTYPE'})",3
+400,0.0019745502413339184,"frozenset({'vector', 'bias'})",2
+807,0.0019745502413339184,"frozenset({'d', 'size', 'tensor', 'dimension'})",4
+261,0.0019745502413339184,"frozenset({'need', 'never', 'almost', 'overridden'})",4
+737,0.0019745502413339184,"frozenset({'labels', 'tensor', 'shape'})",3
+265,0.0019745502413339184,"frozenset({'depth', 'dimensions', 'must', 'dilations', 'batch'})",5
+268,0.0019745502413339184,"frozenset({'generator', 'seed', 'random'})",3
+778,0.0019745502413339184,"frozenset({'optional', 'dtype', 'SOME_DTYPE', 'tf'})",4
+746,0.0019745502413339184,"frozenset({'default', 'values', 'valid', 'n'})",4
+691,0.0019745502413339184,"frozenset({'SOME_DTYPE', 'shape', 'batch_size', 'd', 'tensor'})",5
+593,0.0018648530057042562,"frozenset({'tensor', 'SOME_DTYPE', 'matrix'})",3
+608,0.0018648530057042562,"frozenset({'last', 'size', 'dimension', 'must'})",4
+907,0.0018648530057042562,"frozenset({'values', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+756,0.0018648530057042562,"frozenset({'dtype', 'tensor', 'returned'})",3
+257,0.0018648530057042562,"frozenset({'binary', 'SOME_DTYPE'})",2
+682,0.0018648530057042562,"frozenset({'tensor', 'SOME_DTYPE', 'tf', 'representing'})",4
+939,0.0018648530057042562,"frozenset({'SOME_STRUCTURE', 'name'})",2
+549,0.0018648530057042562,"frozenset({'SOME_DTYPE', 'return'})",2
+805,0.0018648530057042562,"frozenset({'size', 'shape', 'batch'})",3
+574,0.0018648530057042562,"frozenset({'tensor', 'element'})",2
+563,0.0018648530057042562,"frozenset({'default', 'SOME_DTYPE', 'channels_last', 'channels_first', 'one'})",5
+519,0.0018648530057042562,"frozenset({'n', 'shape', 'm'})",3
+558,0.0018648530057042562,"frozenset({'input', 'axis', 'tensor', 'index'})",4
+849,0.0018648530057042562,"frozenset({'output', 'number'})",2
+745,0.0018648530057042562,"frozenset({'e', 'value'})",2
+256,0.0018648530057042562,"frozenset({'determines', 'batch'})",2
+616,0.0018648530057042562,"frozenset({'SOME_DTYPE', 'reduce'})",2
+244,0.0018648530057042562,"frozenset({'known', 'statically'})",2
+826,0.0018648530057042562,"frozenset({'data', 'tensor', 'shape'})",3
+864,0.0018648530057042562,"frozenset({'used', 'default'})",2
+236,0.0018648530057042562,"frozenset({'tensor', 'indexedslices'})",2
+240,0.0018648530057042562,"frozenset({'re', 'scope', 'match'})",3
+241,0.0018648530057042562,"frozenset({'ragged', 'SOME_DTYPE'})",2
+821,0.0018648530057042562,"frozenset({'use', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+873,0.0018648530057042562,"frozenset({'defaults', 'none'})",2
+710,0.0018648530057042562,"frozenset({'first', 'SOME_DTYPE'})",2
+243,0.0018648530057042562,"frozenset({'optional', 'losses'})",2
+247,0.0018648530057042562,"frozenset({'behavior', 'see', 'tf', 'set_random_seed', 'compat', 'v'})",6
+248,0.0018648530057042562,"frozenset({'input', 'invalid'})",2
+249,0.0018648530057042562,"frozenset({'input', 'SOME_DTYPE', 'unique', 'identifying', 'feature'})",5
+730,0.0018648530057042562,"frozenset({'specified', 'must'})",2
+810,0.0018648530057042562,"frozenset({'variable', 'function'})",2
+633,0.0018648530057042562,"frozenset({'input', 'size', 'dimension', 'window', 'tensor'})",5
+896,0.0018648530057042562,"frozenset({'value', 'tf'})",2
+254,0.0018648530057042562,"frozenset({'enables', 'true'})",2
+848,0.0018648530057042562,"frozenset({'d', 'tensor', 'output'})",3
+809,0.0017551557700745941,"frozenset({'optional', 'function'})",2
+837,0.0017551557700745941,"frozenset({'variable', 'value'})",2
+534,0.0017551557700745941,"frozenset({'num_classes', 'dimension'})",2
+942,0.0017551557700745941,"frozenset({'operation', 'optional', 'SOME_DTYPE'})",3
+825,0.0017551557700745941,"frozenset({'d', 'data', 'tensor'})",3
+547,0.0017551557700745941,"frozenset({'value', 'return'})",2
+548,0.0017551557700745941,"frozenset({'tensor', 'return'})",2
+919,0.0017551557700745941,"frozenset({'input', 'default'})",2
+788,0.0017551557700745941,"frozenset({'rank', 'tensor', 'n'})",3
+928,0.0017551557700745941,"frozenset({'input', 'must', 'type'})",3
+561,0.0017551557700745941,"frozenset({'SOME_DTYPE', 'object'})",2
+766,0.0017551557700745941,"frozenset({'either', 'default'})",2
+581,0.0017551557700745941,"frozenset({'in_channels', 'shape', 'type', 'd', 'tensor'})",5
+855,0.0017551557700745941,"frozenset({'input', 'tensor', 'batch'})",3
+597,0.0017551557700745941,"frozenset({'feature', 'value'})",2
+901,0.0017551557700745941,"frozenset({'optional', 'values', 'SOME_STRUCTURE'})",3
+736,0.0017551557700745941,"frozenset({'labels', 'SOME_DTYPE'})",2
+641,0.0017551557700745941,"frozenset({'k', 'tensor'})",2
+668,0.0017551557700745941,"frozenset({'containing', 'tensor', 'd'})",3
+700,0.0017551557700745941,"frozenset({'single', 'SOME_DTYPE', 'specifying'})",3
+675,0.0017551557700745941,"frozenset({'elements', 'tensor', 'SOME_DTYPE'})",3
+695,0.0017551557700745941,"frozenset({'example', 'tf'})",2
+521,0.0017551557700745941,"frozenset({'input', 'dimension', 'specifies'})",3
+604,0.0017551557700745941,"frozenset({'d', 'tensor', 'SOME_DTYPE', 'vector'})",4
+233,0.0017551557700745941,"frozenset({'ncw', 'nwc'})",2
+513,0.0017551557700745941,"frozenset({'SOME_DTYPE', 'created'})",2
+483,0.0017551557700745941,"frozenset({'axis', 'SOME_DTYPE', 'compute'})",3
+359,0.0017551557700745941,"frozenset({'serialized', 'tensor', 'SOME_DTYPE'})",3
+213,0.0017551557700745941,"frozenset({'id', 'SOME_DTYPE'})",2
+218,0.0017551557700745941,"frozenset({'compatible', 'SOME_STRUCTURE'})",2
+486,0.0017551557700745941,"frozenset({'SOME_DTYPE', 'maximum'})",2
+221,0.0017551557700745941,"frozenset({'sum', 'mean', 'sqrtn'})",3
+231,0.0017551557700745941,"frozenset({'batches', 'number'})",2
+492,0.0017551557700745941,"frozenset({'weights', 'SOME_DTYPE'})",2
+224,0.0017551557700745941,"frozenset({'parsing', 'tensor'})",2
+560,0.001645458534444932,"frozenset({'tf', 'object'})",2
+862,0.001645458534444932,"frozenset({'tensor', 'used', 'SOME_STRUCTURE'})",3
+645,0.001645458534444932,"frozenset({'SOME_DTYPE', 'returns', 'SOME_STRUCTURE'})",3
+824,0.001645458534444932,"frozenset({'data', 'SOME_STRUCTURE'})",2
+698,0.001645458534444932,"frozenset({'format', 'tensor'})",2
+489,0.001645458534444932,"frozenset({'array', 'tensor', 'SOME_DTYPE', 'd'})",4
+211,0.001645458534444932,"frozenset({'d', 'higher'})",2
+836,0.001645458534444932,"frozenset({'optional', 'variable', 'SOME_STRUCTURE'})",3
+925,0.001645458534444932,"frozenset({'input', 'd'})",2
+272,0.001645458534444932,"frozenset({'in_channels', 'shape', 'filter_width', 'filter_height', 'd'})",5
+674,0.001645458534444932,"frozenset({'elements', 'number'})",2
+872,0.001645458534444932,"frozenset({'none', 'shape'})",2
+911,0.001645458534444932,"frozenset({'input', 'one'})",2
+820,0.001645458534444932,"frozenset({'use', 'name'})",2
+857,0.001645458534444932,"frozenset({'SOME_DTYPE', 'shape', 'batch', 'd', 'tensor'})",5
+847,0.001645458534444932,"frozenset({'input', 'output', 'dimension'})",3
+201,0.001645458534444932,"frozenset({'number', 'buckets'})",2
+206,0.001645458534444932,"frozenset({'specified', 'positive', 'num_oov_buckets'})",3
+589,0.001645458534444932,"frozenset({'column', 'SOME_STRUCTURE'})",2
+594,0.001645458534444932,"frozenset({'dtype', 'SOME_DTYPE', 'x', 'broadcastable', 'tensor'})",5
+755,0.001645458534444932,"frozenset({'type', 'returned'})",2
+523,0.001645458534444932,"frozenset({'d', 'shape', 'depth', 'batch'})",4
+895,0.001645458534444932,"frozenset({'tf', 'default'})",2
+607,0.001645458534444932,"frozenset({'last', 'dimension', 'default'})",3
+751,0.001645458534444932,"frozenset({'value', 'range'})",2
+200,0.001645458534444932,"frozenset({'message', 'help', 'SOME_DTYPE'})",3
+481,0.001645458534444932,"frozenset({'tensor', 'structure', 'nested'})",3
+186,0.001645458534444932,"frozenset({'tensor', 'matrices'})",2
+509,0.001645458534444932,"frozenset({'layer', 'SOME_DTYPE'})",2
+800,0.001645458534444932,"frozenset({'false', 'true'})",2
+362,0.001645458534444932,"frozenset({'considered', 'SOME_DTYPE'})",2
+191,0.001645458534444932,"frozenset({'operations', 'performed', 'scope', 'computing', 'loss'})",5
+418,0.001645458534444932,"frozenset({'tensor', 'arbitrary', 'values'})",3
+863,0.001645458534444932,"frozenset({'input', 'used'})",2
+468,0.00153576129881527,"frozenset({'means', 'none'})",2
+610,0.00153576129881527,"frozenset({'SOME_DTYPE', 'match'})",2
+178,0.00153576129881527,"frozenset({'depthwise', 'convolution'})",2
+619,0.00153576129881527,"frozenset({'SOME_DTYPE', 'random'})",2
+638,0.00153576129881527,"frozenset({'inputs', 'SOME_STRUCTURE'})",2
+175,0.00153576129881527,"frozenset({'scope', 'without'})",2
+174,0.00153576129881527,"frozenset({'run', 'number', 'iterations'})",3
+661,0.00153576129881527,"frozenset({'along', 'SOME_STRUCTURE'})",2
+396,0.00153576129881527,"frozenset({'keepdims', 'reduced'})",2
+451,0.00153576129881527,"frozenset({'seed', 'random', 'used', 'create'})",4
+765,0.00153576129881527,"frozenset({'either', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+772,0.00153576129881527,"frozenset({'whether', 'tensor'})",2
+777,0.00153576129881527,"frozenset({'dtype', 'shape'})",2
+781,0.00153576129881527,"frozenset({'python', 'function'})",2
+406,0.00153576129881527,"frozenset({'input', 'tensor', 'equivalent'})",3
+782,0.00153576129881527,"frozenset({'python', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+786,0.00153576129881527,"frozenset({'SOME_STRUCTURE', 'SOME_DTYPE', 'n'})",3
+787,0.00153576129881527,"frozenset({'shape', 'batch', 'n'})",3
+789,0.00153576129881527,"frozenset({'d', 'shape', 'n'})",3
+744,0.00153576129881527,"frozenset({'e', 'SOME_DTYPE'})",2
+413,0.00153576129881527,"frozenset({'tensor', 'point', 'floating'})",3
+729,0.00153576129881527,"frozenset({'specified', 'tensor'})",2
+804,0.00153576129881527,"frozenset({'size', 'output'})",2
+814,0.00153576129881527,"frozenset({'tensor', 'function', 'tf'})",3
+708,0.00153576129881527,"frozenset({'flag', 'value', 'default'})",3
+818,0.00153576129881527,"frozenset({'optional', 'use'})",2
+819,0.00153576129881527,"frozenset({'use', 'tensor'})",2
+694,0.00153576129881527,"frozenset({'example', 'tensor'})",2
+435,0.00153576129881527,"frozenset({'values', 'must', 'strides'})",3
+673,0.00153576129881527,"frozenset({'elements', 'type'})",2
+845,0.00153576129881527,"frozenset({'output', 'true'})",2
+846,0.00153576129881527,"frozenset({'value', 'output'})",2
+169,0.00153576129881527,"frozenset({'repeated', 'values', 'sorted'})",3
+660,0.00153576129881527,"frozenset({'tensor', 'dimension', 'along'})",3
+861,0.00153576129881527,"frozenset({'used', 'tf'})",2
+173,0.00153576129881527,"frozenset({'eager', 'execution'})",2
+397,0.00153576129881527,"frozenset({'keepdims', 'deprecated', 'alias'})",3
+533,0.00153576129881527,"frozenset({'batch_size', 'num_classes', 'tensor'})",3
+165,0.00153576129881527,"frozenset({'input', 'constant', 'boundaries', 'outside', 'points', 'mode'})",6
+542,0.00153576129881527,"frozenset({'key', 'SOME_STRUCTURE'})",2
+562,0.00153576129881527,"frozenset({'variable', 'keras', 'SOME_DTYPE', 'returned'})",4
+530,0.00153576129881527,"frozenset({'value', 'SOME_DTYPE', 'step'})",3
+482,0.00153576129881527,"frozenset({'tensor', 'compute'})",2
+938,0.00153576129881527,"frozenset({'must', 'SOME_STRUCTURE'})",2
+505,0.00153576129881527,"frozenset({'message', 'first', 'defaults', 'x', 'entries', 'error'})",6
+545,0.00153576129881527,"frozenset({'sequence', 'nested'})",2
+543,0.00153576129881527,"frozenset({'key', 'SOME_DTYPE'})",2
+168,0.00153576129881527,"frozenset({'data_format', 'start', 'default', 'starts', 'nc'})",5
+167,0.00153576129881527,"frozenset({'num_boxes', 'SOME_DTYPE', 'shape', 'd', 'tensor'})",5
+659,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'along'})",2
+733,0.0014260640631856077,"frozenset({'data', 'tensor', 'whose'})",3
+665,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE', 'type', 'tensor', 'objects'})",5
+133,0.0014260640631856077,"frozenset({'tensor', 'mutable'})",2
+496,0.0014260640631856077,"frozenset({'ops', 'SOME_STRUCTURE'})",2
+138,0.0014260640631856077,"frozenset({'targets', 'tensor'})",2
+139,0.0014260640631856077,"frozenset({'exhibit', 'behavior', 'may', 'less', 'otherwise', 'protected', 'lock', 'undefined', 'contention', 'true'})",10
+318,0.0014260640631856077,"frozenset({'must', 'greater'})",2
+144,0.0014260640631856077,"frozenset({'distribution', 'normal'})",2
+537,0.0014260640631856077,"frozenset({'feature', 'columns', 'SOME_STRUCTURE'})",3
+854,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'batch', 'shape', 'type', 'tensor'})",5
+796,0.0014260640631856077,"frozenset({'axis', 'values'})",2
+650,0.0014260640631856077,"frozenset({'width', 'convolution', 'height'})",3
+649,0.0014260640631856077,"frozenset({'output', 'convolution'})",2
+378,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'metric'})",2
+446,0.0014260640631856077,"frozenset({'result', 'tensor'})",2
+728,0.0014260640631856077,"frozenset({'specified', 'SOME_DTYPE'})",2
+501,0.0014260640631856077,"frozenset({'nchw', 'nhwc', 'default'})",3
+497,0.0014260640631856077,"frozenset({'optional', 'ops'})",2
+716,0.0014260640631856077,"frozenset({'single', 'tf'})",2
+417,0.0014260640631856077,"frozenset({'tensor', 'arbitrary', 'shape'})",3
+350,0.0014260640631856077,"frozenset({'predicted', 'tensor'})",2
+416,0.0014260640631856077,"frozenset({'axis', 'vectors'})",2
+314,0.0014260640631856077,"frozenset({'tensor', 'matches', 'whose'})",3
+834,0.0014260640631856077,"frozenset({'variable', 'shape'})",2
+835,0.0014260640631856077,"frozenset({'variable', 'name'})",2
+686,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'shape', 'representing', 'd', 'tensor'})",5
+685,0.0014260640631856077,"frozenset({'single', 'tensor', 'representing'})",3
+684,0.0014260640631856077,"frozenset({'single', 'SOME_DTYPE', 'representing'})",3
+681,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'batch', 'representing'})",3
+678,0.0014260640631856077,"frozenset({'file', 'name'})",2
+743,0.0014260640631856077,"frozenset({'e', 'default'})",2
+676,0.0014260640631856077,"frozenset({'values', 'corresponding'})",2
+437,0.0014260640631856077,"frozenset({'spatial', 'dimensions', 'SOME_DTYPE'})",3
+742,0.0014260640631856077,"frozenset({'e', 'none'})",2
+706,0.0014260640631856077,"frozenset({'ssparsetensor', 'tensor', 'type'})",3
+488,0.0014260640631856077,"frozenset({'array', 'tensor', 'python', 'd'})",4
+460,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'directory'})",2
+584,0.0014260640631856077,"frozenset({'data_format', 'tensor', 'd'})",3
+152,0.0014260640631856077,"frozenset({'combine', 'SOME_DTYPE'})",2
+881,0.0014260640631856077,"frozenset({'optional', 'true'})",2
+456,0.0014260640631856077,"frozenset({'mapping', 'SOME_DTYPE'})",2
+623,0.0014260640631856077,"frozenset({'optional', 'op', 'name'})",3
+151,0.0014260640631856077,"frozenset({'one', 'case', 'insensitive', 'valid'})",4
+155,0.0014260640631856077,"frozenset({'value', 'w', 'replicated', 'dimension', 'single', 'given', 'h'})",7
+627,0.0014260640631856077,"frozenset({'d', 'indices', 'tensor'})",3
+588,0.0014260640631856077,"frozenset({'column', 'name'})",2
+485,0.0014260640631856077,"frozenset({'number', 'maximum'})",2
+153,0.0014260640631856077,"frozenset({'codepoint', 'invalid'})",2
+871,0.0014260640631856077,"frozenset({'values', 'none'})",2
+578,0.0014260640631856077,"frozenset({'optional', 'summary'})",2
+870,0.0014260640631856077,"frozenset({'input', 'none'})",2
+894,0.0014260640631856077,"frozenset({'must', 'tf'})",2
+145,0.0014260640631856077,"frozenset({'standard', 'deviation'})",2
+569,0.0014260640631856077,"frozenset({'values', 'class'})",2
+900,0.0014260640631856077,"frozenset({'d', 'values', 'shape'})",3
+410,0.0014260640631856077,"frozenset({'input', 'across'})",2
+914,0.0014260640631856077,"frozenset({'SOME_DTYPE', 'dimension', 'SOME_STRUCTURE'})",3
+461,0.0014260640631856077,"frozenset({'path', 'directory'})",2
+893,0.0014260640631856077,"frozenset({'tf', 'type'})",2
+388,0.0014260640631856077,"frozenset({'x', 'y'})",2
+717,0.0013163668275559457,"frozenset({'single', 'tensor', 'SOME_STRUCTURE'})",3
+334,0.0013163668275559457,"frozenset({'padding', 'explicit'})",2
+540,0.0013163668275559457,"frozenset({'key', 'tf'})",2
+771,0.0013163668275559457,"frozenset({'whether', 'batch'})",2
+541,0.0013163668275559457,"frozenset({'example', 'key'})",2
+715,0.0013163668275559457,"frozenset({'single', 'none'})",2
+333,0.0013163668275559457,"frozenset({'explicit', 'SOME_DTYPE'})",2
+808,0.0013163668275559457,"frozenset({'output', 'function'})",2
+776,0.0013163668275559457,"frozenset({'value', 'tensor', 'dtype', 'type', 'd', 'python'})",6
+714,0.0013163668275559457,"frozenset({'single', 'd'})",2
+390,0.0013163668275559457,"frozenset({'SOME_DTYPE', 'axes'})",2
+405,0.0013163668275559457,"frozenset({'applied', 'function', 'matrix', 'kernel'})",4
+762,0.0013163668275559457,"frozenset({'set', 'true'})",2
+775,0.0013163668275559457,"frozenset({'dtype', 'SOME_STRUCTURE'})",2
+82,0.0013163668275559457,"frozenset({'value', 'image_data_format', 'config', 'defaults', 'json', 'file', 'keras', 'found', '~'})",9
+352,0.0013163668275559457,"frozenset({'node', 'name'})",2
+723,0.0013163668275559457,"frozenset({'SOME_DTYPE', 'order'})",2
+795,0.0013163668275559457,"frozenset({'axis', 'tensor', 'batch'})",3
+532,0.0013163668275559457,"frozenset({'num_classes', 'predictions'})",2
+97,0.0013163668275559457,"frozenset({'lookup', 'embedding'})",2
+377,0.0013163668275559457,"frozenset({'collections', 'added', 'metric', 'optional', 'SOME_STRUCTURE'})",5
+93,0.0013163668275559457,"frozenset({'give', 'name'})",2
+735,0.0013163668275559457,"frozenset({'labels', 'tf'})",2
+511,0.0013163668275559457,"frozenset({'positive', 'SOME_DTYPE'})",2
+798,0.0013163668275559457,"frozenset({'rank', 'values'})",2
+527,0.0013163668275559457,"frozenset({'non', 'negative', 'number'})",3
+518,0.0013163668275559457,"frozenset({'d', 'shape', 'm'})",3
+99,0.0013163668275559457,"frozenset({'extra', 'args', 'init', 'SOME_STRUCTURE', 'flag', 'strong', 'passed', 'keyword'})",8
+536,0.0013163668275559457,"frozenset({'tensor', 'columns'})",2
+89,0.0013163668275559457,"frozenset({'axis', 'deprecated', 'old', 'name'})",4
+727,0.0013163668275559457,"frozenset({'defaults', 'specified'})",2
+524,0.0013163668275559457,"frozenset({'optional', 'SOME_DTYPE', 'names'})",3
+539,0.0013163668275559457,"frozenset({'key', 'tensor', 'used'})",3
+354,0.0013163668275559457,"frozenset({'outside', 'range'})",2
+473,0.0013163668275559457,"frozenset({'start', 'dimension'})",2
+683,0.0013163668275559457,"frozenset({'tensor', 'SOME_DTYPE', 'number', 'representing'})",4
+817,0.0013163668275559457,"frozenset({'use', 'none'})",2
+445,0.0013163668275559457,"frozenset({'result', 'SOME_DTYPE'})",2
+118,0.0013163668275559457,"frozenset({'threads', 'number'})",2
+664,0.0013163668275559457,"frozenset({'objects', 'tf'})",2
+275,0.0013163668275559457,"frozenset({'utf', 'SOME_DTYPE'})",2
+260,0.0013163668275559457,"frozenset({'d', 'out_channels', 'in_channels', 'shape'})",4
+860,0.0013163668275559457,"frozenset({'used', 'number'})",2
+648,0.0013163668275559457,"frozenset({'input', 'convolution'})",2
+565,0.0013163668275559457,"frozenset({'stride', 'specifying'})",2
+570,0.0013163668275559457,"frozenset({'input', 'given'})",2
+640,0.0013163668275559457,"frozenset({'k', 'SOME_DTYPE'})",2
+637,0.0013163668275559457,"frozenset({'inputs', 'tensor'})",2
+573,0.0013163668275559457,"frozenset({'defaults', 'nhwc'})",2
+910,0.0013163668275559457,"frozenset({'one', 'tensor'})",2
+626,0.0013163668275559457,"frozenset({'indices', 'must'})",2
+580,0.0013163668275559457,"frozenset({'value', 'in_channels'})",2
+181,0.0013163668275559457,"frozenset({'parallel', 'number'})",2
+466,0.0013163668275559457,"frozenset({'empty', 'SOME_STRUCTURE'})",2
+889,0.0013163668275559457,"frozenset({'dimensions', 'number'})",2
+890,0.0013163668275559457,"frozenset({'dimensions', 'SOME_STRUCTURE'})",2
+480,0.0013163668275559457,"frozenset({'structure', 'tf'})",2
+667,0.0013163668275559457,"frozenset({'containing', 'shape'})",2
+517,0.0013163668275559457,"frozenset({'must', 'shape', 'm'})",3
+443,0.0013163668275559457,"frozenset({'possibly', 'tensor', 'nested', 'SOME_STRUCTURE'})",4
+427,0.0013163668275559457,"frozenset({'whether', 'indicating', 'SOME_DTYPE'})",3
+696,0.0013163668275559457,"frozenset({'format', 'SOME_DTYPE'})",2
+115,0.0013163668275559457,"frozenset({'varlenfeature', 'values', 'SOME_STRUCTURE', 'feature', 'keys', 'mapping'})",6
+693,0.0013163668275559457,"frozenset({'example', 'value'})",2
+844,0.0013163668275559457,"frozenset({'operation', 'output'})",2
+692,0.0013163668275559457,"frozenset({'example', 'SOME_STRUCTURE'})",2
+830,0.0013163668275559457,"frozenset({'must', 'length'})",2
+690,0.0013163668275559457,"frozenset({'batch_size', 'shape', 'n'})",3
+697,0.0013163668275559457,"frozenset({'format', 'data', 'output', 'input'})",4
+600,0.0013163668275559457,"frozenset({'operation', 'seed'})",2
+116,0.0013163668275559457,"frozenset({'_char', 'utf'})",2
+102,0.0013163668275559457,"frozenset({'tensor', 'shaped'})",2
+841,0.0013163668275559457,"frozenset({'output', 'dimensions'})",2
+117,0.0013163668275559457,"frozenset({'castable', 'SOME_DTYPE'})",2
+842,0.0013163668275559457,"frozenset({'output', 'default'})",2
+924,0.0013163668275559457,"frozenset({'d', 'SOME_DTYPE', 'SOME_STRUCTURE'})",3
+843,0.0013163668275559457,"frozenset({'optional', 'output'})",2
+104,0.0013163668275559457,"frozenset({'alternatively', 'could', 'order', 'batch', 'data', 'storage', 'format'})",7
+770,0.0012066695919262834,"frozenset({'input', 'whether'})",2
+331,0.0012066695919262834,"frozenset({'values', 'ground', 'dimensions', 'whose', 'must', 'truth', 'match', 'predictions', 'tensor'})",9
+888,0.0012066695919262834,"frozenset({'optional', 'number'})",2
+941,0.0012066695919262834,"frozenset({'operation', 'tensor'})",2
+887,0.0012066695919262834,"frozenset({'number', 'must'})",2
+75,0.0012066695919262834,"frozenset({'batch_size', 'tensor', 'max_time'})",3
+913,0.0012066695919262834,"frozenset({'tensor', 'dimension', 'SOME_STRUCTURE'})",3
+880,0.0012066695919262834,"frozenset({'true', 'tf'})",2
+317,0.0012066695919262834,"frozenset({'values', 'greater'})",2
+909,0.0012066695919262834,"frozenset({'one', 'SOME_STRUCTURE'})",2
+387,0.0012066695919262834,"frozenset({'y', 'tensor'})",2
+230,0.0012066695919262834,"frozenset({'name', 'tag', 'used', 'tensorboard', 'summary'})",5
+917,0.0012066695919262834,"frozenset({'optional', 'default'})",2
+794,0.0012066695919262834,"frozenset({'axis', 'SOME_STRUCTURE'})",2
+918,0.0012066695919262834,"frozenset({'SOME_STRUCTURE', 'default'})",2
+816,0.0012066695919262834,"frozenset({'use', 'default'})",2
+859,0.0012066695919262834,"frozenset({'tensor', 'dimensions', 'batch'})",3
+732,0.0012066695919262834,"frozenset({'size', 'tensor', 'whose'})",3
+654,0.0012066695919262834,"frozenset({'input', 'channels'})",2
+559,0.0012066695919262834,"frozenset({'tensor', 'object'})",2
+596,0.0012066695919262834,"frozenset({'feature', 'tf'})",2
+475,0.0012066695919262834,"frozenset({'convolution', 'dilation'})",2
+689,0.0012066695919262834,"frozenset({'batch_size', 'must'})",2
+476,0.0012066695919262834,"frozenset({'rate', 'dilation'})",2
+432,0.0012066695919262834,"frozenset({'dn', 'n'})",2
+587,0.0012066695919262834,"frozenset({'column', 'feature'})",2
+583,0.0012066695919262834,"frozenset({'data_format', 'tensor', 'shape'})",3
+484,0.0012066695919262834,"frozenset({'value', 'maximum'})",2
+702,0.0012066695919262834,"frozenset({'height', 'shape', 'type', 'd', 'width', 'tensor'})",6
+458,0.0012066695919262834,"frozenset({'norm', 'value'})",2
+705,0.0012066695919262834,"frozenset({'input', 'ssparsetensor'})",2
+426,0.0012066695919262834,"frozenset({'order', 'must', 'sorted'})",3
+421,0.0012066695919262834,"frozenset({'defined', 'SOME_DTYPE'})",2
+568,0.0012066695919262834,"frozenset({'SOME_DTYPE', 'class'})",2
+721,0.0012066695919262834,"frozenset({'variable', 'added'})",2
+688,0.0012066695919262834,"frozenset({'labels', 'batch_size', 'shape'})",3
+687,0.0012066695919262834,"frozenset({'batch_size', 'tensor', 'default'})",3
+472,0.0012066695919262834,"frozenset({'start', 'tensor', 'shape'})",3
+621,0.0012066695919262834,"frozenset({'tensor', 'op'})",2
+636,0.0012066695919262834,"frozenset({'inputs', 'none'})",2
+630,0.0012066695919262834,"frozenset({'provided', 'used'})",2
+629,0.0012066695919262834,"frozenset({'tensor', 'provided'})",2
+453,0.0012066695919262834,"frozenset({'less', 'must'})",2
+625,0.0012066695919262834,"frozenset({'indices', 'dimension'})",2
+622,0.0012066695919262834,"frozenset({'output', 'op'})",2
+655,0.0012066695919262834,"frozenset({'number', 'channels'})",2
+603,0.0012066695919262834,"frozenset({'vector', 'shape'})",2
+464,0.0012066695919262834,"frozenset({'SOME_DTYPE', 'empty'})",2
+449,0.0012066695919262834,"frozenset({'ref', 'must', 'type'})",3
+657,0.0012066695919262834,"frozenset({'may', 'SOME_STRUCTURE'})",2
+465,0.0012066695919262834,"frozenset({'tensor', 'empty'})",2
+613,0.0012066695919262834,"frozenset({'sequence', 'length'})",2
+467,0.0012066695919262834,"frozenset({'value', 'means'})",2
+722,0.0012066695919262834,"frozenset({'true', 'order'})",2
+632,0.0012066695919262834,"frozenset({'window', 'convolution'})",2
+529,0.0012066695919262834,"frozenset({'step', 'number'})",2
+726,0.0012066695919262834,"frozenset({'specified', 'dimension'})",2
+500,0.0012066695919262834,"frozenset({'nchw', 'optional', 'nhwc', 'SOME_DTYPE'})",4
+741,0.0012066695919262834,"frozenset({'e', 'tf'})",2
+409,0.0012066695919262834,"frozenset({'across', 'width', 'dimensions', 'height'})",4
+412,0.0012066695919262834,"frozenset({'values', 'point', 'floating'})",3
+516,0.0012066695919262834,"frozenset({'tensor', 'shape', 'm'})",3
+520,0.0012066695919262834,"frozenset({'SOME_DTYPE', 'specifies'})",2
+738,0.0012066695919262834,"frozenset({'x', 'shape'})",2
+402,0.0012066695919262834,"frozenset({'collection', 'added', 'loss'})",3
+546,0.0012066695919262834,"frozenset({'values', 'return'})",2
+761,0.0012066695919262834,"frozenset({'tensor', 'set'})",2
+399,0.0012066695919262834,"frozenset({'function', 'bias'})",2
+555,0.0012066695919262834,"frozenset({'SOME_DTYPE', 'dataset'})",2
+750,0.0012066695919262834,"frozenset({'SOME_DTYPE', 'range'})",2
+512,0.0012066695919262834,"frozenset({'created', 'name'})",2
+415,0.0012066695919262834,"frozenset({'vectors', 'SOME_STRUCTURE'})",2
+495,0.0012066695919262834,"frozenset({'ops', 'name'})",2
+514,0.0010969723562966214,"frozenset({'dimensions', 'shape', 'm'})",3
+180,0.0010969723562966214,"frozenset({'run', 'parallel'})",2
+515,0.0010969723562966214,"frozenset({'batch', 'm'})",2
+612,0.0010969723562966214,"frozenset({'sequence', 'n'})",2
+47,0.0010969723562966214,"frozenset({'varlenfeature', 'fixedlenfeature', 'SOME_STRUCTURE'})",3
+493,0.0010969723562966214,"frozenset({'operations', 'name'})",2
+620,0.0010969723562966214,"frozenset({'op', 'shape'})",2
+35,0.0010969723562966214,"frozenset({'SOME_DTYPE', 'shape', 'num_true', 'batch_size', 'type', 'tensor'})",6
+463,0.0010969723562966214,"frozenset({'non', 'empty'})",2
+606,0.0010969723562966214,"frozenset({'last', 'tensor', 'd'})",3
+32,0.0010969723562966214,"frozenset({'specified', 'calls', 'should_stop_fn'})",3
+879,0.0010969723562966214,"frozenset({'values', 'true'})",2
+624,0.0010969723562966214,"frozenset({'indices', 'SOME_STRUCTURE'})",2
+29,0.0010969723562966214,"frozenset({'deciding', 'SOME_DTYPE', 'threshold', 'representing', 'boxes'})",5
+28,0.0010969723562966214,"frozenset({'in_width', 'in_channels', 'batch', 'in_depth', 'in_height'})",5
+628,0.0010969723562966214,"frozenset({'provided', 'SOME_DTYPE'})",2
+219,0.0010969723562966214,"frozenset({'one', 'points'})",2
+24,0.0010969723562966214,"frozenset({'commonly', 'shape', 'n'})",3
+631,0.0010969723562966214,"frozenset({'window', 'length'})",2
+471,0.0010969723562966214,"frozenset({'input', 'start', 'output'})",3
+599,0.0010969723562966214,"frozenset({'seed', 'SOME_DTYPE'})",2
+892,0.0010969723562966214,"frozenset({'input', 'tf'})",2
+605,0.0010969723562966214,"frozenset({'last', 'range'})",2
+491,0.0010969723562966214,"frozenset({'column', 'weights'})",2
+564,0.0010969723562966214,"frozenset({'value', 'filter'})",2
+916,0.0010969723562966214,"frozenset({'shape', 'default'})",2
+571,0.0010969723562966214,"frozenset({'instance', 'tf'})",2
+572,0.0010969723562966214,"frozenset({'format', 'data', 'nhwc', 'batch'})",4
+554,0.0010969723562966214,"frozenset({'tensor', 'dataset'})",2
+912,0.0010969723562966214,"frozenset({'defaults', 'dimension'})",2
+553,0.0010969723562966214,"frozenset({'dataset', 'SOME_STRUCTURE'})",2
+551,0.0010969723562966214,"frozenset({'one', 'per'})",2
+550,0.0010969723562966214,"frozenset({'input', 'per'})",2
+576,0.0010969723562966214,"frozenset({'tf', 'summary'})",2
+577,0.0010969723562966214,"frozenset({'none', 'summary'})",2
+499,0.0010969723562966214,"frozenset({'format', 'data', 'nchw', 'batch'})",4
+906,0.0010969723562966214,"frozenset({'tensor', 'values', 'SOME_STRUCTURE'})",3
+586,0.0010969723562966214,"frozenset({'column', 'provided'})",2
+592,0.0010969723562966214,"frozenset({'tensor', 'matrix', 'batch'})",3
+502,0.0010969723562966214,"frozenset({'target', 'classes', 'per', 'training', 'example', 'number'})",6
+508,0.0010969723562966214,"frozenset({'layer', 'whether'})",2
+932,0.0010969723562966214,"frozenset({'optional', 'shape'})",2
+531,0.0010969723562966214,"frozenset({'num_classes', 'SOME_DTYPE'})",2
+601,0.0010969723562966214,"frozenset({'vector', 'function'})",2
+602,0.0010969723562966214,"frozenset({'input', 'vector'})",2
+22,0.0010969723562966214,"frozenset({'score', 'boxes', 'SOME_DTYPE', 'representing'})",4
+575,0.0010969723562966214,"frozenset({'value', 'summary'})",2
+768,0.0010969723562966214,"frozenset({'see', 'SOME_DTYPE'})",2
+869,0.0010969723562966214,"frozenset({'dimension', 'none'})",2
+724,0.0010969723562966214,"frozenset({'specified', 'used'})",2
+414,0.0010969723562966214,"frozenset({'tensor', 'vectors'})",2
+734,0.0010969723562966214,"frozenset({'labels', 'n'})",2
+366,0.0010969723562966214,"frozenset({'value', 'vocabulary'})",2
+731,0.0010969723562966214,"frozenset({'whose', 'SOME_STRUCTURE'})",2
+365,0.0010969723562966214,"frozenset({'SOME_DTYPE', 'vocabulary'})",2
+361,0.0010969723562966214,"frozenset({'considered', 'tensor'})",2
+725,0.0010969723562966214,"frozenset({'specified', 'default'})",2
+351,0.0010969723562966214,"frozenset({'node', 'variable'})",2
+635,0.0010969723562966214,"frozenset({'inputs', 'range'})",2
+713,0.0010969723562966214,"frozenset({'single', 'SOME_DTYPE', 'dimensions'})",3
+349,0.0010969723562966214,"frozenset({'predicted', 'values'})",2
+712,0.0010969723562966214,"frozenset({'single', 'batch'})",2
+813,0.0010969723562966214,"frozenset({'function', 'SOME_DTYPE', 'tf'})",3
+420,0.0010969723562966214,"frozenset({'defined', 'tf'})",2
+425,0.0010969723562966214,"frozenset({'indices', 'sorted'})",2
+704,0.0010969723562966214,"frozenset({'ssparsetensor', 'tf'})",2
+740,0.0010969723562966214,"frozenset({'e', 'values'})",2
+793,0.0010969723562966214,"frozenset({'axis', 'default'})",2
+792,0.0010969723562966214,"frozenset({'axis', 'must'})",2
+385,0.0010969723562966214,"frozenset({'in_width', 'shape', 'batch'})",3
+764,0.0010969723562966214,"frozenset({'either', 'value'})",2
+773,0.0010969723562966214,"frozenset({'dtype', 'must'})",2
+774,0.0010969723562966214,"frozenset({'dtype', 'output'})",2
+760,0.0010969723562966214,"frozenset({'set', 'used'})",2
+759,0.0010969723562966214,"frozenset({'set', 'values'})",2
+758,0.0010969723562966214,"frozenset({'either', 'set', 'must'})",3
+779,0.0010969723562966214,"frozenset({'input', 'python'})",2
+780,0.0010969723562966214,"frozenset({'python', 'SOME_DTYPE', 'name'})",3
+754,0.0010969723562966214,"frozenset({'shape', 'returned'})",2
+407,0.0010969723562966214,"frozenset({'sample', 'number'})",2
+389,0.0010969723562966214,"frozenset({'compute', 'axes'})",2
+785,0.0010969723562966214,"frozenset({'type', 'tensor', 'n'})",3
+749,0.0010969723562966214,"frozenset({'shape', 'range'})",2
+748,0.0010969723562966214,"frozenset({'tensor', 'range'})",2
+408,0.0010969723562966214,"frozenset({'sample', 'classes'})",2
+701,0.0010969723562966214,"frozenset({'input', 'width', 'height'})",3
+822,0.0010969723562966214,"frozenset({'optional', 'data'})",2
+823,0.0010969723562966214,"frozenset({'data', 'value'})",2
+663,0.0010969723562966214,"frozenset({'tensor', 'objects', 'shape'})",3
+298,0.0010969723562966214,"frozenset({'in_channels', 'shape', 'filter_width', 'd', 'tensor'})",5
+448,0.0010969723562966214,"frozenset({'tensor', 'values', 'ref'})",3
+274,0.0010969723562966214,"frozenset({'byte', 'utf'})",2
+853,0.0010969723562966214,"frozenset({'dimension', 'batch'})",2
+259,0.0010969723562966214,"frozenset({'out_channels', 'tensor', 'in_channels', 'shape'})",4
+258,0.0010969723562966214,"frozenset({'quantized', 'value', 'SOME_DTYPE', 'represents'})",4
+769,0.0010969723562966214,"frozenset({'whether', 'output'})",2
+858,0.0010969723562966214,"frozenset({'d', 'dimensions', 'batch'})",3
+653,0.0010969723562966214,"frozenset({'height', 'channels', 'order', 'batch', 'data', 'format', 'width'})",7
+652,0.0010969723562966214,"frozenset({'SOME_DTYPE', 'channels'})",2
+450,0.0010969723562966214,"frozenset({'tensor', 'create'})",2
+643,0.0010969723562966214,"frozenset({'classes', 'batch'})",2
+642,0.0010969723562966214,"frozenset({'padding', 'used'})",2
+457,0.0010969723562966214,"frozenset({'norm', 'tensor'})",2
+639,0.0010969723562966214,"frozenset({'k', 'shape'})",2
+447,0.0010969723562966214,"frozenset({'indices', 'tensor', 'ref'})",3
+666,0.0010969723562966214,"frozenset({'containing', 'tensor', 'values'})",3
+430,0.0010969723562966214,"frozenset({'d', 'dn'})",2
+671,0.0010969723562966214,"frozenset({'elements', 'order'})",2
+322,0.0010969723562966214,"frozenset({'num_labels', 'n'})",2
+321,0.0010969723562966214,"frozenset({'num_labels', 'dn'})",2
+431,0.0010969723562966214,"frozenset({'match', 'must', 'dn'})",3
+829,0.0010969723562966214,"frozenset({'SOME_STRUCTURE', 'defaults', 'SOME_DTYPE', 'length'})",4
+433,0.0010969723562966214,"frozenset({'constant', 'value'})",2
+313,0.0010969723562966214,"frozenset({'tensor', 'matches', 'shape'})",3
+833,0.0010969723562966214,"frozenset({'variable', 'used'})",2
+434,0.0010969723562966214,"frozenset({'constant', 'SOME_DTYPE'})",2
+307,0.0010969723562966214,"frozenset({'csv', 'SOME_DTYPE'})",2
+306,0.0010969723562966214,"frozenset({'csv', 'SOME_STRUCTURE'})",2
+839,0.0010969723562966214,"frozenset({'output', 'must'})",2
+840,0.0010969723562966214,"frozenset({'output', 'SOME_STRUCTURE'})",2
+680,0.0010969723562966214,"frozenset({'SOME_STRUCTURE', 'representing'})",2
+436,0.0010969723562966214,"frozenset({'single', 'value', 'spatial', 'dimensions'})",4
+672,0.0010969723562966214,"frozenset({'elements', 'batch'})",2
+0,0.0010969723562966214,"frozenset({'value', 'specifying', 'dilation_rate', 'incompatible', '!'})",5

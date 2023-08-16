@@ -1,0 +1,31 @@
+constraints:
+  dims:
+    descp: axis to rotate
+    doc_dtype: a list or tuple
+    normalized_descp:
+    - axis to rotate
+    normalized_docdtype: a D_STRUCTURE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  k:
+    descp: number of times to rotate
+    doc_dtype: int
+    normalized_descp:
+    - number of times to rotate
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - input
+  - k
+  - dims
+link: https://pytorch.org/docs/stable/torch.html#torch.rot90
+package: torch
+ret_type: Tensor
+target: rot90
+title: torch.rot90
+version: 1.5.0

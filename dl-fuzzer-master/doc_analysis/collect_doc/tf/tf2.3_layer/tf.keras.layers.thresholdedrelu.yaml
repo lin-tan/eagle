@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.layers.ThresholdedReLU
+constraints:
+  '**kwargs':
+    descp: ''
+  theta:
+    default: '1.0'
+    descp: Float >= 0. Threshold location of activation.
+inputs:
+  optional:
+  - theta
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ThresholdedReLU
+package: tensorflow
+target: ThresholdedReLU
+title: tf.keras.layers.ThresholdedReLU
+version: 2.3.0

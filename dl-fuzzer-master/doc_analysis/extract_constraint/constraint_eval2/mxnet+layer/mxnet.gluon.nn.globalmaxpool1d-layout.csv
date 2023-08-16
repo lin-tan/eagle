@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, default 'NCW'","Dimension ordering of data and out ('NCW' or 'NWC'). 'N', 'C', 'W' stands for batch, channel, and width (time) dimensions respectively. Pooling is applied on the W dimension.",NCW,prim_dtype,"dtype(int, string)",,1

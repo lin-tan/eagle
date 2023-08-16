@@ -1,0 +1,71 @@
+constraints:
+  '**kwds':
+    descp: optional keyword parameters Any further parameters are passed directly
+      to the kernel function.
+  X:
+    descp: array [n_samples_a, n_samples_a] if metric == "precomputed", or,              [n_samples_a,
+      n_features] otherwise Array of pairwise kernels between samples, or a feature
+      array.
+    ndim:
+    - '1'
+  Y:
+    default: None
+    descp: array [n_samples_b, n_features] A second feature array only if X has shape
+      [n_samples_a, n_features].
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_a,n_features]'
+  filter_params:
+    default: 'False'
+    descp: boolean Whether to filter invalid parameters or not.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  metric:
+    default: linear
+    descp: string, or callable The metric to use when calculating kernel between instances
+      in a feature array. If metric is a string, it must be one of the metrics in
+      pairwise.PAIRWISE_KERNEL_FUNCTIONS. If metric is "precomputed", X is assumed
+      to be a kernel matrix. Alternatively, if metric is a callable function, it is
+      called on each pair of instances (rows) and the resulting value recorded. The
+      callable should take two rows from X as input and return the corresponding kernel
+      value as a single number. This means that callables from :mod:`sklearn.metrics.pairwise`
+      are not allowed, as they operate on matrices, not single samples. Use the string
+      identifying the kernel instead.
+    dtype:
+    - int
+    - string
+    ndim:
+    - '0'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of jobs to use for the
+      computation. This works by breaking down the pairwise matrix into n_jobs even
+      slices and computing them in parallel. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+dependency:
+- n_features
+- n_samples_a
+inputs:
+  optional:
+  - Y
+  - metric
+  - filter_params
+  - n_jobs
+  required:
+  - X
+  - '**kwds'
+link: ''
+package: scikit-learn
+target: pairwise_kernels
+title: sklearn.metrics.pairwise.pairwise_kernels
+version: 0.24.X

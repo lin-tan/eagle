@@ -1,0 +1,136 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  bias:
+    default: None
+    descp: bias.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD bias
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  flatten:
+    default: _Null
+    descp: Whether to collapse all but the first axis of the input data tensor.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to collapse all but the first axis of the input PARAM D_STRUCTURE
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  max_bias:
+    default: None
+    descp: Maximum value of bias.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_data:
+    default: None
+    descp: Maximum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_weight:
+    default: None
+    descp: Maximum value of weight.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_bias:
+    default: None
+    descp: Minimum value of bias.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Minimum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Minimum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_weight:
+    default: None
+    descp: Minimum value of weight.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Minimum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  no_bias:
+    default: _Null
+    descp: Whether to disable bias parameter.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to disable PARAM parameter
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  num_hidden:
+    default: _Null
+    descp: Number of hidden nodes of the output.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of hidden nodes of the output
+    normalized_docdtype: D_TYPE required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  weight:
+    default: None
+    descp: weight.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - data
+  - weight
+  - bias
+  - min_data
+  - max_data
+  - min_weight
+  - max_weight
+  - min_bias
+  - max_bias
+  - num_hidden
+  - no_bias
+  - flatten
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.quantized_fully_connected
+package: mxnet
+target: quantized_fully_connected
+title: mxnet.contrib.ndarray.quantized_fully_connected
+version: 1.6.0

@@ -1,0 +1,73 @@
+constraints:
+  index:
+    descp: A Tensor of type int64. An integer representing the current worker index.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_shards:
+    descp: A Tensor of type int64. An integer representing the number of shards operating
+      in parallel.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  require_non_empty:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - require_non_empty
+  - name
+  required:
+  - input_dataset
+  - num_shards
+  - index
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ShardDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ShardDataset
+title: tf.raw_ops.ShardDataset
+version: 2.2.0

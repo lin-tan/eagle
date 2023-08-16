@@ -1,0 +1,107 @@
+# source_dir:  '../collect_doc/mxnet/mx1.6_nn_parsed/'  
+# save_to: './mxnet/mx16_layer/'
+# pat_dir: './mxnet/patterns/'
+# pat_cnt_save_dir:  './mxnet/patterns/pat_cnt/'
+
+
+source_dir:  '../collect_doc/mxnet/mx16_all_src/'  
+save_to: './mxnet/mx16_all_new/'
+pat_dir: './mxnet/patterns/'
+pat_cnt_save_dir:  './mxnet/patterns/pat_cnt/'
+
+# stop_name:
+#     # - name
+#     # - fn
+#     # - func
+
+dt_map_file: 'dtype_map.yml'
+all_target_file: 'targets.yml'
+
+pat_file:   # with calling order
+
+    # - 
+    #     file: 'deprecated_pat.yml'
+    #     method: detect_deprecated
+
+    - 
+        file: 'refine_inputs.yml'
+        method: refine_required_optional
+
+    - 
+        file: 'doc_dtype_dtype.yml'
+        method: map_doc_dtype
+        stop: False  # whether apply stop_name
+
+    - 
+        file: 'doc_dtype_structure.yml'
+        method: map_doc_dtype
+        stop: False
+
+    - 
+        file: 'doc_dtype_ndim.yml'
+        method: map_doc_dtype
+        stop: False
+    
+    - 
+        file: 'doc_dtype_enum.yml'
+        method: map_doc_dtype
+        stop: False
+        
+
+    - 
+        file: 'structure_pat.yml'
+        method: parse_descp
+        stop: True  # whether apply stop_name
+
+    - 
+        file: 'dtype_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'tensor_t_pat.yml'
+        method: parse_descp
+        stop: True
+    
+    - 
+        file: 'range_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'shape_pat.yml'
+        method: parse_descp
+        stop: True
+    
+    - 
+        file: 'ndim_pat.yml'
+        method: parse_descp
+        stop: True
+        
+
+    - 
+        file: 'enum_pat.yml'
+        method: parse_descp
+        stop: True
+
+
+    -   
+        #file: 'default_dtype_map.yml'
+        method: match_default
+        stop: True
+
+    - 
+        file: 'varname_pat.yml'
+        method: match_name
+    
+
+    -   
+        file: 'weak_pat.yml'
+        method: parse_descp
+        stop: True  
+
+    - 
+        method: post_process
+
+
+

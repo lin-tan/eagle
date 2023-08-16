@@ -1,0 +1,135 @@
+target: dtype
+pat:
+
+    '^(\w+_)?names*$':
+        dtype: string
+        ndim: 0
+        ow: True
+        append: True
+
+
+    '^(\w+_)*id$':
+        dtype: int
+        range: '[0,inf)'
+        ow: True
+        append: True
+
+    '^(\w+_)*width$':
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+    
+    '^(\w+_)*lengths*$':
+        dtype: int
+        range: '[0,inf)'
+        ow: False
+        append: False
+
+    '^\*(?!\*kwargs)(?!kwargs)(?!args)[\w\*]+':
+        structure: sequence
+        ow: True
+        append: True
+    
+    # '^ctx\w+':
+    #     dtype: context
+    #     ow: True
+    #     append: True
+
+    '^(\w+_)*axis$':
+        dtype: int
+        ndim: 0
+        ow: False
+        append: False
+
+    '^(\w+_)*axes$':
+        dtype: int
+        # structure: tuple
+        ndim: 1
+        ow: False
+        append: False
+
+
+    '^(\w+_)*weights*$':
+        dtype: numeric
+        ow: False
+        append: False
+
+    '^weight\w+':
+        dtype: numeric
+        ow: False
+        append: False
+
+    '^(eps|epsilon)$':
+        dtype: float
+        ow: False
+        append: False
+
+    '^(\w+_)*stride\d*$':
+        dtype: int
+        # range: '[0,inf)'
+        ow: False
+        append: False
+
+
+
+    '^(\w+_)*mean$':
+        dtype: float
+        ow: False
+        append: False
+
+    '^mean(_\w+)*':
+        dtype: float
+        ow: False
+        append: False
+
+    '^dim\d*$':
+        dtype: int
+        ow: False
+        append: False
+
+    '^(\w+_)dim$':
+        dtype: int
+        ow: False
+        append: False
+
+    '^num(_\w+)*':
+        dtype: int
+        range: '[0,inf)'
+        ow: True
+        append: True
+
+    '^(\w+_)*dtype$':
+        dtype: dtype
+        ow: True
+        append: True
+
+    '^(\w+_)?shape(_\w+)?$':
+        dtype: shape
+        ndim: 1
+        ow: True
+        append: True
+
+    '^(\w+_)?(index|indices)(_\w+)?$':
+        dtype: int
+        # ndim: 1
+        ow: False
+        append: False
+
+    '^((?!get).)*_prob':
+        dtype: float
+        range: '[0,1]'
+        ow: False
+        append: False
+
+    '^(\w+_)?(height|width)':
+        dtype: numeric
+        ow: False
+        append: False
+
+    '^(\w+_)?sizes*':
+        dtype: numeric
+        ow: False
+        append: False
+
+

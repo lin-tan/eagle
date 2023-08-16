@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: the input 2-D tensor
+    doc_dtype:
+    - Tensor
+  symmetric:
+    default: 'False'
+    descp: 'indicates whether `input` is symmetric. Default: `False`'
+    doc_dtype:
+    - bool
+  tol:
+    default: None
+    descp: 'the tolerance value. Default: `None`'
+    doc_dtype:
+    - python:float
+inputs:
+  optional:
+  - tol
+  - symmetric
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.matrix_rank
+package: torch
+ret_type: Tensor
+target: matrix_rank
+title: torch.matrix_rank
+version: 1.4.0

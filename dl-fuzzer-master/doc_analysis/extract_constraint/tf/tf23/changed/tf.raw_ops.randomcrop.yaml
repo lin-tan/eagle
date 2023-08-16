@@ -1,0 +1,66 @@
+constraints:
+  image:
+    descp: 'A Tensor. Must be one of the following types: uint8, int8, int16, int32,
+      int64, float32, float64. 3-D of shape [height, width, channels].'
+    dtype:
+    - numeric
+    ndim:
+    - '3'
+    shape:
+    - '[height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to be non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. An second seed to avoid seed collision.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  size:
+    descp: 'A Tensor of type int64. 1-D of length 2 containing: crop_height, crop_width..'
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- channels
+- height
+- width
+inputs:
+  optional:
+  - seed
+  - seed2
+  - name
+  required:
+  - image
+  - size
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RandomCrop
+outputs:
+- A Tensor. Has the same type as image.
+package: tensorflow
+target: RandomCrop
+title: tf.raw_ops.RandomCrop
+version: 2.3.0

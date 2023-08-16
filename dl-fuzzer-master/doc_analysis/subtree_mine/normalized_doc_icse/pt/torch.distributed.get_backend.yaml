@@ -1,0 +1,22 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on. The default is the general main process group.
+      If another specific group is specified, the calling process must be part of
+      `group`.
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    - The default is the general main process group
+    - If another specific group is specified the calling process must be part of QSTR
+    normalized_docdtype: ProcessGroup optional
+inputs:
+  optional:
+  - group
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_backend
+package: torch
+target: get_backend
+title: torch.distributed.get_backend
+version: 1.5.0

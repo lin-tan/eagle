@@ -1,0 +1,27 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D tensor.
+      Number of values to generate.'
+  start:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64. 0-D tensor. First entry in the range.'
+  stop:
+    descp: A Tensor. Must have the same type as start. 0-D tensor. Last entry in the
+      range.
+inputs:
+  optional:
+  - name
+  required:
+  - start
+  - stop
+  - num
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LinSpace
+outputs:
+- A Tensor. Has the same type as start.
+package: tensorflow
+target: LinSpace
+title: tf.raw_ops.LinSpace
+version: 2.3.0

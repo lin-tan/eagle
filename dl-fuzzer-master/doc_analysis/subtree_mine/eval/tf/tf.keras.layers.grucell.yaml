@@ -1,0 +1,12 @@
+constraints:
+  kernel_initializer:
+    default: glorot_uniform
+    descp: Initializer for the `kernel` weights matrix, used for the linear transformation
+      of the inputs. Default:`glorot_uniform`.
+    dtype:
+    - tf.string
+    ndim: 
+    - '0'
+    enum:
+    - 'glorot_uniform'
+title: tf.keras.layers.GRUCell

@@ -1,0 +1,21 @@
+constraints:
+  image:
+    dtype:
+    - tf.uint8
+    ndim:
+    - '4'
+    shape:
+    - '[N,H,W,3]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- N
+- H
+- W
+inputs:
+  required:
+  - image
+package: tensorflow_io
+target: encode_gif
+title: tfio.image.encode_gif
+version: 0.15.0

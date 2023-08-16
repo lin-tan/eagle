@@ -1,0 +1,13 @@
+constraints:
+  X: {descp: 'CSR matrix with shape (n_samples, n_features) Matrix to normalize using
+      the variance of the features.'}
+  scale: {descp: 'float array with shape (n_features,) Array of precomputed feature-wise
+      values to use for scaling.'}
+inputs:
+  optional: []
+  required: [X, scale]
+link: ''
+package: sklearn
+target: inplace_csr_column_scale
+title: sklearn.utils.sparsefuncs.inplace_csr_column_scale
+version: 0.24.2

@@ -1,0 +1,189 @@
+descp_diff:
+- filename: torch.lt.yaml
+  param: out
+- filename: torch.linspace.yaml
+  param: steps
+- filename: torch.random.manual_seed.yaml
+  param: seed
+- filename: torch.nn.functional.grid_sample.yaml
+  param: mode
+- filename: torch.stft.yaml
+  param: onesided
+- filename: torch.ge.yaml
+  param: out
+- filename: torch.distributed.new_group.yaml
+  param: ranks
+- filename: torch.floor_divide.yaml
+  param: input
+- filename: torch.floor_divide.yaml
+  param: other
+- filename: torch.cuda.comm.scatter.yaml
+  param: dim
+- filename: torch.cuda.comm.scatter.yaml
+  param: devices
+- filename: torch.cuda.comm.scatter.yaml
+  param: tensor
+- filename: torch.cuda.comm.scatter.yaml
+  param: streams
+- filename: torch.gt.yaml
+  param: out
+- filename: torch.where.yaml
+  param: x
+- filename: torch.where.yaml
+  param: y
+- filename: torch.istft.yaml
+  param: onesided
+- filename: torch.istft.yaml
+  param: input
+- filename: torch.manual_seed.yaml
+  param: seed
+- filename: torch.cuda.comm.broadcast.yaml
+  param: devices
+- filename: torch.cuda.comm.broadcast.yaml
+  param: tensor
+- filename: torch.cuda.comm.gather.yaml
+  param: tensors
+- filename: torch.cuda.comm.gather.yaml
+  param: destination
+- filename: torch.le.yaml
+  param: out
+- filename: torch.digamma.yaml
+  param: out
+- filename: torch.cuda.comm.broadcast_coalesced.yaml
+  param: tensors
+- filename: torch.cuda.comm.broadcast_coalesced.yaml
+  param: devices
+- filename: torch.is_complex.yaml
+  param: input
+- filename: torch.hub.load.yaml
+  param: model
+- filename: torch.hub.load.yaml
+  param: verbose
+- filename: torch.hub.load.yaml
+  param: force_reload
+- filename: torch.is_nonzero.yaml
+  param: input
+- filename: torch.ne.yaml
+  param: out
+- filename: torch.distributed.init_process_group.yaml
+  param: timeout
+- filename: torch.is_floating_point.yaml
+  param: input
+- filename: torch.eq.yaml
+  param: out
+- filename: torch.distributed.rpc.init_rpc.yaml
+  param: backend
+- filename: torch.logspace.yaml
+  param: steps
+- filename: torch.div.yaml
+  param: input
+- filename: torch.div.yaml
+  param: other
+param_diff:
+- filename: torch.autograd.gradcheck.yaml
+  param:
+  - check_grad_dtypes
+- filename: torch.stft.yaml
+  param:
+  - return_complex
+- filename: torch.argmin2.yaml
+  param:
+  - out
+- filename: torch.cuda.comm.scatter.yaml
+  param:
+  - out
+- filename: torch.istft.yaml
+  param:
+  - return_complex
+- filename: torch.cuda.comm.broadcast.yaml
+  param:
+  - out
+- filename: torch.cuda.comm.gather.yaml
+  param:
+  - out
+- filename: torch.hub.load.yaml
+  param:
+  - source
+  - github
+  - repo_or_dir
+- filename: torch.autograd.gradgradcheck.yaml
+  param:
+  - check_grad_dtypes
+uniqu_pt1.6_parsed:
+- torch.div2.yaml
+- torch.nn.quantized.functional.avg_pool2d.yaml
+- torch.min22.yaml
+- torch.max22.yaml
+- torch.quantization.prepare_qat.yaml
+- torch.addr.yaml
+- torch.nn.quantized.functional.adaptive_avg_pool2d.yaml
+- torch.utils.mobile_optimizer.optimize_for_mobile.yaml
+- torch.quantization.quantize.yaml
+- torch.quantization.swap_module.yaml
+- torch.onnx.export.yaml
+- torch.quantization.convert.yaml
+- torch.quantization.propagate_qconfig_.yaml
+- torch.quantization.add_observer_.yaml
+- torch.nn.quantized.functional.linear.yaml
+- torch.nn.quantized.functional.conv2d.yaml
+- torch.quantization.quantize_qat.yaml
+- torch.nn.quantized.functional.interpolate.yaml
+- torch.ger.yaml
+- torch.quantization.fuse_modules.yaml
+- torch.nn.quantized.functional.conv1d.yaml
+- torch.quantization.prepare.yaml
+- torch.nn.quantized.functional.hardswish.yaml
+- torch.nn.quantized.functional.relu.yaml
+- torch.nn.quantized.functional.conv3d.yaml
+uniqu_pt1.7_parsed:
+- torch.gcd.yaml
+- torch.isreal.yaml
+- torch.fft.irfft.yaml
+- torch.quantile.yaml
+- torch.complex.yaml
+- torch.polar.yaml
+- torch.fft.irfftn.yaml
+- torch.kaiser_window.yaml
+- torch.fft.hfft.yaml
+- torch.distributed.store.wait.yaml
+- torch.signbit.yaml
+- torch.quantile2.yaml
+- torch.fft.fft.yaml
+- torch.fft.ifftn.yaml
+- torch.lcm.yaml
+- torch.linalg.norm.yaml
+- torch.fft.ifft.yaml
+- torch.nansum.yaml
+- torch.fft.rfftn.yaml
+- torch.outer.yaml
+- torch.nanquantile.yaml
+- torch.nextafter.yaml
+- torch.vdot.yaml
+- torch.heaviside.yaml
+- torch.i0.yaml
+- torch.clamp22.yaml
+- torch.fft.ihfft.yaml
+- torch.dstack.yaml
+- torch.minimum.yaml
+- torch.fft.fftn.yaml
+- torch.movedim.yaml
+- torch.isneginf.yaml
+- torch.vstack.yaml
+- torch.amin.yaml
+- torch.maximum.yaml
+- torch.nn.utils.prune.identity.yaml
+- torch.isposinf.yaml
+- torch.nansum2.yaml
+- torch.set_deterministic.yaml
+- torch.exp2.yaml
+- torch.hypot.yaml
+- torch.logit.yaml
+- torch.hstack.yaml
+- torch.amax.yaml
+- torch.sub.yaml
+- torch.fft.rfft.yaml
+- torch.isnan.yaml
+- torch.clone.yaml
+- torch.cuda.set_rng_state_all.yaml
+- torch.clamp2.yaml
+- torch.count_nonzero.yaml

@@ -1,0 +1,128 @@
+constraints:
+  boxes:
+    descp: A Tensor of type float32. A 4-D float tensor of shape [batch_size, num_boxes,
+      q, 4]. If q is 1 then same boxes are used for all classes otherwise, if q is
+      equal to number of classes, class-specific boxes are used.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '4'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[batch_size,num_boxes,q,4]'
+    tensor_t:
+    - tf.tensor
+  clip_boxes:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true, assume the box coordinates
+      are between [0, 1] and clip the output boxes if they fall beyond [0, 1]. If
+      false, do not do clipping and output the box coordinates as it is.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  iou_threshold:
+    descp: A Tensor of type float32. A 0-D float tensor representing the threshold
+      for deciding whether boxes overlap too much with respect to IOU.
+    dtype:
+    - float
+    - tf.bool
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  max_output_size_per_class:
+    descp: A Tensor of type int32. A scalar integer tensor representing the maximum
+      number of boxes to be selected by non max suppression per class
+    dtype:
+    - int
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  max_total_size:
+    descp: A Tensor of type int32. A scalar representing maximum number of boxes retained
+      over all classes.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  pad_per_class:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If false, the output nmsed boxes,
+      scores and classes are padded/clipped to max_total_size. If true, the output
+      nmsed boxes, scores and classes are padded to be of length max_size_per_class*num_classes,
+      unless it exceeds max_total_size in which case it is clipped to max_total_size.
+      Defaults to false.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  score_threshold:
+    descp: A Tensor of type float32. A 0-D float tensor representing the threshold
+      for deciding when to remove boxes based on score.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  scores:
+    descp: A Tensor of type float32. A 3-D float tensor of shape [batch_size, num_boxes,
+      num_classes] representing a single score corresponding to each box (each row
+      of boxes).
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '3'
+    shape:
+    - '[batch_size,num_boxes,num_classes]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch_size
+- num_boxes
+- num_classes
+- q
+inputs:
+  optional:
+  - pad_per_class
+  - clip_boxes
+  - name
+  required:
+  - boxes
+  - scores
+  - max_output_size_per_class
+  - max_total_size
+  - iou_threshold
+  - score_threshold
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CombinedNonMaxSuppression
+outputs:
+- A tuple of Tensor objects (nmsed_boxes, nmsed_scores, nmsed_classes, valid_detections).
+- nmsed_boxes: A Tensor of type float32.
+- nmsed_scores: A Tensor of type float32.
+- nmsed_classes: A Tensor of type float32.
+- valid_detections: A Tensor of type int32.
+package: tensorflow
+target: CombinedNonMaxSuppression
+title: tf.raw_ops.CombinedNonMaxSuppression
+version: 2.2.0

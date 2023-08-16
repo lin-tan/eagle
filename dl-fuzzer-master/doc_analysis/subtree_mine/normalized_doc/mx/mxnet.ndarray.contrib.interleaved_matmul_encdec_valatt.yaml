@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  attention:
+    default: None
+    descp: Attention maps
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Attention maps
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  heads:
+    default: _Null
+    descp: Set number of heads
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Set number of heads
+    normalized_docdtype: D_TYPE, required
+  keys_values:
+    default: None
+    descp: Keys and values interleaved
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Keys and values interleaved
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - keys_values
+  - attention
+  - heads
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.interleaved_matmul_encdec_valatt
+package: mxnet
+target: interleaved_matmul_encdec_valatt
+title: mxnet.ndarray.contrib.interleaved_matmul_encdec_valatt
+version: 1.6.0

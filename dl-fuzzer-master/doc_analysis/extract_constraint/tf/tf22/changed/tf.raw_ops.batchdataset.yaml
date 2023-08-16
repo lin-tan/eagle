@@ -1,0 +1,58 @@
+constraints:
+  batch_size:
+    descp: A Tensor of type int64. A scalar representing the number of elements to
+      accumulate in a batch.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - batch_size
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: BatchDataset
+title: tf.raw_ops.BatchDataset
+version: 2.2.0

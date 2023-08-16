@@ -1,0 +1,91 @@
+constraints:
+  go_backwards:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  implementation:
+    default:
+    - '2'
+    dtype:
+    - int
+    enum:
+    - 1
+    - 2
+    ndim:
+    - '0'
+  return_sequences:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  return_state:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  stateful:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  time_major:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  unit_forget_bias:
+    default:
+    - 'True'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  units:
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[1, 500]'
+  unroll:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  use_bias:
+    default:
+    - 'True'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - use_bias
+  - unit_forget_bias
+  - return_sequences
+  - return_state
+  - go_backwards
+  - stateful
+  - unroll
+  - time_major
+  - implementation
+  required:
+  - units
+package: tensorflow
+target: LSTM
+title: tf.keras.layers.LSTM
+version: 2.3.0

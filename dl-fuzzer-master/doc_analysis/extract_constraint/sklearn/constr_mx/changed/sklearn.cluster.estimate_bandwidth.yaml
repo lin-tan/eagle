@@ -1,0 +1,47 @@
+constraints:
+  X:
+    descp: array-like of shape (n_samples, n_features) Input points.
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of parallel jobs to run
+      for neighbors search. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+  n_samples:
+    default: None
+    descp: int, optional The number of samples to use. If not given, all samples are
+      used.
+    dtype:
+    - int
+  quantile:
+    default: '0.3'
+    descp: float, default 0.3 should be between [0, 1] 0.5 means that the median of
+      all pairwise distances is used.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  random_state:
+    default: '0'
+    descp: int, RandomState instance or None (default) The generator used to randomly
+      select the samples from input points for bandwidth estimation. Use an int to
+      make the randomness deterministic. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - quantile
+  - n_samples
+  - random_state
+  - n_jobs
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: estimate_bandwidth
+title: sklearn.cluster.estimate_bandwidth
+version: 0.24.X

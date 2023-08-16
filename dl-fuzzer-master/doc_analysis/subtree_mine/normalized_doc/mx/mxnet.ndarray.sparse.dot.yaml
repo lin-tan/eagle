@@ -1,0 +1,79 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  forward_stype:
+    default: _Null
+    descp: The desired storage type of the forward output given by user, if thecombination
+      of input storage types and this hint does not matchany implemented ones, the
+      dot operator will perform fallback operationand still produce an output of the
+      desired storage type.
+    doc_dtype: '{None, ''csr'', ''default'', ''row_sparse''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The desired storage type of the forward output given by user, if thecombination
+      of input storage types and this hint does not matchany implemented ones, the
+      dot operator will perform fallback operationand still produce an output of the
+      desired storage type
+    normalized_docdtype: None, QSTR ,optional, default QSTR
+  lhs:
+    default: None
+    descp: The first input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The first input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rhs:
+    default: None
+    descp: The second input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The second input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  transpose_a:
+    default: _Null
+    descp: If true then transpose the first input before dot.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If CONSTANT_BOOL then transpose the first input before dot
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  transpose_b:
+    default: _Null
+    descp: If true then transpose the second input before dot.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If CONSTANT_BOOL then transpose the second input before dot
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - transpose_a
+  - transpose_b
+  - forward_stype
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.dot
+package: mxnet
+target: dot
+title: mxnet.ndarray.sparse.dot
+version: 1.6.0

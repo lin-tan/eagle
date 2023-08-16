@@ -1,0 +1,39 @@
+constraints:
+  col_pooling_sequence:
+    descp: A Tensor of type int64. column pooling sequence, form pooling region with
+      row_pooling sequence.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  orig_input_tensor_shape:
+    descp: A Tensor of type int64. Original input tensor shape for fractional_avg_pool
+  out_backprop:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      int64. 4-D with shape [batch, height, width, channels]. Gradients w.r.t. the
+      output of fractional_avg_pool.'
+  overlapping:
+    default: 'False'
+    descp: 'An optional bool. Defaults to False. When set to True, it means when pooling,
+      the values at the boundary of adjacent pooling cells are used by both cells.
+      For example: index 0 1 2 3 4 value 20 5 16 3 7 If the pooling sequence is [0,
+      2, 4], then 16, at index 2 will be used twice. The result would be [41/3, 26/3]
+      for fractional avg pooling.'
+  row_pooling_sequence:
+    descp: A Tensor of type int64. row pooling sequence, form pooling region with
+      col_pooling_sequence.
+inputs:
+  optional:
+  - overlapping
+  - name
+  required:
+  - orig_input_tensor_shape
+  - out_backprop
+  - row_pooling_sequence
+  - col_pooling_sequence
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/FractionalAvgPoolGrad
+outputs:
+- A Tensor. Has the same type as out_backprop.
+package: tensorflow
+target: FractionalAvgPoolGrad
+title: tf.raw_ops.FractionalAvgPoolGrad
+version: 2.2.0

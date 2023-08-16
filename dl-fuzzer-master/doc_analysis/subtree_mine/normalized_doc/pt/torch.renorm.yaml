@@ -1,0 +1,47 @@
+constraints:
+  dim:
+    descp: the dimension to slice over to get the sub-tensors
+    doc_dtype: int
+    normalized_descp:
+    - the dimension to slice over to get the sub D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  maxnorm:
+    descp: the maximum norm to keep each sub-tensor under
+    doc_dtype: float
+    normalized_descp:
+    - the maximum norm to keep each sub D_STRUCTURE under
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  p:
+    descp: the power for the norm computation
+    doc_dtype: float
+    normalized_descp:
+    - the power for the norm computation
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - p
+  - dim
+  - maxnorm
+link: https://pytorch.org/docs/stable/torch.html#torch.renorm
+package: torch
+ret_type: Tensor
+target: renorm
+title: torch.renorm
+version: 1.5.0

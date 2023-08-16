@@ -1,0 +1,70 @@
+aliases:
+- tf.compat.v1.keras.layers.InputLayer
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  batch_size:
+    default: None
+    descp: Optional input batch size (integer or None).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional input batch size BSTR
+  dtype:
+    default: None
+    descp: Datatype of the input.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Datatype of the input
+  input_shape:
+    default: None
+    descp: Shape tuple (not including the batch axis), or `TensorShape`instance (not
+      including the batch axis).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape D_STRUCTURE BSTR or QSTR instance BSTR
+  input_tensor:
+    default: None
+    descp: Optional tensor to use as layer input instead of creating a placeholder.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional D_STRUCTURE to use as layer input instead of creating a placeholder
+  name:
+    default: None
+    descp: Name of the layer (string).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Name of the layer BSTR
+  ragged:
+    default: 'False'
+    descp: Boolean, whether the placeholder created is meant to be ragged. In this
+      case, values of 'None' in the 'shape' argument represent ragged dimensions.
+      For more information about RaggedTensors, seehttps://www.tensorflow.org/guide/ragged_tensors
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE whether the placeholder created is meant to be ragged
+    - In this case values of QSTR in the QSTR argument represent ragged dimensions
+    - For more information about RaggedTensors seehttps www tensorflow org guide ragged_tensors
+  sparse:
+    default: 'False'
+    descp: Boolean, whether the placeholder created is meant to be sparse.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE whether the placeholder created is meant to be sparse
+inputs:
+  optional:
+  - input_shape
+  - batch_size
+  - dtype
+  - input_tensor
+  - sparse
+  - name
+  - ragged
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/InputLayer
+package: tensorflow
+target: InputLayer
+title: tf.keras.layers.InputLayer
+version: 2.1.0

@@ -1,0 +1,46 @@
+constraints:
+  epsilon:
+    descp: A Tensor of type float32. float; The required maximum approximation error.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  example_weights:
+    descp: A Tensor of type float32. float; Rank 1 Tensor with weights per instance.
+    dtype:
+    - tf.float32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  float_values:
+    descp: A list of Tensor objects with type float32. float; List of Rank 1 Tensors
+      each containing values for a single feature.
+    dtype:
+    - tf.float32
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - float_values
+  - example_weights
+  - epsilon
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesMakeQuantileSummaries
+outputs:
+- A list with the same length as float_values of Tensor objects with type float32.
+package: tensorflow
+target: BoostedTreesMakeQuantileSummaries
+title: tf.raw_ops.BoostedTreesMakeQuantileSummaries
+version: 2.3.0

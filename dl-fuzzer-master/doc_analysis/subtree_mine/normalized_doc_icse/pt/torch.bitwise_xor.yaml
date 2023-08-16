@@ -1,0 +1,29 @@
+constraints:
+  input:
+    descp: the first input tensor
+    normalized_descp:
+    - the first input D_STRUCTURE
+  other:
+    descp: the second input tensor
+    normalized_descp:
+    - the second PARAM D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.bitwise_xor
+package: torch
+ret_type: Tensor
+target: bitwise_xor
+title: torch.bitwise_xor
+version: 1.5.0

@@ -1,0 +1,14 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.mean
+package: torch
+ret_type: Tensor
+target: mean
+title: torch.mean
+version: 1.5.0

@@ -1,0 +1,30 @@
+constraints:
+  n_class:
+    default: '10'
+    descp: integer, between 0 and 10, optional (default=10) The number of classes
+      to return.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  return_X_y:
+    default: 'False'
+    descp: boolean, default=False. If True, returns ``(data, target)`` instead of
+      a Bunch object. See below for more information about the `data` and `target`
+      object.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_class
+  - return_X_y
+  required: []
+link: ''
+package: sklearn
+target: load_digits
+title: sklearn.datasets.load_digits
+version: 0.24.2

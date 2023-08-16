@@ -1,0 +1,36 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sparse_matrix:
+    descp: A Tensor of type variant. A (possibly batched) CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - sparse_matrix
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CSRSparseMatrixToSparseTensor
+outputs:
+- A tuple of Tensor objects (indices, values, dense_shape).
+- indices: A Tensor of type int64.
+- values: A Tensor of type type.
+- dense_shape: A Tensor of type int64.
+package: tensorflow
+target: CSRSparseMatrixToSparseTensor
+title: tf.raw_ops.CSRSparseMatrixToSparseTensor
+version: 2.2.0

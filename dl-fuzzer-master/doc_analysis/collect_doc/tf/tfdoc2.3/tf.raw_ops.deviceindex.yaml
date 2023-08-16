@@ -1,0 +1,18 @@
+constraints:
+  device_names:
+    descp: A list of strings.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - device_names
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DeviceIndex
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: DeviceIndex
+title: tf.raw_ops.DeviceIndex
+version: 2.3.0

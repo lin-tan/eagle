@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: A Tensor of type resource.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/VariableShape
+outputs:
+- A Tensor of type out_type.
+package: tensorflow
+target: VariableShape
+title: tf.raw_ops.VariableShape
+version: 2.2.0

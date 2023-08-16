@@ -1,0 +1,42 @@
+aliases:
+- tf.Assert
+- tf.compat.v1.Assert
+- tf.compat.v1.debugging.Assert
+constraints:
+  condition:
+    descp: The condition to evaluate.
+  data:
+    descp: The tensors to print out when condition is false.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  summarize:
+    default: None
+    descp: Print this many entries of each tensor.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - summarize
+  - name
+  required:
+  - condition
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/debugging/Assert
+outputs:
+- assert_op: An Operation that, when executed, raises a tf.errors.InvalidArgumentError
+    if condition is not true.
+package: tensorflow
+target: Assert
+title: tf.debugging.Assert
+version: 2.2.0

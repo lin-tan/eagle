@@ -1,0 +1,11 @@
+constraints:
+  estimators: {descp: list of estimators objects or classes Estimators to generated
+      checks for.}
+inputs:
+  optional: []
+  required: [estimators]
+link: ''
+package: sklearn
+target: parametrize_with_checks
+title: sklearn.utils.estimator_checks.parametrize_with_checks
+version: 0.24.2

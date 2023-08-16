@@ -1,0 +1,9 @@
+constraints:
+  mom:
+    default: None
+    descp: Momentum
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.sgd_mom_update

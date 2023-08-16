@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - string
+    ndim:
+    - '0'
+title: mxnet.ndarray.random.negative_binomial_like

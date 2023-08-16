@@ -1,0 +1,47 @@
+sklearn.datasets.make_friedman3 = make_friedman3(n_samples=100, noise=0.0, random_state=None)
+    Generate the "Friedman #3" regression problem
+    
+    This dataset is described in Friedman [1] and Breiman [2].
+    
+    Inputs `X` are 4 independent features uniformly distributed on the
+    intervals::
+    
+        0 <= X[:, 0] <= 100,
+        40 * pi <= X[:, 1] <= 560 * pi,
+        0 <= X[:, 2] <= 1,
+        1 <= X[:, 3] <= 11.
+    
+    The output `y` is created according to the formula::
+    
+        y(X) = arctan((X[:, 1] * X[:, 2] - 1 / (X[:, 1] * X[:, 3])) / X[:, 0]) + noise * N(0, 1).
+    
+    Read more in the :ref:`User Guide <sample_generators>`.
+    
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The number of samples.
+    
+    noise : float, optional (default=0.0)
+        The standard deviation of the gaussian noise applied to the output.
+    
+    random_state : int, RandomState instance or None (default)
+        Determines random number generation for dataset noise. Pass an int
+        for reproducible output across multiple function calls.
+        See :term:`Glossary <random_state>`.
+    
+    Returns
+    -------
+    X : array of shape [n_samples, 4]
+        The input samples.
+    
+    y : array of shape [n_samples]
+        The output values.
+    
+    References
+    ----------
+    .. [1] J. Friedman, "Multivariate adaptive regression splines", The Annals
+           of Statistics 19 (1), pages 1-67, 1991.
+    
+    .. [2] L. Breiman, "Bagging predictors", Machine Learning 24,
+           pages 123-140, 1996.

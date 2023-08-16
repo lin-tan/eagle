@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: A list of at least 1 Tensor objects with the same type.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ShapeN
+outputs:
+- A list with the same length as input of Tensor objects with type out_type.
+package: tensorflow
+target: ShapeN
+title: tf.raw_ops.ShapeN
+version: 2.3.0

@@ -1,0 +1,19 @@
+constraints:
+  optimization_blacklist:
+    default: None
+    descp: A set with type of MobileOptimizerType. When set is not passed, optimization
+      method will run all the optimizer pass; otherwise, optimizer method will run
+      the optimization pass that is not included inside optimization_blacklist.
+    sig_dtype: Set[torch._C.MobileOptimizerType]
+  script_module:
+    descp: An instance of torch script module with type of ScriptModule.
+inputs:
+  optional:
+  - optimization_blacklist
+  required:
+  - script_module
+link: https://pytorch.org/docs/1.6.0/mobile_optimizer.html#torch.utils.mobile_optimizer.optimize_for_mobile
+package: torch
+target: optimize_for_mobile
+title: torch.utils.mobile_optimizer.optimize_for_mobile
+version: 1.6.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"float 1D tensor of scales to use, size should match `input.size(axis)`",,prim_dtype,dtype(torch.float32),,1
+Tensor,"float 1D tensor of scales to use, size should match `input.size(axis)`",,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,"float 1D tensor of scales to use, size should match `input.size(axis)`",,shape,ndim(1),,1

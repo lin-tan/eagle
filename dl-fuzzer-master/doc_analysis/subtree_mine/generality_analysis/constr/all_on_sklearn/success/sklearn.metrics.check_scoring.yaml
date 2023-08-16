@@ -1,0 +1,38 @@
+constraints:
+  allow_none:
+    default: 'False'
+    descp: 'boolean, optional, default: False If no scoring is specified and the estimator
+      has no score function, we can either return None or raise an exception.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  estimator:
+    descp: estimator object implementing 'fit' The object to use to fit the data.
+    dtype:
+    - boolean
+    enum:
+    - fit
+    ndim:
+    - '0'
+  scoring:
+    default: None
+    descp: 'string, callable or None, optional, default: None A string (see model
+      evaluation documentation) or a scorer callable object / function with signature
+      ``scorer(estimator, X, y)``.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - scoring
+  - allow_none
+  required:
+  - estimator
+link: ''
+package: sklearn
+target: check_scoring
+title: sklearn.metrics.check_scoring
+version: 0.24.2

@@ -1,0 +1,34 @@
+constraints:
+  dim:
+    descp: the dimension or dimensions to reduce.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - keepdim
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.logsumexp.html#torch.logsumexp#torch.logsumexp
+package: torch
+target: logsumexp
+title: torch.logsumexp
+version: 1.7.0

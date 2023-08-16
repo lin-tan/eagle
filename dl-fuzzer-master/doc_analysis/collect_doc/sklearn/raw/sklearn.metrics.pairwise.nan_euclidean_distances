@@ -1,0 +1,69 @@
+sklearn.metrics.pairwise.nan_euclidean_distances = nan_euclidean_distances(X, Y=None, squared=False, missing_values=nan, copy=True)
+    Calculate the euclidean distances in the presence of missing values.
+    
+    Compute the euclidean distance between each pair of samples in X and Y,
+    where Y=X is assumed if Y=None. When calculating the distance between a
+    pair of samples, this formulation ignores feature coordinates with a
+    missing value in either sample and scales up the weight of the remaining
+    coordinates:
+    
+        dist(x,y) = sqrt(weight * sq. distance from present coordinates)
+        where,
+        weight = Total # of coordinates / # of present coordinates
+    
+    For example, the distance between ``[3, na, na, 6]`` and ``[1, na, 4, 5]``
+    is:
+    
+        .. math::
+            \sqrt{\frac{4}{2}((3-1)^2 + (6-5)^2)}
+    
+    If all the coordinates are missing or if there are no common present
+    coordinates then NaN is returned for that pair.
+    
+    Read more in the :ref:`User Guide <metrics>`.
+    
+    .. versionadded:: 0.22
+    
+    Parameters
+    ----------
+    X : array-like, shape=(n_samples_1, n_features)
+    
+    Y : array-like, shape=(n_samples_2, n_features)
+    
+    squared : bool, default=False
+        Return squared Euclidean distances.
+    
+    missing_values : np.nan or int, default=np.nan
+        Representation of missing value
+    
+    copy : boolean, default=True
+        Make and use a deep copy of X and Y (if Y exists)
+    
+    Returns
+    -------
+    distances : array, shape (n_samples_1, n_samples_2)
+    
+    Examples
+    --------
+    >>> from sklearn.metrics.pairwise import nan_euclidean_distances
+    >>> nan = float("NaN")
+    >>> X = [[0, 1], [1, nan]]
+    >>> nan_euclidean_distances(X, X) # distance between rows of X
+    array([[0.        , 1.41421356],
+           [1.41421356, 0.        ]])
+    
+    >>> # get distance to origin
+    >>> nan_euclidean_distances(X, [[0, 0]])
+    array([[1.        ],
+           [1.41421356]])
+    
+    References
+    ----------
+    * John K. Dixon, "Pattern Recognition with Partly Missing Data",
+      IEEE Transactions on Systems, Man, and Cybernetics, Volume: 9, Issue:
+      10, pp. 617 - 621, Oct. 1979.
+      http://ieeexplore.ieee.org/abstract/document/4310090/
+    
+    See also
+    --------
+    paired_distances : distances between pairs of elements of X and Y.

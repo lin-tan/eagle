@@ -1,0 +1,14 @@
+constraints:
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array of [[batch_index, x1, y1, x2, y2]].
+      (x1, y1) and (x2, y2) are top left and down right corners of designated region
+      of interest. batch_index indicates the index of corresponding image in the input
+      data
+    doc_dtype:
+    - Symbol
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+title: mxnet.contrib.ndarray.PSROIPooling

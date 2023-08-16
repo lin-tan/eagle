@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.keras.layers.UpSampling2D
+constraints:
+  '**kwargs':
+    descp: ''
+  data_format:
+    default: None
+    descp: A string, one of channels_last (default) or channels_first. The ordering
+      of the dimensions in the inputs. channels_last corresponds to inputs with shape
+      (batch_size, height, width, channels) while channels_first corresponds to inputs
+      with shape (batch_size, channels, height, width). It defaults to the image_data_format
+      value found in your Keras config file at ~/.keras/keras.json. If you never set
+      it, then it will be "channels_last".
+  interpolation:
+    default: nearest
+    descp: A string, one of nearest or bilinear.
+  size:
+    default: (2,2)
+    descp: Int, or tuple of 2 integers. The upsampling factors for rows and columns.
+inputs:
+  optional:
+  - size
+  - data_format
+  - interpolation
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling2D
+package: tensorflow
+target: UpSampling2D
+title: tf.keras.layers.UpSampling2D
+version: 2.3.0

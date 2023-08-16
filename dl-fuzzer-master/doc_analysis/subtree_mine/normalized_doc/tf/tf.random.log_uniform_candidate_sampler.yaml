@@ -1,0 +1,66 @@
+aliases:
+- tf.compat.v1.nn.log_uniform_candidate_sampler
+- tf.compat.v1.random.log_uniform_candidate_sampler
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  num_sampled:
+    descp: An `int`.  The number of classes to randomly sample.
+    normalized_descp:
+    - An D_TYPE
+    - The number of classes to randomly sample
+  num_true:
+    descp: An `int`.  The number of target classes per training example.
+    normalized_descp:
+    - An D_TYPE
+    - The number of target classes per training example
+  range_max:
+    descp: An `int`. The number of possible classes.
+    normalized_descp:
+    - An D_TYPE
+    - The number of possible classes
+  seed:
+    default: None
+    descp: An `int`. An operation-specific seed. Default is 0.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An D_TYPE
+    - An operation specific seed
+    - Default is CONSTANT_NUM
+  true_classes:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE and shape BSTR
+    - The target classes
+  unique:
+    descp: A `bool`. Determines whether all sampled classes in a batch are unique.
+    normalized_descp:
+    - A D_TYPE
+    - Determines whether all sampled classes in a batch are unique
+inputs:
+  optional:
+  - seed
+  - name
+  required:
+  - true_classes
+  - num_true
+  - num_sampled
+  - unique
+  - range_max
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/random/log_uniform_candidate_sampler
+outputs:
+- sampled_candidates: A tensor of type `int64` and shape `[num_sampled]`. The sampled
+    classes.
+- true_expected_count: A tensor of type `float`.  Same shape as`true_classes`. The
+    expected counts under the sampling distribution of each of `true_classes`.
+- sampled_expected_count: A tensor of type `float`. Same shape as`sampled_candidates`.
+    The expected counts under the sampling distribution of each of `sampled_candidates`.
+package: tensorflow
+target: log_uniform_candidate_sampler
+title: tf.random.log_uniform_candidate_sampler
+version: 2.1.0

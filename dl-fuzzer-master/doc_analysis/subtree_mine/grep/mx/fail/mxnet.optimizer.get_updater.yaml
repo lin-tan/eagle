@@ -1,0 +1,14 @@
+constraints:
+  optimizer:
+    descp: The optimizer.
+    doc_dtype:
+    - Optimizer
+inputs:
+  optional: []
+  required:
+  - optimizer
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/optimizer/index.html#mxnet.optimizer.get_updater
+package: mxnet
+target: get_updater
+title: mxnet.optimizer.get_updater
+version: 1.6.0

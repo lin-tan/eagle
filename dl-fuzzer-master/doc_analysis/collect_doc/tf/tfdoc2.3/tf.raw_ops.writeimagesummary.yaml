@@ -1,0 +1,34 @@
+constraints:
+  bad_color:
+    descp: A Tensor of type uint8.
+  max_images:
+    default: '3'
+    descp: An optional int that is >= 1. Defaults to 3.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  step:
+    descp: A Tensor of type int64.
+  tag:
+    descp: A Tensor of type string.
+  tensor:
+    descp: 'A Tensor. Must be one of the following types: uint8, float32, half.'
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - max_images
+  - name
+  required:
+  - writer
+  - step
+  - tag
+  - tensor
+  - bad_color
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/WriteImageSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteImageSummary
+title: tf.raw_ops.WriteImageSummary
+version: 2.3.0

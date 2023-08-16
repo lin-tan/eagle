@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"a tuple of (`sampled_candidates`, `true_expected_count`,`sampled_expected_count`) returned by a `*_candidate_sampler` function. (if None, we default to `log_uniform_candidate_sampler`)",None,nonprim_dtype,structure(tuple),,1
+,"a tuple of (`sampled_candidates`, `true_expected_count`,`sampled_expected_count`) returned by a `*_candidate_sampler` function. (if None, we default to `log_uniform_candidate_sampler`)",None,shape,ndim(1),,1

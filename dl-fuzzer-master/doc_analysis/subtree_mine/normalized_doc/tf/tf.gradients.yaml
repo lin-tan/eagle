@@ -1,0 +1,82 @@
+constraints:
+  aggregation_method:
+    default: None
+    descp: Specifies the method used to combine gradient terms. Accepted values are
+      constants defined in the class `AggregationMethod`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Specifies the method used to combine gradient terms
+    - Accepted values are constants defined in the class QSTR
+  gate_gradients:
+    default: 'False'
+    descp: If True, add a tuple around the gradients returned for an operations.  This
+      avoids some race conditions.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, add a D_STRUCTURE around the gradients returned for an operations
+    - This avoids some race conditions
+  grad_ys:
+    default: None
+    descp: Optional. A `Tensor` or list of tensors the same size as`ys` and holding
+      the gradients computed for each y in `ys`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Optional
+    - A D_STRUCTURE of D_STRUCTURE the same size as PARAM and holding the gradients
+      computed for each y in PARAM
+  name:
+    default: gradients
+    descp: Optional name to use for grouping all the gradient ops together. defaults
+      to 'gradients'.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Optional name to use for grouping all the gradient ops together
+    - defaults to QSTR
+  stop_gradients:
+    default: None
+    descp: Optional. A `Tensor` or list of tensors not to differentiate through.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Optional
+    - A D_STRUCTURE of D_STRUCTURE not to differentiate through
+  unconnected_gradients:
+    default: tf.UnconnectedGradients.NONE
+    descp: Optional. Specifies the gradient value returned when the given input tensors
+      are unconnected. Accepted values are constants defined in the class `tf.UnconnectedGradients`
+      and the default value is`none`.
+    normalized_default: tf UnconnectedGradients NONE
+    normalized_descp:
+    - ONE_WORD Optional
+    - Specifies the gradient value returned when the given input D_STRUCTURE are unconnected
+    - Accepted values are constants defined in the class tf UnconnectedGradients QSTR
+      none
+  xs:
+    descp: A `Tensor` or list of tensors to be used for differentiation.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE to be used for differentiation
+  ys:
+    descp: A `Tensor` or list of tensors to be differentiated.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE to be differentiated
+exceptions:
+- LookupError: if one of the operations between `x` and `y` does not have a registered
+    gradient function.
+- ValueError: if the arguments are invalid.
+- RuntimeError: if called in Eager mode.
+inputs:
+  optional:
+  - grad_ys
+  - name
+  - gate_gradients
+  - aggregation_method
+  - stop_gradients
+  - unconnected_gradients
+  required:
+  - ys
+  - xs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/gradients
+outputs: A list of `sum(dy/dx)` for each x in `xs`.
+package: tensorflow
+target: gradients
+title: tf.gradients
+version: 2.1.0

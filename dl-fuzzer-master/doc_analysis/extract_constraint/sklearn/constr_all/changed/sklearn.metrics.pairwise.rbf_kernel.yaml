@@ -1,0 +1,50 @@
+constraints:
+  X:
+    descp: array of shape (n_samples_X, n_features)
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples_x,n_features]'
+    structure:
+    - list(shape)
+  Y:
+    default: None
+    descp: array of shape (n_samples_Y, n_features)
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples_y,n_features]'
+    structure:
+    - list(shape)
+  gamma:
+    default: None
+    descp: float, default None If None, defaults to 1.0 / n_features
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples_x
+- n_samples_y
+inputs:
+  optional:
+  - Y
+  - gamma
+  required:
+  - X
+link: ''
+package: sklearn
+target: rbf_kernel
+title: sklearn.metrics.pairwise.rbf_kernel
+version: 0.24.2

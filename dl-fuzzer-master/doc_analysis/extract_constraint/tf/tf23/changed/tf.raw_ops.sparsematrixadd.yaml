@@ -1,0 +1,46 @@
+constraints:
+  a:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  alpha:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, complex64,
+      complex128. A constant scalar.'
+    tensor_t:
+    - tf.tensor
+  b:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  beta:
+    descp: A Tensor. Must have the same type as alpha. A constant scalar.
+    dtype:
+    - dtype:&alpha
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - b
+  - alpha
+  - beta
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseMatrixAdd
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixAdd
+title: tf.raw_ops.SparseMatrixAdd
+version: 2.3.0

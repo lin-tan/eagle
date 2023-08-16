@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int n_packs : int Number of slices to generate. n_samples : int or None (default = None) Number of samples. Pass n_samples when the slices are to be used for sparse matrix indexing; slicing off-the-end raises an exception, while it works for NumPy arrays.",,prim_dtype,dtype(int),,1
+,"int n_packs : int Number of slices to generate. n_samples : int or None (default = None) Number of samples. Pass n_samples when the slices are to be used for sparse matrix indexing; slicing off-the-end raises an exception, while it works for NumPy arrays.",,shape,ndim(0),,1

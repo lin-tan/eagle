@@ -1,0 +1,9 @@
+constraints:
+  trainable:
+    default: 'True'
+    descp: Whether or not the embedding is trainable. Default is True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.feature_column.embedding_column

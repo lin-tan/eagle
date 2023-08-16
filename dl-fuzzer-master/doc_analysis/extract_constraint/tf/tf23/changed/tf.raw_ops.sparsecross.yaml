@@ -1,0 +1,93 @@
+constraints:
+  dense_inputs:
+    descp: 'A list of Tensor objects with types from: int64, string. 2-D. Columns
+      represented by dense Tensor.'
+    structure:
+    - list(tf.tensor)
+  hash_key:
+    descp: An int. Specify the hash_key that will be used by the FingerprintCat64
+      function to combine the crosses fingerprints.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  hashed_output:
+    descp: A bool. If true, returns the hash of the cross instead of the string. This
+      will allow us avoiding string manipulations.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  indices:
+    descp: A list of Tensor objects with type int64. 2-D. Indices of each input SparseTensor.
+    dtype:
+    - tf.int64
+    structure:
+    - list(tf.tensor)
+  internal_type:
+    descp: 'A tf.DType from: tf.int64, tf.string.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_buckets:
+    descp: An int that is >= 0. It is used if hashed_output is true. output = hashed_value%num_buckets
+      if num_buckets > 0 else hashed_value.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  out_type:
+    descp: 'A tf.DType from: tf.int64, tf.string.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  shapes:
+    descp: A list with the same length as indices of Tensor objects with type int64.
+      1-D. Shapes of each SparseTensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    shape:
+    - shape:&indices
+    structure:
+    - list
+  values:
+    descp: 'A list of Tensor objects with types from: int64, string. 1-D. values of
+      each SparseTensor.'
+    structure:
+    - list(tf.tensor)
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - shapes
+  - dense_inputs
+  - hashed_output
+  - num_buckets
+  - hash_key
+  - out_type
+  - internal_type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseCross
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_shape).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor of type out_type.
+- output_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseCross
+title: tf.raw_ops.SparseCross
+version: 2.3.0

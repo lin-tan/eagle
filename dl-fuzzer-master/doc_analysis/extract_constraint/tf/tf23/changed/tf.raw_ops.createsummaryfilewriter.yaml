@@ -1,0 +1,52 @@
+constraints:
+  filename_suffix:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  flush_millis:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  logdir:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  max_queue:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  writer:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - logdir
+  - max_queue
+  - flush_millis
+  - filename_suffix
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CreateSummaryFileWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: CreateSummaryFileWriter
+title: tf.raw_ops.CreateSummaryFileWriter
+version: 2.3.0

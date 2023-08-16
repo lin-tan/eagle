@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional The number of samples (or total weight) in a neighborhood for a point to be considered as a core point. This includes the point itself.",5,prim_dtype,dtype(int),,1
+,"int, optional The number of samples (or total weight) in a neighborhood for a point to be considered as a core point. This includes the point itself.",5,shape,ndim(0),,1
+,"int, optional The number of samples (or total weight) in a neighborhood for a point to be considered as a core point. This includes the point itself.",5,validvalue,"range([0,inf))",,1

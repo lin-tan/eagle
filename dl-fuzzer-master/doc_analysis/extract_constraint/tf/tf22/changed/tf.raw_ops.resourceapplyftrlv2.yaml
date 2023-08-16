@@ -1,0 +1,96 @@
+constraints:
+  accum:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+  grad:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. The gradient.'
+    tensor_t:
+    - tf.tensor
+  l1:
+    descp: A Tensor. Must have the same type as grad. L1 regularization. Must be a
+      scalar.
+    dtype:
+    - dtype:&grad
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  l2:
+    descp: A Tensor. Must have the same type as grad. L2 shrinkage regularization.
+      Must be a scalar.
+    dtype:
+    - dtype:&grad
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  l2_shrinkage:
+    descp: A Tensor. Must have the same type as grad.
+    dtype:
+    - dtype:&grad
+    tensor_t:
+    - tf.tensor
+  linear:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+  lr:
+    descp: A Tensor. Must have the same type as grad. Scaling factor. Must be a scalar.
+    dtype:
+    - dtype:&grad
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  lr_power:
+    descp: A Tensor. Must have the same type as grad. Scaling factor. Must be a scalar.
+    dtype:
+    - dtype:&grad
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, updating of the var and accum
+      tensors will be protected by a lock; otherwise the behavior is undefined, but
+      may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  var:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - var
+  - accum
+  - linear
+  - grad
+  - lr
+  - l1
+  - l2
+  - l2_shrinkage
+  - lr_power
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceApplyFtrlV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceApplyFtrlV2
+title: tf.raw_ops.ResourceApplyFtrlV2
+version: 2.2.0

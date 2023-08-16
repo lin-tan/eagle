@@ -1,0 +1,67 @@
+constraints:
+  adj_x:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, adjoint the slices of x.
+      Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  adj_y:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, adjoint the slices of y.
+      Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, int32, int64, complex64, complex128. 2-D or higher with shape [...,
+      r_x, c_x].'
+    ndim:
+    - '>2'
+    - '>=2'
+    shape:
+    - '[...,r_x,c_x]'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A Tensor. Must have the same type as x. 2-D or higher with shape [...,
+      r_y, c_y].
+    dtype:
+    - dtype:&x
+    ndim:
+    - '>2'
+    - '>=2'
+    shape:
+    - '[...,r_y,c_y]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- c_x
+- c_y
+- r_x
+- r_y
+inputs:
+  optional:
+  - adj_x
+  - adj_y
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchMatMulV2
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: BatchMatMulV2
+title: tf.raw_ops.BatchMatMulV2
+version: 2.2.0

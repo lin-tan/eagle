@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.keras.backend.tile
+constraints:
+  n:
+    descp: A list of integer. The length must be the same as the number of dimensions
+      in x.
+  x:
+    descp: A tensor or variable
+inputs:
+  optional: []
+  required:
+  - x
+  - n
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/tile
+outputs:
+- A tiled tensor.
+package: tensorflow
+target: tile
+title: tf.keras.backend.tile
+version: 2.2.0

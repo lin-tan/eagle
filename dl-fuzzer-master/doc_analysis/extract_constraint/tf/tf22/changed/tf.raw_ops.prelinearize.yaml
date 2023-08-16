@@ -1,0 +1,49 @@
+constraints:
+  input:
+    descp: A Tensor. A tensor that will be linearized.
+    tensor_t:
+    - tf.tensor
+  layout:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. A vector holding the requested
+      layout in minor-to-major sequence. If a layout attribute is passed but its values
+      are all -1 the layout will be computed by the infeed operation.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    default: '[]'
+    descp: An optional tf.TensorShape or list of ints. Defaults to []. The shape of
+      the tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+inputs:
+  optional:
+  - shape
+  - layout
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Prelinearize
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: Prelinearize
+title: tf.raw_ops.Prelinearize
+version: 2.2.0

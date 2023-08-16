@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  sparse_matrix:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+inputs:
+  optional:
+  - name
+  required:
+  - sparse_matrix
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixNNZ
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: SparseMatrixNNZ
+title: tf.raw_ops.SparseMatrixNNZ
+version: 2.2.0

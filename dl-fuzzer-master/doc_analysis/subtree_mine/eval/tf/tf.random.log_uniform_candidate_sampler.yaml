@@ -1,0 +1,13 @@
+constraints:
+  true_classes:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.
+    dtype:
+    - tf.int64
+    ndim:
+    - '2'
+    shape:
+    - '[batch_size,&num_true]'
+    tensor_t:
+    - tf.tensor
+title: tf.random.log_uniform_candidate_sampler

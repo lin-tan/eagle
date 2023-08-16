@@ -1,0 +1,106 @@
+File,Arg,Type,Constr,Descp
+tf.nn.conv1d,filters,prim_dtype,['dtype:&input'],A 3D `Tensor`.  Must have the same type as `input`.
+tf.math.xlogy,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.data.experimental.make_csv_dataset,column_names,nonprim_dtype,"['dict', 'list(tf.string)']","An optional list of strings that corresponds to the CSV columns, in order. One per column of the input record. If this is not provided, infers the column names from the first row of the records. These names will be the keys of the features dict of each dataset element."
+tf.graph_util.import_graph_def,return_elements,nonprim_dtype,['list(tf.string)'],A list of strings containing operation names in`graph_def` that will be returned as `Operation` objects; and/or tensor names in `graph_def` that will be returned as `Tensor` objects.
+tf.nn.conv2d_transpose,filters,prim_dtype,['dtype:&input'],"A 4-D `Tensor` with the same type as `input` and shape `[height, width, output_channels, in_channels]`.  `filter`'s `in_channels` dimension must match that of `input`."
+tf.keras.datasets.imdb.load_data,maxlen,nonprim_dtype,['list'],sequences longer than this will be filtered out.
+tf.tensor_scatter_nd_add,updates,prim_dtype,['dtype:&tensor'],A `Tensor`. Must have the same type as `tensor`. Updates to scatter into output.
+tf.math.zeta,q,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.linalg.solve,rhs,prim_dtype,['dtype:&matrix'],"A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`."
+tf.sparse.retain,to_retain,nonprim_dtype,['list'],A bool vector of length `N` with `M` true values.
+tf.keras.preprocessing.text.hashing_trick,n,prim_dtype,['int'],Dimension of the hashing space.
+tf.linalg.cholesky_solve,rhs,prim_dtype,['dtype:&chol'],"A `Tensor`, same type as `chol`, shape is `[..., M, K]`."
+tf.nn.conv3d,filters,prim_dtype,['dtype:&input'],"A `Tensor`. Must have the same type as `input`. Shape `[filter_depth, filter_height, filter_width, in_channels, out_channels]`. `in_channels` must match between `input` and `filters`."
+tf.strings.ngrams,pad_values,nonprim_dtype,['tuple'],"A tuple of (left_pad_value, right_pad_value), a single string, or None. If None, no padding will be added; if a single string, then that string will be used for both left and right padding. Values must be Python strings."
+tf.io.gfile.glob,pattern,nonprim_dtype,['list(tf.string)'],string or iterable of strings. The glob pattern(s).
+tf.nn.conv_transpose,filters,prim_dtype,['dtype:&input'],"An N+2 dimensional `Tensor` with the same type as `input` and shape `spatial_filter_shape + [in_channels, out_channels]`."
+tf.dtypes.complex,imag,prim_dtype,['dtype:&real'],A `Tensor`. Must have the same type as `real`.
+tf.nn.log_poisson_loss,targets,prim_dtype,['dtype:&log_input'],A `Tensor` of the same type and shape as `log_input`.
+tf.sets.union,a,prim_dtype,['dtype:&b'],"`Tensor` or `SparseTensor` of the same type as `b`. If sparse, indices must be sorted in row-major order."
+tf.sets.union,b,prim_dtype,['dtype:&a'],"`Tensor` or `SparseTensor` of the same type as `a`. If sparse, indices must be sorted in row-major order."
+tf.math.igamma,x,prim_dtype,['dtype:&a'],A `Tensor`. Must have the same type as `a`.
+tf.keras.preprocessing.image.array_to_img,data_format,prim_dtype,['numeric'],"Image data format. either ""channels_first"" or ""channels_last""."
+tf.math.greater_equal,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.tensor_scatter_nd_update,updates,prim_dtype,['dtype:&tensor'],A `Tensor`. Must have the same type as `tensor`. Updates to scatter into output.
+tf.keras.preprocessing.image.save_img,data_format,prim_dtype,"['numeric', 'tf.string']","Image data format, either ""channels_first"" or ""channels_last""."
+tf.quantization.quantize_and_dequantize,input_max,nonprim_dtype,['list'],"If range_given=True, the maximum input value that needs to be represented in the quantized representation. If axis is specified, this should be a vector of maximum values for each slice along axis."
+tf.quantization.quantize_and_dequantize,input_min,nonprim_dtype,['list'],"If range_given=True, the minimum input value, that needs to be represented in the quantized representation. If axis is specified, this should be a vector of minimum values for each slice along axis."
+tf.math.subtract,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.math.l2_normalize,axis,nonprim_dtype,['list(int)'],Dimension along which to normalize.  A scalar or a vector of integers.
+tf.keras.preprocessing.image.img_to_array,data_format,prim_dtype,"['numeric', 'tf.string']","Image data format, either ""channels_first"" or ""channels_last""."
+tf.math.squared_difference,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.nn.conv2d,filters,prim_dtype,['dtype:&input'],"A `Tensor`. Must have the same type as `input`. A 4-D tensor of shape`[filter_height, filter_width, in_channels, out_channels]`"
+tf.linalg.triangular_solve,rhs,prim_dtype,['dtype:&matrix'],"A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`."
+tf.math.less,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.image.ssim_multiscale,img1,prim_dtype,['numeric'],First image batch.
+tf.image.ssim_multiscale,img2,prim_dtype,['numeric'],Second image batch. Must have the same rank as img1.
+tf.image.ssim_multiscale,power_factors,nonprim_dtype,['list'],"Iterable of weights for each of the scales. The number of scales used is the length of the list. Index 0 is the unscaled resolution's weight and each increasing scale corresponds to the image being downsampled by 2.  Defaults to (0.0448, 0.2856, 0.3001, 0.2363, 0.1333), which are the values obtained in the original paper."
+tf.realdiv,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.truncatediv,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.sets.intersection,a,prim_dtype,['dtype:&b'],"`Tensor` or `SparseTensor` of the same type as `b`. If sparse, indices must be sorted in row-major order."
+tf.sets.intersection,b,prim_dtype,['dtype:&a'],"`Tensor` or `SparseTensor` of the same type as `a`. If sparse, indices must be sorted in row-major order."
+tf.math.nextafter,x2,prim_dtype,['dtype:&x1'],A `Tensor`. Must have the same type as `x1`.
+tf.where,x,prim_dtype,['dtype:&y'],"A Tensor which is of the same type as `y`, and may be broadcastable with`condition` and `y`."
+tf.where,y,prim_dtype,['dtype:&x'],"A Tensor which is of the same type as `x`, and may be broadcastable with`condition` and `x`."
+tf.ragged.range,deltas,nonprim_dtype,['list'],Vector or scalar `Tensor`.  Specifies the increment for each range. Defaults to `1`.
+tf.ragged.range,limits,nonprim_dtype,['list'],Vector or scalar `Tensor`.  Specifies the exclusive upper limits for each range.
+tf.ragged.range,starts,nonprim_dtype,['list'],"Vector or scalar `Tensor`.  Specifies the first entry for each range if `limits` is not `None`; otherwise, specifies the range limits, and the first entries default to `0`."
+tf.bitwise.right_shift,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.linalg.matvec,b,prim_dtype,['dtype:&a'],`Tensor` with same type as `a` and compatible dimensions.
+tf.math.greater,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.nn.erosion2d,filters,prim_dtype,['dtype:&value'],"A `Tensor`. Must have the same type as `value`. 3-D with shape `[filters_height, filters_width, depth]`."
+tf.tensordot,b,prim_dtype,['dtype:&a'],`Tensor` with the same type as `a`.
+tf.nn.atrous_conv2d_transpose,filters,prim_dtype,['dtype:&value'],"A 4-D `Tensor` with the same type as `value` and shape`[filter_height, filter_width, out_channels, in_channels]`. `filters`'`in_channels` dimension must match that of `value`. Atrous convolution is equivalent to standard convolution with upsampled filters with effective height `filter_height + (filter_height - 1) * (rate - 1)` and effective width `filter_width + (filter_width - 1) * (rate - 1)`, produced by inserting `rate - 1` zeros along consecutive elements across the`filters`' spatial dimensions."
+tf.bitwise.bitwise_or,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.nn.sigmoid_cross_entropy_with_logits,labels,prim_dtype,['dtype:&logits'],A `Tensor` of the same type and shape as `logits`.
+tf.math.add,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.io.parse_sequence_example,example_names,nonprim_dtype,['list'],"A vector (1-D Tensor) of strings (optional), the name of the serialized protos."
+tf.io.parse_sequence_example,serialized,nonprim_dtype,['list'],A vector (1-D Tensor) of type string containing binary serialized `SequenceExample` protos.
+tf.math.floormod,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.math.atan2,x,prim_dtype,['dtype:&y'],A `Tensor`. Must have the same type as `y`.
+tf.sets.difference,a,prim_dtype,['dtype:&b'],"`Tensor` or `SparseTensor` of the same type as `b`. If sparse, indices must be sorted in row-major order."
+tf.sets.difference,b,prim_dtype,['dtype:&a'],"`Tensor` or `SparseTensor` of the same type as `a`. If sparse, indices must be sorted in row-major order."
+tf.case,pred_fn_pairs,nonprim_dtype,"['list', 'list(tf.tensor)']",List of pairs of a boolean scalar tensor and a callable which returns a list of tensors.
+tf.io.parse_example,example_names,nonprim_dtype,['list'],"A vector (1-D Tensor) of strings (optional), the names of the serialized protos in the batch."
+tf.io.parse_example,serialized,nonprim_dtype,['list'],"A vector (1-D Tensor) of strings, a batch of binary serialized `Example` protos."
+tf.nn.separable_conv2d,dilations,prim_dtype,['numeric'],"1-D of size 2. The dilation rate in which we sample input values across the `height` and `width` dimensions in atrous convolution. If it is greater than 1, then all values of strides must be 1."
+tf.nn.dilation2d,filters,prim_dtype,['dtype:&input'],"A `Tensor`. Must have the same type as `input`. 3-D with shape `[filter_height, filter_width, depth]`."
+tf.nn.bias_add,bias,prim_dtype,['dtype:&value'],"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used."
+tf.bitwise.left_shift,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.feature_column.crossed_column,keys,nonprim_dtype,['list'],An iterable identifying the features to be crossed. Each element can be either: string: Will use the corresponding feature which must be of string type.`CategoricalColumn`: Will use the transformed tensor produced by this column. Does not support hashed categorical column. 
+tf.math.igammac,x,prim_dtype,['dtype:&a'],A `Tensor`. Must have the same type as `a`.
+tf.math.xdivy,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.linalg.matmul,b,prim_dtype,['dtype:&a'],`tf.Tensor` with same type and rank as `a`.
+tf.image.ssim,img1,prim_dtype,['numeric'],First image batch.
+tf.image.ssim,img2,prim_dtype,['numeric'],Second image batch.
+tf.linspace,stop,prim_dtype,['dtype:&start'],A `Tensor`. Must have the same type as `start`. 0-D tensor. Last entry in the range.
+tf.nn.depthwise_conv2d_backprop_filter,out_backprop,prim_dtype,['dtype:&input'],"A `Tensor`. Must have the same type as `input`. 4-D with shape  based on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the output of the convolution."
+tf.math.polygamma,x,prim_dtype,['dtype:&a'],A `Tensor`. Must have the same type as `a`.
+tf.math.minimum,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.nn.depthwise_conv2d_backprop_input,out_backprop,prim_dtype,['dtype:&filter'],"A `Tensor`. Must have the same type as `filter`. 4-D with shape  based on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the output of the convolution."
+tf.estimator.classifier_parse_example_spec,label_default,prim_dtype,['tf.dtype'],"used as label if label_key does not exist in given tf.Example. An example usage: let's say `label_key` is 'clicked' and tf.Example contains clicked data only for positive examples in following format `key:clicked, value:1`. This means that if there is no data with key 'clicked' it should count as negative example by setting`label_deafault=0`. Type of this value should be compatible with`label_dtype`."
+tf.train.latest_checkpoint,latest_filename,nonprim_dtype,['list'],Optional name for the protocol buffer file that contains the list of most recent checkpoint filenames. See the corresponding argument to `Saver.save()`.
+tf.math.multiply,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.io.matching_files,pattern,nonprim_dtype,"['list(tf.dtype)', 'list(tf.string)']",A `Tensor` of type `string`. Shell wildcard pattern(s). Scalar or vector of type string.
+tf.keras.backend.rnn,initial_states,prim_dtype,['int'],"Tensor with shape `(samples, state_size)`(no time dimension), containing the initial values for the states used in the step function. In the case that state_size is in a nested shape, the shape of initial_states will also follow the nested structure."
+tf.math.betainc,b,prim_dtype,['dtype:&a'],A `Tensor`. Must have the same type as `a`.
+tf.math.betainc,x,prim_dtype,['dtype:&a'],A `Tensor`. Must have the same type as `a`.
+tf.nn.atrous_conv2d,filters,prim_dtype,['dtype:&value'],"A 4-D `Tensor` with the same type as `value` and shape`[filter_height, filter_width, in_channels, out_channels]`. `filters`'`in_channels` dimension must match that of `value`. Atrous convolution is equivalent to standard convolution with upsampled filters with effective height `filter_height + (filter_height - 1) * (rate - 1)` and effective width `filter_width + (filter_width - 1) * (rate - 1)`, produced by inserting `rate - 1` zeros along consecutive elements across the`filters`' spatial dimensions."
+tf.sparse.fill_empty_rows,default_value,prim_dtype,['dtype:&sp_input'],"The value to fill for empty rows, with the same type as`sp_input.`"
+tf.strings.join,inputs,nonprim_dtype,"['list', 'list(tf.string)', 'list(tf.tensor)']","A list of at least 1 `Tensor` objects with type `string`. A list of string tensors.  The tensors must all have the same shape, or be scalars.  Scalars may be mixed in; these will be broadcast to the shape of non-scalar inputs."
+tf.io.encode_proto,field_names,nonprim_dtype,['list(tf.string)'],A list of `strings`. List of strings containing proto field names.
+tf.math.less_equal,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.tensor_scatter_nd_sub,updates,prim_dtype,['dtype:&tensor'],A `Tensor`. Must have the same type as `tensor`. Updates to scatter into output.
+tf.truncatemod,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.math.maximum,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.bitwise.bitwise_xor,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.math.in_top_k,targets,nonprim_dtype,['list'],"A `Tensor`. Must be one of the following types: `int32`, `int64`. A `batch_size` vector of class ids."
+tf.bitwise.bitwise_and,y,prim_dtype,['dtype:&x'],A `Tensor`. Must have the same type as `x`.
+tf.strings.format,inputs,nonprim_dtype,['list(tf.tensor)'],"A list of `Tensor` objects, or a single Tensor. The list of tensors to format into the template string. If a solitary tensor is passed in, the input tensor will automatically be wrapped as a list."
+tf.io.decode_proto,field_names,nonprim_dtype,['list(tf.string)'],"A list of `strings`. List of strings containing proto field names. An extension field can be decoded by using its full name, e.g. EXT_PACKAGE.EXT_FIELD_NAME."
+tf.linalg.cross,b,prim_dtype,['dtype:&a'],"A `Tensor`. Must have the same type as `a`. Another tensor, of same type and shape as `a`."
+tf.nn.weighted_cross_entropy_with_logits,labels,prim_dtype,['dtype:&logits'],A `Tensor` of the same type and shape as `logits`.
+tf.image.extract_patches,padding,prim_dtype,['tf.dtype'],The type of padding algorithm to use.
+tf.nn.depthwise_conv2d,dilations,prim_dtype,['numeric'],"1-D of size 2. The dilation rate in which we sample input values across the `height` and `width` dimensions in atrous convolution. If it is greater than 1, then all values of strides must be 1."
+tf.nn.RNNCellResidualWrapper,**kwargs,nonprim_dtype,['dict'],dict of keyword arguments for base layer.

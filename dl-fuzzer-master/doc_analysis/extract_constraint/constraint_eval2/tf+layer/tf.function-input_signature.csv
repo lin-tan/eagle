@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A possibly nested sequence of `tf.TensorSpec` objects specifying the shapes and dtypes of the Tensors that will be supplied to this function. If `None`, a separate function is instantiated for each inferred input signature.  If input_signature is specified, every input to`func` must be a `Tensor`, and `func` cannot accept `**kwargs`.",None,nonprim_dtype,"tensor_t(tf.tensor), structure(list)",,1

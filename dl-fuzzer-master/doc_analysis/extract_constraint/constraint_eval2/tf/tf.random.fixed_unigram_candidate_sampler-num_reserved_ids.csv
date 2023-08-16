@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optionally some reserved IDs can be added in the range`[0, num_reserved_ids)` by the users. One use case is that a special unknown word token is used as ID 0. These IDs will have a sampling probability of 0.",0,prim_dtype,dtype(int),,1
+,"Optionally some reserved IDs can be added in the range`[0, num_reserved_ids)` by the users. One use case is that a special unknown word token is used as ID 0. These IDs will have a sampling probability of 0.",0,shape,ndim(0),,1
+,"Optionally some reserved IDs can be added in the range`[0, num_reserved_ids)` by the users. One use case is that a special unknown word token is used as ID 0. These IDs will have a sampling probability of 0.",0,validvalue,"range([0,inf))",,1

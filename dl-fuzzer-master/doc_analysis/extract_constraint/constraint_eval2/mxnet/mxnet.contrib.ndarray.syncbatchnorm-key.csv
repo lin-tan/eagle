@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"string, required","Hash key for synchronization, please set the same hash key for same layer, Block.prefix is typically used as in `gluon.nn.contrib.SyncBatchNorm`.",_Null,prim_dtype,dtype(string),,1

@@ -1,0 +1,16 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  ^(.*)$:
+    cnt: 1238
+    group: 1
+  default\s(true|false):
+    cnt: 0
+    dtype: bool
+    gourp: 1
+    ndim: 0
+target: dtype

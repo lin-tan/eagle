@@ -1,0 +1,44 @@
+constraints:
+  data:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A 1-D tensor.
+      Has same rank as segment_ids.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  segment_ids:
+    descp: A Tensor of type int32. A 1-D tensor. Values should be sorted and can be
+      repeated.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - indices
+  - segment_ids
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSegmentSqrtN
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: SparseSegmentSqrtN
+title: tf.raw_ops.SparseSegmentSqrtN
+version: 2.2.0

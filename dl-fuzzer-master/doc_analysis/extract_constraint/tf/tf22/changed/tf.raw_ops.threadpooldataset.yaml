@@ -1,0 +1,52 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  thread_pool:
+    descp: A Tensor of type resource. A resource produced by the ThreadPoolHandle
+      op.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - thread_pool
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ThreadPoolDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ThreadPoolDataset
+title: tf.raw_ops.ThreadPoolDataset
+version: 2.2.0

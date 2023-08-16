@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The operation that should be applied to the RaggedTensor `flat_values`.`op` is typically an element-wise operation (such as math_ops.add), but any operation that preserves the size of the outermost dimension can be used.  I.e., `shape[0]` of the value returned by `op` must match`shape[0]` of the `RaggedTensor`s' `flat_values` tensors.",,prim_dtype,dtype(callable),,1

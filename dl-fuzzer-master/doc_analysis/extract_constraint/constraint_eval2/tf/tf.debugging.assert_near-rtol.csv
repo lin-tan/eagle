@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`Tensor`.  Same `dtype` as, and broadcastable to, `x`. The relative tolerance.  Default is `10 * eps`.",None,prim_dtype,dtype(dtype:&x),,1
+,"`Tensor`.  Same `dtype` as, and broadcastable to, `x`. The relative tolerance.  Default is `10 * eps`.",None,nonprim_dtype,tensor_t(tf.tensor),,1

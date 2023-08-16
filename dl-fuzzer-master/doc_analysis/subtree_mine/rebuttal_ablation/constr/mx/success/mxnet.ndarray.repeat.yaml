@@ -1,0 +1,86 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  axis:
+    default: _Null
+    descp: The axis along which to repeat values. The negative numbers are interpreted
+      counting from the backward. By default, use the flattened input array, and return
+      a flat output array.
+    doc_dtype: int or None, optional, default='None'
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    enum:
+    - None
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  data:
+    default: None
+    descp: Input data array
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  repeats:
+    default: _Null
+    descp: The number of repetitions for each element.
+    doc_dtype: int, required
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+inputs:
+  optional:
+  - data
+  - repeats
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.repeat
+package: mxnet
+target: repeat
+title: mxnet.ndarray.repeat
+version: 1.6.0

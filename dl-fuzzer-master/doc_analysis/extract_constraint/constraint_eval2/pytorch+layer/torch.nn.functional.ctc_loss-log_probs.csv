@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(T, N, C)  where C = number of characters in alphabet including blank, T = input length, and N = batch size. The logarithmized probabilities of the outputs (e.g. obtained with `torch.nn.functional.log_softmax()`).",,shape,"shape([t,n,c]), ndim(3)",,1

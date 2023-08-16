@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.keras.layers.LeakyReLU
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: '0.3'
+    descp: Float >= 0. Negative slope coefficient.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - D_TYPE REXPR
+    - Negative slope coefficient
+inputs:
+  optional:
+  - alpha
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/LeakyReLU
+package: tensorflow
+target: LeakyReLU
+title: tf.keras.layers.LeakyReLU
+version: 2.1.0

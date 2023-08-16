@@ -1,0 +1,71 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input array to the pooling operator,  a 4D Feature maps
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE to the pooling operator, a CONSTANT_NUM-D Feature maps
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  pooled_size:
+    default: _Null
+    descp: ROI pooling output shape (h,w)
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - ROI pooling output shape BSTR
+    normalized_docdtype: Shape BSTR, required
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array of [[batch_index, x1, y1, x2, y2]],
+      where (x1, y1) and (x2, y2) are top left and bottom right corners of designated
+      region of interest. batch_index indicates the index of corresponding image in
+      the input array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Bounding box coordinates, a CONSTANT_NUM-D D_STRUCTURE of BSTR , where BSTR
+      are top left and bottom right corners of designated region of interest
+    - batch_index indicates the index of corresponding image in the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or w) to raw image height (or w). Equals
+      the reciprocal of total stride in convolutional layers
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Ratio of input feature map height BSTR
+    - Equals the reciprocal of total stride in convolutional layers
+    normalized_docdtype: D_TYPE, required
+inputs:
+  optional:
+  - data
+  - rois
+  - pooled_size
+  - spatial_scale
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.ROIPooling
+package: mxnet
+target: ROIPooling
+title: mxnet.ndarray.ROIPooling
+version: 1.6.0

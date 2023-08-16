@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, default 'NCHW'","Layout for all convolution inputs, outputs and weights. Options are 'NCHW' and 'NHWC'.",NCHW,prim_dtype,dtype(string),,1

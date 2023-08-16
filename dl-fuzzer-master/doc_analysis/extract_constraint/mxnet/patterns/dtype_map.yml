@@ -1,0 +1,114 @@
+dtype_map:
+    float32: numpy.float32   
+    np.float32: numpy.float32   
+    numpy.float32: numpy.float32  
+    fp32:  numpy.float32
+    
+    double: numpy.double
+
+    float64: numpy.float64   
+    np.float64: numpy.float64   
+    numpy.float64: numpy.float64
+
+    float16: numpy.float16   
+    np.float16: numpy.float16   
+    numpy.float16: numpy.float16
+
+    uint8: numpy.uint8   
+    np.uint8: numpy.uint8   
+    numpy.uint8: numpy.uint8
+    
+
+
+    int8: numpy.int8   
+    np.int8: numpy.int8   
+    numpy.int8: numpy.int8
+
+    int32: numpy.int32   
+    np.int32: numpy.int32   
+    numpy.int32: numpy.int32
+
+    int64: numpy.int64   
+    np.int64: numpy.int64   
+    numpy.int64: numpy.int64
+    long: numpy.int64
+
+
+    bool: boolean
+    boolean: boolean
+
+    dtype: numpy.dtype
+    # type: numpy.dtype
+    np.dtype: numpy.dtype
+    numpy.dtype: numpy.dtype
+
+    str: string
+    string: string
+    name: string
+
+    scalar: scalar
+    scalars: scalar
+
+    int: int
+    integer: int
+    number: int
+
+    float: float
+    floating: float
+
+
+tensor_t_map:
+    tensor: tensor
+    tensors: tensor
+    
+    # symbol: symbol
+    # mx.sym.symbol: symbol
+    # mxnet.sym.symbol: symbol
+
+
+plural_map:
+    ints: int
+    integers: int
+    numeric: numeric
+    strings: string
+    names: string
+    floats: float
+
+    shape: shape
+
+    image: image
+    images: image
+
+    function: callable
+    callable: callable
+
+    # context: context 
+    # ctx: context
+
+
+
+    deprecated: deprecated
+
+structure:
+    dictionary: dict
+    dict: dict
+    list: list
+    tuple: tuple
+    iterable: list
+    sequence: sequence
+
+    ndarray: ndarray
+    arrays: ndarray
+    array: ndarray
+    mxnet.ndarray.array: ndarray
+    mx.nd.array: ndarray
+    numpy.ndarray: ndarray
+    np.ndarray: ndarray
+
+    array_like: ndarray
+
+    mxnet.ndarray.sparse.array: sparse_ndarray
+
+
+    
+    

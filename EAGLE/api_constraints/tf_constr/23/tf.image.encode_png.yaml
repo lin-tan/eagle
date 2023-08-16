@@ -1,0 +1,35 @@
+constraints:
+  compression:
+    default: '-1'
+    descp: An optional `int`. Defaults to `-1`. Compression level.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[-1,9]'
+  image:
+    descp: 'A `Tensor`. Must be one of the following types: `uint8`, `uint16`. 3-D
+      with shape `[height, width, channels]`.'
+    dtype:
+    - tf.uint16
+    - tf.uint8
+    ndim:
+    - '3'
+    shape:
+    - '[height,width,3]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- height
+- width
+inputs:
+  optional:
+  - compression
+  required:
+  - image
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: encode_png
+title: tf.image.encode_png
+version: 2.3.0

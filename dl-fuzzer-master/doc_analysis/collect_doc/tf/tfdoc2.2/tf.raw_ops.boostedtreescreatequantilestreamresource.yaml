@@ -1,0 +1,31 @@
+constraints:
+  epsilon:
+    descp: A Tensor of type float32. float; The required approximation error of the
+      stream resource.
+  max_elements:
+    default: '1099511627776'
+    descp: An optional int. Defaults to 1099511627776. int; The maximum number of
+      data points that can be fed to the stream.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_streams:
+    descp: A Tensor of type int64. int; The number of streams managed by the resource
+      that shares the same epsilon.
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource; Handle to quantile stream resource.
+inputs:
+  optional:
+  - max_elements
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - epsilon
+  - num_streams
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesCreateQuantileStreamResource
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesCreateQuantileStreamResource
+title: tf.raw_ops.BoostedTreesCreateQuantileStreamResource
+version: 2.2.0

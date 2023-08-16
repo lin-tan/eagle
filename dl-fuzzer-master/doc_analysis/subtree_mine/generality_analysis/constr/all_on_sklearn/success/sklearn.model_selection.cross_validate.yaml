@@ -1,0 +1,161 @@
+constraints:
+  X:
+    descp: array-like The data to fit. Can be for example a list, or an array.
+    structure:
+    - list
+    - ndarray
+  cv:
+    default: None
+    descp: 'int, cross-validation generator or an iterable, optional Determines the
+      cross-validation splitting strategy. Possible inputs for cv are: - None, to
+      use the default 5-fold cross validation, - integer, to specify the number of
+      folds in a `(Stratified)KFold`, - :term:`CV splitter`, - An iterable yielding
+      (train, test) splits as arrays of indices. For integer/None inputs, if the estimator
+      is a classifier and ``y`` is either binary or multiclass, :class:`StratifiedKFold`
+      is used. In all other cases, :class:`KFold` is used. Refer :ref:`User Guide
+      <cross_validation>` for the various cross-validation strategies that can be
+      used here.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    structure:
+    - list
+  error_score:
+    default: nan
+    descp: '''raise'' or numeric Value to assign to the score if an error occurs in
+      estimator fitting. If set to ''raise'', the error is raised. If a numeric value
+      is given, FitFailedWarning is raised. This parameter does not affect the refit
+      step, which will always raise the error.'
+    dtype:
+    - boolean
+    - numeric
+    - string
+    enum:
+    - raise
+    ndim:
+    - '0'
+  estimator:
+    descp: estimator object implementing 'fit' The object to use to fit the data.
+    dtype:
+    - boolean
+    enum:
+    - fit
+    ndim:
+    - '0'
+  fit_params:
+    default: None
+    descp: dict, optional Parameters to pass to the fit method of the estimator.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  groups:
+    default: None
+    descp: array-like, with shape (n_samples,), optional Group labels for the samples
+      used while splitting the dataset into train/test set. Only used in conjunction
+      with a "Group" :term:`cv` instance (e.g., :class:`GroupKFold`).
+    structure:
+    - ndarray
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of CPUs to use to do the
+      computation. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
+      ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  pre_dispatch:
+    default: 2*n_jobs
+    descp: 'int, or string, optional Controls the number of jobs that get dispatched
+      during parallel execution. Reducing this number can be useful to avoid an explosion
+      of memory consumption when more jobs get dispatched than CPUs can process. This
+      parameter can be: - None, in which case all the jobs are immediately created
+      and spawned. Use this for lightweight and fast-running jobs, to avoid delays
+      due to on-demand spawning of the jobs - An int, giving the exact number of total
+      jobs that are spawned - A string, giving an expression as a function of n_jobs,
+      as in ''2*n_jobs'''
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  return_estimator:
+    default: 'False'
+    descp: boolean, default False Whether to return the estimators fitted on each
+      split.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_train_score:
+    default: 'False'
+    descp: boolean, default=False Whether to include train scores. Computing training
+      scores is used to get insights on how different parameter settings impact the
+      overfitting/underfitting trade-off. However computing the scores on the training
+      set can be computationally expensive and is not strictly required to select
+      the parameters that yield the best generalization performance.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  scoring:
+    default: None
+    descp: 'string, callable, list/tuple, dict or None, default: None A single string
+      (see :ref:`scoring_parameter`) or a callable (see :ref:`scoring`) to evaluate
+      the predictions on the test set. For evaluating multiple metrics, either give
+      a list of (unique) strings or a dict with names as keys and callables as values.
+      NOTE that when using custom scorers, each scorer should return a single value.
+      Metric functions returning a list/array of values can be wrapped into multiple
+      scorers that return one value each. See :ref:`multimetric_grid_search` for an
+      example. If None, the estimator''s score method is used.'
+    dtype:
+    - string
+    ndim:
+    - '1'
+    shape:
+    - '[unique]'
+    structure:
+    - dict
+    - list
+    - ndarray
+    - tuple
+  verbose:
+    default: '0'
+    descp: integer, optional The verbosity level.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  y:
+    default: None
+    descp: 'array-like, optional, default: None The target variable to try to predict
+      in the case of supervised learning.'
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - y
+  - groups
+  - scoring
+  - cv
+  - n_jobs
+  - verbose
+  - fit_params
+  - pre_dispatch
+  - return_train_score
+  - return_estimator
+  - error_score
+  required:
+  - estimator
+  - X
+link: ''
+package: sklearn
+target: cross_validate
+title: sklearn.model_selection.cross_validate
+version: 0.24.2

@@ -1,0 +1,50 @@
+aliases:
+- tf.compat.v1.sparse.bincount
+constraints:
+  axis:
+    default: '0'
+    descp: The axis to slice over. Axes at and below axis will be flattened before
+      bin counting. Currently, only 0, and -1 are supported. If None, all axes will
+      be flattened (identical to passing 0).
+  binary_output:
+    default: 'False'
+    descp: If True, this op will output 1 instead of the number of times a token appears
+      (equivalent to one_hot + reduce_any instead of one_hot + reduce_add). Defaults
+      to False.
+  maxlength:
+    default: None
+    descp: If given, skips values in values that are equal or greater than maxlength,
+      ensuring that the output has length at most maxlength.
+  minlength:
+    default: None
+    descp: If given, ensures the output has length at least minlength, padding with
+      zeros at the end if necessary.
+  name:
+    default: None
+    descp: A name for this op.
+  values:
+    descp: A Tensor, RaggedTensor, or SparseTensor whose values should be counted.
+      These tensors must have a rank of 2 if axis=-1.
+  weights:
+    default: None
+    descp: If non-None, must be the same shape as arr. For each value in value, the
+      bin will be incremented by the corresponding weight instead of 1.
+inputs:
+  optional:
+  - weights
+  - axis
+  - minlength
+  - maxlength
+  - binary_output
+  - name
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/sparse/bincount
+outputs:
+- A SparseTensor with output.shape = values.shape[:axis] + [N], where N is maxlength
+  (if set); minlength (if set, and minlength > reduce_max(values)); 0 (if values is
+  empty); reduce_max(values) + 1 otherwise.
+package: tensorflow
+target: bincount
+title: tf.sparse.bincount
+version: 2.3.0

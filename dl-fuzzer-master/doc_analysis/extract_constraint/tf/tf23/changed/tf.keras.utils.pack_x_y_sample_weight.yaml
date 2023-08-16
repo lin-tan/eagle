@@ -1,0 +1,24 @@
+constraints:
+  sample_weight:
+    default: None
+    descp: Sample weight for each element.
+    dtype:
+    - numeric
+  x:
+    descp: Features to pass to Model.
+  y:
+    default: None
+    descp: Ground-truth targets to pass to Model.
+inputs:
+  optional:
+  - y
+  - sample_weight
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/utils/pack_x_y_sample_weight
+outputs:
+- Tuple in the format used in Model.fit.
+package: tensorflow
+target: pack_x_y_sample_weight
+title: tf.keras.utils.pack_x_y_sample_weight
+version: 2.3.0

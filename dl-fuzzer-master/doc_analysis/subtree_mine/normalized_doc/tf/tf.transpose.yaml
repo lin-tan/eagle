@@ -1,0 +1,37 @@
+constraints:
+  a:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  conjugate:
+    default: 'False'
+    descp: Optional bool. Setting it to `True` is mathematically equivalent to tf.math.conj(tf.transpose(input)).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Optional D_TYPE
+    - Setting it to CONSTANT_BOOL is mathematically equivalent to tf math conj BSTR
+  name:
+    default: transpose
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for the operation BSTR
+  perm:
+    default: None
+    descp: A permutation of the dimensions of `a`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A permutation of the dimensions of QSTR
+inputs:
+  optional:
+  - perm
+  - conjugate
+  - name
+  required:
+  - a
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/transpose
+outputs: A transposed `Tensor`.
+package: tensorflow
+target: transpose
+title: tf.transpose
+version: 2.1.0

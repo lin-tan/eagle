@@ -1,0 +1,23 @@
+constraints:
+  chunks:
+    descp: number of chunks to return
+    doc_dtype: int
+  dim:
+    default: '0'
+    descp: dimension along which to split the tensor
+    doc_dtype: int
+  input:
+    descp: the tensor to split
+    doc_dtype: Tensor
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+  - chunks
+link: https://pytorch.org/docs/stable/torch.html#torch.chunk
+package: torch
+ret_type: List of Tensors
+target: chunk
+title: torch.chunk
+version: 1.5.0

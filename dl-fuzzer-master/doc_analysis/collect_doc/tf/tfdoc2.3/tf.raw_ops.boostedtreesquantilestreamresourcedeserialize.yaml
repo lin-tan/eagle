@@ -1,0 +1,22 @@
+constraints:
+  bucket_boundaries:
+    descp: A list of at least 1 Tensor objects with type float32. float; List of Rank
+      1 Tensors each containing the bucket boundaries for a feature.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource handle referring to a QuantileStreamResource.
+inputs:
+  optional:
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - bucket_boundaries
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesQuantileStreamResourceDeserialize
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesQuantileStreamResourceDeserialize
+title: tf.raw_ops.BoostedTreesQuantileStreamResourceDeserialize
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple of int,"Size of the image in (width, height) format.",,prim_dtype,dtype(int),,1
+tuple of int,"Size of the image in (width, height) format.",,nonprim_dtype,"structure(tuple(int), tuple:(width,height))",,1
+tuple of int,"Size of the image in (width, height) format.",,shape,"shape([2]), ndim(1)",,1

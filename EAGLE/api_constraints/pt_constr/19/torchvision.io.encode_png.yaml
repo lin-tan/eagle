@@ -1,0 +1,28 @@
+constraints:
+  compression_level:
+    default: '6'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,9]'
+  input:
+    dtype:
+    - int
+    ndim:
+    - '3'
+    shape:
+    - '[3,height,width]'
+dependency:
+- height
+- width
+inputs:
+  required:
+  - input
+  - compression_level
+  optional: []
+package: torchvision
+target: encode_png
+title: torchvision.io.encode_png
+version: 0.10.0

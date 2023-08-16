@@ -1,0 +1,93 @@
+aliases:
+- tf.image.decode_jpeg
+- tf.compat.v1.image.decode_jpeg
+- tf.compat.v1.io.decode_jpeg
+constraints:
+  acceptable_fraction:
+    default: '1'
+    descp: An optional `float`. Defaults to `1`. The minimum required fraction of
+      lines before a truncated input is accepted.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+    - The minimum required fraction of lines before a truncated input is accepted
+  channels:
+    default: '0'
+    descp: An optional `int`. Defaults to `0`. Number of color channels for the decoded
+      image.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+    - Number of color channels for the decoded image
+  contents:
+    descp: A `Tensor` of type `string`. 0-D.  The JPEG-encoded image.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - CONSTANT_NUM D
+    - The JPEG encoded image
+  dct_method:
+    default: ''
+    descp: An optional `string`. Defaults to `""`. string specifying a hint about
+      the algorithm used for decompression.  Defaults to "" which maps to a system-specific
+      default.  Currently valid values are ["INTEGER_FAST", "INTEGER_ACCURATE"].  The
+      hint may be ignored (e.g., the internal jpeg library changes to a version that
+      does not have that specific option.)
+    normalized_default: ''
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to
+    - D_TYPE specifying a hint about the algorithm used for decompression
+    - Defaults to which maps to a system specific default
+    - Currently valid values are QSTR
+    - The hint may be ignored BSTR
+  fancy_upscaling:
+    default: 'True'
+    descp: An optional `bool`. Defaults to `True`. If true use a slower but nicer
+      upscaling of the chroma planes (yuv420/422 only).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - If CONSTANT_BOOL use a slower but nicer upscaling of the chroma planes BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  ratio:
+    default: '1'
+    descp: An optional `int`. Defaults to `1`. Downscaling ratio.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+    - Downscaling ratio
+  try_recover_truncated:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. If true try to recover an image
+      from truncated input.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - If CONSTANT_BOOL try to recover an image from truncated input
+inputs:
+  optional:
+  - channels
+  - ratio
+  - fancy_upscaling
+  - try_recover_truncated
+  - acceptable_fraction
+  - dct_method
+  - name
+  required:
+  - contents
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/decode_jpeg
+outputs: A `Tensor` of type `uint8`.
+package: tensorflow
+target: decode_jpeg
+title: tf.io.decode_jpeg
+version: 2.1.0

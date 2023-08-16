@@ -1,0 +1,15 @@
+constraints:
+  '**kwargs':
+    descp: any keyword argument (unused)
+  '*args':
+    descp: any argument (unused)
+inputs:
+  optional: []
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.Identity
+package: torch
+target: Identity
+title: torch.nn.Identity
+version: 1.4.0

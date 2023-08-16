@@ -1,0 +1,14 @@
+sklearn.metrics.get_scorer = get_scorer(scoring)
+    Get a scorer from string.
+    
+    Read more in the :ref:`User Guide <scoring_parameter>`.
+    
+    Parameters
+    ----------
+    scoring : str | callable
+        scoring method as string. If callable it is returned as is.
+    
+    Returns
+    -------
+    scorer : callable
+        The scorer.

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+str,The mode that quantization pass to apply. Support 'full' and 'smart'. 'full' means quantize all operator if possible. 'smart' means quantization pass will smartly choice which operator should be quantized.,smart,prim_dtype,dtype(string),,1

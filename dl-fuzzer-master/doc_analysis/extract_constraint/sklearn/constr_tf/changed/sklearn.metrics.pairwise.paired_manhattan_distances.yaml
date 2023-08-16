@@ -1,0 +1,26 @@
+constraints:
+  X:
+    descp: array-like, shape (n_samples, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  Y:
+    descp: array-like, shape (n_samples, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional: []
+  required:
+  - X
+  - Y
+link: ''
+package: scikit-learn
+target: paired_manhattan_distances
+title: sklearn.metrics.pairwise.paired_manhattan_distances
+version: 0.24.X

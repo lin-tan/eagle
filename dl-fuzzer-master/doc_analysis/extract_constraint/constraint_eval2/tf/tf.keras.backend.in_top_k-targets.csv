@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A 1D tensor of length `batch_size` and type `int32` or `int64`.,,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,A 1D tensor of length `batch_size` and type `int32` or `int64`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A 1D tensor of length `batch_size` and type `int32` or `int64`.,,shape,"shape([batch_size]), ndim(1)",,1

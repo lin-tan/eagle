@@ -1,0 +1,16 @@
+constraints:
+  input:
+    descp: ''
+  output_size:
+    descp: the target output size (single integer)
+inputs:
+  optional: []
+  required:
+  - input
+  - output_size
+link: https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.adaptive_avg_pool1d
+package: torch
+ret_type: Tensor
+target: adaptive_avg_pool1d
+title: torch.nn.functional.adaptive_avg_pool1d
+version: 1.7.0

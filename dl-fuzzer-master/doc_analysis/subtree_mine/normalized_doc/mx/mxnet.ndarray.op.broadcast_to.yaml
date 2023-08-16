@@ -1,0 +1,51 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  shape:
+    default: _Null
+    descp: The shape of the desired array. We can set the dim to zero if it's same
+      as the original. E.g A = broadcast_to(B, shape=(10, 0, 0)) has the same meaning
+      as A = broadcast_axis(B, axis=0, size=10).
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The shape of the desired D_STRUCTURE
+    - We can set the dim to zero if it same as the original
+    - E g A broadcast_to B, shape BSTR has the same meaning as A broadcast_axis B,
+      axis CONSTANT_NUM, size CONSTANT_NUM
+    normalized_docdtype: Shape BSTR, optional, default
+inputs:
+  optional:
+  - data
+  - shape
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.broadcast_to
+package: mxnet
+target: broadcast_to
+title: mxnet.ndarray.op.broadcast_to
+version: 1.6.0

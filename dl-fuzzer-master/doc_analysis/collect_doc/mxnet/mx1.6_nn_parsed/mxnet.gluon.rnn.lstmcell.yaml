@@ -1,0 +1,80 @@
+constraints:
+  activation:
+    default: tanh
+    descp: Activation type to use. See nd/symbol Activation for supported types.
+    doc_dtype:
+    - str
+    - default 'tanh'
+  h2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype:
+    - str
+    - Initializer
+    - default 'zeros'
+  h2h_weight_initializer:
+    default: None
+    descp: Initializer for the recurrent weights matrix, used for the linear transformation
+      of the recurrent state.
+    doc_dtype:
+    - str
+    - Initializer
+  hidden_size:
+    descp: Number of units in output symbol.
+    doc_dtype:
+    - int
+  i2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype:
+    - str
+    - Initializer
+    - default 'zeros'
+  i2h_weight_initializer:
+    default: None
+    descp: Initializer for the input weights matrix, used for the linear transformation
+      of the inputs.
+    doc_dtype:
+    - str
+    - Initializer
+  input_size:
+    default: '0'
+    descp: ''
+  params:
+    default: None
+    descp: Container for weight sharing between cells. Created if None.
+    doc_dtype:
+    - Parameter
+    - None
+    - default None
+  prefix:
+    default: None
+    descp: Prefix for name of Block`s (and name of weight if params is `None).
+    doc_dtype:
+    - str
+    - default `'lstm_'`
+  recurrent_activation:
+    default: sigmoid
+    descp: Activation type to use for the recurrent step. See nd/symbol Activation
+      for supported types.
+    doc_dtype:
+    - str
+    - default 'sigmoid'
+inputs:
+  optional:
+  - i2h_weight_initializer
+  - h2h_weight_initializer
+  - i2h_bias_initializer
+  - h2h_bias_initializer
+  - input_size
+  - prefix
+  - params
+  - activation
+  - recurrent_activation
+  required:
+  - hidden_size
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.LSTMCell
+package: mxnet
+target: LSTMCell
+title: mxnet.gluon.rnn.LSTMCell
+version: 1.6.0

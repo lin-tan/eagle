@@ -1,0 +1,141 @@
+descp_diff:
+- filename: torch.save.yaml
+  param: f
+- filename: torch.nn.functional.interpolate.yaml
+  param: recompute_scale_factor
+- filename: torch.div2.yaml
+  param: out
+- filename: torch.add.yaml
+  param: out
+- filename: torch.set_printoptions.yaml
+  param: sci_mode
+- filename: torch.floor_divide.yaml
+  param: out
+- filename: torch.onnx.export.yaml
+  param: training
+- filename: torch.onnx.export.yaml
+  param: operator_export_type
+- filename: torch.onnx.export.yaml
+  param: opset_version
+- filename: torch.onnx.export.yaml
+  param: do_constant_folding
+- filename: torch.onnx.export.yaml
+  param: example_outputs
+- filename: torch.onnx.export.yaml
+  param: strip_doc_string
+- filename: torch.quantization.quantize.yaml
+  param: model
+- filename: torch.quantization.quantize.yaml
+  param: run_fn
+- filename: torch.div.yaml
+  param: out
+param_diff:
+- filename: torch.real.yaml
+  param:
+  - out
+- filename: torch.quantization.add_observer_.yaml
+  param:
+  - non_leaf_module_list
+  - device
+- filename: torch.utils.cpp_extension.load.yaml
+  param:
+  - keep_intermediates
+- filename: torch.unique.yaml
+  param:
+  - '*args'
+  - '**kwargs'
+- filename: torch.quantization.propagate_qconfig_.yaml
+  param:
+  - white_list
+- filename: torch.hub.load_state_dict_from_url.yaml
+  param:
+  - file_name
+- filename: torch.autograd.gradgradcheck.yaml
+  param:
+  - check_undefined_grad
+- filename: torch.unique_consecutive.yaml
+  param:
+  - '*args'
+  - '**kwargs'
+- filename: torch.bmm.yaml
+  param:
+  - deterministic
+- filename: torch.utils.cpp_extension.load_inline.yaml
+  param:
+  - keep_intermediates
+- filename: torch.nn.functional.kl_div.yaml
+  param:
+  - log_target
+- filename: torch.utils.model_zoo.load_url.yaml
+  param:
+  - file_name
+- filename: torch.autograd.gradcheck.yaml
+  param:
+  - check_undefined_grad
+- filename: torch.utils.data.random_split.yaml
+  param:
+  - generator
+- filename: torch.imag.yaml
+  param:
+  - out
+- filename: torch.quantization.prepare.yaml
+  param:
+  - observer_non_leaf_module_list
+  - white_list
+uniqu_pt1.5_parsed:
+- torch.jit.script.yaml
+- torch.random.fork_rng2.yaml
+- torch.jit.save.yaml
+- torch.true_divide.yaml
+- torch.jit.trace.yaml
+- torch.random.set_rng_state2.yaml
+- torch.random.manual_seed2.yaml
+- torch.jit.load.yaml
+- torch.nn.utils.prune.identity.yaml
+- torch.set_grad_enabled.yaml
+uniqu_pt1.6_parsed:
+- torch.logaddexp.yaml
+- torch.dequantize2.yaml
+- torch.nn.functional.feature_alpha_dropout.yaml
+- torch.view_as_real.yaml
+- torch.poisson.yaml
+- torch.futures.wait_all.yaml
+- torch.distributed.rpc.rpc_async.yaml
+- torch.nn.init.kaiming_normal_.yaml
+- torch.utils.mobile_optimizer.optimize_for_mobile.yaml
+- torch.logcumsumexp.yaml
+- torch.distributed.autograd.get_gradients.yaml
+- torch.istft.yaml
+- torch.distributed.all_to_all.yaml
+- torch.randint.yaml
+- torch.logaddexp2.yaml
+- torch.fliplr.yaml
+- torch.distributed.autograd.backward.yaml
+- torch.deg2rad.yaml
+- torch.distributed.rpc.rpc_sync.yaml
+- torch.distributed.reduce_scatter.yaml
+- torch.view_as_complex.yaml
+- torch.asinh.yaml
+- torch.distributed.rpc.init_rpc.yaml
+- torch.atanh.yaml
+- torch.flipud.yaml
+- torch.bucketize.yaml
+- torch.distributed.rpc.remote.yaml
+- torch.futures.collect_all.yaml
+- torch.rad2deg.yaml
+- torch.nn.init.kaiming_uniform_.yaml
+- torch.isclose.yaml
+- torch.is_nonzero.yaml
+- torch.distributed.reduce_scatter_multigpu.yaml
+- torch.searchsorted.yaml
+- torch.cuda.amp.custom_fwd.yaml
+- torch.full_like.yaml
+- torch.nn.quantized.functional.conv1d.yaml
+- torch.dequantize.yaml
+- torch.randint_like.yaml
+- torch.distributed.rpc.shutdown.yaml
+- torch.block_diag.yaml
+- torch.acosh.yaml
+- torch.nn.quantized.functional.hardswish.yaml
+- torch.distributed.rpc.get_worker_info.yaml
+- torch.vander.yaml

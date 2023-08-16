@@ -1,0 +1,12 @@
+constraints:
+  in_channels:
+    descp: Number of channels in the input image
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: torch.nn.Conv3d

@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.layers.GaussianNoise
+constraints:
+  '**kwargs':
+    descp: ''
+  stddev:
+    descp: Float, standard deviation of the noise distribution.
+inputs:
+  optional: []
+  required:
+  - stddev
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/GaussianNoise
+package: tensorflow
+target: GaussianNoise
+title: tf.keras.layers.GaussianNoise
+version: 2.2.0

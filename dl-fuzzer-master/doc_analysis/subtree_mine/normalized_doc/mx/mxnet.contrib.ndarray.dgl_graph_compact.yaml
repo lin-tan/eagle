@@ -1,0 +1,43 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*graph_data':
+    descp: Input graphs and input vertex Ids.
+    doc_dtype: NDArray[]
+    normalized_descp:
+    - Input graphs and input vertex Ids
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  graph_sizes:
+    descp: the number of vertices in each graph.
+    doc_dtype: tuple of <long>, required
+    normalized_descp:
+    - the number of vertices in each graph
+    normalized_docdtype: D_STRUCTURE of REXPR , required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  return_mapping:
+    descp: Return mapping of vid and eid between the subgraph and the parent graph.
+    doc_dtype: boolean, required
+    normalized_descp:
+    - Return mapping of vid and eid between the subgraph and the parent graph
+    normalized_docdtype: D_TYPE, required
+inputs:
+  optional:
+  - out
+  required:
+  - '*graph_data'
+  - '**kwargs'
+  - return_mapping
+  - graph_sizes
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.dgl_graph_compact
+package: mxnet
+target: dgl_graph_compact
+title: mxnet.contrib.ndarray.dgl_graph_compact
+version: 1.6.0

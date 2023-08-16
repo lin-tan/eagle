@@ -1,0 +1,21 @@
+constraints:
+  a:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: A Tensor. Must have the same type as a.
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Igammac
+outputs:
+- A Tensor. Has the same type as a.
+package: tensorflow
+target: Igammac
+title: tf.raw_ops.Igammac
+version: 2.2.0

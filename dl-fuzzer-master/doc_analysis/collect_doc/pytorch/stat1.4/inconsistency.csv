@@ -1,0 +1,18 @@
+arg,API,url
+new_state,torch.cuda.set_rng_state_all,https://pytorch.org/docs/1.4.0/cuda.html#torch.cuda.set_rng_state_all
+list,torch.distributed.all_reduce_multigpu,https://pytorch.org/docs/1.4.0/distributed.html#torch.distributed.all_reduce_multigpu
+example_inputs,torch.jit.trace_module,https://pytorch.org/docs/1.4.0/jit.html#torch.jit.trace_module
+with 'leaky_relu'),torch.nn.init.kaiming_uniform_,https://pytorch.org/docs/1.4.0/nn.init.html#torch.nn.init.kaiming_uniform_
+with 'leaky_relu'),torch.nn.init.kaiming_normal_,https://pytorch.org/docs/1.4.0/nn.init.html#torch.nn.init.kaiming_normal_
+module,torch.quantization.quantize_dynamic,https://pytorch.org/docs/1.4.0/quantization.html#torch.quantization.quantize_dynamic
+we want to quantize,torch.quantization.add_quant_dequant,https://pytorch.org/docs/1.4.0/quantization.html#torch.quantization.add_quant_dequant
+indices,torch.take,https://pytorch.org/docs/1.4.0/torch.html#torch.take
+value,torch.add,https://pytorch.org/docs/1.4.0/torch.html#torch.add
+value,torch.clamp,https://pytorch.org/docs/1.4.0/torch.html#torch.clamp
+value,torch.clamp,https://pytorch.org/docs/1.4.0/torch.html#torch.clamp
+{input},torch.mul,https://pytorch.org/docs/1.4.0/torch.html#torch.mul
+{input},torch.max,https://pytorch.org/docs/1.4.0/torch.html#torch.max
+{input},torch.max,https://pytorch.org/docs/1.4.0/torch.html#torch.max
+{input},torch.min,https://pytorch.org/docs/1.4.0/torch.html#torch.min
+{input},torch.min,https://pytorch.org/docs/1.4.0/torch.html#torch.min
+b,torch.lu_solve,https://pytorch.org/docs/1.4.0/torch.html#torch.lu_solve

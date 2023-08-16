@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.backend.is_sparse
+constraints:
+  tensor:
+    descp: A tensor instance.
+    normalized_descp:
+    - A D_STRUCTURE instance
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/is_sparse
+outputs: A boolean.
+package: tensorflow
+target: is_sparse
+title: tf.keras.backend.is_sparse
+version: 2.1.0

@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.compat.path_to_str
+constraints:
+  path:
+    descp: An object that can be converted to path representation.
+    dtype:
+    - tf.string
+inputs:
+  optional: []
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/compat/path_to_str
+outputs: A `str` object.
+package: tensorflow
+target: path_to_str
+title: tf.compat.path_to_str
+version: 2.1.0

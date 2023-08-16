@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.lite.RepresentativeDataset
+constraints:
+  input_gen:
+    descp: an input generator that can be used to generate input samples for the model.
+      This must be a callable object that returns an object that supports the iter()
+      protocol (e.g. a generator function). The elements generated must have same
+      type and shape as inputs to the model.
+    dtype:
+    - callable
+inputs:
+  optional: []
+  required:
+  - input_gen
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/lite/RepresentativeDataset
+package: tensorflow
+target: RepresentativeDataset
+title: tf.lite.RepresentativeDataset
+version: 2.2.0

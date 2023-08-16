@@ -1,0 +1,22 @@
+constraints:
+  Tout:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.float32, tf.float64. Defaults to tf.float32.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A Tensor. Must be one of the following types: complex64, complex128.'
+inputs:
+  optional:
+  - Tout
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ComplexAbs
+outputs:
+- A Tensor of type Tout.
+package: tensorflow
+target: ComplexAbs
+title: tf.raw_ops.ComplexAbs
+version: 2.3.0

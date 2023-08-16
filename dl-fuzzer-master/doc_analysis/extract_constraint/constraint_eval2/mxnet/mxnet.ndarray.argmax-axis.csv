@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, None, optional, default='None'","The axis along which to perform the reduction. Negative values means indexing from right to left. `Requires axis to be set as int, because global reduction is not supported yet.`",_Null,prim_dtype,dtype(int),,1
+"int, None, optional, default='None'","The axis along which to perform the reduction. Negative values means indexing from right to left. `Requires axis to be set as int, because global reduction is not supported yet.`",_Null,shape,ndim(0),,1

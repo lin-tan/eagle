@@ -1,0 +1,94 @@
+constraints:
+  bins:
+    default: '100'
+    descp: number of histogram bins
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  max:
+    default: '0'
+    descp: upper end of the range (inclusive)
+    doc_dtype: int
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[inclusive]'
+  min:
+    default: '0'
+    descp: lower end of the range (inclusive)
+    doc_dtype: int
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[inclusive]'
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - bins
+  - min
+  - max
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.histc
+package: torch
+ret_type: Tensor
+target: histc
+title: torch.histc
+version: 1.5.0

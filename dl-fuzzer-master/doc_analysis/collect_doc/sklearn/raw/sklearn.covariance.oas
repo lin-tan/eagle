@@ -1,0 +1,33 @@
+sklearn.covariance.oas = oas(X, assume_centered=False)
+    Estimate covariance with the Oracle Approximating Shrinkage algorithm.
+    
+    Parameters
+    ----------
+    X : array-like, shape (n_samples, n_features)
+        Data from which to compute the covariance estimate.
+    
+    assume_centered : boolean
+      If True, data will not be centered before computation.
+      Useful to work with data whose mean is significantly equal to
+      zero but is not exactly zero.
+      If False, data will be centered before computation.
+    
+    Returns
+    -------
+    shrunk_cov : array-like, shape (n_features, n_features)
+        Shrunk covariance.
+    
+    shrinkage : float
+        Coefficient in the convex combination used for the computation
+        of the shrunk estimate.
+    
+    Notes
+    -----
+    The regularised (shrunk) covariance is:
+    
+    (1 - shrinkage) * cov + shrinkage * mu * np.identity(n_features)
+    
+    where mu = trace(cov) / n_features
+    
+    The formula we used to implement the OAS is slightly modified compared
+    to the one given in the article. See :class:`OAS` for more details.

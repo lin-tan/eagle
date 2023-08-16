@@ -1,0 +1,17 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on. The default is the general main process group.
+      If another specific group is specified, the calling process must be part of
+      `group`.
+    doc_dtype:
+    - ProcessGroup
+inputs:
+  optional:
+  - group
+  required: []
+link: https://pytorch.org/docs/1.6.0/distributed.html#torch.distributed.get_backend
+package: torch
+target: get_backend
+title: torch.distributed.get_backend
+version: 1.6.0

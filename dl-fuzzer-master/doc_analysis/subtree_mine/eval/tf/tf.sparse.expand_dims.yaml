@@ -1,0 +1,6 @@
+constraints:
+  sp_input:
+    descp: A `SparseTensor`.
+    tensor_t:
+    - SparseTensor
+title: tf.sparse.expand_dims

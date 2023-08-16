@@ -1,0 +1,57 @@
+constraints:
+  data:
+    descp: A list of Tensor objects. N tensors to save.
+    structure:
+    - list(tf.tensor)
+  filename:
+    descp: A Tensor of type string. Must have a single element. The name of the file
+      to which we write the tensor.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shapes_and_slices:
+    descp: A Tensor of type string. Shape [N]. The shapes and slice specifications
+      to use when saving the tensors.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    shape:
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  tensor_names:
+    descp: A Tensor of type string. Shape [N]. The names of the tensors to be saved.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    shape:
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- n
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+  - tensor_names
+  - shapes_and_slices
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SaveSlices
+outputs:
+- The created Operation.
+package: tensorflow
+target: SaveSlices
+title: tf.raw_ops.SaveSlices
+version: 2.2.0

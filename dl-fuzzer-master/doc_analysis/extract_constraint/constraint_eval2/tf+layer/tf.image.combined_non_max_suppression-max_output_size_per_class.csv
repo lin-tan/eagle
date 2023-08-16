@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A scalar integer `Tensor` representing the maximum number of boxes to be selected by non max suppression per class,,prim_dtype,dtype(int),,1
+,A scalar integer `Tensor` representing the maximum number of boxes to be selected by non max suppression per class,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A scalar integer `Tensor` representing the maximum number of boxes to be selected by non max suppression per class,,shape,ndim(0),,1
+,A scalar integer `Tensor` representing the maximum number of boxes to be selected by non max suppression per class,,validvalue,"range([0,inf))",,1

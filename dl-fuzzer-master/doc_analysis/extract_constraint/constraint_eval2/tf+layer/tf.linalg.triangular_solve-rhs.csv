@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`.",,prim_dtype,dtype(dtype:&matrix),,1
+,"A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`.",,shape,"shape([...,m,k]), ndim(>2)",,1

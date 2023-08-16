@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"integer, optional, default is n_clusters Number of eigen vectors to use for the spectral embedding",None,prim_dtype,dtype(int),,1
+,"integer, optional, default is n_clusters Number of eigen vectors to use for the spectral embedding",None,shape,ndim(0),,1
+,"integer, optional, default is n_clusters Number of eigen vectors to use for the spectral embedding",None,validvalue,"range([0,inf))",,1

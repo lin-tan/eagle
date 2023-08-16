@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.image.adjust_brightness
+constraints:
+  delta:
+    descp: A scalar. Amount to add to the pixel values.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+  image:
+    descp: RGB image or images to adjust.
+    dtype:
+    - numeric
+inputs:
+  optional: []
+  required:
+  - image
+  - delta
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/image/adjust_brightness
+outputs:
+- A brightness-adjusted tensor of the same shape and type as image.
+package: tensorflow
+target: adjust_brightness
+title: tf.image.adjust_brightness
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Dump data from only the tensors of which the specified dtypes. This optional argument can be in any of the following format:<ul><li>a list or tuple of `DType` objects or strings that can be converted to `DType` objects via `tf.as_dtype()`. Examples:,None,prim_dtype,"dtype(tf.dtype, tf.string)",,1
+,Dump data from only the tensors of which the specified dtypes. This optional argument can be in any of the following format:<ul><li>a list or tuple of `DType` objects or strings that can be converted to `DType` objects via `tf.as_dtype()`. Examples:,None,nonprim_dtype,"structure(list(tf.dtype), tuple(tf.dtype), tuple(tf.string))",,1
+,Dump data from only the tensors of which the specified dtypes. This optional argument can be in any of the following format:<ul><li>a list or tuple of `DType` objects or strings that can be converted to `DType` objects via `tf.as_dtype()`. Examples:,None,shape,ndim(1),,1

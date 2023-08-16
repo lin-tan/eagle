@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.math.special.bessel_j1
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor or SparseTensor. Must be one of the following types: half, float32,
+      float64.'
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/math/special/bessel_j1
+outputs:
+- A Tensor or SparseTensor, respectively. Has the same type as x.
+package: tensorflow
+target: bessel_j1
+title: tf.math.special.bessel_j1
+version: 2.3.0

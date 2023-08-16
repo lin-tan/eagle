@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A 0-D scalar `Tensor`. Must have known shape.,,prim_dtype,dtype(numeric),1,1
+,A 0-D scalar `Tensor`. Must have known shape.,,nonprim_dtype,tensor_t(tf.tensor),1,1
+,A 0-D scalar `Tensor`. Must have known shape.,,shape,ndim(0),1,1

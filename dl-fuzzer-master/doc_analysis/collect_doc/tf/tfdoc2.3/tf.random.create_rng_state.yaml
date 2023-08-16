@@ -1,0 +1,21 @@
+aliases:
+- tf.random.experimental.create_rng_state
+- tf.compat.v1.random.create_rng_state
+- tf.compat.v1.random.experimental.create_rng_state
+constraints:
+  alg:
+    descp: the RNG algorithm. Can be a string, an Algorithm or an integer.
+  seed:
+    descp: an integer or 1-D numpy array.
+inputs:
+  optional: []
+  required:
+  - seed
+  - alg
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/random/create_rng_state
+outputs:
+- a 1-D numpy array whose size depends on the algorithm.
+package: tensorflow
+target: create_rng_state
+title: tf.random.create_rng_state
+version: 2.3.0

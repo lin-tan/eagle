@@ -1,0 +1,79 @@
+constraints:
+  ctx:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  data_init:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  density:
+    default: None
+    descp: should be between 0 and 1
+    doc_dtype: float, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - should be between CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional
+  distribution:
+    default: None
+    descp: 'valid values: "uniform" or "powerlaw"'
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - valid values QSTR
+    normalized_docdtype: D_TYPE optional
+  dtype:
+    default: None
+    descp: default value is None
+    doc_dtype: numpy.dtype, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - default value is None
+    normalized_docdtype: D_TYPE optional
+  modifier_func:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  rsp_indices:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  shape:
+    descp: ''
+    doc_dtype: list or tuple
+    normalized_descp: []
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  shuffle_csr_indices:
+    default: 'False'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  stype:
+    descp: 'valid values: "csr" or "row_sparse"'
+    doc_dtype: str
+    normalized_descp:
+    - valid values QSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - density
+  - dtype
+  - distribution
+  - data_init
+  - rsp_indices
+  - modifier_func
+  - shuffle_csr_indices
+  - ctx
+  required:
+  - shape
+  - stype
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.rand_sparse_ndarray
+package: mxnet
+target: rand_sparse_ndarray
+title: mxnet.test_utils.rand_sparse_ndarray
+version: 1.6.0

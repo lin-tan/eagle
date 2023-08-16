@@ -1,0 +1,50 @@
+constraints:
+  dim:
+    descp: the axis along which to index
+    doc_dtype: int
+    normalized_descp:
+    - the axis along which to PARAM
+    normalized_docdtype: ONE_WORD D_TYPE
+  index:
+    descp: the indices of elements to gather
+    doc_dtype: LongTensor
+    normalized_descp:
+    - the indices of elements to gather
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the source tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the source D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the destination tensor
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the destination D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  sparse_grad:
+    default: 'False'
+    descp: If `True`, gradient w.r.t. `input` will be a sparse tensor.
+    doc_dtype: bool,optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL gradient w r t
+    - PARAM will be a sparse D_STRUCTURE
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - out
+  - sparse_grad
+  required:
+  - input
+  - dim
+  - index
+link: https://pytorch.org/docs/stable/torch.html#torch.gather
+package: torch
+ret_type: Tensor
+target: gather
+title: torch.gather
+version: 1.5.0

@@ -1,0 +1,5 @@
+constraints:
+  reduce_func:
+    descp: A function mapping a key and a dataset of up to `window_size`consecutive
+      elements matching that key to another dataset.
+title: tf.data.experimental.group_by_window

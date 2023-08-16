@@ -1,0 +1,19 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  t:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. Typically 2-D, but may have any dimensions.'
+inputs:
+  optional:
+  - name
+  required:
+  - t
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/L2Loss
+outputs:
+- A Tensor. Has the same type as t.
+package: tensorflow
+target: L2Loss
+title: tf.raw_ops.L2Loss
+version: 2.2.0

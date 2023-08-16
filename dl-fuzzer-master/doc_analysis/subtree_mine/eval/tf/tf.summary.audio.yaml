@@ -1,0 +1,9 @@
+constraints:
+  name:
+    descp: A name for this summary. The summary tag used for TensorBoard will be this
+      name prefixed by any active name scopes.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.summary.audio

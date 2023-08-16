@@ -1,0 +1,41 @@
+
+- numpy.float32   
+- numpy.float64
+- numpy.double
+- numpy.float16
+- numpy.uint8
+# - numpy.uint16
+- numpy.int8
+# - numpy.int16
+- numpy.int32
+- numpy.int64
+
+- boolean
+- numpy.dtype
+- string
+- scalar
+- int
+- float
+- image
+
+# we cannot handle but common
+# - context
+# - symbol
+
+# tensor_t
+- tensor  # not useful
+
+
+
+
+# structure
+- dict
+- list
+- tuple
+# - iterable
+# - ndarray 
+- sparse_ndarray
+# - array_like
+- shape   # 1d tuple/list
+
+

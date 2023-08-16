@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.keras.layers.AdditiveAttention
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  causal:
+    default: None
+    descp: Boolean. Set to `True` for decoder self-attention. Adds a mask such that
+      position `i` cannot attend to positions `j > i`. This prevents the flow of information
+      from the future towards the past.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD D_TYPE
+    - Set to CONSTANT_BOOL for decoder self attention
+    - Adds a mask such that position QSTR can not attend to positions j REXPR
+    - This prevents the flow of information from the future towards the past
+  use_scale:
+    default: 'True'
+    descp: If `True`, will create a variable to scale the attention scores.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, will create a variable to scale the attention scores
+inputs:
+  optional:
+  - use_scale
+  - '**kwargs'
+  - causal
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/AdditiveAttention
+package: tensorflow
+target: AdditiveAttention
+title: tf.keras.layers.AdditiveAttention
+version: 2.1.0

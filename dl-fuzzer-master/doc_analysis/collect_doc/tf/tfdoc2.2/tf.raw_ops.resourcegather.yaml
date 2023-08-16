@@ -1,0 +1,32 @@
+constraints:
+  batch_dims:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  dtype:
+    descp: A tf.DType.
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource.
+  validate_indices:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - batch_dims
+  - validate_indices
+  - name
+  required:
+  - resource
+  - indices
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceGather
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: ResourceGather
+title: tf.raw_ops.ResourceGather
+version: 2.2.0

@@ -1,0 +1,44 @@
+sklearn.datasets.load_boston = load_boston(return_X_y=False)
+    Load and return the boston house-prices dataset (regression).
+    
+    ==============   ==============
+    Samples total               506
+    Dimensionality               13
+    Features         real, positive
+    Targets           real 5. - 50.
+    ==============   ==============
+    
+    Read more in the :ref:`User Guide <boston_dataset>`.
+    
+    Parameters
+    ----------
+    return_X_y : boolean, default=False.
+        If True, returns ``(data, target)`` instead of a Bunch object.
+        See below for more information about the `data` and `target` object.
+    
+        .. versionadded:: 0.18
+    
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+        'data', the data to learn, 'target', the regression targets,
+        'DESCR', the full description of the dataset,
+        and 'filename', the physical location of boston
+        csv dataset (added in version `0.20`).
+    
+    (data, target) : tuple if ``return_X_y`` is True
+    
+        .. versionadded:: 0.18
+    
+    Notes
+    -----
+        .. versionchanged:: 0.20
+            Fixed a wrong data point at [445, 0].
+    
+    Examples
+    --------
+    >>> from sklearn.datasets import load_boston
+    >>> X, y = load_boston(return_X_y=True)
+    >>> print(X.shape)
+    (506, 13)

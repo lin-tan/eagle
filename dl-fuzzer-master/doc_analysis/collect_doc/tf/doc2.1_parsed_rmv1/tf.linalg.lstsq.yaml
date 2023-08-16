@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.linalg.lstsq
+- tf.compat.v1.matrix_solve_ls
+constraints:
+  fast:
+    default: 'True'
+    descp: bool. Defaults to `True`.
+  l2_regularizer:
+    default: '0.0'
+    descp: 0-D `double` `Tensor`. Ignored if `fast=False`.
+  matrix:
+    descp: '`Tensor` of shape `[..., M, N]`.'
+  name:
+    default: None
+    descp: string, optional name of the operation.
+  rhs:
+    descp: '`Tensor` of shape `[..., M, K]`.'
+exceptions:
+- NotImplementedError: linalg.lstsq is currently disabled for complex128 and l2_regularizer
+    != 0 due to poor accuracy.
+inputs:
+  optional:
+  - l2_regularizer
+  - fast
+  - name
+  required:
+  - matrix
+  - rhs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/lstsq
+outputs:
+- output: '`Tensor` of shape `[..., N, K]` whose inner-most 2 dimensions form`M`-by-`K`
+    matrices that solve the equations`matrix[..., :, :] * output[..., :, :] = rhs[...,
+    :, :]` in the least squares sense.'
+package: tensorflow
+target: lstsq
+title: tf.linalg.lstsq
+version: 2.1.0

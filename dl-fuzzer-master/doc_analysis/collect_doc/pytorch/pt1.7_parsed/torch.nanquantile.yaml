@@ -1,0 +1,41 @@
+constraints:
+  dim:
+    default: None
+    descp: the dimension to reduce.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+  q:
+    descp: a scalar or 1D tensor of quantile values in the range [0, 1]
+    doc_dtype:
+    - float
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - dim
+  - keepdim
+  - out
+  required:
+  - input
+  - q
+link: https://pytorch.org/docs/1.7.0/generated/torch.nanquantile.html#torch.nanquantile#torch.nanquantile
+package: torch
+ret_type: Tensor
+target: nanquantile
+title: torch.nanquantile
+version: 1.7.0

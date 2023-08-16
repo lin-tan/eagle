@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"If `True`, an error will be raised when we detect that there exists an input such that all the outputs are independent of it. If `False`, we return a Tensor of zeros as the vhp for said inputs, which is the expected mathematical value. Defaults to `False`.",False,prim_dtype,dtype(torch.bool),1,1
+bool,"If `True`, an error will be raised when we detect that there exists an input such that all the outputs are independent of it. If `False`, we return a Tensor of zeros as the vhp for said inputs, which is the expected mathematical value. Defaults to `False`.",False,shape,ndim(0),1,1

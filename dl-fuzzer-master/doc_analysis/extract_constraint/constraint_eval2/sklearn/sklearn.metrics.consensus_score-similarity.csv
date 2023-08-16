@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"string or function, optional, default: ""jaccard"" May be the string ""jaccard"" to use the Jaccard coefficient, or any function that takes four arguments, each of which is a 1d indicator vector: (a_rows, a_columns, b_rows, b_columns).",jaccard,prim_dtype,dtype(string),,1
+,"string or function, optional, default: ""jaccard"" May be the string ""jaccard"" to use the Jaccard coefficient, or any function that takes four arguments, each of which is a 1d indicator vector: (a_rows, a_columns, b_rows, b_columns).",jaccard,shape,"ndim(0, 1)",,1

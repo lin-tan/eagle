@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.config.experimental.get_device_details
+constraints:
+  device:
+    descp: A tf.config.PhysicalDevice returned by tf.config.list_physical_devices
+      or tf.config.get_visible_devices.
+inputs:
+  optional: []
+  required:
+  - device
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/config/experimental/get_device_details
+outputs:
+- A dict with string keys.
+package: tensorflow
+target: get_device_details
+title: tf.config.experimental.get_device_details
+version: 2.3.0

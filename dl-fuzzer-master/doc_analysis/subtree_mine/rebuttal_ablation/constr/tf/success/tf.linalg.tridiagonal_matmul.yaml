@@ -1,0 +1,107 @@
+aliases:
+- tf.compat.v1.linalg.tridiagonal_matmul
+constraints:
+  diagonals:
+    descp: A `Tensor` or tuple of `Tensor`s describing left-hand sides. The shape
+      depends of `diagonals_format`, see description above. Must be`float32`, `float64`,
+      `complex64`, or `complex128`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&diagonals_format'
+    - '[1]'
+    - '[n]'
+    structure:
+    - tuple
+    tensor_t:
+    - tf.tensor
+  diagonals_format:
+    default: compact
+    descp: one of `sequence`, or `compact`. Default is `compact`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - compact
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - compact
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[compact,compact]'
+    - '[compact]'
+    - '[n]'
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name to give this `Op` (optional).
+    dtype:
+    - int
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+  rhs:
+    descp: A `Tensor` of shape [..., M, N] and with the same dtype as `diagonals`.
+    dtype:
+    - '&diagonals'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - '[...'
+    ndim:
+    - '&diagonals'
+    - '0'
+    - '1'
+    - '>=2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&diagonals'
+    - '[...,m,n]'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: An unsupported type is provided as input, or when the input tensors
+    have incorrect shapes.
+inputs:
+  optional:
+  - diagonals_format
+  - name
+  required:
+  - diagonals
+  - rhs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/tridiagonal_matmul
+outputs: A `Tensor` of shape [..., M, N] containing the result of multiplication.
+package: tensorflow
+target: tridiagonal_matmul
+title: tf.linalg.tridiagonal_matmul
+version: 2.1.0

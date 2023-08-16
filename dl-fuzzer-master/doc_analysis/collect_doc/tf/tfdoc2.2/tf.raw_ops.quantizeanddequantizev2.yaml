@@ -1,0 +1,65 @@
+constraints:
+  axis:
+    default: '-1'
+    descp: An optional int. Defaults to -1. If specified, this axis is treated as
+      a channel or slice axis, and a separate quantization range is used for each
+      channel or slice along this axis.
+  input:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64. Tensor to quantize and then dequantize.'
+  input_max:
+    descp: A Tensor. Must have the same type as input. If range_given == True, this
+      specifies the maximum input value that needs to be represented, otherwise it
+      is determined from the max value of the input tensor.
+  input_min:
+    descp: A Tensor. Must have the same type as input. If range_given == True, this
+      specifies the minimum input value that needs to be represented, otherwise it
+      is determined from the min value of the input tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  narrow_range:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, then the absolute value of
+      the quantized minimum value is the same as the quantized maximum value, instead
+      of 1 greater. i.e. for 8 bit quantization, the minimum value is -127 instead
+      of -128.
+  num_bits:
+    default: '8'
+    descp: An optional int. Defaults to 8. The bitwidth of the quantization.
+  range_given:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether the range is given or should
+      be determined from the input tensor.
+  round_mode:
+    default: HALF_TO_EVEN
+    descp: 'An optional string from: "HALF_TO_EVEN", "HALF_UP". Defaults to "HALF_TO_EVEN".
+      The ''round_mode'' attribute controls which rounding tie-breaking algorithm
+      is used when rounding float values to their quantized equivalents. The following
+      rounding modes are currently supported: HALF_TO_EVEN: this is the default round_mode.
+      HALF_UP: round towards positive. In this mode 7.5 rounds up to 8 and -7.5 rounds
+      up to -7.'
+  signed_input:
+    default: 'True'
+    descp: An optional bool. Defaults to True. Whether the quantization is signed
+      or unsigned. (actually this parameter should have been called signed_output)
+inputs:
+  optional:
+  - signed_input
+  - num_bits
+  - range_given
+  - round_mode
+  - narrow_range
+  - axis
+  - name
+  required:
+  - input
+  - input_min
+  - input_max
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QuantizeAndDequantizeV2
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: QuantizeAndDequantizeV2
+title: tf.raw_ops.QuantizeAndDequantizeV2
+version: 2.2.0

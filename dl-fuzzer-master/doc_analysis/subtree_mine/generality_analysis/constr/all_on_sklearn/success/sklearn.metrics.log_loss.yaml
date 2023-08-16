@@ -1,0 +1,75 @@
+constraints:
+  eps:
+    default: 1e-15
+    descp: float Log loss is undefined for p=0 or p=1, so probabilities are clipped
+      to max(eps, min(1 - eps, p)).
+    dtype:
+    - float
+    ndim:
+    - '0'
+  labels:
+    default: None
+    descp: array-like, optional (default=None) If not provided, labels will be inferred
+      from y_true. If ``labels`` is ``None`` and ``y_pred`` has shape (n_samples,)
+      the labels are assumed to be binary and are inferred from ``y_true``.
+    enum:
+    - None
+    - labels
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,]'
+    structure:
+    - ndarray
+  normalize:
+    default: 'True'
+    descp: bool, optional (default=True) If true, return the mean loss per sample.
+      Otherwise, return the sum of the per-sample losses.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,]'
+    structure:
+    - ndarray
+  y_pred:
+    descp: array-like of float, shape = (n_samples, n_classes) or (n_samples,) Predicted
+      probabilities, as returned by a classifier's predict_proba method. If ``y_pred.shape
+      = (n_samples,)`` the probabilities provided are assumed to be that of the positive
+      class. The labels in ``y_pred`` are assumed to be ordered alphabetically, as
+      done by :class:`preprocessing.LabelBinarizer`.
+    dtype:
+    - boolean
+    - float
+    ndim:
+    - '0'
+    - '2'
+    shape:
+    - '[n_samples,]'
+    structure:
+    - ndarray
+  y_true:
+    descp: array-like or label indicator matrix Ground truth (correct) labels for
+      n_samples samples.
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - eps
+  - normalize
+  - sample_weight
+  - labels
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: sklearn
+target: log_loss
+title: sklearn.metrics.log_loss
+version: 0.24.2

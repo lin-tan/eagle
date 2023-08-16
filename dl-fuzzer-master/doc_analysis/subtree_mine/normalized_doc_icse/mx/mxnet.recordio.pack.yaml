@@ -1,0 +1,26 @@
+constraints:
+  header:
+    descp: Header of the image record. `header.label` can be a number or an array.
+      See more detail in `IRHeader`.
+    doc_dtype: IRHeader
+    normalized_descp:
+    - Header of the image record
+    - header label can be a number or an D_STRUCTURE
+    - See more detail in QSTR
+    normalized_docdtype: ONE_WORD IRHeader
+  s:
+    descp: Raw image string to be packed.
+    doc_dtype: str
+    normalized_descp:
+    - Raw image D_TYPE to be packed
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - header
+  - s
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/recordio/index.html#mxnet.recordio.pack
+package: mxnet
+target: pack
+title: mxnet.recordio.pack
+version: 1.6.0

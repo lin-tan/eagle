@@ -1,0 +1,6 @@
+constraints:
+  x:
+    descp: tensor.
+    tensor_t:
+    - tf.tensor
+title: tf.linalg.trace

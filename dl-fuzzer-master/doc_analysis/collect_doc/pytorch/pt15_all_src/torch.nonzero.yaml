@@ -1,0 +1,28 @@
+constraints:
+  as_tuple:
+    default: 'False'
+    descp: ''
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor containing indices
+    doc_dtype:
+    - LongTensor
+inputs:
+  keyword_only:
+  - out
+  - as_tuple
+  optional:
+  - out
+  - as_tuple
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.nonzero
+package: torch
+ret_type: LongTensor or tuple of LongTensors
+target: nonzero
+title: torch.nonzero
+version: 1.5.0

@@ -1,0 +1,24 @@
+constraints:
+  inputs:
+    descp: 'A list of at least 1 Tensor objects with the same type in: float32, float64,
+      int32, uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16,
+      uint16, complex128, half, uint32, uint64. A list of Tensor objects, each with
+      same shape and type.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. Shape of elements of inputs.
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/AccumulateNV2
+outputs:
+- A Tensor. Has the same type as inputs.
+package: tensorflow
+target: AccumulateNV2
+title: tf.raw_ops.AccumulateNV2
+version: 2.3.0

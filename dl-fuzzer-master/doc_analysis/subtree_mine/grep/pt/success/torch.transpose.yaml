@@ -1,0 +1,31 @@
+constraints:
+  dim0:
+    descp: the first dimension to be transposed
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  dim1:
+    descp: the second dimension to be transposed
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - dim0
+  - dim1
+link: https://pytorch.org/docs/stable/torch.html#torch.transpose
+package: torch
+ret_type: Tensor
+target: transpose
+title: torch.transpose
+version: 1.5.0

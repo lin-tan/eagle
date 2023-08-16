@@ -1,0 +1,9 @@
+constraints:
+  lhs:
+    default: None
+    descp: First input to the function
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.broadcast_not_equal

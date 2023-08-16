@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"{'int32', 'int64'}, optional",Data type of output samples. Default is 'int32',_Null,prim_dtype,dtype(numpy.dtype),,1
+"{'int32', 'int64'}, optional",Data type of output samples. Default is 'int32',_Null,shape,ndim(0),,1
+"{'int32', 'int64'}, optional",Data type of output samples. Default is 'int32',_Null,validvalue,"enum(int32, int64)",,1

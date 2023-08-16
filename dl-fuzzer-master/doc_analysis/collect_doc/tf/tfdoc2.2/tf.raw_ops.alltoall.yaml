@@ -1,0 +1,33 @@
+constraints:
+  concat_dimension:
+    descp: An int. The dimension number to concatenate.
+  group_assignment:
+    descp: A Tensor of type int32. An int32 tensor with shape [num_groups, num_replicas_per_group].
+      group_assignment[i] represents the replica ids in the ith subgroup.
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64, bool. The local input to the sum.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  split_count:
+    descp: An int. The number of splits, this number must equal to the sub-group size(group_assignment.get_shape()[1])
+  split_dimension:
+    descp: An int. The dimension number to split.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - group_assignment
+  - concat_dimension
+  - split_dimension
+  - split_count
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AllToAll
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: AllToAll
+title: tf.raw_ops.AllToAll
+version: 2.2.0

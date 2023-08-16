@@ -1,0 +1,38 @@
+constraints:
+  input:
+    descp: 1-d int tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - CONSTANT_NUM-D D_TYPE D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  minlength:
+    default: '0'
+    descp: optional, minimum number of bins. Should be non-negative.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - optional, minimum number of bins
+    - Should be non negative
+    normalized_docdtype: ONE_WORD D_TYPE
+  weights:
+    default: None
+    descp: optional, weight for each value in the input tensor. Should be of same
+      size as input tensor.
+    doc_dtype: Tensor
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional, weight for each value in the PARAM D_STRUCTURE
+    - Should be of same size as PARAM D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weights
+  - minlength
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.bincount
+package: torch
+ret_type: Tensor
+target: bincount
+title: torch.bincount
+version: 1.5.0

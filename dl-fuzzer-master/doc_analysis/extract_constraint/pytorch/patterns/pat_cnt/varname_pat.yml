@@ -1,0 +1,69 @@
+pat:
+  ^(\w+_)?func:
+    append: false
+    cnt: 14
+    dtype: callable
+    ow: true
+  ^(\w+_)?length$:
+    append: false
+    cnt: 11
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)?size$:
+    append: false
+    cnt: 19
+    dtype: numeric
+    ow: false
+    range: '[0,inf)'
+  ^(\w+_)?tensors*$:
+    append: true
+    cnt: 41
+    ow: true
+    tensor_t: torch.tensor
+  ^dim\d*$:
+    append: true
+    cnt: 79
+    dtype: int
+    ow: true
+  ^dtype$:
+    append: true
+    cnt: 45
+    dtype: torch.dtype
+    ow: true
+  ^f$:
+    append: false
+    cnt: 2
+    dtype: string
+    ow: true
+  ^mat\d*$:
+    append: true
+    cnt: 10
+    dtype: numeric
+    ow: true
+  ^name$:
+    append: true
+    cnt: 14
+    dtype: string
+    ow: true
+  ^tensor_list$:
+    append: true
+    cnt: 3
+    ow: true
+    tensor_t: torch.tensor
+  ^vec\d*$:
+    append: true
+    cnt: 4
+    ndim: 1
+    ow: true
+  _lists*$:
+    append: false
+    cnt: 0
+    ow: false
+    structure: list
+  sequence:
+    append: false
+    cnt: 1
+    ow: false
+    structure: sequence
+target: dtype

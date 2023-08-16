@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Integer or tuple of integers, the axis or axes that should be normalized (typically the features axis). We will normalize each element in the specified axis. The default is '-1' (the innermost axis); 0 (the batch axis) is not allowed.",-1,prim_dtype,dtype(int),,1
+,"Integer or tuple of integers, the axis or axes that should be normalized (typically the features axis). We will normalize each element in the specified axis. The default is '-1' (the innermost axis); 0 (the batch axis) is not allowed.",-1,nonprim_dtype,structure(tuple(int)),,1
+,"Integer or tuple of integers, the axis or axes that should be normalized (typically the features axis). We will normalize each element in the specified axis. The default is '-1' (the innermost axis); 0 (the batch axis) is not allowed.",-1,shape,"ndim(0, 1)",,1

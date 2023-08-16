@@ -1,0 +1,23 @@
+constraints:
+  mat1:
+    descp: the first sparse matrix to be multiplied
+    doc_dtype: SparseTensor
+    normalized_descp:
+    - the first sparse matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat2:
+    descp: the second dense matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second dense matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - mat1
+  - mat2
+link: https://pytorch.org/docs/stable/sparse.html#torch.sparse.mm
+package: torch
+target: mm
+title: torch.sparse.mm
+version: 1.5.0

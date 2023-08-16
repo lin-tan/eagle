@@ -1,0 +1,12 @@
+constraints:
+  pooled_size:
+    default: _Null
+    descp: fix pooled size
+    doc_dtype:
+    - int
+    - required
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+title: mxnet.ndarray.contrib.PSROIPooling

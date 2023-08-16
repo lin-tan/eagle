@@ -1,0 +1,56 @@
+constraints:
+  align_corners:
+    default: None
+    descp: 'if `True`, the corner pixels of the input and output tensors are aligned,
+      and thus preserving the values at those pixels. This only has effect when `mode`
+      is `''linear''`, `''bilinear''`, or `''trilinear''`. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - if CONSTANT_BOOL the corner pixels of the input and output D_STRUCTURE are aligned
+      and thus preserving the values at those pixels
+    - This only has effect when PARAM is QSTR
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  mode:
+    default: nearest
+    descp: 'the upsampling algorithm: one of `''nearest''`, `''linear''`, `''bilinear''`,
+      `''bicubic''` and `''trilinear''`. Default: `''nearest''`'
+    doc_dtype: str, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - the upsampling algorithm one of QSTR
+    - Default QSTR
+    normalized_docdtype: D_TYPE optional
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size. Has to match input size if it is a tuple.
+    doc_dtype: float or Tuple[float] or Tuple[float, float] or Tuple[float, float,
+      float], optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - multiplier for spatial PARAM
+    - Has to match input PARAM if it is a D_STRUCTURE
+    normalized_docdtype: D_TYPE or D_STRUCTURE BSTR or D_STRUCTURE BSTR or D_STRUCTURE
+      BSTR optional
+  size:
+    default: None
+    descp: output spatial sizes
+    doc_dtype: int or Tuple[int] or Tuple[int, int] or Tuple[int, int, int], optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output spatial sizes
+    normalized_docdtype: D_TYPE or D_STRUCTURE BSTR or D_STRUCTURE BSTR or D_STRUCTURE
+      BSTR optional
+inputs:
+  optional:
+  - size
+  - scale_factor
+  - mode
+  - align_corners
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Upsample
+package: torch
+target: Upsample
+title: torch.nn.Upsample
+version: 1.5.0

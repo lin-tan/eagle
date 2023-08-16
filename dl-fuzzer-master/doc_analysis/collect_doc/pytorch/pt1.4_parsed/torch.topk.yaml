@@ -1,0 +1,45 @@
+constraints:
+  dim:
+    default: None
+    descp: the dimension to sort along
+    doc_dtype:
+    - python:int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  k:
+    descp: the k in "top-k"
+    doc_dtype:
+    - python:int
+  largest:
+    default: 'True'
+    descp: controls whether to return largest or smallest elements
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) that can be optionally given to
+      be used as output buffers
+    doc_dtype:
+    - tuple
+  sorted:
+    default: 'True'
+    descp: controls whether to return the elements in sorted order
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - dim
+  - largest
+  - sorted
+  - out
+  required:
+  - input
+  - k
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.topk
+package: torch
+ret_type: (Tensor, LongTensor)
+target: topk
+title: torch.topk
+version: 1.4.0

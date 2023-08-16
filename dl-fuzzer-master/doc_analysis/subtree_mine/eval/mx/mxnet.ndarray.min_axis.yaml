@@ -1,0 +1,13 @@
+constraints:
+  exclude:
+    default: _Null
+    descp: Whether to perform reduction on axis that are NOT in axis instead.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.min_axis

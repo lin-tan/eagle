@@ -1,0 +1,26 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A Tensor of type bool. A Tensor of type bool.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LogicalNot
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: LogicalNot
+title: tf.raw_ops.LogicalNot
+version: 2.2.0

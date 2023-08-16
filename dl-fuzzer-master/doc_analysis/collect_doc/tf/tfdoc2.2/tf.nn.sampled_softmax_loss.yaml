@@ -1,0 +1,56 @@
+constraints:
+  biases:
+    descp: A Tensor of shape [num_classes]. The class biases.
+  inputs:
+    descp: A Tensor of shape [batch_size, dim]. The forward activations of the input
+      network.
+  labels:
+    descp: A Tensor of type int64 and shape [batch_size, num_true]. The target classes.
+      Note that this format differs from the labels argument of nn.softmax_cross_entropy_with_logits.
+  name:
+    default: sampled_softmax_loss
+    descp: A name for the operation (optional).
+  num_classes:
+    descp: An int. The number of possible classes.
+  num_sampled:
+    descp: An int. The number of classes to randomly sample per batch.
+  num_true:
+    default: '1'
+    descp: An int. The number of target classes per training example.
+  remove_accidental_hits:
+    default: 'True'
+    descp: A bool. whether to remove "accidental hits" where a sampled class equals
+      one of the target classes. Default is True.
+  sampled_values:
+    default: None
+    descp: a tuple of (sampled_candidates, true_expected_count, sampled_expected_count)
+      returned by a *_candidate_sampler function. (if None, we default to log_uniform_candidate_sampler)
+  seed:
+    default: None
+    descp: random seed for candidate sampling. Default to None, which doesn't set
+      the op-level random seed for candidate sampling.
+  weights:
+    descp: A Tensor of shape [num_classes, dim], or a list of Tensor objects whose
+      concatenation along dimension 0 has shape [num_classes, dim]. The (possibly-sharded)
+      class embeddings.
+inputs:
+  optional:
+  - num_true
+  - sampled_values
+  - remove_accidental_hits
+  - seed
+  - name
+  required:
+  - weights
+  - biases
+  - labels
+  - inputs
+  - num_sampled
+  - num_classes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/sampled_softmax_loss
+outputs:
+- A batch_size 1-D tensor of per-example sampled softmax losses.
+package: tensorflow
+target: sampled_softmax_loss
+title: tf.nn.sampled_softmax_loss
+version: 2.2.0

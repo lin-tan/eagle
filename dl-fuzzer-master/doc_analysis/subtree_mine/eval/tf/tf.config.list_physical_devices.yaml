@@ -1,0 +1,8 @@
+constraints:
+  device_type:
+    default: None
+    descp: (optional string) Only include devices matching this device type. For example
+      "CPU" or "GPU".
+    dtype:
+    - tf.string
+title: tf.config.list_physical_devices

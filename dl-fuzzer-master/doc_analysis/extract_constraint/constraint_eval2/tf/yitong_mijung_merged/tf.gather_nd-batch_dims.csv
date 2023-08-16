@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An integer or a scalar 'Tensor'. The number of batch dimensions.,0,prim_dtype,dtype(int),1,1
+,An integer or a scalar 'Tensor'. The number of batch dimensions.,0,nonprim_dtype,tensor_t(tf.tensor),1,1
+,An integer or a scalar 'Tensor'. The number of batch dimensions.,0,shape,ndim(0),0,1
+,An integer or a scalar 'Tensor'. The number of batch dimensions.,0,validvalue,"range([0,inf))",1,1

@@ -1,0 +1,33 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  optimization_configs:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+  optimizations:
+    descp: A Tensor of type string. A tf.string vector tf.Tensor identifying optimizations
+      to use.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - optimization_configs
+  - name
+  required:
+  - input_dataset
+  - optimizations
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OptimizeDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: OptimizeDataset
+title: tf.raw_ops.OptimizeDataset
+version: 2.3.0

@@ -1,0 +1,54 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  N:
+    default: '20'
+    descp: Repeat times.
+    doc_dtype:
+    - int
+    - optional
+  ctx:
+    default: None
+    descp: Running context.
+    doc_dtype:
+    - Context
+  grad_req:
+    default: None
+    descp: Gradient requirements.
+    doc_dtype:
+    - None
+    - str
+    - list of str
+    - dict of str to str
+    - optional
+  location:
+    default: None
+    descp: Location to evaluate the inner executor.
+    doc_dtype:
+    - none
+    - dict of str to np.ndarray
+  sym:
+    descp: Symbol to run the speed test.
+    doc_dtype:
+    - Symbol
+  typ:
+    default: whole
+    descp: '"whole" or "forward"   "whole"Test the forward_backward speed.   '
+    doc_dtype:
+    - str
+    - optional
+inputs:
+  optional:
+  - location
+  - ctx
+  - N
+  - grad_req
+  - typ
+  required:
+  - sym
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.check_speed
+package: mxnet
+target: check_speed
+title: mxnet.test_utils.check_speed
+version: 1.7.0

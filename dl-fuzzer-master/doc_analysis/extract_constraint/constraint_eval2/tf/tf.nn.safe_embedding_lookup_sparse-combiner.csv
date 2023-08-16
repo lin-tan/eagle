@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string specifying how to combine embedding results for each entry. Currently ""mean"", ""sqrtn"" and ""sum"" are supported, with ""mean"" the default.",mean,prim_dtype,dtype(tf.string),,1
+,"A string specifying how to combine embedding results for each entry. Currently ""mean"", ""sqrtn"" and ""sum"" are supported, with ""mean"" the default.",mean,shape,ndim(0),,1
+,"A string specifying how to combine embedding results for each entry. Currently ""mean"", ""sqrtn"" and ""sum"" are supported, with ""mean"" the default.",mean,validvalue,"enum(mean, sqrtn, sum)",,1

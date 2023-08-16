@@ -1,0 +1,33 @@
+constraints:
+  logits:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64. 2-D Tensor
+      with shape [batch_size, num_classes]. Each slice [i, :] represents the unnormalized
+      log probabilities for all classes.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_samples:
+    descp: A Tensor of type int32. 0-D. Number of independent samples to draw for
+      each row slice.
+  output_dtype:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int64.'
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+inputs:
+  optional:
+  - output_dtype
+  - name
+  required:
+  - logits
+  - num_samples
+  - seed
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatelessMultinomial
+outputs:
+- A Tensor of type output_dtype.
+package: tensorflow
+target: StatelessMultinomial
+title: tf.raw_ops.StatelessMultinomial
+version: 2.3.0

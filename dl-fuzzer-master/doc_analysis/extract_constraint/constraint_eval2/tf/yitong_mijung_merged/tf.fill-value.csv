@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor`. 0-D (scalar). Value to fill the returned tensor. @compatibility(numpy) Equivalent to np.full @end_compatibility,,nonprim_dtype,tensor_t(tf.tensor),1,1
+"","","",shape,ndim({0}),1,0
+"","","",prim_dtype,dtype(scalar),1,0

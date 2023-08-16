@@ -1,0 +1,60 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, defaults to
+      the device of `input`.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: if `None`, defaults
+      to the dtype of `input`.'
+    doc_dtype:
+    - torch.dtype
+  high:
+    descp: One above the highest integer to be drawn from the distribution.
+    doc_dtype:
+    - int
+  input:
+    descp: the size of `input` will determine size of the output tensor.
+    doc_dtype:
+    - Tensor
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned tensor. Default: if `None`, defaults to
+      the layout of `input`.'
+    doc_dtype:
+    - torch.layout
+  low:
+    default: '0'
+    descp: 'Lowest integer to be drawn from the distribution. Default: 0.'
+    doc_dtype:
+    - int
+  memory_format:
+    default: torch.preserve_format
+    descp: 'the desired memory format of returned Tensor. Default: `torch.preserve_format`.'
+    doc_dtype:
+    - torch.memory_format
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - low
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - memory_format
+  required:
+  - input
+  - high
+link: https://pytorch.org/docs/1.6.0/generated/torch.randint_like.html#torch.randint_like#torch.randint_like
+package: torch
+ret_type: Tensor
+target: randint_like
+title: torch.randint_like
+version: 1.6.0

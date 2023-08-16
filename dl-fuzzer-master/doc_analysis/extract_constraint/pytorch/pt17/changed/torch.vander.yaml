@@ -1,0 +1,46 @@
+constraints:
+  N:
+    default: None
+    descp: Number of columns in the output. If N is not specified, a square array
+      is returned (N = len(x)) .
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[&x]'
+  increasing:
+    default: 'False'
+    descp: Order of the powers of the columns. If True, the powers increase from left
+      to right, if False (the default) they are reversed.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  x:
+    descp: 1-D input tensor.
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '1'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - N
+  - increasing
+  required:
+  - x
+link: https://pytorch.org/docs/1.7.0/generated/torch.vander.html#torch.vander#torch.vander
+package: torch
+ret_type: Tensor
+target: vander
+title: torch.vander
+version: 1.7.0

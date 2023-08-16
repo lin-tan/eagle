@@ -1,0 +1,12 @@
+constraints:
+  negative_samples:
+    default: '1.0'
+    descp: Float >= 0. 0 for no negative (i.e. random) samples.     1 for same number
+      as positive samples.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: tf.keras.preprocessing.sequence.skipgrams

@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.fill
+constraints:
+  dims:
+    descp: 'A 1-D sequence of non-negative numbers. Represents the shape of the output
+      tf.Tensor. Entries should be of type: int32, int64.'
+  name:
+    default: None
+    descp: Optional string. The name of the output tf.Tensor.
+  value:
+    descp: A value to fill the returned tf.Tensor.
+exceptions:
+- InvalidArgumentError: dims contains negative entries.
+- NotFoundError: dims contains non-integer entries.
+inputs:
+  optional:
+  - name
+  required:
+  - dims
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/fill
+outputs:
+- A tf.Tensor with shape dims and the same dtype as value.
+package: tensorflow
+target: fill
+title: tf.fill
+version: 2.3.0

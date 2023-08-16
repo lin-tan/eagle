@@ -1,0 +1,11 @@
+sklearn.utils.indexable = indexable(*iterables)
+    Make arrays indexable for cross-validation.
+    
+    Checks consistent length, passes through None, and ensures that everything
+    can be indexed by converting sparse matrices to csr and converting
+    non-interable objects to arrays.
+    
+    Parameters
+    ----------
+    *iterables : lists, dataframes, arrays, sparse matrices
+        List of objects to ensure sliceability.

@@ -1,0 +1,27 @@
+constraints:
+  dtype:
+    descp: A tf.DType. The type of elements in the variable tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. The shape of the variable tensor.
+  var_name:
+    default: ''
+    descp: An optional string. Defaults to "". Overrides the name used for the temporary
+      variable resource. Default value is the name of the 'TemporaryVariable' op (which
+      is guaranteed unique).
+inputs:
+  optional:
+  - var_name
+  - name
+  required:
+  - shape
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TemporaryVariable
+outputs:
+- A mutable Tensor of type dtype.
+package: tensorflow
+target: TemporaryVariable
+title: tf.raw_ops.TemporaryVariable
+version: 2.3.0

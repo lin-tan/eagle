@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Number of PS servers to start.,,prim_dtype,dtype(int),,1
+,Number of PS servers to start.,,shape,ndim(0),,1
+,Number of PS servers to start.,,validvalue,"range([0,inf))",,1

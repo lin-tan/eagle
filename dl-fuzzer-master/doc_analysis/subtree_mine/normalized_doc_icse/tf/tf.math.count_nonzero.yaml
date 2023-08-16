@@ -1,0 +1,47 @@
+constraints:
+  axis:
+    default: None
+    descp: The dimensions to reduce. If `None` (the default), reduces all dimensions.
+      Must be in the range `[-rank(input), rank(input))`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The dimensions to reduce
+    - If QSTR BSTR reduces all dimensions
+    - Must be in the range BSTR
+  dtype:
+    default: tf.dtypes.int64
+    descp: The output dtype; defaults to `tf.int64`.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The output dtype defaults to D_TYPE
+  input:
+    descp: The tensor to reduce. Should be of numeric type, `bool`, or `string`.
+    normalized_descp:
+    - The D_STRUCTURE to reduce
+    - Should be of D_TYPE type D_TYPE
+  keepdims:
+    default: None
+    descp: If true, retains reduced dimensions with length 1.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL retains reduced dimensions with length CONSTANT_NUM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - axis
+  - keepdims
+  - dtype
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/count_nonzero
+outputs: The reduced tensor (number of nonzero values).
+package: tensorflow
+target: count_nonzero
+title: tf.math.count_nonzero
+version: 2.1.0

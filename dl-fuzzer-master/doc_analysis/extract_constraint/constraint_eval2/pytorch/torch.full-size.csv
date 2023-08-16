@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",,prim_dtype,dtype(int),,1
+int,"a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",,nonprim_dtype,"structure(list, tuple)",,1
+int,"a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",,validvalue,"range([0,inf))",,1

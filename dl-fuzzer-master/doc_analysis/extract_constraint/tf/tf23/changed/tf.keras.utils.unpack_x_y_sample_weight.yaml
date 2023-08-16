@@ -1,0 +1,16 @@
+constraints:
+  data:
+    descp: A tuple of the form (x,), (x, y), or (x, y, sample_weight).
+    structure:
+    - tuple
+inputs:
+  optional: []
+  required:
+  - data
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/utils/unpack_x_y_sample_weight
+outputs:
+- The unpacked tuple, with Nones for y and sample_weight if they are not provided.
+package: tensorflow
+target: unpack_x_y_sample_weight
+title: tf.keras.utils.unpack_x_y_sample_weight
+version: 2.3.0

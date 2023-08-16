@@ -1,0 +1,280 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (dictionary|dict)\s+of\s+(\w+)\s+to\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \1
+    - \2
+    structure: dict
+  (dict|dictionary)\s+of\s+:
+    cnt: 0
+    prereq:
+    - (dict|dictionary)\s+of\s+`*([\d\w.]+)`*\s+to\s+`*([\d\w.]+)`*
+    structure: dict
+  (dict|dictionary)\s+of\s+`*([\d\w.]+)`*\s+to\s+`*([\d\w.]+)`*:
+    cnt: 0
+    ds_dtype:
+    - \2
+    - \3
+    structure: dict
+  (iterable)\s+of\s+([\w.]+):
+    cnt: 2
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  (list\s+or\s+tuple|tuple\s+or\s+list|sequence|vector|array)\s+of\s+(`*[\w]+`*(\s+[\w.]+)?):
+    cnt: 49
+    ds_dtype:
+    - \2
+    ndim: 1
+    prereq:
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+a\s+single\s+`*(\w+)`*
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*
+    replace:
+      \/: ' or '
+    structure: \1
+  (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s(([,\s]*(or\s)*`(.*?)`)+):
+    cnt: 0
+    ds_dtype:
+    - \2
+    len: \3
+    ndim: 1
+    prereq:
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s+`*>=\s*([\d]+)`*
+    structure: \1
+  (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s+`*>=\s*([\d]+)`*:
+    cnt: 0
+    ds_dtype:
+    - \2
+    len: \3
+    len_prefix: '>='
+    ndim: 1
+    structure: \1
+  (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*:
+    cnt: 0
+    ds_dtype:
+    - \3
+    len: \2
+    ndim: 1
+    replace:
+      \/: ' '
+    structure: \1
+  (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+a\s+single\s+`*(\w+)`*:
+    cnt: 0
+    ds_dtype:
+    - \2
+    len: 1
+    ndim: 1
+    replace:
+      \/: ' '
+    structure: \1
+  (list|tuple|sequence|vector)<(.*?)>:
+    cnt: 0
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  (tuple|list|array)\s+of\s+(\w+):
+    cnt: 47
+    ds_dtype:
+    - \2
+    prereq:
+    - array\s+of\s+flat\s+indices
+    structure: \1
+  \b(\w)\b-elements*\s+tuple:
+    cnt: 0
+    len: \1
+    ndim: 1
+    structure: tuple
+  ^([\[\(]optional[\]\)]\s+)?(\ba\b|an|the|optional)?\s*`*(dict|dictonary)`*:
+    cnt: 2
+    prereq:
+    - (dict|dictionary)\s+of\s+`*([\d\w.]+)`*\s+to\s+`*([\d\w.]+)`*
+    structure: \3
+  ^(\ba\b|an|the)?\s*(nested)?\s*`*(list|lists|tuple|iterable|sequence|vector)`*:
+    cnt: 5
+    ndim: 1
+    prereq:
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s+`*>=\s*([\d]+)`*
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s(([,\s]*(or\s)*`(.*?)`)+)
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+a\s+single\s+`*(\w+)`*
+    - '`*(list|tuple|iterable|vector|array|sequence)`*\s+of\s+(`*([\w]+`*(\s+[\w.]+)?\s+or\s+)?`*[\w]+`*)'
+    - (dict|dictionary)\s+of\s+`*([\d\w.]+)`*\s+to\s+`*([\d\w.]+)`*
+    - (list\s+or\s+tuple|sequence|array)\s+of\s+(`*[\w]+`*(\s+[\w.]+)?)
+    - '`*(list|tuple|iterable|sequence|vector|array)`*\s+of\s*(`*[\w.]+`*\s+`*[\w]+`*)[\.,\s](?!or)'
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*
+    - (list|tuple|sequence|vector)<(.*?)>
+    structure: \3
+  ^(a\s*)*(list|tuple)\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \3
+    ndim: 1
+    structure: \2
+  ^(first|second|gamma|beta)\s+array:
+    cnt: 0
+    structure: array
+  ^(the\s+)?(input|output)\s+(data\s+)?(array|ndarray):
+    cnt: 0
+    structure: ndarray
+  ^a\s+ndarray\/symbol\s+:
+    cnt: 0
+    structure: ndarray
+  ^dictionary:
+    cnt: 1
+    structure: dictionary
+  ^the\s+index\s+array:
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: array
+  '`*(list|tuple|iterable|sequence|vector|array)`*\s+of\s*(`*[\w.]+`*\s+`*[\w]+`*)[\.,\s](?!or)':
+    cnt: 15
+    ds_dtype:
+    - \2
+    ndim: 1
+    prereq:
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s+`*>=\s*([\d]+)`*
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s(([,\s]*(or\s)*`(.*?)`)+)
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+a\s+single\s+`*(\w+)`*
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*
+    structure: \1
+  '`*(list|tuple|iterable|vector|array|sequence)`*\s+of\s+(`*([\w]+`*(\s+[\w.]+)?\s+or\s+)?`*[\w]+`*)':
+    cnt: 51
+    ds_dtype:
+    - \2
+    ndim: 1
+    prereq:
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s+`*>=\s*([\d]+)`*
+    - (list|tuple)\s+of\s+`*([\d\w.]+)`*\s+that\s+has\s+length\s(([,\s]*(or\s)*`(.*?)`)+)
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+a\s+single\s+`*(\w+)`*
+    - (list|tuple|iterable|list\/tuple|tuple\/list)\s+of\s+(\d)\s+`*(\w+)`*
+    structure: \1
+  a\s+(dictionary|dict):
+    cnt: 2
+    structure: dictionary
+  an\s+iterable\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \1
+    ndim: 1
+    structure: list
+  any\s+number\s+of\s+:
+    cnt: 0
+    structure: sequence
+  array\s+of\s+flat\s+indices:
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: array
+  could\s+be\s+(\(.*?\))\s+or\s+\(.*?\):
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  could\s+be\s+\(.*?\)\s+or\s+(\(.*?\)):
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  double-(integer)\s+tuple:
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 2
+    ndim: 1
+    structure: tuple
+  formatted\s+as\s+(\(.*?\)):
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  height\s+and\s+width:\s+(\((.*?)\)):
+    cnt: 0
+    ds_dtype:
+    - int
+    range: '[0,inf)'
+    structure: tuple
+    value: \1
+  in\s+(\(.*?\))\s+format:
+    cnt: 0
+    structure: tuple
+    value: \1
+  output\s+shape\s+(\(.*?\)):
+    cnt: 0
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  output\s+tuple\.:
+    cnt: 0
+    ndim: 1
+    structure: tuple
+  sequence\s+of\s+(integers):
+    cnt: 0
+    ds_dtype:
+    - \1
+    structure: sequence
+  store\s+output\s+to\s+an\s+existing\s+ndarray:
+    cnt: 0
+    structure: ndarray
+  the\s+output\s+tuple\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \1
+    ndim: 1
+    structure: tuple
+  the\s+output\s+tuple\s+of\s+\(([\w]+),\s*[\w]+\):
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 2
+    ndim: 1
+    structure: tuple
+  triple-(integer)\s+tuple:
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 3
+    ndim: 1
+    structure: tuple
+  tuple\s*`*(\(.*?\))`*:
+    cnt: 2
+    ndim: 1
+    structure: tuple
+    value: \1
+  vector\s+of\s+length\s+'(.*?)':
+    cnt: 0
+    len: \1
+    ndim: 1
+    structure: array
+replace:
+  numpy array: list
+split_word:
+- ','
+- ' '
+- '`'
+- ''''
+- '"'
+- \+
+- '-'
+- \*
+- \/
+- '>'
+- <
+- '='
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+- inf
+target: structure

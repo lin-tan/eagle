@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.keras.backend.arange
+constraints:
+  dtype:
+    default: int32
+    descp: Integer dtype to use.
+    normalized_default: DEFAULT D_TYPE
+    normalized_descp:
+    - D_TYPE dtype to use
+  start:
+    descp: Start value.
+    normalized_descp:
+    - Start value
+  step:
+    default: '1'
+    descp: Difference between two successive values.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Difference between two successive values
+  stop:
+    default: None
+    descp: Stop value.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Stop value
+inputs:
+  optional:
+  - stop
+  - step
+  - dtype
+  required:
+  - start
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/arange
+outputs: An integer tensor.
+package: tensorflow
+target: arange
+title: tf.keras.backend.arange
+version: 2.1.0

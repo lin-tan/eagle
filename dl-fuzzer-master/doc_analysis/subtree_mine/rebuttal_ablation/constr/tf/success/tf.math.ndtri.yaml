@@ -1,0 +1,53 @@
+aliases:
+- tf.compat.v1.math.ndtri
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: '`Tensor` with type `float` or `double`.'
+    dtype:
+    - float
+    - int
+    - tf.dtype
+    - tf.float64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/ndtri
+outputs: Inverse error function of `x`.
+package: tensorflow
+target: ndtri
+title: tf.math.ndtri
+version: 2.1.0

@@ -1,0 +1,12 @@
+constraints:
+  padding:
+    default: valid
+    descp: string, `"same"` or `"valid"`.
+    dtype:
+    - tf.string
+    enum:
+    - same
+    - valid
+    ndim:
+    - '0'
+title: tf.keras.backend.separable_conv2d

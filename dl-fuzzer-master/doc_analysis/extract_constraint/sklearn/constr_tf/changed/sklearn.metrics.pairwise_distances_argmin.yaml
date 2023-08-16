@@ -1,0 +1,50 @@
+constraints:
+  X:
+    descp: array-like Arrays containing points. Respective shapes (n_samples1, n_features)
+      and (n_samples2, n_features)
+  Y:
+    descp: array-like Arrays containing points. Respective shapes (n_samples1, n_features)
+      and (n_samples2, n_features)
+  axis:
+    default: '1'
+    descp: int, optional, default 1 Axis along which the argmin and distances are
+      to be computed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  metric:
+    default: euclidean
+    descp: 'string or callable metric to use for distance computation. Any metric
+      from scikit-learn or scipy.spatial.distance can be used. If metric is a callable
+      function, it is called on each pair of instances (rows) and the resulting value
+      recorded. The callable should take two arrays as input and return one value
+      indicating the distance between them. This works for Scipy''s metrics, but is
+      less efficient than passing the metric name as a string. Distance matrices are
+      not supported. Valid values for metric are: - from scikit-learn: [''cityblock'',
+      ''cosine'', ''euclidean'', ''l1'', ''l2'', ''manhattan''] - from scipy.spatial.distance:
+      [''braycurtis'', ''canberra'', ''chebyshev'', ''correlation'', ''dice'', ''hamming'',
+      ''jaccard'', ''kulsinski'', ''mahalanobis'', ''minkowski'', ''rogerstanimoto'',
+      ''russellrao'', ''seuclidean'', ''sokalmichener'', ''sokalsneath'', ''sqeuclidean'',
+      ''yule''] See the documentation for scipy.spatial.distance for details on these
+      metrics.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+  metric_kwargs:
+    default: None
+    descp: dict keyword arguments to pass to specified metric function.
+inputs:
+  optional:
+  - axis
+  - metric
+  - metric_kwargs
+  required:
+  - X
+  - Y
+link: ''
+package: scikit-learn
+target: pairwise_distances_argmin
+title: sklearn.metrics.pairwise_distances_argmin
+version: 0.24.X

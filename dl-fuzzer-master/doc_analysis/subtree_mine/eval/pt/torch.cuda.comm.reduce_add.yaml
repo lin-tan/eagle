@@ -1,0 +1,9 @@
+constraints:
+  destination:
+    default: None
+    descp: 'a device on which the output will be placed (default: current device).'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+title: torch.cuda.comm.reduce_add

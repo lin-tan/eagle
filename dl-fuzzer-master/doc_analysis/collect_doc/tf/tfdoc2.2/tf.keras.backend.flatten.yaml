@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.backend.flatten
+constraints:
+  x:
+    descp: A tensor or variable.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/flatten
+outputs:
+- A tensor, reshaped into 1-D
+package: tensorflow
+target: flatten
+title: tf.keras.backend.flatten
+version: 2.2.0

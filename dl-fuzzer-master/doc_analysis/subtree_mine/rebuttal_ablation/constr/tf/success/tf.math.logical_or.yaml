@@ -1,0 +1,76 @@
+aliases:
+- tf.logical_or
+- tf.compat.v1.logical_or
+- tf.compat.v1.math.logical_or
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: A `Tensor` of type `bool`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A `Tensor` of type `bool`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/logical_or
+outputs: A `Tensor` of type `bool`.
+package: tensorflow
+target: logical_or
+title: tf.math.logical_or
+version: 2.1.0

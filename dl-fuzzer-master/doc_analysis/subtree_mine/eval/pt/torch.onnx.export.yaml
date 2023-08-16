@@ -1,0 +1,13 @@
+constraints:
+  export_raw_ir:
+    default: 'False'
+    descp: '[DEPRECATED. use operator_export_type] export the internal IR directly
+      instead of converting it to ONNX ops.'
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.onnx.export

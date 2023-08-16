@@ -1,0 +1,40 @@
+Pytorch:
+{'mean': 26, 'zeros': 9, 'weight': 4, 'relu': 3, 'nearest': 3, 'fork_rng': 2, 
+'devices': 2, 'ExtraFilesMap{}': 2, 'cpu': 2, 'cuda': 2, 'bilinear': 1, 
+'use_mm_for_euclid_dist_if_necessary': 1, '': 1, 'reflect': 1, 'fro': 1, 
+'tanh': 1, 'constant': 1}
+MXNet: 
+{'zeros': 46, 'tanh': 11, 'cpu(0)': 9, 'NCDHW': 9, 'NCW': 9, 'NCHW': 9, 
+'ones': 7, 'float32': 6, 'worker': 4, 'write': 3, 'TNC': 3, 'entropy': 3, 
+'int8': 3, '': 1, 'bi_': 1, 'table': 1, 'total': 1, 'MXNET_HOME': 1, 
+'local': 1, 'smart': 1, 'none': 1, 'auto': 1, 'int32': 1, 'sigmoid': 1, 
+'whole': 1, 'stop': 1, 'all': 1, '{}': 1, 'pdf': 1, 'plot': 1, 'relu': 1}
+TF:
+{'valid': 25, 'zeros': 22, 'glorot_uniform': 20, '': 16, 'NHWC': 9, 'nearest': 8, 
+'tanh': 7, 'orthogonal': 7, 'replace': 6, 'channels_last': 5, 'float(-inf)': 5, 
+'NWC': 4, 'SAME': 4, ' ': 4, 'sigmoid': 4, 'NDHWC': 4, 'ones': 3, 'mean': 3, 
+',': 2, 'MIN_COMBINED': 2, 'auto': 2, 'concat': 2, 'uniform': 2, 'euclidean': 2, 
+'compact': 2, 'TB': 2, 'int32': 2, 'pre': 2, 'VALID': 2, 'ASCENDING': 2, 'max': 2, 
+'utf-8': 2, 'local://': 2, 'split': 1, 'datasets': 1, 'diag_part': 1, 'worker': 1, 
+'nce_loss': 1, 'BYTE': 1, 'unstack': 1, 'dynamic': 1, 'in': 1, 'HALF_TO_EVEN': 1, 
+'rgb': 1, '_MSSSIM_WEIGHTS': 1, 'bilinear': 1, 'left': 1, 'diag': 1, 'farmhash64': 1, 
+'gradients': 1, 'range': 1, 'fine': 1, '/cpu:0': 1, 'case': 1, 'hard_sigmoid': 1, 
+'grpc': 1, 'checkpoint': 1, 'sampled_softmax_loss': 1, 'transpose': 1, 
+'edit_distance': 1, 'CONSTANT': 1, 'summary': 1, 'localhost': 1, 
+'tf-standard-pipeline': 1, 'stack': 1, 'HALF_AWAY_FROM_ZERO': 1, 'switch_case': 1, 
+'float32': 1, 'Const': 1, 'boolean_mask': 1, 'parallel_stack': 1, 'matrix_transpose': 1, 
+'{}': 1, 'binary': 1, 'DEFAULT_TENSOR_DEBUG_MODE': 1, 'set_diag': 1, 'INT': 1, 
+'SPLIT_ON_WHITESPACE': 1, 'LOWER_AND_STRIP_PUNCTUATION': 1, 'Custom': 1, 'LogicalXor': 1}
+
+
+select the words with freq at least 2, and remove some common words, for example empty string( '') or 'ones', or 'max'
+we only include the sentence with QUOTED words
+
+
+first search for the sentences with these words QUOTED
+then normalize: replace these words with "ENUM_VAL"
+consider lower the SPM freq threshold
+
+
+tf: remove '', ',', 'int32', 'local://'
+pt: null

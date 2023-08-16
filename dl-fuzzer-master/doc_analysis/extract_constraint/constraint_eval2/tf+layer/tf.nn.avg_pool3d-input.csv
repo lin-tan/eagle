@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 5-D `Tensor` of shape `[batch, height, width, channels]` and type`float32`, `float64`, `qint8`, `quint8`, or `qint32`.",,prim_dtype,"dtype(tf.float32, tf.float64, tf.qint32, tf.qint8, tf.quint8)",,1
+,"A 5-D `Tensor` of shape `[batch, height, width, channels]` and type`float32`, `float64`, `qint8`, `quint8`, or `qint32`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 5-D `Tensor` of shape `[batch, height, width, channels]` and type`float32`, `float64`, `qint8`, `quint8`, or `qint32`.",,shape,"shape([batch,height,width,channels]), ndim(4, 5)",,1

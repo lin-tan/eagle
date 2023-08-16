@@ -1,0 +1,12 @@
+constraints:
+  '*tensors':
+    descp: any number of 1 dimensional tensors.
+inputs:
+  optional: []
+  required:
+  - '*tensors'
+link: https://pytorch.org/docs/1.7.0/generated/torch.cartesian_prod.html#torch.cartesian_prod#torch.cartesian_prod
+package: torch
+target: cartesian_prod
+title: torch.cartesian_prod
+version: 1.7.0

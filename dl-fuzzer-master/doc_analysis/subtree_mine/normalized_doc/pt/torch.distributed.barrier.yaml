@@ -1,0 +1,27 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether this op should be an async op
+    normalized_docdtype: D_TYPE, optional
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup, optional
+inputs:
+  optional:
+  - group
+  - async_op
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.barrier
+package: torch
+target: barrier
+title: torch.distributed.barrier
+version: 1.5.0

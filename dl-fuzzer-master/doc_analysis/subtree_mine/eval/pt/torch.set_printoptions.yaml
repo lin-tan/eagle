@@ -1,0 +1,11 @@
+constraints:
+  precision:
+    default: None
+    descp: Number of digits of precision for floating point output (default = 4).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: torch.set_printoptions

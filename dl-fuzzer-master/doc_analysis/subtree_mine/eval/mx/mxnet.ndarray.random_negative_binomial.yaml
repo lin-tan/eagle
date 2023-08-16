@@ -1,0 +1,12 @@
+constraints:
+  ctx:
+    default: _Null
+    descp: Context of output, in format [cpu|gpu|cpu_pinned](n). Only used for imperative
+      calls.
+    doc_dtype:
+    - string
+    - optional
+    - default=''
+    dtype:
+    - string
+title: mxnet.ndarray.random_negative_binomial

@@ -1,0 +1,31 @@
+constraints:
+  alpha:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sample:
+    descp: A Tensor. Must have the same type as alpha.
+    dtype:
+    - dtype:&alpha
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - alpha
+  - sample
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RandomGammaGrad
+outputs:
+- A Tensor. Has the same type as alpha.
+package: tensorflow
+target: RandomGammaGrad
+title: tf.raw_ops.RandomGammaGrad
+version: 2.3.0

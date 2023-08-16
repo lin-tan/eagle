@@ -1,0 +1,43 @@
+constraints:
+  eps:
+    default: None
+    descp: None or float, optional. If a float, that value is added to all values
+      in the contingency matrix. This helps to stop NaN propagation. If ``None``,
+      nothing is adjusted.
+    dtype:
+    - numeric
+  labels_pred:
+    descp: array-like of shape (n_samples,) Cluster labels to evaluate
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  labels_true:
+    descp: int array, shape = [n_samples] Ground truth class labels to be used as
+      a reference
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sparse:
+    default: 'False'
+    descp: boolean, optional. If True, return a sparse CSR continency matrix. If ``eps
+      is not None``, and ``sparse is True``, will throw ValueError.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - eps
+  - sparse
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: scikit-learn
+target: contingency_matrix
+title: sklearn.metrics.cluster.contingency_matrix
+version: 0.24.X

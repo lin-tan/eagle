@@ -1,0 +1,44 @@
+aliases:
+- tf.compat.v1.keras.backend.reverse
+constraints:
+  axes:
+    descp: Integer or iterable of integers. Axes to reverse.
+    dtype:
+    - int
+    - tf.dtype
+    enum:
+    - Integer
+    - integers
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    structure:
+    - list
+  x:
+    descp: Tensor to reverse.
+    dtype:
+    - int
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+  - axes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/reverse
+outputs: A tensor.
+package: tensorflow
+target: reverse
+title: tf.keras.backend.reverse
+version: 2.1.0

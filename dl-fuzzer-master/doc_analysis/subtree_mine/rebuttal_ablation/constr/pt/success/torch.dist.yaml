@@ -1,0 +1,63 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,&p,m]'
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the Right-hand-side input tensor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '&input'
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  p:
+    default: '2'
+    descp: the norm to be computed
+    doc_dtype: float, optional
+    dtype:
+    - int
+    - torch.bool
+    - torch.float32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - p
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.dist
+package: torch
+ret_type: Tensor
+target: dist
+title: torch.dist
+version: 1.5.0

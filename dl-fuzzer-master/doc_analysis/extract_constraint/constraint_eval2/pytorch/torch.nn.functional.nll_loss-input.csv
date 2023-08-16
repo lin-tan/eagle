@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(N, C)  where C = number of classes or (N, C, H, W)  in case of 2D Loss, or (N, C, d_1, d_2, ..., d_K)  where K  >= 1  in the case of K-dimensional loss.",,shape,"shape([n,c,...], [n,c,h,w], [n,c]), ndim(2)",,1

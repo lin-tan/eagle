@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,the output tensor that must be a BoolTensor,None,prim_dtype,dtype(torch.bool),,1
+Tensor,the output tensor that must be a BoolTensor,None,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,the output tensor that must be a BoolTensor,None,shape,ndim(0),,1

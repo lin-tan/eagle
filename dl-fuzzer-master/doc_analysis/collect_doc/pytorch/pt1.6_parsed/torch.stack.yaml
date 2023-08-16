@@ -1,0 +1,28 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension to insert. Has to be between 0 and the number of dimensions of
+      concatenated tensors (inclusive)
+    doc_dtype:
+    - int
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+  tensors:
+    descp: sequence of tensors to concatenate
+    doc_dtype:
+    - sequence of Tensors
+inputs:
+  optional:
+  - dim
+  - out
+  required:
+  - tensors
+link: https://pytorch.org/docs/1.6.0/generated/torch.stack.html#torch.stack#torch.stack
+package: torch
+ret_type: Tensor
+target: stack
+title: torch.stack
+version: 1.6.0

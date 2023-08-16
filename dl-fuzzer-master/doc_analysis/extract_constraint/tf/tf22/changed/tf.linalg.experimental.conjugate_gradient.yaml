@@ -1,0 +1,87 @@
+aliases:
+- tf.compat.v1.linalg.experimental.conjugate_gradient
+constraints:
+  max_iter:
+    default: '20'
+    descp: An integer giving the maximum number of iterations.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: conjugate_gradient
+    descp: A name scope for the operation.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  operator:
+    descp: A LinearOperator that is self-adjoint and positive definite.
+  preconditioner:
+    default: None
+    descp: A LinearOperator that approximates the inverse of A. An efficient preconditioner
+      could dramatically improve the rate of convergence. If preconditioner represents
+      matrix M(M approximates A^{-1}), the algorithm uses preconditioner.apply(x)
+      to estimate A^{-1}x. For this to be useful, the cost of applying M should be
+      much lower than computing A^{-1} directly.
+  rhs:
+    descp: A possibly batched vector of shape [..., N] containing the right-hand size
+      vector.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '>1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[...,n]'
+    structure:
+    - list(shape)
+  tol:
+    default: 1e-05
+    descp: A float scalar convergence tolerance.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  x:
+    default: None
+    descp: A possibly batched vector of shape [..., N] containing the initial guess
+      for the solution.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '>1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[...,n]'
+    structure:
+    - list(shape)
+dependency:
+- n
+inputs:
+  optional:
+  - preconditioner
+  - x
+  - tol
+  - max_iter
+  - name
+  required:
+  - operator
+  - rhs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/linalg/experimental/conjugate_gradient
+outputs:
+- output: 'A namedtuple representing the final state with fields: i: A scalar int32
+    Tensor. Number of iterations executed. x: A rank-1 Tensor of shape [..., N] containing
+    the computed solution. r: A rank-1 Tensor of shape [.., M] containing the residual
+    vector. p: A rank-1 Tensor of shape [..., N]. A-conjugate basis vector. gamma:
+    \(r \dot M \dot r\), equivalent to \(||r||_2^2\) when preconditioner=None.'
+package: tensorflow
+target: conjugate_gradient
+title: tf.linalg.experimental.conjugate_gradient
+version: 2.2.0

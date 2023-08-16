@@ -1,0 +1,75 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64. A scalar representing the number of bytes to buffer.
+      Must be > 0.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - (0,inf)
+    tensor_t:
+    - tf.tensor
+  filenames:
+    descp: A Tensor of type string. A scalar or a vector containing the name(s) of
+      the file(s) to be read.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  footer_bytes:
+    descp: A Tensor of type int64. A scalar representing the number of bytes to skip
+      at the end of a file.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  header_bytes:
+    descp: A Tensor of type int64. A scalar representing the number of bytes to skip
+      at the beginning of a file.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  record_bytes:
+    descp: A Tensor of type int64. A scalar representing the number of bytes in each
+      record.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - filenames
+  - header_bytes
+  - record_bytes
+  - footer_bytes
+  - buffer_size
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FixedLengthRecordDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: FixedLengthRecordDataset
+title: tf.raw_ops.FixedLengthRecordDataset
+version: 2.3.0

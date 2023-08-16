@@ -1,0 +1,65 @@
+constraints:
+  bucketized_features:
+    descp: A list of at least 1 Tensor objects with type int32. A list of rank 1 Tensors
+      containing bucket id for each feature.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    structure:
+    - list
+  cached_node_ids:
+    descp: A Tensor of type int32. Rank 1 Tensor containing cached node id which is
+      the starting node of prediction.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  cached_tree_ids:
+    descp: A Tensor of type int32. Rank 1 Tensor containing cached tree ids which
+      is the starting tree of prediction.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  logits_dimension:
+    descp: An int. scalar, dimension of the logits, to be used for partial logits
+      shape.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tree_ensemble_handle:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+  - cached_tree_ids
+  - cached_node_ids
+  - bucketized_features
+  - logits_dimension
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesTrainingPredict
+outputs:
+- A tuple of Tensor objects (partial_logits, tree_ids, node_ids).
+- partial_logits: A Tensor of type float32.
+- tree_ids: A Tensor of type int32.
+- node_ids: A Tensor of type int32.
+package: tensorflow
+target: BoostedTreesTrainingPredict
+title: tf.raw_ops.BoostedTreesTrainingPredict
+version: 2.3.0

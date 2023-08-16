@@ -1,0 +1,20 @@
+constraints:
+  input:
+    descp: ''
+  output_size:
+    descp: the target output size (single integer or double-integer tuple)
+    dtype:
+    - int
+    - torch.float64
+    structure:
+    - tuple
+inputs:
+  optional: []
+  required:
+  - input
+  - output_size
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.adaptive_avg_pool2d
+package: torch
+target: adaptive_avg_pool2d
+title: torch.nn.quantized.functional.adaptive_avg_pool2d
+version: 1.5.0

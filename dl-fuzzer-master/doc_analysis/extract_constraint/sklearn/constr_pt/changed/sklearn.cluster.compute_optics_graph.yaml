@@ -1,0 +1,85 @@
+constraints:
+  X:
+    descp: "array, shape (n_samples, n_features), or (n_samples, n_samples)  if metric=\u2019\
+      precomputed\u2019. A feature array, or array of distances between samples if\
+      \ metric='precomputed'"
+  algorithm:
+    descp: '{''auto'', ''ball_tree'', ''kd_tree'', ''brute''}, optional Algorithm
+      used to compute the nearest neighbors: - ''ball_tree'' will use :class:`BallTree`
+      - ''kd_tree'' will use :class:`KDTree` - ''brute'' will use a brute-force search.
+      - ''auto'' will attempt to decide the most appropriate algorithm based on the
+      values passed to :meth:`fit` method. (default) Note: fitting on sparse input
+      will override the setting of this parameter, using brute force.'
+  leaf_size:
+    descp: int, optional (default=30) Leaf size passed to :class:`BallTree` or :class:`KDTree`.
+      This can affect the speed of the construction and query, as well as the memory
+      required to store the tree. The optimal value depends on the nature of the problem.
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+  max_eps:
+    descp: float, optional (default=np.inf) The maximum distance between two samples
+      for one to be considered as in the neighborhood of the other. Default value
+      of ``np.inf`` will identify clusters across all scales; reducing ``max_eps``
+      will result in shorter run times.
+  metric:
+    descp: 'string or callable, optional (default=''minkowski'') Metric to use for
+      distance computation. Any metric from scikit-learn or scipy.spatial.distance
+      can be used. If metric is a callable function, it is called on each pair of
+      instances (rows) and the resulting value recorded. The callable should take
+      two arrays as input and return one value indicating the distance between them.
+      This works for Scipy''s metrics, but is less efficient than passing the metric
+      name as a string. If metric is "precomputed", X is assumed to be a distance
+      matrix and must be square. Valid values for metric are: - from scikit-learn:
+      [''cityblock'', ''cosine'', ''euclidean'', ''l1'', ''l2'', ''manhattan''] -
+      from scipy.spatial.distance: [''braycurtis'', ''canberra'', ''chebyshev'', ''correlation'',
+      ''dice'', ''hamming'', ''jaccard'', ''kulsinski'', ''mahalanobis'', ''minkowski'',
+      ''rogerstanimoto'', ''russellrao'', ''seuclidean'', ''sokalmichener'', ''sokalsneath'',
+      ''sqeuclidean'', ''yule''] See the documentation for scipy.spatial.distance
+      for details on these metrics.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+  metric_params:
+    descp: dict, optional (default=None) Additional keyword arguments for the metric
+      function.
+  min_samples:
+    descp: int > 1 or float between 0 and 1 The number of samples in a neighborhood
+      for a point to be considered as a core point. Expressed as an absolute number
+      or a fraction of the number of samples (rounded to be at least 2).
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n_jobs:
+    descp: int or None, optional (default=None) The number of parallel jobs to run
+      for neighbors search. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  p:
+    descp: integer, optional (default=2) Parameter for the Minkowski metric from :class:`sklearn.metrics.pairwise_distances`.
+      When p = 1, this is equivalent to using manhattan_distance (l1), and euclidean_distance
+      (l2) for p = 2. For arbitrary p, minkowski_distance (l_p) is used.
+inputs:
+  optional: []
+  required:
+  - X
+  - min_samples
+  - max_eps
+  - metric
+  - p
+  - metric_params
+  - algorithm
+  - leaf_size
+  - n_jobs
+link: ''
+package: scikit-learn
+target: compute_optics_graph
+title: sklearn.cluster.compute_optics_graph
+version: 0.24.X

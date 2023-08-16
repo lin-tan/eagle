@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.backend.get_uid
+constraints:
+  prefix:
+    default: ''
+    descp: String prefix to index.
+inputs:
+  optional:
+  - prefix
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/get_uid
+outputs:
+- Unique integer ID.
+package: tensorflow
+target: get_uid
+title: tf.keras.backend.get_uid
+version: 2.3.0

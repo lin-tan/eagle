@@ -1,0 +1,25 @@
+constraints:
+  grad:
+    descp: A Tensor. Must have the same type as l. df/dl where f is some scalar function.
+      Shape is [..., M, M]. Algorithm depends only on lower triangular part of the
+      innermost matrices of this tensor.
+  l:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      Output of batch Cholesky algorithm l = cholesky(A). Shape is [..., M, M]. Algorithm
+      depends only on lower triangular part of the innermost matrices of this tensor.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - l
+  - grad
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CholeskyGrad
+outputs:
+- A Tensor. Has the same type as l.
+package: tensorflow
+target: CholeskyGrad
+title: tf.raw_ops.CholeskyGrad
+version: 2.3.0

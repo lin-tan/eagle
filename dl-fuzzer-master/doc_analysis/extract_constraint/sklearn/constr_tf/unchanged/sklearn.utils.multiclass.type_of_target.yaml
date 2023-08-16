@@ -1,0 +1,12 @@
+constraints:
+  y:
+    descp: array-like
+inputs:
+  optional: []
+  required:
+  - y
+link: ''
+package: scikit-learn
+target: type_of_target
+title: sklearn.utils.multiclass.type_of_target
+version: 0.24.X

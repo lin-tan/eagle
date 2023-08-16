@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.data.experimental.get_next_as_optional
+constraints:
+  iterator:
+    descp: A `tf.compat.v1.data.Iterator` object.
+    normalized_descp:
+    - A tf compat v1 data Iterator object
+inputs:
+  optional: []
+  required:
+  - iterator
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/data/experimental/get_next_as_optional
+outputs: An `Optional` object representing the next value from the iterator (if it
+  has one) or no value.
+package: tensorflow
+target: get_next_as_optional
+title: tf.data.experimental.get_next_as_optional
+version: 2.1.0

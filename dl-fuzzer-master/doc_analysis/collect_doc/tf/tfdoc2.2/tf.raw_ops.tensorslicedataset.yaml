@@ -1,0 +1,22 @@
+constraints:
+  components:
+    descp: A list of Tensor objects.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - components
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorSliceDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorSliceDataset
+title: tf.raw_ops.TensorSliceDataset
+version: 2.2.0

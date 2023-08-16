@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.keras.activations.get
+constraints:
+  identifier:
+    descp: Function or string
+    normalized_descp:
+    - Function or D_TYPE
+exceptions:
+- ValueError: Input is an unknown function or string, i.e., the input does not denote
+    any defined function.
+inputs:
+  optional: []
+  required:
+  - identifier
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/get
+outputs: 'Activation function denoted by input:'
+package: tensorflow
+target: get
+title: tf.keras.activations.get
+version: 2.1.0

@@ -1,0 +1,4159 @@
+,freq,sequence,len
+0,608,"['SOME_DTYPE', 'SOME_DTYPE']",2
+1,582,"['name', 'operation']",2
+2,538,"['name', 'optional']",2
+3,509,"['name', 'operation', 'optional']",3
+4,394,"['SOME_DTYPE', 'tensor']",2
+5,339,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+6,276,"['optional', 'SOME_DTYPE']",2
+7,274,"['tensor', 'SOME_DTYPE']",2
+8,271,"['must', 'SOME_DTYPE']",2
+9,270,"['tensor', 'shape']",2
+10,263,"['tensor', 'type']",2
+11,262,"['SOME_STRUCTURE', 'SOME_DTYPE']",2
+12,260,"['d', 'tensor']",2
+13,249,"['one', 'SOME_DTYPE']",2
+14,244,"['must', 'one']",2
+15,242,"['must', 'SOME_DTYPE', 'SOME_DTYPE']",3
+16,239,"['following', 'SOME_DTYPE']",2
+17,238,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+18,238,"['one', 'following', 'SOME_DTYPE']",3
+19,237,"['must', 'following']",2
+20,235,"['must', 'one', 'following', 'SOME_DTYPE']",4
+21,233,"['one', 'SOME_DTYPE', 'SOME_DTYPE']",3
+22,229,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE']",5
+23,227,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+24,217,"['type', 'SOME_DTYPE']",2
+25,191,"['tensor', 'type', 'SOME_DTYPE']",3
+26,185,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+27,152,"['SOME_STRUCTURE', 'tensor']",2
+28,149,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+29,145,"['tensor', 'tensor']",2
+30,144,"['optional', 'name']",2
+31,140,"['input', 'tensor']",2
+32,140,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+33,136,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+34,135,"['d', 'shape']",2
+35,119,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+36,118,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor']",3
+37,113,"['d', 'SOME_DTYPE']",2
+38,110,"['optional', 'SOME_STRUCTURE']",2
+39,109,"['SOME_DTYPE', 'shape']",2
+40,108,"['SOME_DTYPE', 'bfloat']",2
+41,107,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+42,107,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat']",5
+43,106,"['bfloat', 'SOME_DTYPE']",2
+44,105,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE']",6
+45,105,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE']",3
+46,104,"['optional', 'tensor']",2
+47,104,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE']",7
+48,102,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+49,100,"['SOME_DTYPE', 'SOME_STRUCTURE']",2
+50,100,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",8
+51,98,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+52,96,"['shape', 'batch']",2
+53,94,"['tensor', 'whose']",2
+54,93,"['SOME_DTYPE', 'number']",2
+55,92,"['tensor', 'variable']",2
+56,92,"['dimension', 'input']",2
+57,90,"['must', 'type']",2
+58,90,"['tf', 'SOME_DTYPE']",2
+59,87,"['d', 'tensor', 'shape']",3
+60,87,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+61,86,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",8
+62,84,"['SOME_DTYPE', 'length']",2
+63,83,"['tensor', 'dimension']",2
+64,80,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+65,80,"['height', 'width']",2
+66,77,"['SOME_DTYPE', 'name']",2
+67,77,"['SOME_DTYPE', 'specifying']",2
+68,77,"['SOME_STRUCTURE', 'length']",2
+69,77,"['rank', 'rank']",2
+70,74,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",8
+71,73,"['SOME_DTYPE', 'value']",2
+72,73,"['tf', 'tf']",2
+73,72,"['tensor', 'must']",2
+74,72,"['dimensions', 'must']",2
+75,71,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE']",3
+76,71,"['SOME_STRUCTURE', 'objects']",2
+77,71,"['python', 'SOME_DTYPE']",2
+78,70,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+79,69,"['tensor', 'batch_size']",2
+80,69,"['SOME_DTYPE', 'default']",2
+81,69,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+82,69,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+83,69,"['shape', 'shape']",2
+84,68,"['SOME_DTYPE', 'type']",2
+85,68,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",2
+86,68,"['shape', 'tensor']",2
+87,68,"['returned', 'tensor']",2
+88,67,"['SOME_STRUCTURE', 'SOME_DTYPE', 'length']",3
+89,66,"['tensor', 'rank']",2
+90,66,"['SOME_STRUCTURE', 'collections']",2
+91,66,"['d', 'SOME_DTYPE', 'tensor']",3
+92,65,"['tensor', 'dimensions']",2
+93,65,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",11
+94,64,"['optional', 'SOME_STRUCTURE', 'collections']",3
+95,63,"['see', 'tf']",2
+96,62,"['optional', 'added']",2
+97,62,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+98,62,"['SOME_DTYPE', 'representing']",2
+99,62,"['SOME_STRUCTURE', 'added']",2
+100,62,"['none', 'default']",2
+101,61,"['name', 'tensor']",2
+102,61,"['SOME_DTYPE', 'tf']",2
+103,61,"['shape', 'batch_size']",2
+104,60,"['optional', 'SOME_STRUCTURE', 'collections', 'added']",4
+105,60,"['SOME_DTYPE', 'whether']",2
+106,60,"['d', 'batch']",2
+107,59,"['tensor', 'batch']",2
+108,59,"['SOME_DTYPE', 'SOME_DTYPE', 'bfloat']",3
+109,59,"['defaults', 'false']",2
+110,59,"['see', 'details']",2
+111,58,"['tensor', 'python']",2
+112,58,"['SOME_DTYPE', 'valid']",2
+113,58,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat']",6
+114,57,"['optional', 'operation']",2
+115,57,"['SOME_DTYPE', 'tensor', 'shape']",3
+116,57,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",10
+117,57,"['dimension', 'tensor']",2
+118,57,"['output', 'tensor']",2
+119,56,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE']",7
+120,55,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",10
+121,55,"['type', 'SOME_DTYPE', 'SOME_DTYPE']",3
+122,55,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE']",8
+123,55,"['default', 'value']",2
+124,54,"['tensor', 'objects']",2
+125,54,"['tensor', 'values']",2
+126,54,"['tensor', 'shape', 'batch_size']",3
+127,54,"['tensor', 'broadcastable']",2
+128,53,"['optional', 'name', 'operation']",3
+129,53,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",12
+130,53,"['last', 'dimension']",2
+131,52,"['tensor', 'representing']",2
+132,52,"['d', 'shape', 'batch']",3
+133,52,"['size', 'dimension']",2
+134,52,"['window', 'dimension']",2
+135,52,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+136,51,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",11
+137,51,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",10
+138,51,"['must', 'dimension']",2
+139,51,"['window', 'dimension', 'input']",3
+140,50,"['name', 'returned']",2
+141,50,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",11
+142,50,"['SOME_DTYPE', 'python']",2
+143,50,"['SOME_DTYPE', 'message']",2
+144,50,"['must', 'rank']",2
+145,49,"['tensor', 'SOME_DTYPE', 'SOME_DTYPE']",3
+146,49,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",12
+147,49,"['SOME_STRUCTURE', 'tensor', 'objects']",3
+148,49,"['must', 'dimensions']",2
+149,48,"['tensor', 'corresponding']",2
+150,48,"['tensor', 'labels']",2
+151,48,"['tensor', 'value']",2
+152,48,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",12
+153,48,"['must', 'must']",2
+154,48,"['batch', 'channels']",2
+155,48,"['padding', 'algorithm']",2
+156,47,"['tensor', 'number']",2
+157,47,"['SOME_DTYPE', 'values']",2
+158,47,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",13
+159,47,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",13
+160,47,"['batch', 'height', 'width']",3
+161,47,"['shape', 'height', 'width']",3
+162,47,"['channels_last', 'channels_first']",2
+163,46,"['tensor', 'whose', 'dimensions']",3
+164,46,"['SOME_DTYPE', 'input']",2
+165,46,"['must', 'match']",2
+166,45,"['tensor', 'either']",2
+167,45,"['tensor', 'SOME_STRUCTURE']",2
+168,45,"['tensor', 'dtype']",2
+169,45,"['SOME_DTYPE', 'SOME_DTYPE', 'length']",3
+170,45,"['SOME_DTYPE', 'tensor', 'number']",3
+171,45,"['SOME_STRUCTURE', 'values']",2
+172,45,"['must', 'range']",2
+173,44,"['tensor', 'whose', 'must']",3
+174,44,"['tensor', 'whose', 'dimension']",3
+175,44,"['tensor', 'd']",2
+176,44,"['optional', 'SOME_DTYPE', 'SOME_DTYPE']",3
+177,44,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'length']",4
+178,44,"['defaults', 'tf']",2
+179,44,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",15
+180,44,"['shape', 'channels']",2
+181,44,"['either', 'must']",2
+182,43,"['tensor', 'whose', 'dimensions', 'must']",4
+183,43,"['SOME_DTYPE', 'SOME_DTYPE', 'number']",3
+184,43,"['type', 'shape']",2
+185,43,"['must', 'input']",2
+186,43,"['d', 'type']",2
+187,43,"['either', 'dimension']",2
+188,43,"['e', 'g']",2
+189,43,"['e', 'must']",2
+190,42,"['SOME_DTYPE', 'flag']",2
+191,42,"['must', 'broadcastable']",2
+192,42,"['format', 'data']",2
+193,42,"['dimensions', 'dimension']",2
+194,42,"['d', 'height', 'width']",3
+195,42,"['height', 'width', 'channels']",3
+196,41,"['tensor', 'type', 'shape']",3
+197,41,"['tensor', 'data']",2
+198,41,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'number']",4
+199,41,"['values', 'tensor']",2
+200,41,"['input', 'output']",2
+201,41,"['must', 'corresponding']",2
+202,41,"['default', 'dimensions']",2
+203,41,"['tf', 'tensor']",2
+204,41,"['shape', 'd']",2
+205,40,"['tensor', 'size']",2
+206,40,"['optional', 'tf']",2
+207,40,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+208,40,"['SOME_DTYPE', 'tensor', 'python']",3
+209,40,"['SOME_DTYPE', 'prefix']",2
+210,40,"['must', 'labels']",2
+211,40,"['must', 'e']",2
+212,40,"['k', 'k']",2
+213,40,"['d', 'tensor', 'SOME_DTYPE']",3
+214,40,"['shape', 'm']",2
+215,40,"['e', 'dimension']",2
+216,40,"['labels', 'must']",2
+217,40,"['stride', 'input']",2
+218,39,"['SOME_DTYPE', 'd']",2
+219,39,"['SOME_STRUCTURE', 'feature']",2
+220,39,"['must', 'range', 'rank']",3
+221,39,"['must', 'broadcastable', 'e', 'either']",4
+222,39,"['must', 'broadcastable', 'e', 'dimension']",4
+223,39,"['must', 'must', 'dimension']",3
+224,39,"['must', 'either']",2
+225,39,"['batch', 'tensor']",2
+226,39,"['dimension', 'input', 'tensor']",3
+227,39,"['d', 'shape', 'height', 'width']",4
+228,39,"['rank', 'either']",2
+229,39,"['rank', 'must']",2
+230,39,"['rank', 'dimension']",2
+231,39,"['true', 'length']",2
+232,39,"['either', 'labels']",2
+233,39,"['either', 'corresponding']",2
+234,39,"['labels', 'labels']",2
+235,38,"['tensor', 'whose', 'rank', 'either']",4
+236,38,"['tensor', 'whose', 'rank', 'either', 'rank']",5
+237,38,"['tensor', 'shape', 'batch']",3
+238,38,"['tensor', 'shape', 'd']",3
+239,38,"['tensor', 'e']",2
+240,38,"['tensor', 'output']",2
+241,38,"['name', 'returned', 'tensor']",3
+242,38,"['optional', 'e']",2
+243,38,"['SOME_DTYPE', 'batch']",2
+244,38,"['must', 'range', 'rank', 'rank']",4
+245,38,"['must', 'broadcastable', 'e', 'dimensions', 'must', 'either', 'corresponding', 'dimension']",8
+246,38,"['d', 'tensor', 'type']",3
+247,38,"['shape', 'in_channels']",2
+248,38,"['random', 'seed']",2
+249,38,"['sliding', 'window', 'dimension']",3
+250,37,"['tensor', 'rank', 'labels']",3
+251,37,"['tensor', 'shape', 'shape']",3
+252,37,"['tensor', 'containing']",2
+253,37,"['tensor', 'ssparsetensor']",2
+254,37,"['optional', 'corresponding']",2
+255,37,"['SOME_DTYPE', 'dtype']",2
+256,37,"['SOME_DTYPE', 'single']",2
+257,37,"['value', 'value']",2
+258,37,"['values', 'must']",2
+259,37,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+260,37,"['batch', 'shape']",2
+261,37,"['window', 'tensor']",2
+262,37,"['prefix', 'message']",2
+263,37,"['sliding', 'window', 'dimension', 'input']",4
+264,36,"['optional', 'whose']",2
+265,36,"['optional', 'rank']",2
+266,36,"['optional', 'dimensions']",2
+267,36,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat']",4
+268,36,"['SOME_DTYPE', 'prefix', 'default', 'message']",4
+269,36,"['type', 'tensor']",2
+270,36,"['SOME_STRUCTURE', 'SOME_DTYPE', 'tensor']",3
+271,36,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE']",3
+272,36,"['number', 'classes']",2
+273,36,"['batch', 'batch']",2
+274,36,"['d', 'size']",2
+275,36,"['true', 'reduced', 'length']",3
+276,36,"['shape', 'batch', 'height', 'width']",4
+277,36,"['labels', 'e']",2
+278,36,"['stride', 'sliding', 'window', 'dimension', 'input']",5
+279,35,"['optional', 'tensor', 'whose']",3
+280,35,"['optional', 'must']",2
+281,35,"['SOME_DTYPE', 'batch_size']",2
+282,35,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",10
+283,35,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",10
+284,35,"['must', 'broadcastable', 'labels', 'e', 'either']",5
+285,35,"['must', 'broadcastable', 'labels', 'e', 'dimension']",5
+286,35,"['must', 'broadcastable', 'labels', 'dimension']",4
+287,35,"['must', 'labels', 'dimension']",3
+288,35,"['must', 'shape']",2
+289,35,"['batch', 'height', 'width', 'channels']",4
+290,35,"['dimension', 'must']",2
+291,35,"['rank', 'dimensions']",2
+292,35,"['tf', 'SOME_DTYPE', 'SOME_DTYPE']",3
+293,35,"['shape', 'batch', 'channels']",3
+294,35,"['shape', 'height', 'width', 'channels']",4
+295,35,"['either', 'either']",2
+296,35,"['axis', 'tensor']",2
+297,34,"['tensor', 'x']",2
+298,34,"['tensor', 'type', 'SOME_DTYPE', 'SOME_DTYPE']",4
+299,34,"['tensor', 'whose', 'rank', 'either', 'rank', 'labels']",6
+300,34,"['tensor', 'SOME_STRUCTURE', 'tensor']",3
+301,34,"['optional', 'tensor', 'broadcastable']",3
+302,34,"['optional', 'either']",2
+303,34,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat']",9
+304,34,"['must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'dimension']",9
+305,34,"['data', 'format']",2
+306,34,"['batch', 'depth']",2
+307,34,"['dimension', 'value']",2
+308,34,"['dimensions', 'length']",2
+309,34,"['rank', 'rank', 'must']",3
+310,34,"['rank', 'rank', 'dimensions']",3
+311,34,"['rank', 'rank', 'dimension']",3
+312,34,"['rank', 'must', 'dimension']",3
+313,34,"['rank', 'e']",2
+314,34,"['dtype', 'SOME_DTYPE']",2
+315,34,"['either', 'labels', 'dimension']",3
+316,34,"['either', 'e']",2
+317,34,"['labels', 'must', 'labels', 'dimension']",4
+318,34,"['window', 'dimension', 'input', 'tensor']",4
+319,34,"['qint', 'quint']",2
+320,34,"['qint', 'quint', 'qint']",3
+321,33,"['tensor', 'n']",2
+322,33,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'must', 'broadcastable', 'e', 'dimensions', 'must', 'either', 'corresponding', 'dimension']",14
+323,33,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",16
+324,33,"['data', 'batch']",2
+325,33,"['batch', 'dimensions']",2
+326,33,"['d', 'tensor', 'batch']",3
+327,33,"['shape', 'batch', 'shape']",3
+328,33,"['python', 'number']",2
+329,33,"['nhwc', 'nchw']",2
+330,32,"['tensor', 'shape', 'tensor']",3
+331,32,"['tensor', 'optional']",2
+332,32,"['name', 'prefix']",2
+333,32,"['optional', 'labels']",2
+334,32,"['SOME_DTYPE', 'SOME_DTYPE', 'python']",3
+335,32,"['SOME_DTYPE', 'either']",2
+336,32,"['SOME_DTYPE', 'qint']",2
+337,32,"['d', 'SOME_DTYPE', 'shape']",3
+338,32,"['d', 'channels']",2
+339,32,"['entries', 'tensor']",2
+340,32,"['first', 'dimension']",2
+341,31,"['tensor', 'tensor', 'shape']",3
+342,31,"['tensor', 'tf']",2
+343,31,"['tensor', 'labels', 'labels']",3
+344,31,"['tensor', 'predictions']",2
+345,31,"['tensor', 'width']",2
+346,31,"['SOME_DTYPE', 'one']",2
+347,31,"['SOME_DTYPE', 'qint', 'quint']",3
+348,31,"['SOME_DTYPE', 'qint', 'quint', 'qint']",4
+349,31,"['SOME_DTYPE', 'indicating']",2
+350,31,"['SOME_STRUCTURE', 'shape']",2
+351,31,"['none', 'dimensions']",2
+352,31,"['d', 'batch', 'height', 'width']",4
+353,31,"['true', 'dimensions', 'length']",3
+354,31,"['tf', 'SOME_DTYPE', 'tf']",3
+355,31,"['tf', 'dtype']",2
+356,31,"['function', 'applied']",2
+357,31,"['n', 'n']",2
+358,31,"['n', 'shape']",2
+359,31,"['single', 'value']",2
+360,31,"['labels', 'labels', 'must']",3
+361,30,"['tensor', 'height', 'width']",3
+362,30,"['name', 'prefix', 'tensor']",3
+363,30,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'number']",4
+364,30,"['SOME_DTYPE', 'axis']",2
+365,30,"['defaults', 'true']",2
+366,30,"['must', 'x']",2
+367,30,"['dimension', 'data_format']",2
+368,30,"['d', 'tensor', 'tensor']",3
+369,30,"['d', 'height', 'width', 'channels']",4
+370,30,"['d', 'in_channels']",2
+371,30,"['true', 'reduced', 'dimensions', 'length']",4
+372,30,"['tf', 'tf', 'tf']",3
+373,30,"['either', 'valid']",2
+374,30,"['nested', 'tensor']",2
+375,30,"['many', 'tensor']",2
+376,30,"['floating', 'point']",2
+377,30,"['axis', 'along']",2
+378,30,"['axis', 'input']",2
+379,30,"['print', 'tensor']",2
+380,29,"['tensor', 'reduce']",2
+381,29,"['tensor', 'shape', 'height', 'width']",4
+382,29,"['tensor', 'input']",2
+383,29,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'labels', 'must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'dimension']",16
+384,29,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'labels', 'must', 'broadcastable', 'labels', 'dimension']",11
+385,29,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'number']",5
+386,29,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'python']",4
+387,29,"['SOME_DTYPE', 'tensor', 'representing']",3
+388,29,"['SOME_DTYPE', 'returns']",2
+389,29,"['value', 'see']",2
+390,29,"['values', 'dimensions']",2
+391,29,"['defaults', 'SOME_DTYPE']",2
+392,29,"['type', 'x']",2
+393,29,"['must', 'tensor']",2
+394,29,"['d', 'tensor', 'shape', 'batch']",4
+395,29,"['d', 'shape', 'channels']",3
+396,29,"['d', 'shape', 'batch', 'height', 'width']",5
+397,29,"['tf', 'compat', 'v']",3
+398,29,"['tf', 'nn']",2
+399,29,"['shape', 'batch', 'height', 'width', 'channels']",5
+400,29,"['shape', 'values']",2
+401,29,"['corresponding', 'labels']",2
+402,29,"['representing', 'shape']",2
+403,29,"['e', 'labels']",2
+404,29,"['target', 'classes']",2
+405,28,"['optional', 'name', 'tensor']",3
+406,28,"['SOME_DTYPE', 'tf', 'SOME_DTYPE']",3
+407,28,"['value', 'none']",2
+408,28,"['SOME_STRUCTURE', 'none']",2
+409,28,"['must', 'one', 'following', 'SOME_DTYPE', 'qint']",5
+410,28,"['none', 'default', 'dimensions']",3
+411,28,"['batch', 'in_channels']",2
+412,28,"['format', 'batch']",2
+413,28,"['d', 'tensor', 'shape', 'height', 'width']",5
+414,28,"['dtype', 'tf']",2
+415,28,"['shape', 'SOME_DTYPE']",2
+416,28,"['shape', 'tensor', 'shape']",3
+417,28,"['size', 'tensor']",2
+418,28,"['axis', 'axis']",2
+419,28,"['print', 'many', 'entries', 'tensor']",4
+420,27,"['name', 'op']",2
+421,27,"['name', 'prefix', 'returned', 'tensor']",4
+422,27,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'python', 'number']",6
+423,27,"['SOME_DTYPE', 'x']",2
+424,27,"['SOME_DTYPE', 'used']",2
+425,27,"['SOME_STRUCTURE', 'tf']",2
+426,27,"['SOME_STRUCTURE', 'type']",2
+427,27,"['must', 'one', 'following', 'SOME_DTYPE', 'qint', 'quint']",6
+428,27,"['must', 'one', 'following', 'SOME_DTYPE', 'qint', 'quint', 'qint']",7
+429,27,"['must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'labels', 'dimension']",10
+430,27,"['none', 'default', 'reduces', 'dimensions']",4
+431,27,"['data', 'order']",2
+432,27,"['data', 'data']",2
+433,27,"['batch', 'in_width']",2
+434,27,"['dimensions', 'reduce']",2
+435,27,"['d', 'shape', 'height', 'width', 'channels']",5
+436,27,"['function', 'tensor']",2
+437,27,"['either', 'SOME_DTYPE']",2
+438,27,"['n', 'default']",2
+439,27,"['width', 'height']",2
+440,27,"['returns', 'tensor']",2
+441,26,"['tensor', 'shape', 'in_channels']",3
+442,26,"['tensor', 'length']",2
+443,26,"['tensor', 'first']",2
+444,26,"['name', 'scope']",2
+445,26,"['SOME_DTYPE', 'SOME_DTYPE', 'qint']",3
+446,26,"['SOME_DTYPE', 'use']",2
+447,26,"['SOME_DTYPE', 'none']",2
+448,26,"['SOME_DTYPE', 'size']",2
+449,26,"['type', 'use']",2
+450,26,"['SOME_STRUCTURE', 'value']",2
+451,26,"['number', 'per']",2
+452,26,"['data', 'dataset']",2
+453,26,"['filter', 'dimension']",2
+454,26,"['d', 'shape', 'in_channels']",3
+455,26,"['d', 'dimension']",2
+456,26,"['dtype', 'SOME_DTYPE', 'SOME_DTYPE']",3
+457,26,"['tf', 'data']",2
+458,26,"['shape', 'batch', 'batch']",3
+459,26,"['shape', 'channels', 'shape']",3
+460,26,"['shape', 'channels', 'channels']",3
+461,26,"['see', 'tf', 'details']",3
+462,26,"['height', 'height']",2
+463,26,"['axis', 'input', 'tensor']",3
+464,25,"['tensor', 'indices']",2
+465,25,"['optional', 'SOME_DTYPE', 'tf']",3
+466,25,"['optional', 'SOME_STRUCTURE', 'SOME_DTYPE']",3
+467,25,"['optional', 'variable_scope', 'name']",3
+468,25,"['optional', 'returned']",2
+469,25,"['SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint']",5
+470,25,"['SOME_DTYPE', 'dimension']",2
+471,25,"['SOME_DTYPE', 'returned']",2
+472,25,"['SOME_DTYPE', 'channels_last', 'channels_first']",3
+473,25,"['SOME_DTYPE', 'dimensions']",2
+474,25,"['SOME_DTYPE', 'output']",2
+475,25,"['SOME_DTYPE', 'convolution']",2
+476,25,"['SOME_DTYPE', 'vector']",2
+477,25,"['value', 'dtype']",2
+478,25,"['defaults', 'tf', 'SOME_DTYPE']",3
+479,25,"['SOME_STRUCTURE', 'tensor', 'tensor']",3
+480,25,"['SOME_STRUCTURE', 'tensor', 'SOME_DTYPE']",3
+481,25,"['number', 'batch']",2
+482,25,"['batch', 'size']",2
+483,25,"['dimension', 'order']",2
+484,25,"['dimensions', 'batch']",2
+485,25,"['dimensions', 'shape']",2
+486,25,"['true', 'tensor']",2
+487,25,"['shape', 'batch', 'channels', 'shape', 'channels']",5
+488,25,"['see', 'tf', 'nn', 'details']",4
+489,25,"['n', 'tensor']",2
+490,25,"['flagvalues', 'flagvalues', 'instance']",3
+491,24,"['tensor', 'arbitrary']",2
+492,24,"['optional', 'corresponding', 'labels']",3
+493,24,"['optional', 'dtype']",2
+494,24,"['SOME_DTYPE', 'feature']",2
+495,24,"['SOME_DTYPE', 'variable']",2
+496,24,"['SOME_DTYPE', 'shape', 'batch_size']",3
+497,24,"['SOME_DTYPE', 'column']",2
+498,24,"['SOME_DTYPE', 'tensor', 'tensor']",3
+499,24,"['SOME_DTYPE', 'either', 'valid']",3
+500,24,"['values', 'range']",2
+501,24,"['used', 'seed']",2
+502,24,"['SOME_STRUCTURE', 'flag']",2
+503,24,"['SOME_STRUCTURE', 'keys']",2
+504,24,"['must', 'type', 'x']",3
+505,24,"['none', 'value']",2
+506,24,"['data', 'order', 'batch']",3
+507,24,"['batch', 'channels', 'height', 'width']",4
+508,24,"['format', 'data', 'batch']",3
+509,24,"['dimension', 'order', 'value', 'data_format', 'see', 'details']",6
+510,24,"['d', 'batch', 'height', 'width', 'channels']",5
+511,24,"['d', 'length']",2
+512,24,"['d', 'd']",2
+513,24,"['valid', 'values']",2
+514,24,"['shape', 'must']",2
+515,24,"['single', 'SOME_DTYPE']",2
+516,24,"['width', 'width']",2
+517,24,"['possibly', 'nested']",2
+518,23,"['tensor', 'SOME_DTYPE', 'shape']",3
+519,23,"['tensor', 'none']",2
+520,23,"['tensor', 'whose', 'shape']",3
+521,23,"['tensor', 'shape', 'tensor', 'shape']",4
+522,23,"['optional', 'tf', 'tf']",3
+523,23,"['optional', 'returned', 'tensor']",3
+524,23,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",13
+525,23,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint']",10
+526,23,"['SOME_DTYPE', 'tensor', 'SOME_DTYPE']",3
+527,23,"['SOME_DTYPE', 'must']",2
+528,23,"['values', 'default']",2
+529,23,"['input', 'values']",2
+530,23,"['input', 'input']",2
+531,23,"['used', 'random']",2
+532,23,"['SOME_STRUCTURE', 'columns']",2
+533,23,"['SOME_STRUCTURE', 'mapping']",2
+534,23,"['SOME_STRUCTURE', 'variable']",2
+535,23,"['dilation', 'input']",2
+536,23,"['d', 'tensor', 'size']",3
+537,23,"['d', 'batch_size']",2
+538,23,"['true', 'retains', 'reduced', 'dimensions', 'length']",5
+539,23,"['along', 'dimension']",2
+540,23,"['tf', 'dataset']",2
+541,23,"['shape', 'height', 'width', 'height', 'width']",5
+542,23,"['see', 'section']",2
+543,23,"['function', 'input']",2
+544,23,"['n', 'values']",2
+545,23,"['n', 'SOME_DTYPE']",2
+546,23,"['index', 'tensor']",2
+547,23,"['padding', 'use']",2
+548,23,"['algorithm', 'use']",2
+549,23,"['currently', 'supported']",2
+550,22,"['tensor', 'shape', 'channels']",3
+551,22,"['tensor', 'first', 'dimension']",3
+552,22,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'labels', 'must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'labels', 'dimension']",17
+553,22,"['optional', 'tf', 'SOME_DTYPE']",3
+554,22,"['optional', 'tf', 'SOME_DTYPE', 'SOME_DTYPE']",4
+555,22,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint']",12
+556,22,"['SOME_DTYPE', 'shape', 'd']",3
+557,22,"['SOME_DTYPE', 'n']",2
+558,22,"['SOME_DTYPE', 'width']",2
+559,22,"['SOME_DTYPE', 'containing']",2
+560,22,"['value', 'tensor']",2
+561,22,"['type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+562,22,"['type', 'padding', 'algorithm', 'use']",4
+563,22,"['SOME_STRUCTURE', 'tensor', 'type']",3
+564,22,"['SOME_STRUCTURE', 'input']",2
+565,22,"['SOME_STRUCTURE', 'single']",2
+566,22,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint']",13
+567,22,"['data', 'input']",2
+568,22,"['data', 'output']",2
+569,22,"['batch', 'in_height', 'in_width']",3
+570,22,"['format', 'data', 'order', 'batch']",4
+571,22,"['dimension', 'order', 'determined', 'value', 'data_format', 'see', 'details']",7
+572,22,"['d', 'shape', 'batch', 'height', 'width', 'channels']",6
+573,22,"['default', 'set']",2
+574,22,"['dtype', 'x']",2
+575,22,"['dtype', 'broadcastable']",2
+576,22,"['shape', 'batch', 'height', 'width', 'height', 'width']",6
+577,22,"['shape', 'inputs']",2
+578,22,"['see', 'returns', 'section', 'tf', 'nn', 'convolution', 'details']",7
+579,22,"['one', 'channels_last']",2
+580,22,"['one', 'channels_first']",2
+581,22,"['n', 'dimensions']",2
+582,22,"['n', 'd']",2
+583,22,"['size', 'input']",2
+584,22,"['deprecated', 'alias']",2
+585,22,"['channels', 'tensor']",2
+586,22,"['ground', 'truth']",2
+587,21,"['tensor', 'representing', 'shape']",3
+588,21,"['tensor', 'd', 'tensor']",3
+589,21,"['SOME_DTYPE', 'tensor', 'x']",3
+590,21,"['SOME_DTYPE', 'representing', 'boxes']",3
+591,21,"['SOME_DTYPE', 'file']",2
+592,21,"['value', 'input']",2
+593,21,"['value', 'type']",2
+594,21,"['defaults', 'first']",2
+595,21,"['type', 'dtype']",2
+596,21,"['used', 'create']",2
+597,21,"['SOME_STRUCTURE', 'containing']",2
+598,21,"['must', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",14
+599,21,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint']",15
+600,21,"['set', 'cells']",2
+601,21,"['data', 'type']",2
+602,21,"['element', 'dimension']",2
+603,21,"['dimensions', 'batch', 'batch']",3
+604,21,"['d', 'tensor', 'shape', 'in_channels']",4
+605,21,"['d', 'SOME_DTYPE', 'tensor', 'shape']",4
+606,21,"['d', 'type', 'SOME_DTYPE']",3
+607,21,"['d', 'depth']",2
+608,21,"['valid', 'default']",2
+609,21,"['default', 'none']",2
+610,21,"['rank', 'tensor']",2
+611,21,"['dtype', 'tf', 'SOME_DTYPE']",3
+612,21,"['tf', 'SOME_DTYPE', 'tensor']",3
+613,21,"['tf', 'tf', 'SOME_DTYPE']",3
+614,21,"['shape', 'output']",2
+615,21,"['shape', 'd', 'tensor']",3
+616,21,"['shape', 'depth']",2
+617,21,"['keras', 'variable']",2
+618,21,"['deprecated', 'axis']",2
+619,21,"['possibly', 'tensor']",2
+620,21,"['m', 'm']",2
+621,20,"['tensor', 'SOME_DTYPE', 'tensor']",3
+622,20,"['tensor', 'whose', 'predictions']",3
+623,20,"['tensor', 'shape', 'height', 'width', 'channels']",5
+624,20,"['tensor', 'shape', 'd', 'tensor']",4
+625,20,"['tensor', 'ref']",2
+626,20,"['tensor', 'num_classes']",2
+627,20,"['tensor', 'false']",2
+628,20,"['tensor', 'condition']",2
+629,20,"['name', 'tensor', 'optional']",3
+630,20,"['optional', 'tf', 'SOME_DTYPE', 'tf']",4
+631,20,"['SOME_DTYPE', 'tensor', 'shape', 'd']",4
+632,20,"['SOME_DTYPE', 'rank']",2
+633,20,"['used', 'name']",2
+634,20,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying']",3
+635,20,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'tensor']",3
+636,20,"['SOME_STRUCTURE', 'names']",2
+637,20,"['SOME_STRUCTURE', 'dimension']",2
+638,20,"['SOME_STRUCTURE', 'update_op']",2
+639,20,"['non', 'SOME_DTYPE']",2
+640,20,"['must', 'range', 'rank', 'input_tensor', 'rank', 'input_tensor']",6
+641,20,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint', 'SOME_DTYPE']",16
+642,20,"['set', 'element']",2
+643,20,"['data', 'batch', 'in_channels']",3
+644,20,"['batch', 'must']",2
+645,20,"['dimensions', 'shape', 'batch']",3
+646,20,"['dimensions', 'shape', 'batch', 'shape']",4
+647,20,"['dimensions', 'shape', 'batch', 'shape', 'batch']",5
+648,20,"['dimensions', 'shape', 'shape']",3
+649,20,"['d', 'tensor', 'shape', 'channels']",4
+650,20,"['d', 'tensor', 'shape', 'batch', 'height', 'width']",6
+651,20,"['d', 'tensor', 'type', 'SOME_DTYPE']",4
+652,20,"['d', 'shape', 'depth']",3
+653,20,"['valid', 'values', 'default']",3
+654,20,"['x', 'x']",2
+655,20,"['dtype', 'tf', 'tf']",3
+656,20,"['dtype', 'tensor']",2
+657,20,"['tf', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",4
+658,20,"['tf', 'dtype', 'tf']",3
+659,20,"['tf', 'data', 'dataset']",3
+660,20,"['shape', 'input']",2
+661,20,"['shape', 'height', 'width', 'channels', 'channels']",5
+662,20,"['shape', 'height', 'width', 'shape', 'height', 'width']",6
+663,20,"['shape', 'num_classes']",2
+664,20,"['function', 'tensor', 'tensor']",3
+665,20,"['one', 'channels_last', 'channels_first']",3
+666,20,"['nested', 'structure']",2
+667,20,"['size', 'dimension', 'tensor']",3
+668,20,"['spatial', 'dimensions']",2
+669,20,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+670,20,"['index', 'input']",2
+671,20,"['specifies', 'input']",2
+672,20,"['possibly', 'nested', 'tensor']",3
+673,20,"['cast', 'SOME_DTYPE']",2
+674,20,"['broadcastable', 'x']",2
+675,20,"['stride', 'sliding', 'window', 'dimension', 'input', 'tensor']",6
+676,19,"['tensor', 'type', 'SOME_DTYPE', 'shape']",4
+677,19,"['tensor', 'single']",2
+678,19,"['tensor', 'size', 'dimension']",3
+679,19,"['tensor', 'elements']",2
+680,19,"['name', 'used']",2
+681,19,"['name', 'prefix', 'returned', 'tensor', 'optional']",5
+682,19,"['optional', 'SOME_DTYPE', 'tensor']",3
+683,19,"['optional', 'SOME_STRUCTURE', 'collections', 'update_op', 'added']",5
+684,19,"['optional', 'used']",2
+685,19,"['optional', 'type']",2
+686,19,"['SOME_DTYPE', 'SOME_DTYPE', 'tf']",3
+687,19,"['SOME_DTYPE', 'SOME_DTYPE', 'specifying']",3
+688,19,"['SOME_DTYPE', 'tf', 'tensor']",3
+689,19,"['SOME_DTYPE', 'tensor', 'batch_size']",3
+690,19,"['SOME_DTYPE', 'path']",2
+691,19,"['SOME_DTYPE', 'data']",2
+692,19,"['value', 'values']",2
+693,19,"['value', 'flag']",2
+694,19,"['type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+695,19,"['input', 'value']",2
+696,19,"['input', 'SOME_DTYPE']",2
+697,19,"['input', 'dimension']",2
+698,19,"['inputs', 'inputs']",2
+699,19,"['inputs', 'shape']",2
+700,19,"['range', 'input']",2
+701,19,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",11
+702,19,"['must', 'value']",2
+703,19,"['set', 'k', 'k', 'skipped', 'cells', 'filter', 'element', 'dimension']",8
+704,19,"['batch', 'd', 'tensor']",3
+705,19,"['dilation', 'factor', 'dimension', 'input']",4
+706,19,"['depth', 'dimensions']",2
+707,19,"['d', 'tensor', 'shape', 'height', 'width', 'channels']",6
+708,19,"['d', 'tensor', 'batch_size']",3
+709,19,"['scope', 'operations']",2
+710,19,"['tf', 'dtype', 'tf', 'tf']",4
+711,19,"['shape', 'batch', 'height', 'width', 'channels', 'shape', 'channels']",7
+712,19,"['shape', 'batch', 'height', 'width', 'channels', 'shape', 'height', 'width']",8
+713,19,"['shape', 'batch', 'height', 'width', 'channels', 'height', 'width']",7
+714,19,"['shape', 'batch', 'channels', 'height', 'width']",5
+715,19,"['shape', 'corresponds']",2
+716,19,"['shape', 'm', 'm']",3
+717,19,"['one', 'default']",2
+718,19,"['instance', 'flag']",2
+719,19,"['width', 'd']",2
+720,19,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",8
+721,19,"['vector', 'tensor']",2
+722,19,"['filter_height', 'filter_width']",2
+723,19,"['global', 'step']",2
+724,18,"['tensor', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+725,18,"['tensor', 'default']",2
+726,18,"['tensor', 'dtype', 'broadcastable']",3
+727,18,"['tensor', 'array']",2
+728,18,"['tensor', 'match']",2
+729,18,"['tensor', 'sequence']",2
+730,18,"['tensor', 'print']",2
+731,18,"['optional', 'name', 'returned']",3
+732,18,"['optional', 'prefix']",2
+733,18,"['optional', 'dtype', 'tf']",3
+734,18,"['SOME_DTYPE', 'one', 'channels_last', 'channels_first']",4
+735,18,"['SOME_DTYPE', 'height']",2
+736,18,"['SOME_DTYPE', 'window']",2
+737,18,"['SOME_DTYPE', 'optional']",2
+738,18,"['SOME_DTYPE', 'specifying', 'convolution']",3
+739,18,"['value', 'shape']",2
+740,18,"['value', 'type', 'dtype']",3
+741,18,"['feature', 'values']",2
+742,18,"['type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+743,18,"['SOME_STRUCTURE', 'tensor', 'objects', 'type']",4
+744,18,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+745,18,"['SOME_STRUCTURE', 'SOME_DTYPE', 'convolution']",3
+746,18,"['non', 'negative']",2
+747,18,"['inputs', 'batch']",2
+748,18,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",17
+749,18,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",12
+750,18,"['none', 'SOME_STRUCTURE']",2
+751,18,"['data', 'format', 'input']",3
+752,18,"['data', 'format', 'data']",3
+753,18,"['format', 'batch', 'in_channels']",3
+754,18,"['dilations', 'batch', 'depth', 'dimensions', 'must']",5
+755,18,"['dimensions', 'inputs']",2
+756,18,"['d', 'tensor', 'type', 'shape']",4
+757,18,"['d', 'tensor', 'python']",3
+758,18,"['d', 'tensor', 'tensor', 'shape']",4
+759,18,"['d', 'tensor', 'dimension']",3
+760,18,"['d', 'd', 'tensor']",3
+761,18,"['d', 'data_format']",2
+762,18,"['default', 'batch']",2
+763,18,"['output', 'shape']",2
+764,18,"['dtype', 'SOME_DTYPE', 'tf']",3
+765,18,"['dtype', 'broadcastable', 'x']",3
+766,18,"['tf', 'tf', 'tensor']",3
+767,18,"['tf', 'behavior']",2
+768,18,"['tf', 'dtype', 'SOME_DTYPE']",3
+769,18,"['shape', 'channels_first']",2
+770,18,"['shape', 'filter_width']",2
+771,18,"['shape', 'out_channels']",2
+772,18,"['function', 'returns']",2
+773,18,"['n', 'valid', 'values', 'default']",4
+774,18,"['size', 'last', 'dimension']",3
+775,18,"['channels_last', 'corresponds']",2
+776,18,"['channels_last', 'corresponds', 'channels_first']",3
+777,18,"['corresponds', 'corresponds']",2
+778,18,"['height', 'd']",2
+779,18,"['bias', 'vector']",2
+780,18,"['almost', 'never', 'need', 'overridden']",4
+781,18,"['flagvalues', 'flagvalues', 'instance', 'flag']",4
+782,17,"['tensor', 'shape', 'd', 'tensor', 'shape']",5
+783,17,"['tensor', 'used']",2
+784,17,"['tensor', 'value', 'type']",3
+785,17,"['tensor', 'print', 'condition', 'false']",4
+786,17,"['optional', 'tf', 'dtype', 'tf', 'tf']",5
+787,17,"['optional', 'name', 'returned', 'tensor']",4
+788,17,"['optional', 'value']",2
+789,17,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat']",10
+790,17,"['SOME_DTYPE', 'SOME_DTYPE', 'representing']",3
+791,17,"['SOME_DTYPE', 'tensor', 'single']",3
+792,17,"['SOME_DTYPE', 'one', 'channels_last', 'default', 'channels_first']",5
+793,17,"['SOME_DTYPE', 'nhwc']",2
+794,17,"['SOME_DTYPE', 'corresponding']",2
+795,17,"['SOME_DTYPE', 'function']",2
+796,17,"['values', 'values']",2
+797,17,"['defaults', 'error']",2
+798,17,"['type', 'output']",2
+799,17,"['type', 'value']",2
+800,17,"['used', 'tensor']",2
+801,17,"['SOME_STRUCTURE', 'returned']",2
+802,17,"['key', 'tensor']",2
+803,17,"['objects', 'SOME_DTYPE']",2
+804,17,"['inputs', 'shape', 'batch']",3
+805,17,"['inputs', 'shape', 'batch', 'batch']",4
+806,17,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",17
+807,17,"['must', 'size']",2
+808,17,"['data', 'batch', 'in_width']",3
+809,17,"['batch', 'inputs', 'batch']",3
+810,17,"['dimensions', 'inputs', 'shape']",3
+811,17,"['d', 'tensor', 'shape', 'height', 'width', 'height', 'width']",7
+812,17,"['d', 'tensor', 'shape', 'shape']",4
+813,17,"['d', 'tensor', 'output']",3
+814,17,"['d', 'tensor', 'length']",3
+815,17,"['d', 'tensor', 'd', 'tensor']",4
+816,17,"['d', 'must']",2
+817,17,"['d', 'batch', 'tensor']",3
+818,17,"['true', 'otherwise']",2
+819,17,"['true', 'input']",2
+820,17,"['dtype', 'tf', 'SOME_DTYPE', 'tf']",4
+821,17,"['tf', 'tf', 'SOME_DTYPE', 'tf']",4
+822,17,"['tf', 'representing']",2
+823,17,"['shape', 'batch', 'tensor']",3
+824,17,"['shape', 'channels_first', 'shape']",3
+825,17,"['shape', 'filter_height', 'filter_width']",3
+826,17,"['shape', 'n']",2
+827,17,"['shape', 'data_format']",2
+828,17,"['see', 'tf', 'compat', 'v']",4
+829,17,"['see', 'set_random_seed']",2
+830,17,"['python', 'type']",2
+831,17,"['nested', 'SOME_STRUCTURE']",2
+832,17,"['single', 'tensor']",2
+833,17,"['representing', 'number']",2
+834,17,"['size', 'dimension', 'input']",3
+835,17,"['size', 'window']",2
+836,17,"['size', 'input', 'tensor']",3
+837,17,"['whose', 'matches']",2
+838,17,"['whose', 'match']",2
+839,17,"['height', 'width', 'd']",3
+840,17,"['height', 'width', 'tensor']",3
+841,17,"['first', 'entries']",2
+842,17,"['index', 'axis', 'input']",3
+843,17,"['error', 'message']",2
+844,17,"['keyword', 'arguments']",2
+845,17,"['last', 'must']",2
+846,17,"['ground', 'truth', 'tensor']",3
+847,17,"['~', 'keras']",2
+848,17,"['learning', 'rate']",2
+849,16,"['tensor', 'type', 'shape', 'in_channels']",4
+850,16,"['tensor', 'tensor', 'tensor']",3
+851,16,"['tensor', 'batch', 'shape']",3
+852,16,"['tensor', 'last']",2
+853,16,"['tensor', 'returns']",2
+854,16,"['tensor', 'python', 'value', 'type', 'dtype']",5
+855,16,"['tensor', 'dtype', 'x']",3
+856,16,"['tensor', 'data_format']",2
+857,16,"['tensor', 'nested']",2
+858,16,"['optional', 'values']",2
+859,16,"['optional', 'dtype', 'SOME_DTYPE']",3
+860,16,"['optional', 'dtype', 'SOME_DTYPE', 'tf']",4
+861,16,"['SOME_DTYPE', 'defaults']",2
+862,16,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'representing']",4
+863,16,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_STRUCTURE']",3
+864,16,"['SOME_DTYPE', 'created']",2
+865,16,"['SOME_DTYPE', 'true']",2
+866,16,"['SOME_DTYPE', 'threshold']",2
+867,16,"['SOME_DTYPE', 'flag', 'name']",3
+868,16,"['SOME_DTYPE', 'serialized']",2
+869,16,"['return', 'tensor']",2
+870,16,"['values', 'tensor', 'dimensions']",3
+871,16,"['values', 'dimension']",2
+872,16,"['values', 'SOME_DTYPE']",2
+873,16,"['values', 'predictions']",2
+874,16,"['defaults', 'error', 'message']",3
+875,16,"['type', 'input']",2
+876,16,"['SOME_STRUCTURE', 'tensor', 'shape']",3
+877,16,"['SOME_STRUCTURE', 'objects', 'SOME_DTYPE']",3
+878,16,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'convolution']",4
+879,16,"['number', 'training']",2
+880,16,"['number', 'example']",2
+881,16,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",21
+882,16,"['must', 'match', 'predictions']",3
+883,16,"['none', 'used']",2
+884,16,"['dimension', 'shape']",2
+885,16,"['dimension', 'dimension']",2
+886,16,"['dimensions', 'tensor']",2
+887,16,"['d', 'tensor', 'shape', 'batch', 'height', 'width', 'height', 'width']",8
+888,16,"['d', 'tensor', 'shape', 'batch', 'height', 'width', 'channels']",7
+889,16,"['d', 'tensor', 'shape', 'd', 'tensor', 'shape']",6
+890,16,"['d', 'tensor', 'size', 'dimension']",4
+891,16,"['d', 'tensor', 'representing']",3
+892,16,"['d', 'tensor', 'value']",3
+893,16,"['d', 'SOME_DTYPE', 'batch_size']",3
+894,16,"['d', 'height', 'width', 'tensor']",4
+895,16,"['d', 'channels', 'tensor']",3
+896,16,"['d', 'containing']",2
+897,16,"['d', 'array']",2
+898,16,"['d', 'filter_width']",2
+899,16,"['default', 'n']",2
+900,16,"['default', 'SOME_DTYPE']",2
+901,16,"['rank', 'n']",2
+902,16,"['tf', 'tf', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",5
+903,16,"['tf', 'dtype', 'tf', 'SOME_DTYPE', 'tf']",5
+904,16,"['tf', 'dtype', 'tf', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",6
+905,16,"['tf', 'experimental']",2
+906,16,"['shape', 'SOME_STRUCTURE']",2
+907,16,"['shape', 'batch', 'tensor', 'shape']",4
+908,16,"['shape', 'filter_width', 'in_channels']",3
+909,16,"['shape', 'dimension']",2
+910,16,"['see', 'tf', 'behavior']",3
+911,16,"['returned', 'keras', 'variable']",3
+912,16,"['function', 'used']",2
+913,16,"['either', 'default']",2
+914,16,"['either', 'tensor']",2
+915,16,"['single', 'dimension']",2
+916,16,"['representing', 'tensor']",2
+917,16,"['size', 'dimension', 'input', 'tensor']",4
+918,16,"['size', 'window', 'dimension']",3
+919,16,"['deprecated', 'name', 'axis']",3
+920,16,"['ordering', 'dimensions', 'inputs', 'channels_last', 'corresponds', 'inputs', 'shape', 'batch', 'channels_first', 'corresponds', 'inputs', 'shape', 'batch']",13
+921,16,"['specifies', 'dimension']",2
+922,16,"['axis', 'compute']",2
+923,16,"['keyword', 'passed']",2
+924,16,"['ground', 'truth', 'tensor', 'predictions']",4
+925,16,"['vector', 'SOME_DTYPE']",2
+926,16,"['flagvalues', 'flagvalues', 'instance', 'flag', 'registered']",5
+927,15,"['tensor', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+928,15,"['tensor', 'type', 'shape', 'batch_size']",4
+929,15,"['tensor', 'shape', 'predictions']",3
+930,15,"['tensor', 'shape', 'whose']",3
+931,15,"['tensor', 'shape', 'batch', 'shape']",4
+932,15,"['tensor', 'shape', 'SOME_DTYPE']",3
+933,15,"['tensor', 'broadcastable', 'x']",3
+934,15,"['tensor', 'output', 'tensor']",3
+935,15,"['tensor', 'returns', 'tensor']",3
+936,15,"['tensor', 'indexedslices']",2
+937,15,"['tensor', 'k']",2
+938,15,"['tensor', 'serialized']",2
+939,15,"['name', 'name']",2
+940,15,"['optional', 'tf', 'dtype', 'tf', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",7
+941,15,"['optional', 'variable']",2
+942,15,"['SOME_DTYPE', 'identifying']",2
+943,15,"['SOME_DTYPE', 'compute']",2
+944,15,"['SOME_DTYPE', 'representing', 'number']",3
+945,15,"['SOME_DTYPE', 'first']",2
+946,15,"['SOME_DTYPE', 'layer']",2
+947,15,"['SOME_DTYPE', 'matrix']",2
+948,15,"['SOME_DTYPE', 'returns', 'tensor']",3
+949,15,"['SOME_DTYPE', 'considered']",2
+950,15,"['SOME_DTYPE', 'weights']",2
+951,15,"['SOME_DTYPE', 'broadcastable']",2
+952,15,"['SOME_DTYPE', 'represents']",2
+953,15,"['value', 'used']",2
+954,15,"['value', 'given']",2
+955,15,"['values', 'tf']",2
+956,15,"['defaults', 'value']",2
+957,15,"['defaults', 'error', 'message', 'first', 'entries']",5
+958,15,"['defaults', 'x']",2
+959,15,"['type', 'returned']",2
+960,15,"['input', 'dimensions']",2
+961,15,"['input', 'batch']",2
+962,15,"['SOME_STRUCTURE', 'tensor', 'objects', 'SOME_DTYPE']",4
+963,15,"['SOME_STRUCTURE', 'input', 'tensor']",3
+964,15,"['SOME_STRUCTURE', 'passed']",2
+965,15,"['number', 'elements']",2
+966,15,"['number', 'target', 'classes']",3
+967,15,"['must', 'known']",2
+968,15,"['batch', 'in_width', 'in_channels']",3
+969,15,"['format', 'batch', 'in_width']",3
+970,15,"['dimensions', 'predictions']",2
+971,15,"['d', 'tensor', 'shape', 'batch_size']",4
+972,15,"['d', 'tensor', 'type', 'shape', 'in_channels']",5
+973,15,"['d', 'tensor', 'data']",3
+974,15,"['d', 'batch', 'height', 'width', 'channels', 'tensor']",6
+975,15,"['d', 'batch', 'depth']",3
+976,15,"['d', 'filter_height', 'filter_width']",3
+977,15,"['default', 'false']",2
+978,15,"['true', 'less']",2
+979,15,"['dtype', 'returned']",2
+980,15,"['tf', 'object']",2
+981,15,"['shape', 'batch', 'depth']",3
+982,15,"['shape', 'height', 'width', 'tensor']",4
+983,15,"['shape', 'channels', 'tensor']",3
+984,15,"['shape', 'type']",2
+985,15,"['shape', 'filter_height', 'filter_width', 'in_channels']",4
+986,15,"['shape', 'd', 'height', 'width']",4
+987,15,"['function', 'variable']",2
+988,15,"['structure', 'tensor']",2
+989,15,"['n', 'c']",2
+990,15,"['size', 'window', 'dimension', 'input']",4
+991,15,"['keyword', 'args']",2
+992,15,"['random', 'generator']",2
+993,15,"['h', 'w']",2
+994,15,"['data_format', 'data_format']",2
+995,15,"['kernel', 'matrix']",2
+996,15,"['ndhwc', 'ncdhw']",2
+997,15,"['num_classes', 'num_classes']",2
+998,14,"['tensor', 'along']",2
+999,14,"['tensor', 'rank', 'n']",3
+1000,14,"['tensor', 'tensor', 'dimension']",3
+1001,14,"['tensor', 'shape', 'type']",3
+1002,14,"['tensor', 'function']",2
+1003,14,"['tensor', 'possibly']",2
+1004,14,"['name', 'use']",2
+1005,14,"['optional', 'use']",2
+1006,14,"['SOME_DTYPE', 'tf', 'representing']",3
+1007,14,"['SOME_DTYPE', 'tensor', 'shape', 'batch_size']",4
+1008,14,"['SOME_DTYPE', 'tensor', 'dtype', 'broadcastable', 'x']",5
+1009,14,"['SOME_DTYPE', 'height', 'width']",3
+1010,14,"['SOME_DTYPE', 'nhwc', 'nchw']",3
+1011,14,"['SOME_DTYPE', 'names']",2
+1012,14,"['SOME_DTYPE', 'random']",2
+1013,14,"['SOME_DTYPE', 'elements']",2
+1014,14,"['SOME_DTYPE', 'd', 'tensor']",3
+1015,14,"['SOME_DTYPE', 'e']",2
+1016,14,"['SOME_DTYPE', 'false']",2
+1017,14,"['SOME_DTYPE', 'step']",2
+1018,14,"['SOME_DTYPE', 'object']",2
+1019,14,"['SOME_DTYPE', 'help', 'message']",3
+1020,14,"['value', 'dimension']",2
+1021,14,"['value', 'must']",2
+1022,14,"['value', 'quantized']",2
+1023,14,"['defaults', 'error', 'message', 'x']",4
+1024,14,"['input', 'shape']",2
+1025,14,"['used', 'create', 'random']",3
+1026,14,"['SOME_STRUCTURE', 'tensor', 'type', 'SOME_DTYPE']",4
+1027,14,"['SOME_STRUCTURE', 'SOME_DTYPE', 'shape']",3
+1028,14,"['SOME_STRUCTURE', 'along']",2
+1029,14,"['SOME_STRUCTURE', 'metric']",2
+1030,14,"['SOME_STRUCTURE', 'extra', 'keyword', 'args', 'passed']",5
+1031,14,"['number', 'per', 'training']",3
+1032,14,"['number', 'output']",2
+1033,14,"['number', 'classes', 'per']",3
+1034,14,"['number', 'iterations']",2
+1035,14,"['must', 'ref']",2
+1036,14,"['none', 'means']",2
+1037,14,"['nwc', 'ncw']",2
+1038,14,"['data', 'order', 'batch', 'in_width']",4
+1039,14,"['data', 'order', 'batch', 'in_channels']",4
+1040,14,"['data', 'input', 'output']",3
+1041,14,"['data', 'height', 'width']",3
+1042,14,"['format', 'data', 'batch', 'in_channels']",4
+1043,14,"['format', 'data', 'batch', 'in_width']",4
+1044,14,"['element', 'tensor']",2
+1045,14,"['d', 'tensor', 'shape', 'height', 'width', 'channels', 'channels']",7
+1046,14,"['d', 'tensor', 'shape', 'height', 'width', 'd', 'tensor', 'shape', 'height', 'width']",10
+1047,14,"['d', 'tensor', 'shape', 'channels', 'd', 'tensor', 'shape']",7
+1048,14,"['d', 'tensor', 'shape', 'num_boxes']",4
+1049,14,"['d', 'shape', 'batch', 'depth']",4
+1050,14,"['d', 'filter_width', 'in_channels']",3
+1051,14,"['entries', 'x']",2
+1052,14,"['default', 'value', 'flag']",3
+1053,14,"['default', 'n', 'c']",3
+1054,14,"['true', 'may', 'less']",3
+1055,14,"['output', 'SOME_DTYPE']",2
+1056,14,"['variable', 'variable']",2
+1057,14,"['shape', 'batch', 'height', 'width', 'channels', 'tensor']",6
+1058,14,"['shape', 'data']",2
+1059,14,"['shape', 'SOME_DTYPE', 'SOME_DTYPE']",3
+1060,14,"['shape', 'd', 'height', 'width', 'channels']",5
+1061,14,"['shape', 'dimensions']",2
+1062,14,"['shape', 'size']",2
+1063,14,"['collection', 'added']",2
+1064,14,"['see', 'tf', 'compat', 'v', 'set_random_seed', 'behavior']",6
+1065,14,"['keras', 'keras']",2
+1066,14,"['python', 'function']",2
+1067,14,"['function', 'SOME_DTYPE']",2
+1068,14,"['function', 'tf']",2
+1069,14,"['may', 'tensor']",2
+1070,14,"['one', 'case']",2
+1071,14,"['nested', 'sequence']",2
+1072,14,"['single', 'given']",2
+1073,14,"['behavior', 'may']",2
+1074,14,"['size', 'window', 'dimension', 'input', 'tensor']",5
+1075,14,"['deprecated', 'alias', 'keepdims']",3
+1076,14,"['path', 'file']",2
+1077,14,"['false', 'tensor']",2
+1078,14,"['batch_size', 'num_classes']",2
+1079,14,"['nhwc', 'batch']",2
+1080,14,"['index', 'axis', 'input', 'tensor']",4
+1081,14,"['otherwise', 'may']",2
+1082,14,"['re', 'match']",2
+1083,14,"['keepdims', 'reduced']",2
+1084,14,"['last', 'dimension', 'must']",3
+1085,14,"['sequence', 'tensor']",2
+1086,14,"['resulting', 'tensor']",2
+1087,14,"['ground', 'truth', 'tensor', 'dimensions', 'predictions']",5
+1088,14,"['ground', 'truth', 'values']",3
+1089,14,"['regularizer', 'function']",2
+1090,14,"['numpy', 'array']",2
+1091,13,"['tensor', 'shape', 'values']",3
+1092,13,"['tensor', 'arbitrary', 'shape']",3
+1093,13,"['tensor', 'matrix']",2
+1094,13,"['tensor', 'python', 'array']",3
+1095,13,"['tensor', 'samples']",2
+1096,13,"['tensor', 'nested', 'tensor']",3
+1097,13,"['name', 'new']",2
+1098,13,"['optional', 'true']",2
+1099,13,"['optional', 'losses']",2
+1100,13,"['optional', 'summary']",2
+1101,13,"['optional', 'ops']",2
+1102,13,"['SOME_DTYPE', 'value', 'value']",3
+1103,13,"['SOME_DTYPE', 'along']",2
+1104,13,"['SOME_DTYPE', 'returned', 'keras', 'variable']",4
+1105,13,"['SOME_DTYPE', 'directory']",2
+1106,13,"['SOME_DTYPE', 'representing', 'single']",3
+1107,13,"['SOME_DTYPE', 'spatial']",2
+1108,13,"['SOME_DTYPE', 'non']",2
+1109,13,"['SOME_DTYPE', 'maximum']",2
+1110,13,"['SOME_DTYPE', 'max']",2
+1111,13,"['SOME_DTYPE', 'row']",2
+1112,13,"['SOME_DTYPE', 'step', 'value']",3
+1113,13,"['SOME_DTYPE', 'metric']",2
+1114,13,"['SOME_DTYPE', 'defining']",2
+1115,13,"['SOME_DTYPE', 'encoding']",2
+1116,13,"['values', 'dimensions', 'must']",3
+1117,13,"['defaults', 'error', 'message', 'first', 'entries', 'x']",6
+1118,13,"['input', 'data']",2
+1119,13,"['input', 'across']",2
+1120,13,"['SOME_STRUCTURE', 'feature', 'columns']",3
+1121,13,"['SOME_STRUCTURE', 'feature', 'values']",3
+1122,13,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'specifying']",4
+1123,13,"['SOME_STRUCTURE', 'n']",2
+1124,13,"['SOME_STRUCTURE', 'function']",2
+1125,13,"['SOME_STRUCTURE', 'data']",2
+1126,13,"['SOME_STRUCTURE', 'ops']",2
+1127,13,"['non', 'negative', 'SOME_DTYPE']",3
+1128,13,"['non', 'number']",2
+1129,13,"['data', 'stored', 'order', 'batch']",4
+1130,13,"['data', 'batch', 'height', 'width']",4
+1131,13,"['format', 'batch', 'height', 'width']",4
+1132,13,"['dimension', 'along']",2
+1133,13,"['d', 'tensor', 'shape', 'batch', 'height', 'width', 'channels', 'd', 'tensor', 'shape', 'height', 'width', 'channels']",13
+1134,13,"['d', 'tensor', 'indices']",3
+1135,13,"['d', 'values']",2
+1136,13,"['d', 'shape', 'filter_width']",3
+1137,13,"['d', 'filter_height', 'filter_width', 'in_channels']",4
+1138,13,"['valid', 'case']",2
+1139,13,"['default', 'tensor']",2
+1140,13,"['default', 'graph']",2
+1141,13,"['default', 'n', 'c', 'dimensions', 'set']",5
+1142,13,"['default', 'dimension']",2
+1143,13,"['default', 'data_format', 'starts', 'nc']",4
+1144,13,"['default', 'format']",2
+1145,13,"['default', 'used']",2
+1146,13,"['default', 'e']",2
+1147,13,"['rank', 'input']",2
+1148,13,"['true', 'protected', 'lock', 'otherwise', 'behavior', 'undefined', 'may', 'exhibit', 'less', 'contention']",10
+1149,13,"['output', 'data']",2
+1150,13,"['output', 'type']",2
+1151,13,"['tf', 'none']",2
+1152,13,"['tf', 'function']",2
+1153,13,"['shape', 'dtype']",2
+1154,13,"['keys', 'values']",2
+1155,13,"['ssparsetensor', 'shape']",2
+1156,13,"['python', 'tensor']",2
+1157,13,"['function', 'kernel']",2
+1158,13,"['function', 'matrix']",2
+1159,13,"['one', 'valid']",2
+1160,13,"['one', 'case', 'insensitive']",3
+1161,13,"['n', 'batch']",2
+1162,13,"['single', 'value', 'given', 'replicated']",4
+1163,13,"['representing', 'batch']",2
+1164,13,"['maximum', 'number']",2
+1165,13,"['labels', 'shape']",2
+1166,13,"['standard', 'deviation']",2
+1167,13,"['height', 'width', 'dimensions']",3
+1168,13,"['nhwc', 'default']",2
+1169,13,"['nhwc', 'default', 'nchw']",3
+1170,13,"['per', 'example']",2
+1171,13,"['sorted', 'order']",2
+1172,13,"['axis', 'values']",2
+1173,13,"['data_format', 'start', 'nc', 'data_format', 'starts', 'nc']",6
+1174,13,"['returns', 'SOME_STRUCTURE']",2
+1175,13,"['regularizer', 'function', 'applied']",3
+1176,13,"['num_classes', 'dimension']",2
+1177,13,"['summary', 'tensorboard']",2
+1178,13,"['utf', 'utf']",2
+1179,12,"['tensor', 'type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+1180,12,"['tensor', 'tf', 'tensor']",3
+1181,12,"['tensor', 'whose', 'data']",3
+1182,12,"['tensor', 'shape', 'data']",3
+1183,12,"['tensor', 'shape', 'n']",3
+1184,12,"['tensor', 'matches']",2
+1185,12,"['tensor', 'format']",2
+1186,12,"['tensor', 'representing', 'number']",3
+1187,12,"['tensor', 'last', 'dimension']",3
+1188,12,"['tensor', 'raggedtensor']",2
+1189,12,"['tensor', 'possibly', 'nested']",3
+1190,12,"['tensor', 'matching']",2
+1191,12,"['name', 'variable']",2
+1192,12,"['name', 'tensorboard']",2
+1193,12,"['optional', 'SOME_DTYPE', 'nhwc']",3
+1194,12,"['optional', 'SOME_STRUCTURE', 'collections', 'metric', 'added']",5
+1195,12,"['optional', 'names']",2
+1196,12,"['optional', 'name', 'prefix']",3
+1197,12,"['optional', 'function']",2
+1198,12,"['SOME_DTYPE', 'return']",2
+1199,12,"['SOME_DTYPE', 'SOME_DTYPE', 'tf', 'tensor']",4
+1200,12,"['SOME_DTYPE', 'supported']",2
+1201,12,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'convolution']",6
+1202,12,"['SOME_DTYPE', 'axes']",2
+1203,12,"['SOME_DTYPE', 'shape', 'tensor']",3
+1204,12,"['SOME_DTYPE', 'operation']",2
+1205,12,"['SOME_DTYPE', 'representing', 'batch']",3
+1206,12,"['SOME_DTYPE', 'objects']",2
+1207,12,"['SOME_DTYPE', 'quantized']",2
+1208,12,"['SOME_DTYPE', 'summary']",2
+1209,12,"['value', 'file']",2
+1210,12,"['value', 'dilation_rate']",2
+1211,12,"['value', 'output']",2
+1212,12,"['values', 'corresponding']",2
+1213,12,"['values', 'sorted']",2
+1214,12,"['defaults', 'nhwc']",2
+1215,12,"['defaults', 'keras']",2
+1216,12,"['defaults', 'none']",2
+1217,12,"['unique', 'SOME_DTYPE']",2
+1218,12,"['input', 'rank']",2
+1219,12,"['used', 'create', 'random', 'seed']",4
+1220,12,"['used', 'input']",2
+1221,12,"['used', 'used']",2
+1222,12,"['used', 'tensorboard']",2
+1223,12,"['SOME_STRUCTURE', 'tensor', 'objects', 'type', 'SOME_DTYPE']",5
+1224,12,"['SOME_STRUCTURE', 'mapping', 'keys']",3
+1225,12,"['SOME_STRUCTURE', 'keys', 'values']",3
+1226,12,"['SOME_STRUCTURE', 'extra', 'keyword', 'args', 'passed', 'flag', 'strong', 'init', 'strong']",9
+1227,12,"['SOME_STRUCTURE', 'varlenfeature']",2
+1228,12,"['number', 'buckets']",2
+1229,12,"['number', 'threads']",2
+1230,12,"['number', 'per', 'example']",3
+1231,12,"['number', 'parallel']",2
+1232,12,"['number', 'dimensions']",2
+1233,12,"['inputs', 'tensor']",2
+1234,12,"['elements', 'tensor']",2
+1235,12,"['must', 'values']",2
+1236,12,"['must', 'order']",2
+1237,12,"['must', 'none']",2
+1238,12,"['none', 'tf']",2
+1239,12,"['set', 'true']",2
+1240,12,"['data', 'format', 'input', 'output', 'data']",5
+1241,12,"['data', 'shape']",2
+1242,12,"['data', 'channels']",2
+1243,12,"['batch', 'in_height', 'in_width', 'in_channels']",4
+1244,12,"['format', 'data', 'order', 'batch', 'in_height', 'in_width']",6
+1245,12,"['format', 'data', 'order', 'batch', 'in_channels']",5
+1246,12,"['dimension', 'output']",2
+1247,12,"['dimensions', 'input']",2
+1248,12,"['d', 'SOME_DTYPE', 'tensor', 'batch_size']",4
+1249,12,"['d', 'shape', 'filter_height', 'filter_width']",4
+1250,12,"['d', 'shape', 'm']",3
+1251,12,"['d', 'type', 'dtype']",3
+1252,12,"['d', 'out_channels']",2
+1253,12,"['true', 'default']",2
+1254,12,"['true', 'output']",2
+1255,12,"['mean', 'sum']",2
+1256,12,"['mapping', 'SOME_DTYPE']",2
+1257,12,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf']",4
+1258,12,"['tf', 'value']",2
+1259,12,"['tf', 'example']",2
+1260,12,"['shape', 'in_channels', 'out_channels']",3
+1261,12,"['items', 'name', 'attribute']",3
+1262,12,"['ssparsetensor', 'tensor']",2
+1263,12,"['keras', 'file']",2
+1264,12,"['function', 'applied', 'kernel']",3
+1265,12,"['function', 'output']",2
+1266,12,"['n', 'tensor', 'shape']",3
+1267,12,"['n', 'm']",2
+1268,12,"['n', 'shape', 'batch_size']",3
+1269,12,"['size', 'size']",2
+1270,12,"['real', 'SOME_DTYPE']",2
+1271,12,"['given', 'dimension']",2
+1272,12,"['ordering', 'dimensions', 'inputs', 'channels_last', 'corresponds', 'inputs', 'shape', 'batch', 'channels', 'channels_first', 'corresponds', 'inputs', 'shape', 'batch', 'channels']",15
+1273,12,"['first', 'tensor']",2
+1274,12,"['whether', 'batch']",2
+1275,12,"['possibly', 'SOME_STRUCTURE']",2
+1276,12,"['floating', 'point', 'tensor']",3
+1277,12,"['ground', 'truth', 'tensor', 'whose', 'predictions']",5
+1278,12,"['indicating', 'whether']",2
+1279,12,"['start', 'dimension']",2
+1280,12,"['update', 'ops']",2
+1281,12,"['normal', 'distribution']",2
+1282,12,"['outside', 'input']",2
+1283,12,"['outside', 'range']",2
+1284,12,"['across', 'dimensions']",2
+1285,12,"['summary', 'used']",2
+1286,12,"['mutable', 'tensor']",2
+1287,12,"['utf', '_char']",2
+1288,12,"['tag', 'name']",2
+1289,12,"['tag', 'tensorboard']",2
+1290,12,"['old', 'name', 'axis']",3
+1291,12,"['embedding', 'lookup']",2
+1292,11,"['tensor', 'SOME_DTYPE', 'shape', 'batch_size']",4
+1293,11,"['tensor', 'compute']",2
+1294,11,"['tensor', 'equivalent']",2
+1295,11,"['tensor', 'tf', 'tf']",3
+1296,11,"['tensor', 'whose', 'matches']",3
+1297,11,"['tensor', 'whose', 'values']",3
+1298,11,"['tensor', 'whose', 'size']",3
+1299,11,"['tensor', 'shape', 'batch_size', 'batch_size']",4
+1300,11,"['tensor', 'shape', 'SOME_DTYPE', 'SOME_DTYPE']",4
+1301,11,"['tensor', 'shape', 'representing']",3
+1302,11,"['tensor', 'shape', 'num_classes']",3
+1303,11,"['tensor', 'shape', 'dimension']",3
+1304,11,"['tensor', 'shape', 'data_format']",3
+1305,11,"['tensor', 'y']",2
+1306,11,"['tensor', 'column']",2
+1307,11,"['tensor', 'data', 'shape']",3
+1308,11,"['tensor', 'targets']",2
+1309,11,"['tensor', 'sequence', 'tensor']",3
+1310,11,"['tensor', 'max_time']",2
+1311,11,"['tensor', 'depth']",2
+1312,11,"['tensor', 'possibly', 'nested', 'tensor']",4
+1313,11,"['name', 'ops']",2
+1314,11,"['optional', 'SOME_DTYPE', 'nhwc', 'nchw']",4
+1315,11,"['optional', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+1316,11,"['optional', 'name', 'prefix', 'tensor']",4
+1317,11,"['optional', 'number']",2
+1318,11,"['optional', 'output']",2
+1319,11,"['SOME_DTYPE', 'name', 'flag']",3
+1320,11,"['SOME_DTYPE', 'order']",2
+1321,11,"['SOME_DTYPE', 'axis', 'compute']",3
+1322,11,"['SOME_DTYPE', 'indicating', 'whether']",3
+1323,11,"['SOME_DTYPE', 'array']",2
+1324,11,"['SOME_DTYPE', 'key']",2
+1325,11,"['SOME_DTYPE', 'reduce']",2
+1326,11,"['SOME_DTYPE', 'embedding']",2
+1327,11,"['value', 'SOME_STRUCTURE']",2
+1328,11,"['value', '!']",2
+1329,11,"['value', 'means']",2
+1330,11,"['value', 'variable']",2
+1331,11,"['value', 'quantized', 'value']",3
+1332,11,"['value', 'e']",2
+1333,11,"['values', 'sorted', 'repeated']",3
+1334,11,"['values', 'class']",2
+1335,11,"['defaults', 'image_data_format', 'value', 'found', 'keras', 'config', 'file', '~', 'keras', 'keras', 'json']",11
+1336,11,"['positive', 'SOME_DTYPE']",2
+1337,11,"['type', 'loss']",2
+1338,11,"['type', 'elements']",2
+1339,11,"['unique', 'SOME_DTYPE', 'identifying', 'input']",4
+1340,11,"['input', 'tensor', 'tensor']",3
+1341,11,"['input', 'output', 'tensor']",3
+1342,11,"['input', 'ssparsetensor']",2
+1343,11,"['used', 'key']",2
+1344,11,"['SOME_STRUCTURE', 'tensor', 'SOME_STRUCTURE']",3
+1345,11,"['SOME_STRUCTURE', 'SOME_DTYPE', 'tensor', 'tensor']",4
+1346,11,"['SOME_STRUCTURE', 'SOME_DTYPE', 'd']",3
+1347,11,"['SOME_STRUCTURE', 'mapping', 'feature', 'keys', 'varlenfeature', 'values']",6
+1348,11,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'single']",3
+1349,11,"['SOME_STRUCTURE', 'least']",2
+1350,11,"['number', 'step']",2
+1351,11,"['number', 'channels']",2
+1352,11,"['range', 'input', 'input']",3
+1353,11,"['range', 'values']",2
+1354,11,"['must', 'less']",2
+1355,11,"['must', 'type', 'input']",3
+1356,11,"['must', 'type', 'ref']",3
+1357,11,"['must', 'range', 'rank', 'rank', 'input']",5
+1358,11,"['must', 'sorted']",2
+1359,11,"['must', 'set']",2
+1360,11,"['must', 'd']",2
+1361,11,"['none', 'tensor']",2
+1362,11,"['data', 'tensor']",2
+1363,11,"['batch', 'SOME_DTYPE']",2
+1364,11,"['dilation', 'rate']",2
+1365,11,"['dilation', 'convolution']",2
+1366,11,"['dimension', 'size']",2
+1367,11,"['dimensions', 'must', 'match']",3
+1368,11,"['d', 'tensor', 'SOME_DTYPE', 'shape']",4
+1369,11,"['d', 'tensor', 'SOME_DTYPE', 'batch']",4
+1370,11,"['d', 'tensor', 'data_format']",3
+1371,11,"['d', 'SOME_DTYPE', 'SOME_DTYPE']",3
+1372,11,"['d', 'shape', 'filter_width', 'in_channels']",4
+1373,11,"['d', 'shape', 'data_format']",3
+1374,11,"['d', 'input']",2
+1375,11,"['default', 'values']",2
+1376,11,"['default', 'format', 'data', 'stored', 'order', 'batch']",6
+1377,11,"['default', 'nhwc']",2
+1378,11,"['rank', 'SOME_DTYPE']",2
+1379,11,"['true', 'tf']",2
+1380,11,"['scope', 'operations', 'performed', 'computing', 'loss']",5
+1381,11,"['x', 'y']",2
+1382,11,"['produce', 'input']",2
+1383,11,"['output', 'SOME_DTYPE', 'SOME_DTYPE']",3
+1384,11,"['tf', 'SOME_DTYPE', 'tf', 'tensor']",4
+1385,11,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+1386,11,"['tf', 'SOME_DTYPE', 'tensor', 'representing']",4
+1387,11,"['tf', 'tensor', 'representing']",3
+1388,11,"['tf', 'objects']",2
+1389,11,"['tf', 'feature']",2
+1390,11,"['shape', 'batch', 'in_channels']",3
+1391,11,"['shape', 'output', 'tensor']",3
+1392,11,"['empty', 'SOME_STRUCTURE']",2
+1393,11,"['items', 'name', 'attribute', 'scope']",4
+1394,11,"['collection', 'loss']",2
+1395,11,"['python', 'SOME_DTYPE', 'tensor']",3
+1396,11,"['function', 'bias']",2
+1397,11,"['one', 'valid', 'case', 'insensitive']",4
+1398,11,"['either', 'SOME_DTYPE', 'SOME_DTYPE']",3
+1399,11,"['nested', 'structure', 'tensor']",3
+1400,11,"['n', 'shape', 'batch']",3
+1401,11,"['single', 'value', 'given', 'replicated', 'h', 'w', 'dimension']",7
+1402,11,"['single', 'SOME_DTYPE', 'specifying']",3
+1403,11,"['single', 'spatial', 'dimensions']",3
+1404,11,"['single', 'SOME_STRUCTURE']",2
+1405,11,"['maximum', 'value']",2
+1406,11,"['provided', 'used']",2
+1407,11,"['whether', 'input']",2
+1408,11,"['seed', 'shuffling']",2
+1409,11,"['possibly', 'nested', 'SOME_STRUCTURE']",3
+1410,11,"['floating', 'point', 'values']",3
+1411,11,"['takes', 'returns']",2
+1412,11,"['sequence', 'SOME_DTYPE']",2
+1413,11,"['ground', 'truth', 'tensor', 'whose', 'must', 'match', 'predictions']",7
+1414,11,"['ground', 'truth', 'values', 'tensor', 'whose', 'predictions']",6
+1415,11,"['loss', 'added']",2
+1416,11,"['qint', 'quint', 'qint', 'qint']",4
+1417,11,"['qint', 'quint', 'qint', 'quint']",4
+1418,11,"['minimum', 'value']",2
+1419,11,"['never', 'set', 'channels_last']",3
+1420,11,"['strides', 'must']",2
+1421,11,"['sqrtn', 'sum']",2
+1422,11,"['target', 'example']",2
+1423,11,"['alternatively', 'format', 'could', 'data', 'storage', 'order', 'batch']",7
+1424,11,"['tag', 'used', 'tensorboard']",3
+1425,11,"['old', 'deprecated', 'name', 'axis']",4
+1426,10,"['tensor', 'objects', 'shape']",3
+1427,10,"['tensor', 'SOME_DTYPE', 'returns', 'tensor']",4
+1428,10,"['tensor', 'values', 'ref']",3
+1429,10,"['tensor', 'along', 'dimension']",3
+1430,10,"['tensor', 'type', 'SOME_DTYPE', 'shape', 'batch_size', 'num_true']",6
+1431,10,"['tensor', 'n', 'n']",3
+1432,10,"['tensor', 'tensor', 'objects']",3
+1433,10,"['tensor', 'tensor', 'along']",3
+1434,10,"['tensor', 'tensor', 'first']",3
+1435,10,"['tensor', 'size', 'last', 'dimension']",4
+1436,10,"['tensor', 'whose', 'shape', 'predictions']",4
+1437,10,"['tensor', 'shape', 'm']",3
+1438,10,"['tensor', 'shape', 'out_channels']",3
+1439,10,"['tensor', 'shape', 'filter_width', 'in_channels']",4
+1440,10,"['tensor', 'batch_size', 'num_classes']",3
+1441,10,"['tensor', 'representing', 'tensor']",3
+1442,10,"['tensor', 'axis']",2
+1443,10,"['tensor', 'indices', 'ref']",3
+1444,10,"['tensor', 'norm']",2
+1445,10,"['tensor', 'least']",2
+1446,10,"['name', 'operations']",2
+1447,10,"['name', 'give']",2
+1448,10,"['name', 'node']",2
+1449,10,"['operation', 'tensor']",2
+1450,10,"['optional', 'SOME_STRUCTURE', 'values']",3
+1451,10,"['SOME_DTYPE', 'id']",2
+1452,10,"['SOME_DTYPE', 'value', 'quantized', 'value', 'represents']",5
+1453,10,"['SOME_DTYPE', 'vocabulary']",2
+1454,10,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'representing', 'number']",5
+1455,10,"['SOME_DTYPE', 'number', 'batch']",3
+1456,10,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'length', 'defaults']",5
+1457,10,"['SOME_DTYPE', 'SOME_STRUCTURE', 'tensor']",3
+1458,10,"['SOME_DTYPE', 'type', 'SOME_DTYPE']",3
+1459,10,"['SOME_DTYPE', 'tf', 'tensor', 'representing']",4
+1460,10,"['SOME_DTYPE', 'empty']",2
+1461,10,"['SOME_DTYPE', 'tensor', 'n']",3
+1462,10,"['SOME_DTYPE', 'tensor', 'representing', 'boxes']",4
+1463,10,"['SOME_DTYPE', 'tensor', 'elements']",3
+1464,10,"['SOME_DTYPE', 'single', 'row']",3
+1465,10,"['SOME_DTYPE', 'specify']",2
+1466,10,"['SOME_DTYPE', 'representing', 'threshold', 'deciding', 'boxes']",5
+1467,10,"['SOME_DTYPE', 'representing', 'score']",3
+1468,10,"['SOME_DTYPE', 'representing', 'shape']",3
+1469,10,"['SOME_DTYPE', 'combine']",2
+1470,10,"['SOME_DTYPE', 'format']",2
+1471,10,"['SOME_DTYPE', 'match']",2
+1472,10,"['SOME_DTYPE', 'spatial', 'dimensions']",3
+1473,10,"['SOME_DTYPE', 'binary']",2
+1474,10,"['SOME_DTYPE', 'utf']",2
+1475,10,"['SOME_DTYPE', 'unicode']",2
+1476,10,"['SOME_DTYPE', 'see']",2
+1477,10,"['SOME_DTYPE', 'ssparsetensor']",2
+1478,10,"['value', 'feature']",2
+1479,10,"['return', 'value']",2
+1480,10,"['defaults', 'dimension']",2
+1481,10,"['specified', 'must']",2
+1482,10,"['specified', 'calls', 'should_stop_fn']",3
+1483,10,"['positive', 'num_oov_buckets']",2
+1484,10,"['type', 'reduction', 'apply', 'loss']",4
+1485,10,"['unique', 'SOME_DTYPE', 'identifying', 'input', 'feature']",5
+1486,10,"['input', 'height', 'width']",3
+1487,10,"['used', 'key', 'tensor']",3
+1488,10,"['column', 'SOME_STRUCTURE']",2
+1489,10,"['column', 'tensor']",2
+1490,10,"['column', 'weights']",2
+1491,10,"['SOME_STRUCTURE', 'SOME_DTYPE', 'values']",3
+1492,10,"['SOME_STRUCTURE', 'SOME_DTYPE', 'none']",3
+1493,10,"['SOME_STRUCTURE', 'inputs']",2
+1494,10,"['SOME_STRUCTURE', 'compatible']",2
+1495,10,"['SOME_STRUCTURE', 'csv']",2
+1496,10,"['SOME_STRUCTURE', 'one']",2
+1497,10,"['SOME_STRUCTURE', 'dataset']",2
+1498,10,"['SOME_STRUCTURE', 'indices']",2
+1499,10,"['SOME_STRUCTURE', 'whose']",2
+1500,10,"['SOME_STRUCTURE', 'fixedlenfeature']",2
+1501,10,"['non', 'negative', 'number']",3
+1502,10,"['non', 'tensor']",2
+1503,10,"['non', 'empty']",2
+1504,10,"['number', 'used']",2
+1505,10,"['number', 'batches']",2
+1506,10,"['number', 'sample']",2
+1507,10,"['number', 'target', 'classes', 'per', 'training', 'example']",6
+1508,10,"['number', 'possible']",2
+1509,10,"['number', 'iterations', 'run']",3
+1510,10,"['must', 'range', 'rank', 'input', 'rank', 'input']",6
+1511,10,"['must', 'number']",2
+1512,10,"['must', 'sorted', 'order']",3
+1513,10,"['must', 'equal']",2
+1514,10,"['none', 'use']",2
+1515,10,"['batch', 'in_depth', 'in_height', 'in_width']",4
+1516,10,"['batch', 'matrix']",2
+1517,10,"['batch', 'm']",2
+1518,10,"['format', 'data', 'order', 'batch', 'height', 'width']",6
+1519,10,"['format', 'data', 'order', 'batch', 'channels']",5
+1520,10,"['format', 'nchw', 'data']",3
+1521,10,"['dimension', 'must', 'size']",3
+1522,10,"['d', 'tensor', 'containing']",3
+1523,10,"['d', 'tensor', 'last']",3
+1524,10,"['d', 'SOME_DTYPE', 'tensor', 'shape', 'num_boxes']",5
+1525,10,"['d', 'SOME_DTYPE', 'tensor', 'python']",4
+1526,10,"['d', 'SOME_DTYPE', 'tensor', 'array']",4
+1527,10,"['d', 'shape', 'filter_height', 'filter_width', 'in_channels']",5
+1528,10,"['d', 'shape', 'out_channels']",3
+1529,10,"['d', 'shape', 'values']",3
+1530,10,"['d', 'higher']",2
+1531,10,"['default', 'tf']",2
+1532,10,"['default', 'true']",2
+1533,10,"['true', 'enables']",2
+1534,10,"['axes', 'compute']",2
+1535,10,"['mean', 'sqrtn']",2
+1536,10,"['variable', 'added']",2
+1537,10,"['variable', 'node']",2
+1538,10,"['variable', 'used']",2
+1539,10,"['example', 'key']",2
+1540,10,"['example', 'tensor']",2
+1541,10,"['dtype', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+1542,10,"['tf', 'tf', 'tensor', 'representing']",4
+1543,10,"['tf', 'labels']",2
+1544,10,"['tf', 'ssparsetensor']",2
+1545,10,"['tf', 'summary']",2
+1546,10,"['shape', 'value']",2
+1547,10,"['shape', 'matches']",2
+1548,10,"['shape', 'batch', 'in_width']",3
+1549,10,"['shape', 'batch', 'size']",3
+1550,10,"['shape', 'x']",2
+1551,10,"['shape', 'op']",2
+1552,10,"['shape', 'm', 'dimensions']",3
+1553,10,"['shape', 'k']",2
+1554,10,"['containing', 'values']",2
+1555,10,"['use', 'tensor']",2
+1556,10,"['classes', 'batch']",2
+1557,10,"['ssparsetensor', 'type']",2
+1558,10,"['collection', 'loss', 'added']",3
+1559,10,"['see', 'computation']",2
+1560,10,"['python', 'SOME_STRUCTURE']",2
+1561,10,"['python', 'SOME_DTYPE', 'SOME_DTYPE']",3
+1562,10,"['function', 'applied', 'kernel', 'matrix']",4
+1563,10,"['one', 'per']",2
+1564,10,"['either', 'SOME_DTYPE', 'tensor']",3
+1565,10,"['either', 'must', 'set']",3
+1566,10,"['either', 'SOME_STRUCTURE']",2
+1567,10,"['n', 'num_labels']",2
+1568,10,"['n', 'labels']",2
+1569,10,"['single', 'batch']",2
+1570,10,"['single', 'value', 'spatial', 'dimensions']",4
+1571,10,"['size', 'output']",2
+1572,10,"['size', 'must']",2
+1573,10,"['standard', 'layer', 'keyword', 'arguments']",4
+1574,10,"['channels_first', 'channels_last']",2
+1575,10,"['height', 'width', 'batch']",3
+1576,10,"['nhwc', 'data']",2
+1577,10,"['nhwc', 'data', 'batch']",3
+1578,10,"['dataset', 'tf']",2
+1579,10,"['whether', 'layer']",2
+1580,10,"['whether', 'output']",2
+1581,10,"['invalid', 'input']",2
+1582,10,"['specifying', 'dilation_rate', 'value', '!']",4
+1583,10,"['specifying', 'value', '!', 'incompatible', 'specifying', 'value', '!']",7
+1584,10,"['specifying', 'stride']",2
+1585,10,"['specifies', 'input', 'dimension', 'dimension']",4
+1586,10,"['possibly', 'nested', 'SOME_STRUCTURE', 'tensor']",4
+1587,10,"['ssparse', 'indices']",2
+1588,10,"['ground', 'truth', 'values', 'tensor', 'whose', 'dimensions', 'must', 'match', 'predictions']",9
+1589,10,"['predicted', 'values']",2
+1590,10,"['considered', 'tensor']",2
+1591,10,"['activation', 'function']",2
+1592,10,"['vector', 'd', 'tensor']",3
+1593,10,"['vector', 'shape']",2
+1594,10,"['points', 'outside', 'boundaries', 'input', 'mode', 'constant']",6
+1595,10,"['defined', 'tf']",2
+1596,10,"['m', 'n']",2
+1597,10,"['run', 'parallel']",2
+1598,10,"['decay', 'computation']",2
+1599,10,"['summary', 'tag', 'name']",3
+1600,10,"['summary', 'tag', 'used', 'tensorboard']",4
+1601,10,"['vectors', 'axis']",2
+1602,10,"['depthwise', 'convolution']",2
+1603,10,"['eager', 'execution']",2
+1604,10,"['tag', 'name', 'name']",3
+1605,10,"['dn', 'num_labels']",2
+1606,10,"['dn', 'must', 'match']",3
+1607,10,"['commonly', 'n', 'shape']",3
+1608,9,"['tensor', 'type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",8
+1609,9,"['tensor', 'tensor', 'along', 'dimension']",4
+1610,9,"['tensor', 'tensor', 'tensor', 'tensor']",4
+1611,9,"['tensor', 'tensor', 'SOME_STRUCTURE']",3
+1612,9,"['tensor', 'tensor', 'first', 'dimension']",4
+1613,9,"['tensor', 'tf', 'ssparsetensor']",3
+1614,9,"['tensor', 'whose', 'shape', 'matches', 'predictions']",5
+1615,9,"['tensor', 'shape', 'batch_size', 'data_format']",4
+1616,9,"['tensor', 'shape', 'batch_size', 'data_format', 'batch_size', 'data_format']",6
+1617,9,"['tensor', 'shape', 'in_channels', 'out_channels']",4
+1618,9,"['tensor', 'shape', 'type', 'SOME_DTYPE']",4
+1619,9,"['tensor', 'shape', 'dim']",3
+1620,9,"['tensor', 'shape', 'filter_height', 'filter_width', 'in_channels']",5
+1621,9,"['tensor', 'batch_size', 'default']",3
+1622,9,"['tensor', 'value', 'shape']",3
+1623,9,"['tensor', 'input', 'tensor']",3
+1624,9,"['tensor', 'output', 'shape']",3
+1625,9,"['tensor', 'updated', 'values', 'ref']",4
+1626,9,"['tensor', 'non']",2
+1627,9,"['tensor', 'start']",2
+1628,9,"['tensor', 'logits']",2
+1629,9,"['name', 'created']",2
+1630,9,"['name', 'SOME_DTYPE']",2
+1631,9,"['operation', 'specific', 'seed']",3
+1632,9,"['optional', 'SOME_STRUCTURE', 'names']",3
+1633,9,"['optional', 'SOME_STRUCTURE', 'ops']",3
+1634,9,"['optional', 'default']",2
+1635,9,"['optional', 'data']",2
+1636,9,"['optional', 'name', 'use']",3
+1637,9,"['optional', 'batch']",2
+1638,9,"['optional', 'op']",2
+1639,9,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'batch']",4
+1640,9,"['SOME_DTYPE', 'SOME_DTYPE', 'input']",3
+1641,9,"['SOME_DTYPE', 'shape', 'height', 'width']",4
+1642,9,"['SOME_DTYPE', 'tensor', 'containing']",3
+1643,9,"['SOME_DTYPE', 'tensor', 'representing', 'single']",4
+1644,9,"['SOME_DTYPE', 'tensor', 'type']",3
+1645,9,"['SOME_DTYPE', 'representing', 'tensor']",3
+1646,9,"['SOME_DTYPE', 'columns']",2
+1647,9,"['SOME_DTYPE', 'axis', 'tensor']",3
+1648,9,"['SOME_DTYPE', 'axis', 'axis']",3
+1649,9,"['SOME_DTYPE', 'keep']",2
+1650,9,"['SOME_DTYPE', 'seed']",2
+1651,9,"['SOME_DTYPE', 'returns', 'SOME_STRUCTURE']",3
+1652,9,"['SOME_DTYPE', 'castable', 'step', 'value']",4
+1653,9,"['SOME_DTYPE', 'defined']",2
+1654,9,"['SOME_DTYPE', 'range']",2
+1655,9,"['SOME_DTYPE', 'module']",2
+1656,9,"['SOME_DTYPE', 'class']",2
+1657,9,"['SOME_DTYPE', 'k']",2
+1658,9,"['SOME_DTYPE', 'performed']",2
+1659,9,"['value', 'return']",2
+1660,9,"['value', 'corresponding']",2
+1661,9,"['value', 'strides']",2
+1662,9,"['value', 'added']",2
+1663,9,"['value', 'SOME_DTYPE']",2
+1664,9,"['value', 'summary']",2
+1665,9,"['feature', 'tensor']",2
+1666,9,"['values', 'tensor', 'tensor']",3
+1667,9,"['values', 'defined']",2
+1668,9,"['defaults', 'graphkeys']",2
+1669,9,"['specified', 'used']",2
+1670,9,"['specified', 'SOME_DTYPE']",2
+1671,9,"['type', 'returned', 'tensor']",3
+1672,9,"['input', 'according']",2
+1673,9,"['input', 'default']",2
+1674,9,"['input', 'batch', 'tensor']",3
+1675,9,"['input', 'stride']",2
+1676,9,"['used', 'name', 'name']",3
+1677,9,"['SOME_STRUCTURE', 'tensor', 'none']",3
+1678,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'n']",3
+1679,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+1680,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'objects']",3
+1681,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_STRUCTURE']",3
+1682,9,"['SOME_STRUCTURE', 'mapping', 'feature', 'keys', 'fixedlenfeature', 'varlenfeature', 'values']",7
+1683,9,"['SOME_STRUCTURE', 'names', 'SOME_DTYPE']",3
+1684,9,"['SOME_STRUCTURE', 'n', 'n']",3
+1685,9,"['SOME_STRUCTURE', 'default']",2
+1686,9,"['SOME_STRUCTURE', 'dtype']",2
+1687,9,"['SOME_STRUCTURE', 'shape', 'tensor']",3
+1688,9,"['SOME_STRUCTURE', 'name']",2
+1689,9,"['SOME_STRUCTURE', 'axes']",2
+1690,9,"['SOME_STRUCTURE', 'representing']",2
+1691,9,"['SOME_STRUCTURE', 'custom']",2
+1692,9,"['key', 'key']",2
+1693,9,"['key', 'weight']",2
+1694,9,"['non', 'negative', 'SOME_DTYPE', 'number']",4
+1695,9,"['number', 'convolution']",2
+1696,9,"['number', 'possible', 'classes']",3
+1697,9,"['number', 'steps']",2
+1698,9,"['range', 'num_classes', 'num_classes', 'last', 'dimension', 'predictions']",6
+1699,9,"['must', 'greater']",2
+1700,9,"['must', 'SOME_STRUCTURE']",2
+1701,9,"['must', 'statically']",2
+1702,9,"['must', 'dtype']",2
+1703,9,"['must', 'batch_size']",2
+1704,9,"['length', 'dimensions']",2
+1705,9,"['length', 'tensor']",2
+1706,9,"['none', 'set']",2
+1707,9,"['none', 'single']",2
+1708,9,"['none', 'norm']",2
+1709,9,"['none', 'shape']",2
+1710,9,"['none', 'l']",2
+1711,9,"['set', 'used']",2
+1712,9,"['set', 'none']",2
+1713,9,"['data', 'batch', 'in_channels', 'in_width']",4
+1714,9,"['data', 'SOME_DTYPE']",2
+1715,9,"['batch', 'dimensions', 'tensor']",3
+1716,9,"['batch', 'dimension']",2
+1717,9,"['batch', 'axis']",2
+1718,9,"['batch', 'matrices']",2
+1719,9,"['batch', 'input']",2
+1720,9,"['in_channels', 'must', 'match']",3
+1721,9,"['format', 'batch', 'in_channels', 'in_width']",4
+1722,9,"['dilation', 'rate', 'convolution']",3
+1723,9,"['dimension', 'values']",2
+1724,9,"['dimension', 'must', 'match']",3
+1725,9,"['dimension', 'embedding']",2
+1726,9,"['element', 'must']",2
+1727,9,"['d', 'tensor', 'shape', 'depth']",4
+1728,9,"['d', 'tensor', 'elements']",3
+1729,9,"['d', 'tensor', 'size', 'matching', 'dimension']",5
+1730,9,"['d', 'tensor', 'format']",3
+1731,9,"['d', 'tensor', 'representing', 'shape']",4
+1732,9,"['d', 'tensor', 'output', 'tensor']",4
+1733,9,"['d', 'tensor', 'last', 'dimension']",4
+1734,9,"['d', 'SOME_DTYPE', 'tensor', 'shape', 'batch_size']",5
+1735,9,"['d', 'SOME_DTYPE', 'tensor', 'python', 'array']",5
+1736,9,"['d', 'SOME_DTYPE', 'representing']",3
+1737,9,"['d', 'window']",2
+1738,9,"['d', 'in_channels', 'out_channels']",3
+1739,9,"['d', 'dimensions']",2
+1740,9,"['default', 'value', 'e']",3
+1741,9,"['default', 'in_channels']",2
+1742,9,"['default', 'batch_size']",2
+1743,9,"['true', 'must']",2
+1744,9,"['true', 'false']",2
+1745,9,"['scope', 'name']",2
+1746,9,"['axes', 'along']",2
+1747,9,"['mean', 'sqrtn', 'sum']",3
+1748,9,"['output', 'output']",2
+1749,9,"['output', 'convolution']",2
+1750,9,"['output', 'dimension']",2
+1751,9,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf', 'tensor', 'representing']",6
+1752,9,"['tf', 'shape']",2
+1753,9,"['tf', 'input']",2
+1754,9,"['tf', 'tensor', 'tf']",3
+1755,9,"['tf', 'estimator']",2
+1756,9,"['tf', 'train']",2
+1757,9,"['tf', 'key']",2
+1758,9,"['tf', 'must']",2
+1759,9,"['shape', 'batch', 'height', 'width', 'batch', 'height', 'width']",7
+1760,9,"['shape', 'batch', 'in_height', 'in_width']",4
+1761,9,"['shape', 'containing']",2
+1762,9,"['shape', 'prefix', 'data', 'shape']",4
+1763,9,"['shape', 'returned']",2
+1764,9,"['shape', 'filter_height', 'filter_width', 'out_channels']",4
+1765,9,"['use', 'computation']",2
+1766,9,"['use', 'default']",2
+1767,9,"['use', 'graph']",2
+1768,9,"['use', 'SOME_STRUCTURE']",2
+1769,9,"['items', 'instances', 'classes', 'derived']",4
+1770,9,"['ssparsetensor', 'SOME_DTYPE']",2
+1771,9,"['note', 'SOME_DTYPE']",2
+1772,9,"['function', 'applied', 'bias']",3
+1773,9,"['function', 'layer']",2
+1774,9,"['function', 'vector']",2
+1775,9,"['function', 'SOME_STRUCTURE']",2
+1776,9,"['one', 'input']",2
+1777,9,"['either', 'none']",2
+1778,9,"['equivalent', 'tensor']",2
+1779,9,"['nested', 'first']",2
+1780,9,"['n', 'SOME_DTYPE', 'tensor']",3
+1781,9,"['n', 'type']",2
+1782,9,"['n', 'shape', 'start']",3
+1783,9,"['n', 'start']",2
+1784,9,"['single', 'SOME_DTYPE', 'spatial', 'dimensions']",4
+1785,9,"['representing', 'shape', 'tensor']",3
+1786,9,"['representing', 'tensor', 'shape']",3
+1787,9,"['e', 'tensor']",2
+1788,9,"['e', 'matmul']",2
+1789,9,"['size', 'output', 'tensor']",3
+1790,9,"['size', 'batch_size']",2
+1791,9,"['matrix', 'norm']",2
+1792,9,"['labels', 'SOME_DTYPE']",2
+1793,9,"['labels', 'shape', 'batch_size']",3
+1794,9,"['provided', 'using']",2
+1795,9,"['image', 'images']",2
+1796,9,"['channels', 'input']",2
+1797,9,"['y', 'y']",2
+1798,9,"['nhwc', 'batch', 'height', 'width']",4
+1799,9,"['whether', 'dimension']",2
+1800,9,"['whether', 'use']",2
+1801,9,"['estimator', 'estimator']",2
+1802,9,"['seed', 'random', 'generator']",3
+1803,9,"['possibly', 'nested', 'sequence', 'tensor']",4
+1804,9,"['floating', 'point', 'range']",3
+1805,9,"['axis', 'considered', 'tensor']",3
+1806,9,"['axis', 'norm']",2
+1807,9,"['axis', 'batch', 'tensor']",3
+1808,9,"['axis', 'norms']",2
+1809,9,"['axis', 'matrix']",2
+1810,9,"['match', 'input']",2
+1811,9,"['padding', 'used']",2
+1812,9,"['padding', 'pad_top', 'pad_bottom', 'pad_left', 'pad_right']",5
+1813,9,"['please', 'see']",2
+1814,9,"['sequence', 'length']",2
+1815,9,"['sequence', 'first']",2
+1816,9,"['qint', 'quint', 'qint', 'qint', 'quint']",5
+1817,9,"['start', 'end']",2
+1818,9,"['constraint', 'function', 'applied']",3
+1819,9,"['channel', 'dimension']",2
+1820,9,"['m', 'values']",2
+1821,9,"['log', 'probabilities']",2
+1822,9,"['global', 'use']",2
+1823,9,"['initial', 'learning', 'rate']",3
+1824,9,"['across', 'height', 'width']",3
+1825,9,"['summary', 'tag', 'name', 'name']",4
+1826,9,"['samples', 'containing']",2
+1827,9,"['norm', 'norm']",2
+1828,9,"['norm', 'value']",2
+1829,9,"['stack', 'trace']",2
+1830,9,"['gpu', 'cpu']",2
+1831,9,"['replace', 'replacement_char']",2
+1832,8,"['tensor', 'columns']",2
+1833,8,"['tensor', 'tensor', 'SOME_STRUCTURE', 'tensor']",4
+1834,8,"['tensor', 'tensor', 'SOME_STRUCTURE', 'tensor', 'tensor']",5
+1835,8,"['tensor', 'tf', 'ssparsetensor', 'tf']",4
+1836,8,"['tensor', 'whose', 'shape', 'shape']",4
+1837,8,"['tensor', 'shape', 'prefix', 'data', 'shape']",5
+1838,8,"['tensor', 'shape', 'type', 'SOME_DTYPE', 'SOME_DTYPE']",5
+1839,8,"['tensor', 'shape', 'input']",3
+1840,8,"['tensor', 'one']",2
+1841,8,"['tensor', 'value', 'tensor']",3
+1842,8,"['tensor', 'SOME_STRUCTURE', 'tensor', 'dimension']",4
+1843,8,"['tensor', 'SOME_STRUCTURE', 'tensor', 'shape']",4
+1844,8,"['tensor', 'expected']",2
+1845,8,"['tensor', 'arbitrary', 'dimensions']",3
+1846,8,"['tensor', 'representing', 'batch']",3
+1847,8,"['tensor', 'op']",2
+1848,8,"['tensor', 'ssparsetensor', 'type']",3
+1849,8,"['tensor', 'true']",2
+1850,8,"['tensor', 'computed']",2
+1851,8,"['tensor', 'shaped']",2
+1852,8,"['tensor', 'specified']",2
+1853,8,"['tensor', 'result']",2
+1854,8,"['tensor', 'possibly', 'nested', 'sequence', 'tensor']",5
+1855,8,"['name', 'SOME_STRUCTURE']",2
+1856,8,"['name', 'scope', 'operations']",3
+1857,8,"['name', 'return']",2
+1858,8,"['name', 'file']",2
+1859,8,"['name', 'weights']",2
+1860,8,"['name', 'summary']",2
+1861,8,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'must', 'broadcastable', 'e', 'dimensions', 'must', 'either', 'corresponding', 'losses', 'dimension']",15
+1862,8,"['optional', 'SOME_STRUCTURE', 'variable']",3
+1863,8,"['optional', 'csv']",2
+1864,8,"['optional', 'column']",2
+1865,8,"['optional', 'true', 'enables']",3
+1866,8,"['optional', 'name', 'prefix', 'returned', 'tensor']",5
+1867,8,"['optional', 'name', 'op']",3
+1868,8,"['optional', 'proto']",2
+1869,8,"['optional', 'element']",2
+1870,8,"['optional', 'regularizer']",2
+1871,8,"['optional', 'device']",2
+1872,8,"['optional', 'weight']",2
+1873,8,"['SOME_DTYPE', 'value', 'input']",3
+1874,8,"['SOME_DTYPE', 'SOME_DTYPE', 'supported']",3
+1875,8,"['SOME_DTYPE', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",4
+1876,8,"['SOME_DTYPE', 'SOME_DTYPE', 'containing']",3
+1877,8,"['SOME_DTYPE', 'SOME_DTYPE', 'width']",3
+1878,8,"['SOME_DTYPE', 'SOME_DTYPE', 'shape']",3
+1879,8,"['SOME_DTYPE', 'SOME_DTYPE', 'must']",3
+1880,8,"['SOME_DTYPE', 'SOME_DTYPE', 'rank']",3
+1881,8,"['SOME_DTYPE', 'shape', 'in_channels']",3
+1882,8,"['SOME_DTYPE', 'variables']",2
+1883,8,"['SOME_DTYPE', 'name', 'module', 'flag']",4
+1884,8,"['SOME_DTYPE', 'create']",2
+1885,8,"['SOME_DTYPE', 'tensor', 'objects']",3
+1886,8,"['SOME_DTYPE', 'tensor', 'serialized']",3
+1887,8,"['SOME_DTYPE', 'tensor', 'values']",3
+1888,8,"['SOME_DTYPE', 'single', 'SOME_DTYPE']",3
+1889,8,"['SOME_DTYPE', 'representing', 'number', 'combine', 'single', 'batch']",6
+1890,8,"['SOME_DTYPE', 'optional', 'name']",3
+1891,8,"['SOME_DTYPE', 'based']",2
+1892,8,"['SOME_DTYPE', 'csv']",2
+1893,8,"['SOME_DTYPE', 'indicates']",2
+1894,8,"['SOME_DTYPE', 'indices']",2
+1895,8,"['SOME_DTYPE', 'random', 'seed']",3
+1896,8,"['SOME_DTYPE', 'features']",2
+1897,8,"['SOME_DTYPE', 'qint', 'quint', 'qint', 'qint']",5
+1898,8,"['SOME_DTYPE', 'qint', 'quint', 'qint', 'quint']",5
+1899,8,"['SOME_DTYPE', 'rate']",2
+1900,8,"['SOME_DTYPE', 'start']",2
+1901,8,"['SOME_DTYPE', 'maximum', 'number']",3
+1902,8,"['SOME_DTYPE', 'text']",2
+1903,8,"['SOME_DTYPE', 'distribution']",2
+1904,8,"['SOME_DTYPE', 'given']",2
+1905,8,"['SOME_DTYPE', 'model']",2
+1906,8,"['SOME_DTYPE', 'k', 'k']",3
+1907,8,"['SOME_DTYPE', 'converted']",2
+1908,8,"['value', 'array']",2
+1909,8,"['value', 'none', 'means']",3
+1910,8,"['value', 'range']",2
+1911,8,"['value', 'clip']",2
+1912,8,"['return', 'values']",2
+1913,8,"['values', 'SOME_STRUCTURE']",2
+1914,8,"['values', 'none']",2
+1915,8,"['values', 'flag']",2
+1916,8,"['values', 'across', 'height', 'width', 'dimensions']",5
+1917,8,"['specified', 'dimension']",2
+1918,8,"['specified', 'default']",2
+1919,8,"['type', 'resulting', 'tensor']",3
+1920,8,"['type', 'start']",2
+1921,8,"['input', 'start']",2
+1922,8,"['input', 'vector']",2
+1923,8,"['input', 'must']",2
+1924,8,"['input', 'return']",2
+1925,8,"['input', 'convolution']",2
+1926,8,"['input', 'atrous']",2
+1927,8,"['used', 'SOME_STRUCTURE']",2
+1928,8,"['used', 'parsing']",2
+1929,8,"['used', 'graph']",2
+1930,8,"['used', 'seed', 'random', 'generator']",4
+1931,8,"['used', 'summary']",2
+1932,8,"['used', 'tf']",2
+1933,8,"['used', 'weight']",2
+1934,8,"['used', 'embedding']",2
+1935,8,"['column', 'columns']",2
+1936,8,"['column', 'input']",2
+1937,8,"['column', 'names']",2
+1938,8,"['SOME_STRUCTURE', 'key']",2
+1939,8,"['SOME_STRUCTURE', 'feature', 'tensor']",3
+1940,8,"['SOME_STRUCTURE', 'tensor', 'objects', 'shape']",4
+1941,8,"['SOME_STRUCTURE', 'tensor', 'SOME_STRUCTURE', 'tensor']",4
+1942,8,"['SOME_STRUCTURE', 'SOME_DTYPE', 'single']",3
+1943,8,"['SOME_STRUCTURE', 'SOME_DTYPE', 'returned']",3
+1944,8,"['SOME_STRUCTURE', 'SOME_DTYPE', 'height']",3
+1945,8,"['SOME_STRUCTURE', 'SOME_DTYPE', 'width']",3
+1946,8,"['SOME_STRUCTURE', 'SOME_DTYPE', 'considered']",3
+1947,8,"['SOME_STRUCTURE', 'mapping', 'names']",3
+1948,8,"['SOME_STRUCTURE', 'mapping', 'SOME_DTYPE']",3
+1949,8,"['SOME_STRUCTURE', 'output']",2
+1950,8,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'tensor', 'tensor']",4
+1951,8,"['SOME_STRUCTURE', 'variable', 'added']",3
+1952,8,"['SOME_STRUCTURE', 'use']",2
+1953,8,"['SOME_STRUCTURE', 'computation']",2
+1954,8,"['SOME_STRUCTURE', 'single', 'SOME_DTYPE']",3
+1955,8,"['SOME_STRUCTURE', 'first']",2
+1956,8,"['SOME_STRUCTURE', 'tf', 'objects']",3
+1957,8,"['SOME_STRUCTURE', 'graph']",2
+1958,8,"['SOME_STRUCTURE', 'collections', 'variable']",3
+1959,8,"['SOME_STRUCTURE', 'axis']",2
+1960,8,"['SOME_STRUCTURE', 'items']",2
+1961,8,"['SOME_STRUCTURE', 'match']",2
+1962,8,"['SOME_STRUCTURE', 'indicating']",2
+1963,8,"['SOME_STRUCTURE', 'embedding']",2
+1964,8,"['SOME_STRUCTURE', 'returns']",2
+1965,8,"['SOME_STRUCTURE', 'vectors']",2
+1966,8,"['key', 'weight', 'tensor']",3
+1967,8,"['parsing', 'feature', 'tensor']",3
+1968,8,"['parsing', 'tensor', 'feature']",3
+1969,8,"['negative', 'values']",2
+1970,8,"['number', 'vocabulary']",2
+1971,8,"['number', 'records']",2
+1972,8,"['number', 'times']",2
+1973,8,"['number', 'rows']",2
+1974,8,"['number', 'per', 'batch']",3
+1975,8,"['number', 'classes', 'randomly', 'sample']",4
+1976,8,"['number', 'given']",2
+1977,8,"['number', 'input']",2
+1978,8,"['number', 'iterations', 'run', 'parallel']",4
+1979,8,"['elements', 'batch']",2
+1980,8,"['must', 'specified']",2
+1981,8,"['must', 'match', 'input']",3
+1982,8,"['must', 'axis']",2
+1983,8,"['length', 'length']",2
+1984,8,"['length', 'type']",2
+1985,8,"['length', 'SOME_DTYPE']",2
+1986,8,"['length', 'n']",2
+1987,8,"['length', 'must']",2
+1988,8,"['length', 'objects']",2
+1989,8,"['none', 'computation']",2
+1990,8,"['none', 'inputs']",2
+1991,8,"['none', 'equivalent']",2
+1992,8,"['none', 'input']",2
+1993,8,"['none', 'e']",2
+1994,8,"['none', 'embedding']",2
+1995,8,"['set', 'values']",2
+1996,8,"['set', 'tensor']",2
+1997,8,"['data', 'stored', 'order', 'batch', 'in_width', 'in_channels']",6
+1998,8,"['data', 'dataset', 'tf']",3
+1999,8,"['order', 'elements']",2
+2000,8,"['order', 'elements', 'deterministic']",3
+2001,8,"['order', 'elements', 'shuffling']",3
+2002,8,"['batch', 'tensor', 'must']",3
+2003,8,"['batch', 'type']",2
+2004,8,"['format', 'data', 'batch', 'in_channels', 'in_width']",5
+2005,8,"['format', 'data', 'order', 'batch', 'in_depth', 'in_height', 'in_width']",7
+2006,8,"['dimension', 'input', 'output']",3
+2007,8,"['dimension', 'starts']",2
+2008,8,"['filter', 'in_channels']",2
+2009,8,"['depth', 'd']",2
+2010,8,"['depth', 'tensor']",2
+2011,8,"['dimensions', 'tensor', 'must']",3
+2012,8,"['dimensions', 'output']",2
+2013,8,"['d', 'tensor', 'SOME_DTYPE', 'serialized']",4
+2014,8,"['d', 'tensor', 'size', 'matching', 'last', 'dimension']",6
+2015,8,"['d', 'tensor', 'must']",3
+2016,8,"['d', 'tensor', 'type', 'shape', 'height', 'width']",6
+2017,8,"['d', 'tensor', 'type', 'shape', 'height', 'width', 'in_channels']",7
+2018,8,"['d', 'tensor', 'type', 'SOME_DTYPE', 'shape']",5
+2019,8,"['d', 'tensor', 'output', 'shape']",4
+2020,8,"['d', 'tensor', 'python', 'value', 'type', 'dtype']",6
+2021,8,"['d', 'tensor', 'whose']",3
+2022,8,"['d', 'SOME_DTYPE', 'shape', 'height', 'width']",5
+2023,8,"['d', 'SOME_DTYPE', 'containing']",3
+2024,8,"['d', 'shape', 'boxes']",3
+2025,8,"['d', 'shape', 'm', 'values', 'must']",5
+2026,8,"['d', 'axis']",2
+2027,8,"['d', 'rank']",2
+2028,8,"['default', 'value', 'none']",3
+2029,8,"['default', 'saver']",2
+2030,8,"['rank', 'values']",2
+2031,8,"['true', 'values']",2
+2032,8,"['true', 'instead']",2
+2033,8,"['true', 'shape']",2
+2034,8,"['compute', 'variance']",2
+2035,8,"['x', 'tensor']",2
+2036,8,"['mapping', 'tensor']",2
+2037,8,"['output', 'shape', 'op']",3
+2038,8,"['output', 'space']",2
+2039,8,"['example', 'value']",2
+2040,8,"['dtype', 'returned', 'tensor']",3
+2041,8,"['dtype', 'dtype']",2
+2042,8,"['tf', 'estimator', 'estimator']",3
+2043,8,"['tf', 'random']",2
+2044,8,"['tf', 'examples']",2
+2045,8,"['tf', 'type']",2
+2046,8,"['tf', 'x']",2
+2047,8,"['shape', 'variable']",2
+2048,8,"['shape', 'batch', 'm']",3
+2049,8,"['shape', 'batch', 'm', 'dimensions']",4
+2050,8,"['shape', 'filter_height', 'filter_width', 'in_channels', 'out_channels']",5
+2051,8,"['shape', 'row']",2
+2052,8,"['shape', 'n', 'n']",3
+2053,8,"['shape', 'd_', 'd_']",3
+2054,8,"['shape', 'embedding']",2
+2055,8,"['shape', 'samples']",2
+2056,8,"['containing', 'sequence']",2
+2057,8,"['corresponding', 'tensor']",2
+2058,8,"['also', 'name']",2
+2059,8,"['see', 'documentation']",2
+2060,8,"['note', 'tensor']",2
+2061,8,"['collections', 'ops']",2
+2062,8,"['returned', 'tf']",2
+2063,8,"['returned', 'e']",2
+2064,8,"['python', 'axis']",2
+2065,8,"['python', 'input']",2
+2066,8,"['function', 'computation']",2
+2067,8,"['function', 'applied', 'layer']",3
+2068,8,"['function', 'applied', 'bias', 'vector']",4
+2069,8,"['function', 'takes']",2
+2070,8,"['function', 'input', 'tensor']",3
+2071,8,"['function', 'returns', 'tensor']",3
+2072,8,"['function', 'SOME_DTYPE', 'SOME_DTYPE']",3
+2073,8,"['function', 'SOME_DTYPE', 'tf', 'tensor']",4
+2074,8,"['function', 'SOME_DTYPE', 'tensor']",3
+2075,8,"['function', 'return']",2
+2076,8,"['computation', 'tpu']",2
+2077,8,"['may', 'SOME_DTYPE']",2
+2078,8,"['may', 'used']",2
+2079,8,"['omitted', 'defaults', 'tf', 'summary', 'experimental', 'get_step', 'must', 'none']",8
+2080,8,"['either', 'n']",2
+2081,8,"['nested', 'SOME_DTYPE']",2
+2082,8,"['nested', 'SOME_STRUCTURE', 'SOME_STRUCTURE']",3
+2083,8,"['nested', 'sequence', 'first']",3
+2084,8,"['n', 'n', 'rank']",3
+2085,8,"['n', 'nwc', 'default']",3
+2086,8,"['n', 'nwc', 'default', 'ncw']",4
+2087,8,"['n', 'nhwc', 'default']",3
+2088,8,"['n', 'nhwc', 'default', 'nchw']",4
+2089,8,"['n', 'ndhwc', 'default', 'ncdhw']",4
+2090,8,"['n', 'dimensional', 'tensor']",3
+2091,8,"['n', 'nc']",2
+2092,8,"['n', 'd', 'tensor']",3
+2093,8,"['n', 'batch', 'm']",3
+2094,8,"['n', 'size']",2
+2095,8,"['single', 'SOME_DTYPE', 'specify', 'value', 'spatial', 'dimensions']",6
+2096,8,"['e', 'x']",2
+2097,8,"['labels', 'SOME_DTYPE', 'SOME_DTYPE']",3
+2098,8,"['provided', 'tensor']",2
+2099,8,"['provided', 'column']",2
+2100,8,"['provided', 'name']",2
+2101,8,"['using', 'match']",2
+2102,8,"['using', 'stack']",2
+2103,8,"['using', 'call']",2
+2104,8,"['matches', 'match']",2
+2105,8,"['steps', 'shape']",2
+2106,8,"['steps', 'shape', 'batch']",3
+2107,8,"['indices', 'data']",2
+2108,8,"['indices', 'sorted', 'order']",3
+2109,8,"['indices', 'dimension']",2
+2110,8,"['directory', 'file']",2
+2111,8,"['case', 'input']",2
+2112,8,"['false', 'SOME_DTYPE']",2
+2113,8,"['height', 'convolution']",2
+2114,8,"['width', 'convolution']",2
+2115,8,"['normalized', 'tensor']",2
+2116,8,"['window', 'length']",2
+2117,8,"['nhwc', 'supported']",2
+2118,8,"['nhwc', 'data', 'batch', 'height', 'width']",5
+2119,8,"['specify', 'data', 'format', 'input', 'output', 'data']",6
+2120,8,"['ragged', 'tensor']",2
+2121,8,"['spatial', 'dimension']",2
+2122,8,"['bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",12
+2123,8,"['per', 'input']",2
+2124,8,"['whether', 'dimensions']",2
+2125,8,"['whether', 'last', 'default']",3
+2126,8,"['whether', 'sampled', 'classes']",3
+2127,8,"['whether', 'tensor']",2
+2128,8,"['specifying', 'stride', 'value', '!']",4
+2129,8,"['specifying', 'must']",2
+2130,8,"['specifies', 'channel', 'dimension']",3
+2131,8,"['specifies', 'dimension', 'input']",3
+2132,8,"['specifies', 'output']",2
+2133,8,"['argument', 'tensor']",2
+2134,8,"['accepted', 'values', 'constants', 'defined', 'class']",5
+2135,8,"['floating', 'point', 'tensor', 'arbitrary', 'shape', 'whose', 'values', 'range']",8
+2136,8,"['axis', 'output']",2
+2137,8,"['axis', 'axis', 'tensor']",3
+2138,8,"['axis', 'none']",2
+2139,8,"['axis', 'vector']",2
+2140,8,"['level', 'seed']",2
+2141,8,"['consecutive', 'elements']",2
+2142,8,"['last', 'dimension', 'must', 'size']",4
+2143,8,"['data_format', 'nhwc']",2
+2144,8,"['checkpoints', 'checkpoint']",2
+2145,8,"['sequence', 'n']",2
+2146,8,"['predicted', 'tensor']",2
+2147,8,"['rate', 'width', 'dimensions']",3
+2148,8,"['rate', 'across', 'dimensions']",3
+2149,8,"['currently', 'mean']",2
+2150,8,"['currently', 'mean', 'sqrtn', 'sum']",4
+2151,8,"['currently', 'mean', 'sqrtn', 'sum', 'supported']",5
+2152,8,"['currently', 'supported', 'default']",3
+2153,8,"['strides', 'values']",2
+2154,8,"['supplied', 'SOME_STRUCTURE']",2
+2155,8,"['attribute', 'matches']",2
+2156,8,"['l', 'regularization']",2
+2157,8,"['l', 'norm']",2
+2158,8,"['constant', 'SOME_DTYPE']",2
+2159,8,"['pooling', 'dimensions']",2
+2160,8,"['global', 'step', 'use', 'decay', 'computation']",5
+2161,8,"['byte', 'utf']",2
+2162,8,"['byte', 'utf', '_char']",3
+2163,8,"['utf', '_char', 'utf']",3
+2164,8,"['encoded', 'image']",2
+2165,8,"['bound', 'random']",2
+2166,8,"['place', 'input']",2
+2167,8,"['eager', 'execution', 'enabled']",3
+2168,8,"['raise', 'exception']",2
+2169,8,"['explicit', 'padding', 'used', 'data_format', 'form', 'pad_top', 'pad_bottom', 'pad_left', 'pad_right']",9
+2170,8,"['explicit', 'SOME_DTYPE', 'castable', 'monotonic', 'step', 'value', 'summary']",7
+2171,8,"['paddings', 'dimension']",2
+2172,8,"['chosen', 'based']",2
+2173,8,"['protocol', 'buffer']",2
+2174,8,"['input_shape', 'm']",2
+2175,8,"['input_shape', 'm', 'dimensions']",3
+2176,8,"['input_shape', 'batch', 'm']",3
+2177,8,"['input_shape', 'batch', 'm', 'dimensions']",4
+2178,8,"['input_shape', 'dimensions']",2
+2179,8,"['substrings', 'replace']",2
+2180,8,"['codepoint', 'used']",2
+2181,7,"['tensor', 'SOME_DTYPE', 'values']",3
+2182,7,"['tensor', 'SOME_DTYPE', 'type']",3
+2183,7,"['tensor', 'SOME_DTYPE', 'default']",3
+2184,7,"['tensor', 'SOME_DTYPE', 'optional']",3
+2185,7,"['tensor', 'type', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",9
+2186,7,"['tensor', 'tensor', 'value']",3
+2187,7,"['tensor', 'dimension', 'tensor']",3
+2188,7,"['tensor', 'labels', 'SOME_DTYPE', 'SOME_DTYPE']",4
+2189,7,"['tensor', 'whose', 'shape', 'prefix', 'data', 'shape']",6
+2190,7,"['tensor', 'shape', 'batch_size', 'input_spatial_shape', 'data_format', 'start', 'nc', 'default', 'batch_size', 'input_spatial_shape', 'data_format', 'starts', 'nc']",13
+2191,7,"['tensor', 'shape', 'x']",3
+2192,7,"['tensor', 'shape', 'in_channels', 'in_channels']",4
+2193,7,"['tensor', 'shape', 'batch', 'type', 'SOME_DTYPE', 'SOME_DTYPE']",6
+2194,7,"['tensor', 'containing', 'values']",3
+2195,7,"['tensor', 'empty']",2
+2196,7,"['tensor', 'required']",2
+2197,7,"['tensor', 'features']",2
+2198,7,"['tensor', 'dataset']",2
+2199,7,"['tensor', 'returned']",2
+2200,7,"['tensor', 'batch', 'batch']",3
+2201,7,"['tensor', 'indices', 'first', 'dimension', 'ref']",5
+2202,7,"['tensor', 'max']",2
+2203,7,"['tensor', 'box']",2
+2204,7,"['tensor', 'row']",2
+2205,7,"['tensor', 'shapes']",2
+2206,7,"['tensor', 'created']",2
+2207,7,"['tensor', 'serialized', 'protos']",3
+2208,7,"['tensor', 'max_time', 'batch_size']",3
+2209,7,"['tensor', 'max_time', 'num_classes']",3
+2210,7,"['tensor', 'samples', 'containing']",3
+2211,7,"['tensor', 'may']",2
+2212,7,"['tensor', 'operations']",2
+2213,7,"['tensor', 'across']",2
+2214,7,"['name', 'objects']",2
+2215,7,"['name', 'columns']",2
+2216,7,"['name', 'used', 'scope']",3
+2217,7,"['name', 'give', 'op']",3
+2218,7,"['name', 'keras']",2
+2219,7,"['name', 'using']",2
+2220,7,"['name', 'name', 'scopes']",3
+2221,7,"['name', 'column']",2
+2222,7,"['operation', 'shape']",2
+2223,7,"['operation', 'output']",2
+2224,7,"['operation', 'input']",2
+2225,7,"['optional', 'tensor', 'whose', 'rank', 'either', 'rank', 'labels', 'must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'losses', 'dimension']",17
+2226,7,"['optional', 'SOME_STRUCTURE', 'names', 'SOME_DTYPE']",4
+2227,7,"['optional', 'columns']",2
+2228,7,"['optional', 'tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf']",5
+2229,7,"['optional', 'name', 'return']",3
+2230,7,"['optional', 'used', 'summary']",3
+2231,7,"['optional', 'weights']",2
+2232,7,"['optional', 'update']",2
+2233,7,"['optional', 'run']",2
+2234,7,"['optional', 'returns']",2
+2235,7,"['SOME_DTYPE', 'value', 'return']",3
+2236,7,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'supported']",4
+2237,7,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint']",12
+2238,7,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'SOME_DTYPE']",4
+2239,7,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'representing', 'batch']",5
+2240,7,"['SOME_DTYPE', 'SOME_DTYPE', 'values']",3
+2241,7,"['SOME_DTYPE', 'SOME_DTYPE', 'elements']",3
+2242,7,"['SOME_DTYPE', 'SOME_DTYPE', 'single']",3
+2243,7,"['SOME_DTYPE', 'SOME_DTYPE', 'matrix']",3
+2244,7,"['SOME_DTYPE', 'SOME_DTYPE', 'use']",3
+2245,7,"['SOME_DTYPE', 'input', 'tensor']",3
+2246,7,"['SOME_DTYPE', 'input', 'input']",3
+2247,7,"['SOME_DTYPE', 'SOME_STRUCTURE', 'dimension']",3
+2248,7,"['SOME_DTYPE', 'length', 'n']",3
+2249,7,"['SOME_DTYPE', 'type', 'use']",3
+2250,7,"['SOME_DTYPE', 'type', 'indicating']",3
+2251,7,"['SOME_DTYPE', 'tf', 'SOME_DTYPE', 'tensor']",4
+2252,7,"['SOME_DTYPE', 'shape', 'shape']",3
+2253,7,"['SOME_DTYPE', 'shape', 'data']",3
+2254,7,"['SOME_DTYPE', 'column', 'weights']",3
+2255,7,"['SOME_DTYPE', 'dtype', 'returned']",3
+2256,7,"['SOME_DTYPE', 'name', 'python', 'module', 'declaring', 'flag']",6
+2257,7,"['SOME_DTYPE', 'tensor', 'matrix']",3
+2258,7,"['SOME_DTYPE', 'tensor', 'non']",3
+2259,7,"['SOME_DTYPE', 'tensor', 'corresponding']",3
+2260,7,"['SOME_DTYPE', 'tensor', 'ssparsetensor']",3
+2261,7,"['SOME_DTYPE', 'n', 'n']",3
+2262,7,"['SOME_DTYPE', 'default', 'value']",3
+2263,7,"['SOME_DTYPE', 'width', 'height']",3
+2264,7,"['SOME_DTYPE', 'channels']",2
+2265,7,"['SOME_DTYPE', 'representing', 'whether']",3
+2266,7,"['SOME_DTYPE', 'representing', 'weights']",3
+2267,7,"['SOME_DTYPE', 'records']",2
+2268,7,"['SOME_DTYPE', 'batch', 'tensor']",3
+2269,7,"['SOME_DTYPE', 'rows']",2
+2270,7,"['SOME_DTYPE', 'indicates', 'whether']",3
+2271,7,"['SOME_DTYPE', 'whether', 'keep', 'dimensions']",4
+2272,7,"['SOME_DTYPE', 'whether', 'layer']",3
+2273,7,"['SOME_DTYPE', 'specifying', 'number']",3
+2274,7,"['SOME_DTYPE', 'specifying', 'dimension']",3
+2275,7,"['SOME_DTYPE', 'specifying', 'reduce']",3
+2276,7,"['SOME_DTYPE', 'specifying', 'embedding']",3
+2277,7,"['SOME_DTYPE', 'dataset']",2
+2278,7,"['SOME_DTYPE', 'regular']",2
+2279,7,"['SOME_DTYPE', 'characters']",2
+2280,7,"['SOME_DTYPE', 'indicating', 'dimension']",3
+2281,7,"['SOME_DTYPE', 'd', 'SOME_DTYPE']",3
+2282,7,"['SOME_DTYPE', 'd', 'window']",3
+2283,7,"['SOME_DTYPE', 'dilation', 'convolution']",3
+2284,7,"['SOME_DTYPE', 'm']",2
+2285,7,"['SOME_DTYPE', 'tensorflow']",2
+2286,7,"['SOME_DTYPE', 'checked']",2
+2287,7,"['SOME_DTYPE', 'error']",2
+2288,7,"['SOME_DTYPE', 'determines']",2
+2289,7,"['SOME_DTYPE', 'labels']",2
+2290,7,"['SOME_DTYPE', 'include']",2
+2291,7,"['SOME_DTYPE', 'padding']",2
+2292,7,"['SOME_DTYPE', 'argument']",2
+2293,7,"['SOME_DTYPE', 'sequence']",2
+2294,7,"['SOME_DTYPE', 'classes']",2
+2295,7,"['SOME_DTYPE', 'entries']",2
+2296,7,"['SOME_DTYPE', 'example']",2
+2297,7,"['SOME_DTYPE', 'algorithm']",2
+2298,7,"['SOME_DTYPE', 'mask']",2
+2299,7,"['SOME_DTYPE', 'len']",2
+2300,7,"['SOME_DTYPE', 'matching']",2
+2301,7,"['SOME_DTYPE', 'takes']",2
+2302,7,"['value', 'values', 'must']",3
+2303,7,"['value', 'empty']",2
+2304,7,"['value', 'input', 'value']",3
+2305,7,"['value', 'dilation_rate', 'must']",3
+2306,7,"['value', 'outside']",2
+2307,7,"['value', 'strides', 'must']",3
+2308,7,"['value', 'returned']",2
+2309,7,"['value', 'd']",2
+2310,7,"['value', 'may']",2
+2311,7,"['return', 'tensor', 'tensor']",3
+2312,7,"['feature', 'value']",2
+2313,7,"['values', 'ignored']",2
+2314,7,"['values', 'num_classes']",2
+2315,7,"['values', 'must', 'dimension']",3
+2316,7,"['values', 'arbitrary']",2
+2317,7,"['values', 'strides', 'must']",3
+2318,7,"['defaults', 'graphkeys', 'summaries']",3
+2319,7,"['defaults', 'error', 'message', 'first', 'entries', 'x', 'y']",7
+2320,7,"['type', 'features']",2
+2321,7,"['type', 'variable']",2
+2322,7,"['type', 'elements', 'tensor']",3
+2323,7,"['type', 'SOME_STRUCTURE']",2
+2324,7,"['features', 'features']",2
+2325,7,"['input', 'tensor', 'equivalent']",3
+2326,7,"['input', 'tensor', 'shape']",3
+2327,7,"['input', 'given']",2
+2328,7,"['input', 'spatial']",2
+2329,7,"['input', 'data_format']",2
+2330,7,"['input', 'reshape']",2
+2331,7,"['input', 'variable']",2
+2332,7,"['input', 'SOME_STRUCTURE']",2
+2333,7,"['input', 'across', 'dimensions']",3
+2334,7,"['input', 'across', 'height', 'width']",4
+2335,7,"['input', 'stride', 'dilation']",3
+2336,7,"['used', 'distribution']",2
+2337,7,"['used', 'compute']",2
+2338,7,"['column', 'parsing']",2
+2339,7,"['SOME_STRUCTURE', 'feature', 'feature']",3
+2340,7,"['SOME_STRUCTURE', 'parsing']",2
+2341,7,"['SOME_STRUCTURE', 'tensor', 'tensor', 'tensor']",4
+2342,7,"['SOME_STRUCTURE', 'tensor', 'representing']",3
+2343,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'tensor', 'SOME_DTYPE']",4
+2344,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+2345,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'height']",4
+2346,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'width']",4
+2347,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'along']",3
+2348,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'axes']",3
+2349,7,"['SOME_STRUCTURE', 'length', 'tensor', 'objects', 'type']",5
+2350,7,"['SOME_STRUCTURE', 'mapping', 'names', 'SOME_DTYPE']",4
+2351,7,"['SOME_STRUCTURE', 'mapping', 'feature', 'keys', 'varlenfeature', 'raggedfeature', 'values']",7
+2352,7,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'tensor']",4
+2353,7,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'single']",4
+2354,7,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'd']",4
+2355,7,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'objects']",3
+2356,7,"['SOME_STRUCTURE', 'containing', 'feature', 'columns']",4
+2357,7,"['SOME_STRUCTURE', 'input', 'tensor', 'least']",4
+2358,7,"['SOME_STRUCTURE', 'values', 'SOME_DTYPE']",3
+2359,7,"['SOME_STRUCTURE', 'values', 'tensor']",3
+2360,7,"['SOME_STRUCTURE', 'element']",2
+2361,7,"['SOME_STRUCTURE', 'tf', 'data']",3
+2362,7,"['SOME_STRUCTURE', 'used']",2
+2363,7,"['SOME_STRUCTURE', 'include']",2
+2364,7,"['SOME_STRUCTURE', 'attribute']",2
+2365,7,"['SOME_STRUCTURE', 'matches']",2
+2366,7,"['SOME_STRUCTURE', 'dim']",2
+2367,7,"['SOME_STRUCTURE', 'concatenation']",2
+2368,7,"['SOME_STRUCTURE', 'batch']",2
+2369,7,"['SOME_STRUCTURE', 'representing', 'tensor']",3
+2370,7,"['SOME_STRUCTURE', 'value', 'flag']",3
+2371,7,"['SOME_STRUCTURE', 'update', 'ops']",3
+2372,7,"['SOME_STRUCTURE', 'size']",2
+2373,7,"['SOME_STRUCTURE', 'corresponding']",2
+2374,7,"['SOME_STRUCTURE', 'text']",2
+2375,7,"['SOME_STRUCTURE', 'functions']",2
+2376,7,"['non', 'max']",2
+2377,7,"['number', 'boxes']",2
+2378,7,"['number', 'prediction']",2
+2379,7,"['range', 'value']",2
+2380,7,"['file', 'path']",2
+2381,7,"['elements', 'dimensions']",2
+2382,7,"['must', 'type', 'tensor']",3
+2383,7,"['must', 'tensor', 'tensor']",3
+2384,7,"['must', 'tensor', 'shape']",3
+2385,7,"['must', 'number', 'dimensions']",3
+2386,7,"['must', 'one', 'following', 'SOME_DTYPE', 'bfloat', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",16
+2387,7,"['must', 'one', 'following', 'SOME_DTYPE', 'qint', 'quint', 'qint', 'qint']",8
+2388,7,"['must', 'one', 'following', 'SOME_DTYPE', 'qint', 'quint', 'qint', 'quint']",8
+2389,7,"['must', 'index']",2
+2390,7,"['must', 'match', 'value']",3
+2391,7,"['must', 'num_classes']",2
+2392,7,"['greater', 'values']",2
+2393,7,"['length', 'type', 'SOME_DTYPE']",3
+2394,7,"['length', 'batch']",2
+2395,7,"['length', 'input']",2
+2396,7,"['less', 'values']",2
+2397,7,"['none', 'must']",2
+2398,7,"['none', 'mapping']",2
+2399,7,"['none', 'function']",2
+2400,7,"['none', 'embedding', 'l', 'value']",4
+2401,7,"['set', 'random']",2
+2402,7,"['data', 'keras']",2
+2403,7,"['order', 'true']",2
+2404,7,"['batch', 'depth', 'tensor']",3
+2405,7,"['batch', 'output']",2
+2406,7,"['batch', 'output', 'batch']",3
+2407,7,"['in_channels', 'dimension', 'must', 'match']",4
+2408,7,"['dimension', 'input', 'dimension']",3
+2409,7,"['dimension', 'length']",2
+2410,7,"['dimension', 'index']",2
+2411,7,"['dimension', 'num_classes']",2
+2412,7,"['filter', 'match']",2
+2413,7,"['element', 'type']",2
+2414,7,"['depth', 'd', 'tensor']",3
+2415,7,"['dimensions', 'd']",2
+2416,7,"['dimensions', 'height', 'width']",3
+2417,7,"['dimensions', 'SOME_DTYPE']",2
+2418,7,"['d', 'tensor', 'shape', 'batch', 'depth']",5
+2419,7,"['d', 'tensor', 'shape', 'filter_width', 'in_channels']",5
+2420,7,"['d', 'tensor', 'shape', 'out_channels']",4
+2421,7,"['d', 'tensor', 'representing', 'output', 'shape', 'deconvolution', 'op']",7
+2422,7,"['d', 'tensor', 'whose', 'size', 'dimension']",5
+2423,7,"['d', 'SOME_DTYPE', 'tensor', 'tensor']",4
+2424,7,"['d', 'SOME_DTYPE', 'tensor', 'representing']",4
+2425,7,"['d', 'shape', 'in_channels', 'out_channels']",4
+2426,7,"['d', 'batch', 'in_channels']",3
+2427,7,"['d', 'batch', 'in_width']",3
+2428,7,"['d', 'single']",2
+2429,7,"['d', 'filter_height', 'filter_width', 'out_channels']",4
+2430,7,"['valid', 'nchw']",2
+2431,7,"['default', 'behavior']",2
+2432,7,"['default', 'checkpoint']",2
+2433,7,"['default', 'last']",2
+2434,7,"['default', 'format', 'nhwc', 'data', 'stored', 'order', 'batch']",7
+2435,7,"['default', 'input']",2
+2436,7,"['default', 'tf', 'SOME_DTYPE']",3
+2437,7,"['default', 'width']",2
+2438,7,"['default', 'axis']",2
+2439,7,"['rank', 'k']",2
+2440,7,"['true', 'add']",2
+2441,7,"['true', 'tf', 'tf']",3
+2442,7,"['true', 'dimension']",2
+2443,7,"['true', 'transposed']",2
+2444,7,"['true', 'tensor', 'tensor']",3
+2445,7,"['true', 'size']",2
+2446,7,"['true', 'returned']",2
+2447,7,"['scope', 'using']",2
+2448,7,"['scope', 're', 'match']",3
+2449,7,"['axes', 'compute', 'mean']",3
+2450,7,"['along', 'axis']",2
+2451,7,"['mean', 'dimension']",2
+2452,7,"['output', 'number']",2
+2453,7,"['output', 'input']",2
+2454,7,"['output', 'dtype']",2
+2455,7,"['output', 'operation']",2
+2456,7,"['variable', 'tf']",2
+2457,7,"['variable', 'value']",2
+2458,7,"['variable', 'function']",2
+2459,7,"['example', 'shape']",2
+2460,7,"['example', 'SOME_STRUCTURE']",2
+2461,7,"['example', 'batch']",2
+2462,7,"['dtype', 'tf', 'tf', 'tf']",4
+2463,7,"['dtype', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+2464,7,"['dtype', 'variable']",2
+2465,7,"['dtype', 'use']",2
+2466,7,"['tf', 'element']",2
+2467,7,"['tf', 'io']",2
+2468,7,"['tf', 'elements']",2
+2469,7,"['tf', 'single']",2
+2470,7,"['tf', 'used']",2
+2471,7,"['shape', 'logits']",2
+2472,7,"['shape', 'm', 'input']",3
+2473,7,"['shape', 'corresponding']",2
+2474,7,"['shape', 'labels']",2
+2475,7,"['containing', 'tensor']",2
+2476,7,"['containing', 'data']",2
+2477,7,"['use', 'default', 'graph']",3
+2478,7,"['items', 'name', 'attribute', 're', 'match']",5
+2479,7,"['also', 'tf']",2
+2480,7,"['added', 'collections']",2
+2481,7,"['note', 'tf']",2
+2482,7,"['note', 'tensor', 'tensor']",3
+2483,7,"['returned', 'u']",2
+2484,7,"['keras', 'model']",2
+2485,7,"['python', 'SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE']",4
+2486,7,"['function', 'value']",2
+2487,7,"['function', 'tensor', 'returns']",3
+2488,7,"['function', 'tensor', 'tf']",3
+2489,7,"['function', 'input', 'output']",3
+2490,7,"['function', 'argument']",2
+2491,7,"['function', 'function']",2
+2492,7,"['function', 'arguments']",2
+2493,7,"['function', 'tf', 'SOME_DTYPE']",3
+2494,7,"['function', 'embedding']",2
+2495,7,"['function', 'may']",2
+2496,7,"['function', 'objects']",2
+2497,7,"['deviceassignment', 'computation', 'cores', 'tpu']",4
+2498,7,"['may', 'either']",2
+2499,7,"['may', 'tf']",2
+2500,7,"['may', 'SOME_STRUCTURE']",2
+2501,7,"['one', 'per', 'input']",3
+2502,7,"['one', 'column']",2
+2503,7,"['one', 'constant', 'reflect']",3
+2504,7,"['one', 'must']",2
+2505,7,"['one', 'value']",2
+2506,7,"['either', 'nhwc', 'default']",3
+2507,7,"['either', 'nhwc', 'default', 'nchw']",4
+2508,7,"['either', 'value']",2
+2509,7,"['either', 'n', 'n']",3
+2510,7,"['either', 'tf']",2
+2511,7,"['equivalent', 'reshape']",2
+2512,7,"['equivalent', 'input']",2
+2513,7,"['nested', 'tf']",2
+2514,7,"['structure', 'tf']",2
+2515,7,"['structure', 'structure']",2
+2516,7,"['structure', 'elems']",2
+2517,7,"['n', 'n', 'n']",3
+2518,7,"['n', 'dimensional', 'tensor', 'shape']",4
+2519,7,"['n', 'shape', 'batch_size', 'input_spatial_shape', 'data_format', 'start', 'nc', 'default', 'batch_size', 'input_spatial_shape', 'data_format', 'starts', 'nc']",13
+2520,7,"['n', 'd', 'type']",3
+2521,7,"['n', 'd', 'shape']",3
+2522,7,"['n', 'batch', 'size']",3
+2523,7,"['result', 'SOME_DTYPE']",2
+2524,7,"['single', 'tensor', 'tensor', 'tensor']",4
+2525,7,"['single', 'SOME_DTYPE', 'specifying', 'convolution']",4
+2526,7,"['representing', 'tensor', 'shape', 'tensor']",4
+2527,7,"['e', 'values']",2
+2528,7,"['e', 'norm']",2
+2529,7,"['e', 'value']",2
+2530,7,"['e', 'l']",2
+2531,7,"['e', 'matmul', 'matmul']",3
+2532,7,"['object', 'type']",2
+2533,7,"['size', 'dimension', 'must']",3
+2534,7,"['size', 'SOME_DTYPE']",2
+2535,7,"['real', 'SOME_DTYPE', 'type']",3
+2536,7,"['provided', 'must']",2
+2537,7,"['provided', 'computed', 'using', 'stack', 'trace', 'call']",6
+2538,7,"['using', 're', 'match']",3
+2539,7,"['matches', 're', 'match']",3
+2540,7,"['lower', 'bound']",2
+2541,7,"['indices', 'tensor']",2
+2542,7,"['indices', 'sorted', 'row', 'major', 'order']",5
+2543,7,"['path', 'directory']",2
+2544,7,"['indicates', 'input']",2
+2545,7,"['indicates', 'size']",2
+2546,7,"['image', 'data']",2
+2547,7,"['case', 'used']",2
+2548,7,"['corner', 'input']",2
+2549,7,"['height', 'width', 'convolution']",3
+2550,7,"['first', 'none']",2
+2551,7,"['uniform', 'distribution']",2
+2552,7,"['small', 'SOME_DTYPE']",2
+2553,7,"['tensorflow', 'function']",2
+2554,7,"['index', 'axis', 'channels', 'input']",4
+2555,7,"['raises', 'error']",2
+2556,7,"['specifying', 'strides']",2
+2557,7,"['recommended', 'value']",2
+2558,7,"['specifies', 'default']",2
+2559,7,"['argument', 'returns']",2
+2560,7,"['axis', 'SOME_DTYPE', 'tensor']",3
+2561,7,"['axis', 'SOME_DTYPE', 'axis']",3
+2562,7,"['axis', 'python', 'tensor']",3
+2563,7,"['axis', 'python', 'axis']",3
+2564,7,"['axis', 'SOME_STRUCTURE']",2
+2565,7,"['axis', 'dimension']",2
+2566,7,"['keepdims', 'false', 'rank', 'tensor', 'reduced']",5
+2567,7,"['keepdims', 'true', 'reduced', 'retained', 'length']",5
+2568,7,"['random', 'number', 'generator']",3
+2569,7,"['match', 'filters']",2
+2570,7,"['convolution', 'window']",2
+2571,7,"['convolution', 'kernel']",2
+2572,7,"['stride', 'specifying']",2
+2573,7,"['takes', 'argument']",2
+2574,7,"['sequence', 'sequence']",2
+2575,7,"['sequence', 'n', 'SOME_DTYPE']",3
+2576,7,"['predicted', 'values', 'tensor']",3
+2577,7,"['higher', 'rank']",2
+2578,7,"['regularizer', 'kernel']",2
+2579,7,"['vector', 'tensor', 'SOME_DTYPE']",3
+2580,7,"['vector', 'batch_size']",2
+2581,7,"['vector', 'representing', 'shape']",3
+2582,7,"['initializer', 'kernel']",2
+2583,7,"['initializer', 'variable']",2
+2584,7,"['rate', 'dilated']",2
+2585,7,"['kernel', 'weights']",2
+2586,7,"['strides', 'convolution']",2
+2587,7,"['supplied', 're', 'match']",3
+2588,7,"['attribute', 'using']",2
+2589,7,"['known', 'statically']",2
+2590,7,"['dim', 'dim']",2
+2591,7,"['alternatively', 'format', 'could', 'nchw', 'data', 'storage', 'order', 'batch']",8
+2592,7,"['flags', 'flagvalues', 'optional', 'flagvalues', 'instance']",5
+2593,7,"['flags', 'flags']",2
+2594,7,"['matrices', 'matrix']",2
+2595,7,"['aspect', 'ratio']",2
+2596,7,"['utf', 'SOME_DTYPE']",2
+2597,7,"['unicode', 'used']",2
+2598,7,"['potentially', 'ragged', 'tensor']",3
+2599,7,"['dynamic', 'values']",2
+2600,7,"['information', 'see']",2
+2601,7,"['allowed', 'values']",2
+2602,7,"['cpu', 'gpu']",2
+2603,7,"['r', 'r']",2
+2604,7,"['replace', 'replace']",2
+2605,7,"['moving', 'average']",2
+2606,7,"['replacement', 'invalid']",2
+2607,7,"['accepts', 'returns']",2
+2608,6,"['tensor', 'x', 'x']",3
+2609,6,"['tensor', 'type', 'broadcastable']",3
+2610,6,"['tensor', 'tf', 'SOME_DTYPE']",3
+2611,6,"['tensor', 'object']",2
+2612,6,"['tensor', 'maximum']",2
+2613,6,"['tensor', 'whose', 'n']",3
+2614,6,"['tensor', 'shape', 'SOME_STRUCTURE']",3
+2615,6,"['tensor', 'shape', 'k']",3
+2616,6,"['tensor', 'shape', 'filter_height', 'filter_width', 'out_channels']",5
+2617,6,"['tensor', 'shape', 'size']",3
+2618,6,"['tensor', 'batch_size', 'd']",3
+2619,6,"['tensor', 'containing', 'data']",3
+2620,6,"['tensor', 'column', 'required']",3
+2621,6,"['tensor', 'SOME_STRUCTURE', 'tensor', 'objects']",4
+2622,6,"['tensor', 'input', 'shape']",3
+2623,6,"['tensor', 'data', 'data']",3
+2624,6,"['tensor', 'data', 'assembled', 'output']",4
+2625,6,"['tensor', 'representing', 'tensor', 'shape']",4
+2626,6,"['tensor', 'whether']",2
+2627,6,"['tensor', 'applied']",2
+2628,6,"['tensor', 'matrix', 'norm']",3
+2629,6,"['tensor', 'k', 'k']",3
+2630,6,"['tensor', 'norms']",2
+2631,6,"['tensor', 'key']",2
+2632,6,"['tensor', 'shaped', 'num_classes']",3
+2633,6,"['tensor', 'shaped', 'batch_size']",3
+2634,6,"['tensor', 'shaped', 'max_time']",3
+2635,6,"['tensor', 'name']",2
+2636,6,"['tensor', 'example']",2
+2637,6,"['tensor', 'possibly', 'nested', 'tensor', 'first']",5
+2638,6,"['tensor', 'normalized']",2
+2639,6,"['tensor', 'initial']",2
+2640,6,"['tensor', 'specifying']",2
+2641,6,"['tensor', 'cell']",2
+2642,6,"['tensor', 'state_size']",2
+2643,6,"['tensor', 'time']",2
+2644,6,"['name', 'generated', 'node']",3
+2645,6,"['name', 'restore', 'column', 'weights']",4
+2646,6,"['name', 'decode']",2
+2647,6,"['operation', 'produce']",2
+2648,6,"['optional', 'SOME_DTYPE', 'columns']",3
+2649,6,"['optional', 'shape']",2
+2650,6,"['optional', 'SOME_STRUCTURE', 'csv']",3
+2651,6,"['optional', 'SOME_STRUCTURE', 'collections', 'metric', 'value', 'variable', 'added']",7
+2652,6,"['optional', 'SOME_STRUCTURE', 'collections', 'metric', 'update', 'ops', 'added']",7
+2653,6,"['optional', 'SOME_STRUCTURE', 'tf']",3
+2654,6,"['optional', 'file']",2
+2655,6,"['optional', 'number', 'iterations', 'run']",4
+2656,6,"['optional', 'resulting']",2
+2657,6,"['optional', 'element', 'tensor']",3
+2658,6,"['optional', 'type', 'tensor']",3
+2659,6,"['optional', 'output', 'type']",3
+2660,6,"['optional', 'projection', 'function', 'applied', 'optimizer']",5
+2661,6,"['optional', 'defined']",2
+2662,6,"['optional', 'custom']",2
+2663,6,"['optional', 'created']",2
+2664,6,"['optional', 'provided', 'used']",3
+2665,6,"['optional', 'provided', 'used', 'summary']",4
+2666,6,"['optional', 'provided', 'used', 'name']",4
+2667,6,"['optional', 'objects']",2
+2668,6,"['optional', 'counter']",2
+2669,6,"['optional', 'constant', 'SOME_DTYPE']",3
+2670,6,"['SOME_DTYPE', 'value', 'values']",3
+2671,6,"['SOME_DTYPE', 'value', 'quantized', 'input', 'value', 'represents']",6
+2672,6,"['SOME_DTYPE', 'value', 'flag']",3
+2673,6,"['SOME_DTYPE', 'values', 'flag']",3
+2674,6,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint']",14
+2675,6,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'number', 'batch']",5
+2676,6,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'single']",4
+2677,6,"['SOME_DTYPE', 'SOME_DTYPE', 'along']",3
+2678,6,"['SOME_DTYPE', 'SOME_DTYPE', 'rate']",3
+2679,6,"['SOME_DTYPE', 'SOME_DTYPE', 'height', 'width']",4
+2680,6,"['SOME_DTYPE', 'SOME_DTYPE', 'must', 'range', 'rank', 'input', 'rank', 'input']",8
+2681,6,"['SOME_DTYPE', 'number', 'times']",3
+2682,6,"['SOME_DTYPE', 'number', 'dataset']",3
+2683,6,"['SOME_DTYPE', 'number', 'output']",3
+2684,6,"['SOME_DTYPE', 'buckets']",2
+2685,6,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'length', 'n', 'n']",6
+2686,6,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'd']",4
+2687,6,"['SOME_DTYPE', 'SOME_STRUCTURE', 'along']",3
+2688,6,"['SOME_DTYPE', 'type', 'SOME_STRUCTURE']",3
+2689,6,"['SOME_DTYPE', 'variance']",2
+2690,6,"['SOME_DTYPE', 'tf', 'tf']",3
+2691,6,"['SOME_DTYPE', 'shape', 'batch']",3
+2692,6,"['SOME_DTYPE', 'shape', 'd', 'tensor']",4
+2693,6,"['SOME_DTYPE', 'dtype', 'tensor']",3
+2694,6,"['SOME_DTYPE', 'returned', 'tensor']",3
+2695,6,"['SOME_DTYPE', 'name', 'variable']",3
+2696,6,"['SOME_DTYPE', 'tensor', 'single', 'corresponding']",4
+2697,6,"['SOME_DTYPE', 'tensor', 'shape', 'row']",4
+2698,6,"['SOME_DTYPE', 'tensor', 'shape', 'tensor']",4
+2699,6,"['SOME_DTYPE', 'tensor', 'shape', 'shape']",4
+2700,6,"['SOME_DTYPE', 'tensor', 'window']",3
+2701,6,"['SOME_DTYPE', 'tensor', 'representing', 'row']",4
+2702,6,"['SOME_DTYPE', 'tensor', 'random']",3
+2703,6,"['SOME_DTYPE', 'tensor', 'create']",3
+2704,6,"['SOME_DTYPE', 'tensor', 'indicating']",3
+2705,6,"['SOME_DTYPE', 'single', 'SOME_DTYPE', 'specifying']",4
+2706,6,"['SOME_DTYPE', 'rank', 'tensor']",3
+2707,6,"['SOME_DTYPE', 'width', 'd']",3
+2708,6,"['SOME_DTYPE', 'window', 'length']",3
+2709,6,"['SOME_DTYPE', 'added']",2
+2710,6,"['SOME_DTYPE', 'training']",2
+2711,6,"['SOME_DTYPE', 'representing', 'maximum', 'number', 'boxes']",5
+2712,6,"['SOME_DTYPE', 'representing', 'based']",3
+2713,6,"['SOME_DTYPE', 'batch', 'batch']",3
+2714,6,"['SOME_DTYPE', 'optional', 'name', 'operation']",4
+2715,6,"['SOME_DTYPE', 'reading']",2
+2716,6,"['SOME_DTYPE', 'specified']",2
+2717,6,"['SOME_DTYPE', 'provided']",2
+2718,6,"['SOME_DTYPE', 'label']",2
+2719,6,"['SOME_DTYPE', 'specifying', 'must']",3
+2720,6,"['SOME_DTYPE', 'last']",2
+2721,6,"['SOME_DTYPE', 'indicating', 'SOME_STRUCTURE']",3
+2722,6,"['SOME_DTYPE', 'using']",2
+2723,6,"['SOME_DTYPE', 'dimensionality', 'output']",3
+2724,6,"['SOME_DTYPE', 'dimensionality', 'output', 'space']",4
+2725,6,"['SOME_DTYPE', 'e', 'g']",3
+2726,6,"['SOME_DTYPE', 'filters']",2
+2727,6,"['SOME_DTYPE', 'bias']",2
+2728,6,"['SOME_DTYPE', 'vector', 'representing', 'shape']",4
+2729,6,"['SOME_DTYPE', 'negative']",2
+2730,6,"['SOME_DTYPE', 'end']",2
+2731,6,"['SOME_DTYPE', 'overlap']",2
+2732,6,"['SOME_DTYPE', 'remove']",2
+2733,6,"['SOME_DTYPE', 'defining', 'substring']",3
+2734,6,"['SOME_DTYPE', 'character']",2
+2735,6,"['SOME_DTYPE', 'possible']",2
+2736,6,"['SOME_DTYPE', 'called']",2
+2737,6,"['SOME_DTYPE', 'enables']",2
+2738,6,"['SOME_DTYPE', 'num_classes']",2
+2739,6,"['SOME_DTYPE', 'checkpoint']",2
+2740,6,"['SOME_DTYPE', 'index']",2
+2741,6,"['SOME_DTYPE', 'proto']",2
+2742,6,"['SOME_DTYPE', 'ssparsetensor', 'shape']",3
+2743,6,"['SOME_DTYPE', 'ops']",2
+2744,6,"['SOME_DTYPE', 'functions']",2
+2745,6,"['SOME_DTYPE', 'deserialization']",2
+2746,6,"['SOME_DTYPE', 'samples']",2
+2747,6,"['value', 'defaults']",2
+2748,6,"['value', 'provided']",2
+2749,6,"['value', 'operation']",2
+2750,6,"['value', 'column']",2
+2751,6,"['value', 'compatible']",2
+2752,6,"['value', 'fill']",2
+2753,6,"['value', 'width']",2
+2754,6,"['value', 'clip', 'none', 'means', 'infinity']",5
+2755,6,"['value', 'returned', 'tensor']",3
+2756,6,"['value', 'filter']",2
+2757,6,"['value', 'false']",2
+2758,6,"['return', 'SOME_STRUCTURE']",2
+2759,6,"['values', 'along']",2
+2760,6,"['values', 'rank']",2
+2761,6,"['values', 'input']",2
+2762,6,"['values', 'e']",2
+2763,6,"['values', 'norm']",2
+2764,6,"['values', 'num_classes', 'num_classes']",3
+2765,6,"['values', 'added']",2
+2766,6,"['values', 'value']",2
+2767,6,"['values', 'shape']",2
+2768,6,"['values', 'outside', 'range']",3
+2769,6,"['values', 'passed']",2
+2770,6,"['defaults', 'specified']",2
+2771,6,"['defaults', 'n']",2
+2772,6,"['defaults', 'empty']",2
+2773,6,"['specified', 'columns']",2
+2774,6,"['specified', 'values']",2
+2775,6,"['specified', 'every']",2
+2776,6,"['specified', 'tensor']",2
+2777,6,"['specified', 'input']",2
+2778,6,"['specified', 'defaults']",2
+2779,6,"['specified', 'output']",2
+2780,6,"['type', 'raggedtensor']",2
+2781,6,"['type', 'operation']",2
+2782,6,"['features', 'SOME_STRUCTURE']",2
+2783,6,"['input', 'tensor', 'values']",3
+2784,6,"['input', 'tensor', 'SOME_STRUCTURE']",3
+2785,6,"['input', 'values', 'tensor']",3
+2786,6,"['input', 'output', 'batch']",3
+2787,6,"['input', 'one']",2
+2788,6,"['input', 'spatial', 'dimension']",3
+2789,6,"['input', 'empty']",2
+2790,6,"['input', 'reshape', 'tensor']",3
+2791,6,"['input', 'converted']",2
+2792,6,"['used', 'column', 'name', 'SOME_STRUCTURE', 'key', 'feature', 'parsing', 'configs', 'feature', 'tensor', 'objects', 'feature', 'columns']",13
+2793,6,"['used', 'name', 'tensorboard']",3
+2794,6,"['used', 'create', 'distribution']",3
+2795,6,"['used', 'summary', 'tensorboard']",3
+2796,6,"['used', 'example']",2
+2797,6,"['used', 'SOME_DTYPE']",2
+2798,6,"['column', 'empty']",2
+2799,6,"['SOME_STRUCTURE', 'tensor', 'single', 'tensor']",4
+2800,6,"['SOME_STRUCTURE', 'tensor', 'along']",3
+2801,6,"['SOME_STRUCTURE', 'tensor', 'first']",3
+2802,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'tensor', 'objects']",4
+2803,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'SOME_DTYPE']",5
+2804,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'columns']",3
+2805,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifies']",3
+2806,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'shape', 'returned']",4
+2807,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'd', 'convolution', 'window']",6
+2808,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'dilation', 'convolution']",4
+2809,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'type']",3
+2810,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'returns']",3
+2811,6,"['SOME_STRUCTURE', 'length', 'tensor', 'objects', 'type', 'SOME_DTYPE']",6
+2812,6,"['SOME_STRUCTURE', 'mapping', 'names', 'custom', 'functions']",5
+2813,6,"['SOME_STRUCTURE', 'associated']",2
+2814,6,"['SOME_STRUCTURE', 'output', 'tensor']",3
+2815,6,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+2816,6,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_STRUCTURE']",3
+2817,6,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'none']",3
+2818,6,"['SOME_STRUCTURE', 'model']",2
+2819,6,"['SOME_STRUCTURE', 'equivalent']",2
+2820,6,"['SOME_STRUCTURE', 'values', 'SOME_STRUCTURE']",3
+2821,6,"['SOME_STRUCTURE', 'dimension', 'tensor']",3
+2822,6,"['SOME_STRUCTURE', 'files']",2
+2823,6,"['SOME_STRUCTURE', 'tf', 'tf']",3
+2824,6,"['SOME_STRUCTURE', 'tf', 'data', 'dataset']",4
+2825,6,"['SOME_STRUCTURE', 'graph', 'collections', 'keys']",4
+2826,6,"['SOME_STRUCTURE', 'shape', 'embedding']",3
+2827,6,"['SOME_STRUCTURE', 'scope']",2
+2828,6,"['SOME_STRUCTURE', 'return']",2
+2829,6,"['SOME_STRUCTURE', 'start']",2
+2830,6,"['SOME_STRUCTURE', 'structure']",2
+2831,6,"['SOME_STRUCTURE', 'np']",2
+2832,6,"['SOME_STRUCTURE', 'numpy']",2
+2833,6,"['SOME_STRUCTURE', 'dimensions']",2
+2834,6,"['SOME_STRUCTURE', 'empty']",2
+2835,6,"['SOME_STRUCTURE', 'see']",2
+2836,6,"['SOME_STRUCTURE', 'may']",2
+2837,6,"['SOME_STRUCTURE', 'operations']",2
+2838,6,"['SOME_STRUCTURE', 'experimental']",2
+2839,6,"['SOME_STRUCTURE', 'p', 'tensor', 'representing', 'embedding', 'tensor']",6
+2840,6,"['SOME_STRUCTURE', 'returns', 'SOME_STRUCTURE']",3
+2841,6,"['key', 'SOME_STRUCTURE']",2
+2842,6,"['objects', 'tensor']",2
+2843,6,"['non', 'deterministic']",2
+2844,6,"['negative', 'batch']",2
+2845,6,"['number', 'equal']",2
+2846,6,"['number', 'number']",2
+2847,6,"['number', 'threads', 'used']",3
+2848,6,"['number', 'read']",2
+2849,6,"['number', 'use']",2
+2850,6,"['number', 'feature']",2
+2851,6,"['number', 'matrix']",2
+2852,6,"['number', 'decay']",2
+2853,6,"['number', 'iterations', 'allowed', 'run', 'parallel']",5
+2854,6,"['number', 'samples']",2
+2855,6,"['number', 'shards']",2
+2856,6,"['inputs', 'range']",2
+2857,6,"['inputs', 'computation']",2
+2858,6,"['inputs', 'SOME_STRUCTURE']",2
+2859,6,"['assigned', 'range']",2
+2860,6,"['ids', 'range']",2
+2861,6,"['hash', 'input']",2
+2862,6,"['file', 'file']",2
+2863,6,"['file', 'checkpoint']",2
+2864,6,"['must', 'length']",2
+2865,6,"['must', 'output']",2
+2866,6,"['must', 'variable']",2
+2867,6,"['must', 'number', 'dimensions', 'input']",4
+2868,6,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint']",15
+2869,6,"['must', 'one', 'following', 'SOME_DTYPE', 'qint', 'quint', 'qint', 'qint', 'quint']",9
+2870,6,"['must', 'column']",2
+2871,6,"['must', 'provided']",2
+2872,6,"['must', 'match', 'dimensions']",3
+2873,6,"['must', 'match', 'number']",3
+2874,6,"['must', 'otherwise']",2
+2875,6,"['must', 'negative']",2
+2876,6,"['must', 'least']",2
+2877,6,"['must', 'statically', 'known']",3
+2878,6,"['must', 'take']",2
+2879,6,"['must', 'positive']",2
+2880,6,"['must', 'indices']",2
+2881,6,"['must', 'max_time']",2
+2882,6,"['greater', 'length']",2
+2883,6,"['length', 'vocabulary_file']",2
+2884,6,"['length', 'values']",2
+2885,6,"['length', 'must', 'number', 'dimensions']",4
+2886,6,"['none', 'default', 'used']",3
+2887,6,"['none', 'dimension']",2
+2888,6,"['none', 'empty']",2
+2889,6,"['none', 'normalization']",2
+2890,6,"['none', 'graph']",2
+2891,6,"['none', 'l', 'combining']",3
+2892,6,"['none', 'embedding', 'clipped', 'l', 'norm', 'larger', 'value']",7
+2893,6,"['set', 'elements']",2
+2894,6,"['set', 'summary']",2
+2895,6,"['set', 'none', 'used']",3
+2896,6,"['data', 'format', 'data', 'format']",4
+2897,6,"['data', 'format', 'channels_first']",3
+2898,6,"['data', 'format', 'channels_last']",3
+2899,6,"['data', 'returned']",2
+2900,6,"['data', 'height', 'width', 'channels']",4
+2901,6,"['data', 'convert']",2
+2902,6,"['batch', 'in_depth', 'in_height', 'in_width', 'in_channels']",5
+2903,6,"['batch', 'axis', 'axis', 'norms']",4
+2904,6,"['batch', 'matrices', 'axis', 'matrix']",4
+2905,6,"['in_channels', 'dimension', 'must', 'match', 'value']",5
+2906,6,"['k', 'SOME_DTYPE']",2
+2907,6,"['k', 'n']",2
+2908,6,"['filter', 'dimension', 'must', 'match']",4
+2909,6,"['filter', 'value']",2
+2910,6,"['element', 'dataset']",2
+2911,6,"['element', 'SOME_DTYPE']",2
+2912,6,"['element', 'type', 'tensor']",3
+2913,6,"['dilations', 'batch', 'depth', 'dimensions', 'd', 'tensor', 'must']",7
+2914,6,"['dimensions', 'reduce', 'SOME_STRUCTURE', 'SOME_DTYPE']",4
+2915,6,"['dimensions', 'output', 'shape']",3
+2916,6,"['dimensions', 'unknown']",2
+2917,6,"['dimensions', 'dimensions']",2
+2918,6,"['d', 'tensor', 'shape', 'in_channels', 'out_channels']",5
+2919,6,"['d', 'tensor', 'shape', 'representing']",4
+2920,6,"['d', 'tensor', 'shape', 'SOME_DTYPE']",4
+2921,6,"['d', 'tensor', 'shape', 'filter_height', 'filter_width', 'in_channels']",6
+2922,6,"['d', 'tensor', 'shape', 'data_format']",4
+2923,6,"['d', 'tensor', 'batch_size', 'num_classes']",4
+2924,6,"['d', 'tensor', 'type', 'shape', 'in_channels', 'in_channels']",6
+2925,6,"['d', 'tensor', 'type', 'value', 'shape', 'in_channels']",6
+2926,6,"['d', 'tensor', 'single']",3
+2927,6,"['d', 'tensor', 'indices', 'data']",4
+2928,6,"['d', 'tensor', 'indices', 'output', 'tensor']",5
+2929,6,"['d', 'tensor', 'first']",3
+2930,6,"['d', 'SOME_DTYPE', 'single']",3
+2931,6,"['d', 'SOME_DTYPE', 'size', 'batch_size']",4
+2932,6,"['d', 'shape', 'batch', 'in_channels']",4
+2933,6,"['d', 'shape', 'batch', 'in_width']",4
+2934,6,"['d', 'shape', 'channel_multiplier']",3
+2935,6,"['d', 'batch', 'in_height', 'in_width']",4
+2936,6,"['d', 'higher', 'rank']",3
+2937,6,"['d', 'vector']",2
+2938,6,"['d', 'filter_height', 'filter_width', 'in_channels', 'out_channels']",5
+2939,6,"['default', 'format', 'data', 'stored', 'order', 'batch', 'in_height', 'in_width', 'in_channels']",9
+2940,6,"['default', 'ndhwc']",2
+2941,6,"['default', 'norm', 'tensor', 'equivalent', 'norm']",5
+2942,6,"['default', 'equivalent', 'norm', 'tensor']",4
+2943,6,"['default', 'output']",2
+2944,6,"['default', 'summary']",2
+2945,6,"['rank', 'n', 'n']",3
+2946,6,"['rank', 'segment_ids']",2
+2947,6,"['rank', 'shape']",2
+2948,6,"['true', 'graph']",2
+2949,6,"['true', 'assignment', 'protected', 'lock', 'otherwise', 'behavior', 'undefined', 'may', 'exhibit', 'less', 'contention']",11
+2950,6,"['true', 'transposed', 'multiplication']",3
+2951,6,"['true', 'value']",2
+2952,6,"['true', 'retain', 'reduced', 'dimensions', 'length']",5
+2953,6,"['true', 'ssparsetensor', 'tensor']",3
+2954,6,"['true', 'order']",2
+2955,6,"['true', 'SOME_DTYPE']",2
+2956,6,"['scope', 'using', 're', 'match']",4
+2957,6,"['axes', 'along', 'compute', 'mean', 'variance']",5
+2958,6,"['along', 'dimension', 'shape', 'num_classes']",4
+2959,6,"['mean', 'normal', 'distribution']",3
+2960,6,"['weights', 'none']",2
+2961,6,"['produce', 'dimensionality', 'input']",3
+2962,6,"['produce', 'output']",2
+2963,6,"['output', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+2964,6,"['output', 'tf']",2
+2965,6,"['output', 'samples']",2
+2966,6,"['variable', 'shape']",2
+2967,6,"['variable', 'tensor']",2
+2968,6,"['example', 'tf']",2
+2969,6,"['example', 'column']",2
+2970,6,"['dtype', 'SOME_DTYPE', 'dtype']",3
+2971,6,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf', 'tensor', 'representing', 'elements', 'batch']",8
+2972,6,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+2973,6,"['tf', 'tf', 'shape']",3
+2974,6,"['tf', 'variable']",2
+2975,6,"['tf', 'column']",2
+2976,6,"['tf', 'train', 'tf']",3
+2977,6,"['tf', 'raggedtensor']",2
+2978,6,"['tf', 'dtype', 'tf', 'tf', 'tf', 'tf']",6
+2979,6,"['tf', 'data', 'dataset', 'tf']",4
+2980,6,"['tf', 'graph']",2
+2981,6,"['tf', 'session']",2
+2982,6,"['tf', 'example', 'key']",3
+2983,6,"['tf', 'feature_column']",2
+2984,6,"['tf', 'autograph']",2
+2985,6,"['shape', 'shape', 'shape']",3
+2986,6,"['shape', 'shape', 'shape', 'examples']",4
+2987,6,"['shape', 'batch', 'in_width', 'in_channels']",4
+2988,6,"['shape', 'batch', 'remaining_shape']",3
+2989,6,"['shape', 'batch_size', 'num_labels']",3
+2990,6,"['shape', 'format']",2
+2991,6,"['shape', 'SOME_DTYPE', 'tensor']",3
+2992,6,"['shape', 'random']",2
+2993,6,"['shape', 'number']",2
+2994,6,"['shape', 'm', 'n']",3
+2995,6,"['shape', 'm', 'dimensions', 'm']",4
+2996,6,"['shape', 'dimension', 'shape']",3
+2997,6,"['shape', 'dimension', 'tensor']",3
+2998,6,"['shape', 'known']",2
+2999,6,"['shape', 'none']",2
+3000,6,"['shape', 'time']",2
+3001,6,"['shape', 'd_', 'd_', 'd_', 'r', 'dtype', 'SOME_DTYPE', 'SOME_DTYPE']",8
+3002,6,"['shape', 'distribution']",2
+3003,6,"['shape', 'according']",2
+3004,6,"['empty', 'tensor']",2
+3005,6,"['containing', 'size']",2
+3006,6,"['use', 'inputs']",2
+3007,6,"['use', 'shuffling']",2
+3008,6,"['use', 'dimension']",2
+3009,6,"['use', 'ops']",2
+3010,6,"['items', 'name', 'attribute', 'scope', 're', 'match']",6
+3011,6,"['items', 'without']",2
+3012,6,"['items', 'without', 'name', 'attribute', 'never', 'returned', 'scope']",7
+3013,6,"['items', 'without', 'name', 'attribute', 'never', 'returned', 'scope', 'supplied']",8
+3014,6,"['keys', 'SOME_DTYPE']",2
+3015,6,"['ssparsetensor', 'containing']",2
+3016,6,"['ssparsetensor', 'reduce']",2
+3017,6,"['also', 'serve', 'name', 'tensorboard']",4
+3018,6,"['graph', 'level', 'seed']",3
+3019,6,"['collection', 'tf']",2
+3020,6,"['see', 'tf', 'io']",3
+3021,6,"['see', 'description']",2
+3022,6,"['names', 'names']",2
+3023,6,"['note', 'set']",2
+3024,6,"['note', 'function']",2
+3025,6,"['returned', 'tf', 'lu', 'e', 'matmul', 'p']",6
+3026,6,"['returned', 'tf', 'lu', 'e', 'matmul', 'p', 'matmul', 'l', 'u']",9
+3027,6,"['returned', 'tf', 'lu', 'e', 'matmul', 'p', 'matmul', 'l', 'u', 'x']",10
+3028,6,"['returned', 'function']",2
+3029,6,"['returned', 'raggedtensor']",2
+3030,6,"['python', 'function', 'builds', 'computation']",4
+3031,6,"['python', 'SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'thresholds']",5
+3032,6,"['python', 'arguments']",2
+3033,6,"['function', 'tensor', 'returns', 'tensor']",4
+3034,6,"['function', 'tensor', 'SOME_DTYPE']",3
+3035,6,"['function', 'tensor', 'SOME_DTYPE', 'tf', 'tensor']",5
+3036,6,"['function', 'tensor', 'SOME_DTYPE', 'tensor']",4
+3037,6,"['function', 'applied', 'weights']",3
+3038,6,"['function', 'takes', 'returns']",3
+3039,6,"['function', 'apply']",2
+3040,6,"['function', 'accepts']",2
+3041,6,"['may', 'none']",2
+3042,6,"['may', 'SOME_STRUCTURE', 'tensor']",3
+3043,6,"['may', 'e']",2
+3044,6,"['one', 'per', 'column']",3
+3045,6,"['one', 'per', 'column', 'input', 'record']",5
+3046,6,"['one', 'nearest']",2
+3047,6,"['one', 'true']",2
+3048,6,"['either', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+3049,6,"['either', 'SOME_DTYPE', 'SOME_STRUCTURE']",3
+3050,6,"['either', 'empty']",2
+3051,6,"['either', 'indicating']",2
+3052,6,"['either', 'type']",2
+3053,6,"['equivalent', 'reshape', 'tensor']",3
+3054,6,"['equivalent', 'dimensions']",2
+3055,6,"['nested', 'structure', 'tf']",3
+3056,6,"['nested', 'sequence', 'fn']",3
+3057,6,"['structure', 'SOME_DTYPE']",2
+3058,6,"['passing', 'tensor']",2
+3059,6,"['n', 'SOME_STRUCTURE', 'tensor']",3
+3060,6,"['n', 'n', 'tensor']",3
+3061,6,"['n', 'n', 'tensor', 'tensor']",4
+3062,6,"['n', 'SOME_DTYPE', 'tensor', 'shape']",4
+3063,6,"['n', 'valid', 'values', 'nwc', 'default', 'ncw']",6
+3064,6,"['n', 'valid', 'values', 'nhwc', 'default', 'nchw']",6
+3065,6,"['n', 'valid', 'values', 'ndhwc', 'default', 'ncdhw']",6
+3066,6,"['n', 'shape', 'batch', 'm']",4
+3067,6,"['n', 'shape', 'batch', 'm', 'dimensions']",5
+3068,6,"['n', 'shape', 'input_shape']",3
+3069,6,"['n', 'shape', 'input_shape', 'm']",4
+3070,6,"['n', 'shape', 'input_shape', 'm', 'dimensions']",5
+3071,6,"['n', 'shape', 'input_shape', 'batch', 'm']",5
+3072,6,"['n', 'shape', 'input_shape', 'batch', 'm', 'dimensions']",6
+3073,6,"['n', 'shape', 'input_shape', 'dimensions']",4
+3074,6,"['n', 'number']",2
+3075,6,"['n', 'associated']",2
+3076,6,"['n', 'predictions']",2
+3077,6,"['n', 'must', 'known']",3
+3078,6,"['n', 'must', 'statically']",3
+3079,6,"['single', 'SOME_STRUCTURE', 'tensor']",3
+3080,6,"['single', 'tf']",2
+3081,6,"['g', 'tensor']",2
+3082,6,"['object', 'tensor']",2
+3083,6,"['maximum', 'max']",2
+3084,6,"['maximum', 'values']",2
+3085,6,"['size', 'size', 'dimension']",3
+3086,6,"['size', 'image']",2
+3087,6,"['size', 'last', 'dimension', 'must']",4
+3088,6,"['size', 'equal', 'dimension']",3
+3089,6,"['size', 'first', 'dimension']",3
+3090,6,"['deprecated', 'nothing']",2
+3091,6,"['labels', 'classification']",2
+3092,6,"['labels', 'task']",2
+3093,6,"['labels', 'num_labels']",2
+3094,6,"['provided', 'first']",2
+3095,6,"['provided', 'names']",2
+3096,6,"['given', 'input']",2
+3097,6,"['given', 'output']",2
+3098,6,"['whose', 'type']",2
+3099,6,"['whose', 'tensor']",2
+3100,6,"['standard', 'deviation', 'normal', 'distribution']",4
+3101,6,"['typically', 'batch']",2
+3102,6,"['ordering', 'dimensions', 'inputs', 'channels_last', 'corresponds', 'inputs', 'shape', 'batch', 'height', 'width', 'channels', 'channels_first', 'corresponds', 'inputs', 'shape', 'batch', 'channels', 'height', 'width']",19
+3103,6,"['glob', 'pattern']",2
+3104,6,"['directory', 'checkpoints']",2
+3105,6,"['directory', 'path']",2
+3106,6,"['directory', 'summary', 'files']",3
+3107,6,"['indicates', 'size', 'output', 'tensor']",4
+3108,6,"['offset', 'normalized']",2
+3109,6,"['coordinates', 'image']",2
+3110,6,"['image', 'image']",2
+3111,6,"['false', 'true']",2
+3112,6,"['false', 'SOME_DTYPE', 'SOME_DTYPE']",3
+3113,6,"['false', 'regular']",2
+3114,6,"['false', 'error']",2
+3115,6,"['false', 'shape']",2
+3116,6,"['batch_size', 'SOME_DTYPE']",2
+3117,6,"['normalized', 'coordinates']",2
+3118,6,"['normalized', 'gamma', 'beta']",3
+3119,6,"['first', 'last']",2
+3120,6,"['first', 'batch']",2
+3121,6,"['first', 'dimension', 'tensor']",3
+3122,6,"['nhwc', 'nchw', 'nchw_vect_c']",3
+3123,6,"['nhwc', 'nchw', 'supported']",3
+3124,6,"['nhwc', 'batch', 'in_channels']",3
+3125,6,"['nhwc', 'batch', 'height', 'width', 'channels']",5
+3126,6,"['small', 'avoid']",2
+3127,6,"['raggedtensor', 'tensor']",2
+3128,6,"['tensorflow', 'data']",2
+3129,6,"['csv', 'records']",2
+3130,6,"['csv', 'data']",2
+3131,6,"['required', 'none']",2
+3132,6,"['rows', 'files']",2
+3133,6,"['sorted', 'column']",2
+3134,6,"['index', 'axis', 'channels', 'input', 'tensor']",5
+3135,6,"['dataset', 'element']",2
+3136,6,"['whether', 'values']",2
+3137,6,"['whether', 'ssparse']",2
+3138,6,"['error', 'shown']",2
+3139,6,"['estimator', 'instance']",2
+3140,6,"['results', 'SOME_DTYPE']",2
+3141,6,"['specifies', 'whether', 'channel', 'dimension', 'input', 'output', 'last', 'dimension', 'default', 'data_format', 'start', 'nc', 'second', 'dimension', 'data_format', 'starts', 'nc']",17
+3142,6,"['specifies', 'shape']",2
+3143,6,"['specifies', 'spatial']",2
+3144,6,"['subset', 'columns']",2
+3145,6,"['argument', 'SOME_DTYPE']",2
+3146,6,"['memory', 'usage']",2
+3147,6,"['memory', 'time']",2
+3148,6,"['buffer', 'size']",2
+3149,6,"['time', 'dimension']",2
+3150,6,"['produced', 'elements']",2
+3151,6,"['prefix', 'name']",2
+3152,6,"['according', 'data_format']",2
+3153,6,"['accepted', 'values', 'constants', 'defined', 'class', 'tf']",6
+3154,6,"['floating', 'point', 'type']",3
+3155,6,"['axis', 'compute', 'norms']",3
+3156,6,"['axis', 'product']",2
+3157,6,"['axis', 'tensor', 'tensor']",3
+3158,6,"['axis', 'tensor', 'norm']",3
+3159,6,"['axis', 'python', 'SOME_DTYPE', 'considered', 'batch', 'axis', 'determines', 'tensor', 'compute']",9
+3160,6,"['axis', 'python', 'SOME_DTYPE', 'considered', 'batch', 'axis', 'tensor', 'compute']",8
+3161,6,"['axis', 'SOME_STRUCTURE', 'matrix', 'norm']",4
+3162,6,"['axis', 'along', 'perform']",3
+3163,6,"['axis', 'axis', 'tensor', 'compute']",4
+3164,6,"['axis', 'axis', 'matrix']",3
+3165,6,"['axis', 'input', 'considered', 'vector']",4
+3166,6,"['axis', 'input', 'considered', 'tensor']",4
+3167,6,"['axis', 'none', 'computed']",3
+3168,6,"['axis', 'considered', 'tensor', 'norm']",4
+3169,6,"['axis', 'batch', 'vectors', 'tensor']",4
+3170,6,"['axis', 'batch', 'matrices', 'tensor']",4
+3171,6,"['axis', 'matrix', 'norm']",3
+3172,6,"['axis', 'across']",2
+3173,6,"['keepdims', 'true', 'reduced', 'dimension', 'retained', 'length']",6
+3174,6,"['random', 'seed', 'distribution']",3
+3175,6,"['last', 'elements']",2
+3176,6,"['last', 'tensor']",2
+3177,6,"['new', 'existing', 'variable']",3
+3178,6,"['padding', 'end']",2
+3179,6,"['padding', 'dimension']",2
+3180,6,"['returns', 'SOME_DTYPE']",2
+3181,6,"['returns', 'SOME_STRUCTURE', 'tensor']",3
+3182,6,"['convolution', 'along']",2
+3183,6,"['stride', 'convolution']",2
+3184,6,"['checkpoint', 'saver']",2
+3185,6,"['ssparse', 'indices', 'must', 'sorted', 'row', 'major', 'order']",7
+3186,6,"['dense', 'tensor']",2
+3187,6,"['applied', 'get']",2
+3188,6,"['takes', 'tensor']",2
+3189,6,"['created', 'tf']",2
+3190,6,"['ground', 'truth', 'output', 'tensor']",4
+3191,6,"['predicted', 'values', 'tensor', 'arbitrary', 'dimensions']",5
+3192,6,"['minimum', 'values']",2
+3193,6,"['sum', 'mean']",2
+3194,6,"['often', 'words']",2
+3195,6,"['cache', 'relative', '~', 'keras']",4
+3196,6,"['cache', 'dataset']",2
+3197,6,"['sample', 'batch']",2
+3198,6,"['sample', 'input', 'values', 'across', 'height', 'width', 'dimensions']",7
+3199,6,"['start', 'end', 'dimension']",3
+3200,6,"['avoid', 'dividing']",2
+3201,6,"['vector', 'values']",2
+3202,6,"['vector', 'tensor', 'tensor']",3
+3203,6,"['vector', 'd', 'tensor', 'SOME_DTYPE', 'serialized', 'protos']",6
+3204,6,"['initializer', 'used']",2
+3205,6,"['rate', 'values', 'across', 'height', 'width', 'dimensions']",6
+3206,6,"['rate', 'sample']",2
+3207,6,"['rate', 'atrous']",2
+3208,6,"['currently', 'value']",2
+3209,6,"['currently', 'mean', 'sqrtn', 'sum', 'supported', 'default']",6
+3210,6,"['currently', 'mean', 'sqrtn', 'sum', 'default']",5
+3211,6,"['currently', 'mean', 'default']",3
+3212,6,"['kernel', 'weights', 'matrix']",3
+3213,6,"['supplied', 'resulting', 'SOME_STRUCTURE', 'filtered', 'include', 'items', 'whose', 'name', 'attribute', 'matches', 'using', 're', 'match']",13
+3214,6,"['supplied', 'scope']",2
+3215,6,"['choice', 're', 'match', 'means', 'scope', 'without', 'special', 'tokens', 'filters', 'prefix']",10
+3216,6,"['means', 'key']",2
+3217,6,"['means', 'example']",2
+3218,6,"['means', 'tf']",2
+3219,6,"['absolute', 'path']",2
+3220,6,"['alias', 'filter']",2
+3221,6,"['points', 'one']",2
+3222,6,"['probability', 'distribution']",2
+3223,6,"['target', 'associated']",2
+3224,6,"['halve', 'input']",2
+3225,6,"['dim', 'dimension']",2
+3226,6,"['alternatively', 'format', 'could', 'data', 'storage', 'order', 'batch', 'in_channels', 'in_height', 'in_width']",10
+3227,6,"['alternatively', 'partitionedvariable', 'created', 'partitioning', 'along', 'dimension']",6
+3228,6,"['m', 'batch', 'm']",3
+3229,6,"['threshold', 'value']",2
+3230,6,"['candidate', 'sampling']",2
+3231,6,"['decay', 'rate']",2
+3232,6,"['summary', 'SOME_DTYPE']",2
+3233,6,"['vectors', 'use']",2
+3234,6,"['fro', 'euclidean', 'np', 'inf']",4
+3235,6,"['fro', 'np', 'inf']",3
+3236,6,"['fro', 'norm']",2
+3237,6,"['euclidean', 'norm']",2
+3238,6,"['frobenius', 'norm', 'matrix', 'norm']",4
+3239,6,"['frobenius', 'norm', 'vectors']",3
+3240,6,"['b', 'matrix']",2
+3241,6,"['label_key', 'tf', 'example']",3
+3242,6,"['examples', 'following']",2
+3243,6,"['defining', 'position']",2
+3244,6,"['bytes', 'unicode']",2
+3245,6,"['unicode', 'SOME_DTYPE']",2
+3246,6,"['unicode', 'encoding']",2
+3247,6,"['potentially', 'ragged', 'SOME_DTYPE', 'tensor']",4
+3248,6,"['seeded', 'seed']",2
+3249,6,"['depthwise', 'kernel']",2
+3250,6,"['pointwise', 'kernel']",2
+3251,6,"['information', 'see', 'tf']",3
+3252,6,"['rgb', 'image', 'images']",3
+3253,6,"['gpu', 'cpu', 'memory']",3
+3254,6,"['controls', 'name']",2
+3255,6,"['tag', 'name', 'name', 'scopes']",4
+3256,6,"['tag', 'name', 'tensorboard']",3
+3257,6,"['save', 'model']",2
+3258,6,"['form', 'summary']",2
+3259,6,"['form', 'SOME_DTYPE']",2
+3260,6,"['dn', 'predictions']",2
+3261,6,"['dn', 'n']",2
+3262,6,"['union', 'SOME_STRUCTURE', 'text', 'none', 'default', 'value', 'flag']",7
+3263,6,"['replace', 'replace', 'replacement_char']",3
+3264,6,"['describes', 'input', 'tensor', 'reduce', 'across']",5
+3265,6,"['cropped', 'image']",2
+3266,6,"['replacement', 'codepoint', 'used', 'place', 'invalid', 'input']",6
+3267,6,"['replacement', 'codepoint', 'used', 'place', 'invalid', 'input', 'errors', 'replace']",8
+3268,6,"['gamma', 'weight']",2
+3269,6,"['beta', 'weight']",2
+3270,6,"['rmax', 'dmax']",2
+3271,6,"['rmin', 'dmax']",2
+3272,6,"['long', 'description', 'summary']",3
+3273,6,"['markdown', 'supported']",2
+3274,6,"['cell', 'tensor']",2
+3275,6,"['cell', 'cell']",2
+3276,6,"['cell', 'state_size']",2
+3277,6,"['input_shape', 'batch', 'remaining_shape']",3
+3278,6,"['atrous', 'convolution']",2
+3279,6,"['dot', 'product']",2
+3280,6,"['ignore', 'skip']",2
+3281,6,"['mutually', 'exclusive']",2
+3282,6,"['weighted', 'sum']",2
+3283,5,"['tensor', 'SOME_DTYPE', 'containing']",3
+3284,5,"['tensor', 'mean']",2
+3285,5,"['tensor', 'weights']",2
+3286,5,"['tensor', 'corresponding', 'tensor']",3
+3287,5,"['tensor', 'type', 'x']",3
+3288,5,"['tensor', 'type', 'default']",3
+3289,5,"['tensor', 'rank', 'SOME_DTYPE']",3
+3290,5,"['tensor', 'n', 'type']",3
+3291,5,"['tensor', 'n', 'dtype']",3
+3292,5,"['tensor', 'tensor', 'tensor', 'shape']",4
+3293,5,"['tensor', 'tensor', 'tensor', 'shape', 'tensor']",5
+3294,5,"['tensor', 'tensor', 'SOME_STRUCTURE', 'tensor', 'first']",5
+3295,5,"['tensor', 'tensor', 'y']",3
+3296,5,"['tensor', 'tensor', 'used']",3
+3297,5,"['tensor', 'tf', 'raggedtensor']",3
+3298,5,"['tensor', 'real']",2
+3299,5,"['tensor', 'given']",2
+3300,5,"['tensor', 'whose', 'rank', 'either', 'n', 'n', 'rank', 'labels']",8
+3301,5,"['tensor', 'shape', 'batch_size', 'dim']",4
+3302,5,"['tensor', 'shape', 'batch_size', 'shape']",4
+3303,5,"['tensor', 'shape', 'batch_size', 'd']",4
+3304,5,"['tensor', 'shape', 'batch', 'batch']",4
+3305,5,"['tensor', 'shape', 'dim', 'dim']",4
+3306,5,"['tensor', 'shape', 'tensor', 'whose', 'shape']",5
+3307,5,"['tensor', 'shape', 'dimension', 'representing']",4
+3308,5,"['tensor', 'shape', 'm', 'm']",4
+3309,5,"['tensor', 'shape', 'n', 'n']",4
+3310,5,"['tensor', 'shape', 'dtype']",3
+3311,5,"['tensor', 'shape', 'labels']",3
+3312,5,"['tensor', 'shape', 'logits']",3
+3313,5,"['tensor', 'shape', 'filter_height', 'filter_width', 'in_channels', 'out_channels']",6
+3314,5,"['tensor', 'shape', 'output']",3
+3315,5,"['tensor', 'shape', 'samples', 'time']",4
+3316,5,"['tensor', 'batch_size', 'cell']",3
+3317,5,"['tensor', 'containing', 'value']",3
+3318,5,"['tensor', 'y', 'x']",3
+3319,5,"['tensor', 'y', 'y']",3
+3320,5,"['tensor', 'value', 'array']",3
+3321,5,"['tensor', 'SOME_STRUCTURE', 'tensor', 'along']",4
+3322,5,"['tensor', 'must', 'shape']",3
+3323,5,"['tensor', 'batch', 'matrix']",3
+3324,5,"['tensor', 'resulting']",2
+3325,5,"['tensor', 'split']",2
+3326,5,"['tensor', 'ssparsetensor', 'indexedslices']",3
+3327,5,"['tensor', 'predicted', 'targets']",3
+3328,5,"['tensor', 'true', 'targets']",3
+3329,5,"['tensor', 'known']",2
+3330,5,"['tensor', 'vector']",2
+3331,5,"['tensor', 'matrices']",2
+3332,5,"['tensor', 'scale']",2
+3333,5,"['tensor', 'd', 'type']",3
+3334,5,"['tensor', 'defined']",2
+3335,5,"['tensor', 'max_time', 'batch_size', 'num_classes']",4
+3336,5,"['tensor', 'first', 'tensor']",3
+3337,5,"['tensor', 'per']",2
+3338,5,"['tensor', 'holding']",2
+3339,5,"['tensor', 'flattened']",2
+3340,5,"['tensor', 'use']",2
+3341,5,"['tensor', 'possibly', 'nested', 'sequence', 'tensor', 'unpacked', 'along', 'first', 'dimension']",9
+3342,5,"['tensor', 'nested', 'SOME_STRUCTURE']",3
+3343,5,"['name', 'operations', 'optional']",3
+3344,5,"['name', 'used', 'scope', 'operations', 'compute']",5
+3345,5,"['name', 'returned', 'keras', 'variable']",4
+3346,5,"['name', 'checkpoint']",2
+3347,5,"['name', 'new', 'update', 'operation', 'namespace', 'dependent', 'ops']",7
+3348,5,"['name', 'based']",2
+3349,5,"['name', 'function']",2
+3350,5,"['name', 'object']",2
+3351,5,"['name', 'tf']",2
+3352,5,"['operation', 'shape', 'shape']",3
+3353,5,"['operation', 'output', 'tensor']",3
+3354,5,"['operation', 'SOME_DTYPE']",2
+3355,5,"['operation', 'input', 'produce', 'output']",4
+3356,5,"['operation', 'produce', 'input']",3
+3357,5,"['optional', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+3358,5,"['optional', 'SOME_DTYPE', 'name']",3
+3359,5,"['optional', 'SOME_DTYPE', 'variable']",3
+3360,5,"['optional', 'SOME_DTYPE', 'returns']",3
+3361,5,"['optional', 'SOME_STRUCTURE', 'graph']",3
+3362,5,"['optional', 'SOME_STRUCTURE', 'collections', 'values', 'added']",5
+3363,5,"['optional', 'SOME_STRUCTURE', 'collections', 'updates', 'added']",5
+3364,5,"['optional', 'SOME_STRUCTURE', 'mapping', 'names', 'SOME_DTYPE', 'custom', 'classes', 'functions', 'considered', 'deserialization']",10
+3365,5,"['optional', 'SOME_STRUCTURE', 'objects']",3
+3366,5,"['optional', 'values', 'values']",3
+3367,5,"['optional', 'empty']",2
+3368,5,"['optional', 'tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf', 'tensor', 'representing']",7
+3369,5,"['optional', 'one']",2
+3370,5,"['optional', 'indices']",2
+3371,5,"['optional', 'scope']",2
+3372,5,"['optional', 'e', 'g']",3
+3373,5,"['optional', 'elements']",2
+3374,5,"['optional', 'number', 'parallel']",3
+3375,5,"['optional', 'element', 'type', 'returned', 'tensor']",5
+3376,5,"['optional', 'function', 'variable']",3
+3377,5,"['optional', 'projection', 'function', 'applied', 'updated', 'optimizer']",6
+3378,5,"['optional', 'layer']",2
+3379,5,"['optional', 'provided', 'used', 'prefix', 'summary', 'tag', 'controls', 'name', 'used', 'display', 'tensorboard']",11
+3380,5,"['optional', 'devices']",2
+3381,5,"['optional', 'serialized']",2
+3382,5,"['optional', 'specified']",2
+3383,5,"['optional', 'allowed']",2
+3384,5,"['optional', 'returns', 'tensor']",3
+3385,5,"['optional', 'long', 'form', 'description', 'summary', 'constant', 'SOME_DTYPE']",7
+3386,5,"['optional', 'initial']",2
+3387,5,"['optional', 'gpu', 'cpu']",3
+3388,5,"['SOME_DTYPE', 'id', 'value', 'return', 'vocabulary', 'feature', 'values', 'defaults']",8
+3389,5,"['SOME_DTYPE', 'value', 'empty']",3
+3390,5,"['SOME_DTYPE', 'value', 'highest', 'quantized', 'value', 'represents']",6
+3391,5,"['SOME_DTYPE', 'value', 'lowest', 'quantized', 'value', 'represents']",6
+3392,5,"['SOME_DTYPE', 'feature', 'column']",3
+3393,5,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'tf']",4
+3394,5,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'representing', 'maximum', 'number', 'boxes', 'selected', 'non', 'max', 'suppression']",11
+3395,5,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'containing']",4
+3396,5,"['SOME_DTYPE', 'SOME_DTYPE', 'tensor', 'tensor']",4
+3397,5,"['SOME_DTYPE', 'SOME_DTYPE', 'tf', 'SOME_DTYPE', 'SOME_DTYPE']",5
+3398,5,"['SOME_DTYPE', 'SOME_DTYPE', 'batch_size']",3
+3399,5,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_STRUCTURE']",3
+3400,5,"['SOME_DTYPE', 'SOME_DTYPE', 'window']",3
+3401,5,"['SOME_DTYPE', 'SOME_DTYPE', 'dimension']",3
+3402,5,"['SOME_DTYPE', 'SOME_DTYPE', 'serialized']",3
+3403,5,"['SOME_DTYPE', 'SOME_DTYPE', 'type']",3
+3404,5,"['SOME_DTYPE', 'number', 'elements']",3
+3405,5,"['SOME_DTYPE', 'nwc', 'ncw']",3
+3406,5,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'along']",4
+3407,5,"['SOME_DTYPE', 'SOME_STRUCTURE', 'axis']",3
+3408,5,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'height', 'width']",7
+3409,5,"['SOME_DTYPE', 'SOME_STRUCTURE', 'none']",3
+3410,5,"['SOME_DTYPE', 'type', 'SOME_STRUCTURE', 'start']",4
+3411,5,"['SOME_DTYPE', 'axes', 'along']",3
+3412,5,"['SOME_DTYPE', 'axes', 'compute']",3
+3413,5,"['SOME_DTYPE', 'tf', 'column']",3
+3414,5,"['SOME_DTYPE', 'tf', 'tensor', 'single']",4
+3415,5,"['SOME_DTYPE', 'tf', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+3416,5,"['SOME_DTYPE', 'shape', 'variable']",3
+3417,5,"['SOME_DTYPE', 'shape', 'channels']",3
+3418,5,"['SOME_DTYPE', 'shape', 'batch', 'height', 'width']",5
+3419,5,"['SOME_DTYPE', 'column', 'empty']",3
+3420,5,"['SOME_DTYPE', 'dtype', 'variable']",3
+3421,5,"['SOME_DTYPE', 'name', 'used']",3
+3422,5,"['SOME_DTYPE', 'name', 'SOME_DTYPE']",3
+3423,5,"['SOME_DTYPE', 'tensor', 'rank', 'n']",4
+3424,5,"['SOME_DTYPE', 'tensor', 'tensor', 'shape']",4
+3425,5,"['SOME_DTYPE', 'tensor', 'shape', 'd', 'tensor']",5
+3426,5,"['SOME_DTYPE', 'tensor', 'width']",3
+3427,5,"['SOME_DTYPE', 'tensor', 'whether']",3
+3428,5,"['SOME_DTYPE', 'tensor', 'SOME_STRUCTURE', 'tensor']",4
+3429,5,"['SOME_DTYPE', 'tensor', 'ssparsetensor', 'shape', 'd']",5
+3430,5,"['SOME_DTYPE', 'tensor', 'type', 'SOME_DTYPE']",4
+3431,5,"['SOME_DTYPE', 'tensor', 'size']",3
+3432,5,"['SOME_DTYPE', 'tensor', 'specifying']",3
+3433,5,"['SOME_DTYPE', 'single', 'tensor']",3
+3434,5,"['SOME_DTYPE', 'rank', 'SOME_DTYPE']",3
+3435,5,"['SOME_DTYPE', 'path', 'directory']",3
+3436,5,"['SOME_DTYPE', 'path', 'file']",3
+3437,5,"['SOME_DTYPE', 'batch_size', 'num_classes']",3
+3438,5,"['SOME_DTYPE', 'height', 'd']",3
+3439,5,"['SOME_DTYPE', 'width', 'd', 'window']",4
+3440,5,"['SOME_DTYPE', 'representing', 'threshold', 'deciding', 'whether', 'boxes', 'overlap']",7
+3441,5,"['SOME_DTYPE', 'representing', 'threshold', 'deciding', 'whether', 'boxes', 'overlap', 'much', 'respect']",9
+3442,5,"['SOME_DTYPE', 'representing', 'threshold', 'deciding', 'remove', 'boxes', 'based', 'score']",8
+3443,5,"['SOME_DTYPE', 'batch', 'matrix']",3
+3444,5,"['SOME_DTYPE', 'order', 'interpolation']",3
+3445,5,"['SOME_DTYPE', 'whether', 'layer', 'uses', 'bias']",5
+3446,5,"['SOME_DTYPE', 'data', 'data']",3
+3447,5,"['SOME_DTYPE', 'data', 'type']",3
+3448,5,"['SOME_DTYPE', 'corresponding', 'tf']",3
+3449,5,"['SOME_DTYPE', 'specifying', 'dilation', 'rate', 'use', 'dilated', 'convolution']",7
+3450,5,"['SOME_DTYPE', 'specifying', 'strides', 'convolution']",4
+3451,5,"['SOME_DTYPE', 'specifying', 'dimension', 'embedding', 'must']",5
+3452,5,"['SOME_DTYPE', 'specifying', 'reduce', 'multiple', 'entries', 'single', 'row']",7
+3453,5,"['SOME_DTYPE', 'specifying', 'length']",3
+3454,5,"['SOME_DTYPE', 'specifying', 'partitioning', 'strategy']",4
+3455,5,"['SOME_DTYPE', 'specifying', 'shape']",3
+3456,5,"['SOME_DTYPE', 'axis', 'along']",3
+3457,5,"['SOME_DTYPE', 'giving']",2
+3458,5,"['SOME_DTYPE', 'indicating', 'use']",3
+3459,5,"['SOME_DTYPE', 'sum']",2
+3460,5,"['SOME_DTYPE', 'split']",2
+3461,5,"['SOME_DTYPE', 'generator']",2
+3462,5,"['SOME_DTYPE', 'dimensionality', 'output', 'space', 'e', 'number', 'filters', 'convolution']",8
+3463,5,"['SOME_DTYPE', 'dimensionality', 'output', 'filters', 'convolution']",5
+3464,5,"['SOME_DTYPE', 'vector', 'batch_size']",3
+3465,5,"['SOME_DTYPE', 'vector', 'tensor']",3
+3466,5,"['SOME_DTYPE', 'key', 'weight']",3
+3467,5,"['SOME_DTYPE', 'start', 'end']",3
+3468,5,"['SOME_DTYPE', 'ndhwc', 'ncdhw']",3
+3469,5,"['SOME_DTYPE', 'returns', 'SOME_STRUCTURE', 'tensor']",4
+3470,5,"['SOME_DTYPE', 'section']",2
+3471,5,"['SOME_DTYPE', 'byte']",2
+3472,5,"['SOME_DTYPE', 'utf', '_char']",3
+3473,5,"['SOME_DTYPE', 'flags']",2
+3474,5,"['SOME_DTYPE', 'unicode', 'SOME_DTYPE']",3
+3475,5,"['SOME_DTYPE', 'serialized', 'example']",3
+3476,5,"['SOME_DTYPE', 'l']",2
+3477,5,"['SOME_DTYPE', 'regularization']",2
+3478,5,"['SOME_DTYPE', 'placeholder']",2
+3479,5,"['SOME_DTYPE', 'op']",2
+3480,5,"['SOME_DTYPE', 'want']",2
+3481,5,"['SOME_DTYPE', 'k', 'k', 'metric']",4
+3482,5,"['SOME_DTYPE', 'whose']",2
+3483,5,"['SOME_DTYPE', 'filter']",2
+3484,5,"['SOME_DTYPE', 'normal']",2
+3485,5,"['SOME_DTYPE', 'needs']",2
+3486,5,"['SOME_DTYPE', 'pad']",2
+3487,5,"['SOME_DTYPE', 'element']",2
+3488,5,"['SOME_DTYPE', 'arguments']",2
+3489,5,"['SOME_DTYPE', 'typically']",2
+3490,5,"['SOME_DTYPE', 'takes', 'returns']",3
+3491,5,"['SOME_DTYPE', 'cell']",2
+3492,5,"['SOME_DTYPE', 'accepts']",2
+3493,5,"['SOME_DTYPE', 'result']",2
+3494,5,"['SOME_DTYPE', 'decode']",2
+3495,5,"['value', 'used', 'points', 'outside', 'boundaries', 'input', 'mode', 'constant']",8
+3496,5,"['value', 'training']",2
+3497,5,"['value', 'data']",2
+3498,5,"['value', 'refers']",2
+3499,5,"['value', 'diagonal']",2
+3500,5,"['value', 'height']",2
+3501,5,"['value', 'none', 'e']",3
+3502,5,"['value', 'tf']",2
+3503,5,"['value', 'shift']",2
+3504,5,"['value', 'parameter']",2
+3505,5,"['return', 'SOME_STRUCTURE', 'tensor']",3
+3506,5,"['return', 'corresponding']",2
+3507,5,"['return', 'output']",2
+3508,5,"['return', 'SOME_DTYPE']",2
+3509,5,"['vocabulary', 'inputs', 'assigned', 'ids', 'range', 'num_oov_buckets', 'based', 'hash', 'input', 'value']",10
+3510,5,"['values', 'range', 'num_classes', 'num_classes', 'last', 'dimension', 'predictions']",7
+3511,5,"['values', 'np']",2
+3512,5,"['values', 'real']",2
+3513,5,"['values', 'generate']",2
+3514,5,"['values', 'operation']",2
+3515,5,"['defaults', 'ndhwc']",2
+3516,5,"['defaults', 'seconds']",2
+3517,5,"['defaults', 'k']",2
+3518,5,"['defaults', 'first', 'dimension']",3
+3519,5,"['defaults', 'max']",2
+3520,5,"['specified', 'positive', 'num_oov_buckets']",3
+3521,5,"['specified', 'SOME_DTYPE', 'SOME_DTYPE']",3
+3522,5,"['specified', 'assumed']",2
+3523,5,"['specified', 'order']",2
+3524,5,"['specified', 'specified']",2
+3525,5,"['specified', 'calls', 'should_stop_fn', 'interval', 'run_every_secs', 'seconds']",6
+3526,5,"['specified', 'calls', 'should_stop_fn', 'every', 'run_every_steps', 'steps']",6
+3527,5,"['specified', 'shape']",2
+3528,5,"['specified', 'axis']",2
+3529,5,"['specified', 'defaults', 'truncated_normal_initializer', 'mean', 'standard', 'deviation', 'sqrt', 'dimension']",8
+3530,5,"['specified', 'chosen', 'based']",3
+3531,5,"['positive', 'num_oov_buckets', 'specified', 'default_value']",4
+3532,5,"['positive', 'value']",2
+3533,5,"['type', 'tensor', 'conversion']",3
+3534,5,"['type', 'output', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+3535,5,"['type', 'elements', 'resulting', 'tensor']",4
+3536,5,"['type', 'tf']",2
+3537,5,"['type', 'function']",2
+3538,5,"['type', 'type']",2
+3539,5,"['type', 'one']",2
+3540,5,"['input', 'tensor', 'tensor', 'tensor']",4
+3541,5,"['input', 'tensor', 'variable']",3
+3542,5,"['input', 'tensor', 'must']",3
+3543,5,"['input', 'none']",2
+3544,5,"['input', 'dimensions', 'input']",3
+3545,5,"['input', 'shape', 'batch']",3
+3546,5,"['input', 'shape', 'input']",3
+3547,5,"['input', 'sequence']",2
+3548,5,"['input', 'image']",2
+3549,5,"['input', 'axis']",2
+3550,5,"['used', 'operation']",2
+3551,5,"['used', 'training']",2
+3552,5,"['used', 'weights']",2
+3553,5,"['used', 'determine']",2
+3554,5,"['used', 'seeds']",2
+3555,5,"['used', 'none']",2
+3556,5,"['column', 'column']",2
+3557,5,"['column', 'data']",2
+3558,5,"['SOME_STRUCTURE', 'feature', 'value']",3
+3559,5,"['SOME_STRUCTURE', 'tensor', 'indexedslices']",3
+3560,5,"['SOME_STRUCTURE', 'tensor', 'values']",3
+3561,5,"['SOME_STRUCTURE', 'tensor', 'used']",3
+3562,5,"['SOME_STRUCTURE', 'tensor', 'returns', 'SOME_STRUCTURE']",4
+3563,5,"['SOME_STRUCTURE', 'objects', 'tensor']",3
+3564,5,"['SOME_STRUCTURE', 'objects', 'single']",3
+3565,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'one']",3
+3566,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'names']",3
+3567,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'data']",3
+3568,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'shape', 'tensor']",4
+3569,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'variable']",3
+3570,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'specifying', 'along']",4
+3571,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'use']",3
+3572,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'dimension']",3
+3573,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'batch']",3
+3574,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'axis', 'axes']",4
+3575,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'tf']",3
+3576,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'value']",3
+3577,5,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_STRUCTURE', 'tensor']",4
+3578,5,"['SOME_STRUCTURE', 'mapping', 'feature', 'keys', 'fixedlenfeature', 'varlenfeature', 'raggedfeature', 'values']",8
+3579,5,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE', 'type']",4
+3580,5,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'single', 'SOME_DTYPE']",4
+3581,5,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'returns']",3
+3582,5,"['SOME_STRUCTURE', 'none', 'equivalent']",3
+3583,5,"['SOME_STRUCTURE', 'none', 'empty']",3
+3584,5,"['SOME_STRUCTURE', 'n', 'SOME_DTYPE']",3
+3585,5,"['SOME_STRUCTURE', 'single', 'SOME_DTYPE', 'specifying', 'convolution']",5
+3586,5,"['SOME_STRUCTURE', 'single', 'value']",3
+3587,5,"['SOME_STRUCTURE', 'tf', 'autograph', 'experimental', 'feature']",5
+3588,5,"['SOME_STRUCTURE', 'column']",2
+3589,5,"['SOME_STRUCTURE', 'operation']",2
+3590,5,"['SOME_STRUCTURE', 'keras']",2
+3591,5,"['SOME_STRUCTURE', 'along', 'dimension']",3
+3592,5,"['SOME_STRUCTURE', 'variables']",2
+3593,5,"['SOME_STRUCTURE', 'start', 'end']",3
+3594,5,"['SOME_STRUCTURE', 'weights']",2
+3595,5,"['SOME_STRUCTURE', 'elements']",2
+3596,5,"['SOME_STRUCTURE', 'numpy', 'array']",3
+3597,5,"['SOME_STRUCTURE', 'empty', 'SOME_STRUCTURE']",3
+3598,5,"['SOME_STRUCTURE', 'custom', 'objects']",3
+3599,5,"['SOME_STRUCTURE', 'dense']",2
+3600,5,"['SOME_STRUCTURE', 'create']",2
+3601,5,"['SOME_STRUCTURE', 'ndarray']",2
+3602,5,"['SOME_STRUCTURE', 'must']",2
+3603,5,"['SOME_STRUCTURE', 'vectors', 'feature']",3
+3604,5,"['SOME_STRUCTURE', 'example']",2
+3605,5,"['key', 'value']",2
+3606,5,"['objects', 'objects']",2
+3607,5,"['columns', 'returned']",2
+3608,5,"['non', 'negative', 'SOME_DTYPE', 'number', 'vocabulary', 'buckets']",6
+3609,5,"['non', 'sequence']",2
+3610,5,"['non', 'must']",2
+3611,5,"['non', 'values']",2
+3612,5,"['non', 'batch']",2
+3613,5,"['negative', 'supported']",2
+3614,5,"['number', 'columns']",2
+3615,5,"['number', 'SOME_DTYPE']",2
+3616,5,"['number', 'include']",2
+3617,5,"['number', 'top']",2
+3618,5,"['number', 'partitions']",2
+3619,5,"['number', 'seconds']",2
+3620,5,"['number', 'image']",2
+3621,5,"['inputs', 'tensor', 'tensor']",3
+3622,5,"['inputs', 'outputs']",2
+3623,5,"['range', 'k']",2
+3624,5,"['range', 'allowed', 'values']",3
+3625,5,"['based', 'SOME_DTYPE']",2
+3626,5,"['file', 'name']",2
+3627,5,"['file', 'containing']",2
+3628,5,"['file', 'csv']",2
+3629,5,"['elements', 'elements']",2
+3630,5,"['elements', 'dimension']",2
+3631,5,"['must', 'values', 'values']",3
+3632,5,"['must', 'tensor', 'shape', 'batch_size']",4
+3633,5,"['must', 'one', 'following', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'qint', 'quint', 'qint']",17
+3634,5,"['must', 'contain']",2
+3635,5,"['must', 'value', 'value']",3
+3636,5,"['must', 'k']",2
+3637,5,"['must', 'return']",2
+3638,5,"['must', 'arguments']",2
+3639,5,"['must', 'structure']",2
+3640,5,"['length', 'must', 'number', 'dimensions', 'input']",5
+3641,5,"['length', 'samples']",2
+3642,5,"['none', 'length']",2
+3643,5,"['none', 'SOME_STRUCTURE', 'tf']",3
+3644,5,"['none', 'output']",2
+3645,5,"['none', 'tensor', 'tensor']",3
+3646,5,"['none', 'variable']",2
+3647,5,"['none', 'describing']",2
+3648,5,"['none', 'forever']",2
+3649,5,"['none', 'empty', 'SOME_STRUCTURE']",3
+3650,5,"['none', 'defaults']",2
+3651,5,"['none', 'values']",2
+3652,5,"['none', 'SOME_DTYPE']",2
+3653,5,"['none', 'one']",2
+3654,5,"['none', 'error']",2
+3655,5,"['none', 'normalized']",2
+3656,5,"['none', 'assumed']",2
+3657,5,"['none', 'performed']",2
+3658,5,"['set', 'random', 'seed']",3
+3659,5,"['set', 'zero']",2
+3660,5,"['set', 'value']",2
+3661,5,"['set', 'default']",2
+3662,5,"['data', 'SOME_STRUCTURE']",2
+3663,5,"['data', 'expected']",2
+3664,5,"['data', 'function']",2
+3665,5,"['data', 'objects']",2
+3666,5,"['data', 'value']",2
+3667,5,"['data', 'one']",2
+3668,5,"['batch', 'dimensions', 'shape']",3
+3669,5,"['batch', 'features']",2
+3670,5,"['batch', 'features', 'shape']",3
+3671,5,"['batch', 'features', 'features']",3
+3672,5,"['batch', 'none']",2
+3673,5,"['batch', 'normalization']",2
+3674,5,"['batch', 'size', 'SOME_DTYPE']",3
+3675,5,"['dimension', 'shape', 'input']",3
+3676,5,"['dimension', 'SOME_DTYPE']",2
+3677,5,"['dimension', 'none']",2
+3678,5,"['dimension', 'softmax', 'would', 'performed']",4
+3679,5,"['dimension', 'output', 'tensor']",3
+3680,5,"['dimension', 'dim']",2
+3681,5,"['dimension', 'logit']",2
+3682,5,"['dimension', 'row']",2
+3683,5,"['k', 'k', 'k']",3
+3684,5,"['k', 'tensor']",2
+3685,5,"['k', 'must']",2
+3686,5,"['filter', 'in_channels', 'dimension', 'must', 'match']",5
+3687,5,"['element', 'tf']",2
+3688,5,"['element', 'SOME_STRUCTURE']",2
+3689,5,"['dimensions', 'none']",2
+3690,5,"['dimensions', 'padded']",2
+3691,5,"['dimensions', 'size']",2
+3692,5,"['dimensions', 'batch', 'batch', 'output']",4
+3693,5,"['dimensions', 'batch', 'batch', 'output', 'batch']",5
+3694,5,"['dimensions', 'output', 'batch']",3
+3695,5,"['dimensions', 'may']",2
+3696,5,"['dimensions', 'dimensions', 'input']",3
+3697,5,"['d', 'tensor', 'SOME_DTYPE', 'optional']",4
+3698,5,"['d', 'tensor', 'values']",3
+3699,5,"['d', 'tensor', 'shape', 'batch_size', 'batch_size']",5
+3700,5,"['d', 'tensor', 'type', 'shape', 'output_channels', 'in_channels']",6
+3701,5,"['d', 'tensor', 'type', 'SOME_DTYPE', 'shape', 'batch', 'in_channels']",7
+3702,5,"['d', 'tensor', 'format', 'specified', 'data_format']",5
+3703,5,"['d', 'tensor', 'axis']",3
+3704,5,"['d', 'tensor', 'whose', 'size', 'equal', 'size', 'data', 'first', 'dimension']",9
+3705,5,"['d', 'SOME_DTYPE', 'tensor', 'shape', 'num_boxes', 'representing', 'single', 'score', 'corresponding', 'box', 'row', 'boxes']",12
+3706,5,"['d', 'SOME_DTYPE', 'tensor', 'SOME_DTYPE']",4
+3707,5,"['d', 'shape', 'batch', 'in_height', 'in_width']",5
+3708,5,"['d', 'shape', 'filter_height', 'filter_width', 'out_channels']",5
+3709,5,"['d', 'containing', 'size']",3
+3710,5,"['d', 'type', 'SOME_DTYPE', 'SOME_DTYPE']",4
+3711,5,"['d', 'input', 'dimension']",3
+3712,5,"['d', 'image']",2
+3713,5,"['d', 'n']",2
+3714,5,"['valid', 'csv']",2
+3715,5,"['valid', 'tensor']",2
+3716,5,"['valid', 'valid']",2
+3717,5,"['valid', 'e', 'g']",3
+3718,5,"['valid', 'use']",2
+3719,5,"['valid', 'explicit']",2
+3720,5,"['default', 'device']",2
+3721,5,"['default', 'value', 'column']",3
+3722,5,"['default', 'value', 'false', 'e']",4
+3723,5,"['default', 'tensor', 'tensor']",3
+3724,5,"['default', 'required']",2
+3725,5,"['default', 'indicates', 'last', 'dimension']",4
+3726,5,"['default', 'format', 'nhwc', 'data', 'stored', 'order', 'batch', 'height', 'width', 'channels']",10
+3727,5,"['default', 'default']",2
+3728,5,"['default', 'vector']",2
+3729,5,"['default', 'eps']",2
+3730,5,"['rank', 'values', 'dimension']",3
+3731,5,"['rank', 'SOME_DTYPE', 'tensor']",3
+3732,5,"['rank', 'x']",2
+3733,5,"['true', 'variable']",2
+3734,5,"['true', 'collection']",2
+3735,5,"['true', 'non']",2
+3736,5,"['true', 'one']",2
+3737,5,"['true', 'cpu']",2
+3738,5,"['true', 'use']",2
+3739,5,"['true', 'case']",2
+3740,5,"['operations', 'tensor']",2
+3741,5,"['axes', 'tensor']",2
+3742,5,"['produce', 'tensor']",2
+3743,5,"['mapping', 'key']",2
+3744,5,"['mapping', 'SOME_DTYPE', 'tensor']",3
+3745,5,"['mapping', 'SOME_DTYPE', 'SOME_DTYPE']",3
+3746,5,"['output', 'tensor', 'shape']",3
+3747,5,"['output', 'shape', 'shape']",3
+3748,5,"['output', 'values']",2
+3749,5,"['output', 'type', 'operation']",3
+3750,5,"['output', 'type', 'SOME_DTYPE', 'SOME_DTYPE']",4
+3751,5,"['output', 'logits']",2
+3752,5,"['output', 'length']",2
+3753,5,"['variable', 'SOME_STRUCTURE']",2
+3754,5,"['variable', 'collection', 'graphkeys']",3
+3755,5,"['variable', 'collection', 'tf']",3
+3756,5,"['variable', 'SOME_DTYPE']",2
+3757,5,"['variable', 'return']",2
+3758,5,"['variable', 'objects']",2
+3759,5,"['variable', 'length']",2
+3760,5,"['variable', 'initializer', 'function', 'used', 'embedding', 'variable', 'initialization']",7
+3761,5,"['variable', 'one']",2
+3762,5,"['example', 'tf', 'value']",3
+3763,5,"['example', 'contains']",2
+3764,5,"['example', 'axis']",2
+3765,5,"['example', 'data']",2
+3766,5,"['dtype', 'one']",2
+3767,5,"['dtype', 'provided']",2
+3768,5,"['dtype', 'values']",2
+3769,5,"['tf', 'SOME_DTYPE', 'SOME_DTYPE', 'tf', 'tensor', 'representing', 'number']",7
+3770,5,"['tf', 'dimension']",2
+3771,5,"['tf', 'tf', 'input']",3
+3772,5,"['tf', 'tf', 'function']",3
+3773,5,"['tf', 'tf', 'random']",3
+3774,5,"['tf', 'tf', 'raggedtensor']",3
+3775,5,"['tf', 'tf', 'indexedslices']",3
+3776,5,"['tf', 'tf', 'data']",3
+3777,5,"['tf', 'tf', 'train']",3
+3778,5,"['tf', 'shape', 'tf']",3
+3779,5,"['tf', 'SOME_STRUCTURE']",2
+3780,5,"['tf', 'tensorhape']",2
+3781,5,"['tf', 'component']",2
+3782,5,"['tf', 'compat', 'v', 'tf']",4
+3783,5,"['tf', 'tensor', 'tf', 'indexedslices']",4
+3784,5,"['tf', 'tensor', 'tf', 'ssparsetensor']",4
+3785,5,"['tf', 'tensor', 'objects']",3
+3786,5,"['tf', 'estimator', 'estimator', 'instance']",4
+3787,5,"['tf', 'default']",2
+3788,5,"['tf', 'dtype', 'type']",3
+3789,5,"['tf', 'qint']",2
+3790,5,"['tf', 'quint']",2
+3791,5,"['tf', 'data', 'structure']",3
+3792,5,"['tf', 'data', 'object']",3
+3793,5,"['tf', 'data', 'iterator']",3
+3794,5,"['tf', 'linalg']",2
+3795,5,"['tf', 'saved_model']",2
+3796,5,"['tf', 'parse_example']",2
+3797,5,"['tf', 'eager']",2
+3798,5,"['tf', 'configproto']",2
+3799,5,"['shape', 'shape', 'value']",3
+3800,5,"['shape', 'shape', 'tensor']",3
+3801,5,"['shape', 'batch', 'in_height', 'in_width', 'in_channels']",5
+3802,5,"['shape', 'batch', 'out_channels']",3
+3803,5,"['shape', 'steps']",2
+3804,5,"['shape', 'steps', 'channels_first']",3
+3805,5,"['shape', 'steps', 'steps']",3
+3806,5,"['shape', 'batch_size', 'num_classes']",3
+3807,5,"['shape', 'must', 'shape']",3
+3808,5,"['shape', 'axis']",2
+3809,5,"['shape', 'along']",2
+3810,5,"['shape', 'output', 'shape']",3
+3811,5,"['shape', 'bias']",2
+3812,5,"['shape', 'm', 'm', 'm', 'm']",5
+3813,5,"['shape', 'm', 'm', 'dimensions', 'm', 'm']",6
+3814,5,"['shape', 'm', 'k']",3
+3815,5,"['shape', 'm', 'dimension']",3
+3816,5,"['shape', 'n', 'm']",3
+3817,5,"['shape', 'length']",2
+3818,5,"['shape', 'ssparsetensor']",2
+3819,5,"['shape', 'result']",2
+3820,5,"['shape', 'gamma']",2
+3821,5,"['shape', 'beta']",2
+3822,5,"['variables', 'warm']",2
+3823,5,"['containing', 'summary']",2
+3824,5,"['containing', 'none']",2
+3825,5,"['use', 'image']",2
+3826,5,"['use', 'created']",2
+3827,5,"['use', 'input']",2
+3828,5,"['use', 'start']",2
+3829,5,"['use', 'using']",2
+3830,5,"['use', 'use']",2
+3831,5,"['model', 'model']",2
+3832,5,"['categorical', 'column']",2
+3833,5,"['ssparsetensor', 'n']",2
+3834,5,"['also', 'graph']",2
+3835,5,"['also', 'graphkeys']",2
+3836,5,"['also', 'serve', 'series', 'name', 'tensorboard']",5
+3837,5,"['add', 'variable']",2
+3838,5,"['graph', 'tf']",2
+3839,5,"['graph', 'variable']",2
+3840,5,"['collection', 'variable']",2
+3841,5,"['graphkeys', 'see', 'tf', 'variable']",4
+3842,5,"['see', 'random']",2
+3843,5,"['names', 'data']",2
+3844,5,"['added', 'tf']",2
+3845,5,"['note', 'SOME_STRUCTURE']",2
+3846,5,"['note', 'SOME_DTYPE', 'tensor']",3
+3847,5,"['note', 'numpy']",2
+3848,5,"['note', 'considered']",2
+3849,5,"['collections', 'add']",2
+3850,5,"['ops', 'graphkeys']",2
+3851,5,"['ops', 'function']",2
+3852,5,"['returned', 'given']",2
+3853,5,"['keras', 'tensor']",2
+3854,5,"['keras', 'optimizer']",2
+3855,5,"['python', 'function', 'input']",3
+3856,5,"['python', 'SOME_DTYPE', 'ops']",3
+3857,5,"['python', 'returns']",2
+3858,5,"['python', 'objects']",2
+3859,5,"['python', 'd']",2
+3860,5,"['function', 'used', 'value']",3
+3861,5,"['function', 'tensor', 'argument']",3
+3862,5,"['function', 'tensor', 'argument', 'tensor']",4
+3863,5,"['function', 'tensor', 'SOME_STRUCTURE']",3
+3864,5,"['function', 'tensor', 'SOME_STRUCTURE', 'tensor']",4
+3865,5,"['function', 'input', 'tensor', 'tensor']",4
+3866,5,"['function', 'input', 'return']",3
+3867,5,"['function', 'returns', 'SOME_STRUCTURE']",3
+3868,5,"['function', 'use']",2
+3869,5,"['function', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+3870,5,"['function', 'SOME_DTYPE', 'tf', 'SOME_DTYPE']",4
+3871,5,"['function', 'call']",2
+3872,5,"['function', 'arguments', 'objects']",3
+3873,5,"['function', 'mapping']",2
+3874,5,"['function', 'dataset']",2
+3875,5,"['function', 'tf', 'SOME_DTYPE', 'tensor']",4
+3876,5,"['function', 'must']",2
+3877,5,"['function', 'shape']",2
+3878,5,"['function', 'SOME_STRUCTURE', 'tensor']",3
+3879,5,"['function', 'SOME_STRUCTURE', 'tensor', 'SOME_STRUCTURE']",4
+3880,5,"['function', 'SOME_STRUCTURE', 'tensor', 'SOME_STRUCTURE', 'tensor']",5
+3881,5,"['function', 'SOME_STRUCTURE', 'tensor', 'tensor']",4
+3882,5,"['function', 'single']",2
+3883,5,"['function', 'values']",2
+3884,5,"['function', 'f']",2
+3885,5,"['may', 'tpu']",2
+3886,5,"['may', 'dtype']",2
+3887,5,"['may', 'possibly', 'nested']",3
+3888,5,"['one', 'either']",2
+3889,5,"['one', 'length']",2
+3890,5,"['one', 'utf', 'utf']",3
+3891,5,"['one', 'encoded']",2
+3892,5,"['one', 'structure', 'elems']",3
+3893,5,"['one', 'tensor']",2
+3894,5,"['one', 'replace', 'replace', 'replacement_char']",4
+3895,5,"['one', 'otherwise']",2
+3896,5,"['either', 'one']",2
+3897,5,"['either', 'SOME_DTYPE', 'SOME_DTYPE', 'tensor']",4
+3898,5,"['either', 'SOME_DTYPE', 'column']",3
+3899,5,"['either', 'SOME_DTYPE', 'indicating']",3
+3900,5,"['either', 'SOME_DTYPE', 'indicating', 'SOME_STRUCTURE']",4
+3901,5,"['either', 'SOME_DTYPE', 'type', 'use']",4
+3902,5,"['either', 'SOME_STRUCTURE', 'tensor']",3
+3903,5,"['either', 'run_every_steps', 'must', 'set']",4
+3904,5,"['either', 'run_every_secs', 'must', 'set']",4
+3905,5,"['either', 'end']",2
+3906,5,"['arguments', 'computation']",2
+3907,5,"['equivalent', 'tf']",2
+3908,5,"['equivalent', 'shape']",2
+3909,5,"['nested', 'shapes']",2
+3910,5,"['nested', 'sequence', 'resulting', 'slices', 'fn']",5
+3911,5,"['nested', 'value']",2
+3912,5,"['structure', 'tensor', 'tf']",3
+3913,5,"['structure', 'structure', 'elems']",3
+3914,5,"['passing', 'SOME_DTYPE']",2
+3915,5,"['n', 'SOME_STRUCTURE', 'n', 'SOME_STRUCTURE', 'tensor']",5
+3916,5,"['n', 'SOME_STRUCTURE', 'n', 'tensor']",4
+3917,5,"['n', 'SOME_STRUCTURE', 'n', 'tensor', 'tensor']",5
+3918,5,"['n', 'SOME_STRUCTURE', 'tensor', 'tensor']",4
+3919,5,"['n', 'SOME_DTYPE', 'n']",3
+3920,5,"['n', 'tensor', 'type']",3
+3921,5,"['n', 'tensor', 'shape', 'in_channels']",4
+3922,5,"['n', 'm', 'm']",3
+3923,5,"['n', 'm', 'n']",3
+3924,5,"['n', 'dimensional', 'potentially', 'ragged', 'SOME_DTYPE', 'tensor', 'shape', 'd', 'dn']",9
+3925,5,"['n', 'd', 'dimensions']",3
+3926,5,"['n', 'num_labels', 'number', 'target', 'classes', 'associated', 'prediction']",7
+3927,5,"['n', 'k']",2
+3928,5,"['result', 'tensor']",2
+3929,5,"['single', 'dimension', 'tensor']",3
+3930,5,"['single', 'data']",2
+3931,5,"['single', 'd']",2
+3932,5,"['single', 'values']",2
+3933,5,"['single', 'feature']",2
+3934,5,"['need', 'tf']",2
+3935,5,"['tensorhape', 'SOME_STRUCTURE']",2
+3936,5,"['representing', 'tensor', 'SOME_STRUCTURE']",3
+3937,5,"['e', 'g', 'tf']",3
+3938,5,"['e', 'g', 'tensor']",3
+3939,5,"['e', 'g', 'layer']",3
+3940,5,"['e', 'none']",2
+3941,5,"['e', 'maximum']",2
+3942,5,"['e', 'output']",2
+3943,5,"['object', 'SOME_STRUCTURE']",2
+3944,5,"['object', 'function']",2
+3945,5,"['maximum', 'length']",2
+3946,5,"['size', 'spatial']",2
+3947,5,"['size', 'block']",2
+3948,5,"['size', 'num_classes']",2
+3949,5,"['matrix', 'matrix']",2
+3950,5,"['labels', 'num_classes']",2
+3951,5,"['labels', 'batch']",2
+3952,5,"['provided', 'otherwise']",2
+3953,5,"['using', 'default']",2
+3954,5,"['array', 'SOME_DTYPE']",2
+3955,5,"['array', 'dtype']",2
+3956,5,"['given', 'metric']",2
+3957,5,"['given', 'name']",2
+3958,5,"['following', 'start']",2
+3959,5,"['following', 'following', 'input']",3
+3960,5,"['lower', 'triangular']",2
+3961,5,"['upper', 'bound']",2
+3962,5,"['class', 'names']",2
+3963,5,"['class', 'one']",2
+3964,5,"['typically', 'size']",2
+3965,5,"['channels_last', 'steps']",2
+3966,5,"['channels_last', 'steps', 'channels_first']",3
+3967,5,"['ordering', 'dimensions', 'inputs', 'channels_last', 'corresponds', 'inputs', 'shape', 'batch', 'spatial_dim', 'spatial_dim', 'spatial_dim', 'channels', 'channels_first', 'corresponds', 'inputs', 'shape', 'batch', 'channels', 'spatial_dim', 'spatial_dim', 'spatial_dim']",21
+3968,5,"['instance', 'tf']",2
+3969,5,"['path', 'saved']",2
+3970,5,"['path', 'relative']",2
+3971,5,"['path', 'model']",2
+3972,5,"['directory', 'file', 'path', 'checkpoint']",4
+3973,5,"['offset', 'tensor']",2
+3974,5,"['image', 'size']",2
+3975,5,"['image', 'format']",2
+3976,5,"['case', 'shape']",2
+3977,5,"['false', 'elements']",2
+3978,5,"['false', 'batch_size']",2
+3979,5,"['false', 'file']",2
+3980,5,"['false', 'output']",2
+3981,5,"['batch_size', 'x']",2
+3982,5,"['batch_size', 'tensor']",2
+3983,5,"['channels', 'image']",2
+3984,5,"['normalized', 'value']",2
+3985,5,"['first', 'elements']",2
+3986,5,"['first', 'must']",2
+3987,5,"['first', 'used']",2
+3988,5,"['first', 'argument']",2
+3989,5,"['nhwc', 'data', 'batch', 'in_channels']",4
+3990,5,"['nhwc', 'format']",2
+3991,5,"['small', 'SOME_DTYPE', 'avoid', 'dividing']",4
+3992,5,"['training', 'step']",2
+3993,5,"['tensorflow', 'type']",2
+3994,5,"['tensorflow', 'SOME_DTYPE']",2
+3995,5,"['tensorflow', 'tensorflow']",2
+3996,5,"['required', 'input']",2
+3997,5,"['treated', 'matrix']",2
+3998,5,"['rows', 'tensor']",2
+3999,5,"['index', 'axis', 'columns', 'input']",4
+4000,5,"['index', 'axis', 'rows', 'input']",4
+4001,5,"['dataset', 'batch']",2
+4002,5,"['dataset', 'tensor']",2
+4003,5,"['dataset', 'data']",2
+4004,5,"['whether', 'target']",2
+4005,5,"['whether', 'order']",2
+4006,5,"['whether', 'enabled']",2
+4007,5,"['whether', 'loop']",2
+4008,5,"['whether', 'convert']",2
+4009,5,"['whether', 'functions']",2
+4010,5,"['whether', 'result']",2
+4011,5,"['otherwise', 'axis']",2
+4012,5,"['otherwise', 'random']",2
+4013,5,"['invalid', 'formatting']",2
+4014,5,"['label', 'example']",2
+4015,5,"['expected', 'input']",2
+4016,5,"['specifying', 'stride', 'value', '!', 'incompatible', 'specifying', 'dilation_rate', 'value', '!']",9
+4017,5,"['specifying', 'input']",2
+4018,5,"['read', 'records']",2
+4019,5,"['results', 'input']",2
+4020,5,"['recommended', 'value', 'number']",3
+4021,5,"['specifies', 'input', 'spatial']",3
+4022,5,"['specifies', 'SOME_DTYPE']",2
+4023,5,"['specifies', 'tensor']",2
+4024,5,"['specifies', 'response']",2
+4025,5,"['argument', 'corresponding']",2
+4026,5,"['argument', 'returns', 'tensor']",3
+4027,5,"['argument', 'tf']",2
+4028,5,"['time', 'time']",2
+4029,5,"['seed', 'set']",2
+4030,5,"['seed', 'elements']",2
+4031,5,"['seed', 'used']",2
+4032,5,"['regular', 'SOME_DTYPE']",2
+4033,5,"['possibly', 'nested', 'objects']",3
+4034,5,"['possibly', 'nested', 'structure']",3
+4035,5,"['axis', 'must']",2
+4036,5,"['axis', 'vector', 'values']",3
+4037,5,"['axis', 'normalized']",2
+4038,5,"['layer', 'layer']",2
+4039,5,"['level', 'random', 'seed']",3
+4040,5,"['last', 'dimension', 'tensor']",3
+4041,5,"['new', 'tensor']",2
+4042,5,"['new', 'created']",2
+4043,5,"['match', 'SOME_DTYPE']",2
+4044,5,"['match', 'tensor']",2
+4045,5,"['padding', 'paddings']",2
+4046,5,"['algorithm', 'SOME_STRUCTURE']",2
+4047,5,"['convolution', 'height']",2
+4048,5,"['convolution', 'width']",2
+4049,5,"['checkpoint', 'checkpoint']",2
+4050,5,"['applied', 'tensor']",2
+4051,5,"['takes', 'argument', 'returns']",3
+4052,5,"['please', 'see', 'details']",3
+4053,5,"['created', 'categorical_column_with_']",2
+4054,5,"['created', 'function']",2
+4055,5,"['ground', 'truth', 'output', 'tensor', 'predictions']",5
+4056,5,"['predicted', 'outputs']",2
+4057,5,"['outputs', 'tensor']",2
+4058,5,"['minimum', 'input']",2
+4059,5,"['sum', 'sum']",2
+4060,5,"['backwards', 'compatibility']",2
+4061,5,"['start', 'batch']",2
+4062,5,"['logits', 'tensor']",2
+4063,5,"['scale', 'normalized']",2
+4064,5,"['scale', 'gamma']",2
+4065,5,"['activation', 'applied']",2
+4066,5,"['activation', 'x']",2
+4067,5,"['linear', 'activation']",2
+4068,5,"['regularizer', 'function', 'applied', 'kernel', 'matrix']",5
+4069,5,"['regularizer', 'function', 'output']",3
+4070,5,"['regularizer', 'bias', 'vector']",3
+4071,5,"['constraint', 'function', 'applied', 'kernel', 'matrix']",5
+4072,5,"['vector', 'tensor', 'shape']",3
+4073,5,"['vector', 'e']",2
+4074,5,"['vector', 'containing']",2
+4075,5,"['vector', 'd', 'batch']",3
+4076,5,"['initializer', 'bias', 'vector']",3
+4077,5,"['initializer', 'kernel', 'matrix']",3
+4078,5,"['never', 'value']",2
+4079,5,"['rate', 'inserting', 'zeros']",3
+4080,5,"['rate', 'zeros']",2
+4081,5,"['rate', 'input']",2
+4082,5,"['currently', 'specifying', 'dilation_rate', 'value', '!', 'incompatible', 'specifying', 'value', '!']",9
+4083,5,"['currently', 'mean', 'sqrtn', 'sum', 'supported', 'mean', 'default']",7
+4084,5,"['currently', 'div', 'mod', 'supported']",4
+4085,5,"['dilation_rate', 'strides']",2
+4086,5,"['kernel', 'tensor']",2
+4087,5,"['strides', 'SOME_STRUCTURE']",2
+4088,5,"['supplied', 'resulting', 'SOME_STRUCTURE', 'filtered', 'include', 'items', 'whose', 'name', 'attribute', 'matches', 'scope', 'using', 're', 'match']",14
+4089,5,"['means', 'negative']",2
+4090,5,"['means', 'stores']",2
+4091,5,"['means', 'labels']",2
+4092,5,"['except', 'dimension']",2
+4093,5,"['passed', 'operation']",2
+4094,5,"['alias', 'value']",2
+4095,5,"['diagonal', 'band']",2
+4096,5,"['points', 'outside', 'boundaries', 'input', 'filled', 'according', 'given', 'mode', 'one', 'constant', 'nearest', 'reflect', 'wrap']",13
+4097,5,"['constant', 'value']",2
+4098,5,"['numpy', 'numpy']",2
+4099,5,"['defined', 'axis']",2
+4100,5,"['defined', 'SOME_STRUCTURE']",2
+4101,5,"['defined', 'SOME_DTYPE', 'tensor']",3
+4102,5,"['parameter', 'may']",2
+4103,5,"['determines', 'output']",2
+4104,5,"['entry', 'range']",2
+4105,5,"['zeros', 'across', 'dimensions']",3
+4106,5,"['alternatively', 'format', 'could', 'nchw', 'data', 'storage', 'order', 'batch', 'channels', 'height', 'width']",11
+4107,5,"['m', 'n', 'm']",3
+4108,5,"['m', 'input', 'dimension']",3
+4109,5,"['back', 'propagation']",2
+4110,5,"['global', 'value']",2
+4111,5,"['initial', 'accumulator']",2
+4112,5,"['initial', 'value']",2
+4113,5,"['least', 'one']",2
+4114,5,"['least', 'tensor']",2
+4115,5,"['summary', 'tag', 'used', 'tensorboard', 'name', 'prefixed', 'active', 'name', 'scopes']",9
+4116,5,"['stop', 'value']",2
+4117,5,"['samples', 'tensor']",2
+4118,5,"['samples', 'step']",2
+4119,5,"['bilinear', 'nearest']",2
+4120,5,"['cases', 'tensor']",2
+4121,5,"['byte', 'bytes']",2
+4122,5,"['utf', '_char', 'SOME_DTYPE']",3
+4123,5,"['unit', 'SOME_DTYPE']",2
+4124,5,"['unicode', 'code', 'points']",3
+4125,5,"['unicode', 'encoding', 'used']",3
+4126,5,"['shapes', 'SOME_DTYPE']",2
+4127,5,"['latter', 'must', 'broadcastable', 'labels', 'e', 'dimensions', 'must', 'either', 'corresponding', 'labels', 'dimension']",11
+4128,5,"['args', 'kwargs']",2
+4129,5,"['bounding', 'boxes']",2
+4130,5,"['conversion', 'function']",2
+4131,5,"['warm', 'start']",2
+4132,5,"['encoding', 'SOME_DTYPE']",2
+4133,5,"['paddings', 'input']",2
+4134,5,"['dn', 'num_labels', 'd']",3
+4135,5,"['dn', 'latter', 'implies', 'num_labels']",4
+4136,5,"['dn', 'must', 'match', 'predictions']",4
+4137,5,"['dn', 'must', 'match', 'labels']",4
+4138,5,"['commonly', 'n', 'labels', 'shape', 'batch_size', 'num_labels']",6
+4139,5,"['commonly', 'n', 'predictions', 'shape', 'batch', 'size']",6
+4140,5,"['final', 'dimension', 'contains', 'class']",4
+4141,5,"['union', 'SOME_STRUCTURE', 'text', 'none', 'default', 'value', 'flag', 'see', 'define_multi']",9
+4142,5,"['replace', 'c', 'control', 'characters']",4
+4143,5,"['crop_height', 'crop_width']",2
+4144,5,"['u', 'u']",2
+4145,5,"['gradients', 'w']",2
+4146,5,"['replacement', 'character']",2
+4147,5,"['time_major', 'true']",2
+4148,5,"['accepts', 'returns', 'SOME_STRUCTURE']",3
+4149,5,"['cell', 'tensor', 'cell', 'state_size']",4
+4150,5,"['cell', 'tensor', 'batch_size']",3
+4151,5,"['block_shape', 'input_shape']",2
+4152,5,"['block_shape', 'block_shape']",2
+4153,5,"['composite', 'tensor']",2
+4154,5,"['composite', 'tensor', 'expanded']",3
+4155,5,"['strict', 'raise', 'exception']",3
+4156,5,"['strict', 'replace', 'ignore']",3
+4157,5,"['far', 'two', 'consecutive']",3

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"String, 'pre' or 'post':     pad either before or after each sequence.",pre,prim_dtype,dtype(tf.string),,1
+,"String, 'pre' or 'post':     pad either before or after each sequence.",pre,shape,ndim(0),,1
+,"String, 'pre' or 'post':     pad either before or after each sequence.",pre,validvalue,"enum(post, pre)",,1

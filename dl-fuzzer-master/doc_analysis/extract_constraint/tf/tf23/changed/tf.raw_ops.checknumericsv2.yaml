@@ -1,0 +1,32 @@
+constraints:
+  message:
+    descp: A string. Prefix of the error message.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - message
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CheckNumericsV2
+outputs:
+- A Tensor. Has the same type as tensor.
+package: tensorflow
+target: CheckNumericsV2
+title: tf.raw_ops.CheckNumericsV2
+version: 2.3.0

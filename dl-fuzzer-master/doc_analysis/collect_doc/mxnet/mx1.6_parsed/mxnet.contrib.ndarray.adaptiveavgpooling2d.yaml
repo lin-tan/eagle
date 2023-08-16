@@ -1,0 +1,37 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: Input data
+    doc_dtype:
+    - NDArray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  output_size:
+    default: _Null
+    descp: int (output size) or a tuple of int for output (height, width).
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+inputs:
+  optional:
+  - data
+  - output_size
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.AdaptiveAvgPooling2D
+package: mxnet
+target: AdaptiveAvgPooling2D
+title: mxnet.contrib.ndarray.AdaptiveAvgPooling2D
+version: 1.6.0

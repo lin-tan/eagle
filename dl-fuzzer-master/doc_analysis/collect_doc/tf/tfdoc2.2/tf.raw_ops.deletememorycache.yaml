@@ -1,0 +1,21 @@
+constraints:
+  deleter:
+    descp: A Tensor of type variant.
+  handle:
+    descp: A Tensor of type resource.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - deleter
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DeleteMemoryCache
+outputs:
+- The created Operation.
+package: tensorflow
+target: DeleteMemoryCache
+title: tf.raw_ops.DeleteMemoryCache
+version: 2.2.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+dict of str->str,dictionary of mapping argument name to stype for the gradient,None,prim_dtype,"dtype(numpy.dtype, string)",,1
+dict of str->str,dictionary of mapping argument name to stype for the gradient,None,nonprim_dtype,structure(dict(string:string)),,1
+dict of str->str,dictionary of mapping argument name to stype for the gradient,None,shape,ndim(0),,1

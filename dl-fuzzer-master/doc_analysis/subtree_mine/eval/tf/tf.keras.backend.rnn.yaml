@@ -1,0 +1,7 @@
+constraints:
+  constants:
+    default: None
+    descp: List of constant values passed at each step.
+    structure:
+    - list
+title: tf.keras.backend.rnn

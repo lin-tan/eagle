@@ -1,0 +1,19 @@
+constraints:
+  device:
+    default: None
+    descp: selected device. Returns statistics for the current device, given by `current_device()`,
+      if `device` is `None` (default).
+    doc_dtype:
+    - torch.device
+    - int
+    sig_dtype: Union[torch.device,str,None,int]
+inputs:
+  optional:
+  - device
+  required: []
+link: https://pytorch.org/docs/1.6.0/cuda.html#torch.cuda.memory_stats
+package: torch
+ret_type: Dict[str, Any]
+target: memory_stats
+title: torch.cuda.memory_stats
+version: 1.6.0

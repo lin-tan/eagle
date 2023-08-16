@@ -1,0 +1,18 @@
+constraints:
+  hue:
+    default: _Null
+    descp: How much to jitter hue.
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.image.random_color_jitter

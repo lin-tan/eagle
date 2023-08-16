@@ -1,0 +1,116 @@
+
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: shape
+
+split_word:  # use when parse shape var
+    - ' '
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '...'
+    - '/'
+
+pat: 
+    'of\s+shape\s+\((.*?)\)':
+        replace: 
+            '\s_': '_'
+            'times': ','
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    'of\s+shape\s+\(.*?\)\s*\(.*?\)\s+or\s+\((.*?)\)\s*\(.*?\)':
+        replace: 
+            '\s_': '_'
+            'times': ','
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+        
+
+    'of\s+size\s+`*\((.*?)\)`*':
+        replace:
+            '\*': '...'
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+        ndim_prefix: '>='
+
+
+    'same\s+(shape|size)\s+as\s+([\w]+)':
+        group: 2
+        dependent: True
+
+    'of\s+size\s+matching\s+(\w+)':
+        group: 1
+        dependent: True
+
+    'has\s+to\s+match\s+(\w+)\s+size':
+        group: 1
+        dependent: True
+
+    
+    
+    'input\s+tensor\s+of\s+shape\s+(([\w]+\s+times\s+)+[\w]+)':
+        replace: 
+            'times': ','
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    # (N  times 2  times 3 )
+    '(\(|or )(([\w]+\s+times\s+)+[\w]+)':
+        replace: 
+            'times': ','
+        group: 2
+        keep_var: True
+        keep_nonvar: True
+
+    'tensor\s*\(([\w,\s]+)\)':
+        replace: 
+            '\s_': '_'
+            'times': ','
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+    # start of the sentence or not following any letters, counterexample: min(m,n)
+    # (n, c)  where C = number of classes or (n, c, h, w)  in case of 2D Loss,
+    '(^|[^a-z])\((([a-z],\s+)+[a-z])\)':
+        group: 2
+        keep_var: True
+        keep_nonvar: True
+    
+    # or (N, C, d_1, d_2, ..., d_K) where K >= 1 in the case of K-dimensional loss.
+    '\((([a-z],\s+)+d_1,\s+d_2,\s+\.\.\.,\s+d_k)\)':
+        replace:
+            'd_1,\s+d_2,\s+\.\.\.,\s+d_k': '...'
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+       
+
+    '\(([a-z])\)':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+
+
+
+
+
+        
+
+
+

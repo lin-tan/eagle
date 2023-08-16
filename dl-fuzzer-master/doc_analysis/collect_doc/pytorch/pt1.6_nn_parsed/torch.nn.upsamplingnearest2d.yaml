@@ -1,0 +1,27 @@
+constraints:
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size.
+    doc_dtype:
+    - float
+    - Tuple[float
+    - float]
+    sig_dtype: Optional[Union[T,Tuple[T,T]]]
+  size:
+    default: None
+    descp: output spatial sizes
+    doc_dtype:
+    - int
+    - Tuple[int
+    - int]
+    sig_dtype: Optional[Union[T,Tuple[T,T]]]
+inputs:
+  optional:
+  - size
+  - scale_factor
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.UpsamplingNearest2d.html#torch.nn.UpsamplingNearest2d#torch.nn.UpsamplingNearest2d
+package: torch
+target: UpsamplingNearest2d
+title: torch.nn.UpsamplingNearest2d
+version: 1.6.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"if `grad_outputs` is `None` and `gen_non_contig_grad_outputs` is `True`, the randomly generated gradient outputs are made to be noncontiguous",False,prim_dtype,dtype(torch.bool),,1
+bool,"if `grad_outputs` is `None` and `gen_non_contig_grad_outputs` is `True`, the randomly generated gradient outputs are made to be noncontiguous",False,shape,ndim(0),,1

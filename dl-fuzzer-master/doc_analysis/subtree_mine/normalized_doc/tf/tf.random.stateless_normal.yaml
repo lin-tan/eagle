@@ -1,0 +1,54 @@
+aliases:
+- tf.compat.v1.random.stateless_normal
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: The type of the output.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The type of the output
+  mean:
+    default: '0.0'
+    descp: A 0-D Tensor or Python value of type `dtype`. The mean of the normal distribution.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A CONSTANT_NUM-D D_STRUCTURE or Python value of type PARAM
+    - The mean of the normal distribution
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  seed:
+    descp: A shape [2] integer Tensor of seeds to the random number generator.
+    normalized_descp:
+    - A PARAM BSTR D_TYPE D_STRUCTURE of seeds to the random number generator
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+    normalized_descp:
+    - A CONSTANT_NUM-D D_TYPE D_STRUCTURE or Python D_STRUCTURE
+    - The shape of the output D_STRUCTURE
+  stddev:
+    default: '1.0'
+    descp: A 0-D Tensor or Python value of type `dtype`. The standard deviation of
+      the normal distribution.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A CONSTANT_NUM-D D_STRUCTURE or Python value of type PARAM
+    - The standard deviation of the normal distribution
+inputs:
+  optional:
+  - mean
+  - stddev
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/random/stateless_normal
+outputs: A tensor of the specified shape filled with random normal values.
+package: tensorflow
+target: stateless_normal
+title: tf.random.stateless_normal
+version: 2.1.0

@@ -1,0 +1,61 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: when True, will use ceil instead of floor to compute the output shape
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  dilation:
+    default: '1'
+    descp: a parameter that controls the stride of elements in the window
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,100]'
+  kernel_size:
+    dtype:
+      - int
+    ndim:
+      - '0'
+      - '1'
+    range:
+      - '[0,100]'
+    shape:
+      - '[2]'
+    structure:
+      - list(int)
+      - tuple(int)
+  padding:
+    default: '0'
+    descp: implicit zero padding to be added on both sides
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,100]'
+  return_indices:
+    default: 'False'
+    descp: if `True`, will return the max indices along with the outputs. Useful for
+      `torch.nn.MaxUnpool2d` later
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    - '2'
+inputs:
+  optional:
+  - padding
+  - dilation
+  - return_indices
+  - ceil_mode
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.MaxPool2d
+package: torch
+target: MaxPool2d
+title: torch.nn.MaxPool2d
+version: 1.6.0

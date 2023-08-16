@@ -1,0 +1,43 @@
+constraints:
+  labels:
+    default: None
+    descp: array, optional, default None Contains all the labels for the problem.
+      Used in multiclass hinge loss.
+  pred_decision:
+    descp: array, shape = [n_samples] or [n_samples, n_classes] Predicted decisions,
+      as output by decision_function (floats).
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[floats]'
+    - '[n_samples,n_classes]'
+    - '[n_samples]'
+    structure:
+    - ndarray
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,]'
+    structure:
+    - ndarray
+  y_true:
+    descp: array, shape = [n_samples] True target, consisting of integers of two values.
+      The positive label must be greater than the negative label.
+    dtype:
+    - int
+inputs:
+  optional:
+  - labels
+  - sample_weight
+  required:
+  - y_true
+  - pred_decision
+link: ''
+package: sklearn
+target: hinge_loss
+title: sklearn.metrics.hinge_loss
+version: 0.24.2

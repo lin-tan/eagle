@@ -1,0 +1,24 @@
+constraints:
+  dims:
+    descp: A Tensor. Must have the same type as indices. An 1-D int Tensor. The shape
+      of the array to use for unraveling indices.
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. An 0-D or
+      1-D int Tensor whose elements are indices into the flattened version of an array
+      of dimensions dims.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - dims
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/UnravelIndex
+outputs:
+- A Tensor. Has the same type as indices.
+package: tensorflow
+target: UnravelIndex
+title: tf.raw_ops.UnravelIndex
+version: 2.3.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"the size of the window to take a max over. Can be a single number k (for a square kernel of k x k) or a tuple (kh, kw)",,prim_dtype,dtype(int),,1
+,"the size of the window to take a max over. Can be a single number k (for a square kernel of k x k) or a tuple (kh, kw)",,nonprim_dtype,"structure(tuple:(kh,kw))",,1
+,"the size of the window to take a max over. Can be a single number k (for a square kernel of k x k) or a tuple (kh, kw)",,shape,"shape([2]), ndim(0, 1)",,1
+,"the size of the window to take a max over. Can be a single number k (for a square kernel of k x k) or a tuple (kh, kw)",,validvalue,"range([0,inf))",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"bool.  If True, size of `selected_indices` output is padded to `max_output_size`.",False,prim_dtype,dtype(tf.bool),,1
+,"bool.  If True, size of `selected_indices` output is padded to `max_output_size`.",False,shape,ndim(0),,1
+,"bool.  If True, size of `selected_indices` output is padded to `max_output_size`.",False,validvalue,"range([0,inf))",,1

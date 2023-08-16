@@ -1,0 +1,60 @@
+constraints:
+  dirname:
+    default: None
+    descp: output directory name. If None, then guess from fname or use the current
+      directory
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output directory name
+    - If None, then guess from PARAM or use the current directory
+    normalized_docdtype: D_TYPE, optional
+  fname:
+    default: None
+    descp: filename of the downloaded file. If None, then will guess a filename from
+      url.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - filename of the downloaded file
+    - If None, then will guess a filename from PARAM
+    normalized_docdtype: D_TYPE, optional
+  overwrite:
+    default: 'False'
+    descp: Default is false, which means skipping download if the local file exists.
+      If true, then download the url to overwrite the local file if exists.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Default is CONSTANT_BOOL, which means skipping download if the local file exists
+    - If CONSTANT_BOOL, then download the PARAM to overwrite the local file if exists
+    normalized_docdtype: D_TYPE, optional
+  retries:
+    default: '5'
+    descp: The number of times to attempt the download in case of failure or non 200
+      return codes
+    doc_dtype: integer, default 5
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The number of times to attempt the download in case of failure or non CONSTANT_NUM
+      return codes
+    normalized_docdtype: D_TYPE, default CONSTANT_NUM
+  url:
+    descp: URL to download
+    doc_dtype: str
+    normalized_descp:
+    - URL to download
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - fname
+  - dirname
+  - overwrite
+  - retries
+  required:
+  - url
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.download
+package: mxnet
+target: download
+title: mxnet.test_utils.download
+version: 1.6.0

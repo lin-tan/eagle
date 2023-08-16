@@ -1,0 +1,63 @@
+constraints:
+  check_hash:
+    default: 'False'
+    descp: 'If True, the filename part of the URL should follow the naming convention
+      `filename-<sha256>.ext` where `<sha256>` is the first eight or more digits of
+      the SHA256 hash of the contents of the file. The hash is used to ensure unique
+      names and to verify the contents of the file. Default: False'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  file_name:
+    default: None
+    descp: name for the downloaded file. Filename from url will be used if not set.
+    doc_dtype:
+    - string
+    dtype:
+    - string
+  map_location:
+    default: None
+    descp: a function or a dict specifying how to remap storage locations (see torch.load)
+    dtype:
+    - callable
+    structure:
+    - dictionary
+  model_dir:
+    default: None
+    descp: directory in which to save the object
+    doc_dtype:
+    - string
+    dtype:
+    - string
+  progress:
+    default: 'True'
+    descp: 'whether or not to display a progress bar to stderr. Default: True'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  url:
+    descp: URL of the object to download
+    doc_dtype:
+    - string
+    dtype:
+    - string
+inputs:
+  optional:
+  - model_dir
+  - map_location
+  - progress
+  - check_hash
+  - file_name
+  required:
+  - url
+link: https://pytorch.org/docs/1.7.0/hub.html#torch.hub.load_state_dict_from_url
+package: torch
+target: load_state_dict_from_url
+title: torch.hub.load_state_dict_from_url
+version: 1.7.0

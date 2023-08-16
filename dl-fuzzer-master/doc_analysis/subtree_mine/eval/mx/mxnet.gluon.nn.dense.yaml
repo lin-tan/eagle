@@ -1,0 +1,12 @@
+constraints:
+  use_bias:
+    default: 'True'
+    descp: Whether the layer uses a bias vector.
+    doc_dtype:
+    - bool
+    - default True
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.gluon.nn.Dense

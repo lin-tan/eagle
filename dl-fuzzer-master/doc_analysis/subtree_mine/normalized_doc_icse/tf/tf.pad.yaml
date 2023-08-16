@@ -1,0 +1,44 @@
+constraints:
+  constant_values:
+    default: '0'
+    descp: In "CONSTANT" mode, the scalar pad value to use. Must be same type as `tensor`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - In QSTR PARAM the scalar pad value to use
+    - Must be same type as D_STRUCTURE
+  mode:
+    default: CONSTANT
+    descp: One of "CONSTANT", "REFLECT", or "SYMMETRIC" (case-insensitive)
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - One of QSTR BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  paddings:
+    descp: A `Tensor` of type `int32`.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+  tensor:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+exceptions:
+- ValueError: When mode is not one of "CONSTANT", "REFLECT", or "SYMMETRIC".
+inputs:
+  optional:
+  - mode
+  - constant_values
+  - name
+  required:
+  - tensor
+  - paddings
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/pad
+outputs: A `Tensor`. Has the same type as `tensor`.
+package: tensorflow
+target: pad
+title: tf.pad
+version: 2.1.0

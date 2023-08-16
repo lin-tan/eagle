@@ -1,0 +1,53 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether this op should be an async op
+    normalized_docdtype: D_TYPE, optional
+  dst:
+    default: '0'
+    descp: Destination rank (default is 0)
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Destination rank BSTR
+    normalized_docdtype: D_TYPE, optional
+  gather_list:
+    default: None
+    descp: List of appropriately-sized tensors to use for gathered data (default is
+      None, must be specified on the destination rank)
+    doc_dtype: list[Tensor], optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of appropriately sized D_STRUCTURE to use for gathered data BSTR
+    normalized_docdtype: D_STRUCTURE BSTR, optional
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup, optional
+  tensor:
+    descp: Input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - gather_list
+  - dst
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.gather
+package: torch
+target: gather
+title: torch.distributed.gather
+version: 1.5.0

@@ -1,0 +1,35 @@
+constraints:
+  angle_limits:
+    descp: Tuple of 2 elements containing the upper and lower limit for rotation angles
+      in degree.
+    doc_dtype:
+    - tuple
+  src:
+    descp: Input image (format CHW) or batch of images (format NCHW), in both case
+      is required a float32 data type.
+    doc_dtype:
+    - NDArray
+  zoom_in:
+    default: 'False'
+    descp: If True input image(s) will be zoomed in a way so that no padding will
+      be shown in the output result.
+    doc_dtype:
+    - bool
+  zoom_out:
+    default: 'False'
+    descp: If True input image(s) will be zoomed in a way so that the whole original
+      image will be contained in the output result.
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - zoom_in
+  - zoom_out
+  required:
+  - src
+  - angle_limits
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/image/index.html#mxnet.image.random_rotate
+package: mxnet
+target: random_rotate
+title: mxnet.image.random_rotate
+version: 1.7.0

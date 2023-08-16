@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Optional input batch size (integer or None).,None,prim_dtype,dtype(numeric),,1
+,Optional input batch size (integer or None).,None,validvalue,"range([0,inf))",,1

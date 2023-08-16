@@ -1,0 +1,23 @@
+tf.float16: np.float16
+tf.float32: np.float32
+tf.float64: np.float64
+tf.bfloat16:
+tf.complex64: np.complex64
+tf.complex128: np.complex128
+tf.int8: np.int8
+tf.uint8: np.uint8
+tf.uint16: np.uint16
+tf.uint32: np.uint32
+tf.uint64: np.uint64
+tf.int16: np.int16
+tf.int32: np.int32
+tf.int64: np.int64
+tf.bool: np.bool
+tf.string: str
+tf.qint8:
+tf.quint8:
+tf.qint16:
+tf.quint16:
+tf.qint32:
+tf.resource:
+tf.variant:

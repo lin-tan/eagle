@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Target shape. Tuple of integers, does not include the samples dimension (batch size).",,prim_dtype,dtype(int),,1
+,"Target shape. Tuple of integers, does not include the samples dimension (batch size).",,nonprim_dtype,structure(tuple(int)),,1
+,"Target shape. Tuple of integers, does not include the samples dimension (batch size).",,shape,ndim(1),,1
+,"Target shape. Tuple of integers, does not include the samples dimension (batch size).",,validvalue,"range([0,inf))",,1

@@ -1,0 +1,140 @@
+aliases:
+- tf.import_graph_def
+- tf.compat.v1.graph_util.import_graph_def
+- tf.compat.v1.import_graph_def
+constraints:
+  graph_def:
+    descp: A `GraphDef` proto containing operations to be imported into the default
+      graph.
+  input_map:
+    default: None
+    descp: A dictionary mapping input names (as strings) in `graph_def`to `Tensor`
+      objects. The values of the named input tensors in the imported graph will be
+      re-mapped to the respective `Tensor` values.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (as_strings)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    structure:
+    - dict
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: (Optional.) A prefix that will be prepended to the names in`graph_def`.
+      Note that this does not apply to imported function names. Defaults to `"import"`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+  op_dict:
+    default: None
+    descp: (Optional.) Deprecated, do not use.
+  producer_op_list:
+    default: None
+    descp: (Optional.) An `OpList` proto with the (possibly stripped) list of `OpDef`s
+      used by the producer of the graph. If provided, unrecognized attrs for ops in
+      `graph_def` that have their default value according to `producer_op_list` will
+      be removed. This will allow some more`GraphDef`s produced by later binaries
+      to be accepted by earlier binaries.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - OpDef
+    - OpList
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - opdef
+    - oplist
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    - '[opdef,opdef]'
+    - '[opdef]'
+    - '[oplist,oplist]'
+    - '[oplist]'
+    structure:
+    - list
+  return_elements:
+    default: None
+    descp: A list of strings containing operation names in`graph_def` that will be
+      returned as `Operation` objects; and/or tensor names in `graph_def` that will
+      be returned as `Tensor` objects.
+    dtype:
+    - '&graph_def'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - Operation
+    ndim:
+    - '&graph_def'
+    - '0'
+    - '1'
+    - '2'
+    - operation
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&graph_def'
+    - '[1]'
+    - '[n]'
+    - '[operation,operation]'
+    - '[operation]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: If `graph_def` is not a `GraphDef` proto,`input_map` is not a dictionary
+    mapping strings to `Tensor` objects, or `return_elements` is not a list of strings.
+- ValueError: If `input_map`, or `return_elements` contains names that do not appear
+    in `graph_def`, or `graph_def` is not well-formed (e.g. it refers to an unknown
+    tensor).
+inputs:
+  deprecated:
+  - op_dict
+  optional:
+  - input_map
+  - return_elements
+  - name
+  - op_dict
+  - producer_op_list
+  required:
+  - graph_def
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/graph_util/import_graph_def
+outputs: A list of `Operation` and/or `Tensor` objects from the imported graph, corresponding
+  to the names in `return_elements`, and None if `returns_elements` is None.
+package: tensorflow
+target: import_graph_def
+title: tf.graph_util.import_graph_def
+version: 2.1.0

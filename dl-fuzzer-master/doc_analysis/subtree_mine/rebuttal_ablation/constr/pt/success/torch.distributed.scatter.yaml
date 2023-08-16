@@ -1,0 +1,79 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+  scatter_list:
+    default: None
+    descp: List of tensors to scatter (default is None, must be specified on the source
+      rank)
+    doc_dtype: list[Tensor]
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[&tensor]'
+    - '[1]'
+    - '[b,p,m]'
+    - '[c]'
+    - '[list]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+  src:
+    default: '0'
+    descp: Source rank (default is 0)
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  tensor:
+    descp: Output tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - scatter_list
+  - src
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.scatter
+package: torch
+target: scatter
+title: torch.distributed.scatter
+version: 1.5.0

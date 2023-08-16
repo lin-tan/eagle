@@ -1,0 +1,33 @@
+constraints:
+  chunks:
+    descp: number of chunks to return
+    doc_dtype: int
+    normalized_descp:
+    - number of chunks to return
+    normalized_docdtype: ONE_WORD D_TYPE
+  dim:
+    default: '0'
+    descp: dimension along which to split the tensor
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension along which to split the D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the tensor to split
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to split
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+  - chunks
+link: https://pytorch.org/docs/stable/torch.html#torch.chunk
+package: torch
+ret_type: List of Tensors
+target: chunk
+title: torch.chunk
+version: 1.5.0

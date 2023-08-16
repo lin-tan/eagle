@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 3-D float `Tensor` of shape `[batch_size, num_boxes, num_classes]`representing a single score corresponding to each box (each row of boxes).",,prim_dtype,dtype(float),,1
+,"A 3-D float `Tensor` of shape `[batch_size, num_boxes, num_classes]`representing a single score corresponding to each box (each row of boxes).",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 3-D float `Tensor` of shape `[batch_size, num_boxes, num_classes]`representing a single score corresponding to each box (each row of boxes).",,shape,"shape([batch_size,num_boxes,num_classes]), ndim(3)",,1

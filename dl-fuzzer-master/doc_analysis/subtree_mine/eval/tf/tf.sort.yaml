@@ -1,0 +1,12 @@
+constraints:
+  direction:
+    default: ASCENDING
+    descp: The direction in which to sort the values (`'ASCENDING'` or`'DESCENDING'`).
+    enum:
+    - ASCENDING
+    - DESCENDING
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.sort

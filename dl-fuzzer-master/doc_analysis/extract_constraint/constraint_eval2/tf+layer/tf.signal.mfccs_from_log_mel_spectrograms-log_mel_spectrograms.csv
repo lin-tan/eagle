@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `[..., num_mel_bins]` `float32`/`float64` `Tensor`of log-magnitude mel-scale spectrograms.",,prim_dtype,"dtype(tf.float32, tf.float64)",,1
+,"A `[..., num_mel_bins]` `float32`/`float64` `Tensor`of log-magnitude mel-scale spectrograms.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `[..., num_mel_bins]` `float32`/`float64` `Tensor`of log-magnitude mel-scale spectrograms.",,shape,"shape([...,num_mel_bins]), ndim(>1)",,1

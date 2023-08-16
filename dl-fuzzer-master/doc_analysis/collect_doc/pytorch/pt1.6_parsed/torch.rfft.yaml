@@ -1,0 +1,34 @@
+constraints:
+  input:
+    descp: the input tensor of at least `signal_ndim` dimensions
+    doc_dtype:
+    - Tensor
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return normalized results. Default: `False`'
+    doc_dtype:
+    - bool
+  onesided:
+    default: 'True'
+    descp: 'controls whether to return half of results to avoid redundancy. Default:
+      `True`'
+    doc_dtype:
+    - bool
+  signal_ndim:
+    descp: the number of dimensions in each signal. `signal_ndim` can only be 1, 2
+      or 3
+    doc_dtype:
+    - int
+inputs:
+  optional:
+  - normalized
+  - onesided
+  required:
+  - input
+  - signal_ndim
+link: https://pytorch.org/docs/1.6.0/generated/torch.rfft.html#torch.rfft#torch.rfft
+package: torch
+ret_type: Tensor
+target: rfft
+title: torch.rfft
+version: 1.6.0

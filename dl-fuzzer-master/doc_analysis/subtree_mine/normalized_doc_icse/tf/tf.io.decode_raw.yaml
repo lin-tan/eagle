@@ -1,0 +1,51 @@
+constraints:
+  fixed_length:
+    default: None
+    descp: If set, the first `fixed_length` bytes of each element will be converted.
+      Data will be zero-padded or truncated to the specified length.`fixed_length`
+      must be a multiple of the size of `out_type`.`fixed_length` must be specified
+      if the elements of `input_bytes` are of variable length.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If set the first QSTR bytes of each element will be converted
+    - Data will be zero padded or truncated to the specified length QSTR must be a
+      multiple of the size of PARAM QSTR must be specified if the elements of PARAM
+      are of variable length
+  input_bytes:
+    descp: Each element of the input Tensor is converted to an array of bytes.
+    normalized_descp:
+    - Each element of the input D_STRUCTURE is converted to an D_STRUCTURE of bytes
+  little_endian:
+    default: 'True'
+    descp: Whether the `input_bytes` data is in little-endian format. Data will be
+      converted into host byte order if necessary.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether the PARAM data is in little endian format
+    - Data will be converted into host byte order if necessary
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  out_type:
+    descp: '`DType` of the output. Acceptable types are `half`, `float`, `double`,`int32`,
+      `uint16`, `uint8`, `int16`, `int8`, `int64`.'
+    normalized_descp:
+    - QSTR of the output
+    - Acceptable types are D_TYPE
+inputs:
+  optional:
+  - little_endian
+  - fixed_length
+  - name
+  required:
+  - input_bytes
+  - out_type
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/decode_raw
+outputs: A `Tensor` object storing the decoded bytes.
+package: tensorflow
+target: decode_raw
+title: tf.io.decode_raw
+version: 2.1.0

@@ -1,0 +1,24 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  layout:
+    default: NCHW
+    descp: Dimension ordering of data and out ('NCHW' or 'NHWC'). 'N', 'C', 'H', 'W'
+      stands for batch, channel, height, and width dimensions respectively.
+    doc_dtype: str, default 'NCHW'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Dimension ordering of data and out QSTR
+    - QSTR stands for batch, channel, height, and width dimensions respectively
+    normalized_docdtype: D_TYPE, default QSTR
+inputs:
+  optional:
+  - layout
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalAvgPool2D
+package: mxnet
+target: GlobalAvgPool2D
+title: mxnet.gluon.nn.GlobalAvgPool2D
+version: 1.6.0

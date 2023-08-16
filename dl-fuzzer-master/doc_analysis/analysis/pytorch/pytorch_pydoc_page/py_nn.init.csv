@@ -1,0 +1,15 @@
+class,Type,name,input,link,source_code
+,function,torch.nn.init.calculate_gain,"nonlinearity,param=None",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.calculate_gain,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#calculate_gain
+,function,torch.nn.init.uniform_,"tensor,a=0.0,b=1.0",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.uniform_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#uniform_
+,function,torch.nn.init.normal_,"tensor,mean=0.0,std=1.0",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.normal_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#normal_
+,function,torch.nn.init.constant_,"tensor,val",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.constant_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#constant_
+,function,torch.nn.init.ones_,tensor,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.ones_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#ones_
+,function,torch.nn.init.zeros_,tensor,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.zeros_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#zeros_
+,function,torch.nn.init.eye_,tensor,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.eye_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#eye_
+,function,torch.nn.init.dirac_,tensor,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.dirac_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#dirac_
+,function,torch.nn.init.xavier_uniform_,"tensor,gain=1.0",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.xavier_uniform_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#xavier_uniform_
+,function,torch.nn.init.xavier_normal_,"tensor,gain=1.0",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.xavier_normal_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#xavier_normal_
+,function,torch.nn.init.kaiming_uniform_,"tensor,a=0,mode='fan_in',nonlinearity='leaky_relu'",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.kaiming_uniform_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#kaiming_uniform_
+,function,torch.nn.init.kaiming_normal_,"tensor,a=0,mode='fan_in',nonlinearity='leaky_relu'",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.kaiming_normal_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#kaiming_normal_
+,function,torch.nn.init.orthogonal_,"tensor,gain=1",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.orthogonal_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#orthogonal_
+,function,torch.nn.init.sparse_,"tensor,sparsity,std=0.01",https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.sparse_,https://pytorch.org/docs/stable/_modules/torch/nn/init.html#sparse_

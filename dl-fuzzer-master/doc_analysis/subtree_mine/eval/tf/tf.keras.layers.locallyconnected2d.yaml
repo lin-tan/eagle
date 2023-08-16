@@ -1,0 +1,5 @@
+constraints:
+  kernel_constraint:
+    default: None
+    descp: Constraint function applied to the kernel matrix.
+title: tf.keras.layers.LocallyConnected2D

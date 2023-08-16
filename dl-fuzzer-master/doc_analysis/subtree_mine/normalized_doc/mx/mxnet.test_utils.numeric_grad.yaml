@@ -1,0 +1,67 @@
+constraints:
+  aux_states:
+    default: None
+    descp: Auxiliary states values used as location to compute gradient Maps the name
+      of aux_states to the corresponding numpy.ndarray. Value of all the auxiliary
+      arguments must be provided.
+    doc_dtype: None or list of numpy.ndarray or dict of str to numpy.ndarray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Auxiliary states values used as PARAM to compute gradient Maps the name of aux_states
+      to the corresponding numpy D_STRUCTURE
+    - Value of all the auxiliary arguments must be provided
+    normalized_docdtype: None or D_STRUCTURE of numpy D_STRUCTURE of D_TYPE to numpy
+      D_STRUCTURE, optional
+  dtype:
+    default: <classnumpy.float32>
+    descp: Datatype for mx.nd.array.
+    doc_dtype: np.float16 or np.float32 or np.float64
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - Datatype for mx nd D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  eps:
+    default: '0.0001'
+    descp: Epsilon for the finite-difference method.
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Epsilon for the finite difference method
+    normalized_docdtype: D_TYPE, optional
+  executor:
+    descp: Executor that computes the forward pass.
+    doc_dtype: Executor
+    normalized_descp:
+    - Executor that computes the forward pass
+    normalized_docdtype: ONE_WORD Executor
+  location:
+    descp: Argument values used as location to compute gradient Maps the name of arguments
+      to the corresponding numpy.ndarray. Value of all the arguments must be provided.
+    doc_dtype: list of numpy.ndarray or dict of str to numpy.ndarray
+    normalized_descp:
+    - Argument values used as location to compute gradient Maps the name of arguments
+      to the corresponding numpy D_STRUCTURE
+    - Value of all the arguments must be provided
+    normalized_docdtype: D_STRUCTURE of numpy D_STRUCTURE of D_TYPE to numpy D_STRUCTURE
+  use_forward_train:
+    default: 'True'
+    descp: Whether to use is_train=True in testing.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to use is_train CONSTANT_BOOL in testing
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - aux_states
+  - eps
+  - use_forward_train
+  - dtype
+  required:
+  - executor
+  - location
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.numeric_grad
+package: mxnet
+target: numeric_grad
+title: mxnet.test_utils.numeric_grad
+version: 1.6.0

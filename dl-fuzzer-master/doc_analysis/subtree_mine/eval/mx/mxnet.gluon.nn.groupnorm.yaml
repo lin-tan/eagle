@@ -1,0 +1,12 @@
+constraints:
+  scale:
+    default: 'True'
+    descp: If True, multiply by gamma. If False, gamma is not used.
+    doc_dtype:
+    - bool
+    - default True
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.gluon.nn.GroupNorm

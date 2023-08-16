@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Size
+outputs:
+- A Tensor of type out_type.
+package: tensorflow
+target: Size
+title: tf.raw_ops.Size
+version: 2.3.0

@@ -1,0 +1,39 @@
+constraints:
+  eps:
+    default: 1e-06
+    descp: 'Small value to avoid division by zero. Default: 1e-6'
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Small value to avoid division by zero
+    - Default CONSTANT_FLOAT
+    normalized_docdtype: D_TYPE, optional
+  keepdim:
+    default: 'False'
+    descp: 'Determines whether or not to keep the vector dimension. Default: False'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Determines whether or not to keep the D_STRUCTURE dimension
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  p:
+    default: '2.0'
+    descp: 'the norm degree. Default: 2'
+    doc_dtype: real
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - the norm degree
+    - Default CONSTANT_NUM
+    normalized_docdtype: ONE_WORD real
+inputs:
+  optional:
+  - p
+  - eps
+  - keepdim
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.PairwiseDistance
+package: torch
+target: PairwiseDistance
+title: torch.nn.PairwiseDistance
+version: 1.5.0

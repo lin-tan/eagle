@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mask:
+    descp: the tensor containing the binary mask to index with
+    doc_dtype: BoolTensor
+    normalized_descp:
+    - the D_STRUCTURE containing the binary mask to index with
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - mask
+link: https://pytorch.org/docs/stable/torch.html#torch.masked_select
+package: torch
+ret_type: Tensor
+target: masked_select
+title: torch.masked_select
+version: 1.5.0

@@ -1,0 +1,8 @@
+constraints:
+  data:
+    descp: input data.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.to_dlpack_for_read

@@ -1,0 +1,50 @@
+constraints:
+  dim0:
+    descp: the first dimension to be transposed
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+  dim1:
+    descp: the second dimension to be transposed
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - dim0
+  - dim1
+link: https://pytorch.org/docs/stable/torch.html#torch.transpose
+package: torch
+ret_type: Tensor
+target: transpose
+title: torch.transpose
+version: 1.5.0

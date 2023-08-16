@@ -1,0 +1,22 @@
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  input:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - adjoint
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BatchMatrixInverse
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: BatchMatrixInverse
+title: tf.raw_ops.BatchMatrixInverse
+version: 2.3.0

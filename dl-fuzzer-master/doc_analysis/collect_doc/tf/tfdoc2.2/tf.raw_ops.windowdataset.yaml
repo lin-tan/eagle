@@ -1,0 +1,43 @@
+constraints:
+  drop_remainder:
+    descp: A Tensor of type bool. A Boolean scalar, representing whether the last
+      window should be dropped if its size is smaller than window_size.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  shift:
+    descp: A Tensor of type int64. An integer scalar, representing the number of input
+      elements by which the window moves in each iteration. Defaults to size. Must
+      be positive.
+  size:
+    descp: A Tensor of type int64. An integer scalar, representing the number of elements
+      of the input dataset to combine into a window. Must be positive.
+  stride:
+    descp: A Tensor of type int64. An integer scalar, representing the stride of the
+      input elements in the sliding window. Must be positive. The default value of
+      1 means "retain every input element".
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - size
+  - shift
+  - stride
+  - drop_remainder
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WindowDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: WindowDataset
+title: tf.raw_ops.WindowDataset
+version: 2.2.0

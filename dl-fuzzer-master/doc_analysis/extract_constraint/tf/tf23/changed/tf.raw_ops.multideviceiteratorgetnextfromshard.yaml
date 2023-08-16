@@ -1,0 +1,61 @@
+constraints:
+  incarnation_id:
+    descp: A Tensor of type int64. Which incarnation of the MultiDeviceIterator is
+      running.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  multi_device_iterator:
+    descp: A Tensor of type resource. A MultiDeviceIterator resource.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1. The list of shapes being produced.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1. The type list for the return
+      values.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  shard_num:
+    descp: A Tensor of type int32. Integer representing which shard to fetch data
+      for.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - multi_device_iterator
+  - shard_num
+  - incarnation_id
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MultiDeviceIteratorGetNextFromShard
+outputs:
+- A list of Tensor objects of type output_types.
+package: tensorflow
+target: MultiDeviceIteratorGetNextFromShard
+title: tf.raw_ops.MultiDeviceIteratorGetNextFromShard
+version: 2.3.0

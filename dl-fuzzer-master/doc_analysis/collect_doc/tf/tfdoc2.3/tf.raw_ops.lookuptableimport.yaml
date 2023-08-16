@@ -1,0 +1,24 @@
+constraints:
+  keys:
+    descp: A Tensor. Any shape. Keys to look up.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  table_handle:
+    descp: A Tensor of type mutable string. Handle to the table.
+  values:
+    descp: A Tensor. Values to associate with keys.
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - keys
+  - values
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LookupTableImport
+outputs:
+- The created Operation.
+package: tensorflow
+target: LookupTableImport
+title: tf.raw_ops.LookupTableImport
+version: 2.3.0

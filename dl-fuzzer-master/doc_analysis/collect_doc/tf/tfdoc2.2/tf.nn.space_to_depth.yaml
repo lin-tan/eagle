@@ -1,0 +1,25 @@
+constraints:
+  block_size:
+    descp: An int that is >= 2. The size of the spatial block.
+  data_format:
+    default: NHWC
+    descp: 'An optional string from: "NHWC", "NCHW", "NCHW_VECT_C". Defaults to "NHWC".'
+  input:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - input
+  - block_size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/space_to_depth
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: space_to_depth
+title: tf.nn.space_to_depth
+version: 2.2.0

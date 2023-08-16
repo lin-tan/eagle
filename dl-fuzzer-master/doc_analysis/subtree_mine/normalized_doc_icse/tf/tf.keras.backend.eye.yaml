@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.keras.backend.eye
+constraints:
+  dtype:
+    default: None
+    descp: String, data type of returned Keras variable.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE data type of returned Keras variable
+  name:
+    default: None
+    descp: String, name of returned Keras variable.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE name of returned Keras variable
+  size:
+    descp: Integer, number of rows/columns.
+    normalized_descp:
+    - D_TYPE number of rows columns
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/eye
+outputs: A Keras variable, an identity matrix.
+package: tensorflow
+target: eye
+title: tf.keras.backend.eye
+version: 2.1.0

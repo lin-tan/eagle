@@ -1,0 +1,16 @@
+constraints:
+  default_value:
+    default: '0.0'
+    descp: A single value compatible with `dtype` that is used for padding the sparse
+      data into a dense `Tensor`.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  key:
+    descp: A unique string identifying the input features.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.feature_column.sequence_numeric_column

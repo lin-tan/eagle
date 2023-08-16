@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.math.zeta
+- tf.compat.v1.zeta
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  q:
+    descp: A `Tensor`. Must have the same type as `x`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - q
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/zeta
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: zeta
+title: tf.math.zeta
+version: 2.1.0

@@ -1,0 +1,68 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  Inputs:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  Output:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  dtype:
+    default: float32
+    descp: Data type of output embeddings.
+    doc_dtype: str or np.dtype, default 'float32'
+    normalized_default: DEFAULT D_TYPE
+    normalized_descp:
+    - Data type of PARAM embeddings
+    normalized_docdtype: D_TYPE, default QSTR
+  input_dim:
+    descp: Size of the vocabulary, i.e. maximum integer index + 1.
+    doc_dtype: int
+    normalized_descp:
+    - Size of the vocabulary, i e
+    - maximum D_TYPE index CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+  output_dim:
+    descp: Dimension of the dense embedding.
+    doc_dtype: int
+    normalized_descp:
+    - Dimension of the dense embedding
+    normalized_docdtype: ONE_WORD D_TYPE
+  sparse_grad:
+    default: 'False'
+    descp: If True, gradient w.r.t. weight will be a 'row_sparse' NDArray.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, gradient w r t
+    - weight will be a QSTR D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  weight_initializer:
+    default: None
+    descp: Initializer for the embeddings matrix.
+    doc_dtype: Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the embeddings matrix
+    normalized_docdtype: ONE_WORD Initializer
+inputs:
+  optional:
+  - dtype
+  - weight_initializer
+  - sparse_grad
+  - Inputs
+  - Output
+  required:
+  - input_dim
+  - output_dim
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Embedding
+package: mxnet
+target: Embedding
+title: mxnet.gluon.nn.Embedding
+version: 1.6.0

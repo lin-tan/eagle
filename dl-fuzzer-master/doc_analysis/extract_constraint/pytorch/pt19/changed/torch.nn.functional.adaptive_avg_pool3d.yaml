@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: ''
+  output_size:
+    descp: the target output size (single integer or triple-integer tuple)
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[3]'
+    structure:
+    - tuple(int)
+inputs:
+  optional: []
+  required:
+  - input
+  - output_size
+link: https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.adaptive_avg_pool3d
+package: torch
+target: adaptive_avg_pool3d
+title: torch.nn.functional.adaptive_avg_pool3d
+version: 1.9.0

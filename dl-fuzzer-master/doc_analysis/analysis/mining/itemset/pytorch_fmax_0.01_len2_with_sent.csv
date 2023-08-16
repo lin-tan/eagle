@@ -1,0 +1,1146 @@
+,idx,support,cnt,itemsets,sentence,api,len
+0,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.std2.yaml,2
+1,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.std2.yaml,2
+2,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bitwise_xor.yaml,2
+3,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.real.yaml,2
+4,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addcdiv.yaml,2
+5,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.log1p.yaml,2
+6,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.prod2.yaml,2
+7,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bernoulli.yaml,2
+8,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the shape of the output tensor,torch.empty_strided.yaml,2
+9,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the strides of the output tensor,torch.empty_strided.yaml,2
+10,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.pow.yaml,2
+11,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.exp.yaml,2
+12,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the result tuple of two output tensors (values, indices)",torch.cummax.yaml,2
+13,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.mean2.yaml,2
+14,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.mean2.yaml,2
+15,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.arange.yaml,2
+16,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.ceil.yaml,2
+17,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.sum2.yaml,2
+18,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.min22.yaml,2
+19,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.lerp.yaml,2
+20,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the shape of the output tensor,torch.as_strided.yaml,2
+21,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the offset in the underlying storage of the output tensor,torch.as_strided.yaml,2
+22,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the stride of the output tensor,torch.as_strided.yaml,2
+23,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.max22.yaml,2
+24,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the size of `input` will determine size of the output tensor.,torch.ones_like.yaml,2
+25,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor containing indices,torch.nonzero.yaml,2
+26,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.sinh.yaml,2
+27,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensors,torch.eig.yaml,2
+28,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",This argument is optional when `func`'s output contains a single element and (if it is not provided) will be set as a Tensor containing a single `1`.,torch.autograd.functional.vjp.yaml,2
+29,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.erf.yaml,2
+30,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.neg.yaml,2
+31,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.baddbmm.yaml,2
+32,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor that must be a BoolTensor,torch.le.yaml,2
+33,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.nn.functional.normalize.yaml,2
+34,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.diag.yaml,2
+35,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",It should contain correctly-sized tensors to be used for output of the collective.,torch.distributed.all_gather.yaml,2
+36,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.mv.yaml,2
+37,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addr.yaml,2
+38,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.sigmoid.yaml,2
+39,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.fmod.yaml,2
+40,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.pow2.yaml,2
+41,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the size of `input` will determine size of the output tensor.,torch.empty_like.yaml,2
+42,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor that must be a BoolTensor,torch.gt.yaml,2
+43,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor that must be a BoolTensor,torch.ne.yaml,2
+44,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.erfinv.yaml,2
+45,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addbmm.yaml,2
+46,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the result tuple of two output tensors (values, indices)",torch.cummin.yaml,2
+47,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bitwise_and.yaml,2
+48,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.topk.yaml,2
+49,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.reciprocal.yaml,2
+50,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the size of `input` will determine size of the output tensor.,torch.zeros_like.yaml,2
+51,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cos.yaml,2
+52,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.masked_select.yaml,2
+53,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.min2.yaml,2
+54,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the tuple of two output tensors (min, min_indices)",torch.min2.yaml,2
+55,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.angle.yaml,2
+56,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.erfc.yaml,2
+57,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+58,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.rand.yaml,2
+59,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.round.yaml,2
+60,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.polygamma.yaml,2
+61,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cross.yaml,2
+62,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.argmin2.yaml,2
+63,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.acos.yaml,2
+64,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.eye.yaml,2
+65,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addmm.yaml,2
+66,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the size of `input` will determine size of the output tensor.,torch.randn_like.yaml,2
+67,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addcmul.yaml,2
+68,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bitwise_not.yaml,2
+69,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.var_mean2.yaml,2
+70,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.trunc.yaml,2
+71,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.conj.yaml,2
+72,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.mul.yaml,2
+73,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.remainder.yaml,2
+74,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor for c,torch.cholesky_solve.yaml,2
+75,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.median2.yaml,2
+76,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the result tuple of two output tensors (max, max_indices)",torch.median2.yaml,2
+77,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.histc.yaml,2
+78,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the output tuple of (Tensor, Tensor)",torch.symeig.yaml,2
+79,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.clamp.yaml,2
+80,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.eq.yaml,2
+81,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logical_or.yaml,2
+82,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.normal.yaml,2
+83,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.inverse.yaml,2
+84,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.logsumexp.yaml,2
+85,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logsumexp.yaml,2
+86,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.sort.yaml,2
+87,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logical_and.yaml,2
+88,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+89,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.ones.yaml,2
+90,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.randperm.yaml,2
+91,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.sin.yaml,2
+92,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.tan.yaml,2
+93,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.stack.yaml,2
+94,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.normal222.yaml,2
+95,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+96,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.max2.yaml,2
+97,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the result tuple of two output tensors (max, max_indices)",torch.max2.yaml,2
+98,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cumprod.yaml,2
+99,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.imag.yaml,2
+100,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.matmul.yaml,2
+101,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.atan.yaml,2
+102,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cosh.yaml,2
+103,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.asin.yaml,2
+104,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.argmax2.yaml,2
+105,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor,torch.normal22.yaml,2
+106,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.square.yaml,2
+107,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.linspace.yaml,2
+108,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bmm.yaml,2
+109,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.normal2.yaml,2
+110,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor that must be a BoolTensor,torch.ge.yaml,2
+111,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.log2.yaml,2
+112,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logical_xor.yaml,2
+113,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.floor.yaml,2
+114,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.addmv.yaml,2
+115,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensors have `dim` retained or not.,torch.norm.yaml,2
+116,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.norm.yaml,2
+117,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor that must be a BoolTensor,torch.lt.yaml,2
+118,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.index_select.yaml,2
+119,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.kthvalue.yaml,2
+120,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the output tuple of (Tensor, LongTensor) can be optionally given to be used as output buffers",torch.kthvalue.yaml,2
+121,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.atan2.yaml,2
+122,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.var2.yaml,2
+123,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.var2.yaml,2
+124,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logical_not.yaml,2
+125,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.multinomial.yaml,2
+126,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor for inv,torch.cholesky_inverse.yaml,2
+127,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.expm1.yaml,2
+128,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.mode.yaml,2
+129,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the result tuple of two output tensors (values, indices)",torch.mode.yaml,2
+130,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.log.yaml,2
+131,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.abs.yaml,2
+132,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.tril.yaml,2
+133,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.logspace.yaml,2
+134,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.triu.yaml,2
+135,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","If set to `True`, the input and output tensors are aligned by the center points of their corner pixels, preserving the values at the corner pixels.",torch.nn.quantized.functional.interpolate.yaml,2
+136,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.quantized.functional.interpolate.yaml,2
+137,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.log10.yaml,2
+138,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.bitwise_or.yaml,2
+139,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",whether the output tensor has `dim` retained or not.,torch.std_mean2.yaml,2
+140,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.sqrt.yaml,2
+141,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.lgamma.yaml,2
+142,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.sign.yaml,2
+143,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cat.yaml,2
+144,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",Output tensor.,torch.distributed.scatter.yaml,2
+145,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","the output tuple of (Tensor, Tensor)",torch.geqrf.yaml,2
+146,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.squeeze.yaml,2
+147,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.cumsum.yaml,2
+148,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",Input and output GPU tensors of the collective.,torch.distributed.reduce_multigpu.yaml,2
+149,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+150,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.zeros.yaml,2
+151,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.tanh.yaml,2
+152,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tuple of tensors,torch.svd.yaml,2
+153,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+154,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.randn.yaml,2
+155,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the size of `input` will determine size of the output tensor.,torch.rand_like.yaml,2
+156,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","If set to `True`, the input and output tensors are aligned by the center points of their corner pixels, preserving the values at the corner pixels.",torch.nn.functional.interpolate.yaml,2
+157,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.functional.interpolate.yaml,2
+158,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the number to fill the output tensor with.,torch.full.yaml,2
+159,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.full.yaml,2
+160,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+161,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.renorm.yaml,2
+162,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.rsqrt.yaml,2
+163,79,0.0784313725490196,164,"frozenset({'tensor', 'output'})",the output tensor.,torch.mm.yaml,2
+164,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.adaptive_max_pool3d.yaml,2
+165,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.empty_strided.yaml,2
+166,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.empty_strided.yaml,2
+167,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.arange.yaml,2
+168,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.cholesky.yaml,2
+169,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.quantized.functional.avg_pool2d.yaml,2
+170,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.grid_sample.yaml,2
+171,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.avg_pool1d.yaml,2
+172,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.ones_like.yaml,2
+173,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False` Infinite losses mainly occur when the inputs are too short to be aligned to the targets.,torch.nn.functional.ctc_loss.yaml,2
+174,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.adaptive_max_pool1d.yaml,2
+175,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.irfft.yaml,2
+176,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.empty_like.yaml,2
+177,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.hann_window.yaml,2
+178,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default `False`.,torch.nn.functional.embedding.yaml,2
+179,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.affine_grid.yaml,2
+180,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.zeros_like.yaml,2
+181,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.rand.yaml,2
+182,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.adaptive_max_pool2d.yaml,2
+183,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.fft.yaml,2
+184,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.triangular_solve.yaml,2
+185,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.triangular_solve.yaml,2
+186,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.avg_pool2d.yaml,2
+187,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.eye.yaml,2
+188,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.dropout.yaml,2
+189,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.randn_like.yaml,2
+190,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.ifft.yaml,2
+191,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.cholesky_solve.yaml,2
+192,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.lu.yaml,2
+193,71,0.06217120994739359,61,"frozenset({'false', 'default'})",whether to return an abbreviated summary (default: False).,torch.cuda.memory_summary.yaml,2
+194,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.ones.yaml,2
+195,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.randperm.yaml,2
+196,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default is False.,torch.hub.load.yaml,2
+197,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.max2.yaml,2
+198,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default is False.,torch.hub.help.yaml,2
+199,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: False,torch.utils.model_zoo.load_url.yaml,2
+200,71,0.06217120994739359,61,"frozenset({'false', 'default'})",controls whether to return the normalized STFT results Default: `False`,torch.stft.yaml,2
+201,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.dropout2d.yaml,2
+202,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.linspace.yaml,2
+203,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.autograd.grad.yaml,2
+204,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.hamming_window.yaml,2
+205,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.norm.yaml,2
+206,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.blackman_window.yaml,2
+207,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.dropout3d.yaml,2
+208,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.bartlett_window.yaml,2
+209,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.logspace.yaml,2
+210,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.quantized.functional.interpolate.yaml,2
+211,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.allclose.yaml,2
+212,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.tensor.yaml,2
+213,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.tensor.yaml,2
+214,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.sparse_coo_tensor.yaml,2
+215,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.zeros.yaml,2
+216,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.randn.yaml,2
+217,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False` target *  log(target) - target + 0.5 *  log(2 *  pi * target) .,torch.nn.functional.poisson_nll_loss.yaml,2
+218,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.matrix_rank.yaml,2
+219,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default is False.,torch.hub.list.yaml,2
+220,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.rand_like.yaml,2
+221,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.nn.functional.interpolate.yaml,2
+222,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: False,torch.hub.load_state_dict_from_url.yaml,2
+223,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`.,torch.full.yaml,2
+224,71,0.06217120994739359,61,"frozenset({'false', 'default'})",Default: `False`,torch.rfft.yaml,2
+225,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.quantized.functional.avg_pool2d.yaml,2
+226,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.avg_pool1d.yaml,2
+227,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`.,torch.nn.utils.rnn.pack_padded_sequence.yaml,2
+228,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.irfft.yaml,2
+229,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`.,torch.triangular_solve.yaml,2
+230,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.kl_div.yaml,2
+231,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.kl_div.yaml,2
+232,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.avg_pool2d.yaml,2
+233,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.dropout.yaml,2
+234,70,0.05164992826398852,33,"frozenset({'true', 'default'})",whether or not to display a progress bar to stderr Default: True,torch.hub.download_url_to_file.yaml,2
+235,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default is True.,torch.lobpcg.yaml,2
+236,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.binary_cross_entropy.yaml,2
+237,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.binary_cross_entropy.yaml,2
+238,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`.,torch.nn.utils.rnn.pack_sequence.yaml,2
+239,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.lu.yaml,2
+240,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default is True.,torch.hub.load.yaml,2
+241,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: True,torch.utils.model_zoo.load_url.yaml,2
+242,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.stft.yaml,2
+243,70,0.05164992826398852,33,"frozenset({'true', 'default'})",controls whether to return half of results to avoid redundancy Default: `True`,torch.stft.yaml,2
+244,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.dropout2d.yaml,2
+245,70,0.05164992826398852,33,"frozenset({'true', 'default'})","If `True` (default), imports the produced shared library as a Python module.",torch.utils.cpp_extension.load.yaml,2
+246,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.nll_loss.yaml,2
+247,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.nll_loss.yaml,2
+248,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.dropout3d.yaml,2
+249,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.cross_entropy.yaml,2
+250,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.cross_entropy.yaml,2
+251,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.binary_cross_entropy_with_logits.yaml,2
+252,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.binary_cross_entropy_with_logits.yaml,2
+253,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.poisson_nll_loss.yaml,2
+254,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.poisson_nll_loss.yaml,2
+255,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.nn.functional.poisson_nll_loss.yaml,2
+256,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: True,torch.hub.load_state_dict_from_url.yaml,2
+257,70,0.05164992826398852,33,"frozenset({'true', 'default'})",Default: `True`,torch.rfft.yaml,2
+258,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.empty_strided.yaml,4
+259,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.empty_strided.yaml,4
+260,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.arange.yaml,4
+261,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.arange.yaml,4
+262,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.ones_like.yaml,4
+263,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned tensor.,torch.ones_like.yaml,4
+264,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.empty_like.yaml,4
+265,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned tensor.,torch.empty_like.yaml,4
+266,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.hann_window.yaml,4
+267,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned window tensor.,torch.hann_window.yaml,4
+268,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.zeros_like.yaml,4
+269,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned tensor.,torch.zeros_like.yaml,4
+270,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.rand.yaml,4
+271,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.rand.yaml,4
+272,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.eye.yaml,4
+273,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.eye.yaml,4
+274,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.randn_like.yaml,4
+275,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned tensor.,torch.randn_like.yaml,4
+276,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.ones.yaml,4
+277,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.ones.yaml,4
+278,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.randperm.yaml,4
+279,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.randperm.yaml,4
+280,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.triu_indices.yaml,4
+281,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.tril_indices.yaml,4
+282,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.linspace.yaml,4
+283,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.linspace.yaml,4
+284,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.hamming_window.yaml,4
+285,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned window tensor.,torch.hamming_window.yaml,4
+286,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.blackman_window.yaml,4
+287,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned window tensor.,torch.blackman_window.yaml,4
+288,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.as_tensor.yaml,4
+289,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.bartlett_window.yaml,4
+290,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned window tensor.,torch.bartlett_window.yaml,4
+291,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.logspace.yaml,4
+292,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.logspace.yaml,4
+293,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.tensor.yaml,4
+294,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.sparse_coo_tensor.yaml,4
+295,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.zeros.yaml,4
+296,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.zeros.yaml,4
+297,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.randn.yaml,4
+298,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.randn.yaml,4
+299,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.rand_like.yaml,4
+300,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned tensor.,torch.rand_like.yaml,4
+301,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired device of returned tensor.,torch.full.yaml,4
+302,68,0.046389287422285985,45,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",the desired layout of returned Tensor.,torch.full.yaml,4
+303,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",the shape of the output tensor,torch.empty_strided.yaml,2
+304,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.functional.conv_transpose2d.yaml,2
+305,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.avg_pool1d.yaml,2
+306,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",the shape of the output tensor,torch.as_strided.yaml,2
+307,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",optional bias tensor of shape (out _channels) .,torch.nn.functional.conv2d.yaml,2
+308,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.functional.conv2d.yaml,2
+309,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",input tensor of shape N  times M .,torch.nn.functional.pdist.yaml,2
+310,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",input tensor of any shape,torch.nn.functional.normalize.yaml,2
+311,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","the divisor, which may be either a number or a tensor of the same shape as the dividend",torch.fmod.yaml,2
+312,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",input tensor of shape B  times P  times M .,torch.cdist.yaml,2
+313,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",input tensor of shape B  times R  times M .,torch.cdist.yaml,2
+314,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iT , iH , iW) ",torch.nn.functional.conv_transpose3d.yaml,2
+315,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+316,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.conv_transpose1d.yaml,2
+317,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of arbitrary shape,torch.nn.functional.kl_div.yaml,2
+318,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of the same shape as input,torch.nn.functional.kl_div.yaml,2
+319,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of arbitrary shape,torch.nn.functional.binary_cross_entropy.yaml,2
+320,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of the same shape as input,torch.nn.functional.binary_cross_entropy.yaml,2
+321,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a manual rescaling weight if provided it's repeated to match input tensor shape,torch.nn.functional.binary_cross_entropy.yaml,2
+322,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.conv1d.yaml,2
+323,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",optional bias tensor of shape (out _channels) .,torch.nn.functional.conv3d.yaml,2
+324,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","input tensor of shape (minibatch , in _channels , iT , iH , iW) ",torch.nn.functional.conv3d.yaml,2
+325,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",the divisor that may be either a number or a Tensor of the same shape as the dividend,torch.remainder.yaml,2
+326,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+327,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+328,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",non-quantized bias tensor of shape (out _channels) .,torch.nn.quantized.functional.conv2d.yaml,2
+329,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","quantized input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.quantized.functional.conv2d.yaml,2
+330,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","Non-empty tensors provided must have the same shape, except in the cat dimension.",torch.cat.yaml,2
+331,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+332,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of arbitrary shape,torch.nn.functional.binary_cross_entropy_with_logits.yaml,2
+333,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",Tensor of the same shape as input,torch.nn.functional.binary_cross_entropy_with_logits.yaml,2
+334,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a manual rescaling weight if provided it's repeated to match input tensor shape,torch.nn.functional.binary_cross_entropy_with_logits.yaml,2
+335,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+336,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+337,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})",non-quantized bias tensor of shape (out _channels) .,torch.nn.quantized.functional.conv3d.yaml,2
+338,58,0.03012912482065997,36,"frozenset({'shape', 'tensor'})","quantized input tensor of shape (minibatch , in _channels , iD , iH , iW) ",torch.nn.quantized.functional.conv3d.yaml,2
+339,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (kT, kH, kW)",torch.nn.functional.avg_pool3d.yaml,3
+340,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padT, padH, padW), Default: 0",torch.nn.functional.avg_pool3d.yaml,3
+341,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sT, sH, sW).",torch.nn.functional.avg_pool3d.yaml,3
+342,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (kH, kW)",torch.nn.quantized.functional.avg_pool2d.yaml,3
+343,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padH, padW).",torch.nn.quantized.functional.avg_pool2d.yaml,3
+344,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sH, sW).",torch.nn.quantized.functional.avg_pool2d.yaml,3
+345,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(dH, dW)`.",torch.nn.functional.conv_transpose2d.yaml,3
+346,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(out_padH, out_padW)`.",torch.nn.functional.conv_transpose2d.yaml,3
+347,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(padH, padW)`.",torch.nn.functional.conv_transpose2d.yaml,3
+348,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(sH, sW)`.",torch.nn.functional.conv_transpose2d.yaml,3
+349,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (kW,)",torch.nn.functional.avg_pool1d.yaml,3
+350,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padW,).",torch.nn.functional.avg_pool1d.yaml,3
+351,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sW,).",torch.nn.functional.avg_pool1d.yaml,3
+352,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (dH, dW).",torch.nn.functional.conv2d.yaml,3
+353,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padH, padW).",torch.nn.functional.conv2d.yaml,3
+354,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sH, sW).",torch.nn.functional.conv2d.yaml,3
+355,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (dT, dH, dW).",torch.nn.functional.conv_transpose3d.yaml,3
+356,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(out_padT, out_padH, out_padW)`.",torch.nn.functional.conv_transpose3d.yaml,3
+357,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(padT, padH, padW)`.",torch.nn.functional.conv_transpose3d.yaml,3
+358,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(sT, sH, sW)`.",torch.nn.functional.conv_transpose3d.yaml,3
+359,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(dW,)`.",torch.nn.functional.conv_transpose1d.yaml,3
+360,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})",Can be a single number or a tuple `(out_padW)`.,torch.nn.functional.conv_transpose1d.yaml,3
+361,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(padW,)`.",torch.nn.functional.conv_transpose1d.yaml,3
+362,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple `(sW,)`.",torch.nn.functional.conv_transpose1d.yaml,3
+363,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (kH, kW)",torch.nn.functional.avg_pool2d.yaml,3
+364,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padH, padW).",torch.nn.functional.avg_pool2d.yaml,3
+365,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sH, sW).",torch.nn.functional.avg_pool2d.yaml,3
+366,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a one-element tuple (dW,).",torch.nn.functional.conv1d.yaml,3
+367,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a one-element tuple (padW,).",torch.nn.functional.conv1d.yaml,3
+368,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a one-element tuple (sW,).",torch.nn.functional.conv1d.yaml,3
+369,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (dT, dH, dW).",torch.nn.functional.conv3d.yaml,3
+370,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padT, padH, padW).",torch.nn.functional.conv3d.yaml,3
+371,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sT, sH, sW).",torch.nn.functional.conv3d.yaml,3
+372,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (dH, dW).",torch.nn.quantized.functional.conv2d.yaml,3
+373,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padH, padW).",torch.nn.quantized.functional.conv2d.yaml,3
+374,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sH, sW).",torch.nn.quantized.functional.conv2d.yaml,3
+375,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (dD, dH, dW).",torch.nn.quantized.functional.conv3d.yaml,3
+376,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (padD, padH, padW).",torch.nn.quantized.functional.conv3d.yaml,3
+377,54,0.028216164514586323,39,"frozenset({'single', 'SOME_STRUCTURE', 'number'})","Can be a single number or a tuple (sD, sH, sW).",torch.nn.quantized.functional.conv3d.yaml,3
+378,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+379,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.empty_strided.yaml,3
+380,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+381,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.arange.yaml,3
+382,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+383,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hann_window.yaml,3
+384,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+385,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.rand.yaml,3
+386,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+387,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.eye.yaml,3
+388,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+389,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.ones.yaml,3
+390,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+391,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randperm.yaml,3
+392,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+393,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.triu_indices.yaml,3
+394,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+395,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tril_indices.yaml,3
+396,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+397,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.linspace.yaml,3
+398,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+399,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hamming_window.yaml,3
+400,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+401,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.blackman_window.yaml,3
+402,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+403,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.as_tensor.yaml,3
+404,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+405,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.bartlett_window.yaml,3
+406,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+407,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.logspace.yaml,3
+408,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+409,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tensor.yaml,3
+410,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+411,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.sparse_coo_tensor.yaml,3
+412,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+413,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.zeros.yaml,3
+414,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+415,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randn.yaml,3
+416,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3
+417,57,0.020564323290291727,40,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.full.yaml,3
+418,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor A  of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric positive-definite matrices.",torch.cholesky.yaml,2
+419,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",input tensor of shape N  times M .,torch.nn.functional.pdist.yaml,2
+420,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.det.yaml,2
+421,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","an n-dimensional torch.Tensor, where n  >= 2 ",torch.nn.init.orthogonal_.yaml,2
+422,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","The input tensor of size (*, m, n)  where *  is zero or more batch dimensions",torch.pinverse.yaml,2
+423,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.xavier_normal_.yaml,2
+424,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, m, n)  where k <= n <= m.",torch.lobpcg.yaml,2
+425,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric matrices.",torch.symeig.yaml,2
+426,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.zeros_.yaml,2
+427,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions",torch.inverse.yaml,2
+428,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the tensor to factor of size (*, m, n) ",torch.lu.yaml,2
+429,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.slogdet.yaml,2
+430,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.uniform_.yaml,2
+431,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.normal_.yaml,2
+432,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",N-dimensional tensor,torch.nn.functional.pad.yaml,2
+433,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of matrices of dimension m  times n .",torch.qr.yaml,2
+434,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.constant_.yaml,2
+435,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of m  times n  matrices.",torch.svd.yaml,2
+436,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.xavier_uniform_.yaml,2
+437,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.logdet.yaml,2
+438,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.sparse_.yaml,2
+439,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})",an n-dimensional torch.Tensor,torch.nn.init.ones_.yaml,2
+440,51,0.020564323290291727,23,"frozenset({'n', 'tensor'})","the input tensor of size (*, m, n) ",torch.pca_lowrank.yaml,2
+441,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor A  of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric positive-definite matrices.",torch.cholesky.yaml,2
+442,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.det.yaml,2
+443,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})",the input tensor of at least `signal_ndim` `+ 1` dimensions,torch.irfft.yaml,2
+444,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","The input tensor of size (*, m, n)  where *  is zero or more batch dimensions",torch.pinverse.yaml,2
+445,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})",the input tensor of at least `signal_ndim` `+ 1` dimensions,torch.fft.yaml,2
+446,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input triangular coefficient matrix of size (*, m, m)  where *  is zero or more batch dimensions",torch.triangular_solve.yaml,2
+447,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})",the input tensor of at least `signal_ndim` `+ 1` dimensions,torch.ifft.yaml,2
+448,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions",torch.cholesky_solve.yaml,2
+449,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions composed of upper or lower triangular Cholesky factor",torch.cholesky_solve.yaml,2
+450,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric matrices.",torch.symeig.yaml,2
+451,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions",torch.inverse.yaml,2
+452,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.slogdet.yaml,2
+453,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","If the value is None, matrix norm will be calculated when the input tensor only has two dimensions, vector norm will be calculated when the input tensor only has one dimension.",torch.norm.yaml,2
+454,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","If the input tensor has more than two dimensions, the vector norm will be applied to last dimension.",torch.norm.yaml,2
+455,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","input square matrix of size (*, m, m) , where *  is zero or more batch dimensions.",torch.solve.yaml,2
+456,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","input matrix B  of size (*, m, k)  , where *  is zero or more batch dimensions.",torch.solve.yaml,2
+457,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","m-elements tuple, where  m/2  <=  input dimensions and m  is even.",torch.nn.functional.pad.yaml,2
+458,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of matrices of dimension m  times n .",torch.qr.yaml,2
+459,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of m  times n  matrices.",torch.svd.yaml,2
+460,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.logdet.yaml,2
+461,49,0.020086083213773313,21,"frozenset({'input', 'dimensions'})",the input tensor of at least `signal_ndim` dimensions,torch.rfft.yaml,2
+462,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the result tuple of two output tensors (values, indices)",torch.cummax.yaml,2
+463,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of 2 or more 2-D tensors whose product is to be determined.,torch.chain_matmul.yaml,2
+464,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a Python function that takes Tensor inputs and returns a tuple of Tensors or a Tensor.,torch.autograd.functional.vjp.yaml,2
+465,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a Python function that takes Tensor inputs and returns a Tensor or a tuple of Tensors,torch.autograd.gradgradcheck.yaml,2
+466,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a Python function that takes Tensor inputs and returns a tuple of Tensors or a Tensor.,torch.autograd.functional.jvp.yaml,2
+467,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",an iterable of Tensors or a single Tensor that will have gradients normalized,torch.nn.utils.clip_grad_norm_.yaml,2
+468,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",an iterable of Tensors or a single Tensor that will have gradients normalized,torch.nn.utils.clip_grad_value_.yaml,2
+469,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the result tuple of two output tensors (values, indices)",torch.cummin.yaml,2
+470,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","List of appropriately-sized tensors to use for gathered data (default is None, must be specified on the destination rank)",torch.distributed.gather.yaml,2
+471,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.topk.yaml,2
+472,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a Python function that takes Tensor inputs and returns a tuple of Tensors or a Tensor.,torch.autograd.functional.jacobian.yaml,2
+473,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})"," If args is a Tensor, this is equivalent to having called it with a 1-ary tuple of that Tensor.",torch.onnx.export.yaml,2
+474,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the tuple of two output tensors (min, min_indices)",torch.min2.yaml,2
+475,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+476,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","iterable of ints, specifying among which devices the tensor should be scattered.",torch.cuda.comm.scatter.yaml,2
+477,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the result tuple of two output tensors (max, max_indices)",torch.median2.yaml,2
+478,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the output tuple of (Tensor, Tensor)",torch.symeig.yaml,2
+479,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",List of tensors(on different GPUs) to be broadcast from current process.,torch.distributed.all_gather_multigpu.yaml,2
+480,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","If `get_infos` is `True`, then the elements in the tuple are Tensor, IntTensor, and IntTensor.",torch.lu.yaml,2
+481,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","If `get_infos` is `False`, then the elements in the tuple are Tensor, IntTensor.",torch.lu.yaml,2
+482,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.sort.yaml,2
+483,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",an iterable of tensors to add.,torch.cuda.comm.reduce_add.yaml,2
+484,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+485,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",sequence of tensors to concatenate,torch.stack.yaml,2
+486,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+487,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the result tuple of two output tensors (max, max_indices)",torch.max2.yaml,2
+488,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",`example_inputs` may also be a single Tensor in which case it is automatically wrapped in a tuple.,torch.jit.trace.yaml,2
+489,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the output tuple of (Tensor, LongTensor) can be optionally given to be used as output buffers",torch.kthvalue.yaml,2
+490,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","tuple of Q and R tensors satisfying `input = torch.matmul(Q, R)`.",torch.qr.yaml,2
+491,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a Python function that takes Tensor inputs and returns a Tensor or a tuple of Tensors,torch.autograd.gradcheck.yaml,2
+492,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the result tuple of two output tensors (values, indices)",torch.mode.yaml,2
+493,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",any python sequence of tensors of the same type.,torch.cat.yaml,2
+494,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","List of tensors to scatter (default is None, must be specified on the source rank)",torch.distributed.scatter.yaml,2
+495,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","the output tuple of (Tensor, Tensor)",torch.geqrf.yaml,2
+496,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+497,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",the output tuple of tensors,torch.svd.yaml,2
+498,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+499,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})",iterable of tensors to gather.,torch.cuda.comm.gather.yaml,2
+500,74,0.018651362984218076,39,"frozenset({'SOME_STRUCTURE', 'tensor'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+501,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})","the desired data type of returned tensor.If specified, the input tensor is casted to `dtype` before the operationis performed.",torch.prod2.yaml,5
+502,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.empty_strided.yaml,5
+503,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.arange.yaml,5
+504,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})","the desired data type of returned tensor.If specified, the input tensor is casted to `dtype` before the operationis performed.",torch.sum2.yaml,5
+505,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})","the desired data type of returned tensor.If specified, the input tensor is casted to `dtype` before the operationis performed.",torch.sum.yaml,5
+506,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.ones_like.yaml,5
+507,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.empty_like.yaml,5
+508,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.hann_window.yaml,5
+509,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.sparse.sum.yaml,5
+510,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.quantize_per_channel.yaml,5
+511,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.zeros_like.yaml,5
+512,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.rand.yaml,5
+513,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.eye.yaml,5
+514,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.randn_like.yaml,5
+515,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.nn.functional.log_softmax.yaml,5
+516,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.ones.yaml,5
+517,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.randperm.yaml,5
+518,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.cumprod.yaml,5
+519,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.triu_indices.yaml,5
+520,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.tril_indices.yaml,5
+521,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.linspace.yaml,5
+522,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.quantize_per_tensor.yaml,5
+523,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.hamming_window.yaml,5
+524,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})","the desired data type of returned tensor.If specified, the input tensor is casted to `dtype` before the operationis performed.",torch.prod.yaml,5
+525,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.norm.yaml,5
+526,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.blackman_window.yaml,5
+527,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.as_tensor.yaml,5
+528,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.bartlett_window.yaml,5
+529,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.logspace.yaml,5
+530,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.nn.functional.softmin.yaml,5
+531,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.tensor.yaml,5
+532,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.sparse_coo_tensor.yaml,5
+533,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.cumsum.yaml,5
+534,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.zeros.yaml,5
+535,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.nn.functional.softmax.yaml,5
+536,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.randn.yaml,5
+537,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned Tensor.,torch.rand_like.yaml,5
+538,59,0.018173122907699665,38,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",the desired data type of returned tensor.,torch.full.yaml,5
+539,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",implicit zero paddings on both sides of the input.,torch.nn.functional.avg_pool3d.yaml,2
+540,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor A  of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric positive-definite matrices.",torch.cholesky.yaml,2
+541,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",implicit zero paddings on both sides of the input.,torch.nn.quantized.functional.avg_pool2d.yaml,2
+542,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input.,torch.nn.functional.conv_transpose2d.yaml,2
+543,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",implicit zero paddings on both sides of the input.,torch.nn.functional.avg_pool1d.yaml,2
+544,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.det.yaml,2
+545,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","The input tensor of size (*, m, n)  where *  is zero or more batch dimensions",torch.pinverse.yaml,2
+546,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input.,torch.nn.functional.conv_transpose3d.yaml,2
+547,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input.,torch.nn.functional.conv_transpose1d.yaml,2
+548,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input triangular coefficient matrix of size (*, m, m)  where *  is zero or more batch dimensions",torch.triangular_solve.yaml,2
+549,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",implicit zero paddings on both sides of the input.,torch.nn.functional.avg_pool2d.yaml,2
+550,40,0.017694882831181254,22,"frozenset({'input', 'zero'})",Default is feps ** 0.5 where feps is smallest non-zero floating-point number of the given input tensor A data type.,torch.lobpcg.yaml,2
+551,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions",torch.cholesky_solve.yaml,2
+552,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions composed of upper or lower triangular Cholesky factor",torch.cholesky_solve.yaml,2
+553,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric matrices.",torch.symeig.yaml,2
+554,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions",torch.inverse.yaml,2
+555,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.slogdet.yaml,2
+556,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","input square matrix of size (*, m, m) , where *  is zero or more batch dimensions.",torch.solve.yaml,2
+557,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","input matrix B  of size (*, m, k)  , where *  is zero or more batch dimensions.",torch.solve.yaml,2
+558,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of matrices of dimension m  times n .",torch.qr.yaml,2
+559,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of m  times n  matrices.",torch.svd.yaml,2
+560,40,0.017694882831181254,22,"frozenset({'input', 'zero'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.logdet.yaml,2
+561,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias of shape (out _channels) .,torch.nn.functional.conv_transpose2d.yaml,2
+562,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.functional.conv_transpose2d.yaml,2
+563,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (in _channels ,  out _channels/groups , kH , kW) ",torch.nn.functional.conv_transpose2d.yaml,2
+564,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.avg_pool1d.yaml,2
+565,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias tensor of shape (out _channels) .,torch.nn.functional.conv2d.yaml,2
+566,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.functional.conv2d.yaml,2
+567,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (out _channels ,  in _channels/groups , kH , kW) ",torch.nn.functional.conv2d.yaml,2
+568,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias of shape (out _channels) .,torch.nn.functional.conv_transpose3d.yaml,2
+569,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iT , iH , iW) ",torch.nn.functional.conv_transpose3d.yaml,2
+570,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (in _channels ,  out _channels/groups , kT , kH , kW) ",torch.nn.functional.conv_transpose3d.yaml,2
+571,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias of shape (out _channels) .,torch.nn.functional.conv_transpose1d.yaml,2
+572,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.conv_transpose1d.yaml,2
+573,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (in _channels ,  out _channels/groups , kW) ",torch.nn.functional.conv_transpose1d.yaml,2
+574,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias of shape (out _channels) .,torch.nn.functional.conv1d.yaml,2
+575,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iW) ",torch.nn.functional.conv1d.yaml,2
+576,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (out _channels ,  in _channels/groups , kW) ",torch.nn.functional.conv1d.yaml,2
+577,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",optional bias tensor of shape (out _channels) .,torch.nn.functional.conv3d.yaml,2
+578,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","input tensor of shape (minibatch , in _channels , iT , iH , iW) ",torch.nn.functional.conv3d.yaml,2
+579,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","filters of shape (out _channels ,  in _channels/groups , kT , kH , kW) ",torch.nn.functional.conv3d.yaml,2
+580,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",non-quantized bias tensor of shape (out _channels) .,torch.nn.quantized.functional.conv2d.yaml,2
+581,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","quantized input tensor of shape (minibatch , in _channels , iH , iW) ",torch.nn.quantized.functional.conv2d.yaml,2
+582,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","quantized filters of shape (out _channels ,  in _channels/groups , kH , kW) ",torch.nn.quantized.functional.conv2d.yaml,2
+583,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})",non-quantized bias tensor of shape (out _channels) .,torch.nn.quantized.functional.conv3d.yaml,2
+584,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","quantized input tensor of shape (minibatch , in _channels , iD , iH , iW) ",torch.nn.quantized.functional.conv3d.yaml,2
+585,38,0.01721664275466284,25,"frozenset({'_channels', 'shape'})","quantized filters of shape (out _channels ,  in _channels/groups , kD , kH , kW) ",torch.nn.quantized.functional.conv3d.yaml,2
+586,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,6
+587,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,6
+588,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,6
+589,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.arange.yaml,6
+590,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,6
+591,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,6
+592,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,6
+593,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.rand.yaml,6
+594,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,6
+595,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.eye.yaml,6
+596,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,6
+597,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.ones.yaml,6
+598,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,6
+599,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,6
+600,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,6
+601,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,6
+602,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,6
+603,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,6
+604,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,6
+605,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,6
+606,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,6
+607,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,6
+608,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,6
+609,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,6
+610,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,6
+611,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,6
+612,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,6
+613,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,6
+614,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,6
+615,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,6
+616,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,6
+617,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.randn.yaml,6
+618,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,6
+619,36,0.016260162601626018,34,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})","Default: if `None`, uses a global default (see `torch.set_default_tensor_type()`).",torch.full.yaml,6
+620,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_max_pool3d.yaml,2
+621,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","A string, or list of strings, containing C++ source code.",torch.utils.cpp_extension.load_inline.yaml,2
+622,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","A string, or list of strings, containing CUDA source code.",torch.utils.cpp_extension.load_inline.yaml,2
+623,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",dictionary that maps float modules to quantized modules to be replaced.,torch.quantization.prepare_qat.yaml,2
+624,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_avg_pool3d.yaml,2
+625,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",the target output size (single integer or double-integer tuple),torch.nn.quantized.functional.adaptive_avg_pool2d.yaml,2
+626,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.topk.yaml,2
+627,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",an iterable of devices among which to broadcast.,torch.cuda.comm.broadcast_coalesced.yaml,2
+628,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a dictionary that maps from nn module to nnq module,torch.quantization.swap_module.yaml,2
+629,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","a dictionary that maps from float module type to quantized module type, can be overwrritten to allow swapping user defined Modules",torch.quantization.convert.yaml,2
+630,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+631,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_max_pool2d.yaml,2
+632,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","dictionary that maps from name or type of submodule to quantization configuration, qconfig applies to all submodules of a given module unless qconfig for the submodules are specified (when the submodule already has qconfig attribute)",torch.quantization.propagate_qconfig_.yaml,2
+633,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","iterable of ints, specifying among which devices the tensor should be scattered.",torch.cuda.comm.scatter.yaml,2
+634,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_avg_pool2d.yaml,2
+635,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.sort.yaml,2
+636,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+637,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+638,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","a function, `torch.device`, string or a dict specifying how to remap storage locations",torch.load.yaml,2
+639,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",an iterable of devices among which to broadcast.,torch.cuda.comm.broadcast.yaml,2
+640,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","If it is an int, vector norm will be calculated, if it is 2-tuple of ints, matrix norm will be calculated.",torch.norm.yaml,2
+641,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","the output tuple of (Tensor, LongTensor) can be optionally given to be used as output buffers",torch.kthvalue.yaml,2
+642,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.as_tensor.yaml,2
+643,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",A `torch.nn.Sequential` or the list of modules or functions (comprising the model) to run sequentially.,torch.utils.checkpoint.checkpoint_sequential.yaml,2
+644,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.tensor.yaml,2
+645,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.sparse_coo_tensor.yaml,2
+646,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.sparse_coo_tensor.yaml,2
+647,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",Function that takes in a list of modules and outputs a list of fused modules of the same length.,torch.quantization.fuse_modules.yaml,2
+648,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",list of list of module names to fuse.,torch.quantization.fuse_modules.yaml,2
+649,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",Can also be a list of strings if there is only a single list of modules to fuse.,torch.quantization.fuse_modules.yaml,2
+650,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+651,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+652,73,0.015781922525107604,33,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+653,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.empty_strided.yaml,3
+654,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.arange.yaml,3
+655,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hann_window.yaml,3
+656,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.rand.yaml,3
+657,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.eye.yaml,3
+658,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.ones.yaml,3
+659,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randperm.yaml,3
+660,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.triu_indices.yaml,3
+661,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tril_indices.yaml,3
+662,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.linspace.yaml,3
+663,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hamming_window.yaml,3
+664,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.blackman_window.yaml,3
+665,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.as_tensor.yaml,3
+666,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.bartlett_window.yaml,3
+667,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.logspace.yaml,3
+668,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tensor.yaml,3
+669,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.sparse_coo_tensor.yaml,3
+670,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.zeros.yaml,3
+671,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})","Default: `'cuda'` (i.e., `torch.device('cuda')`, the current CUDA device).",torch.cuda.get_rng_state.yaml,3
+672,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randn.yaml,3
+673,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})","Default: `'cuda'` (i.e., `torch.device('cuda')`, the current CUDA device).",torch.cuda.set_rng_state.yaml,3
+674,28,0.01482544237207078,22,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.full.yaml,3
+675,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor A  of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric positive-definite matrices.",torch.cholesky.yaml,3
+676,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",the size of `input` will determine size of the output tensor.,torch.ones_like.yaml,3
+677,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.det.yaml,3
+678,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",the size of `input` will determine size of the output tensor.,torch.empty_like.yaml,3
+679,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","The input tensor of size (*, m, n)  where *  is zero or more batch dimensions",torch.pinverse.yaml,3
+680,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","float 1D tensor of scales to use, size should match `input.size(axis)`",torch.quantize_per_channel.yaml,3
+681,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","integer 1D tensor of offset to use, size should match `input.size(axis)`",torch.quantize_per_channel.yaml,3
+682,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",the size of `input` will determine size of the output tensor.,torch.zeros_like.yaml,3
+683,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",the size of `input` will determine size of the output tensor.,torch.randn_like.yaml,3
+684,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, m) ",torch.lobpcg.yaml,3
+685,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, m) .",torch.lobpcg.yaml,3
+686,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, n)  where k <= n <= m.",torch.lobpcg.yaml,3
+687,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, m) .",torch.lobpcg.yaml,3
+688,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions consisting of symmetric matrices.",torch.symeig.yaml,3
+689,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, n, n)  where * is zero or more batch dimensions",torch.inverse.yaml,3
+690,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.slogdet.yaml,3
+691,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of matrices of dimension m  times n .",torch.qr.yaml,3
+692,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",Should be of same size as input tensor.,torch.bincount.yaml,3
+693,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.quantized.functional.interpolate.yaml,3
+694,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, n)  where * is zero or more batch dimensions consisting of m  times n  matrices.",torch.svd.yaml,3
+695,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.",torch.logdet.yaml,3
+696,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})",the size of `input` will determine size of the output tensor.,torch.rand_like.yaml,3
+697,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.functional.interpolate.yaml,3
+698,62,0.014347202295552367,24,"frozenset({'input', 'size', 'tensor'})","the input tensor of size (*, m, n) ",torch.pca_lowrank.yaml,3
+699,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.empty_strided.yaml,2
+700,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.arange.yaml,2
+701,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hann_window.yaml,2
+702,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",correspondence between original module types and quantized counterparts,torch.quantization.quantize.yaml,2
+703,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.rand.yaml,2
+704,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.eye.yaml,2
+705,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.ones.yaml,2
+706,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randperm.yaml,2
+707,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.triu_indices.yaml,2
+708,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tril_indices.yaml,2
+709,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.linspace.yaml,2
+710,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hamming_window.yaml,2
+711,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.blackman_window.yaml,2
+712,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.as_tensor.yaml,2
+713,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.as_tensor.yaml,2
+714,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.bartlett_window.yaml,2
+715,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.logspace.yaml,2
+716,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.tensor.yaml,2
+717,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tensor.yaml,2
+718,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.sparse_coo_tensor.yaml,2
+719,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.sparse_coo_tensor.yaml,2
+720,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})","Can be a list, tuple, NumPy `ndarray`, scalar, and other types.",torch.sparse_coo_tensor.yaml,2
+721,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.zeros.yaml,2
+722,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randn.yaml,2
+723,26,0.014347202295552367,25,"frozenset({'SOME_DTYPE', 'types'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.full.yaml,2
+724,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_max_pool3d.yaml,2
+725,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the result tuple of two output tensors (values, indices)",torch.cummax.yaml,2
+726,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",Output list.,torch.distributed.all_gather.yaml,2
+727,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_avg_pool3d.yaml,2
+728,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the result tuple of two output tensors (values, indices)",torch.cummin.yaml,2
+729,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.quantized.functional.adaptive_avg_pool2d.yaml,2
+730,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.topk.yaml,2
+731,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the tuple of two output tensors (min, min_indices)",torch.min2.yaml,2
+732,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+733,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_max_pool2d.yaml,2
+734,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_avg_pool2d.yaml,2
+735,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the result tuple of two output tensors (max, max_indices)",torch.median2.yaml,2
+736,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the output tuple of (Tensor, Tensor)",torch.symeig.yaml,2
+737,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",optional output tuple.,torch.lu.yaml,2
+738,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.sort.yaml,2
+739,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+740,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+741,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the result tuple of two output tensors (max, max_indices)",torch.max2.yaml,2
+742,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the output tuple of (Tensor, LongTensor) can be optionally given to be used as output buffers",torch.kthvalue.yaml,2
+743,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",optional output tuple.,torch.solve.yaml,2
+744,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the result tuple of two output tensors (values, indices)",torch.mode.yaml,2
+745,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","the output tuple of (Tensor, Tensor)",torch.geqrf.yaml,2
+746,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+747,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",the output tuple of tensors,torch.svd.yaml,2
+748,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+749,72,0.012434241989478718,26,"frozenset({'SOME_STRUCTURE', 'output'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+750,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,4
+751,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,4
+752,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,4
+753,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,4
+754,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,4
+755,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,4
+756,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,4
+757,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,4
+758,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,4
+759,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,4
+760,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})",The tensor type must be torch.float.,torch.nn.quantized.functional.conv2d.yaml,4
+761,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,4
+762,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,4
+763,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,4
+764,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,4
+765,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,4
+766,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,4
+767,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,4
+768,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,4
+769,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,4
+770,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,4
+771,67,0.011956001912960305,22,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})",The tensor type must be torch.float.,torch.nn.quantized.functional.conv3d.yaml,4
+772,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on.,torch.distributed.get_backend.yaml,2
+773,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The default is the general main process group.,torch.distributed.get_backend.yaml,2
+774,15,0.011956001912960305,22,"frozenset({'process', 'group'})","If another specific group is specified, the calling process must be part of `group`.",torch.distributed.get_backend.yaml,2
+775,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.all_reduce.yaml,2
+776,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.isend.yaml,2
+777,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.barrier.yaml,2
+778,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.all_gather.yaml,2
+779,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.gather.yaml,2
+780,15,0.011956001912960305,22,"frozenset({'process', 'group'})",URL specifying how to initialize the process group.,torch.distributed.init_process_group.yaml,2
+781,15,0.011956001912960305,22,"frozenset({'process', 'group'})",Timeout for operations executed against the process group.,torch.distributed.init_process_group.yaml,2
+782,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.recv.yaml,2
+783,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.broadcast_multigpu.yaml,2
+784,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.reduce.yaml,2
+785,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.all_gather_multigpu.yaml,2
+786,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.send.yaml,2
+787,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.get_world_size.yaml,2
+788,15,0.011956001912960305,22,"frozenset({'process', 'group'})",Timeout for operations executed against the process group.,torch.distributed.new_group.yaml,2
+789,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.scatter.yaml,2
+790,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.irecv.yaml,2
+791,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.reduce_multigpu.yaml,2
+792,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.broadcast.yaml,2
+793,15,0.011956001912960305,22,"frozenset({'process', 'group'})",The process group to work on,torch.distributed.get_rank.yaml,2
+794,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,4
+795,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,4
+796,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,4
+797,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,4
+798,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,4
+799,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,4
+800,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,4
+801,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,4
+802,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})",None or fp32 bias of type torch.float,torch.nn.quantized.functional.linear.yaml,4
+803,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,4
+804,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,4
+805,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,4
+806,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,4
+807,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,4
+808,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,4
+809,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,4
+810,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,4
+811,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,4
+812,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,4
+813,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,4
+814,66,0.011477761836441894,21,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,4
+815,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_max_pool3d.yaml,2
+816,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer),torch.nn.functional.adaptive_max_pool1d.yaml,2
+817,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the output tensor that must be a BoolTensor,torch.le.yaml,2
+818,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_avg_pool3d.yaml,2
+819,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer),torch.nn.functional.adaptive_avg_pool1d.yaml,2
+820,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the output tensor that must be a BoolTensor,torch.gt.yaml,2
+821,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the output tensor that must be a BoolTensor,torch.ne.yaml,2
+822,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.quantized.functional.adaptive_avg_pool2d.yaml,2
+823,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.topk.yaml,2
+824,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.rand.yaml,2
+825,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_max_pool2d.yaml,2
+826,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_avg_pool2d.yaml,2
+827,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})","the output tuple of (Tensor, LongTensor) that can be optionally given to be used as output buffers",torch.sort.yaml,2
+828,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a device on which the output will be placed (default: current device).,torch.cuda.comm.reduce_add.yaml,2
+829,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.ones.yaml,2
+830,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.normal222.yaml,2
+831,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the output tensor that must be a BoolTensor,torch.ge.yaml,2
+832,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",the output tensor that must be a BoolTensor,torch.lt.yaml,2
+833,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})","the output tuple of (Tensor, LongTensor) can be optionally given to be used as output buffers",torch.kthvalue.yaml,2
+834,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.zeros.yaml,2
+835,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})",a sequence of integers defining the shape of the output tensor.,torch.randn.yaml,2
+836,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})","output device (-1 means CPU, default: current device)",torch.cuda.comm.gather.yaml,2
+837,78,0.010999521759923482,23,"frozenset({'SOME_DTYPE', 'output'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+838,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,4
+839,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,4
+840,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,4
+841,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,4
+842,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,4
+843,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,4
+844,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,4
+845,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,4
+846,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, `torch.long`.",torch.triu_indices.yaml,4
+847,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,4
+848,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, `torch.long`.",torch.tril_indices.yaml,4
+849,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,4
+850,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,4
+851,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,4
+852,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,4
+853,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,4
+854,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,4
+855,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,4
+856,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,4
+857,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,4
+858,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,4
+859,69,0.010999521759923482,22,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,4
+860,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,5
+861,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,5
+862,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","It uses the current device, given by `current_device()`, if `device` is `None` (default).",torch.cuda.get_device_name.yaml,5
+863,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,5
+864,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,5
+865,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,5
+866,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","It uses the current device, given by `current_device()`, if `device` is `None` (default).",torch.cuda.get_device_capability.yaml,5
+867,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,5
+868,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,5
+869,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","It uses the current device, given by `current_device()`, if `device` is `None` (default).",torch.cuda.synchronize.yaml,5
+870,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,5
+871,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,5
+872,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,5
+873,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,5
+874,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,5
+875,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,5
+876,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,5
+877,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,5
+878,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,5
+879,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,5
+880,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,5
+881,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,5
+882,46,0.010999521759923482,23,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,5
+883,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+884,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+885,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+886,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+887,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+888,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+889,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+890,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+891,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+892,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+893,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+894,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+895,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+896,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, infers data type from `data`.",torch.as_tensor.yaml,3
+897,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+898,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+899,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+900,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, infers data type from `data`.",torch.tensor.yaml,3
+901,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+902,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if None, infers data type from `values`.",torch.sparse_coo_tensor.yaml,3
+903,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+904,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+905,65,0.010999521759923482,23,"frozenset({'default', 'type', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3
+906,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,2
+907,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,2
+908,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,2
+909,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,2
+910,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,2
+911,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,2
+912,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,2
+913,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,2
+914,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,2
+915,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,2
+916,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,2
+917,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,2
+918,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,2
+919,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,2
+920,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,2
+921,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.quantized.functional.interpolate.yaml,2
+922,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,2
+923,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,2
+924,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,2
+925,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,2
+926,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.functional.interpolate.yaml,2
+927,45,0.010521281683405069,22,"frozenset({'uses', 'tensor'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,2
+928,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.empty_strided.yaml,2
+929,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",Works only for CPU tensors.,torch.empty_strided.yaml,2
+930,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.arange.yaml,2
+931,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hann_window.yaml,2
+932,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.rand.yaml,2
+933,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.eye.yaml,2
+934,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.ones.yaml,2
+935,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randperm.yaml,2
+936,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.triu_indices.yaml,2
+937,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tril_indices.yaml,2
+938,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.linspace.yaml,2
+939,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hamming_window.yaml,2
+940,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.blackman_window.yaml,2
+941,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.as_tensor.yaml,2
+942,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.bartlett_window.yaml,2
+943,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.logspace.yaml,2
+944,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tensor.yaml,2
+945,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",Works only for CPU tensors.,torch.tensor.yaml,2
+946,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.sparse_coo_tensor.yaml,2
+947,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.zeros.yaml,2
+948,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randn.yaml,2
+949,18,0.010521281683405069,22,"frozenset({'tensor', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.full.yaml,2
+950,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_max_pool3d.yaml,2
+951,61,0.010521281683405069,22,"frozenset({'size', 'output'})",additional size added to one side of each dimension in the output shape.,torch.nn.functional.conv_transpose2d.yaml,2
+952,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the size of `input` will determine size of the output tensor.,torch.ones_like.yaml,2
+953,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer),torch.nn.functional.adaptive_max_pool1d.yaml,2
+954,61,0.010521281683405069,22,"frozenset({'size', 'output'})",Must be the same size as the output of `func`.,torch.autograd.functional.vjp.yaml,2
+955,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer or triple-integer tuple),torch.nn.functional.adaptive_avg_pool3d.yaml,2
+956,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer),torch.nn.functional.adaptive_avg_pool1d.yaml,2
+957,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the size of `input` will determine size of the output tensor.,torch.empty_like.yaml,2
+958,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.quantized.functional.adaptive_avg_pool2d.yaml,2
+959,61,0.010521281683405069,22,"frozenset({'size', 'output'})",additional size added to one side of each dimension in the output shape.,torch.nn.functional.conv_transpose3d.yaml,2
+960,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output image size.,torch.nn.functional.affine_grid.yaml,2
+961,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the size of `input` will determine size of the output tensor.,torch.zeros_like.yaml,2
+962,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_max_pool2d.yaml,2
+963,61,0.010521281683405069,22,"frozenset({'size', 'output'})",additional size added to one side of each dimension in the output shape.,torch.nn.functional.conv_transpose1d.yaml,2
+964,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the size of `input` will determine size of the output tensor.,torch.randn_like.yaml,2
+965,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the target output size (single integer or double-integer tuple),torch.nn.functional.adaptive_avg_pool2d.yaml,2
+966,61,0.010521281683405069,22,"frozenset({'size', 'output'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.quantized.functional.interpolate.yaml,2
+967,61,0.010521281683405069,22,"frozenset({'size', 'output'})",output spatial size.,torch.nn.quantized.functional.interpolate.yaml,2
+968,61,0.010521281683405069,22,"frozenset({'size', 'output'})",the size of `input` will determine size of the output tensor.,torch.rand_like.yaml,2
+969,61,0.010521281683405069,22,"frozenset({'size', 'output'})","If set to `False`, the input and output tensors are aligned by the corner points of their corner pixels, and the interpolation uses edge value padding for out-of-boundary values, making this operation independent of input size when `scale_factor` is kept the same.",torch.nn.functional.interpolate.yaml,2
+970,61,0.010521281683405069,22,"frozenset({'size', 'output'})",output spatial size.,torch.nn.functional.interpolate.yaml,2
+971,61,0.010521281683405069,22,"frozenset({'size', 'output'})","a list, tuple, or `torch.Size` of integers defining the shape of the output tensor.",torch.full.yaml,2
+972,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,4
+973,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,4
+974,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,4
+975,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,4
+976,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,4
+977,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,4
+978,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,4
+979,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,4
+980,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,4
+981,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,4
+982,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,4
+983,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,4
+984,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,4
+985,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,4
+986,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,4
+987,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,4
+988,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,4
+989,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,4
+990,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: `'cuda'` (i.e., `torch.device('cuda')`, the current CUDA device).",torch.cuda.get_rng_state.yaml,4
+991,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,4
+992,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: `'cuda'` (i.e., `torch.device('cuda')`, the current CUDA device).",torch.cuda.set_rng_state.yaml,4
+993,56,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,4
+994,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the device of `input`.",torch.ones_like.yaml,2
+995,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the dtype of `input`.",torch.ones_like.yaml,2
+996,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the layout of `input`.",torch.ones_like.yaml,2
+997,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the device of `input`.",torch.empty_like.yaml,2
+998,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the dtype of `input`.",torch.empty_like.yaml,2
+999,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the layout of `input`.",torch.empty_like.yaml,2
+1000,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the device of `input`.",torch.zeros_like.yaml,2
+1001,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the dtype of `input`.",torch.zeros_like.yaml,2
+1002,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the layout of `input`.",torch.zeros_like.yaml,2
+1003,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If `None`, the argmin of the flattened input is returned.",torch.argmin2.yaml,2
+1004,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the device of `input`.",torch.randn_like.yaml,2
+1005,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the dtype of `input`.",torch.randn_like.yaml,2
+1006,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the layout of `input`.",torch.randn_like.yaml,2
+1007,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If `None`, the argmax of the flattened input is returned.",torch.argmax2.yaml,2
+1008,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If None, derived from the input scale",torch.nn.quantized.functional.linear.yaml,2
+1009,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If None, derived from the input zero_point",torch.nn.quantized.functional.linear.yaml,2
+1010,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If the value is None, matrix norm will be calculated when the input tensor only has two dimensions, vector norm will be calculated when the input tensor only has one dimension.",torch.norm.yaml,2
+1011,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If `None`, the unique of the flattened input is returned.",torch.unique.yaml,2
+1012,75,0.010521281683405069,22,"frozenset({'input', 'none'})","If `None`, the unique of the flattened input is returned.",torch.unique_consecutive.yaml,2
+1013,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the device of `input`.",torch.rand_like.yaml,2
+1014,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the dtype of `input`.",torch.rand_like.yaml,2
+1015,75,0.010521281683405069,22,"frozenset({'input', 'none'})","Default: if `None`, defaults to the layout of `input`.",torch.rand_like.yaml,2
+1016,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+1017,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+1018,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+1019,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","List of appropriately-sized tensors to use for gathered data (default is None, must be specified on the destination rank)",torch.distributed.gather.yaml,3
+1020,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+1021,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+1022,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+1023,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+1024,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+1025,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+1026,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+1027,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+1028,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+1029,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+1030,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+1031,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+1032,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+1033,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+1034,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","List of tensors to scatter (default is None, must be specified on the source rank)",torch.distributed.scatter.yaml,3
+1035,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+1036,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+1037,76,0.010521281683405069,22,"frozenset({'default', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3
+1038,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+1039,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+1040,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+1041,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+1042,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+1043,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})",None values can be specified for scalar Tensors or ones that don't require grad.,torch.autograd.backward.yaml,3
+1044,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+1045,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+1046,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+1047,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+1048,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+1049,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})",None values can be specified for scalar Tensors or ones that don't require grad.,torch.autograd.grad.yaml,3
+1050,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+1051,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+1052,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+1053,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+1054,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+1055,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+1056,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+1057,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+1058,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+1059,77,0.010521281683405069,22,"frozenset({'SOME_DTYPE', 'tensor', 'none'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3
+1060,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.empty_strided.yaml,5
+1061,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.arange.yaml,5
+1062,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.ones_like.yaml,5
+1063,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.empty_like.yaml,5
+1064,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.hann_window.yaml,5
+1065,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.zeros_like.yaml,5
+1066,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.rand.yaml,5
+1067,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.eye.yaml,5
+1068,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.randn_like.yaml,5
+1069,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.ones.yaml,5
+1070,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.randperm.yaml,5
+1071,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.linspace.yaml,5
+1072,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.hamming_window.yaml,5
+1073,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.blackman_window.yaml,5
+1074,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.bartlett_window.yaml,5
+1075,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.logspace.yaml,5
+1076,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.tensor.yaml,5
+1077,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.sparse_coo_tensor.yaml,5
+1078,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.zeros.yaml,5
+1079,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.randn.yaml,5
+1080,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.rand_like.yaml,5
+1081,4,0.010521281683405069,22,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",If autograd should record operations on the returned tensor.,torch.full.yaml,5
+1082,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+1083,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+1084,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+1085,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+1086,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+1087,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})",Default is feps ** 0.5 where feps is smallest non-zero floating-point number of the given input tensor A data type.,torch.lobpcg.yaml,3
+1088,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+1089,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+1090,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+1091,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+1092,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+1093,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+1094,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+1095,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+1096,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+1097,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+1098,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+1099,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+1100,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+1101,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+1102,64,0.010043041606886656,21,"frozenset({'tensor', 'type', 'default'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3
+1103,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.empty_strided.yaml,3
+1104,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.arange.yaml,3
+1105,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hann_window.yaml,3
+1106,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.rand.yaml,3
+1107,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.eye.yaml,3
+1108,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.ones.yaml,3
+1109,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randperm.yaml,3
+1110,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.triu_indices.yaml,3
+1111,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tril_indices.yaml,3
+1112,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.linspace.yaml,3
+1113,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.hamming_window.yaml,3
+1114,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.blackman_window.yaml,3
+1115,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.as_tensor.yaml,3
+1116,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.bartlett_window.yaml,3
+1117,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.logspace.yaml,3
+1118,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.tensor.yaml,3
+1119,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.sparse_coo_tensor.yaml,3
+1120,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.zeros.yaml,3
+1121,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.randn.yaml,3
+1122,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})","output device (-1 means CPU, default: current device)",torch.cuda.comm.gather.yaml,3
+1123,17,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",`device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.,torch.full.yaml,3
+1124,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.empty_strided.yaml,3
+1125,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.arange.yaml,3
+1126,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hann_window.yaml,3
+1127,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.rand.yaml,3
+1128,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.eye.yaml,3
+1129,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.ones.yaml,3
+1130,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randperm.yaml,3
+1131,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.triu_indices.yaml,3
+1132,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","When a module is passed to `torch.jit.trace`, only the `forward` method is run and traced (see `torch.jit.trace` for details).",torch.jit.trace.yaml,3
+1133,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tril_indices.yaml,3
+1134,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.linspace.yaml,3
+1135,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.hamming_window.yaml,3
+1136,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.blackman_window.yaml,3
+1137,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.as_tensor.yaml,3
+1138,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.bartlett_window.yaml,3
+1139,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.logspace.yaml,3
+1140,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.tensor.yaml,3
+1141,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if None, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.sparse_coo_tensor.yaml,3
+1142,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.zeros.yaml,3
+1143,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.randn.yaml,3
+1144,52,0.010043041606886656,21,"frozenset({'SOME_DTYPE', 'see', 'torch'})","Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`).",torch.full.yaml,3

@@ -1,0 +1,77 @@
+aliases:
+- tf.compat.v1.math.zeta
+- tf.compat.v1.zeta
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  q:
+    descp: A `Tensor`. Must have the same type as `x`.
+    dtype:
+    - '&x'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&x'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - q
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/zeta
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: zeta
+title: tf.math.zeta
+version: 2.1.0

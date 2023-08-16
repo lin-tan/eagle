@@ -1,0 +1,19 @@
+constraints:
+  beta:
+    default: '1'
+    descp: 'the  beta  value for the Softplus formulation. Default: 1'
+    sig_dtype: int
+  threshold:
+    default: '20'
+    descp: 'values above this revert to a linear function. Default: 20'
+    sig_dtype: int
+inputs:
+  optional:
+  - beta
+  - threshold
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Softplus.html#torch.nn.Softplus#torch.nn.Softplus
+package: torch
+target: Softplus
+title: torch.nn.Softplus
+version: 1.6.0

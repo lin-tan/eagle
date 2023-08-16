@@ -1,0 +1,28 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If set to `False`, the layer will not learn an additive bias. Default:
+      `True`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If set to CONSTANT_BOOL, the layer will not learn an additive bias
+    - Default CONSTANT_BOOL
+  in_features:
+    descp: size of each input sample
+    normalized_descp:
+    - size of each input sample
+  out_features:
+    descp: size of each output sample
+    normalized_descp:
+    - size of each output sample
+inputs:
+  optional:
+  - bias
+  required:
+  - in_features
+  - out_features
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Linear
+package: torch
+target: Linear
+title: torch.nn.Linear
+version: 1.5.0

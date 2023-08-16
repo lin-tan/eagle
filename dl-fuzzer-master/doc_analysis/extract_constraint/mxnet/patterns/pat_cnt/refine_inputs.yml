@@ -1,0 +1,9 @@
+pat:
+  ^optional\.*$:
+    cnt: 0
+    dest: optional
+    remove_from: required
+  ^required\.*$:
+    cnt: 0
+    dest: required
+    remove_from: optional

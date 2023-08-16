@@ -1,0 +1,58 @@
+constraints:
+  base:
+    default: '10.0'
+    descp: 'base of the logarithm function. Default: `10.0`.'
+    doc_dtype: float
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype: '`torch.device`, optional'
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`).'
+    doc_dtype: '`torch.dtype`, optional'
+  end:
+    descp: the ending value for the set of points
+    doc_dtype: float
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned Tensor. Default: `torch.strided`.'
+    doc_dtype: '`torch.layout`, optional'
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+  start:
+    descp: the starting value for the set of points
+    doc_dtype: float
+  steps:
+    default: '100'
+    descp: 'number of points to sample between `start` and `end`. Default: `100`.'
+    doc_dtype: int
+inputs:
+  optional:
+  - steps
+  - base
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - start
+  - end
+link: https://pytorch.org/docs/stable/torch.html#torch.logspace
+package: torch
+ret_type: Tensor
+target: logspace
+title: torch.logspace
+version: 1.5.0

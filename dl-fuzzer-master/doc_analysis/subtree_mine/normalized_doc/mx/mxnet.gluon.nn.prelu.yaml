@@ -1,0 +1,22 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha_initializer:
+    default: <mxnet.initializer.Constantobject>
+    descp: Initializer for the embeddings matrix.
+    doc_dtype: Initializer
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - Initializer for the embeddings matrix
+    normalized_docdtype: ONE_WORD Initializer
+inputs:
+  optional:
+  - alpha_initializer
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.PReLU
+package: mxnet
+target: PReLU
+title: mxnet.gluon.nn.PReLU
+version: 1.6.0

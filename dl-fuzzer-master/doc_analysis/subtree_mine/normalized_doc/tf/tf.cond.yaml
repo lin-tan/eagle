@@ -1,0 +1,41 @@
+constraints:
+  false_fn:
+    default: None
+    descp: The callable to be performed if pred is false.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The callable to be performed if PARAM is CONSTANT_BOOL
+  name:
+    default: None
+    descp: Optional name prefix for the returned tensors.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional name prefix for the returned D_STRUCTURE
+  pred:
+    descp: A scalar determining whether to return the result of `true_fn` or`false_fn`.
+    normalized_descp:
+    - A scalar determining whether to return the result of PARAM or PARAM
+  true_fn:
+    default: None
+    descp: The callable to be performed if pred is true.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The callable to be performed if PARAM is CONSTANT_BOOL
+exceptions:
+- TypeError: if `true_fn` or `false_fn` is not callable.
+- ValueError: if `true_fn` and `false_fn` do not return the same number of tensors,
+    or return tensors of different types.
+inputs:
+  optional:
+  - true_fn
+  - false_fn
+  - name
+  required:
+  - pred
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/cond
+outputs: Tensors returned by the call to either `true_fn` or `false_fn`. If the callables
+  return a singleton list, the element is extracted from the list.
+package: tensorflow
+target: cond
+title: tf.cond
+version: 2.1.0

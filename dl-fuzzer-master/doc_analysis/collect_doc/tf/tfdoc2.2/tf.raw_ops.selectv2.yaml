@@ -1,0 +1,24 @@
+constraints:
+  condition:
+    descp: A Tensor of type bool.
+  e:
+    descp: A Tensor. Must have the same type as t.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  t:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - condition
+  - t
+  - e
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SelectV2
+outputs:
+- A Tensor. Has the same type as t.
+package: tensorflow
+target: SelectV2
+title: tf.raw_ops.SelectV2
+version: 2.2.0

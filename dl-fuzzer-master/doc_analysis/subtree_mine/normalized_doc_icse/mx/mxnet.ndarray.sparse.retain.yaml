@@ -1,0 +1,46 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input array for sparse_retain operator.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE for sparse_retain operator
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  indices:
+    default: None
+    descp: The index array of rows ids that will be retained.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The index D_STRUCTURE of rows ids that will be retained
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - indices
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.retain
+package: mxnet
+target: retain
+title: mxnet.ndarray.sparse.retain
+version: 1.6.0

@@ -1,0 +1,19 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, int8, int16, int32, int64.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Abs
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: Abs
+title: tf.raw_ops.Abs
+version: 2.2.0

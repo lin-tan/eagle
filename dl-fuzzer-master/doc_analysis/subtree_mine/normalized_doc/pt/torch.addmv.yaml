@@ -1,0 +1,62 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: multiplier for mat @ vec  ( alpha )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM PARAM BSTR
+    normalized_docdtype: Number, optional
+  beta:
+    default: '1'
+    descp: multiplier for `input` ( beta )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM BSTR
+    normalized_docdtype: Number, optional
+  input:
+    descp: vector to be added
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE to be added
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat:
+    descp: matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  vec:
+    descp: vector to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  keyword_only:
+  - beta
+  - alpha
+  - out
+  optional:
+  - beta
+  - alpha
+  - out
+  required:
+  - input
+  - mat
+  - vec
+link: https://pytorch.org/docs/stable/torch.html#torch.addmv
+package: torch
+ret_type: Tensor
+target: addmv
+title: torch.addmv
+version: 1.5.0

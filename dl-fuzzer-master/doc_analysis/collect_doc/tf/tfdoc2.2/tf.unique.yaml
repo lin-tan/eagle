@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.unique
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_idx:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+  x:
+    descp: A Tensor. 1-D.
+inputs:
+  optional:
+  - out_idx
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/unique
+outputs:
+- A tuple of Tensor objects (y, idx).
+- y: A Tensor. Has the same type as x.
+- idx: A Tensor of type out_idx.
+package: tensorflow
+target: unique
+title: tf.unique
+version: 2.2.0

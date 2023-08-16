@@ -1,0 +1,18 @@
+constraints:
+  train_mode:
+    default: 'False'
+    descp: Whether to do forward for training or predicting.
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - boolean
+inputs:
+  optional:
+  - train_mode
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/autograd/index.html#mxnet.autograd.pause
+package: mxnet
+target: pause
+title: mxnet.autograd.pause
+version: 1.6.0

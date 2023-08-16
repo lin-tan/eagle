@@ -1,0 +1,25 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  group:
+    default: <object object>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+inputs:
+  optional:
+  - group
+  - async_op
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.barrier
+package: torch
+target: barrier
+title: torch.distributed.barrier
+version: 1.5.0

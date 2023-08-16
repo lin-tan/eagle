@@ -1,0 +1,32 @@
+constraints:
+  amount:
+    descp: quantity of parameters to prune. If `float`, should be between 0.0 and
+      1.0 and represent the fraction of parameters to prune. If `int`, it represents
+      the absolute number of parameters to prune.
+    doc_dtype:
+    - int
+    - float
+  dim:
+    descp: index of the dim along which we define channels to prune.
+    doc_dtype:
+    - int
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype:
+    - nn.Module
+  name:
+    descp: parameter name within `module` on which pruning will act.
+    doc_dtype:
+    - str
+inputs:
+  optional: []
+  required:
+  - module
+  - name
+  - amount
+  - dim
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.utils.prune.random_structured.html#torch.nn.utils.prune.random_structured#torch.nn.utils.prune.random_structured
+package: torch
+target: random_structured
+title: torch.nn.utils.prune.random_structured
+version: 1.6.0

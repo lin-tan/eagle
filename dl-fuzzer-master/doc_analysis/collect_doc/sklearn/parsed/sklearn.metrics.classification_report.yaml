@@ -1,0 +1,27 @@
+constraints:
+  digits: {default: '2', descp: 'int Number of digits for formatting output floating
+      point values. When ``output_dict`` is ``True``, this will be ignored and the
+      returned values will not be rounded.'}
+  labels: {default: None, descp: 'array, shape = [n_labels] Optional list of label
+      indices to include in the report.'}
+  output_dict: {default: 'False', descp: 'bool (default = False) If True, return output
+      as dict'}
+  sample_weight: {default: None, descp: 'array-like of shape (n_samples,), default=None
+      Sample weights.'}
+  target_names: {default: None, descp: list of strings Optional display names matching
+      the labels (same order).}
+  y_pred: {descp: '1d array-like, or label indicator array / sparse matrix Estimated
+      targets as returned by a classifier.'}
+  y_true: {descp: '1d array-like, or label indicator array / sparse matrix Ground
+      truth (correct) target values.'}
+  zero_division: {default: warn, descp: '"warn", 0 or 1, default="warn" Sets the value
+      to return when there is a zero division. If set to "warn", this acts as 0, but
+      warnings are also raised.'}
+inputs:
+  optional: [labels, target_names, sample_weight, digits, output_dict, zero_division]
+  required: [y_true, y_pred]
+link: ''
+package: sklearn
+target: classification_report
+title: sklearn.metrics.classification_report
+version: 0.24.2

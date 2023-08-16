@@ -1,0 +1,26 @@
+constraints:
+  axis:
+    default: '0'
+    descp: An optional int. Defaults to 0. Dimension along which to unpack. Negative
+      values wrap around, so the valid range is [-R, R).
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num:
+    descp: An int that is >= 0.
+  value:
+    descp: A Tensor. 1-D or higher, with axis dimension size equal to num.
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - value
+  - num
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Unpack
+outputs:
+- A list of num Tensor objects with the same type as value.
+package: tensorflow
+target: Unpack
+title: tf.raw_ops.Unpack
+version: 2.2.0

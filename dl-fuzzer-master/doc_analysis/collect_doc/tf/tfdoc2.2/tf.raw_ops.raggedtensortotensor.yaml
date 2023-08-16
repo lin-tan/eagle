@@ -1,0 +1,46 @@
+constraints:
+  default_value:
+    descp: A Tensor. Must have the same type as values. The default_value when the
+      shape is larger than the ragged tensor. The default_value is broadcast until
+      it is the shape of the output tensor, and then overwritten by values in the
+      ragged tensor. The default value must be compatible with this broadcast operation,
+      and must have fewer dimensions than the value tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  row_partition_tensors:
+    descp: 'A list of at least 1 Tensor objects with the same type in: int64, int32.'
+  row_partition_types:
+    descp: 'A list of strings. The types of the row partition tensors. At present,
+      these can be: "ROW_SPLITS": the row_splits tensor from the ragged tensor. "VALUE_ROWIDS":
+      the value_rowids tensor from the ragged tensor. "FIRST_DIM_SIZE": if value_rowids
+      is used for the first dimension, then it is preceeded by "FIRST_DIM_SIZE". The
+      tensors are in the order of the dimensions.'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int64, int32. The desired
+      shape of the the output tensor. If left unspecified (empty), the minimal shape
+      required to contain all the elements in the ragged tensor (the natural shape)
+      will be used. If some dimensions are left unspecified, then the size of the
+      natural shape is used in that dimension. Note that dense dimensions cannot be
+      modified by the shape argument. Trying to change the size of a dense dimension
+      will cause the op to fail. Examples: natural shape: [4, 5, 6] shape: -1 output
+      shape: [4, 5, 6] natural shape: [4, 5, 6] shape: [3, -1, 2] output shape: [3,
+      5, 2] natural shape: [4, 5, 6] shape: [3, 7, 2] output shape: [3, 7, 2]'
+  values:
+    descp: A Tensor. A 1D tensor representing the values of the ragged tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - shape
+  - values
+  - default_value
+  - row_partition_tensors
+  - row_partition_types
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RaggedTensorToTensor
+outputs:
+- A Tensor. Has the same type as values.
+package: tensorflow
+target: RaggedTensorToTensor
+title: tf.raw_ops.RaggedTensorToTensor
+version: 2.2.0

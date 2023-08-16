@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.keras.backend.to_dense
+constraints:
+  tensor:
+    descp: A tensor instance (potentially sparse).
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (potentially
+    - sparse)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/to_dense
+outputs: A dense tensor.
+package: tensorflow
+target: to_dense
+title: tf.keras.backend.to_dense
+version: 2.1.0

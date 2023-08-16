@@ -1,0 +1,26 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+  layout:
+    default: torch.strided
+    descp: the desired layout of returned window tensor. Only `torch.strided` (dense
+      layout) is supported.
+    doc_dtype:
+    - torch.layout
+  periodic:
+    default: 'True'
+    descp: If True, returns a window to be used as periodic function. If False, return
+      a symmetric window.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.bartlett_window

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list, tuple, torch.Size",Size of the sparse tensor. If not provided the size will be inferred as the minimum size big enough to hold all non-zero elements.,None,prim_dtype,dtype(int),,1
+"list, tuple, torch.Size",Size of the sparse tensor. If not provided the size will be inferred as the minimum size big enough to hold all non-zero elements.,None,nonprim_dtype,"structure(list, tuple)",,1
+"list, tuple, torch.Size",Size of the sparse tensor. If not provided the size will be inferred as the minimum size big enough to hold all non-zero elements.,None,shape,ndim(1),,1
+"list, tuple, torch.Size",Size of the sparse tensor. If not provided the size will be inferred as the minimum size big enough to hold all non-zero elements.,None,validvalue,"range([0,inf))",,1

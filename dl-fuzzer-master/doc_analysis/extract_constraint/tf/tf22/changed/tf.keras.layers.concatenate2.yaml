@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.keras.layers.concatenate
+constraints:
+  '**kwargs':
+    default: null
+    descp: Standard layer keyword arguments.
+  axis:
+    default: '-1'
+    descp: Concatenation axis.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  inputs:
+    descp: A list of input tensors (at least 2).
+    structure:
+    - list
+    - list(tf.tensor)
+inputs:
+  optional:
+  - axis
+  - '**kwargs'
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/concatenate
+outputs:
+- A tensor, the concatenation of the inputs alongside axis axis.
+package: tensorflow
+target: concatenate
+title: tf.keras.layers.concatenate
+version: 2.2.0

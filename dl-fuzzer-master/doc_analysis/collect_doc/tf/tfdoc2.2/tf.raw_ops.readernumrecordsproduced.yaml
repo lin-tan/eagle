@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reader_handle:
+    descp: A Tensor of type mutable string. Handle to a Reader.
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ReaderNumRecordsProduced
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: ReaderNumRecordsProduced
+title: tf.raw_ops.ReaderNumRecordsProduced
+version: 2.2.0

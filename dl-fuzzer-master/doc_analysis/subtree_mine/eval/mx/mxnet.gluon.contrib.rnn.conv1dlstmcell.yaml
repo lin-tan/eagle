@@ -1,0 +1,16 @@
+constraints:
+  i2h_dilate:
+    default: (1,)
+    descp: Input convolution dilate.
+    doc_dtype:
+    - int
+    - tuple of int
+    - default (1,)
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple(int)
+    - tuple
+title: mxnet.gluon.contrib.rnn.Conv1DLSTMCell

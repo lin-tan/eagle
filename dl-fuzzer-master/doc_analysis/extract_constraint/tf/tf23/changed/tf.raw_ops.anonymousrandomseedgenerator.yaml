@@ -1,0 +1,35 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  seed2:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - seed
+  - seed2
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/AnonymousRandomSeedGenerator
+outputs:
+- A tuple of Tensor objects (handle, deleter).
+- handle: A Tensor of type resource.
+- deleter: A Tensor of type variant.
+package: tensorflow
+target: AnonymousRandomSeedGenerator
+title: tf.raw_ops.AnonymousRandomSeedGenerator
+version: 2.3.0

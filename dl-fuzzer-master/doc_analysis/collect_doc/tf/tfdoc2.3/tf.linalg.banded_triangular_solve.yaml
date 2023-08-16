@@ -1,0 +1,39 @@
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Boolean indicating whether to solve
+      with the matrix's block-wise adjoint.
+  bands:
+    descp: A Tensor describing the bands of the left hand side, with shape [..., K,
+      M]. The K rows correspond to the diagonal to the K - 1-th diagonal (the diagonal
+      is the top row) when lower is True and otherwise the K - 1-th superdiagonal
+      to the diagonal (the diagonal is the bottom row) when lower is False. The bands
+      are stored with 'LEFT_RIGHT' alignment, where the superdiagonals are padded
+      on the right and subdiagonals are padded on the left. This is the alignment
+      cuSPARSE uses. See tf.linalg.set_diag for more details.
+  lower:
+    default: 'True'
+    descp: An optional bool. Defaults to True. Boolean indicating whether bands represents
+      a lower or upper triangular matrix.
+  name:
+    default: None
+    descp: A name to give this Op (optional).
+  rhs:
+    descp: A Tensor of shape [..., M] or [..., M, N] and with the same dtype as diagonals.
+      Note that if the shape of rhs and/or diags isn't known statically, rhs will
+      be treated as a matrix rather than a vector.
+inputs:
+  optional:
+  - lower
+  - adjoint
+  - name
+  required:
+  - bands
+  - rhs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/linalg/banded_triangular_solve
+outputs:
+- A Tensor of shape [..., M] or [..., M, N] containing the solutions.
+package: tensorflow
+target: banded_triangular_solve
+title: tf.linalg.banded_triangular_solve
+version: 2.3.0

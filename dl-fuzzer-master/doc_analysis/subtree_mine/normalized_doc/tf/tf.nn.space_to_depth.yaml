@@ -1,0 +1,37 @@
+constraints:
+  block_size:
+    descp: An `int` that is `>= 2`. The size of the spatial block.
+    normalized_descp:
+    - An D_TYPE that is REXPR
+    - The size of the spatial block
+  data_format:
+    default: NHWC
+    descp: 'An optional `string` from: `"NHWC", "NCHW", "NCHW_VECT_C"`. Defaults to
+      `"NHWC"`.'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - An optional D_TYPE from QSTR
+    - Defaults to QSTR
+  input:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - input
+  - block_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/space_to_depth
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: space_to_depth
+title: tf.nn.space_to_depth
+version: 2.1.0

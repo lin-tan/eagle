@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to the function.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the function
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  grad_scale:
+    default: _Null
+    descp: Scale the gradient by a float factor
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Scale the gradient by a D_TYPE factor
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  label:
+    default: None
+    descp: Input label to the function.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input label to the function
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - label
+  - grad_scale
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.LinearRegressionOutput
+package: mxnet
+target: LinearRegressionOutput
+title: mxnet.ndarray.sparse.LinearRegressionOutput
+version: 1.6.0

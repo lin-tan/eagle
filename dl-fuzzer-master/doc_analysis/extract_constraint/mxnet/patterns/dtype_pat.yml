@@ -1,0 +1,210 @@
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: dtype
+findall: True
+
+stop_word:
+    - and
+    - or
+    - etc
+
+sep:
+    - /
+    - '`'
+    - \'
+    - \"
+    - ' '
+    - ','
+
+pat:
+
+    '^if\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+    
+    '^(true|false)\s+(if|for)':
+        dtype: bool
+        ndim: 0
+
+    '^(indicates\s+)whether':
+        dtype: bool
+        ndim: 0
+
+    '^whether\s+to\s+':
+        dtype: bool
+        ndim: 0
+
+
+    'if\s+(this\s+is\s+)?set\s+to\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    '^if\s+set,':
+        dtype: bool
+        ndim: 0
+
+    '^turn\s+off':
+        dtype: bool
+        ndim: 0
+
+    # 'an\s+optional\s+device\s+context':
+    #     dtype: context
+        
+    # '^(device\s+)?context':
+    #     dtype: context
+ 
+    '^the\s+`*(\w+)`*':
+        group: 1
+
+    # the first word
+    '^(\w+)':
+        group: 1
+
+    '\(deprecated!':
+        dtype: deprecated
+
+    '^(input|output|the)\s+data\s+type':
+        dtype: numpy.dtype
+
+        
+    '^data\s+type\s+of':
+        dtype: dtype
+        ndim: 0
+
+    '^dtype\s+of':
+        dtype: dtype
+        ndim: 0
+
+    '^failure\s+probabilities':
+        dtype: float
+        range: '[0,1]'
+
+    'if\s+(\w+)\s+is\s+(a|an)\s+(\w+)[,\s.]':
+        group: 3
+        check_arg: 1
+        ndim: 0
+
+    '(learning|drop)\s+rate':
+        dtype: float
+        range: '[0,1]'
+        ndim: 0
+
+    'location\s+for':
+        dtype: string
+
+    'in\s+the\s+form\s+of\s+(\w+)':
+        group: 1
+
+    'the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+)':
+        group: 2
+        ndim: 0
+
+    'the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+':
+        dtype: numeric
+        ndim: 0
+        prereq:
+            - 'the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+)'
+
+    '^(a|an)\s+(optional\s+)?([\w.]+)':
+        group: 3
+        ndim: 0
+
+    '^an\s+optional\s+value\s+type':
+        dtype: numpy.dtype
+        ndim: 0
+
+    '^a\s+.*?\s+of\s+type\s+(\w+)':
+        group: 1
+
+
+    '^(the\s+)?((minimum|maximum|total|epoch)\s+)?number\s+of':
+        dtype: int
+        range: '[0,inf)'
+        ndim: 0   
+        
+    # '^alpha.*?\(shape\)':
+    #     dtype: shape
+
+    '^(the\s+)?(target|input|output)?\s*(shape)':
+        group: 3
+
+
+    '^lengths\s+of\s+':
+        dtype: int
+        range: '[0,inf)'
+        ndim: 1
+
+    '^the\s+length\s+of':
+        dtype: int
+        range: '[0,inf)'
+        ndim: 0
+
+    '^(the\s+)?decay\s+rate':
+        dtype: float
+        range: '[0,1]'
+        ndim: 0
+
+    '^(the\s+)?dimension':
+        dtype: int
+
+    '^(the\s+)?(minimum|maximum)?\s*scalar':
+        dtype: scalar
+
+    '^(the\s+)?path\s':
+        dtype: string
+
+    'the\s+(beginning|ending)\s+index':
+        dtype: int
+        ndim: 0
+
+
+
+    '^offset':
+        dtype: int
+        ndim: 0
+
+
+    'type\s+for':
+        dtype: dtype
+        ndim: 0
+
+    'device\s+id':
+        dtype: int
+        ndim: 0
+        range: '[0,inf)'
+
+
+    'directory\s+path':
+        dtype: string
+        ndim: 0
+
+
+    '\bid\b\s+of':
+        dtype: int
+        range: '[0,inf)'
+        ndim: 0
+
+    '^(the\s+)?(optional,|start)?\s*index\s+of':
+        dtype: int
+        # range: '[0,inf)'
+        ndim: 0
+
+    '^(binary|input)\s+(source\s+)?image':
+        dtype: image
+
+    '(model|file)\s+name':
+        dtype: string
+        ndim: 0
+
+    '(augmenter|data|label|the)\s+names':
+        dtype: string
+        ndim: 1
+
+
+
+    
+

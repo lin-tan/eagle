@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional `int` or rank-0 integer `Tensor`. At most this many audio clips will be emitted at each step. When more than`max_outputs` many clips are provided, the first `max_outputs`many clips will be used and the rest silently discarded.",3,prim_dtype,dtype(int),,1
+,"Optional `int` or rank-0 integer `Tensor`. At most this many audio clips will be emitted at each step. When more than`max_outputs` many clips are provided, the first `max_outputs`many clips will be used and the rest silently discarded.",3,nonprim_dtype,tensor_t(tf.tensor),,1
+,"Optional `int` or rank-0 integer `Tensor`. At most this many audio clips will be emitted at each step. When more than`max_outputs` many clips are provided, the first `max_outputs`many clips will be used and the rest silently discarded.",3,shape,ndim(0),,1
+,"Optional `int` or rank-0 integer `Tensor`. At most this many audio clips will be emitted at each step. When more than`max_outputs` many clips are provided, the first `max_outputs`many clips will be used and the rest silently discarded.",3,validvalue,"range([0,inf))",,1

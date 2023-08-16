@@ -1,0 +1,33 @@
+constraints:
+  ignore_lookup_error:
+    default: 'True'
+    descp: An optional bool. Defaults to True. whether to ignore the error when the
+      resource doesn't exist.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. handle to the resource to delete.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - ignore_lookup_error
+  - name
+  required:
+  - resource
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DestroyResourceOp
+outputs:
+- The created Operation.
+package: tensorflow
+target: DestroyResourceOp
+title: tf.raw_ops.DestroyResourceOp
+version: 2.3.0

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A single tensor representing the complete embedding tensor, or a list of P tensors all of same shape except for the first dimension, representing sharded embedding tensors.  Alternatively, a`PartitionedVariable`, created by partitioning along dimension 0. Each element must be appropriately sized for the 'div' `partition_strategy`.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list, list(tf.tensor))",,1

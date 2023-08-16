@@ -1,0 +1,12 @@
+constraints:
+  vec:
+    descp: a single vector represents the parameters of a model.
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '1'
+    tensor_t:
+    - torch.tensor
+    structure:
+    - list
+title: torch.nn.utils.vector_to_parameters

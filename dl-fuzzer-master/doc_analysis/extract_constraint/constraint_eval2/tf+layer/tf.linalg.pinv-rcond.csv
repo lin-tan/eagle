@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`Tensor` of small singular value cutoffs.  Singular values smaller (in modulus) than `rcond` * largest_singular_value (again, in modulus) are set to zero. Must broadcast against `tf.shape(a)[:-2]`. Default value: `10. * max(num_rows, num_cols) * np.finfo(a.dtype).eps`.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"`Tensor` of small singular value cutoffs.  Singular values smaller (in modulus) than `rcond` * largest_singular_value (again, in modulus) are set to zero. Must broadcast against `tf.shape(a)[:-2]`. Default value: `10. * max(num_rows, num_cols) * np.finfo(a.dtype).eps`.",None,shape,"shape([&a]), ndim(1)",,1

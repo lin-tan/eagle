@@ -1,0 +1,89 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to the pooling operator, a 4D Feature maps
+    doc_dtype: Symbol
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the pooling operator, a CONSTANT_NUM-D Feature maps
+    normalized_docdtype: ONE_WORD Symbol
+  group_size:
+    default: _Null
+    descp: fix group size
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix group size
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  output_dim:
+    default: _Null
+    descp: fix output dim
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix output dim
+    normalized_docdtype: D_TYPE, required
+  pooled_size:
+    default: _Null
+    descp: fix pooled size
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix pooled size
+    normalized_docdtype: D_TYPE, required
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array of [[batch_index, x1, y1, x2, y2]].
+      (x1, y1) and (x2, y2) are top left and down right corners of designated region
+      of interest. batch_index indicates the index of corresponding image in the input
+      data
+    doc_dtype: Symbol
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Bounding box coordinates, a CONSTANT_NUM-D D_STRUCTURE of BSTR
+    - BSTR are top left and down right corners of designated region of interest
+    - batch_index indicates the index of corresponding image in the input PARAM
+    normalized_docdtype: ONE_WORD Symbol
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or w) to raw image height (or w). Equals
+      the reciprocal of total stride in convolutional layers
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Ratio of input feature map height BSTR
+    - Equals the reciprocal of total stride in convolutional layers
+    normalized_docdtype: D_TYPE, required
+inputs:
+  optional:
+  - data
+  - rois
+  - spatial_scale
+  - output_dim
+  - pooled_size
+  - group_size
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.PSROIPooling
+package: mxnet
+target: PSROIPooling
+title: mxnet.contrib.ndarray.PSROIPooling
+version: 1.6.0

@@ -1,0 +1,235 @@
+,freq,sequence,len
+0,812,['kwargs'],1
+1,709,['name'],1
+2,550,['data'],1
+3,123,['grad'],1
+4,108,['SOME_DTYPE'],1
+5,104,['axis'],1
+6,103,['lhs'],1
+7,103,['rhs'],1
+8,96,['dtype'],1
+9,89,['shape'],1
+10,77,['weight'],1
+11,76,['max'],1
+12,69,['num'],1
+13,69,['clip'],1
+14,67,['label'],1
+15,65,['min'],1
+16,64,['size'],1
+17,55,"['rescale', 'grad']",2
+18,51,"['clip', 'gradient']",2
+19,50,['beta'],1
+20,46,['alpha'],1
+21,44,['use'],1
+22,42,['scale'],1
+23,40,['pretrained'],1
+24,38,['bias'],1
+25,37,['mean'],1
+26,37,['lr'],1
+27,37,['wd'],1
+28,36,['keepdims'],1
+29,35,['b'],1
+30,35,['range'],1
+31,33,['output'],1
+32,32,['lengths'],1
+33,32,['root'],1
+34,32,['mode'],1
+35,31,['transpose'],1
+36,30,['type'],1
+37,29,['dim'],1
+38,27,['pad'],1
+39,27,['length'],1
+40,27,['momentum'],1
+41,26,['cudnn'],1
+42,26,['gamma'],1
+43,25,['exclude'],1
+44,24,['sample'],1
+45,24,['calib'],1
+46,23,['std'],1
+47,23,['var'],1
+48,23,['weights'],1
+49,20,['stride'],1
+50,20,['index'],1
+51,20,['crop'],1
+52,18,['SOME_STRUCTURE'],1
+53,18,['lower'],1
+54,18,['random'],1
+55,18,['state'],1
+56,17,['eps'],1
+57,17,['value'],1
+58,17,['n'],1
+59,17,['prob'],1
+60,17,['args'],1
+61,16,['log'],1
+62,16,"['data', 'lengths']",2
+63,16,"['label', 'lengths']",2
+64,16,"['use', 'lengths']",2
+65,16,"['num', 'weights']",2
+66,16,"['SOME_STRUCTURE', 'length']",2
+67,16,['epsilon'],1
+68,16,"['calib', 'range']",2
+69,16,['p'],1
+70,15,['lam'],1
+71,15,"['grad', 'scale']",2
+72,15,['id'],1
+73,14,['stype'],1
+74,14,"['use', 'length']",2
+75,14,['kernel'],1
+76,14,"['max', 'range']",2
+77,14,"['min', 'range']",2
+78,14,['group'],1
+79,14,['offset'],1
+80,14,['format'],1
+81,14,['axes'],1
+82,13,"['lazy', 'update']",2
+83,13,['thresh'],1
+84,13,['k'],1
+85,13,['mu'],1
+86,13,['batch'],1
+87,13,['ratio'],1
+88,13,['rand'],1
+89,12,['layout'],1
+90,12,"['max', 'data']",2
+91,12,"['min', 'data']",2
+92,12,['moving'],1
+93,12,['nms'],1
+94,12,['threshold'],1
+95,12,['r'],1
+96,12,['indices'],1
+97,12,['bound'],1
+98,12,['rpn'],1
+99,11,"['transpose', 'b']",2
+100,11,['high'],1
+101,11,['low'],1
+102,11,['mom'],1
+103,11,['func'],1
+104,10,"['output', 'mean', 'var']",3
+105,10,['heads'],1
+106,10,"['num', 'filter']",2
+107,10,"['num', 'group']",2
+108,10,['workspace'],1
+109,10,['width'],1
+110,10,['global'],1
+111,10,['src'],1
+112,10,['lrs'],1
+113,10,['wds'],1
+114,10,"['pooled', 'size']",2
+115,10,['rois'],1
+116,10,"['spatial', 'scale']",2
+117,10,['target'],1
+118,10,['g'],1
+119,10,['profile'],1
+120,10,['ignore'],1
+121,9,"['output', 'dim']",2
+122,9,['values'],1
+123,9,['loc'],1
+124,9,['pred'],1
+125,9,['sym'],1
+126,9,['input'],1
+127,9,['params'],1
+128,9,['top'],1
+129,9,['begin'],1
+130,9,['end'],1
+131,8,"['blank', 'label']",2
+132,8,"['use', 'data', 'lengths']",3
+133,8,"['use', 'label', 'lengths']",3
+134,8,"['use', 'SOME_STRUCTURE', 'length']",3
+135,8,"['keys', 'values']",2
+136,8,['dilate'],1
+137,8,"['max', 'calib', 'range']",3
+138,8,"['max', 'random']",2
+139,8,"['min', 'calib', 'range']",3
+140,8,['outputs'],1
+141,8,['graph'],1
+142,8,['start'],1
+143,8,['score'],1
+144,8,['topk'],1
+145,8,['valid'],1
+146,8,['names'],1
+147,8,['cls'],1
+148,8,"['target', 'shape']",2
+149,8,['part'],1
+150,8,['ratios'],1
+151,8,['shuffle'],1
+152,8,['ascend'],1
+153,8,['factor'],1
+154,8,['train'],1
+155,8,['pool'],1
+156,8,"['rpn', 'nms', 'top', 'n']",4
+157,7,"['max', 'crop']",2
+158,7,['stats'],1
+159,7,['overlap'],1
+160,7,['atol'],1
+161,7,['rtol'],1
+162,7,['interp'],1
+163,7,"['batch', 'size']",2
+164,7,['aux'],1
+165,7,['nan'],1
+166,7,['arrays'],1
+167,7,['contrast'],1
+168,7,['path'],1
+169,7,['seed'],1
+170,6,['forward'],1
+171,6,"['data', 'shape']",2
+172,6,"['use', 'global', 'stats']",3
+173,6,['queries'],1
+174,6,"['cudnn', 'tune']",2
+175,6,"['min', 'crop']",2
+176,6,"['min', 'size']",2
+177,6,"['num', 'arrays']",2
+178,6,['x'],1
+179,6,"['fix', 'gamma']",2
+180,6,"['moving', 'mean']",2
+181,6,"['moving', 'var']",2
+182,6,"['lower', 'bound']",2
+183,6,['quantized'],1
+184,6,['grads'],1
+185,6,"['background', 'id']",2
+186,6,"['force', 'suppress']",2
+187,6,"['valid', 'thresh']",2
+188,6,['rightside'],1
+189,6,['sigma'],1
+190,6,"['cls', 'prob']",2
+191,6,['layers'],1
+192,6,['step'],1
+193,6,['aspect'],1
+194,6,['scales'],1
+195,6,['saturation'],1
+196,6,['img'],1
+197,6,['resize'],1
+198,6,['temperature'],1
+199,6,"['act', 'type']",2
+200,6,['arg'],1
+201,6,"['upper', 'bound']",2
+202,6,"['ignore', 'label']",2
+203,6,['negative'],1
+204,6,['normalization'],1
+205,6,['multi'],1
+206,6,"['lstm', 'state', 'clip']",3
+207,6,['trans'],1
+208,5,"['forward', 'stype']",2
+209,5,['init'],1
+210,5,"['num', 'hidden']",2
+211,5,['tensor'],1
+212,5,['height'],1
+213,5,['y'],1
+214,5,['base'],1
+215,5,"['overlap', 'thresh']",2
+216,5,['z'],1
+217,5,['h'],1
+218,5,['op'],1
+219,5,"['equal', 'nan']",2
+220,5,['c'],1
+221,5,"['device', 'id']",2
+222,5,"['prefetch', 'buffer']",2
+223,5,['hue'],1
+224,5,['mirror'],1
+225,5,"['input', 'dim']",2
+226,5,"['ssparse', 'grad']",2
+227,5,['fname'],1
+228,5,['flatten'],1
+229,5,['array'],1
+230,5,"['profile', 'process']",2
+231,5,"['train', 'mode']",2
+232,5,['area'],1
+233,5,['info'],1

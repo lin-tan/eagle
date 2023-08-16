@@ -1,0 +1,57 @@
+aliases:
+- tf.compat.v1.io.match_filenames_once
+- tf.compat.v1.train.match_filenames_once
+constraints:
+  name:
+    default: None
+    descp: A name for the operations (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  pattern:
+    descp: A file pattern (glob), or 1D tensor of file patterns.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (glob)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[glob]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - pattern
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/match_filenames_once
+outputs: A variable that is initialized to the list of files matching the pattern(s).
+package: tensorflow
+target: match_filenames_once
+title: tf.io.match_filenames_once
+version: 2.1.0

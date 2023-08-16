@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"iterable of floats, optional, default: None Weights on each point of the regression. If None, weight is set to 1 (equal weights).",None,prim_dtype,dtype(float),,1
+,"iterable of floats, optional, default: None Weights on each point of the regression. If None, weight is set to 1 (equal weights).",None,nonprim_dtype,structure(list(float)),,1
+,"iterable of floats, optional, default: None Weights on each point of the regression. If None, weight is set to 1 (equal weights).",None,shape,ndim(1),,1

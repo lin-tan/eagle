@@ -1,0 +1,24 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 6-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom , padding _front , padding _back )
+    doc_dtype: int, tuple
+    normalized_descp:
+    - the size of the padding
+    - If is D_TYPE uses the same padding in all boundaries
+    - If a CONSTANT_NUM D_STRUCTURE uses BSTR
+    normalized_docdtype: D_TYPE D_STRUCTURE
+  value:
+    descp: ''
+    normalized_descp: []
+inputs:
+  optional: []
+  required:
+  - padding
+  - value
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ConstantPad3d
+package: torch
+target: ConstantPad3d
+title: torch.nn.ConstantPad3d
+version: 1.5.0

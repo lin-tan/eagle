@@ -1,0 +1,35 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op.
+    doc_dtype:
+    - bool
+  group:
+    default: <objectobject>
+    descp: The process group to work on.
+    doc_dtype:
+    - ProcessGroup
+  input_tensor_lists:
+    descp: ''
+    doc_dtype:
+    - List[List[Tensor]]
+  op:
+    default: ReduceOp.SUM
+    descp: ''
+  output_tensor_list:
+    descp: ''
+    doc_dtype:
+    - List[Tensor]
+inputs:
+  optional:
+  - op
+  - group
+  - async_op
+  required:
+  - output_tensor_list
+  - input_tensor_lists
+link: https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.reduce_scatter_multigpu
+package: torch
+target: reduce_scatter_multigpu
+title: torch.distributed.reduce_scatter_multigpu
+version: 1.7.0

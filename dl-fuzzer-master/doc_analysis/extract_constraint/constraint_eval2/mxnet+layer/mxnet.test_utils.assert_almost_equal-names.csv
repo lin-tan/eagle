@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of names, optional",The names used in error message when an exception occurs,"(a, b)",prim_dtype,dtype(string),,1
+"tuple of names, optional",The names used in error message when an exception occurs,"(a, b)",nonprim_dtype,structure(tuple(string)),,1
+"tuple of names, optional",The names used in error message when an exception occurs,"(a, b)",shape,"ndim(0, 1)",,1

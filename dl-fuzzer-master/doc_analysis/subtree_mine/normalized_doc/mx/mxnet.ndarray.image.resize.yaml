@@ -1,0 +1,81 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  interp:
+    default: _Null
+    descp: Interpolation method for resizing. By default uses bilinear interpolationOptions
+      are INTER_NEAREST - a nearest-neighbor interpolationINTER_LINEAR - a bilinear
+      interpolationINTER_AREA - resampling using pixel area relationINTER_CUBIC -
+      a bicubic interpolation over 4x4 pixel neighborhoodINTER_LANCZOS4 - a Lanczos
+      interpolation over 8x8 pixel neighborhoodNote that the GPU version only support
+      bilinear interpolation(1) and the result on cpu would be slightly different
+      from gpu.It uses opencv resize function which tend to align center on cpuwhile
+      using contrib.bilinearResize2D which aligns corner on gpu
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Interpolation method for resizing
+    - By default uses bilinear interpolationOptions are INTER_NEAREST a nearest neighbor
+      interpolationINTER_LINEAR a bilinear interpolationINTER_AREA resampling using
+      pixel area relationINTER_CUBIC a bicubic interpolation over 4x4 pixel neighborhoodINTER_LANCZOS4
+      a Lanczos interpolation over 8x8 pixel neighborhoodNote that the GPU version
+      only support bilinear interpolation BSTR and the result on cpu would be slightly
+      different from gpu It uses opencv resize function which tend to align center
+      on cpuwhile using contrib bilinearResize2D which aligns corner on gpu
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  keep_ratio:
+    default: _Null
+    descp: Whether to resize the short edge or both edges to size, if size is give
+      as an integer.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to resize the short edge or both edges to PARAM, if PARAM is give as
+      an D_TYPE
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  size:
+    default: _Null
+    descp: Size of new image. Could be (width, height) or (size)
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Size of new image
+    - Could be BSTR
+    normalized_docdtype: Shape BSTR, optional, default
+inputs:
+  optional:
+  - data
+  - size
+  - keep_ratio
+  - interp
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/image/index.html#mxnet.ndarray.image.resize
+package: mxnet
+target: resize
+title: mxnet.ndarray.image.resize
+version: 1.6.0

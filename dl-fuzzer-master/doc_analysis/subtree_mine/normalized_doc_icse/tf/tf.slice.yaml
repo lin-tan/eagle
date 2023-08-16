@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.slice
+constraints:
+  begin:
+    descp: An `int32` or `int64` `Tensor`.
+    normalized_descp:
+    - An D_TYPE D_STRUCTURE
+  input_:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  size:
+    descp: An `int32` or `int64` `Tensor`.
+    normalized_descp:
+    - An D_TYPE D_STRUCTURE
+inputs:
+  optional:
+  - name
+  required:
+  - input_
+  - begin
+  - size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/slice
+outputs: A `Tensor` the same type as `input_`.
+package: tensorflow
+target: slice
+title: tf.slice
+version: 2.1.0

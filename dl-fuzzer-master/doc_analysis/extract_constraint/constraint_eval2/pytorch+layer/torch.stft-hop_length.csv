@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,the distance between neighboring sliding window frames. Default: `None` (treated as equal to `floor(n_fft / 4)`),None,prim_dtype,dtype(int),,1
+int,the distance between neighboring sliding window frames. Default: `None` (treated as equal to `floor(n_fft / 4)`),None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  perm:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  x:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - perm
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Transpose
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: Transpose
+title: tf.raw_ops.Transpose
+version: 2.2.0

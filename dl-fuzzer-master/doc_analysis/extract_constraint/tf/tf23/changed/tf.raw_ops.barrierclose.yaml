@@ -1,0 +1,34 @@
+constraints:
+  cancel_pending_enqueues:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, all pending enqueue requests
+      that are blocked on the barrier's queue will be canceled. InsertMany will fail,
+      even if no new key is introduced.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  handle:
+    descp: A Tensor of type mutable string. The handle to a barrier.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - cancel_pending_enqueues
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BarrierClose
+outputs:
+- The created Operation.
+package: tensorflow
+target: BarrierClose
+title: tf.raw_ops.BarrierClose
+version: 2.3.0

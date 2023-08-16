@@ -1,0 +1,26 @@
+aliases:
+- tf.logical_not
+- tf.compat.v1.logical_not
+- tf.compat.v1.math.logical_not
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: A `Tensor` of type `bool`.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/logical_not
+outputs: A `Tensor` of type `bool`.
+package: tensorflow
+target: logical_not
+title: tf.math.logical_not
+version: 2.1.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A list of `ints` that has length `>= 4`. The input stride for atrous morphological dilation. Must be:`[1, rate_height, rate_width, 1]`.",,prim_dtype,dtype(int),1,1
+,"A list of `ints` that has length `>= 4`. The input stride for atrous morphological dilation. Must be:`[1, rate_height, rate_width, 1]`.",,nonprim_dtype,structure(list(int)),1,1
+,"A list of `ints` that has length `>= 4`. The input stride for atrous morphological dilation. Must be:`[1, rate_height, rate_width, 1]`.",,shape,"shape([>=4]), ndim(1)",0,1
+"","","",shape,"shape([1, rate_height, rate_width, 1]), ndim(4)",1,0

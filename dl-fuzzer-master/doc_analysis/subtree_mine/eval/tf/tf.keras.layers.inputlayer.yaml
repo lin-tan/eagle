@@ -1,0 +1,9 @@
+constraints:
+  dtype:
+    default: None
+    descp: Datatype of the input.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+title: tf.keras.layers.InputLayer

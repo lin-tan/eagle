@@ -1,0 +1,49 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor of
+      indices into the first dimension of ref.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  ref:
+    descp: A mutable Tensor. Should be from a Variable node.
+    tensor_t:
+    - tf.tensor
+  updates:
+    descp: A Tensor. Must have the same type as ref. A tensor of updated values to
+      store in ref.
+    dtype:
+    - dtype:&ref
+    tensor_t:
+    - tf.tensor
+  use_locking:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If True, the assignment will be protected
+      by a lock; otherwise the behavior is undefined, but may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - ref
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ScatterUpdate
+outputs:
+- A mutable Tensor. Has the same type as ref.
+package: tensorflow
+target: ScatterUpdate
+title: tf.raw_ops.ScatterUpdate
+version: 2.2.0

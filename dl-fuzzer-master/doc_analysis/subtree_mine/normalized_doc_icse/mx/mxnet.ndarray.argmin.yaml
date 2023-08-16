@@ -1,0 +1,62 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: The axis along which to perform the reduction. Negative values means indexing
+      from right to left. `Requires axis to be set as int, because global reduction
+      is not supported yet.`
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axis along which to perform the reduction
+    - Negative values means indexing from right to left
+    - Requires axis to be set as D_TYPE because global reduction is not supported
+      yet
+    normalized_docdtype: D_TYPE or None optional default QSTR
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keepdims:
+    default: _Null
+    descp: If this is set to True, the reduced axis is left in the result as dimension
+      with size one.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If this is set to CONSTANT_BOOL the reduced PARAM is left in the result as dimension
+      with size one
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - axis
+  - keepdims
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.argmin
+package: mxnet
+target: argmin
+title: mxnet.ndarray.argmin
+version: 1.6.0

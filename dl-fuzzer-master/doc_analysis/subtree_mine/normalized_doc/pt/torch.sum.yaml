@@ -1,0 +1,31 @@
+constraints:
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor.If specified, the input tensor
+      is casted to `dtype` before the operationis performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE If specified, the PARAM D_STRUCTURE
+      is casted to QSTR before the operationis performed
+    - This is useful for preventing data type overflows
+    - Default None
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.sum
+package: torch
+ret_type: Tensor
+target: sum
+title: torch.sum
+version: 1.5.0

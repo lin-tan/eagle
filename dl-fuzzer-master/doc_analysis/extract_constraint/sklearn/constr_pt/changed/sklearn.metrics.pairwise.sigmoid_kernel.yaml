@@ -1,0 +1,40 @@
+constraints:
+  X:
+    descp: ndarray of shape (n_samples_1, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_1,n_features]'
+  Y:
+    default: None
+    descp: ndarray of shape (n_samples_2, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_2,n_features]'
+  coef0:
+    default: '1'
+    descp: float, default 1
+    dtype:
+    - int
+    ndim:
+    - '0'
+  gamma:
+    default: None
+    descp: float, default None If None, defaults to 1.0 / n_features
+dependency:
+- n_features
+- n_samples_1
+- n_samples_2
+inputs:
+  optional:
+  - Y
+  - gamma
+  - coef0
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: sigmoid_kernel
+title: sklearn.metrics.pairwise.sigmoid_kernel
+version: 0.24.X

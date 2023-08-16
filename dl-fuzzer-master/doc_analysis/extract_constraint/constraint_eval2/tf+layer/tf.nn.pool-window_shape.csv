@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Sequence of N ints >= 1.,,prim_dtype,dtype(int),,1
+,Sequence of N ints >= 1.,,nonprim_dtype,"structure(list, list(int))",,1
+,Sequence of N ints >= 1.,,shape,ndim(1),,1

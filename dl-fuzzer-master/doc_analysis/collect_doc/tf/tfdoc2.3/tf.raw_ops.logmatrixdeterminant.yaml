@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      complex64, complex128. Shape is [N, M, M].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LogMatrixDeterminant
+outputs:
+- A tuple of Tensor objects (sign, log_abs_determinant).
+- sign: A Tensor. Has the same type as input.
+- log_abs_determinant: A Tensor. Has the same type as input.
+package: tensorflow
+target: LogMatrixDeterminant
+title: tf.raw_ops.LogMatrixDeterminant
+version: 2.3.0

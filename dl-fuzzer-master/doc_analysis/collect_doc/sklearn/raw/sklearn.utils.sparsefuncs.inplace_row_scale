@@ -1,0 +1,13 @@
+sklearn.utils.sparsefuncs.inplace_row_scale = inplace_row_scale(X, scale)
+    Inplace row scaling of a CSR or CSC matrix.
+    
+    Scale each row of the data matrix by multiplying with specific scale
+    provided by the caller assuming a (n_samples, n_features) shape.
+    
+    Parameters
+    ----------
+    X : CSR or CSC sparse matrix, shape (n_samples, n_features)
+        Matrix to be scaled.
+    
+    scale : float array with shape (n_features,)
+        Array of precomputed sample-wise values to use for scaling.

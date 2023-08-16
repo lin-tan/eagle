@@ -1,0 +1,7 @@
+constraints:
+  dtype:
+    default: tf.dtypes.int32
+    descp: Data type of the confusion matrix.
+    dtype:
+    - tf.dtype
+title: tf.math.confusion_matrix

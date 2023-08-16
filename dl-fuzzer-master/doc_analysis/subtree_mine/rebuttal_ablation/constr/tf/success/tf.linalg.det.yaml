@@ -1,0 +1,62 @@
+aliases:
+- tf.compat.v1.linalg.det
+- tf.compat.v1.matrix_determinant
+constraints:
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `half`, `float32`, `float64`,
+      `complex64`, `complex128`. Shape is `[..., M, M]`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '>=2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[...,m,m]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/det
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: det
+title: tf.linalg.det
+version: 2.1.0

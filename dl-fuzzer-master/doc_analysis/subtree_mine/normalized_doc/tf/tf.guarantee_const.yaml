@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.guarantee_const
+constraints:
+  input:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/guarantee_const
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: guarantee_const
+title: tf.guarantee_const
+version: 2.1.0

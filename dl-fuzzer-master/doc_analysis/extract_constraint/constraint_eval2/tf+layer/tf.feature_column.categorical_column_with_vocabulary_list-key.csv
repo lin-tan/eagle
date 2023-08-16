@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A unique string identifying the input feature. It is used as the column name and the dictionary key for feature parsing configs, feature `Tensor`objects, and feature columns.",,prim_dtype,dtype(tf.string),,1
+,"A unique string identifying the input feature. It is used as the column name and the dictionary key for feature parsing configs, feature `Tensor`objects, and feature columns.",,shape,ndim(0),,1

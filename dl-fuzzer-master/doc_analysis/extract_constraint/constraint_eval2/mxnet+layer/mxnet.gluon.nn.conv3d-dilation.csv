@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple/list of 3 int",Specifies the dilation rate to use for dilated convolution.,"(1,1,1)",prim_dtype,dtype(int),,1
+"int, tuple/list of 3 int",Specifies the dilation rate to use for dilated convolution.,"(1,1,1)",nonprim_dtype,structure(list),,1
+"int, tuple/list of 3 int",Specifies the dilation rate to use for dilated convolution.,"(1,1,1)",shape,ndim(1),,1

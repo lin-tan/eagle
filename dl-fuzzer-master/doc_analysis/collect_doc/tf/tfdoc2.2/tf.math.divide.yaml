@@ -1,0 +1,25 @@
+aliases:
+- tf.divide
+- tf.compat.v1.divide
+- tf.compat.v1.math.divide
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: A Tensor
+  y:
+    descp: A Tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/divide
+outputs:
+- A Tensor with same shape as input
+package: tensorflow
+target: divide
+title: tf.math.divide
+version: 2.2.0

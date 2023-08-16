@@ -1,0 +1,22 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Defines the
+      shape of the output tensor.'
+  tensor:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Reshape
+outputs:
+- A Tensor. Has the same type as tensor.
+package: tensorflow
+target: Reshape
+title: tf.raw_ops.Reshape
+version: 2.3.0

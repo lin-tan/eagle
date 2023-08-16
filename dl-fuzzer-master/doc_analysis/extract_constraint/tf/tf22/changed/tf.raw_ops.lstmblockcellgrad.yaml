@@ -1,0 +1,152 @@
+constraints:
+  b:
+    descp: A Tensor. Must have the same type as x. The bias vector.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  ci:
+    descp: A Tensor. Must have the same type as x. The cell input.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  co:
+    descp: A Tensor. Must have the same type as x. The cell after the tanh.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  cs:
+    descp: A Tensor. Must have the same type as x. The cell state before the tanh.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  cs_grad:
+    descp: A Tensor. Must have the same type as x. The current gradient of cs.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  cs_prev:
+    descp: A Tensor. Must have the same type as x. The previous cell state.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  f:
+    descp: A Tensor. Must have the same type as x. The forget gate.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  h_grad:
+    descp: A Tensor. Must have the same type as x. The gradient of h vector.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  h_prev:
+    descp: A Tensor. Must have the same type as x. The previous h state.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  i:
+    descp: A Tensor. Must have the same type as x. The input gate.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  o:
+    descp: A Tensor. Must have the same type as x. The output gate.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  use_peephole:
+    descp: A bool. Whether the cell uses peephole connections.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  w:
+    descp: A Tensor. Must have the same type as x. The weight matrix.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wcf:
+    descp: A Tensor. Must have the same type as x. The weight matrix for forget gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wci:
+    descp: A Tensor. Must have the same type as x. The weight matrix for input gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wco:
+    descp: A Tensor. Must have the same type as x. The weight matrix for output gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, float32. The input
+      to the LSTM cell, shape (batch_size, num_inputs).'
+    ndim:
+    - '2'
+    shape:
+    - '[batch_size,num_inputs]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch_size
+- num_inputs
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - cs_prev
+  - h_prev
+  - w
+  - wci
+  - wcf
+  - wco
+  - b
+  - i
+  - cs
+  - f
+  - o
+  - ci
+  - co
+  - cs_grad
+  - h_grad
+  - use_peephole
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LSTMBlockCellGrad
+outputs:
+- A tuple of Tensor objects (cs_prev_grad, dicfo, wci_grad, wcf_grad, wco_grad).
+- cs_prev_grad: A Tensor. Has the same type as x.
+- dicfo: A Tensor. Has the same type as x.
+- wci_grad: A Tensor. Has the same type as x.
+- wcf_grad: A Tensor. Has the same type as x.
+- wco_grad: A Tensor. Has the same type as x.
+package: tensorflow
+target: LSTMBlockCellGrad
+title: tf.raw_ops.LSTMBlockCellGrad
+version: 2.2.0

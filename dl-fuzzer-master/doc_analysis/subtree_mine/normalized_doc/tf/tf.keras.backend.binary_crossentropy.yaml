@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.keras.backend.binary_crossentropy
+constraints:
+  from_logits:
+    default: 'False'
+    descp: Whether `output` is expected to be a logits tensor. By default, we consider
+      that `output`encodes a probability distribution.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether PARAM is expected to be a logits D_STRUCTURE
+    - By default, we consider that PARAMencodes a probability distribution
+  output:
+    descp: A tensor.
+    normalized_descp:
+    - A D_STRUCTURE
+  target:
+    descp: A tensor with the same shape as `output`.
+    normalized_descp:
+    - A D_STRUCTURE with the same shape as PARAM
+inputs:
+  optional:
+  - from_logits
+  required:
+  - target
+  - output
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/binary_crossentropy
+outputs: A tensor.
+package: tensorflow
+target: binary_crossentropy
+title: tf.keras.backend.binary_crossentropy
+version: 2.1.0

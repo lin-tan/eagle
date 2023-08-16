@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list of python:int, torch.device",CUDA devices (default: all devices),None,prim_dtype,dtype(int),,1
+"list of python:int, torch.device",CUDA devices (default: all devices),None,nonprim_dtype,structure(list(int)),,1
+"list of python:int, torch.device",CUDA devices (default: all devices),None,shape,ndim(1),,1

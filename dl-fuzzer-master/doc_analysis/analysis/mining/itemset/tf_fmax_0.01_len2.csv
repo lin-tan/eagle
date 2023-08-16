@@ -1,0 +1,24 @@
+,support,itemsets,length
+53,0.06208863536638877,"frozenset({'optional', 'name', 'operation'})",3
+49,0.04892496709082931,"frozenset({'input', 'tensor'})",2
+42,0.0379552435278631,"frozenset({'values', 'tensor'})",2
+41,0.03718736287845546,"frozenset({'tf', 'SOME_DTYPE'})",2
+59,0.03203159280386134,"frozenset({'optional', 'SOME_DTYPE'})",2
+39,0.03192189556823168,"frozenset({'number', 'SOME_DTYPE'})",2
+56,0.03137340939008337,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",2
+52,0.030166739798157087,"frozenset({'type', 'tensor', 'SOME_DTYPE'})",3
+35,0.027863097849934182,"frozenset({'shape', 'batch'})",2
+33,0.023255813953488372,"frozenset({'tensor', 'variable'})",2
+32,0.02215884159719175,"frozenset({'SOME_DTYPE', 'length'})",2
+55,0.017551557700745943,"frozenset({'tensor', 'SOME_STRUCTURE'})",2
+23,0.01744186046511628,"frozenset({'python', 'SOME_DTYPE'})",2
+48,0.01744186046511628,"frozenset({'d', 'tensor', 'shape'})",3
+47,0.015796401930671347,"frozenset({'d', 'tensor', 'SOME_DTYPE'})",3
+51,0.014809126810004387,"frozenset({'tensor', 'shape', 'SOME_DTYPE'})",3
+58,0.014480035103115402,"frozenset({'optional', 'tensor'})",2
+44,0.01437033786748574,"frozenset({'tensor', 'dimension'})",2
+54,0.012395787626151821,"frozenset({'optional', 'SOME_STRUCTURE'})",2
+11,0.011956998683633173,"frozenset({'must', 'bfloat', 'following', 'one', 'SOME_DTYPE'})",5
+10,0.01184730144800351,"frozenset({'tensor', 'whose'})",2
+43,0.011079420798595875,"frozenset({'input', 'dimension'})",2
+57,0.01086002632733655,"frozenset({'tensor', 'must'})",2

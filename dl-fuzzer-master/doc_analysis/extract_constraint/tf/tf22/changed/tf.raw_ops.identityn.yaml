@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/IdentityN
+outputs:
+- A list of Tensor objects. Has the same type as input.
+package: tensorflow
+target: IdentityN
+title: tf.raw_ops.IdentityN
+version: 2.2.0

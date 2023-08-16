@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Python bool.  If `True`, then the same dropout pattern is applied across all time steps per run call. If this parameter is set, `input_size` <strong>must</strong> be provided.",None,prim_dtype,dtype(tf.bool),,1
+,"Python bool.  If `True`, then the same dropout pattern is applied across all time steps per run call. If this parameter is set, `input_size` <strong>must</strong> be provided.",None,shape,ndim(0),,1

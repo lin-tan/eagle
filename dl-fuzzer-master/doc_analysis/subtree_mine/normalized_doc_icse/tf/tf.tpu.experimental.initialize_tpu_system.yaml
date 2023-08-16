@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.tpu.experimental.initialize_tpu_system
+constraints:
+  cluster_resolver:
+    default: None
+    descp: A tf.distribute.cluster_resolver.TPUClusterResolver, which provides information
+      about the TPU cluster.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A tf distribute cluster_resolver TPUClusterResolver which provides information
+      about the TPU cluster
+exceptions:
+- RuntimeError: If no TPU devices found for eager execution or if run in a tf.function.
+inputs:
+  optional:
+  - cluster_resolver
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/tpu/experimental/initialize_tpu_system
+outputs: The tf.tpu.Topology object for the topology of the TPU cluster.
+package: tensorflow
+target: initialize_tpu_system
+title: tf.tpu.experimental.initialize_tpu_system
+version: 2.1.0

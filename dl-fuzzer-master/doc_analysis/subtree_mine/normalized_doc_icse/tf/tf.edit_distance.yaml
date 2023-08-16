@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.edit_distance
+constraints:
+  hypothesis:
+    descp: A `SparseTensor` containing hypothesis sequences.
+    normalized_descp:
+    - A D_STRUCTURE containing hypothesis sequences
+  name:
+    default: edit_distance
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for the operation BSTR
+  normalize:
+    default: 'True'
+    descp: A `bool`. If `True`, normalizes the Levenshtein distance by length of `truth.`
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - A D_TYPE
+    - If CONSTANT_BOOL normalizes the Levenshtein distance by length of PARAM
+  truth:
+    descp: A `SparseTensor` containing truth sequences.
+    normalized_descp:
+    - A D_STRUCTURE containing truth sequences
+exceptions:
+- TypeError: If either `hypothesis` or `truth` are not a `SparseTensor`.
+inputs:
+  optional:
+  - normalize
+  - name
+  required:
+  - hypothesis
+  - truth
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/edit_distance
+outputs: A dense `Tensor` with rank `R - 1`, where R is the rank of the`SparseTensor`
+  inputs `hypothesis` and `truth`.
+package: tensorflow
+target: edit_distance
+title: tf.edit_distance
+version: 2.1.0

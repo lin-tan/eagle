@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.view_as_real.html#torch.view_as_real#torch.view_as_real
+package: torch
+ret_type: Tensor
+target: view_as_real
+title: torch.view_as_real
+version: 1.6.0

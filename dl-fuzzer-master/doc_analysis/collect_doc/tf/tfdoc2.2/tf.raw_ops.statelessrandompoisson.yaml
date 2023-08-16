@@ -1,0 +1,32 @@
+constraints:
+  dtype:
+    descp: 'A tf.DType from: tf.half, tf.float32, tf.float64, tf.int32, tf.int64.
+      The type of the output.'
+  lam:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      int32, int64. The rate of the Poisson distribution. Shape must match the rightmost
+      dimensions of shape.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+inputs:
+  optional:
+  - name
+  required:
+  - shape
+  - seed
+  - lam
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatelessRandomPoisson
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatelessRandomPoisson
+title: tf.raw_ops.StatelessRandomPoisson
+version: 2.2.0

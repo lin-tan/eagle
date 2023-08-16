@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,additional size added to one side of each dimension in the output shape. Can be a single number or a tuple `(out_padW)`. Default: 0,0,prim_dtype,dtype(int),,1
+,additional size added to one side of each dimension in the output shape. Can be a single number or a tuple `(out_padW)`. Default: 0,0,nonprim_dtype,structure(tuple:(out_padw)),,1
+,additional size added to one side of each dimension in the output shape. Can be a single number or a tuple `(out_padW)`. Default: 0,0,shape,"shape([1]), ndim(0, 1)",,1

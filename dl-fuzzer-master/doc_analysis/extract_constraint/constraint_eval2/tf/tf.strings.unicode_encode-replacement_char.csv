@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The replacement character codepoint to be used in place of any invalid input when `errors='replace'`. Any valid unicode codepoint may be used. The default value is the default unicode replacement character which is 0xFFFD (U+65533).,65533,prim_dtype,dtype(int),,1
+,The replacement character codepoint to be used in place of any invalid input when `errors='replace'`. Any valid unicode codepoint may be used. The default value is the default unicode replacement character which is 0xFFFD (U+65533).,65533,shape,ndim(0),,1

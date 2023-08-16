@@ -1,0 +1,42 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reshuffle:
+    descp: A Tensor of type bool.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+  seed:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  seed2:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - seed
+  - seed2
+  - reshuffle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/AnonymousSeedGenerator
+outputs:
+- A tuple of Tensor objects (handle, deleter).
+- handle: A Tensor of type resource.
+- deleter: A Tensor of type variant.
+package: tensorflow
+target: AnonymousSeedGenerator
+title: tf.raw_ops.AnonymousSeedGenerator
+version: 2.3.0

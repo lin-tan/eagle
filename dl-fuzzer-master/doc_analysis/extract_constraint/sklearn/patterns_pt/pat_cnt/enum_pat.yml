@@ -1,0 +1,19 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (([`'"]+\w+[`'"]+\s+\|\s+)+[`'"]+\w+[`'"]+):
+    cnt: 3
+    dtype: string
+    group: 1
+  can\s+only\s+be\s+(([\w]+(,|\s|or)*)+):
+    cnt: 1
+    dtype: int
+    group: 1
+stop_word:
+- '|'
+- or
+target: enum

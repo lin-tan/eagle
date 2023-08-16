@@ -1,0 +1,22 @@
+aliases:
+- tf.math.softsign
+- tf.compat.v1.math.softsign
+- tf.compat.v1.nn.softsign
+constraints:
+  features:
+    descp: 'A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`,
+      `float64`.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - features
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/softsign
+outputs: A `Tensor`. Has the same type as `features`.
+package: tensorflow
+target: softsign
+title: tf.nn.softsign
+version: 2.1.0

@@ -1,0 +1,12 @@
+constraints:
+  estimator:
+    descp: object Estimator object to test.
+inputs:
+  optional: []
+  required:
+  - estimator
+link: ''
+package: scikit-learn
+target: is_regressor
+title: sklearn.base.is_regressor
+version: 0.24.X

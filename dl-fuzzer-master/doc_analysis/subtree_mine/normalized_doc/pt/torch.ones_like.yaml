@@ -1,0 +1,71 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, defaults to
+      the device of `input`.'
+    doc_dtype: '`torch.device`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired device of returned D_STRUCTURE
+    - Default if QSTR , defaults to the device of PARAM
+    normalized_docdtype: torch device , optional
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: if `None`, defaults
+      to the dtype of `input`.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Default if QSTR , defaults to the dtype of PARAM
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the size of `input` will determine size of the output tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the size of QSTR will determine size of the output D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  layout:
+    default: None
+    descp: 'the desired layout of returned tensor. Default: if `None`, defaults to
+      the layout of `input`.'
+    doc_dtype: '`torch.layout`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired layout of returned D_STRUCTURE
+    - Default if QSTR , defaults to the layout of PARAM
+    normalized_docdtype: torch layout , optional
+  memory_format:
+    default: torch.preserve_format
+    descp: 'the desired memory format of returned Tensor. Default: `torch.preserve_format`.'
+    doc_dtype: '`torch.memory_format`, optional'
+    normalized_default: torch preserve_format
+    normalized_descp:
+    - the desired memory format of returned D_STRUCTURE
+    - Default torch preserve_format
+    normalized_docdtype: torch memory_format , optional
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If autograd should record operations on the returned D_STRUCTURE
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - memory_format
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.ones_like
+package: torch
+ret_type: Tensor
+target: ones_like
+title: torch.ones_like
+version: 1.5.0

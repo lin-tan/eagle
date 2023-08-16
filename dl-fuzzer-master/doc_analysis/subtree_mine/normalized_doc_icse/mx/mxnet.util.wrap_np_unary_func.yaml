@@ -1,0 +1,16 @@
+constraints:
+  func:
+    descp: ''
+    doc_dtype: a numpy-compatible unary function to be wrapped for better error handling.
+    normalized_descp: []
+    normalized_docdtype: a numpy compatible unary function to be wrapped for better
+      error handling
+inputs:
+  optional: []
+  required:
+  - func
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/util/index.html#mxnet.util.wrap_np_unary_func
+package: mxnet
+target: wrap_np_unary_func
+title: mxnet.util.wrap_np_unary_func
+version: 1.6.0

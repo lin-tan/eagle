@@ -1,0 +1,67 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  A:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype:
+    - NDArray
+  B:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype:
+    - NDArray
+  alpha:
+    default: _Null
+    descp: Scalar factor multiplied with A*B.
+    doc_dtype:
+    - double
+    - optional
+    - default=1
+  axis:
+    default: _Null
+    descp: Axis corresponding to the matrix row indices.
+    doc_dtype:
+    - int
+    - optional
+    - default='-2'
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  transpose_a:
+    default: _Null
+    descp: Multiply with transposed of first input (A).
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+  transpose_b:
+    default: _Null
+    descp: Multiply with transposed of second input (B).
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+inputs:
+  optional:
+  - A
+  - B
+  - transpose_a
+  - transpose_b
+  - alpha
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.linalg_gemm2
+package: mxnet
+target: linalg_gemm2
+title: mxnet.ndarray.linalg_gemm2
+version: 1.7.0

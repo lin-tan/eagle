@@ -1,0 +1,27 @@
+constraints:
+  inputs:
+    descp: A list of at least 1 Tensor objects with the same type. The input tensors,
+      exactly one of which will become available.
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Merge
+outputs:
+- A tuple of Tensor objects (output, value_index).
+- output: A Tensor. Has the same type as inputs.
+- value_index: A Tensor of type int32.
+package: tensorflow
+target: Merge
+title: tf.raw_ops.Merge
+version: 2.2.0

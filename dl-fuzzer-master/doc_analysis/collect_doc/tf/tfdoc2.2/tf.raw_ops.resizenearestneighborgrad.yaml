@@ -1,0 +1,32 @@
+constraints:
+  align_corners:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, the centers of the 4 corner
+      pixels of the input and grad tensors are aligned. Defaults to false.
+  grads:
+    descp: 'A Tensor. Must be one of the following types: uint8, int8, int32, half,
+      float32, float64. 4-D with shape [batch, height, width, channels].'
+  half_pixel_centers:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: 'A 1-D int32 Tensor of 2 elements: orig_height, orig_width. The original
+      input size.'
+inputs:
+  optional:
+  - align_corners
+  - half_pixel_centers
+  - name
+  required:
+  - grads
+  - size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResizeNearestNeighborGrad
+outputs:
+- A Tensor. Has the same type as grads.
+package: tensorflow
+target: ResizeNearestNeighborGrad
+title: tf.raw_ops.ResizeNearestNeighborGrad
+version: 2.2.0

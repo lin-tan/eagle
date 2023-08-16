@@ -1,0 +1,32 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  ref:
+    descp: A mutable Tensor. A reference to the temporary variable tensor.
+    tensor_t:
+    - tf.tensor
+  var_name:
+    descp: A string. Name of the temporary variable, usually the name of the matching
+      'TemporaryVariable' op.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - ref
+  - var_name
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DestroyTemporaryVariable
+outputs:
+- A Tensor. Has the same type as ref.
+package: tensorflow
+target: DestroyTemporaryVariable
+title: tf.raw_ops.DestroyTemporaryVariable
+version: 2.2.0

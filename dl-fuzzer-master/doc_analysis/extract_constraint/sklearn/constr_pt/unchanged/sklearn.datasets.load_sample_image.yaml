@@ -1,0 +1,12 @@
+constraints:
+  image_name:
+    descp: '{`china.jpg`, `flower.jpg`} The name of the sample image loaded'
+inputs:
+  optional: []
+  required:
+  - image_name
+link: ''
+package: scikit-learn
+target: load_sample_image
+title: sklearn.datasets.load_sample_image
+version: 0.24.X

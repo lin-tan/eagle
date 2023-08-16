@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.guarantee_const
+constraints:
+  input:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/guarantee_const
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: guarantee_const
+title: tf.guarantee_const
+version: 2.2.0

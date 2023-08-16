@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of int, tuple of array_like, array_like, CSRNDArray, scipy.sparse.csr_matrix, scipy.sparse.coo_matrix, tuple of int, tuple of array_like",The argument to help instantiate the csr matrix. See above for further details.,,prim_dtype,dtype(int),,1
+"tuple of int, tuple of array_like, array_like, CSRNDArray, scipy.sparse.csr_matrix, scipy.sparse.coo_matrix, tuple of int, tuple of array_like",The argument to help instantiate the csr matrix. See above for further details.,,nonprim_dtype,"structure(array_like, ndarray, tuple(array_like), tuple(int))",,1
+"tuple of int, tuple of array_like, array_like, CSRNDArray, scipy.sparse.csr_matrix, scipy.sparse.coo_matrix, tuple of int, tuple of array_like",The argument to help instantiate the csr matrix. See above for further details.,,shape,ndim(1),,1

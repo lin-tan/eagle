@@ -1,0 +1,47 @@
+aliases:
+- tf.compat.v1.lin_space
+- tf.compat.v1.linspace
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  num:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 0-D
+      tensor. Number of values to generate.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D D_STRUCTURE
+    - Number of values to generate
+  start:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`. 0-D tensor. First entry in the range.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D D_STRUCTURE
+    - First entry in the range
+  stop:
+    descp: A `Tensor`. Must have the same type as `start`. 0-D tensor. Last entry
+      in the range.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - CONSTANT_NUM D D_STRUCTURE
+    - Last entry in the range
+inputs:
+  optional:
+  - name
+  required:
+  - start
+  - stop
+  - num
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linspace
+outputs: A `Tensor`. Has the same type as `start`.
+package: tensorflow
+target: linspace
+title: tf.linspace
+version: 2.1.0

@@ -1,0 +1,38 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Index tensor.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor:
+    descp: A Tensor. Tensor to copy/update.
+    tensor_t:
+    - tf.tensor
+  updates:
+    descp: A Tensor. Must have the same type as tensor. Updates to scatter into output.
+    dtype:
+    - dtype:&tensor
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorScatterAdd
+outputs:
+- A Tensor. Has the same type as tensor.
+package: tensorflow
+target: TensorScatterAdd
+title: tf.raw_ops.TensorScatterAdd
+version: 2.3.0

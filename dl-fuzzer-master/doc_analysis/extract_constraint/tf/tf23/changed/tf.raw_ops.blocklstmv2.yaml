@@ -1,0 +1,118 @@
+constraints:
+  b:
+    descp: A Tensor. Must have the same type as x. The bias vector.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  cell_clip:
+    default: '0'
+    descp: An optional float. Defaults to 0. Value to clip the 'cs' value to.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  cs_prev:
+    descp: A Tensor. Must have the same type as x. Value of the initial cell state.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  h_prev:
+    descp: A Tensor. Must have the same type as x. Initial output of cell (to be used
+      for peephole).
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seq_len_max:
+    descp: A Tensor of type int64. Maximum time length actually used by this input.
+      Outputs are padded with zeros beyond this length.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  use_peephole:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether to use peephole weights.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  w:
+    descp: A Tensor. Must have the same type as x. The weight matrix.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wcf:
+    descp: A Tensor. Must have the same type as x. The weight matrix for forget gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wci:
+    descp: A Tensor. Must have the same type as x. The weight matrix for input gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  wco:
+    descp: A Tensor. Must have the same type as x. The weight matrix for output gate
+      peephole connection.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, float32. The sequence
+      input to the LSTM, shape (timelen, batch_size, num_inputs).'
+    ndim:
+    - '3'
+    shape:
+    - '[timelen,batch_size,num_inputs]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch_size
+- num_inputs
+- timelen
+inputs:
+  optional:
+  - cell_clip
+  - use_peephole
+  - name
+  required:
+  - seq_len_max
+  - x
+  - cs_prev
+  - h_prev
+  - w
+  - wci
+  - wcf
+  - wco
+  - b
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BlockLSTMV2
+outputs:
+- A tuple of Tensor objects (i, cs, f, o, ci, co, h).
+- i: A Tensor. Has the same type as x.
+- cs: A Tensor. Has the same type as x.
+- f: A Tensor. Has the same type as x.
+- o: A Tensor. Has the same type as x.
+- ci: A Tensor. Has the same type as x.
+- co: A Tensor. Has the same type as x.
+- h: A Tensor. Has the same type as x.
+package: tensorflow
+target: BlockLSTMV2
+title: tf.raw_ops.BlockLSTMV2
+version: 2.3.0

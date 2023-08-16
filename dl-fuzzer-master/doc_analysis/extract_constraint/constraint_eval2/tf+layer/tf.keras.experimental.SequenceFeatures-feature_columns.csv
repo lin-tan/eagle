@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An iterable of dense sequence columns. Valid columns are `embedding_column` that wraps a `sequence_categorical_column_with_*``sequence_numeric_column`. ,,nonprim_dtype,"structure(list, list(list))",,1

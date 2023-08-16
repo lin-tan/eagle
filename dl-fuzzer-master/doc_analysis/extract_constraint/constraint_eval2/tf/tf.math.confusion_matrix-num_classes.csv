@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The possible number of labels the classification task can          have. If this value is not provided, it will be calculated          using both predictions and labels array.",None,prim_dtype,dtype(int),,1
+,"The possible number of labels the classification task can          have. If this value is not provided, it will be calculated          using both predictions and labels array.",None,shape,ndim(0),,1
+,"The possible number of labels the classification task can          have. If this value is not provided, it will be calculated          using both predictions and labels array.",None,validvalue,"range([0,inf))",,1

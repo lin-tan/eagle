@@ -1,0 +1,33 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_features:
+    descp: An int that is >= 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource handle referring to a QuantileStreamResource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - num_features
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesFlushQuantileSummaries
+outputs:
+- A list of num_features Tensor objects with type float32.
+package: tensorflow
+target: BoostedTreesFlushQuantileSummaries
+title: tf.raw_ops.BoostedTreesFlushQuantileSummaries
+version: 2.2.0

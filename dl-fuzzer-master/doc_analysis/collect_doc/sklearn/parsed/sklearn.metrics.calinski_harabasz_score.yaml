@@ -1,0 +1,12 @@
+constraints:
+  X: {descp: 'array-like, shape (``n_samples``, ``n_features``) List of ``n_features``-dimensional
+      data points. Each row corresponds to a single data point.'}
+  labels: {descp: 'array-like, shape (``n_samples``,) Predicted labels for each sample.'}
+inputs:
+  optional: []
+  required: [X, labels]
+link: ''
+package: sklearn
+target: calinski_harabasz_score
+title: sklearn.metrics.calinski_harabasz_score
+version: 0.24.2

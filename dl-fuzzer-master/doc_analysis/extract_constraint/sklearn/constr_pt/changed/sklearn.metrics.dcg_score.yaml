@@ -1,0 +1,46 @@
+constraints:
+  ignore_ties:
+    default: 'False'
+    descp: bool, optional (default=False) Assume that there are no ties in y_score
+      (which is likely to be the case if y_score is continuous) for efficiency gains.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  k:
+    default: None
+    descp: int, optional (default=None) Only consider the highest k scores in the
+      ranking. If None, use all outputs.
+  log_base:
+    default: '2'
+    descp: float, optional (default=2) Base of the logarithm used for the discount.
+      A low value means a sharper discount (top results are more important).
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sample_weight:
+    default: None
+    descp: ndarray, shape (n_samples,), optional (default=None) Sample weights. If
+      None, all samples are given the same weight.
+  y_score:
+    descp: ndarray, shape (n_samples, n_labels) Target scores, can either be probability
+      estimates, confidence values, or non-thresholded measure of decisions (as returned
+      by "decision_function" on some classifiers).
+  y_true:
+    descp: ndarray, shape (n_samples, n_labels) True targets of multilabel classification,
+      or true scores of entities to be ranked.
+inputs:
+  optional:
+  - k
+  - log_base
+  - sample_weight
+  - ignore_ties
+  required:
+  - y_true
+  - y_score
+link: ''
+package: scikit-learn
+target: dcg_score
+title: sklearn.metrics.dcg_score
+version: 0.24.X

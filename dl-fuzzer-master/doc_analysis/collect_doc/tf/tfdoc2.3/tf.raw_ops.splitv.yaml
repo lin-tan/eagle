@@ -1,0 +1,31 @@
+constraints:
+  axis:
+    descp: A Tensor of type int32. 0-D. The dimension along which to split. Must be
+      in the range [-rank(value), rank(value)).
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_split:
+    descp: An int that is >= 1.
+  size_splits:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. list containing
+      the sizes of each output tensor along the split dimension. Must sum to the dimension
+      of value along split_dim. Can contain one -1 indicating that dimension is to
+      be inferred.'
+  value:
+    descp: A Tensor. The tensor to split.
+inputs:
+  optional:
+  - name
+  required:
+  - value
+  - size_splits
+  - axis
+  - num_split
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SplitV
+outputs:
+- A list of num_split Tensor objects with the same type as value.
+package: tensorflow
+target: SplitV
+title: tf.raw_ops.SplitV
+version: 2.3.0

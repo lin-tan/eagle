@@ -1,0 +1,25 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.rad2deg.html#torch.rad2deg#torch.rad2deg
+package: torch
+ret_type: Tensor
+target: rad2deg
+title: torch.rad2deg
+version: 1.6.0

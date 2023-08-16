@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='1'",Virtually partition the data into these many parts.,None,prim_dtype,dtype(int),,1
+"int, optional, default='1'",Virtually partition the data into these many parts.,None,shape,ndim(0),,1
+"int, optional, default='1'",Virtually partition the data into these many parts.,None,validvalue,"range([0,inf))",,1

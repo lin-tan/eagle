@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, optional, default=0",clip each element in the array to 0 when it is less than `valid_thresh`. This is used when `normalization` is set to `'valid'`.,_Null,prim_dtype,dtype(float),,1
+"float, optional, default=0",clip each element in the array to 0 when it is less than `valid_thresh`. This is used when `normalization` is set to `'valid'`.,_Null,shape,ndim(0),,1

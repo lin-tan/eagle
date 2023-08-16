@@ -1,0 +1,59 @@
+aliases:
+- tf.compat.v1.keras.backend.random_normal
+constraints:
+  dtype:
+    default: None
+    descp: tf.dtypes.DType, dtype of returned tensor. Default to use Keras backend
+      dtype which is float32.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  mean:
+    default: '0.0'
+    descp: A float, the mean value of the normal distribution to draw samples. Default
+      to 0.0.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  seed:
+    default: None
+    descp: Integer, random seed. Will use a random numpy integer when not specified.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shape:
+    descp: A tuple of integers, the shape of tensor to create.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+  stddev:
+    default: '1.0'
+    descp: A float, the standard deviation of the normal distribution to draw samples.
+      Default to 1.0.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - mean
+  - stddev
+  - dtype
+  - seed
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/random_normal
+outputs:
+- A tensor with normal distribution of values.
+package: tensorflow
+target: random_normal
+title: tf.keras.backend.random_normal
+version: 2.3.0

@@ -1,0 +1,85 @@
+constraints:
+  compression:
+    default: ''
+    descp: An optional string. Defaults to "".
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+  mode:
+    default: auto
+    descp: An optional string. Defaults to "auto".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_reader_threads:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+  num_writer_threads:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  path:
+    descp: A Tensor of type string. The path we should write snapshots to / read snapshots
+      from.
+  pending_snapshot_expiry_seconds:
+    default: '86400'
+    descp: An optional int. Defaults to 86400.
+  reader_buffer_size:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+  reader_path_prefix:
+    default: ''
+    descp: An optional string. Defaults to "".
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  shard_size_bytes:
+    default: '10737418240'
+    descp: An optional int. Defaults to 10737418240.
+  shuffle_on_read:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  snapshot_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+  writer_buffer_size:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+  writer_path_prefix:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - compression
+  - reader_path_prefix
+  - writer_path_prefix
+  - shard_size_bytes
+  - pending_snapshot_expiry_seconds
+  - num_reader_threads
+  - reader_buffer_size
+  - num_writer_threads
+  - writer_buffer_size
+  - shuffle_on_read
+  - seed
+  - seed2
+  - mode
+  - snapshot_name
+  - name
+  required:
+  - input_dataset
+  - path
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SnapshotDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SnapshotDataset
+title: tf.raw_ops.SnapshotDataset
+version: 2.3.0

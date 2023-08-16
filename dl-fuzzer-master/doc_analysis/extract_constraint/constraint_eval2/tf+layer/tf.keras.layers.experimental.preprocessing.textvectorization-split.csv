@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional specification for splitting the input text. Values can be None (no splitting), 'whitespace' (split on ASCII whitespace), or a Callable. The default is 'whitespace'.",SPLIT_ON_WHITESPACE,prim_dtype,dtype(tf.string),,1

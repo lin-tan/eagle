@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.image.adjust_contrast
+constraints:
+  contrast_factor:
+    descp: A float multiplier for adjusting contrast.
+    normalized_descp:
+    - A D_TYPE multiplier for adjusting contrast
+  images:
+    descp: Images to adjust.  At least 3-D.
+    normalized_descp:
+    - Images to adjust
+    - At least CONSTANT_NUM D
+inputs:
+  optional: []
+  required:
+  - images
+  - contrast_factor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/adjust_contrast
+outputs: The contrast-adjusted image or images.
+package: tensorflow
+target: adjust_contrast
+title: tf.image.adjust_contrast
+version: 2.1.0

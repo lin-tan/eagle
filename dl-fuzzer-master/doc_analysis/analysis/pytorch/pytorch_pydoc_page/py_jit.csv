@@ -1,0 +1,15 @@
+class,Type,name,input,link,source_code
+,function,torch.jit.script,obj,https://pytorch.org/docs/stable/jit.html#torch.jit.script,https://pytorch.org/docs/stable/_modules/torch/jit.html#script
+,function,torch.jit.trace,"func,example_inputs,optimize=None,check_trace=True,check_inputs=None,check_tolerance=1e-5",https://pytorch.org/docs/stable/jit.html#torch.jit.trace,https://pytorch.org/docs/stable/_modules/torch/jit.html#trace
+,function,torch.jit.trace_module,"mod,inputs,optimize=None,check_trace=True,check_inputs=None,check_tolerance=1e-5",https://pytorch.org/docs/stable/jit.html#torch.jit.trace_module,https://pytorch.org/docs/stable/_modules/torch/jit.html#trace_module
+,function,torch.jit.save,"m,f,_extra_files=ExtraFilesMap{}",https://pytorch.org/docs/stable/jit.html#torch.jit.save,https://pytorch.org/docs/stable/_modules/torch/jit.html#save
+,function,torch.jit.load,"f,map_location=None,_extra_files=ExtraFilesMap{}",https://pytorch.org/docs/stable/jit.html#torch.jit.load,https://pytorch.org/docs/stable/_modules/torch/jit.html#load
+,function,torch.jit.export,fn,https://pytorch.org/docs/stable/jit.html#torch.jit.export,https://pytorch.org/docs/stable/_modules/torch/_jit_internal.html#export
+,function,torch.jit.ignore,"drop=False,**kwargs",https://pytorch.org/docs/stable/jit.html#torch.jit.ignore,https://pytorch.org/docs/stable/_modules/torch/_jit_internal.html#ignore
+,function,torch.jit.unused,fn,https://pytorch.org/docs/stable/jit.html#torch.jit.unused,https://pytorch.org/docs/stable/_modules/torch/_jit_internal.html#unused
+,function,torch.jit.is_scripting,,https://pytorch.org/docs/stable/jit.html#torch.jit.is_scripting,https://pytorch.org/docs/stable/_modules/torch/jit.html#is_scripting
+torch.jit.ScriptModule,class,,,https://pytorch.org/docs/stable/jit.html#torch.jit.ScriptModule,https://pytorch.org/docs/stable/_modules/torch/jit.html#ScriptModule
+torch.jit.ScriptModule,method,code,,https://pytorch.org/docs/stable/jit.html#torch.jit.ScriptModule.code,
+torch.jit.ScriptModule,method,graph,,https://pytorch.org/docs/stable/jit.html#torch.jit.ScriptModule.graph,
+torch.jit.ScriptModule,method,save,"f,_extra_files=ExtraFilesMap{}",https://pytorch.org/docs/stable/jit.html#torch.jit.ScriptModule.save,
+torch.jit.ScriptFunction,class,,,https://pytorch.org/docs/stable/jit.html#torch.jit.ScriptFunction,

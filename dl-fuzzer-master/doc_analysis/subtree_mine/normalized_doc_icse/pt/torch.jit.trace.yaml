@@ -1,0 +1,91 @@
+constraints:
+  check_inputs:
+    default: None
+    descp: A list of tuples of input arguments that should be used to check the trace
+      against what is expected. Each tuple is equivalent to a set of input arguments
+      that would be specified in `example_inputs`. For best results, pass in a set
+      of checking inputs representative of the space of shapes and types of inputs
+      you expect the network to see. If not specified, the original `example_inputs`
+      are used for checking
+    doc_dtype: list of tuples, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of tuples of input arguments that should be used to check the
+      trace against what is expected
+    - Each D_STRUCTURE is equivalent to a set of input arguments that would be specified
+      in PARAM
+    - For best results pass in a set of checking inputs representative of the space
+      of shapes and types of inputs you expect the network to see
+    - If not specified the original PARAM are used for checking
+    normalized_docdtype: D_STRUCTURE of tuples optional
+  check_tolerance:
+    default: 1e-5
+    descp: Floating-point comparison tolerance to use in the checker procedure. This
+      can be used to relax the checker strictness in the event that results diverge
+      numerically for a known reason, such as operator fusion.
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - D_TYPE point comparison tolerance to use in the checker procedure
+    - This can be used to relax the checker strictness in the event that results diverge
+      numerically for a known reason such as operator fusion
+    normalized_docdtype: D_TYPE optional
+  check_trace:
+    default: 'True'
+    descp: 'Check if the same inputs run through traced code produce the same outputs.
+      Default: `True`. You might want to disable this if, for example, your network
+      contains non- deterministic ops or if you are sure that the network is correct
+      despite a checker failure.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Check if the same inputs run through traced code produce the same outputs
+    - Default CONSTANT_BOOL
+    - You might want to disable this if for example your network contains non deterministic
+      ops or if you are sure that the network is correct despite a checker failure
+    normalized_docdtype: D_TYPE optional
+  example_inputs:
+    descp: A tuple of example inputs that will be passed to the function while tracing.
+      The resulting trace can be run with inputs of different types and shapes assuming
+      the traced operations support those types and shapes. `example_inputs` may also
+      be a single Tensor in which case it is automatically wrapped in a tuple.
+    doc_dtype: tuple
+    normalized_descp:
+    - A D_STRUCTURE of example inputs that will be passed to the function while tracing
+    - The resulting trace can be run with inputs of different types and shapes assuming
+      the traced operations support those types and shapes
+    - QSTR may also be a single D_STRUCTURE in which case it is automatically wrapped
+      in a D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  func:
+    descp: A Python function or `torch.nn.Module` that will be run with `example_inputs`.
+      arguments and returns to `func` must be tensors or (possibly nested) tuples
+      that contain tensors. When a module is passed to `torch.jit.trace`, only the
+      `forward` method is run and traced (see `torch.jit.trace` for details).
+    doc_dtype: callable or torch.nn.Module
+    normalized_descp:
+    - A Python function or torch nn Module that will be run with PARAM
+    - arguments and returns to QSTR must be D_STRUCTURE or BSTR tuples that contain
+      D_STRUCTURE
+    - When a module is passed to torch jit trace only the QSTR method is run and traced
+      see torch jit trace for details
+    normalized_docdtype: callable or torch nn Module
+  optimize:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+inputs:
+  optional:
+  - optimize
+  - check_trace
+  - check_inputs
+  - check_tolerance
+  required:
+  - func
+  - example_inputs
+link: https://pytorch.org/docs/stable/jit.html#torch.jit.trace
+package: torch
+target: trace
+title: torch.jit.trace
+version: 1.5.0

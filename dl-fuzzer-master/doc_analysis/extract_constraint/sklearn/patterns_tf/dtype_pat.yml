@@ -1,0 +1,221 @@
+# result: list of datatypes. should check each item: whether valid dtype word
+
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: dtype
+findall: True
+stop_word:
+    - and
+    - or
+    - etc
+
+sep:
+    - /
+    - '`'
+    - \'
+    - \"
+    - ' '
+    - ','
+    - '\|'
+
+replace:
+    'data\s+type': 'dtype'
+
+pat:
+    # must be one of the following types
+    'must\s+be\s+one\s+of\s+the\s+following\s+types\s*:(((and|or)*\s*[`''"][\w.]+[`''"]\s*[,\.]*\s*)+)':
+        group: 1
+
+    # acceptable types are ...
+    'acceptable\s+types\s+are\s+(((and|or)*\s*[`''"][.\w]+[`''"]\s*[,\.]*\s*)+)':
+        group: 1
+
+    # Must be `float16`, `float32`, `float64`, `complex64`, or `complex128` 
+    'must\s+be\s*(((and|or)*\s*[`''"][.\w\d]+[`''"]\s*[,\.]*\s*)+)':
+        group: 1
+    
+    # must be a/an <>
+    'must\s+be\s+(a|an)\s+(positive\s+)?(`*\w+`*)':
+        group: 3
+        ndim: 0
+
+
+    # must be <t1>, <t2>, ...
+    'must\s*be\s*:*(((and|or)*\s*[`''"][.\w\d]+[`''"]\s*[,\.]*\s*)+)':
+        group: 1
+
+    # the first word or "a/an/the python/input/keras/required <word> " not followed by tensor
+    '^(\(optional.*\)|either)?\s*(the|\ba\b|an|optional)?\s*(python|input|output|other|keras|tensorflow|required|unique|expected|variable)?\s*(\(.*?\)\s*)?([`''"]*[\w.]+[`''"]*)[\s\.,;-s](?!`*tensor`*)':
+        group: 5
+        ndim: 0
+    # a/an/the <> <> (consider two words)
+    '^(\ba\b|\ban\b|the)?\s*(optional)?\s*([`''"]*[\w-]+[`''"]*\s+[`''"]*[\w-]+[`''"]*)(?!\s`*tensor`*)':
+        group: 3
+        ndim: 0
+
+        
+    # followed by "tensor" -> don't update ndim
+    '^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required|expected)?\s*([`''"]*[\w.]+[`''"]*)[\s\.,;-s]':
+        prereq:
+            - '^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required)?\s*([`''"]*[\w.]+[`''"]*)[\s\.,;-s](?!`*tensor`*)'
+        group: 4
+    
+    # ^ <> or <>
+    '^(\ba\b|an|the)?\s*([`''"]*[\w.]+[`''"]*\s+or\s+[`''"]*[\w.]+[`''"]*)':
+        group: 2
+
+    '(\ba\b|an)?\s*([`''"]*[\w.]+[`''"]*\/[`''"]*[\w.]+[`''"]*)':
+        group: 2
+
+    # one word before tensor
+    # OR '<> or <> tensor'
+    '(([`''"]*([.\w]+)[`''"]*\s+or\s+)?[`''"]*([.\w]+)[`''"]*)\s+[`''"]*(tensor|tf.tensor)[`''"]*':
+        group: 1
+        # tensor_t: tensor
+
+    # one word before scalar
+    '([`''"]*([.\w]+)[`''"]*)\s+scalar':
+        group: 1
+        ndim: 0
+
+    # tensor of <> 
+    '`*(tf.tensor|tensor|sparsetensor)`*\s+(of|with)\)?\s+(?!type)(?!shape)`*([\w.]+)`*':
+        group: 3
+
+    'this\s+must\s+be\s+(\ba\b|an)?\s*`*([\w]+)`*':
+        group: 2
+
+    # one word after positive/non-negative
+    '(positive|negative)\s+`*([\w.]+)`*':
+        group: 2
+
+
+
+    # e.g. ... with type `int32` or `int64` containing ...
+    # e.g. A list of `Tensor` objects with type `float32`
+    # e.g. A Tensor with type `float32` or `float64`.
+    # e.g. A `Tensor` with type `float`, `double`, `int32`, `int64`, `uint8`, `int16`, or `int8`.
+    # e.g. Keras tensor with dtype `dtype`.
+    # e.g. A tensor of type `int64` and shape `[num_sampled]`.
+    # must quoted
+    '(of|with|and)\s+(type|dtype|types|dtypes)\s*(((and|or)*\s*[`''"][.\w]+[`''"][,]*\s*)+)': 
+        group: 3
+
+    # not qouted, only one word included
+    # of/with/and type/dtype <> (or <>)
+    '(of|with|and)\s+(type|dtype|types|dtypes)\s+([`''"]*([\w.]+)[`''"]*(\s+or\s+[`''"]*([\w.]+)[`''"]*)?)':
+        group: 3
+    
+    # of/with/and/have/has <> type
+    '(of|with|and|have|has)\s+(real\s+)?[`''"]*([\w.]+)[`''"]*\s+(type|dtype|types|dtypes)':
+        group: 3
+
+    
+    # booleans
+    # if/when true
+    '(if|when)\s+`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    '(if|when)\s+(this\s+is\s+)?set\s+to\s*`*(true|false)`*':
+        dtype: bool
+        ndim: 0
+
+    '`*(true|false)`*\s+iff':
+        dtype: bool
+        ndim: 0
+
+    '[`''"]*(true|false)[`''"]*\s+(if|when|enables|disables)\s+':   # true/false if/when...  OR `true`/`false` if/when...
+        dtype: bool
+
+
+    'determines*\s+whether\s+':
+        dtype: bool
+
+    'whether\s+':
+        dtype: bool
+
+    
+
+
+    'a\s+name\s+for':
+        dtype: string
+        ndim: 0
+
+
+    '(a|an)\s+optional\s*[`''"]*([\w.]+)[`''"]*':
+        group: 2
+        ndim: 0
+    
+    # (with|of|have|has|having|be)\s+
+    '(the\s+)?same\s+(((dtype|type)\s+and\s+(shape|rank))|(shape\s+and\s+(type|dtype))|`*(dtype|type)`*)\s+(with|as)\s*`*([\w]+)`*[\s,.]':
+        group: 10
+        dependent: True
+
+    'same\s+`*(dtype|type)`*\s+as,*\s+and\s+broadcastable\s+to,*\s*`*(\w+)`*':
+        group: 2
+        dependent: True
+
+
+    'the\s+strides*\s+of\s+':
+        dtype: int
+        range: '[0,inf)' 
+        
+
+    '([`''"]*sparsetensor[`''"]*\s+or\s+[`''"]*tensor[`''"]*)':
+        group: 1
+
+    '([`''"]*tensor[`''"]*\s+or\s+[`''"]*sparsetensor[`''"]*)':
+        group: 1
+
+    '\bor\b\s+`*(sparsetensor)`*':
+        group: 1
+
+
+    '`*(dtype|data\s+type)`*\s+of':
+        dtype: dtype
+
+
+    'a\s+python\s+number':
+        dtype: int
+        ndim: 0
+
+    '(\ba\b|or)\s+single\s`*(\w+)`*':
+        group: 2
+        ndim: 0
+
+    '^(\ba\b|an|the)?\s*directory\s':
+        dtype: string
+
+    '^(the\s+)?index\s+of':
+        dtype: int
+        ndim: 0
+
+    'as\s+a\s+(constant\s+)?`*(\w+)`*':
+        group: 2
+        ndim: 0
+        
+
+    # not general
+    'a\s+`*(tensor)`*\s+whose':
+        group: 1
+        
+
+    '`*(tensor)`*\s+of\s+(arbitrary|any)\s+(shape|dimension|dimensions)':
+        group: 1
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    

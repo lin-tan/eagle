@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Integer specifying the number of times to read through the dataset. If None, cycles through the dataset forever. Defaults to `None`.",None,prim_dtype,dtype(int),,1
+,"Integer specifying the number of times to read through the dataset. If None, cycles through the dataset forever. Defaults to `None`.",None,shape,ndim(0),,1
+,"Integer specifying the number of times to read through the dataset. If None, cycles through the dataset forever. Defaults to `None`.",None,validvalue,"range([0,inf))",,1

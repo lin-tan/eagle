@@ -1,0 +1,15 @@
+constraints:
+  '*iterables':
+    descp: lists, dataframes, arrays, sparse matrices List of objects to ensure sliceability.
+    structure:
+    - list
+    - ndarray
+inputs:
+  optional: []
+  required:
+  - '*iterables'
+link: ''
+package: sklearn
+target: indexable
+title: sklearn.utils.indexable
+version: 0.24.2

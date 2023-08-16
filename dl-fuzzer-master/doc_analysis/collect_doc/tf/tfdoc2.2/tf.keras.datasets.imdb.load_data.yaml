@@ -1,0 +1,63 @@
+aliases:
+- tf.compat.v1.keras.datasets.imdb.load_data
+constraints:
+  '**kwargs':
+    default: null
+    descp: Used for backwards compatibility.
+  index_from:
+    default: '3'
+    descp: int. Index actual words with this index and higher.
+  maxlen:
+    default: None
+    descp: int or None. Maximum sequence length. Any longer sequence will be truncated.
+      Defaults to None, which means no truncation.
+  num_words:
+    default: None
+    descp: integer or None. Words are ranked by how often they occur (in the training
+      set) and only the num_words most frequent words are kept. Any less frequent
+      word will appear as oov_char value in the sequence data. If None, all words
+      are kept. Defaults to None, so all words are kept.
+  oov_char:
+    default: '2'
+    descp: int. The out-of-vocabulary character. Words that were cut out because of
+      the num_words or skip_top limits will be replaced with this character.
+  path:
+    default: imdb.npz
+    descp: where to cache the data (relative to ~/.keras/dataset).
+  seed:
+    default: '113'
+    descp: int. Seed for reproducible data shuffling.
+  skip_top:
+    default: '0'
+    descp: skip the top N most frequently occurring words (which may not be informative).
+      These words will appear as oov_char value in the dataset. Defaults to 0, so
+      no words are skipped.
+  start_char:
+    default: '1'
+    descp: int. The start of a sequence will be marked with this character. Defaults
+      to 1 because 0 is usually the padding character.
+exceptions:
+- ValueError: in case maxlen is so low that no input sequence could be kept.
+inputs:
+  optional:
+  - path
+  - num_words
+  - skip_top
+  - maxlen
+  - seed
+  - start_char
+  - oov_char
+  - index_from
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/datasets/imdb/load_data
+outputs:
+- 'Tuple of Numpy arrays: (x_train, y_train), (x_test, y_test). x_train, x_test: lists
+  of sequences, which are lists of indexes (integers). If the num_words argument was
+  specific, the maximum possible index value is num_words-1. If the maxlen argument
+  was specified, the largest possible sequence length is maxlen. y_train, y_test:
+  lists of integer labels (1 or 0).'
+package: tensorflow
+target: load_data
+title: tf.keras.datasets.imdb.load_data
+version: 2.2.0

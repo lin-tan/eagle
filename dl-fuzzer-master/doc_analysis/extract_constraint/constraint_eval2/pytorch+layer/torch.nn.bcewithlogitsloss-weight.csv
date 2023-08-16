@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"a manual rescaling weight given to the loss of each batch element. If given, has to be a Tensor of size nbatch.",None,prim_dtype,dtype(numeric),,1
+Tensor,"a manual rescaling weight given to the loss of each batch element. If given, has to be a Tensor of size nbatch.",None,nonprim_dtype,tensor_t(torch.tensor),,1

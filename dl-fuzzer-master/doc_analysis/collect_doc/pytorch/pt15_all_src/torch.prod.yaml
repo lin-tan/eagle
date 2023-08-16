@@ -1,0 +1,23 @@
+constraints:
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor.If specified, the input tensor
+      is casted to `dtype` before the operationis performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.prod
+package: torch
+ret_type: Tensor
+target: prod
+title: torch.prod
+version: 1.5.0

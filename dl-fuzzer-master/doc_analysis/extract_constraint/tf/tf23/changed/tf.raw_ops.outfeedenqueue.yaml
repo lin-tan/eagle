@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: A Tensor. A tensor that will be inserted into the outfeed queue.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OutfeedEnqueue
+outputs:
+- The created Operation.
+package: tensorflow
+target: OutfeedEnqueue
+title: tf.raw_ops.OutfeedEnqueue
+version: 2.3.0

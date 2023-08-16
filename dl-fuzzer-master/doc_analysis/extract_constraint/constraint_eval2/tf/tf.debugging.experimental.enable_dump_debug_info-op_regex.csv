@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Dump data from only the tensors from op types that matches to the regular expression (through Python's `re.match()`). ""Op type"" refers to the names of the TensorFlow operations (e.g., ""MatMul"", ""LogSoftmax""), which may repeat in a TensorFlow function. It does not refer to the names of nodes (e.g., ""dense/MatMul"", ""dense_1/MatMul_1"") which are unique within a function.<ul><li>Example 1: Dump tensor data from only MatMul and Relu ops`op_regex=""^(MatMul|Relu)$""`.",None,,,0,0

@@ -1,0 +1,14 @@
+constraints:
+  func:
+    descp: ''
+    doc_dtype:
+    - a numpy-compatible binary function to be wrapped for better error handling.
+inputs:
+  optional: []
+  required:
+  - func
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/util/index.html#mxnet.util.wrap_np_binary_func
+package: mxnet
+target: wrap_np_binary_func
+title: mxnet.util.wrap_np_binary_func
+version: 1.7.0

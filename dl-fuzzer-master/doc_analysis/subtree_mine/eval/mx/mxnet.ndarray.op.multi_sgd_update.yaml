@@ -1,0 +1,15 @@
+constraints:
+  clip_gradient:
+    default: None
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.multi_sgd_update

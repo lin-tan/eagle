@@ -1,0 +1,9 @@
+constraints:
+  dpi:
+    default: '96'
+    descp: Dots per inch.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.keras.utils.plot_model

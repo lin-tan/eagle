@@ -1,0 +1,177 @@
+constraints:
+  adaptative:
+    default: 'True'
+    descp: An optional bool. Defaults to True. Whether to use Adaptive SDCA for the
+      inner loop.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  dense_features:
+    descp: A list of Tensor objects with type float32. a list of matrices which contains
+      the dense feature values.
+    dtype:
+    - tf.float32
+    structure:
+    - list
+    - list(tf.tensor)
+  dense_weights:
+    descp: A list with the same length as dense_features of Tensor objects with type
+      float32. a list of vectors where the values are the weights associated with
+      a dense feature group.
+    dtype:
+    - tf.float32
+    shape:
+    - shape:&dense_features
+    structure:
+    - list
+  example_labels:
+    descp: A Tensor of type float32. a vector which contains the label/target associated
+      with each example.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  example_state_data:
+    descp: A Tensor of type float32. a list of vectors containing the example state
+      data.
+    dtype:
+    - tf.float32
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  example_weights:
+    descp: A Tensor of type float32. a vector which contains the weight associated
+      with each example.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  l1:
+    descp: A float. Symmetric l1 regularization strength.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  l2:
+    descp: A float. Symmetric l2 regularization strength.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  loss_type:
+    descp: 'A string from: "logistic_loss", "squared_loss", "hinge_loss", "smooth_hinge_loss",
+      "poisson_loss". Type of the primal loss. Currently SdcaSolver supports logistic,
+      squared and hinge losses.'
+    dtype:
+    - tf.string
+    enum:
+    - hinge_loss
+    - logistic_loss
+    - poisson_loss
+    - smooth_hinge_loss
+    - squared_loss
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_inner_iterations:
+    descp: An int that is >= 1. Number of iterations per mini-batch.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_loss_partitions:
+    descp: An int that is >= 1. Number of partitions of the global loss function.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  sparse_example_indices:
+    descp: A list of Tensor objects with type int64. a list of vectors which contain
+      example indices.
+    dtype:
+    - tf.int64
+    structure:
+    - list
+    - list(tf.tensor)
+  sparse_feature_indices:
+    descp: A list with the same length as sparse_example_indices of Tensor objects
+      with type int64. a list of vectors which contain feature indices.
+    dtype:
+    - tf.int64
+    shape:
+    - shape:&sparse_example_indices
+    structure:
+    - list
+  sparse_feature_values:
+    descp: A list of Tensor objects with type float32. a list of vectors which contains
+      feature value associated with each feature group.
+    dtype:
+    - tf.float32
+    structure:
+    - list
+    - list(tf.tensor)
+  sparse_indices:
+    descp: A list with the same length as sparse_example_indices of Tensor objects
+      with type int64. a list of vectors where each value is the indices which has
+      corresponding weights in sparse_weights. This field maybe omitted for the dense
+      approach.
+    dtype:
+    - tf.int64
+    shape:
+    - shape:&sparse_example_indices
+    structure:
+    - list
+  sparse_weights:
+    descp: A list with the same length as sparse_example_indices of Tensor objects
+      with type float32. a list of vectors where each value is the weight associated
+      with a sparse feature group.
+    dtype:
+    - tf.float32
+    shape:
+    - shape:&sparse_example_indices
+    structure:
+    - list
+inputs:
+  optional:
+  - adaptative
+  - name
+  required:
+  - sparse_example_indices
+  - sparse_feature_indices
+  - sparse_feature_values
+  - dense_features
+  - example_weights
+  - example_labels
+  - sparse_indices
+  - sparse_weights
+  - dense_weights
+  - example_state_data
+  - loss_type
+  - l1
+  - l2
+  - num_loss_partitions
+  - num_inner_iterations
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SdcaOptimizer
+outputs:
+- A tuple of Tensor objects (out_example_state_data, out_delta_sparse_weights, out_delta_dense_weights).
+- out_example_state_data: A Tensor of type float32.
+- out_delta_sparse_weights: A list with the same length as sparse_example_indices
+    of Tensor objects with type float32.
+- out_delta_dense_weights: A list with the same length as dense_features of Tensor
+    objects with type float32.
+package: tensorflow
+target: SdcaOptimizer
+title: tf.raw_ops.SdcaOptimizer
+version: 2.3.0

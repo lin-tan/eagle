@@ -1,0 +1,27 @@
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Boolean indicating whether to solve
+      with matrix or its (block-wise) adjoint.
+  matrix:
+    descp: 'A Tensor. Must be one of the following types: float64, float32, half,
+      complex64, complex128. Shape is [..., M, M].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rhs:
+    descp: A Tensor. Must have the same type as matrix. Shape is [..., M, K].
+inputs:
+  optional:
+  - adjoint
+  - name
+  required:
+  - matrix
+  - rhs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixSolve
+outputs:
+- A Tensor. Has the same type as matrix.
+package: tensorflow
+target: MatrixSolve
+title: tf.raw_ops.MatrixSolve
+version: 2.2.0

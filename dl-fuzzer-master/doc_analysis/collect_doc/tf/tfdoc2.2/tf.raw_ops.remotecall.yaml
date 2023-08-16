@@ -1,0 +1,29 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes that has length >= 1. The type list for the return
+      values.
+  args:
+    descp: A list of Tensor objects. A list of arguments for the function.
+  f:
+    descp: A function decorated with @Defun. The function to run remotely.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  target:
+    descp: A Tensor of type string. A fully specified device name where we want to
+      run the function.
+inputs:
+  optional:
+  - name
+  required:
+  - target
+  - args
+  - Tout
+  - f
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RemoteCall
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: RemoteCall
+title: tf.raw_ops.RemoteCall
+version: 2.2.0

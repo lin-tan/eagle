@@ -1,0 +1,11 @@
+constraints:
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    structure:
+    - ndarray
+title: mxnet.contrib.ndarray.quantized_fully_connected

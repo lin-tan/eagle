@@ -1,0 +1,10 @@
+constraints:
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.random.gamma

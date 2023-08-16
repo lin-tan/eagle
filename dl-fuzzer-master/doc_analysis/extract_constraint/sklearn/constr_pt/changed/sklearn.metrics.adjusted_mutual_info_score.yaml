@@ -1,0 +1,37 @@
+constraints:
+  average_method:
+    default: arithmetic
+    descp: 'string, optional (default: ''arithmetic'') How to compute the normalizer
+      in the denominator. Possible options are ''min'', ''geometric'', ''arithmetic'',
+      and ''max''.'
+    dtype:
+    - string
+  labels_pred:
+    descp: int array-like of shape (n_samples,) A clustering of the data into disjoint
+      subsets.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[n_samples]'
+  labels_true:
+    descp: int array, shape = [n_samples] A clustering of the data into disjoint subsets.
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - average_method
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: scikit-learn
+target: adjusted_mutual_info_score
+title: sklearn.metrics.adjusted_mutual_info_score
+version: 0.24.X

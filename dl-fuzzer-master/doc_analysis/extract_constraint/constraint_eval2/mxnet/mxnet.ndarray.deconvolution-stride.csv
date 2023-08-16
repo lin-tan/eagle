@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","The stride used for the corresponding convolution: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension.",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","The stride used for the corresponding convolution: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension.",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[]","The stride used for the corresponding convolution: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension.",_Null,shape,"shape([d,h,w], [h,w], [w]), ndim(1, 2, 3)",,1

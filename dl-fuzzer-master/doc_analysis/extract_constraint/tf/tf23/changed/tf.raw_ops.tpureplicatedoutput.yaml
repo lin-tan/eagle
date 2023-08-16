@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_replicas:
+    descp: An int that is >= 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - num_replicas
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TPUReplicatedOutput
+outputs:
+- A list of num_replicas Tensor objects with the same type as input.
+package: tensorflow
+target: TPUReplicatedOutput
+title: tf.raw_ops.TPUReplicatedOutput
+version: 2.3.0

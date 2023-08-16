@@ -1,0 +1,47 @@
+constraints:
+  input:
+    descp: the input tensor of at least `signal_ndim` dimensions
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of at least PARAM dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return normalized results. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return normalized results
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  onesided:
+    default: 'True'
+    descp: 'controls whether to return half of results to avoid redundancy. Default:
+      `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return D_TYPE of results to avoid redundancy
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  signal_ndim:
+    descp: the number of dimensions in each signal. `signal_ndim` can only be 1, 2
+      or 3
+    doc_dtype: int
+    normalized_descp:
+    - the number of dimensions in each signal
+    - QSTR can only be CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - normalized
+  - onesided
+  required:
+  - input
+  - signal_ndim
+link: https://pytorch.org/docs/stable/torch.html#torch.rfft
+package: torch
+ret_type: Tensor
+target: rfft
+title: torch.rfft
+version: 1.5.0

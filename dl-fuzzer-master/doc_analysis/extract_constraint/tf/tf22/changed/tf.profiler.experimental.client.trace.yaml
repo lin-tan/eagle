@@ -1,0 +1,46 @@
+constraints:
+  duration_ms:
+    descp: Duration of tracing or monitoring in ms.
+  logdir:
+    descp: Path of TensorBoard log directory e.g. /tmp/tb_log.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_tracing_attempts:
+    default: '3'
+    descp: Optional. Automatically retry N times when no trace event is collected
+      (default 3).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  service_addr:
+    descp: gRPC address of profiler service e.g. grpc://localhost:6009.
+  worker_list:
+    default: ''
+    descp: Optional. The list of workers that we are about to profile in the current
+      session (TPU only).
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list
+exceptions:
+- UnavailableError: If no trace event is collected.
+inputs:
+  optional:
+  - worker_list
+  - num_tracing_attempts
+  required:
+  - service_addr
+  - logdir
+  - duration_ms
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/profiler/experimental/client/trace
+package: tensorflow
+target: trace
+title: tf.profiler.experimental.client.trace
+version: 2.2.0

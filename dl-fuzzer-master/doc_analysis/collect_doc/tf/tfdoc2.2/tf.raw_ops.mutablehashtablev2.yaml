@@ -1,0 +1,36 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this table is placed
+      in the given container. Otherwise, a default container is used.
+  key_dtype:
+    descp: A tf.DType. Type of the table keys.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this table is shared
+      under the given name across multiple sessions.
+  use_node_name_sharing:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true and shared_name is empty,
+      the table is shared using the node name.
+  value_dtype:
+    descp: A tf.DType. Type of the table values.
+inputs:
+  optional:
+  - container
+  - shared_name
+  - use_node_name_sharing
+  - name
+  required:
+  - key_dtype
+  - value_dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MutableHashTableV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: MutableHashTableV2
+title: tf.raw_ops.MutableHashTableV2
+version: 2.2.0

@@ -1,0 +1,17 @@
+torch.float32: np.float32
+torch.float: np.float32
+torch.float64: np.float64
+torch.double: np.float64
+torch.float16: np.float16
+torch.half: np.float16
+torch.uint8: np.uint8
+torch.int8: np.int8
+torch.int16: np.int16
+torch.short: np.int16
+torch.int32: np.int32
+torch.int: np.int32
+torch.int64: np.int64
+torch.long: np.int64
+torch.bool: np.bool
+torch.dtype:
+string: str

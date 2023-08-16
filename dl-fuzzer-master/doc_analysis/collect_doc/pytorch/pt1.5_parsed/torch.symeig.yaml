@@ -1,0 +1,34 @@
+constraints:
+  eigenvectors:
+    default: 'False'
+    descp: controls whether eigenvectors have to be computed
+    doc_dtype:
+    - boolean
+  input:
+    descp: the input tensor of size (*, n, n)  where * is zero or more batch dimensions
+      consisting of symmetric matrices.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tuple of (Tensor, Tensor)
+    doc_dtype:
+    - tuple
+  upper:
+    default: 'True'
+    descp: controls whether to consider upper-triangular or lower-triangular region
+    doc_dtype:
+    - boolean
+inputs:
+  optional:
+  - eigenvectors
+  - upper
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.symeig
+package: torch
+ret_type: (Tensor, Tensor)
+target: symeig
+title: torch.symeig
+version: 1.5.0

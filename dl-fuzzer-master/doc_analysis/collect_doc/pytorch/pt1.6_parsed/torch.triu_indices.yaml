@@ -1,0 +1,47 @@
+constraints:
+  col:
+    descp: number of columns in the 2-D matrix.
+    doc_dtype:
+    - int
+  device:
+    default: cpu
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: torch.long
+    descp: 'the desired data type of returned tensor. Default: if `None`, `torch.long`.'
+    doc_dtype:
+    - torch.dtype
+  layout:
+    default: torch.strided
+    descp: currently only support `torch.strided`.
+    doc_dtype:
+    - torch.layout
+  offset:
+    default: '0'
+    descp: 'diagonal offset from the main diagonal. Default: if not provided, 0.'
+    doc_dtype:
+    - int
+  row:
+    descp: number of rows in the 2-D matrix.
+    doc_dtype:
+    - int
+inputs:
+  optional:
+  - offset
+  - dtype
+  - device
+  - layout
+  required:
+  - row
+  - col
+link: https://pytorch.org/docs/1.6.0/generated/torch.triu_indices.html#torch.triu_indices#torch.triu_indices
+package: torch
+ret_type: Tensor
+target: triu_indices
+title: torch.triu_indices
+version: 1.6.0

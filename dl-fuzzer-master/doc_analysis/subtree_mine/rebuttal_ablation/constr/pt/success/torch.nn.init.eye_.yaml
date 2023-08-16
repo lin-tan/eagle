@@ -1,0 +1,27 @@
+constraints:
+  tensor:
+    descp: a 2-dimensional torch.Tensor
+    dtype:
+    - int
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.eye_
+package: torch
+target: eye_
+title: torch.nn.init.eye_
+version: 1.5.0

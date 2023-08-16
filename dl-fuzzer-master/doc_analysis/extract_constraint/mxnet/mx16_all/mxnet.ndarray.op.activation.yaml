@@ -1,0 +1,51 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  act_type:
+    default: _Null
+    descp: Activation function to be applied.
+    doc_dtype:
+    - "{'relu', 'sigmoid', 'softrelu', 'softsign', 'tanh'}"
+    - required
+    enum:
+    - relu
+    - sigmoid
+    - softrelu
+    - softsign
+    - tanh
+  data:
+    default: None
+    descp: The input array.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - string
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - data
+  - out
+  - name
+  required:
+  - '**kwargs'
+  - act_type
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.Activation
+package: mxnet
+target: Activation
+title: mxnet.ndarray.op.Activation
+version: 1.6.0
+check_nan: true

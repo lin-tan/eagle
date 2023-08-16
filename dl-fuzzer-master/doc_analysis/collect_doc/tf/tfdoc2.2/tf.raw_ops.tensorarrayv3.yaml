@@ -1,0 +1,56 @@
+constraints:
+  clear_after_read:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true (default), Tensors in the TensorArray
+      are cleared after being read. This disables multiple read semantics but allows
+      early release of memory.
+  dtype:
+    descp: A tf.DType. The type of the elements on the tensor_array.
+  dynamic_size:
+    default: 'False'
+    descp: An optional bool. Defaults to False. A boolean that determines whether
+      writes to the TensorArray are allowed to grow the size. By default, this is
+      not allowed.
+  element_shape:
+    default: None
+    descp: An optional tf.TensorShape or list of ints. Defaults to None. The expected
+      shape of an element, if known. Used to validate the shapes of TensorArray elements.
+      If this shape is not fully specified, gathering zero-size TensorArrays is an
+      error.
+  identical_element_shapes:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true (default is false), then all
+      elements in the TensorArray will be expected to have have identical shapes.
+      This allows certain behaviors, like dynamically checking for consistent shapes
+      on write, and being able to fill in properly shaped zero tensors on stack --
+      even if the element_shape attribute is not fully defined.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: A Tensor of type int32. The size of the array.
+  tensor_array_name:
+    default: ''
+    descp: An optional string. Defaults to "". Overrides the name used for the temporary
+      tensor_array resource. Default value is the name of the 'TensorArray' op (which
+      is guaranteed unique).
+inputs:
+  optional:
+  - element_shape
+  - dynamic_size
+  - clear_after_read
+  - identical_element_shapes
+  - tensor_array_name
+  - name
+  required:
+  - size
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayV3
+outputs:
+- A tuple of Tensor objects (handle, flow).
+- handle: A Tensor of type resource.
+- flow: A Tensor of type float32.
+package: tensorflow
+target: TensorArrayV3
+title: tf.raw_ops.TensorArrayV3
+version: 2.2.0

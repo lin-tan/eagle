@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array_like n-dimensional array of which to find mode(s). w : array_like n-dimensional array of weights for each value axis : int, optional Axis along which to operate. Default is 0, i.e. the first axis.",,prim_dtype,dtype(int),,1
+,"array_like n-dimensional array of which to find mode(s). w : array_like n-dimensional array of weights for each value axis : int, optional Axis along which to operate. Default is 0, i.e. the first axis.",,nonprim_dtype,structure(list),,1
+,"array_like n-dimensional array of which to find mode(s). w : array_like n-dimensional array of weights for each value axis : int, optional Axis along which to operate. Default is 0, i.e. the first axis.",,shape,"shape([s]), ndim(1, ?, n)",,1

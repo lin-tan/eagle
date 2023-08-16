@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: 'input tensor of shape (minibatch , in _channels , iT , iH , iW) '
+    ndim:
+    - '5'
+    shape:
+    - '[minibatch,in_channels,it,ih,iw]'
+    tensor_t:
+    - torch.tensor
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a tuple
+      (sT, sH, sW). Default: 1'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[3]'
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+  weight:
+    descp: 'filters of shape (out _channels ,  in _channels/groups , kT , kH , kW) '
+    dtype:
+    - numeric
+    ndim:
+    - '5'
+    shape:
+    - '[out_channels,in_channels/&groups,kt,kh,kw]'
+title: torch.nn.functional.conv3d

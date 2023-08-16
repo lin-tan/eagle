@@ -1,0 +1,29 @@
+constraints:
+  l_cell:
+    descp: Cell for forward unrolling
+    doc_dtype: RecurrentCell
+    normalized_descp:
+    - Cell for forward unrolling
+    normalized_docdtype: ONE_WORD RecurrentCell
+  output_prefix:
+    default: bi_
+    descp: ''
+    normalized_default: DEFAULT DF_STR
+    normalized_descp: []
+  r_cell:
+    descp: Cell for backward unrolling
+    doc_dtype: RecurrentCell
+    normalized_descp:
+    - Cell for backward unrolling
+    normalized_docdtype: ONE_WORD RecurrentCell
+inputs:
+  optional:
+  - output_prefix
+  required:
+  - l_cell
+  - r_cell
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.BidirectionalCell
+package: mxnet
+target: BidirectionalCell
+title: mxnet.gluon.rnn.BidirectionalCell
+version: 1.6.0

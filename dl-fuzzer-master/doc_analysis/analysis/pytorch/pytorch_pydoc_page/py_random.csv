@@ -1,0 +1,13 @@
+class,Type,name,input,link,source_code
+,function,torch.random.fork_rng,"devices=None,enabled=True,_caller='fork_rng',_devices_kw='devices'",https://pytorch.org/docs/stable/random.html#torch.random.fork_rng,https://pytorch.org/docs/stable/_modules/torch/random.html#fork_rng
+,function,torch.random.get_rng_state,,https://pytorch.org/docs/stable/random.html#torch.random.get_rng_state,https://pytorch.org/docs/stable/_modules/torch/random.html#get_rng_state
+,function,torch.random.initial_seed,,https://pytorch.org/docs/stable/random.html#torch.random.initial_seed,https://pytorch.org/docs/stable/_modules/torch/random.html#initial_seed
+,function,torch.random.manual_seed,seed,https://pytorch.org/docs/stable/random.html#torch.random.manual_seed,https://pytorch.org/docs/stable/_modules/torch/random.html#manual_seed
+,function,torch.random.seed,,https://pytorch.org/docs/stable/random.html#torch.random.seed,https://pytorch.org/docs/stable/_modules/torch/random.html#seed
+,function,torch.random.set_rng_state,new_state,https://pytorch.org/docs/stable/random.html#torch.random.set_rng_state,https://pytorch.org/docs/stable/_modules/torch/random.html#set_rng_state
+,function,torch.random.get_rng_state,,,https://pytorch.org/docs/stable/_modules/torch/random.html#get_rng_state
+,function,torch.random.set_rng_state,new_state,,https://pytorch.org/docs/stable/_modules/torch/random.html#set_rng_state
+,function,torch.random.manual_seed,seed,,https://pytorch.org/docs/stable/_modules/torch/random.html#manual_seed
+,function,torch.random.seed,,,https://pytorch.org/docs/stable/_modules/torch/random.html#seed
+,function,torch.random.initial_seed,,,https://pytorch.org/docs/stable/_modules/torch/random.html#initial_seed
+,function,torch.random.fork_rng,"devices=None,enabled=True,_caller='fork_rng',_devices_kw='devices'",,https://pytorch.org/docs/stable/_modules/torch/random.html#fork_rng

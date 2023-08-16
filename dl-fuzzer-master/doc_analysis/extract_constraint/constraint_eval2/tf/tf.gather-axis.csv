@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. The`axis` in `params` to gather `indices` from. Must be greater than or equal to `batch_dims`.  Defaults to the first non-batch dimension. Supports negative indexes.",None,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. The`axis` in `params` to gather `indices` from. Must be greater than or equal to `batch_dims`.  Defaults to the first non-batch dimension. Supports negative indexes.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. The`axis` in `params` to gather `indices` from. Must be greater than or equal to `batch_dims`.  Defaults to the first non-batch dimension. Supports negative indexes.",None,shape,ndim(0),,1

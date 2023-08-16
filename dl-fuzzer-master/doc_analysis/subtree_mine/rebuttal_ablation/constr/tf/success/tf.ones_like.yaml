@@ -1,0 +1,80 @@
+constraints:
+  dtype:
+    default: None
+    descp: A type for the returned `Tensor`. Must be `float16`, `float32`,`float64`,
+      `int8`, `uint8`, `int16`, `uint16`, `int32`, `int64`,`complex64`, `complex128`,
+      `bool` or `string`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int16
+    - tf.int32
+    - tf.int64
+    - tf.int8
+    - tf.string
+    - tf.uint16
+    - tf.uint8
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/ones_like
+outputs: A `Tensor` with all elements set to one.
+package: tensorflow
+target: ones_like
+title: tf.ones_like
+version: 2.1.0

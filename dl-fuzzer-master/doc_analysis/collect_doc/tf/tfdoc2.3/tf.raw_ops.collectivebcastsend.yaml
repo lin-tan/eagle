@@ -1,0 +1,39 @@
+constraints:
+  communication_hint:
+    default: auto
+    descp: An optional string. Defaults to "auto".
+  group_key:
+    descp: An int.
+  group_size:
+    descp: An int.
+  input:
+    descp: 'A Tensor. Must be one of the following types: bool, float32, half, float64,
+      int32, int64.'
+  instance_key:
+    descp: An int.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints.
+  timeout_seconds:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+inputs:
+  optional:
+  - communication_hint
+  - timeout_seconds
+  - name
+  required:
+  - input
+  - group_size
+  - group_key
+  - instance_key
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CollectiveBcastSend
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: CollectiveBcastSend
+title: tf.raw_ops.CollectiveBcastSend
+version: 2.3.0

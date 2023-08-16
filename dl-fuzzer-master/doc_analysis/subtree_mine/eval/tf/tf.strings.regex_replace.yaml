@@ -1,0 +1,10 @@
+constraints:
+  replace_global:
+    default: 'True'
+    descp: '`bool`, if `True` replace all non-overlapping matches, else replace only
+      the first match.'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.strings.regex_replace

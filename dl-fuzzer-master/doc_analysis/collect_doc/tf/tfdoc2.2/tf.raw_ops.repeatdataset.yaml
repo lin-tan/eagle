@@ -1,0 +1,30 @@
+constraints:
+  count:
+    descp: A Tensor of type int64. A scalar representing the number of times that
+      input_dataset should be repeated. A value of -1 indicates that it should be
+      repeated infinitely.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - count
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RepeatDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: RepeatDataset
+title: tf.raw_ops.RepeatDataset
+version: 2.2.0

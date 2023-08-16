@@ -1,0 +1,26 @@
+constraints:
+  Tcomplex:
+    default: tf.dtypes.complex64
+    descp: 'An optional tf.DType from: tf.complex64, tf.complex128. Defaults to tf.complex64.'
+  fft_length:
+    descp: A Tensor of type int32. An int32 tensor of shape [1]. The FFT length.
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. A float32
+      tensor.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - Tcomplex
+  - name
+  required:
+  - input
+  - fft_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RFFT
+outputs:
+- A Tensor of type Tcomplex.
+package: tensorflow
+target: RFFT
+title: tf.raw_ops.RFFT
+version: 2.3.0

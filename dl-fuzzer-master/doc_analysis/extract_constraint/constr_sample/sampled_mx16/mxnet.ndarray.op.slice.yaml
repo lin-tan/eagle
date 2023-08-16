@@ -1,0 +1,71 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  begin:
+    default: _Null
+    descp: starting indices for the slice operation, supports negative indices.
+    doc_dtype:
+    - Shape(tuple)
+    - required
+    dtype:
+    - int
+    structure:
+    - tuple(int)
+  data:
+    default: None
+    descp: Source input
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  end:
+    default: _Null
+    descp: ending indices for the slice operation, supports negative indices.
+    doc_dtype:
+    - Shape(tuple)
+    - required
+    dtype:
+    - int
+    structure:
+    - tuple(int)
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - string
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+  step:
+    default: _Null
+    descp: step for the slice operation, supports negative values.
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+    dtype:
+    - int
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - data
+  - step
+  - out
+  - name
+  required:
+  - '**kwargs'
+  - begin
+  - end
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.slice
+package: mxnet
+target: slice
+title: mxnet.ndarray.op.slice
+version: 1.6.0

@@ -1,0 +1,48 @@
+constraints:
+  Treal:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.float32, tf.float64. Defaults to tf.float32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  fft_length:
+    descp: A Tensor of type int32. An int32 tensor of shape [1]. The FFT length.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: 'A Tensor. Must be one of the following types: complex64, complex128. A
+      complex tensor.'
+    dtype:
+    - tf.complex
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Treal
+  - name
+  required:
+  - input
+  - fft_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/IRFFT
+outputs:
+- A Tensor of type Treal.
+package: tensorflow
+target: IRFFT
+title: tf.raw_ops.IRFFT
+version: 2.3.0

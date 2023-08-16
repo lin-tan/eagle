@@ -1,0 +1,107 @@
+aliases:
+- tf.compat.v1.lin_space
+- tf.compat.v1.linspace
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  num:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 0-D
+      tensor. Number of values to generate.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  start:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`. 0-D tensor. First entry in the range.'
+    dtype:
+    - int
+    - numeric
+    - tf.bfloat16
+    - tf.bool
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  stop:
+    descp: A `Tensor`. Must have the same type as `start`. 0-D tensor. Last entry
+      in the range.
+    dtype:
+    - '&start'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '&start'
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&start'
+    - '[0]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - start
+  - stop
+  - num
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linspace
+outputs: A `Tensor`. Has the same type as `start`.
+package: tensorflow
+target: linspace
+title: tf.linspace
+version: 2.1.0

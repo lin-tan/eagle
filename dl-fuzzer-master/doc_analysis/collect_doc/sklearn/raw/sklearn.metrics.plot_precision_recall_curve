@@ -1,0 +1,41 @@
+sklearn.metrics.plot_precision_recall_curve = plot_precision_recall_curve(estimator, X, y, sample_weight=None, response_method='auto', name=None, ax=None, **kwargs)
+    Plot Precision Recall Curve for binary classifiers.
+    
+    Extra keyword arguments will be passed to matplotlib's `plot`.
+    
+    Read more in the :ref:`User Guide <precision_recall_f_measure_metrics>`.
+    
+    Parameters
+    ----------
+    estimator : estimator instance
+        Trained classifier.
+    
+    X : {array-like, sparse matrix} of shape (n_samples, n_features)
+        Input values.
+    
+    y : array-like of shape (n_samples,)
+        Binary target values.
+    
+    sample_weight : array-like of shape (n_samples,), default=None
+        Sample weights.
+    
+    response_method : {'predict_proba', 'decision_function', 'auto'},                       default='auto'
+        Specifies whether to use :term:`predict_proba` or
+        :term:`decision_function` as the target response. If set to 'auto',
+        :term:`predict_proba` is tried first and if it does not exist
+        :term:`decision_function` is tried next.
+    
+    name : str, default=None
+        Name for labeling curve. If `None`, the name of the
+        estimator is used.
+    
+    ax : matplotlib axes, default=None
+        Axes object to plot on. If `None`, a new figure and axes is created.
+    
+    **kwargs : dict
+        Keyword arguments to be passed to matplotlib's `plot`.
+    
+    Returns
+    -------
+    display : :class:`~sklearn.metrics.PrecisionRecallDisplay`
+        Object that stores computed values.

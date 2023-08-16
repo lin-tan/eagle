@@ -1,0 +1,34 @@
+constraints:
+  elementwise_affine:
+    default: 'True'
+    descp: 'a boolean value that when set to `True`, this module has learnable per-element
+      affine parameters initialized to ones (for weights) and zeros (for biases).
+      Default: `True`.'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - a D_TYPE value that when set to CONSTANT_BOOL this module has learnable per
+      element affine parameters initialized to ones BSTR
+    - Default CONSTANT_BOOL
+  eps:
+    default: 1e-05
+    descp: 'a value added to the denominator for numerical stability. Default: 1e-5'
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - a value added to the denominator for numerical stability
+    - Default CONSTANT_FLOAT
+  normalized_shape:
+    descp: ''
+    doc_dtype: int or list or torch.Size
+    normalized_descp: []
+    normalized_docdtype: D_TYPE or D_STRUCTURE or torch Size
+inputs:
+  optional:
+  - eps
+  - elementwise_affine
+  required:
+  - normalized_shape
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.LayerNorm
+package: torch
+target: LayerNorm
+title: torch.nn.LayerNorm
+version: 1.5.0

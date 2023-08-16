@@ -1,0 +1,13 @@
+constraints:
+  '*tensors':
+    descp: any number of tensors of the same type
+inputs:
+  optional: []
+  required:
+  - '*tensors'
+link: https://pytorch.org/docs/1.7.0/generated/torch.broadcast_tensors.html#torch.broadcast_tensors#torch.broadcast_tensors
+package: torch
+ret_type: List of Tensors
+target: broadcast_tensors
+title: torch.broadcast_tensors
+version: 1.7.0

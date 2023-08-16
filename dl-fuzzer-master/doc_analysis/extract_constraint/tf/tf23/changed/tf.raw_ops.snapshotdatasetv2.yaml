@@ -1,0 +1,85 @@
+constraints:
+  compression:
+    default: ''
+    descp: An optional string. Defaults to "". The type of compression to be applied
+      to the saved snapshot files.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  path:
+    descp: A Tensor of type string. The path we should write snapshots to / read snapshots
+      from.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  reader_func:
+    descp: A function decorated with @Defun. Optional. A function to control how to
+      read data from snapshot shards.
+    dtype:
+    - callable
+  reader_func_other_args:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  shard_func:
+    descp: A function decorated with @Defun. Optional. A function to control how to
+      shard data when writing a snapshot.
+    dtype:
+    - callable
+  shard_func_other_args:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+inputs:
+  optional:
+  - compression
+  - name
+  required:
+  - input_dataset
+  - path
+  - reader_func_other_args
+  - shard_func_other_args
+  - output_types
+  - output_shapes
+  - reader_func
+  - shard_func
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SnapshotDatasetV2
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SnapshotDatasetV2
+title: tf.raw_ops.SnapshotDatasetV2
+version: 2.3.0

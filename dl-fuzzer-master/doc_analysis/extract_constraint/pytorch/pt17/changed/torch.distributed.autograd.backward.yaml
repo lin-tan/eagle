@@ -1,0 +1,42 @@
+constraints:
+  context_id:
+    descp: The autograd context id for which we should retrieve the gradients.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    sig_dtype: int
+  retain_graph:
+    default: 'False'
+    descp: If False, the graph used to compute the grad will be freed. Note that in
+      nearly all cases setting this option to True is not needed and often can be
+      worked around in a much more efficient way. Usually, you need to set this to
+      True to run backward multiple times.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  roots:
+    descp: Tensors which represent the roots of the autograd computation. All the
+      tensors should be scalars.
+    doc_dtype:
+    - list
+    sig_dtype: List[Tensor]
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - retain_graph
+  required:
+  - context_id
+  - roots
+link: https://pytorch.org/docs/1.7.0/rpc.html#torch.distributed.autograd.backward
+package: torch
+ret_type: None
+target: backward
+title: torch.distributed.autograd.backward
+version: 1.7.0

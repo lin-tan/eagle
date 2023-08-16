@@ -1,0 +1,138 @@
+aliases:
+- tf.compat.v1.io.encode_proto
+constraints:
+  descriptor_source:
+    default: local://
+    descp: An optional `string`. Defaults to `"local://"`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  field_names:
+    descp: A list of `strings`. List of strings containing proto field names.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+  message_type:
+    descp: A `string`. Name of the proto message type to decode.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&name'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  sizes:
+    descp: A `Tensor` of type `int32`. Tensor of int32 with shape `[batch_shape, len(field_names)]`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: A list of `Tensor` objects. List of tensors containing values for the corresponding
+      field.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - descriptor_source
+  - name
+  required:
+  - sizes
+  - values
+  - field_names
+  - message_type
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/encode_proto
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: encode_proto
+title: tf.io.encode_proto
+version: 2.1.0

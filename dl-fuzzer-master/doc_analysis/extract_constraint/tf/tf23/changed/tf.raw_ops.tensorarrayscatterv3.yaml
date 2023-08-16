@@ -1,0 +1,47 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32. A float scalar that enforces proper chaining
+      of operations.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type resource. The handle to a TensorArray.
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: A Tensor of type int32. The locations at which to write the tensor elements.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  value:
+    descp: A Tensor. The concatenated tensor to write to the TensorArray.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - indices
+  - value
+  - flow_in
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorArrayScatterV3
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: TensorArrayScatterV3
+title: tf.raw_ops.TensorArrayScatterV3
+version: 2.3.0

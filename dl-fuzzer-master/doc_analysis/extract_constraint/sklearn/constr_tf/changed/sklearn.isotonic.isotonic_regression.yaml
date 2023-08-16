@@ -1,0 +1,48 @@
+constraints:
+  increasing:
+    default: 'True'
+    descp: 'boolean, optional, default: True Whether to compute ``y_`` is increasing
+      (if set to True) or decreasing (if set to False)'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  sample_weight:
+    default: None
+    descp: 'iterable of floats, optional, default: None Weights on each point of the
+      regression. If None, weight is set to 1 (equal weights).'
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - list(float)
+  y:
+    descp: iterable of floats The data.
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - list(float)
+  y_max:
+    default: None
+    descp: 'optional, default: None If not None, set the highest value of the fit
+      to y_max.'
+  y_min:
+    default: None
+    descp: 'optional, default: None If not None, set the lowest value of the fit to
+      y_min.'
+inputs:
+  optional:
+  - sample_weight
+  - y_min
+  - y_max
+  - increasing
+  required:
+  - y
+link: ''
+package: scikit-learn
+target: isotonic_regression
+title: sklearn.isotonic.isotonic_regression
+version: 0.24.X

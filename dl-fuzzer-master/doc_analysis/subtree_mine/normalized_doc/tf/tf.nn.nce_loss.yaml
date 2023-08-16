@@ -1,0 +1,94 @@
+constraints:
+  biases:
+    descp: A `Tensor` of shape `[num_classes]`.  The class biases.
+    normalized_descp:
+    - A D_STRUCTURE of shape BSTR
+    - The class biases
+  inputs:
+    descp: A `Tensor` of shape `[batch_size, dim]`.  The forward activations of the
+      input network.
+    normalized_descp:
+    - A D_STRUCTURE of shape BSTR
+    - The forward activations of the input network
+  labels:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE and shape BSTR
+    - The target classes
+  name:
+    default: nce_loss
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for the operation BSTR
+  num_classes:
+    descp: An `int`. The number of possible classes.
+    normalized_descp:
+    - An D_TYPE
+    - The number of possible classes
+  num_sampled:
+    descp: An `int`.  The number of negative classes to randomly sample per batch.
+      This single sample of negative classes is evaluated for each element in the
+      batch.
+    normalized_descp:
+    - An D_TYPE
+    - The number of negative classes to randomly sample per batch
+    - This single sample of negative classes is evaluated for each element in the
+      batch
+  num_true:
+    default: '1'
+    descp: An `int`.  The number of target classes per training example.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE
+    - The number of target classes per training example
+  remove_accidental_hits:
+    default: 'False'
+    descp: A `bool`.  Whether to remove "accidental hits" where a sampled class equals
+      one of the target classes.  If set to `True`, this is a "Sampled Logistic" loss
+      instead of NCE, and we are learning to generate log-odds instead of log probabilities.  See
+      our Candidate Sampling Algorithms Reference. Default is   False.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - A D_TYPE
+    - Whether to remove QSTR where a sampled class equals one of the target classes
+    - If set to CONSTANT_BOOL, this is a QSTR loss instead of NCE, and we are learning
+      to generate log odds instead of log probabilities
+    - See our Candidate Sampling Algorithms Reference
+    - Default is CONSTANT_BOOL
+  sampled_values:
+    default: None
+    descp: a tuple of (`sampled_candidates`, `true_expected_count`,`sampled_expected_count`)
+      returned by a `*_candidate_sampler` function. (if None, we default to `log_uniform_candidate_sampler`)
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a D_STRUCTURE of QSTR returned by a candidate_sampler function
+    - if None, we default to QSTR
+  weights:
+    descp: A `Tensor` of shape `[num_classes, dim]`, or a list of `Tensor`objects
+      whose concatenation along dimension 0 has shape [num_classes, dim].  The (possibly-partitioned)
+      class embeddings.
+    normalized_descp:
+    - A D_STRUCTURE of shape BSTR, or a D_STRUCTURE of D_STRUCTUREobjects whose concatenation
+      along dimension CONSTANT_NUM has shape BSTR
+    - The BSTR class embeddings
+inputs:
+  optional:
+  - num_true
+  - sampled_values
+  - remove_accidental_hits
+  - name
+  required:
+  - weights
+  - biases
+  - labels
+  - inputs
+  - num_sampled
+  - num_classes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/nce_loss
+outputs: A `batch_size` 1-D tensor of per-example NCE losses.
+package: tensorflow
+target: nce_loss
+title: tf.nn.nce_loss
+version: 2.1.0

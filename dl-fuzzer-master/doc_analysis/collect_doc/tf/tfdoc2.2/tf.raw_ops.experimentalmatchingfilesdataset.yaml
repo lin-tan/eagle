@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  patterns:
+    descp: A Tensor of type string.
+inputs:
+  optional:
+  - name
+  required:
+  - patterns
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalMatchingFilesDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalMatchingFilesDataset
+title: tf.raw_ops.ExperimentalMatchingFilesDataset
+version: 2.2.0

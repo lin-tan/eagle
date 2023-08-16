@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Number of axes of the tensor. At least one of {`shape`, `ndim`} must be specified. If both are specified, `shape` is used.",None,prim_dtype,dtype(int),,1
+,"Number of axes of the tensor. At least one of {`shape`, `ndim`} must be specified. If both are specified, `shape` is used.",None,shape,ndim(1),,1

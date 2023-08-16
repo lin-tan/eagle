@@ -1,0 +1,30 @@
+constraints:
+  dtypes:
+    descp: A list of tf.DTypes that has length >= 1. shape {N}. The list of expected
+      dtype for the tensors. Must match those stored in the checkpoint.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  prefix:
+    descp: A Tensor of type string. Must have a single element. The prefix of a V2
+      checkpoint.
+  shape_and_slices:
+    descp: A Tensor of type string. shape {N}. The slice specs of the tensors to be
+      restored. Empty strings indicate that they are non-partitioned tensors.
+  tensor_names:
+    descp: A Tensor of type string. shape {N}. The names of the tensors to be restored.
+inputs:
+  optional:
+  - name
+  required:
+  - prefix
+  - tensor_names
+  - shape_and_slices
+  - dtypes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RestoreV2
+outputs:
+- A list of Tensor objects of type dtypes.
+package: tensorflow
+target: RestoreV2
+title: tf.raw_ops.RestoreV2
+version: 2.3.0

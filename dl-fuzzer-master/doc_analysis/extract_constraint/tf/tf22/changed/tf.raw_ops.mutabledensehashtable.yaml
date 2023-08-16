@@ -1,0 +1,94 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this table is placed
+      in the given container. Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  empty_key:
+    descp: A Tensor. The key used to represent empty key buckets internally. Must
+      not be used in insert or lookup operations.
+    tensor_t:
+    - tf.tensor
+  initial_num_buckets:
+    default: '131072'
+    descp: An optional int. Defaults to 131072. The initial number of hash table buckets.
+      Must be a power to 2.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  max_load_factor:
+    default: '0.8'
+    descp: An optional float. Defaults to 0.8. The maximum ratio between number of
+      entries and number of buckets before growing the table. Must be between 0 and
+      1.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this table is shared
+      under the given name across multiple sessions.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  use_node_name_sharing:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  value_dtype:
+    descp: A tf.DType. Type of the table values.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  value_shape:
+    default: '[]'
+    descp: An optional tf.TensorShape or list of ints. Defaults to []. The shape of
+      each value.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+inputs:
+  optional:
+  - container
+  - shared_name
+  - use_node_name_sharing
+  - value_shape
+  - initial_num_buckets
+  - max_load_factor
+  - name
+  required:
+  - empty_key
+  - value_dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MutableDenseHashTable
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: MutableDenseHashTable
+title: tf.raw_ops.MutableDenseHashTable
+version: 2.2.0

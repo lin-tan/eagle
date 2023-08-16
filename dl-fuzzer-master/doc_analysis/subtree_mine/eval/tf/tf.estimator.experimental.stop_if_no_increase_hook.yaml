@@ -1,0 +1,6 @@
+constraints:
+  run_every_steps:
+    default: None
+    descp: If specified, calls `should_stop_fn` every`run_every_steps` steps. Either
+      this or `run_every_secs` must be set.
+title: tf.estimator.experimental.stop_if_no_increase_hook

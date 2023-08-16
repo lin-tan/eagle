@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,float. New value of epsilon. Example: `python from keras import backend as K K.epsilon() >>> 1e-07 K.set_epsilon(1e-05) K.epsilon() >>> 1e-05`,,prim_dtype,dtype(float),,1
+,float. New value of epsilon. Example: `python from keras import backend as K K.epsilon() >>> 1e-07 K.set_epsilon(1e-05) K.epsilon() >>> 1e-05`,,shape,ndim(0),,1

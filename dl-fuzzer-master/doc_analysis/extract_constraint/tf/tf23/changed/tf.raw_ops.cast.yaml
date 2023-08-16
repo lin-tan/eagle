@@ -1,0 +1,39 @@
+constraints:
+  DstT:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  Truncate:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - Truncate
+  - name
+  required:
+  - x
+  - DstT
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Cast
+outputs:
+- A Tensor of type DstT.
+package: tensorflow
+target: Cast
+title: tf.raw_ops.Cast
+version: 2.3.0

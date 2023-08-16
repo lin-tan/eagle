@@ -1,0 +1,10 @@
+constraints:
+  k:
+    descp: An `int`. Number of top elements to look at for computing precision.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: tf.math.in_top_k

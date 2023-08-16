@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array-like, shape (n_samples, n_features) Training vector, where n_samples is the number of samples and n_features is the number of features.",,prim_dtype,dtype(int),,1
+,"array-like, shape (n_samples, n_features) Training vector, where n_samples is the number of samples and n_features is the number of features.",,shape,"shape([n_samples,n_features]), ndim(2)",,1
+,"array-like, shape (n_samples, n_features) Training vector, where n_samples is the number of samples and n_features is the number of features.",,validvalue,"range([0,inf))",,1

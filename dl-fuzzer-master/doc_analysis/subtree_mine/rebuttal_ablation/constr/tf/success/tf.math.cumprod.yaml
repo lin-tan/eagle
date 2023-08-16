@@ -1,0 +1,115 @@
+aliases:
+- tf.compat.v1.cumprod
+- tf.compat.v1.math.cumprod
+constraints:
+  axis:
+    default: '0'
+    descp: 'A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x),
+      rank(x))`.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.string
+    enum:
+    - '[-rank(x)'
+    - rank(x))
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  exclusive:
+    default: 'False'
+    descp: If `True`, perform exclusive cumprod.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  reverse:
+    default: 'False'
+    descp: 'A `bool` (default: False).'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`,`int64`,
+      `int32`, `uint8`, `uint16`, `int16`, `int8`, `complex64`,`complex128`, `qint8`,
+      `quint8`, `qint32`, `half`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int16
+    - tf.int32
+    - tf.int64
+    - tf.int8
+    - tf.qint32
+    - tf.qint8
+    - tf.quint8
+    - tf.string
+    - tf.uint16
+    - tf.uint8
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - axis
+  - exclusive
+  - reverse
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/cumprod
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: cumprod
+title: tf.math.cumprod
+version: 2.1.0

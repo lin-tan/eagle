@@ -1,0 +1,35 @@
+constraints:
+  abs:
+    descp: The absolute value the complex tensor. Must be float or double.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  angle:
+    descp: The angle of the complex tensor. Must be same dtype as `abs`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: If the inputs are `torch.float32`, must be `torch.complex64`. If the inputs
+      are `torch.float64`, must be `torch.complex128`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - abs
+  - angle
+link: https://pytorch.org/docs/1.7.0/generated/torch.polar.html#torch.polar#torch.polar
+package: torch
+ret_type: Tensor
+target: polar
+title: torch.polar
+version: 1.9.0

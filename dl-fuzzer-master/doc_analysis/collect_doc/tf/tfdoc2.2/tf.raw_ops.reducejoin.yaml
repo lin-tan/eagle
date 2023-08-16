@@ -1,0 +1,33 @@
+constraints:
+  inputs:
+    descp: A Tensor of type string. The input to be joined. All reduced indices must
+      have non-zero size.
+  keep_dims:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, retain reduced dimensions
+      with length 1.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reduction_indices:
+    descp: A Tensor of type int32. The dimensions to reduce over. Dimensions are reduced
+      in the order specified. Omitting reduction_indices is equivalent to passing
+      [n-1, n-2, ..., 0]. Negative indices from -n to -1 are supported.
+  separator:
+    default: ''
+    descp: An optional string. Defaults to "". The separator to use when joining.
+inputs:
+  optional:
+  - keep_dims
+  - separator
+  - name
+  required:
+  - inputs
+  - reduction_indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ReduceJoin
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ReduceJoin
+title: tf.raw_ops.ReduceJoin
+version: 2.2.0

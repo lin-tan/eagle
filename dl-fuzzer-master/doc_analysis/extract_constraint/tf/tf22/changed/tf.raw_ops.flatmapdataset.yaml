@@ -1,0 +1,58 @@
+constraints:
+  f:
+    descp: A function decorated with @Defun. A function mapping elements of input_dataset,
+      concatenated with other_arguments, to a Dataset variant that contains elements
+      matching output_types and output_shapes.
+    dtype:
+    - callable
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  other_arguments:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/FlatMapDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: FlatMapDataset
+title: tf.raw_ops.FlatMapDataset
+version: 2.2.0

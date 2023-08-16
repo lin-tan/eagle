@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='0'","pad output label width if set larger than 0, -1 for auto estimate",None,prim_dtype,dtype(int),,1
+"int, optional, default='0'","pad output label width if set larger than 0, -1 for auto estimate",None,shape,ndim(0),,1
+"int, optional, default='0'","pad output label width if set larger than 0, -1 for auto estimate",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,68 @@
+aliases:
+- tf.compat.v1.image.non_max_suppression_padded
+constraints:
+  boxes:
+    descp: A 2-D float `Tensor` of shape `[num_boxes, 4]`.
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE of shape BSTR
+  iou_threshold:
+    default: '0.5'
+    descp: A float representing the threshold for deciding whether boxes overlap too
+      much with respect to IOU.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A D_TYPE representing the threshold for deciding whether PARAM overlap too much
+      with respect to IOU
+  max_output_size:
+    descp: A scalar integer `Tensor` representing the maximum number of boxes to be
+      selected by non max suppression.
+    normalized_descp:
+    - A scalar D_TYPE D_STRUCTURE representing the maximum number of PARAM to be selected
+      by non max suppression
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  pad_to_max_output_size:
+    default: 'False'
+    descp: bool.  If True, size of `selected_indices` output is padded to `max_output_size`.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - ONE_WORD D_TYPE
+    - If CONSTANT_BOOL size of QSTR output is padded to PARAM
+  score_threshold:
+    default: float(-inf)
+    descp: A float representing the threshold for deciding when to remove boxes based
+      on score.
+    normalized_default: D_TYPE BSTR
+    normalized_descp:
+    - A D_TYPE representing the threshold for deciding when to remove PARAM based
+      on score
+  scores:
+    descp: A 1-D float `Tensor` of shape `[num_boxes]` representing a single score
+      corresponding to each box (each row of boxes).
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE of shape BSTR representing a single score
+      corresponding to each box BSTR
+inputs:
+  optional:
+  - iou_threshold
+  - score_threshold
+  - pad_to_max_output_size
+  - name
+  required:
+  - boxes
+  - scores
+  - max_output_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/non_max_suppression_padded
+outputs:
+- selected_indices: A 1-D integer `Tensor` of shape `[M]` representing the selected
+    indices from the boxes tensor, where `M <= max_output_size`.
+- valid_outputs: A scalar integer `Tensor` denoting how many elements in`selected_indices`
+    are valid.  Valid elements occur first, then padding.
+package: tensorflow
+target: non_max_suppression_padded
+title: tf.image.non_max_suppression_padded
+version: 2.1.0

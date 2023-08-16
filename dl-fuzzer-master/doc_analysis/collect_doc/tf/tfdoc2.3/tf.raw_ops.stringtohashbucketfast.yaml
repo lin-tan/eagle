@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: A Tensor of type string. The strings to assign a hash bucket.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_buckets:
+    descp: An int that is >= 1. The number of buckets.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StringToHashBucketFast
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: StringToHashBucketFast
+title: tf.raw_ops.StringToHashBucketFast
+version: 2.3.0

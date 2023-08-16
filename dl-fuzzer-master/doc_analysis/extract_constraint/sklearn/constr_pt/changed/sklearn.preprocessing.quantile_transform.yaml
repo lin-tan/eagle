@@ -1,0 +1,90 @@
+constraints:
+  X:
+    descp: array-like, sparse matrix The data to transform.
+    dtype:
+    - numeric
+  axis:
+    default: '0'
+    descp: int, (default=0) Axis used to compute the means and standard deviations
+      along. If 0, transform each feature, otherwise (if 1) transform each sample.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  copy:
+    default: warn
+    descp: 'boolean, optional, (default="warn") Set to False to perform inplace transformation
+      and avoid a copy (if the input is already a numpy array). If True, a copy of
+      `X` is transformed, leaving the original `X` unchanged .. deprecated:: 0.21
+      The default value of parameter `copy` will be changed from False to True in
+      0.23. The current default of False is being changed to make it more consistent
+      with the default `copy` values of other functions in :mod:`sklearn.preprocessing`.
+      Furthermore, the current default of False may have unexpected side effects by
+      modifying the value of `X` inplace'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  ignore_implicit_zeros:
+    default: 'False'
+    descp: bool, optional (default=False) Only applies to sparse matrices. If True,
+      the sparse entries of the matrix are discarded to compute the quantile statistics.
+      If False, these entries are treated as zeros.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  n_quantiles:
+    default: '1000'
+    descp: int, optional (default=1000 or n_samples) Number of quantiles to be computed.
+      It corresponds to the number of landmarks used to discretize the cumulative
+      distribution function. If n_quantiles is larger than the number of samples,
+      n_quantiles is set to the number of samples as a larger number of quantiles
+      does not give a better approximation of the cumulative distribution function
+      estimator.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  output_distribution:
+    default: uniform
+    descp: str, optional (default='uniform') Marginal distribution for the transformed
+      data. The choices are 'uniform' (default) or 'normal'.
+    dtype:
+    - string
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by np.random. Note that this is used by subsampling
+      and smoothing noise.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  subsample:
+    default: '100000'
+    descp: int, optional (default=1e5) Maximum number of samples used to estimate
+      the quantiles for computational efficiency. Note that the subsampling procedure
+      may differ for value-identical sparse and dense matrices.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - axis
+  - n_quantiles
+  - output_distribution
+  - ignore_implicit_zeros
+  - subsample
+  - random_state
+  - copy
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: quantile_transform
+title: sklearn.preprocessing.quantile_transform
+version: 0.24.X

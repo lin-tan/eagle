@@ -1,0 +1,23 @@
+sklearn.metrics.pairwise.kernel_metrics = kernel_metrics()
+    Valid metrics for pairwise_kernels
+    
+    This function simply returns the valid pairwise distance metrics.
+    It exists, however, to allow for a verbose description of the mapping for
+    each of the valid strings.
+    
+    The valid distance metrics, and the function they map to, are:
+      ===============   ========================================
+      metric            Function
+      ===============   ========================================
+      'additive_chi2'   sklearn.pairwise.additive_chi2_kernel
+      'chi2'            sklearn.pairwise.chi2_kernel
+      'linear'          sklearn.pairwise.linear_kernel
+      'poly'            sklearn.pairwise.polynomial_kernel
+      'polynomial'      sklearn.pairwise.polynomial_kernel
+      'rbf'             sklearn.pairwise.rbf_kernel
+      'laplacian'       sklearn.pairwise.laplacian_kernel
+      'sigmoid'         sklearn.pairwise.sigmoid_kernel
+      'cosine'          sklearn.pairwise.cosine_similarity
+      ===============   ========================================
+    
+    Read more in the :ref:`User Guide <metrics>`.

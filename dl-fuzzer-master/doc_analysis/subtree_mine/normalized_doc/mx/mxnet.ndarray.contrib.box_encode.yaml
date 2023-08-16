@@ -1,0 +1,82 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  anchors:
+    default: None
+    descp: (B, N, 4) encoded in corner
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR encoded in corner
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  matches:
+    default: None
+    descp: (B, N) value range [0, M)
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR value range BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  means:
+    default: None
+    descp: (4,) Mean value to be subtracted from encoded values
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR Mean value to be subtracted from encoded values
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  refs:
+    default: None
+    descp: (B, M, 4) encoded in corner
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR encoded in corner
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  samples:
+    default: None
+    descp: (B, N) value +1 (positive), -1 (negative), 0 (ignore)
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  stds:
+    default: None
+    descp: (4,) Std value to be divided from encoded values
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR Std value to be divided from encoded values
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - samples
+  - matches
+  - anchors
+  - refs
+  - means
+  - stds
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.box_encode
+package: mxnet
+target: box_encode
+title: mxnet.ndarray.contrib.box_encode
+version: 1.6.0

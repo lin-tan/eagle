@@ -1,0 +1,38 @@
+constraints:
+  filter:
+    descp: A Tensor. Must have the same type as input. 4-D with shape [filter_height,
+      filter_width, in_channels, out_channels].
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      4-D with shape [batch, in_height, in_width, in_channels].'
+  mode:
+    descp: 'A string from: "REFLECT", "SYMMETRIC".'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+  paddings:
+    descp: A Tensor of type int32. A two-column matrix specifying the padding sizes.
+      The number of rows must be the same as the rank of input.
+  strides:
+    descp: A list of ints. 1-D of length 4. The stride of the sliding window for each
+      dimension of input. Must be in the same order as the dimension specified with
+      format.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - paddings
+  - filter
+  - mode
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FusedPadConv2D
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: FusedPadConv2D
+title: tf.raw_ops.FusedPadConv2D
+version: 2.3.0

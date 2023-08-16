@@ -1,0 +1,46 @@
+constraints:
+  bias:
+    default: None
+    descp: 'optional bias of shape (out _channels) . Default: None'
+  dilation:
+    default: '1'
+    descp: 'the spacing between kernel elements. Can be a single number or a tuple
+      `(dW,)`. Default: 1'
+  groups:
+    default: '1'
+    descp: 'split input into groups, in _channels  should be divisible by the number
+      of groups. Default: 1'
+  input:
+    descp: 'input tensor of shape (minibatch , in _channels , iW) '
+  output_padding:
+    default: '0'
+    descp: 'additional size added to one side of each dimension in the output shape.
+      Can be a single number or a tuple `(out_padW)`. Default: 0'
+  padding:
+    default: '0'
+    descp: '`dilation * (kernel_size - 1) - padding` zero-padding will be added to
+      both sides of each dimension in the input. Can be a single number or a tuple
+      `(padW,)`. Default: 0'
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a tuple
+      `(sW,)`. Default: 1'
+  weight:
+    descp: 'filters of shape (in _channels ,  out _channels/groups , kW) '
+inputs:
+  optional:
+  - bias
+  - stride
+  - padding
+  - output_padding
+  - groups
+  - dilation
+  required:
+  - input
+  - weight
+link: https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.conv_transpose1d
+package: torch
+ret_type: Tensor
+target: conv_transpose1d
+title: torch.nn.functional.conv_transpose1d
+version: 1.7.0

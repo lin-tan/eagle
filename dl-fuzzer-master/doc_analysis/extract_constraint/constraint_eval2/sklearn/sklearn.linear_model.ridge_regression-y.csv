@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"ndarray of shape (n_samples,) or (n_samples, n_targets) Target values",,prim_dtype,dtype(int),,1
+,"ndarray of shape (n_samples,) or (n_samples, n_targets) Target values",,nonprim_dtype,structure(list(shape)),,1
+,"ndarray of shape (n_samples,) or (n_samples, n_targets) Target values",,shape,"shape([n_samples]), ndim(1)",,1
+,"ndarray of shape (n_samples,) or (n_samples, n_targets) Target values",,validvalue,"range([0,inf))",,1

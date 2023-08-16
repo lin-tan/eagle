@@ -1,0 +1,140 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta:
+    default: None
+    descp: beta array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - beta D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data:
+    default: None
+    descp: Input data to batch normalization
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to batch normalization
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: Epsilon to prevent div 0
+    doc_dtype: float, optional, default=0.00100000005
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Epsilon to prevent div CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  fix_gamma:
+    default: _Null
+    descp: Fix gamma while training
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Fix PARAM while training
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  gamma:
+    default: None
+    descp: gamma array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - gamma D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  key:
+    default: _Null
+    descp: Hash key for synchronization, please set the same hash key for same layer,
+      Block.prefix is typically used as in `gluon.nn.contrib.SyncBatchNorm`.
+    doc_dtype: string, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Hash key for synchronization, please set the same hash key for same layer, Block
+      prefix is typically used as in gluon nn contrib SyncBatchNorm
+    normalized_docdtype: D_TYPE, required
+  momentum:
+    default: _Null
+    descp: Momentum for moving average
+    doc_dtype: float, optional, default=0.899999976
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Momentum for moving average
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  moving_mean:
+    default: None
+    descp: running mean of input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - running mean of input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  moving_var:
+    default: None
+    descp: running variance of input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - running variance of input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  ndev:
+    default: _Null
+    descp: The count of GPU devices
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The count of GPU devices
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  output_mean_var:
+    default: _Null
+    descp: Output All,normal mean and var
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output All,normal mean and var
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  use_global_stats:
+    default: _Null
+    descp: Whether use global moving statistics instead of local batch-norm. This
+      will force change batch-norm into a scale shift operator.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether use global moving statistics instead of local batch norm
+    - This will force change batch norm into a scale shift operator
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - gamma
+  - beta
+  - moving_mean
+  - moving_var
+  - eps
+  - momentum
+  - fix_gamma
+  - use_global_stats
+  - output_mean_var
+  - ndev
+  - key
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.SyncBatchNorm
+package: mxnet
+target: SyncBatchNorm
+title: mxnet.contrib.ndarray.SyncBatchNorm
+version: 1.6.0

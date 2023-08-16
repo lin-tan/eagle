@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An `int`.  The number of classes to randomly sample. The`sampled_candidates` return value will have shape `[num_sampled]`. If`unique=True`, `num_sampled` must be less than or equal to `range_max`.",,prim_dtype,dtype(int),,1
+,"An `int`.  The number of classes to randomly sample. The`sampled_candidates` return value will have shape `[num_sampled]`. If`unique=True`, `num_sampled` must be less than or equal to `range_max`.",,shape,"shape([&num_sampled]), ndim(0, 1)",,1
+,"An `int`.  The number of classes to randomly sample. The`sampled_candidates` return value will have shape `[num_sampled]`. If`unique=True`, `num_sampled` must be less than or equal to `range_max`.",,validvalue,"range([0,inf))",,1

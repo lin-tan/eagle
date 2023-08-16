@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `int32`. An integer vector representing the tensor shape of `filter`, where `filter` is a 4-D`[filter_height, filter_width, in_channels, depthwise_multiplier]` tensor.",,prim_dtype,dtype(tf.int32),,1
+,"A `Tensor` of type `int32`. An integer vector representing the tensor shape of `filter`, where `filter` is a 4-D`[filter_height, filter_width, in_channels, depthwise_multiplier]` tensor.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `int32`. An integer vector representing the tensor shape of `filter`, where `filter` is a 4-D`[filter_height, filter_width, in_channels, depthwise_multiplier]` tensor.",,shape,ndim(1),,1
+,"A `Tensor` of type `int32`. An integer vector representing the tensor shape of `filter`, where `filter` is a 4-D`[filter_height, filter_width, in_channels, depthwise_multiplier]` tensor.",,validvalue,"range([0,inf))",,1

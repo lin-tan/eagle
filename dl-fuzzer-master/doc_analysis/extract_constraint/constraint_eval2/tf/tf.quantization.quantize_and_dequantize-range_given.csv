@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If true use `input_min` and `input_max` for the range of the input, otherwise determine min and max from the input `Tensor`.",False,prim_dtype,dtype(tf.bool),,1
+,"If true use `input_min` and `input_max` for the range of the input, otherwise determine min and max from the input `Tensor`.",False,shape,ndim(0),,1

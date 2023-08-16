@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `int32`. 1-D.  The crop window: [crop_y, crop_x, crop_height, crop_width].",,prim_dtype,dtype(tf.int32),1,1
+,"A `Tensor` of type `int32`. 1-D.  The crop window: [crop_y, crop_x, crop_height, crop_width].",,nonprim_dtype,tensor_t(tf.tensor),1,1
+"","","",shape,"1d, [4]",1,0

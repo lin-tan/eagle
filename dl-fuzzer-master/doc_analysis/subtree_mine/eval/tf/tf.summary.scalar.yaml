@@ -1,0 +1,8 @@
+constraints:
+  step:
+    default: None
+    descp: Explicit `int64`-castable monotonic step value for this summary. If omitted,
+      this defaults to `tf.summary.experimental.get_step()`, which must not be None.
+    dtype:
+    - tf.int64
+title: tf.summary.scalar

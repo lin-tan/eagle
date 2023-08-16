@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.activations.swish
+constraints:
+  x:
+    descp: Input tensor.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/activations/swish
+outputs:
+- The swish activation applied to x (see reference paper for details).
+package: tensorflow
+target: swish
+title: tf.keras.activations.swish
+version: 2.3.0

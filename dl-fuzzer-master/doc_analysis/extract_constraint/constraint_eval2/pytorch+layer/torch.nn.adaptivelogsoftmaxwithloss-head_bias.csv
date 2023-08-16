@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"If `True`, adds a bias term to the 'head' of the adaptive softmax. Default: `False`",False,prim_dtype,dtype(torch.bool),,1
+bool,"If `True`, adds a bias term to the 'head' of the adaptive softmax. Default: `False`",False,shape,ndim(0),,1

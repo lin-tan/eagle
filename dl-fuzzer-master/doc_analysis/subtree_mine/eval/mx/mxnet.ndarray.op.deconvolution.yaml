@@ -1,0 +1,13 @@
+constraints:
+  cudnn_off:
+    default: _Null
+    descp: Turn off cudnn for this layer.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.Deconvolution

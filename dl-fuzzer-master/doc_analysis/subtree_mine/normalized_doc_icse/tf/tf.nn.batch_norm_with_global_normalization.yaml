@@ -1,0 +1,64 @@
+constraints:
+  beta:
+    descp: A 1D beta Tensor with size matching the last dimension of t. An offset
+      to be added to the normalized tensor.
+    normalized_descp:
+    - A CONSTANT_NUM D beta D_STRUCTURE with size matching the last dimension of t
+      An offset to be added to the normalized D_STRUCTURE
+  gamma:
+    descp: A 1D gamma Tensor with size matching the last dimension of t. If "scale_after_normalization"
+      is true, this tensor will be multiplied with the normalized tensor.
+    normalized_descp:
+    - A CONSTANT_NUM D gamma D_STRUCTURE with size matching the last dimension of
+      t If PARAM is CONSTANT_BOOL this D_STRUCTURE will be multiplied with the normalized
+      D_STRUCTURE
+  input:
+    descp: A 4D input Tensor.
+    normalized_descp:
+    - A CONSTANT_NUM D input D_STRUCTURE
+  mean:
+    descp: A 1D mean Tensor with size matching the last dimension of t. This is the
+      first output from tf.nn.moments, or a saved moving average thereof.
+    normalized_descp:
+    - A CONSTANT_NUM D mean D_STRUCTURE with size matching the last dimension of t
+      This is the first output from tf nn moments or a saved moving average thereof
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  scale_after_normalization:
+    descp: A bool indicating whether the resulted tensor needs to be multiplied with
+      gamma.
+    normalized_descp:
+    - A D_TYPE indicating whether the resulted D_STRUCTURE needs to be multiplied
+      with PARAM
+  variance:
+    descp: A 1D variance Tensor with size matching the last dimension of t. This is
+      the second output from tf.nn.moments, or a saved moving average thereof.
+    normalized_descp:
+    - A CONSTANT_NUM D variance D_STRUCTURE with size matching the last dimension
+      of t This is the second output from tf nn moments or a saved moving average
+      thereof
+  variance_epsilon:
+    descp: A small float number to avoid dividing by 0.
+    normalized_descp:
+    - A small D_TYPE number to avoid dividing by CONSTANT_NUM
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - mean
+  - variance
+  - beta
+  - gamma
+  - variance_epsilon
+  - scale_after_normalization
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/batch_norm_with_global_normalization
+outputs: A batch-normalized `t`.
+package: tensorflow
+target: batch_norm_with_global_normalization
+title: tf.nn.batch_norm_with_global_normalization
+version: 2.1.0

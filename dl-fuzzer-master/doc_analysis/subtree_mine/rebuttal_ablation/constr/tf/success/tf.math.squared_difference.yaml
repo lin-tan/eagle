@@ -1,0 +1,84 @@
+aliases:
+- tf.compat.v1.math.squared_difference
+- tf.compat.v1.squared_difference
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`, `int32`, `int64`, `complex64`, `complex128`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bfloat16
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int32
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A `Tensor`. Must have the same type as `x`.
+    dtype:
+    - '&x'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&x'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/squared_difference
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: squared_difference
+title: tf.math.squared_difference
+version: 2.1.0

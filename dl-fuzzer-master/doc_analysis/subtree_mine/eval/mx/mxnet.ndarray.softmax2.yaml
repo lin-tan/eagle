@@ -1,0 +1,13 @@
+constraints:
+  length:
+    default: None
+    descp: The length array.
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+title: mxnet.ndarray.softmax

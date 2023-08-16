@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.image.rgb_to_hsv
+constraints:
+  images:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. 1-D or higher rank. RGB data to convert. Last dimension must be size
+      3.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - images
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/image/rgb_to_hsv
+outputs:
+- A Tensor. Has the same type as images.
+package: tensorflow
+target: rgb_to_hsv
+title: tf.image.rgb_to_hsv
+version: 2.3.0

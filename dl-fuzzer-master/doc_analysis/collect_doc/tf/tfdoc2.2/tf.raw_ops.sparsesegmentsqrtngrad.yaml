@@ -1,0 +1,31 @@
+constraints:
+  grad:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. gradient
+      propagated to the SparseSegmentSqrtN op.'
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. indices passed
+      to the corresponding SparseSegmentSqrtN op.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_dim0:
+    descp: A Tensor of type int32. dimension 0 of "data" passed to SparseSegmentSqrtN
+      op.
+  segment_ids:
+    descp: A Tensor of type int32. segment_ids passed to the corresponding SparseSegmentSqrtN
+      op.
+inputs:
+  optional:
+  - name
+  required:
+  - grad
+  - indices
+  - segment_ids
+  - output_dim0
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSegmentSqrtNGrad
+outputs:
+- A Tensor. Has the same type as grad.
+package: tensorflow
+target: SparseSegmentSqrtNGrad
+title: tf.raw_ops.SparseSegmentSqrtNGrad
+version: 2.2.0

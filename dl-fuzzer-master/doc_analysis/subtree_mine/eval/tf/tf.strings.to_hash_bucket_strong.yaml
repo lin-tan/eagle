@@ -1,0 +1,13 @@
+constraints:
+  key:
+    descp: A list of `ints`. The key used to seed the hash function, passed as a list
+      of two uint64 elements.
+    dtype:
+    - tf.uint64
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - list
+title: tf.strings.to_hash_bucket_strong

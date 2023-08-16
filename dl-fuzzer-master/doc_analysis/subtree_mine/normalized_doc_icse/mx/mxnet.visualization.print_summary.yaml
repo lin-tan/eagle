@@ -1,0 +1,43 @@
+constraints:
+  line_length:
+    default: '120'
+    descp: Rotal length of printed lines
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Rotal length of printed lines
+    normalized_docdtype: ONE_WORD D_TYPE
+  positions:
+    default: '[0.44,0.64,0.74,1.0]'
+    descp: Relative or absolute positions of log elements in each line.
+    doc_dtype: list
+    normalized_default: CONSTANT_FLOAT CONSTANT_FLOAT CONSTANT_FLOAT CONSTANT_FLOAT
+    normalized_descp:
+    - Relative or absolute positions of log elements in each line
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  shape:
+    default: None
+    descp: A dict of shapes, str->shape (tuple), given input shapes.
+    doc_dtype: dict
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of shapes D_TYPE REXPR BSTR given input shapes
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  symbol:
+    descp: Symbol to be visualized.
+    doc_dtype: Symbol
+    normalized_descp:
+    - Symbol to be visualized
+    normalized_docdtype: ONE_WORD Symbol
+inputs:
+  optional:
+  - shape
+  - line_length
+  - positions
+  required:
+  - symbol
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/visualization/index.html#mxnet.visualization.print_summary
+package: mxnet
+target: print_summary
+title: mxnet.visualization.print_summary
+version: 1.6.0

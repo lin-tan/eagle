@@ -1,0 +1,16 @@
+constraints:
+  reduction:
+    default: mean
+    descp: 'Specifies the reduction to apply to the output: `''none''` | `''mean''`
+      | `''sum''`. `''none''`: no reduction will be applied, `''mean''`: the output
+      losses will be divided by the target lengths and then the mean over the batch
+      is taken, `''sum''`: the output will be summed. Default: `''mean''`'
+    doc_dtype:
+    - string
+    dtype:
+    - string
+    enum:
+    - mean
+    - none
+    - sum
+title: torch.nn.functional.ctc_loss

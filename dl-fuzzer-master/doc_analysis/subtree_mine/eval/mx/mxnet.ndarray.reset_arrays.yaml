@@ -1,0 +1,8 @@
+constraints:
+  '*data':
+    descp: Arrays
+    doc_dtype:
+    - NDArray[]
+    structure:
+    - ndarray
+title: mxnet.ndarray.reset_arrays

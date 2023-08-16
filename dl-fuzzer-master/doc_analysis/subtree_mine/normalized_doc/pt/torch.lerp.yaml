@@ -1,0 +1,39 @@
+constraints:
+  end:
+    descp: the tensor with the ending points
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE with the ending points
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input:
+    descp: the tensor with the starting points
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE with the starting points
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  weight:
+    descp: the weight for the interpolation formula
+    doc_dtype: float or tensor
+    normalized_descp:
+    - the weight for the interpolation formula
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - end
+  - weight
+link: https://pytorch.org/docs/stable/torch.html#torch.lerp
+package: torch
+target: lerp
+title: torch.lerp
+version: 1.5.0

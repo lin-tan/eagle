@@ -1,0 +1,37 @@
+constraints:
+  ctx:
+    default: None
+    descp: An optional device context (default is the current default context).
+    doc_dtype:
+    - Context
+    - optional
+  dtype:
+    default: None
+    descp: An optional value type (default is float32).
+    doc_dtype:
+    - str
+    - numpy.dtype
+    - optional
+  shape:
+    descp: The shape of the empty array.
+    doc_dtype:
+    - int
+    - tuple of int
+  stype:
+    default: None
+    descp: An optional storage type (default is default).
+    doc_dtype:
+    - str
+    - optional
+inputs:
+  optional:
+  - ctx
+  - dtype
+  - stype
+  required:
+  - shape
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.empty
+package: mxnet
+target: empty
+title: mxnet.ndarray.empty
+version: 1.7.0

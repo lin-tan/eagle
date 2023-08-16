@@ -1,0 +1,31 @@
+constraints:
+  input:
+    descp: A `Tensor` or `SparseTensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  out_type:
+    default: tf.dtypes.int32
+    descp: (Optional) The specified output type of the operation (`int32` or`int64`).
+      Defaults to `tf.int32`.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - ONE_WORD BSTR
+    - Defaults to D_TYPE
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/shape
+outputs: A `Tensor` of type `out_type`.
+package: tensorflow
+target: shape
+title: tf.shape
+version: 2.1.0

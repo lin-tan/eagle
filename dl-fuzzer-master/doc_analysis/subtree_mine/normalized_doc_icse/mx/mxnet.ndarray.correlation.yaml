@@ -1,0 +1,100 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data1:
+    default: None
+    descp: Input data1 to the correlation.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data1 to the correlation
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data2:
+    default: None
+    descp: Input data2 to the correlation.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data2 to the correlation
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  is_multiply:
+    default: _Null
+    descp: operation type is either multiplication or subduction
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - operation type is either multiplication or subduction
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  kernel_size:
+    default: _Null
+    descp: kernel size for Correlation must be an odd number
+    doc_dtype: int (non-negative), optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - kernel size for Correlation must be an odd number
+    normalized_docdtype: D_TYPE BSTR optional default CONSTANT_NUM
+  max_displacement:
+    default: _Null
+    descp: Max displacement of Correlation
+    doc_dtype: int (non-negative), optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Max displacement of Correlation
+    normalized_docdtype: D_TYPE BSTR optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  pad_size:
+    default: _Null
+    descp: pad for Correlation
+    doc_dtype: int (non-negative), optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - pad for Correlation
+    normalized_docdtype: D_TYPE BSTR optional default CONSTANT_NUM
+  stride1:
+    default: _Null
+    descp: stride1 quantize data1 globally
+    doc_dtype: int (non-negative), optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - stride1 quantize PARAM globally
+    normalized_docdtype: D_TYPE BSTR optional default CONSTANT_NUM
+  stride2:
+    default: _Null
+    descp: stride2 quantize data2 within the neighborhood centered around data1
+    doc_dtype: int (non-negative), optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - stride2 quantize PARAM within the neighborhood centered around PARAM
+    normalized_docdtype: D_TYPE BSTR optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data1
+  - data2
+  - kernel_size
+  - max_displacement
+  - stride1
+  - stride2
+  - pad_size
+  - is_multiply
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.Correlation
+package: mxnet
+target: Correlation
+title: mxnet.ndarray.Correlation
+version: 1.6.0

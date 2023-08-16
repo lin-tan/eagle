@@ -1,0 +1,25 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor of
+      indices into the first dimension of ref.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource. Should be from a Variable node.
+  updates:
+    descp: A Tensor. A tensor of updated values to add to ref.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ResourceScatterUpdate
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceScatterUpdate
+title: tf.raw_ops.ResourceScatterUpdate
+version: 2.3.0

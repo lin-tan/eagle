@@ -1,0 +1,28 @@
+constraints:
+  batch_size:
+    descp: ''
+    dtype:
+    - numeric
+  min_batch_size:
+    default: '0'
+    descp: ''
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n:
+    descp: 'int batch_size : int Number of element in each batch min_batch_size :
+      int, default=0 Minimum batch size to produce.'
+    dtype:
+    - int
+inputs:
+  optional:
+  - min_batch_size
+  required:
+  - n
+  - batch_size
+link: ''
+package: scikit-learn
+target: gen_batches
+title: sklearn.utils.gen_batches
+version: 0.24.X

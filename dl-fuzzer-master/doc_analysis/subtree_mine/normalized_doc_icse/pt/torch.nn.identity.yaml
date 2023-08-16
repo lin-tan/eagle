@@ -1,0 +1,19 @@
+constraints:
+  '**kwargs':
+    descp: any keyword argument (unused)
+    normalized_descp:
+    - any keyword argument BSTR
+  '*args':
+    descp: any argument (unused)
+    normalized_descp:
+    - any argument BSTR
+inputs:
+  optional: []
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Identity
+package: torch
+target: Identity
+title: torch.nn.Identity
+version: 1.5.0

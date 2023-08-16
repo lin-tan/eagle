@@ -1,0 +1,452 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (([`'"]*([.\w]+)[`'"]*\s+or\s+)?[`'"]*([.\w]+)[`'"]*)\s+[`'"]*(tensor|tf.tensor)[`'"]*:
+    cnt: 0
+    group: 1
+  ([`'"]*([.\w]+)[`'"]*)\s+scalar:
+    cnt: 0
+    group: 1
+    ndim: 0
+  ([`'"]*sparsetensor[`'"]*\s+or\s+[`'"]*tensor[`'"]*):
+    cnt: 0
+    group: 1
+  ([`'"]*tensor[`'"]*\s+or\s+[`'"]*sparsetensor[`'"]*):
+    cnt: 0
+    group: 1
+  (\ba\b|an)?\s*([`'"]*[\w.]+[`'"]*\/[`'"]*[\w.]+[`'"]*):
+    cnt: 7
+    group: 2
+  (\ba\b|or)\s+single\s`*(\w+)`*:
+    cnt: 4
+    group: 2
+    ndim: 0
+  (augmenter|data|label|the)\s+names:
+    cnt: 0
+    dtype: string
+    ndim: 1
+  (a|an)\s+optional\s*[`'"]*([\w.]+)[`'"]*:
+    cnt: 0
+    group: 2
+    ndim: 0
+  (if|when)\s+(this\s+is\s+)?set\s+to\s*`*(true|false)`*:
+    cnt: 19
+    dtype: bool
+    ndim: 0
+  (if|when)\s+`*(true|false)`*:
+    cnt: 87
+    dtype: bool
+    ndim: 0
+  (learning|drop)\s+rate:
+    cnt: 0
+    dtype: float
+    ndim: 0
+    range: '[0,1]'
+  (model|file)\s+name:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  (of|with|and)\s+(type|dtype|types|dtypes)\s*(((and|or)*\s*[`'"][.\w]+[`'"][,]*\s*)+):
+    cnt: 0
+    group: 3
+  (of|with|and)\s+(type|dtype|types|dtypes)\s+([`'"]*([\w.]+)[`'"]*(\s+or\s+[`'"]*([\w.]+)[`'"]*)?):
+    cnt: 0
+    group: 3
+  (of|with|and|have|has)\s+(real\s+)?[`'"]*([\w.]+)[`'"]*\s+(type|dtype|types|dtypes):
+    cnt: 1
+    group: 3
+  (positive|negative)\s+`*([\w.]+)`*:
+    cnt: 6
+    group: 2
+  ? (the\s+)?same\s+(((dtype|type)\s+and\s+(shape|rank))|(shape\s+and\s+(type|dtype))|`*(dtype|type)`*)\s+(with|as)\s*`*([\w]+)`*[\s,.]
+  : cnt: 0
+    dependent: true
+    group: 10
+  '[`''"]*(true|false)[`''"]*\s+(if|when|enables|disables)\s+':
+    cnt: 35
+    dtype: bool
+  \(deprecated!:
+    cnt: 0
+    dtype: deprecated
+  \bid\b\s+of:
+    cnt: 1
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  \bor\b\s+`*(sparsetensor)`*:
+    cnt: 0
+    group: 1
+  ^((the|total)\s+)?number\s+(of|to):
+    cnt: 0
+    dtype: int
+    ndim: 0
+    prereq:
+    - number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1
+    range: '[0,inf)'
+  ^([\w]+)\s:
+    cnt: 194
+    group: 1
+    ndim: 0
+  ^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required|expected)?\s*([`'"]*[\w.]+[`'"]*)[\s\.,;-s]:
+    cnt: 647
+    group: 4
+    prereq:
+    - ^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required)?\s*([`'"]*[\w.]+[`'"]*)[\s\.,;-s](?!`*tensor`*)
+  ? ^(\(optional.*\)|either)?\s*(the|\ba\b|an|optional)?\s*(python|input|output|other|keras|tensorflow|required|unique|expected|variable)?\s*(\(.*?\)\s*)?([`'"]*[\w.]+[`'"]*)[\s\.,;-s](?!`*tensor`*)
+  : cnt: 647
+    group: 5
+    ndim: 0
+  ^(\ba\b|\ban\b|the)?\s*(optional)?\s*([`'"]*[\w-]+[`'"]*\s+[`'"]*[\w-]+[`'"]*)(?!\s`*tensor`*):
+    cnt: 164
+    group: 3
+    ndim: 0
+  ^(\ba\b|an|the)?\s*([`'"]*[\w.]+[`'"]*\s+or\s+[`'"]*[\w.]+[`'"]*):
+    cnt: 86
+    group: 2
+  ^(\ba\b|an|the)?\s*directory\s:
+    cnt: 0
+    dtype: string
+  ^(\w+):
+    cnt: 648
+    group: 1
+  ^(\w+)\s:
+    cnt: 194
+    group: 1
+  ^(a|an)\s+(\w+):
+    cnt: 0
+    group: 2
+    ndim: 0
+  ^(a|an)\s+(optional\s+)?([\w.]+):
+    cnt: 0
+    group: 3
+    ndim: 0
+  ^(binary|input)\s+(source\s+)?image:
+    cnt: 0
+    dtype: image
+  ^(indicates\s+)whether:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  ^(input|output|the)\s+data\s+type:
+    cnt: 0
+    dtype: numpy.dtype
+  ^(source|destination)\s+(tensor)*\s*rank:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^(the\s+)?((minimum|maximum|total|epoch)\s+)?number\s+of:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  ^(the\s+)?(minimum|maximum)?\s*scalar:
+    cnt: 0
+    dtype: scalar
+  ^(the\s+)?(optional,|start)?\s*index\s+of:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^(the\s+)?(target|input|output)?\s*(shape):
+    cnt: 0
+    group: 3
+  ^(the\s+)?decay\s+rate:
+    cnt: 0
+    dtype: float
+    ndim: 0
+    range: '[0,1]'
+  ^(the\s+)?dimension:
+    cnt: 0
+    dtype: int
+  ^(the\s+)?index\s+of:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^(the\s+)?path\s:
+    cnt: 0
+    dtype: string
+  ^(the|a|first|second)?\s*dimension\s+(to|along|over):
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^(true|false)\s+(if|for):
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  ^a\s+.*?\s+of\s+type\s+(\w+):
+    cnt: 0
+    group: 1
+  ^an\s+optional\s+value\s+type:
+    cnt: 0
+    dtype: numpy.dtype
+    ndim: 0
+  ^data\s+type\s+of:
+    cnt: 0
+    dtype: dtype
+    ndim: 0
+  ^dtype\s+of:
+    cnt: 0
+    dtype: dtype
+    ndim: 0
+  ^failure\s+probabilities:
+    cnt: 0
+    dtype: float
+    range: '[0,1]'
+  ^if\s+`*(true|false)`*:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  ^if\s+set,:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  ^lengths\s+of\s+:
+    cnt: 0
+    dtype: int
+    ndim: 1
+    range: '[0,inf)'
+  ^offset:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^the\s+(\w+)\s+(?!of):
+    cnt: 0
+    group: 1
+  ^the\s+`*(\w+)`*:
+    cnt: 0
+    group: 1
+  ^the\s+length\s+of:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  ^the\s+optional\s+(\w+\s+\w+):
+    cnt: 0
+    group: 1
+  ^the\s+shape\s+of:
+    cnt: 0
+    dtype: shape
+    ndim: 1
+  ^turn\s+off:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  ^whether\s+to\s+:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  '`*(dtype|data\s+type)`*\s+of':
+    cnt: 8
+    dtype: dtype
+  '`*(tf.tensor|tensor|sparsetensor)`*\s+(of|with)\)?\s+(?!type)(?!shape)`*([\w.]+)`*':
+    cnt: 0
+    group: 3
+  '`*(true|false)`*\s+iff':
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  a\s+(.*?),\s+or\s+`*[\w.]+`*:
+    cnt: 6
+    group: 1
+    update_structure: true
+  a\s+file-like\s+object:
+    cnt: 1
+    dtype: string
+  a\s+manual\s+rescaling\s+weight:
+    cnt: 0
+    dtype: numeric
+  a\s+name\s+for:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  a\s+number:
+    cnt: 1
+    dtype: int
+    ndim: 0
+  a\s+python\s+number:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  acceptable\s+types\s+are\s+(((and|or)*\s*[`'"][.\w]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  as\s+a\s+(constant\s+)?`*(\w+)`*:
+    cnt: 5
+    group: 2
+    ndim: 0
+  can\s+be\s+a\s+(((?<!\ba\b|\.).)*):
+    cnt: 1
+    group: 1
+    update_structure: true
+  default:*\s+`*(true|false)`*:
+    cnt: 40
+    dtype: bool
+    ndim: 0
+  defaults\s+to\s+`(false|true)`:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  defaults\s+to\s+the\s+(\w+)\s+of:
+    cnt: 0
+    group: 1
+    ndim: 0
+  determines*\s+whether\s+:
+    cnt: 2
+    dtype: bool
+  device\s+id:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  directory\s+path:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  if\s+(\w+)\s+is\s+(a|an)\s+(\w+)[,\s.]:
+    check_arg: 1
+    cnt: 7
+    group: 3
+    ndim: 0
+  if\s+(this\s+is\s+)?set\s+to\s+`*(true|false)`*:
+    cnt: 5
+    dtype: bool
+    ndim: 0
+  if\s+`*(int|float)`*:
+    cnt: 16
+    group: 1
+    ndim: 0
+  if\s+`*(true|false)`*:
+    cnt: 85
+    dtype: bool
+    ndim: 0
+  if\s+autograd\s+should\s+record:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  if\s+set,:
+    cnt: 1
+    dtype: bool
+    ndim: 0
+  if\s+set\s+to\s+`*(true|false)`*:
+    cnt: 5
+    dtype: bool
+    ndim: 0
+  in\s+the\s+form\s+of\s+(\w+):
+    cnt: 0
+    group: 1
+  location\s+for:
+    cnt: 0
+    dtype: string
+  must\s*be\s*:*(((and|or)*\s*[`'"][.\w\d]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  must\s+be\s*(((and|or)*\s*[`'"][.\w\d]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  must\s+be\s+(a|an)\s+(\w+):
+    cnt: 1
+    group: 2
+    ndim: 0
+  must\s+be\s+(a|an)\s+(positive\s+)?(`*\w+`*):
+    cnt: 2
+    group: 3
+    ndim: 0
+  must\s+be\s+one\s+of\s+the\s+following\s+types\s*:(((and|or)*\s*[`'"][\w.]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: int:[-1,inf)
+  of\s+type\s+([\w.]+):
+    cnt: 0
+    group: 1
+  parameter\s+name:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  quantity\s+of\s+:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: int:[0,inf)
+  same\s+`*(dtype|type)`*\s+as,*\s+and\s+broadcastable\s+to,*\s*`*(\w+)`*:
+    cnt: 0
+    dependent: true
+    group: 2
+  set\s+(it)?\s*to\s+`*true`*:
+    cnt: 20
+    dtype: bool
+    ndim: 0
+  single\s+(number|integer):
+    cnt: 1
+    group: 1
+    ndim: 0
+  the\s+(beginning|ending)\s+index:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+:
+    cnt: 0
+    dtype: numeric
+    ndim: 0
+    prereq:
+    - the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+)
+  the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+):
+    cnt: 0
+    group: 2
+    ndim: 0
+  the\s+desired\s+(\w+)\s+of:
+    cnt: 0
+    group: 1
+    ndim: 0
+  the\s+desired\s+data\s+type\s+of:
+    cnt: 0
+    dtype: dtype
+  the\s+output\s+tensor\s+that\s+must\s+be\s+a\s+([\w]+):
+    cnt: 0
+    group: 1
+  the\s+size\s+of\s+returned\s+window:
+    cnt: 0
+    dtype: int
+    range: '[0,inf)'
+  the\s+strides*\s+of\s+:
+    cnt: 0
+    dtype: int
+    range: '[0,inf)'
+  this\s+must\s+be\s+(\ba\b|an)?\s*`*([\w]+)`*:
+    cnt: 0
+    group: 2
+  type\s+for:
+    cnt: 1
+    dtype: dtype
+    ndim: 0
+  when\s+(true|false):
+    cnt: 2
+    dtype: bool
+    ndim: 0
+  whether:
+    cnt: 92
+    dtype: bool
+  whether\s+:
+    cnt: 92
+    dtype: bool
+replace:
+  data\s+type: dtype
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+- \|
+stop_word:
+- and
+- or
+- etc
+target: dtype

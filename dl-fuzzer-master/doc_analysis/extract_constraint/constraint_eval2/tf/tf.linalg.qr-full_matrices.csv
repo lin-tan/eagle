@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `bool`. Defaults to `False`. If true, compute full-sized `q` and `r`. If false (the default), compute only the leading `P` columns of `q`.",False,prim_dtype,dtype(tf.bool),,1
+,"An optional `bool`. Defaults to `False`. If true, compute full-sized `q` and `r`. If false (the default), compute only the leading `P` columns of `q`.",False,shape,ndim(0),,1

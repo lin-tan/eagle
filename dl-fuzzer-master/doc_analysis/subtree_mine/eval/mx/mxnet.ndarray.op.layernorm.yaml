@@ -1,0 +1,13 @@
+constraints:
+  eps:
+    default: _Null
+    descp: An epsilon parameter to prevent division by 0.
+    doc_dtype:
+    - float
+    - optional
+    - default=9.99999975e-06
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.LayerNorm

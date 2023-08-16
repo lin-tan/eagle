@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An `integer`.  The number of batch dimensions.  Must be less than `rank(indices)`.,0,prim_dtype,dtype(int),,1
+,An `integer`.  The number of batch dimensions.  Must be less than `rank(indices)`.,0,shape,ndim(0),,1
+,An `integer`.  The number of batch dimensions.  Must be less than `rank(indices)`.,0,validvalue,"range([0,inf))",,1

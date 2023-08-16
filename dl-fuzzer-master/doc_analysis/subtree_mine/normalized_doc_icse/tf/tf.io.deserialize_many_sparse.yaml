@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.deserialize_many_sparse
+- tf.compat.v1.io.deserialize_many_sparse
+constraints:
+  dtype:
+    descp: The `dtype` of the serialized `SparseTensor` objects.
+    normalized_descp:
+    - The QSTR of the serialized D_STRUCTURE objects
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name prefix for the returned D_STRUCTURE BSTR
+  rank:
+    default: None
+    descp: (optional) Python int, the rank of the `SparseTensor` objects.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR Python D_TYPE the rank of the D_STRUCTURE objects
+  serialized_sparse:
+    descp: 2-D `Tensor` of type `string` of shape `[N, 3]`. The serialized and packed
+      `SparseTensor` objects.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE of type D_TYPE of shape BSTR
+    - The serialized and packed D_STRUCTURE objects
+inputs:
+  optional:
+  - rank
+  - name
+  required:
+  - serialized_sparse
+  - dtype
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/deserialize_many_sparse
+outputs: A `SparseTensor` representing the deserialized `SparseTensor`s, concatenated
+  along the `SparseTensor`s' first dimension.
+package: tensorflow
+target: deserialize_many_sparse
+title: tf.io.deserialize_many_sparse
+version: 2.1.0

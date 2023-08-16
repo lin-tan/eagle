@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`int` or shape `tuple`, optional Axes over which to shift.  Default is None, which shifts all axes.",None,prim_dtype,dtype(int),1,1
+,"`int` or shape `tuple`, optional Axes over which to shift.  Default is None, which shifts all axes.",None,shape,"ndim(0, 1)",1,1
+,"`int` or shape `tuple`, optional Axes over which to shift.  Default is None, which shifts all axes.",None,validvalue,"range([0,inf))",1,1

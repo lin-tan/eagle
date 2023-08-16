@@ -1,0 +1,50 @@
+aliases:
+- tf.assert_less
+constraints:
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE to prefix to the default message
+  name:
+    default: None
+    descp: A name for this operation (optional).  Defaults to "assert_less".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+    - Defaults to QSTR
+  summarize:
+    default: None
+    descp: Print this many entries of each tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Print this many entries of each D_STRUCTURE
+  x:
+    descp: Numeric `Tensor`.
+    normalized_descp:
+    - D_TYPE D_STRUCTURE
+  y:
+    descp: Numeric `Tensor`, same dtype as and broadcastable to `x`.
+    normalized_descp:
+    - D_TYPE D_STRUCTURE, same dtype as and broadcastable to QSTR
+exceptions:
+- InvalidArgumentError: if the check can be performed immediately and`x < y` is False.
+    The check can be performed immediately during eager execution or if `x` and `y`
+    are statically known.
+inputs:
+  optional:
+  - message
+  - summarize
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_less
+outputs: Op that raises `InvalidArgumentError` if `x < y` is False. This can be used
+  with `tf.control_dependencies` inside of `tf.function`s to block followup computation
+  until the check has executed.
+package: tensorflow
+target: assert_less
+title: tf.debugging.assert_less
+version: 2.1.0

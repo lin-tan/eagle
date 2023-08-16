@@ -1,0 +1,63 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (a\s+)?(tuple|list|sequence)\s+of\s+(\w+):
+    cnt: 193
+    ds_dtype:
+    - \3
+    ndim: 1
+    structure: \2
+  (ndarray)(\[\])?:
+    cnt: 2162
+    structure: \1
+  (tuple)\s+of\s+<(.*?)>:
+    cnt: 52
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  \((\w+),\s*\w+\):
+    cnt: 16
+    ds_dtype:
+    - \1
+    len: 2
+    ndim: 1
+    structure: tuple
+  ^([\w.]+),*$:
+    cnt: 2101
+    structure: \1
+  ^shape(\(tuple\)):
+    cnt: 143
+    ds_dtype:
+    - int
+    structure: tuple
+  a\s+mxnet\s+(\w+):
+    cnt: 1
+    structure: \1
+  dict\s+of\s+([\w.]+):
+    cnt: 2
+    ds_dtype:
+    - \1
+    - \1
+    prereq:
+    - dict\s+of\s+([\w.]+)\s+to\s+([\w.]+)
+    structure: dict
+  dict\s+of\s+([\w.]+)\s+to\s+([\w.]+):
+    cnt: 15
+    ds_dtype:
+    - \1
+    - \2
+    structure: dict
+  list-like:
+    cnt: 1
+    structure: list
+  tuple\s+of\s+\((\w+),\s*\w+\):
+    cnt: 4
+    ds_dtype:
+    - \1
+    structure: tuple
+target: structure

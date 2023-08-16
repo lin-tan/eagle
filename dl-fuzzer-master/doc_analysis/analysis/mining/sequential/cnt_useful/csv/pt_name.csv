@@ -1,0 +1,78 @@
+idx,freq,sequence,len,cat
+0,231,['input'],1,not useful
+1,105,['SOME_DTYPE'],1,dtype
+2,63,['dim'],1,dtype
+3,47,['tensor'],1,ds
+4,40,['dtype'],1,dtype
+5,32,['size'],1,dtype
+6,29,['grad'],1,not useful
+7,22,"['requires', 'grad']",2,not useful
+8,21,['padding'],1,not useful
+9,18,['group'],1,not useful
+10,16,['keepdim'],1,not useful
+11,16,['mode'],1,not useful
+12,16,['weight'],1,dtype
+13,15,['inputs'],1,not useful
+14,15,['name'],1,dtype
+15,14,['stride'],1,dtype
+16,13,['output'],1,not useful
+17,13,['op'],1,complex
+18,12,['p'],1,not useful
+19,10,['args'],1,not useful
+20,10,['graph'],1,complex
+21,10,['func'],1,dtype
+22,10,"['async', 'op']",2,complex
+23,10,['extra'],1,not useful
+24,10,['inplace'],1,not useful
+25,10,['mat'],1,dtype
+26,9,['kwargs'],1,not useful
+27,9,['bias'],1,not useful
+28,9,['groups'],1,not useful
+29,9,['SOME_STRUCTURE'],1,ds
+30,8,['unbiased'],1,not useful
+31,8,"['create', 'graph']",2,not useful
+32,8,['dilation'],1,not useful
+33,8,['alpha'],1,not useful
+34,8,['n'],1,not useful
+35,8,['length'],1,dtype+validvalue
+36,8,['scale'],1,not useful
+37,7,['batch'],1,not useful
+38,7,['value'],1,not useful
+39,7,"['output', 'size']",2,dtype
+40,7,['return'],1,not useful
+41,7,['memory'],1,not useful
+42,7,['x'],1,not useful
+43,7,['type'],1,not useful
+44,7,['dst'],1,not useful
+45,7,['reduction'],1,not useful
+46,7,['target'],1,not useful
+47,7,['eps'],1,not useful
+48,7,['beta'],1,not useful
+49,6,"['size', 'average']",2,not useful
+50,6,['strict'],1,not useful
+51,6,['include'],1,not useful
+52,6,['pad'],1,not useful
+53,6,['offset'],1,not useful
+54,6,['format'],1,not useful
+55,6,['cuda'],1,not useful
+56,6,['zero'],1,not useful
+57,6,['state'],1,not useful
+58,6,['vec'],1,shape
+59,6,['reduce'],1,not useful
+60,6,['src'],1,not useful
+61,6,['std'],1,not useful
+62,6,['check'],1,not useful
+63,5,"['memory', 'format']",2,not useful
+64,5,['end'],1,not useful
+65,5,['start'],1,not useful
+66,5,['upper'],1,not useful
+67,5,['new'],1,not useful
+68,5,['f'],1,complex
+69,5,['outputs'],1,not useful
+70,5,['normalized'],1,not useful
+71,5,['signal'],1,not useful
+72,5,['parameters'],1,not useful
+73,5,['window'],1,not useful
+74,5,['data'],1,not useful
+75,5,['seed'],1,not useful
+76,5,['mean'],1,not useful

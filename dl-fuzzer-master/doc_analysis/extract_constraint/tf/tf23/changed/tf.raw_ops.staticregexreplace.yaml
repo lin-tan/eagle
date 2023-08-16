@@ -1,0 +1,49 @@
+constraints:
+  input:
+    descp: A Tensor of type string. The text to be processed.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  pattern:
+    descp: A string. The regular expression to match the input.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  replace_global:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If True, the replacement is global,
+      otherwise the replacement is done only on the first match.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  rewrite:
+    descp: A string. The rewrite to be applied to the matched expression.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - replace_global
+  - name
+  required:
+  - input
+  - pattern
+  - rewrite
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StaticRegexReplace
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: StaticRegexReplace
+title: tf.raw_ops.StaticRegexReplace
+version: 2.3.0

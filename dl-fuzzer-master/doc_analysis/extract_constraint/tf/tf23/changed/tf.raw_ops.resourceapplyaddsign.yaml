@@ -1,0 +1,84 @@
+constraints:
+  alpha:
+    descp: A Tensor. Must have the same type as lr. Must be a scalar.
+    dtype:
+    - dtype:&lr
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  beta:
+    descp: A Tensor. Must have the same type as lr. Must be a scalar.
+    dtype:
+    - dtype:&lr
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  grad:
+    descp: A Tensor. Must have the same type as lr. The gradient.
+    dtype:
+    - dtype:&lr
+    tensor_t:
+    - tf.tensor
+  lr:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. Scaling factor. Must be a scalar.'
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  m:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sign_decay:
+    descp: A Tensor. Must have the same type as lr. Must be a scalar.
+    dtype:
+    - dtype:&lr
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, updating of the var and m
+      tensors is protected by a lock; otherwise the behavior is undefined, but may
+      exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  var:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - var
+  - m
+  - lr
+  - alpha
+  - sign_decay
+  - beta
+  - grad
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ResourceApplyAddSign
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceApplyAddSign
+title: tf.raw_ops.ResourceApplyAddSign
+version: 2.3.0

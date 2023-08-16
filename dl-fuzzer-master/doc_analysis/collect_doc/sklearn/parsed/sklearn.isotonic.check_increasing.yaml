@@ -1,0 +1,11 @@
+constraints:
+  x: {descp: 'array-like of shape (n_samples,) Training data.'}
+  y: {descp: 'array-like of shape (n_samples,) Training target.'}
+inputs:
+  optional: []
+  required: [x, y]
+link: ''
+package: sklearn
+target: check_increasing
+title: sklearn.isotonic.check_increasing
+version: 0.24.2

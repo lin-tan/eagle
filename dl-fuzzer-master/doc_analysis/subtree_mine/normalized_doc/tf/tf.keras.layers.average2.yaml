@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.keras.layers.average
+constraints:
+  '**kwargs':
+    descp: Standard layer keyword arguments.
+    normalized_descp:
+    - Standard layer keyword arguments
+  inputs:
+    descp: A list of input tensors (at least 2).
+    normalized_descp:
+    - A D_STRUCTURE of input D_STRUCTURE BSTR
+inputs:
+  optional: []
+  required:
+  - inputs
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/average
+outputs: A tensor, the average of the inputs.
+package: tensorflow
+target: average
+title: tf.keras.layers.average
+version: 2.1.0

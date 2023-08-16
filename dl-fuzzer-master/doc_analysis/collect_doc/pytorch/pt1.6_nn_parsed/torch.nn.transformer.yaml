@@ -1,0 +1,55 @@
+constraints:
+  activation:
+    default: relu
+    descp: the activation function of encoder/decoder intermediate layer, relu or
+      gelu (default=relu).
+    sig_dtype: str
+  custom_decoder:
+    default: None
+    descp: custom decoder (default=None).
+    sig_dtype: Optional[Any]
+  custom_encoder:
+    default: None
+    descp: custom encoder (default=None).
+    sig_dtype: Optional[Any]
+  d_model:
+    default: '512'
+    descp: the number of expected features in the encoder/decoder inputs (default=512).
+    sig_dtype: int
+  dim_feedforward:
+    default: '2048'
+    descp: the dimension of the feedforward network model (default=2048).
+    sig_dtype: int
+  dropout:
+    default: '0.1'
+    descp: the dropout value (default=0.1).
+    sig_dtype: float
+  nhead:
+    default: '8'
+    descp: the number of heads in the multiheadattention models (default=8).
+    sig_dtype: int
+  num_decoder_layers:
+    default: '6'
+    descp: the number of sub-decoder-layers in the decoder (default=6).
+    sig_dtype: int
+  num_encoder_layers:
+    default: '6'
+    descp: the number of sub-encoder-layers in the encoder (default=6).
+    sig_dtype: int
+inputs:
+  optional:
+  - d_model
+  - nhead
+  - num_encoder_layers
+  - num_decoder_layers
+  - dim_feedforward
+  - dropout
+  - activation
+  - custom_encoder
+  - custom_decoder
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Transformer.html#torch.nn.Transformer#torch.nn.Transformer
+package: torch
+target: Transformer
+title: torch.nn.Transformer
+version: 1.6.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A 1-D `Tensor` representing the output shape of the deconvolution op.,,prim_dtype,dtype(int),,1
+,A 1-D `Tensor` representing the output shape of the deconvolution op.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A 1-D `Tensor` representing the output shape of the deconvolution op.,,shape,ndim(1),,1
+,A 1-D `Tensor` representing the output shape of the deconvolution op.,,validvalue,"range([0,inf))",,1

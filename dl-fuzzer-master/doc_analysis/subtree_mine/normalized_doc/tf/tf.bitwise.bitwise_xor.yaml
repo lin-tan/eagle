@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.bitwise.bitwise_xor
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `int8`, `int16`, `int32`,
+      `int64`, `uint8`, `uint16`, `uint32`, `uint64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+  y:
+    descp: A `Tensor`. Must have the same type as `x`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/bitwise/bitwise_xor
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: bitwise_xor
+title: tf.bitwise.bitwise_xor
+version: 2.1.0

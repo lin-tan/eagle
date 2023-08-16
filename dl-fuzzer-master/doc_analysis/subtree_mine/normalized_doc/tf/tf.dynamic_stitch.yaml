@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.dynamic_stitch
+constraints:
+  data:
+    descp: A list with the same length as `indices` of `Tensor` objects with the same
+      type.
+    normalized_descp:
+    - A D_STRUCTURE with the same length as PARAM of D_STRUCTURE objects with the
+      same type
+  indices:
+    descp: A list of at least 1 `Tensor` objects with type `int32`.
+    normalized_descp:
+    - A D_STRUCTURE of at least CONSTANT_NUM D_STRUCTURE objects with type D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - data
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/dynamic_stitch
+outputs: A `Tensor`. Has the same type as `data`.
+package: tensorflow
+target: dynamic_stitch
+title: tf.dynamic_stitch
+version: 2.1.0

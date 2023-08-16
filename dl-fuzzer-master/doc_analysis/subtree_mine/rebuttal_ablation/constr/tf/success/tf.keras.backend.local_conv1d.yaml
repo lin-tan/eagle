@@ -1,0 +1,108 @@
+aliases:
+- tf.compat.v1.keras.backend.local_conv1d
+constraints:
+  data_format:
+    default: None
+    descp: the data format, channels_first or channels_last.
+  inputs:
+    descp: '3D tensor with shape: (batch_size, steps, input_dim) if data_format is
+      "channels_last" or (batch_size, input_dim, steps) if data_format is "channels_first".'
+    dtype:
+    - '&data_format'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - channels_first
+    - channels_last
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&data_format'
+    - '[1]'
+    - '[3]'
+    - '[batch_size,input_dim,steps]'
+    - '[batch_size,steps,input_dim]'
+    - '[channels_first,channels_first]'
+    - '[channels_first]'
+    - '[channels_last,channels_last]'
+    - '[channels_last]'
+    tensor_t:
+    - tf.tensor
+  kernel:
+    descp: the unshared weight for convolution, with shape (output_length, feature_dim,
+      filters).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[output_length,feature_dim,filters]'
+  kernel_size:
+    descp: a tuple of a single integer, specifying the length of the 1D convolution
+      window.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - tuple
+  strides:
+    descp: a tuple of a single integer, specifying the stride length of the convolution.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - tuple
+inputs:
+  optional:
+  - data_format
+  required:
+  - inputs
+  - kernel
+  - kernel_size
+  - strides
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/local_conv1d
+outputs: 'A 3d tensor with shape: (batch_size, output_length, filters) if data_format=''channels_first''
+  or 3D tensor with shape: (batch_size, filters, output_length) if data_format=''channels_last''.'
+package: tensorflow
+target: local_conv1d
+title: tf.keras.backend.local_conv1d
+version: 2.1.0

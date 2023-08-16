@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.math.xlog1py
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A tf.Tensor of type bfloat16, half, float32, float64, complex64, complex128
+    dtype:
+    - tf.bfloat16
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A tf.Tensor of type bfloat16, half, float32, float64, complex64, complex128
+    dtype:
+    - tf.bfloat16
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/xlog1py
+outputs:
+- x * log1p(y).
+package: tensorflow
+target: xlog1py
+title: tf.math.xlog1py
+version: 2.2.0

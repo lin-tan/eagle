@@ -1,0 +1,46 @@
+constraints:
+  batch_first:
+    default: 'False'
+    descp: if `True`, the input is expected in `B x T x *` format.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL, the PARAM is expected in B x T x format
+    normalized_docdtype: D_TYPE, optional
+  enforce_sorted:
+    default: 'True'
+    descp: 'if `True`, the input is expected to contain sequences sorted by length
+      in a decreasing order. If `False`, the input will get sorted unconditionally.
+      Default: `True`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL, the PARAM is expected to contain sequences sorted by length
+      in a decreasing order
+    - If CONSTANT_BOOL, the PARAM will get sorted unconditionally
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: padded batch of variable length sequences.
+    doc_dtype: Tensor
+    normalized_descp:
+    - padded batch of variable length sequences
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lengths:
+    descp: list of sequences lengths of each batch element.
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE of sequences lengths of each batch element
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - batch_first
+  - enforce_sorted
+  required:
+  - input
+  - lengths
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pack_padded_sequence
+package: torch
+target: pack_padded_sequence
+title: torch.nn.utils.rnn.pack_padded_sequence
+version: 1.5.0

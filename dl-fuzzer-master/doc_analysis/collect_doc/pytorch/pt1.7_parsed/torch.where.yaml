@@ -1,0 +1,29 @@
+constraints:
+  condition:
+    descp: When True (nonzero), yield x, otherwise yield y
+    doc_dtype:
+    - BoolTensor
+  x:
+    descp: value (if :attr:x is a scalar) or values selected at indiceswhere `condition`
+      is `True`
+    doc_dtype:
+    - Tensor
+    - Scalar
+  y:
+    descp: value (if :attr:x is a scalar) or values selected at indiceswhere `condition`
+      is `False`
+    doc_dtype:
+    - Tensor
+    - Scalar
+inputs:
+  optional: []
+  required:
+  - condition
+  - x
+  - y
+link: https://pytorch.org/docs/1.7.0/generated/torch.where.html#torch.where#torch.where
+package: torch
+ret_type: Tensor
+target: where
+title: torch.where
+version: 1.7.0

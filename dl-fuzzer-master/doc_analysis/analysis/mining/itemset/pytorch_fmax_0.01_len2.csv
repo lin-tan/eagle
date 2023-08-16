@@ -1,0 +1,38 @@
+,support,itemsets,length
+79,0.0784313725490196,"frozenset({'tensor', 'output'})",2
+71,0.06217120994739359,"frozenset({'false', 'default'})",2
+70,0.05164992826398852,"frozenset({'true', 'default'})",2
+68,0.046389287422285985,"frozenset({'SOME_DTYPE', 'desired', 'tensor', 'returned'})",4
+58,0.03012912482065997,"frozenset({'shape', 'tensor'})",2
+54,0.028216164514586323,"frozenset({'single', 'SOME_STRUCTURE', 'number'})",3
+57,0.020564323290291727,"frozenset({'SOME_DTYPE', 'tensor', 'current'})",3
+51,0.020564323290291727,"frozenset({'n', 'tensor'})",2
+49,0.020086083213773313,"frozenset({'input', 'dimensions'})",2
+74,0.018651362984218076,"frozenset({'SOME_STRUCTURE', 'tensor'})",2
+59,0.018173122907699665,"frozenset({'desired', 'data', 'type', 'returned', 'tensor'})",5
+40,0.017694882831181254,"frozenset({'input', 'zero'})",2
+38,0.01721664275466284,"frozenset({'_channels', 'shape'})",2
+36,0.016260162601626018,"frozenset({'uses', 'default', 'set_default_tensor_type', 'none', 'see', 'torch'})",6
+73,0.015781922525107604,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",2
+28,0.01482544237207078,"frozenset({'SOME_DTYPE', 'current', 'cuda'})",3
+62,0.014347202295552367,"frozenset({'input', 'size', 'tensor'})",3
+26,0.014347202295552367,"frozenset({'SOME_DTYPE', 'types'})",2
+72,0.012434241989478718,"frozenset({'SOME_STRUCTURE', 'output'})",2
+67,0.011956001912960305,"frozenset({'SOME_DTYPE', 'tensor', 'type', 'torch'})",4
+15,0.011956001912960305,"frozenset({'process', 'group'})",2
+66,0.011477761836441894,"frozenset({'SOME_DTYPE', 'type', 'none', 'torch'})",4
+78,0.010999521759923482,"frozenset({'SOME_DTYPE', 'output'})",2
+69,0.010999521759923482,"frozenset({'SOME_DTYPE', 'default', 'none', 'torch'})",4
+46,0.010999521759923482,"frozenset({'uses', 'default', 'current', 'none', 'SOME_DTYPE'})",5
+65,0.010999521759923482,"frozenset({'default', 'type', 'none'})",3
+45,0.010521281683405069,"frozenset({'uses', 'tensor'})",2
+18,0.010521281683405069,"frozenset({'tensor', 'cpu'})",2
+61,0.010521281683405069,"frozenset({'size', 'output'})",2
+56,0.010521281683405069,"frozenset({'SOME_DTYPE', 'current', 'default', 'torch'})",4
+75,0.010521281683405069,"frozenset({'input', 'none'})",2
+76,0.010521281683405069,"frozenset({'default', 'tensor', 'none'})",3
+77,0.010521281683405069,"frozenset({'SOME_DTYPE', 'tensor', 'none'})",3
+4,0.010521281683405069,"frozenset({'record', 'autograd', 'operations', 'returned', 'tensor'})",5
+64,0.010043041606886656,"frozenset({'tensor', 'type', 'default'})",3
+17,0.010043041606886656,"frozenset({'SOME_DTYPE', 'current', 'cpu'})",3
+52,0.010043041606886656,"frozenset({'SOME_DTYPE', 'see', 'torch'})",3

@@ -1,0 +1,37 @@
+constraints:
+  input:
+    descp: the tensor to be added
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+  tensor1:
+    descp: the numerator tensor
+    doc_dtype:
+    - Tensor
+  tensor2:
+    descp: the denominator tensor
+    doc_dtype:
+    - Tensor
+  value:
+    default: '1'
+    descp: 'multiplier for tensor1 / tensor2 '
+    doc_dtype:
+    - Number
+inputs:
+  optional:
+  - value
+  - out
+  required:
+  - input
+  - tensor1
+  - tensor2
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.addcdiv
+package: torch
+ret_type: Tensor
+target: addcdiv
+title: torch.addcdiv
+version: 1.4.0

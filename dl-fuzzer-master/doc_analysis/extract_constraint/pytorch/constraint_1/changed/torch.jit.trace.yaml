@@ -1,0 +1,54 @@
+constraints:
+  check_inputs:
+    default: None
+    descp: ''
+  check_tolerance:
+    default: 1e-5
+    descp: ''
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+  check_trace:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  example_inputs:
+    descp: A tuple of example inputs that will be passed to the function while tracing.
+      The resulting trace can be run with inputs of different types and shapes assuming
+      the traced operations support those types and shapes. `example_inputs` may also
+      be a single Tensor in which case it is automatically wrapped in a tuple.
+    doc_dtype:
+    - tuple
+    structure:
+    - tuple
+    tensor_t:
+    - torch.tensor
+  func:
+    descp: A Python function or `torch.nn.Module` that will be run with `example_inputs`.
+      arguments and returns to `func` must be tensors or (possibly nested) tuples
+      that contain tensors. When a module is passed to `torch.jit.trace`, only the
+      `forward` method is run and traced (see `torch.jit.trace` for details).
+    doc_dtype:
+    - callable
+    - torch.nn.Module
+  optimize:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - optimize
+  - check_trace
+  - check_inputs
+  - check_tolerance
+  required:
+  - func
+  - example_inputs
+link: https://pytorch.org/docs/stable/jit.html#torch.jit.trace
+package: torch
+target: trace
+title: torch.jit.trace
+version: 1.5.0

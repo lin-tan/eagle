@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float array with shape (n_features,) Array of precomputed feature-wise values to use for scaling.",,prim_dtype,dtype(float),,1
+,"float array with shape (n_features,) Array of precomputed feature-wise values to use for scaling.",,nonprim_dtype,structure(list),,1
+,"float array with shape (n_features,) Array of precomputed feature-wise values to use for scaling.",,shape,"shape([n_features]), ndim(0, 1)",,1

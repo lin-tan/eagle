@@ -1,0 +1,62 @@
+constraints:
+  _stacklevel:
+    default: '3'
+    descp: ''
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  dim:
+    default: None
+    descp: A dimension along which log_softmax will be computed.
+    doc_dtype: int
+    dtype:
+    - int
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. If specified, the input tensor
+      is casted to `dtype` before the operation is performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype: '`torch.dtype`, optional'
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    enum:
+    - dtype
+    ndim:
+    - '&input'
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  input:
+    descp: input
+    doc_dtype: Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - dim
+  - _stacklevel
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.log_softmax
+package: torch
+target: log_softmax
+title: torch.nn.functional.log_softmax
+version: 1.5.0

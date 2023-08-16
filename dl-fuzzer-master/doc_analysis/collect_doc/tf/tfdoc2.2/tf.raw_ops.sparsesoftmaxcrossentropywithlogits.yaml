@@ -1,0 +1,26 @@
+constraints:
+  features:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. batch_size x num_classes matrix'
+  labels:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. batch_size
+      vector with values in [0, num_classes). This is the label for the given minibatch
+      entry.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - features
+  - labels
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSoftmaxCrossEntropyWithLogits
+outputs:
+- A tuple of Tensor objects (loss, backprop).
+- loss: A Tensor. Has the same type as features.
+- backprop: A Tensor. Has the same type as features.
+package: tensorflow
+target: SparseSoftmaxCrossEntropyWithLogits
+title: tf.raw_ops.SparseSoftmaxCrossEntropyWithLogits
+version: 2.2.0

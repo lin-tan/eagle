@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Context,"Defines the device that users want to run forward propagation on the calibration dataset for collecting layer output statistics. Currently, only supports single context.",cpu(0),prim_dtype,dtype(context),,1

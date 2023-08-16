@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, Initializer, default 'lstmbias'","Initializer for the bias vector. By default, bias for the forget gate is initialized to 1 while all other biases are initialized to zero.",zeros,prim_dtype,dtype(string),,1

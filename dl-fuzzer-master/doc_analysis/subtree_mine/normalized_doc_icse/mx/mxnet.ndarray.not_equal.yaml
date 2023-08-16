@@ -1,0 +1,25 @@
+constraints:
+  lhs:
+    descp: First array to be compared.
+    doc_dtype: scalar or mxnet.ndarray.array
+    normalized_descp:
+    - First D_STRUCTURE to be compared
+    normalized_docdtype: scalar or mxnet D_STRUCTURE D_STRUCTURE
+  rhs:
+    descp: Second array to be compared. If `lhs.shape != rhs.shape`, they must be
+      broadcastable to a common shape.
+    doc_dtype: scalar or mxnet.ndarray.array
+    normalized_descp:
+    - Second D_STRUCTURE to be compared
+    - If PARAM shape rhs shape they must be broadcastable to a common shape
+    normalized_docdtype: scalar or mxnet D_STRUCTURE D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - lhs
+  - rhs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.not_equal
+package: mxnet
+target: not_equal
+title: mxnet.ndarray.not_equal
+version: 1.6.0

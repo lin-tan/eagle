@@ -1,0 +1,17 @@
+constraints:
+  kernel_size:
+    descp: Specifies the dimensions of the convolution window.
+    doc_dtype:
+    - int
+    - tuple/list of 2 int
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - list
+    - tuple
+
+title: mxnet.gluon.nn.Conv2D

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"tuple of ints (image_height, image_width) or (image_height, image_width, n_channels) the size of the image that will be reconstructed",,prim_dtype,dtype(numeric),,1
+,"tuple of ints (image_height, image_width) or (image_height, image_width, n_channels) the size of the image that will be reconstructed",,shape,ndim(1),,1
+,"tuple of ints (image_height, image_width) or (image_height, image_width, n_channels) the size of the image that will be reconstructed",,validvalue,"range([0,inf))",,1

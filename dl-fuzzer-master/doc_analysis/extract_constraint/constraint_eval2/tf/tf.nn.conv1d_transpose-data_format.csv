@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A string. `'NWC'` and `'NCW'` are supported.,NWC,prim_dtype,dtype(tf.string),,1
+,A string. `'NWC'` and `'NCW'` are supported.,NWC,shape,ndim(0),,1
+,A string. `'NWC'` and `'NCW'` are supported.,NWC,validvalue,"enum(NCW, NWC)",,1

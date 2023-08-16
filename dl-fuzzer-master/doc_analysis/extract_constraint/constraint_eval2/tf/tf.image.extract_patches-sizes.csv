@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The size of the extracted patches. Must be [1, size_rows, size_cols, 1].",,prim_dtype,dtype(numeric),,1
+,"The size of the extracted patches. Must be [1, size_rows, size_cols, 1].",,shape,ndim(0),,1
+,"The size of the extracted patches. Must be [1, size_rows, size_cols, 1].",,validvalue,"range([0,inf))",,1

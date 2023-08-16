@@ -1,0 +1,20 @@
+constraints:
+  dim1:
+    default: '-2'
+    descp: 'first dimension with respect to which to take diagonal. Default: -2.'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+  offset:
+    default: '0'
+    descp: 'which diagonal to consider. Default: 0 (main diagonal).'
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.diag_embed

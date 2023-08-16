@@ -1,0 +1,20 @@
+constraints:
+  image:
+    dtype:
+    - tf.uint8
+    ndim:
+    - '3'
+    shape:
+    - '[H,W,3]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- H
+- W
+inputs:
+  required:
+  - image
+package: tensorflow_io
+target: encode_bmp
+title: tfio.image.encode_bmp
+version: 0.13.0

@@ -1,0 +1,30 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  '*data':
+    descp: Weights
+    doc_dtype: NDArray[]
+  cast_narrow:
+    default: None
+    descp: Whether to cast to the narrowest type
+    doc_dtype: boolean, optional, default=0
+  num_outputs:
+    descp: Number of input/output pairs to be casted to the widest type.
+    doc_dtype: int, required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+inputs:
+  optional:
+  - cast_narrow
+  - out
+  required:
+  - '*data'
+  - '**kwargs'
+  - num_outputs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.amp_multicast
+package: mxnet
+target: amp_multicast
+title: mxnet.ndarray.op.amp_multicast
+version: 1.6.0

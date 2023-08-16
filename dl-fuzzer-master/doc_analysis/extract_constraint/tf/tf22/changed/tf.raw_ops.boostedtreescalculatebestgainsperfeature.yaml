@@ -1,0 +1,99 @@
+constraints:
+  l1:
+    descp: A Tensor of type float32. l1 regularization factor on leaf weights, per
+      instance based.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  l2:
+    descp: A Tensor of type float32. l2 regularization factor on leaf weights, per
+      instance based.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  max_splits:
+    descp: An int that is >= 1. the number of nodes that can be split in the whole
+      tree. Used as a dimension of output tensors.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  min_node_weight:
+    descp: A Tensor of type float32. minimum avg of hessians in a node before required
+      for the node to be considered for splitting.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  node_id_range:
+    descp: A Tensor of type int32. A Rank 1 tensor (shape=[2]) to specify the range
+      [first, last) of node ids to process within stats_summary_list. The nodes are
+      iterated between the two nodes specified by the tensor, as like for node_id
+      in range(node_id_range[0], node_id_range[1]) (Note that the last index node_id_range[1]
+      is exclusive).
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  stats_summary_list:
+    descp: A list of at least 1 Tensor objects with type float32. A list of Rank 3
+      tensor (#shape=[max_splits, bucket, 2]) for accumulated stats summary (gradient/hessian)
+      per node per buckets for each feature. The first dimension of the tensor is
+      the maximum number of splits, and thus not all elements of it will be used,
+      but only the indexes specified by node_ids will be used.
+    dtype:
+    - tf.float32
+    ndim:
+    - '3'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+  tree_complexity:
+    descp: A Tensor of type float32. adjustment to the gain, per leaf based.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - node_id_range
+  - stats_summary_list
+  - l1
+  - l2
+  - tree_complexity
+  - min_node_weight
+  - max_splits
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesCalculateBestGainsPerFeature
+outputs:
+- A tuple of Tensor objects (node_ids_list, gains_list, thresholds_list, left_node_contribs_list,
+  right_node_contribs_list).
+- node_ids_list: A list with the same length as stats_summary_list of Tensor objects
+    with type int32.
+- gains_list: A list with the same length as stats_summary_list of Tensor objects
+    with type float32.
+- thresholds_list: A list with the same length as stats_summary_list of Tensor objects
+    with type int32.
+- left_node_contribs_list: A list with the same length as stats_summary_list of Tensor
+    objects with type float32.
+- right_node_contribs_list: A list with the same length as stats_summary_list of Tensor
+    objects with type float32.
+package: tensorflow
+target: BoostedTreesCalculateBestGainsPerFeature
+title: tf.raw_ops.BoostedTreesCalculateBestGainsPerFeature
+version: 2.2.0

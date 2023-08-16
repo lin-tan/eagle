@@ -1,0 +1,32 @@
+constraints:
+  input:
+    descp: the first multiplicand tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the first multiplicand D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  other:
+    descp: the second multiplicand tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second multiplicand D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.mul
+package: torch
+target: mul
+title: torch.mul
+version: 1.5.0

@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.sparse.transpose
+- tf.compat.v1.sparse_transpose
+constraints:
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name prefix for the returned D_STRUCTURE BSTR
+  perm:
+    default: None
+    descp: A permutation of the dimensions of `sp_input`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A permutation of the dimensions of PARAM
+  sp_input:
+    descp: The input `SparseTensor`.
+    normalized_descp:
+    - The input D_STRUCTURE
+exceptions:
+- TypeError: If `sp_input` is not a `SparseTensor`.
+inputs:
+  optional:
+  - perm
+  - name
+  required:
+  - sp_input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/sparse/transpose
+outputs: A transposed `SparseTensor`.
+package: tensorflow
+target: transpose
+title: tf.sparse.transpose
+version: 2.1.0

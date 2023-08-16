@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A tensor or (possibly nested) sequence of tensors, each of which will be unpacked along their first dimension.  The nested sequence of the resulting slices will be applied to `fn`.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list, list(tf.tensor))",,1

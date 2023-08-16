@@ -1,0 +1,81 @@
+constraints:
+  checkpoint_format:
+    default: checkpoint
+    descp: Sets the format of the checkpoint saved by the estimator when training.
+      May be saver or checkpoint, depending on whether to save checkpoints from tf.compat.v1.train.Saver
+      or tf.train.Checkpoint. The default is checkpoint. Estimators use name-based
+      tf.train.Saver checkpoints, while Keras models use object-based checkpoints
+      from tf.train.Checkpoint. Currently, saving object-based checkpoints from model_to_estimator
+      is only supported by Functional and Sequential models. Defaults to 'checkpoint'.
+    dtype:
+    - tf.bool
+  config:
+    default: None
+    descp: RunConfig to config Estimator. Allows setting up things in model_fn based
+      on configuration such as num_ps_replicas, or model_dir. Defaults to None. If
+      both config.model_dir and the model_dir argument (above) are specified the model_dir
+      argument takes precedence.
+  custom_objects:
+    default: None
+    descp: 'Dictionary for cloning customized objects. This is used with classes that
+      is not part of this pip package. For example, if user maintains a relu6 class
+      that inherits from tf.keras.layers.Layer, then pass custom_objects={''relu6'':
+      relu6}. Defaults to None.'
+    structure:
+    - dict
+  keras_model:
+    default: None
+    descp: A compiled Keras model object. This argument is mutually exclusive with
+      keras_model_path. Estimator's model_fn uses the structure of the model to clone
+      the model. Defaults to None.
+  keras_model_path:
+    default: None
+    descp: Path to a compiled Keras model saved on disk, in HDF5 format, which can
+      be generated with the save() method of a Keras model. This argument is mutually
+      exclusive with keras_model. Defaults to None.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  metric_names_map:
+    default: None
+    descp: Optional dictionary mapping Keras model output metric names to custom names.
+      This can be used to override the default Keras model output metrics names in
+      a multi IO model use case and provide custom names for the eval_metric_ops in
+      Estimator. The Keras model metric names can be obtained using model.metrics_names
+      excluding any loss metrics such as total loss and output losses. For example,
+      if your Keras model has two outputs out_1 and out_2, with mse loss and acc metric,
+      then model.metrics_names will be ['loss', 'out_1_loss', 'out_2_loss', 'out_1_acc',
+      'out_2_acc']. The model metric names excluding the loss metrics will be ['out_1_acc',
+      'out_2_acc'].
+    structure:
+    - dict
+  model_dir:
+    default: None
+    descp: Directory to save Estimator model parameters, graph, summary files for
+      TensorBoard, etc. If unset a directory will be created with tempfile.mkdtemp
+    dtype:
+    - tf.string
+exceptions:
+- ValueError: If neither keras_model nor keras_model_path was given.
+- ValueError: If both keras_model and keras_model_path was given.
+- ValueError: If the keras_model_path is a GCS URI.
+- ValueError: If keras_model has not been compiled.
+- ValueError: If an invalid checkpoint_format was given.
+inputs:
+  optional:
+  - keras_model
+  - keras_model_path
+  - custom_objects
+  - model_dir
+  - config
+  - checkpoint_format
+  - metric_names_map
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/estimator/model_to_estimator
+outputs:
+- An Estimator from given keras model.
+package: tensorflow
+target: model_to_estimator
+title: tf.keras.estimator.model_to_estimator
+version: 2.3.0

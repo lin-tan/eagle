@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"nD integer tensor of shape`(batch_size, dim1, dim2, ... dim(n-1))`",,prim_dtype,dtype(int),,1
+,"nD integer tensor of shape`(batch_size, dim1, dim2, ... dim(n-1))`",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"nD integer tensor of shape`(batch_size, dim1, dim2, ... dim(n-1))`",,shape,"shape([batch_size,...]), ndim(>1)",,1

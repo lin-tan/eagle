@@ -1,0 +1,13 @@
+constraints:
+  dlpack:
+    descp: a PyCapsule object with the dltensor
+inputs:
+  optional: []
+  required:
+  - dlpack
+link: https://pytorch.org/docs/1.7.0/dlpack.html#torch.utils.dlpack.from_dlpack
+package: torch
+ret_type: Tensor
+target: from_dlpack
+title: torch.utils.dlpack.from_dlpack
+version: 1.9.0

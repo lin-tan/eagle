@@ -1,0 +1,54 @@
+constraints:
+  OUTPUT_RAGGED_RANK:
+    descp: An int that is >= 0. The ragged rank of the output RaggedTensor. output_nested_splits
+      will contain this number of row_splits tensors. This value should equal indices.shape.ndims
+      + params.ragged_rank - 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Indices in
+      the outermost dimension of params of the values that should be gathered.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  params_dense_values:
+    descp: A Tensor. The flat_values for the params RaggedTensor. There was a terminology
+      change at the python level from dense_values to flat_values, so dense_values
+      is the deprecated name.
+  params_nested_splits:
+    descp: 'A list of at least 1 Tensor objects with the same type in: int32, int64.
+      The nested_row_splits tensors that define the row-partitioning for the params
+      RaggedTensor input.'
+    structure:
+    - list
+inputs:
+  deprecated:
+  - params_dense_values
+  optional:
+  - name
+  required:
+  - params_nested_splits
+  - indices
+  - OUTPUT_RAGGED_RANK
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RaggedGather
+outputs:
+- A tuple of Tensor objects (output_nested_splits, output_dense_values).
+- output_nested_splits: A list of OUTPUT_RAGGED_RANK Tensor objects with the same
+    type as params_nested_splits.
+- output_dense_values: A Tensor. Has the same type as params_dense_values.
+package: tensorflow
+target: RaggedGather
+title: tf.raw_ops.RaggedGather
+version: 2.2.0

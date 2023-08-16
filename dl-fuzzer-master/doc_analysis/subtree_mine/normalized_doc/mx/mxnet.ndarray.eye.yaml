@@ -1,0 +1,60 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  M:
+    default: '0'
+    descp: Number of columns in the output. If 0, defaults to N.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of columns in the output
+    - If CONSTANT_NUM, defaults to N
+    normalized_docdtype: D_TYPE, optional
+  N:
+    descp: Number of rows in the output.
+    doc_dtype: int
+    normalized_descp:
+    - Number of rows in the output
+    normalized_docdtype: ONE_WORD D_TYPE
+  ctx:
+    default: None
+    descp: An optional device context (default is the current default context)
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An optional device context BSTR
+    normalized_docdtype: Context, optional
+  dtype:
+    default: None
+    descp: An optional value type (default is float32)
+    doc_dtype: str or numpy.dtype, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An optional value type BSTR
+    normalized_docdtype: D_TYPE, optional
+  k:
+    default: '0'
+    descp: 'Index of the diagonal: 0 (the default) refers to the main diagonal, a
+      positive value refers to an upper diagonal, and a negative value to a lower
+      diagonal.'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Index of the diagonal CONSTANT_NUM BSTR refers to the main diagonal, a positive
+      value refers to an upper diagonal, and a negative value to a lower diagonal
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - M
+  - k
+  - ctx
+  - dtype
+  required:
+  - N
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.eye
+package: mxnet
+target: eye
+title: mxnet.ndarray.eye
+version: 1.6.0

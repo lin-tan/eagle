@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string, one of `channels_last` (default) or `channels_first`.",channels_last,prim_dtype,dtype(tf.string),,1
+,"A string, one of `channels_last` (default) or `channels_first`.",channels_last,shape,ndim(0),,1
+,"A string, one of `channels_last` (default) or `channels_first`.",channels_last,validvalue,"enum(channels_first, channels_last)",,1

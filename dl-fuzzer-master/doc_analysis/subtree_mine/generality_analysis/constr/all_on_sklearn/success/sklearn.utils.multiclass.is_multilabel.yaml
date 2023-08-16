@@ -1,0 +1,18 @@
+constraints:
+  y:
+    descp: numpy array of shape [n_samples] Target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+    structure:
+    - ndarray
+inputs:
+  optional: []
+  required:
+  - y
+link: ''
+package: sklearn
+target: is_multilabel
+title: sklearn.utils.multiclass.is_multilabel
+version: 0.24.2

@@ -1,0 +1,188 @@
+constraints:
+  _retain_param_name:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  args:
+    descp: 'the inputs to the model, e.g., such that `model(*args)` is a valid invocation
+      of the model.  Any non-Tensor arguments will be hard-coded into the exported
+      model; any Tensor arguments will become inputs of the exported model, in the
+      order they occur in args.  If args is a Tensor, this is equivalent to having
+      called it with a 1-ary tuple of that Tensor. (Note: passing keyword arguments
+      to the model is not currently supported.  Give us a shout if you need it.)'
+    doc_dtype:
+    - tuple of arguments
+    structure:
+    - tuple
+  aten:
+    default: 'False'
+    descp: '[DEPRECATED. use operator_export_type] export the model in aten mode.
+      If using aten mode, all the ops original exported by the functions in symbolic_opset<version>.py
+      are exported as ATen ops.'
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  custom_opsets:
+    default: None
+    descp: ''
+  do_constant_folding:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  dynamic_axes:
+    default: None
+    descp: ''
+  enable_onnx_checker:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  example_outputs:
+    default: None
+    descp: ''
+  export_params:
+    default: 'True'
+    descp: if specified, all parameters will be exported.  Set this to False if you
+      want to export an untrained model. In this case, the exported model will first
+      take all of its parameters as arguments, the ordering as specified by `model.state_dict().values()`
+    doc_dtype:
+    - bool
+    - default True
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  export_raw_ir:
+    default: 'False'
+    descp: '[DEPRECATED. use operator_export_type] export the internal IR directly
+      instead of converting it to ONNX ops.'
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  f:
+    descp: a file-like object (has to implement fileno that returns a file descriptor)
+      or a string containing a file name.  A binary Protobuf will be written to this
+      file.
+    dtype:
+    - string
+  input_names:
+    default: None
+    descp: names to assign to the input nodes of the graph, in order
+    doc_dtype:
+    - list of strings
+    - default empty list
+    dtype:
+    - string
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(string)
+  keep_initializers_as_inputs:
+    default: None
+    descp: ''
+  model:
+    descp: the model to be exported.
+    doc_dtype:
+    - torch.nn.Module
+  operator_export_type:
+    default: None
+    descp: ''
+    doc_dtype:
+    - enum
+    - default OperatorExportTypes.ONNX
+  opset_version:
+    default: None
+    descp: ''
+  output_names:
+    default: None
+    descp: names to assign to the output nodes of the graph, in order
+    doc_dtype:
+    - list of strings
+    - default empty list
+    dtype:
+    - string
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(string)
+  strip_doc_string:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  training:
+    default: TrainingMode.EVAL
+    descp: 'TrainingMode.EVAL: export the model in inference mode. TrainingMode.PRESERVE:
+      export the model in inference mode if model.training is False and to a training
+      friendly mode if model.training is True. TrainingMode.TRAINING: export the model
+      in a training friendly mode.'
+    doc_dtype:
+    - enum
+    - default TrainingMode.EVAL
+  use_external_data_format:
+    default: 'False'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  verbose:
+    default: 'False'
+    descp: if specified, we will print out a debug description of the trace being
+      exported.
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - export_params
+  - verbose
+  - training
+  - input_names
+  - output_names
+  - aten
+  - export_raw_ir
+  - operator_export_type
+  - opset_version
+  - _retain_param_name
+  - do_constant_folding
+  - example_outputs
+  - strip_doc_string
+  - dynamic_axes
+  - keep_initializers_as_inputs
+  - custom_opsets
+  - enable_onnx_checker
+  - use_external_data_format
+  required:
+  - model
+  - args
+  - f
+link: https://pytorch.org/docs/1.6.0/onnx.html#torch.onnx.export
+package: torch
+target: export
+title: torch.onnx.export
+version: 1.6.0

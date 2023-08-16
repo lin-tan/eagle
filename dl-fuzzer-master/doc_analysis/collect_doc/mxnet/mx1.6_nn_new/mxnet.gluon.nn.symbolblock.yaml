@@ -1,0 +1,23 @@
+constraints:
+  inputs:
+    descp: The Variables in output's argument that should be used as inputs.
+    doc_dtype: Symbol or list of Symbol
+  outputs:
+    descp: The desired output for SymbolBlock.
+    doc_dtype: Symbol or list of Symbol
+  params:
+    default: None
+    descp: Parameter dictionary for arguments and auxililary states of outputs that
+      are not inputs.
+    doc_dtype: ParameterDict
+inputs:
+  optional:
+  - params
+  required:
+  - outputs
+  - inputs
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.SymbolBlock
+package: mxnet
+target: SymbolBlock
+title: mxnet.gluon.nn.SymbolBlock
+version: 1.6.0

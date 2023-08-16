@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.estimator.train_and_evaluate
+constraints:
+  estimator:
+    descp: An Estimator instance to train and evaluate.
+  eval_spec:
+    descp: A EvalSpec instance to specify the evaluation and export specification.
+  train_spec:
+    descp: A TrainSpec instance to specify the training specification.
+exceptions:
+- ValueError: if environment variable TF_CONFIG is incorrectly set.
+inputs:
+  optional: []
+  required:
+  - estimator
+  - train_spec
+  - eval_spec
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/estimator/train_and_evaluate
+outputs:
+- A tuple of the result of the evaluate call to the Estimator and the export results
+  using the specified ExportStrategy. Currently, the return value is undefined for
+  distributed training mode.
+package: tensorflow
+target: train_and_evaluate
+title: tf.estimator.train_and_evaluate
+version: 2.2.0

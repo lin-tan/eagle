@@ -1,0 +1,43 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: when True, will use ceil instead of floor to compute the output shape
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will use ceil instead of floor to compute the output shape
+  count_include_pad:
+    default: 'True'
+    descp: when True, will include the zero-padding in the averaging calculation
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will include the zero PARAM in the averaging calculation
+  kernel_size:
+    descp: the size of the window
+    normalized_descp:
+    - the size of the window
+  padding:
+    default: '0'
+    descp: implicit zero padding to be added on both sides
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - implicit zero padding to be added on both sides
+  stride:
+    default: None
+    descp: the stride of the window. Default value is `kernel_size`
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the stride of the window
+    - Default value is PARAM
+inputs:
+  optional:
+  - stride
+  - padding
+  - ceil_mode
+  - count_include_pad
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.AvgPool1d
+package: torch
+target: AvgPool1d
+title: torch.nn.AvgPool1d
+version: 1.5.0

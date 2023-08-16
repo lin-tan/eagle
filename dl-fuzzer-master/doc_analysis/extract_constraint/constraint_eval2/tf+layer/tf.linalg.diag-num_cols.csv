@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The number of columns of the output matrix. If it is not provided, the op assumes the output matrix is a square matrix and infers the matrix size from `d_lower`, `d_upper`, and the innermost dimension of `diagonal`.",-1,prim_dtype,dtype(int),,1
+,"The number of columns of the output matrix. If it is not provided, the op assumes the output matrix is a square matrix and infers the matrix size from `d_lower`, `d_upper`, and the innermost dimension of `diagonal`.",-1,shape,ndim(0),,1
+,"The number of columns of the output matrix. If it is not provided, the op assumes the output matrix is a square matrix and infers the matrix size from `d_lower`, `d_upper`, and the innermost dimension of `diagonal`.",-1,validvalue,"range([0,inf))",,1

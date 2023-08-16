@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.keras.backend.random_bernoulli
+constraints:
+  dtype:
+    default: None
+    descp: String, dtype of returned tensor.
+  p:
+    default: '0.0'
+    descp: A float, 0. <= p <= 1, probability of bernoulli distribution.
+  seed:
+    default: None
+    descp: Integer, random seed.
+  shape:
+    descp: A tuple of integers, the shape of tensor to create.
+inputs:
+  optional:
+  - p
+  - dtype
+  - seed
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/random_bernoulli
+outputs:
+- A tensor.
+package: tensorflow
+target: random_bernoulli
+title: tf.keras.backend.random_bernoulli
+version: 2.3.0

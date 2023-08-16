@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If true, compute full-sized `u` and `v`. If false (the default), compute only the leading `P` singular vectors. Ignored if `compute_uv` is `False`.",False,prim_dtype,dtype(tf.bool),,1
+,"If true, compute full-sized `u` and `v`. If false (the default), compute only the leading `P` singular vectors. Ignored if `compute_uv` is `False`.",False,shape,ndim(0),,1

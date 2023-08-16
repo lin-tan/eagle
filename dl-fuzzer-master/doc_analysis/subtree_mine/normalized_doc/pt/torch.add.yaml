@@ -1,0 +1,44 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: the scalar multiplier for `other`
+    doc_dtype: Number
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the scalar multiplier for PARAM
+    normalized_docdtype: ONE_WORD Number
+  input:
+    descp: the first input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the first input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  other:
+    descp: the second input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second PARAM D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  keyword_only:
+  - alpha
+  - out
+  optional:
+  - alpha
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.add
+package: torch
+target: add
+title: torch.add
+version: 1.5.0

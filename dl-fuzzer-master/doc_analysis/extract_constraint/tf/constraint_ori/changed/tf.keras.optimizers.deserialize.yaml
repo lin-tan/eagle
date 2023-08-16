@@ -1,0 +1,23 @@
+aliases:
+- tf.optimizers.deserialize
+- tf.compat.v1.keras.optimizers.deserialize
+constraints:
+  config:
+    descp: Optimizer configuration dictionary.
+  custom_objects:
+    default: None
+    descp: Optional dictionary mapping names (strings) to custom objects (classes
+      and functions) to be considered during deserialization.
+    structure:
+    - dict
+inputs:
+  optional:
+  - custom_objects
+  required:
+  - config
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/optimizers/deserialize
+outputs: A Keras Optimizer instance.
+package: tensorflow
+target: deserialize
+title: tf.keras.optimizers.deserialize
+version: 2.1.0

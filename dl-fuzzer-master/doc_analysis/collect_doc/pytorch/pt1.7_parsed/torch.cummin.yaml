@@ -1,0 +1,28 @@
+constraints:
+  dim:
+    descp: the dimension to do the operation over
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the result tuple of two output tensors (values, indices)
+    doc_dtype:
+    - tuple
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.cummin.html#torch.cummin#torch.cummin
+package: torch
+ret_type: (Tensor, LongTensor)
+target: cummin
+title: torch.cummin
+version: 1.7.0

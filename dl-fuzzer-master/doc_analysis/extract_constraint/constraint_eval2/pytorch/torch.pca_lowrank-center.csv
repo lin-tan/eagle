@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"if True, center the input tensor, otherwise, assume that the input is centered.",True,prim_dtype,dtype(torch.bool),,1
+bool,"if True, center the input tensor, otherwise, assume that the input is centered.",True,nonprim_dtype,tensor_t(torch.tensor),,1
+bool,"if True, center the input tensor, otherwise, assume that the input is centered.",True,shape,ndim(0),,1

@@ -1,0 +1,83 @@
+constraints:
+  max_output_size:
+    descp: A Tensor of type int32. A scalar integer tensor representing the maximum
+      number of boxes to be selected by non max suppression.
+    dtype:
+    - int
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  overlap_threshold:
+    descp: A Tensor of type float32. A 0-D float tensor representing the threshold
+      for deciding whether boxes overlap too.
+    dtype:
+    - float
+    - tf.bool
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  overlaps:
+    descp: A Tensor of type float32. A 2-D float tensor of shape [num_boxes, num_boxes]
+      representing the n-by-n box overlap values.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '2'
+    shape:
+    - '[num_boxes,num_boxes]'
+    tensor_t:
+    - tf.tensor
+  score_threshold:
+    descp: A Tensor of type float32. A 0-D float tensor representing the threshold
+      for deciding when to remove boxes based on score.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  scores:
+    descp: A Tensor of type float32. A 1-D float tensor of shape [num_boxes] representing
+      a single score corresponding to each box (each row of boxes).
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '1'
+    shape:
+    - '[num_boxes]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- num_boxes
+inputs:
+  optional:
+  - name
+  required:
+  - overlaps
+  - scores
+  - max_output_size
+  - overlap_threshold
+  - score_threshold
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/NonMaxSuppressionWithOverlaps
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: NonMaxSuppressionWithOverlaps
+title: tf.raw_ops.NonMaxSuppressionWithOverlaps
+version: 2.2.0

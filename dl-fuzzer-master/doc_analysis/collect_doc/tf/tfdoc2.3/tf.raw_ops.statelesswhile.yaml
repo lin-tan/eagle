@@ -1,0 +1,41 @@
+constraints:
+  body:
+    descp: A function decorated with @Defun. A function that takes a list of tensors
+      and returns another list of tensors. Both lists have the same types as specified
+      by T.
+  cond:
+    descp: 'A function decorated with @Defun. A function takes ''input'' and returns
+      a tensor. If the tensor is a scalar of non-boolean, the scalar is converted
+      to a boolean according to the following rule: if the scalar is a numerical value,
+      non-zero means True and zero means False; if the scalar is a string, non-empty
+      means True and empty means False. If the tensor is not a scalar, non-emptiness
+      means True and False otherwise. This should only be used when the while condition
+      and body functions do not have stateful ops.'
+  input:
+    descp: A list of Tensor objects. A list of input tensors whose types are T.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    default: '[]'
+    descp: An optional list of shapes (each a tf.TensorShape or list of ints). Defaults
+      to [].
+  parallel_iterations:
+    default: '10'
+    descp: An optional int. Defaults to 10.
+inputs:
+  optional:
+  - output_shapes
+  - parallel_iterations
+  - name
+  required:
+  - input
+  - cond
+  - body
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatelessWhile
+outputs:
+- A list of Tensor objects. Has the same type as input.
+package: tensorflow
+target: StatelessWhile
+title: tf.raw_ops.StatelessWhile
+version: 2.3.0

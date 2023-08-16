@@ -1,0 +1,48 @@
+constraints:
+  contrast_factor:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  images:
+    descp: 'A Tensor. Must be one of the following types: uint8, int8, int16, int32,
+      int64, float32, float64.'
+    dtype:
+    - numeric
+    tensor_t:
+    - tf.tensor
+  max_value:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_value:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - images
+  - contrast_factor
+  - min_value
+  - max_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AdjustContrast
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: AdjustContrast
+title: tf.raw_ops.AdjustContrast
+version: 2.2.0

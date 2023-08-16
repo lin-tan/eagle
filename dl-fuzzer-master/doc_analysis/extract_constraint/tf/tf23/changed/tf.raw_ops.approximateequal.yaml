@@ -1,0 +1,41 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tolerance:
+    default: 1e-05
+    descp: An optional float. Defaults to 1e-05.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64.'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - tolerance
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ApproximateEqual
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: ApproximateEqual
+title: tf.raw_ops.ApproximateEqual
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `[..., samples]` `float32`/`float64` `Tensor` of real-valued signals.",,prim_dtype,"dtype(tf.float32, tf.float64)",,1
+,"A `[..., samples]` `float32`/`float64` `Tensor` of real-valued signals.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `[..., samples]` `float32`/`float64` `Tensor` of real-valued signals.",,shape,"shape([...,samples]), ndim(>1)",,1

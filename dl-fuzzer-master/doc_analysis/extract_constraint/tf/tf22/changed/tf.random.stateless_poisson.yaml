@@ -1,0 +1,62 @@
+aliases:
+- tf.compat.v1.random.stateless_poisson
+constraints:
+  dtype:
+    default: tf.dtypes.int32
+    descp: 'Dtype of the samples (int or float dtypes are permissible, as samples
+      are discrete). Default: int32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  lam:
+    descp: Tensor. The rate parameter "lambda" of the Poisson distribution. Shape
+      must match the rightmost dimensions of shape.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: A shape [2] integer Tensor of seeds to the random number generator.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+  - lam
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/random/stateless_poisson
+outputs:
+- samples: A Tensor of the specified shape filled with random Poisson values. For
+    each i, each samples[..., i] is an independent draw from the Poisson distribution
+    with rate lam[i].
+package: tensorflow
+target: stateless_poisson
+title: tf.random.stateless_poisson
+version: 2.2.0

@@ -1,0 +1,23 @@
+constraints:
+  input:
+    descp: A Tensor or SparseTensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_type:
+    default: tf.dtypes.int32
+    descp: (Optional) The specified non-quantized numeric output type of the operation.
+      Defaults to tf.int32.
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/size
+outputs:
+- A Tensor of type out_type. Defaults to tf.int32.
+package: tensorflow
+target: size
+title: tf.size
+version: 2.2.0

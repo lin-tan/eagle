@@ -1,0 +1,79 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix} of shape (n_samples, n_features) Training
+      vectors, where n_samples is the number of samples and n_features is the number
+      of features.'
+    dtype:
+    - int
+    ndim:
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples,n_features]'
+  comment:
+    default: None
+    descp: string, optional Comment to insert at the top of the file. This should
+      be either a Unicode string, which will be encoded as UTF-8, or an ASCII byte
+      string. If a comment is given, then it will be preceded by one that identifies
+      the file as having been dumped by scikit-learn. Note that not all tools grok
+      comments in SVMlight files.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  f:
+    descp: string or file-like in binary mode If string, specifies the path that will
+      contain the data. If file-like, data will be written to f. f should be opened
+      in binary mode.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  multilabel:
+    default: 'False'
+    descp: boolean, optional Samples may have several labels each (see https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multilabel.html)
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  query_id:
+    default: None
+    descp: array-like of shape (n_samples,) Array containing pairwise preference constraints
+      (qid in svmlight format).
+    dtype:
+    - int
+  y:
+    descp: '{array-like, sparse matrix}, shape = [n_samples (, n_labels)] Target values.
+      Class labels must be an integer or float, or array-like objects of integer or
+      float for multilabel classifications.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  zero_based:
+    default: 'True'
+    descp: boolean, optional Whether column indices should be written zero-based (True)
+      or one-based (False).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - zero_based
+  - comment
+  - query_id
+  - multilabel
+  required:
+  - X
+  - y
+  - f
+link: ''
+package: scikit-learn
+target: dump_svmlight_file
+title: sklearn.datasets.dump_svmlight_file
+version: 0.24.X

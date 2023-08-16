@@ -1,0 +1,51 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64. 1-D or higher
+      with last dimension at least k.'
+    ndim:
+    - '>=1'
+    tensor_t:
+    - tf.tensor
+  k:
+    descp: A Tensor of type int32. 0-D. Number of top elements to look for along the
+      last dimension (along each row for matrices).
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sorted:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true the resulting k elements will
+      be sorted by the values in descending order.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - sorted
+  - name
+  required:
+  - input
+  - k
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TopKV2
+outputs:
+- A tuple of Tensor objects (values, indices).
+- values: A Tensor. Has the same type as input.
+- indices: A Tensor of type int32.
+package: tensorflow
+target: TopKV2
+title: tf.raw_ops.TopKV2
+version: 2.2.0

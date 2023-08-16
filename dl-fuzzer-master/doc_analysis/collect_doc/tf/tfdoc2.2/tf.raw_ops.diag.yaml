@@ -1,0 +1,20 @@
+constraints:
+  diagonal:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, int32, int64, complex64, complex128. Rank k tensor where k is at most
+      1.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Diag
+outputs:
+- A Tensor. Has the same type as diagonal.
+package: tensorflow
+target: Diag
+title: tf.raw_ops.Diag
+version: 2.2.0

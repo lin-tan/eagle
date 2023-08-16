@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `string`. Defaults to `""local://""`. Either the special value `local://` or a path to a file containing a serialized `FileDescriptorSet`.",local://,prim_dtype,dtype(tf.string),,1
+,"An optional `string`. Defaults to `""local://""`. Either the special value `local://` or a path to a file containing a serialized `FileDescriptorSet`.",local://,shape,ndim(0),,1

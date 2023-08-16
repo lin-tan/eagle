@@ -1,0 +1,170 @@
+constraints:
+  H:
+    default: None
+    descp: array-like, shape (n_components, n_features) If init='custom', it is used
+      as initial guess for the solution. If update_H=False, it is used as a constant,
+      to solve for W only.
+  W:
+    default: None
+    descp: array-like, shape (n_samples, n_components) If init='custom', it is used
+      as initial guess for the solution.
+  X:
+    descp: array-like, shape (n_samples, n_features) Constant matrix.
+    dtype:
+    - numeric
+  alpha:
+    default: '0.0'
+    descp: 'double, default: 0. Constant that multiplies the regularization terms.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  beta_loss:
+    default: frobenius
+    descp: float or string, default 'frobenius' String must be in {'frobenius', 'kullback-leibler',
+      'itakura-saito'}. Beta divergence to be minimized, measuring the distance between
+      X and the dot product WH. Note that values different from 'frobenius' (or 2)
+      and 'kullback-leibler' (or 1) lead to significantly slower fits. Note that for
+      beta_loss <= 0 (or 'itakura-saito'), the input matrix X cannot contain zeros.
+      Used only in 'mu' solver.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  init:
+    default: warn
+    descp: 'None | ''random'' | ''nndsvd'' | ''nndsvda'' | ''nndsvdar'' | ''custom''
+      Method used to initialize the procedure. Default: ''random''. The default value
+      will change from ''random'' to None in version 0.23 to make it consistent with
+      decomposition.NMF. Valid options: - None: ''nndsvd'' if n_components < n_features,
+      otherwise ''random''. - ''random'': non-negative random matrices, scaled with:
+      sqrt(X.mean() / n_components) - ''nndsvd'': Nonnegative Double Singular Value
+      Decomposition (NNDSVD) initialization (better for sparseness) - ''nndsvda'':
+      NNDSVD with zeros filled with the average of X (better when sparsity is not
+      desired) - ''nndsvdar'': NNDSVD with zeros filled with small random values (generally
+      faster, less accurate alternative to NNDSVDa for when sparsity is not desired)
+      - ''custom'': use custom matrices W and H'
+    dtype:
+    - string
+    enum:
+    - custom
+    - nndsvd
+    - nndsvda
+    - nndsvdar
+    - random
+  l1_ratio:
+    default: '0.0'
+    descp: 'double, default: 0. The regularization mixing parameter, with 0 <= l1_ratio
+      <= 1. For l1_ratio = 0 the penalty is an elementwise L2 penalty (aka Frobenius
+      Norm). For l1_ratio = 1 it is an elementwise L1 penalty. For 0 < l1_ratio <
+      1, the penalty is a combination of L1 and L2.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  max_iter:
+    default: '200'
+    descp: 'integer, default: 200 Maximum number of iterations before timing out.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n_components:
+    default: None
+    descp: integer Number of components, if n_components is not set all features are
+      kept.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: 'int, RandomState instance or None, optional, default: None If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  regularization:
+    default: None
+    descp: '''both'' | ''components'' | ''transformation'' | None Select whether the
+      regularization affects the components (H), the transformation (W), both or none
+      of them.'
+    dtype:
+    - boolean
+    - string
+    enum:
+    - both
+    - components
+    - transformation
+    ndim:
+    - '1'
+    shape:
+    - '[&h]'
+    - '[&w]'
+  shuffle:
+    default: 'False'
+    descp: 'boolean, default: False If true, randomize the order of coordinates in
+      the CD solver.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  solver:
+    default: cd
+    descp: '''cd'' | ''mu'' Numerical solver to use: - ''cd'' is a Coordinate Descent
+      solver that uses Fast Hierarchical Alternating Least Squares (Fast HALS). -
+      ''mu'' is a Multiplicative Update solver.'
+    dtype:
+    - string
+    enum:
+    - cd
+    - mu
+  tol:
+    default: '0.0001'
+    descp: 'float, default: 1e-4 Tolerance of the stopping condition.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  update_H:
+    default: 'True'
+    descp: 'boolean, default: True Set to True, both W and H will be estimated from
+      initial guesses. Set to False, only W will be estimated.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  verbose:
+    default: '0'
+    descp: 'integer, default: 0 The verbosity level.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - W
+  - H
+  - n_components
+  - init
+  - update_H
+  - solver
+  - beta_loss
+  - tol
+  - max_iter
+  - alpha
+  - l1_ratio
+  - regularization
+  - random_state
+  - verbose
+  - shuffle
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: non_negative_factorization
+title: sklearn.decomposition.non_negative_factorization
+version: 0.24.X

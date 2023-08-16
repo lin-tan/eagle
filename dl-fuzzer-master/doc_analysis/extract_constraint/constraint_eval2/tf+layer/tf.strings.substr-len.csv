@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor`. Must have the same type as `pos`. Scalar defining the number of characters to include in each substring,,prim_dtype,dtype(dtype:&pos),,1
+,A `Tensor`. Must have the same type as `pos`. Scalar defining the number of characters to include in each substring,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A `Tensor`. Must have the same type as `pos`. Scalar defining the number of characters to include in each substring,,shape,ndim(0),,1
+,A `Tensor`. Must have the same type as `pos`. Scalar defining the number of characters to include in each substring,,validvalue,"range([0,inf))",,1

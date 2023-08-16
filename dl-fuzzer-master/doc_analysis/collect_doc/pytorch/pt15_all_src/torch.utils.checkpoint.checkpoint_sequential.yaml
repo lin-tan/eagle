@@ -1,0 +1,29 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  functions:
+    descp: A `torch.nn.Sequential` or the list of modules or functions (comprising
+      the model) to run sequentially.
+  input:
+    descp: A Tensor that is input to `functions`
+  preserve_rng_state:
+    default: None
+    descp: Omit stashing and restoring the RNG state during each checkpoint.
+    doc_dtype:
+    - bool
+    - default=True
+  segments:
+    descp: Number of chunks to create in the model
+inputs:
+  optional:
+  - preserve_rng_state
+  required:
+  - functions
+  - segments
+  - input
+  - '**kwargs'
+link: https://pytorch.org/docs/stable/checkpoint.html#torch.utils.checkpoint.checkpoint_sequential
+package: torch
+target: checkpoint_sequential
+title: torch.utils.checkpoint.checkpoint_sequential
+version: 1.5.0

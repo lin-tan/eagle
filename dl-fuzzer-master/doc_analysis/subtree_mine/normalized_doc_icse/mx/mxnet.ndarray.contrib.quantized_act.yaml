@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  act_type:
+    default: _Null
+    descp: Activation function to be applied.
+    doc_dtype: '{''relu'', ''sigmoid'', ''softrelu'', ''softsign'', ''tanh''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Activation function to be applied
+    normalized_docdtype: QSTR required
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_data:
+    default: None
+    descp: Maximum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Minimum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - min_data
+  - max_data
+  - act_type
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.quantized_act
+package: mxnet
+target: quantized_act
+title: mxnet.ndarray.contrib.quantized_act
+version: 1.6.0

@@ -1,0 +1,38 @@
+constraints:
+  ctx:
+    default: None
+    descp: Device context (default is the current default context).
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context BSTR
+    normalized_docdtype: Context, optional
+  dtype:
+    default: None
+    descp: The data type of the output array. The default dtype is `source_array.dtype`
+      if source_array is an NDArray, float32 otherwise.
+    doc_dtype: str or numpy.dtype, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The data type of the output D_STRUCTURE
+    - The default dtype is PARAM dtype if PARAM is an D_STRUCTURE, D_TYPE otherwise
+    normalized_docdtype: D_TYPE, optional
+  source_array:
+    descp: An object exposing the array interface, an object whose __array__ method
+      returns an array, or any (nested) sequence.
+    doc_dtype: array_like
+    normalized_descp:
+    - An object exposing the D_STRUCTURE interface, an object whose array method returns
+      an D_STRUCTURE, or any BSTR D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - ctx
+  - dtype
+  required:
+  - source_array
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/utils/index.html#mxnet.ndarray.utils.array
+package: mxnet
+target: array
+title: mxnet.ndarray.utils.array
+version: 1.6.0

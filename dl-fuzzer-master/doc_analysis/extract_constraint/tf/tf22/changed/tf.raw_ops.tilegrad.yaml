@@ -1,0 +1,31 @@
+constraints:
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  multiples:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - multiples
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TileGrad
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: TileGrad
+title: tf.raw_ops.TileGrad
+version: 2.2.0

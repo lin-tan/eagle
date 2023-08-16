@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,whether A  should be transposed before being sent into the solver. Default: `False`.,False,prim_dtype,dtype(torch.bool),,1
+bool,whether A  should be transposed before being sent into the solver. Default: `False`.,False,shape,ndim(0),,1

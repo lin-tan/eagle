@@ -1,0 +1,49 @@
+constraints:
+  X:
+    descp: array-like of shape (n_samples, n_features) The data.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  axis:
+    default: '0'
+    descp: int, default=0 Axis used to scale along. If 0, independently scale each
+      feature, otherwise (if 1) scale each sample.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  copy:
+    default: 'True'
+    descp: bool, default=True Set to False to perform inplace scaling and avoid a
+      copy (if the input is already a numpy array).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  feature_range:
+    default: (0, 1)
+    descp: tuple (min, max), default=(0, 1) Desired range of transformed data.
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple:(min,max)
+dependency:
+- max
+- min
+- n_features
+- n_samples
+inputs:
+  optional:
+  - feature_range
+  - axis
+  - copy
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: minmax_scale
+title: sklearn.preprocessing.minmax_scale
+version: 0.24.X

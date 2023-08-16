@@ -1,0 +1,28 @@
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.half, tf.bfloat16, tf.float32, tf.float64.
+      Defaults to tf.float32. The type of the output.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatelessRandomUniform
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatelessRandomUniform
+title: tf.raw_ops.StatelessRandomUniform
+version: 2.2.0

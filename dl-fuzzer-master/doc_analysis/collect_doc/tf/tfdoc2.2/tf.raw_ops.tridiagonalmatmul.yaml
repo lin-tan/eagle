@@ -1,0 +1,33 @@
+constraints:
+  maindiag:
+    descp: A Tensor. Must have the same type as superdiag. Tensor of shape [..., 1,
+      M], representing main diagonals of tri-diagonal matrices to the left of multiplication.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rhs:
+    descp: A Tensor. Must have the same type as superdiag. Tensor of shape [..., M,
+      N], representing MxN matrices to the right of multiplication.
+  subdiag:
+    descp: A Tensor. Must have the same type as superdiag. Tensor of shape [..., 1,
+      M], representing subdiagonals of tri-diagonal matrices to the left of multiplication.
+      First element is ignored.
+  superdiag:
+    descp: 'A Tensor. Must be one of the following types: float64, float32, complex64,
+      complex128. Tensor of shape [..., 1, M], representing superdiagonals of tri-diagonal
+      matrices to the left of multiplication. Last element is ignored.'
+inputs:
+  optional:
+  - name
+  required:
+  - superdiag
+  - maindiag
+  - subdiag
+  - rhs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TridiagonalMatMul
+outputs:
+- A Tensor. Has the same type as superdiag.
+package: tensorflow
+target: TridiagonalMatMul
+title: tf.raw_ops.TridiagonalMatMul
+version: 2.2.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=100) The number of samples.",100,prim_dtype,dtype(int),1,1
+,"int, optional (default=100) The number of samples.",100,shape,ndim(0),1,1
+,"int, optional (default=100) The number of samples.",100,validvalue,"range([0,inf))",1,1

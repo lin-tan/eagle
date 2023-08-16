@@ -1,0 +1,24 @@
+constraints:
+  stride:
+    default: _Null
+    descp: 'Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each
+      dimension.'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '2'
+    - '3'
+    shape:
+    - '[d,h,w]'
+    - '[h,w]'
+    - '[w]'
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+title: mxnet.ndarray.contrib.quantized_conv

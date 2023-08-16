@@ -1,0 +1,26 @@
+constraints:
+  labels_pred:
+    descp: array-like of shape (n_samples,) Cluster labels to evaluate
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  labels_true:
+    descp: int array, shape = [n_samples] Ground truth class labels to be used as
+      a reference
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: scikit-learn
+target: adjusted_rand_score
+title: sklearn.metrics.adjusted_rand_score
+version: 0.24.X

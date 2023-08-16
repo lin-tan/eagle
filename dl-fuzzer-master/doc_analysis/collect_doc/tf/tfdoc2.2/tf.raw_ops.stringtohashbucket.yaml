@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_buckets:
+    descp: An int that is >= 1. The number of buckets.
+  string_tensor:
+    descp: A Tensor of type string.
+inputs:
+  optional:
+  - name
+  required:
+  - string_tensor
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StringToHashBucket
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: StringToHashBucket
+title: tf.raw_ops.StringToHashBucket
+version: 2.2.0

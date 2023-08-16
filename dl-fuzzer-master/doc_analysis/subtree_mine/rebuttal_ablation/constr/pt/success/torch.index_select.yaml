@@ -1,0 +1,81 @@
+constraints:
+  dim:
+    descp: the dimension in which we index
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+  index:
+    descp: the 1-D tensor containing the indices to index
+    doc_dtype: LongTensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - dim
+  - index
+link: https://pytorch.org/docs/stable/torch.html#torch.index_select
+package: torch
+ret_type: Tensor
+target: index_select
+title: torch.index_select
+version: 1.5.0

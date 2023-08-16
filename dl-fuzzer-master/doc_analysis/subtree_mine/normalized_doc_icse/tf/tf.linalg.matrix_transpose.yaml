@@ -1,0 +1,36 @@
+aliases:
+- tf.compat.v1.linalg.matrix_transpose
+- tf.compat.v1.linalg.transpose
+- tf.compat.v1.matrix_transpose
+constraints:
+  a:
+    descp: A `Tensor` with `rank >= 2`.
+    normalized_descp:
+    - A D_STRUCTURE with rank REXPR
+  conjugate:
+    default: 'False'
+    descp: Optional bool. Setting it to `True` is mathematically equivalent to tf.math.conj(tf.linalg.matrix_transpose(input)).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Optional D_TYPE
+    - Setting it to CONSTANT_BOOL is mathematically equivalent to tf math conj BSTR
+  name:
+    default: matrix_transpose
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for the operation BSTR
+exceptions:
+- ValueError: If `a` is determined statically to have `rank < 2`.
+inputs:
+  optional:
+  - name
+  - conjugate
+  required:
+  - a
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/matrix_transpose
+outputs: A transposed batch matrix `Tensor`.
+package: tensorflow
+target: matrix_transpose
+title: tf.linalg.matrix_transpose
+version: 2.1.0

@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.autograph.experimental.set_loop_options
+constraints:
+  maximum_iterations:
+    default: UNSPECIFIED
+    descp: Allows limiting the total number of iterations executed by the loop.
+  parallel_iterations:
+    default: UNSPECIFIED
+    descp: The maximum number of iterations allowed to run in parallel at any given
+      time. Note that this does not guarantee parallel execution.
+  shape_invariants:
+    default: UNSPECIFIED
+    descp: Allows controlling the argument with the same name passed to tf.while_loop.
+      Unlike tf.while_loop, this is a list of (tensor, shape) pairs.
+  swap_memory:
+    default: UNSPECIFIED
+    descp: Whether to store intermediate values needed for gradients on the CPU instead
+      of GPU.
+inputs:
+  optional:
+  - parallel_iterations
+  - swap_memory
+  - maximum_iterations
+  - shape_invariants
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/autograph/experimental/set_loop_options
+package: tensorflow
+target: set_loop_options
+title: tf.autograph.experimental.set_loop_options
+version: 2.3.0

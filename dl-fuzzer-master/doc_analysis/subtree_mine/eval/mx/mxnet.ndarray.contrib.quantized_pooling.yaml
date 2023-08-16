@@ -1,0 +1,29 @@
+constraints:
+  kernel:
+    default: _Null
+    descp: 'Pooling kernel size: (y, x) or (d, y, x)'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+    dtype:
+    - int
+    ndim:
+    - '2'
+    - '3'
+    shape:
+    - '[d,y,x]'
+    - '[y,x]'
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.contrib.quantized_pooling

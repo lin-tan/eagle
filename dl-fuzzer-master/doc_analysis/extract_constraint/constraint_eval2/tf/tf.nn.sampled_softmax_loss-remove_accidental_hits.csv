@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `bool`.  whether to remove ""accidental hits"" where a sampled class equals one of the target classes.  Default is True.",True,prim_dtype,dtype(tf.bool),,1
+,"A `bool`.  whether to remove ""accidental hits"" where a sampled class equals one of the target classes.  Default is True.",True,shape,ndim(0),,1

@@ -1,0 +1,30 @@
+constraints:
+  mask:
+    descp: binary mask to be applied to the parameter.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype:
+    - nn.Module
+  name:
+    descp: parameter name within `module` on which pruning will act.
+    doc_dtype:
+    - str
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - module
+  - name
+  - mask
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.prune.custom_from_mask.html#torch.nn.utils.prune.custom_from_mask#torch.nn.utils.prune.custom_from_mask
+package: torch
+target: custom_from_mask
+title: torch.nn.utils.prune.custom_from_mask
+version: 1.9.0

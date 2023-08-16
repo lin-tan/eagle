@@ -1,0 +1,9 @@
+constraints:
+  rhs:
+    default: None
+    descp: second input
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.sparse.elemwise_add

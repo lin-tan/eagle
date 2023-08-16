@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  momentum:
+    default: _Null
+    descp: The momentum for running average
+    doc_dtype: float, optional, default=0.899999976
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The momentum for running average
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  penalty:
+    default: _Null
+    descp: The tradeoff parameter for the sparseness penalty
+    doc_dtype: float, optional, default=0.00100000005
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The tradeoff parameter for the sparseness penalty
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  sparseness_target:
+    default: _Null
+    descp: The sparseness target
+    doc_dtype: float, optional, default=0.100000001
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The sparseness target
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+inputs:
+  optional:
+  - data
+  - sparseness_target
+  - penalty
+  - momentum
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.IdentityAttachKLSparseReg
+package: mxnet
+target: IdentityAttachKLSparseReg
+title: mxnet.ndarray.IdentityAttachKLSparseReg
+version: 1.6.0

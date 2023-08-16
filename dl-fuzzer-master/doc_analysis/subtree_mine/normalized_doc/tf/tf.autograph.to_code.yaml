@@ -1,0 +1,31 @@
+constraints:
+  entity:
+    descp: Python callable or class to convert.
+    normalized_descp:
+    - Python callable or class to convert
+  experimental_optional_features:
+    default: None
+    descp: '`None`, a tuple of, or a single`tf.autograph.experimental.Feature` value.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - QSTR , a D_STRUCTURE of, or a single tf autograph experimental Feature value
+  recursive:
+    default: 'True'
+    descp: Whether to recursively convert any functions that the converted function
+      may call.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to recursively convert any functions that the converted function may
+      call
+inputs:
+  optional:
+  - recursive
+  - experimental_optional_features
+  required:
+  - entity
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/autograph/to_code
+outputs: The converted code as string.
+package: tensorflow
+target: to_code
+title: tf.autograph.to_code
+version: 2.1.0

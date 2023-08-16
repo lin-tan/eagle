@@ -1,0 +1,61 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  A:
+    default: None
+    descp: Tensor of triangular matrices stored as vectors
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of triangular matrices stored as vectors
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lower:
+    default: _Null
+    descp: Refer to the lower triangular matrix if lower=true, refer to the upper
+      otherwise. Only relevant when offset=0
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Refer to the lower triangular matrix if lower CONSTANT_BOOL refer to the upper
+      otherwise
+    - Only relevant when PARAM CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  offset:
+    default: _Null
+    descp: Offset of the diagonal versus the main diagonal. 0 corresponds to the main
+      diagonal, a negative/positive value to diagonals below/above the main diagonal.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Offset of the diagonal versus the main diagonal
+    - CONSTANT_NUM corresponds to the main diagonal a negative positive value to diagonals
+      below above the main diagonal
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - A
+  - offset
+  - lower
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/linalg/index.html#mxnet.ndarray.linalg.maketrian
+package: mxnet
+target: maketrian
+title: mxnet.ndarray.linalg.maketrian
+version: 1.6.0

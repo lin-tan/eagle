@@ -1,0 +1,78 @@
+constraints:
+  a_indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2-D. The indices
+      of the SparseTensor, size [nnz, 2] Matrix.'
+    dtype:
+    - int
+    ndim:
+    - '2'
+    shape:
+    - '[nnz,2]'
+    tensor_t:
+    - tf.tensor
+  a_shape:
+    descp: A Tensor of type int64. 1-D. The shape of the SparseTensor, size [2] Vector.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  a_values:
+    descp: A Tensor. 1-D. The values of the SparseTensor, size [nnz] Vector.
+    ndim:
+    - '1'
+    shape:
+    - '[nnz]'
+    tensor_t:
+    - tf.tensor
+  adjoint_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Use the adjoint of A in the matrix
+      multiply. If A is complex, this is transpose(conj(A)). Otherwise it's transpose(A).
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  adjoint_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Use the adjoint of B in the matrix
+      multiply. If B is complex, this is transpose(conj(B)). Otherwise it's transpose(B).
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  b:
+    descp: A Tensor. Must have the same type as a_values. 2-D. A dense Matrix.
+    dtype:
+    - dtype:&a_values
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+dependency:
+- nnz
+inputs:
+  optional:
+  - adjoint_a
+  - adjoint_b
+  - name
+  required:
+  - a_indices
+  - a_values
+  - a_shape
+  - b
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseTensorDenseMatMul
+outputs:
+- A Tensor. Has the same type as a_values.
+package: tensorflow
+target: SparseTensorDenseMatMul
+title: tf.raw_ops.SparseTensorDenseMatMul
+version: 2.3.0

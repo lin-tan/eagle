@@ -1,0 +1,20 @@
+constraints:
+  input:
+    descp: An `N+1` dimensional potentially ragged integer tensor with shape`[D1...DN,
+      num_chars]`.
+    dtype:
+    - int
+    ndim:
+    - '>=1'
+    shape:
+    - '[...,num_chars]'
+    tensor_t:
+    - tf.tensor
+  output_encoding:
+    descp: Unicode encoding that should be used to encode each codepoint sequence.  Can
+      be `"UTF-8"`, `"UTF-16-BE"`, or `"UTF-32-BE"`.
+    enum:
+    - UTF-8
+    - UTF-16-BE
+    - UTF-32-BE
+title: tf.strings.unicode_encode

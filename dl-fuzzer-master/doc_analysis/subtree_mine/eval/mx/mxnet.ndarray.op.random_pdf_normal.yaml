@@ -1,0 +1,20 @@
+constraints:
+  is_log:
+    default: _Null
+    descp: If set, compute the density of the log-probability instead of the probability.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  sample:
+    default: None
+    descp: Samples from the distributions.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.random_pdf_normal

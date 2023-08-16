@@ -1,0 +1,97 @@
+aliases:
+- tf.compat.v1.manip.scatter_nd
+- tf.compat.v1.scatter_nd
+constraints:
+  indices:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. Index
+      tensor.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: A `Tensor`. Must have the same type as `indices`. 1-D. The shape of the
+      resulting tensor.
+    dtype:
+    - '&indices'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '&indices'
+    - '0'
+    - '1'
+    - '>=1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&indices'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  updates:
+    descp: A `Tensor`. Updates to scatter into output.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - updates
+  - shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/scatter_nd
+outputs: A `Tensor`. Has the same type as `updates`.
+package: tensorflow
+target: scatter_nd
+title: tf.scatter_nd
+version: 2.1.0

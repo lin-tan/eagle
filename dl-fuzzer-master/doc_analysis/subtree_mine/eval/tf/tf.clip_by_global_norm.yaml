@@ -1,0 +1,12 @@
+constraints:
+  use_norm:
+    default: None
+    descp: A 0-D (scalar) `Tensor` of type `float` (optional). The global norm to
+      use. If not provided, `global_norm()` is used to compute the norm.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+title: tf.clip_by_global_norm

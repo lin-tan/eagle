@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional maximum number of iterations of the while loop to run.  If provided, the `cond` output is AND-ed with an additional condition ensuring the number of iterations executed is no greater than`maximum_iterations`.",None,prim_dtype,dtype(int),,1
+,"Optional maximum number of iterations of the while loop to run.  If provided, the `cond` output is AND-ed with an additional condition ensuring the number of iterations executed is no greater than`maximum_iterations`.",None,shape,ndim(0),,1
+,"Optional maximum number of iterations of the while loop to run.  If provided, the `cond` output is AND-ed with an additional condition ensuring the number of iterations executed is no greater than`maximum_iterations`.",None,validvalue,"range([0,inf))",,1

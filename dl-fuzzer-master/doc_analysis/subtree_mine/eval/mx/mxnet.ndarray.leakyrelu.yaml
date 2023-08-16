@@ -1,0 +1,9 @@
+constraints:
+  data:
+    default: None
+    descp: Input data to activation function.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.LeakyReLU

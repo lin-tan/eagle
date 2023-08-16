@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"ParameterDict, None","`ParameterDict` for sharing weights with the new `Block`. For example, if you want `dense1` to share `dense0`'s weights, you can do: dense0 = nn.Dense(20) dense1 = nn.Dense(20, params=dense0.collect_params())   ",None,,,0,0

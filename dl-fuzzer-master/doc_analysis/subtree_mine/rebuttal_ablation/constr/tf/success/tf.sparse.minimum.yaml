@@ -1,0 +1,53 @@
+aliases:
+- tf.compat.v1.sparse.minimum
+- tf.compat.v1.sparse_minimum
+constraints:
+  name:
+    default: None
+    descp: optional name of the operation.
+    dtype:
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  sp_a:
+    descp: a `SparseTensor` operand whose dtype is real, and indices lexicographically
+      ordered.
+  sp_b:
+    descp: the other `SparseTensor` operand with the same requirements (and the same
+      shape).
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - same
+    - shape)
+    - the
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (and_the_same_shape)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - sp_a
+  - sp_b
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/sparse/minimum
+outputs:
+- output: the output SparseTensor.
+package: tensorflow
+target: minimum
+title: tf.sparse.minimum
+version: 2.1.0

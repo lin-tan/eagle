@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,Vector of valid sequence lengths for each element in batch. (Only used if use_sequence_length kwarg is True),None,prim_dtype,dtype(int),,1
+NDArray,Vector of valid sequence lengths for each element in batch. (Only used if use_sequence_length kwarg is True),None,nonprim_dtype,structure(ndarray),,1
+NDArray,Vector of valid sequence lengths for each element in batch. (Only used if use_sequence_length kwarg is True),None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,7 @@
+constraints:
+  kernel_constraint:
+    default: None
+    descp: 'Constraint function applied to the `kernel` weights matrix. Default: `None`.'
+    enum:
+    - 'None'
+title: tf.keras.layers.LSTMCell

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"A boolean value indicating whether the NumPy-shape semantics should be turned on or off. When this flag is set to True, zero-size and zero-dim shapes are all valid shapes in shape inference process, instead of treated as unknown shapes in legacy mode.",True,prim_dtype,"dtype(boolean, int)",,1
+bool,"A boolean value indicating whether the NumPy-shape semantics should be turned on or off. When this flag is set to True, zero-size and zero-dim shapes are all valid shapes in shape inference process, instead of treated as unknown shapes in legacy mode.",True,shape,"ndim(0, 1)",,1
+bool,"A boolean value indicating whether the NumPy-shape semantics should be turned on or off. When this flag is set to True, zero-size and zero-dim shapes are all valid shapes in shape inference process, instead of treated as unknown shapes in legacy mode.",True,validvalue,"range([0,inf))",,1

@@ -1,0 +1,17 @@
+constraints:
+  tf_tensor:
+    descp: Tensorflow eager tensor, to be converted to dlpack capsule.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - tf_tensor
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/experimental/dlpack/to_dlpack
+outputs:
+- A PyCapsule named as dltensor, which shares the underlying memory to other framework.
+  This PyCapsule can be consumed only once.
+package: tensorflow
+target: to_dlpack
+title: tf.experimental.dlpack.to_dlpack
+version: 2.3.0

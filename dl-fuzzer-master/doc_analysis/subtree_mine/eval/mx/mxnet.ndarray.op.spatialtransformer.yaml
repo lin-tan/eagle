@@ -1,0 +1,25 @@
+constraints:
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+  target_shape:
+    default: _Null
+    descp: 'output shape(h, w) of spatial transformer: (y, x)'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[0,0]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple
+title: mxnet.ndarray.op.SpatialTransformer

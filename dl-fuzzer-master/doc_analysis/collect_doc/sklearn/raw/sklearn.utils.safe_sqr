@@ -1,0 +1,14 @@
+sklearn.utils.safe_sqr = safe_sqr(X, copy=True)
+    Element wise squaring of array-likes and sparse matrices.
+    
+    Parameters
+    ----------
+    X : array like, matrix, sparse matrix
+    
+    copy : boolean, optional, default True
+        Whether to create a copy of X and operate on it or to perform
+        inplace computation (default behaviour).
+    
+    Returns
+    -------
+    X ** 2 : element wise square

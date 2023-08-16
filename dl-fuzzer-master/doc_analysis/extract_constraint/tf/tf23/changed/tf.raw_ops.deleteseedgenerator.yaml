@@ -1,0 +1,31 @@
+constraints:
+  deleter:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - deleter
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DeleteSeedGenerator
+outputs:
+- The created Operation.
+package: tensorflow
+target: DeleteSeedGenerator
+title: tf.raw_ops.DeleteSeedGenerator
+version: 2.3.0

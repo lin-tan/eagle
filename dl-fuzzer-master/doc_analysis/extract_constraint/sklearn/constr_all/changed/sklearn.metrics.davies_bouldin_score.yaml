@@ -1,0 +1,18 @@
+constraints:
+  X:
+    descp: array-like, shape (``n_samples``, ``n_features``) List of ``n_features``-dimensional
+      data points. Each row corresponds to a single data point.
+    ndim:
+    - '1'
+  labels:
+    descp: array-like, shape (``n_samples``,) Predicted labels for each sample.
+inputs:
+  optional: []
+  required:
+  - X
+  - labels
+link: ''
+package: sklearn
+target: davies_bouldin_score
+title: sklearn.metrics.davies_bouldin_score
+version: 0.24.2

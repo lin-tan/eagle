@@ -1,0 +1,38 @@
+constraints:
+  X:
+    descp: 'array-like, sparse-matrix, list, pandas.DataFrame, pandas.Series Data
+      from which to sample rows, items or columns. `list` are only supported when
+      `axis=0`. indices : bool, int, str, slice, array-like - If `axis=0`, boolean
+      and integer array-like, integer slice, and scalar integer are supported. - If
+      `axis=1`: - to select a single column, `indices` can be of `int` type for all
+      `X` types and `str` only for dataframe. The selected subset will be 1D, unless
+      `X` is a sparse matrix in which case it will be 2D. - to select multiples columns,
+      `indices` can be one of the following: `list`, `array`, `slice`. The type used
+      in these containers can be one of the following: `int`, ''bool'' and `str`.
+      However, `str` is only supported when `X` is a dataframe. The selected subset
+      will be 2D. axis : int, default=0 The axis along which `X` will be subsampled.
+      `axis=0` will select rows while `axis=1` will select columns.'
+    dtype:
+    - int
+  axis:
+    default: '0'
+    descp: ''
+    dtype:
+    - int
+    ndim:
+    - '0'
+  indices:
+    descp: ''
+    dtype:
+    - int
+inputs:
+  optional:
+  - axis
+  required:
+  - X
+  - indices
+link: ''
+package: scikit-learn
+target: _safe_indexing
+title: sklearn.utils._safe_indexing
+version: 0.24.X

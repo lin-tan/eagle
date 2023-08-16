@@ -1,0 +1,13 @@
+constraints:
+  transpose:
+    default: _Null
+    descp: Use transpose of input matrix.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.linalg_syrk

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+str,"The quantized destination type for input data. Currently support 'int8' , 'uint8' and 'auto'. 'auto' means automatically select output type according to calibration result. Default value is 'int8'.",int8,prim_dtype,"dtype(numpy.dtype, string)",,1
+str,"The quantized destination type for input data. Currently support 'int8' , 'uint8' and 'auto'. 'auto' means automatically select output type according to calibration result. Default value is 'int8'.",int8,shape,ndim(0),,1
+str,"The quantized destination type for input data. Currently support 'int8' , 'uint8' and 'auto'. 'auto' means automatically select output type according to calibration result. Default value is 'int8'.",int8,validvalue,"enum(auto, int8, uint8)",,1

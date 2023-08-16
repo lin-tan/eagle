@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional",The device id of the device. device_id is not needed for CPU. This is included to make interface compatible with GPU.,0,prim_dtype,dtype(int),,1
+"int, optional",The device id of the device. device_id is not needed for CPU. This is included to make interface compatible with GPU.,0,shape,ndim(0),,1
+"int, optional",The device id of the device. device_id is not needed for CPU. This is included to make interface compatible with GPU.,0,validvalue,"range([0,inf))",,1

@@ -1,0 +1,13 @@
+constraints:
+  high:
+    default: _Null
+    descp: Upper bound of the distribution.
+    doc_dtype:
+    - float
+    - optional
+    - default=1
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.random_uniform

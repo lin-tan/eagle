@@ -1,0 +1,65 @@
+constraints:
+  client_terminated:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If set to true, this indicates that
+      the node was added to the graph as a result of a client-side feed or fetch of
+      Tensor data, in which case the corresponding send or recv is expected to be
+      managed locally by the caller.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  recv_device:
+    descp: A string. The name of the device receiving the tensor.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  send_device:
+    descp: A string. The name of the device sending the tensor.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  send_device_incarnation:
+    descp: An int. The current incarnation of send_device.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  tensor_name:
+    descp: A string. The name of the tensor to receive.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor_type:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - client_terminated
+  - name
+  required:
+  - tensor_type
+  - tensor_name
+  - send_device
+  - send_device_incarnation
+  - recv_device
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Recv
+outputs:
+- A Tensor of type tensor_type.
+package: tensorflow
+target: Recv
+title: tf.raw_ops.Recv
+version: 2.2.0

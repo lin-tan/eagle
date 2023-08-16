@@ -1,0 +1,8 @@
+constraints:
+  tensor:
+    descp: tensor to broadcast.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+title: torch.cuda.comm.broadcast

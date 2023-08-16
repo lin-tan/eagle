@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `string` from: `""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. The unicode encoding to use in the output. Must be one of`""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. Multi-byte encodings will be big-endian.",,prim_dtype,dtype(tf.string),,1
+,"A `string` from: `""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. The unicode encoding to use in the output. Must be one of`""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. Multi-byte encodings will be big-endian.",,shape,ndim(0),,1
+,"A `string` from: `""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. The unicode encoding to use in the output. Must be one of`""UTF-8"", ""UTF-16-BE"", ""UTF-32-BE""`. Multi-byte encodings will be big-endian.",,validvalue,"enum(UTF-16-BE, UTF-32-BE, UTF-8)",,1

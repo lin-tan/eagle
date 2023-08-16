@@ -1,0 +1,263 @@
+aliases:
+- tf.nn.fixed_unigram_candidate_sampler
+- tf.compat.v1.nn.fixed_unigram_candidate_sampler
+- tf.compat.v1.random.fixed_unigram_candidate_sampler
+constraints:
+  distortion:
+    default: '1.0'
+    descp: The distortion is used to skew the unigram probability distribution.  Each
+      weight is first raised to the distortion's power before adding to the internal
+      unigram distribution. As a result,`distortion = 1.0` gives regular unigram sampling
+      (as defined by the vocab file), and `distortion = 0.0` gives a uniform distribution.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  num_reserved_ids:
+    default: '0'
+    descp: Optionally some reserved IDs can be added in the range`[0, num_reserved_ids)`
+      by the users. One use case is that a special unknown word token is used as ID
+      0. These IDs will have a sampling probability of 0.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - num_reserved_ids)
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,&num_reserved_ids)'
+    - '[0,inf)'
+    shape:
+    - '[0,&num_reserved_ids]'
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  num_sampled:
+    descp: An `int`.  The number of classes to randomly sample.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  num_shards:
+    default: '1'
+    descp: A sampler can be used to sample from a subset of the original range in
+      order to speed up the whole computation through parallelism. This parameter
+      (together with `shard`) indicates the number of partitions that are being used
+      in the overall computation.
+    dtype:
+    - int
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  num_true:
+    descp: An `int`.  The number of target classes per training example.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  range_max:
+    descp: An `int`. The number of possible classes.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  seed:
+    default: None
+    descp: An `int`. An operation-specific seed. Default is 0.
+    dtype:
+    - int
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  shard:
+    default: '0'
+    descp: A sampler can be used to sample from a subset of the original range in
+      order to speed up the whole computation through parallelism. This parameter
+      (together with `num_shards`) indicates the particular partition number of the
+      operation, when partitioning is being used.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  true_classes:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[batch_size,&num_true]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  unigrams:
+    default: ()
+    descp: A list of unigram counts or probabilities, one per ID in sequential order.
+      Exactly one of `vocab_file` and `unigrams` should be passed to this operation.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - unigrams
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&vocab_file'
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  unique:
+    descp: A `bool`. Determines whether all sampled classes in a batch are unique.
+    dtype:
+    - int
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  vocab_file:
+    default: ''
+    descp: Each valid line in this file (which should have a CSV-like format) corresponds
+      to a valid word ID. IDs are in sequential order, starting from num_reserved_ids.
+      The last entry in each line is expected to be a value corresponding to the count
+      or relative probability. Exactly one of `vocab_file` and `unigrams` needs to
+      be passed to this operation.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - vocab_file
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[&vocab_file]'
+inputs:
+  optional:
+  - vocab_file
+  - distortion
+  - num_reserved_ids
+  - num_shards
+  - shard
+  - unigrams
+  - seed
+  - name
+  required:
+  - true_classes
+  - num_true
+  - num_sampled
+  - unique
+  - range_max
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/random/fixed_unigram_candidate_sampler
+outputs:
+- sampled_candidates: A tensor of type `int64` and shape `[num_sampled]`. The sampled
+    classes.
+- true_expected_count: A tensor of type `float`.  Same shape as`true_classes`. The
+    expected counts under the sampling distribution of each of `true_classes`.
+- sampled_expected_count: A tensor of type `float`. Same shape as`sampled_candidates`.
+    The expected counts under the sampling distribution of each of `sampled_candidates`.
+package: tensorflow
+target: fixed_unigram_candidate_sampler
+title: tf.random.fixed_unigram_candidate_sampler
+version: 2.1.0

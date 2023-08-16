@@ -1,0 +1,40 @@
+constraints:
+  X:
+    descp: array of shape (n_samples_1, n_features)
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples_1,n_features]'
+  Y:
+    default: None
+    descp: array of shape (n_samples_2, n_features)
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples_2,n_features]'
+  dense_output:
+    default: 'True'
+    descp: boolean (optional), default True Whether to return dense output even when
+      the input is sparse. If ``False``, the output is sparse if both input arrays
+      are sparse.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples_1
+- n_samples_2
+inputs:
+  optional:
+  - Y
+  - dense_output
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: linear_kernel
+title: sklearn.metrics.pairwise.linear_kernel
+version: 0.24.X

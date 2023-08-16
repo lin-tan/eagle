@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reader_handle:
+    descp: A Tensor of type resource. Handle to a Reader.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ReaderNumRecordsProducedV2
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: ReaderNumRecordsProducedV2
+title: tf.raw_ops.ReaderNumRecordsProducedV2
+version: 2.2.0

@@ -1,0 +1,39 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  params:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  validate_indices:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - validate_indices
+  - name
+  required:
+  - params
+  - indices
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Gather
+outputs:
+- A Tensor. Has the same type as params.
+package: tensorflow
+target: Gather
+title: tf.raw_ops.Gather
+version: 2.3.0

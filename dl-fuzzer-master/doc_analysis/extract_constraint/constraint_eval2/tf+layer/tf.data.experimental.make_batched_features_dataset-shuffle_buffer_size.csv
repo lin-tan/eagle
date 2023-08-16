@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Buffer size of the ShuffleDataset. A large capacity ensures better shuffling but would increase memory usage and startup time.,10000,prim_dtype,dtype(int),,1
+,Buffer size of the ShuffleDataset. A large capacity ensures better shuffling but would increase memory usage and startup time.,10000,shape,ndim(0),,1
+,Buffer size of the ShuffleDataset. A large capacity ensures better shuffling but would increase memory usage and startup time.,10000,validvalue,"range([0,inf))",,1

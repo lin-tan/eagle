@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.nn.ctc_greedy_decoder
+constraints:
+  inputs:
+    descp: 3-D float Tensor sized [max_time, batch_size, num_classes]. The logits.
+  merge_repeated:
+    default: 'True'
+    descp: 'Boolean. Default: True.'
+  sequence_length:
+    descp: 1-D int32 vector containing sequence lengths, having size [batch_size].
+inputs:
+  optional:
+  - merge_repeated
+  required:
+  - inputs
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/ctc_greedy_decoder
+outputs: A tuple (decoded, neg_sum_logits) where
+package: tensorflow
+target: ctc_greedy_decoder
+title: tf.nn.ctc_greedy_decoder
+version: 2.2.0

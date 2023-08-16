@@ -1,0 +1,25 @@
+constraints:
+  module:
+    descp: containing module
+    doc_dtype:
+    - Module
+    sig_dtype: T_module
+  name:
+    default: weight
+    descp: name of weight parameter
+    doc_dtype:
+    - str
+    dtype:
+    - string
+    sig_dtype: str
+inputs:
+  optional:
+  - name
+  required:
+  - module
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.remove_spectral_norm.html#torch.nn.utils.remove_spectral_norm#torch.nn.utils.remove_spectral_norm
+package: torch
+ret_type: T_module
+target: remove_spectral_norm
+title: torch.nn.utils.remove_spectral_norm
+version: 1.9.0

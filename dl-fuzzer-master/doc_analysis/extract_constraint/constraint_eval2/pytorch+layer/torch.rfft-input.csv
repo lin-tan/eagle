@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,the input tensor of at least `signal_ndim` dimensions,,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,the input tensor of at least `signal_ndim` dimensions,,shape,ndim(>=&signal_ndim),,1

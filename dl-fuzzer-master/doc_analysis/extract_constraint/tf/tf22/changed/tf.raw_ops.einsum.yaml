@@ -1,0 +1,35 @@
+constraints:
+  equation:
+    descp: A string. String describing the Einstein Summation operation; in the format
+      of np.einsum.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  inputs:
+    descp: A list of at least 1 Tensor objects with the same type. List of 1 or 2
+      Tensors.
+    shape:
+    - '[1]'
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+  - equation
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Einsum
+outputs:
+- A Tensor. Has the same type as inputs.
+package: tensorflow
+target: Einsum
+title: tf.raw_ops.Einsum
+version: 2.2.0

@@ -1,0 +1,37 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: The data to train on. It can be passed either as a tf.data Dataset, or
+      as a numpy array.
+  max_tokens:
+    default: None
+    descp: ''
+  output_mode:
+    default: BINARY
+    descp: ''
+  reset_state:
+    default: None
+    descp: Optional argument specifying whether to clear the state of the layer at
+      the start of the call to adapt. This must be True for this layer, which does
+      not support repeated calls to adapt.
+  sparse:
+    default: 'False'
+    descp: ''
+exceptions:
+- RuntimeError: if the layer cannot be adapted at this time.
+inputs:
+  optional:
+  - max_tokens
+  - output_mode
+  - sparse
+  - data
+  - reset_state
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryEncoding
+package: tensorflow
+target: CategoryEncoding
+title: tf.keras.layers.experimental.preprocessing.CategoryEncoding
+version: 2.3.0

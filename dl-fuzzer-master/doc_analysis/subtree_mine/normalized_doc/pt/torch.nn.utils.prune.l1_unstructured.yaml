@@ -1,0 +1,35 @@
+constraints:
+  amount:
+    descp: quantity of parameters to prune. If `float`, should be between 0.0 and
+      1.0 and represent the fraction of parameters to prune. If `int`, it represents
+      the absolute number of parameters to prune.
+    doc_dtype: int or float
+    normalized_descp:
+    - quantity of parameters to prune
+    - If D_TYPE, should be between CONSTANT_FLOAT and CONSTANT_FLOAT and represent
+      the fraction of parameters to prune
+    - If D_TYPE, it represents the absolute number of parameters to prune
+    normalized_docdtype: ONE_WORD D_TYPE
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype: nn.Module
+    normalized_descp:
+    - module containing the D_STRUCTURE to prune
+    normalized_docdtype: nn Module
+  name:
+    descp: parameter name within `module` on which pruning will act.
+    doc_dtype: str
+    normalized_descp:
+    - parameter name within PARAM on which pruning will act
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - module
+  - name
+  - amount
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.l1_unstructured
+package: torch
+target: l1_unstructured
+title: torch.nn.utils.prune.l1_unstructured
+version: 1.5.0

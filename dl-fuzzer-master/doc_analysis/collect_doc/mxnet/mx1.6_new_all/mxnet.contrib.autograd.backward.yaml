@@ -1,0 +1,22 @@
+constraints:
+  out_grads:
+    default: None
+    descp: ''
+    doc_dtype: list of NDArray or None
+  outputs:
+    descp: ''
+    doc_dtype: list of NDArray
+  retain_graph:
+    default: 'False'
+    descp: ''
+inputs:
+  optional:
+  - out_grads
+  - retain_graph
+  required:
+  - outputs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/autograd/index.html#mxnet.contrib.autograd.backward
+package: mxnet
+target: backward
+title: mxnet.contrib.autograd.backward
+version: 1.6.0

@@ -1,0 +1,18 @@
+constraints:
+  futures:
+    descp: a list of `Future` object.
+    doc_dtype:
+    - list
+    sig_dtype: List[torch.jit.Future]
+    structure:
+    - list
+inputs:
+  optional: []
+  required:
+  - futures
+link: https://pytorch.org/docs/1.7.0/futures.html#torch.futures.wait_all
+package: torch
+ret_type: List
+target: wait_all
+title: torch.futures.wait_all
+version: 1.9.0

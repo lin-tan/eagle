@@ -1,0 +1,87 @@
+aliases:
+- tf.import_graph_def
+- tf.compat.v1.graph_util.import_graph_def
+- tf.compat.v1.import_graph_def
+constraints:
+  graph_def:
+    descp: A `GraphDef` proto containing operations to be imported into the default
+      graph.
+    normalized_descp:
+    - A QSTR proto containing operations to be imported into the default graph
+  input_map:
+    default: None
+    descp: A dictionary mapping input names (as strings) in `graph_def`to `Tensor`
+      objects. The values of the named input tensors in the imported graph will be
+      re-mapped to the respective `Tensor` values.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE mapping input names BSTR in PARAMto D_STRUCTURE objects
+    - The values of the named input D_STRUCTURE in the imported graph will be re mapped
+      to the respective D_STRUCTURE values
+  name:
+    default: None
+    descp: (Optional.) A prefix that will be prepended to the names in`graph_def`.
+      Note that this does not apply to imported function names. Defaults to `"import"`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - A prefix that will be prepended to the names in PARAM
+    - Note that this does not apply to imported function names
+    - Defaults to QSTR
+  op_dict:
+    default: None
+    descp: (Optional.) Deprecated, do not use.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - Deprecated, do not use
+  producer_op_list:
+    default: None
+    descp: (Optional.) An `OpList` proto with the (possibly stripped) list of `OpDef`s
+      used by the producer of the graph. If provided, unrecognized attrs for ops in
+      `graph_def` that have their default value according to `producer_op_list` will
+      be removed. This will allow some more`GraphDef`s produced by later binaries
+      to be accepted by earlier binaries.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - An QSTR proto with the BSTR D_STRUCTURE of QSTR used by the producer of the
+      graph
+    - If provided, unrecognized attrs for ops in PARAM that have their default value
+      according to QSTR will be removed
+    - This will allow some more QSTR produced by later binaries to be accepted by
+      earlier binaries
+  return_elements:
+    default: None
+    descp: A list of strings containing operation names in`graph_def` that will be
+      returned as `Operation` objects; and/or tensor names in `graph_def` that will
+      be returned as `Tensor` objects.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE containing operation names in PARAM that will be returned
+      as QSTR objects and or D_STRUCTURE names in PARAM that will be returned as D_STRUCTURE
+      objects
+exceptions:
+- TypeError: If `graph_def` is not a `GraphDef` proto,`input_map` is not a dictionary
+    mapping strings to `Tensor` objects, or `return_elements` is not a list of strings.
+- ValueError: If `input_map`, or `return_elements` contains names that do not appear
+    in `graph_def`, or `graph_def` is not well-formed (e.g. it refers to an unknown
+    tensor).
+inputs:
+  deprecated:
+  - op_dict
+  optional:
+  - input_map
+  - return_elements
+  - name
+  - op_dict
+  - producer_op_list
+  required:
+  - graph_def
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/graph_util/import_graph_def
+outputs: A list of `Operation` and/or `Tensor` objects from the imported graph, corresponding
+  to the names in `return_elements`, and None if `returns_elements` is None.
+package: tensorflow
+target: import_graph_def
+title: tf.graph_util.import_graph_def
+version: 2.1.0

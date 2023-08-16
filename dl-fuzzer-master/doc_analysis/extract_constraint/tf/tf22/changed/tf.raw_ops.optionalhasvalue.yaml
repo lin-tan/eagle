@@ -1,0 +1,26 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  optional:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - optional
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/OptionalHasValue
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: OptionalHasValue
+title: tf.raw_ops.OptionalHasValue
+version: 2.2.0

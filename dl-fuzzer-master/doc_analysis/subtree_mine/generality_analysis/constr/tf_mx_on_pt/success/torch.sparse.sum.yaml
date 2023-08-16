@@ -1,0 +1,34 @@
+constraints:
+  dim:
+    default: None
+    descp: 'a dimension or a list of dimensions to reduce. Default: reduce over all
+      dims.'
+    doc_dtype: int or tuple of python:ints
+    dtype:
+    - int
+    structure:
+    - list
+    - tuple
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: dtype of `input`.'
+    doc_dtype: '`torch.dtype`, optional'
+    dtype:
+    - torch.dtype
+  input:
+    descp: the input SparseTensor
+    doc_dtype: Tensor
+    tensor_t:
+    - SparseTensor
+    - torch.tensor
+inputs:
+  optional:
+  - dim
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/stable/sparse.html#torch.sparse.sum
+package: torch
+target: sum
+title: torch.sparse.sum
+version: 1.5.0

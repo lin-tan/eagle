@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      int32, int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_devices:
+    descp: An int.
+  reduction:
+    descp: 'A string from: "min", "max", "prod", "sum".'
+  shared_name:
+    descp: A string.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - reduction
+  - num_devices
+  - shared_name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NcclAllReduce
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: NcclAllReduce
+title: tf.raw_ops.NcclAllReduce
+version: 2.3.0

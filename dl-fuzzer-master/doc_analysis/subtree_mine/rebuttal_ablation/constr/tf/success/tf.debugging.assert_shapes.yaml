@@ -1,0 +1,110 @@
+constraints:
+  data:
+    default: None
+    descp: The tensors to print out if the condition is False.  Defaults to error
+      message and first few entries of the violating tensor.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&message'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  name:
+    default: None
+    descp: A name for this operation (optional).  Defaults to "assert_shapes".
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shapes:
+    descp: dictionary with (`Tensor` to shape) items. A shape must be an iterable.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    structure:
+    - dict
+    - list
+    tensor_t:
+    - tf.tensor
+  summarize:
+    default: None
+    descp: Print this many entries of the tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: If static checks determine any shape constraint is violated.
+inputs:
+  optional:
+  - data
+  - summarize
+  - message
+  - name
+  required:
+  - shapes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_shapes
+package: tensorflow
+target: assert_shapes
+title: tf.debugging.assert_shapes
+version: 2.1.0

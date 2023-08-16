@@ -1,0 +1,15 @@
+constraints:
+  scales:
+    default: _Null
+    descp: Used to generate anchor windows by enumerating scales
+    doc_dtype:
+    - tuple of <float>
+    - optional
+    - default=[4,8,16,32]
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - tuple
+title: mxnet.ndarray.contrib.Proposal

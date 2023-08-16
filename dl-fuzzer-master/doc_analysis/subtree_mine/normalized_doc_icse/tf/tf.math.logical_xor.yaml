@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.logical_xor
+- tf.compat.v1.math.logical_xor
+constraints:
+  name:
+    default: LogicalXor
+    descp: ''
+    normalized_default: DEFAULT DF_STR
+    normalized_descp: []
+  x:
+    descp: A `Tensor` type bool.
+    normalized_descp:
+    - A D_STRUCTURE type D_TYPE
+  y:
+    descp: A `Tensor` of type bool.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/logical_xor
+outputs: A `Tensor` of type bool with the same size as that of x or y.
+package: tensorflow
+target: logical_xor
+title: tf.math.logical_xor
+version: 2.1.0

@@ -1,0 +1,93 @@
+append: false
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)-*d\s*or\s*higher:
+    cnt: 21
+    group: 1
+    prefix: '>='
+  (^|\s|,|.)`*(\d)`*[\s-]?(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 381
+    group: 2
+    keep_shapevar: true
+    tensor_t: tensor
+  (^|\s|,|.)`*(\w+)`*-(d|dimension|dimensional)`*\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 290
+    group: 2
+    keep_shapevar: true
+    tensor_t: tensor
+  (and|of|with)\s+`*(rank|ndim)\s+`*([><=]+\s(\d))`*:
+    cnt: 5
+    group: 3
+    keep_shapevar: true
+    replace:
+      \s: ''
+  (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]:
+    cnt: 51
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    replace:
+      \s: ''
+      '`': ''
+  (and|of|with)\s+rank\s+`(.*?)`:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    replace:
+      \s: ''
+  (a|an)\s+`\(?([\w+-]+?)\)?`[\s-]*(d|dimension|dimensional)\s+([`'"]*[.\w]+[`'"]*\s+)?[`'"]*(tensor|array)[`'"]*:
+    cnt: 0
+    group: 2
+    keep_shapevar: true
+    tensor_t: tensor
+  (has|with)\s+same\s+((type|size)\s+and\s+)?rank\s+as\s*`([\w]+)`:
+    cnt: 0
+    dependent: true
+    group: 4
+  ^(\ba\b|an)?\s*(\w)[\s-](d|dimensional|dimension)[\s\.,]:
+    cnt: 139
+    group: 2
+    keep_shapevar: true
+    prereq:
+    - (\d)-*d\s*or\s*higher
+  '`*tensor`*\s+of\s+(\d)\s+dimension':
+    cnt: 0
+    group: 1
+  must\s+be\s+(\d)-*(d|dimension|dimensional):
+    cnt: 4
+    group: 1
+    keep_shapevar: true
+  rank[\s+-]`*(\w)`*[\s\.,]:
+    cnt: 57
+    group: 1
+    keep_shapevar: true
+    prereq:
+    - (and|of|with)\s+rank\s+`*([><=]+\s(\d))`*
+    - (and|of|with)\s+rank\s+`(.*?)`
+    - (and|of|with)\s+rank\s+(?!as)(`*[\w+]+?`*)[\.,\s]
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+- inf
+target: ndim

@@ -1,0 +1,75 @@
+aliases:
+- tf.compat.v1.ragged.range
+constraints:
+  deltas:
+    default: '1'
+    descp: Vector or scalar Tensor. Specifies the increment for each range. Defaults
+      to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+  dtype:
+    default: None
+    descp: The type of the elements of the resulting tensor. If not specified, then
+      a value is chosen based on the other args.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  limits:
+    default: None
+    descp: Vector or scalar Tensor. Specifies the exclusive upper limits for each
+      range.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  row_splits_dtype:
+    default: tf.dtypes.int64
+    descp: dtype for the returned RaggedTensor's row_splits tensor. One of tf.int32
+      or tf.int64.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  starts:
+    descp: Vector or scalar Tensor. Specifies the first entry for each range if limits
+      is not None; otherwise, specifies the range limits, and the first entries default
+      to 0.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+inputs:
+  optional:
+  - limits
+  - deltas
+  - dtype
+  - name
+  - row_splits_dtype
+  required:
+  - starts
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/ragged/range
+outputs:
+- A RaggedTensor of type dtype with ragged_rank=1.
+package: tensorflow
+target: range
+title: tf.ragged.range
+version: 2.2.0

@@ -1,0 +1,71 @@
+constraints:
+  field_delim:
+    default: ','
+    descp: An optional string. Defaults to ",". char delimiter to separate fields
+      in a record.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  na_value:
+    default: ''
+    descp: An optional string. Defaults to "". Additional string to recognize as NA/NaN.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  record_defaults:
+    descp: 'A list of Tensor objects with types from: float32, float64, int32, int64,
+      string. One tensor per column of the input record, with either a scalar default
+      value for that column or an empty vector if the column is required.'
+    structure:
+    - list(tf.tensor)
+  records:
+    descp: A Tensor of type string. Each string is a record/row in the csv and all
+      records should have the same format.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  select_cols:
+    default: '[]'
+    descp: An optional list of ints. Defaults to [].
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  use_quote_delim:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If false, treats double quotation marks
+      as regular characters inside of the string fields (ignoring RFC 4180, Section
+      2, Bullet 5).
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - field_delim
+  - use_quote_delim
+  - na_value
+  - select_cols
+  - name
+  required:
+  - records
+  - record_defaults
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DecodeCSV
+outputs:
+- A list of Tensor objects. Has the same type as record_defaults.
+package: tensorflow
+target: DecodeCSV
+title: tf.raw_ops.DecodeCSV
+version: 2.3.0

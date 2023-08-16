@@ -1,0 +1,23 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: If set to `True`, will do this operation in-place
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+  p:
+    default: '0.5'
+    descp: probability of an element to be zero-ed.
+    doc_dtype:
+    - float
+    sig_dtype: float
+inputs:
+  optional:
+  - p
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Dropout2d.html#torch.nn.Dropout2d#torch.nn.Dropout2d
+package: torch
+target: Dropout2d
+title: torch.nn.Dropout2d
+version: 1.6.0

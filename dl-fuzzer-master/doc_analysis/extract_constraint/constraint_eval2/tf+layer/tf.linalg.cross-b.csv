@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must have the same type as `a`. Another tensor, of same type and shape as `a`.",,prim_dtype,dtype(dtype:&a),,1
+,"A `Tensor`. Must have the same type as `a`. Another tensor, of same type and shape as `a`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must have the same type as `a`. Another tensor, of same type and shape as `a`.",,shape,shape(shape:&a),,1

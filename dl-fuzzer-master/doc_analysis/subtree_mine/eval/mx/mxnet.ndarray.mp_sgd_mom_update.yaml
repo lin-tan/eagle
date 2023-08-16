@@ -1,0 +1,11 @@
+constraints:
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    structure:
+    - ndarray
+title: mxnet.ndarray.mp_sgd_mom_update

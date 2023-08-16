@@ -1,0 +1,78 @@
+constraints:
+  allow_small_batch:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Allow to return less than num_elements
+      items if barrier is already closed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  component_types:
+    descp: A list of tf.DTypes that has length >= 1. The type of each component in
+      a value.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  handle:
+    descp: A Tensor of type mutable string. The handle to a barrier.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_elements:
+    descp: A Tensor of type int32. A single-element tensor containing the number of
+      elements to take.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  timeout_ms:
+    default: '-1'
+    descp: 'An optional int. Defaults to -1. If the queue is empty, this operation
+      will block for up to timeout_ms milliseconds. Note: This option is not supported
+      yet.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  wait_for_incomplete:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - allow_small_batch
+  - wait_for_incomplete
+  - timeout_ms
+  - name
+  required:
+  - handle
+  - num_elements
+  - component_types
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BarrierTakeMany
+outputs:
+- A tuple of Tensor objects (indices, keys, values).
+- indices: A Tensor of type int64.
+- keys: A Tensor of type string.
+- values: A list of Tensor objects of type component_types.
+package: tensorflow
+target: BarrierTakeMany
+title: tf.raw_ops.BarrierTakeMany
+version: 2.2.0

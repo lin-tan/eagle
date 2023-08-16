@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CloseSummaryWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: CloseSummaryWriter
+title: tf.raw_ops.CloseSummaryWriter
+version: 2.2.0

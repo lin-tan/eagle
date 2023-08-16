@@ -1,0 +1,16 @@
+constraints:
+  output_size:
+    default: None
+    descp: the target output size (single integer or triple-integer tuple)
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[3]'
+    structure:
+    - tuple
+title: torch.nn.functional.adaptive_max_pool3d

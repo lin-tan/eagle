@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.keras.layers.TimeDistributed
+constraints:
+  '**kwargs':
+    descp: ''
+  layer:
+    descp: a tf.keras.layers.Layer instance.
+exceptions:
+- ValueError: If not initialized with a tf.keras.layers.Layer instance.
+inputs:
+  optional: []
+  required:
+  - layer
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/TimeDistributed
+package: tensorflow
+target: TimeDistributed
+title: tf.keras.layers.TimeDistributed
+version: 2.3.0

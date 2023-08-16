@@ -1,0 +1,40 @@
+constraints:
+  example_names:
+    default: None
+    descp: A vector (1-D Tensor) of strings (optional), the names of the serialized
+      protos in the batch.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A vector BSTR the names of the PARAM protos in the batch
+  features:
+    descp: A `dict` mapping feature keys to `FixedLenFeature`,`VarLenFeature`, `SparseFeature`,
+      and `RaggedFeature` values.
+    normalized_descp:
+    - A D_STRUCTURE mapping feature keys to QSTR values
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  serialized:
+    descp: A vector (1-D Tensor) of strings, a batch of binary serialized `Example`
+      protos.
+    normalized_descp:
+    - A vector BSTR of D_TYPE a batch of binary serialized QSTR protos
+exceptions:
+- ValueError: if any feature is invalid.
+inputs:
+  optional:
+  - example_names
+  - name
+  required:
+  - serialized
+  - features
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/parse_example
+outputs: A `dict` mapping feature keys to `Tensor`, `SparseTensor`, and`RaggedTensor`
+  values.
+package: tensorflow
+target: parse_example
+title: tf.io.parse_example
+version: 2.1.0

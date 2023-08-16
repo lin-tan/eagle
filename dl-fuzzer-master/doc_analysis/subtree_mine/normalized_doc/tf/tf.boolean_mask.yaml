@@ -1,0 +1,41 @@
+constraints:
+  axis:
+    default: None
+    descp: A 0-D int Tensor representing the axis in `tensor` to mask from. By default,
+      axis is 0 which will mask from the first dimension. Otherwise K + axis <= N.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A CONSTANT_NUM-D D_TYPE D_STRUCTURE representing the axis in D_STRUCTURE to
+      PARAM from
+    - By default, axis is CONSTANT_NUM which will PARAM from the first dimension
+    - Otherwise K axis REXPR
+  mask:
+    descp: K-D boolean tensor, K <= N and K must be known statically.
+    normalized_descp:
+    - K D D_TYPE D_STRUCTURE, K REXPR and K must be known statically
+  name:
+    default: boolean_mask
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for this operation BSTR
+  tensor:
+    descp: N-D tensor.
+    normalized_descp:
+    - N D D_STRUCTURE
+exceptions:
+- ValueError: If shapes do not conform.
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - tensor
+  - mask
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/boolean_mask
+outputs: (N-K+1)-dimensional tensor populated by entries in `tensor` corresponding
+  to `True` values in `mask`.
+package: tensorflow
+target: boolean_mask
+title: tf.boolean_mask
+version: 2.1.0

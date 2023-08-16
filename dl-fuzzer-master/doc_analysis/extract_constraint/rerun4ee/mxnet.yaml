@@ -1,0 +1,5266 @@
+mxnet.autograd.backward.yaml:
+- head_grads
+- heads
+- retain_graph
+- train_mode
+mxnet.autograd.get_symbol.yaml:
+- x
+mxnet.autograd.grad.yaml:
+- create_graph
+- head_grads
+- heads
+- retain_graph
+- train_mode
+- variables
+mxnet.autograd.mark_variables.yaml:
+- grad_reqs
+- gradients
+- variables
+mxnet.autograd.pause.yaml:
+- train_mode
+mxnet.autograd.record.yaml:
+- train_mode
+mxnet.autograd.set_recording.yaml:
+- is_recording
+mxnet.autograd.set_training.yaml:
+- train_mode
+mxnet.callback.do_checkpoint.yaml:
+- period
+- prefix
+mxnet.callback.log_train_metric.yaml:
+- auto_reset
+mxnet.callback.module_checkpoint.yaml:
+- mod
+- prefix
+- save_optimizer_states
+mxnet.contrib.autograd.backward.yaml:
+- out_grads
+- outputs
+- retain_graph
+mxnet.contrib.autograd.grad.yaml:
+- argnum
+- func
+mxnet.contrib.autograd.grad_and_loss.yaml:
+- argnum
+- func
+mxnet.contrib.autograd.mark_variables.yaml:
+- grad_reqs
+- gradients
+- variables
+mxnet.contrib.autograd.set_is_training.yaml:
+- is_train
+mxnet.contrib.ndarray.adaptiveavgpooling2d.yaml:
+- data
+- name
+- out
+- output_size
+mxnet.contrib.ndarray.allclose.yaml:
+- a
+- atol
+- b
+- equal_nan
+- name
+- out
+- rtol
+mxnet.contrib.ndarray.arange_like.yaml:
+- axis
+- ctx
+- data
+- name
+- out
+- repeat
+- start
+- step
+mxnet.contrib.ndarray.backward_gradientmultiplier.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.contrib.ndarray.backward_hawkesll.yaml:
+- name
+- out
+mxnet.contrib.ndarray.backward_index_copy.yaml:
+- name
+- out
+mxnet.contrib.ndarray.backward_quadratic.yaml:
+- name
+- out
+mxnet.contrib.ndarray.bilinearresize2d.yaml:
+- data
+- like
+- name
+- out
+- scale_height
+mxnet.contrib.ndarray.bipartite_matching.yaml:
+- data
+- is_ascend
+- name
+- out
+- threshold
+- topk
+mxnet.contrib.ndarray.boolean_mask.yaml:
+- axis
+- data
+- index
+- name
+- out
+mxnet.contrib.ndarray.box_decode.yaml:
+- anchors
+- clip
+- data
+- name
+- out
+- std0
+- std1
+- std2
+- std3
+mxnet.contrib.ndarray.box_encode.yaml:
+- anchors
+- means
+- name
+- out
+- refs
+- samples
+- stds
+mxnet.contrib.ndarray.box_iou.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.contrib.ndarray.box_nms.yaml:
+- coord_start
+- data
+- force_suppress
+- id_index
+- name
+- out
+- overlap_thresh
+- score_index
+- topk
+- valid_thresh
+mxnet.contrib.ndarray.box_non_maximum_suppression.yaml:
+- coord_start
+- data
+- force_suppress
+- id_index
+- name
+- out
+- overlap_thresh
+- score_index
+- topk
+- valid_thresh
+mxnet.contrib.ndarray.calibrate_entropy.yaml:
+- hist
+- hist_edges
+- name
+- out
+mxnet.contrib.ndarray.count_sketch.yaml:
+- data
+- h
+- name
+- out
+- out_dim
+- s
+mxnet.contrib.ndarray.ctc_loss.yaml:
+- data
+- label
+- name
+- out
+mxnet.contrib.ndarray.ctcloss.yaml:
+- data
+- label
+- name
+- out
+mxnet.contrib.ndarray.deformableconvolution.yaml:
+- bias
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- offset
+- out
+- pad
+- stride
+- weight
+mxnet.contrib.ndarray.deformablepsroipooling.yaml:
+- data
+- group_size
+- name
+- no_trans
+- out
+- output_dim
+- part_size
+- pooled_size
+- rois
+- sample_per_part
+- spatial_scale
+- trans
+- trans_std
+mxnet.contrib.ndarray.dequantize.yaml:
+- data
+- max_range
+- min_range
+- name
+- out
+mxnet.contrib.ndarray.dgl_adjacency.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.dgl_graph_compact.yaml:
+- out
+- return_mapping
+mxnet.contrib.ndarray.div_sqrt_dim.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.edge_id.yaml:
+- data
+- name
+- out
+- u
+- v
+mxnet.contrib.ndarray.fft.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.getnnz.yaml:
+- axis
+- data
+- name
+- out
+mxnet.contrib.ndarray.gradientmultiplier.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.contrib.ndarray.group_adagrad_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- history
+- name
+- out
+- rescale_grad
+- weight
+mxnet.contrib.ndarray.hawkesll.yaml:
+- name
+- out
+mxnet.contrib.ndarray.ifft.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.index_array.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.index_copy.yaml:
+- index_vector
+- name
+- new_tensor
+- old_tensor
+- out
+mxnet.contrib.ndarray.interleaved_matmul_encdec_qk.yaml:
+- heads
+- keys_values
+- name
+- out
+- queries
+mxnet.contrib.ndarray.interleaved_matmul_encdec_valatt.yaml:
+- attention
+- heads
+- keys_values
+- name
+- out
+mxnet.contrib.ndarray.interleaved_matmul_selfatt_qk.yaml:
+- heads
+- name
+- out
+- queries_keys_values
+mxnet.contrib.ndarray.interleaved_matmul_selfatt_valatt.yaml:
+- attention
+- heads
+- name
+- out
+- queries_keys_values
+mxnet.contrib.ndarray.multiboxdetection.yaml:
+- anchor
+- clip
+- force_suppress
+- loc_pred
+- name
+- nms_threshold
+- nms_topk
+- out
+- threshold
+- variances
+mxnet.contrib.ndarray.multiboxprior.yaml:
+- clip
+- data
+- name
+- offsets
+- out
+- ratios
+- sizes
+- steps
+mxnet.contrib.ndarray.multiboxtarget.yaml:
+- anchor
+- cls_pred
+- ignore_label
+- label
+- name
+- negative_mining_ratio
+- negative_mining_thresh
+- out
+- overlap_threshold
+- variances
+mxnet.contrib.ndarray.multiproposal.yaml:
+- bbox_pred
+- im_info
+- iou_loss
+- name
+- out
+- output_score
+- ratios
+- scales
+- threshold
+mxnet.contrib.ndarray.proposal.yaml:
+- bbox_pred
+- im_info
+- iou_loss
+- name
+- out
+- output_score
+- ratios
+- scales
+- threshold
+mxnet.contrib.ndarray.psroipooling.yaml:
+- data
+- group_size
+- name
+- out
+- output_dim
+- pooled_size
+- rois
+- spatial_scale
+mxnet.contrib.ndarray.quadratic.yaml:
+- a
+- b
+- c
+- data
+- name
+- out
+mxnet.contrib.ndarray.quantize.yaml:
+- data
+- max_range
+- min_range
+- name
+- out
+mxnet.contrib.ndarray.quantize_v2.yaml:
+- data
+- max_calib_range
+- min_calib_range
+- name
+- out
+mxnet.contrib.ndarray.quantized_act.yaml:
+- data
+- max_data
+- min_data
+- name
+- out
+mxnet.contrib.ndarray.quantized_batch_norm.yaml:
+- axis
+- beta
+- cudnn_off
+- data
+- eps
+- fix_gamma
+- gamma
+- max_calib_range
+- max_data
+- min_calib_range
+- min_data
+- momentum
+- moving_mean
+- moving_var
+- name
+- out
+- output_mean_var
+- use_global_stats
+mxnet.contrib.ndarray.quantized_concat.yaml:
+- dim
+- out
+mxnet.contrib.ndarray.quantized_conv.yaml:
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- max_bias
+- max_data
+- max_weight
+- min_bias
+- min_data
+- min_weight
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.contrib.ndarray.quantized_elemwise_add.yaml:
+- lhs
+- lhs_max
+- lhs_min
+- name
+- out
+- rhs
+- rhs_max
+- rhs_min
+mxnet.contrib.ndarray.quantized_flatten.yaml:
+- data
+- max_data
+- min_data
+- name
+- out
+mxnet.contrib.ndarray.quantized_fully_connected.yaml:
+- bias
+- data
+- flatten
+- max_bias
+- max_data
+- max_weight
+- min_bias
+- min_data
+- min_weight
+- name
+- no_bias
+- out
+- weight
+mxnet.contrib.ndarray.quantized_pooling.yaml:
+- count_include_pad
+- cudnn_off
+- data
+- global_pool
+- kernel
+- max_data
+- min_data
+- name
+- out
+- p_value
+- pad
+- stride
+mxnet.contrib.ndarray.requantize.yaml:
+- data
+- max_calib_range
+- max_range
+- min_calib_range
+- min_range
+- name
+- out
+mxnet.contrib.ndarray.roialign.yaml:
+- data
+- name
+- out
+- position_sensitive
+- rois
+- sample_ratio
+- spatial_scale
+mxnet.contrib.ndarray.round_ste.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.rroialign.yaml:
+- data
+- name
+- out
+- pooled_size
+- rois
+- sampling_ratio
+- spatial_scale
+mxnet.contrib.ndarray.sign_ste.yaml:
+- data
+- name
+- out
+mxnet.contrib.ndarray.sparseembedding.yaml:
+- data
+- name
+- out
+- output_dim
+- sparse_grad
+- weight
+mxnet.contrib.ndarray.syncbatchnorm.yaml:
+- beta
+- data
+- eps
+- fix_gamma
+- gamma
+- key
+- momentum
+- moving_mean
+- moving_var
+- name
+- ndev
+- out
+- output_mean_var
+- use_global_stats
+mxnet.contrib.onnx.export_model.yaml:
+- input_type
+- onnx_file_path
+- params
+- sym
+- verbose
+mxnet.contrib.onnx.get_model_metadata.yaml:
+- model_file
+mxnet.contrib.onnx.import_model.yaml:
+- model_file
+mxnet.contrib.onnx.import_to_gluon.yaml:
+- ctx
+- model_file
+mxnet.contrib.quantization.calib_graph.yaml:
+- arg_params
+- aux_params
+- calib_mode
+- collector
+- logger
+- qsym
+mxnet.contrib.quantization.quantize_graph.yaml:
+- arg_params
+- aux_params
+- ctx
+- excluded_op_names
+- excluded_sym_names
+- logger
+- sym
+mxnet.contrib.quantization.quantize_model.yaml:
+- arg_params
+- aux_params
+- calib_data
+- ctx
+- data_names
+- excluded_op_names
+- excluded_sym_names
+- label_names
+- logger
+- quantize_mode
+- sym
+mxnet.contrib.quantization.quantize_net.yaml:
+- calib_data
+- ctx
+- data_shapes
+- exclude_layers
+- exclude_layers_match
+- exclude_operators
+- logger
+- network
+mxnet.gluon.model_zoo.vision.alexnet.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.densenet121.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.densenet161.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.densenet169.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.densenet201.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.get_mobilenet.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.get_mobilenet_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.get_model.yaml:
+- ctx
+- name
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.get_model2.yaml:
+- ctx
+- name
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.get_resnet.yaml:
+- ctx
+- pretrained
+- root
+- version
+mxnet.gluon.model_zoo.vision.get_vgg.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.inception_v3.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.mobilenet0_25.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet0_5.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet0_75.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet1_0.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet_v2_0_25.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet_v2_0_5.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet_v2_0_75.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.mobilenet_v2_1_0.yaml:
+- ctx
+- pretrained
+mxnet.gluon.model_zoo.vision.resnet101_v1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet101_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet152_v1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet152_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet18_v1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet18_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet34_v1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet34_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet50_v1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.resnet50_v2.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.squeezenet1_0.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.squeezenet1_1.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg11.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg11_bn.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg13.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg13_bn.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg16.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg16_bn.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg19.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.model_zoo.vision.vgg19_bn.yaml:
+- ctx
+- pretrained
+- root
+mxnet.gluon.utils.check_sha1.yaml:
+- filename
+- sha1_hash
+mxnet.gluon.utils.clip_global_norm.yaml:
+- arrays
+- check_isfinite
+- max_norm
+mxnet.gluon.utils.download.yaml:
+- overwrite
+- path
+- sha1_hash
+- url
+- verify_ssl
+mxnet.gluon.utils.replace_file.yaml:
+- dst
+- src
+mxnet.gluon.utils.split_and_load.yaml:
+- batch_axis
+- ctx_list
+- data
+- even_split
+mxnet.gluon.utils.split_data.yaml:
+- batch_axis
+- data
+- even_split
+mxnet.image.center_crop.yaml:
+- interp
+- size
+- src
+mxnet.image.color_normalize.yaml:
+- mean
+- src
+- std
+mxnet.image.copymakeborder.yaml:
+- bot
+- left
+- name
+- out
+- right
+- src
+- top
+- type
+- values
+mxnet.image.createaugmenter.yaml:
+- mean
+- rand_crop
+- rand_mirror
+- rand_resize
+- resize
+- std
+mxnet.image.createdetaugmenter.yaml:
+- area_range
+- aspect_ratio_range
+- mean
+- min_eject_coverage
+- pad_val
+- rand_mirror
+- resize
+- std
+mxnet.image.createmultirandcropaugmenter.yaml:
+- area_range
+- aspect_ratio_range
+- min_eject_coverage
+mxnet.image.fixed_crop.yaml:
+- interp
+- size
+- src
+- x0
+- y0
+mxnet.image.imdecode.yaml:
+- buf
+- out
+mxnet.image.imread.yaml:
+- filename
+- out
+- to_rgb
+mxnet.image.imresize.yaml:
+- out
+- src
+mxnet.image.random_crop.yaml:
+- interp
+- size
+- src
+mxnet.image.random_size_crop.yaml:
+- interp
+- ratio
+- size
+- src
+mxnet.image.resize_short.yaml:
+- size
+- src
+mxnet.image.scale_down.yaml:
+- size
+- src_size
+mxnet.io.csviter.yaml:
+- data_csv
+- label_csv
+- round_batch
+mxnet.io.imagedetrecorditer.yaml:
+- aug_seq
+- emit_overlap_thresh
+- fill_value
+- label_pad_value
+- max_crop_aspect_ratios
+- max_crop_object_coverages
+- max_crop_overlaps
+- max_crop_sample_coverages
+- max_crop_scales
+- max_crop_trials
+- max_pad_scale
+- max_random_contrast
+- max_random_hue
+- max_random_illumination
+- max_random_saturation
+- mean_a
+- mean_b
+- mean_g
+- mean_img
+- mean_r
+- min_crop_aspect_ratios
+- min_crop_object_coverages
+- min_crop_overlaps
+- min_crop_sample_coverages
+- min_crop_scales
+- part_index
+- path_imglist
+- path_imgrec
+- preprocess_threads
+- resize
+- round_batch
+- scale
+- seed
+- shuffle
+- shuffle_chunk_seed
+- std_a
+- std_b
+- std_g
+- std_r
+- verbose
+mxnet.io.imagerecorditer.yaml:
+- aug_seq
+- brightness
+- contrast
+- fill_value
+- max_aspect_ratio
+- max_crop_size
+- max_img_size
+- max_random_area
+- max_random_contrast
+- max_random_illumination
+- max_random_scale
+- max_rotate_angle
+- max_shear_ratio
+- mean_a
+- mean_b
+- mean_g
+- mean_img
+- mean_r
+- min_aspect_ratio
+- min_crop_size
+- min_img_size
+- min_random_area
+- min_random_scale
+- mirror
+- pad
+- part_index
+- path_imgidx
+- path_imglist
+- path_imgrec
+- pca_noise
+- rand_crop
+- rand_mirror
+- random_h
+- random_l
+- random_resized_crop
+- random_s
+- resize
+- rotate
+- round_batch
+- saturation
+- scale
+- seed
+- seed_aug
+- shuffle
+- shuffle_chunk_seed
+- std_a
+- std_b
+- std_g
+- std_r
+- verbose
+mxnet.io.libsvmiter.yaml:
+- data_libsvm
+- label_libsvm
+- part_index
+- round_batch
+mxnet.io.mnistiter.yaml:
+- batch_size
+- flat
+- image
+- label
+- part_index
+- seed
+- shuffle
+- silent
+mxnet.log.get_logger.yaml:
+- filemode
+- filename
+- level
+- name
+mxnet.metric.check_label_shapes.yaml:
+- labels
+- preds
+- wrap
+mxnet.metric.create.yaml:
+- metric
+mxnet.metric.np.yaml:
+- allow_extra_outputs
+- name
+mxnet.model.load_checkpoint.yaml:
+- prefix
+mxnet.model.save_checkpoint.yaml:
+- arg_params
+- aux_params
+- prefix
+- remove_amp_cast
+- symbol
+mxnet.ndarray.abs.yaml:
+- data
+- name
+- out
+mxnet.ndarray.activation.yaml:
+- data
+- name
+- out
+mxnet.ndarray.adam_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- lazy_update
+- mean
+- name
+- out
+- rescale_grad
+- var
+- wd
+- weight
+mxnet.ndarray.add.yaml:
+- lhs
+- rhs
+mxnet.ndarray.add_n.yaml:
+- out
+mxnet.ndarray.all_finite.yaml:
+- data
+- init_output
+- name
+- out
+mxnet.ndarray.amp_cast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.amp_multicast.yaml:
+- cast_narrow
+- out
+mxnet.ndarray.arange.yaml:
+- ctx
+- dtype
+- infer_range
+- start
+- step
+- stop
+mxnet.ndarray.arccos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.arccosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.arcsin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.arcsinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.arctan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.arctanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.argmax.yaml:
+- axis
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.argmax_channel.yaml:
+- data
+- name
+- out
+mxnet.ndarray.argmin.yaml:
+- axis
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.argsort.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.array.yaml:
+- ctx
+- dtype
+- source_array
+mxnet.ndarray.batch_dot.yaml:
+- lhs
+- name
+- out
+- rhs
+- transpose_a
+- transpose_b
+mxnet.ndarray.batchnorm.yaml:
+- axis
+- beta
+- cudnn_off
+- data
+- eps
+- fix_gamma
+- gamma
+- max_calib_range
+- min_calib_range
+- momentum
+- moving_mean
+- moving_var
+- name
+- out
+- output_mean_var
+- use_global_stats
+mxnet.ndarray.bilinearsampler.yaml:
+- cudnn_off
+- data
+- grid
+- name
+- out
+mxnet.ndarray.blockgrad.yaml:
+- data
+- name
+- out
+mxnet.ndarray.broadcast_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_axes.yaml:
+- axis
+- data
+- name
+- out
+- size
+mxnet.ndarray.broadcast_axis.yaml:
+- axis
+- data
+- name
+- out
+- size
+mxnet.ndarray.broadcast_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_greater.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_greater_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_hypot.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_lesser.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_lesser_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_like.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_logical_and.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_logical_or.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_logical_xor.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_maximum.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_minimum.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_minus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_mod.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_not_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_plus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_power.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.broadcast_to.yaml:
+- data
+- name
+- out
+mxnet.ndarray.cast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.cast_storage.yaml:
+- data
+- name
+- out
+mxnet.ndarray.cbrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.ceil.yaml:
+- data
+- name
+- out
+mxnet.ndarray.choose_element_0index.yaml:
+- axis
+- data
+- index
+- keepdims
+- name
+- out
+mxnet.ndarray.clip.yaml:
+- a_max
+- a_min
+- data
+- name
+- out
+mxnet.ndarray.concat.yaml:
+- dim
+- out
+mxnet.ndarray.contrib.adaptiveavgpooling2d.yaml:
+- data
+- name
+- out
+- output_size
+mxnet.ndarray.contrib.allclose.yaml:
+- a
+- atol
+- b
+- equal_nan
+- name
+- out
+- rtol
+mxnet.ndarray.contrib.arange_like.yaml:
+- axis
+- ctx
+- data
+- name
+- out
+- repeat
+- start
+- step
+mxnet.ndarray.contrib.backward_gradientmultiplier.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.ndarray.contrib.backward_hawkesll.yaml:
+- name
+- out
+mxnet.ndarray.contrib.backward_index_copy.yaml:
+- name
+- out
+mxnet.ndarray.contrib.backward_quadratic.yaml:
+- name
+- out
+mxnet.ndarray.contrib.bilinearresize2d.yaml:
+- data
+- like
+- name
+- out
+- scale_height
+mxnet.ndarray.contrib.bipartite_matching.yaml:
+- data
+- is_ascend
+- name
+- out
+- threshold
+- topk
+mxnet.ndarray.contrib.boolean_mask.yaml:
+- axis
+- data
+- index
+- name
+- out
+mxnet.ndarray.contrib.box_decode.yaml:
+- anchors
+- clip
+- data
+- name
+- out
+- std0
+- std1
+- std2
+- std3
+mxnet.ndarray.contrib.box_encode.yaml:
+- anchors
+- means
+- name
+- out
+- refs
+- samples
+- stds
+mxnet.ndarray.contrib.box_iou.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.contrib.box_nms.yaml:
+- coord_start
+- data
+- force_suppress
+- id_index
+- name
+- out
+- overlap_thresh
+- score_index
+- topk
+- valid_thresh
+mxnet.ndarray.contrib.box_non_maximum_suppression.yaml:
+- coord_start
+- data
+- force_suppress
+- id_index
+- name
+- out
+- overlap_thresh
+- score_index
+- topk
+- valid_thresh
+mxnet.ndarray.contrib.calibrate_entropy.yaml:
+- hist
+- hist_edges
+- name
+- out
+mxnet.ndarray.contrib.cond.yaml:
+- else_func
+- pred
+- then_func
+mxnet.ndarray.contrib.count_sketch.yaml:
+- data
+- h
+- name
+- out
+- out_dim
+- s
+mxnet.ndarray.contrib.ctc_loss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.contrib.ctcloss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.contrib.deformableconvolution.yaml:
+- bias
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- offset
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.contrib.deformablepsroipooling.yaml:
+- data
+- group_size
+- name
+- no_trans
+- out
+- output_dim
+- part_size
+- pooled_size
+- rois
+- sample_per_part
+- spatial_scale
+- trans
+- trans_std
+mxnet.ndarray.contrib.dequantize.yaml:
+- data
+- max_range
+- min_range
+- name
+- out
+mxnet.ndarray.contrib.dgl_adjacency.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.dgl_graph_compact.yaml:
+- out
+- return_mapping
+mxnet.ndarray.contrib.div_sqrt_dim.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.edge_id.yaml:
+- data
+- name
+- out
+- u
+- v
+mxnet.ndarray.contrib.fft.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.getnnz.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.contrib.gradientmultiplier.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.ndarray.contrib.group_adagrad_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- history
+- name
+- out
+- rescale_grad
+- weight
+mxnet.ndarray.contrib.hawkesll.yaml:
+- name
+- out
+mxnet.ndarray.contrib.ifft.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.index_array.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.index_copy.yaml:
+- index_vector
+- name
+- new_tensor
+- old_tensor
+- out
+mxnet.ndarray.contrib.interleaved_matmul_encdec_qk.yaml:
+- heads
+- keys_values
+- name
+- out
+- queries
+mxnet.ndarray.contrib.interleaved_matmul_encdec_valatt.yaml:
+- attention
+- heads
+- keys_values
+- name
+- out
+mxnet.ndarray.contrib.interleaved_matmul_selfatt_qk.yaml:
+- heads
+- name
+- out
+- queries_keys_values
+mxnet.ndarray.contrib.interleaved_matmul_selfatt_valatt.yaml:
+- attention
+- heads
+- name
+- out
+- queries_keys_values
+mxnet.ndarray.contrib.multiboxdetection.yaml:
+- anchor
+- clip
+- force_suppress
+- loc_pred
+- name
+- nms_threshold
+- nms_topk
+- out
+- threshold
+- variances
+mxnet.ndarray.contrib.multiboxprior.yaml:
+- clip
+- data
+- name
+- offsets
+- out
+- ratios
+- sizes
+- steps
+mxnet.ndarray.contrib.multiboxtarget.yaml:
+- anchor
+- cls_pred
+- ignore_label
+- label
+- name
+- negative_mining_ratio
+- negative_mining_thresh
+- out
+- overlap_threshold
+- variances
+mxnet.ndarray.contrib.multiproposal.yaml:
+- bbox_pred
+- im_info
+- iou_loss
+- name
+- out
+- output_score
+- ratios
+- scales
+- threshold
+mxnet.ndarray.contrib.proposal.yaml:
+- bbox_pred
+- im_info
+- iou_loss
+- name
+- out
+- output_score
+- ratios
+- scales
+- threshold
+mxnet.ndarray.contrib.psroipooling.yaml:
+- data
+- group_size
+- name
+- out
+- output_dim
+- pooled_size
+- rois
+- spatial_scale
+mxnet.ndarray.contrib.quadratic.yaml:
+- a
+- b
+- c
+- data
+- name
+- out
+mxnet.ndarray.contrib.quantize.yaml:
+- data
+- max_range
+- min_range
+- name
+- out
+mxnet.ndarray.contrib.quantize_v2.yaml:
+- data
+- max_calib_range
+- min_calib_range
+- name
+- out
+mxnet.ndarray.contrib.quantized_act.yaml:
+- data
+- max_data
+- min_data
+- name
+- out
+mxnet.ndarray.contrib.quantized_batch_norm.yaml:
+- axis
+- beta
+- cudnn_off
+- data
+- eps
+- fix_gamma
+- gamma
+- max_calib_range
+- max_data
+- min_calib_range
+- min_data
+- momentum
+- moving_mean
+- moving_var
+- name
+- out
+- output_mean_var
+- use_global_stats
+mxnet.ndarray.contrib.quantized_concat.yaml:
+- dim
+- out
+mxnet.ndarray.contrib.quantized_conv.yaml:
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- max_bias
+- max_data
+- max_weight
+- min_bias
+- min_data
+- min_weight
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.contrib.quantized_elemwise_add.yaml:
+- lhs
+- lhs_max
+- lhs_min
+- name
+- out
+- rhs
+- rhs_max
+- rhs_min
+mxnet.ndarray.contrib.quantized_flatten.yaml:
+- data
+- max_data
+- min_data
+- name
+- out
+mxnet.ndarray.contrib.quantized_fully_connected.yaml:
+- bias
+- data
+- flatten
+- max_bias
+- max_data
+- max_weight
+- min_bias
+- min_data
+- min_weight
+- name
+- no_bias
+- out
+- weight
+mxnet.ndarray.contrib.quantized_pooling.yaml:
+- count_include_pad
+- cudnn_off
+- data
+- global_pool
+- kernel
+- max_data
+- min_data
+- name
+- out
+- p_value
+- pad
+- stride
+mxnet.ndarray.contrib.rand_zipfian.yaml:
+- ctx
+- true_classes
+mxnet.ndarray.contrib.requantize.yaml:
+- data
+- max_calib_range
+- max_range
+- min_calib_range
+- min_range
+- name
+- out
+mxnet.ndarray.contrib.roialign.yaml:
+- data
+- name
+- out
+- position_sensitive
+- rois
+- sample_ratio
+- spatial_scale
+mxnet.ndarray.contrib.round_ste.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.rroialign.yaml:
+- data
+- name
+- out
+- pooled_size
+- rois
+- sampling_ratio
+- spatial_scale
+mxnet.ndarray.contrib.sign_ste.yaml:
+- data
+- name
+- out
+mxnet.ndarray.contrib.sparseembedding.yaml:
+- data
+- name
+- out
+- output_dim
+- sparse_grad
+- weight
+mxnet.ndarray.contrib.syncbatchnorm.yaml:
+- beta
+- data
+- eps
+- fix_gamma
+- gamma
+- key
+- momentum
+- moving_mean
+- moving_var
+- name
+- ndev
+- out
+- output_mean_var
+- use_global_stats
+mxnet.ndarray.contrib.while_loop.yaml:
+- cond
+- func
+- loop_vars
+mxnet.ndarray.convolution.yaml:
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.correlation.yaml:
+- data1
+- data2
+- is_multiply
+- name
+- out
+mxnet.ndarray.cos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.cosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.ctc_loss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.ctcloss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.cumsum.yaml:
+- a
+- axis
+- name
+- out
+mxnet.ndarray.custom.yaml:
+- op_type
+- out
+mxnet.ndarray.deconvolution.yaml:
+- adj
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.degrees.yaml:
+- data
+- name
+- out
+mxnet.ndarray.depth_to_space.yaml:
+- block_size
+- data
+- name
+- out
+mxnet.ndarray.diag.yaml:
+- axis1
+- axis2
+- data
+- k
+- name
+- out
+mxnet.ndarray.divide.yaml:
+- lhs
+- rhs
+mxnet.ndarray.dot.yaml:
+- lhs
+- name
+- out
+- rhs
+- transpose_a
+- transpose_b
+mxnet.ndarray.dropout.yaml:
+- axes
+- cudnn_off
+- data
+- name
+- out
+- p
+mxnet.ndarray.elementwisesum.yaml:
+- out
+mxnet.ndarray.elemwise_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.elemwise_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.elemwise_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.elemwise_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.embedding.yaml:
+- data
+- name
+- out
+- output_dim
+- sparse_grad
+- weight
+mxnet.ndarray.empty.yaml:
+- ctx
+- dtype
+- stype
+mxnet.ndarray.equal.yaml:
+- lhs
+- rhs
+mxnet.ndarray.erf.yaml:
+- data
+- name
+- out
+mxnet.ndarray.erfinv.yaml:
+- data
+- name
+- out
+mxnet.ndarray.exp.yaml:
+- data
+- name
+- out
+mxnet.ndarray.expand_dims.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.expm1.yaml:
+- data
+- name
+- out
+mxnet.ndarray.eye.yaml:
+- ctx
+- dtype
+- k
+mxnet.ndarray.fill_element_0index.yaml:
+- lhs
+- mhs
+- name
+- out
+- rhs
+mxnet.ndarray.fix.yaml:
+- data
+- name
+- out
+mxnet.ndarray.flatten.yaml:
+- data
+- name
+- out
+mxnet.ndarray.flip.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.floor.yaml:
+- data
+- name
+- out
+mxnet.ndarray.from_numpy.yaml:
+- ndarray
+- zero_copy
+mxnet.ndarray.ftml_update.yaml:
+- beta1
+- beta2
+- clip_grad
+- d
+- epsilon
+- grad
+- name
+- out
+- rescale_grad
+- v
+- wd
+- weight
+- z
+mxnet.ndarray.ftrl_update.yaml:
+- clip_gradient
+- grad
+- lamda1
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- z
+mxnet.ndarray.full.yaml:
+- ctx
+- dtype
+- out
+- val
+mxnet.ndarray.fullyconnected.yaml:
+- bias
+- data
+- flatten
+- name
+- no_bias
+- out
+- weight
+mxnet.ndarray.gamma.yaml:
+- data
+- name
+- out
+mxnet.ndarray.gammaln.yaml:
+- data
+- name
+- out
+mxnet.ndarray.gather_nd.yaml:
+- data
+- indices
+- name
+- out
+mxnet.ndarray.greater.yaml:
+- lhs
+- rhs
+mxnet.ndarray.greater_equal.yaml:
+- lhs
+- rhs
+mxnet.ndarray.gridgenerator.yaml:
+- data
+- name
+- out
+mxnet.ndarray.groupnorm.yaml:
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+- output_mean_var
+mxnet.ndarray.hard_sigmoid.yaml:
+- alpha
+- beta
+- data
+- name
+- out
+mxnet.ndarray.histogram.yaml:
+- a
+- bins
+- range
+mxnet.ndarray.identity.yaml:
+- data
+- name
+- out
+mxnet.ndarray.identityattachklsparsereg.yaml:
+- data
+- momentum
+- name
+- out
+- penalty
+- sparseness_target
+mxnet.ndarray.image.adjust_lighting.yaml:
+- alpha
+- data
+- name
+- out
+mxnet.ndarray.image.crop.yaml:
+- data
+- name
+- out
+- x
+- y
+mxnet.ndarray.image.flip_left_right.yaml:
+- data
+- name
+- out
+mxnet.ndarray.image.flip_top_bottom.yaml:
+- data
+- name
+- out
+mxnet.ndarray.image.normalize.yaml:
+- data
+- mean
+- name
+- out
+- std
+mxnet.ndarray.image.random_brightness.yaml:
+- data
+- max_factor
+- min_factor
+- name
+- out
+mxnet.ndarray.image.random_color_jitter.yaml:
+- brightness
+- contrast
+- data
+- hue
+- name
+- out
+- saturation
+mxnet.ndarray.image.random_contrast.yaml:
+- data
+- max_factor
+- min_factor
+- name
+- out
+mxnet.ndarray.image.random_flip_left_right.yaml:
+- data
+- name
+- out
+mxnet.ndarray.image.random_flip_top_bottom.yaml:
+- data
+- name
+- out
+mxnet.ndarray.image.random_hue.yaml:
+- data
+- max_factor
+- min_factor
+- name
+- out
+mxnet.ndarray.image.random_lighting.yaml:
+- alpha_std
+- data
+- name
+- out
+mxnet.ndarray.image.random_saturation.yaml:
+- data
+- max_factor
+- min_factor
+- name
+- out
+mxnet.ndarray.image.resize.yaml:
+- data
+- interp
+- keep_ratio
+- name
+- out
+- size
+mxnet.ndarray.image.to_tensor.yaml:
+- data
+- name
+- out
+mxnet.ndarray.instancenorm.yaml:
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+mxnet.ndarray.khatri_rao.yaml:
+- out
+mxnet.ndarray.l2normalization.yaml:
+- data
+- eps
+- name
+- out
+mxnet.ndarray.lamb_update_phase1.yaml:
+- bias_correction
+- clip_gradient
+- epsilon
+- grad
+- mean
+- name
+- out
+- rescale_grad
+- t
+- var
+- wd
+- weight
+mxnet.ndarray.lamb_update_phase2.yaml:
+- g
+- lower_bound
+- name
+- out
+- r1
+- r2
+- upper_bound
+- weight
+mxnet.ndarray.layernorm.yaml:
+- axis
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+- output_mean_var
+mxnet.ndarray.leakyrelu.yaml:
+- data
+- gamma
+- lower_bound
+- name
+- out
+- slope
+- upper_bound
+mxnet.ndarray.lesser.yaml:
+- lhs
+- rhs
+mxnet.ndarray.lesser_equal.yaml:
+- lhs
+- rhs
+mxnet.ndarray.linalg.det.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.extractdiag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.linalg.extracttrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.linalg.gelqf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.gemm.yaml:
+- A
+- B
+- C
+- alpha
+- axis
+- beta
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.linalg.gemm2.yaml:
+- A
+- B
+- alpha
+- axis
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.linalg.inverse.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.makediag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.linalg.maketrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.linalg.potrf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.potri.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.slogdet.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.sumlogdiag.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.syevd.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg.syrk.yaml:
+- A
+- alpha
+- name
+- out
+- transpose
+mxnet.ndarray.linalg.trmm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.linalg.trsm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.linalg_det.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_extractdiag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.linalg_extracttrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.linalg_gelqf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_gemm.yaml:
+- A
+- B
+- C
+- alpha
+- axis
+- beta
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.linalg_gemm2.yaml:
+- A
+- B
+- alpha
+- axis
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.linalg_inverse.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_makediag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.linalg_maketrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.linalg_potrf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_potri.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_slogdet.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_sumlogdiag.yaml:
+- A
+- name
+- out
+mxnet.ndarray.linalg_syrk.yaml:
+- A
+- alpha
+- name
+- out
+- transpose
+mxnet.ndarray.linalg_trmm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.linalg_trsm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.linearregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.linspace.yaml:
+- ctx
+- dtype
+- endpoint
+- start
+- stop
+mxnet.ndarray.load.yaml:
+- fname
+mxnet.ndarray.load_frombuffer.yaml:
+- buf
+mxnet.ndarray.log.yaml:
+- data
+- name
+- out
+mxnet.ndarray.log10.yaml:
+- data
+- name
+- out
+mxnet.ndarray.log1p.yaml:
+- data
+- name
+- out
+mxnet.ndarray.log2.yaml:
+- data
+- name
+- out
+mxnet.ndarray.log_softmax.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.logical_and.yaml:
+- lhs
+- rhs
+mxnet.ndarray.logical_not.yaml:
+- data
+- name
+- out
+mxnet.ndarray.logical_or.yaml:
+- lhs
+- rhs
+mxnet.ndarray.logical_xor.yaml:
+- lhs
+- rhs
+mxnet.ndarray.logisticregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.lrn.yaml:
+- alpha
+- beta
+- data
+- knorm
+- name
+- out
+mxnet.ndarray.maeregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.make_loss.yaml:
+- data
+- name
+- out
+mxnet.ndarray.makeloss.yaml:
+- data
+- grad_scale
+- name
+- out
+- valid_thresh
+mxnet.ndarray.max.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.max_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.maximum.yaml:
+- lhs
+- rhs
+mxnet.ndarray.mean.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.min.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.min_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.minimum.yaml:
+- lhs
+- rhs
+mxnet.ndarray.modulo.yaml:
+- lhs
+- rhs
+mxnet.ndarray.moments.yaml:
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.moveaxis.yaml:
+- destination
+- source
+- tensor
+mxnet.ndarray.mp_lamb_update_phase1.yaml:
+- bias_correction
+- clip_gradient
+- epsilon
+- grad
+- mean
+- name
+- out
+- rescale_grad
+- t
+- var
+- wd
+- weight
+- weight32
+mxnet.ndarray.mp_lamb_update_phase2.yaml:
+- g
+- lower_bound
+- name
+- out
+- r1
+- r2
+- upper_bound
+- weight
+- weight32
+mxnet.ndarray.mp_nag_mom_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.mp_sgd_mom_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.mp_sgd_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.multi_all_finite.yaml:
+- init_output
+- out
+mxnet.ndarray.multi_lars.yaml:
+- eps
+- eta
+- grads_sum_sq
+- name
+- out
+- rescale_grad
+- wds
+- weights_sum_sq
+mxnet.ndarray.multi_mp_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.multi_mp_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.multi_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.multi_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.multi_sum_sq.yaml:
+- out
+mxnet.ndarray.multiply.yaml:
+- lhs
+- rhs
+mxnet.ndarray.nag_mom_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.nanprod.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.nansum.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.negative.yaml:
+- data
+- name
+- out
+mxnet.ndarray.norm.yaml:
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.not_equal.yaml:
+- lhs
+- rhs
+mxnet.ndarray.one_hot.yaml:
+- depth
+- indices
+- name
+- off_value
+- on_value
+- out
+mxnet.ndarray.ones.yaml:
+- ctx
+- dtype
+- out
+mxnet.ndarray.ones_like.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.abs.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.activation.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.adam_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- lazy_update
+- mean
+- name
+- out
+- rescale_grad
+- var
+- wd
+- weight
+mxnet.ndarray.op.add_n.yaml:
+- out
+mxnet.ndarray.op.all_finite.yaml:
+- data
+- init_output
+- name
+- out
+mxnet.ndarray.op.amp_cast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.amp_multicast.yaml:
+- cast_narrow
+- out
+mxnet.ndarray.op.arccos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.arccosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.arcsin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.arcsinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.arctan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.arctanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.argmax.yaml:
+- axis
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.op.argmax_channel.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.argmin.yaml:
+- axis
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.op.argsort.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.op.batch_dot.yaml:
+- lhs
+- name
+- out
+- rhs
+- transpose_a
+- transpose_b
+mxnet.ndarray.op.batchnorm.yaml:
+- axis
+- beta
+- cudnn_off
+- data
+- eps
+- fix_gamma
+- gamma
+- max_calib_range
+- min_calib_range
+- momentum
+- moving_mean
+- moving_var
+- name
+- out
+- output_mean_var
+- use_global_stats
+mxnet.ndarray.op.bilinearsampler.yaml:
+- cudnn_off
+- data
+- grid
+- name
+- out
+mxnet.ndarray.op.blockgrad.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.broadcast_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_axes.yaml:
+- axis
+- data
+- name
+- out
+- size
+mxnet.ndarray.op.broadcast_axis.yaml:
+- axis
+- data
+- name
+- out
+- size
+mxnet.ndarray.op.broadcast_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_greater.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_greater_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_hypot.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_lesser.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_lesser_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_like.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_logical_and.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_logical_or.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_logical_xor.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_maximum.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_minimum.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_minus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_mod.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_not_equal.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_plus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_power.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.broadcast_to.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.cast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.cast_storage.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.cbrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.ceil.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.choose_element_0index.yaml:
+- axis
+- data
+- index
+- keepdims
+- name
+- out
+mxnet.ndarray.op.clip.yaml:
+- a_max
+- a_min
+- data
+- name
+- out
+mxnet.ndarray.op.concat.yaml:
+- dim
+- out
+mxnet.ndarray.op.convolution.yaml:
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.op.correlation.yaml:
+- data1
+- data2
+- is_multiply
+- name
+- out
+mxnet.ndarray.op.cos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.cosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.ctc_loss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.op.ctcloss.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.op.cumsum.yaml:
+- a
+- axis
+- name
+- out
+mxnet.ndarray.op.custom.yaml:
+- op_type
+- out
+mxnet.ndarray.op.deconvolution.yaml:
+- adj
+- bias
+- cudnn_off
+- data
+- dilate
+- kernel
+- name
+- no_bias
+- out
+- pad
+- stride
+- weight
+mxnet.ndarray.op.degrees.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.depth_to_space.yaml:
+- block_size
+- data
+- name
+- out
+mxnet.ndarray.op.diag.yaml:
+- axis1
+- axis2
+- data
+- k
+- name
+- out
+mxnet.ndarray.op.dot.yaml:
+- lhs
+- name
+- out
+- rhs
+- transpose_a
+- transpose_b
+mxnet.ndarray.op.dropout.yaml:
+- axes
+- cudnn_off
+- data
+- name
+- out
+- p
+mxnet.ndarray.op.elementwisesum.yaml:
+- out
+mxnet.ndarray.op.elemwise_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.elemwise_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.elemwise_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.elemwise_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.embedding.yaml:
+- data
+- name
+- out
+- output_dim
+- sparse_grad
+- weight
+mxnet.ndarray.op.erf.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.erfinv.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.exp.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.expand_dims.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.op.expm1.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.fill_element_0index.yaml:
+- lhs
+- mhs
+- name
+- out
+- rhs
+mxnet.ndarray.op.fix.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.flatten.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.flip.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.op.floor.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.ftml_update.yaml:
+- beta1
+- beta2
+- clip_grad
+- d
+- epsilon
+- grad
+- name
+- out
+- rescale_grad
+- v
+- wd
+- weight
+- z
+mxnet.ndarray.op.ftrl_update.yaml:
+- clip_gradient
+- grad
+- lamda1
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- z
+mxnet.ndarray.op.fullyconnected.yaml:
+- bias
+- data
+- flatten
+- name
+- no_bias
+- out
+- weight
+mxnet.ndarray.op.gamma.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.gammaln.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.gather_nd.yaml:
+- data
+- indices
+- name
+- out
+mxnet.ndarray.op.gridgenerator.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.groupnorm.yaml:
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+- output_mean_var
+mxnet.ndarray.op.hard_sigmoid.yaml:
+- alpha
+- beta
+- data
+- name
+- out
+mxnet.ndarray.op.identity.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.identityattachklsparsereg.yaml:
+- data
+- momentum
+- name
+- out
+- penalty
+- sparseness_target
+mxnet.ndarray.op.instancenorm.yaml:
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+mxnet.ndarray.op.khatri_rao.yaml:
+- out
+mxnet.ndarray.op.l2normalization.yaml:
+- data
+- eps
+- name
+- out
+mxnet.ndarray.op.lamb_update_phase1.yaml:
+- bias_correction
+- clip_gradient
+- epsilon
+- grad
+- mean
+- name
+- out
+- rescale_grad
+- t
+- var
+- wd
+- weight
+mxnet.ndarray.op.lamb_update_phase2.yaml:
+- g
+- lower_bound
+- name
+- out
+- r1
+- r2
+- upper_bound
+- weight
+mxnet.ndarray.op.layernorm.yaml:
+- axis
+- beta
+- data
+- eps
+- gamma
+- name
+- out
+- output_mean_var
+mxnet.ndarray.op.leakyrelu.yaml:
+- data
+- gamma
+- lower_bound
+- name
+- out
+- slope
+- upper_bound
+mxnet.ndarray.op.linalg_det.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_extractdiag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.op.linalg_extracttrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.op.linalg_gelqf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_gemm.yaml:
+- A
+- B
+- C
+- alpha
+- axis
+- beta
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.op.linalg_gemm2.yaml:
+- A
+- B
+- alpha
+- axis
+- name
+- out
+- transpose_a
+- transpose_b
+mxnet.ndarray.op.linalg_inverse.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_makediag.yaml:
+- A
+- name
+- offset
+- out
+mxnet.ndarray.op.linalg_maketrian.yaml:
+- A
+- lower
+- name
+- offset
+- out
+mxnet.ndarray.op.linalg_potrf.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_potri.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_slogdet.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_sumlogdiag.yaml:
+- A
+- name
+- out
+mxnet.ndarray.op.linalg_syrk.yaml:
+- A
+- alpha
+- name
+- out
+- transpose
+mxnet.ndarray.op.linalg_trmm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.op.linalg_trsm.yaml:
+- A
+- B
+- alpha
+- lower
+- name
+- out
+- rightside
+- transpose
+mxnet.ndarray.op.linearregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.op.log.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.log10.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.log1p.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.log2.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.log_softmax.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.op.logical_not.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.logisticregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.op.lrn.yaml:
+- alpha
+- beta
+- data
+- knorm
+- name
+- out
+mxnet.ndarray.op.maeregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.op.make_loss.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.makeloss.yaml:
+- data
+- grad_scale
+- name
+- out
+- valid_thresh
+mxnet.ndarray.op.max.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.max_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.mean.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.min.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.min_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.moments.yaml:
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.op.mp_lamb_update_phase1.yaml:
+- bias_correction
+- clip_gradient
+- epsilon
+- grad
+- mean
+- name
+- out
+- rescale_grad
+- t
+- var
+- wd
+- weight
+- weight32
+mxnet.ndarray.op.mp_lamb_update_phase2.yaml:
+- g
+- lower_bound
+- name
+- out
+- r1
+- r2
+- upper_bound
+- weight
+- weight32
+mxnet.ndarray.op.mp_nag_mom_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.op.mp_sgd_mom_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.op.mp_sgd_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- weight32
+mxnet.ndarray.op.multi_all_finite.yaml:
+- init_output
+- out
+mxnet.ndarray.op.multi_lars.yaml:
+- eps
+- eta
+- grads_sum_sq
+- name
+- out
+- rescale_grad
+- wds
+- weights_sum_sq
+mxnet.ndarray.op.multi_mp_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.op.multi_mp_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.op.multi_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.op.multi_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+- wds
+mxnet.ndarray.op.multi_sum_sq.yaml:
+- out
+mxnet.ndarray.op.nag_mom_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.nanprod.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.nansum.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.negative.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.norm.yaml:
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.op.one_hot.yaml:
+- depth
+- indices
+- name
+- off_value
+- on_value
+- out
+mxnet.ndarray.op.ones_like.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.pad.yaml:
+- constant_value
+- data
+- name
+- out
+mxnet.ndarray.op.pick.yaml:
+- axis
+- data
+- index
+- keepdims
+- name
+- out
+mxnet.ndarray.op.pooling.yaml:
+- count_include_pad
+- cudnn_off
+- data
+- global_pool
+- kernel
+- name
+- out
+- p_value
+- pad
+- stride
+mxnet.ndarray.op.preloaded_multi_mp_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.op.preloaded_multi_mp_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.op.preloaded_multi_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.op.preloaded_multi_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.op.prod.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.radians.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.random_exponential.yaml:
+- ctx
+- lam
+- name
+- out
+mxnet.ndarray.op.random_gamma.yaml:
+- alpha
+- beta
+- ctx
+- name
+- out
+mxnet.ndarray.op.random_generalized_negative_binomial.yaml:
+- alpha
+- ctx
+- mu
+- name
+- out
+mxnet.ndarray.op.random_negative_binomial.yaml:
+- ctx
+- k
+- name
+- out
+- p
+mxnet.ndarray.op.random_normal.yaml:
+- ctx
+- loc
+- name
+- out
+- scale
+mxnet.ndarray.op.random_pdf_dirichlet.yaml:
+- alpha
+- is_log
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_exponential.yaml:
+- is_log
+- lam
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_gamma.yaml:
+- alpha
+- beta
+- is_log
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_generalized_negative_binomial.yaml:
+- alpha
+- is_log
+- mu
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_negative_binomial.yaml:
+- is_log
+- k
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_normal.yaml:
+- is_log
+- mu
+- name
+- out
+- sample
+- sigma
+mxnet.ndarray.op.random_pdf_poisson.yaml:
+- is_log
+- lam
+- name
+- out
+- sample
+mxnet.ndarray.op.random_pdf_uniform.yaml:
+- high
+- is_log
+- low
+- name
+- out
+- sample
+mxnet.ndarray.op.random_poisson.yaml:
+- ctx
+- lam
+- name
+- out
+mxnet.ndarray.op.random_randint.yaml:
+- ctx
+- high
+- low
+- name
+- out
+mxnet.ndarray.op.random_uniform.yaml:
+- ctx
+- high
+- low
+- name
+- out
+mxnet.ndarray.op.ravel_multi_index.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.rcbrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.reciprocal.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.relu.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.repeat.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.op.reset_arrays.yaml:
+- out
+mxnet.ndarray.op.reshape.yaml:
+- data
+- name
+- out
+- reverse
+mxnet.ndarray.op.reshape_like.yaml:
+- lhs
+- lhs_begin
+- lhs_end
+- name
+- out
+- rhs
+- rhs_begin
+- rhs_end
+mxnet.ndarray.op.reverse.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.op.rint.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.rmsprop_update.yaml:
+- clip_gradient
+- clip_weights
+- epsilon
+- grad
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.rmspropalex_update.yaml:
+- clip_gradient
+- clip_weights
+- delta
+- epsilon
+- g
+- grad
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.rnn.yaml:
+- bidirectional
+- data
+- lstm_state_clip_max
+- lstm_state_clip_min
+- lstm_state_clip_nan
+- name
+- out
+- parameters
+- projection_size
+- state
+- state_cell
+- state_outputs
+mxnet.ndarray.op.roipooling.yaml:
+- data
+- name
+- out
+- pooled_size
+- rois
+- spatial_scale
+mxnet.ndarray.op.round.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.rsqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sample_exponential.yaml:
+- lam
+- name
+- out
+mxnet.ndarray.op.sample_gamma.yaml:
+- alpha
+- beta
+- name
+- out
+mxnet.ndarray.op.sample_generalized_negative_binomial.yaml:
+- alpha
+- mu
+- name
+- out
+mxnet.ndarray.op.sample_multinomial.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sample_negative_binomial.yaml:
+- k
+- name
+- out
+mxnet.ndarray.op.sample_normal.yaml:
+- mu
+- name
+- out
+- sigma
+mxnet.ndarray.op.sample_poisson.yaml:
+- lam
+- name
+- out
+mxnet.ndarray.op.sample_uniform.yaml:
+- high
+- low
+- name
+- out
+mxnet.ndarray.op.scatter_nd.yaml:
+- data
+- indices
+- name
+- out
+mxnet.ndarray.op.sequencelast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sequencemask.yaml:
+- data
+- name
+- out
+- value
+mxnet.ndarray.op.sequencereverse.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sgd_mom_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.sgd_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.shape_array.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.shuffle.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sigmoid.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sign.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.signsgd_update.yaml:
+- clip_gradient
+- grad
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.op.signum_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- wd_lh
+- weight
+mxnet.ndarray.op.sin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.size_array.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.slice.yaml:
+- begin
+- data
+- end
+- name
+- out
+- step
+mxnet.ndarray.op.slice_axis.yaml:
+- axis
+- begin
+- data
+- end
+- name
+- out
+mxnet.ndarray.op.slice_like.yaml:
+- axes
+- data
+- name
+- out
+mxnet.ndarray.op.smooth_l1.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.ndarray.op.softmax.yaml:
+- data
+- grad_scale
+- ignore_label
+- label
+- multi_output
+- name
+- out
+- out_grad
+- smooth_alpha
+- use_ignore
+mxnet.ndarray.op.softmax2.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.op.softmax_cross_entropy.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.op.softmaxactivation.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.softmaxoutput.yaml:
+- data
+- grad_scale
+- ignore_label
+- label
+- multi_output
+- name
+- out
+- out_grad
+- smooth_alpha
+- use_ignore
+mxnet.ndarray.op.softmin.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.op.softsign.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sort.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.op.space_to_depth.yaml:
+- block_size
+- data
+- name
+- out
+mxnet.ndarray.op.spatialtransformer.yaml:
+- cudnn_off
+- data
+- loc
+- name
+- out
+mxnet.ndarray.op.split.yaml:
+- axis
+- data
+- name
+- out
+- squeeze_axis
+mxnet.ndarray.op.sqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.square.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.squeeze.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.stack.yaml:
+- axis
+- out
+mxnet.ndarray.op.stop_gradient.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.sum.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.sum_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.op.svmoutput.yaml:
+- data
+- label
+- margin
+- name
+- out
+- regularization_coefficient
+- use_linear
+mxnet.ndarray.op.swapaxes.yaml:
+- data
+- dim1
+- dim2
+- name
+- out
+mxnet.ndarray.op.swapaxis.yaml:
+- data
+- dim1
+- dim2
+- name
+- out
+mxnet.ndarray.op.take.yaml:
+- a
+- axis
+- indices
+- name
+- out
+mxnet.ndarray.op.tan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.tanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.tile.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.topk.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.op.transpose.yaml:
+- axes
+- data
+- name
+- out
+mxnet.ndarray.op.trunc.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.unravel_index.yaml:
+- data
+- name
+- out
+mxnet.ndarray.op.upsampling.yaml:
+- out
+- scale
+mxnet.ndarray.op.where.yaml:
+- condition
+- name
+- out
+- x
+- y
+mxnet.ndarray.op.zeros_like.yaml:
+- data
+- name
+- out
+mxnet.ndarray.pad.yaml:
+- constant_value
+- data
+- name
+- out
+mxnet.ndarray.pick.yaml:
+- axis
+- data
+- index
+- keepdims
+- name
+- out
+mxnet.ndarray.pooling.yaml:
+- count_include_pad
+- cudnn_off
+- data
+- global_pool
+- kernel
+- name
+- out
+- p_value
+- pad
+- stride
+mxnet.ndarray.power.yaml:
+- base
+- exp
+mxnet.ndarray.preloaded_multi_mp_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.preloaded_multi_mp_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.preloaded_multi_sgd_mom_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.preloaded_multi_sgd_update.yaml:
+- clip_gradient
+- out
+- rescale_grad
+mxnet.ndarray.prod.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.radians.yaml:
+- data
+- name
+- out
+mxnet.ndarray.random.exponential.yaml:
+- ctx
+- out
+- scale
+mxnet.ndarray.random.exponential_like.yaml:
+- data
+- lam
+- name
+- out
+mxnet.ndarray.random.gamma.yaml:
+- beta
+- ctx
+- out
+mxnet.ndarray.random.gamma_like.yaml:
+- alpha
+- beta
+- data
+- name
+- out
+mxnet.ndarray.random.generalized_negative_binomial.yaml:
+- alpha
+- ctx
+- mu
+- out
+mxnet.ndarray.random.generalized_negative_binomial_like.yaml:
+- alpha
+- data
+- mu
+- name
+- out
+mxnet.ndarray.random.multinomial.yaml:
+- data
+- dtype
+- get_prob
+- out
+mxnet.ndarray.random.negative_binomial.yaml:
+- ctx
+- k
+- out
+- p
+mxnet.ndarray.random.negative_binomial_like.yaml:
+- data
+- k
+- name
+- out
+- p
+mxnet.ndarray.random.normal.yaml:
+- ctx
+- loc
+- out
+- scale
+mxnet.ndarray.random.normal_like.yaml:
+- data
+- loc
+- name
+- out
+- scale
+mxnet.ndarray.random.poisson.yaml:
+- ctx
+- lam
+- out
+mxnet.ndarray.random.poisson_like.yaml:
+- data
+- lam
+- name
+- out
+mxnet.ndarray.random.randint.yaml:
+- ctx
+- high
+- low
+- out
+mxnet.ndarray.random.randn.yaml:
+- ctx
+- loc
+- out
+- scale
+mxnet.ndarray.random.shuffle.yaml:
+- data
+- out
+mxnet.ndarray.random.uniform.yaml:
+- ctx
+- high
+- low
+- out
+mxnet.ndarray.random.uniform_like.yaml:
+- data
+- high
+- low
+- name
+- out
+mxnet.ndarray.random_exponential.yaml:
+- ctx
+- lam
+- name
+- out
+mxnet.ndarray.random_gamma.yaml:
+- alpha
+- beta
+- ctx
+- name
+- out
+mxnet.ndarray.random_generalized_negative_binomial.yaml:
+- alpha
+- ctx
+- mu
+- name
+- out
+mxnet.ndarray.random_negative_binomial.yaml:
+- ctx
+- k
+- name
+- out
+- p
+mxnet.ndarray.random_normal.yaml:
+- ctx
+- loc
+- name
+- out
+- scale
+mxnet.ndarray.random_pdf_dirichlet.yaml:
+- alpha
+- is_log
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_exponential.yaml:
+- is_log
+- lam
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_gamma.yaml:
+- alpha
+- beta
+- is_log
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_generalized_negative_binomial.yaml:
+- alpha
+- is_log
+- mu
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_negative_binomial.yaml:
+- is_log
+- k
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_normal.yaml:
+- is_log
+- mu
+- name
+- out
+- sample
+- sigma
+mxnet.ndarray.random_pdf_poisson.yaml:
+- is_log
+- lam
+- name
+- out
+- sample
+mxnet.ndarray.random_pdf_uniform.yaml:
+- high
+- is_log
+- low
+- name
+- out
+- sample
+mxnet.ndarray.random_poisson.yaml:
+- ctx
+- lam
+- name
+- out
+mxnet.ndarray.random_randint.yaml:
+- ctx
+- high
+- low
+- name
+- out
+mxnet.ndarray.random_uniform.yaml:
+- ctx
+- high
+- low
+- name
+- out
+mxnet.ndarray.ravel_multi_index.yaml:
+- data
+- name
+- out
+mxnet.ndarray.rcbrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.reciprocal.yaml:
+- data
+- name
+- out
+mxnet.ndarray.relu.yaml:
+- data
+- name
+- out
+mxnet.ndarray.repeat.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.reset_arrays.yaml:
+- out
+mxnet.ndarray.reshape.yaml:
+- data
+- name
+- out
+- reverse
+mxnet.ndarray.reshape_like.yaml:
+- lhs
+- lhs_begin
+- lhs_end
+- name
+- out
+- rhs
+- rhs_begin
+- rhs_end
+mxnet.ndarray.reverse.yaml:
+- axis
+- data
+- name
+- out
+mxnet.ndarray.rint.yaml:
+- data
+- name
+- out
+mxnet.ndarray.rmsprop_update.yaml:
+- clip_gradient
+- clip_weights
+- epsilon
+- grad
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.rmspropalex_update.yaml:
+- clip_gradient
+- clip_weights
+- delta
+- epsilon
+- g
+- grad
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.rnn.yaml:
+- bidirectional
+- data
+- lstm_state_clip_max
+- lstm_state_clip_min
+- lstm_state_clip_nan
+- name
+- out
+- parameters
+- projection_size
+- state
+- state_cell
+- state_outputs
+mxnet.ndarray.roipooling.yaml:
+- data
+- name
+- out
+- pooled_size
+- rois
+- spatial_scale
+mxnet.ndarray.round.yaml:
+- data
+- name
+- out
+mxnet.ndarray.rsqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sample_exponential.yaml:
+- lam
+- name
+- out
+mxnet.ndarray.sample_gamma.yaml:
+- alpha
+- beta
+- name
+- out
+mxnet.ndarray.sample_generalized_negative_binomial.yaml:
+- alpha
+- mu
+- name
+- out
+mxnet.ndarray.sample_multinomial.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sample_negative_binomial.yaml:
+- k
+- name
+- out
+mxnet.ndarray.sample_normal.yaml:
+- mu
+- name
+- out
+- sigma
+mxnet.ndarray.sample_poisson.yaml:
+- lam
+- name
+- out
+mxnet.ndarray.sample_uniform.yaml:
+- high
+- low
+- name
+- out
+mxnet.ndarray.save.yaml:
+- data
+- fname
+mxnet.ndarray.scatter_nd.yaml:
+- data
+- indices
+- name
+- out
+mxnet.ndarray.sequencelast.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sequencemask.yaml:
+- data
+- name
+- out
+- value
+mxnet.ndarray.sequencereverse.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sgd_mom_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.sgd_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.shape_array.yaml:
+- data
+- name
+- out
+mxnet.ndarray.shuffle.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sigmoid.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sign.yaml:
+- data
+- name
+- out
+mxnet.ndarray.signsgd_update.yaml:
+- clip_gradient
+- grad
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.signum_update.yaml:
+- clip_gradient
+- grad
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- wd_lh
+- weight
+mxnet.ndarray.sin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.size_array.yaml:
+- data
+- name
+- out
+mxnet.ndarray.slice.yaml:
+- begin
+- data
+- end
+- name
+- out
+- step
+mxnet.ndarray.slice_axis.yaml:
+- axis
+- begin
+- data
+- end
+- name
+- out
+mxnet.ndarray.slice_like.yaml:
+- axes
+- data
+- name
+- out
+mxnet.ndarray.smooth_l1.yaml:
+- data
+- name
+- out
+- scalar
+mxnet.ndarray.softmax.yaml:
+- data
+- grad_scale
+- ignore_label
+- label
+- multi_output
+- name
+- out
+- out_grad
+- smooth_alpha
+- use_ignore
+mxnet.ndarray.softmax2.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.softmax_cross_entropy.yaml:
+- data
+- label
+- name
+- out
+mxnet.ndarray.softmaxactivation.yaml:
+- data
+- name
+- out
+mxnet.ndarray.softmaxoutput.yaml:
+- data
+- grad_scale
+- ignore_label
+- label
+- multi_output
+- name
+- out
+- out_grad
+- smooth_alpha
+- use_ignore
+mxnet.ndarray.softmin.yaml:
+- axis
+- data
+- name
+- out
+- temperature
+mxnet.ndarray.softsign.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sort.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.space_to_depth.yaml:
+- block_size
+- data
+- name
+- out
+mxnet.ndarray.sparse.abs.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.adagrad_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- history
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.sparse.adam_update.yaml:
+- clip_gradient
+- epsilon
+- grad
+- lazy_update
+- mean
+- name
+- out
+- rescale_grad
+- var
+- wd
+- weight
+mxnet.ndarray.sparse.add.yaml:
+- lhs
+- rhs
+mxnet.ndarray.sparse.add_n.yaml:
+- out
+mxnet.ndarray.sparse.arccos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.arccosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.arcsin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.arcsinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.arctan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.arctanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.broadcast_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.broadcast_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.broadcast_minus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.broadcast_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.broadcast_plus.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.broadcast_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.cast_storage.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.cbrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.ceil.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.clip.yaml:
+- a_max
+- a_min
+- data
+- name
+- out
+mxnet.ndarray.sparse.concat.yaml:
+- dim
+- out
+mxnet.ndarray.sparse.cos.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.cosh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.csr_matrix.yaml:
+- arg1
+- ctx
+- dtype
+mxnet.ndarray.sparse.degrees.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.divide.yaml:
+- lhs
+- rhs
+mxnet.ndarray.sparse.dot.yaml:
+- lhs
+- name
+- out
+- rhs
+- transpose_a
+- transpose_b
+mxnet.ndarray.sparse.elementwisesum.yaml:
+- out
+mxnet.ndarray.sparse.elemwise_add.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.elemwise_div.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.elemwise_mul.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.elemwise_sub.yaml:
+- lhs
+- name
+- out
+- rhs
+mxnet.ndarray.sparse.embedding.yaml:
+- data
+- name
+- out
+- output_dim
+- sparse_grad
+- weight
+mxnet.ndarray.sparse.exp.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.expm1.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.fix.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.floor.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.ftrl_update.yaml:
+- clip_gradient
+- grad
+- lamda1
+- n
+- name
+- out
+- rescale_grad
+- wd
+- weight
+- z
+mxnet.ndarray.sparse.fullyconnected.yaml:
+- bias
+- data
+- flatten
+- name
+- no_bias
+- out
+- weight
+mxnet.ndarray.sparse.gamma.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.gammaln.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.linearregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.sparse.log.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.log10.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.log1p.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.log2.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.logisticregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.sparse.maeregressionoutput.yaml:
+- data
+- grad_scale
+- label
+- name
+- out
+mxnet.ndarray.sparse.make_loss.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.mean.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.sparse.multiply.yaml:
+- lhs
+- rhs
+mxnet.ndarray.sparse.negative.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.norm.yaml:
+- data
+- keepdims
+- name
+- out
+mxnet.ndarray.sparse.radians.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.relu.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.retain.yaml:
+- data
+- indices
+- name
+- out
+mxnet.ndarray.sparse.rint.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.round.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.row_sparse_array.yaml:
+- arg1
+- ctx
+- dtype
+mxnet.ndarray.sparse.rsqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.sgd_mom_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- mom
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.sparse.sgd_update.yaml:
+- clip_gradient
+- grad
+- lazy_update
+- name
+- out
+- rescale_grad
+- wd
+- weight
+mxnet.ndarray.sparse.sigmoid.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.sign.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.sin.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.sinh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.slice.yaml:
+- begin
+- data
+- end
+- name
+- out
+- step
+mxnet.ndarray.sparse.sqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.square.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.stop_gradient.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.subtract.yaml:
+- lhs
+- rhs
+mxnet.ndarray.sparse.sum.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.sparse.tan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.tanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.trunc.yaml:
+- data
+- name
+- out
+mxnet.ndarray.sparse.where.yaml:
+- condition
+- name
+- out
+- x
+- y
+mxnet.ndarray.sparse.zeros_like.yaml:
+- data
+- name
+- out
+mxnet.ndarray.spatialtransformer.yaml:
+- cudnn_off
+- data
+- loc
+- name
+- out
+mxnet.ndarray.split.yaml:
+- axis
+- data
+- name
+- out
+- squeeze_axis
+mxnet.ndarray.split_v2.yaml:
+- ary
+- axis
+- indices_or_sections
+- squeeze_axis
+mxnet.ndarray.sqrt.yaml:
+- data
+- name
+- out
+mxnet.ndarray.square.yaml:
+- data
+- name
+- out
+mxnet.ndarray.squeeze.yaml:
+- data
+- name
+- out
+mxnet.ndarray.stack.yaml:
+- axis
+- out
+mxnet.ndarray.stop_gradient.yaml:
+- data
+- name
+- out
+mxnet.ndarray.subtract.yaml:
+- lhs
+- rhs
+mxnet.ndarray.sum.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.sum_axis.yaml:
+- data
+- exclude
+- keepdims
+- name
+- out
+mxnet.ndarray.svmoutput.yaml:
+- data
+- label
+- margin
+- name
+- out
+- regularization_coefficient
+- use_linear
+mxnet.ndarray.swapaxes.yaml:
+- data
+- dim1
+- dim2
+- name
+- out
+mxnet.ndarray.swapaxis.yaml:
+- data
+- dim1
+- dim2
+- name
+- out
+mxnet.ndarray.take.yaml:
+- a
+- axis
+- indices
+- name
+- out
+mxnet.ndarray.tan.yaml:
+- data
+- name
+- out
+mxnet.ndarray.tanh.yaml:
+- data
+- name
+- out
+mxnet.ndarray.tile.yaml:
+- data
+- name
+- out
+mxnet.ndarray.to_dlpack_for_read.yaml:
+- data
+mxnet.ndarray.to_dlpack_for_write.yaml:
+- data
+mxnet.ndarray.topk.yaml:
+- axis
+- data
+- is_ascend
+- name
+- out
+mxnet.ndarray.transpose.yaml:
+- axes
+- data
+- name
+- out
+mxnet.ndarray.trunc.yaml:
+- data
+- name
+- out
+mxnet.ndarray.unravel_index.yaml:
+- data
+- name
+- out
+mxnet.ndarray.upsampling.yaml:
+- out
+- scale
+mxnet.ndarray.utils.array.yaml:
+- ctx
+- dtype
+- source_array
+mxnet.ndarray.utils.empty.yaml:
+- ctx
+- dtype
+- stype
+mxnet.ndarray.utils.load.yaml:
+- fname
+mxnet.ndarray.utils.load_frombuffer.yaml:
+- buf
+mxnet.ndarray.utils.save.yaml:
+- data
+- fname
+mxnet.ndarray.utils.zeros.yaml:
+- ctx
+- dtype
+- stype
+mxnet.ndarray.where.yaml:
+- condition
+- name
+- out
+- x
+- y
+mxnet.ndarray.zeros.yaml:
+- ctx
+- dtype
+- stype
+mxnet.ndarray.zeros2.yaml:
+- ctx
+- dtype
+- stype
+mxnet.ndarray.zeros_like.yaml:
+- data
+- name
+- out
+mxnet.operator.get_operator_arguments.yaml:
+- op_name
+mxnet.optimizer.create.yaml:
+- name
+mxnet.optimizer.ndabs.yaml:
+- data
+- name
+- out
+mxnet.profiler.dump.yaml:
+- finished
+- profile_process
+mxnet.profiler.dumps.yaml:
+- ascending
+- format
+- reset
+- sort_by
+mxnet.profiler.pause.yaml:
+- profile_process
+mxnet.profiler.resume.yaml:
+- profile_process
+mxnet.profiler.set_config.yaml:
+- aggregate_stats
+- continuous_dump
+- dump_period
+- filename
+- profile_all
+- profile_api
+- profile_imperative
+- profile_memory
+- profile_process
+- profile_symbolic
+mxnet.profiler.set_state.yaml:
+- profile_process
+- state
+mxnet.random.seed.yaml:
+- ctx
+- seed_state
+mxnet.recordio.pack.yaml:
+- header
+- s
+mxnet.recordio.pack_img.yaml:
+- header
+- img
+- img_fmt
+- quality
+mxnet.recordio.unpack.yaml:
+- s
+mxnet.recordio.unpack_img.yaml:
+- iscolor
+- s
+mxnet.registry.get_alias_func.yaml:
+- base_class
+- nickname
+mxnet.registry.get_create_func.yaml:
+- base_class
+- nickname
+mxnet.registry.get_register_func.yaml:
+- base_class
+- nickname
+mxnet.registry.get_registry.yaml:
+- base_class
+mxnet.test_utils.almost_equal_ignore_nan.yaml:
+- a
+- atol
+- b
+- rtol
+mxnet.test_utils.assert_almost_equal.yaml:
+- a
+- atol
+- b
+- equal_nan
+- names
+- rtol
+- use_broadcast
+mxnet.test_utils.assert_almost_equal_ignore_nan.yaml:
+- a
+- atol
+- b
+- names
+- rtol
+mxnet.test_utils.check_speed.yaml:
+- N
+- ctx
+- grad_req
+- location
+- sym
+- typ
+mxnet.test_utils.check_symbolic_backward.yaml:
+- atol
+- aux_states
+- ctx
+- dtype
+- equal_nan
+- expected
+- grad_req
+- grad_stypes
+- location
+- out_grads
+- rtol
+- sym
+mxnet.test_utils.check_symbolic_forward.yaml:
+- atol
+- aux_states
+- ctx
+- dtype
+- equal_nan
+- expected
+- location
+- rtol
+- sym
+mxnet.test_utils.chi_square_check.yaml:
+- buckets
+- generator
+mxnet.test_utils.download.yaml:
+- dirname
+- fname
+- overwrite
+- url
+mxnet.test_utils.download_model.yaml:
+- dst_dir
+- meta_info
+- model_name
+mxnet.test_utils.gen_buckets_probs_with_ppf.yaml:
+- nbuckets
+- ppf
+mxnet.test_utils.get_bz2_data.yaml:
+- data_dir
+- data_name
+- data_origin_name
+- url
+mxnet.test_utils.get_im2rec_path.yaml:
+- home_env
+mxnet.test_utils.get_zip_data.yaml:
+- data_dir
+- data_origin_name
+- url
+mxnet.test_utils.mean_check.yaml:
+- generator
+- mu
+- nsamples
+- sigma
+mxnet.test_utils.np_reduce.yaml:
+- axis
+- dat
+- keepdims
+- numpy_reduce_func
+mxnet.test_utils.numeric_grad.yaml:
+- aux_states
+- dtype
+- eps
+- executor
+- location
+- use_forward_train
+mxnet.test_utils.rand_sparse_ndarray.yaml:
+- ctx
+- data_init
+- density
+- distribution
+- dtype
+- modifier_func
+- rsp_indices
+- shuffle_csr_indices
+- stype
+mxnet.test_utils.same.yaml:
+- a
+- b
+mxnet.test_utils.same_array.yaml:
+- array1
+- array2
+mxnet.test_utils.set_env_var.yaml:
+- default_val
+- key
+- val
+mxnet.test_utils.simple_forward.yaml:
+- ctx
+- is_train
+- sym
+mxnet.test_utils.var_check.yaml:
+- generator
+- nsamples
+- sigma
+mxnet.test_utils.verify_generator.yaml:
+- alpha
+- buckets
+- generator
+- nrepeat
+- success_rate
+mxnet.util.get_cuda_compute_capability.yaml:
+- ctx
+mxnet.util.np_array.yaml:
+- active
+mxnet.util.np_shape.yaml:
+- active
+mxnet.util.np_ufunc_legal_option.yaml:
+- key
+- value
+mxnet.util.set_np.yaml:
+- array
+mxnet.util.set_np_shape.yaml:
+- active
+mxnet.util.use_np_array.yaml:
+- func
+mxnet.util.use_np_shape.yaml:
+- func
+mxnet.visualization.plot_network.yaml:
+- dtype
+- hide_weights
+- node_attrs
+- save_format
+- symbol
+- title
+mxnet.visualization.print_summary.yaml:
+- positions
+- symbol

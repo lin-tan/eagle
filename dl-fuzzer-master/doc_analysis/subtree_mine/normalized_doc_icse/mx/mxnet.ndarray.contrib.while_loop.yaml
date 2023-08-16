@@ -1,0 +1,39 @@
+constraints:
+  cond:
+    descp: The loop condition.
+    doc_dtype: a Python function.
+    normalized_descp:
+    - The loop condition
+    normalized_docdtype: a Python function
+  func:
+    descp: The loop body.
+    doc_dtype: a Python function.
+    normalized_descp:
+    - The loop body
+    normalized_docdtype: a Python function
+  loop_vars:
+    descp: The initial values of the loop variables.
+    doc_dtype: an NDArray or nested lists of NDArrays.
+    normalized_descp:
+    - The initial values of the loop variables
+    normalized_docdtype: an D_STRUCTURE or nested D_STRUCTURE of NDArrays
+  max_iterations:
+    default: None
+    descp: Maximum number of iterations.
+    doc_dtype: a python int.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum number of iterations
+    normalized_docdtype: a python D_TYPE
+inputs:
+  optional:
+  - max_iterations
+  required:
+  - cond
+  - func
+  - loop_vars
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.while_loop
+package: mxnet
+target: while_loop
+title: mxnet.ndarray.contrib.while_loop
+version: 1.6.0

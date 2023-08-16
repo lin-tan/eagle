@@ -1,0 +1,36 @@
+constraints:
+  concat_dim:
+    descp: A Tensor of type int32. 0-D. The dimension along which to concatenate.
+      Must be in the range [0, rank(values)).
+    dtype:
+    - tf.int32
+    range:
+    - '[0,ndim:&values)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  values:
+    descp: A list of at least 2 Tensor objects with the same type. The N Tensors to
+      concatenate. Their ranks and types must match, and their sizes must match in
+      all dimensions except concat_dim.
+    structure:
+    - list
+inputs:
+  optional:
+  - name
+  required:
+  - concat_dim
+  - values
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Concat
+outputs:
+- A Tensor. Has the same type as values.
+package: tensorflow
+target: Concat
+title: tf.raw_ops.Concat
+version: 2.3.0

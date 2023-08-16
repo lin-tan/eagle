@@ -1,0 +1,12 @@
+constraints:
+  labels_pred: {descp: 'array-like of shape (n_samples,) Cluster labels to evaluate'}
+  labels_true: {descp: 'int array, shape = [n_samples] Ground truth class labels to
+      be used as a reference'}
+inputs:
+  optional: []
+  required: [labels_true, labels_pred]
+link: ''
+package: sklearn
+target: adjusted_rand_score
+title: sklearn.metrics.adjusted_rand_score
+version: 0.24.2

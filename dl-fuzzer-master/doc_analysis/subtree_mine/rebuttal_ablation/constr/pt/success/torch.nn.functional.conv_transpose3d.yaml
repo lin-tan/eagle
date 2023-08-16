@@ -1,0 +1,150 @@
+constraints:
+  bias:
+    default: None
+    descp: 'optional bias of shape (out _channels) . Default: None'
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[out_channels]'
+  dilation:
+    default: '1'
+    descp: 'the spacing between kernel elements. Can be a single number or a tuple
+      (dT, dH, dW). Default: 1'
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[dt,dh,dw]'
+    structure:
+    - tuple
+  groups:
+    default: '1'
+    descp: 'split input into groups, in _channels  should be divisible by the number
+      of groups. Default: 1'
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  input:
+    descp: 'input tensor of shape (minibatch , in _channels , iT , iH , iW) '
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    - '5'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    - '[minibatch,in_channels,it,ih,iw]'
+    tensor_t:
+    - torch.tensor
+  output_padding:
+    default: '0'
+    descp: 'additional size added to one side of each dimension in the output shape.
+      Can be a single number or a tuple `(out_padT, out_padH, out_padW)`. Default:
+      0'
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[out_padt,out_padh,out_padw]'
+    structure:
+    - tuple
+  padding:
+    default: '0'
+    descp: '`dilation * (kernel_size - 1) - padding` zero-padding will be added to
+      both sides of each dimension in the input. Can be a single number or a tuple
+      `(padT, padH, padW)`. Default: 0'
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[padt,padh,padw]'
+    structure:
+    - tuple
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a tuple
+      `(sT, sH, sW)`. Default: 1'
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[st,sh,sw]'
+    structure:
+    - tuple
+  weight:
+    descp: 'filters of shape (in _channels ,  out _channels/groups , kT , kH , kW) '
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - bias
+  - stride
+  - padding
+  - output_padding
+  - groups
+  - dilation
+  required:
+  - input
+  - weight
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv_transpose3d
+package: torch
+ret_type: Tensor
+target: conv_transpose3d
+title: torch.nn.functional.conv_transpose3d
+version: 1.5.0

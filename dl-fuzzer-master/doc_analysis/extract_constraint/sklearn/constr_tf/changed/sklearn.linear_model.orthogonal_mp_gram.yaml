@@ -1,0 +1,90 @@
+constraints:
+  Gram:
+    descp: 'array, shape (n_features, n_features) Gram matrix of the input data: X.T
+      * X'
+    ndim:
+    - '2'
+    shape:
+    - '[n_features,n_features]'
+  Xy:
+    descp: 'array, shape (n_features,) or (n_features, n_targets) Input targets multiplied
+      by X: X.T * y'
+  copy_Gram:
+    default: 'True'
+    descp: bool, optional Whether the gram matrix must be copied by the algorithm.
+      A false value is only helpful if it is already Fortran-ordered, otherwise a
+      copy is made anyway.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  copy_Xy:
+    default: 'True'
+    descp: bool, optional Whether the covariance vector Xy must be copied by the algorithm.
+      If False, it may be overwritten.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  n_nonzero_coefs:
+    default: None
+    descp: int Desired number of non-zero entries in the solution. If None (by default)
+      this value is set to 10% of n_features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  norms_squared:
+    default: None
+    descp: array-like, shape (n_targets,) Squared L2 norms of the lines of y. Required
+      if tol is not None.
+    ndim:
+    - '1'
+    shape:
+    - '[n_targets]'
+  return_n_iter:
+    default: 'False'
+    descp: bool, optional default False Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  return_path:
+    default: 'False'
+    descp: 'bool, optional. Default: False Whether to return every value of the nonzero
+      coefficients along the forward path. Useful for cross-validation.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  tol:
+    default: None
+    descp: float Maximum norm of the residual. If not None, overrides n_nonzero_coefs.
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_targets
+inputs:
+  optional:
+  - n_nonzero_coefs
+  - tol
+  - norms_squared
+  - copy_Gram
+  - copy_Xy
+  - return_path
+  - return_n_iter
+  required:
+  - Gram
+  - Xy
+link: ''
+package: scikit-learn
+target: orthogonal_mp_gram
+title: sklearn.linear_model.orthogonal_mp_gram
+version: 0.24.X

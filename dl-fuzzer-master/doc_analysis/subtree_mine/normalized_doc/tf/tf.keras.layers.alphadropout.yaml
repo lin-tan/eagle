@@ -1,0 +1,36 @@
+aliases:
+- tf.compat.v1.keras.layers.AlphaDropout
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  noise_shape:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  rate:
+    descp: float, drop probability (as with `Dropout`). The multiplicative noise will
+      have standard deviation `sqrt(rate / (1 - rate))`.
+    normalized_descp:
+    - D_TYPE, drop probability as with QSTR
+    - The multiplicative noise will have standard deviation sqrt BSTR
+  seed:
+    default: None
+    descp: A Python integer to use as random seed.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A Python D_TYPE to use as random seed
+inputs:
+  optional:
+  - noise_shape
+  - seed
+  - '**kwargs'
+  required:
+  - rate
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/AlphaDropout
+package: tensorflow
+target: AlphaDropout
+title: tf.keras.layers.AlphaDropout
+version: 2.1.0

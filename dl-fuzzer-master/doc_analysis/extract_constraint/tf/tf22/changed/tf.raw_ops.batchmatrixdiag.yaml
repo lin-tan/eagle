@@ -1,0 +1,24 @@
+constraints:
+  diagonal:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchMatrixDiag
+outputs:
+- A Tensor. Has the same type as diagonal.
+package: tensorflow
+target: BatchMatrixDiag
+title: tf.raw_ops.BatchMatrixDiag
+version: 2.2.0

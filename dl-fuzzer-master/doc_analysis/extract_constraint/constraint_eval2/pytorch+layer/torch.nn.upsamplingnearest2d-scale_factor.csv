@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, Tuple[float, float]",multiplier for spatial size.,None,prim_dtype,dtype(torch.float32),,1
+"float, Tuple[float, float]",multiplier for spatial size.,None,nonprim_dtype,structure(tuple(torch.float32)),,1
+"float, Tuple[float, float]",multiplier for spatial size.,None,shape,ndim(1),,1

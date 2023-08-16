@@ -1,0 +1,27 @@
+constraints:
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_pred:
+    descp: array, shape = [n_samples] Estimated targets as returned by a classifier.
+  y_true:
+    descp: array, shape = [n_samples] Ground truth (correct) target values.
+dependency:
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: sklearn
+target: matthews_corrcoef
+title: sklearn.metrics.matthews_corrcoef
+version: 0.24.2

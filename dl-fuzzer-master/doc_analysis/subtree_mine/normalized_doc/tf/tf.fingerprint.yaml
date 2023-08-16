@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.fingerprint
+constraints:
+  data:
+    descp: A `Tensor`. Must have rank 1 or higher.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have rank CONSTANT_NUM or higher
+  method:
+    default: farmhash64
+    descp: A `Tensor` of type `tf.string`. Fingerprint method used by this op. Currently
+      available method is `farmhash64`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - Fingerprint method used by this op
+    - Currently available method is QSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - method
+  - name
+  required:
+  - data
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/fingerprint
+outputs: A two-dimensional `Tensor` of type `tf.uint8`. The first dimension equals
+  to`data`'s first dimension, and the second dimension size depends on the fingerprint
+  algorithm.
+package: tensorflow
+target: fingerprint
+title: tf.fingerprint
+version: 2.1.0

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, default 'NCHW'","Dimension ordering of data and out ('NCHW' or 'NHWC'). 'N', 'C', 'H', 'W' stands for batch, channel, height, and width dimensions respectively. padding is applied on 'H' and 'W' dimension.",NCHW,prim_dtype,"dtype(int, string)",,1

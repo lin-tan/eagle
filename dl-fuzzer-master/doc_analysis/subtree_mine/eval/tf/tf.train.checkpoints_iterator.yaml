@@ -1,0 +1,11 @@
+constraints:
+  min_interval_secs:
+    default: '0'
+    descp: The minimum number of seconds between yielding checkpoints.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: tf.train.checkpoints_iterator

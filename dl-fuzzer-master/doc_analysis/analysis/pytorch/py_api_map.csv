@@ -1,0 +1,1817 @@
+py_class,py_type,py_api,cpp_api,cpp_type,cpp_link
+,function,torch.is_tensor,,,
+,function,torch.is_storage,,,
+,function,torch.is_floating_point,at::is_floating_point,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acf997a7a3a7746c7283a5536e667659f.html
+,function,torch.set_default_dtype,,,
+,function,torch.get_default_dtype,,,
+,function,torch.set_default_tensor_type,,,
+,function,torch.numel,at::numel,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a95ad385710d6fe9c085e58fe1c9dcd00.html
+,function,torch.set_printoptions,,,
+,function,torch.set_flush_denormal,,,
+,function,torch.tensor,torch::tensor,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1abd1bdb34b2ec311bca5c2bb674a742f3.html
+,function,torch.sparse_coo_tensor,"at::sparse_coo_tensor(IntArrayRef, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa4d6cebf0d2b32fd2fec9a8b62cffc6c.html
+,function,torch.as_tensor,,,
+,function,torch.as_strided,at::as_strided,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a99fe464c6f1d119437a087d1a135679c.html
+,function,torch.from_numpy,,,
+,function,torch.zeros,"at::zeros(IntArrayRef, c10::optional<DimnameList>, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afb5adc121238fe29f8d6e3b50b8ec490.html
+,function,torch.zeros_like,"at::zeros_like(const Tensor&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a555baa1b9e3ea7ca6644536c65e35abc.html
+,function,torch.ones,"at::ones(IntArrayRef, c10::optional<DimnameList>, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6078b5edc7f285e6d7106a72cf7eda8f.html
+,function,torch.ones_like,"at::ones_like(const Tensor&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7d968813252171fdab3e32c9cf0a3385.html
+,function,torch.arange,"at::arange(Scalar, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a50793f4e667cd88f636870fc4b57e5ba.html
+,function,torch.range,"at::range(Scalar, Scalar, Scalar, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a647b9d9ed73557c0a99ca0c1640d094a.html
+,function,torch.linspace,at::linspace,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afeae1b0c7b874f28fe2d16fa36064f97.html
+,function,torch.logspace,at::logspace,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a13f32439cbfae0a4ad19d2414ebfb70f.html
+,function,torch.eye,"at::eye(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b527f085c232949879495d846b1ac21.html
+,function,torch.empty,"at::empty(IntArrayRef, c10::optional<DimnameList>, const TensorOptions&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa6196937e855007d42ea0b60a168296a.html
+,function,torch.empty_like,"at::empty_like(const Tensor&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1adbd006fb2494b4415cf9e161763ba88b.html
+,function,torch.empty_strided,at::empty_strided,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab349b3d0bfbea0ee83366c1cff1cea83.html
+,function,torch.full,"at::full(IntArrayRef, Scalar, c10::optional<DimnameList>, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1feb859c5393a0381925b3599af13692.html
+,function,torch.full_like,"at::full_like(const Tensor&, Scalar, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a26662dc046ba8ca9b1238583a6009cc3.html
+,function,torch.quantize_per_tensor,at::quantize_per_tensor,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a85f64a4c64ff8aab2ce778a305c698a1.html
+,function,torch.quantize_per_channel,at::quantize_per_channel,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a51b54d558c6fee601ba525f8ef35f52b.html
+,function,torch.cat,"at::cat(TensorList, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af839d613b74129cfea41b6591d1706fd.html
+,function,torch.chunk,at::chunk,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9736d4f1a4249746eb5df4e8ccbafab.html
+,function,torch.gather,"at::gather(const Tensor&, int64_t, const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a3bcd1e7e99541cd0a4fa754be8b7b1.html
+,function,torch.index_select,"at::index_select(const Tensor&, int64_t, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a21648eb998143e628e52a19d14aca245.html
+,function,torch.masked_select,at::masked_select,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac20a9c145c606f17d15f81f385a2bc51.html
+,function,torch.narrow,at::narrow,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acfb19b2b79f81e1faf67d55e801eee62.html
+,function,torch.nonzero,at::nonzero,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad0dc1795ec3f591843ea50ba0acb29d7.html
+,function,torch.reshape,at::reshape,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0c053c8caac9dad2fdecb850103bbfd1.html
+,function,torch.split,at::split,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a65d4a187bbd41b53ce0b86d1c2c13617.html
+,function,torch.squeeze,at::squeeze(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0fbe4fcca6f027b352f3b2084eaca6fe.html
+,function,torch.stack,at::stack,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a57b6b565a9a8318d4452e11f307e8725.html
+,function,torch.t,at::t,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a26d053066704adf74a469ef8a844bfc4.html
+,function,torch.take,at::take,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1540902062b036489d540448ffbeebf7.html
+,function,torch.transpose,"at::transpose(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a024981e8469e95eb6e4bdad0d5ac32ed.html
+,function,torch.unbind,"at::unbind(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2af40b650348e77413c0b949bbd0821c.html
+,function,torch.unsqueeze,at::unsqueeze,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a32dfc26a89ae456ad69c86469a07d271.html
+,function,torch.where,"at::where(const Tensor&, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a48b0ed4e9d0461e28e70a041254b7d6e.html
+,function,torch.where,"at::where(const Tensor&, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a48b0ed4e9d0461e28e70a041254b7d6e.html
+,function,torch.where,"at::where(const Tensor&, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a48b0ed4e9d0461e28e70a041254b7d6e.html
+,function,torch.seed,,,
+,function,torch.manual_seed,,,
+,function,torch.initial_seed,,,
+,function,torch.get_rng_state,,,
+,function,torch.set_rng_state,,,
+,function,torch.bernoulli,"at::bernoulli(const Tensor&, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3eb6adbaf9a9f64f66502b4696a22e8b.html
+,function,torch.multinomial,at::multinomial,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac675eda9cae4819bc9311097af498b67.html
+,function,torch.normal,"at::normal(const Tensor&, double, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a688eac89d39cc2d841feb51f15dd7b.html
+,function,torch.normal,"at::normal(const Tensor&, double, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a688eac89d39cc2d841feb51f15dd7b.html
+,function,torch.normal,"at::normal(const Tensor&, double, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a688eac89d39cc2d841feb51f15dd7b.html
+,function,torch.normal,"at::normal(const Tensor&, double, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a688eac89d39cc2d841feb51f15dd7b.html
+,function,torch.normal,"at::normal(const Tensor&, double, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a688eac89d39cc2d841feb51f15dd7b.html
+,function,torch.rand,"at::rand(IntArrayRef, c10::optional<DimnameList>, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a78bb75f7b5008024e2558d47d9795ba6.html
+,function,torch.rand_like,"at::rand_like(const Tensor&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae68cdb961de9f024101df00aff2c2e32.html
+,function,torch.randint,"at::randint(int64_t, IntArrayRef, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1729e6e3c8b4080abc8b5b1e190fdea4.html
+,function,torch.randint_like,"at::randint_like(const Tensor&, int64_t, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ada29275fdbca59275f6f3db67d29edf2.html
+,function,torch.randn,"at::randn(IntArrayRef, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae4cdfc0fc44bc12fc9993387c43ab782.html
+,function,torch.randn_like,"at::randn_like(const Tensor&, c10::optional<MemoryFormat>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a96a79e1e0840cec19a7644ff7be6503f.html
+,function,torch.randperm,"at::randperm(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa8e97e13b60cc2ce5ea95fc8e52740c8.html
+,function,torch.save,"torch::save(const Value&, SaveToArgs&&…)",Template Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1a99dc9f736064b2179cc58e6436f7a021.html
+,function,torch.load,"torch::jit::load(std::istream&, c10::optional<c10::Device>, script::ExtraFilesMap&)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1jit_1a1e56f9de192b19faecdafc48459cfa75.html
+,function,torch.get_num_threads,,,
+,function,torch.set_num_threads,,,
+,function,torch.get_num_interop_threads,,,
+,function,torch.set_num_interop_threads,,,
+,function,torch.abs,at::abs,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a514afabf36bc821632d27f1fb0c8830b.html
+,function,torch.acos,at::acos,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a73e3fe1e7655e7501c2029b5f4c3a7cd.html
+,function,torch.add,"at::add(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afdd5c8855d82edd09b89dfdcecc42b73.html
+,function,torch.add,"at::add(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afdd5c8855d82edd09b89dfdcecc42b73.html
+,function,torch.add,"at::add(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afdd5c8855d82edd09b89dfdcecc42b73.html
+,function,torch.addcdiv,at::addcdiv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae229c0433a9241b5a066402f6a7f39b2.html
+,function,torch.addcmul,at::addcmul,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1ecc43dd8fe72b3698faabe42a4479b6.html
+,function,torch.angle,at::angle,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6539b444f53c95d6ac9fc6b30738701e.html
+,function,torch.asin,at::asin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac3411e4ff6bdb7841c1555beabe4efbe.html
+,function,torch.atan,at::atan,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aea730970ddeda1abf6699af9bb3166e8.html
+,function,torch.atan2,at::atan2,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a075df7032a897c6953004002998355b4.html
+,function,torch.bitwise_not,at::bitwise_not,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a076ac508ef6a84a1fcecba2f323de15a.html
+,function,torch.bitwise_xor,"at::bitwise_xor(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afaeaf42d1c1beb30a9b2e59b65095ad4.html
+,function,torch.ceil,at::ceil,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a70953390dce069de766ad62fc60ee59a.html
+,function,torch.clamp,at::clamp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20be2de650096933b7c01c4d943fda11.html
+,function,torch.clamp,at::clamp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20be2de650096933b7c01c4d943fda11.html
+,function,torch.clamp,at::clamp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20be2de650096933b7c01c4d943fda11.html
+,function,torch.conj,at::conj,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a36fea807f3e8e9acdce9ea1d1fbc65bc.html
+,function,torch.cos,at::cos,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abf8d833da61c59c98cbf4745fdc03c1f.html
+,function,torch.cosh,at::cosh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1adc562f6d7c66b7f5a0c3dd2169e1393c.html
+,function,torch.div,"at::div(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1c5daa7e60df6db3673363f8e0a14218.html
+,function,torch.div,"at::div(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1c5daa7e60df6db3673363f8e0a14218.html
+,function,torch.div,"at::div(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1c5daa7e60df6db3673363f8e0a14218.html
+,function,torch.digamma,at::digamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a00ee8ed2c46a9a4ae84ded7432ef0291.html
+,function,torch.erf,at::erf,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a37daa9bb9a05250496be3cc6448077ba.html
+,function,torch.erfc,at::erfc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6a05ce1fd50d34ae044dbfe6f358ce20.html
+,function,torch.erfinv,at::erfinv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a693d96559dddb1337ed35295a6a316ea.html
+,function,torch.exp,at::exp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3e012377af19b8b619fd9aa1938fa72d.html
+,function,torch.expm1,at::expm1,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3fd84139fa7003b8efe9c4fd6fa078a4.html
+,function,torch.floor,at::floor,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa6f1ef7a4554f521bdd551b496165cd1.html
+,function,torch.fmod,"at::fmod(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1d23e6340f4a8847ac3a1f30dd76ab7c.html
+,function,torch.frac,at::frac,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abb162a7a568ae1273f2483a624fc3558.html
+,function,torch.imag,at::imag,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8fc03159932df3bb009c05674429fb24.html
+,function,torch.lerp,"at::lerp(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3f3387e1de4c2b993466295e3180390f.html
+,function,torch.lgamma,at::lgamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae80021c749d42d0625e90973b18a00bc.html
+,function,torch.log,at::log,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afbad55cdae7cd84b8ae632c3158d14b2.html
+,function,torch.log10,at::log10,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a42d41fd1b0cf703e59388bce15a9dc3d.html
+,function,torch.log1p,at::log1p,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b335b37762be7e605b514563fa039e7.html
+,function,torch.log2,at::log2,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a24bc24f71c7215adfe958115f8028670.html
+,function,torch.logical_not,at::logical_not,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1d8b175ecee66d49ff42ad6512b87790.html
+,function,torch.logical_xor,at::logical_xor,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad7e1e76c8951569161bf45e60935eec4.html
+,function,torch.mul,"at::mul(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a548d3a9487b02df4d131db510444ab.html
+,function,torch.mul,"at::mul(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a548d3a9487b02df4d131db510444ab.html
+,function,torch.mul,"at::mul(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a548d3a9487b02df4d131db510444ab.html
+,function,torch.mvlgamma,at::mvlgamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a58d0a42782162e2f62d8729f64a2e30a.html
+,function,torch.neg,at::neg,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8a69cc08ef22c9e7cefaf0dac0674168.html
+,function,torch.polygamma,at::polygamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98080f784a3c761958a42f273ac5cfd2.html
+,function,torch.pow,"at::pow(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae6246d139ae8d62ca9568cf48d337781.html
+,function,torch.pow,"at::pow(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae6246d139ae8d62ca9568cf48d337781.html
+,function,torch.pow,"at::pow(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae6246d139ae8d62ca9568cf48d337781.html
+,function,torch.real,at::real,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a43be3d908d506b0cd50b113d46490ff8.html
+,function,torch.reciprocal,at::reciprocal,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae1276a5cf73def9ec96ef520a7125642.html
+,function,torch.remainder,"at::remainder(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a30481c60f9fed471020b8dbf827bdbe4.html
+,function,torch.round,at::round,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7006360e3d3d984d741738deffff2557.html
+,function,torch.rsqrt,at::rsqrt,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a069d7114a28862016b8b2d9d2e6e5319.html
+,function,torch.sigmoid,at::sigmoid,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2cf79ba2416f481371f02229d7e4924f.html
+,function,torch.sign,at::sign,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9624ed77d963cfbd2e580fa778770246.html
+,function,torch.sin,at::sin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a65fcaee46544ea590e972dcf399eca3b.html
+,function,torch.sinh,at::sinh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a81dc472e0b9f14847e0744df4558a0b2.html
+,function,torch.sqrt,at::sqrt,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0190691b3f98853b6fd3b8d72080e3a2.html
+,function,torch.tan,at::tan,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1be9917c94e054b94a7731a6a88b1472.html
+,function,torch.tanh,at::tanh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a93c55130815801b70794d8f0241cbfe8.html
+,function,torch.trunc,at::trunc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ace1173f0b15858e85a3125cb2f496917.html
+,function,torch.argmax,at::argmax,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98b72dc1f6765d375ed066b9236eb1f0.html
+,function,torch.argmax,at::argmax,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98b72dc1f6765d375ed066b9236eb1f0.html
+,function,torch.argmax,at::argmax,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98b72dc1f6765d375ed066b9236eb1f0.html
+,function,torch.argmin,at::argmin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b02d1b93244e1ecd6161b193287a450.html
+,function,torch.argmin,at::argmin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b02d1b93244e1ecd6161b193287a450.html
+,function,torch.argmin,at::argmin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b02d1b93244e1ecd6161b193287a450.html
+,function,torch.dist,at::dist,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a76a287212591e1c083ecc4fd77fcbbf1.html
+,function,torch.logsumexp,"at::logsumexp(const Tensor&, IntArrayRef, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad31c5b66bf0f891cd05c1d78c6d10aa2.html
+,function,torch.mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+,function,torch.mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+,function,torch.mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+,function,torch.median,"at::median(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af05c0d1b40e4f3b6fb8622ff4aad2827.html
+,function,torch.median,"at::median(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af05c0d1b40e4f3b6fb8622ff4aad2827.html
+,function,torch.median,"at::median(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af05c0d1b40e4f3b6fb8622ff4aad2827.html
+,function,torch.mode,"at::mode(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a021799cd137358db9099a2fb8cb9d72e.html
+,function,torch.norm,"at::norm(const Tensor&, c10::optional<Scalar>, ScalarType)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa338d2337732af1a14ff7c67353ef9c9.html
+,function,torch.prod,"at::prod(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a919dcd4f18a5a2ee4358121f969b2631.html
+,function,torch.prod,"at::prod(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a919dcd4f18a5a2ee4358121f969b2631.html
+,function,torch.prod,"at::prod(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a919dcd4f18a5a2ee4358121f969b2631.html
+,function,torch.std,"at::std(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d659b47db020375e9995884acda2219.html
+,function,torch.std,"at::std(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d659b47db020375e9995884acda2219.html
+,function,torch.std,"at::std(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d659b47db020375e9995884acda2219.html
+,function,torch.std_mean,"at::std_mean(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a426a8eff7fa7792b3f007621e4bcc73c.html
+,function,torch.std_mean,"at::std_mean(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a426a8eff7fa7792b3f007621e4bcc73c.html
+,function,torch.std,"at::std(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d659b47db020375e9995884acda2219.html
+,function,torch.sum,"at::sum(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abfab96bd4d849eaadc24b39c0706d6ff.html
+,function,torch.sum,"at::sum(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abfab96bd4d849eaadc24b39c0706d6ff.html
+,function,torch.sum,"at::sum(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abfab96bd4d849eaadc24b39c0706d6ff.html
+,function,torch.unique,,,
+,function,torch.unique_consecutive,at::unique_consecutive,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a60c2195e0dcd11e190e8fe5311ed7ae7.html
+,function,torch.var,"at::var(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1add7a8bd4aa2ef10f3a7eaa1706f4aa5e.html
+,function,torch.var,"at::var(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1add7a8bd4aa2ef10f3a7eaa1706f4aa5e.html
+,function,torch.var,"at::var(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1add7a8bd4aa2ef10f3a7eaa1706f4aa5e.html
+,function,torch.var_mean,"at::var_mean(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8be20ef26c2127bf31a384ddd2870023.html
+,function,torch.var_mean,"at::var_mean(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8be20ef26c2127bf31a384ddd2870023.html
+,function,torch.var_mean,"at::var_mean(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8be20ef26c2127bf31a384ddd2870023.html
+,function,torch.allclose,at::allclose,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6718f09b724a8c39442d1a1585db19e1.html
+,function,torch.argsort,"at::argsort(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acbff7b51f2937cb0202075137312c466.html
+,function,torch.eq,"at::eq(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b226bed3f4f2e28d8013be0428df609.html
+,function,torch.equal,at::equal,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab5c3f388e23accb180fe7319377dc498.html
+,function,torch.ge,"at::ge(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa2352eb1e593f2ee872d8ff44d2cfd36.html
+,function,torch.gt,"at::gt(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2d0bc9420f2d3437ad2418749f8c3c70.html
+,function,torch.isfinite,at::isfinite,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae80b1acbbc9045c75b24283e4fa91acd.html
+,function,torch.isinf,at::isinf,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afa0d4d5d1f388935d31d3dcc23970f28.html
+,function,torch.isnan,at::isnan,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa468b5546791b20fa71d2fb1b797ecdc.html
+,function,torch.kthvalue,"at::kthvalue(const Tensor&, int64_t, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a693f136d11a2380f9223e005c15a261f.html
+,function,torch.le,"at::le(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af4cf6bb5ec4877a51616f59b507b7aea.html
+,function,torch.lt,"at::lt(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a627a4cb8dcac0bd64793ce9da60d39e0.html
+,function,torch.max,"at::max(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a49425db0199b37853776e83658c6b27c.html
+,function,torch.max,"at::max(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a49425db0199b37853776e83658c6b27c.html
+,function,torch.max,"at::max(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a49425db0199b37853776e83658c6b27c.html
+,function,torch.max,"at::max(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a49425db0199b37853776e83658c6b27c.html
+,function,torch.min,"at::min(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b65df64cb3dc3a1dcb6a115f541b6b3.html
+,function,torch.min,"at::min(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b65df64cb3dc3a1dcb6a115f541b6b3.html
+,function,torch.min,"at::min(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b65df64cb3dc3a1dcb6a115f541b6b3.html
+,function,torch.min,"at::min(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b65df64cb3dc3a1dcb6a115f541b6b3.html
+,function,torch.ne,"at::ne(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab1e10506f73a7569f5a6a3ecb19fdc33.html
+,function,torch.sort,"at::sort(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae4aeb6d5ecc953e5e221a44016550b89.html
+,function,torch.topk,at::topk,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acf88a07f29865d491a093d6aaa422663.html
+,function,torch.fft,at::fft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3c00c632a6391e6fb8246938ad254da1.html
+,function,torch.ifft,at::ifft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a420a51562a7a5bc58720a0d578fd20c7.html
+,function,torch.rfft,at::rfft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a60d175318c1efc1402a27484de1c2e80.html
+,function,torch.irfft,at::irfft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3e6c2719c3515ecbb638aaf35efa9ecd.html
+,function,torch.stft,at::stft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae7d915e8072a86812adc3d28294fc177.html
+,function,torch.bartlett_window,"at::bartlett_window(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa01c2035e4b25d4534d94ea337fa996e.html
+,function,torch.blackman_window,"at::blackman_window(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab7589531f4a90dfd6ca09944a97c211b.html
+,function,torch.hamming_window,"at::hamming_window(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abada76a4b67ef1ae65ee2590f242cc5f.html
+,function,torch.hann_window,"at::hann_window(int64_t, const TensorOptions&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2e1b1e68be0e91aa1abee3e85ab8cbc0.html
+,function,torch.bincount,at::bincount,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9c029c13ae758726b598270ed777f69.html
+,function,torch.broadcast_tensors,at::broadcast_tensors,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a77b9355a0e4137d1eef26c5bd9297970.html
+,function,torch.cartesian_prod,at::cartesian_prod,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af201d97fc530d87cd89cf6134d581059.html
+,function,torch.cdist,at::cdist,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a43a82aced33c650c063e627c0e4e09ef.html
+,function,torch.combinations,at::combinations,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2909a77a9b3d3c9e304e36de625249f8.html
+,function,torch.cross,at::cross,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2e8e9a2216249985d70817a75d54d608.html
+,function,torch.cumprod,"at::cumprod(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afaea25f70953da10d8e333d805131ed2.html
+,function,torch.cumsum,"at::cumsum(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d83732bcaf33ae5fae96d3cd29fce48.html
+,function,torch.diag,at::diag,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9d5ff4161c027d2b8d6500633c200d6.html
+,function,torch.diag_embed,at::diag_embed,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0edd4b49d4ea7ba669c3e9fa263245.html
+,function,torch.diagflat,at::diagflat,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1adc80ded13aee4a6c5f9c00f4273c58da.html
+,function,torch.diagonal,"at::diagonal(const Tensor&, int64_t, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8d56d4d525ab0efaf33a9c0979a081e7.html
+,function,torch.einsum,at::einsum,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad1a19b8d88d8e8a9d16630922dcd7676.html
+,function,torch.flatten,"at::flatten(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a55843006e38a3a24949dc0704598da87.html
+,function,torch.flip,at::flip,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a062ed7738ae3b2d31308b67cafd21f78.html
+,function,torch.rot90,at::rot90,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b6d7e1e731ab70fdcccd162ee14a1f3.html
+,function,torch.histc,at::histc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1aca43c07f66d859d01f86dbf5344cc7.html
+,function,torch.meshgrid,at::meshgrid,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7153c100a5537319fb5b815d5463cef6.html
+,function,torch.renorm,at::renorm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a47f3eea93e2fe96d6642d95666d667f7.html
+,function,torch.repeat_interleave,at::repeat_interleave(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0203716665ef5cad8c7744d2dcc775.html
+,function,torch.repeat_interleave,at::repeat_interleave(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0203716665ef5cad8c7744d2dcc775.html
+,function,torch.repeat_interleave,at::repeat_interleave(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0203716665ef5cad8c7744d2dcc775.html
+,function,torch.roll,at::roll,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9b0e4056b2dc9005cef6960b84eee645.html
+,function,torch.tensordot,at::tensordot,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0726f0b0c81073da74431a49ca37bb7d.html
+,function,torch.trace,at::trace,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ade4208476ac706750804b51e9e86f975.html
+,function,torch.tril,at::tril,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a95349c5b58123780bfc8a10106c7b796.html
+,function,torch.tril_indices,at::tril_indices,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afc39853b0e46b9ebace9996c5b9f8a95.html
+,function,torch.triu,at::triu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6e00b525944fe21a56efb4d5588e8484.html
+,function,torch.triu_indices,at::triu_indices,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a36160b6c87b2bf1ca888e01b89130b2e.html
+,function,torch.addbmm,at::addbmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aed6a03a8e28b107b5f8eb399c0ea341b.html
+,function,torch.addmm,at::addmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac1155c41e5a2cd930568f7ff8e547b4c.html
+,function,torch.addmv,at::addmv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aaf7481bc4e3d22e958ac10c45bda1dd6.html
+,function,torch.addr,at::addr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae62ff171bfc8630dec04983e448c94bf.html
+,function,torch.baddbmm,at::baddbmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a440572d9374ba82b7b084f6b36f6699c.html
+,function,torch.bmm,at::bmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aac51f71f807ca70fd210814114520c34.html
+,function,torch.chain_matmul,at::chain_matmul,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3fda86bf9e1087d829e6b03720197931.html
+,function,torch.cholesky,at::cholesky,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aff3bfa37f10707ab8a032483ad5c7992.html
+,function,torch.cholesky_inverse,at::cholesky_inverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a773321e41604a3be557b687db777ae37.html
+,function,torch.cholesky_solve,at::cholesky_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4a1f935cd7fe1c7cf81405b34f5037a7.html
+,function,torch.dot,at::dot,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a85b4aa562c561f73766af7547d2389b6.html
+,function,torch.eig,at::eig,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad66783f082051f86d1330fdf2aac72c7.html
+,function,torch.geqrf,at::geqrf,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a43fbba707930513ea5da85593dd53a41.html
+,function,torch.ger,at::ger,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8344c6c44d36d4884a2ca83e7e547b0a.html
+,function,torch.inverse,at::inverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abacfa3904f73dbb0409368a19964e040.html
+,function,torch.det,at::det,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a922ae94d41acc876e8ff18faa711de0b.html
+,function,torch.logdet,at::logdet,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afd7127fdecd7303bd25bc084f3d3625d.html
+,function,torch.slogdet,at::slogdet,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aecddf3e80c961f0ba5941bde423a29d4.html
+,function,torch.lstsq,at::lstsq,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abeb0dcf49e9d17a8cdb730b624addf7c.html
+,function,torch.lu,,,
+,function,torch.lu_solve,at::lu_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4b6b95ec43e20f4718fd34a909a2bd4b.html
+,function,torch.lu_unpack,,,
+,function,torch.matmul,at::matmul,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0e928e234e518e16f2f3b1c66b53c27d.html
+,function,torch.matrix_power,at::matrix_power,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8a881979a6aab7d3ca6ba1f918334fa9.html
+,function,torch.matrix_rank,"at::matrix_rank(const Tensor&, double, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a5819ac8807bd970031fb3c9f58cf089a.html
+,function,torch.mm,at::mm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac21be4a6b3f22dfbb52300dc233e270c.html
+,function,torch.mv,at::mv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab81faebb455f8875ef5b29b6f0856773.html
+,function,torch.orgqr,at::orgqr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac8f1ad85c8d0e71f4ef60e9f766ee4fd.html
+,function,torch.ormqr,at::ormqr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1e370cd7d9733b6f09a3927342f11dd6.html
+,function,torch.pinverse,at::pinverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0f76dc6207440c817cdc258783cf7a5d.html
+,function,torch.qr,at::qr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a12b2c54b9b7b9088a96dc2f8a1c778f9.html
+,function,torch.solve,at::solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af0d26c48c97c0bf3f0e25f74325c7226.html
+,function,torch.svd,at::svd,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8d87971f4003e2d5af8e0abfd30f86da.html
+,function,torch.symeig,at::symeig,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1f1a0f18bd5203e5b9a2e2c9e1b58abb.html
+,function,torch.trapz,"at::trapz(const Tensor&, const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6121a1dc80f906a09e1b740657fe410e.html
+,function,torch.trapz,"at::trapz(const Tensor&, const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6121a1dc80f906a09e1b740657fe410e.html
+,function,torch.trapz,"at::trapz(const Tensor&, const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6121a1dc80f906a09e1b740657fe410e.html
+,function,torch.triangular_solve,at::triangular_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a017fa83620d7caf3b81b9a0805e5fefb.html
+,function,torch.compiled_with_cxx11_abi,,,
+,function,torch.result_type,"at::result_type(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a150e3b1840987ec308098062cfbf66a5.html
+,function,torch.can_cast,at::can_cast,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8a67f122eb7407016b8d94ae3a0bc5e6.html
+,function,torch.promote_types,at::promote_types,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8306af5a8b70dbbe366ebf53d88f7542.html
+torch._C.Generator,class,,,,
+torch._C.Generator,attribute,device,Device,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_device.html
+torch._C.Generator,method,get_state,,,
+torch._C.Generator,method,initial_seed,,,
+torch._C.Generator,method,manual_seed,,,
+torch._C.Generator,method,seed,,,
+torch._C.Generator,method,set_state,,,
+torch.quasirandom.SobolEngine,class,,,,
+torch.quasirandom.SobolEngine,method,draw,,,
+torch.quasirandom.SobolEngine,method,fast_forward,,,
+torch.quasirandom.SobolEngine,method,reset,,,
+,function,to,,,
+,function,to,,,
+,function,to,,,
+,function,torch.nn.utils.clip_grad_norm_,"torch::nn::utils::clip_grad_norm_(std::vector<Tensor>, double, double)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1utils_1ab2256f0d5ac7d428277b1380994f499d.html
+,function,torch.nn.utils.clip_grad_value_,"torch::nn::utils::clip_grad_value_(std::vector<Tensor>, double)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1utils_1af29d47d947966356a01ac3220e56c6e2.html
+,function,torch.nn.utils.parameters_to_vector,torch::nn::utils::parameters_to_vector,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1utils_1ac70875ede5683f15e7d5f784d63f65de.html
+,function,torch.nn.utils.vector_to_parameters,torch::nn::utils::vector_to_parameters,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1utils_1add1fd1ae907a8fb6072ee51c8b60f0d1.html
+,function,torch.nn.utils.prune.identity,Identity,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_identity.html
+,function,torch.nn.utils.prune.random_unstructured,,,
+,function,torch.nn.utils.prune.l1_unstructured,,,
+,function,torch.nn.utils.prune.random_structured,,,
+,function,torch.nn.utils.prune.ln_structured,,,
+,function,torch.nn.utils.prune.global_unstructured,,,
+,function,torch.nn.utils.prune.custom_from_mask,,,
+,function,torch.nn.utils.prune.remove,,,
+,function,torch.nn.utils.prune.is_pruned,,,
+,function,torch.nn.utils.weight_norm,,,
+,function,torch.nn.utils.remove_weight_norm,,,
+,function,torch.nn.utils.spectral_norm,,,
+,function,torch.nn.utils.remove_spectral_norm,,,
+,function,torch.nn.utils.rnn.PackedSequence,,,
+,function,torch.nn.utils.rnn.pack_padded_sequence,,,
+,function,torch.nn.utils.rnn.pad_packed_sequence,,,
+,function,torch.nn.utils.rnn.pad_sequence,torch::nn::utils::rnn::pad_sequence,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1utils_1_1rnn_1a30a5b37568e21970106a42fd6fcba22d.html
+,function,torch.nn.utils.rnn.pack_sequence,,,
+torch.nn.Parameter,class,,,,
+torch.nn.Module,class,,Module,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_module.html
+torch.nn.Module,method,add_module,,,
+torch.nn.Module,method,apply,,,
+torch.nn.Module,method,buffers,,,
+torch.nn.Module,method,children,,,
+torch.nn.Module,method,cpu,,,
+torch.nn.Module,method,cuda,at::cuda,Namespace,https://pytorch.org/cppdocs/api/namespace_at__cuda.html
+torch.nn.Module,method,double,,,
+torch.nn.Module,attribute,dump_patches,,,
+torch.nn.Module,method,eval,,,
+torch.nn.Module,method,extra_repr,,,
+torch.nn.Module,method,float,,,
+torch.nn.Module,method,forward,,,
+torch.nn.Module,method,half,Half,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_half.html
+torch.nn.Module,method,load_state_dict,,,
+torch.nn.Module,method,modules,,,
+torch.nn.Module,method,named_buffers,,,
+torch.nn.Module,method,named_children,,,
+torch.nn.Module,method,named_modules,,,
+torch.nn.Module,method,named_parameters,,,
+torch.nn.Module,method,parameters,,,
+torch.nn.Module,method,register_backward_hook,,,
+torch.nn.Module,method,register_buffer,,,
+torch.nn.Module,method,register_forward_hook,,,
+torch.nn.Module,method,register_forward_pre_hook,,,
+torch.nn.Module,method,register_parameter,,,
+torch.nn.Module,method,requires_grad_,,,
+torch.nn.Module,method,state_dict,,,
+torch.nn.Module,method,to,,,
+torch.nn.Module,method,train,,,
+torch.nn.Module,method,type,,,
+torch.nn.Module,method,zero_grad,,,
+torch.nn.Sequential,class,,Sequential,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_sequential.html
+torch.nn.ModuleList,class,,,,
+torch.nn.ModuleList,method,append,,,
+torch.nn.ModuleList,method,extend,,,
+torch.nn.ModuleList,method,insert,,,
+torch.nn.ModuleDict,class,,,,
+torch.nn.ModuleDict,method,clear,,,
+torch.nn.ModuleDict,method,items,,,
+torch.nn.ModuleDict,method,keys,,,
+torch.nn.ModuleDict,method,pop,,,
+torch.nn.ModuleDict,method,update,,,
+torch.nn.ModuleDict,method,values,,,
+torch.nn.ParameterList,class,,,,
+torch.nn.ParameterList,method,append,,,
+torch.nn.ParameterList,method,extend,,,
+torch.nn.ParameterDict,class,,,,
+torch.nn.ParameterDict,method,clear,,,
+torch.nn.ParameterDict,method,items,,,
+torch.nn.ParameterDict,method,keys,,,
+torch.nn.ParameterDict,method,pop,,,
+torch.nn.ParameterDict,method,update,,,
+torch.nn.ParameterDict,method,values,,,
+torch.nn.Conv1d,class,,Conv1d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv1d.html
+torch.nn.Conv2d,class,,Conv2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv2d.html
+torch.nn.Conv3d,class,,Conv3d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv3d.html
+torch.nn.ConvTranspose1d,class,,,,
+torch.nn.ConvTranspose2d,class,,,,
+torch.nn.ConvTranspose3d,class,,,,
+torch.nn.Unfold,class,,Unfold,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_unfold.html
+torch.nn.Fold,class,,Fold,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_fold.html
+torch.nn.MaxPool1d,class,,,,
+torch.nn.MaxPool2d,class,,,,
+torch.nn.MaxPool3d,class,,,,
+torch.nn.MaxUnpool1d,class,,,,
+torch.nn.MaxUnpool2d,class,,,,
+torch.nn.MaxUnpool3d,class,,,,
+torch.nn.AvgPool1d,class,,,,
+torch.nn.AvgPool2d,class,,,,
+torch.nn.AvgPool3d,class,,,,
+torch.nn.FractionalMaxPool2d,class,,,,
+torch.nn.LPPool1d,class,,LPPool1d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_l_p_pool1d.html
+torch.nn.LPPool2d,class,,LPPool2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_l_p_pool2d.html
+torch.nn.AdaptiveMaxPool1d,class,,,,
+torch.nn.AdaptiveMaxPool2d,class,,,,
+torch.nn.AdaptiveMaxPool3d,class,,,,
+torch.nn.AdaptiveAvgPool1d,class,,,,
+torch.nn.AdaptiveAvgPool2d,class,,,,
+torch.nn.AdaptiveAvgPool3d,class,,,,
+torch.nn.ReflectionPad1d,class,,,,
+torch.nn.ReflectionPad2d,class,,,,
+torch.nn.ReplicationPad1d,class,,,,
+torch.nn.ReplicationPad2d,class,,,,
+torch.nn.ReplicationPad3d,class,,,,
+torch.nn.ZeroPad2d,class,,,,
+torch.nn.ConstantPad1d,class,,,,
+torch.nn.ConstantPad2d,class,,,,
+torch.nn.ConstantPad3d,class,,,,
+torch.nn.ELU,class,,ELU,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_e_l_u.html
+torch.nn.Hardshrink,class,,Hardshrink,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_hardshrink.html
+torch.nn.Hardtanh,class,,Hardtanh,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_hardtanh.html
+torch.nn.LeakyReLU,class,,,,
+torch.nn.LogSigmoid,class,,,,
+torch.nn.MultiheadAttention,class,,,,
+torch.nn.MultiheadAttention,method,forward,,,
+torch.nn.PReLU,class,,,,
+torch.nn.ReLU,class,,,,
+torch.nn.ReLU6,class,,,,
+torch.nn.RReLU,class,,,,
+torch.nn.SELU,class,,SELU,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_s_e_l_u.html
+torch.nn.CELU,class,,CELU,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_c_e_l_u.html
+torch.nn.GELU,class,,GELU,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_g_e_l_u.html
+torch.nn.Sigmoid,class,,Sigmoid,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_sigmoid.html
+torch.nn.Softplus,class,,Softplus,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softplus.html
+torch.nn.Softshrink,class,,Softshrink,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softshrink.html
+torch.nn.Softsign,class,,Softsign,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softsign.html
+torch.nn.Tanh,class,,Tanh,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_tanh.html
+torch.nn.Tanhshrink,class,,Tanhshrink,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_tanhshrink.html
+torch.nn.Threshold,class,,Threshold,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_threshold.html
+torch.nn.Softmin,class,,Softmin,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softmin.html
+torch.nn.Softmax,class,,Softmax,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softmax.html
+torch.nn.Softmax2d,class,,Softmax2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_softmax2d.html
+torch.nn.LogSoftmax,class,,,,
+torch.nn.AdaptiveLogSoftmaxWithLoss,class,,,,
+torch.nn.AdaptiveLogSoftmaxWithLoss,method,log_prob,,,
+torch.nn.AdaptiveLogSoftmaxWithLoss,method,predict,,,
+torch.nn.BatchNorm1d,class,,,,
+torch.nn.BatchNorm2d,class,,,,
+torch.nn.BatchNorm3d,class,,,,
+torch.nn.GroupNorm,class,,,,
+torch.nn.SyncBatchNorm,class,,,,
+torch.nn.SyncBatchNorm,method,convert_sync_batchnorm,,,
+torch.nn.InstanceNorm1d,class,,,,
+torch.nn.InstanceNorm2d,class,,,,
+torch.nn.InstanceNorm3d,class,,,,
+torch.nn.LayerNorm,class,,,,
+torch.nn.LocalResponseNorm,class,,,,
+torch.nn.RNNBase,class,,,,
+torch.nn.RNNBase,method,flatten_parameters,,,
+torch.nn.RNN,class,,RNN,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_r_n_n.html
+torch.nn.LSTM,class,,LSTM,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_l_s_t_m.html
+torch.nn.GRU,class,,GRU,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_g_r_u.html
+torch.nn.RNNCell,class,,,,
+torch.nn.LSTMCell,class,,,,
+torch.nn.GRUCell,class,,,,
+torch.nn.Transformer,class,,,,
+torch.nn.Transformer,method,forward,,,
+torch.nn.Transformer,method,generate_square_subsequent_mask,,,
+torch.nn.TransformerEncoder,class,,,,
+torch.nn.TransformerEncoder,method,forward,,,
+torch.nn.TransformerDecoder,class,,,,
+torch.nn.TransformerDecoder,method,forward,,,
+torch.nn.TransformerEncoderLayer,class,,,,
+torch.nn.TransformerEncoderLayer,method,forward,,,
+torch.nn.TransformerDecoderLayer,class,,,,
+torch.nn.TransformerDecoderLayer,method,forward,,,
+torch.nn.Identity,class,,Identity,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_identity.html
+torch.nn.Linear,class,,Linear,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_linear.html
+torch.nn.Bilinear,class,,Bilinear,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_bilinear.html
+torch.nn.Dropout,class,,Dropout,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_dropout.html
+torch.nn.Dropout2d,class,,Dropout2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_dropout2d.html
+torch.nn.Dropout3d,class,,Dropout3d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_dropout3d.html
+torch.nn.AlphaDropout,class,,,,
+torch.nn.Embedding,class,,Embedding,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_embedding.html
+torch.nn.Embedding,method,from_pretrained,,,
+torch.nn.EmbeddingBag,class,,,,
+torch.nn.EmbeddingBag,method,from_pretrained,,,
+torch.nn.CosineSimilarity,class,,,,
+torch.nn.PairwiseDistance,class,,,,
+torch.nn.L1Loss,class,,,,
+torch.nn.MSELoss,class,,MSELoss,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_m_s_e_loss.html
+torch.nn.CrossEntropyLoss,class,,,,
+torch.nn.CTCLoss,class,,CTCLoss,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_c_t_c_loss.html
+torch.nn.NLLLoss,class,,NLLLoss,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_n_l_l_loss.html
+torch.nn.PoissonNLLLoss,class,,,,
+torch.nn.KLDivLoss,class,,,,
+torch.nn.BCELoss,class,,BCELoss,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_b_c_e_loss.html
+torch.nn.BCEWithLogitsLoss,class,,,,
+torch.nn.MarginRankingLoss,class,,,,
+torch.nn.HingeEmbeddingLoss,class,,,,
+torch.nn.MultiLabelMarginLoss,class,,,,
+torch.nn.SmoothL1Loss,class,,,,
+torch.nn.SoftMarginLoss,class,,,,
+torch.nn.MultiLabelSoftMarginLoss,class,,,,
+torch.nn.CosineEmbeddingLoss,class,,,,
+torch.nn.MultiMarginLoss,class,,,,
+torch.nn.TripletMarginLoss,class,,,,
+torch.nn.PixelShuffle,class,,,,
+torch.nn.Upsample,class,,Upsample,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_upsample.html
+torch.nn.UpsamplingNearest2d,class,,,,
+torch.nn.UpsamplingBilinear2d,class,,,,
+torch.nn.DataParallel,class,,,,
+torch.nn.parallel.DistributedDataParallel,class,,,,
+torch.nn.parallel.DistributedDataParallel,method,no_sync,,,
+torch.nn.utils.prune.BasePruningMethod,class,,,,
+torch.nn.utils.prune.BasePruningMethod,method,apply,,,
+torch.nn.utils.prune.BasePruningMethod,method,apply_mask,,,
+torch.nn.utils.prune.BasePruningMethod,method,compute_mask,,,
+torch.nn.utils.prune.BasePruningMethod,method,prune,,,
+torch.nn.utils.prune.BasePruningMethod,method,remove,,,
+torch.nn.utils.prune.PruningContainer,class,,,,
+torch.nn.utils.prune.PruningContainer,method,add_pruning_method,,,
+torch.nn.utils.prune.PruningContainer,method,apply,,,
+torch.nn.utils.prune.PruningContainer,method,apply_mask,,,
+torch.nn.utils.prune.PruningContainer,method,compute_mask,,,
+torch.nn.utils.prune.PruningContainer,method,prune,,,
+torch.nn.utils.prune.PruningContainer,method,remove,,,
+torch.nn.utils.prune.Identity,class,,Identity,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_identity.html
+torch.nn.utils.prune.Identity,method,apply,,,
+torch.nn.utils.prune.Identity,method,apply_mask,,,
+torch.nn.utils.prune.Identity,method,prune,,,
+torch.nn.utils.prune.Identity,method,remove,,,
+torch.nn.utils.prune.RandomUnstructured,class,,,,
+torch.nn.utils.prune.RandomUnstructured,method,apply,,,
+torch.nn.utils.prune.RandomUnstructured,method,apply_mask,,,
+torch.nn.utils.prune.RandomUnstructured,method,prune,,,
+torch.nn.utils.prune.RandomUnstructured,method,remove,,,
+torch.nn.utils.prune.L1Unstructured,class,,,,
+torch.nn.utils.prune.L1Unstructured,method,apply,,,
+torch.nn.utils.prune.L1Unstructured,method,apply_mask,,,
+torch.nn.utils.prune.L1Unstructured,method,prune,,,
+torch.nn.utils.prune.L1Unstructured,method,remove,,,
+torch.nn.utils.prune.RandomStructured,class,,,,
+torch.nn.utils.prune.RandomStructured,method,apply,,,
+torch.nn.utils.prune.RandomStructured,method,apply_mask,,,
+torch.nn.utils.prune.RandomStructured,method,compute_mask,,,
+torch.nn.utils.prune.RandomStructured,method,prune,,,
+torch.nn.utils.prune.RandomStructured,method,remove,,,
+torch.nn.utils.prune.LnStructured,class,,,,
+torch.nn.utils.prune.LnStructured,method,apply,,,
+torch.nn.utils.prune.LnStructured,method,apply_mask,,,
+torch.nn.utils.prune.LnStructured,method,compute_mask,,,
+torch.nn.utils.prune.LnStructured,method,prune,,,
+torch.nn.utils.prune.LnStructured,method,remove,,,
+torch.nn.utils.prune.CustomFromMask,class,,,,
+torch.nn.utils.prune.CustomFromMask,method,apply,,,
+torch.nn.utils.prune.CustomFromMask,method,apply_mask,,,
+torch.nn.utils.prune.CustomFromMask,method,prune,,,
+torch.nn.utils.prune.CustomFromMask,method,remove,,,
+torch.nn.Flatten,class,,Flatten,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_flatten.html
+,function,torch.nn.functional.conv1d,at::conv1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a85d4e4f58deaefcc9ffe7e2f9f44b3d5.html
+,function,torch.nn.functional.conv2d,at::conv2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac3941ef1c20d2c62ebc71f084915a236.html
+,function,torch.nn.functional.conv3d,at::conv3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a04596b1669889914b1f6a84b1dd824d9.html
+,function,torch.nn.functional.conv_transpose1d,at::conv_transpose1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac6f8b1b314d5719011885fe5c72ef5f3.html
+,function,torch.nn.functional.conv_transpose2d,at::conv_transpose2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4c051cfda86316f93ee3d047be5f0846.html
+,function,torch.nn.functional.conv_transpose3d,at::conv_transpose3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab0d5fb38d9986aac9fc2d2e9e73e53bf.html
+,function,torch.nn.functional.unfold,torch::nn::functional::detail::unfold,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1af27a1c090ef9cbb097784a0755624e98.html
+,function,torch.nn.functional.fold,torch::nn::functional::detail::fold,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a818a078eedaf1fbb9c9176900d6d1ff2.html
+,function,torch.nn.functional.avg_pool1d,at::avg_pool1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a038d6aa8797ee24ce7ddbcc1f26de88b.html
+,function,torch.nn.functional.avg_pool2d,at::avg_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9ee21eecc668dc399dfeadab2125a9f4.html
+,function,torch.nn.functional.avg_pool3d,at::avg_pool3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9e53cfb6a83dcbb0634291d8ea238ae6.html
+,function,torch.nn.functional.max_pool1d,at::max_pool1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0c41b64b4995a984bf9ba28c2a0175dc.html
+,function,torch.nn.functional.max_pool2d,at::max_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9304aa17cda4d91c14f771eba3dbe827.html
+,function,torch.nn.functional.max_pool3d,at::max_pool3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af7a159edb82c0ec3fce5e1a969e10ac9.html
+,function,torch.nn.functional.max_unpool1d,torch::nn::functional::detail::max_unpool1d,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a7d3d89a391fdabda547cf85a53732a7c.html
+,function,torch.nn.functional.max_unpool2d,at::max_unpool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a110f3d28c72f9528eb64906034bbd920.html
+,function,torch.nn.functional.max_unpool3d,at::max_unpool3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9df82abb6831f87b15caba974b8f8148.html
+,function,torch.nn.functional.lp_pool1d,torch::nn::functional::detail::lp_pool1d,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a1d871de19f908b62199a7dc465b56845.html
+,function,torch.nn.functional.lp_pool2d,torch::nn::functional::detail::lp_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a730818db9e98c6d78610dbcfd24a8b78.html
+,function,torch.nn.functional.adaptive_max_pool1d,at::adaptive_max_pool1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a939836cccb2a08eb3d486efa0a4f7560.html
+,function,torch.nn.functional.adaptive_max_pool2d,at::adaptive_max_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acbb7d9a0701341d8f85088cc7f950d8d.html
+,function,torch.nn.functional.adaptive_max_pool3d,at::adaptive_max_pool3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1addc07fffc9f388841d9eea5cd36fa443.html
+,function,torch.nn.functional.adaptive_avg_pool1d,at::adaptive_avg_pool1d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a19542d135d75a498fbca563c924a8a1d.html
+,function,torch.nn.functional.adaptive_avg_pool2d,at::adaptive_avg_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7341b8ebb8cfbb5cd252da45997b80b5.html
+,function,torch.nn.functional.adaptive_avg_pool3d,at::adaptive_avg_pool3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af30e7567aafaf3dcd97248370b6d76fd.html
+,function,torch.nn.functional.threshold,at::threshold,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3aeb7de2c933d6c73e4b96378efce40a.html
+,function,torch.nn.functional.threshold_,at::threshold_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae8aaf606ad78bbafd1ace09c420ed145.html
+,function,torch.nn.functional.relu,at::relu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1e20924cf75671210543247fa05ea4ba.html
+,function,torch.nn.functional.relu_,at::relu_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af01bfc1b40731c868e676d8553d1455e.html
+,function,torch.nn.functional.hardtanh,at::hardtanh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad86e1a19d95e6c3e2e4a33cc82c8099d.html
+,function,torch.nn.functional.hardtanh_,at::hardtanh_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a03521b84b8a70707f046a8aa01294895.html
+,function,torch.nn.functional.relu6,torch::nn::functional::detail::relu6,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a99d61c59569c40f4c3bf519a187ac960.html
+,function,torch.nn.functional.elu,at::elu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a701e1e828ab396a37cd299427dadf3ee.html
+,function,torch.nn.functional.elu_,at::elu_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae02b5c0b083b6a8ca1c27e49fd680d93.html
+,function,torch.nn.functional.selu,at::selu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab5fdd4f63ce50cf78856c0d861e97f08.html
+,function,torch.nn.functional.celu,at::celu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a45e77684f3bcb1e09087e8eba6251de5.html
+,function,torch.nn.functional.leaky_relu,at::leaky_relu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a611b02cd0467723b6f5dd1ee8a7727b1.html
+,function,torch.nn.functional.leaky_relu_,at::leaky_relu_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a795b2e53edef5e077d3aff755369aff2.html
+,function,torch.nn.functional.prelu,at::prelu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abf44ae8225c2686571207f6f48f35b42.html
+,function,torch.nn.functional.rrelu,at::rrelu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aead97eaf832e9ae08a61f407e7bab6d8.html
+,function,torch.nn.functional.rrelu_,at::rrelu_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afce7684261dce0881414d204cc62035f.html
+,function,torch.nn.functional.glu,at::glu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9013f8a860be31b6b2af07bf99309740.html
+,function,torch.nn.functional.gelu,at::gelu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a55bce7c6daf54ac4cf93d37f5cb221c5.html
+,function,torch.nn.functional.logsigmoid,torch::nn::functional::logsigmoid,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1a1432c578c15cbc69993e8d43739a9ea2.html
+,function,torch.nn.functional.hardshrink,at::hardshrink,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a50365e2921dbe302a3205ddfa2b453e6.html
+,function,torch.nn.functional.tanhshrink,torch::nn::functional::tanhshrink,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1af2efcc550a4b4feba9fd418ae02d06f6.html
+,function,torch.nn.functional.softsign,torch::nn::functional::softsign,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1a6a88e99d1ae0b3436f7afe0e8dbb90e9.html
+,function,torch.nn.functional.softplus,at::softplus,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab80f62e1499d8654faeeb0bc98578e5d.html
+,function,torch.nn.functional.softmin,torch::nn::functional::detail::softmin,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1abbaa57072a4b268ff690ceaf4b3ea67f.html
+,function,torch.nn.functional.softmax,"at::softmax(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad1df58360224eace64a74aa9ae3a413b.html
+,function,torch.nn.functional.softshrink,at::softshrink,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aebb5a290f2024fd5e7fd72ada3415d52.html
+,function,torch.nn.functional.gumbel_softmax,torch::nn::functional::detail::gumbel_softmax,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a5ac7e9b7694e105c7a40dc564cfa1041.html
+,function,torch.nn.functional.log_softmax,"at::log_softmax(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aef9d4d4c3491bec2b15cef93e66e7b4b.html
+,function,torch.nn.functional.tanh,at::tanh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a93c55130815801b70794d8f0241cbfe8.html
+,function,torch.nn.functional.sigmoid,at::sigmoid,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2cf79ba2416f481371f02229d7e4924f.html
+,function,torch.nn.functional.batch_norm,at::batch_norm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa1ee4e013baf81d4469a9865d190ec34.html
+,function,torch.nn.functional.instance_norm,at::instance_norm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae107e45ab5263a490e70742c68c2bb20.html
+,function,torch.nn.functional.layer_norm,at::layer_norm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3f81b41def3940d801c7898150030142.html
+,function,torch.nn.functional.local_response_norm,torch::nn::functional::detail::local_response_norm,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a990c50c68ef9d6568edf1b6d69258035.html
+,function,torch.nn.functional.normalize,torch::nn::functional::detail::normalize,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a60b79d6d29bdfd837549b52565812d67.html
+,function,torch.nn.functional.linear,at::linear,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abd1a34127a6702599c28c7c938b7a15a.html
+,function,torch.nn.functional.bilinear,at::bilinear,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac24d9b6c6c8ec40e8632290793142cc6.html
+,function,torch.nn.functional.dropout,at::dropout,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af4a71e76e9fdf21895420321b10847c7.html
+,function,torch.nn.functional.alpha_dropout,at::alpha_dropout,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aaa61a8d31e8372b1f996610bf9c0af7c.html
+,function,torch.nn.functional.dropout2d,torch::nn::functional::detail::dropout2d,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a9d248d3bf9a0d449de4728b7d8db89bb.html
+,function,torch.nn.functional.dropout3d,torch::nn::functional::detail::dropout3d,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a6e256f52d2f431927d7ba1df7c14b2e7.html
+,function,torch.nn.functional.embedding,at::embedding,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abe4d57b34f7261a73118048aa5fd40c4.html
+,function,torch.nn.functional.embedding_bag,at::embedding_bag,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a129c54e8622ff20ca44272769724d62d.html
+,function,torch.nn.functional.one_hot,at::one_hot,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8e894b009e14ffc019acffca9e0169c9.html
+,function,torch.nn.functional.pairwise_distance,at::pairwise_distance,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abec3a243119ea996db8e583db2e12178.html
+,function,torch.nn.functional.cosine_similarity,at::cosine_similarity,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a08e78e6c9752a5fc1f10b4f4bd58ad02.html
+,function,torch.nn.functional.pdist,at::pdist,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9d5ed64b0e01ecefc09689fe1779152f.html
+,function,torch.nn.functional.binary_cross_entropy,at::binary_cross_entropy,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6b269f6056eb642e2302fcb74352a9ef.html
+,function,torch.nn.functional.binary_cross_entropy_with_logits,at::binary_cross_entropy_with_logits,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1973a96ce3687888dd9533d76d372ee7.html
+,function,torch.nn.functional.poisson_nll_loss,at::poisson_nll_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae2c55ec0552fc4be756a5131a94169b9.html
+,function,torch.nn.functional.cosine_embedding_loss,at::cosine_embedding_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a24d3e1b4fd8fc016e4d77f7a7e5ceb.html
+,function,torch.nn.functional.cross_entropy,torch::nn::functional::cross_entropy,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1a29daa086ce1ac3cd9f80676f81701944.html
+,function,torch.nn.functional.ctc_loss,"at::ctc_loss(const Tensor&, const Tensor&, IntArrayRef, IntArrayRef, int64_t, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a92b4c3af9d30841e29a40f8dcb8cce9f.html
+,function,torch.nn.functional.hinge_embedding_loss,at::hinge_embedding_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a93d4e605238ff9830fdc41f8b4fad2f8.html
+,function,torch.nn.functional.kl_div,at::kl_div,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aae38471d1a179ebec0628245dbe4a6d1.html
+,function,torch.nn.functional.l1_loss,at::l1_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a035de006f1f259b909674a45adc924a6.html
+,function,torch.nn.functional.mse_loss,at::mse_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a5a98f57a2db25a0fe7f3b7ad82cd35d2.html
+,function,torch.nn.functional.margin_ranking_loss,at::margin_ranking_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1addcff7676757b7640f12092470e29309.html
+,function,torch.nn.functional.multilabel_margin_loss,at::multilabel_margin_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0e360814bdbd95247ba0c08d0a310fbc.html
+,function,torch.nn.functional.multilabel_soft_margin_loss,torch::nn::functional::detail::multilabel_soft_margin_loss,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a04f51a3092ec52016a04948197e2689f.html
+,function,torch.nn.functional.multi_margin_loss,at::multi_margin_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abd15ee2306f86e4369b724a4fa1f4c2a.html
+,function,torch.nn.functional.nll_loss,at::nll_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a29441ee2fbc2dbbed989cfe7a896a6c5.html
+,function,torch.nn.functional.smooth_l1_loss,at::smooth_l1_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6cf85e29432ea484be4a93f71de4efe1.html
+,function,torch.nn.functional.soft_margin_loss,at::soft_margin_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8d641cfea142425f00ae7ebbecd31085.html
+,function,torch.nn.functional.triplet_margin_loss,at::triplet_margin_loss,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a95774022d6e53157e4e662fcc5108050.html
+,function,torch.nn.functional.pixel_shuffle,at::pixel_shuffle,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae26f113790f0649c7c4121b1bc6d6746.html
+,function,torch.nn.functional.pad,torch::nn::functional::detail::pad,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1abda08097080e84cdd5fd64df46138dca.html
+,function,torch.nn.functional.interpolate,torch::nn::functional::detail::interpolate,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a0fb30efdb005481a4299226fec584278.html
+,function,torch.nn.functional.upsample,Upsample,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_upsample.html
+,function,torch.nn.functional.upsample_nearest,,,
+,function,torch.nn.functional.upsample_bilinear,,,
+,function,torch.nn.functional.grid_sample,torch::nn::functional::detail::grid_sample,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a6be3baeb4dc2f93de9d0f342e859df91.html
+,function,torch.nn.functional.affine_grid,torch::nn::functional::affine_grid,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1a604d2456562a53b0c2b3d0dd5b06171a.html
+,function,torch.nn.parallel.data_parallel,torch::nn::parallel::data_parallel,Template Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1parallel_1afcf04d9b87a197c3a734bfb721dd67b0.html
+,function,bernoulli_,,,
+,function,bernoulli_,,,
+,function,to,,,
+,function,to,,,
+,function,to,,,
+,function,all,"at::all(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeaaf3b650f4ab8ffced266aefd006138.html
+,function,all,"at::all(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeaaf3b650f4ab8ffced266aefd006138.html
+,function,any,"at::any(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeab2706c1401077dc10babd81beaa624.html
+,function,any,"at::any(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeab2706c1401077dc10babd81beaa624.html
+torch.Tensor,class,,,,
+torch.Tensor,method,new_tensor,,,
+torch.Tensor,method,new_full,,,
+torch.Tensor,method,new_empty,,,
+torch.Tensor,method,new_ones,,,
+torch.Tensor,method,new_zeros,,,
+torch.Tensor,attribute,is_cuda,,,
+torch.Tensor,attribute,device,Device,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_device.html
+torch.Tensor,attribute,grad,,,
+torch.Tensor,attribute,ndim,,,
+torch.Tensor,attribute,T,at::t,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a26d053066704adf74a469ef8a844bfc4.html
+torch.Tensor,method,abs,at::abs,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a514afabf36bc821632d27f1fb0c8830b.html
+torch.Tensor,method,abs_,at::abs_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a468b3a2dab90ab0d2bcedf0c478aebac.html
+torch.Tensor,method,acos,at::acos,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a73e3fe1e7655e7501c2029b5f4c3a7cd.html
+torch.Tensor,method,acos_,at::acos_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aff3a429eb0402204a3dd23862c47d054.html
+torch.Tensor,method,add,"at::add(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afdd5c8855d82edd09b89dfdcecc42b73.html
+torch.Tensor,method,add_,,,
+torch.Tensor,method,addbmm,at::addbmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aed6a03a8e28b107b5f8eb399c0ea341b.html
+torch.Tensor,method,addbmm_,,,
+torch.Tensor,method,addcdiv,at::addcdiv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae229c0433a9241b5a066402f6a7f39b2.html
+torch.Tensor,method,addcdiv_,,,
+torch.Tensor,method,addcmul,at::addcmul,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1ecc43dd8fe72b3698faabe42a4479b6.html
+torch.Tensor,method,addcmul_,,,
+torch.Tensor,method,addmm,at::addmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac1155c41e5a2cd930568f7ff8e547b4c.html
+torch.Tensor,method,addmm_,,,
+torch.Tensor,method,addmv,at::addmv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aaf7481bc4e3d22e958ac10c45bda1dd6.html
+torch.Tensor,method,addmv_,at::addmv_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab30cf123ff3c652ddb8b3c779bb79d45.html
+torch.Tensor,method,addr,at::addr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae62ff171bfc8630dec04983e448c94bf.html
+torch.Tensor,method,addr_,,,
+torch.Tensor,method,allclose,at::allclose,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6718f09b724a8c39442d1a1585db19e1.html
+torch.Tensor,method,angle,at::angle,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6539b444f53c95d6ac9fc6b30738701e.html
+torch.Tensor,method,apply_,,,
+torch.Tensor,method,argmax,at::argmax,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98b72dc1f6765d375ed066b9236eb1f0.html
+torch.Tensor,method,argmin,at::argmin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b02d1b93244e1ecd6161b193287a450.html
+torch.Tensor,method,argsort,"at::argsort(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acbff7b51f2937cb0202075137312c466.html
+torch.Tensor,method,asin,at::asin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac3411e4ff6bdb7841c1555beabe4efbe.html
+torch.Tensor,method,asin_,at::asin_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a81c633c2837d173c6f2f69107d0e4b76.html
+torch.Tensor,method,as_strided,at::as_strided,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a99fe464c6f1d119437a087d1a135679c.html
+torch.Tensor,method,atan,at::atan,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aea730970ddeda1abf6699af9bb3166e8.html
+torch.Tensor,method,atan2,at::atan2,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a075df7032a897c6953004002998355b4.html
+torch.Tensor,method,atan2_,,,
+torch.Tensor,method,atan_,at::atan_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a250ba75ab32a0dab0f08e8da8e9e66fb.html
+torch.Tensor,method,backward,,,
+torch.Tensor,method,baddbmm,at::baddbmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a440572d9374ba82b7b084f6b36f6699c.html
+torch.Tensor,method,baddbmm_,,,
+torch.Tensor,method,bernoulli,"at::bernoulli(const Tensor&, Generator *)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3eb6adbaf9a9f64f66502b4696a22e8b.html
+torch.Tensor,method,bernoulli_,,,
+torch.Tensor,method,bfloat16,,,
+torch.Tensor,method,bincount,at::bincount,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9c029c13ae758726b598270ed777f69.html
+torch.Tensor,method,bitwise_not,at::bitwise_not,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a076ac508ef6a84a1fcecba2f323de15a.html
+torch.Tensor,method,bitwise_not_,,,
+torch.Tensor,method,bitwise_xor,"at::bitwise_xor(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afaeaf42d1c1beb30a9b2e59b65095ad4.html
+torch.Tensor,method,bitwise_xor_,,,
+torch.Tensor,method,bmm,at::bmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aac51f71f807ca70fd210814114520c34.html
+torch.Tensor,method,bool,,,
+torch.Tensor,method,byte,,,
+torch.Tensor,method,cauchy_,,,
+torch.Tensor,method,ceil,at::ceil,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a70953390dce069de766ad62fc60ee59a.html
+torch.Tensor,method,ceil_,at::ceil_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acba95ad2428cb0132f6484773a39bacb.html
+torch.Tensor,method,char,,,
+torch.Tensor,method,cholesky,at::cholesky,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aff3bfa37f10707ab8a032483ad5c7992.html
+torch.Tensor,method,cholesky_inverse,at::cholesky_inverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a773321e41604a3be557b687db777ae37.html
+torch.Tensor,method,cholesky_solve,at::cholesky_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4a1f935cd7fe1c7cf81405b34f5037a7.html
+torch.Tensor,method,chunk,at::chunk,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9736d4f1a4249746eb5df4e8ccbafab.html
+torch.Tensor,method,clamp,at::clamp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20be2de650096933b7c01c4d943fda11.html
+torch.Tensor,method,clamp_,at::clamp_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9c4df86bcfa02d68734b7034c5ed2c8a.html
+torch.Tensor,method,clone,at::clone,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a17f55e044d318b8535403afa12436822.html
+torch.Tensor,method,contiguous,,,
+torch.Tensor,method,copy_,,,
+torch.Tensor,method,conj,at::conj,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a36fea807f3e8e9acdce9ea1d1fbc65bc.html
+torch.Tensor,method,cos,at::cos,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abf8d833da61c59c98cbf4745fdc03c1f.html
+torch.Tensor,method,cos_,at::cos_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af2e1be214bb3c8920341115a06642ef4.html
+torch.Tensor,method,cosh,at::cosh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1adc562f6d7c66b7f5a0c3dd2169e1393c.html
+torch.Tensor,method,cosh_,at::cosh_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8b60824331fe1ae26c2910522f17778a.html
+torch.Tensor,method,cpu,,,
+torch.Tensor,method,cross,at::cross,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2e8e9a2216249985d70817a75d54d608.html
+torch.Tensor,method,cuda,at::cuda,Namespace,https://pytorch.org/cppdocs/api/namespace_at__cuda.html
+torch.Tensor,method,cumprod,"at::cumprod(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afaea25f70953da10d8e333d805131ed2.html
+torch.Tensor,method,cumsum,"at::cumsum(const Tensor&, int64_t, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d83732bcaf33ae5fae96d3cd29fce48.html
+torch.Tensor,method,data_ptr,,,
+torch.Tensor,method,dequantize,at::dequantize,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a590d4fa96cd3f1af6c464257bd5522c4.html
+torch.Tensor,method,det,at::det,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a922ae94d41acc876e8ff18faa711de0b.html
+torch.Tensor,method,dense_dim,,,
+torch.Tensor,method,detach,at::detach,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a904a3a21d4182d23c398a9da20149e0d.html
+torch.Tensor,method,detach_,at::detach_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20c3020697edc8eb5b3733e2b041ebdf.html
+torch.Tensor,method,diag,at::diag,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af9d5ff4161c027d2b8d6500633c200d6.html
+torch.Tensor,method,diag_embed,at::diag_embed,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0edd4b49d4ea7ba669c3e9fa263245.html
+torch.Tensor,method,diagflat,at::diagflat,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1adc80ded13aee4a6c5f9c00f4273c58da.html
+torch.Tensor,method,diagonal,"at::diagonal(const Tensor&, int64_t, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8d56d4d525ab0efaf33a9c0979a081e7.html
+torch.Tensor,method,fill_diagonal_,,,
+torch.Tensor,method,digamma,at::digamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a00ee8ed2c46a9a4ae84ded7432ef0291.html
+torch.Tensor,method,digamma_,,,
+torch.Tensor,method,dim,,,
+torch.Tensor,method,dist,at::dist,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a76a287212591e1c083ecc4fd77fcbbf1.html
+torch.Tensor,method,div,"at::div(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1c5daa7e60df6db3673363f8e0a14218.html
+torch.Tensor,method,div_,,,
+torch.Tensor,method,dot,at::dot,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a85b4aa562c561f73766af7547d2389b6.html
+torch.Tensor,method,double,,,
+torch.Tensor,method,eig,at::eig,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad66783f082051f86d1330fdf2aac72c7.html
+torch.Tensor,method,element_size,,,
+torch.Tensor,method,eq,"at::eq(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b226bed3f4f2e28d8013be0428df609.html
+torch.Tensor,method,eq_,,,
+torch.Tensor,method,equal,at::equal,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab5c3f388e23accb180fe7319377dc498.html
+torch.Tensor,method,erf,at::erf,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a37daa9bb9a05250496be3cc6448077ba.html
+torch.Tensor,method,erf_,at::erf_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acdc69a78cc3e16525258175a60913c7d.html
+torch.Tensor,method,erfc,at::erfc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6a05ce1fd50d34ae044dbfe6f358ce20.html
+torch.Tensor,method,erfc_,at::erfc_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a58a6930969e13ab09477af83b174ba6e.html
+torch.Tensor,method,erfinv,at::erfinv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a693d96559dddb1337ed35295a6a316ea.html
+torch.Tensor,method,erfinv_,,,
+torch.Tensor,method,exp,at::exp,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3e012377af19b8b619fd9aa1938fa72d.html
+torch.Tensor,method,exp_,at::exp_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aacd6b02857cf600d3c75de6b3858d675.html
+torch.Tensor,method,expm1,at::expm1,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3fd84139fa7003b8efe9c4fd6fa078a4.html
+torch.Tensor,method,expm1_,at::expm1_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aff2a121bb0a56c52bf9d4346f537c00f.html
+torch.Tensor,method,expand,,,
+torch.Tensor,method,expand_as,,,
+torch.Tensor,method,exponential_,,,
+torch.Tensor,method,fft,at::fft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3c00c632a6391e6fb8246938ad254da1.html
+torch.Tensor,method,fill_,"at::fill_(Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a51b8e8d6acf9df09d7d507dd2dc4b556.html
+torch.Tensor,method,flatten,"at::flatten(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a55843006e38a3a24949dc0704598da87.html
+torch.Tensor,method,flip,at::flip,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a062ed7738ae3b2d31308b67cafd21f78.html
+torch.Tensor,method,float,,,
+torch.Tensor,method,floor,at::floor,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa6f1ef7a4554f521bdd551b496165cd1.html
+torch.Tensor,method,floor_,at::floor_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac9c5a707faafb916ed8ac61d86e1a3e1.html
+torch.Tensor,method,fmod,"at::fmod(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1d23e6340f4a8847ac3a1f30dd76ab7c.html
+torch.Tensor,method,fmod_,,,
+torch.Tensor,method,frac,at::frac,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abb162a7a568ae1273f2483a624fc3558.html
+torch.Tensor,method,frac_,at::frac_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0a317884b14a8ed342646e7b20515255.html
+torch.Tensor,method,gather,"at::gather(const Tensor&, int64_t, const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a3bcd1e7e99541cd0a4fa754be8b7b1.html
+torch.Tensor,method,ge,"at::ge(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa2352eb1e593f2ee872d8ff44d2cfd36.html
+torch.Tensor,method,ge_,,,
+torch.Tensor,method,geometric_,,,
+torch.Tensor,method,geqrf,at::geqrf,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a43fbba707930513ea5da85593dd53a41.html
+torch.Tensor,method,ger,at::ger,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8344c6c44d36d4884a2ca83e7e547b0a.html
+torch.Tensor,method,get_device,,,
+torch.Tensor,method,gt,"at::gt(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2d0bc9420f2d3437ad2418749f8c3c70.html
+torch.Tensor,method,gt_,,,
+torch.Tensor,method,half,Half,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_half.html
+torch.Tensor,method,hardshrink,at::hardshrink,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a50365e2921dbe302a3205ddfa2b453e6.html
+torch.Tensor,method,histc,at::histc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1aca43c07f66d859d01f86dbf5344cc7.html
+torch.Tensor,method,ifft,at::ifft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a420a51562a7a5bc58720a0d578fd20c7.html
+torch.Tensor,method,imag,at::imag,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8fc03159932df3bb009c05674429fb24.html
+torch.Tensor,method,index_add_,,,
+torch.Tensor,method,index_add,"at::index_add(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af72731ea9e817b51e3f0a15d4f2e7d7e.html
+torch.Tensor,method,index_copy_,,,
+torch.Tensor,method,index_copy,"at::index_copy(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac141a61a6c0eb88f21bb7a2edee74f10.html
+torch.Tensor,method,index_fill_,,,
+torch.Tensor,method,index_fill,"at::index_fill(const Tensor&, int64_t, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a75c959a00a755dcf17f0f90309452fba.html
+torch.Tensor,method,index_put_,at::index_put_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aea30fd8ddf97285a9c2d0d7a1aa4c546.html
+torch.Tensor,method,index_put,at::index_put,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6e9f49d43106546ec0efb200d80b6adf.html
+torch.Tensor,method,index_select,"at::index_select(const Tensor&, int64_t, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a21648eb998143e628e52a19d14aca245.html
+torch.Tensor,method,indices,,,
+torch.Tensor,method,int,,,
+torch.Tensor,method,int_repr,at::int_repr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aea4eec9391ade4542551d285166e628e.html
+torch.Tensor,method,inverse,at::inverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abacfa3904f73dbb0409368a19964e040.html
+torch.Tensor,method,irfft,at::irfft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3e6c2719c3515ecbb638aaf35efa9ecd.html
+torch.Tensor,method,is_contiguous,,,
+torch.Tensor,method,is_floating_point,at::is_floating_point,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acf997a7a3a7746c7283a5536e667659f.html
+torch.Tensor,attribute,is_leaf,,,
+torch.Tensor,method,is_pinned,,,
+torch.Tensor,method,is_set_to,,,
+torch.Tensor,method,is_shared,,,
+torch.Tensor,method,is_signed,at::is_signed,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a08793a31e10355f32a515a1d9bf45b3e.html
+torch.Tensor,attribute,is_sparse,,,
+torch.Tensor,method,item,OrderedDict::Item,Class,https://pytorch.org/cppdocs/api/classtorch_1_1_ordered_dict_1_1_item.html
+torch.Tensor,method,kthvalue,"at::kthvalue(const Tensor&, int64_t, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a693f136d11a2380f9223e005c15a261f.html
+torch.Tensor,method,le,"at::le(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af4cf6bb5ec4877a51616f59b507b7aea.html
+torch.Tensor,method,le_,,,
+torch.Tensor,method,lerp,"at::lerp(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3f3387e1de4c2b993466295e3180390f.html
+torch.Tensor,method,lerp_,,,
+torch.Tensor,method,lgamma,at::lgamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae80021c749d42d0625e90973b18a00bc.html
+torch.Tensor,method,lgamma_,,,
+torch.Tensor,method,log,at::log,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afbad55cdae7cd84b8ae632c3158d14b2.html
+torch.Tensor,method,log_,at::log_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a416482646bda474d760ce7943ce91084.html
+torch.Tensor,method,logdet,at::logdet,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afd7127fdecd7303bd25bc084f3d3625d.html
+torch.Tensor,method,log10,at::log10,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a42d41fd1b0cf703e59388bce15a9dc3d.html
+torch.Tensor,method,log10_,at::log10_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ade82634a232421aa83defa848d616a22.html
+torch.Tensor,method,log1p,at::log1p,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b335b37762be7e605b514563fa039e7.html
+torch.Tensor,method,log1p_,at::log1p_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a954e20f612e883aaca7b89788df59dc0.html
+torch.Tensor,method,log2,at::log2,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a24bc24f71c7215adfe958115f8028670.html
+torch.Tensor,method,log2_,at::log2_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aaf876053e1b04bdad23674c5d6978fc9.html
+torch.Tensor,method,log_normal_,,,
+torch.Tensor,method,logsumexp,"at::logsumexp(const Tensor&, IntArrayRef, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad31c5b66bf0f891cd05c1d78c6d10aa2.html
+torch.Tensor,method,logical_not,at::logical_not,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1d8b175ecee66d49ff42ad6512b87790.html
+torch.Tensor,method,logical_not_,,,
+torch.Tensor,method,logical_xor,at::logical_xor,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad7e1e76c8951569161bf45e60935eec4.html
+torch.Tensor,method,logical_xor_,,,
+torch.Tensor,method,long,,,
+torch.Tensor,method,lstsq,at::lstsq,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abeb0dcf49e9d17a8cdb730b624addf7c.html
+torch.Tensor,method,lt,"at::lt(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a627a4cb8dcac0bd64793ce9da60d39e0.html
+torch.Tensor,method,lt_,,,
+torch.Tensor,method,lu,,,
+torch.Tensor,method,lu_solve,at::lu_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4b6b95ec43e20f4718fd34a909a2bd4b.html
+torch.Tensor,method,map_,,,
+torch.Tensor,method,masked_scatter_,,,
+torch.Tensor,method,masked_scatter,at::masked_scatter,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ada2bf59650e043551d21cf149c532f8e.html
+torch.Tensor,method,masked_fill_,,,
+torch.Tensor,method,masked_fill,"at::masked_fill(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae7a2926188e3f5386ca6ff88f4addb59.html
+torch.Tensor,method,masked_select,at::masked_select,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac20a9c145c606f17d15f81f385a2bc51.html
+torch.Tensor,method,matmul,at::matmul,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0e928e234e518e16f2f3b1c66b53c27d.html
+torch.Tensor,method,matrix_power,at::matrix_power,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8a881979a6aab7d3ca6ba1f918334fa9.html
+torch.Tensor,method,max,"at::max(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a49425db0199b37853776e83658c6b27c.html
+torch.Tensor,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.Tensor,method,median,"at::median(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af05c0d1b40e4f3b6fb8622ff4aad2827.html
+torch.Tensor,method,min,"at::min(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a3b65df64cb3dc3a1dcb6a115f541b6b3.html
+torch.Tensor,method,mm,at::mm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac21be4a6b3f22dfbb52300dc233e270c.html
+torch.Tensor,method,mode,"at::mode(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a021799cd137358db9099a2fb8cb9d72e.html
+torch.Tensor,method,mul,"at::mul(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a548d3a9487b02df4d131db510444ab.html
+torch.Tensor,method,mul_,,,
+torch.Tensor,method,multinomial,at::multinomial,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac675eda9cae4819bc9311097af498b67.html
+torch.Tensor,method,mv,at::mv,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab81faebb455f8875ef5b29b6f0856773.html
+torch.Tensor,method,mvlgamma,at::mvlgamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a58d0a42782162e2f62d8729f64a2e30a.html
+torch.Tensor,method,mvlgamma_,,,
+torch.Tensor,method,narrow,at::narrow,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acfb19b2b79f81e1faf67d55e801eee62.html
+torch.Tensor,method,narrow_copy,,,
+torch.Tensor,method,ndimension,,,
+torch.Tensor,method,ne,"at::ne(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab1e10506f73a7569f5a6a3ecb19fdc33.html
+torch.Tensor,method,ne_,,,
+torch.Tensor,method,neg,at::neg,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8a69cc08ef22c9e7cefaf0dac0674168.html
+torch.Tensor,method,neg_,at::neg_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a88063eb5eea0f39c96eda506c74484c8.html
+torch.Tensor,method,nelement,,,
+torch.Tensor,method,nonzero,at::nonzero,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ad0dc1795ec3f591843ea50ba0acb29d7.html
+torch.Tensor,method,norm,"at::norm(const Tensor&, c10::optional<Scalar>, ScalarType)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aa338d2337732af1a14ff7c67353ef9c9.html
+torch.Tensor,method,normal_,torch::nn::init::normal_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a105c2a8ef81c6faa82a01cf35ce9f3b1.html
+torch.Tensor,method,numel,at::numel,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a95ad385710d6fe9c085e58fe1c9dcd00.html
+torch.Tensor,method,numpy,,,
+torch.Tensor,method,orgqr,at::orgqr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac8f1ad85c8d0e71f4ef60e9f766ee4fd.html
+torch.Tensor,method,ormqr,at::ormqr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1e370cd7d9733b6f09a3927342f11dd6.html
+torch.Tensor,method,permute,,,
+torch.Tensor,method,pin_memory,,,
+torch.Tensor,method,pinverse,at::pinverse,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0f76dc6207440c817cdc258783cf7a5d.html
+torch.Tensor,method,polygamma,at::polygamma,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a98080f784a3c761958a42f273ac5cfd2.html
+torch.Tensor,method,polygamma_,,,
+torch.Tensor,method,pow,"at::pow(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae6246d139ae8d62ca9568cf48d337781.html
+torch.Tensor,method,pow_,,,
+torch.Tensor,method,prod,"at::prod(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a919dcd4f18a5a2ee4358121f969b2631.html
+torch.Tensor,method,put_,,,
+torch.Tensor,method,qr,at::qr,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a12b2c54b9b7b9088a96dc2f8a1c778f9.html
+torch.Tensor,method,qscheme,,,
+torch.Tensor,method,q_scale,at::q_scale,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab2415587c88488fd0202fe4ef0673c8e.html
+torch.Tensor,method,q_zero_point,at::q_zero_point,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae1e91e41784919fc1e827ec927ca3165.html
+torch.Tensor,method,q_per_channel_scales,at::q_per_channel_scales,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a12337ef2d860c26e13d5e4d12d3cd6c5.html
+torch.Tensor,method,q_per_channel_zero_points,at::q_per_channel_zero_points,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ab3180ea3893a1de54bf7a03889985347.html
+torch.Tensor,method,q_per_channel_axis,at::q_per_channel_axis,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a191854e91b0121bfff74a9f9d6d9f2ec.html
+torch.Tensor,method,random_,,,
+torch.Tensor,method,reciprocal,at::reciprocal,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae1276a5cf73def9ec96ef520a7125642.html
+torch.Tensor,method,reciprocal_,at::reciprocal_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a59fb86aa809c7d7c7aeac2d9eb0f0591.html
+torch.Tensor,method,record_stream,,,
+torch.Tensor,method,register_hook,,,
+torch.Tensor,method,remainder,"at::remainder(const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a30481c60f9fed471020b8dbf827bdbe4.html
+torch.Tensor,method,remainder_,,,
+torch.Tensor,method,real,at::real,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a43be3d908d506b0cd50b113d46490ff8.html
+torch.Tensor,method,renorm,at::renorm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a47f3eea93e2fe96d6642d95666d667f7.html
+torch.Tensor,method,renorm_,,,
+torch.Tensor,method,repeat,,,
+torch.Tensor,method,repeat_interleave,at::repeat_interleave(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afe0203716665ef5cad8c7744d2dcc775.html
+torch.Tensor,attribute,requires_grad,,,
+torch.Tensor,method,requires_grad_,,,
+torch.Tensor,method,reshape,at::reshape,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0c053c8caac9dad2fdecb850103bbfd1.html
+torch.Tensor,method,reshape_as,,,
+torch.Tensor,method,resize_,,,
+torch.Tensor,method,resize_as_,at::resize_as_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6bb7041f6e1f3a2c5313e27bfd7f9882.html
+torch.Tensor,method,retain_grad,,,
+torch.Tensor,method,rfft,at::rfft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a60d175318c1efc1402a27484de1c2e80.html
+torch.Tensor,method,roll,at::roll,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9b0e4056b2dc9005cef6960b84eee645.html
+torch.Tensor,method,rot90,at::rot90,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2b6d7e1e731ab70fdcccd162ee14a1f3.html
+torch.Tensor,method,round,at::round,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7006360e3d3d984d741738deffff2557.html
+torch.Tensor,method,round_,at::round_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac2467f29e97015ac1ebd34836f02ae8d.html
+torch.Tensor,method,rsqrt,at::rsqrt,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a069d7114a28862016b8b2d9d2e6e5319.html
+torch.Tensor,method,rsqrt_,at::rsqrt_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acdeb7b520f10aee4831759dc199e30e9.html
+torch.Tensor,method,scatter,"at::scatter(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae0c34742651fd50c4b5abf1dc411fdc0.html
+torch.Tensor,method,scatter_,,,
+torch.Tensor,method,scatter_add_,,,
+torch.Tensor,method,scatter_add,"at::scatter_add(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a326d667eedc4922840486a23a26617ad.html
+torch.Tensor,method,select,"at::select(const Tensor&, Dimname, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acbcc917045ed5504d6abe0b591fec82d.html
+torch.Tensor,method,set_,,,
+torch.Tensor,method,share_memory_,,,
+torch.Tensor,method,short,,,
+torch.Tensor,method,sigmoid,at::sigmoid,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2cf79ba2416f481371f02229d7e4924f.html
+torch.Tensor,method,sigmoid_,at::sigmoid_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac3e45f439607ca00d50a437e8576c0d0.html
+torch.Tensor,method,sign,at::sign,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9624ed77d963cfbd2e580fa778770246.html
+torch.Tensor,method,sign_,,,
+torch.Tensor,method,sin,at::sin,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a65fcaee46544ea590e972dcf399eca3b.html
+torch.Tensor,method,sin_,at::sin_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4bde50d6be1d1a16ec5ede560e1f3984.html
+torch.Tensor,method,sinh,at::sinh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a81dc472e0b9f14847e0744df4558a0b2.html
+torch.Tensor,method,sinh_,at::sinh_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a4ed340600ebcb82c1edfbdffcdfcd79b.html
+torch.Tensor,method,size,"at::size(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abea4dfbc4bd140b2e39265f2c4616489.html
+torch.Tensor,method,slogdet,at::slogdet,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aecddf3e80c961f0ba5941bde423a29d4.html
+torch.Tensor,method,solve,at::solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af0d26c48c97c0bf3f0e25f74325c7226.html
+torch.Tensor,method,sort,"at::sort(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae4aeb6d5ecc953e5e221a44016550b89.html
+torch.Tensor,method,split,at::split,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a65d4a187bbd41b53ce0b86d1c2c13617.html
+torch.Tensor,method,sparse_mask,,,
+torch.Tensor,method,sparse_dim,,,
+torch.Tensor,method,sqrt,at::sqrt,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0190691b3f98853b6fd3b8d72080e3a2.html
+torch.Tensor,method,sqrt_,at::sqrt_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a56d49274e3e11eece9d94210ad239ebf.html
+torch.Tensor,method,squeeze,at::squeeze(const Tensor&),Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a0fbe4fcca6f027b352f3b2084eaca6fe.html
+torch.Tensor,method,squeeze_,,,
+torch.Tensor,method,std,"at::std(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6d659b47db020375e9995884acda2219.html
+torch.Tensor,method,stft,at::stft,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae7d915e8072a86812adc3d28294fc177.html
+torch.Tensor,method,storage,,,
+torch.Tensor,method,storage_offset,,,
+torch.Tensor,method,storage_type,,,
+torch.Tensor,method,stride,"at::stride(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a149e0e18198aac949fb7e4dc4c92950e.html
+torch.Tensor,method,sub,"at::sub(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae9d92ed1ec5493a75392b6dcd20c23d2.html
+torch.Tensor,method,sub_,,,
+torch.Tensor,method,sum,"at::sum(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abfab96bd4d849eaadc24b39c0706d6ff.html
+torch.Tensor,method,sum_to_size,,,
+torch.Tensor,method,svd,at::svd,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a8d87971f4003e2d5af8e0abfd30f86da.html
+torch.Tensor,method,symeig,at::symeig,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1f1a0f18bd5203e5b9a2e2c9e1b58abb.html
+torch.Tensor,method,t,at::t,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a26d053066704adf74a469ef8a844bfc4.html
+torch.Tensor,method,t_,,,
+torch.Tensor,method,to,,,
+torch.Tensor,method,to_mkldnn,,,
+torch.Tensor,method,take,at::take,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1540902062b036489d540448ffbeebf7.html
+torch.Tensor,method,tan,at::tan,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1be9917c94e054b94a7731a6a88b1472.html
+torch.Tensor,method,tan_,at::tan_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a5c9460f19c7877ffcea83ac1eb1b2ce1.html
+torch.Tensor,method,tanh,at::tanh,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a93c55130815801b70794d8f0241cbfe8.html
+torch.Tensor,method,tanh_,at::tanh_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af310ffc84106b4a79c8ec5ac430d7190.html
+torch.Tensor,method,tolist,,,
+torch.Tensor,method,topk,at::topk,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acf88a07f29865d491a093d6aaa422663.html
+torch.Tensor,method,to_sparse,,,
+torch.Tensor,method,trace,at::trace,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ade4208476ac706750804b51e9e86f975.html
+torch.Tensor,method,transpose,"at::transpose(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a024981e8469e95eb6e4bdad0d5ac32ed.html
+torch.Tensor,method,transpose_,,,
+torch.Tensor,method,triangular_solve,at::triangular_solve,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a017fa83620d7caf3b81b9a0805e5fefb.html
+torch.Tensor,method,tril,at::tril,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a95349c5b58123780bfc8a10106c7b796.html
+torch.Tensor,method,tril_,,,
+torch.Tensor,method,triu,at::triu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a6e00b525944fe21a56efb4d5588e8484.html
+torch.Tensor,method,triu_,,,
+torch.Tensor,method,trunc,at::trunc,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ace1173f0b15858e85a3125cb2f496917.html
+torch.Tensor,method,trunc_,at::trunc_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a25cc5632b3a3c8195d8ac913feef9424.html
+torch.Tensor,method,type,,,
+torch.Tensor,method,type_as,,,
+torch.Tensor,method,unbind,"at::unbind(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a2af40b650348e77413c0b949bbd0821c.html
+torch.Tensor,method,unfold,torch::nn::functional::detail::unfold,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1af27a1c090ef9cbb097784a0755624e98.html
+torch.Tensor,method,uniform_,torch::nn::init::uniform_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1ab0aeccca28b2225ee9aab809ec38a801.html
+torch.Tensor,method,unique,,,
+torch.Tensor,method,unique_consecutive,at::unique_consecutive,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a60c2195e0dcd11e190e8fe5311ed7ae7.html
+torch.Tensor,method,unsqueeze,at::unsqueeze,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a32dfc26a89ae456ad69c86469a07d271.html
+torch.Tensor,method,unsqueeze_,,,
+torch.Tensor,method,values,,,
+torch.Tensor,method,var,"at::var(const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1add7a8bd4aa2ef10f3a7eaa1706f4aa5e.html
+torch.Tensor,method,view,,,
+torch.Tensor,method,view_as,,,
+torch.Tensor,method,where,"at::where(const Tensor&, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a48b0ed4e9d0461e28e70a041254b7d6e.html
+torch.Tensor,method,zero_,at::zero_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac6269f974114567043a65f73e9930225.html
+torch.BoolTensor,class,,,,
+torch.BoolTensor,method,all,"at::all(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeaaf3b650f4ab8ffced266aefd006138.html
+torch.BoolTensor,method,any,"at::any(const Tensor&, int64_t, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1aeab2706c1401077dc10babd81beaa624.html
+torch.torch.dtype,class,,,,
+torch.torch.device,class,,,,
+torch.torch.layout,class,,,,
+,function,torch.autograd.backward,,,
+,function,torch.autograd.grad,,,
+,function,torch.autograd.gradcheck,,,
+,function,torch.autograd.gradgradcheck,,,
+,function,torch.autograd.profiler.load_nvprof,,,
+torch.autograd.no_grad,class,,,,
+torch.autograd.enable_grad,class,,,,
+torch.autograd.set_grad_enabled,class,,,,
+,class,,,,
+,attribute,grad,,,
+,attribute,requires_grad,,,
+,attribute,is_leaf,,,
+,method,backward,,,
+,method,detach,at::detach,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a904a3a21d4182d23c398a9da20149e0d.html
+,method,detach_,at::detach_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a20c3020697edc8eb5b3733e2b041ebdf.html
+,method,register_hook,,,
+,method,retain_grad,,,
+torch.autograd.Function,class,,,,
+torch.autograd.Function,method,backward,,,
+torch.autograd.Function,method,forward,,,
+torch.autograd.function._ContextMethodMixin,class,,,,
+torch.autograd.function._ContextMethodMixin,method,mark_dirty,,,
+torch.autograd.function._ContextMethodMixin,method,mark_non_differentiable,,,
+torch.autograd.function._ContextMethodMixin,method,save_for_backward,,,
+torch.autograd.profiler.profile,class,,,,
+torch.autograd.profiler.profile,method,export_chrome_trace,,,
+torch.autograd.profiler.profile,method,key_averages,,,
+torch.autograd.profiler.profile,method,self_cpu_time_total,,,
+torch.autograd.profiler.profile,method,table,,,
+torch.autograd.profiler.profile,method,total_average,,,
+torch.autograd.profiler.record_function,class,,,,
+torch.autograd.profiler.emit_nvtx,class,,,,
+torch.autograd.detect_anomaly,class,,,,
+torch.autograd.set_detect_anomaly,class,,,,
+,function,torch.cuda.current_blas_handle,,,
+,function,torch.cuda.current_device,,,
+,function,torch.cuda.current_stream,,,
+,function,torch.cuda.default_stream,,,
+,function,torch.cuda.device_count,torch::cuda::device_count,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1cuda_1ae2ffddc32b1b8526246f0ecbda4d68f0.html
+,function,torch.cuda.get_device_capability,,,
+,function,torch.cuda.get_device_name,,,
+,function,torch.cuda.init,nullopt_t::init,Struct,https://pytorch.org/cppdocs/api/structc10_1_1nullopt__t_1_1init.html
+,function,torch.cuda.ipc_collect,,,
+,function,torch.cuda.is_available,at::cuda::is_available,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1_1cuda_1abdf5679016d4e4149f80f3fe2e80890f.html
+,function,torch.cuda.is_initialized,,,
+,function,torch.cuda.set_device,,,
+,function,torch.cuda.stream,,,
+,function,torch.cuda.synchronize,,,
+,function,torch.cuda.get_rng_state,,,
+,function,torch.cuda.get_rng_state_all,,,
+,function,torch.cuda.set_rng_state,,,
+,function,torch.cuda.set_rng_state_all,,,
+,function,torch.cuda.manual_seed,,,
+,function,torch.cuda.manual_seed_all,,,
+,function,torch.cuda.seed,,,
+,function,torch.cuda.seed_all,,,
+,function,torch.cuda.initial_seed,,,
+,function,torch.cuda.comm.broadcast,,,
+,function,torch.cuda.comm.broadcast_coalesced,,,
+,function,torch.cuda.comm.reduce_add,,,
+,function,torch.cuda.comm.scatter,"at::scatter(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae0c34742651fd50c4b5abf1dc411fdc0.html
+,function,torch.cuda.comm.gather,"at::gather(const Tensor&, int64_t, const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a3bcd1e7e99541cd0a4fa754be8b7b1.html
+,function,torch.cuda.empty_cache,,,
+,function,torch.cuda.memory_stats,,,
+,function,torch.cuda.memory_summary,,,
+,function,torch.cuda.memory_snapshot,,,
+,function,torch.cuda.memory_allocated,,,
+,function,torch.cuda.max_memory_allocated,,,
+,function,torch.cuda.reset_max_memory_allocated,,,
+,function,torch.cuda.memory_reserved,,,
+,function,torch.cuda.max_memory_reserved,,,
+,function,torch.cuda.memory_cached,,,
+,function,torch.cuda.max_memory_cached,,,
+,function,torch.cuda.reset_max_memory_cached,,,
+,function,torch.cuda.nvtx.mark,,,
+,function,torch.cuda.nvtx.range_push,,,
+,function,torch.cuda.nvtx.range_pop,,,
+torch.cuda.device,class,,,,
+torch.cuda.device_of,class,,,,
+torch.cuda.Stream,class,,,,
+torch.cuda.Stream,method,query,,,
+torch.cuda.Stream,method,record_event,,,
+torch.cuda.Stream,method,synchronize,,,
+torch.cuda.Stream,method,wait_event,,,
+torch.cuda.Stream,method,wait_stream,,,
+torch.cuda.Event,class,,,,
+torch.cuda.Event,method,elapsed_time,,,
+torch.cuda.Event,method,from_ipc_handle,,,
+torch.cuda.Event,method,ipc_handle,,,
+torch.cuda.Event,method,query,,,
+torch.cuda.Event,method,record,,,
+torch.cuda.Event,method,synchronize,,,
+torch.cuda.Event,method,wait,,,
+,function,torch.distributed.init_process_group,,,
+,function,torch.distributed.get_backend,,,
+,function,torch.distributed.get_rank,,,
+,function,torch.distributed.get_world_size,,,
+,function,torch.distributed.is_initialized,,,
+,function,torch.distributed.is_mpi_available,,,
+,function,torch.distributed.is_nccl_available,,,
+,function,torch.distributed.new_group,,,
+,function,torch.distributed.send,,,
+,function,torch.distributed.recv,,,
+,function,torch.distributed.isend,,,
+,function,torch.distributed.irecv,,,
+,function,torch.distributed.broadcast,,,
+,function,torch.distributed.all_reduce,,,
+,function,torch.distributed.reduce,,,
+,function,torch.distributed.all_gather,,,
+,function,torch.distributed.gather,"at::gather(const Tensor&, int64_t, const Tensor&, bool)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a3bcd1e7e99541cd0a4fa754be8b7b1.html
+,function,torch.distributed.scatter,"at::scatter(const Tensor&, int64_t, const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae0c34742651fd50c4b5abf1dc411fdc0.html
+,function,torch.distributed.barrier,,,
+,function,torch.distributed.broadcast_multigpu,,,
+,function,torch.distributed.all_reduce_multigpu,,,
+,function,torch.distributed.reduce_multigpu,,,
+,function,torch.distributed.all_gather_multigpu,,,
+torch.distributed.Backend,class,,,,
+torch.distributed.ReduceOp,class,,,,
+torch.distributed.reduce_op,class,,,,
+,function,torch.distributions.kl.kl_divergence,,,
+,function,torch.distributions.kl.register_kl,,,
+torch.distributions.distribution.Distribution,class,,,,
+torch.distributions.distribution.Distribution,method,arg_constraints,,,
+torch.distributions.distribution.Distribution,method,batch_shape,,,
+torch.distributions.distribution.Distribution,method,cdf,,,
+torch.distributions.distribution.Distribution,method,entropy,,,
+torch.distributions.distribution.Distribution,method,enumerate_support,,,
+torch.distributions.distribution.Distribution,method,event_shape,,,
+torch.distributions.distribution.Distribution,method,expand,,,
+torch.distributions.distribution.Distribution,method,icdf,,,
+torch.distributions.distribution.Distribution,method,log_prob,,,
+torch.distributions.distribution.Distribution,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.distribution.Distribution,method,perplexity,,,
+torch.distributions.distribution.Distribution,method,rsample,,,
+torch.distributions.distribution.Distribution,method,sample,,,
+torch.distributions.distribution.Distribution,method,sample_n,,,
+torch.distributions.distribution.Distribution,method,stddev,,,
+torch.distributions.distribution.Distribution,method,support,,,
+torch.distributions.distribution.Distribution,method,variance,,,
+torch.distributions.exp_family.ExponentialFamily,class,,,,
+torch.distributions.exp_family.ExponentialFamily,method,entropy,,,
+torch.distributions.bernoulli.Bernoulli,class,,,,
+torch.distributions.bernoulli.Bernoulli,attribute,arg_constraints,,,
+torch.distributions.bernoulli.Bernoulli,method,entropy,,,
+torch.distributions.bernoulli.Bernoulli,method,enumerate_support,,,
+torch.distributions.bernoulli.Bernoulli,method,expand,,,
+torch.distributions.bernoulli.Bernoulli,attribute,has_enumerate_support,,,
+torch.distributions.bernoulli.Bernoulli,method,log_prob,,,
+torch.distributions.bernoulli.Bernoulli,attribute,logits,,,
+torch.distributions.bernoulli.Bernoulli,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.bernoulli.Bernoulli,method,param_shape,,,
+torch.distributions.bernoulli.Bernoulli,attribute,probs,,,
+torch.distributions.bernoulli.Bernoulli,method,sample,,,
+torch.distributions.bernoulli.Bernoulli,attribute,support,,,
+torch.distributions.bernoulli.Bernoulli,method,variance,,,
+torch.distributions.beta.Beta,class,,,,
+torch.distributions.beta.Beta,attribute,arg_constraints,,,
+torch.distributions.beta.Beta,method,concentration0,,,
+torch.distributions.beta.Beta,method,concentration1,,,
+torch.distributions.beta.Beta,method,entropy,,,
+torch.distributions.beta.Beta,method,expand,,,
+torch.distributions.beta.Beta,attribute,has_rsample,,,
+torch.distributions.beta.Beta,method,log_prob,,,
+torch.distributions.beta.Beta,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.beta.Beta,method,rsample,,,
+torch.distributions.beta.Beta,attribute,support,,,
+torch.distributions.beta.Beta,method,variance,,,
+torch.distributions.binomial.Binomial,class,,,,
+torch.distributions.binomial.Binomial,attribute,arg_constraints,,,
+torch.distributions.binomial.Binomial,method,enumerate_support,,,
+torch.distributions.binomial.Binomial,method,expand,,,
+torch.distributions.binomial.Binomial,attribute,has_enumerate_support,,,
+torch.distributions.binomial.Binomial,method,log_prob,,,
+torch.distributions.binomial.Binomial,attribute,logits,,,
+torch.distributions.binomial.Binomial,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.binomial.Binomial,method,param_shape,,,
+torch.distributions.binomial.Binomial,attribute,probs,,,
+torch.distributions.binomial.Binomial,method,sample,,,
+torch.distributions.binomial.Binomial,method,support,,,
+torch.distributions.binomial.Binomial,method,variance,,,
+torch.distributions.categorical.Categorical,class,,,,
+torch.distributions.categorical.Categorical,attribute,arg_constraints,,,
+torch.distributions.categorical.Categorical,method,entropy,,,
+torch.distributions.categorical.Categorical,method,enumerate_support,,,
+torch.distributions.categorical.Categorical,method,expand,,,
+torch.distributions.categorical.Categorical,attribute,has_enumerate_support,,,
+torch.distributions.categorical.Categorical,method,log_prob,,,
+torch.distributions.categorical.Categorical,attribute,logits,,,
+torch.distributions.categorical.Categorical,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.categorical.Categorical,method,param_shape,,,
+torch.distributions.categorical.Categorical,attribute,probs,,,
+torch.distributions.categorical.Categorical,method,sample,,,
+torch.distributions.categorical.Categorical,method,support,,,
+torch.distributions.categorical.Categorical,method,variance,,,
+torch.distributions.cauchy.Cauchy,class,,,,
+torch.distributions.cauchy.Cauchy,attribute,arg_constraints,,,
+torch.distributions.cauchy.Cauchy,method,cdf,,,
+torch.distributions.cauchy.Cauchy,method,entropy,,,
+torch.distributions.cauchy.Cauchy,method,expand,,,
+torch.distributions.cauchy.Cauchy,attribute,has_rsample,,,
+torch.distributions.cauchy.Cauchy,method,icdf,,,
+torch.distributions.cauchy.Cauchy,method,log_prob,,,
+torch.distributions.cauchy.Cauchy,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.cauchy.Cauchy,method,rsample,,,
+torch.distributions.cauchy.Cauchy,attribute,support,,,
+torch.distributions.cauchy.Cauchy,method,variance,,,
+torch.distributions.chi2.Chi2,class,,,,
+torch.distributions.chi2.Chi2,attribute,arg_constraints,,,
+torch.distributions.chi2.Chi2,method,df,,,
+torch.distributions.chi2.Chi2,method,expand,,,
+torch.distributions.dirichlet.Dirichlet,class,,,,
+torch.distributions.dirichlet.Dirichlet,attribute,arg_constraints,,,
+torch.distributions.dirichlet.Dirichlet,method,entropy,,,
+torch.distributions.dirichlet.Dirichlet,method,expand,,,
+torch.distributions.dirichlet.Dirichlet,attribute,has_rsample,,,
+torch.distributions.dirichlet.Dirichlet,method,log_prob,,,
+torch.distributions.dirichlet.Dirichlet,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.dirichlet.Dirichlet,method,rsample,,,
+torch.distributions.dirichlet.Dirichlet,attribute,support,,,
+torch.distributions.dirichlet.Dirichlet,method,variance,,,
+torch.distributions.exponential.Exponential,class,,,,
+torch.distributions.exponential.Exponential,attribute,arg_constraints,,,
+torch.distributions.exponential.Exponential,method,cdf,,,
+torch.distributions.exponential.Exponential,method,entropy,,,
+torch.distributions.exponential.Exponential,method,expand,,,
+torch.distributions.exponential.Exponential,attribute,has_rsample,,,
+torch.distributions.exponential.Exponential,method,icdf,,,
+torch.distributions.exponential.Exponential,method,log_prob,,,
+torch.distributions.exponential.Exponential,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.exponential.Exponential,method,rsample,,,
+torch.distributions.exponential.Exponential,method,stddev,,,
+torch.distributions.exponential.Exponential,attribute,support,,,
+torch.distributions.exponential.Exponential,method,variance,,,
+torch.distributions.fishersnedecor.FisherSnedecor,class,,,,
+torch.distributions.fishersnedecor.FisherSnedecor,attribute,arg_constraints,,,
+torch.distributions.fishersnedecor.FisherSnedecor,method,expand,,,
+torch.distributions.fishersnedecor.FisherSnedecor,attribute,has_rsample,,,
+torch.distributions.fishersnedecor.FisherSnedecor,method,log_prob,,,
+torch.distributions.fishersnedecor.FisherSnedecor,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.fishersnedecor.FisherSnedecor,method,rsample,,,
+torch.distributions.fishersnedecor.FisherSnedecor,attribute,support,,,
+torch.distributions.fishersnedecor.FisherSnedecor,method,variance,,,
+torch.distributions.gamma.Gamma,class,,,,
+torch.distributions.gamma.Gamma,attribute,arg_constraints,,,
+torch.distributions.gamma.Gamma,method,entropy,,,
+torch.distributions.gamma.Gamma,method,expand,,,
+torch.distributions.gamma.Gamma,attribute,has_rsample,,,
+torch.distributions.gamma.Gamma,method,log_prob,,,
+torch.distributions.gamma.Gamma,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.gamma.Gamma,method,rsample,,,
+torch.distributions.gamma.Gamma,attribute,support,,,
+torch.distributions.gamma.Gamma,method,variance,,,
+torch.distributions.geometric.Geometric,class,,,,
+torch.distributions.geometric.Geometric,attribute,arg_constraints,,,
+torch.distributions.geometric.Geometric,method,entropy,,,
+torch.distributions.geometric.Geometric,method,expand,,,
+torch.distributions.geometric.Geometric,method,log_prob,,,
+torch.distributions.geometric.Geometric,attribute,logits,,,
+torch.distributions.geometric.Geometric,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.geometric.Geometric,attribute,probs,,,
+torch.distributions.geometric.Geometric,method,sample,,,
+torch.distributions.geometric.Geometric,attribute,support,,,
+torch.distributions.geometric.Geometric,method,variance,,,
+torch.distributions.gumbel.Gumbel,class,,,,
+torch.distributions.gumbel.Gumbel,attribute,arg_constraints,,,
+torch.distributions.gumbel.Gumbel,method,entropy,,,
+torch.distributions.gumbel.Gumbel,method,expand,,,
+torch.distributions.gumbel.Gumbel,method,log_prob,,,
+torch.distributions.gumbel.Gumbel,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.gumbel.Gumbel,method,stddev,,,
+torch.distributions.gumbel.Gumbel,attribute,support,,,
+torch.distributions.gumbel.Gumbel,method,variance,,,
+torch.distributions.half_cauchy.HalfCauchy,class,,,,
+torch.distributions.half_cauchy.HalfCauchy,attribute,arg_constraints,,,
+torch.distributions.half_cauchy.HalfCauchy,method,cdf,,,
+torch.distributions.half_cauchy.HalfCauchy,method,entropy,,,
+torch.distributions.half_cauchy.HalfCauchy,method,expand,,,
+torch.distributions.half_cauchy.HalfCauchy,attribute,has_rsample,,,
+torch.distributions.half_cauchy.HalfCauchy,method,icdf,,,
+torch.distributions.half_cauchy.HalfCauchy,method,log_prob,,,
+torch.distributions.half_cauchy.HalfCauchy,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.half_cauchy.HalfCauchy,method,scale,,,
+torch.distributions.half_cauchy.HalfCauchy,attribute,support,,,
+torch.distributions.half_cauchy.HalfCauchy,method,variance,,,
+torch.distributions.half_normal.HalfNormal,class,,,,
+torch.distributions.half_normal.HalfNormal,attribute,arg_constraints,,,
+torch.distributions.half_normal.HalfNormal,method,cdf,,,
+torch.distributions.half_normal.HalfNormal,method,entropy,,,
+torch.distributions.half_normal.HalfNormal,method,expand,,,
+torch.distributions.half_normal.HalfNormal,attribute,has_rsample,,,
+torch.distributions.half_normal.HalfNormal,method,icdf,,,
+torch.distributions.half_normal.HalfNormal,method,log_prob,,,
+torch.distributions.half_normal.HalfNormal,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.half_normal.HalfNormal,method,scale,,,
+torch.distributions.half_normal.HalfNormal,attribute,support,,,
+torch.distributions.half_normal.HalfNormal,method,variance,,,
+torch.distributions.independent.Independent,class,,,,
+torch.distributions.independent.Independent,attribute,arg_constraints,,,
+torch.distributions.independent.Independent,method,entropy,,,
+torch.distributions.independent.Independent,method,enumerate_support,,,
+torch.distributions.independent.Independent,method,expand,,,
+torch.distributions.independent.Independent,method,has_enumerate_support,,,
+torch.distributions.independent.Independent,method,has_rsample,,,
+torch.distributions.independent.Independent,method,log_prob,,,
+torch.distributions.independent.Independent,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.independent.Independent,method,rsample,,,
+torch.distributions.independent.Independent,method,sample,,,
+torch.distributions.independent.Independent,method,support,,,
+torch.distributions.independent.Independent,method,variance,,,
+torch.distributions.laplace.Laplace,class,,,,
+torch.distributions.laplace.Laplace,attribute,arg_constraints,,,
+torch.distributions.laplace.Laplace,method,cdf,,,
+torch.distributions.laplace.Laplace,method,entropy,,,
+torch.distributions.laplace.Laplace,method,expand,,,
+torch.distributions.laplace.Laplace,attribute,has_rsample,,,
+torch.distributions.laplace.Laplace,method,icdf,,,
+torch.distributions.laplace.Laplace,method,log_prob,,,
+torch.distributions.laplace.Laplace,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.laplace.Laplace,method,rsample,,,
+torch.distributions.laplace.Laplace,method,stddev,,,
+torch.distributions.laplace.Laplace,attribute,support,,,
+torch.distributions.laplace.Laplace,method,variance,,,
+torch.distributions.log_normal.LogNormal,class,,,,
+torch.distributions.log_normal.LogNormal,attribute,arg_constraints,,,
+torch.distributions.log_normal.LogNormal,method,entropy,,,
+torch.distributions.log_normal.LogNormal,method,expand,,,
+torch.distributions.log_normal.LogNormal,attribute,has_rsample,,,
+torch.distributions.log_normal.LogNormal,method,loc,,,
+torch.distributions.log_normal.LogNormal,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.log_normal.LogNormal,method,scale,,,
+torch.distributions.log_normal.LogNormal,attribute,support,,,
+torch.distributions.log_normal.LogNormal,method,variance,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,class,,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,arg_constraints,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,covariance_matrix,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,method,entropy,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,method,expand,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,has_rsample,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,method,log_prob,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,precision_matrix,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,method,rsample,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,scale_tril,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,support,,,
+torch.distributions.lowrank_multivariate_normal.LowRankMultivariateNormal,attribute,variance,,,
+torch.distributions.multinomial.Multinomial,class,,,,
+torch.distributions.multinomial.Multinomial,attribute,arg_constraints,,,
+torch.distributions.multinomial.Multinomial,method,expand,,,
+torch.distributions.multinomial.Multinomial,method,log_prob,,,
+torch.distributions.multinomial.Multinomial,method,logits,,,
+torch.distributions.multinomial.Multinomial,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.multinomial.Multinomial,method,param_shape,,,
+torch.distributions.multinomial.Multinomial,method,probs,,,
+torch.distributions.multinomial.Multinomial,method,sample,,,
+torch.distributions.multinomial.Multinomial,method,support,,,
+torch.distributions.multinomial.Multinomial,method,variance,,,
+torch.distributions.multivariate_normal.MultivariateNormal,class,,,,
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,arg_constraints,,,
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,covariance_matrix,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,entropy,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,expand,,,
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,has_rsample,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,log_prob,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,precision_matrix,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,rsample,,,
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,scale_tril,,,
+torch.distributions.multivariate_normal.MultivariateNormal,attribute,support,,,
+torch.distributions.multivariate_normal.MultivariateNormal,method,variance,,,
+torch.distributions.negative_binomial.NegativeBinomial,class,,,,
+torch.distributions.negative_binomial.NegativeBinomial,attribute,arg_constraints,,,
+torch.distributions.negative_binomial.NegativeBinomial,method,expand,,,
+torch.distributions.negative_binomial.NegativeBinomial,method,log_prob,,,
+torch.distributions.negative_binomial.NegativeBinomial,attribute,logits,,,
+torch.distributions.negative_binomial.NegativeBinomial,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.negative_binomial.NegativeBinomial,method,param_shape,,,
+torch.distributions.negative_binomial.NegativeBinomial,attribute,probs,,,
+torch.distributions.negative_binomial.NegativeBinomial,method,sample,,,
+torch.distributions.negative_binomial.NegativeBinomial,attribute,support,,,
+torch.distributions.negative_binomial.NegativeBinomial,method,variance,,,
+torch.distributions.normal.Normal,class,,,,
+torch.distributions.normal.Normal,attribute,arg_constraints,,,
+torch.distributions.normal.Normal,method,cdf,,,
+torch.distributions.normal.Normal,method,entropy,,,
+torch.distributions.normal.Normal,method,expand,,,
+torch.distributions.normal.Normal,attribute,has_rsample,,,
+torch.distributions.normal.Normal,method,icdf,,,
+torch.distributions.normal.Normal,method,log_prob,,,
+torch.distributions.normal.Normal,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.normal.Normal,method,rsample,,,
+torch.distributions.normal.Normal,method,sample,,,
+torch.distributions.normal.Normal,method,stddev,,,
+torch.distributions.normal.Normal,attribute,support,,,
+torch.distributions.normal.Normal,method,variance,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,class,,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,attribute,arg_constraints,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,entropy,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,enumerate_support,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,expand,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,attribute,has_enumerate_support,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,log_prob,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,logits,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.one_hot_categorical.OneHotCategorical,method,param_shape,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,probs,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,sample,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,attribute,support,,,
+torch.distributions.one_hot_categorical.OneHotCategorical,method,variance,,,
+torch.distributions.pareto.Pareto,class,,,,
+torch.distributions.pareto.Pareto,attribute,arg_constraints,,,
+torch.distributions.pareto.Pareto,method,entropy,,,
+torch.distributions.pareto.Pareto,method,expand,,,
+torch.distributions.pareto.Pareto,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.pareto.Pareto,method,support,,,
+torch.distributions.pareto.Pareto,method,variance,,,
+torch.distributions.poisson.Poisson,class,,,,
+torch.distributions.poisson.Poisson,attribute,arg_constraints,,,
+torch.distributions.poisson.Poisson,method,expand,,,
+torch.distributions.poisson.Poisson,method,log_prob,,,
+torch.distributions.poisson.Poisson,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.poisson.Poisson,method,sample,,,
+torch.distributions.poisson.Poisson,attribute,support,,,
+torch.distributions.poisson.Poisson,method,variance,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,class,,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,attribute,arg_constraints,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,method,expand,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,attribute,has_rsample,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,method,logits,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,method,probs,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,attribute,support,,,
+torch.distributions.relaxed_bernoulli.RelaxedBernoulli,method,temperature,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,class,,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,attribute,arg_constraints,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,method,expand,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,method,log_prob,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,attribute,logits,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,method,param_shape,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,attribute,probs,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,method,rsample,,,
+torch.distributions.relaxed_bernoulli.LogitRelaxedBernoulli,attribute,support,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,class,,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,attribute,arg_constraints,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,method,expand,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,attribute,has_rsample,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,method,logits,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,method,probs,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,attribute,support,,,
+torch.distributions.relaxed_categorical.RelaxedOneHotCategorical,method,temperature,,,
+torch.distributions.studentT.StudentT,class,,,,
+torch.distributions.studentT.StudentT,attribute,arg_constraints,,,
+torch.distributions.studentT.StudentT,method,entropy,,,
+torch.distributions.studentT.StudentT,method,expand,,,
+torch.distributions.studentT.StudentT,attribute,has_rsample,,,
+torch.distributions.studentT.StudentT,method,log_prob,,,
+torch.distributions.studentT.StudentT,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.studentT.StudentT,method,rsample,,,
+torch.distributions.studentT.StudentT,attribute,support,,,
+torch.distributions.studentT.StudentT,method,variance,,,
+torch.distributions.transformed_distribution.TransformedDistribution,class,,,,
+torch.distributions.transformed_distribution.TransformedDistribution,attribute,arg_constraints,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,cdf,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,expand,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,has_rsample,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,icdf,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,log_prob,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,rsample,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,sample,,,
+torch.distributions.transformed_distribution.TransformedDistribution,method,support,,,
+torch.distributions.uniform.Uniform,class,,,,
+torch.distributions.uniform.Uniform,attribute,arg_constraints,,,
+torch.distributions.uniform.Uniform,method,cdf,,,
+torch.distributions.uniform.Uniform,method,entropy,,,
+torch.distributions.uniform.Uniform,method,expand,,,
+torch.distributions.uniform.Uniform,attribute,has_rsample,,,
+torch.distributions.uniform.Uniform,method,icdf,,,
+torch.distributions.uniform.Uniform,method,log_prob,,,
+torch.distributions.uniform.Uniform,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.uniform.Uniform,method,rsample,,,
+torch.distributions.uniform.Uniform,method,stddev,,,
+torch.distributions.uniform.Uniform,method,support,,,
+torch.distributions.uniform.Uniform,method,variance,,,
+torch.distributions.weibull.Weibull,class,,,,
+torch.distributions.weibull.Weibull,attribute,arg_constraints,,,
+torch.distributions.weibull.Weibull,method,entropy,,,
+torch.distributions.weibull.Weibull,method,expand,,,
+torch.distributions.weibull.Weibull,method,mean,"at::mean(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af5bb7d41c8d0b5511421e68d1f226b11.html
+torch.distributions.weibull.Weibull,attribute,support,,,
+torch.distributions.weibull.Weibull,method,variance,,,
+torch.distributions.transforms.Transform,class,,,,
+torch.distributions.transforms.Transform,method,inv,,,
+torch.distributions.transforms.Transform,method,sign,at::sign,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9624ed77d963cfbd2e580fa778770246.html
+torch.distributions.transforms.Transform,method,log_abs_det_jacobian,,,
+torch.distributions.transforms.ComposeTransform,class,,,,
+torch.distributions.transforms.ExpTransform,class,,,,
+torch.distributions.transforms.PowerTransform,class,,,,
+torch.distributions.transforms.SigmoidTransform,class,,,,
+torch.distributions.transforms.AbsTransform,class,,,,
+torch.distributions.transforms.AffineTransform,class,,,,
+torch.distributions.transforms.SoftmaxTransform,class,,,,
+torch.distributions.transforms.StickBreakingTransform,class,,,,
+torch.distributions.transforms.LowerCholeskyTransform,class,,,,
+torch.distributions.transforms.CatTransform,class,,,,
+torch.distributions.transforms.StackTransform,class,,,,
+torch.distributions.constraints.Constraint,class,,,,
+torch.distributions.constraints.Constraint,method,check,,,
+torch.distributions.constraint_registry.ConstraintRegistry,class,,,,
+torch.distributions.constraint_registry.ConstraintRegistry,method,register,,,
+,function,torch.hub.list,List,Template Class,https://pytorch.org/cppdocs/api/classc10_1_1_list.html
+,function,torch.hub.help,,,
+,function,torch.hub.load,"torch::jit::load(std::istream&, c10::optional<c10::Device>, script::ExtraFilesMap&)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1jit_1a1e56f9de192b19faecdafc48459cfa75.html
+,function,torch.hub.download_url_to_file,,,
+,function,torch.hub.load_state_dict_from_url,,,
+,function,torch.hub.set_dir,,,
+,function,torch.jit.script,torch::jit::script,Namespace,https://pytorch.org/cppdocs/api/namespace_torch__jit__script.html
+,function,torch.jit.trace,at::trace,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ade4208476ac706750804b51e9e86f975.html
+,function,torch.jit.trace_module,,,
+,function,torch.jit.save,"torch::save(const Value&, SaveToArgs&&…)",Template Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1a99dc9f736064b2179cc58e6436f7a021.html
+,function,torch.jit.load,"torch::jit::load(std::istream&, c10::optional<c10::Device>, script::ExtraFilesMap&)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1jit_1a1e56f9de192b19faecdafc48459cfa75.html
+,function,torch.jit.export,,,
+,function,torch.jit.ignore,,,
+,function,torch.jit.unused,,,
+,function,torch.jit.is_scripting,,,
+torch.jit.ScriptModule,class,,,,
+torch.jit.ScriptModule,method,code,,,
+torch.jit.ScriptModule,method,graph,,,
+torch.jit.ScriptModule,method,save,"torch::save(const Value&, SaveToArgs&&…)",Template Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1a99dc9f736064b2179cc58e6436f7a021.html
+torch.jit.ScriptFunction,class,,,,
+,function,torch.nn.init.calculate_gain,torch::nn::init::calculate_gain,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1abfccc1bd475b9a8c9505f46353e02c90.html
+,function,torch.nn.init.uniform_,torch::nn::init::uniform_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1ab0aeccca28b2225ee9aab809ec38a801.html
+,function,torch.nn.init.normal_,torch::nn::init::normal_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a105c2a8ef81c6faa82a01cf35ce9f3b1.html
+,function,torch.nn.init.constant_,torch::nn::init::constant_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a9c886724aac3a487553dc0a406565c83.html
+,function,torch.nn.init.ones_,torch::nn::init::ones_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a9dcc2051aadbe8ddb37d58bbd2b7943a.html
+,function,torch.nn.init.zeros_,torch::nn::init::zeros_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1af7e7736ba2d050adc0523d84285564e8.html
+,function,torch.nn.init.eye_,torch::nn::init::eye_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a77eb9bba76a93da5b33e7770f9113015.html
+,function,torch.nn.init.dirac_,torch::nn::init::dirac_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1ab9fa9ea51c05df8a5c9dcca7a54dd628.html
+,function,torch.nn.init.xavier_uniform_,torch::nn::init::xavier_uniform_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1ace282f75916a862c9678343dfd4d5ffe.html
+,function,torch.nn.init.xavier_normal_,torch::nn::init::xavier_normal_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a86191a828a085e1c720dbce185d6c307.html
+,function,torch.nn.init.kaiming_uniform_,torch::nn::init::kaiming_uniform_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a5e807af188fc8542c487d50d81cb1aa1.html
+,function,torch.nn.init.kaiming_normal_,torch::nn::init::kaiming_normal_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1ac8a913c051976a3f41f20df7d6126e57.html
+,function,torch.nn.init.orthogonal_,torch::nn::init::orthogonal_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a5978fcc257460475f635b5960e892a8e.html
+,function,torch.nn.init.sparse_,torch::nn::init::sparse_,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1init_1a82f2e5810880c7cc60c84516eb283be6.html
+,function,torch.onnx.export,,,
+,function,torch.onnx.register_custom_op_symbolic,,,
+,function,torch.onnx.operators.shape_as_tensor,,,
+,function,torch.onnx.set_training,,,
+,function,torch.onnx.is_in_onnx_export,,,
+torch.optim.Optimizer,class,,Optimizer,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_optimizer.html
+torch.optim.Optimizer,method,add_param_group,,,
+torch.optim.Optimizer,method,load_state_dict,,,
+torch.optim.Optimizer,method,state_dict,,,
+torch.optim.Optimizer,method,step,,,
+torch.optim.Optimizer,method,zero_grad,,,
+torch.optim.Adadelta,class,,,,
+torch.optim.Adadelta,method,step,,,
+torch.optim.Adagrad,class,,Adagrad,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_adagrad.html
+torch.optim.Adagrad,method,step,,,
+torch.optim.Adam,class,,Adam,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_adam.html
+torch.optim.Adam,method,step,,,
+torch.optim.AdamW,class,,,,
+torch.optim.AdamW,method,step,,,
+torch.optim.SparseAdam,class,,,,
+torch.optim.SparseAdam,method,step,,,
+torch.optim.Adamax,class,,,,
+torch.optim.Adamax,method,step,,,
+torch.optim.ASGD,class,,,,
+torch.optim.ASGD,method,step,,,
+torch.optim.LBFGS,class,,LBFGS,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_l_b_f_g_s.html
+torch.optim.LBFGS,method,step,,,
+torch.optim.RMSprop,class,,RMSprop,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_r_m_sprop.html
+torch.optim.RMSprop,method,step,,,
+torch.optim.Rprop,class,,,,
+torch.optim.Rprop,method,step,,,
+torch.optim.SGD,class,,SGD,Class,https://pytorch.org/cppdocs/api/classtorch_1_1optim_1_1_s_g_d.html
+torch.optim.SGD,method,step,,,
+torch.optim.lr_scheduler.LambdaLR,class,,,,
+torch.optim.lr_scheduler.LambdaLR,method,load_state_dict,,,
+torch.optim.lr_scheduler.LambdaLR,method,state_dict,,,
+torch.optim.lr_scheduler.MultiplicativeLR,class,,,,
+torch.optim.lr_scheduler.MultiplicativeLR,method,load_state_dict,,,
+torch.optim.lr_scheduler.MultiplicativeLR,method,state_dict,,,
+torch.optim.lr_scheduler.StepLR,class,,,,
+torch.optim.lr_scheduler.MultiStepLR,class,,,,
+torch.optim.lr_scheduler.ExponentialLR,class,,,,
+torch.optim.lr_scheduler.CosineAnnealingLR,class,,,,
+torch.optim.lr_scheduler.ReduceLROnPlateau,class,,,,
+torch.optim.lr_scheduler.CyclicLR,class,,,,
+torch.optim.lr_scheduler.CyclicLR,method,get_lr,,,
+torch.optim.lr_scheduler.OneCycleLR,class,,,,
+torch.optim.lr_scheduler.CosineAnnealingWarmRestarts,class,,,,
+torch.optim.lr_scheduler.CosineAnnealingWarmRestarts,method,step,,,
+,function,torch.quantization.quantize,,,
+,function,torch.quantization.quantize_dynamic,,,
+,function,torch.quantization.quantize_qat,,,
+,function,torch.quantization.prepare,,,
+,function,torch.quantization.prepare_qat,,,
+,function,torch.quantization.convert,c10::detail_::convert,Template Function,https://pytorch.org/cppdocs/api/function_namespacec10_1_1detail___1aad2b8f7c6480fe0f6c4255305193e14f.html
+,function,torch.quantization.fuse_modules,,,
+,function,torch.quantization.add_quant_dequant,,,
+,function,torch.quantization.add_observer_,,,
+,function,torch.quantization.swap_module,,,
+,function,torch.quantization.propagate_qconfig_,,,
+,function,torch.quantization.default_eval_fn,,,
+,function,torch.quantization.get_observer_dict,,,
+,function,torch.nn.quantized.functional.relu,at::relu,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1e20924cf75671210543247fa05ea4ba.html
+,function,torch.nn.quantized.functional.linear,at::linear,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abd1a34127a6702599c28c7c938b7a15a.html
+,function,torch.nn.quantized.functional.conv2d,at::conv2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac3941ef1c20d2c62ebc71f084915a236.html
+,function,torch.nn.quantized.functional.conv3d,at::conv3d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a04596b1669889914b1f6a84b1dd824d9.html
+,function,torch.nn.quantized.functional.max_pool2d,at::max_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9304aa17cda4d91c14f771eba3dbe827.html
+,function,torch.nn.quantized.functional.adaptive_avg_pool2d,at::adaptive_avg_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a7341b8ebb8cfbb5cd252da45997b80b5.html
+,function,torch.nn.quantized.functional.avg_pool2d,at::avg_pool2d,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9ee21eecc668dc399dfeadab2125a9f4.html
+,function,torch.nn.quantized.functional.interpolate,torch::nn::functional::detail::interpolate,Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1nn_1_1functional_1_1detail_1a0fb30efdb005481a4299226fec584278.html
+,function,torch.nn.quantized.functional.upsample,Upsample,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_upsample.html
+,function,torch.nn.quantized.functional.upsample_bilinear,,,
+,function,torch.nn.quantized.functional.upsample_nearest,,,
+torch.quantization.QConfig,class,,,,
+torch.quantization.QConfigDynamic,class,,,,
+torch.quantization.QuantStub,class,,,,
+torch.quantization.DeQuantStub,class,,,,
+torch.quantization.QuantWrapper,class,,,,
+torch.quantization.MinMaxObserver,class,,,,
+torch.quantization.MovingAverageMinMaxObserver,class,,,,
+torch.quantization.PerChannelMinMaxObserver,class,,,,
+torch.quantization.MovingAveragePerChannelMinMaxObserver,class,,,,
+torch.quantization.HistogramObserver,class,,,,
+torch.quantization.FakeQuantize,class,,,,
+torch.quantization.NoopObserver,class,,,,
+torch.quantization.RecordingObserver,class,,,,
+torch.nn.intrinsic.ConvBn2d,class,,,,
+torch.nn.intrinsic.ConvBnReLU2d,class,,,,
+torch.nn.intrinsic.ConvReLU2d,class,,,,
+torch.nn.intrinsic.ConvReLU3d,class,,,,
+torch.nn.intrinsic.LinearReLU,class,,,,
+torch.nn.intrinsic.qat.ConvBn2d,class,,,,
+torch.nn.intrinsic.qat.ConvBn2d,method,from_float,,,
+torch.nn.intrinsic.qat.ConvBnReLU2d,class,,,,
+torch.nn.intrinsic.qat.ConvReLU2d,class,,,,
+torch.nn.intrinsic.qat.LinearReLU,class,,,,
+torch.nn.intrinsic.quantized.ConvReLU2d,class,,,,
+torch.nn.intrinsic.quantized.ConvReLU3d,class,,,,
+torch.nn.intrinsic.quantized.LinearReLU,class,,,,
+torch.nn.qat.Conv2d,class,,Conv2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv2d.html
+torch.nn.qat.Conv2d,method,from_float,,,
+torch.nn.qat.Linear,class,,Linear,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_linear.html
+torch.nn.qat.Linear,method,from_float,,,
+torch.nn.quantized.ReLU,class,,,,
+torch.nn.quantized.ReLU6,class,,,,
+torch.nn.quantized.Conv2d,class,,Conv2d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv2d.html
+torch.nn.quantized.Conv2d,method,from_float,,,
+torch.nn.quantized.Conv3d,class,,Conv3d,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_conv3d.html
+torch.nn.quantized.Conv3d,method,from_float,,,
+torch.nn.quantized.FloatFunctional,class,,,,
+torch.nn.quantized.QFunctional,class,,,,
+torch.nn.quantized.Quantize,class,,,,
+torch.nn.quantized.DeQuantize,class,,,,
+torch.nn.quantized.Linear,class,,Linear,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_linear.html
+torch.nn.quantized.Linear,method,from_float,,,
+torch.nn.quantized.dynamic.Linear,class,,Linear,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_linear.html
+torch.nn.quantized.dynamic.Linear,method,from_float,,,
+torch.nn.quantized.dynamic.LSTM,class,,LSTM,Class,https://pytorch.org/cppdocs/api/classtorch_1_1nn_1_1_l_s_t_m.html
+,function,torch.distributed.rpc.init_rpc,,,
+,function,torch.distributed.rpc.rpc_sync,,,
+,function,torch.distributed.rpc.rpc_async,,,
+,function,torch.distributed.rpc.remote,,,
+,function,torch.distributed.rpc.get_worker_info,,,
+,function,torch.distributed.rpc.shutdown,,,
+,function,torch.distributed.autograd.backward,,,
+,function,torch.distributed.autograd.get_gradients,,,
+torch.distributed.rpc.RRef,class,,,,
+torch.distributed.rpc.RRef,method,is_owner,,,
+torch.distributed.rpc.RRef,method,local_value,,,
+torch.distributed.rpc.RRef,method,owner,,,
+torch.distributed.rpc.RRef,method,to_here,,,
+torch.distributed.autograd.context,class,,,,
+torch.distributed.optim.DistributedOptimizer,class,,,,
+torch.distributed.optim.DistributedOptimizer,method,step,,,
+,function,torch.random.fork_rng,,,
+,function,torch.random.get_rng_state,,,
+,function,torch.random.initial_seed,,,
+,function,torch.random.manual_seed,,,
+,function,torch.random.seed,,,
+,function,torch.random.set_rng_state,,,
+,function,torch.random.get_rng_state,,,
+,function,torch.random.set_rng_state,,,
+,function,torch.random.manual_seed,,,
+,function,torch.random.seed,,,
+,function,torch.random.initial_seed,,,
+,function,torch.random.fork_rng,,,
+,function,torch.sparse.addmm,at::addmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac1155c41e5a2cd930568f7ff8e547b4c.html
+,function,torch.sparse.mm,at::mm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac21be4a6b3f22dfbb52300dc233e270c.html
+,function,torch.sparse.sum,"at::sum(const Tensor&, c10::optional<ScalarType>)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abfab96bd4d849eaadc24b39c0706d6ff.html
+torch.sparse.FloatTensor,class,,,,
+torch.sparse.FloatTensor,method,add,"at::add(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1afdd5c8855d82edd09b89dfdcecc42b73.html
+torch.sparse.FloatTensor,method,add_,,,
+torch.sparse.FloatTensor,method,clone,at::clone,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a17f55e044d318b8535403afa12436822.html
+torch.sparse.FloatTensor,method,dim,,,
+torch.sparse.FloatTensor,method,div,"at::div(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a1c5daa7e60df6db3673363f8e0a14218.html
+torch.sparse.FloatTensor,method,div_,,,
+torch.sparse.FloatTensor,method,get_device,,,
+torch.sparse.FloatTensor,method,hspmm,at::hspmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1af32e08d487a7b937a31321400051add8.html
+torch.sparse.FloatTensor,method,mm,at::mm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac21be4a6b3f22dfbb52300dc233e270c.html
+torch.sparse.FloatTensor,method,mul,"at::mul(const Tensor&, const Tensor&)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a9a548d3a9487b02df4d131db510444ab.html
+torch.sparse.FloatTensor,method,mul_,,,
+torch.sparse.FloatTensor,method,narrow_copy,,,
+torch.sparse.FloatTensor,method,resizeAs_,,,
+torch.sparse.FloatTensor,method,size,"at::size(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abea4dfbc4bd140b2e39265f2c4616489.html
+torch.sparse.FloatTensor,method,spadd,,,
+torch.sparse.FloatTensor,method,spmm,,,
+torch.sparse.FloatTensor,method,sspaddmm,at::sspaddmm,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1acbf5ed0d6ba73811abe819ffee0b609d.html
+torch.sparse.FloatTensor,method,sspmm,,,
+torch.sparse.FloatTensor,method,sub,"at::sub(const Tensor&, const Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ae9d92ed1ec5493a75392b6dcd20c23d2.html
+torch.sparse.FloatTensor,method,sub_,,,
+torch.sparse.FloatTensor,method,t_,,,
+torch.sparse.FloatTensor,method,to_dense,,,
+torch.sparse.FloatTensor,method,transpose,"at::transpose(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a024981e8469e95eb6e4bdad0d5ac32ed.html
+torch.sparse.FloatTensor,method,transpose_,,,
+torch.sparse.FloatTensor,method,zero_,at::zero_,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1ac6269f974114567043a65f73e9930225.html
+torch.sparse.FloatTensor,method,coalesce,,,
+torch.sparse.FloatTensor,method,is_coalesced,,,
+torch.sparse.FloatTensor,method,_indices,,,
+torch.sparse.FloatTensor,method,_values,,,
+torch.sparse.FloatTensor,method,_nnz,,,
+torch.FloatStorage,class,,,,
+torch.FloatStorage,method,bfloat16,,,
+torch.FloatStorage,method,bool,,,
+torch.FloatStorage,method,byte,,,
+torch.FloatStorage,method,char,,,
+torch.FloatStorage,method,clone,at::clone,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a17f55e044d318b8535403afa12436822.html
+torch.FloatStorage,method,copy_,,,
+torch.FloatStorage,method,cpu,,,
+torch.FloatStorage,method,cuda,at::cuda,Namespace,https://pytorch.org/cppdocs/api/namespace_at__cuda.html
+torch.FloatStorage,method,data_ptr,,,
+torch.FloatStorage,attribute,device,Device,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_device.html
+torch.FloatStorage,method,double,,,
+torch.FloatStorage,attribute,dtype,torch::Dtype,Typedef,https://pytorch.org/cppdocs/api/typedef_namespacetorch_1a6369c7235ef5ea9c5fccbff406ad979e.html
+torch.FloatStorage,method,element_size,,,
+torch.FloatStorage,method,fill_,"at::fill_(Tensor&, Scalar)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a51b8e8d6acf9df09d7d507dd2dc4b556.html
+torch.FloatStorage,method,float,,,
+torch.FloatStorage,method,from_buffer,,,
+torch.FloatStorage,method,from_file,at::from_file,Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a73548a97979cba2d0a326035a5bb9dff.html
+torch.FloatStorage,method,half,Half,Struct,https://pytorch.org/cppdocs/api/structc10_1_1_half.html
+torch.FloatStorage,method,int,,,
+torch.FloatStorage,attribute,is_cuda,,,
+torch.FloatStorage,method,is_pinned,,,
+torch.FloatStorage,method,is_shared,,,
+torch.FloatStorage,attribute,is_sparse,,,
+torch.FloatStorage,method,long,,,
+torch.FloatStorage,method,new,,,
+torch.FloatStorage,method,pin_memory,,,
+torch.FloatStorage,method,resize_,,,
+torch.FloatStorage,method,share_memory_,,,
+torch.FloatStorage,method,short,,,
+torch.FloatStorage,method,size,"at::size(const Tensor&, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1abea4dfbc4bd140b2e39265f2c4616489.html
+torch.FloatStorage,method,tolist,,,
+torch.FloatStorage,method,type,,,
+,function,torch.utils.checkpoint.checkpoint,,,
+,function,torch.utils.checkpoint.checkpoint_sequential,,,
+,function,torch.utils.cpp_extension.CppExtension,,,
+,function,torch.utils.cpp_extension.CUDAExtension,,,
+,function,torch.utils.cpp_extension.BuildExtension,,,
+,function,torch.utils.cpp_extension.load,"torch::jit::load(std::istream&, c10::optional<c10::Device>, script::ExtraFilesMap&)",Function,https://pytorch.org/cppdocs/api/function_namespacetorch_1_1jit_1a1e56f9de192b19faecdafc48459cfa75.html
+,function,torch.utils.cpp_extension.load_inline,,,
+,function,torch.utils.cpp_extension.include_paths,,,
+,function,torch.utils.cpp_extension.check_compiler_abi_compatibility,,,
+,function,torch.utils.cpp_extension.verify_ninja_availability,,,
+,function,torch.utils.data.get_worker_info,,,
+,function,torch.utils.data.random_split,,,
+torch.utils.data.DataLoader,class,,,,
+torch.utils.data.Dataset,class,,,,
+torch.utils.data.IterableDataset,class,,,,
+torch.utils.data.TensorDataset,class,,,,
+torch.utils.data.ConcatDataset,class,,,,
+torch.utils.data.ChainDataset,class,,,,
+torch.utils.data.Subset,class,,,,
+torch.utils.data.Sampler,class,,,,
+torch.utils.data.SequentialSampler,class,,,,
+torch.utils.data.RandomSampler,class,,,,
+torch.utils.data.SubsetRandomSampler,class,,,,
+torch.utils.data.WeightedRandomSampler,class,,,,
+torch.utils.data.BatchSampler,class,,,,
+torch.utils.data.distributed.DistributedSampler,class,,,,
+,function,torch.utils.dlpack.from_dlpack,,,
+,function,torch.utils.dlpack.to_dlpack,,,
+,function,torch.utils.model_zoo.load_url,,,
+torch.utils.tensorboard.writer.SummaryWriter,class,,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,__init__,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_scalar,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_scalars,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_histogram,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_image,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_images,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_figure,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_video,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_audio,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_text,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_graph,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_embedding,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_pr_curve,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_custom_scalars,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_mesh,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,add_hparams,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,flush,,,
+torch.utils.tensorboard.writer.SummaryWriter,method,close,,,
+torch.torch.finfo,class,,,,
+torch.torch.iinfo,class,,,,
+,class,,,,
+,attribute,names,,,
+,method,rename,,,
+,method,rename_,,,
+,method,refine_names,,,
+,method,align_as,,,
+,method,align_to,,,
+,method,unflatten,,,
+,method,flatten,"at::flatten(const Tensor&, int64_t, int64_t)",Function,https://pytorch.org/cppdocs/api/function_namespaceat_1a55843006e38a3a24949dc0704598da87.html

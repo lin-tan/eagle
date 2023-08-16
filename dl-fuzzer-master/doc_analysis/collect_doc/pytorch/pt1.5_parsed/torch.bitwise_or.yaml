@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: the first input tensor
+  other:
+    descp: the second input tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.bitwise_or
+package: torch
+ret_type: Tensor
+target: bitwise_or
+title: torch.bitwise_or
+version: 1.5.0

@@ -1,0 +1,21 @@
+constraints:
+  input_handle:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape_type:
+    descp: 'A tf.DType from: tf.int32, tf.int64.'
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - shape_type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListElementShape
+outputs:
+- A Tensor of type shape_type.
+package: tensorflow
+target: TensorListElementShape
+title: tf.raw_ops.TensorListElementShape
+version: 2.2.0

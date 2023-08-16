@@ -1,0 +1,10 @@
+constraints:
+  i2h_weight_initializer:
+    default: None
+    descp: Initializer for the input weights matrix, used for the input convolutions.
+    doc_dtype:
+    - str
+    - Initializer
+    dtype:
+    - string
+title: mxnet.gluon.contrib.rnn.Conv1DGRUCell

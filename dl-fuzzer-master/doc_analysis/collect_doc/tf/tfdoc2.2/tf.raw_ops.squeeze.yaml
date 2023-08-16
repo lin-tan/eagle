@@ -1,0 +1,24 @@
+constraints:
+  axis:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. If specified, only squeezes the
+      dimensions listed. The dimension index starts at 0. It is an error to squeeze
+      a dimension that is not 1. Must be in the range [-rank(input), rank(input)).
+  input:
+    descp: A Tensor. The input to squeeze.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Squeeze
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Squeeze
+title: tf.raw_ops.Squeeze
+version: 2.2.0

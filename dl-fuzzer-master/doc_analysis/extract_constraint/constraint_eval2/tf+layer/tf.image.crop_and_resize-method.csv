@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional string specifying the sampling method for resizing. It can be either `""bilinear""` or `""nearest""` and default to `""bilinear""`. Currently two sampling methods are supported: Bilinear and Nearest Neighbor.",bilinear,prim_dtype,dtype(tf.string),,1
+,"An optional string specifying the sampling method for resizing. It can be either `""bilinear""` or `""nearest""` and default to `""bilinear""`. Currently two sampling methods are supported: Bilinear and Nearest Neighbor.",bilinear,shape,ndim(0),,1
+,"An optional string specifying the sampling method for resizing. It can be either `""bilinear""` or `""nearest""` and default to `""bilinear""`. Currently two sampling methods are supported: Bilinear and Nearest Neighbor.",bilinear,validvalue,"enum(bilinear, nearest)",,1

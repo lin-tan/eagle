@@ -1,0 +1,20 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 2-tuple, uses (padding _left , padding _right )
+    doc_dtype:
+    - int
+    - tuple
+    dtype:
+    - int
+    structure:
+    - tuple
+inputs:
+  optional: []
+  required:
+  - padding
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ReflectionPad1d
+package: torch
+target: ReflectionPad1d
+title: torch.nn.ReflectionPad1d
+version: 1.5.0

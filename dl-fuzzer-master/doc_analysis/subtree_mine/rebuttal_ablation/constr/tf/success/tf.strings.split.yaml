@@ -1,0 +1,96 @@
+constraints:
+  input:
+    descp: A string `Tensor` of rank `N`, the strings to split.  If`rank(input)` is
+      not known statically, then it is assumed to be `1`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - n
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n,n]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  maxsplit:
+    default: '-1'
+    descp: An `int`. If `maxsplit > 0`, limit of the split of the result.
+    dtype:
+    - int
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  sep:
+    default: None
+    descp: '`0-D` string `Tensor`, the delimiter string.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: If sep is not a string.
+inputs:
+  optional:
+  - sep
+  - maxsplit
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/split
+outputs: A `RaggedTensor` of rank `N+1`, the strings split according to the delimiter.
+package: tensorflow
+target: split
+title: tf.strings.split
+version: 2.1.0

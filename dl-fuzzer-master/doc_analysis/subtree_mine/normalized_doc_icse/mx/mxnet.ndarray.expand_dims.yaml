@@ -1,0 +1,49 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Position where new axis is to be inserted. Suppose that the input NDArray's
+      dimension is ndim, the range of the inserted axis is [-ndim, ndim]
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Position where new axis is to be inserted
+    - Suppose that the input D_STRUCTURE dimension is ndim the range of the inserted
+      axis is BSTR
+    normalized_docdtype: D_TYPE required
+  data:
+    default: None
+    descp: Source input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Source input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.expand_dims
+package: mxnet
+target: expand_dims
+title: mxnet.ndarray.expand_dims
+version: 1.6.0

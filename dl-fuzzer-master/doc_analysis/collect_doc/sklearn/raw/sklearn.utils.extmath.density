@@ -1,0 +1,12 @@
+sklearn.utils.extmath.density = density(w, **kwargs)
+    Compute density of a sparse vector
+    
+    Parameters
+    ----------
+    w : array_like
+        The sparse vector
+    
+    Returns
+    -------
+    float
+        The density of w, between 0 and 1

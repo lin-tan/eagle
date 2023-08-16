@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,None or fp32 bias of type torch.float,None,prim_dtype,dtype(torch.float32),,1
+Tensor,None or fp32 bias of type torch.float,None,nonprim_dtype,tensor_t(torch.tensor),,1

@@ -1,0 +1,1788 @@
+bstr a:
+  ndim:
+  - '0'
+  - '1'
+bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+bstr d_structure:
+  structure:
+  - D_STRUCTURE
+bstr shape:
+  shape:
+  - BSTR
+compute to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool default:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool to -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_float default:
+  dtype:
+  - float
+  ndim:
+  - '0'
+constant_num default:
+  dtype:
+  - int
+  ndim:
+  - '0'
+d_structure a:
+  structure:
+  - D_STRUCTURE
+d_structure bstr:
+  structure:
+  - D_STRUCTURE
+d_structure bstr of:
+  structure:
+  - D_STRUCTURE
+d_structure constant_num:
+  structure:
+  - D_STRUCTURE
+d_structure d_structure:
+  structure:
+  - D_STRUCTURE
+d_structure d_structure of:
+  structure:
+  - D_STRUCTURE
+d_structure d_type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure input:
+  structure:
+  - D_STRUCTURE
+d_structure of:
+  structure:
+  - D_STRUCTURE
+d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+d_structure one_word:
+  structure:
+  - D_STRUCTURE
+d_structure or:
+  structure:
+  - D_STRUCTURE
+d_structure output:
+  structure:
+  - D_STRUCTURE
+d_structure param:
+  structure:
+  - D_STRUCTURE
+d_structure returned:
+  dtype:
+  - torch.dtype
+d_structure shape:
+  structure:
+  - D_STRUCTURE
+d_structure the:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 input:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 of:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output:
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to:
+  structure:
+  - D_STRUCTURE
+d_structure to:
+  structure:
+  - D_STRUCTURE
+d_type d_structure:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+d_type of:
+  dtype:
+  - D_TYPE
+d_type one_word:
+  dtype:
+  - D_TYPE
+d_type optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+d_type or:
+  dtype:
+  - D_TYPE
+d_type or -1 d_structure:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+d_type or -1 optional:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+d_type the:
+  dtype:
+  - D_TYPE
+df_str default:
+  dtype:
+  - string
+dimension the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+dimension the -1 to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+dimension to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+if constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+number a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number a -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 or:
+  ndim:
+  - '0'
+  - '1'
+number a -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number a -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number a -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number a -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be:
+  ndim:
+  - '0'
+number be -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 or:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 a -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 a -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 or:
+  ndim:
+  - '0'
+  - '1'
+number be -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number be -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number be -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number bstr:
+  ndim:
+  - '0'
+  - '1'
+number bstr a:
+  ndim:
+  - '0'
+  - '1'
+number bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 a -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 a -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 a -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 a -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 be -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 be -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number can -1 single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number can -1 single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number of:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+number of -1 the:
+  dtype:
+  - int
+number or:
+  ndim:
+  - '0'
+  - '1'
+number or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single:
+  ndim:
+  - '0'
+  - '1'
+number single -1 a:
+  ndim:
+  - '0'
+  - '1'
+number single -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number single -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number single -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 or:
+  ndim:
+  - '0'
+  - '1'
+number single -1 or -1 a:
+  ndim:
+  - '0'
+  - '1'
+number single -1 or -1 a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 or -1 bstr:
+  ndim:
+  - '0'
+  - '1'
+number single -1 or -1 bstr a:
+  ndim:
+  - '0'
+  - '1'
+number single -1 or -1 bstr a -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 or -1 bstr d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number single -1 or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+number to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+optional d_structure:
+  structure:
+  - D_STRUCTURE
+optional d_type:
+  dtype:
+  - D_TYPE
+param the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+qstr output:
+  enum:
+  - QSTR
+qstr output -1 qstr:
+  enum:
+  - QSTR
+qstr output -1 qstr -1 qstr:
+  enum:
+  - QSTR
+qstr qstr:
+  enum:
+  - QSTR
+qstr qstr -1 qstr:
+  enum:
+  - QSTR
+qstr the:
+  enum:
+  - QSTR
+qstr the -1 output:
+  enum:
+  - QSTR
+qstr the -1 output -1 qstr:
+  enum:
+  - QSTR
+qstr the -1 output -1 qstr -1 qstr:
+  enum:
+  - QSTR
+qstr the -1 qstr:
+  enum:
+  - QSTR
+qstr the -1 qstr -1 qstr:
+  enum:
+  - QSTR
+reduction qstr:
+  enum:
+  - QSTR
+return constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+return the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+return the -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set if:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set if -1 constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set if -1 constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set if -1 to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+set to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+size of:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+size of -1 the:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+size the:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+size the -1 of:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+size the -1 of -1 the:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+size the -1 the:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+stride of:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+stride the:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+type d_structure:
+  dtype:
+  - torch.dtype
+type d_structure of:
+  dtype:
+  - torch.dtype
+type d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type d_structure returned:
+  dtype:
+  - torch.dtype
+type data:
+  dtype:
+  - torch.dtype
+type data -1 d_structure:
+  dtype:
+  - torch.dtype
+type data -1 d_structure of:
+  dtype:
+  - torch.dtype
+type data -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type data -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type data -1 of:
+  dtype:
+  - torch.dtype
+type data -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type data -1 returned:
+  dtype:
+  - torch.dtype
+type desired:
+  dtype:
+  - torch.dtype
+type desired -1 d_structure:
+  dtype:
+  - torch.dtype
+type desired -1 d_structure of:
+  dtype:
+  - torch.dtype
+type desired -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type desired -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type desired -1 data:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 d_structure:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 d_structure of:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 of:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type desired -1 data -1 returned:
+  dtype:
+  - torch.dtype
+type desired -1 of:
+  dtype:
+  - torch.dtype
+type desired -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type desired -1 returned:
+  dtype:
+  - torch.dtype
+type of:
+  dtype:
+  - torch.dtype
+type of -1 returned:
+  dtype:
+  - torch.dtype
+type returned:
+  dtype:
+  - torch.dtype
+type the:
+  dtype:
+  - torch.dtype
+type the -1 d_structure:
+  dtype:
+  - torch.dtype
+type the -1 d_structure of:
+  dtype:
+  - torch.dtype
+type the -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type the -1 data:
+  dtype:
+  - torch.dtype
+type the -1 data -1 d_structure:
+  dtype:
+  - torch.dtype
+type the -1 data -1 d_structure of:
+  dtype:
+  - torch.dtype
+type the -1 data -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 data -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type the -1 data -1 of:
+  dtype:
+  - torch.dtype
+type the -1 data -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 data -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 d_structure:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 d_structure of:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 d_structure:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 d_structure of:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 d_structure of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 d_structure returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 of:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 data -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 of:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 desired -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 of:
+  dtype:
+  - torch.dtype
+type the -1 of -1 returned:
+  dtype:
+  - torch.dtype
+type the -1 returned:
+  dtype:
+  - torch.dtype
+use the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+use to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+use to -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+value the:
+  ndim:
+  - '0'

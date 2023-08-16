@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The base type or tuple of base types for all objects that`conversion_func` accepts.,,prim_dtype,dtype(tf.dtype),1,1
+,The base type or tuple of base types for all objects that`conversion_func` accepts.,,nonprim_dtype,"structure(tuple, tuple(tf.dtype))",1,1
+,The base type or tuple of base types for all objects that`conversion_func` accepts.,,shape,"ndim(0, 1)",1,1

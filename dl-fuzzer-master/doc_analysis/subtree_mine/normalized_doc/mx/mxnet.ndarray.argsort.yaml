@@ -1,0 +1,73 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Axis along which to sort the input tensor. If not given, the flattened
+      array is used. Default is -1.
+    doc_dtype: int or None, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Axis along which to sort the input D_STRUCTURE
+    - If not given, the flattened D_STRUCTURE is used
+    - Default is CONSTANT_NUM
+    normalized_docdtype: D_TYPE or None, optional, default CONSTANT_NUM
+  data:
+    default: None
+    descp: The input array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dtype:
+    default: _Null
+    descp: DType of the output indices. It is only valid when ret_typ is "indices"
+      or "both". An error will be raised if the selected data type cannot precisely
+      represent the indices.
+    doc_dtype: '{''float16'', ''float32'', ''float64'', ''int32'', ''int64'', ''uint8''},optional,
+      default=''float32'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - DType of the output indices
+    - It is only valid when ret_typ is QSTR
+    - An error will be raised if the selected PARAM type can not precisely represent
+      the indices
+    normalized_docdtype: QSTR ,optional, default QSTR
+  is_ascend:
+    default: _Null
+    descp: Whether to sort in ascending or descending order.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to sort in ascending or descending order
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - axis
+  - is_ascend
+  - dtype
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.argsort
+package: mxnet
+target: argsort
+title: mxnet.ndarray.argsort
+version: 1.6.0

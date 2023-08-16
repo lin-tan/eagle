@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"One of `""valid""` or `""same""` (case-insensitive).",valid,prim_dtype,dtype(tf.string),,1
+,"One of `""valid""` or `""same""` (case-insensitive).",valid,validvalue,"enum(same, valid)",,1

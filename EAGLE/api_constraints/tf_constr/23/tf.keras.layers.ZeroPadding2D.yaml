@@ -1,0 +1,25 @@
+constraints:
+  padding:
+    default: '(1, 1)'
+    dtype:
+      - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+      - '[1,100]'
+    shape:
+      - '[2]'
+    structure:
+      - list(int)
+      - tuple(int)
+inputs:
+  optional:
+  - padding
+  required: []
+package: tensorflow
+target: ZeroPadding2D
+title: tf.keras.layers.ZeroPadding2D
+version: 2.3.0
+layer_constructor: true
+check_nan: true

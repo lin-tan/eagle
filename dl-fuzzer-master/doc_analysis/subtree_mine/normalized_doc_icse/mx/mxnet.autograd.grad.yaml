@@ -1,0 +1,62 @@
+constraints:
+  create_graph:
+    default: 'False'
+    descp: Whether to record gradient graph for computing higher order
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to record gradient graph for computing higher order
+    normalized_docdtype: ONE_WORD D_TYPE
+  head_grads:
+    default: None
+    descp: Gradients with respect to heads.
+    doc_dtype: NDArray or list of NDArray or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Gradients with respect to PARAM
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE or None
+  heads:
+    descp: Output NDArray(s)
+    doc_dtype: NDArray or list of NDArray
+    normalized_descp:
+    - Output D_STRUCTURE BSTR
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  retain_graph:
+    default: None
+    descp: Whether to keep computation graph to differentiate again, instead of clearing
+      history and release memory. Defaults to the same value as create_graph.
+    doc_dtype: bool
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to keep computation graph to differentiate again instead of clearing
+      history and release memory
+    - Defaults to the same value as PARAM
+    normalized_docdtype: ONE_WORD D_TYPE
+  train_mode:
+    default: 'True'
+    descp: Whether to do backward for training or prediction.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to do backward for training or prediction
+    normalized_docdtype: D_TYPE optional
+  variables:
+    descp: Input variables to compute gradients for.
+    doc_dtype: NDArray or list of NDArray
+    normalized_descp:
+    - Input variables to compute gradients for
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - head_grads
+  - retain_graph
+  - create_graph
+  - train_mode
+  required:
+  - heads
+  - variables
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/autograd/index.html#mxnet.autograd.grad
+package: mxnet
+target: grad
+title: mxnet.autograd.grad
+version: 1.6.0

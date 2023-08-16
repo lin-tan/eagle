@@ -1,0 +1,19 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'If set to `True`, will do this operation in-place. Default: `False`'
+    sig_dtype: bool
+  p:
+    default: '0.5'
+    descp: 'probability of an element to be zeroed. Default: 0.5'
+    sig_dtype: float
+inputs:
+  optional:
+  - p
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Dropout.html#torch.nn.Dropout#torch.nn.Dropout
+package: torch
+target: Dropout
+title: torch.nn.Dropout
+version: 1.6.0

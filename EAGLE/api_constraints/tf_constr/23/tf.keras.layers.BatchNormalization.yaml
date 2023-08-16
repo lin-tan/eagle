@@ -1,0 +1,58 @@
+constraints:
+  center:
+    default: 'True'
+    descp: If True, add offset of `beta` to normalized tensor. If False, `beta` is
+      ignored.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  epsilon:
+    default: '0.001'
+    descp: Small float added to variance to avoid dividing by zero.
+    dtype:
+    - float
+    range:
+    - '[0,1]'
+    ndim:
+    - '0'
+  momentum:
+    default: '0.99'
+    descp: Momentum for the moving average.
+    dtype:
+    - float
+    range:
+    - '[0,1]'
+    ndim:
+    - '0'
+  scale:
+    default: 'True'
+    descp: If True, multiply by `gamma`. If False, `gamma` is not used. When the next
+      layer is linear (also e.g. `nn.relu`), this can be disabled since the scaling
+      will be done by the next layer.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  trainable:
+    default: 'True'
+    descp: Boolean, if `True` the variables will be marked as trainable.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - momentum
+  - epsilon
+  - center
+  - scale
+  - trainable
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/BatchNormalization
+package: tensorflow
+target: BatchNormalization
+title: tf.keras.layers.BatchNormalization
+version: 2.3.0
+layer_constructor: true
+check_nan: true

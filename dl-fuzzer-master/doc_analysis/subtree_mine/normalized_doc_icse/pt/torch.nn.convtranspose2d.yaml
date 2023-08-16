@@ -1,0 +1,100 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If `True`, adds a learnable bias to the output. Default: `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL adds a learnable bias to the output
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  dilation:
+    default: '1'
+    descp: 'Spacing between kernel elements. Default: 1'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Spacing between kernel elements
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE optional
+  groups:
+    default: '1'
+    descp: 'Number of blocked connections from input channels to output channels.
+      Default: 1'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of blocked connections from input channels to output channels
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional
+  in_channels:
+    descp: Number of channels in the input image
+    doc_dtype: int
+    normalized_descp:
+    - Number of channels in the input image
+    normalized_docdtype: ONE_WORD D_TYPE
+  kernel_size:
+    descp: Size of the convolving kernel
+    doc_dtype: int or tuple
+    normalized_descp:
+    - Size of the convolving kernel
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+  out_channels:
+    descp: Number of channels produced by the convolution
+    doc_dtype: int
+    normalized_descp:
+    - Number of channels produced by the convolution
+    normalized_docdtype: ONE_WORD D_TYPE
+  output_padding:
+    default: '0'
+    descp: 'Additional size added to one side of each dimension in the output shape.
+      Default: 0'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Additional size added to one side of each dimension in the output shape
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE optional
+  padding:
+    default: '0'
+    descp: '`dilation * (kernel_size - 1) - padding` zero-padding will be added to
+      both sides of each dimension in the input. Default: 0'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - PARAM BSTR padding zero padding will be added to both sides of each dimension
+      in the input
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE optional
+  padding_mode:
+    default: zeros
+    descp: ''
+    normalized_default: DEFAULT DF_STR
+    normalized_descp: []
+  stride:
+    default: '1'
+    descp: 'Stride of the convolution. Default: 1'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Stride of the convolution
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE optional
+inputs:
+  optional:
+  - stride
+  - padding
+  - output_padding
+  - groups
+  - bias
+  - dilation
+  - padding_mode
+  required:
+  - in_channels
+  - out_channels
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ConvTranspose2d
+package: torch
+target: ConvTranspose2d
+title: torch.nn.ConvTranspose2d
+version: 1.5.0

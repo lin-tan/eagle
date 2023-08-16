@@ -1,0 +1,38 @@
+tf_name.csv: 222 total, 176 excluded, 46 left
+tf_descp2.csv: 2200 total, 1054 excluded, 1146 left
+pt_name.csv: 77 total, 63 excluded, 14 left
+pt_docdtype.csv: 17 total, 4 excluded, 13 left
+pt_descp.csv: 554 total, 337 excluded, 217 left
+mx_name.csv: 234 total, 187 excluded, 47 left
+mx_docdtype.csv: 83 total, 17 excluded, 66 left
+mx_descp.csv: 919 total, 604 excluded, 315 left
+Number of sequences descp/name (used/not used)
+{'others': 3773, 'name': 533, 'total': 4306}
+Number of used subsequences
+{'tf': 1192, 'pt': 244, 'mx': 428, 'total': 1864}
+Number(percent) of used subseq for each catgory
+dtype : 1134(0.6083690987124464)
+ds : 553(0.2966738197424893)
+shape : 421(0.22585836909871246)
+validvalue : 251(0.13465665236051502)
+
+
+tf_name.csv: 222 total, 176 excluded (6 complex), 46 left
+tf_descp2.csv: 2200 total, 1054 excluded (136 complex), 1146 left
+pt_name.csv: 77 total, 63 excluded (4 complex), 14 left
+pt_docdtype.csv: 17 total, 4 excluded (1 complex), 13 left
+pt_descp.csv: 554 total, 337 excluded (53 complex), 217 left
+mx_name.csv: 234 total, 186 excluded (4 complex), 48 left
+mx_docdtype.csv: 83 total, 17 excluded (1 complex), 66 left
+mx_descp.csv: 919 total, 604 excluded (87 complex), 315 left
+Number of sequences descp/name (used/not used)
+{'others': 3773, 'name': 533, 'total': 4306}
+Number of used subsequences
+{'tf': 1192, 'pt': 244, 'mx': 429, 'name': 108, 'descp': 1757, 'total': 1865}
+Number of complex(unused) subsequences
+{'tf': 142, 'pt': 58, 'mx': 92, 'name': 14, 'descp': 278, 'total': 292}
+Number(percent) of used subseq for each catgory
+dtype : 1135(0.6085790884718498)
+ds : 553(0.296514745308311)
+shape : 421(0.2257372654155496)
+validvalue : 251(0.13458445040214478)

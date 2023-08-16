@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.math.special.dawsn
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor or SparseTensor. Must be one of the following types: float32,
+      float64.'
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/math/special/dawsn
+outputs:
+- A Tensor or SparseTensor, respectively. Has the same type as x.
+package: tensorflow
+target: dawsn
+title: tf.math.special.dawsn
+version: 2.3.0

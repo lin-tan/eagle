@@ -1,0 +1,43 @@
+constraints:
+  all_or_any:
+    default: <built-in function all>
+    descp: callable, {all, any}, default all Specify whether all or any of the given
+      attributes must exist.
+    dtype:
+    - boolean
+  attributes:
+    default: None
+    descp: 'str, list or tuple of str, default=None Attribute name(s) given as string
+      or a list/tuple of strings Eg.: ``["coef_", "estimator_", ...], "coef_"`` If
+      `None`, `estimator` is considered fitted if there exist an attribute that ends
+      with a underscore and does not start with double underscore.'
+    ndim:
+    - '1'
+    shape:
+    - '[s]'
+  estimator:
+    descp: estimator instance. estimator instance for which the check is performed.
+  msg:
+    default: None
+    descp: 'string The default error message is, "This %(name)s instance is not fitted
+      yet. Call ''fit'' with appropriate arguments before using this estimator." For
+      custom messages if "%(name)s" is present in the message string, it is substituted
+      for the estimator name. Eg. : "Estimator, %(name)s, must be fitted before sparsifying".'
+    dtype:
+    - string
+    ndim:
+    - '0'
+dependency:
+- s
+inputs:
+  optional:
+  - attributes
+  - msg
+  - all_or_any
+  required:
+  - estimator
+link: ''
+package: scikit-learn
+target: check_is_fitted
+title: sklearn.utils.validation.check_is_fitted
+version: 0.24.X

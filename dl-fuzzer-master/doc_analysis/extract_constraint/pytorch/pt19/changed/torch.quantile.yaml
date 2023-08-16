@@ -1,0 +1,30 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  q:
+    descp: a scalar or 1D tensor of quantile values in the range [0, 1]
+    doc_dtype:
+    - float
+    - Tensor
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    - '1'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - q
+link: https://pytorch.org/docs/1.7.0/generated/torch.quantile.html#torch.quantile#torch.quantile
+package: torch
+ret_type: Tensor
+target: quantile
+title: torch.quantile
+version: 1.9.0

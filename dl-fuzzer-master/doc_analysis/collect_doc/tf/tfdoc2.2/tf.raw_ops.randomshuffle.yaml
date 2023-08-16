@@ -1,0 +1,28 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to be non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. A second seed to avoid seed collision.
+  value:
+    descp: A Tensor. The tensor to be shuffled.
+inputs:
+  optional:
+  - seed
+  - seed2
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RandomShuffle
+outputs:
+- A Tensor. Has the same type as value.
+package: tensorflow
+target: RandomShuffle
+title: tf.raw_ops.RandomShuffle
+version: 2.2.0

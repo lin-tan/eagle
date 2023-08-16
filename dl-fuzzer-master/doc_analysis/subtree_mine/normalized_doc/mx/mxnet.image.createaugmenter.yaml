@@ -1,0 +1,157 @@
+constraints:
+  brightness:
+    default: '0'
+    descp: Brightness jittering range (percent)
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Brightness jittering range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  contrast:
+    default: '0'
+    descp: Contrast jittering range (percent)
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Contrast jittering range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  data_shape:
+    descp: Shape for output data
+    doc_dtype: tuple of int
+    normalized_descp:
+    - Shape for output data
+    normalized_docdtype: D_STRUCTURE of D_TYPE
+  hue:
+    default: '0'
+    descp: Hue jittering range (percent)
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Hue jittering range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  inter_method:
+    default: '2'
+    descp: 'Interpolation method for all resizing operations Possible values: 0: Nearest
+      Neighbors Interpolation. 1: Bilinear interpolation. 2: Bicubic interpolation
+      over 4x4 pixel neighborhood. 3: Area-based (resampling using pixel area relation).
+      It may be a preferred method for image decimation, as it gives moire-free results.
+      But when the image is zoomed, it is similar to the Nearest Neighbors method.
+      (used by default). 4: Lanczos interpolation over 8x8 pixel neighborhood. 9:
+      Cubic for enlarge, area for shrink, bilinear for others 10: Random select from
+      interpolation method metioned above. Note: When shrinking an image, it will
+      generally look best with AREA-based interpolation, whereas, when enlarging an
+      image, it will generally look best with Bicubic (slow) or Bilinear (faster but
+      still looks OK). '
+    doc_dtype: int, default=2(Area-based
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Interpolation method for all resizing operations Possible values CONSTANT_NUM
+      Nearest Neighbors Interpolation
+    - CONSTANT_NUM Bilinear interpolation
+    - CONSTANT_NUM Bicubic interpolation over 4x4 pixel neighborhood
+    - CONSTANT_NUM Area based BSTR
+    - It may be a preferred method for image decimation, as it gives moire free results
+    - But when the image is zoomed, it is similar to the Nearest Neighbors method
+    - ONE_WORD BSTR
+    - CONSTANT_NUM Lanczos interpolation over 8x8 pixel neighborhood
+    - CONSTANT_NUM Cubic for enlarge, area for shrink, bilinear for others CONSTANT_NUM
+      Random select from interpolation method metioned above
+    - Note When shrinking an image, it will generally look best with AREA based interpolation,
+      whereas, when enlarging an image, it will generally look best with Bicubic BSTR
+    normalized_docdtype: D_TYPE, default CONSTANT_NUM Area based
+  mean:
+    default: None
+    descp: Mean pixel values for [r, g, b]
+    doc_dtype: np.ndarray or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Mean pixel values for BSTR
+    normalized_docdtype: np D_STRUCTURE or None
+  pca_noise:
+    default: '0'
+    descp: Pca noise level (percent)
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Pca noise level BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  rand_crop:
+    default: 'False'
+    descp: Whether to enable random cropping other than center crop
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to enable random cropping other than center crop
+    normalized_docdtype: ONE_WORD D_TYPE
+  rand_gray:
+    default: '0'
+    descp: '[0, 1], probability to convert to grayscale for all channels, the number
+      of channels will not be reduced to 1'
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - BSTR, probability to convert to grayscale for all channels, the number of channels
+      will not be reduced to CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+  rand_mirror:
+    default: 'False'
+    descp: Whether to apply horizontal flip to image with probability 0.5
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to apply horizontal flip to image with probability CONSTANT_FLOAT
+    normalized_docdtype: ONE_WORD D_TYPE
+  rand_resize:
+    default: 'False'
+    descp: Whether to enable random sized cropping, require rand_crop to be enabled
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to enable random sized cropping, require PARAM to be enabled
+    normalized_docdtype: ONE_WORD D_TYPE
+  resize:
+    default: '0'
+    descp: Resize shorter edge if larger than 0 at the begining
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Resize shorter edge if larger than CONSTANT_NUM at the begining
+    normalized_docdtype: ONE_WORD D_TYPE
+  saturation:
+    default: '0'
+    descp: Saturation jittering range (percent)
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Saturation jittering range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  std:
+    default: None
+    descp: Standard deviations for [r, g, b]
+    doc_dtype: np.ndarray or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Standard deviations for BSTR
+    normalized_docdtype: np D_STRUCTURE or None
+inputs:
+  optional:
+  - resize
+  - rand_crop
+  - rand_resize
+  - rand_mirror
+  - mean
+  - std
+  - brightness
+  - contrast
+  - saturation
+  - hue
+  - pca_noise
+  - rand_gray
+  - inter_method
+  required:
+  - data_shape
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/image/index.html#mxnet.image.CreateAugmenter
+package: mxnet
+target: CreateAugmenter
+title: mxnet.image.CreateAugmenter
+version: 1.6.0

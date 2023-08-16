@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      int32, int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NcclBroadcast
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: NcclBroadcast
+title: tf.raw_ops.NcclBroadcast
+version: 2.3.0

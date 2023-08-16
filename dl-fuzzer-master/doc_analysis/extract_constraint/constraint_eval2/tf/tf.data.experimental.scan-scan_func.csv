@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A function that maps `(old_state, input_element)` to`(new_state, output_element). It must take two arguments and return a pair of nested structures of tensors. The`new_state`must match the structure of`initial_state`.",,prim_dtype,dtype(callable),,1

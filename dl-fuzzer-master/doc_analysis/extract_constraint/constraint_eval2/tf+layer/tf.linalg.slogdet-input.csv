@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `half`, `float32`, `float64`, `complex64`, `complex128`. Shape is `[N, M, M]`.",,prim_dtype,"dtype(tf.complex128, tf.complex64, tf.float16, tf.float32, tf.float64)",,1
+,"A `Tensor`. Must be one of the following types: `half`, `float32`, `float64`, `complex64`, `complex128`. Shape is `[N, M, M]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `half`, `float32`, `float64`, `complex64`, `complex128`. Shape is `[N, M, M]`.",,shape,"shape([n,m,m]), ndim(3)",,1

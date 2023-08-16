@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Nested structure of `tf.TensorShape` to pass to`tf.data.Dataset.padded_batch`. If not provided, will use`dataset.output_shapes`, which will result in variable length dimensions being padded out to the maximum length in each batch.",None,,,0,0

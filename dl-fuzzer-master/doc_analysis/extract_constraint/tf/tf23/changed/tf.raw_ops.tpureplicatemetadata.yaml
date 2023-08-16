@@ -1,0 +1,116 @@
+constraints:
+  allow_soft_placement:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  computation_shape:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. DEPRECATED. Use num_cores_per_replica
+      instead.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  device_assignment:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. The assignment of devices for
+      the computation.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  host_compute_core:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list(tf.string)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_cores_per_replica:
+    default: '1'
+    descp: An optional int. Defaults to 1. Number of cores per replica. Used for model
+      parallelism.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_replicas:
+    descp: An int that is >= 0. Number of replicas of the computation
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  padding_map:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list(tf.string)
+  step_marker_location:
+    default: STEP_MARK_AT_ENTRY
+    descp: An optional string. Defaults to "STEP_MARK_AT_ENTRY".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  topology:
+    default: ''
+    descp: An optional string. Defaults to "". TopologyProto indicating the topology
+      of the TPU pod slice.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  use_tpu:
+    default: 'True'
+    descp: An optional bool. Defaults to True. Whether to place the computation on
+      the TPU.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  deprecated:
+  - computation_shape
+  optional:
+  - num_cores_per_replica
+  - topology
+  - use_tpu
+  - device_assignment
+  - host_compute_core
+  - padding_map
+  - step_marker_location
+  - allow_soft_placement
+  - name
+  required:
+  - num_replicas
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TPUReplicateMetadata
+outputs:
+- The created Operation.
+package: tensorflow
+target: TPUReplicateMetadata
+title: tf.raw_ops.TPUReplicateMetadata
+version: 2.3.0

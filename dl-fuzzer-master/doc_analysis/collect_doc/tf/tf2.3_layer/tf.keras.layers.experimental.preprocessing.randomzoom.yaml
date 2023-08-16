@@ -1,0 +1,54 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.RandomZoom
+constraints:
+  '**kwargs':
+    descp: ''
+  fill_mode:
+    default: reflect
+    descp: 'Points outside the boundaries of the input are filled according to the
+      given mode (one of {''constant'', ''reflect'', ''wrap''}). reflect: (d c b a
+      | a b c d | d c b a) The input is extended by reflecting about the edge of the
+      last pixel. constant: (k k k k | a b c d | k k k k) The input is extended by
+      filling all values beyond the edge with the same constant value k = 0. wrap:
+      (a b c d | a b c d | a b c d)'
+  height_factor:
+    descp: a float represented as fraction of value, or a tuple of size 2 representing
+      lower and upper bound for zooming vertically. When represented as a single float,
+      this value is used for both the upper and lower bound. A positive value means
+      zooming out, while a negative value means zooming in. For instance, height_factor=(0.2,
+      0.3) result in an output zoomed out by a random amount in the range [+20%, +30%].
+      height_factor=(-0.3, -0.2) result in an output zoomed in by a random amount
+      in the range [+20%, +30%].
+  interpolation:
+    default: bilinear
+    descp: 'Interpolation mode. Supported values: "nearest", "bilinear".'
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  seed:
+    default: None
+    descp: Integer. Used to create a random seed.
+  width_factor:
+    default: None
+    descp: a float represented as fraction of value, or a tuple of size 2 representing
+      lower and upper bound for zooming horizontally. When represented as a single
+      float, this value is used for both the upper and lower bound. For instance,
+      width_factor=(0.2, 0.3) result in an output zooming out between 20% to 30%.
+      width_factor=(-0.3, -0.2) result in an output zooming in between 20% to 30%.
+      Defaults to None, i.e., zooming vertical and horizontal directions by preserving
+      the aspect ratio.
+inputs:
+  optional:
+  - width_factor
+  - fill_mode
+  - interpolation
+  - seed
+  - name
+  required:
+  - height_factor
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomZoom
+package: tensorflow
+target: RandomZoom
+title: tf.keras.layers.experimental.preprocessing.RandomZoom
+version: 2.3.0

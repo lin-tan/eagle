@@ -1,0 +1,39 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: the dimension to reduce.
+    doc_dtype:
+    - python:int
+  indices:
+    default: None
+    descp: the output index tensor
+    doc_dtype:
+    - Tensor
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+  values:
+    default: None
+    descp: the output tensor
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - dim
+  - keepdim
+  - values
+  - indices
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.median
+package: torch
+ret_type: (Tensor, LongTensor)
+target: median
+title: torch.median
+version: 1.4.0

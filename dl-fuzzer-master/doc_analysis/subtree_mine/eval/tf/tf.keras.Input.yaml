@@ -1,0 +1,8 @@
+constraints:
+  tensor:
+    default: None
+    descp: Optional existing tensor to wrap into the `Input` layer. If set, the layer
+      will not create a placeholder tensor.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.Input

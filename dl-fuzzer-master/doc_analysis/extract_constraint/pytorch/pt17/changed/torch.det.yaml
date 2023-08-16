@@ -1,0 +1,23 @@
+constraints:
+  input:
+    descp: the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,n,n]'
+    tensor_t:
+    - torch.tensor
+dependency:
+- n
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.det.html#torch.det#torch.det
+package: torch
+ret_type: Tensor
+target: det
+title: torch.det
+version: 1.7.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,The number of batch to log the training evaluation metric.,,prim_dtype,dtype(int),,1
+int,The number of batch to log the training evaluation metric.,,shape,ndim(0),,1
+int,The number of batch to log the training evaluation metric.,,validvalue,"range([0,inf))",,1

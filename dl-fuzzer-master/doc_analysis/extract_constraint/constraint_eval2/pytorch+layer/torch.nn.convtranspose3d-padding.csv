@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input. Default: 0,0,prim_dtype,dtype(int),,1
+"int, tuple",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input. Default: 0,0,nonprim_dtype,structure(tuple),,1
+"int, tuple",`dilation * (kernel_size - 1) - padding` zero-padding will be added to both sides of each dimension in the input. Default: 0,0,shape,ndim(0),,1

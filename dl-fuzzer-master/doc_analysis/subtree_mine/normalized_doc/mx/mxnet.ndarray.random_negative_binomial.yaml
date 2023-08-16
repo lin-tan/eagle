@@ -1,0 +1,77 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  ctx:
+    default: _Null
+    descp: Context of output, in format [cpu|gpu|cpu_pinned](n). Only used for imperative
+      calls.
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Context of output, in format cpu gpu cpu_pinned BSTR
+    - Only used for imperative calls
+    normalized_docdtype: D_TYPE, optional, default
+  dtype:
+    default: _Null
+    descp: DType of the output in case this can't be inferred. Defaults to float32
+      if not defined (dtype=None).
+    doc_dtype: '{''None'', ''float16'', ''float32'', ''float64''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - DType of the output in case this can t be inferred
+    - Defaults to D_TYPE if not defined dtype None
+    normalized_docdtype: QSTR ,optional, default QSTR
+  k:
+    default: _Null
+    descp: Limit of unsuccessful experiments.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Limit of unsuccessful experiments
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  p:
+    default: _Null
+    descp: Failure probability in each experiment.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Failure probability in each experiment
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  shape:
+    default: _Null
+    descp: Shape of the output.
+    doc_dtype: Shape(tuple), optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Shape of the output
+    normalized_docdtype: Shape BSTR, optional, default None
+inputs:
+  optional:
+  - k
+  - p
+  - shape
+  - ctx
+  - dtype
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.random_negative_binomial
+package: mxnet
+target: random_negative_binomial
+title: mxnet.ndarray.random_negative_binomial
+version: 1.6.0

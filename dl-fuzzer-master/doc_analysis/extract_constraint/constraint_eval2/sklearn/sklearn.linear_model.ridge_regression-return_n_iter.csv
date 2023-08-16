@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"bool, default=False If True, the method also returns `n_iter`, the actual number of iteration performed by the solver.",False,prim_dtype,dtype(boolean),,1
+,"bool, default=False If True, the method also returns `n_iter`, the actual number of iteration performed by the solver.",False,shape,ndim(0),,1
+,"bool, default=False If True, the method also returns `n_iter`, the actual number of iteration performed by the solver.",False,validvalue,"range([0,inf))",,1

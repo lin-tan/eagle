@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  table_handle:
+    descp: A Tensor of type resource. Handle to the table.
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LookupTableSizeV2
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: LookupTableSizeV2
+title: tf.raw_ops.LookupTableSizeV2
+version: 2.2.0

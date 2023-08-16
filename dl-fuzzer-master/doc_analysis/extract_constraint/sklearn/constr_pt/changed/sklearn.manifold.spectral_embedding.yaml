@@ -1,0 +1,70 @@
+constraints:
+  adjacency:
+    descp: 'array-like or sparse graph, shape: (n_samples, n_samples) The adjacency
+      matrix of the graph to embed.'
+    dtype:
+    - numeric
+  drop_first:
+    default: 'True'
+    descp: bool, optional, default=True Whether to drop the first eigenvector. For
+      spectral embedding, this should be True as the first eigenvector should be constant
+      vector for connected graph, but for spectral clustering, this should be kept
+      as False to retain the first eigenvector.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  eigen_solver:
+    default: None
+    descp: '{None, ''arpack'', ''lobpcg'', or ''amg''}, default None The eigenvalue
+      decomposition strategy to use. AMG requires pyamg to be installed. It can be
+      faster on very large, sparse problems, but may also lead to instabilities.'
+  eigen_tol:
+    default: '0.0'
+    descp: float, optional, default=0.0 Stopping criterion for eigendecomposition
+      of the Laplacian matrix when using arpack eigen_solver.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n_components:
+    default: '8'
+    descp: integer, optional, default 8 The dimension of the projection subspace.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  norm_laplacian:
+    default: 'True'
+    descp: bool, optional, default=True If True, then compute normalized Laplacian.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: 'int, RandomState instance or None, optional, default: None A pseudo random
+      number generator used for the initialization of the lobpcg eigenvectors decomposition.  If
+      int, random_state is the seed used by the random number generator; If RandomState
+      instance, random_state is the random number generator; If None, the random number
+      generator is the RandomState instance used by `np.random`. Used when ``solver``
+      == ''amg''.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_components
+  - eigen_solver
+  - random_state
+  - eigen_tol
+  - norm_laplacian
+  - drop_first
+  required:
+  - adjacency
+link: ''
+package: scikit-learn
+target: spectral_embedding
+title: sklearn.manifold.spectral_embedding
+version: 0.24.X

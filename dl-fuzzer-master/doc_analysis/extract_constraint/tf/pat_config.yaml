@@ -1,0 +1,75 @@
+source_dir:  '../collect_doc/tf/tfdoc2.3/'  
+save_to: './tf/tf23/'   # track cfdf7a
+pat_dir: './tf/patterns/'
+pat_cnt_save_dir:  './tf/patterns/pat_cnt/'
+
+
+# source_dir:  '../collect_doc/tf/tf21_all_src/'  
+# save_to: './tf/tf21_all_new/'   # track cfdf7a
+# pat_dir: './tf/patterns/'
+# pat_cnt_save_dir:  './tf/patterns/pat_cnt/'
+stop_name:
+    - name
+    - fn
+    - func
+
+dt_map_file: 'dtype_map.yml'
+all_target_file: 'targets.yml'
+
+pat_file:   # with calling order
+
+    - 
+        file: 'deprecated_pat.yml'
+        method: detect_deprecated
+
+    - 
+        file: 'ndim_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'shape_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'range_pat.yml'
+        method: parse_descp
+        stop: True
+    
+    - 
+        file: 'enum_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'dtype_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        file: 'structure_pat.yml'
+        method: parse_descp
+        stop: True
+
+    # - 
+    #     file: 'simple_pat.yml'
+    #     method: parse_descp
+    #     stop: True
+
+    - 
+        #file: 'default_dtype_map.yml'
+        method: match_default
+        stop: True
+
+    - 
+        file: 'pat_varname.yml'
+        method: match_name
+
+    - 
+        file: 'weak_pat.yml'
+        method: parse_descp
+        stop: True
+
+    - 
+        method: post_process

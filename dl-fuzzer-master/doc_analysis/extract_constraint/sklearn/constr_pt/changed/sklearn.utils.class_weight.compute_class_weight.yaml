@@ -1,0 +1,28 @@
+constraints:
+  class_weight:
+    descp: dict, 'balanced' or None If 'balanced', class weights will be given by
+      ``n_samples / (n_classes * np.bincount(y))``. If a dictionary is given, keys
+      are classes and values are corresponding class weights. If None is given, the
+      class weights will be uniform.
+    ndim:
+    - '1'
+    shape:
+    - '[&y]'
+    structure:
+    - dictionary
+  classes:
+    descp: ndarray Array of the classes occurring in the data, as given by ``np.unique(y_org)``
+      with ``y_org`` the original class labels.
+  y:
+    descp: array-like, shape (n_samples,) Array of original class labels per sample;
+inputs:
+  optional: []
+  required:
+  - class_weight
+  - classes
+  - y
+link: ''
+package: scikit-learn
+target: compute_class_weight
+title: sklearn.utils.class_weight.compute_class_weight
+version: 0.24.X

@@ -1,0 +1,15 @@
+aliases:
+- tf.compat.v1.keras.layers.Minimum
+constraints:
+  '**kwargs':
+    default: null
+    descp: standard layer keyword arguments.
+inputs:
+  optional:
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/Minimum
+package: tensorflow
+target: Minimum
+title: tf.keras.layers.Minimum
+version: 2.2.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"2-D Tensor with shape `[batch_size, num_classes]`.  Each slice`[i, :]` represents the unnormalized log-probabilities for all classes.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"2-D Tensor with shape `[batch_size, num_classes]`.  Each slice`[i, :]` represents the unnormalized log-probabilities for all classes.",,shape,"shape([batch_size,num_classes]), ndim(2)",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, default 3 Number of neighbors to use for MI estimation for continuous variables, see [2]_ and [3]_. Higher values reduce variance of the estimation, but could introduce a bias.",3,prim_dtype,dtype(int),,1
+,"int, default 3 Number of neighbors to use for MI estimation for continuous variables, see [2]_ and [3]_. Higher values reduce variance of the estimation, but could introduce a bias.",3,shape,ndim(0),,1
+,"int, default 3 Number of neighbors to use for MI estimation for continuous variables, see [2]_ and [3]_. Higher values reduce variance of the estimation, but could introduce a bias.",3,validvalue,"range([0,inf))",,1

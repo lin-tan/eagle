@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,"Bounding box coordinates, a 2D array, if batchid is less than 0, it will be ignored.",None,prim_dtype,dtype(numeric),,1
+NDArray,"Bounding box coordinates, a 2D array, if batchid is less than 0, it will be ignored.",None,nonprim_dtype,structure(ndarray),,1
+NDArray,"Bounding box coordinates, a 2D array, if batchid is less than 0, it will be ignored.",None,shape,ndim(2),,1

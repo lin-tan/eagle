@@ -1,0 +1,125 @@
+constraints:
+  X:
+    descp: array or sparse (CSR) matrix of shape (n_samples, n_features), or             array
+      of shape (n_samples, n_samples) A feature array, or array of distances between
+      samples if ``metric='precomputed'``.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples,n_features]'
+    - '[n_samples,n_samples]'
+    structure:
+    - list
+    - list(shape)
+  algorithm:
+    default: auto
+    descp: '{''auto'', ''ball_tree'', ''kd_tree'', ''brute''}, optional The algorithm
+      to be used by the NearestNeighbors module to compute pointwise distances and
+      find nearest neighbors. See NearestNeighbors module documentation for details.'
+    dtype:
+    - string
+  eps:
+    default: '0.5'
+    descp: float, optional The maximum distance between two samples for one to be
+      considered as in the neighborhood of the other. This is not a maximum bound
+      on the distances of points within a cluster. This is the most important DBSCAN
+      parameter to choose appropriately for your data set and distance function.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  leaf_size:
+    default: '30'
+    descp: int, optional (default = 30) Leaf size passed to BallTree or cKDTree. This
+      can affect the speed of the construction and query, as well as the memory required
+      to store the tree. The optimal value depends on the nature of the problem.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  metric:
+    default: minkowski
+    descp: string, or callable The metric to use when calculating distance between
+      instances in a feature array. If metric is a string or callable, it must be
+      one of the options allowed by :func:`sklearn.metrics.pairwise_distances` for
+      its metric parameter. If metric is "precomputed", X is assumed to be a distance
+      matrix and must be square during fit. X may be a :term:`Glossary <sparse graph>`,
+      in which case only "nonzero" elements may be considered neighbors.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  metric_params:
+    default: None
+    descp: dict, optional Additional keyword arguments for the metric function.
+  min_samples:
+    default: '5'
+    descp: int, optional The number of samples (or total weight) in a neighborhood
+      for a point to be considered as a core point. This includes the point itself.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of parallel jobs to run
+      for neighbors search. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  p:
+    default: '2'
+    descp: float, optional The power of the Minkowski metric to be used to calculate
+      distance between points.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  sample_weight:
+    default: None
+    descp: array, shape (n_samples,), optional Weight of each sample, such that a
+      sample with a weight of at least ``min_samples`` is by itself a core sample;
+      a sample with negative weight may inhibit its eps-neighbor from being core.
+      Note that weights are absolute, and default to 1.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - eps
+  - min_samples
+  - metric
+  - metric_params
+  - algorithm
+  - leaf_size
+  - p
+  - sample_weight
+  - n_jobs
+  required:
+  - X
+link: ''
+package: sklearn
+target: dbscan
+title: sklearn.cluster.dbscan
+version: 0.24.2

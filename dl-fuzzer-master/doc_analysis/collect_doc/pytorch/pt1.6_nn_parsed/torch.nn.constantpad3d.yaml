@@ -1,0 +1,22 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 6-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom , padding _front , padding _back )
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T,T,T,T]]
+  value:
+    descp: ''
+    sig_dtype: float
+inputs:
+  optional: []
+  required:
+  - padding
+  - value
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.ConstantPad3d.html#torch.nn.ConstantPad3d#torch.nn.ConstantPad3d
+package: torch
+target: ConstantPad3d
+title: torch.nn.ConstantPad3d
+version: 1.6.0

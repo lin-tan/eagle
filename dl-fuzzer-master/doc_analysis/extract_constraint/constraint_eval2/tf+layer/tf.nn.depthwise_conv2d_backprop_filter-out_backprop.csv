@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must have the same type as `input`. 4-D with shape  based on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the output of the convolution.",,prim_dtype,dtype(dtype:&input),,1
+,"A `Tensor`. Must have the same type as `input`. 4-D with shape  based on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the output of the convolution.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must have the same type as `input`. 4-D with shape  based on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the output of the convolution.",,shape,"shape([batch,out_height,out_width,out_channels]), ndim(4)",,1

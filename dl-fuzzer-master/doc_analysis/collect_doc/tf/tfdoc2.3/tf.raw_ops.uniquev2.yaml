@@ -1,0 +1,28 @@
+constraints:
+  axis:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A Tensor of
+      type int32 (default: None). The axis of the Tensor to find the unique elements.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_idx:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+  x:
+    descp: A Tensor. A Tensor.
+inputs:
+  optional:
+  - out_idx
+  - name
+  required:
+  - x
+  - axis
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/UniqueV2
+outputs:
+- A tuple of Tensor objects (y, idx).
+- y: A Tensor. Has the same type as x.
+- idx: A Tensor of type out_idx.
+package: tensorflow
+target: UniqueV2
+title: tf.raw_ops.UniqueV2
+version: 2.3.0

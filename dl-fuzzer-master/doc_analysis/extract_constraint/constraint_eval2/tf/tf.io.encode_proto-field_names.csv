@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A list of `strings`. List of strings containing proto field names.,,prim_dtype,dtype(tf.string),,1
+,A list of `strings`. List of strings containing proto field names.,,nonprim_dtype,structure(list(tf.string)),,1
+,A list of `strings`. List of strings containing proto field names.,,shape,ndim(1),,1

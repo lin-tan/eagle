@@ -1,0 +1,16 @@
+constraints:
+  dst:
+    descp: Full path where object will be saved, e.g. /tmp/temporary_file
+    doc_dtype:
+    - string
+    dtype:
+    - string
+  hash_prefix:
+    default: None
+    descp: 'If not None, the SHA256 downloaded file should start with hash_prefix.
+      Default: None'
+    doc_dtype:
+    - string
+    dtype:
+    - string
+title: torch.hub.download_url_to_file

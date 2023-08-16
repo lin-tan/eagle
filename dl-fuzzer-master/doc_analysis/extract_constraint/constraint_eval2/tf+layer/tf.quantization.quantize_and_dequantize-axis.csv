@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Integer. If specified, refers to a dimension of the input tensor, such that quantization will be per slice along that dimension.",None,prim_dtype,dtype(int),,1
+,"Integer. If specified, refers to a dimension of the input tensor, such that quantization will be per slice along that dimension.",None,shape,ndim(0),,1

@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: A ndarray/symbol of type uint8
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE symbol of type D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_range:
+    default: None
+    descp: The maximum scalar value possibly produced for the input in float32
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The maximum scalar value possibly produced for the input in D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_range:
+    default: None
+    descp: The minimum scalar value possibly produced for the input in float32
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The minimum scalar value possibly produced for the input in D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  out_type:
+    default: _Null
+    descp: Output data type.
+    doc_dtype: '{''float32''},optional, default=''float32'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output PARAM type
+    normalized_docdtype: QSTR ,optional, default QSTR
+inputs:
+  optional:
+  - data
+  - min_range
+  - max_range
+  - out_type
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.dequantize
+package: mxnet
+target: dequantize
+title: mxnet.ndarray.contrib.dequantize
+version: 1.6.0

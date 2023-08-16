@@ -1,0 +1,36 @@
+constraints:
+  algorithm:
+    descp: A Tensor of type int64.
+  counts:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64,
+      int32, int64.'
+  dtype:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.half, tf.float32, tf.float64, tf.int32,
+      tf.int64. Defaults to tf.int64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  probs:
+    descp: A Tensor. Must have the same type as counts.
+  resource:
+    descp: A Tensor of type resource.
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - resource
+  - algorithm
+  - shape
+  - counts
+  - probs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatefulRandomBinomial
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatefulRandomBinomial
+title: tf.raw_ops.StatefulRandomBinomial
+version: 2.2.0

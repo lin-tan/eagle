@@ -1,0 +1,174 @@
+constraints:
+  compression:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  mode:
+    default: auto
+    descp: An optional string. Defaults to "auto".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_reader_threads:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_writer_threads:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  path:
+    descp: A Tensor of type string. The path we should write snapshots to / read snapshots
+      from.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  pending_snapshot_expiry_seconds:
+    default: '86400'
+    descp: An optional int. Defaults to 86400.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  reader_buffer_size:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  reader_path_prefix:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shard_size_bytes:
+    default: '10737418240'
+    descp: An optional int. Defaults to 10737418240.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shuffle_on_read:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  snapshot_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  writer_buffer_size:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  writer_path_prefix:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - compression
+  - reader_path_prefix
+  - writer_path_prefix
+  - shard_size_bytes
+  - pending_snapshot_expiry_seconds
+  - num_reader_threads
+  - reader_buffer_size
+  - num_writer_threads
+  - writer_buffer_size
+  - shuffle_on_read
+  - seed
+  - seed2
+  - mode
+  - snapshot_name
+  - name
+  required:
+  - input_dataset
+  - path
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SnapshotDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SnapshotDataset
+title: tf.raw_ops.SnapshotDataset
+version: 2.2.0

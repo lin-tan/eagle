@@ -1,0 +1,60 @@
+sklearn.datasets.fetch_kddcup99 = fetch_kddcup99(subset=None, data_home=None, shuffle=False, random_state=None, percent10=True, download_if_missing=True, return_X_y=False)
+    Load the kddcup99 dataset (classification).
+    
+    Download it if necessary.
+    
+    =================   ====================================
+    Classes                                               23
+    Samples total                                    4898431
+    Dimensionality                                        41
+    Features            discrete (int) or continuous (float)
+    =================   ====================================
+    
+    Read more in the :ref:`User Guide <kddcup99_dataset>`.
+    
+    .. versionadded:: 0.18
+    
+    Parameters
+    ----------
+    subset : None, 'SA', 'SF', 'http', 'smtp'
+        To return the corresponding classical subsets of kddcup 99.
+        If None, return the entire kddcup 99 dataset.
+    
+    data_home : string, optional
+        Specify another download and cache folder for the datasets. By default
+        all scikit-learn data is stored in '~/scikit_learn_data' subfolders.
+        .. versionadded:: 0.19
+    
+    shuffle : bool, default=False
+        Whether to shuffle dataset.
+    
+    random_state : int, RandomState instance or None (default)
+        Determines random number generation for dataset shuffling and for
+        selection of abnormal samples if `subset='SA'`. Pass an int for
+        reproducible output across multiple function calls.
+        See :term:`Glossary <random_state>`.
+    
+    percent10 : bool, default=True
+        Whether to load only 10 percent of the data.
+    
+    download_if_missing : bool, default=True
+        If False, raise a IOError if the data is not locally available
+        instead of trying to download the data from the source site.
+    
+    return_X_y : boolean, default=False.
+        If True, returns ``(data, target)`` instead of a Bunch object. See
+        below for more information about the `data` and `target` object.
+    
+        .. versionadded:: 0.20
+    
+    Returns
+    -------
+    data : Bunch
+        Dictionary-like object, the interesting attributes are:
+         - 'data', the data to learn.
+         - 'target', the regression target for each sample.
+         - 'DESCR', a description of the dataset.
+    
+    (data, target) : tuple if ``return_X_y`` is True
+    
+        .. versionadded:: 0.20

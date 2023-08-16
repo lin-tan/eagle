@@ -1,0 +1,6 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A list of integer. The length must be the same as the number of dimensions in `x`.,,prim_dtype,dtype(int),1,1
+,A list of integer. The length must be the same as the number of dimensions in `x`.,,nonprim_dtype,structure(list(int)),1,1
+,A list of integer. The length must be the same as the number of dimensions in `x`.,,shape,ndim(1),0,1
+,A list of integer. The length must be the same as the number of dimensions in `x`.,,validvalue,"range([0,inf))",0,1
+,A list of integer. The length must be the same as the number of dimensions in `x`.,,shape,(ndim(1)+shape[ndim(x)]),1,0

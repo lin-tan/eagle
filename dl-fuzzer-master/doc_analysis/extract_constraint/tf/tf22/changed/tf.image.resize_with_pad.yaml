@@ -1,0 +1,62 @@
+constraints:
+  antialias:
+    default: 'False'
+    descp: Whether to use anti-aliasing when resizing. See 'image.resize()'.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  image:
+    descp: 4-D Tensor of shape [batch, height, width, channels] or 3-D Tensor of shape
+      [height, width, channels].
+    dtype:
+    - numeric
+    ndim:
+    - '3'
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    - '[height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  method:
+    default: ResizeMethod.BILINEAR
+    descp: Method to use for resizing image. See image.resize()
+    dtype:
+    - callable
+  target_height:
+    descp: Target height.
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+  target_width:
+    descp: Target width.
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+dependency:
+- batch
+- channels
+- height
+- width
+exceptions:
+- ValueError: if target_height or target_width are zero or negative.
+inputs:
+  optional:
+  - method
+  - antialias
+  required:
+  - image
+  - target_height
+  - target_width
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/image/resize_with_pad
+outputs:
+- Resized and padded image. If images was 4-D, a 4-D float Tensor of shape [batch,
+  new_height, new_width, channels]. If images was 3-D, a 3-D float Tensor of shape
+  [new_height, new_width, channels].
+package: tensorflow
+target: resize_with_pad
+title: tf.image.resize_with_pad
+version: 2.2.0

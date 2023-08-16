@@ -1,0 +1,22 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: perform the computation inplace
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - perform the computation inplace
+  input:
+    descp: quantized input
+    normalized_descp:
+    - quantized input
+inputs:
+  optional:
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.relu
+package: torch
+ret_type: Tensor
+target: relu
+title: torch.nn.quantized.functional.relu
+version: 1.5.0

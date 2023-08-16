@@ -1,0 +1,67 @@
+sklearn.metrics.pairwise_distances_argmin_min = pairwise_distances_argmin_min(X, Y, axis=1, metric='euclidean', metric_kwargs=None)
+    Compute minimum distances between one point and a set of points.
+    
+    This function computes for each row in X, the index of the row of Y which
+    is closest (according to the specified distance). The minimal distances are
+    also returned.
+    
+    This is mostly equivalent to calling:
+    
+        (pairwise_distances(X, Y=Y, metric=metric).argmin(axis=axis),
+         pairwise_distances(X, Y=Y, metric=metric).min(axis=axis))
+    
+    but uses much less memory, and is faster for large arrays.
+    
+    Parameters
+    ----------
+    X : {array-like, sparse matrix}, shape (n_samples1, n_features)
+        Array containing points.
+    
+    Y : {array-like, sparse matrix}, shape (n_samples2, n_features)
+        Arrays containing points.
+    
+    axis : int, optional, default 1
+        Axis along which the argmin and distances are to be computed.
+    
+    metric : string or callable, default 'euclidean'
+        metric to use for distance computation. Any metric from scikit-learn
+        or scipy.spatial.distance can be used.
+    
+        If metric is a callable function, it is called on each
+        pair of instances (rows) and the resulting value recorded. The callable
+        should take two arrays as input and return one value indicating the
+        distance between them. This works for Scipy's metrics, but is less
+        efficient than passing the metric name as a string.
+    
+        Distance matrices are not supported.
+    
+        Valid values for metric are:
+    
+        - from scikit-learn: ['cityblock', 'cosine', 'euclidean', 'l1', 'l2',
+          'manhattan']
+    
+        - from scipy.spatial.distance: ['braycurtis', 'canberra', 'chebyshev',
+          'correlation', 'dice', 'hamming', 'jaccard', 'kulsinski',
+          'mahalanobis', 'minkowski', 'rogerstanimoto', 'russellrao',
+          'seuclidean', 'sokalmichener', 'sokalsneath', 'sqeuclidean',
+          'yule']
+    
+        See the documentation for scipy.spatial.distance for details on these
+        metrics.
+    
+    metric_kwargs : dict, optional
+        Keyword arguments to pass to specified metric function.
+    
+    Returns
+    -------
+    argmin : numpy.ndarray
+        Y[argmin[i], :] is the row in Y that is closest to X[i, :].
+    
+    distances : numpy.ndarray
+        distances[i] is the distance between the i-th row in X and the
+        argmin[i]-th row in Y.
+    
+    See also
+    --------
+    sklearn.metrics.pairwise_distances
+    sklearn.metrics.pairwise_distances_argmin

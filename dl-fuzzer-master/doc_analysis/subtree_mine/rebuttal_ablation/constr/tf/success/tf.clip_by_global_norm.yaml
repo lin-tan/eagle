@@ -1,0 +1,97 @@
+aliases:
+- tf.compat.v1.clip_by_global_norm
+constraints:
+  clip_norm:
+    descp: A 0-D (scalar) `Tensor` > 0. The clipping ratio.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  t_list:
+    descp: A tuple or list of mixed `Tensors`, `IndexedSlices`, or None.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - IndexedSlices
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - indexedslices
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[indexedslices,indexedslices]'
+    - '[indexedslices]'
+    - '[n]'
+    structure:
+    - list
+    - tuple
+    tensor_t:
+    - tf.tensor
+  use_norm:
+    default: None
+    descp: A 0-D (scalar) `Tensor` of type `float` (optional). The global norm to
+      use. If not provided, `global_norm()` is used to compute the norm.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    - (scalar)
+    - Tensor
+    - float
+    - type
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: If `t_list` is not a sequence.
+inputs:
+  optional:
+  - use_norm
+  - name
+  required:
+  - t_list
+  - clip_norm
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/clip_by_global_norm
+outputs:
+- list_clipped: A list of `Tensors` of the same type as `list_t`.
+- global_norm: A 0-D (scalar) `Tensor` representing the global norm.
+package: tensorflow
+target: clip_by_global_norm
+title: tf.clip_by_global_norm
+version: 2.1.0

@@ -1,0 +1,10 @@
+constraints:
+  maxlength:
+    default: None
+    descp: If given, skips values in `arr` that are equal or greater than`maxlength`,
+      ensuring that the output has length at most `maxlength`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.math.bincount

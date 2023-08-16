@@ -1,0 +1,36 @@
+constraints:
+  input:
+    descp: the input tensor of at least `signal_ndim` `+ 1` dimensions
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of at least PARAM CONSTANT_NUM dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return normalized results. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return normalized results
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  signal_ndim:
+    descp: the number of dimensions in each signal. `signal_ndim` can only be 1, 2
+      or 3
+    doc_dtype: int
+    normalized_descp:
+    - the number of dimensions in each signal
+    - QSTR can only be CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - normalized
+  required:
+  - input
+  - signal_ndim
+link: https://pytorch.org/docs/stable/torch.html#torch.ifft
+package: torch
+ret_type: Tensor
+target: ifft
+title: torch.ifft
+version: 1.5.0

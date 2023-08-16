@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.timestamp
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/timestamp
+outputs: A `Tensor` of type `float64`.
+package: tensorflow
+target: timestamp
+title: tf.timestamp
+version: 2.1.0

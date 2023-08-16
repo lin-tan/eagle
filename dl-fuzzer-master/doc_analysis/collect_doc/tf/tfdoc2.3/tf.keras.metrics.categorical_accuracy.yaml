@@ -1,0 +1,20 @@
+aliases:
+- tf.metrics.categorical_accuracy
+- tf.compat.v1.keras.metrics.categorical_accuracy
+constraints:
+  y_pred:
+    descp: The prediction values.
+  y_true:
+    descp: One-hot ground truth values.
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/metrics/categorical_accuracy
+outputs:
+- Categorical accuracy values.
+package: tensorflow
+target: categorical_accuracy
+title: tf.keras.metrics.categorical_accuracy
+version: 2.3.0

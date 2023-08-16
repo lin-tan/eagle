@@ -1,0 +1,11 @@
+constraints:
+  dilation_rate:
+    default: (1, 1)
+    descp: tuple of integers, dilation rates for the separable convolution.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple
+title: tf.keras.backend.depthwise_conv2d

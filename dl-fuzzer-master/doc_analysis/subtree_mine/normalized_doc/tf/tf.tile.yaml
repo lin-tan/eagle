@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.manip.tile
+- tf.compat.v1.tile
+constraints:
+  input:
+    descp: A `Tensor`. 1-D or higher.
+    normalized_descp:
+    - A D_STRUCTURE
+    - CONSTANT_NUM-D or higher
+  multiples:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D.
+      Length must be the same as the number of dimensions in `input`'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D
+    - Length must be the same as the number of dimensions in PARAM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - multiples
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/tile
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: tile
+title: tf.tile
+version: 2.1.0

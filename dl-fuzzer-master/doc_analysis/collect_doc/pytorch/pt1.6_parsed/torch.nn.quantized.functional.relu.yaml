@@ -1,0 +1,17 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: perform the computation inplace
+  input:
+    descp: quantized input
+inputs:
+  optional:
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.nn.quantized.functional.relu
+package: torch
+ret_type: Tensor
+target: relu
+title: torch.nn.quantized.functional.relu
+version: 1.6.0

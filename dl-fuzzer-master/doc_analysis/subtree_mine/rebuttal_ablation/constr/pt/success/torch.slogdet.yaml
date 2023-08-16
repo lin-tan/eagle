@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: the input tensor of size `(*, n, n)` where `*` is zero or more batch dimensions.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.slogdet
+package: torch
+ret_type: (Tensor, Tensor)
+target: slogdet
+title: torch.slogdet
+version: 1.5.0

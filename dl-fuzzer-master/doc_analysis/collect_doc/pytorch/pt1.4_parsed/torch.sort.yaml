@@ -1,0 +1,34 @@
+constraints:
+  descending:
+    default: 'False'
+    descp: controls the sorting order (ascending or descending)
+    doc_dtype:
+    - bool
+  dim:
+    default: '-1'
+    descp: the dimension to sort along
+    doc_dtype:
+    - python:int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) that can be optionally given to
+      be used as output buffers
+    doc_dtype:
+    - tuple
+inputs:
+  optional:
+  - dim
+  - descending
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.sort
+package: torch
+ret_type: (Tensor, LongTensor)
+target: sort
+title: torch.sort
+version: 1.4.0

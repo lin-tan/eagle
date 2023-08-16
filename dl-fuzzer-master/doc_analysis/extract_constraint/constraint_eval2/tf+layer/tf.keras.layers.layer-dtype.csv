@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The dtype of the layer's computations and weights (default of`None` means use `tf.keras.backend.floatx` in TensorFlow 2, or the type of the first input in TensorFlow 1).",None,prim_dtype,dtype(tf.dtype),,1
+,"The dtype of the layer's computations and weights (default of`None` means use `tf.keras.backend.floatx` in TensorFlow 2, or the type of the first input in TensorFlow 1).",None,shape,ndim(0),,1

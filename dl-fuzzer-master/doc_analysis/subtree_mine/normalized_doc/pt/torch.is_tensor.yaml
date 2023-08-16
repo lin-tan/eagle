@@ -1,0 +1,16 @@
+constraints:
+  obj:
+    descp: Object to test
+    doc_dtype: Object
+    normalized_descp:
+    - Object to test
+    normalized_docdtype: ONE_WORD Object
+inputs:
+  optional: []
+  required:
+  - obj
+link: https://pytorch.org/docs/stable/torch.html#torch.is_tensor
+package: torch
+target: is_tensor
+title: torch.is_tensor
+version: 1.5.0

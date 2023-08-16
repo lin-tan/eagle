@@ -1,0 +1,24 @@
+constraints:
+  element_shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  lengths:
+    descp: A Tensor of type int64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - element_shape
+  - lengths
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListSplit
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListSplit
+title: tf.raw_ops.TensorListSplit
+version: 2.2.0

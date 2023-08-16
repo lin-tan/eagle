@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.layers.RepeatVector
+constraints:
+  '**kwargs':
+    descp: ''
+  n:
+    descp: Integer, repetition factor.
+inputs:
+  optional: []
+  required:
+  - n
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RepeatVector
+package: tensorflow
+target: RepeatVector
+title: tf.keras.layers.RepeatVector
+version: 2.3.0

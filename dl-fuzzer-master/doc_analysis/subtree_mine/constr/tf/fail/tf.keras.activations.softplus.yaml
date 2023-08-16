@@ -1,0 +1,15 @@
+aliases:
+- tf.compat.v1.keras.activations.softplus
+constraints:
+  x:
+    descp: Input tensor.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/softplus
+outputs: 'The softplus activation: `log(exp(x) + 1)`.'
+package: tensorflow
+target: softplus
+title: tf.keras.activations.softplus
+version: 2.1.0

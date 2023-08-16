@@ -1,0 +1,15 @@
+constraints:
+  dtype:
+    default: _Null
+    descp: DType of the output in case this can't be inferred. Defaults to float32
+      if not defined (dtype=None).
+    doc_dtype:
+    - '{''None'', ''float16'', ''float32'', ''float64''}'
+    - optional
+    - default='None'
+    enum:
+    - None
+    - float16
+    - float32
+    - float64
+title: mxnet.ndarray.sample_poisson

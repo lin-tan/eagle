@@ -1,0 +1,16 @@
+constraints:
+  obj:
+    descp: The `nn.Module`, function, or class type to compile.
+    doc_dtype: callable, class, or `nn.Module`
+    normalized_descp:
+    - The nn Module , function, or class type to compile
+    normalized_docdtype: callable, class, or nn Module
+inputs:
+  optional: []
+  required:
+  - obj
+link: https://pytorch.org/docs/stable/jit.html#torch.jit.script
+package: torch
+target: script
+title: torch.jit.script
+version: 1.5.0

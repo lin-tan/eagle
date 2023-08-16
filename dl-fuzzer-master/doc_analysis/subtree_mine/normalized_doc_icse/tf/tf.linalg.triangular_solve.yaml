@@ -1,0 +1,56 @@
+aliases:
+- tf.compat.v1.linalg.triangular_solve
+- tf.compat.v1.matrix_triangular_solve
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Boolean indicating whether to
+      solve with `matrix` or its (block-wise)        adjoint.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - D_TYPE indicating whether to solve with PARAM or its BSTR adjoint
+  lower:
+    default: 'True'
+    descp: An optional `bool`. Defaults to `True`. Boolean indicating whether the
+      innermost matrices in `matrix` are lower or upper triangular.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - D_TYPE indicating whether the innermost matrices in PARAM are lower or upper
+      triangular
+  matrix:
+    descp: 'A `Tensor`. Must be one of the following types: `float64`, `float32`,
+      `half`, `complex64`, `complex128`. Shape is `[..., M, M]`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - Shape is BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  rhs:
+    descp: A `Tensor`. Must have the same type as `matrix`. Shape is `[..., M, K]`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - Shape is BSTR
+inputs:
+  optional:
+  - lower
+  - adjoint
+  - name
+  required:
+  - matrix
+  - rhs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/triangular_solve
+outputs: A `Tensor`. Has the same type as `matrix`.
+package: tensorflow
+target: triangular_solve
+title: tf.linalg.triangular_solve
+version: 2.1.0

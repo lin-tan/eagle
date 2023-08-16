@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: A Tensor of type string. A string Tensor of any shape.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StringStrip
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: StringStrip
+title: tf.raw_ops.StringStrip
+version: 2.2.0

@@ -1,0 +1,102 @@
+constraints:
+  beta1:
+    descp: A Tensor. Must have the same type as beta1_power. Momentum factor. Must
+      be a scalar.
+    dtype:
+    - dtype:&beta1_power
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  beta1_power:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. Must be a scalar.'
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  beta2:
+    descp: A Tensor. Must have the same type as beta1_power. Momentum factor. Must
+      be a scalar.
+    dtype:
+    - dtype:&beta1_power
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  epsilon:
+    descp: A Tensor. Must have the same type as beta1_power. Ridge term. Must be a
+      scalar.
+    dtype:
+    - dtype:&beta1_power
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  grad:
+    descp: A Tensor. Must have the same type as beta1_power. The gradient.
+    dtype:
+    - dtype:&beta1_power
+    tensor_t:
+    - tf.tensor
+  lr:
+    descp: A Tensor. Must have the same type as beta1_power. Scaling factor. Must
+      be a scalar.
+    dtype:
+    - dtype:&beta1_power
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  m:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, updating of the var, m, and
+      v tensors will be protected by a lock; otherwise the behavior is undefined,
+      but may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  v:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+  var:
+    descp: A Tensor of type resource. Should be from a Variable().
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - var
+  - m
+  - v
+  - beta1_power
+  - lr
+  - beta1
+  - beta2
+  - epsilon
+  - grad
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceApplyAdaMax
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceApplyAdaMax
+title: tf.raw_ops.ResourceApplyAdaMax
+version: 2.2.0

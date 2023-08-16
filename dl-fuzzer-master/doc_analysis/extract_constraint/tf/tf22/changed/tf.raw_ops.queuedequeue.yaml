@@ -1,0 +1,46 @@
+constraints:
+  component_types:
+    descp: A list of tf.DTypes that has length >= 1. The type of each component in
+      a tuple.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  handle:
+    descp: A Tensor of type mutable string. The handle to a queue.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  timeout_ms:
+    default: '-1'
+    descp: 'An optional int. Defaults to -1. If the queue is empty, this operation
+      will block for up to timeout_ms milliseconds. Note: This option is not supported
+      yet.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - timeout_ms
+  - name
+  required:
+  - handle
+  - component_types
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QueueDequeue
+outputs:
+- A list of Tensor objects of type component_types.
+package: tensorflow
+target: QueueDequeue
+title: tf.raw_ops.QueueDequeue
+version: 2.2.0

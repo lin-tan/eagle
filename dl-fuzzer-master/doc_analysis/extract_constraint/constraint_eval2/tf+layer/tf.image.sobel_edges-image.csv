@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Image tensor with shape [batch_size, h, w, d] and type float32 or float64.  The image(s) must be 2x2 or larger.",,prim_dtype,"dtype(numeric, tf.float32, tf.float64)",,1
+,"Image tensor with shape [batch_size, h, w, d] and type float32 or float64.  The image(s) must be 2x2 or larger.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"Image tensor with shape [batch_size, h, w, d] and type float32 or float64.  The image(s) must be 2x2 or larger.",,shape,"shape([batch_size,h,w,d]), ndim(4)",,1

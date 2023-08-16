@@ -1,0 +1,82 @@
+constraints:
+  batch_first:
+    default: False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  bias:
+    default: True
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  bidirectional:
+    default: False
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  dropout:
+    default: 0
+    dtype:
+    - torch.float32
+    range:
+    - '[0,1]'
+  hidden_size:
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[1,1000)'
+  input:
+    dtype:
+    - torch.float32
+    ndim:
+    - '3'
+    shape:
+    - '[a,b,&input_size]'
+    tensor_t:
+    - torch.tensor
+  input_size:
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[1,1000]'
+  num_layers:
+    default: 1
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[1,10)'
+  nonlinearity:
+    default: tanh
+    dtype:
+    - string
+    enum:
+    - tanh
+    - relu
+dependency:
+- b
+- a
+inputs:
+  optional:
+  - num_layers
+  - nonlinearity
+  - bias
+  - batch_first
+  - dropout
+  - bidirectional
+  required:
+  - input_size
+  - hidden_size
+  - input
+package: torch
+target: RNN
+title: torch.nn.RNN
+version: 1.9.0

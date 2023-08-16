@@ -1,0 +1,94 @@
+aliases:
+- tf.compat.v1.linalg.lu
+constraints:
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float64`, `float32`,
+      `half`, `complex64`, `complex128`. A tensor of shape `[..., M, M]` whose inner-most
+      2 dimensions form matrices of size `[M, M]`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.string
+    enum:
+    - '[...'
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '>=2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[...,m,m]'
+    - '[1]'
+    - '[2]'
+    - '[m,m]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  output_idx_type:
+    default: tf.dtypes.int32
+    descp: 'An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`.'
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - int32
+    - tf.DType
+    - tf.dtypes
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+inputs:
+  optional:
+  - output_idx_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/lu
+outputs: A tuple of `Tensor` objects (lu, p).
+package: tensorflow
+target: lu
+title: tf.linalg.lu
+version: 2.1.0

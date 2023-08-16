@@ -1,0 +1,108 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  aggregate_stats:
+    default: None
+    descp: whether to maintain aggregate stats in memory for console dump.  Has some
+      negative performance impact.
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to maintain aggregate stats in memory for console dump
+    - Has some negative performance impact
+    normalized_docdtype: ONE_WORD D_TYPE,
+  continuous_dump:
+    default: None
+    descp: whether to periodically dump profiling data to file
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to periodically dump profiling data to file
+    normalized_docdtype: ONE_WORD D_TYPE,
+  dump_period:
+    default: None
+    descp: seconds between profile data dumps
+    doc_dtype: float,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - seconds between profile data dumps
+    normalized_docdtype: ONE_WORD D_TYPE,
+  filename:
+    default: None
+    descp: output file for profile data
+    doc_dtype: string,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output file for profile data
+    normalized_docdtype: ONE_WORD D_TYPE,
+  profile_all:
+    default: None
+    descp: all profile types enabled
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - all profile types enabled
+    normalized_docdtype: ONE_WORD D_TYPE,
+  profile_api:
+    default: None
+    descp: whether to profile the C API
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to profile the C API
+    normalized_docdtype: ONE_WORD D_TYPE,
+  profile_imperative:
+    default: None
+    descp: whether to profile imperative operators
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to profile imperative operators
+    normalized_docdtype: ONE_WORD D_TYPE,
+  profile_memory:
+    default: None
+    descp: whether to profile memory usage
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to profile memory usage
+    normalized_docdtype: ONE_WORD D_TYPE,
+  profile_process:
+    default: None
+    descp: whether to profile kvstore server or worker. server can only be profiled
+      when kvstore is of type dist. if this is not passed, defaults to worker
+    doc_dtype: string
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to profile kvstore server or worker
+    - server can only be profiled when kvstore is of type dist
+    - if this is not passed, defaults to worker
+    normalized_docdtype: ONE_WORD D_TYPE
+  profile_symbolic:
+    default: None
+    descp: whether to profile symbolic operators
+    doc_dtype: boolean,
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - whether to profile symbolic operators
+    normalized_docdtype: ONE_WORD D_TYPE,
+inputs:
+  optional:
+  - filename
+  - profile_all
+  - profile_symbolic
+  - profile_imperative
+  - profile_memory
+  - profile_api
+  - continuous_dump
+  - dump_period
+  - aggregate_stats
+  - profile_process
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/profiler/index.html#mxnet.profiler.set_config
+package: mxnet
+target: set_config
+title: mxnet.profiler.set_config
+version: 1.6.0

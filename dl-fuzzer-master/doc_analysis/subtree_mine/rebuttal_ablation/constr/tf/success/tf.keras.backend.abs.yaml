@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.keras.backend.abs
+constraints:
+  x:
+    descp: Tensor or variable.
+    dtype:
+    - int
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/abs
+outputs: A tensor.
+package: tensorflow
+target: abs
+title: tf.keras.backend.abs
+version: 2.1.0

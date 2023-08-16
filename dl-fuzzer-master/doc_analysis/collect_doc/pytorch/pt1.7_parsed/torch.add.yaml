@@ -1,0 +1,34 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: the scalar multiplier for `other`
+    doc_dtype:
+    - Number
+  input:
+    descp: the first input tensor
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the second input tensor
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - alpha
+  - out
+  optional:
+  - alpha
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.add.html#torch.add#torch.add
+package: torch
+target: add
+title: torch.add
+version: 1.7.0

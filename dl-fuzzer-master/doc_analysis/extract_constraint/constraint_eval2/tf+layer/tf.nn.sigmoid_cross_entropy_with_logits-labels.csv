@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor` of the same type and shape as `logits`.,None,prim_dtype,dtype(dtype:&logits),,1
+,A `Tensor` of the same type and shape as `logits`.,None,nonprim_dtype,tensor_t(tf.tensor),,1
+,A `Tensor` of the same type and shape as `logits`.,None,shape,shape(shape:&logits),,1

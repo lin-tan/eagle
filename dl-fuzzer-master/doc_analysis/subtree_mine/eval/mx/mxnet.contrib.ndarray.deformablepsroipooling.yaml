@@ -1,0 +1,22 @@
+constraints:
+  no_trans:
+    default: _Null
+    descp: Whether to disable trans parameter.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or w) to raw image height (or w). Equals
+      the reciprocal of total stride in convolutional layers
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+title: mxnet.contrib.ndarray.DeformablePSROIPooling

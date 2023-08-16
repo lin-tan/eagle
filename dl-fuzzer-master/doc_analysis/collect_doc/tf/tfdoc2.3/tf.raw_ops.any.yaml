@@ -1,0 +1,27 @@
+constraints:
+  axis:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The dimensions
+      to reduce. Must be in the range [-rank(input), rank(input)).'
+  input:
+    descp: A Tensor of type bool. The tensor to reduce.
+  keep_dims:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, retain reduced dimensions
+      with length 1.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - keep_dims
+  - name
+  required:
+  - input
+  - axis
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Any
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: Any
+title: tf.raw_ops.Any
+version: 2.3.0

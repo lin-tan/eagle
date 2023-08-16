@@ -1,0 +1,24 @@
+constraints:
+  data_home:
+    default: None
+    descp: 'optional, default: None Specify another download and cache folder for
+      the datasets. By default all scikit-learn data is stored in ''~/scikit_learn_data''
+      subfolders.'
+  download_if_missing:
+    default: 'True'
+    descp: optional, True by default If False, raise a IOError if the data is not
+      locally available instead of trying to download the data from the source site.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - data_home
+  - download_if_missing
+  required: []
+link: ''
+package: sklearn
+target: fetch_species_distributions
+title: sklearn.datasets.fetch_species_distributions
+version: 0.24.2

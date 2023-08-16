@@ -1,0 +1,31 @@
+constraints:
+  maxval:
+    descp: A Tensor. Must have the same type as minval. Maximum value (exclusive,
+      scalar).
+  minval:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Minimum value
+      (inclusive, scalar).'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+inputs:
+  optional:
+  - name
+  required:
+  - shape
+  - seed
+  - minval
+  - maxval
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatelessRandomUniformInt
+outputs:
+- A Tensor. Has the same type as minval.
+package: tensorflow
+target: StatelessRandomUniformInt
+title: tf.raw_ops.StatelessRandomUniformInt
+version: 2.3.0

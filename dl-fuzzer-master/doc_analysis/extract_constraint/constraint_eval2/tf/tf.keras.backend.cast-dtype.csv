@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"String, either (`'float16'`, `'float32'`, or `'float64'`).",,prim_dtype,"dtype(tf.dtype, tf.string)",,1
+,"String, either (`'float16'`, `'float32'`, or `'float64'`).",,shape,ndim(0),,1
+,"String, either (`'float16'`, `'float32'`, or `'float64'`).",,validvalue,"enum(float16, float32, float64)",,1

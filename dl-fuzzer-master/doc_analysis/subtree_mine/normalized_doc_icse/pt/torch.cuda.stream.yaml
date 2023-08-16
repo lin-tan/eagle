@@ -1,0 +1,17 @@
+constraints:
+  stream:
+    descp: selected stream. This manager is a no-op if it's `None`.
+    doc_dtype: Stream
+    normalized_descp:
+    - selected stream
+    - This manager is a no op if it QSTR
+    normalized_docdtype: ONE_WORD Stream
+inputs:
+  optional: []
+  required:
+  - stream
+link: https://pytorch.org/docs/stable/cuda.html#torch.cuda.stream
+package: torch
+target: stream
+title: torch.cuda.stream
+version: 1.5.0

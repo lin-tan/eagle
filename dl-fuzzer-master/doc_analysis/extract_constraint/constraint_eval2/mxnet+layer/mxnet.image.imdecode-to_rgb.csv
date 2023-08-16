@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default=1",1 for RGB formatted output (MXNet default). 0 for BGR formatted output (OpenCV default).,None,prim_dtype,dtype(int),,1
+"int, optional, default=1",1 for RGB formatted output (MXNet default). 0 for BGR formatted output (OpenCV default).,None,shape,ndim(0),,1
+"int, optional, default=1",1 for RGB formatted output (MXNet default). 0 for BGR formatted output (OpenCV default).,None,validvalue,"enum(0, 1)",,1

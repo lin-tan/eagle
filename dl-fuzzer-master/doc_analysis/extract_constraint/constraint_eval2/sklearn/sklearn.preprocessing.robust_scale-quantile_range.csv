@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"tuple (q_min, q_max), 0.0 < q_min < q_max < 100.0 Default: (25.0, 75.0) = (1st quantile, 3rd quantile) = IQR Quantile range used to calculate ``scale_``.","(25.0, 75.0)",nonprim_dtype,"structure(tuple:(q_min,q_max))",,1
+,"tuple (q_min, q_max), 0.0 < q_min < q_max < 100.0 Default: (25.0, 75.0) = (1st quantile, 3rd quantile) = IQR Quantile range used to calculate ``scale_``.","(25.0, 75.0)",shape,"shape([2]), ndim(1)",,1

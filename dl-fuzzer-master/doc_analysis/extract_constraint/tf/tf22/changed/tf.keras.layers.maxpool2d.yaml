@@ -1,0 +1,76 @@
+aliases:
+- tf.keras.layers.MaxPooling2D
+- tf.compat.v1.keras.layers.MaxPool2D
+- tf.compat.v1.keras.layers.MaxPooling2D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  data_format:
+    default: None
+    descp: A string, one of channels_last (default) or channels_first. The ordering
+      of the dimensions in the inputs. channels_last corresponds to inputs with shape
+      (batch, height, width, channels) while channels_first corresponds to inputs
+      with shape (batch, channels, height, width). It defaults to the image_data_format
+      value found in your Keras config file at ~/.keras/keras.json. If you never set
+      it, then it will be "channels_last".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  padding:
+    default: valid
+    descp: One of "valid" or "same" (case-insensitive). "valid" adds no zero padding.
+      "same" adds padding such that if the stride is 1, the output shape is the same
+      as input shape.
+    dtype:
+    - tf.string
+    enum:
+    - same
+    - valid
+  pool_size:
+    default: (2, 2)
+    descp: integer or tuple of 2 integers, window size over which to take the maximum.
+      (2, 2) will take the max value over a 2x2 pooling window. If only one integer
+      is specified, the same window length will be used for both dimensions.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - tuple(int)
+  strides:
+    default: None
+    descp: Integer, tuple of 2 integers, or None. Strides values. Specifies how far
+      the pooling window moves for each pooling step. If None, it will default to
+      pool_size.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/MaxPool2D
+outputs:
+- A tensor of rank 4 representing the maximum pooled values. See above for output
+  shape.
+package: tensorflow
+target: MaxPool2D
+title: tf.keras.layers.MaxPool2D
+version: 2.2.0

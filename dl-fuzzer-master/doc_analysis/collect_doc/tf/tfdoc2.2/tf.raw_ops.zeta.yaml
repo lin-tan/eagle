@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  q:
+    descp: A Tensor. Must have the same type as x.
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - q
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Zeta
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: Zeta
+title: tf.raw_ops.Zeta
+version: 2.2.0

@@ -1,0 +1,42 @@
+constraints:
+  conjugate:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether input should be
+      conjugated.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  input:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - conjugate
+  - name
+  required:
+  - input
+  - type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseMatrixTranspose
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixTranspose
+title: tf.raw_ops.SparseMatrixTranspose
+version: 2.3.0

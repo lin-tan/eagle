@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`. 4-D.",,prim_dtype,"dtype(tf.bfloat16, tf.float16, tf.float32)",,1
+,"A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`. 4-D.",,nonprim_dtype,tensor_t(tf.tensor),,1

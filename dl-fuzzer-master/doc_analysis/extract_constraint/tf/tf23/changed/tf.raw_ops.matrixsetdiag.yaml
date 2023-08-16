@@ -1,0 +1,35 @@
+constraints:
+  diagonal:
+    descp: A Tensor. Must have the same type as input. Rank k, where k >= 1.
+    dtype:
+    - dtype:&input
+    ndim:
+    - k
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A Tensor. Rank k+1, where k >= 1.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+dependency:
+- k
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MatrixSetDiag
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MatrixSetDiag
+title: tf.raw_ops.MatrixSetDiag
+version: 2.3.0

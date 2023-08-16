@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A list of `ints`. The stride of the sliding window for each dimension of the input of the convolution.,,prim_dtype,dtype(int),,1
+,A list of `ints`. The stride of the sliding window for each dimension of the input of the convolution.,,nonprim_dtype,structure(list(int)),,1
+,A list of `ints`. The stride of the sliding window for each dimension of the input of the convolution.,,shape,ndim(1),,1
+,A list of `ints`. The stride of the sliding window for each dimension of the input of the convolution.,,validvalue,"range([0,inf))",,1

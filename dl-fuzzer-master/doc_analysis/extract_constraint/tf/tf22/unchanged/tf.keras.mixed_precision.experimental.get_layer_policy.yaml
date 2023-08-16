@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.mixed_precision.experimental.get_layer_policy
+constraints:
+  layer:
+    descp: A tf.keras.layers.Layer.
+inputs:
+  optional: []
+  required:
+  - layer
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/mixed_precision/experimental/get_layer_policy
+outputs:
+- The tf.keras.mixed_precision.experimental.Policy of the layer.
+package: tensorflow
+target: get_layer_policy
+title: tf.keras.mixed_precision.experimental.get_layer_policy
+version: 2.2.0

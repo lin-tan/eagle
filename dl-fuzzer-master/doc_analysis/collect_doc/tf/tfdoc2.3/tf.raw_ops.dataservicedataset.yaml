@@ -1,0 +1,47 @@
+constraints:
+  address:
+    descp: A Tensor of type string.
+  dataset_id:
+    descp: A Tensor of type int64.
+  iteration_counter:
+    descp: A Tensor of type resource.
+  job_name:
+    descp: A Tensor of type string.
+  max_outstanding_requests:
+    descp: A Tensor of type int64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  processing_mode:
+    descp: A Tensor of type string.
+  protocol:
+    descp: A Tensor of type string.
+  task_refresh_interval_hint_ms:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+inputs:
+  optional:
+  - task_refresh_interval_hint_ms
+  - name
+  required:
+  - dataset_id
+  - processing_mode
+  - address
+  - protocol
+  - job_name
+  - max_outstanding_requests
+  - iteration_counter
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DataServiceDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: DataServiceDataset
+title: tf.raw_ops.DataServiceDataset
+version: 2.3.0

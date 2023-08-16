@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"callable, torch.nn.Module","A Python function or `torch.nn.Module` that will be run with `example_inputs`. arguments and returns to `func` must be tensors or (possibly nested) tuples that contain tensors. When a module is passed to `torch.jit.trace`, only the `forward` method is run and traced (see `torch.jit.trace` for details).",,,,0,0

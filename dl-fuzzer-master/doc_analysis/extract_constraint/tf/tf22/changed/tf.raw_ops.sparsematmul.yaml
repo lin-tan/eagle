@@ -1,0 +1,61 @@
+constraints:
+  a:
+    descp: 'A Tensor. Must be one of the following types: float32, bfloat16.'
+    tensor_t:
+    - tf.tensor
+  a_is_sparse:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  b:
+    descp: 'A Tensor. Must be one of the following types: float32, bfloat16.'
+    tensor_t:
+    - tf.tensor
+  b_is_sparse:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  transpose_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  transpose_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - transpose_a
+  - transpose_b
+  - a_is_sparse
+  - b_is_sparse
+  - name
+  required:
+  - a
+  - b
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatMul
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: SparseMatMul
+title: tf.raw_ops.SparseMatMul
+version: 2.2.0

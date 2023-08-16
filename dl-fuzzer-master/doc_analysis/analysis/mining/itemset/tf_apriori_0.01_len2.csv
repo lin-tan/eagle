@@ -1,0 +1,60 @@
+,support,itemsets,length
+90,0.07481351469942957,"frozenset({'name', 'optional'})",2
+71,0.06899956121105748,"frozenset({'SOME_DTYPE', 'tensor'})",2
+89,0.06384379113646337,"frozenset({'operation', 'name'})",2
+91,0.06208863536638877,"frozenset({'operation', 'optional'})",2
+112,0.06164984642387012,"frozenset({'operation', 'name', 'optional'})",3
+93,0.0330188679245283,"frozenset({'shape', 'tensor'})",2
+94,0.03268977621763931,"frozenset({'type', 'tensor'})",2
+65,0.032141290039491004,"frozenset({'SOME_DTYPE', 'must'})",2
+68,0.03203159280386134,"frozenset({'SOME_DTYPE', 'optional'})",2
+60,0.03137340939008337,"frozenset({'SOME_DTYPE', 'SOME_STRUCTURE'})",2
+81,0.031044317683194385,"frozenset({'tensor', 'd'})",2
+67,0.030495831505046072,"frozenset({'SOME_DTYPE', 'one'})",2
+73,0.030166739798157087,"frozenset({'SOME_DTYPE', 'type'})",2
+87,0.027314611671785873,"frozenset({'one', 'must'})",2
+63,0.02632733655111891,"frozenset({'SOME_DTYPE', 'following'})",2
+103,0.026107942079859586,"frozenset({'SOME_DTYPE', 'following', 'one'})",3
+85,0.026107942079859586,"frozenset({'one', 'following'})",2
+84,0.025998244844229926,"frozenset({'following', 'must'})",2
+102,0.0257788503729706,"frozenset({'SOME_DTYPE', 'following', 'must'})",3
+104,0.0257788503729706,"frozenset({'SOME_DTYPE', 'one', 'must'})",3
+111,0.0257788503729706,"frozenset({'one', 'following', 'must'})",3
+116,0.0257788503729706,"frozenset({'SOME_DTYPE', 'following', 'one', 'must'})",4
+106,0.022378236068451074,"frozenset({'SOME_DTYPE', 'type', 'tensor'})",3
+75,0.017551557700745943,"frozenset({'tensor', 'SOME_STRUCTURE'})",2
+80,0.01744186046511628,"frozenset({'shape', 'd'})",2
+86,0.017222465993856954,"frozenset({'input', 'tensor'})",2
+62,0.015796401930671347,"frozenset({'SOME_DTYPE', 'd'})",2
+70,0.014809126810004387,"frozenset({'SOME_DTYPE', 'shape'})",2
+92,0.014480035103115402,"frozenset({'optional', 'tensor'})",2
+83,0.01437033786748574,"frozenset({'tensor', 'dimension'})",2
+101,0.013492759982448442,"frozenset({'SOME_DTYPE', 'tensor', 'd'})",3
+69,0.012834576568670469,"frozenset({'SOME_DTYPE', 'python'})",2
+74,0.012395787626151821,"frozenset({'optional', 'SOME_STRUCTURE'})",2
+72,0.01228609039052216,"frozenset({'SOME_DTYPE', 'tf'})",2
+110,0.011956998683633173,"frozenset({'shape', 'tensor', 'd'})",3
+61,0.011956998683633173,"frozenset({'SOME_DTYPE', 'bfloat'})",2
+79,0.011737604212373848,"frozenset({'one', 'bfloat'})",2
+108,0.011737604212373848,"frozenset({'one', 'following', 'bfloat'})",3
+109,0.011737604212373848,"frozenset({'one', 'must', 'bfloat'})",3
+114,0.011737604212373848,"frozenset({'SOME_DTYPE', 'following', 'one', 'bfloat'})",4
+113,0.011737604212373848,"frozenset({'SOME_DTYPE', 'following', 'must', 'bfloat'})",4
+77,0.011737604212373848,"frozenset({'following', 'bfloat'})",2
+115,0.011737604212373848,"frozenset({'SOME_DTYPE', 'one', 'must', 'bfloat'})",4
+117,0.011737604212373848,"frozenset({'one', 'following', 'must', 'bfloat'})",4
+107,0.011737604212373848,"frozenset({'following', 'must', 'bfloat'})",3
+118,0.011737604212373848,"frozenset({'one', 'following', 'bfloat', 'SOME_DTYPE', 'must'})",5
+78,0.011737604212373848,"frozenset({'must', 'bfloat'})",2
+100,0.011737604212373848,"frozenset({'SOME_DTYPE', 'one', 'bfloat'})",3
+99,0.011737604212373848,"frozenset({'SOME_DTYPE', 'must', 'bfloat'})",3
+98,0.011737604212373848,"frozenset({'SOME_DTYPE', 'following', 'bfloat'})",3
+105,0.0112988152698552,"frozenset({'SOME_DTYPE', 'shape', 'tensor'})",3
+82,0.011079420798595875,"frozenset({'input', 'dimension'})",2
+76,0.010969723562966213,"frozenset({'shape', 'batch'})",2
+88,0.01086002632733655,"frozenset({'tensor', 'must'})",2
+97,0.010640631856077228,"frozenset({'whose', 'tensor'})",2
+66,0.010530934620447565,"frozenset({'SOME_DTYPE', 'number'})",2
+96,0.010421237384817903,"frozenset({'tensor', 'variable'})",2
+95,0.010092145677928916,"frozenset({'tensor', 'values'})",2
+64,0.010092145677928916,"frozenset({'SOME_DTYPE', 'length'})",2

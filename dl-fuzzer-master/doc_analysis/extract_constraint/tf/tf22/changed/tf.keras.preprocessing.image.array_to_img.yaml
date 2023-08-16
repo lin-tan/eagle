@@ -1,0 +1,49 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.array_to_img
+constraints:
+  data_format:
+    default: None
+    descp: Image data format, can be either "channels_first" or "channels_last". Defaults
+      to None, in which case the global setting tf.keras.backend.image_data_format()
+      is used (unless you changed it, it defaults to "channels_last").
+    dtype:
+    - numeric
+    enum:
+    - channels_first
+    - channels_last
+  dtype:
+    default: None
+    descp: Dtype to use. Default to None, in which case the global setting tf.keras.backend.floatx()
+      is used (unless you changed it, it defaults to "float32")
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  scale:
+    default: 'True'
+    descp: Whether to rescale image values to be within [0, 255]. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,255]'
+  x:
+    descp: Input Numpy array.
+exceptions:
+- ImportError: if PIL is not available.
+- ValueError: if invalid x or data_format is passed.
+inputs:
+  optional:
+  - data_format
+  - scale
+  - dtype
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/preprocessing/image/array_to_img
+outputs:
+- A PIL Image instance.
+package: tensorflow
+target: array_to_img
+title: tf.keras.preprocessing.image.array_to_img
+version: 2.2.0

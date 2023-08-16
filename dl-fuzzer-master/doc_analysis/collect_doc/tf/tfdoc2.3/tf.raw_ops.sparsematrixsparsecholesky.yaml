@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  permutation:
+    descp: A Tensor of type int32. A fill-in reducing permutation matrix.
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - permutation
+  - type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseMatrixSparseCholesky
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixSparseCholesky
+title: tf.raw_ops.SparseMatrixSparseCholesky
+version: 2.3.0

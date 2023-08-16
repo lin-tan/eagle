@@ -1,0 +1,77 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  X:
+    descp: '{array-like, sparse matrix} of shape (n_samples, n_features) Input values.'
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  ax:
+    default: None
+    descp: matplotlib axes, default=None Axes object to plot on. If `None`, a new
+      figure and axes is created.
+  drop_intermediate:
+    default: 'True'
+    descp: boolean, default=True Whether to drop some suboptimal thresholds which
+      would not appear on a plotted ROC curve. This is useful in order to create lighter
+      ROC curves.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  estimator:
+    descp: estimator instance Trained classifier.
+  name:
+    default: None
+    descp: str, default=None Name of ROC Curve for labeling. If `None`, use the name
+      of the estimator.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  response_method:
+    default: auto
+    descp: '{''predict_proba'', ''decision_function'', ''auto''}     default=''auto''
+      Specifies whether to use :term:`predict_proba` or :term:`decision_function`
+      as the target response. If set to ''auto'', :term:`predict_proba` is tried first
+      and if it does not exist :term:`decision_function` is tried next.'
+    dtype:
+    - boolean
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y:
+    descp: array-like of shape (n_samples,) Target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  - drop_intermediate
+  - response_method
+  - name
+  - ax
+  required:
+  - estimator
+  - X
+  - y
+  - '**kwargs'
+link: ''
+package: sklearn
+target: plot_roc_curve
+title: sklearn.metrics.plot_roc_curve
+version: 0.24.2

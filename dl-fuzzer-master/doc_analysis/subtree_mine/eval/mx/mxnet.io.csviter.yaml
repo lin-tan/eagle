@@ -1,0 +1,12 @@
+constraints:
+  ctx:
+    default: None
+    descp: Context data loader optimized for.
+    doc_dtype:
+    - '{''cpu'', ''gpu''}'
+    - optional
+    - default='gpu'
+    enum:
+    - cpu
+    - gpu
+title: mxnet.io.CSVIter

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"boolean, optional, default=0","If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence",_Null,prim_dtype,dtype(boolean),,1
+"boolean, optional, default=0","If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence",_Null,shape,ndim(0),,1
+"boolean, optional, default=0","If set to true, this layer takes in an extra input parameter sequence_length to specify variable length sequence",_Null,validvalue,"range([0,inf))",,1

@@ -1,0 +1,11 @@
+constraints:
+  X: {descp: 'CSR or CSC sparse matrix, shape (n_samples, n_features) Input data.'}
+  axis: {descp: int (either 0 or 1) Axis along which the axis should be computed.}
+inputs:
+  optional: []
+  required: [X, axis]
+link: ''
+package: sklearn
+target: mean_variance_axis
+title: sklearn.utils.sparsefuncs.mean_variance_axis
+version: 0.24.2

@@ -1,0 +1,11 @@
+constraints:
+  largest:
+    default: 'True'
+    descp: controls whether to return largest or smallest elements
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.topk

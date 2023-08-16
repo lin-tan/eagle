@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), required","Deconvolution kernel size: (w,), (h, w) or (d, h, w). This is same as the kernel size used for the corresponding convolution",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), required","Deconvolution kernel size: (w,), (h, w) or (d, h, w). This is same as the kernel size used for the corresponding convolution",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), required","Deconvolution kernel size: (w,), (h, w) or (d, h, w). This is same as the kernel size used for the corresponding convolution",_Null,shape,"shape([d,h,w], [h,w], [w]), ndim(1, 2, 3)",,1

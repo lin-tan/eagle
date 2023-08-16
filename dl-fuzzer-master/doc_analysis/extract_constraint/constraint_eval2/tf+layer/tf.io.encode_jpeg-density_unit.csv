@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `string` from: `""in"", ""cm""`. Defaults to `""in""`. Unit used to specify `x_density` and `y_density`: pixels per inch (`'in'`) or centimeter (`'cm'`).",in,prim_dtype,dtype(tf.string),,1
+,"An optional `string` from: `""in"", ""cm""`. Defaults to `""in""`. Unit used to specify `x_density` and `y_density`: pixels per inch (`'in'`) or centimeter (`'cm'`).",in,shape,ndim(0),,1
+,"An optional `string` from: `""in"", ""cm""`. Defaults to `""in""`. Unit used to specify `x_density` and `y_density`: pixels per inch (`'in'`) or centimeter (`'cm'`).",in,validvalue,"enum(cm, in)",,1

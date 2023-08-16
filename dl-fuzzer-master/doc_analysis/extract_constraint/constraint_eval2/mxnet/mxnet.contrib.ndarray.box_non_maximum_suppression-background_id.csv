@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='-1'","Optional, id of the background class which will be ignored in nms.",_Null,prim_dtype,dtype(int),,1
+"int, optional, default='-1'","Optional, id of the background class which will be ignored in nms.",_Null,shape,ndim(0),,1
+"int, optional, default='-1'","Optional, id of the background class which will be ignored in nms.",_Null,validvalue,"range([0,inf))",,1

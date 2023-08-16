@@ -1,0 +1,186 @@
+constraints:
+  class_sep:
+    default: '1.0'
+    descp: float, optional (default=1.0) The factor multiplying the hypercube size.  Larger
+      values spread out the clusters/classes and make the classification task easier.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  flip_y:
+    default: '0.01'
+    descp: float, optional (default=0.01) The fraction of samples whose class is assigned
+      randomly. Larger values introduce noise in the labels and make the classification
+      task harder.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  hypercube:
+    default: 'True'
+    descp: boolean, optional (default=True) If True, the clusters are put on the vertices
+      of a hypercube. If False, the clusters are put on the vertices of a random polytope.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  n_classes:
+    default: '2'
+    descp: int, optional (default=2) The number of classes (or labels) of the classification
+      problem.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_clusters_per_class:
+    default: '2'
+    descp: int, optional (default=2) The number of clusters per class.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_features:
+    default: '20'
+    descp: int, optional (default=20) The total number of features. These comprise
+      ``n_informative`` informative features, ``n_redundant`` redundant features,
+      ``n_repeated`` duplicated features and ``n_features-n_informative-n_redundant-n_repeated``
+      useless features drawn at random.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_informative:
+    default: '2'
+    descp: int, optional (default=2) The number of informative features. Each class
+      is composed of a number of gaussian clusters each located around the vertices
+      of a hypercube in a subspace of dimension ``n_informative``. For each cluster,
+      informative features are drawn independently from  N(0, 1) and then randomly
+      linearly combined within each cluster in order to add covariance. The clusters
+      are then placed on the vertices of the hypercube.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_redundant:
+    default: '2'
+    descp: int, optional (default=2) The number of redundant features. These features
+      are generated as random linear combinations of the informative features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_repeated:
+    default: '0'
+    descp: int, optional (default=0) The number of duplicated features, drawn randomly
+      from the informative and the redundant features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_samples:
+    default: '100'
+    descp: int, optional (default=100) The number of samples.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset creation. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  scale:
+    default: '1.0'
+    descp: float, array of shape [n_features] or None, optional (default=1.0) Multiply
+      features by the specified value. If None, then features are scaled by a random
+      value drawn in [1, 100]. Note that scaling happens after shifting.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[1,100]'
+    shape:
+    - '[&n_features]'
+    structure:
+    - list(shape)
+  shift:
+    default: '0.0'
+    descp: float, array of shape [n_features] or None, optional (default=0.0) Shift
+      features by the specified value. If None, then features are shifted by a random
+      value drawn in [-class_sep, class_sep].
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[&n_features]'
+    structure:
+    - list(shape)
+  shuffle:
+    default: 'True'
+    descp: boolean, optional (default=True) Shuffle the samples and the features.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  weights:
+    default: None
+    descp: array-like of shape (n_classes,) or (n_classes - 1,),              (default=None)
+      The proportions of samples assigned to each class. If None, then classes are
+      balanced. Note that if ``len(weights) == n_classes - 1``, then the last class
+      weight is automatically inferred. More than ``n_samples`` samples may be returned
+      if the sum of ``weights`` exceeds 1.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[&n_classes]'
+inputs:
+  optional:
+  - n_samples
+  - n_features
+  - n_informative
+  - n_redundant
+  - n_repeated
+  - n_classes
+  - n_clusters_per_class
+  - weights
+  - flip_y
+  - class_sep
+  - hypercube
+  - shift
+  - scale
+  - shuffle
+  - random_state
+  required: []
+link: ''
+package: sklearn
+target: make_classification
+title: sklearn.datasets.make_classification
+version: 0.24.2

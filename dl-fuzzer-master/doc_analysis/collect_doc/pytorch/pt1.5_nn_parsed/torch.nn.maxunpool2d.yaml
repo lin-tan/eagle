@@ -1,0 +1,29 @@
+constraints:
+  kernel_size:
+    descp: Size of the max pooling window.
+    doc_dtype:
+    - int
+    - tuple
+  padding:
+    default: '0'
+    descp: Padding that was added to the input
+    doc_dtype:
+    - int
+    - tuple
+  stride:
+    default: None
+    descp: Stride of the max pooling window. It is set to `kernel_size` by default.
+    doc_dtype:
+    - int
+    - tuple
+inputs:
+  optional:
+  - stride
+  - padding
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.MaxUnpool2d
+package: torch
+target: MaxUnpool2d
+title: torch.nn.MaxUnpool2d
+version: 1.5.0

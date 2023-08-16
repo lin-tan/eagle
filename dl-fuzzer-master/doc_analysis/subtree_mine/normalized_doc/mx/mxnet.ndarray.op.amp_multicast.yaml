@@ -1,0 +1,45 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*data':
+    descp: Weights
+    doc_dtype: NDArray[]
+    normalized_descp:
+    - ONE_WORD Weights
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  cast_narrow:
+    default: None
+    descp: Whether to cast to the narrowest type
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to cast to the narrowest type
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  num_outputs:
+    descp: Number of input/output pairs to be casted to the widest type.
+    doc_dtype: int, required
+    normalized_descp:
+    - Number of input output pairs to be casted to the widest type
+    normalized_docdtype: D_TYPE, required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - cast_narrow
+  - out
+  required:
+  - '*data'
+  - '**kwargs'
+  - num_outputs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.amp_multicast
+package: mxnet
+target: amp_multicast
+title: mxnet.ndarray.op.amp_multicast
+version: 1.6.0

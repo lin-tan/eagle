@@ -1,0 +1,31 @@
+constraints:
+  dtype:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  nbins:
+    descp: A Tensor of type int32. Scalar int32 Tensor. Number of histogram bins.
+  value_range:
+    descp: A Tensor. Must have the same type as values. Shape [2] Tensor of same dtype
+      as values. values <= value_range[0] will be mapped to hist[0], values >= value_range[1]
+      will be mapped to hist[-1].
+  values:
+    descp: 'A Tensor. Must be one of the following types: int32, int64, float32, float64.
+      Numeric Tensor.'
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - values
+  - value_range
+  - nbins
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/HistogramFixedWidth
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: HistogramFixedWidth
+title: tf.raw_ops.HistogramFixedWidth
+version: 2.2.0

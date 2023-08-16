@@ -1,0 +1,55 @@
+aliases:
+- tf.compat.v1.keras.layers.InputSpec
+- tf.compat.v1.layers.InputSpec
+constraints:
+  axes:
+    default: None
+    descp: Dictionary mapping integer axes to a specific dimension value.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE mapping D_TYPE axes to a specific dimension value
+  dtype:
+    default: None
+    descp: Expected DataType of the input.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Expected DataType of the input
+  max_ndim:
+    default: None
+    descp: Integer, maximum rank of the input.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE maximum rank of the input
+  min_ndim:
+    default: None
+    descp: Integer, minimum rank of the input.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE minimum rank of the input
+  ndim:
+    default: None
+    descp: Integer, expected rank of the input.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE expected rank of the input
+  shape:
+    default: None
+    descp: Shape tuple, expected shape of the input (may include None for unchecked
+      axes).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape D_STRUCTURE expected shape of the input BSTR
+inputs:
+  optional:
+  - dtype
+  - shape
+  - ndim
+  - max_ndim
+  - min_ndim
+  - axes
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/InputSpec
+package: tensorflow
+target: InputSpec
+title: tf.keras.layers.InputSpec
+version: 2.1.0

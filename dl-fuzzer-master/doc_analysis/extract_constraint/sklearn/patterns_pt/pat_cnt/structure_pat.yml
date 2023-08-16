@@ -1,0 +1,92 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (iterable)\s+of\s+([\w.]+):
+    cnt: 2
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  \b(\w)\b-elements*\s+tuple:
+    cnt: 0
+    len: \1
+    ndim: 1
+    structure: tuple
+  ^(a\s*)*(list|tuple)\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \3
+    ndim: 1
+    structure: \2
+  ^dictionary:
+    cnt: 1
+    structure: dictionary
+  a\s+(dictionary|dict):
+    cnt: 2
+    structure: dictionary
+  an\s+iterable\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \1
+    ndim: 1
+    structure: list
+  any\s+number\s+of\s+:
+    cnt: 0
+    structure: sequence
+  double-(integer)\s+tuple:
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 2
+    ndim: 1
+    structure: tuple
+  output\s+tuple\.:
+    cnt: 0
+    ndim: 1
+    structure: tuple
+  sequence\s+of\s+(integers):
+    cnt: 0
+    ds_dtype:
+    - \1
+    structure: sequence
+  the\s+output\s+tuple\s+of\s+(\w+):
+    cnt: 0
+    ds_dtype:
+    - \1
+    ndim: 1
+    structure: tuple
+  the\s+output\s+tuple\s+of\s+\(([\w]+),\s*[\w]+\):
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 2
+    ndim: 1
+    structure: tuple
+  triple-(integer)\s+tuple:
+    cnt: 0
+    ds_dtype:
+    - \1
+    len: 3
+    ndim: 1
+    structure: tuple
+  tuple\s*`*(\(.*?\))`*:
+    cnt: 2
+    ndim: 1
+    structure: tuple
+    value: \1
+split_word:
+- ','
+- \+
+- '-'
+- \*
+- \/
+- '>'
+- <
+- '='
+- (
+- )
+target: structure

@@ -1,0 +1,24 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32.
+  handle:
+    descp: A Tensor of type mutable string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  value:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - value
+  - flow_in
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorArrayUnpack
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: TensorArrayUnpack
+title: tf.raw_ops.TensorArrayUnpack
+version: 2.3.0

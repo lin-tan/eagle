@@ -1,0 +1,31 @@
+constraints:
+  dtype:
+    descp: 'the desired data type of returned tensor. Has to be one of the quantized
+      dtypes: `torch.quint8`, `torch.qint8`, `torch.qint32`'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: float tensor to quantize
+    doc_dtype:
+    - Tensor
+  scale:
+    descp: scale to apply in quantization formula
+    doc_dtype:
+    - float
+  zero_point:
+    descp: offset in integer value that maps to float zero
+    doc_dtype:
+    - int
+inputs:
+  optional: []
+  required:
+  - input
+  - scale
+  - zero_point
+  - dtype
+link: https://pytorch.org/docs/1.6.0/generated/torch.quantize_per_tensor.html#torch.quantize_per_tensor#torch.quantize_per_tensor
+package: torch
+ret_type: Tensor
+target: quantize_per_tensor
+title: torch.quantize_per_tensor
+version: 1.6.0

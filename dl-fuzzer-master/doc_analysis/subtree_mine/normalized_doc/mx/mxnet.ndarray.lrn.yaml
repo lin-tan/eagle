@@ -1,0 +1,73 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: _Null
+    descp: The variance scaling parameter \(lpha\) in the LRN expression.
+    doc_dtype: float, optional, default=9.99999975e-05
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The variance scaling parameter lpha in the LRN expression
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  beta:
+    default: _Null
+    descp: The power parameter \(eta\) in the LRN expression.
+    doc_dtype: float, optional, default=0.75
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The power parameter eta in the LRN expression
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  data:
+    default: None
+    descp: Input data to LRN
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to LRN
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  knorm:
+    default: _Null
+    descp: The parameter \(k\) in the LRN expression.
+    doc_dtype: float, optional, default=2
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The parameter k in the LRN expression
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  nsize:
+    default: _Null
+    descp: normalization window width in elements.
+    doc_dtype: int (non-negative), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - normalization window width in elements
+    normalized_docdtype: D_TYPE BSTR, required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - alpha
+  - beta
+  - knorm
+  - nsize
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.LRN
+package: mxnet
+target: LRN
+title: mxnet.ndarray.LRN
+version: 1.6.0

@@ -1,0 +1,36 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". The container name for the SparseTensorsMap
+      read by this op.
+  dtype:
+    descp: A tf.DType. The dtype of the SparseTensor objects stored in the SparseTensorsMap.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". The shared name for the SparseTensorsMap
+      read by this op. It should not be blank; rather the shared_name or unique Operation
+      name of the Op that created the original SparseTensorsMap should be used.
+  sparse_handles:
+    descp: 'A Tensor of type int64. 1-D, The N serialized SparseTensor objects. Shape:
+      [N].'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - sparse_handles
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TakeManySparseFromTensorsMap
+outputs:
+- A tuple of Tensor objects (sparse_indices, sparse_values, sparse_shape).
+- sparse_indices: A Tensor of type int64.
+- sparse_values: A Tensor of type dtype.
+- sparse_shape: A Tensor of type int64.
+package: tensorflow
+target: TakeManySparseFromTensorsMap
+title: tf.raw_ops.TakeManySparseFromTensorsMap
+version: 2.3.0

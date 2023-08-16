@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An int scalar >= 0 (beam search beam width).,100,prim_dtype,dtype(int),,1
+,An int scalar >= 0 (beam search beam width).,100,shape,ndim(0),,1
+,An int scalar >= 0 (beam search beam width).,100,validvalue,"range([0,inf))",,1

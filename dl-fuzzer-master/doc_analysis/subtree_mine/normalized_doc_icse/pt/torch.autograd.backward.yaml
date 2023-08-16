@@ -1,0 +1,65 @@
+constraints:
+  create_graph:
+    default: 'False'
+    descp: If `True`, graph of the derivative will be constructed, allowing to compute
+      higher order derivative products. Defaults to `False`.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL graph of the derivative will be constructed allowing to compute
+      higher order derivative products
+    - Defaults to CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  grad_tensors:
+    default: None
+    descp: The "vector" in the Jacobian-vector product, usually gradients w.r.t. each
+      element of corresponding tensors. None values can be specified for scalar Tensors
+      or ones that don't require grad. If a None value would be acceptable for all
+      grad_tensors, then this argument is optional.
+    doc_dtype: sequence of (Tensor or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The QSTR in the Jacobian vector product usually gradients w r t
+    - each element of corresponding D_STRUCTURE
+    - None values can be specified for scalar D_STRUCTURE or ones that don t require
+      grad
+    - If a None value would be acceptable for all grad_tensors then this argument
+      is optional
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE or None
+  grad_variables:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  retain_graph:
+    default: None
+    descp: If `False`, the graph used to compute the grad will be freed. Note that
+      in nearly all cases setting this option to `True` is not needed and often can
+      be worked around in a much more efficient way. Defaults to the value of `create_graph`.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL the graph used to compute the grad will be freed
+    - Note that in nearly all cases setting this option to CONSTANT_BOOL is not needed
+      and often can be worked around in a much more efficient way
+    - Defaults to the value of PARAM
+    normalized_docdtype: D_TYPE optional
+  tensors:
+    descp: Tensors of which the derivative will be computed.
+    doc_dtype: sequence of Tensor
+    normalized_descp:
+    - D_STRUCTURE of which the derivative will be computed
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - grad_tensors
+  - retain_graph
+  - create_graph
+  - grad_variables
+  required:
+  - tensors
+link: https://pytorch.org/docs/stable/autograd.html#torch.autograd.backward
+package: torch
+target: backward
+title: torch.autograd.backward
+version: 1.5.0

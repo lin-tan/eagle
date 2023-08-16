@@ -1,0 +1,32 @@
+constraints:
+  X:
+    descp: array of shape (n_samples_X, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_x,n_features]'
+  Y:
+    default: None
+    descp: array of shape (n_samples_Y, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_y,n_features]'
+  gamma:
+    default: None
+    descp: float, default None If None, defaults to 1.0 / n_features
+dependency:
+- n_features
+- n_samples_x
+- n_samples_y
+inputs:
+  optional:
+  - Y
+  - gamma
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: laplacian_kernel
+title: sklearn.metrics.pairwise.laplacian_kernel
+version: 0.24.X

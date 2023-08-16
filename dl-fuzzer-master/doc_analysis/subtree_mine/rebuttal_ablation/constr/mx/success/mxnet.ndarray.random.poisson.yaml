@@ -1,0 +1,86 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  ctx:
+    default: None
+    descp: Device context of output. Default is current context. Overridden by lam.context
+      when lam is an NDArray.
+    doc_dtype: Context, optional
+    dtype:
+    - int
+    - numpy.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  dtype:
+    default: _Null
+    descp: Data type of output samples. Default is 'float32'
+    doc_dtype: '{''float16'', ''float32'', ''float64''}, optional'
+    enum:
+    - float32
+    ndim:
+    - '0'
+  lam:
+    default: '1'
+    descp: Expectation of interval, should be >= 0.
+    doc_dtype: float or NDArray, optional
+    dtype:
+    - float
+    - int
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - string
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - ndarray
+  shape:
+    default: _Null
+    descp: The number of samples to draw. If shape is, e.g., (m, n) and lam is a scalar,
+      output shape will be (m, n). If lam is an NDArray with shape, e.g., (x, y),
+      then output will have shape (x, y, m, n), where m*n samples are drawn for each
+      entry in lam.
+    doc_dtype: int or tuple of ints, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    structure:
+    - tuple
+inputs:
+  optional:
+  - lam
+  - shape
+  - dtype
+  - ctx
+  - out
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.poisson
+package: mxnet
+target: poisson
+title: mxnet.ndarray.random.poisson
+version: 1.6.0

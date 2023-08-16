@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 1-D tensor of shape `[num_boxes]` with int32 values in `[0, batch)`. The value of `box_ind[i]` specifies the image that the `i`-th box refers to.",,prim_dtype,dtype(int),,1
+,"A 1-D tensor of shape `[num_boxes]` with int32 values in `[0, batch)`. The value of `box_ind[i]` specifies the image that the `i`-th box refers to.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 1-D tensor of shape `[num_boxes]` with int32 values in `[0, batch)`. The value of `box_ind[i]` specifies the image that the `i`-th box refers to.",,shape,"shape([num_boxes]), ndim(1)",,1
+,"A 1-D tensor of shape `[num_boxes]` with int32 values in `[0, batch)`. The value of `box_ind[i]` specifies the image that the `i`-th box refers to.",,validvalue,"range([0,batch))",,1

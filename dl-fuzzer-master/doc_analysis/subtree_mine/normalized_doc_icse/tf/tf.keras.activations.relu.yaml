@@ -1,0 +1,42 @@
+aliases:
+- tf.compat.v1.keras.activations.relu
+constraints:
+  alpha:
+    default: '0.0'
+    descp: A `float` that governs the slope for values lower than the threshold.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A D_TYPE that governs the slope for values lower than the PARAM
+  max_value:
+    default: None
+    descp: A `float` that sets the saturation threshold (the largest value the function
+      will return).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE that sets the saturation PARAM BSTR
+  threshold:
+    default: '0'
+    descp: A `float` giving the threshold value of the activation function below which
+      values will be damped or set to zero.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - A D_TYPE giving the threshold value of the activation function below which values
+      will be damped or set to zero
+  x:
+    descp: Input `tensor` or `variable`.
+    normalized_descp:
+    - Input D_STRUCTURE or QSTR
+inputs:
+  optional:
+  - alpha
+  - max_value
+  - threshold
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/relu
+outputs: A `Tensor` representing the input tensor, transformed by the relu activation
+  function. Tensor will be of the same shape and dtype of input `x`.
+package: tensorflow
+target: relu
+title: tf.keras.activations.relu
+version: 2.1.0

@@ -1,0 +1,35 @@
+constraints:
+  end_dim:
+    default: '-1'
+    descp: the last dim to flatten
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the last dim to flatten
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  start_dim:
+    default: '0'
+    descp: the first dim to flatten
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the first dim to flatten
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - start_dim
+  - end_dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.flatten
+package: torch
+ret_type: Tensor
+target: flatten
+title: torch.flatten
+version: 1.5.0

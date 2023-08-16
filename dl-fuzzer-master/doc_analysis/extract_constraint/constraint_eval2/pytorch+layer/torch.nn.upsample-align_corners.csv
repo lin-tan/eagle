@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"if `True`, the corner pixels of the input and output tensors are aligned, and thus preserving the values at those pixels. This only has effect when `mode` is `'linear'`, `'bilinear'`, or `'trilinear'`. Default: `False`",None,prim_dtype,dtype(torch.bool),,1
+bool,"if `True`, the corner pixels of the input and output tensors are aligned, and thus preserving the values at those pixels. This only has effect when `mode` is `'linear'`, `'bilinear'`, or `'trilinear'`. Default: `False`",None,shape,ndim(0),,1

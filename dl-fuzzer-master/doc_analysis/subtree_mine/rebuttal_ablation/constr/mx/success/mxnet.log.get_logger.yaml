@@ -1,0 +1,65 @@
+constraints:
+  filemode:
+    default: None
+    descp: The file mode to open the file (corresponding to filename), default is
+      'a' if filename is not `None`.
+    doc_dtype: str, optional
+    dtype:
+    - int
+    - string
+    enum:
+    - None
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple
+  filename:
+    default: None
+    descp: The filename to which the logger's output will be sent.
+    doc_dtype: str, optional
+    dtype:
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  level:
+    default: '30'
+    descp: 'The logging level for the logger. See: https://docs.python.org/2/library/logging.html#logging-levels'
+    doc_dtype: int, optional
+    dtype:
+    - int
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: Name of the logger.
+    doc_dtype: str, optional
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - name
+  - filename
+  - filemode
+  - level
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/log/index.html#mxnet.log.get_logger
+package: mxnet
+target: get_logger
+title: mxnet.log.get_logger
+version: 1.6.0

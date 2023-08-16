@@ -1,0 +1,9 @@
+constraints:
+  h:
+    default: None
+    descp: The index vector
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.contrib.count_sketch

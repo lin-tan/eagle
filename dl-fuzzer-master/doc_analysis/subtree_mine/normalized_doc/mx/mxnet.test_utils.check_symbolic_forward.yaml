@@ -1,0 +1,89 @@
+constraints:
+  atol:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  aux_states:
+    default: None
+    descp: 'if type is list of np.ndarrayContains all the NumPy arrays corresponding
+      to sym.list_auxiliary_states   '
+    doc_dtype: list of np.ndarray of dict, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - if type is D_STRUCTURE of np ndarrayContains all the NumPy D_STRUCTURE corresponding
+      to PARAM list_auxiliary_states
+    normalized_docdtype: D_STRUCTURE of np D_STRUCTURE of D_STRUCTURE, optional
+  ctx:
+    default: None
+    descp: running context
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - running context
+    normalized_docdtype: Context, optional
+  dtype:
+    default: <classnumpy.float32>
+    descp: If dtype is "asnumpy" then the mx.nd.array created will have the same type
+      as th numpy array from which it is copied. Otherwise, dtype is the explicit
+      datatype for all mx.nd.array objects created in this function.
+    doc_dtype: '"asnumpy" or np.float16 or np.float32 or np.float64'
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - If dtype is QSTR then the mx nd D_STRUCTURE created will have the same type
+      as th numpy D_STRUCTURE from which it is copied
+    - Otherwise, dtype is the explicit datatype for all mx nd D_STRUCTURE objects
+      created in this function
+    normalized_docdtype: QSTR or D_TYPE
+  equal_nan:
+    default: 'False'
+    descp: if True, nan is a valid value for checking equivalency (ie nan == nan)
+    doc_dtype: Boolean
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL, nan is a valid value for checking equivalency ie nan nan
+    normalized_docdtype: ONE_WORD D_TYPE
+  expected:
+    descp: 'The expected output value   if type is list of np.ndarrayContains arrays
+      corresponding to exe.outputs.   '
+    doc_dtype: list of np.ndarray or dict of str to np.ndarray
+    normalized_descp:
+    - The expected output value if type is D_STRUCTURE of np ndarrayContains D_STRUCTURE
+      corresponding to exe outputs
+    normalized_docdtype: D_STRUCTURE of np D_STRUCTURE of D_TYPE to np D_STRUCTURE
+  location:
+    descp: 'The evaluation point   if type is list of np.ndarrayContains all the numpy
+      arrays corresponding to sym.list_arguments().   '
+    doc_dtype: list of np.ndarray or dict of str to np.ndarray
+    normalized_descp:
+    - The evaluation point if type is D_STRUCTURE of np ndarrayContains all the numpy
+      D_STRUCTURE corresponding to PARAM list_arguments
+    normalized_docdtype: D_STRUCTURE of np D_STRUCTURE of D_TYPE to np D_STRUCTURE
+  rtol:
+    default: '0.0001'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp: []
+  sym:
+    descp: output symbol
+    doc_dtype: Symbol
+    normalized_descp:
+    - output symbol
+    normalized_docdtype: ONE_WORD Symbol
+inputs:
+  optional:
+  - rtol
+  - atol
+  - aux_states
+  - ctx
+  - equal_nan
+  - dtype
+  required:
+  - sym
+  - location
+  - expected
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.check_symbolic_forward
+package: mxnet
+target: check_symbolic_forward
+title: mxnet.test_utils.check_symbolic_forward
+version: 1.6.0

@@ -1,0 +1,41 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup optional
+  src:
+    descp: Source rank.
+    doc_dtype: int
+    normalized_descp:
+    - Source rank
+    normalized_docdtype: ONE_WORD D_TYPE
+  tag:
+    default: '0'
+    descp: Tag to match recv with remote send
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Tag to match recv with remote send
+    normalized_docdtype: D_TYPE optional
+  tensor:
+    descp: Tensor to fill with received data.
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE to fill with received data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - group
+  - tag
+  required:
+  - tensor
+  - src
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.irecv
+package: torch
+target: irecv
+title: torch.distributed.irecv
+version: 1.5.0

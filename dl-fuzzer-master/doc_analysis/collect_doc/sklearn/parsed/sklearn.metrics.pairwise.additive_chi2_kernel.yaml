@@ -1,0 +1,11 @@
+constraints:
+  X: {descp: 'array-like of shape (n_samples_X, n_features)'}
+  Y: {default: None, descp: 'array of shape (n_samples_Y, n_features)'}
+inputs:
+  optional: [Y]
+  required: [X]
+link: ''
+package: sklearn
+target: additive_chi2_kernel
+title: sklearn.metrics.pairwise.additive_chi2_kernel
+version: 0.24.2

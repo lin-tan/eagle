@@ -1,0 +1,38 @@
+constraints:
+  f:
+    descp: A function decorated with @Defun.
+  initial_state:
+    descp: A list of Tensor objects.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  other_arguments:
+    descp: A list of Tensor objects.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  preserve_cardinality:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+inputs:
+  optional:
+  - preserve_cardinality
+  - name
+  required:
+  - input_dataset
+  - initial_state
+  - other_arguments
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ExperimentalScanDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalScanDataset
+title: tf.raw_ops.ExperimentalScanDataset
+version: 2.3.0

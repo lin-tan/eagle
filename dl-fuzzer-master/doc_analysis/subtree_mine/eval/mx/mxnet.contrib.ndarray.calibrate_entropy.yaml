@@ -1,0 +1,11 @@
+constraints:
+  hist_edges:
+    default: None
+    descp: A ndarray/symbol of type float32
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numpy.float32
+    structure:
+    - ndarray
+title: mxnet.contrib.ndarray.calibrate_entropy

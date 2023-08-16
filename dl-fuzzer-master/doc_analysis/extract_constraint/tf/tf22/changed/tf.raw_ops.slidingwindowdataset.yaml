@@ -1,0 +1,80 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  window_shift:
+    descp: A Tensor of type int64. A scalar representing the steps moving the sliding
+      window forward in one iteration. It must be positive.
+    dtype:
+    - tf.int64
+    range:
+    - (0,inf)
+    tensor_t:
+    - tf.tensor
+  window_size:
+    descp: A Tensor of type int64. A scalar representing the number of elements in
+      the sliding window.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  window_stride:
+    descp: A Tensor of type int64. A scalar representing the stride of the input elements
+      of the sliding window. It must be positive.
+    dtype:
+    - int
+    - tf.int64
+    range:
+    - (0,inf)
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - window_size
+  - window_shift
+  - window_stride
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SlidingWindowDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SlidingWindowDataset
+title: tf.raw_ops.SlidingWindowDataset
+version: 2.2.0

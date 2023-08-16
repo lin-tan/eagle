@@ -1,0 +1,16 @@
+constraints:
+  new_state:
+    descp: The desired state
+    doc_dtype:
+    - torch.ByteTensor
+    dtype:
+    - torch.uint8
+inputs:
+  optional: []
+  required:
+  - new_state
+link: https://pytorch.org/docs/1.6.0/generated/torch.set_rng_state.html#torch.set_rng_state#torch.set_rng_state
+package: torch
+target: set_rng_state
+title: torch.set_rng_state
+version: 1.6.0

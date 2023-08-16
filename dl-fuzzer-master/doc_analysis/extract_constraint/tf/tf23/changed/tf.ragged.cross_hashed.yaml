@@ -1,0 +1,50 @@
+aliases:
+- tf.compat.v1.ragged.cross_hashed
+constraints:
+  hash_key:
+    default: None
+    descp: Integer hash_key that will be used by the FingerprintCat64 function. If
+      not given, a default key is used.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  inputs:
+    descp: A list of RaggedTensor or Tensor or SparseTensor.
+    structure:
+    - list
+    - list(tf.tensor)
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+  name:
+    default: None
+    descp: Optional name for the op.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_buckets:
+    default: '0'
+    descp: A non-negative int that used to bucket the hashed values. If num_buckets
+      != 0, then output = hashed_value % num_buckets.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - num_buckets
+  - hash_key
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/ragged/cross_hashed
+outputs:
+- A 2D RaggedTensor of type int64.
+package: tensorflow
+target: cross_hashed
+title: tf.ragged.cross_hashed
+version: 2.3.0

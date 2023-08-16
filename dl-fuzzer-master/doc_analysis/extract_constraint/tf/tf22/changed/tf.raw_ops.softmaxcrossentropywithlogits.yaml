@@ -1,0 +1,36 @@
+constraints:
+  features:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. batch_size x num_classes matrix'
+    tensor_t:
+    - tf.tensor
+  labels:
+    descp: A Tensor. Must have the same type as features. batch_size x num_classes
+      matrix The caller must ensure that each batch of labels represents a valid probability
+      distribution.
+    dtype:
+    - dtype:&features
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - features
+  - labels
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SoftmaxCrossEntropyWithLogits
+outputs:
+- A tuple of Tensor objects (loss, backprop).
+- loss: A Tensor. Has the same type as features.
+- backprop: A Tensor. Has the same type as features.
+package: tensorflow
+target: SoftmaxCrossEntropyWithLogits
+title: tf.raw_ops.SoftmaxCrossEntropyWithLogits
+version: 2.2.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"string, optional","Indicates whether to run the profiler, can be 'stop' or 'run'. Default is stop.",stop,prim_dtype,"dtype(boolean, string)",,1
+"string, optional","Indicates whether to run the profiler, can be 'stop' or 'run'. Default is stop.",stop,shape,ndim(0),,1

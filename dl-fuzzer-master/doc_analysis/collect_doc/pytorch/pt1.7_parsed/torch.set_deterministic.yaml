@@ -1,0 +1,15 @@
+constraints:
+  d:
+    descp: If True, force operations to be deterministic. If False, allow non-deterministic
+      operations.
+    doc_dtype:
+    - bool
+inputs:
+  optional: []
+  required:
+  - d
+link: https://pytorch.org/docs/1.7.0/generated/torch.set_deterministic.html#torch.set_deterministic#torch.set_deterministic
+package: torch
+target: set_deterministic
+title: torch.set_deterministic
+version: 1.7.0

@@ -1,0 +1,12 @@
+constraints:
+  stype:
+    default: _Null
+    descp: Output storage type.
+    doc_dtype:
+    - '{''csr'', ''default'', ''row_sparse''}'
+    - required
+    enum:
+    - csr
+    - default
+    - row_sparse
+title: mxnet.ndarray.sparse.cast_storage

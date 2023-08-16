@@ -1,0 +1,183 @@
+constraints:
+  data_format:
+    descp: A `string`, only `"NHWC"` is currently supported.
+    dtype:
+    - int
+    - tf.string
+    enum:
+    - NHWC
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[nhwc]'
+  dilations:
+    descp: 'A list of `ints` that has length `>= 4`. 1-D of length 4. The input stride
+      for atrous morphological dilation. Must be: `[1, rate_height, rate_width, 1]`.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=1'
+    - '>=4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    - '[1,rate_height,rate_width,1]'
+    shape:
+    - '[1,rate_height,rate_width,1]'
+    - '[1]'
+    - '[2]'
+    - '[4]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  filters:
+    descp: A `Tensor`. Must have the same type as `value`. 3-D with shape `[filters_height,
+      filters_width, depth]`.
+    dtype:
+    - '&value'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '&value'
+    - '0'
+    - '1'
+    - '3'
+    - '>=3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&value'
+    - '[1]'
+    - '[3]'
+    - '[filters_height,filters_width,depth]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional). If not specified "erosion2d" is used.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  padding:
+    descp: 'A `string` from: `"SAME", "VALID"`. The type of padding algorithm to use.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[same]'
+    - '[valid]'
+  strides:
+    descp: 'A list of `ints` that has length `>= 4`. 1-D of length 4. The stride of
+      the sliding window for each dimension of the input tensor. Must be: `[1, stride_height,
+      stride_width, 1]`.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=1'
+    - '>=4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    - '[1,stride_height,stride_width,1]'
+    shape:
+    - '[1,stride_height,stride_width,1]'
+    - '[1]'
+    - '[2]'
+    - '[4]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  value:
+    descp: A `Tensor`. 4-D with shape `[batch, in_height, in_width, depth]`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=4'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[4]'
+    - '[batch,in_height,in_width,depth]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: If the `value` depth does not match `filters`' shape, or if padding
+    is other than `'VALID'` or `'SAME'`.
+inputs:
+  optional:
+  - name
+  required:
+  - value
+  - filters
+  - strides
+  - padding
+  - data_format
+  - dilations
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/erosion2d
+outputs: A `Tensor`. Has the same type as `value`. 4-D with shape `[batch, out_height,
+  out_width, depth]`.
+package: tensorflow
+target: erosion2d
+title: tf.nn.erosion2d
+version: 2.1.0

@@ -1,0 +1,36 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)-(tuple|list)\s+of\s+([\w.:]+):
+    cnt: 4
+    ds_dtype:
+    - \3
+    len: \1
+    ndim: 1
+    structure: \2
+  (list|iterable|tuple)[\[\(]]?([\w.:]+)[\]\)]?:
+    cnt: 39
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  (list|tuple|sequence|iterable)\s+of\s+\(?([\w.:]+)\)?:
+    cnt: 53
+    ds_dtype:
+    - \2
+    ndim: 1
+    structure: \1
+  ^([\w]+)$:
+    cnt: 41
+    structure: \1
+  default\s+empty\s+list:
+    cnt: 0
+    structure: list
+  dict:
+    cnt: 3
+    structure: dict
+target: structure

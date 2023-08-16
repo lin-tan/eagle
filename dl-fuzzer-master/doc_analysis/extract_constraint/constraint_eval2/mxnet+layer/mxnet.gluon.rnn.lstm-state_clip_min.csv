@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, None, default None","Minimum clip value of LSTM states. This option must be used together with state_clip_max. If None, clipping is not applied.",None,prim_dtype,dtype(float),,1

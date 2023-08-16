@@ -1,0 +1,29 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  min:
+    descp: minimal value of each element in the output
+    doc_dtype:
+    - Number
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - min
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - min
+link: https://pytorch.org/docs/1.7.0/generated/torch.clamp.html#torch.clamp#torch.clamp
+package: torch
+ret_type: Tensor
+target: clamp
+title: torch.clamp
+version: 1.7.0

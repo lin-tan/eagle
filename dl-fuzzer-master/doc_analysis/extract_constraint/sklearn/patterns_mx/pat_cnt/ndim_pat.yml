@@ -1,0 +1,41 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)d\s+(array|feature):
+    cnt: 31
+    group: 1
+  (^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axes\s+:
+    cnt: 0
+    ndim: 1
+  (^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axis\s+:
+    cnt: 1
+    ndim: 0
+  n[\s-]dimensional\s+((?!\[).)*?\.:
+    cnt: 1
+    ndim: '?'
+  square\s+matrices:
+    cnt: 0
+    ndim: '3'
+    shape: '[sqmd,sqm,sqm]'
+  square\s+matrix:
+    cnt: 0
+    ndim: 2
+    shape: '[sqm,sqm]'
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+target: ndim

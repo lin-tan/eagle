@@ -1,0 +1,55 @@
+constraints:
+  input_datasets:
+    descp: A list of at least 2 Tensor objects with type variant.
+    dtype:
+    - tf.variant
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_experiments:
+    descp: An int.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+inputs:
+  optional:
+  - name
+  required:
+  - input_datasets
+  - num_experiments
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalChooseFastestDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalChooseFastestDataset
+title: tf.raw_ops.ExperimentalChooseFastestDataset
+version: 2.2.0

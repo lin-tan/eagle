@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `tf.DType` from: `tf.float32, tf.float64, tf.int32, tf.int64`. Defaults to `tf.float32`. The numeric type to interpret each string in `string_tensor` as.",tf.dtypes.float32,prim_dtype,dtype(tf.dtype),,1
+,"An optional `tf.DType` from: `tf.float32, tf.float64, tf.int32, tf.int64`. Defaults to `tf.float32`. The numeric type to interpret each string in `string_tensor` as.",tf.dtypes.float32,shape,ndim(0),,1
+,"An optional `tf.DType` from: `tf.float32, tf.float64, tf.int32, tf.int64`. Defaults to `tf.float32`. The numeric type to interpret each string in `string_tensor` as.",tf.dtypes.float32,validvalue,"enum(tf.float32, tf.float64, tf.int32, tf.int64)",,1

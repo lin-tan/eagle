@@ -1,0 +1,32 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix}'
+  copy:
+    default: 'True'
+    descp: bool, optional If True, a copy of X will be created. If False, a copy may
+      still be returned if X's dtype is not a floating point type.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  force_all_finite:
+    default: 'True'
+    descp: 'boolean or ''allow-nan'', (default=True) Whether to raise an error on
+      np.inf and np.nan in X. The possibilities are: - True: Force all values of X
+      to be finite. - False: accept both np.inf and np.nan in X. - ''allow-nan'':
+      accept only np.nan values in X. Values cannot be infinite. '
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - copy
+  - force_all_finite
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: as_float_array
+title: sklearn.utils.as_float_array
+version: 0.24.X

@@ -1,0 +1,9 @@
+constraints:
+  descriptor_source:
+    default: local://
+    descp: An optional `string`. Defaults to `"local://"`.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.io.encode_proto

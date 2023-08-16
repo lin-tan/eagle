@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.nn.relu6
+constraints:
+  features:
+    descp: A `Tensor` with type `float`, `double`, `int32`, `int64`, `uint8`,`int16`,
+      or `int8`.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - features
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/relu6
+outputs: A `Tensor` with the same type as `features`.
+package: tensorflow
+target: relu6
+title: tf.nn.relu6
+version: 2.1.0

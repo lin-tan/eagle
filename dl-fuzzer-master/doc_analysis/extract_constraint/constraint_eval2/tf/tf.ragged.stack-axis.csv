@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A python integer, indicating the dimension along which to stack. (Note: Unlike `tf.stack`, the `axis` parameter must be statically known.) Negative values are supported only if the rank of at least one`values` value is statically known.",0,prim_dtype,dtype(int),,1
+,"A python integer, indicating the dimension along which to stack. (Note: Unlike `tf.stack`, the `axis` parameter must be statically known.) Negative values are supported only if the rank of at least one`values` value is statically known.",0,shape,ndim(0),,1

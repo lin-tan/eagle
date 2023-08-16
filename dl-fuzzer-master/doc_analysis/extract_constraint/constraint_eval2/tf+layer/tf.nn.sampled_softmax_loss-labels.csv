@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target classes.  Note that this format differs from the `labels` argument of `nn.softmax_cross_entropy_with_logits`.",,prim_dtype,dtype(tf.int64),,1
+,"A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target classes.  Note that this format differs from the `labels` argument of `nn.softmax_cross_entropy_with_logits`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target classes.  Note that this format differs from the `labels` argument of `nn.softmax_cross_entropy_with_logits`.",,shape,"shape([batch_size,&num_true]), ndim(2)",,1

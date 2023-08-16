@@ -1,0 +1,25 @@
+constraints:
+  size:
+    default: None
+    descp: Optional, resize to new size after cropping
+    doc_dtype:
+    - tuple of (w, h)
+    dtype:
+    - numeric
+    shape:
+    - '[2]'
+    structure:
+    - tuple
+  x0:
+    descp: Left boundary of the cropping area
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  y0:
+    descp: Top boundary of the cropping area
+    doc_dtype:
+    - int
+    dtype:
+    - int
+title: mxnet.image.fixed_crop

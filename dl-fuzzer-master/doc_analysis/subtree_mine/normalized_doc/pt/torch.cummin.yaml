@@ -1,0 +1,33 @@
+constraints:
+  dim:
+    descp: the dimension to do the operation over
+    doc_dtype: int
+    normalized_descp:
+    - the dimension to do the operation over
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the result tuple of two output tensors (values, indices)
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the result D_STRUCTURE of two output D_STRUCTURE BSTR
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.cummin
+package: torch
+ret_type: (Tensor, LongTensor)
+target: cummin
+title: torch.cummin
+version: 1.5.0

@@ -1,0 +1,19 @@
+sklearn.utils.sparsefuncs.mean_variance_axis = mean_variance_axis(X, axis)
+    Compute mean and variance along an axix on a CSR or CSC matrix
+    
+    Parameters
+    ----------
+    X : CSR or CSC sparse matrix, shape (n_samples, n_features)
+        Input data.
+    
+    axis : int (either 0 or 1)
+        Axis along which the axis should be computed.
+    
+    Returns
+    -------
+    
+    means : float array with shape (n_features,)
+        Feature-wise means
+    
+    variances : float array with shape (n_features,)
+        Feature-wise variances

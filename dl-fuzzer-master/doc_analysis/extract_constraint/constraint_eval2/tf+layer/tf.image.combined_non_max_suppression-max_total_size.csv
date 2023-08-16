@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A scalar representing maximum number of boxes retained over all classes.,,prim_dtype,dtype(numeric),,1
+,A scalar representing maximum number of boxes retained over all classes.,,shape,ndim(0),,1
+,A scalar representing maximum number of boxes retained over all classes.,,validvalue,"range([0,inf))",,1

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,"Shape (N, K) The intensity for each of the K processes, for each sample",None,prim_dtype,dtype(int),,1
+NDArray,"Shape (N, K) The intensity for each of the K processes, for each sample",None,nonprim_dtype,structure(ndarray),,1
+NDArray,"Shape (N, K) The intensity for each of the K processes, for each sample",None,shape,"shape([n,k]), ndim(1, 2)",,1
+NDArray,"Shape (N, K) The intensity for each of the K processes, for each sample",None,validvalue,"range([0,inf))",,1

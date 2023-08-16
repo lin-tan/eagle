@@ -1,0 +1,93 @@
+aliases:
+- tf.compat.v1.random.stateless_uniform
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: 'The type of the output: float16, float32, float64, int32, or int64. For
+      unbounded uniform ints (minval, maxval both None), uint32 and uint64 may be
+      used.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  maxval:
+    default: None
+    descp: A Tensor or Python value of type dtype, broadcastable with shape (for integer
+      types, broadcasting is not supported, so it needs to be a scalar). The upper
+      bound on the range of random values to generate. Defaults to 1 if dtype is floating
+      point. Pass None for full-range integers.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '3'
+    shape:
+    - '[for_integer_types,broadcasting_is_not_supported,so_it_needs_to_be_ascalar]'
+    tensor_t:
+    - tf.tensor
+  minval:
+    default: '0'
+    descp: A Tensor or Python value of type dtype, broadcastable with shape (for integer
+      types, broadcasting is not supported, so it needs to be a scalar). The lower
+      bound on the range of random values to generate. Pass None for full-range integers.
+      Defaults to 0.
+    dtype:
+    - int
+    - tf.dtype
+    ndim:
+    - '0'
+    - '3'
+    shape:
+    - '[for_integer_types,broadcasting_is_not_supported,so_it_needs_to_be_ascalar]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: A shape [2] Tensor, the seed to the random number generator. Must have
+      dtype int32 or int64. (When using XLA, only int32 is allowed.)
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+dependency:
+- broadcasting_is_not_supported
+- for_integer_types
+- scalar
+- so_it_needs_to_be_a
+exceptions:
+- ValueError: If dtype is integral and only one of minval or maxval is specified.
+inputs:
+  optional:
+  - minval
+  - maxval
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/random/stateless_uniform
+outputs:
+- A tensor of the specified shape filled with random uniform values.
+package: tensorflow
+target: stateless_uniform
+title: tf.random.stateless_uniform
+version: 2.3.0

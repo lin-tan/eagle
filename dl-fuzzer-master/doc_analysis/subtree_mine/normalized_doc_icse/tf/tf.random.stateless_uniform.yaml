@@ -1,0 +1,59 @@
+aliases:
+- tf.compat.v1.random.stateless_uniform
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: 'The type of the output: `float16`, `float32`, `float64`, `int32`, or`int64`.'
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The type of the output D_TYPE
+  maxval:
+    default: None
+    descp: A 0-D Tensor or Python value of type `dtype`. The upper bound on the range
+      of random values to generate.  Defaults to 1 if `dtype` is floating point.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A CONSTANT_NUM D D_STRUCTURE or Python value of type PARAM
+    - The upper bound on the range of random values to generate
+    - Defaults to CONSTANT_NUM if PARAM is D_TYPE point
+  minval:
+    default: '0'
+    descp: A 0-D Tensor or Python value of type `dtype`. The lower bound on the range
+      of random values to generate.  Defaults to 0.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - A CONSTANT_NUM D D_STRUCTURE or Python value of type PARAM
+    - The lower bound on the range of random values to generate
+    - Defaults to CONSTANT_NUM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  seed:
+    descp: A shape [2] integer Tensor of seeds to the random number generator.
+    normalized_descp:
+    - A PARAM BSTR D_TYPE D_STRUCTURE of seeds to the random number generator
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE or Python D_STRUCTURE
+    - The shape of the output D_STRUCTURE
+exceptions:
+- ValueError: If `dtype` is integral and `maxval` is not specified.
+inputs:
+  optional:
+  - minval
+  - maxval
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/random/stateless_uniform
+outputs: A tensor of the specified shape filled with random uniform values.
+package: tensorflow
+target: stateless_uniform
+title: tf.random.stateless_uniform
+version: 2.1.0

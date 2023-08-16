@@ -1,0 +1,30 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  step:
+    descp: A Tensor of type int64.
+  summary_metadata:
+    descp: A Tensor of type string.
+  tag:
+    descp: A Tensor of type string.
+  tensor:
+    descp: A Tensor.
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - step
+  - tensor
+  - tag
+  - summary_metadata
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WriteSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteSummary
+title: tf.raw_ops.WriteSummary
+version: 2.2.0

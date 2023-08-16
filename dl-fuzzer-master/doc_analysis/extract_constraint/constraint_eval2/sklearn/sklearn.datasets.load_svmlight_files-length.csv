@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"integer, optional, default -1 If strictly positive, stop reading any new line of data once the position in the file has reached the (offset + length) bytes threshold.",-1,prim_dtype,dtype(int),,1
+,"integer, optional, default -1 If strictly positive, stop reading any new line of data once the position in the file has reached the (offset + length) bytes threshold.",-1,shape,ndim(0),,1
+,"integer, optional, default -1 If strictly positive, stop reading any new line of data once the position in the file has reached the (offset + length) bytes threshold.",-1,validvalue,"range([0,inf))",,1

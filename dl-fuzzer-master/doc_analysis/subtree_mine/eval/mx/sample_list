@@ -1,0 +1,582 @@
+mxnet.contrib.ndarray.adaptiveavgpooling2d.yaml:
+- data
+mxnet.contrib.ndarray.box_encode.yaml:
+- '**kwargs'
+mxnet.contrib.ndarray.calibrate_entropy.yaml:
+- hist_edges
+mxnet.contrib.ndarray.deformablepsroipooling.yaml:
+- spatial_scale
+- no_trans
+mxnet.contrib.ndarray.dgl_adjacency.yaml:
+- '**kwargs'
+mxnet.contrib.ndarray.dgl_graph_compact.yaml:
+- out
+mxnet.contrib.ndarray.div_sqrt_dim.yaml:
+- out
+- name
+mxnet.contrib.ndarray.hawkesll.yaml:
+- out
+mxnet.contrib.ndarray.ifft.yaml:
+- name
+- data
+mxnet.contrib.ndarray.proposal.yaml:
+- output_score
+mxnet.contrib.ndarray.psroipooling.yaml:
+- rois
+mxnet.contrib.ndarray.quantize_v2.yaml:
+- name
+mxnet.contrib.ndarray.quantized_concat.yaml:
+- out
+mxnet.contrib.ndarray.quantized_conv.yaml:
+- layout
+mxnet.contrib.ndarray.quantized_elemwise_add.yaml:
+- rhs
+mxnet.contrib.ndarray.quantized_fully_connected.yaml:
+- min_data
+mxnet.contrib.ndarray.quantized_pooling.yaml:
+- layout
+mxnet.contrib.ndarray.requantize.yaml:
+- max_calib_range
+mxnet.contrib.ndarray.rroialign.yaml:
+- out
+- data
+mxnet.contrib.quantization.quantize_model.yaml:
+- sym
+mxnet.gluon.contrib.nn.concurrent.yaml:
+- prefix
+mxnet.gluon.contrib.rnn.conv1dgrucell.yaml:
+- i2h_weight_initializer
+mxnet.gluon.contrib.rnn.conv1dlstmcell.yaml:
+- i2h_dilate
+mxnet.gluon.contrib.rnn.conv2dgrucell.yaml:
+- activation
+mxnet.gluon.contrib.rnn.conv3dgrucell.yaml:
+- h2h_bias_initializer
+mxnet.gluon.contrib.rnn.lstmpcell.yaml:
+- prefix
+mxnet.gluon.model_zoo.vision.densenet169.yaml:
+- ctx
+- root
+mxnet.gluon.model_zoo.vision.get_mobilenet.yaml:
+- '**kwargs'
+mxnet.gluon.model_zoo.vision.get_resnet.yaml:
+- ctx
+mxnet.gluon.model_zoo.vision.get_vgg.yaml:
+- root
+mxnet.gluon.model_zoo.vision.mobilenet0_5.yaml:
+- ctx
+mxnet.gluon.model_zoo.vision.mobilenet1_0.yaml:
+- pretrained
+mxnet.gluon.model_zoo.vision.resnet34_v1.yaml:
+- ctx
+mxnet.gluon.nn.avgpool2d.yaml:
+- padding
+mxnet.gluon.nn.avgpool3d.yaml:
+- ceil_mode
+- layout
+- padding
+mxnet.gluon.nn.conv1d.yaml:
+- bias_initializer
+mxnet.gluon.nn.conv1dtranspose.yaml:
+- dilation
+- bias_initializer
+mxnet.gluon.nn.conv2d.yaml:
+- kernel_size
+mxnet.gluon.nn.conv3d.yaml:
+- groups
+mxnet.gluon.nn.conv3dtranspose.yaml:
+- kernel_size
+mxnet.gluon.nn.dense.yaml:
+- use_bias
+mxnet.gluon.nn.groupnorm.yaml:
+- scale
+mxnet.gluon.nn.layernorm.yaml:
+- beta_initializer
+mxnet.gluon.rnn.gru.yaml:
+- i2h_bias_initializer
+mxnet.gluon.rnn.lstm.yaml:
+- input_size
+mxnet.gluon.rnn.lstmcell.yaml:
+- h2h_bias_initializer
+mxnet.gluon.rnn.rnn.yaml:
+- '**kwargs'
+mxnet.image.createdetaugmenter.yaml:
+- rand_mirror
+mxnet.image.fixed_crop.yaml:
+- size
+- y0
+- x0
+mxnet.image.imread.yaml:
+- '*args'
+mxnet.image.imresize.yaml:
+- '**kwargs'
+- w
+mxnet.io.csviter.yaml:
+- ctx
+mxnet.io.imagedetrecorditer.yaml:
+- max_random_illumination
+- random_saturation_prob
+mxnet.io.imagerecorditer.yaml:
+- part_index
+- round_batch
+mxnet.ndarray.adam_update.yaml:
+- lazy_update
+- lr
+mxnet.ndarray.all_finite.yaml:
+- out
+mxnet.ndarray.amp_cast.yaml:
+- name
+- '**kwargs'
+mxnet.ndarray.batch_dot.yaml:
+- rhs
+mxnet.ndarray.blockgrad.yaml:
+- '**kwargs'
+mxnet.ndarray.broadcast_add.yaml:
+- out
+mxnet.ndarray.broadcast_axis.yaml:
+- out
+mxnet.ndarray.broadcast_lesser.yaml:
+- name
+mxnet.ndarray.broadcast_lesser_equal.yaml:
+- '**kwargs'
+mxnet.ndarray.broadcast_logical_and.yaml:
+- name
+mxnet.ndarray.broadcast_logical_xor.yaml:
+- rhs
+- out
+mxnet.ndarray.broadcast_minus.yaml:
+- '**kwargs'
+mxnet.ndarray.broadcast_plus.yaml:
+- '**kwargs'
+mxnet.ndarray.choose_element_0index.yaml:
+- axis
+mxnet.ndarray.contrib.backward_index_copy.yaml:
+- '**kwargs'
+mxnet.ndarray.contrib.bilinearresize2d.yaml:
+- out
+mxnet.ndarray.contrib.box_iou.yaml:
+- '**kwargs'
+mxnet.ndarray.contrib.box_nms.yaml:
+- score_index
+- coord_start
+mxnet.ndarray.contrib.box_non_maximum_suppression.yaml:
+- out
+mxnet.ndarray.contrib.count_sketch.yaml:
+- h
+mxnet.ndarray.contrib.ctcloss.yaml:
+- data
+mxnet.ndarray.contrib.deformableconvolution.yaml:
+- data
+- bias
+- out
+mxnet.ndarray.contrib.dgl_graph_compact.yaml:
+- graph_sizes
+mxnet.ndarray.contrib.multiboxdetection.yaml:
+- '**kwargs'
+- background_id
+mxnet.ndarray.contrib.multiboxprior.yaml:
+- out
+- ratios
+mxnet.ndarray.contrib.multiproposal.yaml:
+- scales
+mxnet.ndarray.contrib.proposal.yaml:
+- scales
+mxnet.ndarray.contrib.psroipooling.yaml:
+- pooled_size
+mxnet.ndarray.contrib.quantize.yaml:
+- name
+mxnet.ndarray.contrib.quantized_act.yaml:
+- min_data
+mxnet.ndarray.contrib.quantized_batch_norm.yaml:
+- '**kwargs'
+- eps
+- moving_mean
+mxnet.ndarray.contrib.quantized_conv.yaml:
+- stride
+mxnet.ndarray.contrib.quantized_flatten.yaml:
+- out
+mxnet.ndarray.contrib.quantized_fully_connected.yaml:
+- flatten
+mxnet.ndarray.contrib.quantized_pooling.yaml:
+- out
+- kernel
+mxnet.ndarray.contrib.rand_zipfian.yaml:
+- range_max
+mxnet.ndarray.contrib.while_loop.yaml:
+- func
+mxnet.ndarray.convolution.yaml:
+- no_bias
+mxnet.ndarray.ctcloss.yaml:
+- label_lengths
+mxnet.ndarray.deconvolution.yaml:
+- dilate
+- data
+mxnet.ndarray.degrees.yaml:
+- out
+mxnet.ndarray.dropout.yaml:
+- p
+mxnet.ndarray.elemwise_mul.yaml:
+- out
+mxnet.ndarray.erfinv.yaml:
+- name
+mxnet.ndarray.fill_element_0index.yaml:
+- name
+mxnet.ndarray.flatten.yaml:
+- data
+mxnet.ndarray.flip.yaml:
+- data
+mxnet.ndarray.ftrl_update.yaml:
+- lr
+- clip_gradient
+mxnet.ndarray.greater_equal.yaml:
+- lhs
+mxnet.ndarray.groupnorm.yaml:
+- name
+mxnet.ndarray.image.flip_top_bottom.yaml:
+- name
+mxnet.ndarray.image.random_color_jitter.yaml:
+- out
+- hue
+mxnet.ndarray.image.random_flip_left_right.yaml:
+- name
+mxnet.ndarray.image.to_tensor.yaml:
+- out
+mxnet.ndarray.l2normalization.yaml:
+- mode
+mxnet.ndarray.lamb_update_phase1.yaml:
+- var
+- beta2
+- clip_gradient
+mxnet.ndarray.leakyrelu.yaml:
+- data
+mxnet.ndarray.linalg.det.yaml:
+- '**kwargs'
+mxnet.ndarray.linalg.extracttrian.yaml:
+- '**kwargs'
+- A
+mxnet.ndarray.linalg.gemm.yaml:
+- out
+mxnet.ndarray.linalg.gemm2.yaml:
+- B
+mxnet.ndarray.linalg_maketrian.yaml:
+- out
+mxnet.ndarray.linalg_potri.yaml:
+- '**kwargs'
+mxnet.ndarray.linalg_syrk.yaml:
+- transpose
+mxnet.ndarray.linalg_trsm.yaml:
+- transpose
+mxnet.ndarray.linearregressionoutput.yaml:
+- name
+mxnet.ndarray.log.yaml:
+- data
+mxnet.ndarray.logical_not.yaml:
+- name
+mxnet.ndarray.logisticregressionoutput.yaml:
+- name
+mxnet.ndarray.min_axis.yaml:
+- exclude
+mxnet.ndarray.moments.yaml:
+- out
+mxnet.ndarray.mp_nag_mom_update.yaml:
+- out
+mxnet.ndarray.mp_sgd_mom_update.yaml:
+- weight
+mxnet.ndarray.multi_sum_sq.yaml:
+- '*data'
+mxnet.ndarray.nag_mom_update.yaml:
+- mom
+mxnet.ndarray.nansum.yaml:
+- name
+mxnet.ndarray.norm.yaml:
+- out
+mxnet.ndarray.op.adam_update.yaml:
+- beta1
+- beta2
+- clip_gradient
+- wd
+mxnet.ndarray.op.argmax.yaml:
+- out
+- data
+mxnet.ndarray.op.argsort.yaml:
+- dtype
+- data
+mxnet.ndarray.op.batchnorm.yaml:
+- use_global_stats
+mxnet.ndarray.op.broadcast_axis.yaml:
+- axis
+mxnet.ndarray.op.broadcast_greater.yaml:
+- '**kwargs'
+mxnet.ndarray.op.broadcast_minus.yaml:
+- '**kwargs'
+mxnet.ndarray.op.broadcast_not_equal.yaml:
+- lhs
+mxnet.ndarray.op.ceil.yaml:
+- data
+mxnet.ndarray.op.choose_element_0index.yaml:
+- '**kwargs'
+- axis
+mxnet.ndarray.op.correlation.yaml:
+- is_multiply
+mxnet.ndarray.op.cosh.yaml:
+- out
+mxnet.ndarray.op.deconvolution.yaml:
+- cudnn_off
+mxnet.ndarray.op.dropout.yaml:
+- p
+mxnet.ndarray.op.elemwise_sub.yaml:
+- name
+mxnet.ndarray.op.embedding.yaml:
+- dtype
+mxnet.ndarray.op.expand_dims.yaml:
+- name
+- '**kwargs'
+mxnet.ndarray.op.fix.yaml:
+- '**kwargs'
+mxnet.ndarray.op.ftml_update.yaml:
+- wd
+mxnet.ndarray.op.fullyconnected.yaml:
+- bias
+mxnet.ndarray.op.gammaln.yaml:
+- data
+mxnet.ndarray.op.gridgenerator.yaml:
+- name
+mxnet.ndarray.op.groupnorm.yaml:
+- name
+mxnet.ndarray.op.lamb_update_phase1.yaml:
+- t
+- beta1
+mxnet.ndarray.op.lamb_update_phase2.yaml:
+- upper_bound
+mxnet.ndarray.op.layernorm.yaml:
+- eps
+mxnet.ndarray.op.linalg_gelqf.yaml:
+- '**kwargs'
+mxnet.ndarray.op.linalg_makediag.yaml:
+- offset
+mxnet.ndarray.op.linearregressionoutput.yaml:
+- grad_scale
+mxnet.ndarray.op.log.yaml:
+- out
+mxnet.ndarray.op.log_softmax.yaml:
+- data
+mxnet.ndarray.op.logical_not.yaml:
+- name
+mxnet.ndarray.op.logisticregressionoutput.yaml:
+- data
+mxnet.ndarray.op.maeregressionoutput.yaml:
+- grad_scale
+mxnet.ndarray.op.mp_nag_mom_update.yaml:
+- grad
+mxnet.ndarray.op.mp_sgd_mom_update.yaml:
+- rescale_grad
+mxnet.ndarray.op.mp_sgd_update.yaml:
+- weight32
+- clip_gradient
+mxnet.ndarray.op.multi_mp_sgd_update.yaml:
+- '*data'
+mxnet.ndarray.op.multi_sgd_update.yaml:
+- clip_gradient
+mxnet.ndarray.op.nag_mom_update.yaml:
+- weight
+- '**kwargs'
+mxnet.ndarray.op.nanprod.yaml:
+- data
+mxnet.ndarray.op.pad.yaml:
+- '**kwargs'
+mxnet.ndarray.op.random_normal.yaml:
+- name
+mxnet.ndarray.op.random_pdf_dirichlet.yaml:
+- alpha
+mxnet.ndarray.op.random_pdf_normal.yaml:
+- sample
+- is_log
+mxnet.ndarray.op.random_pdf_uniform.yaml:
+- name
+mxnet.ndarray.op.random_poisson.yaml:
+- shape
+mxnet.ndarray.op.random_uniform.yaml:
+- high
+mxnet.ndarray.op.reset_arrays.yaml:
+- num_arrays
+mxnet.ndarray.op.reshape.yaml:
+- '**kwargs'
+mxnet.ndarray.op.rint.yaml:
+- '**kwargs'
+mxnet.ndarray.op.rmsprop_update.yaml:
+- epsilon
+- n
+mxnet.ndarray.op.rnn.yaml:
+- bidirectional
+mxnet.ndarray.op.round.yaml:
+- out
+mxnet.ndarray.op.sample_multinomial.yaml:
+- get_prob
+mxnet.ndarray.op.sample_normal.yaml:
+- name
+mxnet.ndarray.op.sequencelast.yaml:
+- '**kwargs'
+mxnet.ndarray.op.sgd_update.yaml:
+- name
+mxnet.ndarray.op.size_array.yaml:
+- data
+mxnet.ndarray.op.softmax2.yaml:
+- '**kwargs'
+- name
+mxnet.ndarray.op.sort.yaml:
+- name
+mxnet.ndarray.op.spatialtransformer.yaml:
+- target_shape
+- out
+mxnet.ndarray.op.squeeze.yaml:
+- name
+mxnet.ndarray.op.sum.yaml:
+- axis
+mxnet.ndarray.op.svmoutput.yaml:
+- label
+mxnet.ndarray.op.tanh.yaml:
+- '**kwargs'
+mxnet.ndarray.op.zeros_like.yaml:
+- '**kwargs'
+mxnet.ndarray.pooling.yaml:
+- name
+mxnet.ndarray.preloaded_multi_mp_sgd_update.yaml:
+- clip_gradient
+mxnet.ndarray.random.exponential_like.yaml:
+- name
+mxnet.ndarray.random.gamma.yaml:
+- out
+mxnet.ndarray.random.negative_binomial_like.yaml:
+- name
+mxnet.ndarray.random.poisson.yaml:
+- '**kwargs'
+mxnet.ndarray.random.uniform_like.yaml:
+- data
+- out
+mxnet.ndarray.random_gamma.yaml:
+- '**kwargs'
+- alpha
+mxnet.ndarray.random_generalized_negative_binomial.yaml:
+- '**kwargs'
+mxnet.ndarray.random_negative_binomial.yaml:
+- ctx
+mxnet.ndarray.random_pdf_dirichlet.yaml:
+- name
+mxnet.ndarray.random_pdf_generalized_negative_binomial.yaml:
+- is_log
+- out
+mxnet.ndarray.reset_arrays.yaml:
+- '*data'
+mxnet.ndarray.reshape.yaml:
+- data
+- reverse
+mxnet.ndarray.reverse.yaml:
+- data
+mxnet.ndarray.rmsprop_update.yaml:
+- lr
+- n
+mxnet.ndarray.rnn.yaml:
+- name
+- p
+mxnet.ndarray.sample_exponential.yaml:
+- '**kwargs'
+mxnet.ndarray.sample_multinomial.yaml:
+- data
+mxnet.ndarray.sample_poisson.yaml:
+- dtype
+mxnet.ndarray.sample_uniform.yaml:
+- low
+- '**kwargs'
+mxnet.ndarray.sgd_mom_update.yaml:
+- mom
+mxnet.ndarray.shuffle.yaml:
+- '**kwargs'
+mxnet.ndarray.signsgd_update.yaml:
+- clip_gradient
+mxnet.ndarray.signum_update.yaml:
+- name
+- clip_gradient
+mxnet.ndarray.sin.yaml:
+- name
+mxnet.ndarray.slice.yaml:
+- begin
+mxnet.ndarray.softmax.yaml:
+- ignore_label
+- smooth_alpha
+mxnet.ndarray.softmax2.yaml:
+- length
+mxnet.ndarray.softmaxactivation.yaml:
+- out
+- mode
+mxnet.ndarray.softmin.yaml:
+- data
+mxnet.ndarray.sparse.abs.yaml:
+- name
+mxnet.ndarray.sparse.adagrad_update.yaml:
+- grad
+mxnet.ndarray.sparse.broadcast_plus.yaml:
+- name
+mxnet.ndarray.sparse.broadcast_sub.yaml:
+- '**kwargs'
+mxnet.ndarray.sparse.cast_storage.yaml:
+- stype
+mxnet.ndarray.sparse.elementwisesum.yaml:
+- '*args'
+mxnet.ndarray.sparse.elemwise_add.yaml:
+- rhs
+mxnet.ndarray.sparse.fullyconnected.yaml:
+- data
+mxnet.ndarray.sparse.log10.yaml:
+- data
+mxnet.ndarray.sparse.relu.yaml:
+- data
+- name
+mxnet.ndarray.sparse.rint.yaml:
+- '**kwargs'
+mxnet.ndarray.sparse.row_sparse_array.yaml:
+- dtype
+mxnet.ndarray.sparse.sgd_update.yaml:
+- '**kwargs'
+mxnet.ndarray.sparse.sign.yaml:
+- data
+mxnet.ndarray.sparse.sinh.yaml:
+- data
+mxnet.ndarray.spatialtransformer.yaml:
+- data
+mxnet.ndarray.squeeze.yaml:
+- name
+mxnet.ndarray.swapaxes.yaml:
+- dim2
+- data
+mxnet.ndarray.tanh.yaml:
+- '**kwargs'
+mxnet.ndarray.to_dlpack_for_read.yaml:
+- data
+mxnet.ndarray.topk.yaml:
+- axis
+mxnet.ndarray.transpose.yaml:
+- out
+mxnet.ndarray.utils.array.yaml:
+- ctx
+mxnet.ndarray.zeros2.yaml:
+- ctx
+mxnet.profiler.set_config.yaml:
+- profile_symbolic
+- profile_memory
+- profile_all
+mxnet.random.seed.yaml:
+- ctx
+mxnet.test_utils.assert_almost_equal.yaml:
+- a
+mxnet.test_utils.check_symbolic_forward.yaml:
+- ctx
+mxnet.test_utils.chi_square_check.yaml:
+- probs
+mxnet.test_utils.download.yaml:
+- url
+mxnet.test_utils.rand_sparse_ndarray.yaml:
+- modifier_func
+mxnet.test_utils.same_array.yaml:
+- array1
+mxnet.test_utils.simple_forward.yaml:
+- sym

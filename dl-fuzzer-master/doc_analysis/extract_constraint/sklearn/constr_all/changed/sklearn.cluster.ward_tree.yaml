@@ -1,0 +1,51 @@
+constraints:
+  X:
+    descp: array, shape (n_samples, n_features) feature matrix representing n_samples
+      samples to be clustered
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  connectivity:
+    default: None
+    descp: sparse matrix (optional). connectivity matrix. Defines for each sample
+      the neighboring samples following a given structure of the data. The matrix
+      is assumed to be symmetric and only the upper triangular half is used. Default
+      is None, i.e, the Ward algorithm is unstructured.
+    dtype:
+    - numeric
+  n_clusters:
+    default: None
+    descp: int (optional) Stop early the construction of the tree at n_clusters. This
+      is useful to decrease computation time if the number of clusters is not small
+      compared to the number of samples. In this case, the complete tree is not computed,
+      thus the 'children' output is of limited use, and the 'parents' output should
+      rather be used. This option is valid only when specifying a connectivity matrix.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  return_distance:
+    default: 'False'
+    descp: bool (optional) If True, return the distance between the clusters.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - connectivity
+  - n_clusters
+  - return_distance
+  required:
+  - X
+link: ''
+package: sklearn
+target: ward_tree
+title: sklearn.cluster.ward_tree
+version: 0.24.2

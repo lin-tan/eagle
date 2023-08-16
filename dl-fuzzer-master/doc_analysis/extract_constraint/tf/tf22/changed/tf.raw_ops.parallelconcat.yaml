@@ -1,0 +1,42 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A tf.TensorShape or list of ints. the final shape of the result; should
+      be equal to the shapes of any input but with the number of input values in the
+      first dimension.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  values:
+    descp: A list of at least 1 Tensor objects with the same type. Tensors to be concatenated.
+      All must have size 1 in the first dimension and same shape.
+    dtype:
+    - tf.dtype
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - values
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ParallelConcat
+outputs:
+- A Tensor. Has the same type as values.
+package: tensorflow
+target: ParallelConcat
+title: tf.raw_ops.ParallelConcat
+version: 2.2.0

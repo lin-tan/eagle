@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"bool, optional (default=True) If ``False``, return the number of misclassifications. Otherwise, return the fraction of misclassifications.",True,prim_dtype,dtype(boolean),,1
+,"bool, optional (default=True) If ``False``, return the number of misclassifications. Otherwise, return the fraction of misclassifications.",True,shape,ndim(0),,1
+,"bool, optional (default=True) If ``False``, return the number of misclassifications. Otherwise, return the fraction of misclassifications.",True,validvalue,"range([0,inf))",,1

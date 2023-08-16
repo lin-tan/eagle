@@ -1,0 +1,154 @@
+constraints:
+  dimension_ids:
+    descp: A list of Tensor objects with type int32. List of rank 1 tensors representing
+      the dimension in each feature.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.tensor)
+  feature_ids:
+    descp: A list of at least 1 Tensor objects with type int32. Rank 1 tensor with
+      ids for each feature. This is the real id of the feature that will be used in
+      the split.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    structure:
+    - list
+  gains:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      float32. List of rank 1 tensors representing the gains for each of the feature's
+      split.
+    dtype:
+    - tf.float32
+    ndim:
+    - '1'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  learning_rate:
+    descp: A Tensor of type float32. shrinkage const for each new tree.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  left_node_contribs:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      float32. List of rank 2 tensors with left leaf contribs for each of the feature's
+      splits. Will be added to the previous node values to constitute the values of
+      the left nodes.
+    dtype:
+    - tf.float32
+    ndim:
+    - '2'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  logits_dimension:
+    default: '1'
+    descp: An optional int. Defaults to 1. scalar, dimension of the logits
+    dtype:
+    - int
+    ndim:
+    - '0'
+  max_depth:
+    descp: A Tensor of type int32. Max depth of the tree to build.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  node_ids:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      int32. List of rank 1 tensors representing the nodes for which this feature
+      has a split.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  pruning_mode:
+    descp: A Tensor of type int32. 0-No pruning, 1-Pre-pruning, 2-Post-pruning.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  right_node_contribs:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      float32. List of rank 2 tensors with right leaf contribs for each of the feature's
+      splits. Will be added to the previous node values to constitute the values of
+      the right nodes.
+    dtype:
+    - tf.float32
+    ndim:
+    - '2'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  split_types:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      string. List of rank 1 tensors representing the split type for each feature.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  thresholds:
+    descp: A list with the same length as dimension_ids of Tensor objects with type
+      int32. List of rank 1 tensors representing the thesholds for each of the feature's
+      split.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    shape:
+    - shape:&dimension_ids
+    structure:
+    - list
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the ensemble variable.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - logits_dimension
+  - name
+  required:
+  - tree_ensemble_handle
+  - feature_ids
+  - dimension_ids
+  - node_ids
+  - gains
+  - thresholds
+  - left_node_contribs
+  - right_node_contribs
+  - split_types
+  - max_depth
+  - learning_rate
+  - pruning_mode
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesUpdateEnsembleV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesUpdateEnsembleV2
+title: tf.raw_ops.BoostedTreesUpdateEnsembleV2
+version: 2.3.0

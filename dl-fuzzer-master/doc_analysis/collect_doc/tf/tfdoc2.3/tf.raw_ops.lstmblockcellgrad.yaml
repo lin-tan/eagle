@@ -1,0 +1,75 @@
+constraints:
+  b:
+    descp: A Tensor. Must have the same type as x. The bias vector.
+  ci:
+    descp: A Tensor. Must have the same type as x. The cell input.
+  co:
+    descp: A Tensor. Must have the same type as x. The cell after the tanh.
+  cs:
+    descp: A Tensor. Must have the same type as x. The cell state before the tanh.
+  cs_grad:
+    descp: A Tensor. Must have the same type as x. The current gradient of cs.
+  cs_prev:
+    descp: A Tensor. Must have the same type as x. The previous cell state.
+  f:
+    descp: A Tensor. Must have the same type as x. The forget gate.
+  h_grad:
+    descp: A Tensor. Must have the same type as x. The gradient of h vector.
+  h_prev:
+    descp: A Tensor. Must have the same type as x. The previous h state.
+  i:
+    descp: A Tensor. Must have the same type as x. The input gate.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  o:
+    descp: A Tensor. Must have the same type as x. The output gate.
+  use_peephole:
+    descp: A bool. Whether the cell uses peephole connections.
+  w:
+    descp: A Tensor. Must have the same type as x. The weight matrix.
+  wcf:
+    descp: A Tensor. Must have the same type as x. The weight matrix for forget gate
+      peephole connection.
+  wci:
+    descp: A Tensor. Must have the same type as x. The weight matrix for input gate
+      peephole connection.
+  wco:
+    descp: A Tensor. Must have the same type as x. The weight matrix for output gate
+      peephole connection.
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, float32. The input
+      to the LSTM cell, shape (batch_size, num_inputs).'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - cs_prev
+  - h_prev
+  - w
+  - wci
+  - wcf
+  - wco
+  - b
+  - i
+  - cs
+  - f
+  - o
+  - ci
+  - co
+  - cs_grad
+  - h_grad
+  - use_peephole
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LSTMBlockCellGrad
+outputs:
+- A tuple of Tensor objects (cs_prev_grad, dicfo, wci_grad, wcf_grad, wco_grad).
+- cs_prev_grad: A Tensor. Has the same type as x.
+- dicfo: A Tensor. Has the same type as x.
+- wci_grad: A Tensor. Has the same type as x.
+- wcf_grad: A Tensor. Has the same type as x.
+- wco_grad: A Tensor. Has the same type as x.
+package: tensorflow
+target: LSTMBlockCellGrad
+title: tf.raw_ops.LSTMBlockCellGrad
+version: 2.3.0

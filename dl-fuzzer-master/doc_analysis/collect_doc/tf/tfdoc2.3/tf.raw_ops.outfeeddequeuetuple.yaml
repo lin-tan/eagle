@@ -1,0 +1,29 @@
+constraints:
+  device_ordinal:
+    default: '-1'
+    descp: An optional int. Defaults to -1. The TPU device to use. This should be
+      -1 when the Op is running on a TPU device, and >= 0 when the Op is running on
+      the CPU device.
+  dtypes:
+    descp: A list of tf.DTypes that has length >= 1. The element types of each element
+      in outputs.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints). The shapes of
+      each tensor in outputs.
+inputs:
+  optional:
+  - device_ordinal
+  - name
+  required:
+  - dtypes
+  - shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OutfeedDequeueTuple
+outputs:
+- A list of Tensor objects of type dtypes.
+package: tensorflow
+target: OutfeedDequeueTuple
+title: tf.raw_ops.OutfeedDequeueTuple
+version: 2.3.0

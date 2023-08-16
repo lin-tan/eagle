@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reader_handle:
+    descp: A Tensor of type resource. Handle to a Reader.
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ReaderSerializeStateV2
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ReaderSerializeStateV2
+title: tf.raw_ops.ReaderSerializeStateV2
+version: 2.2.0

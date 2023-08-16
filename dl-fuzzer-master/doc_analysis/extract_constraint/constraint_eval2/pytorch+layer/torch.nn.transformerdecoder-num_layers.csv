@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,the number of sub-decoder-layers in the decoder (required).,,prim_dtype,dtype(int),,1
+,the number of sub-decoder-layers in the decoder (required).,,shape,ndim(0),,1
+,the number of sub-decoder-layers in the decoder (required).,,validvalue,"range([0,inf))",,1

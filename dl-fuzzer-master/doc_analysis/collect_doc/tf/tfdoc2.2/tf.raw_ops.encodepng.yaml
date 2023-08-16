@@ -1,0 +1,23 @@
+constraints:
+  compression:
+    default: '-1'
+    descp: An optional int. Defaults to -1. Compression level.
+  image:
+    descp: 'A Tensor. Must be one of the following types: uint8, uint16. 3-D with
+      shape [height, width, channels].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - compression
+  - name
+  required:
+  - image
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/EncodePng
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: EncodePng
+title: tf.raw_ops.EncodePng
+version: 2.2.0

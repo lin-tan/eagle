@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.slice
+constraints:
+  begin:
+    descp: An int32 or int64 Tensor.
+  input_:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: An int32 or int64 Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - input_
+  - begin
+  - size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/slice
+outputs:
+- A Tensor the same type as input_.
+package: tensorflow
+target: slice
+title: tf.slice
+version: 2.2.0

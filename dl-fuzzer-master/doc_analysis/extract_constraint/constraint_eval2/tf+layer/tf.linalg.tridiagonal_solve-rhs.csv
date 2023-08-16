@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as`diagonals`. Note that if the shape of `rhs` and/or `diags` isn't known statically, `rhs` will be treated as a matrix rather than a vector.",,prim_dtype,dtype(dtype:&diagonals),,1
+,"A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as`diagonals`. Note that if the shape of `rhs` and/or `diags` isn't known statically, `rhs` will be treated as a matrix rather than a vector.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as`diagonals`. Note that if the shape of `rhs` and/or `diags` isn't known statically, `rhs` will be treated as a matrix rather than a vector.",,shape,"shape([...,m]), ndim(>1)",,1

@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.linalg.set_diag
+- tf.compat.v1.matrix_set_diag
+constraints:
+  align:
+    default: RIGHT_LEFT
+    descp: 'Some diagonals are shorter than max_diag_len and need to be padded. align
+      is a string specifying how superdiagonals and subdiagonals should be aligned,
+      respectively. There are four possible alignments: "RIGHT_LEFT" (default), "LEFT_RIGHT",
+      "LEFT_LEFT", and "RIGHT_RIGHT". "RIGHT_LEFT" aligns superdiagonals to the right
+      (left-pads the row) and subdiagonals to the left (right-pads the row). It is
+      the packing format LAPACK uses. cuSPARSE uses "LEFT_RIGHT", which is the opposite
+      alignment.'
+  diagonal:
+    descp: A Tensor with rank k, when d_lower == d_upper, or k + 1, otherwise. k >=
+      1.
+  input:
+    descp: A Tensor with rank k + 1, where k >= 1.
+  k:
+    default: '0'
+    descp: Diagonal offset(s). Positive value means superdiagonal, 0 refers to the
+      main diagonal, and negative value means subdiagonals. k can be a single integer
+      (for a single diagonal) or a pair of integers specifying the low and high ends
+      of a matrix band. k[0] must not be larger than k[1].
+  name:
+    default: set_diag
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  - k
+  - align
+  required:
+  - input
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/linalg/set_diag
+package: tensorflow
+target: set_diag
+title: tf.linalg.set_diag
+version: 2.3.0

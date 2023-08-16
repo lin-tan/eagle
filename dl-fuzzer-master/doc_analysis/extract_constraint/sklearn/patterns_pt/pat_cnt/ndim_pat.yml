@@ -1,0 +1,51 @@
+append: false
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\d)-*(dimensional|d):
+    cnt: 40
+    group: 1
+    prereq:
+    - at\s+least\s+(\d)-*(dimensional|d)
+  (\d)-*d\s+tensor:
+    cnt: 0
+    group: 1
+  ^(a)?\s*(\d)-d:
+    cnt: 0
+    group: 2
+  at\s+least\s+(\d)-*(dimensional|d):
+    cnt: 2
+    group: 1
+    prefix: '>='
+  n-dimensional.*?where\s+n\s*>=\s*(\d):
+    cnt: 0
+    group: 1
+    prefix: '>='
+  of\s+at\s+least\s+`(.*)`\s*dimensions:
+    cnt: 0
+    group: 1
+    keep_shapevar: true
+    prefix: '>='
+    replace:
+      \s: ''
+      '`': ''
+  the\s+(first)?\s*["]*vector["]*:
+    cnt: 0
+    ndim: 1
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+target: ndim

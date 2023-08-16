@@ -1,0 +1,28 @@
+sklearn.feature_extraction.image.img_to_graph = img_to_graph(img, mask=None, return_as=<class 'scipy.sparse.coo.coo_matrix'>, dtype=None)
+    Graph of the pixel-to-pixel gradient connections
+    
+    Edges are weighted with the gradient values.
+    
+    Read more in the :ref:`User Guide <image_feature_extraction>`.
+    
+    Parameters
+    ----------
+    img : ndarray, 2D or 3D
+        2D or 3D image
+    mask : ndarray of booleans, optional
+        An optional mask of the image, to consider only part of the
+        pixels.
+    return_as : np.ndarray or a sparse matrix class, optional
+        The class to use to build the returned adjacency matrix.
+    dtype : None or dtype, optional
+        The data of the returned sparse matrix. By default it is the
+        dtype of img
+    
+    Notes
+    -----
+    For scikit-learn versions 0.14.1 and prior, return_as=np.ndarray was
+    handled by returning a dense np.matrix instance.  Going forward, np.ndarray
+    returns an np.ndarray, as expected.
+    
+    For compatibility, user code relying on this method should wrap its
+    calls in ``np.asarray`` to avoid type issues.

@@ -1,0 +1,1694 @@
+descp_diff:
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: num_words
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: skip_top
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: maxlen
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: test_split
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: seed
+- filename: tf.keras.datasets.reuters.load_data.yaml
+  param: oov_char
+- filename: tf.keras.estimator.model_to_estimator.yaml
+  param: keras_model
+- filename: tf.keras.estimator.model_to_estimator.yaml
+  param: custom_objects
+- filename: tf.keras.estimator.model_to_estimator.yaml
+  param: model_dir
+- filename: tf.keras.estimator.model_to_estimator.yaml
+  param: config
+- filename: tf.debugging.experimental.enable_dump_debug_info.yaml
+  param: op_regex
+- filename: tf.debugging.experimental.enable_dump_debug_info.yaml
+  param: tensor_dtypes
+- filename: tf.keras.backend.set_image_data_format.yaml
+  param: data_format
+- filename: tf.keras.backend.set_value.yaml
+  param: x
+- filename: tf.extract_volume_patches.yaml
+  param: padding
+- filename: tf.keras.layers.add2.yaml
+  param: inputs
+- filename: tf.image.central_crop.yaml
+  param: central_fraction
+- filename: tf.keras.losses.logcosh2.yaml
+  param: y_true
+- filename: tf.keras.losses.logcosh2.yaml
+  param: y_pred
+- filename: tf.summary.trace_export.yaml
+  param: profiler_outdir
+- filename: tf.data.experimental.scan.yaml
+  param: scan_func
+- filename: tf.random.stateless_uniform.yaml
+  param: minval
+- filename: tf.random.stateless_uniform.yaml
+  param: maxval
+- filename: tf.random.stateless_uniform.yaml
+  param: dtype
+- filename: tf.nn.conv3d.yaml
+  param: dilations
+- filename: tf.strings.substr.yaml
+  param: unit
+- filename: tf.ragged.constant.yaml
+  param: ragged_rank
+- filename: tf.ragged.constant.yaml
+  param: inner_shape
+- filename: tf.ragged.constant.yaml
+  param: name
+- filename: tf.ragged.constant.yaml
+  param: row_splits_dtype
+- filename: tf.clip_by_value.yaml
+  param: clip_value_min
+- filename: tf.clip_by_value.yaml
+  param: clip_value_max
+- filename: tf.nest.flatten.yaml
+  param: structure
+- filename: tf.image.random_crop.yaml
+  param: seed
+- filename: tf.image.resize.yaml
+  param: method
+- filename: tf.foldl.yaml
+  param: back_prop
+- filename: tf.math.argmax.yaml
+  param: axis
+- filename: tf.math.argmax.yaml
+  param: output_type
+- filename: tf.math.argmax.yaml
+  param: name
+- filename: tf.math.argmax.yaml
+  param: input
+- filename: tf.keras.losses.hinge2.yaml
+  param: y_true
+- filename: tf.keras.losses.hinge2.yaml
+  param: y_pred
+- filename: tf.keras.losses.poisson2.yaml
+  param: y_true
+- filename: tf.keras.losses.poisson2.yaml
+  param: y_pred
+- filename: tf.sparse.sparse_dense_matmul.yaml
+  param: sp_a
+- filename: tf.sparse.sparse_dense_matmul.yaml
+  param: b
+- filename: tf.while_loop.yaml
+  param: back_prop
+- filename: tf.math.sqrt.yaml
+  param: x
+- filename: tf.keras.datasets.imdb.load_data.yaml
+  param: num_words
+- filename: tf.keras.datasets.imdb.load_data.yaml
+  param: skip_top
+- filename: tf.keras.datasets.imdb.load_data.yaml
+  param: maxlen
+- filename: tf.keras.datasets.imdb.load_data.yaml
+  param: seed
+- filename: tf.keras.datasets.imdb.load_data.yaml
+  param: oov_char
+- filename: tf.keras.backend.random_normal.yaml
+  param: mean
+- filename: tf.keras.backend.random_normal.yaml
+  param: stddev
+- filename: tf.keras.backend.random_normal.yaml
+  param: dtype
+- filename: tf.keras.backend.random_normal.yaml
+  param: seed
+- filename: tf.strings.join.yaml
+  param: separator
+- filename: tf.strings.join.yaml
+  param: inputs
+- filename: tf.scan.yaml
+  param: back_prop
+- filename: tf.keras.backend.rnn.yaml
+  param: step_function
+- filename: tf.function.yaml
+  param: experimental_implements
+- filename: tf.data.experimental.get_next_as_optional.yaml
+  param: iterator
+- filename: tf.image.extract_patches.yaml
+  param: name
+- filename: tf.image.extract_patches.yaml
+  param: images
+- filename: tf.image.extract_patches.yaml
+  param: sizes
+- filename: tf.image.extract_patches.yaml
+  param: strides
+- filename: tf.image.extract_patches.yaml
+  param: rates
+- filename: tf.image.extract_patches.yaml
+  param: padding
+- filename: tf.math.logical_and.yaml
+  param: x
+- filename: tf.math.logical_xor.yaml
+  param: name
+- filename: tf.space_to_batch_nd.yaml
+  param: paddings
+- filename: tf.zeros_like.yaml
+  param: input
+- filename: tf.keras.preprocessing.image.array_to_img.yaml
+  param: data_format
+- filename: tf.keras.preprocessing.image.array_to_img.yaml
+  param: scale
+- filename: tf.keras.preprocessing.image.array_to_img.yaml
+  param: dtype
+- filename: tf.keras.losses.categorical_crossentropy.yaml
+  param: y_true
+- filename: tf.keras.models.model_from_yaml.yaml
+  param: yaml_string
+- filename: tf.keras.backend.set_epsilon.yaml
+  param: value
+- filename: tf.nn.fractional_max_pool.yaml
+  param: pseudo_random
+- filename: tf.where.yaml
+  param: x
+- filename: tf.where.yaml
+  param: y
+- filename: tf.keras.preprocessing.image.img_to_array.yaml
+  param: data_format
+- filename: tf.keras.preprocessing.image.img_to_array.yaml
+  param: dtype
+- filename: tf.keras.preprocessing.image.img_to_array.yaml
+  param: img
+- filename: tf.keras.backend.set_floatx.yaml
+  param: value
+- filename: tf.math.rsqrt.yaml
+  param: x
+- filename: tf.math.logical_not.yaml
+  param: x
+- filename: tf.map_fn.yaml
+  param: back_prop
+- filename: tf.transpose.yaml
+  param: perm
+- filename: tf.foldr.yaml
+  param: back_prop
+- filename: tf.keras.losses.squared_hinge.yaml
+  param: y_true
+- filename: tf.keras.losses.squared_hinge.yaml
+  param: y_pred
+- filename: tf.keras.datasets.cifar100.load_data.yaml
+  param: label_mode
+- filename: tf.nn.depthwise_conv2d_backprop_input.yaml
+  param: dilations
+- filename: tf.batch_to_space.yaml
+  param: name
+- filename: tf.batch_to_space.yaml
+  param: crops
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: maxlen
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: dtype
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: padding
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: truncating
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: value
+- filename: tf.keras.preprocessing.sequence.pad_sequences.yaml
+  param: sequences
+- filename: tf.space_to_batch.yaml
+  param: paddings
+- filename: tf.linalg.matmul.yaml
+  param: a_is_sparse
+- filename: tf.linalg.matmul.yaml
+  param: b_is_sparse
+- filename: tf.math.add_n.yaml
+  param: inputs
+- filename: tf.nn.depthwise_conv2d_backprop_filter.yaml
+  param: dilations
+- filename: tf.keras.models.load_model.yaml
+  param: filepath
+- filename: tf.numpy_function.yaml
+  param: Tout
+- filename: tf.keras.models.save_model.yaml
+  param: filepath
+- filename: tf.fill.yaml
+  param: name
+- filename: tf.fill.yaml
+  param: dims
+- filename: tf.fill.yaml
+  param: value
+- filename: tf.nn.fractional_avg_pool.yaml
+  param: pseudo_random
+- filename: tf.keras.backend.std.yaml
+  param: axis
+- filename: tf.keras.backend.std.yaml
+  param: x
+param_diff:
+- filename: tf.data.experimental.parse_example_dataset.yaml
+  param:
+  - deterministic
+- filename: tf.linalg.set_diag.yaml
+  param:
+  - align
+- filename: tf.quantization.dequantize.yaml
+  param:
+  - dtype
+- filename: tf.feature_column.embedding_column.yaml
+  param:
+  - use_safe_embedding_lookup
+- filename: tf.linalg.diag.yaml
+  param:
+  - align
+- filename: tf.config.experimental_connect_to_cluster.yaml
+  param:
+  - cluster_device_filters
+- filename: tf.feature_column.shared_embeddings.yaml
+  param:
+  - use_safe_embedding_lookup
+- filename: tf.data.experimental.make_saveable_from_iterator.yaml
+  param:
+  - external_state_policy
+- filename: tf.linalg.diag_part.yaml
+  param:
+  - align
+uniqu_doc2.1_parsed_rmv1:
+- tf.keras.layers.GlobalMaxPool1D.yaml
+- tf.keras.layers.Conv3D.yaml
+- tf.keras.preprocessing.image.apply_affine_transform.yaml
+- tf.keras.layers.MaxPool2D.yaml
+- tf.keras.layers.Conv1D.yaml
+- tf.keras.preprocessing.text.hashing_trick.yaml
+- tf.eig.yaml
+- tf.keras.layers.SeparableConv1D.yaml
+- tf.keras.layers.GlobalMaxPool3D.yaml
+- tf.keras.preprocessing.text.text_to_word_sequence.yaml
+- tf.keras.preprocessing.text.tokenizer_from_json.yaml
+- tf.keras.preprocessing.image.apply_channel_shift.yaml
+- tf.keras.layers.MaxPool3D.yaml
+- tf.keras.layers.GlobalMaxPool2D.yaml
+- tf.keras.preprocessing.image.load_img.yaml
+- tf.random.experimental.create_rng_state.yaml
+- tf.debugging.Assert.yaml
+- tf.keras.layers.SeparableConv2D.yaml
+- tf.keras.layers.Conv2D.yaml
+- tf.keras.layers.MaxPool1D.yaml
+- tf.keras.layers.BatchNormalization.yaml
+- tf.eigvals.yaml
+- tf.keras.preprocessing.sequence.skipgrams.yaml
+- tf.keras.utils.convert_all_kernels_in_model.yaml
+- tf.nn.leaky_relu.yaml
+- tf.random.experimental.set_global_generator.yaml
+- tf.keras.preprocessing.image.random_rotation.yaml
+- tf.keras.layers.Dot.yaml
+- tf.keras.preprocessing.sequence.make_sampling_table.yaml
+- tf.keras.preprocessing.image.random_zoom.yaml
+- tf.keras.experimental.SequenceFeatures.yaml
+- tf.keras.preprocessing.image.random_channel_shift.yaml
+- tf.keras.layers.AveragePooling2D.yaml
+- tf.keras.layers.Concatenate.yaml
+- tf.keras.layers.GlobalAveragePooling2D.yaml
+- tf.keras.losses.KLD.yaml
+- tf.lite.RepresentativeDataset.yaml
+- tf.keras.layers.Attention.yaml
+- tf.keras.preprocessing.image.random_shear.yaml
+- tf.keras.layers.AveragePooling3D.yaml
+- tf.keras.layers.AdditiveAttention.yaml
+- tf.keras.layers.AveragePooling1D.yaml
+- tf.keras.Input.yaml
+- tf.data.experimental.Counter.yaml
+- tf.keras.layers.GlobalAveragePooling1D.yaml
+- tf.keras.preprocessing.image.random_shift.yaml
+- tf.keras.preprocessing.text.one_hot.yaml
+- tf.keras.layers.GlobalAveragePooling3D.yaml
+uniqu_tfdoc2.2:
+- tf.experimental.dlpack.from_dlpack.yaml
+- tf.raw_ops.matmul.yaml
+- tf.raw_ops.tensorlistconcatv2.yaml
+- tf.raw_ops.tensorarraywritev2.yaml
+- tf.raw_ops.concat.yaml
+- tf.raw_ops.sparsereducesum.yaml
+- tf.raw_ops.multinomial.yaml
+- tf.raw_ops.onehot.yaml
+- tf.raw_ops.matrixdiagpartv3.yaml
+- tf.raw_ops.iteratorfromstringhandlev2.yaml
+- tf.keras.layers.globalmaxpool1d.yaml
+- tf.raw_ops.raggedtensortovariant.yaml
+- tf.raw_ops.dataformatdimmap.yaml
+- tf.raw_ops.min.yaml
+- tf.raw_ops.infeedenqueue.yaml
+- tf.raw_ops.maximum.yaml
+- tf.raw_ops.inplaceadd.yaml
+- tf.raw_ops.extractimagepatches.yaml
+- tf.raw_ops.scatterupdate.yaml
+- tf.raw_ops.fusedbatchnormgradv2.yaml
+- tf.raw_ops.experimentalsqldataset.yaml
+- tf.raw_ops.applypowersign.yaml
+- tf.raw_ops.elugrad.yaml
+- tf.raw_ops.sigmoidgrad.yaml
+- tf.raw_ops.resourcesparseapplyftrlv2.yaml
+- tf.raw_ops.decodebase64.yaml
+- tf.raw_ops.sparseapplymomentum.yaml
+- tf.raw_ops.resourceapplyaddsign.yaml
+- tf.raw_ops.iteratortostringhandle.yaml
+- tf.raw_ops.truncatednormal.yaml
+- tf.math.special.dawsn.yaml
+- tf.raw_ops.resourcescatteradd.yaml
+- tf.raw_ops.unsortedsegmentsum.yaml
+- tf.raw_ops.depthwiseconv2dnative.yaml
+- tf.keras.applications.resnet.preprocess_input.yaml
+- tf.raw_ops.deletemultideviceiterator.yaml
+- tf.raw_ops.maxintraopparallelismdataset.yaml
+- tf.raw_ops.tensorarrayreadv3.yaml
+- tf.raw_ops.barriertakemany.yaml
+- tf.raw_ops.boostedtreesmakestatssummary.yaml
+- tf.raw_ops.queueenqueue.yaml
+- tf.raw_ops.cudnnrnnv3.yaml
+- tf.raw_ops.tpuembeddingactivations.yaml
+- tf.raw_ops.range.yaml
+- tf.keras.applications.resnet_v2.decode_predictions.yaml
+- tf.raw_ops.lowerbound.yaml
+- tf.raw_ops.quantizedbatchnormwithglobalnormalization.yaml
+- tf.raw_ops.batchfft.yaml
+- tf.raw_ops.experimentalmapandbatchdataset.yaml
+- tf.raw_ops.sparsetodense.yaml
+- tf.distribute.experimental.collectivehints.yaml
+- tf.raw_ops.transpose.yaml
+- tf.raw_ops.encodejpeg.yaml
+- tf.raw_ops.prefetchdataset.yaml
+- tf.raw_ops.abs.yaml
+- tf.raw_ops.sparsematrixnnz.yaml
+- tf.raw_ops.autosharddataset.yaml
+- tf.raw_ops.experimentalthreadpoolhandle.yaml
+- tf.keras.layers.conv3d.yaml
+- tf.raw_ops.experimentalprivatethreadpooldataset.yaml
+- tf.raw_ops.boostedtreesmakequantilesummaries.yaml
+- tf.raw_ops.tensorarrayconcatv2.yaml
+- tf.raw_ops.varhandleop.yaml
+- tf.raw_ops.argmin.yaml
+- tf.keras.applications.vgg16.yaml
+- tf.raw_ops.createsummaryfilewriter.yaml
+- tf.raw_ops.resourcecountupto.yaml
+- tf.raw_ops.ifft2d.yaml
+- tf.raw_ops.retrievetpuembeddingadamparametersgradaccumdebug.yaml
+- tf.raw_ops.irfft3d.yaml
+- tf.raw_ops.log.yaml
+- tf.raw_ops.boostedtreesbucketize.yaml
+- tf.raw_ops.sparsereshape.yaml
+- tf.keras.applications.vgg16.preprocess_input.yaml
+- tf.profiler.experimental.server.start.yaml
+- tf.raw_ops.resourcescatterndadd.yaml
+- tf.raw_ops.loadtpuembeddingftrlparametersgradaccumdebug.yaml
+- tf.raw_ops.matrixlogarithm.yaml
+- tf.raw_ops.editdistance.yaml
+- tf.raw_ops.sparsematrixadd.yaml
+- tf.raw_ops.randomgamma.yaml
+- tf.raw_ops.paddedbatchdataset.yaml
+- tf.raw_ops.dilation2dbackpropfilter.yaml
+- tf.raw_ops.unravelindex.yaml
+- tf.raw_ops.sparseapplyproximalgradientdescent.yaml
+- tf.keras.layers.maxpool2d.yaml
+- tf.keras.layers.conv1d.yaml
+- tf.image.rot90.yaml
+- tf.raw_ops.boostedtreesensembleresourcehandleop.yaml
+- tf.raw_ops.lookuptablefind.yaml
+- tf.raw_ops.retrievetpuembeddingadagradparameters.yaml
+- tf.raw_ops.tensorarrayscatterv2.yaml
+- tf.raw_ops.loadtpuembeddingstochasticgradientdescentparameters.yaml
+- tf.raw_ops.scattersub.yaml
+- tf.raw_ops.expm1.yaml
+- tf.raw_ops.cropandresizegradimage.yaml
+- tf.raw_ops.copyhost.yaml
+- tf.raw_ops.loadtpuembeddingmdladagradlightparameters.yaml
+- tf.raw_ops.csrsparsematrixtodense.yaml
+- tf.raw_ops.zipdataset.yaml
+- tf.raw_ops.recvtpuembeddingactivations.yaml
+- tf.raw_ops.lookuptableimport.yaml
+- tf.raw_ops.bytesproducedstatsdataset.yaml
+- tf.raw_ops.staticregexreplace.yaml
+- tf.raw_ops.tensorlistscatter.yaml
+- tf.raw_ops.multideviceiterator.yaml
+- tf.raw_ops.tpuordinalselector.yaml
+- tf.raw_ops.tensorarraysplitv2.yaml
+- tf.raw_ops.snapshotdataset.yaml
+- tf.raw_ops.matchingfilesdataset.yaml
+- tf.raw_ops.sparsematrixmatmul.yaml
+- tf.raw_ops.boostedtreessparsecalculatebestfeaturesplit.yaml
+- tf.raw_ops.multideviceiteratorgetnextfromshard.yaml
+- tf.raw_ops.experimentalsetstatsaggregatordataset.yaml
+- tf.raw_ops.isfinite.yaml
+- tf.raw_ops.identityreader.yaml
+- tf.raw_ops.cachedataset.yaml
+- tf.raw_ops.diag.yaml
+- tf.raw_ops.refnextiteration.yaml
+- tf.raw_ops.assertcardinalitydataset.yaml
+- tf.raw_ops.reciprocalgrad.yaml
+- tf.keras.applications.densenet.preprocess_input.yaml
+- tf.raw_ops.cropandresizegradboxes.yaml
+- tf.linalg.eigvals.yaml
+- tf.raw_ops.quantizedconv2dwithbias.yaml
+- tf.raw_ops.quantizedrelu6.yaml
+- tf.raw_ops.diagpart.yaml
+- tf.raw_ops.fusedbatchnormv3.yaml
+- tf.raw_ops.fixedlengthrecordreader.yaml
+- tf.raw_ops.statefuluniform.yaml
+- tf.raw_ops.stageclear.yaml
+- tf.raw_ops.initializetablefromtextfilev2.yaml
+- tf.raw_ops.boostedtreescreatequantilestreamresource.yaml
+- tf.raw_ops.spacetobatch.yaml
+- tf.raw_ops.datasettotfrecord.yaml
+- tf.raw_ops.tensorliststack.yaml
+- tf.raw_ops.mapstage.yaml
+- tf.raw_ops.quantizedrelux.yaml
+- tf.raw_ops.batchtospace.yaml
+- tf.raw_ops.imagesummary.yaml
+- tf.raw_ops.listdiff.yaml
+- tf.raw_ops.modeldataset.yaml
+- tf.raw_ops.readerresetv2.yaml
+- tf.raw_ops.orderedmapstage.yaml
+- tf.raw_ops.stringlength.yaml
+- tf.raw_ops.reducejoin.yaml
+- tf.raw_ops.unbatch.yaml
+- tf.raw_ops.scattermax.yaml
+- tf.raw_ops.experimentalstatsaggregatorsummary.yaml
+- tf.raw_ops.stackpush.yaml
+- tf.raw_ops.betainc.yaml
+- tf.raw_ops.selfadjointeigv2.yaml
+- tf.raw_ops.boostedtreescreateensemble.yaml
+- tf.raw_ops.matrixdiagv2.yaml
+- tf.keras.applications.resnet152.yaml
+- tf.raw_ops.randomuniform.yaml
+- tf.raw_ops.closesummarywriter.yaml
+- tf.raw_ops.tensorlistgetitem.yaml
+- tf.raw_ops.matrixexponential.yaml
+- tf.raw_ops.stopgradient.yaml
+- tf.raw_ops.serializeiterator.yaml
+- tf.raw_ops.parseexample.yaml
+- tf.raw_ops.csvdataset.yaml
+- tf.raw_ops.parallelinterleavedatasetv4.yaml
+- tf.keras.layers.separableconv1d.yaml
+- tf.raw_ops.resourceapplyproximaladagrad.yaml
+- tf.raw_ops.parameterizedtruncatednormal.yaml
+- tf.keras.layers.globalmaxpool3d.yaml
+- tf.raw_ops.statefulpartitionedcall.yaml
+- tf.raw_ops.tensorarraysizev2.yaml
+- tf.raw_ops.segmentmax.yaml
+- tf.raw_ops.fresnelcos.yaml
+- tf.raw_ops.rngskip.yaml
+- tf.raw_ops.boostedtreesserializeensemble.yaml
+- tf.raw_ops.tensorarraysizev3.yaml
+- tf.raw_ops.sinh.yaml
+- tf.raw_ops.deletesessiontensor.yaml
+- tf.raw_ops.queueisclosed.yaml
+- tf.raw_ops.sparsesegmentsqrtngrad.yaml
+- tf.raw_ops.resizenearestneighborgrad.yaml
+- tf.raw_ops.biasadd.yaml
+- tf.random.stateless_gamma.yaml
+- tf.raw_ops.experimentallatencystatsdataset.yaml
+- tf.raw_ops.acosh.yaml
+- tf.raw_ops.experimentalcsvdataset.yaml
+- tf.raw_ops.relugrad.yaml
+- tf.raw_ops.requantizationrangeperchannel.yaml
+- tf.raw_ops.paralleldynamicstitch.yaml
+- tf.raw_ops.refexit.yaml
+- tf.raw_ops.groupbywindowdataset.yaml
+- tf.raw_ops.initializetablefromtextfile.yaml
+- tf.raw_ops.isnan.yaml
+- tf.raw_ops.stringsplitv2.yaml
+- tf.raw_ops.encodebase64.yaml
+- tf.raw_ops.matrixdiagv3.yaml
+- tf.raw_ops.restoreslice.yaml
+- tf.raw_ops.spacetodepth.yaml
+- tf.raw_ops.boostedtreescenterbias.yaml
+- tf.raw_ops.recordinput.yaml
+- tf.raw_ops.segmentmin.yaml
+- tf.raw_ops.conv3dbackpropinputv2.yaml
+- tf.raw_ops.applyproximalgradientdescent.yaml
+- tf.raw_ops.tilegrad.yaml
+- tf.raw_ops.tfrecordreader.yaml
+- tf.raw_ops.statelessrandompoisson.yaml
+- tf.raw_ops.barrierinsertmany.yaml
+- tf.raw_ops.quantizedconv2dandrelu.yaml
+- tf.raw_ops.resourceapplyadagrad.yaml
+- tf.raw_ops.blocklstm.yaml
+- tf.raw_ops.tensorlistlength.yaml
+- tf.raw_ops.privatethreadpooldataset.yaml
+- tf.raw_ops.scattermin.yaml
+- tf.raw_ops.fractionalmaxpool.yaml
+- tf.raw_ops.dataformatvecpermute.yaml
+- tf.raw_ops.dilation2dbackpropinput.yaml
+- tf.raw_ops.lookuptableremovev2.yaml
+- tf.raw_ops.selectv2.yaml
+- tf.raw_ops.addv2.yaml
+- tf.raw_ops.sparseapplyftrl.yaml
+- tf.raw_ops.batchmatrixdiagpart.yaml
+- tf.raw_ops.loadtpuembeddingrmspropparametersgradaccumdebug.yaml
+- tf.raw_ops.fusedbatchnormv2.yaml
+- tf.raw_ops.squeeze.yaml
+- tf.raw_ops.bincount.yaml
+- tf.keras.applications.imagenet_utils.preprocess_input.yaml
+- tf.raw_ops.truncatediv.yaml
+- tf.raw_ops.quantizedbiasadd.yaml
+- tf.raw_ops.loadtpuembeddingadadeltaparametersgradaccumdebug.yaml
+- tf.raw_ops.barrierclose.yaml
+- tf.raw_ops.shapen.yaml
+- tf.raw_ops.statefuluniformfullint.yaml
+- tf.raw_ops.uniformcandidatesampler.yaml
+- tf.raw_ops.uniquewithcountsv2.yaml
+- tf.raw_ops.expint.yaml
+- tf.raw_ops.orderedmapunstagenokey.yaml
+- tf.raw_ops.datasetfromgraph.yaml
+- tf.raw_ops.maxpoolgradgradv2.yaml
+- tf.raw_ops.stridedslicegrad.yaml
+- tf.raw_ops.greaterequal.yaml
+- tf.raw_ops.mfcc.yaml
+- tf.raw_ops.scaleandtranslategrad.yaml
+- tf.keras.applications.xception.decode_predictions.yaml
+- tf.raw_ops.tensorarraysplitv3.yaml
+- tf.raw_ops.fakequeue.yaml
+- tf.raw_ops.densetosparsebatchdataset.yaml
+- tf.raw_ops.applygradientdescent.yaml
+- tf.raw_ops.refenter.yaml
+- tf.raw_ops.applycenteredrmsprop.yaml
+- tf.raw_ops.experimentaldatasettotfrecord.yaml
+- tf.raw_ops.temporaryvariable.yaml
+- tf.raw_ops.padv2.yaml
+- tf.raw_ops.learnedunigramcandidatesampler.yaml
+- tf.raw_ops.fixedunigramcandidatesampler.yaml
+- tf.raw_ops.retrievetpuembeddingadamparameters.yaml
+- tf.raw_ops.noop.yaml
+- tf.raw_ops.rsqrt.yaml
+- tf.raw_ops.svd.yaml
+- tf.raw_ops.stringtohashbucket.yaml
+- tf.raw_ops.summarywriter.yaml
+- tf.raw_ops.unique.yaml
+- tf.raw_ops.fusedpadconv2d.yaml
+- tf.raw_ops.save.yaml
+- tf.raw_ops.slice.yaml
+- tf.raw_ops.fusedbatchnormgrad.yaml
+- tf.raw_ops.tensorarrayscatterv3.yaml
+- tf.raw_ops.takedataset.yaml
+- tf.raw_ops.fractionalmaxpoolgrad.yaml
+- tf.raw_ops.windowdataset.yaml
+- tf.raw_ops.sparsetosparsesetoperation.yaml
+- tf.raw_ops.switch.yaml
+- tf.raw_ops.stringtonumber.yaml
+- tf.raw_ops.stackclosev2.yaml
+- tf.raw_ops.readerreadupto.yaml
+- tf.raw_ops.fractionalavgpool.yaml
+- tf.raw_ops.boostedtreesdeserializeensemble.yaml
+- tf.raw_ops.boostedtreesquantilestreamresourceflush.yaml
+- tf.raw_ops.nonserializabledataset.yaml
+- tf.raw_ops.orderedmappeek.yaml
+- tf.raw_ops.retrievetpuembeddingftrlparameters.yaml
+- tf.raw_ops.sparsematrixtranspose.yaml
+- tf.raw_ops.cast.yaml
+- tf.raw_ops.requantizeperchannel.yaml
+- tf.raw_ops.resizearea.yaml
+- tf.raw_ops.parsesingleexample.yaml
+- tf.raw_ops.scalarsummary.yaml
+- tf.raw_ops.iteratorv2.yaml
+- tf.keras.applications.resnet101v2.yaml
+- tf.raw_ops.deepcopy.yaml
+- tf.random.set_global_generator.yaml
+- tf.raw_ops.applymomentum.yaml
+- tf.raw_ops.tensorarrayconcatv3.yaml
+- tf.raw_ops.retrievetpuembeddingadagradparametersgradaccumdebug.yaml
+- tf.raw_ops.sparsetensordensematmul.yaml
+- tf.raw_ops.prelinearizetuple.yaml
+- tf.raw_ops.nonmaxsuppressionwithoverlaps.yaml
+- tf.raw_ops.retrievetpuembeddingcenteredrmspropparameters.yaml
+- tf.raw_ops.setsize.yaml
+- tf.keras.metrics.sparse_categorical_accuracy.yaml
+- tf.raw_ops.datasettographv2.yaml
+- tf.raw_ops.identity.yaml
+- tf.raw_ops.resizebilineargrad.yaml
+- tf.raw_ops.mulnonan.yaml
+- tf.raw_ops.queuedequeuemany.yaml
+- tf.raw_ops.samplingdataset.yaml
+- tf.raw_ops.parsetensor.yaml
+- tf.raw_ops.queuedequeuemanyv2.yaml
+- tf.raw_ops.randomuniformint.yaml
+- tf.raw_ops.digamma.yaml
+- tf.raw_ops.serializemanysparse.yaml
+- tf.raw_ops.fft3d.yaml
+- tf.raw_ops.argmax.yaml
+- tf.raw_ops.ceil.yaml
+- tf.raw_ops.cudnnrnnv2.yaml
+- tf.raw_ops.symbolicgradient.yaml
+- tf.raw_ops.sparsematrixsoftmaxgrad.yaml
+- tf.keras.applications.resnet.decode_predictions.yaml
+- tf.raw_ops.send.yaml
+- tf.raw_ops.sub.yaml
+- tf.raw_ops.applyrmsprop.yaml
+- tf.raw_ops.conv3dbackpropinput.yaml
+- tf.raw_ops.orderedmapincompletesize.yaml
+- tf.raw_ops.orderedmapunstage.yaml
+- tf.raw_ops.sampledistortedboundingboxv2.yaml
+- tf.raw_ops.cudnnrnnparamstocanonicalv2.yaml
+- tf.keras.activations.swish.yaml
+- tf.raw_ops.max.yaml
+- tf.raw_ops.mapunstage.yaml
+- tf.raw_ops.resourceapplyadam.yaml
+- tf.raw_ops.tensorarrayreadv2.yaml
+- tf.raw_ops.resourceapplyftrl.yaml
+- tf.raw_ops.boostedtreespredict.yaml
+- tf.raw_ops.refswitch.yaml
+- tf.raw_ops.square.yaml
+- tf.raw_ops.shuffledatasetv2.yaml
+- tf.raw_ops.matrixsolve.yaml
+- tf.raw_ops.saveslices.yaml
+- tf.raw_ops.resourcescatterdiv.yaml
+- tf.raw_ops.boostedtreestrainingpredict.yaml
+- tf.raw_ops.depthwiseconv2dnativebackpropfilter.yaml
+- tf.raw_ops.fingerprint.yaml
+- tf.raw_ops.quantizedresizebilinear.yaml
+- tf.keras.layers.multiply.yaml
+- tf.raw_ops.maxpool3d.yaml
+- tf.raw_ops.fusedbatchnormgradv3.yaml
+- tf.raw_ops.outfeeddequeue.yaml
+- tf.raw_ops.sqldataset.yaml
+- tf.raw_ops.invert.yaml
+- tf.raw_ops.softplusgrad.yaml
+- tf.raw_ops.real.yaml
+- tf.raw_ops.boostedtreesupdateensemble.yaml
+- tf.raw_ops.inv.yaml
+- tf.raw_ops.resourcescatterndupdate.yaml
+- tf.raw_ops.tensorarray.yaml
+- tf.raw_ops.matrixdiagpartv2.yaml
+- tf.math.special.fresnel_cos.yaml
+- tf.raw_ops.tensorarraywritev3.yaml
+- tf.raw_ops.guaranteeconst.yaml
+- tf.raw_ops.substr.yaml
+- tf.raw_ops.csrsparsematrixtosparsetensor.yaml
+- tf.raw_ops.retrievetpuembeddingadadeltaparameters.yaml
+- tf.raw_ops.experimentalnonserializabledataset.yaml
+- tf.raw_ops.reducedataset.yaml
+- tf.raw_ops.accumulatorsetglobalstep.yaml
+- tf.raw_ops.fakequantwithminmaxvarsperchannel.yaml
+- tf.raw_ops.prelinearize.yaml
+- tf.raw_ops.repeatdataset.yaml
+- tf.raw_ops.optionalnone.yaml
+- tf.raw_ops.retrievetpuembeddingproximaladagradparameters.yaml
+- tf.raw_ops.directedinterleavedataset.yaml
+- tf.raw_ops.stack.yaml
+- tf.raw_ops.collectivebcastsend.yaml
+- tf.raw_ops.writeimagesummary.yaml
+- tf.raw_ops.applyaddsign.yaml
+- tf.raw_ops.tensorlistconcatlists.yaml
+- tf.raw_ops.dilation2d.yaml
+- tf.raw_ops.igammac.yaml
+- tf.raw_ops.boostedtreesexampledebugoutputs.yaml
+- tf.raw_ops.zeroslike.yaml
+- tf.raw_ops.exit.yaml
+- tf.raw_ops.randomdataset.yaml
+- tf.raw_ops.matrixsetdiagv3.yaml
+- tf.raw_ops.alltoall.yaml
+- tf.raw_ops.readernumworkunitscompleted.yaml
+- tf.raw_ops.readvariableop.yaml
+- tf.raw_ops.xdivy.yaml
+- tf.raw_ops.linspace.yaml
+- tf.raw_ops.batchcholesky.yaml
+- tf.raw_ops.sparsesplit.yaml
+- tf.raw_ops.tensorlistreserve.yaml
+- tf.raw_ops.reverse.yaml
+- tf.raw_ops.spacetobatchnd.yaml
+- tf.raw_ops.lgamma.yaml
+- tf.raw_ops.resourceaccumulatorsetglobalstep.yaml
+- tf.raw_ops.stagepeek.yaml
+- tf.raw_ops.reversev2.yaml
+- tf.raw_ops.pack.yaml
+- tf.raw_ops.batchmatrixsolvels.yaml
+- tf.raw_ops.sparseapplyadagradv2.yaml
+- tf.raw_ops.maxpoolv2.yaml
+- tf.raw_ops.wholefilereader.yaml
+- tf.raw_ops.datasettograph.yaml
+- tf.keras.layers.maxpool3d.yaml
+- tf.raw_ops.resourceapplyadamwithamsgrad.yaml
+- tf.raw_ops.scatterndadd.yaml
+- tf.raw_ops.fusedresizeandpadconv2d.yaml
+- tf.raw_ops.conj.yaml
+- tf.raw_ops.lessequal.yaml
+- tf.keras.metrics.binary_accuracy.yaml
+- tf.raw_ops.logicalor.yaml
+- tf.raw_ops.deserializesparse.yaml
+- tf.raw_ops.mergesummary.yaml
+- tf.raw_ops.experimentalrandomdataset.yaml
+- tf.raw_ops.tensorsummary.yaml
+- tf.keras.layers.globalmaxpool2d.yaml
+- tf.raw_ops.shape.yaml
+- tf.raw_ops.adjusthue.yaml
+- tf.raw_ops.readerreadv2.yaml
+- tf.raw_ops.debuggradientidentity.yaml
+- tf.raw_ops.batchmatmulv2.yaml
+- tf.keras.applications.inception_resnet_v2.preprocess_input.yaml
+- tf.raw_ops.experimentalgroupbyreducerdataset.yaml
+- tf.raw_ops.loadtpuembeddingrmspropparameters.yaml
+- tf.raw_ops.decodebmp.yaml
+- tf.raw_ops.batchmatrixdiag.yaml
+- tf.raw_ops.mapdataset.yaml
+- tf.raw_ops.lookuptableimportv2.yaml
+- tf.raw_ops.maxpool3dgrad.yaml
+- tf.raw_ops.sparsecross.yaml
+- tf.signal.vorbis_window.yaml
+- tf.raw_ops.anonymousiteratorv2.yaml
+- tf.raw_ops.sparsetensordenseadd.yaml
+- tf.keras.applications.xception.yaml
+- tf.raw_ops.blocklstmgradv2.yaml
+- tf.raw_ops.scandataset.yaml
+- tf.raw_ops.oneshotiterator.yaml
+- tf.raw_ops.sleepdataset.yaml
+- tf.raw_ops.adjustcontrastv2.yaml
+- tf.raw_ops.squareddifference.yaml
+- tf.raw_ops.cudnnrnncanonicaltoparams.yaml
+- tf.raw_ops.lmdbdataset.yaml
+- tf.raw_ops.stringupper.yaml
+- tf.raw_ops.loadtpuembeddingmomentumparameters.yaml
+- tf.raw_ops.mapsize.yaml
+- tf.keras.applications.inception_resnet_v2.decode_predictions.yaml
+- tf.raw_ops.ifft.yaml
+- tf.raw_ops.matrixsolvels.yaml
+- tf.raw_ops.countupto.yaml
+- tf.raw_ops.partitionedcall.yaml
+- tf.raw_ops.stackpop.yaml
+- tf.raw_ops.parallelinterleavedatasetv2.yaml
+- tf.raw_ops.sharddataset.yaml
+- tf.raw_ops.boostedtreescalculatebestgainsperfeature.yaml
+- tf.raw_ops.choosefastestdataset.yaml
+- tf.raw_ops.queuedequeueuptov2.yaml
+- tf.raw_ops.collectivegather.yaml
+- tf.raw_ops.placeholderv2.yaml
+- tf.raw_ops.tensorarraygatherv3.yaml
+- tf.keras.mixed_precision.experimental.get_layer_policy.yaml
+- tf.raw_ops.writescalarsummary.yaml
+- tf.raw_ops.tan.yaml
+- tf.raw_ops.resourcesparseapplycenteredrmsprop.yaml
+- tf.raw_ops.lookuptablefindv2.yaml
+- tf.debugging.assert.yaml
+- tf.raw_ops.readerserializestatev2.yaml
+- tf.raw_ops.intopk.yaml
+- tf.raw_ops.concatoffset.yaml
+- tf.raw_ops.flushsummarywriter.yaml
+- tf.raw_ops.atanh.yaml
+- tf.keras.layers.separableconv2d.yaml
+- tf.keras.losses.mape.yaml
+- tf.keras.applications.inception_v3.preprocess_input.yaml
+- tf.raw_ops.accumulatenv2.yaml
+- tf.raw_ops.tensorlistfromtensor.yaml
+- tf.raw_ops.decodecompressed.yaml
+- tf.raw_ops.sin.yaml
+- tf.raw_ops.tensorarrayunpack.yaml
+- tf.raw_ops.blocklstmv2.yaml
+- tf.keras.layers.add.yaml
+- tf.raw_ops.statefultruncatednormal.yaml
+- tf.keras.applications.vgg19.decode_predictions.yaml
+- tf.raw_ops.depthwiseconv2dnativebackpropinput.yaml
+- tf.raw_ops.rangedataset.yaml
+- tf.raw_ops.resourcescattermul.yaml
+- tf.math.special.spence.yaml
+- tf.raw_ops.resourcescatterupdate.yaml
+- tf.raw_ops.tensorlistelementshape.yaml
+- tf.raw_ops.cumprod.yaml
+- tf.raw_ops.parsesequenceexample.yaml
+- tf.raw_ops.ifft3d.yaml
+- tf.raw_ops.irfft2d.yaml
+- tf.raw_ops.lrngrad.yaml
+- tf.raw_ops.fact.yaml
+- tf.raw_ops.boostedtreesquantilestreamresourceaddsummaries.yaml
+- tf.raw_ops.rgbtohsv.yaml
+- tf.raw_ops.stackclose.yaml
+- tf.raw_ops.priorityqueue.yaml
+- tf.raw_ops.infeeddequeuetuple.yaml
+- tf.keras.applications.vgg16.decode_predictions.yaml
+- tf.raw_ops.sparseaddgrad.yaml
+- tf.raw_ops.sparseaccumulatorapplygradient.yaml
+- tf.raw_ops.paddedbatchdatasetv2.yaml
+- tf.raw_ops.readernumrecordsproduced.yaml
+- tf.raw_ops.ncclbroadcast.yaml
+- tf.raw_ops.upperbound.yaml
+- tf.keras.layers.conv2d.yaml
+- tf.keras.layers.maxpool1d.yaml
+- tf.raw_ops.const.yaml
+- tf.raw_ops.dequantize.yaml
+- tf.autograph.experimental.set_loop_options.yaml
+- tf.raw_ops.sparseapplyadagradda.yaml
+- tf.raw_ops.sparsetensortocsrsparsematrix.yaml
+- tf.raw_ops.queuesize.yaml
+- tf.raw_ops.ncclreduce.yaml
+- tf.raw_ops.resourceaccumulatornumaccumulated.yaml
+- tf.raw_ops.dummymemorycache.yaml
+- tf.raw_ops.resourceaccumulatortakegradient.yaml
+- tf.raw_ops.batchnormwithglobalnormalizationgrad.yaml
+- tf.raw_ops.equal.yaml
+- tf.raw_ops.quantizedmatmulwithbiasanddequantize.yaml
+- tf.raw_ops.boostedtreescalculatebestfeaturesplitv2.yaml
+- tf.raw_ops.sparsematrixmul.yaml
+- tf.raw_ops.serializesparse.yaml
+- tf.raw_ops.statefulstandardnormalv2.yaml
+- tf.raw_ops.sparseapplyproximaladagrad.yaml
+- tf.raw_ops.applyadamax.yaml
+- tf.raw_ops.hashtable.yaml
+- tf.raw_ops.acos.yaml
+- tf.raw_ops.mutablehashtableoftensorsv2.yaml
+- tf.raw_ops.unstage.yaml
+- tf.raw_ops.latencystatsdataset.yaml
+- tf.raw_ops.avgpool3d.yaml
+- tf.raw_ops.applyadagrad.yaml
+- tf.raw_ops.loopcond.yaml
+- tf.raw_ops.resourceapplymomentum.yaml
+- tf.raw_ops.addmanysparsetotensorsmap.yaml
+- tf.raw_ops.parseexampledatasetv2.yaml
+- tf.raw_ops.choleskygrad.yaml
+- tf.raw_ops.tpureplicatedoutput.yaml
+- tf.raw_ops.tensorarrayread.yaml
+- tf.raw_ops.audiosummaryv2.yaml
+- tf.raw_ops.resourcesparseapplymomentum.yaml
+- tf.raw_ops.parallelinterleavedataset.yaml
+- tf.raw_ops.restorev2.yaml
+- tf.raw_ops.fft2d.yaml
+- tf.raw_ops.ncclallreduce.yaml
+- tf.raw_ops.batchmatrixsetdiag.yaml
+- tf.profiler.experimental.client.trace.yaml
+- tf.raw_ops.datasettosingleelement.yaml
+- tf.raw_ops.boostedtreesgetensemblestates.yaml
+- tf.raw_ops.mod.yaml
+- tf.raw_ops.encodeproto.yaml
+- tf.raw_ops.quantizedconv2dwithbiassumandreluandrequantize.yaml
+- tf.keras.applications.resnet152v2.yaml
+- tf.keras.metrics.top_k_categorical_accuracy.yaml
+- tf.raw_ops.multideviceiteratortostringhandle.yaml
+- tf.raw_ops.writerawprotosummary.yaml
+- tf.raw_ops.quantizedconv2d.yaml
+- tf.raw_ops.experimentalslidingwindowdataset.yaml
+- tf.raw_ops.tensorscatteradd.yaml
+- tf.raw_ops.sdcaoptimizer.yaml
+- tf.raw_ops.stringformat.yaml
+- tf.raw_ops.floor.yaml
+- tf.raw_ops.interleavedataset.yaml
+- tf.raw_ops.applyadagradv2.yaml
+- tf.raw_ops.resizebilinear.yaml
+- tf.raw_ops.mapdefun.yaml
+- tf.raw_ops.drawboundingboxesv2.yaml
+- tf.keras.layers.batchnormalization.yaml
+- tf.raw_ops.stridedsliceassign.yaml
+- tf.raw_ops.sparsematrixzeros.yaml
+- tf.raw_ops.loadtpuembeddingadamparametersgradaccumdebug.yaml
+- tf.raw_ops.sdcashrinkl1.yaml
+- tf.raw_ops.iteratorgetnextasoptional.yaml
+- tf.raw_ops.batchmatrixbandpart.yaml
+- tf.raw_ops.barrier.yaml
+- tf.raw_ops.quantizedconv2dperchannel.yaml
+- tf.raw_ops.lookuptableexport.yaml
+- tf.raw_ops.threadunsafeunigramcandidatesampler.yaml
+- tf.raw_ops.tpupartitionedcall.yaml
+- tf.raw_ops.deserializeiterator.yaml
+- tf.raw_ops.retrievetpuembeddingftrlparametersgradaccumdebug.yaml
+- tf.keras.applications.densenet169.yaml
+- tf.raw_ops.atan2.yaml
+- tf.raw_ops.minimum.yaml
+- tf.raw_ops.threadpoolhandle.yaml
+- tf.raw_ops.collectivereduce.yaml
+- tf.raw_ops.experimentalautosharddataset.yaml
+- tf.raw_ops.generatordataset.yaml
+- tf.raw_ops.erfc.yaml
+- tf.raw_ops.tensorarraysize.yaml
+- tf.raw_ops.mutexlock.yaml
+- tf.raw_ops.bucketize.yaml
+- tf.raw_ops.encodepng.yaml
+- tf.raw_ops.loadtpuembeddingadagradparametersgradaccumdebug.yaml
+- tf.raw_ops.matrixsetdiag.yaml
+- tf.math.xlog1py.yaml
+- tf.raw_ops.boostedtreessparseaggregatestats.yaml
+- tf.raw_ops.emptytensorlist.yaml
+- tf.raw_ops.optionalgetvalue.yaml
+- tf.raw_ops.maxpoolgradgradwithargmax.yaml
+- tf.raw_ops.randomshufflequeue.yaml
+- tf.raw_ops.complexabs.yaml
+- tf.raw_ops.requantizationrange.yaml
+- tf.raw_ops.histogramsummary.yaml
+- tf.raw_ops.statefulstandardnormal.yaml
+- tf.raw_ops.isboostedtreesquantilestreamresourceinitialized.yaml
+- tf.raw_ops.sparsematmul.yaml
+- tf.raw_ops.tensorarraygatherv2.yaml
+- tf.raw_ops.maxpoolgradv2.yaml
+- tf.raw_ops.resourcestridedsliceassign.yaml
+- tf.raw_ops.nextafter.yaml
+- tf.keras.applications.densenet201.yaml
+- tf.raw_ops.sparseconcat.yaml
+- tf.raw_ops.retrievetpuembeddingstochasticgradientdescentparameters.yaml
+- tf.raw_ops.parallelinterleavedatasetv3.yaml
+- tf.raw_ops.tensorstridedsliceupdate.yaml
+- tf.raw_ops.resourceapplyrmsprop.yaml
+- tf.raw_ops.deserializemanysparse.yaml
+- tf.raw_ops.softmax.yaml
+- tf.raw_ops.conv3dbackpropfilter.yaml
+- tf.raw_ops.boostedtreesaggregatestats.yaml
+- tf.raw_ops.sparseslicegrad.yaml
+- tf.raw_ops.requantize.yaml
+- tf.raw_ops.resourceapplyftrlv2.yaml
+- tf.raw_ops.statsaggregatorsummary.yaml
+- tf.raw_ops.unicodetranscode.yaml
+- tf.raw_ops.cumsum.yaml
+- tf.raw_ops.shuffleandrepeatdataset.yaml
+- tf.raw_ops.fixedlengthrecorddataset.yaml
+- tf.keras.applications.nasnet.decode_predictions.yaml
+- tf.raw_ops.tfrecordreaderv2.yaml
+- tf.raw_ops.resizebicubicgrad.yaml
+- tf.raw_ops.batchselfadjointeigv2.yaml
+- tf.raw_ops.experimentalmapdataset.yaml
+- tf.raw_ops.isvariableinitialized.yaml
+- tf.raw_ops.raggedtensortosparse.yaml
+- tf.raw_ops.floormod.yaml
+- tf.raw_ops.gather.yaml
+- tf.raw_ops.sparsesegmentmeangrad.yaml
+- tf.raw_ops.statsaggregatorhandle.yaml
+- tf.raw_ops.randomshuffle.yaml
+- tf.raw_ops.tensorarrayscatter.yaml
+- tf.math.sobol_sample.yaml
+- tf.keras.layers.experimental.syncbatchnormalization.yaml
+- tf.raw_ops.decodewav.yaml
+- tf.raw_ops.retrievetpuembeddingrmspropparametersgradaccumdebug.yaml
+- tf.raw_ops.staticregexfullmatch.yaml
+- tf.keras.losses.mae.yaml
+- tf.keras.losses.msle.yaml
+- tf.raw_ops.quantizedmatmulwithbiasandrequantize.yaml
+- tf.raw_ops.retrievetpuembeddingadadeltaparametersgradaccumdebug.yaml
+- tf.raw_ops.barrierreadysize.yaml
+- tf.raw_ops.fifoqueuev2.yaml
+- tf.raw_ops.anonymousmultideviceiterator.yaml
+- tf.raw_ops.applyftrl.yaml
+- tf.keras.applications.inceptionresnetv2.yaml
+- tf.keras.applications.nasnetlarge.yaml
+- tf.raw_ops.batchdataset.yaml
+- tf.raw_ops.refmerge.yaml
+- tf.raw_ops.topk.yaml
+- tf.raw_ops.applyadam.yaml
+- tf.raw_ops.tensorlistsetitem.yaml
+- tf.raw_ops.conv2dbackpropfilter.yaml
+- tf.raw_ops.applyadagradda.yaml
+- tf.raw_ops.copy.yaml
+- tf.raw_ops.tensorarraysplit.yaml
+- tf.raw_ops.assignvariableop.yaml
+- tf.raw_ops.selfadjointeig.yaml
+- tf.raw_ops.checknumericsv2.yaml
+- tf.raw_ops.optimizedataset.yaml
+- tf.raw_ops.decodegif.yaml
+- tf.raw_ops.flatmapdataset.yaml
+- tf.raw_ops.csrsparsematrixcomponents.yaml
+- tf.raw_ops.batchdatasetv2.yaml
+- tf.raw_ops.experimentaldatasetcardinality.yaml
+- tf.raw_ops.lookuptableinsertv2.yaml
+- tf.raw_ops.queueenqueuev2.yaml
+- tf.raw_ops.sparsesegmentmeanwithnumsegments.yaml
+- tf.raw_ops.mapincompletesize.yaml
+- tf.raw_ops.statelessrandombinomial.yaml
+- tf.raw_ops.matrixsetdiagv2.yaml
+- tf.raw_ops.readerserializestate.yaml
+- tf.raw_ops.pad.yaml
+- tf.raw_ops.maxpoolgrad.yaml
+- tf.raw_ops.softsign.yaml
+- tf.keras.applications.densenet.decode_predictions.yaml
+- tf.raw_ops.infeedenqueuetuple.yaml
+- tf.raw_ops.assignsub.yaml
+- tf.raw_ops.euclideannorm.yaml
+- tf.keras.applications.resnet101.yaml
+- tf.raw_ops.fakeparam.yaml
+- tf.raw_ops.filterbylastcomponentdataset.yaml
+- tf.raw_ops.iteratorgetdevice.yaml
+- tf.raw_ops.sparseapplyadadelta.yaml
+- tf.raw_ops.randomgammagrad.yaml
+- tf.raw_ops.tensorarrayconcat.yaml
+- tf.raw_ops.groupbyreducerdataset.yaml
+- tf.raw_ops.conditionalaccumulator.yaml
+- tf.raw_ops.relu6grad.yaml
+- tf.raw_ops.experimentalmatchingfilesdataset.yaml
+- tf.raw_ops.initializetablev2.yaml
+- tf.raw_ops.statelessrandomuniformint.yaml
+- tf.raw_ops.experimentalthreadpooldataset.yaml
+- tf.raw_ops.ctcloss.yaml
+- tf.raw_ops.rsqrtgrad.yaml
+- tf.raw_ops.while.yaml
+- tf.raw_ops.sparsesegmentsum.yaml
+- tf.raw_ops.sparseadd.yaml
+- tf.keras.layers.dot.yaml
+- tf.raw_ops.queuedequeuev2.yaml
+- tf.raw_ops.resourceapplypowersign.yaml
+- tf.keras.losses.get.yaml
+- tf.raw_ops.split.yaml
+- tf.raw_ops.angle.yaml
+- tf.raw_ops.unsortedsegmentjoin.yaml
+- tf.raw_ops.textlinedataset.yaml
+- tf.raw_ops.reversesequence.yaml
+- tf.keras.applications.mobilenet.yaml
+- tf.raw_ops.quantizedconv2dandreluandrequantize.yaml
+- tf.raw_ops.einsum.yaml
+- tf.raw_ops.debugnancount.yaml
+- tf.raw_ops.parseexamplev2.yaml
+- tf.raw_ops.igammagrada.yaml
+- tf.keras.losses.deserialize.yaml
+- tf.raw_ops.legacyparallelinterleavedatasetv2.yaml
+- tf.raw_ops.sparseconditionalaccumulator.yaml
+- tf.raw_ops.resourceapplyproximalgradientdescent.yaml
+- tf.raw_ops.statelessrandomuniformfullint.yaml
+- tf.raw_ops.applyproximaladagrad.yaml
+- tf.raw_ops.retrievetpuembeddingmdladagradlightparameters.yaml
+- tf.raw_ops.encodewav.yaml
+- tf.raw_ops.initializetable.yaml
+- tf.raw_ops.rank.yaml
+- tf.raw_ops.tfrecorddataset.yaml
+- tf.raw_ops.adjustsaturation.yaml
+- tf.raw_ops.quantizedconv2dwithbiasandrelu.yaml
+- tf.raw_ops.tpureplicatemetadata.yaml
+- tf.raw_ops.sparsereducemaxsparse.yaml
+- tf.raw_ops.dynamicpartition.yaml
+- tf.raw_ops.relu.yaml
+- tf.keras.experimental.sequencefeatures.yaml
+- tf.raw_ops.batchcholeskygrad.yaml
+- tf.raw_ops.concatenatedataset.yaml
+- tf.size.yaml
+- tf.raw_ops.createsummarydbwriter.yaml
+- tf.raw_ops.cross.yaml
+- tf.raw_ops.tensorarraywrite.yaml
+- tf.raw_ops.approximateequal.yaml
+- tf.raw_ops.boostedtreesflushquantilesummaries.yaml
+- tf.raw_ops.sparsematrixorderingamd.yaml
+- tf.raw_ops.drawboundingboxes.yaml
+- tf.keras.applications.mobilenet_v2.decode_predictions.yaml
+- tf.raw_ops.mapandbatchdataset.yaml
+- tf.raw_ops.rfft3d.yaml
+- tf.raw_ops.tensorslicedataset.yaml
+- tf.raw_ops.invgrad.yaml
+- tf.raw_ops.logmatrixdeterminant.yaml
+- tf.raw_ops.experimentalmaxintraopparallelismdataset.yaml
+- tf.raw_ops.placeholderwithdefault.yaml
+- tf.raw_ops.round.yaml
+- tf.raw_ops.serializetensor.yaml
+- tf.raw_ops.matrixdiagpart.yaml
+- tf.raw_ops.matrixsquareroot.yaml
+- tf.raw_ops.tile.yaml
+- tf.linalg.eig.yaml
+- tf.raw_ops.sdcaoptimizerv2.yaml
+- tf.raw_ops.loadtpuembeddingftrlparameters.yaml
+- tf.raw_ops.mutexv2.yaml
+- tf.raw_ops.prod.yaml
+- tf.raw_ops.scatterndsub.yaml
+- tf.raw_ops.broadcastgradientargs.yaml
+- tf.raw_ops.resourcesparseapplyrmsprop.yaml
+- tf.raw_ops.conv3d.yaml
+- tf.raw_ops.eagerpyfunc.yaml
+- tf.raw_ops.applyftrlv2.yaml
+- tf.raw_ops.tensorarraygradv3.yaml
+- tf.raw_ops.concatv2.yaml
+- tf.raw_ops.randompoissonv2.yaml
+- tf.raw_ops.mirrorpadgrad.yaml
+- tf.raw_ops.decodepng.yaml
+- tf.raw_ops.adjustcontrast.yaml
+- tf.raw_ops.stringlower.yaml
+- tf.raw_ops.loadtpuembeddingadamparameters.yaml
+- tf.raw_ops.stackv2.yaml
+- tf.raw_ops.lu.yaml
+- tf.data.experimental.assert_cardinality.yaml
+- tf.raw_ops.hashtablev2.yaml
+- tf.raw_ops.barrierincompletesize.yaml
+- tf.raw_ops.queueclosev2.yaml
+- tf.raw_ops.remotecall.yaml
+- tf.raw_ops.histogramfixedwidth.yaml
+- tf.raw_ops.tensorarrayclosev3.yaml
+- tf.raw_ops.grublockcellgrad.yaml
+- tf.raw_ops.gathernd.yaml
+- tf.raw_ops.extractvolumepatches.yaml
+- tf.raw_ops.addsparsetotensorsmap.yaml
+- tf.raw_ops.less.yaml
+- tf.raw_ops.cos.yaml
+- tf.raw_ops.readerrestorestatev2.yaml
+- tf.raw_ops.queuedequeue.yaml
+- tf.raw_ops.tensorarraypack.yaml
+- tf.raw_ops.cudnnrnnbackprop.yaml
+- tf.raw_ops.orderedmapsize.yaml
+- tf.raw_ops.batchifft3d.yaml
+- tf.raw_ops.experimentalparallelinterleavedataset.yaml
+- tf.raw_ops.sparsesegmentsqrtnwithnumsegments.yaml
+- tf.raw_ops.readerreaduptov2.yaml
+- tf.raw_ops.decodejsonexample.yaml
+- tf.raw_ops.softsigngrad.yaml
+- tf.raw_ops.resourcesparseapplyproximalgradientdescent.yaml
+- tf.raw_ops.sparseapplyrmsprop.yaml
+- tf.raw_ops.accumulatornumaccumulated.yaml
+- tf.raw_ops.checknumerics.yaml
+- tf.raw_ops.filterdataset.yaml
+- tf.raw_ops.writegraphsummary.yaml
+- tf.raw_ops.scattermul.yaml
+- tf.raw_ops.debugidentity.yaml
+- tf.raw_ops.selugrad.yaml
+- tf.raw_ops.sparsesparseminimum.yaml
+- tf.raw_ops.destroytemporaryvariable.yaml
+- tf.raw_ops.nonmaxsuppressionv2.yaml
+- tf.raw_ops.merge.yaml
+- tf.raw_ops.shardedfilespec.yaml
+- tf.raw_ops.multideviceiteratorfromstringhandle.yaml
+- tf.raw_ops.tensorlistconcat.yaml
+- tf.raw_ops.cachedatasetv2.yaml
+- tf.raw_ops.lrn.yaml
+- tf.raw_ops.sdcafprint.yaml
+- tf.raw_ops.decodeandcropjpeg.yaml
+- tf.raw_ops.infeeddequeue.yaml
+- tf.raw_ops.sparsedensecwisemul.yaml
+- tf.raw_ops.quantizedconv2dwithbiasandreluandrequantize.yaml
+- tf.raw_ops.boostedtreesquantilestreamresourcehandleop.yaml
+- tf.raw_ops.truncatemod.yaml
+- tf.keras.layers.averagepooling2d.yaml
+- tf.raw_ops.queueenqueuemany.yaml
+- tf.raw_ops.getsessionhandlev2.yaml
+- tf.strings.length.yaml
+- tf.keras.layers.maximum.yaml
+- tf.raw_ops.anonymousmemorycache.yaml
+- tf.raw_ops.sparseapplyftrlv2.yaml
+- tf.keras.layers.concatenate.yaml
+- tf.raw_ops.depthtospace.yaml
+- tf.raw_ops.stackpushv2.yaml
+- tf.raw_ops.fft.yaml
+- tf.raw_ops.optionalfromvalue.yaml
+- tf.raw_ops.timestamp.yaml
+- tf.raw_ops.mirrorpad.yaml
+- tf.raw_ops.lookuptablesize.yaml
+- tf.raw_ops.erfinv.yaml
+- tf.raw_ops.leftshift.yaml
+- tf.raw_ops.scatterndupdate.yaml
+- tf.raw_ops.getsessiontensor.yaml
+- tf.raw_ops.blocklstmgrad.yaml
+- tf.raw_ops.tpucompilationresult.yaml
+- tf.raw_ops.quantizeddepthwiseconv2dwithbiasandrelu.yaml
+- tf.raw_ops.cumulativelogsumexp.yaml
+- tf.raw_ops.rebatchdataset.yaml
+- tf.raw_ops.quantizedconcat.yaml
+- tf.raw_ops.bitcast.yaml
+- tf.raw_ops.quantizedmatmul.yaml
+- tf.raw_ops.anonymousrandomseedgenerator.yaml
+- tf.raw_ops.sparsesegmentsqrtn.yaml
+- tf.raw_ops.nextiteration.yaml
+- tf.raw_ops.audiosummary.yaml
+- tf.raw_ops.if.yaml
+- tf.raw_ops.workerheartbeat.yaml
+- tf.raw_ops.asin.yaml
+- tf.raw_ops.retrievetpuembeddingmomentumparameters.yaml
+- tf.raw_ops.igamma.yaml
+- tf.raw_ops.parseexampledataset.yaml
+- tf.raw_ops.quantizedrelu.yaml
+- tf.raw_ops.cosh.yaml
+- tf.raw_ops.stringngrams.yaml
+- tf.raw_ops.asinh.yaml
+- tf.raw_ops.unicodeencode.yaml
+- tf.raw_ops.nonmaxsuppressionv3.yaml
+- tf.raw_ops.unicodescript.yaml
+- tf.raw_ops.fakequantwithminmaxargs.yaml
+- tf.raw_ops.outfeedenqueue.yaml
+- tf.raw_ops.imag.yaml
+- tf.raw_ops.pyfuncstateless.yaml
+- tf.raw_ops.resizenearestneighbor.yaml
+- tf.raw_ops.atan.yaml
+- tf.keras.applications.nasnet.preprocess_input.yaml
+- tf.raw_ops.raggedtensortotensor.yaml
+- tf.raw_ops.isboostedtreesensembleinitialized.yaml
+- tf.raw_ops.assignadd.yaml
+- tf.raw_ops.fakequantwithminmaxvarsperchannelgradient.yaml
+- tf.profiler.experimental.client.monitor.yaml
+- tf.raw_ops.encodejpegvariablequality.yaml
+- tf.keras.metrics.categorical_accuracy.yaml
+- tf.raw_ops.all.yaml
+- tf.raw_ops.sparsesoftmaxcrossentropywithlogits.yaml
+- tf.raw_ops.loadtpuembeddingmomentumparametersgradaccumdebug.yaml
+- tf.raw_ops.unsortedsegmentprod.yaml
+- tf.raw_ops.fill.yaml
+- tf.raw_ops.randomcrop.yaml
+- tf.raw_ops.stage.yaml
+- tf.raw_ops.crossreplicasum.yaml
+- tf.keras.applications.inceptionv3.yaml
+- tf.raw_ops.quantizedadd.yaml
+- tf.raw_ops.sparsereducesumsparse.yaml
+- tf.raw_ops.lookuptableinsert.yaml
+- tf.raw_ops.raggedtensorfromvariant.yaml
+- tf.raw_ops.quantizev2.yaml
+- tf.raw_ops.tensorarrayclosev2.yaml
+- tf.signal.kaiser_window.yaml
+- tf.raw_ops.readernumrecordsproducedv2.yaml
+- tf.raw_ops.imageprojectivetransformv2.yaml
+- tf.raw_ops.l2loss.yaml
+- tf.raw_ops.loadtpuembeddingcenteredrmspropparameters.yaml
+- tf.random.create_rng_state.yaml
+- tf.raw_ops.fixedlengthrecorddatasetv2.yaml
+- tf.raw_ops.mapunstagenokey.yaml
+- tf.raw_ops.rightshift.yaml
+- tf.raw_ops.mutabledensehashtablev2.yaml
+- tf.raw_ops.tobool.yaml
+- tf.raw_ops.nondeterministicints.yaml
+- tf.raw_ops.matrixdeterminant.yaml
+- tf.raw_ops.quantizedconv2dwithbiassignedsumandreluandrequantize.yaml
+- tf.signal.kaiser_bessel_derived_window.yaml
+- tf.raw_ops.mutablehashtableoftensors.yaml
+- tf.raw_ops.loadtpuembeddingadadeltaparameters.yaml
+- tf.keras.layers.globalaveragepooling2d.yaml
+- tf.raw_ops.quantizeddepthwiseconv2d.yaml
+- tf.raw_ops.lookuptableexportv2.yaml
+- tf.raw_ops.loadandremapmatrix.yaml
+- tf.raw_ops.enqueuetpuembeddingintegerbatch.yaml
+- tf.raw_ops.tensorarraygradv2.yaml
+- tf.raw_ops.stringjoin.yaml
+- tf.raw_ops.maxpool3dgradgrad.yaml
+- tf.raw_ops.loadtpuembeddingadagradparameters.yaml
+- tf.raw_ops.addn.yaml
+- tf.raw_ops.mutabledensehashtable.yaml
+- tf.raw_ops.parallelmapdataset.yaml
+- tf.raw_ops.controltrigger.yaml
+- tf.raw_ops.tensorlistpopback.yaml
+- tf.raw_ops.rint.yaml
+- tf.raw_ops.lstmblockcellgrad.yaml
+- tf.raw_ops.logicaland.yaml
+- tf.raw_ops.softmaxcrossentropywithlogits.yaml
+- tf.raw_ops.generatevocabremapping.yaml
+- tf.raw_ops.fractionalavgpoolgrad.yaml
+- tf.raw_ops.tridiagonalmatmul.yaml
+- tf.raw_ops.readernumworkunitscompletedv2.yaml
+- tf.raw_ops.invertpermutation.yaml
+- tf.raw_ops.grublockcell.yaml
+- tf.keras.layers.average.yaml
+- tf.raw_ops.ndtri.yaml
+- tf.raw_ops.queueisclosedv2.yaml
+- tf.raw_ops.scaleandtranslate.yaml
+- tf.raw_ops.sparsetensorslicedataset.yaml
+- tf.raw_ops.tensorlistpushback.yaml
+- tf.raw_ops.experimentalunbatchdataset.yaml
+- tf.raw_ops.greater.yaml
+- tf.raw_ops.leakyrelugrad.yaml
+- tf.raw_ops.boostedtreescalculatebestfeaturesplit.yaml
+- tf.raw_ops.experimentaltakewhiledataset.yaml
+- tf.raw_ops.orderedmapclear.yaml
+- tf.raw_ops.xlog1py.yaml
+- tf.raw_ops.infeedenqueueprelinearizedbuffer.yaml
+- tf.raw_ops.multideviceiteratorinit.yaml
+- tf.raw_ops.sparsematrixsoftmax.yaml
+- tf.raw_ops.matrixinverse.yaml
+- tf.raw_ops.choosefastestbranchdataset.yaml
+- tf.raw_ops.asstring.yaml
+- tf.raw_ops.tensorlistscatterintoexistinglist.yaml
+- tf.keras.applications.mobilenet.preprocess_input.yaml
+- tf.raw_ops.assign.yaml
+- tf.raw_ops.mean.yaml
+- tf.raw_ops.decodejpeg.yaml
+- tf.raw_ops.experimentaliteratorgetdevice.yaml
+- tf.raw_ops.resourcesparseapplyftrl.yaml
+- tf.raw_ops.quantizedconv2dwithbiassumandrelu.yaml
+- tf.raw_ops.mapclear.yaml
+- tf.raw_ops.any.yaml
+- tf.raw_ops.sparsesoftmax.yaml
+- tf.raw_ops.densetodensesetoperation.yaml
+- tf.raw_ops.quantizedavgpool.yaml
+- tf.raw_ops.experimentalgroupbywindowdataset.yaml
+- tf.raw_ops.cropandresize.yaml
+- tf.raw_ops.threadpooldataset.yaml
+- tf.raw_ops.spence.yaml
+- tf.raw_ops.applyadadelta.yaml
+- tf.raw_ops.deleteiterator.yaml
+- tf.raw_ops.maxpool.yaml
+- tf.raw_ops.destroyresourceop.yaml
+- tf.raw_ops.stringtohashbucketstrong.yaml
+- tf.keras.losses.kld.yaml
+- tf.random.stateless_binomial.yaml
+- tf.raw_ops.polygamma.yaml
+- tf.raw_ops.selu.yaml
+- tf.raw_ops.collectivebcastrecv.yaml
+- tf.lite.representativedataset.yaml
+- tf.raw_ops.ensureshape.yaml
+- tf.raw_ops.batchsvd.yaml
+- tf.raw_ops.matchingfiles.yaml
+- tf.raw_ops.size.yaml
+- tf.keras.applications.imagenet_utils.decode_predictions.yaml
+- tf.raw_ops.experimentaldirectedinterleavedataset.yaml
+- tf.raw_ops.takemanysparsefromtensorsmap.yaml
+- tf.raw_ops.batchtospacend.yaml
+- tf.raw_ops.tensordataset.yaml
+- tf.raw_ops.batchmatrixtriangularsolve.yaml
+- tf.raw_ops.sparsematrixsparsematmul.yaml
+- tf.raw_ops.regexfullmatch.yaml
+- tf.raw_ops.intopkv2.yaml
+- tf.raw_ops.assert.yaml
+- tf.raw_ops.batchmatrixinverse.yaml
+- tf.raw_ops.resourceapplygradientdescent.yaml
+- tf.raw_ops.conv3dbackpropfilterv2.yaml
+- tf.raw_ops.ignoreerrorsdataset.yaml
+- tf.raw_ops.sobolsample.yaml
+- tf.raw_ops.case.yaml
+- tf.raw_ops.resourceapplycenteredrmsprop.yaml
+- tf.raw_ops.queuedequeueupto.yaml
+- tf.keras.layers.attention.yaml
+- tf.raw_ops.batchfft3d.yaml
+- tf.keras.layers.subtract.yaml
+- tf.raw_ops.resourcegathernd.yaml
+- tf.raw_ops.besseli1e.yaml
+- tf.raw_ops.decoderaw.yaml
+- tf.raw_ops.avgpool.yaml
+- tf.raw_ops.tensorscattersub.yaml
+- tf.raw_ops.mul.yaml
+- tf.raw_ops.quantizedmaxpool.yaml
+- tf.raw_ops.experimentalstatsaggregatorhandle.yaml
+- tf.raw_ops.resourceapplyadamax.yaml
+- tf.raw_ops.tensorarraygrad.yaml
+- tf.raw_ops.splitv.yaml
+- tf.raw_ops.uniquewithcounts.yaml
+- tf.raw_ops.batchmatmul.yaml
+- tf.raw_ops.floordiv.yaml
+- tf.raw_ops.configuretpuembedding.yaml
+- tf.raw_ops.decodeprotov2.yaml
+- tf.raw_ops.cudnnrnn.yaml
+- tf.raw_ops.fakequantwithminmaxargsgradient.yaml
+- tf.raw_ops.maxpoolwithargmax.yaml
+- tf.raw_ops.avgpool3dgrad.yaml
+- tf.raw_ops.quantizeanddequantizev3.yaml
+- tf.raw_ops.mergev2checkpoints.yaml
+- tf.raw_ops.quantizedinstancenorm.yaml
+- tf.keras.applications.xception.preprocess_input.yaml
+- tf.raw_ops.pow.yaml
+- tf.raw_ops.exp.yaml
+- tf.raw_ops.rfft.yaml
+- tf.raw_ops.uniquev2.yaml
+- tf.raw_ops.notequal.yaml
+- tf.raw_ops.loguniformcandidatesampler.yaml
+- tf.keras.losses.serialize.yaml
+- tf.raw_ops.oneslike.yaml
+- tf.raw_ops.raggedrange.yaml
+- tf.raw_ops.anonymousiterator.yaml
+- tf.keras.losses.sparse_categorical_crossentropy.yaml
+- tf.raw_ops.skipdataset.yaml
+- tf.raw_ops.shuffledataset.yaml
+- tf.raw_ops.quantizedconv2dwithbiasandrequantize.yaml
+- tf.raw_ops.resourceapplykerasmomentum.yaml
+- tf.raw_ops.conv2d.yaml
+- tf.raw_ops.tensorlistpushbackbatch.yaml
+- tf.raw_ops.randomshufflequeuev2.yaml
+- tf.raw_ops.experimentalassertnextdataset.yaml
+- tf.raw_ops.resourcesparseapplyadagrad.yaml
+- tf.raw_ops.reshape.yaml
+- tf.raw_ops.statelessrandomnormal.yaml
+- tf.raw_ops.variablev2.yaml
+- tf.raw_ops.ctclossv2.yaml
+- tf.raw_ops.enter.yaml
+- tf.raw_ops.dawsn.yaml
+- tf.raw_ops.stringtohashbucketfast.yaml
+- tf.raw_ops.readfile.yaml
+- tf.math.special.expint.yaml
+- tf.raw_ops.shutdowndistributedtpu.yaml
+- tf.keras.layers.averagepooling3d.yaml
+- tf.raw_ops.nonmaxsuppressionv4.yaml
+- tf.raw_ops.optionalhasvalue.yaml
+- tf.profiler.experimental.start.yaml
+- tf.raw_ops.assignsubvariableop.yaml
+- tf.raw_ops.tensorlistresize.yaml
+- tf.raw_ops.scatteradd.yaml
+- tf.raw_ops.roll.yaml
+- tf.raw_ops.statefulrandombinomial.yaml
+- tf.keras.applications.inception_v3.decode_predictions.yaml
+- tf.raw_ops.quantizeanddequantize.yaml
+- tf.raw_ops.resourcesparseapplyadagradda.yaml
+- tf.raw_ops.bitwisexor.yaml
+- tf.raw_ops.readerread.yaml
+- tf.raw_ops.sqrtgrad.yaml
+- tf.raw_ops.recv.yaml
+- tf.raw_ops.refselect.yaml
+- tf.raw_ops.sparsedensecwiseadd.yaml
+- tf.raw_ops.writesummary.yaml
+- tf.raw_ops.iterator.yaml
+- tf.raw_ops.matrixdiag.yaml
+- tf.raw_ops.batchifft2d.yaml
+- tf.raw_ops.readerrestorestate.yaml
+- tf.raw_ops.statelessmultinomial.yaml
+- tf.raw_ops.statsaggregatorsetsummarywriter.yaml
+- tf.raw_ops.enqueuetpuembeddingsparsebatch.yaml
+- tf.raw_ops.randomstandardnormal.yaml
+- tf.raw_ops.tensorarraygradwithshape.yaml
+- tf.raw_ops.fixedlengthrecordreaderv2.yaml
+- tf.raw_ops.sparseapplyadagrad.yaml
+- tf.raw_ops.softplus.yaml
+- tf.raw_ops.fusedbatchnorm.yaml
+- tf.raw_ops.matrixbandpart.yaml
+- tf.raw_ops.retrievetpuembeddingproximaladagradparametersgradaccumdebug.yaml
+- tf.raw_ops.batchmatrixsolve.yaml
+- tf.raw_ops.sparsefillemptyrows.yaml
+- tf.raw_ops.resourcescattermax.yaml
+- tf.raw_ops.queueclose.yaml
+- tf.raw_ops.batchnormwithglobalnormalization.yaml
+- tf.raw_ops.segmentprod.yaml
+- tf.raw_ops.experimentaldensetosparsebatchdataset.yaml
+- tf.raw_ops.debugidentityv2.yaml
+- tf.keras.applications.mobilenetv2.yaml
+- tf.raw_ops.maxpoolgradgrad.yaml
+- tf.raw_ops.div.yaml
+- tf.raw_ops.inplaceupdate.yaml
+- tf.raw_ops.resourcesparseapplyadagradv2.yaml
+- tf.raw_ops.pyfunc.yaml
+- tf.raw_ops.mutablehashtable.yaml
+- tf.keras.layers.additiveattention.yaml
+- tf.raw_ops.print.yaml
+- tf.raw_ops.unsortedsegmentmin.yaml
+- tf.raw_ops.shardedfilename.yaml
+- tf.raw_ops.logsoftmax.yaml
+- tf.signal.mdct.yaml
+- tf.raw_ops.log1p.yaml
+- tf.raw_ops.configuredistributedtpu.yaml
+- tf.raw_ops.broadcastto.yaml
+- tf.raw_ops.refidentity.yaml
+- tf.raw_ops.quantizeddepthwiseconv2dwithbias.yaml
+- tf.raw_ops.unpack.yaml
+- tf.raw_ops.quantizedownandshrinkrange.yaml
+- tf.raw_ops.savev2.yaml
+- tf.raw_ops.cudnnrnnbackpropv3.yaml
+- tf.raw_ops.placeholder.yaml
+- tf.raw_ops.debuggradientrefidentity.yaml
+- tf.raw_ops.extractjpegshape.yaml
+- tf.raw_ops.takewhiledataset.yaml
+- tf.raw_ops.quantizedconv2dandrequantize.yaml
+- tf.raw_ops.zeta.yaml
+- tf.raw_ops.resourcegather.yaml
+- tf.raw_ops.tensorarrayv2.yaml
+- tf.raw_ops.loadtpuembeddingproximaladagradparametersgradaccumdebug.yaml
+- tf.keras.layers.averagepooling1d.yaml
+- tf.raw_ops.sum.yaml
+- tf.raw_ops.ctcbeamsearchdecoder.yaml
+- tf.raw_ops.resourcescatterndsub.yaml
+- tf.raw_ops.snapshot.yaml
+- tf.raw_ops.resizebicubic.yaml
+- tf.raw_ops.varisinitializedop.yaml
+- tf.raw_ops.sparsesegmentsumwithnumsegments.yaml
+- tf.raw_ops.stridedslice.yaml
+- tf.raw_ops.combinednonmaxsuppression.yaml
+- tf.raw_ops.writehistogramsummary.yaml
+- tf.raw_ops.batchifft.yaml
+- tf.raw_ops.tanh.yaml
+- tf.raw_ops.elu.yaml
+- tf.raw_ops.rfft2d.yaml
+- tf.raw_ops.tensorlistsplit.yaml
+- tf.raw_ops.variable.yaml
+- tf.raw_ops.select.yaml
+- tf.raw_ops.eig.yaml
+- tf.raw_ops.lmdbreader.yaml
+- tf.raw_ops.statefuluniformint.yaml
+- tf.keras.utils.get_registered_name.yaml
+- tf.raw_ops.densetocsrsparsematrix.yaml
+- tf.raw_ops.writefile.yaml
+- tf.raw_ops.qr.yaml
+- tf.keras.applications.mobilenet_v2.preprocess_input.yaml
+- tf.raw_ops.scatterndnonaliasingadd.yaml
+- tf.raw_ops.nonmaxsuppression.yaml
+- tf.raw_ops.batch.yaml
+- tf.raw_ops.experimentalchoosefastestdataset.yaml
+- tf.raw_ops.wrapdatasetvariant.yaml
+- tf.keras.input.yaml
+- tf.raw_ops.inplacesub.yaml
+- tf.raw_ops.loadtpuembeddingproximaladagradparameters.yaml
+- tf.keras.applications.nasnetmobile.yaml
+- tf.data.experimental.counter.yaml
+- tf.raw_ops.parsesinglesequenceexample.yaml
+- tf.raw_ops.quantizeddepthwiseconv2dwithbiasandreluandrequantize.yaml
+- tf.raw_ops.isinf.yaml
+- tf.raw_ops.assignaddvariableop.yaml
+- tf.raw_ops.cudnnrnnparamssize.yaml
+- tf.raw_ops.fresnelsin.yaml
+- tf.raw_ops.batchselfadjointeig.yaml
+- tf.raw_ops.parallelmapdatasetv2.yaml
+- tf.raw_ops.parallelconcat.yaml
+- tf.raw_ops.immutableconst.yaml
+- tf.raw_ops.conv2dbackpropinput.yaml
+- tf.raw_ops.deleterandomseedgenerator.yaml
+- tf.raw_ops.outfeedenqueuetuple.yaml
+- tf.raw_ops.paddingfifoqueuev2.yaml
+- tf.raw_ops.consumemutexlock.yaml
+- tf.raw_ops.resourcescattersub.yaml
+- tf.raw_ops.randompoisson.yaml
+- tf.keras.applications.densenet121.yaml
+- tf.profiler.experimental.stop.yaml
+- tf.raw_ops.reciprocal.yaml
+- tf.raw_ops.batchmatrixdeterminant.yaml
+- tf.raw_ops.resourceapplyadagradv2.yaml
+- tf.raw_ops.stringsplit.yaml
+- tf.raw_ops.uniquedataset.yaml
+- tf.raw_ops.topkv2.yaml
+- tf.raw_ops.sign.yaml
+- tf.raw_ops.biasaddgrad.yaml
+- tf.raw_ops.printv2.yaml
+- tf.raw_ops.paddingfifoqueue.yaml
+- tf.raw_ops.densetosparsesetoperation.yaml
+- tf.raw_ops.compareandbitpack.yaml
+- tf.raw_ops.biasaddv1.yaml
+- tf.raw_ops.stringstrip.yaml
+- tf.raw_ops.preventgradient.yaml
+- tf.raw_ops.bitwiseor.yaml
+- tf.raw_ops.sqrt.yaml
+- tf.raw_ops.leakyrelu.yaml
+- tf.raw_ops.accumulatorapplygradient.yaml
+- tf.raw_ops.boostedtreesquantilestreamresourcedeserialize.yaml
+- tf.raw_ops.readerreset.yaml
+- tf.raw_ops.textlinereaderv2.yaml
+- tf.raw_ops.neg.yaml
+- tf.raw_ops.experimentalparseexampledataset.yaml
+- tf.raw_ops.ctcgreedydecoder.yaml
+- tf.raw_ops.resourceapplyadadelta.yaml
+- tf.raw_ops.tensorscatterupdate.yaml
+- tf.raw_ops.queuesizev2.yaml
+- tf.keras.applications.resnet50v2.yaml
+- tf.raw_ops.statelessrandomuniform.yaml
+- tf.keras.losses.mse.yaml
+- tf.raw_ops.lstmblockcell.yaml
+- tf.raw_ops.audiospectrogram.yaml
+- tf.raw_ops.decodepaddedraw.yaml
+- tf.raw_ops.getsessionhandle.yaml
+- tf.math.divide.yaml
+- tf.raw_ops.deletememorycache.yaml
+- tf.raw_ops.erf.yaml
+- tf.raw_ops.sparsefillemptyrowsgrad.yaml
+- tf.raw_ops.resourceaccumulatorapplygradient.yaml
+- tf.raw_ops.accumulatortakegradient.yaml
+- tf.raw_ops.irfft.yaml
+- tf.raw_ops.unbatchgrad.yaml
+- tf.raw_ops.resourcesparseapplyadadelta.yaml
+- tf.raw_ops.experimentalsleepdataset.yaml
+- tf.raw_ops.unbatchdataset.yaml
+- tf.keras.layers.globalaveragepooling1d.yaml
+- tf.raw_ops.xlogy.yaml
+- tf.raw_ops.textlinereader.yaml
+- tf.raw_ops.statelesstruncatednormal.yaml
+- tf.keras.applications.resnet_v2.preprocess_input.yaml
+- tf.raw_ops.experimentalbytesproducedstatsdataset.yaml
+- tf.raw_ops.iteratorfromstringhandle.yaml
+- tf.raw_ops.expanddims.yaml
+- tf.raw_ops.besseli0e.yaml
+- tf.raw_ops.priorityqueuev2.yaml
+- tf.raw_ops.relu6.yaml
+- tf.raw_ops.unsortedsegmentmax.yaml
+- tf.raw_ops.tensorarrayv3.yaml
+- tf.raw_ops.debugnumericsummary.yaml
+- tf.raw_ops.sendtpuembeddinggradients.yaml
+- tf.raw_ops.resourceconditionalaccumulator.yaml
+- tf.raw_ops.cudnnrnnbackpropv2.yaml
+- tf.raw_ops.fifoqueue.yaml
+- tf.raw_ops.where.yaml
+- tf.raw_ops.experimentaluniquedataset.yaml
+- tf.experimental.dlpack.to_dlpack.yaml
+- tf.raw_ops.unicodedecodewithoffsets.yaml
+- tf.raw_ops.tensorsummaryv2.yaml
+- tf.raw_ops.resourcescattermin.yaml
+- tf.keras.utils.get_registered_object.yaml
+- tf.raw_ops.batchfft2d.yaml
+- tf.raw_ops.dynamicstitch.yaml
+- tf.random.stateless_poisson.yaml
+- tf.raw_ops.cholesky.yaml
+- tf.raw_ops.boostedtreesquantilestreamresourcegetbucketboundaries.yaml
+- tf.raw_ops.sparseslice.yaml
+- tf.raw_ops.fakequantwithminmaxvars.yaml
+- tf.raw_ops.add.yaml
+- tf.raw_ops.raggedgather.yaml
+- tf.raw_ops.tensorlistgather.yaml
+- tf.raw_ops.setstatsaggregatordataset.yaml
+- tf.raw_ops.conjugatetranspose.yaml
+- tf.raw_ops.decodecsv.yaml
+- tf.raw_ops.allcandidatesampler.yaml
+- tf.raw_ops.sparsereorder.yaml
+- tf.raw_ops.generateboundingboxproposals.yaml
+- tf.keras.applications.vgg19.yaml
+- tf.raw_ops.makeiterator.yaml
+- tf.raw_ops.sparsereducemax.yaml
+- tf.raw_ops.experimentalscandataset.yaml
+- tf.raw_ops.tensorlistscatterv2.yaml
+- tf.raw_ops.bitwiseand.yaml
+- tf.raw_ops.boostedtreesupdateensemblev2.yaml
+- tf.raw_ops.cudnnrnncanonicaltoparamsv2.yaml
+- tf.raw_ops.gatherv2.yaml
+- tf.raw_ops.clipbyvalue.yaml
+- tf.raw_ops.resourcesparseapplyproximaladagrad.yaml
+- tf.raw_ops.segmentsum.yaml
+- tf.raw_ops.stagesize.yaml
+- tf.raw_ops.hsvtorgb.yaml
+- tf.raw_ops.sparsedensecwisediv.yaml
+- tf.raw_ops.assertnextdataset.yaml
+- tf.raw_ops.stackpopv2.yaml
+- tf.raw_ops.populationcount.yaml
+- tf.linalg.experimental.conjugate_gradient.yaml
+- tf.raw_ops.sparsesparsemaximum.yaml
+- tf.raw_ops.experimentallmdbdataset.yaml
+- tf.raw_ops.slidingwindowdataset.yaml
+- tf.raw_ops.iteratorgetnextsync.yaml
+- tf.raw_ops.iteratorgetnext.yaml
+- tf.raw_ops.queueenqueuemanyv2.yaml
+- tf.raw_ops.nonmaxsuppressionv5.yaml
+- tf.keras.losses.binary_crossentropy.yaml
+- tf.raw_ops.restore.yaml
+- tf.raw_ops.tpureplicatedinput.yaml
+- tf.raw_ops.lookuptablesizev2.yaml
+- tf.raw_ops.scatterdiv.yaml
+- tf.raw_ops.debugnumericsummaryv2.yaml
+- tf.raw_ops.segmentmean.yaml
+- tf.raw_ops.retrievetpuembeddingrmspropparameters.yaml
+- tf.raw_ops.sparseaccumulatortakegradient.yaml
+- tf.raw_ops.sparsematrixsparsecholesky.yaml
+- tf.raw_ops.statelessrandomgammav2.yaml
+- tf.raw_ops.resourcesparseapplykerasmomentum.yaml
+- tf.raw_ops.tridiagonalsolve.yaml
+- tf.raw_ops.experimentalrebatchdataset.yaml
+- tf.raw_ops.tensorarraygather.yaml
+- tf.keras.applications.vgg19.preprocess_input.yaml
+- tf.raw_ops.quantizedmul.yaml
+- tf.raw_ops.divnonan.yaml
+- tf.signal.inverse_mdct.yaml
+- tf.raw_ops.scatternd.yaml
+- tf.raw_ops.statelesswhile.yaml
+- tf.raw_ops.unicodedecode.yaml
+- tf.raw_ops.extractglimpse.yaml
+- tf.keras.layers.minimum.yaml
+- tf.raw_ops.abort.yaml
+- tf.raw_ops.writeaudiosummary.yaml
+- tf.raw_ops.outfeeddequeuetuple.yaml
+- tf.raw_ops.identityreaderv2.yaml
+- tf.raw_ops.nthelement.yaml
+- tf.raw_ops.retrievetpuembeddingmomentumparametersgradaccumdebug.yaml
+- tf.raw_ops.statelessif.yaml
+- tf.raw_ops.mappeek.yaml
+- tf.raw_ops.maxpoolgradwithargmax.yaml
+- tf.raw_ops.mutablehashtablev2.yaml
+- tf.raw_ops.importevent.yaml
+- tf.keras.layers.globalaveragepooling3d.yaml
+- tf.raw_ops.sparsesegmentmean.yaml
+- tf.raw_ops.statsaggregatorhandlev2.yaml
+- tf.keras.applications.resnet50.yaml
+- tf.raw_ops.computeaccidentalhits.yaml
+- tf.raw_ops.matrixtriangularsolve.yaml
+- tf.raw_ops.realdiv.yaml
+- tf.raw_ops.datasetcardinality.yaml
+- tf.raw_ops.complex.yaml
+- tf.raw_ops.tanhgrad.yaml
+- tf.raw_ops.collectivepermute.yaml
+- tf.raw_ops.avgpoolgrad.yaml
+- tf.keras.metrics.sparse_top_k_categorical_accuracy.yaml
+- tf.raw_ops.cudnnrnnparamstocanonical.yaml
+- tf.raw_ops.sparseapplycenteredrmsprop.yaml
+- tf.raw_ops.tensorarrayclose.yaml
+- tf.raw_ops.broadcastargs.yaml
+- tf.keras.applications.mobilenet.decode_predictions.yaml
+- tf.raw_ops.experimentalignoreerrorsdataset.yaml
+- tf.raw_ops.resourceapplyadagradda.yaml
+- tf.raw_ops.quantizeanddequantizev2.yaml
+- tf.raw_ops.sampledistortedboundingbox.yaml
+- tf.raw_ops.fakequantwithminmaxvarsgradient.yaml
+- tf.raw_ops.wholefilereaderv2.yaml
+- tf.raw_ops.logicalnot.yaml
+- tf.raw_ops.identityn.yaml
+- tf.raw_ops.unwrapdatasetvariant.yaml
+- tf.raw_ops.enqueuetpuembeddingsparsetensorbatch.yaml
+- tf.math.special.fresnel_sin.yaml
+- tf.raw_ops.sigmoid.yaml
+- tf.raw_ops.variableshape.yaml

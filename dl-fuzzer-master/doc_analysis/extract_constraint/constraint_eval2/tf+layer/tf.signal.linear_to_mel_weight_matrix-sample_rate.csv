@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An integer or float `Tensor`. Samples per second of the input signal used to create the spectrogram. Used to figure out the frequencies corresponding to each spectrogram bin, which dictates how they are mapped into the mel scale.",8000,prim_dtype,"dtype(float, int)",,1
+,"An integer or float `Tensor`. Samples per second of the input signal used to create the spectrogram. Used to figure out the frequencies corresponding to each spectrogram bin, which dictates how they are mapped into the mel scale.",8000,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An integer or float `Tensor`. Samples per second of the input signal used to create the spectrogram. Used to figure out the frequencies corresponding to each spectrogram bin, which dictates how they are mapped into the mel scale.",8000,shape,ndim(0),,1

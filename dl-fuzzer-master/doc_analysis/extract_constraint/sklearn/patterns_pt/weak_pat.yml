@@ -1,0 +1,20 @@
+parse_sent: False   #  whether need to parse sentences to match the pattern
+direct_map: True    # direct map the datatype in dtype
+check_dt: False
+break: True
+append: False
+target: dtype
+
+pat:
+        
+    '(matrix|matrices)':
+        dtype: numeric
+        overwrite: False
+        append: False
+
+    'weight\s+(of|for)':
+        dtype: numeric
+        overwrite: False
+        append: False
+            
+        

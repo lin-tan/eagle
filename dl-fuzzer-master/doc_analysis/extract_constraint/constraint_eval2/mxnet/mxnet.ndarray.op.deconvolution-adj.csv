@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","Adjustment for output shape: (w,), (h, w) or (d, h, w). If target_shape is set, adj will be ignored and computed accordingly.",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","Adjustment for output shape: (w,), (h, w) or (d, h, w). If target_shape is set, adj will be ignored and computed accordingly.",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[]","Adjustment for output shape: (w,), (h, w) or (d, h, w). If target_shape is set, adj will be ignored and computed accordingly.",_Null,shape,"shape([d,h,w], [h,w], [w]), ndim(1, 2, 3)",,1

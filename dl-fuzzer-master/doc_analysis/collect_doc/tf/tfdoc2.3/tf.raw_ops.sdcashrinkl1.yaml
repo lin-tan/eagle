@@ -1,0 +1,25 @@
+constraints:
+  l1:
+    descp: A float. Symmetric l1 regularization strength.
+  l2:
+    descp: A float. Symmetric l2 regularization strength. Should be a positive float.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  weights:
+    descp: A list of Tensor objects with type mutable float32. a list of vectors where
+      each value is the weight associated with a feature group.
+inputs:
+  optional:
+  - name
+  required:
+  - weights
+  - l1
+  - l2
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SdcaShrinkL1
+outputs:
+- The created Operation.
+package: tensorflow
+target: SdcaShrinkL1
+title: tf.raw_ops.SdcaShrinkL1
+version: 2.3.0

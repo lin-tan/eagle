@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.group
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  '*inputs':
+    default: null
+    descp: Zero or more tensors to group.
+  name:
+    default: None
+    descp: A name for this operation (optional).
+exceptions:
+- ValueError: If an unknown keyword argument is provided.
+inputs:
+  optional:
+  - '*inputs'
+  - '**kwargs'
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/group
+outputs:
+- An Operation that executes all its inputs.
+package: tensorflow
+target: group
+title: tf.group
+version: 2.3.0

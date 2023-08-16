@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.layers.SpatialDropout1D
+constraints:
+  '**kwargs':
+    descp: ''
+  rate:
+    descp: Float between 0 and 1. Fraction of the input units to drop.
+inputs:
+  optional: []
+  required:
+  - rate
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/SpatialDropout1D
+package: tensorflow
+target: SpatialDropout1D
+title: tf.keras.layers.SpatialDropout1D
+version: 2.2.0

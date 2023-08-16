@@ -1,0 +1,56 @@
+constraints:
+  go_backwards:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  return_sequences:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  return_state:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  stateful:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  time_major:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  unroll:
+    default:
+    - 'False'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - return_sequences
+  - return_state
+  - go_backwards
+  - stateful
+  - unroll
+  - time_major
+  required: []
+package: tensorflow
+target: RNN
+title: tf.keras.layers.RNN
+version: 2.3.0

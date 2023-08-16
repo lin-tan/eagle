@@ -1,0 +1,162 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.random_zoom
+constraints:
+  channel_axis:
+    default: '0'
+    descp: Index of axis for channels in the input tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  col_axis:
+    default: '2'
+    descp: Index of axis for columns in the input tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  cval:
+    default: '0.0'
+    descp: Value used for points outside the boundaries     of the input if `mode='constant'`.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  fill_mode:
+    default: nearest
+    descp: Points outside the boundaries of the input     are filled according to
+      the given mode     (one of `{'constant', 'nearest', 'reflect', 'wrap'}`).
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - constant
+    - nearest
+    - reflect
+    - wrap
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[constant]'
+    - '[nearest]'
+    - '[reflect]'
+    - '[wrap]'
+  interpolation_order:
+    default: '1'
+    descp: int, order of spline interpolation.     see `ndimage.interpolation.affine_transform``
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  row_axis:
+    default: '1'
+    descp: Index of axis for rows in the input tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: Input tensor. Must be 3D.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    - '>=3'
+    range:
+    - '[0,1]'
+    shape:
+    - '[3]'
+    tensor_t:
+    - tf.tensor
+  zoom_range:
+    descp: Tuple of floats; zoom range for width and height.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    structure:
+    - tuple
+exceptions:
+- ValueError: if `zoom_range` isn't a tuple.`
+inputs:
+  optional:
+  - row_axis
+  - col_axis
+  - channel_axis
+  - fill_mode
+  - cval
+  - interpolation_order
+  required:
+  - x
+  - zoom_range
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/image/random_zoom
+outputs: '`Zoomed Numpy image tensor.`'
+package: tensorflow
+target: random_zoom
+title: tf.keras.preprocessing.image.random_zoom
+version: 2.1.0

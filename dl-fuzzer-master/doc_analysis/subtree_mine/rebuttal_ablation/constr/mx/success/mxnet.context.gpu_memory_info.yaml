@@ -1,0 +1,22 @@
+constraints:
+  device_id:
+    default: '0'
+    descp: The device id of the GPU device.
+    doc_dtype: int, optional
+    dtype:
+    - int
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - device_id
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/context/index.html#mxnet.context.gpu_memory_info
+package: mxnet
+target: gpu_memory_info
+title: mxnet.context.gpu_memory_info
+version: 1.6.0

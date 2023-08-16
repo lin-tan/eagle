@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Shape [2] `Tensor` of same `dtype` as `values`. values <= value_range[0] will be mapped to hist[0], values >= value_range[1] will be mapped to hist[-1].",,prim_dtype,"dtype(dtype:&values, int)",,1
+,"Shape [2] `Tensor` of same `dtype` as `values`. values <= value_range[0] will be mapped to hist[0], values >= value_range[1] will be mapped to hist[-1].",,shape,"shape([2]), ndim(1)",,1
+,"Shape [2] `Tensor` of same `dtype` as `values`. values <= value_range[0] will be mapped to hist[0], values >= value_range[1] will be mapped to hist[-1].",,validvalue,"range([0,inf))",,1

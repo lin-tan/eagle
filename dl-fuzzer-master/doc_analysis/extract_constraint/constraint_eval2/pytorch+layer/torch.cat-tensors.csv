@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+sequence of Tensors,"any python sequence of tensors of the same type. Non-empty tensors provided must have the same shape, except in the cat dimension.",,nonprim_dtype,"tensor_t(torch.tensor), structure(sequence(torch.tensor))",,1

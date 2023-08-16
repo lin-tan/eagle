@@ -1,0 +1,10 @@
+sklearn.utils.extmath.fast_logdet = fast_logdet(A)
+    Compute log(det(A)) for A symmetric
+    
+    Equivalent to : np.log(nl.det(A)) but more robust.
+    It returns -Inf if det(A) is non positive or is not defined.
+    
+    Parameters
+    ----------
+    A : array_like
+        The matrix

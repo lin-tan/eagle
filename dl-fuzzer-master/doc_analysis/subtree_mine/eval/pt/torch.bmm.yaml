@@ -1,0 +1,10 @@
+constraints:
+  mat2:
+    descp: the second batch of matrices to be multiplied
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    tensor_t:
+    - torch.tensor
+title: torch.bmm

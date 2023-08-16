@@ -1,0 +1,61 @@
+constraints:
+  batch_index:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  grad:
+    descp: A Tensor. Must have the same type as original_input.
+    dtype:
+    - dtype:&original_input
+    tensor_t:
+    - tf.tensor
+  id:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  original_input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - original_input
+  - batch_index
+  - grad
+  - id
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/UnbatchGrad
+outputs:
+- A Tensor. Has the same type as original_input.
+package: tensorflow
+target: UnbatchGrad
+title: tf.raw_ops.UnbatchGrad
+version: 2.3.0

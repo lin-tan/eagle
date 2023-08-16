@@ -1,0 +1,59 @@
+constraints:
+  input:
+    descp: 1-d int tensor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - torch.tensor
+  minlength:
+    default: '0'
+    descp: optional, minimum number of bins. Should be non-negative.
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  weights:
+    default: None
+    descp: optional, weight for each value in the input tensor. Should be of same
+      size as input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '&input'
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - weights
+  - minlength
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.bincount
+package: torch
+ret_type: Tensor
+target: bincount
+title: torch.bincount
+version: 1.5.0

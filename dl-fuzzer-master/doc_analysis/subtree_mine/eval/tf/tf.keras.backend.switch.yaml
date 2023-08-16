@@ -1,0 +1,6 @@
+constraints:
+  else_expression:
+    descp: either a tensor, or a callable that returns a tensor.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.backend.switch

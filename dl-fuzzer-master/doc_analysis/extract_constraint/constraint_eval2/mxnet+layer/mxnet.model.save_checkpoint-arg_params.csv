@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+dict of str to NDArray,"Model parameter, dict of name to NDArray of net's weights.",,prim_dtype,dtype(string),,1
+dict of str to NDArray,"Model parameter, dict of name to NDArray of net's weights.",,nonprim_dtype,"structure(dict(dict:string), dict(string:ndarray), ndarray)",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Integer specifying the dimension index at which to expand the shape of `input`. Given an input of D dimensions, `axis` must be in range`[-(D+1), D]` (inclusive).",,prim_dtype,dtype(int),,1
+,"Integer specifying the dimension index at which to expand the shape of `input`. Given an input of D dimensions, `axis` must be in range`[-(D+1), D]` (inclusive).",,shape,ndim(0),,1
+,"Integer specifying the dimension index at which to expand the shape of `input`. Given an input of D dimensions, `axis` must be in range`[-(D+1), D]` (inclusive).",,validvalue,"range([-(d+1),d])",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 4-D `Tensor` of type `float`. It needs to be in the default ""NHWC"" format. Its shape is `[batch, in_height, in_width, in_channels]`.",,prim_dtype,dtype(float),,1
+,"A 4-D `Tensor` of type `float`. It needs to be in the default ""NHWC"" format. Its shape is `[batch, in_height, in_width, in_channels]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 4-D `Tensor` of type `float`. It needs to be in the default ""NHWC"" format. Its shape is `[batch, in_height, in_width, in_channels]`.",,shape,"shape([batch,in_height,in_width,in_channels]), ndim(4)",,1

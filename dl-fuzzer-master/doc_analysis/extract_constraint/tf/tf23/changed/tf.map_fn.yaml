@@ -1,0 +1,96 @@
+constraints:
+  back_prop:
+    default: 'True'
+    descp: '(optional) Deprecated: prefer using tf.stop_gradient instead. False disables
+      support for back propagation.'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  dtype:
+    default: None
+    descp: 'Deprecated: Equivalent to fn_output_signature.'
+    dtype:
+    - tf.dtype
+  elems:
+    descp: A tensor or (possibly nested) sequence of tensors, each of which will be
+      unstacked along their first dimension. fn will be applied to the nested sequence
+      of the resulting slices. elems may include ragged and sparse tensors.
+    structure:
+    - list
+    - list(tf.tensor)
+    tensor_t:
+    - tf.tensor
+  fn:
+    descp: The callable to be performed. It accepts one argument, which will have
+      the same (possibly nested) structure as elems. Its output must have the same
+      structure as fn_output_signature if one is provided; otherwise it must have
+      the same structure as elems.
+    dtype:
+    - callable
+  fn_output_signature:
+    default: None
+    descp: 'The output signature of fn. Must be specified if fn''s input and output
+      signatures are different (i.e., if their structures, dtypes, or tensor types
+      do not match). fn_output_signature can be specified using any of the following:
+      A tf.DType or tf.TensorSpec (to describe a tf.Tensor) A tf.RaggedTensorSpec
+      (to describe a tf.RaggedTensor) A tf.SparseTensorSpec (to describe a tf.sparse.SparseTensor)
+      A (possibly nested) tuple, list, or dict containing the above types.'
+  infer_shape:
+    default: 'True'
+    descp: (optional) False disables tests for consistent output shapes.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: (optional) Name prefix for the returned tensors.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  parallel_iterations:
+    default: None
+    descp: (optional) The number of iterations allowed to run in parallel. When graph
+      building, the default value is 10. While executing eagerly, the default value
+      is set to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  swap_memory:
+    default: 'False'
+    descp: (optional) True enables GPU-CPU memory swapping.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+exceptions:
+- TypeError: if fn is not callable or the structure of the output of fn and fn_output_signature
+    do not match.
+- ValueError: if the lengths of the output of fn and fn_output_signature do not match.
+inputs:
+  deprecated:
+  - back_prop
+  - dtype
+  optional:
+  - parallel_iterations
+  - swap_memory
+  - infer_shape
+  - name
+  - fn_output_signature
+  required:
+  - fn
+  - elems
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/map_fn
+outputs:
+- A tensor or (possibly nested) sequence of tensors. Each tensor stacks the results
+  of applying fn to tensors unstacked from elems along the first dimension, from first
+  to last. The result may include ragged and sparse tensors.
+package: tensorflow
+target: map_fn
+title: tf.map_fn
+version: 2.3.0

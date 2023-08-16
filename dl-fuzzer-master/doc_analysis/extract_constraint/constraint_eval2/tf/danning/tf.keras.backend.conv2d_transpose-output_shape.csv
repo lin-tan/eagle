@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,1D int tensor for the output shape.,,prim_dtype,dtype(int),1,1
+,1D int tensor for the output shape.,,nonprim_dtype,tensor_t(tf.tensor),1,1
+,1D int tensor for the output shape.,,shape,ndim(1),1,1
+,1D int tensor for the output shape.,,validvalue,"[0,inf)",1,0

@@ -1,0 +1,40 @@
+aliases:
+- tf.keras.metrics.sparse_categorical_crossentropy
+- tf.losses.sparse_categorical_crossentropy
+- tf.metrics.sparse_categorical_crossentropy
+- tf.compat.v1.keras.losses.sparse_categorical_crossentropy
+- tf.compat.v1.keras.metrics.sparse_categorical_crossentropy
+constraints:
+  axis:
+    default: '-1'
+    descp: (Optional) Defaults to -1. The dimension along which the entropy is computed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  from_logits:
+    default: 'False'
+    descp: Whether y_pred is expected to be a logits tensor. By default, we assume
+      that y_pred encodes a probability distribution.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  y_pred:
+    descp: The predicted values.
+  y_true:
+    descp: Ground truth values.
+inputs:
+  optional:
+  - from_logits
+  - axis
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/losses/sparse_categorical_crossentropy
+outputs:
+- Sparse categorical crossentropy loss value.
+package: tensorflow
+target: sparse_categorical_crossentropy
+title: tf.keras.losses.sparse_categorical_crossentropy
+version: 2.3.0

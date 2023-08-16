@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,Maximum number of operators that can be bundled in a bulk.,,prim_dtype,dtype(int),,1
+int,Maximum number of operators that can be bundled in a bulk.,,shape,ndim(0),,1
+int,Maximum number of operators that can be bundled in a bulk.,,validvalue,"range([0,inf))",,1

@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.keras.backend.stack
+constraints:
+  axis:
+    default: '0'
+    descp: Axis along which to perform stacking.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Axis along which to perform stacking
+  x:
+    descp: List of tensors.
+    normalized_descp:
+    - D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - axis
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/stack
+outputs: A tensor.
+package: tensorflow
+target: stack
+title: tf.keras.backend.stack
+version: 2.1.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='128'",Maximum size of sub-batch to be forwarded at one time,_Null,prim_dtype,dtype(int),,1
+"int, optional, default='128'",Maximum size of sub-batch to be forwarded at one time,_Null,shape,ndim(0),,1
+"int, optional, default='128'",Maximum size of sub-batch to be forwarded at one time,_Null,validvalue,"range([0,inf))",,1

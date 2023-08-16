@@ -1,0 +1,67 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_replicas:
+    descp: A Tensor of type int64. A scalar representing the number of replicas to
+      distribute this batch across. As a result of this transformation the current
+      batch size would end up being divided by this parameter.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  use_fallback:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - use_fallback
+  - name
+  required:
+  - input_dataset
+  - num_replicas
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RebatchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: RebatchDataset
+title: tf.raw_ops.RebatchDataset
+version: 2.2.0

@@ -1,0 +1,34 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the tensor to compute AND with
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.logical_and.html#torch.logical_and#torch.logical_and
+package: torch
+ret_type: Tensor
+target: logical_and
+title: torch.logical_and
+version: 1.7.0

@@ -1,0 +1,13 @@
+constraints:
+  data:
+    descp: input data.
+    doc_dtype: NDArray
+inputs:
+  optional: []
+  required:
+  - data
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.to_dlpack_for_write
+package: mxnet
+target: to_dlpack_for_write
+title: mxnet.ndarray.to_dlpack_for_write
+version: 1.6.0

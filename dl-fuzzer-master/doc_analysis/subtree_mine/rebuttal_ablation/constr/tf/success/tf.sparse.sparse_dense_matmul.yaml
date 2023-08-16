@@ -1,0 +1,93 @@
+aliases:
+- tf.compat.v1.sparse.matmul
+- tf.compat.v1.sparse.sparse_dense_matmul
+- tf.compat.v1.sparse_tensor_dense_matmul
+constraints:
+  adjoint_a:
+    default: 'False'
+    descp: Use the adjoint of A in the matrix multiply.  If A is complex, this is
+      transpose(conj(A)).  Otherwise it's transpose(A).
+    dtype:
+    - int
+    - tf.bool
+    - tf.complex
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  adjoint_b:
+    default: 'False'
+    descp: Use the adjoint of B in the matrix multiply.  If B is complex, this is
+      transpose(conj(B)).  Otherwise it's transpose(B).
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  b:
+    descp: A dense Matrix with the same dtype as sp_a.
+    dtype:
+    - '&sp_a'
+    ndim:
+    - '&sp_a'
+    shape:
+    - '&sp_a'
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  sp_a:
+    descp: SparseTensor A, of rank 2.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    tensor_t:
+    - SparseTensor
+inputs:
+  optional:
+  - adjoint_a
+  - adjoint_b
+  - name
+  required:
+  - sp_a
+  - b
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/sparse/sparse_dense_matmul
+outputs: 'A dense matrix (pseudo-code in dense np.matrix notation):   `A = A.H if
+  adjoint_a else A``B = B.H if adjoint_b else B``return A*B`'
+package: tensorflow
+target: sparse_dense_matmul
+title: tf.sparse.sparse_dense_matmul
+version: 2.1.0

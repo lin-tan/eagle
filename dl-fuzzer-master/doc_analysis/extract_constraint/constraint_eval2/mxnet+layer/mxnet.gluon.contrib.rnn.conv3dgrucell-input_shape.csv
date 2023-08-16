@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple of int,"Input tensor shape at each time step for each sample, excluding dimension of the batch size and sequence length. Must be consistent with conv_layout. For example, for layout 'NCDHW' the shape should be (C, D, H, W).",,prim_dtype,dtype(int),,1
+tuple of int,"Input tensor shape at each time step for each sample, excluding dimension of the batch size and sequence length. Must be consistent with conv_layout. For example, for layout 'NCDHW' the shape should be (C, D, H, W).",,nonprim_dtype,"tensor_t(tensor), structure(tuple(int))",,1
+tuple of int,"Input tensor shape at each time step for each sample, excluding dimension of the batch size and sequence length. Must be consistent with conv_layout. For example, for layout 'NCDHW' the shape should be (C, D, H, W).",,shape,ndim(1),,1
+tuple of int,"Input tensor shape at each time step for each sample, excluding dimension of the batch size and sequence length. Must be consistent with conv_layout. For example, for layout 'NCDHW' the shape should be (C, D, H, W).",,validvalue,"range([0,inf))",,1

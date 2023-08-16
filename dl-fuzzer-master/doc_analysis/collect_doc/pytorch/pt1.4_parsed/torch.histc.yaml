@@ -1,0 +1,39 @@
+constraints:
+  bins:
+    default: '100'
+    descp: number of histogram bins
+    doc_dtype:
+    - python:int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  max:
+    default: '0'
+    descp: upper end of the range (inclusive)
+    doc_dtype:
+    - python:int
+  min:
+    default: '0'
+    descp: lower end of the range (inclusive)
+    doc_dtype:
+    - python:int
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - bins
+  - min
+  - max
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.histc
+package: torch
+ret_type: Tensor
+target: histc
+title: torch.histc
+version: 1.4.0

@@ -1,0 +1,52 @@
+aliases:
+- tf.compat.v1.keras.backend.batch_normalization
+constraints:
+  axis:
+    default: '-1'
+    descp: Integer, the axis that should be normalized. (typically the features axis).
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE, the axis that should be normalized
+    - ONE_WORD BSTR
+  beta:
+    descp: Tensor with which to center the input.
+    normalized_descp:
+    - D_STRUCTURE with which to center the input
+  epsilon:
+    default: '0.001'
+    descp: Fuzz factor.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Fuzz factor
+  gamma:
+    descp: Tensor by which to scale the input.
+    normalized_descp:
+    - D_STRUCTURE by which to scale the input
+  mean:
+    descp: Mean of batch.
+    normalized_descp:
+    - Mean of batch
+  var:
+    descp: Variance of batch.
+    normalized_descp:
+    - Variance of batch
+  x:
+    descp: Input tensor or variable.
+    normalized_descp:
+    - Input D_STRUCTURE or variable
+inputs:
+  optional:
+  - axis
+  - epsilon
+  required:
+  - x
+  - mean
+  - var
+  - beta
+  - gamma
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/batch_normalization
+outputs: A tensor.
+package: tensorflow
+target: batch_normalization
+title: tf.keras.backend.batch_normalization
+version: 2.1.0

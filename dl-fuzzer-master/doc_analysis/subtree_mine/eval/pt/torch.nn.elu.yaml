@@ -1,0 +1,9 @@
+constraints:
+  alpha:
+    default: '1.0'
+    descp: 'the  alpha  value for the ELU formulation. Default: 1.0'
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+title: torch.nn.ELU

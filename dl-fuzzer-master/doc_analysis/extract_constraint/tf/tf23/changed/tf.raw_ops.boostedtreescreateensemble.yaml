@@ -1,0 +1,39 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  stamp_token:
+    descp: A Tensor of type int64. Token to use as the initial value of the resource
+      stamp.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the tree ensemble resource to be created.
+    tensor_t:
+    - tf.tensor
+  tree_ensemble_serialized:
+    descp: A Tensor of type string. Serialized proto of the tree ensemble.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+  - stamp_token
+  - tree_ensemble_serialized
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesCreateEnsemble
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesCreateEnsemble
+title: tf.raw_ops.BoostedTreesCreateEnsemble
+version: 2.3.0

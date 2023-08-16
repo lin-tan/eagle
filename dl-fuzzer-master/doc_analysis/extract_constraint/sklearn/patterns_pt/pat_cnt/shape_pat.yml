@@ -1,0 +1,95 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\(|or )(([\w]+\s+times\s+)+[\w]+):
+    cnt: 0
+    group: 2
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      times: ','
+  (^|[^a-z])\((([a-z],\s+)+[a-z])\):
+    cnt: 1
+    group: 2
+    keep_nonvar: true
+    keep_var: true
+  \((([a-z],\s+)+d_1,\s+d_2,\s+\.\.\.,\s+d_k)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      d_1,\s+d_2,\s+\.\.\.,\s+d_k: '...'
+  \(([a-z])\):
+    cnt: 6
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  has\s+to\s+match\s+(\w+)\s+size:
+    cnt: 0
+    dependent: true
+    group: 1
+  input\s+tensor\s+of\s+shape\s+(([\w]+\s+times\s+)+[\w]+):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      times: ','
+  of\s+shape\s+\((.*?)\):
+    cnt: 130
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      \s_: _
+      times: ','
+  of\s+shape\s+\(.*?\)\s*\(.*?\)\s+or\s+\((.*?)\)\s*\(.*?\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      \s_: _
+      times: ','
+  of\s+size\s+`*\((.*?)\)`*:
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    ndim_prefix: '>='
+    replace:
+      \*: '...'
+  of\s+size\s+matching\s+(\w+):
+    cnt: 0
+    dependent: true
+    group: 1
+  same\s+(shape|size)\s+as\s+([\w]+):
+    cnt: 0
+    dependent: true
+    group: 2
+  tensor\s*\(([\w,\s]+)\):
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      \s_: _
+      times: ','
+split_word:
+- ' '
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- '...'
+- /
+target: shape

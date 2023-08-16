@@ -1,0 +1,41 @@
+constraints:
+  config:
+    default: ''
+    descp: An optional string. Defaults to "".
+  momenta:
+    descp: A Tensor of type float32. Value of momenta used in the Momentum optimization
+      algorithm.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_shards:
+    descp: An int.
+  parameters:
+    descp: A Tensor of type float32. Value of parameters used in the Momentum optimization
+      algorithm.
+  shard_id:
+    descp: An int.
+  table_id:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+  table_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - table_id
+  - table_name
+  - config
+  - name
+  required:
+  - parameters
+  - momenta
+  - num_shards
+  - shard_id
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LoadTPUEmbeddingMomentumParameters
+outputs:
+- The created Operation.
+package: tensorflow
+target: LoadTPUEmbeddingMomentumParameters
+title: tf.raw_ops.LoadTPUEmbeddingMomentumParameters
+version: 2.3.0

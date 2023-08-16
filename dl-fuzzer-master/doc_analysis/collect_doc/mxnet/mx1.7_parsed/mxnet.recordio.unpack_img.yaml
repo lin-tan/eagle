@@ -1,0 +1,20 @@
+constraints:
+  iscolor:
+    default: '-1'
+    descp: Image format option for `cv2.imdecode`.
+    doc_dtype:
+    - int
+  s:
+    descp: String buffer from `MXRecordIO.read`.
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - iscolor
+  required:
+  - s
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/recordio/index.html#mxnet.recordio.unpack_img
+package: mxnet
+target: unpack_img
+title: mxnet.recordio.unpack_img
+version: 1.7.0

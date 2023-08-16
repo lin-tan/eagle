@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,RGB image or images. Size of the last dimension must be 3.,,prim_dtype,dtype(image),,1
+,RGB image or images. Size of the last dimension must be 3.,,shape,ndim(0),,1
+,RGB image or images. Size of the last dimension must be 3.,,validvalue,"range([0,inf))",,1

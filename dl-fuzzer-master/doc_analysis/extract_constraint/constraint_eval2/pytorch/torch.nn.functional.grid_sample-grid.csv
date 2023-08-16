@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"flow-field of shape (N, H_out, W_out, 2)  (4-D case) or (N, D_out, H_out, W_out, 3)  (5-D case)",,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,"flow-field of shape (N, H_out, W_out, 2)  (4-D case) or (N, D_out, H_out, W_out, 3)  (5-D case)",,shape,"shape([n,d_out,h_out,w_out,3], [n,h_out,w_out,2]), ndim(4, 5)",,1

@@ -1,0 +1,33 @@
+aliases:
+- tf.pow
+- tf.compat.v1.math.pow
+- tf.compat.v1.pow
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: A `Tensor` of type `float16`, `float32`, `float64`, `int32`, `int64`,`complex64`,
+      or `complex128`.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+  y:
+    descp: A `Tensor` of type `float16`, `float32`, `float64`, `int32`, `int64`,`complex64`,
+      or `complex128`.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/pow
+outputs: A `Tensor`.
+package: tensorflow
+target: pow
+title: tf.math.pow
+version: 2.1.0

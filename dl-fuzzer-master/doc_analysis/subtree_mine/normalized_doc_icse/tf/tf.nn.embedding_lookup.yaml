@@ -1,0 +1,45 @@
+constraints:
+  ids:
+    descp: A `Tensor` with type `int32` or `int64` containing the ids to be looked
+      up in `params`.
+    normalized_descp:
+    - A D_STRUCTURE with type D_TYPE containing the ids to be looked up in PARAM
+  max_norm:
+    default: None
+    descp: If not `None`, each embedding is clipped if its l2-norm is larger than
+      this value.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If not QSTR each embedding is clipped if its l2 norm is larger than this value
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  params:
+    descp: A single tensor representing the complete embedding tensor, or a list of
+      P tensors all of same shape except for the first dimension, representing sharded
+      embedding tensors.  Alternatively, a`PartitionedVariable`, created by partitioning
+      along dimension 0. Each element must be appropriately sized for the 'div' `partition_strategy`.
+    normalized_descp:
+    - A single D_STRUCTURE representing the complete embedding D_STRUCTURE of P D_STRUCTURE
+      all of same shape except for the first dimension representing sharded embedding
+      D_STRUCTURE
+    - Alternatively a QSTR created by partitioning along dimension CONSTANT_NUM
+    - Each element must be appropriately sized for the QSTR
+exceptions:
+- ValueError: If `params` is empty.
+inputs:
+  optional:
+  - max_norm
+  - name
+  required:
+  - params
+  - ids
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/embedding_lookup
+outputs: A `Tensor` with the same type as the tensors in `params`.
+package: tensorflow
+target: embedding_lookup
+title: tf.nn.embedding_lookup
+version: 2.1.0

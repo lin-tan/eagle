@@ -1,0 +1,43 @@
+constraints:
+  bucket_boundaries:
+    descp: A list with the same length as float_values of Tensor objects with type
+      float32. float; List of Rank 1 Tensors each containing the bucket boundaries
+      for a single feature.
+    dtype:
+    - tf.float32
+    ndim:
+    - '1'
+    shape:
+    - shape:&float_values
+    structure:
+    - list
+  float_values:
+    descp: A list of Tensor objects with type float32. float; List of Rank 1 Tensor
+      each containing float values for a single feature.
+    dtype:
+    - tf.float32
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - float_values
+  - bucket_boundaries
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesBucketize
+outputs:
+- A list with the same length as float_values of Tensor objects with type int32.
+package: tensorflow
+target: BoostedTreesBucketize
+title: tf.raw_ops.BoostedTreesBucketize
+version: 2.2.0

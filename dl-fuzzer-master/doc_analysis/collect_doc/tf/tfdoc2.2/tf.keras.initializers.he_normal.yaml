@@ -1,0 +1,17 @@
+aliases:
+- tf.initializers.he_normal
+constraints:
+  seed:
+    default: None
+    descp: A Python integer. Used to seed the random generator.
+inputs:
+  optional:
+  - seed
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/initializers/he_normal
+outputs:
+- A callable Initializer with shape and dtype arguments which generates a tensor.
+package: tensorflow
+target: he_normal
+title: tf.keras.initializers.he_normal
+version: 2.2.0

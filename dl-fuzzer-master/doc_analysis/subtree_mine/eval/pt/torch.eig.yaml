@@ -1,0 +1,12 @@
+constraints:
+  eigenvectors:
+    default: 'False'
+    descp: '`True` to compute both eigenvalues and eigenvectors; otherwise, only eigenvalues
+      will be computed'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.eig

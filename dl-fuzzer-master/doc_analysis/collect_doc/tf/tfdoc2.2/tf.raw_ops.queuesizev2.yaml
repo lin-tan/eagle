@@ -1,0 +1,18 @@
+constraints:
+  handle:
+    descp: A Tensor of type resource. The handle to a queue.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QueueSizeV2
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: QueueSizeV2
+title: tf.raw_ops.QueueSizeV2
+version: 2.2.0

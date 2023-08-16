@@ -1,0 +1,92 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: A ndarray/symbol of type int32
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE symbol of type D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_calib_range:
+    default: _Null
+    descp: The maximum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to requantize the int32 data into int8.
+    doc_dtype: float or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The maximum scalar value in the form of D_TYPE obtained through calibration
+    - If present, it will be used to requantize the D_TYPE PARAM into D_TYPE
+    normalized_docdtype: D_TYPE or None, optional, default None
+  max_range:
+    default: None
+    descp: The original maximum scalar value in the form of float32 used for quantizing
+      data into int32.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The original maximum scalar value in the form of D_TYPE used for quantizing
+      PARAM into D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_calib_range:
+    default: _Null
+    descp: The minimum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to requantize the int32 data into int8.
+    doc_dtype: float or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The minimum scalar value in the form of D_TYPE obtained through calibration
+    - If present, it will be used to requantize the D_TYPE PARAM into D_TYPE
+    normalized_docdtype: D_TYPE or None, optional, default None
+  min_range:
+    default: None
+    descp: The original minimum scalar value in the form of float32 used for quantizing
+      data into int32.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The original minimum scalar value in the form of D_TYPE used for quantizing
+      PARAM into D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  out_type:
+    default: _Null
+    descp: Output data type. auto can be specified to automatically determine output
+      type according to min_calib_range.
+    doc_dtype: '{''auto'', ''int8'', ''uint8''},optional, default=''int8'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output PARAM type
+    - auto can be specified to automatically determine output type according to PARAM
+    normalized_docdtype: QSTR ,optional, default QSTR
+inputs:
+  optional:
+  - data
+  - min_range
+  - max_range
+  - out_type
+  - min_calib_range
+  - max_calib_range
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.requantize
+package: mxnet
+target: requantize
+title: mxnet.contrib.ndarray.requantize
+version: 1.6.0

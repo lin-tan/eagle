@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"maximum number of iterations. When reached, the iteration process is hard-stopped and the current approximation of eigenpairs is returned. For infinite iteration but until convergence criteria is met, use -1.",None,prim_dtype,dtype(int),,1

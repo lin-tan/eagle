@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.group
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*inputs':
+    descp: Zero or more tensors to group.
+    normalized_descp:
+    - Zero or more D_STRUCTURE to group
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+exceptions:
+- ValueError: If an unknown keyword argument is provided.
+inputs:
+  optional:
+  - name
+  required:
+  - '*inputs'
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/group
+outputs: An Operation that executes all its inputs.
+package: tensorflow
+target: group
+title: tf.group
+version: 2.1.0

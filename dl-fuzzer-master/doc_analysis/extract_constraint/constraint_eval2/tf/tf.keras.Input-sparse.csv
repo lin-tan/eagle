@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A boolean specifying whether the placeholder to be created is sparse. Only one of 'ragged' and 'sparse' can be True.,False,prim_dtype,dtype(tf.bool),,1
+,A boolean specifying whether the placeholder to be created is sparse. Only one of 'ragged' and 'sparse' can be True.,False,shape,ndim(0),,1
+,A boolean specifying whether the placeholder to be created is sparse. Only one of 'ragged' and 'sparse' can be True.,False,validvalue,"enum(ragged, sparse)",,1

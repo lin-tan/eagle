@@ -1,0 +1,10 @@
+constraints:
+  i2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype:
+    - str
+    - Initializer
+    dtype:
+    - string
+title: mxnet.gluon.rnn.GRU

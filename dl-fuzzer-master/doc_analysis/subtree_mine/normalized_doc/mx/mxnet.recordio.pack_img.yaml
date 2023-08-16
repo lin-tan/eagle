@@ -1,0 +1,46 @@
+constraints:
+  header:
+    descp: Header of the image record. `header.label` can be a number or an array.
+      See more detail in `IRHeader`.
+    doc_dtype: IRHeader
+    normalized_descp:
+    - Header of the image record
+    - header label can be a number or an D_STRUCTURE
+    - See more detail in QSTR
+    normalized_docdtype: ONE_WORD IRHeader
+  img:
+    descp: Image to be packed.
+    doc_dtype: numpy.ndarray
+    normalized_descp:
+    - Image to be packed
+    normalized_docdtype: numpy D_STRUCTURE
+  img_fmt:
+    default: .jpg
+    descp: Encoding of the image (.jpg for JPEG, .png for PNG).
+    doc_dtype: str
+    normalized_default: DEFAULT jpg
+    normalized_descp:
+    - Encoding of the image BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  quality:
+    default: '95'
+    descp: Quality for JPEG encoding in range 1-100, or compression for PNG encoding
+      in range 1-9.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Quality for JPEG encoding in range CONSTANT_NUM CONSTANT_NUM, or compression
+      for PNG encoding in range CONSTANT_NUM CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - quality
+  - img_fmt
+  required:
+  - header
+  - img
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/recordio/index.html#mxnet.recordio.pack_img
+package: mxnet
+target: pack_img
+title: mxnet.recordio.pack_img
+version: 1.6.0

@@ -1,0 +1,9 @@
+constraints:
+  dynamic:
+    default: 'False'
+    descp: ''
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.keras.layers.experimental.preprocessing.PreprocessingLayer

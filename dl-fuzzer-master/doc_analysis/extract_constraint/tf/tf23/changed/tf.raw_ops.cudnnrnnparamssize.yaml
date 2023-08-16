@@ -1,0 +1,138 @@
+constraints:
+  S:
+    descp: 'A tf.DType from: tf.int32, tf.int64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  T:
+    descp: 'A tf.DType from: tf.half, tf.float32, tf.float64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+    dtype:
+    - tf.string
+    enum:
+    - bidirectional
+    - unidirectional
+    ndim:
+    - '0'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+    dtype:
+    - tf.string
+    enum:
+    - auto_select
+    - linear_input
+    - skip_input
+    ndim:
+    - '0'
+  input_size:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_layers:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  num_proj:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_units:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+    dtype:
+    - tf.string
+    enum:
+    - gru
+    - lstm
+    - rnn_relu
+    - rnn_tanh
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - num_proj
+  - name
+  required:
+  - num_layers
+  - num_units
+  - input_size
+  - T
+  - S
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CudnnRNNParamsSize
+outputs:
+- A Tensor of type S.
+package: tensorflow
+target: CudnnRNNParamsSize
+title: tf.raw_ops.CudnnRNNParamsSize
+version: 2.3.0

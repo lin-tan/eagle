@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The width(s) of the ngrams to create. If this is a list or tuple, the op will return ngrams of all specified arities in list order. Values must be non-Tensor integers greater than 0.",,prim_dtype,dtype(numeric),,1
+,"The width(s) of the ngrams to create. If this is a list or tuple, the op will return ngrams of all specified arities in list order. Values must be non-Tensor integers greater than 0.",,validvalue,"range([0,inf))",,1

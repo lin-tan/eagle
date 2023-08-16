@@ -1,0 +1,34 @@
+constraints:
+  keys:
+    descp: A Tensor. Any shape. Keys to look up.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  table_handle:
+    descp: A Tensor of type mutable string. Handle to the table.
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: A Tensor. Values to associate with keys.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - keys
+  - values
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LookupTableInsert
+outputs:
+- The created Operation.
+package: tensorflow
+target: LookupTableInsert
+title: tf.raw_ops.LookupTableInsert
+version: 2.2.0

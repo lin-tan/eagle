@@ -1,0 +1,26 @@
+constraints:
+  destination:
+    default: None
+    descp: 'output device (-1 means CPU, default: current device)'
+    doc_dtype:
+    - python:int
+  dim:
+    default: '0'
+    descp: a dimension along which the tensors will be concatenated.
+    doc_dtype:
+    - python:int
+  tensors:
+    descp: iterable of tensors to gather.
+    doc_dtype:
+    - Iterable[Tensor]
+inputs:
+  optional:
+  - dim
+  - destination
+  required:
+  - tensors
+link: https://pytorch.org/docs/1.4.0/cuda.html#torch.cuda.comm.gather
+package: torch
+target: gather
+title: torch.cuda.comm.gather
+version: 1.4.0

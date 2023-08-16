@@ -1,0 +1,54 @@
+constraints:
+  data_home:
+    default: None
+    descp: string, optional Specify another download and cache folder for the datasets.
+      By default all scikit-learn data is stored in '~/scikit_learn_data' subfolders.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  download_if_missing:
+    default: 'True'
+    descp: boolean, default=True If False, raise a IOError if the data is not locally
+      available instead of trying to download the data from the source site.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset shuffling. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  return_X_y:
+    default: 'False'
+    descp: boolean, default=False. If True, returns ``(data.data, data.target)`` instead
+      of a Bunch object.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  shuffle:
+    default: 'False'
+    descp: bool, default=False Whether to shuffle dataset.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - data_home
+  - download_if_missing
+  - random_state
+  - shuffle
+  - return_X_y
+  required: []
+link: ''
+package: sklearn
+target: fetch_covtype
+title: sklearn.datasets.fetch_covtype
+version: 0.24.2

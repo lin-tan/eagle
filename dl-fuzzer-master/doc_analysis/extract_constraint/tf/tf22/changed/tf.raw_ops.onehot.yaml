@@ -1,0 +1,57 @@
+constraints:
+  axis:
+    default: '-1'
+    descp: 'An optional int. Defaults to -1. The axis to fill (default: -1, a new
+      inner-most axis).'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  depth:
+    descp: A Tensor of type int32. A scalar defining the depth of the one hot dimension.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: 'A Tensor. Must be one of the following types: uint8, int32, int64. A tensor
+      of indices.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  off_value:
+    descp: A Tensor. Must have the same type as on_value. A scalar defining the value
+      to fill in output when indices[j] != i.
+    dtype:
+    - dtype:&on_value
+    tensor_t:
+    - tf.tensor
+  on_value:
+    descp: A Tensor. A scalar defining the value to fill in output when indices[j]
+      = i.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - indices
+  - depth
+  - on_value
+  - off_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/OneHot
+outputs:
+- A Tensor. Has the same type as on_value.
+package: tensorflow
+target: OneHot
+title: tf.raw_ops.OneHot
+version: 2.2.0

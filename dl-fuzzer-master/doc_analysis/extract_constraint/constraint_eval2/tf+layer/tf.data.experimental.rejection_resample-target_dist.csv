@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A floating point type tensor, shaped `[num_classes]`.",,prim_dtype,"dtype(float, tf.dtype)",,1
+,"A floating point type tensor, shaped `[num_classes]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A floating point type tensor, shaped `[num_classes]`.",,shape,"shape([num_classes]), ndim(0, 1)",,1

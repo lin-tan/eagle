@@ -1,0 +1,49 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.RandomFourierFeatures
+constraints:
+  '**kwargs':
+    descp: ''
+  kernel_initializer:
+    default: gaussian
+    descp: Determines the distribution of the parameters of the random features map
+      (and therefore the kernel approximated by the layer). It can be either a string
+      identifier or a Keras Initializer instance. Currently only 'gaussian' and 'laplacian'
+      are supported string identifiers (case insensitive). Note that the kernel matrix
+      is not trainable.
+  name:
+    default: None
+    descp: String, name to use for this layer.
+  output_dim:
+    descp: Positive integer, the dimension of the layer's output, i.e., the number
+      of random features used to approximate the kernel.
+  scale:
+    default: None
+    descp: 'For Gaussian and Laplacian kernels, this corresponds to a scaling factor
+      of the corresponding kernel approximated by the layer (see concrete definitions
+      above). When provided, it should be a positive float. If None, a default value
+      is used: if the kernel initializer is set to "gaussian", scale defaults to sqrt(input_dim
+      / 2), otherwise, it defaults to 1.0. Both the approximation error of the kernel
+      and the classification quality are sensitive to this parameter. If trainable
+      is set to True, this parameter is learned end-to-end during training and the
+      provided value serves as the initial value. Note: When features from this layer
+      are fed to a linear model, by making scale trainable, the resulting optimization
+      problem is no longer convex (even if the loss function used by the linear model
+      is convex).'
+  trainable:
+    default: 'False'
+    descp: Whether the scaling parameter of the layer should be trainable. Defaults
+      to False.
+inputs:
+  optional:
+  - kernel_initializer
+  - scale
+  - trainable
+  - name
+  required:
+  - output_dim
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/RandomFourierFeatures
+package: tensorflow
+target: RandomFourierFeatures
+title: tf.keras.layers.experimental.RandomFourierFeatures
+version: 2.3.0

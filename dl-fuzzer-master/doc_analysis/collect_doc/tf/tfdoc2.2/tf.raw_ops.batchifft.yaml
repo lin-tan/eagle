@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: A Tensor of type complex64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchIFFT
+outputs:
+- A Tensor of type complex64.
+package: tensorflow
+target: BatchIFFT
+title: tf.raw_ops.BatchIFFT
+version: 2.2.0

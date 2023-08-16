@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"Flag whether to enable grad (`True`), or disable (`False`). This can be used to conditionally enable gradients.",,prim_dtype,dtype(torch.bool),,1

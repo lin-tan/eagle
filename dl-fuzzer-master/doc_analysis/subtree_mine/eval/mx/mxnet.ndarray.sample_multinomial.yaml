@@ -1,0 +1,9 @@
+constraints:
+  data:
+    default: None
+    descp: Distribution probabilities. Must sum to one on the last axis.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.sample_multinomial

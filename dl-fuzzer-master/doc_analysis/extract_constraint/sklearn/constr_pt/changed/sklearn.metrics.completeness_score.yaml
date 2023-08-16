@@ -1,0 +1,26 @@
+constraints:
+  labels_pred:
+    descp: array-like of shape (n_samples,) cluster labels to evaluate
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  labels_true:
+    descp: int array, shape = [n_samples] ground truth class labels to be used as
+      a reference
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: scikit-learn
+target: completeness_score
+title: sklearn.metrics.completeness_score
+version: 0.24.X

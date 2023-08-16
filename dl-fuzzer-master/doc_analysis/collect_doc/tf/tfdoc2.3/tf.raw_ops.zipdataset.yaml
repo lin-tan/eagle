@@ -1,0 +1,26 @@
+constraints:
+  input_datasets:
+    descp: A list of at least 1 Tensor objects with type variant. List of N variant
+      Tensors representing datasets to be zipped together.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - input_datasets
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ZipDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ZipDataset
+title: tf.raw_ops.ZipDataset
+version: 2.3.0

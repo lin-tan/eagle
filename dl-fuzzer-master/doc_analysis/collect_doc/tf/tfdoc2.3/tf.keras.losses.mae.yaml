@@ -1,0 +1,34 @@
+aliases:
+- tf.keras.losses.mean_absolute_error
+- tf.keras.metrics.MAE
+- tf.keras.metrics.mae
+- tf.keras.metrics.mean_absolute_error
+- tf.losses.MAE
+- tf.losses.mae
+- tf.losses.mean_absolute_error
+- tf.metrics.MAE
+- tf.metrics.mae
+- tf.metrics.mean_absolute_error
+- tf.compat.v1.keras.losses.MAE
+- tf.compat.v1.keras.losses.mae
+- tf.compat.v1.keras.losses.mean_absolute_error
+- tf.compat.v1.keras.metrics.MAE
+- tf.compat.v1.keras.metrics.mae
+- tf.compat.v1.keras.metrics.mean_absolute_error
+constraints:
+  y_pred:
+    descp: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true:
+    descp: Ground truth values. shape = [batch_size, d0, .. dN].
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/losses/MAE
+outputs:
+- Mean absolute error values. shape = [batch_size, d0, .. dN-1].
+package: tensorflow
+target: MAE
+title: tf.keras.losses.MAE
+version: 2.3.0

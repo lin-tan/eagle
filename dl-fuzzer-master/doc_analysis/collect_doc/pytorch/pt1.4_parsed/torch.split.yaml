@@ -1,0 +1,25 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension along which to split the tensor.
+    doc_dtype:
+    - python:int
+  split_size_or_sections:
+    descp: size of a single chunk or list of sizes for each chunk
+    doc_dtype:
+    - python:int) or (list(python:int)
+  tensor:
+    descp: tensor to split.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - dim
+  required:
+  - tensor
+  - split_size_or_sections
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.split
+package: torch
+target: split
+title: torch.split
+version: 1.4.0

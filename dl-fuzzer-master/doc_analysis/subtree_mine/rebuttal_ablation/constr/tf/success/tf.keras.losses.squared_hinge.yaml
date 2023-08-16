@@ -1,0 +1,45 @@
+aliases:
+- tf.keras.metrics.squared_hinge
+- tf.losses.squared_hinge
+- tf.metrics.squared_hinge
+- tf.compat.v1.keras.losses.squared_hinge
+- tf.compat.v1.keras.metrics.squared_hinge
+constraints:
+  y_pred:
+    descp: The predicted values.
+    dtype:
+    - float
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  y_true:
+    descp: The ground truth values. `y_true` values are expected to be -1 or 1. If
+      binary (0 or 1) labels are provided we will convert them to -1 or 1.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/losses/squared_hinge
+outputs: Tensor with one scalar loss entry per sample.
+package: tensorflow
+target: squared_hinge
+title: tf.keras.losses.squared_hinge
+version: 2.1.0

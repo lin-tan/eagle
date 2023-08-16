@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Either `None` (default to original size)     or tuple of ints `(img_height, img_width)`.",None,prim_dtype,dtype(int),,1
+,"Either `None` (default to original size)     or tuple of ints `(img_height, img_width)`.",None,nonprim_dtype,structure(tuple(int)),,1
+,"Either `None` (default to original size)     or tuple of ints `(img_height, img_width)`.",None,shape,ndim(1),,1
+,"Either `None` (default to original size)     or tuple of ints `(img_height, img_width)`.",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,85 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input array to the embedding operator.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE to the embedding operator
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dtype:
+    default: _Null
+    descp: Data type of weight.
+    doc_dtype: '{''float16'', ''float32'', ''float64'', ''int32'', ''int64'', ''int8'',
+      ''uint8''},optional, default=''float32'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM type of PARAM
+    normalized_docdtype: QSTR optional default QSTR
+  input_dim:
+    default: _Null
+    descp: Vocabulary size of the input indices.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Vocabulary size of the input indices
+    normalized_docdtype: D_TYPE required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  output_dim:
+    default: _Null
+    descp: Dimension of the embedding vectors.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Dimension of the embedding vectors
+    normalized_docdtype: D_TYPE required
+  sparse_grad:
+    default: _Null
+    descp: Compute row sparse gradient in the backward calculation. If set to True,
+      the grad's storage type is row_sparse.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Compute row sparse gradient in the backward calculation
+    - If set to CONSTANT_BOOL the grad storage type is row_sparse
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  weight:
+    default: None
+    descp: The embedding weight matrix.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The embedding weight matrix
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - data
+  - weight
+  - input_dim
+  - output_dim
+  - dtype
+  - sparse_grad
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.Embedding
+package: mxnet
+target: Embedding
+title: mxnet.ndarray.sparse.Embedding
+version: 1.6.0

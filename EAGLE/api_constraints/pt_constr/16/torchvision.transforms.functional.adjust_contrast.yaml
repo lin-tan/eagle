@@ -1,0 +1,32 @@
+constraints:
+  contrast_factor:
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  img:
+    dtype:
+    - float
+    ndim:
+    - '4'
+    range:
+    - '(0,1)'
+    shape:
+    - '[n,3,h,w]'
+    tensor_t:
+    - torch.tensor
+dependency:
+- h
+- n
+- w
+inputs:
+  required:
+  - img
+  - contrast_factor
+  optional: []
+package: torchvision
+target: adjust_contrast
+title: torchvision.transforms.functional.adjust_contrast
+version: 0.7.0

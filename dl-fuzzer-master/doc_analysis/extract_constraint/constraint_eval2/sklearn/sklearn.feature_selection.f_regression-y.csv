@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,array of shape(n_samples). The data matrix,,prim_dtype,dtype(int),,1
+,array of shape(n_samples). The data matrix,,nonprim_dtype,structure(list(shape)),,1
+,array of shape(n_samples). The data matrix,,shape,"shape([n_samples]), ndim(1)",,1
+,array of shape(n_samples). The data matrix,,validvalue,"range([0,inf))",,1

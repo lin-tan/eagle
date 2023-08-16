@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If `True` then left and right singular vectors will be computed and returned in `u` and `v`, respectively. Otherwise, only the singular values will be computed, which can be significantly faster.",True,prim_dtype,dtype(tf.bool),,1
+,"If `True` then left and right singular vectors will be computed and returned in `u` and `v`, respectively. Otherwise, only the singular values will be computed, which can be significantly faster.",True,shape,ndim(0),,1

@@ -1,0 +1,29 @@
+constraints:
+  n:
+    descp: 'int n_packs : int Number of slices to generate. n_samples : int or None
+      (default = None) Number of samples. Pass n_samples when the slices are to be
+      used for sparse matrix indexing; slicing off-the-end raises an exception, while
+      it works for NumPy arrays.'
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_packs:
+    descp: ''
+  n_samples:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - n_samples
+  required:
+  - n
+  - n_packs
+link: ''
+package: sklearn
+target: gen_even_slices
+title: sklearn.utils.gen_even_slices
+version: 0.24.2

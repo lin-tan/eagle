@@ -1,0 +1,13 @@
+constraints:
+  depthwise_constraint:
+    default: None
+    descp: Constraint function applied to the depthwise kernel matrix.
+  padding:
+    default: valid
+    descp: one of `'valid'` or `'same'` (case-insensitive).
+    enum:
+    - same
+    - valid
+    dtype:
+    - tf.string
+title: tf.keras.layers.DepthwiseConv2D

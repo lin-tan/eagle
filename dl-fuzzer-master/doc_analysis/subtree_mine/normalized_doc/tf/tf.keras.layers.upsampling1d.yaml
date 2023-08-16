@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.keras.layers.UpSampling1D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  size:
+    default: '2'
+    descp: Integer. Upsampling factor.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - ONE_WORD D_TYPE
+    - Upsampling factor
+inputs:
+  optional:
+  - size
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/UpSampling1D
+package: tensorflow
+target: UpSampling1D
+title: tf.keras.layers.UpSampling1D
+version: 2.1.0

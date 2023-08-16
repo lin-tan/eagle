@@ -1,0 +1,35 @@
+constraints:
+  descending:
+    default: 'False'
+    descp: controls the sorting order (ascending or descending)
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls the sorting order BSTR
+    normalized_docdtype: D_TYPE, optional
+  dim:
+    default: '-1'
+    descp: the dimension to sort along
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the dimension to sort along
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  - descending
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.argsort
+package: torch
+ret_type: LongTensor
+target: argsort
+title: torch.argsort
+version: 1.5.0

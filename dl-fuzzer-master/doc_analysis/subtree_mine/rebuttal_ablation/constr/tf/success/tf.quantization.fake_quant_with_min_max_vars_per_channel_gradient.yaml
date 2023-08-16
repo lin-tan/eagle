@@ -1,0 +1,181 @@
+aliases:
+- tf.compat.v1.fake_quant_with_min_max_vars_per_channel_gradient
+- tf.compat.v1.quantization.fake_quant_with_min_max_vars_per_channel_gradient
+constraints:
+  gradients:
+    descp: 'A `Tensor` of type `float32`. Backpropagated gradients above the FakeQuantWithMinMaxVars
+      operation, shape one of: `[d]`, `[b, d]`,  `[b, h, w, d]`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    enum:
+    - '[d]'
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[b,d]'
+    - '[b,h,w,d]'
+    - '[d]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  inputs:
+    descp: 'A `Tensor` of type `float32`. Values passed as inputs to the FakeQuantWithMinMaxVars
+      operation, shape same as `gradients`. min, max: Quantization interval, floats
+      of shape `[d]`.'
+    dtype:
+    - '&gradients'
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    enum:
+    - '[d]'
+    ndim:
+    - '&gradients'
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&gradients'
+    - '[1]'
+    - '[2]'
+    - '[d]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  max:
+    descp: A `Tensor` of type `float32`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  min:
+    descp: A `Tensor` of type `float32`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  narrow_range:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Whether to quantize into 2^num_bits
+      - 1 distinct values.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  num_bits:
+    default: '8'
+    descp: An optional `int`. Defaults to `8`. The bitwidth of the quantization; between
+      2 and 16, inclusive.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[8]'
+inputs:
+  optional:
+  - num_bits
+  - narrow_range
+  - name
+  required:
+  - gradients
+  - inputs
+  - min
+  - max
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/quantization/fake_quant_with_min_max_vars_per_channel_gradient
+outputs: A tuple of `Tensor` objects (backprops_wrt_input, backprop_wrt_min, backprop_wrt_max).
+package: tensorflow
+target: fake_quant_with_min_max_vars_per_channel_gradient
+title: tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient
+version: 2.1.0

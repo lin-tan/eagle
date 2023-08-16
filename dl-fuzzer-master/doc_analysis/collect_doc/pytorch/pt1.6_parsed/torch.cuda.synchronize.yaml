@@ -1,0 +1,19 @@
+constraints:
+  device:
+    default: None
+    descp: device for which to synchronize. It uses the current device, given by `current_device()`,
+      if `device` is `None` (default).
+    doc_dtype:
+    - torch.device
+    - int
+    sig_dtype: Union[torch.device,str,int]
+inputs:
+  optional:
+  - device
+  required: []
+link: https://pytorch.org/docs/1.6.0/cuda.html#torch.cuda.synchronize
+package: torch
+ret_type: None
+target: synchronize
+title: torch.cuda.synchronize
+version: 1.6.0

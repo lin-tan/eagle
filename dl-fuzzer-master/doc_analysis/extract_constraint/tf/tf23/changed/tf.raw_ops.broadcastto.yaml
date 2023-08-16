@@ -1,0 +1,36 @@
+constraints:
+  input:
+    descp: A Tensor. A Tensor to broadcast.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. An 1-D int
+      Tensor. The shape of the desired output.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BroadcastTo
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: BroadcastTo
+title: tf.raw_ops.BroadcastTo
+version: 2.3.0

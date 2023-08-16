@@ -1,0 +1,48 @@
+constraints:
+  alpha:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      The concentration of the gamma distribution. Shape must match the rightmost
+      dimensions of shape.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - shape
+  - seed
+  - alpha
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatelessRandomGammaV2
+outputs:
+- A Tensor. Has the same type as alpha.
+package: tensorflow
+target: StatelessRandomGammaV2
+title: tf.raw_ops.StatelessRandomGammaV2
+version: 2.2.0

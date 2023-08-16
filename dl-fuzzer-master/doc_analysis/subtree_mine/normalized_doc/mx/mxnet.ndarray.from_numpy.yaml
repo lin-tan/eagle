@@ -1,0 +1,29 @@
+constraints:
+  ndarray:
+    descp: input data
+    doc_dtype: numpy.ndarray
+    normalized_descp:
+    - input data
+    normalized_docdtype: numpy D_STRUCTURE
+  zero_copy:
+    default: 'True'
+    descp: Whether we use DLPack's zero-copy conversion to convert to MXNet's NDArray.
+      This is only available for c-contiguous arrays, i.e. array.flags[C_CONTIGUOUS]
+      == True.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether we use DLPack zero copy conversion to convert to MXNet D_STRUCTURE
+    - This is only available for c contiguous D_STRUCTURE, i e
+    - D_STRUCTURE flags BSTR CONSTANT_BOOL
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - zero_copy
+  required:
+  - ndarray
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.from_numpy
+package: mxnet
+target: from_numpy
+title: mxnet.ndarray.from_numpy
+version: 1.6.0

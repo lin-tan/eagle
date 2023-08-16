@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchCholesky
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: BatchCholesky
+title: tf.raw_ops.BatchCholesky
+version: 2.2.0

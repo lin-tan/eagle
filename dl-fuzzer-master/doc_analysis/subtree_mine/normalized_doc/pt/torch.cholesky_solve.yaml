@@ -1,0 +1,46 @@
+constraints:
+  input:
+    descp: input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions
+    doc_dtype: Tensor
+    normalized_descp:
+    - input matrix b of size BSTR , where is zero or more batch dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input2:
+    descp: input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions
+      composed of upper or lower triangular Cholesky factor
+    doc_dtype: Tensor
+    normalized_descp:
+    - PARAM matrix u of size BSTR , where is zero of more batch dimensions composed
+      of PARAM or lower triangular Cholesky factor
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor for c
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE for c
+    normalized_docdtype: D_STRUCTURE, optional
+  upper:
+    default: 'False'
+    descp: 'whether to consider the Cholesky factor as a lower or upper triangular
+      matrix. Default: `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to consider the Cholesky factor as a lower or upper triangular matrix
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - upper
+  - out
+  required:
+  - input
+  - input2
+link: https://pytorch.org/docs/stable/torch.html#torch.cholesky_solve
+package: torch
+ret_type: Tensor
+target: cholesky_solve
+title: torch.cholesky_solve
+version: 1.5.0

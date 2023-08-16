@@ -1,0 +1,62 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: dtype
+findall: True
+
+sep:
+    - /
+    # - '`'
+    # - \'
+    # - \"
+    # - ' '
+    # - ','
+
+pat:
+
+    '^([\w.]+),*$':
+        group: 1
+        # ndim: 0
+
+    # 'default\s+cpu':
+    #     dtype: context
+
+    'default\s+(true|false)':
+        dtype: bool
+
+
+    'a\s+python\s+(\w+)':
+        group: 1
+        ndim: 0
+
+
+    '^(\w+)\s*\(non-negative\)':
+        group: 1
+        range: '[0,inf)'
+
+    '^([\w.]+)\s+object':
+        group: 1
+
+    '^type$':
+        dtype: dtype
+
+    '^data\s+type$':
+        dtype: dtype
+    
+    'a.*?callable\s+function':
+        dtype: callable
+
+    'file\s+path':
+        dtype: string
+
+    # 'float':
+    #     dtype: float
+
+    'float\s+in\s+\(0,\s*1\]':
+        dtype: float
+        range: '(0,1]'
+
+    '([\w.]+(/[\w.]+)+)':
+        group: 1

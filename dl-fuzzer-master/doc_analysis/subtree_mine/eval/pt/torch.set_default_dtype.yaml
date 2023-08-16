@@ -1,0 +1,8 @@
+constraints:
+  d:
+    descp: the floating point dtype to make the default
+    doc_dtype:
+    - torch.dtype
+    dtype:
+    - torch.dtype
+title: torch.set_default_dtype

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A tuple of integers specifying the shape for individual inner values in the returned `RaggedTensor`.  Defaults to `()` if `ragged_rank`is not specified.  If `ragged_rank` is specified, then a default is chosen based on the contents of `pylist`.",None,prim_dtype,dtype(int),,1
+,"A tuple of integers specifying the shape for individual inner values in the returned `RaggedTensor`.  Defaults to `()` if `ragged_rank`is not specified.  If `ragged_rank` is specified, then a default is chosen based on the contents of `pylist`.",None,nonprim_dtype,structure(tuple(int)),,1
+,"A tuple of integers specifying the shape for individual inner values in the returned `RaggedTensor`.  Defaults to `()` if `ragged_rank`is not specified.  If `ragged_rank` is specified, then a default is chosen based on the contents of `pylist`.",None,shape,ndim(1),,1

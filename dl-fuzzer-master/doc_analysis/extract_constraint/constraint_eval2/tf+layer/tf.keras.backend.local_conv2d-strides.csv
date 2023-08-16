@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"a tuple of 2 integers, specifying the strides of the convolution along the width and height.",,prim_dtype,dtype(int),,1
+,"a tuple of 2 integers, specifying the strides of the convolution along the width and height.",,nonprim_dtype,structure(tuple(int)),,1
+,"a tuple of 2 integers, specifying the strides of the convolution along the width and height.",,shape,"shape([2]), ndim(1)",,1
+,"a tuple of 2 integers, specifying the strides of the convolution along the width and height.",,validvalue,"range([0,inf))",,1

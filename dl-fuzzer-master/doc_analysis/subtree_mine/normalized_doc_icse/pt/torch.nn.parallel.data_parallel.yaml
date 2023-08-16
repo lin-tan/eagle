@@ -1,0 +1,54 @@
+constraints:
+  device_ids:
+    default: None
+    descp: GPU ids on which to replicate module
+    doc_dtype: list of python:int or torch.device
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - GPU ids on which to replicate PARAM
+    normalized_docdtype: D_STRUCTURE of python D_TYPE or torch device
+  dim:
+    default: '0'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp: []
+  inputs:
+    descp: inputs to the module
+    doc_dtype: Tensor
+    normalized_descp:
+    - inputs to the PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  module:
+    descp: the module to evaluate in parallel
+    doc_dtype: Module
+    normalized_descp:
+    - the module to evaluate in parallel
+    normalized_docdtype: ONE_WORD Module
+  module_kwargs:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  output_device:
+    default: None
+    descp: 'GPU location of the output  Use -1 to indicate the CPU. (default: device_ids[0])'
+    doc_dtype: list of python:int or torch.device
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - GPU location of the output Use CONSTANT_NUM to indicate the CPU
+    - default PARAM BSTR
+    normalized_docdtype: D_STRUCTURE of python D_TYPE or torch device
+inputs:
+  optional:
+  - device_ids
+  - output_device
+  - dim
+  - module_kwargs
+  required:
+  - module
+  - inputs
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.parallel.data_parallel
+package: torch
+target: data_parallel
+title: torch.nn.parallel.data_parallel
+version: 1.5.0

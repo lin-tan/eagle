@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=3) The maximum number of columns in the grid plot. Only active when `ax` is a single axis or `None`.",3,prim_dtype,dtype(int),,1
+,"int, optional (default=3) The maximum number of columns in the grid plot. Only active when `ax` is a single axis or `None`.",3,shape,ndim(0),,1
+,"int, optional (default=3) The maximum number of columns in the grid plot. Only active when `ax` is a single axis or `None`.",3,validvalue,"range([0,inf))",,1

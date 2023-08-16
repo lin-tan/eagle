@@ -1,0 +1,72 @@
+constraints:
+  f:
+    descp: A function decorated with @Defun. A function that maps (old_state, input_element)
+      to new_state. It must take two arguments and return a nested structures of tensors.
+      The structure of new_state must match the structure of initial_state.
+    dtype:
+    - callable
+  initial_state:
+    descp: A list of Tensor objects. A nested structure of tensors, representing the
+      initial state of the transformation.
+    structure:
+    - list(tf.tensor)
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  other_arguments:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  use_inter_op_parallelism:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - use_inter_op_parallelism
+  - name
+  required:
+  - input_dataset
+  - initial_state
+  - other_arguments
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReduceDataset
+outputs:
+- A list of Tensor objects of type output_types.
+package: tensorflow
+target: ReduceDataset
+title: tf.raw_ops.ReduceDataset
+version: 2.3.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string, or list of strings, containing CUDA source code.",None,prim_dtype,dtype(string),1,1
+,"A string, or list of strings, containing CUDA source code.",None,shape,ndim(0),0,1
+"","","",shape,"ndim({0,1})",1,0
+"","","",nonprim_dtype,list(string),1,0

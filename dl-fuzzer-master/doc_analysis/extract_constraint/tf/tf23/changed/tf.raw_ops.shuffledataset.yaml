@@ -1,0 +1,88 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64. The number of output elements to buffer in an iterator
+      over this dataset. Compare with the min_after_dequeue attr when creating a RandomShuffleQueue.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  reshuffle_each_iteration:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true, each iterator over this dataset
+      will be given a different pseudorandomly generated seed, based on a sequence
+      seeded by the seed and seed2 inputs. If false, each iterator will be given the
+      same seed, and repeated iteration over this dataset will yield the exact same
+      sequence of results.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    structure:
+    - list
+  seed:
+    descp: A Tensor of type int64. A scalar seed for the random number generator.
+      If either seed or seed2 is set to be non-zero, the random number generator is
+      seeded by the given seed. Otherwise, a random seed is used.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  seed2:
+    descp: A Tensor of type int64. A second scalar seed to avoid seed collision.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - reshuffle_each_iteration
+  - name
+  required:
+  - input_dataset
+  - buffer_size
+  - seed
+  - seed2
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ShuffleDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ShuffleDataset
+title: tf.raw_ops.ShuffleDataset
+version: 2.3.0

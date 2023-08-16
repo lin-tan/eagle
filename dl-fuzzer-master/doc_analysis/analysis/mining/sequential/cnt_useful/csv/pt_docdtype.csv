@@ -1,0 +1,18 @@
+idx,freq,sequence,len,cat
+0,609,['SOME_DTYPE'],1,dtype
+1,470,['tensor'],1,ds
+2,124,['torch'],1,not useful
+3,111,['SOME_STRUCTURE'],1,ds
+4,72,"['torch', 'SOME_DTYPE']",2,dtype
+5,41,"['torch', 'dtype']",2,dtype
+6,36,"['SOME_STRUCTURE', 'tensor']",2,ds
+7,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",2,ds
+8,23,['number'],1,dtype
+9,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",3,ds
+10,17,['processgroup'],1,not useful
+11,15,['default'],1,not useful
+12,12,"['nn', 'SOME_DTYPE']",2,dtype
+13,9,['function'],1,dtype
+14,5,"['torch', 'memory_format']",2,complex
+15,5,['type'],1,dtype
+16,5,"['default', 'false']",2,dtype

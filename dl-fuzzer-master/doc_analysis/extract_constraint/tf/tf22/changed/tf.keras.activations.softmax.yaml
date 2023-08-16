@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.activations.softmax
+constraints:
+  axis:
+    default: '-1'
+    descp: Integer, axis along which the softmax normalization is applied.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  x:
+    descp: Input tensor.
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: In case dim(x) == 1.
+inputs:
+  optional:
+  - axis
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/activations/softmax
+outputs:
+- Tensor, output of softmax transformation (all values are non-negative and sum to
+  1).
+package: tensorflow
+target: softmax
+title: tf.keras.activations.softmax
+version: 2.2.0

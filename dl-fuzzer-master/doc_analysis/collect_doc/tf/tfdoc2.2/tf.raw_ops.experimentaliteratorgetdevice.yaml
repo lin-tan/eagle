@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalIteratorGetDevice
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ExperimentalIteratorGetDevice
+title: tf.raw_ops.ExperimentalIteratorGetDevice
+version: 2.2.0

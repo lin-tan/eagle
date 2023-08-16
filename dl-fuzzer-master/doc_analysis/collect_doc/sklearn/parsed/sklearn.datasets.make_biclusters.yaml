@@ -1,0 +1,21 @@
+constraints:
+  maxval: {default: '100', descp: 'int, optional (default=100) Maximum value of a
+      bicluster.'}
+  minval: {default: '10', descp: 'int, optional (default=10) Minimum value of a bicluster.'}
+  n_clusters: {descp: integer The number of biclusters.}
+  noise: {default: '0.0', descp: 'float, optional (default=0.0) The standard deviation
+      of the gaussian noise.'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset creation. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+  shape: {descp: 'iterable (n_rows, n_cols) The shape of the result.'}
+  shuffle: {default: 'True', descp: 'boolean, optional (default=True) Shuffle the
+      samples.'}
+inputs:
+  optional: [noise, minval, maxval, shuffle, random_state]
+  required: [shape, n_clusters]
+link: ''
+package: sklearn
+target: make_biclusters
+title: sklearn.datasets.make_biclusters
+version: 0.24.2

@@ -1,0 +1,35 @@
+constraints:
+  antialias:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+  grads:
+    descp: 'A Tensor. Must be one of the following types: float32.'
+  kernel_type:
+    default: lanczos3
+    descp: An optional string. Defaults to "lanczos3".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  original_image:
+    descp: A Tensor. Must have the same type as grads.
+  scale:
+    descp: A Tensor of type float32.
+  translation:
+    descp: A Tensor of type float32.
+inputs:
+  optional:
+  - kernel_type
+  - antialias
+  - name
+  required:
+  - grads
+  - original_image
+  - scale
+  - translation
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ScaleAndTranslateGrad
+outputs:
+- A Tensor. Has the same type as grads.
+package: tensorflow
+target: ScaleAndTranslateGrad
+title: tf.raw_ops.ScaleAndTranslateGrad
+version: 2.3.0

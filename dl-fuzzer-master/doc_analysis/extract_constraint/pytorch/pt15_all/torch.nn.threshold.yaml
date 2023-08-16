@@ -1,0 +1,25 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  threshold:
+    descp: The value to threshold at
+  value:
+    descp: The value to replace with
+inputs:
+  optional:
+  - inplace
+  required:
+  - threshold
+  - value
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Threshold
+package: torch
+target: Threshold
+title: torch.nn.Threshold
+version: 1.5.0
+layer_constructor: true
+check_nan: true

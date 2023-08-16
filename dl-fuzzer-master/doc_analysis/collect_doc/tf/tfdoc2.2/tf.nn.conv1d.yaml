@@ -1,0 +1,43 @@
+constraints:
+  data_format:
+    default: NWC
+    descp: An optional string from "NWC", "NCW". Defaults to "NWC", the data is stored
+      in the order of [batch, in_width, in_channels]. The "NCW" format stores data
+      as [batch, in_channels, in_width].
+  dilations:
+    default: None
+    descp: An int or list of ints that has length 1 or 3 which defaults to 1. The
+      dilation factor for each dimension of input. If set to k > 1, there will be
+      k-1 skipped cells between each filter element on that dimension. Dilations in
+      the batch and depth dimensions must be 1.
+  filters:
+    descp: A 3D Tensor. Must have the same type as input.
+  input:
+    descp: A 3D Tensor. Must be of type float16, float32, or float64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  padding:
+    descp: '''SAME'' or ''VALID'''
+  stride:
+    descp: An int or list of ints that has length 1 or 3. The number of entries by
+      which the filter is moved right at each step.
+exceptions:
+- ValueError: if data_format is invalid.
+inputs:
+  optional:
+  - data_format
+  - dilations
+  - name
+  required:
+  - input
+  - filters
+  - stride
+  - padding
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/conv1d
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: conv1d
+title: tf.nn.conv1d
+version: 2.2.0

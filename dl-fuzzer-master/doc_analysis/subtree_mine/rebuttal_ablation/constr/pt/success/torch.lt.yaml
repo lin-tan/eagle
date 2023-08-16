@@ -1,0 +1,72 @@
+constraints:
+  input:
+    descp: the tensor to compare
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the tensor or value to compare
+    doc_dtype: Tensor or float
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.float32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor that must be a BoolTensor
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.lt
+package: torch
+ret_type: Tensor
+target: lt
+title: torch.lt
+version: 1.5.0

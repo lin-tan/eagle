@@ -1,0 +1,74 @@
+constraints:
+  categories:
+    default: None
+    descp: A collection of strings or None, optional (default=None) If None (default),
+      load all the categories. If not None, list of category names to load (other
+      categories ignored).
+  container_path:
+    descp: string or unicode Path to the main folder holding one subfolder per category
+    dtype:
+    - string
+  decode_error:
+    default: strict
+    descp: '{''strict'', ''ignore'', ''replace''}, optional Instruction on what to
+      do if a byte sequence is given to analyze that contains characters not of the
+      given `encoding`. Passed as keyword argument ''errors'' to bytes.decode.'
+    dtype:
+    - string
+  description:
+    default: None
+    descp: 'string or unicode, optional (default=None) A paragraph describing the
+      characteristic of the dataset: its source, reference, etc.'
+    dtype:
+    - string
+  encoding:
+    default: None
+    descp: string or None (default is None) If None, do not try to decode the content
+      of the files (e.g. for images or other non-text content). If not None, encoding
+      to use to decode text files to Unicode if load_content is True.
+    dtype:
+    - string
+  load_content:
+    default: 'True'
+    descp: boolean, optional (default=True) Whether to load or not the content of
+      the different files. If true a 'data' attribute containing the text information
+      is present in the data structure returned. If not, a filenames attribute gives
+      the path to the files.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  random_state:
+    default: '0'
+    descp: int, RandomState instance or None (default=0) Determines random number
+      generation for dataset shuffling. Pass an int for reproducible output across
+      multiple function calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shuffle:
+    default: 'True'
+    descp: 'bool, optional (default=True) Whether or not to shuffle the data: might
+      be important for models that make the assumption that the samples are independent
+      and identically distributed (i.i.d.), such as stochastic gradient descent.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - description
+  - categories
+  - load_content
+  - shuffle
+  - encoding
+  - decode_error
+  - random_state
+  required:
+  - container_path
+link: ''
+package: scikit-learn
+target: load_files
+title: sklearn.datasets.load_files
+version: 0.24.X

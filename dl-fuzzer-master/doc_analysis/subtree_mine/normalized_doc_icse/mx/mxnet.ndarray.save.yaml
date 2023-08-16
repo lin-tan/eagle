@@ -1,0 +1,27 @@
+constraints:
+  data:
+    descp: The data to save.
+    doc_dtype: NDArray, RowSparseNDArray or CSRNDArray,            or list of NDArray,
+      RowSparseNDArray or CSRNDArray,            or dict of str to NDArray, RowSparseNDArray
+      or CSRNDArray
+    normalized_descp:
+    - The data to save
+    normalized_docdtype: D_STRUCTURE RowSparseNDArray or CSRNDArray or D_STRUCTURE
+      of D_STRUCTURE RowSparseNDArray or CSRNDArray or D_STRUCTURE of D_TYPE to D_STRUCTURE
+      RowSparseNDArray or CSRNDArray
+  fname:
+    descp: The filename.
+    doc_dtype: str
+    normalized_descp:
+    - The filename
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - fname
+  - data
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.save
+package: mxnet
+target: save
+title: mxnet.ndarray.save
+version: 1.6.0

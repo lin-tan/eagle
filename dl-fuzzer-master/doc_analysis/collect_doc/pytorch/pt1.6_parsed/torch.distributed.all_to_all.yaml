@@ -1,0 +1,31 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op.
+    doc_dtype:
+    - bool
+  group:
+    default: <objectobject>
+    descp: The process group to work on.
+    doc_dtype:
+    - ProcessGroup
+  input_tensor_list:
+    descp: List of tensors to scatter one per rank.
+    doc_dtype:
+    - list[Tensor]
+  output_tensor_list:
+    descp: List of tensors to be gathered one per rank.
+    doc_dtype:
+    - list[Tensor]
+inputs:
+  optional:
+  - group
+  - async_op
+  required:
+  - output_tensor_list
+  - input_tensor_list
+link: https://pytorch.org/docs/1.6.0/distributed.html#torch.distributed.all_to_all
+package: torch
+target: all_to_all
+title: torch.distributed.all_to_all
+version: 1.6.0

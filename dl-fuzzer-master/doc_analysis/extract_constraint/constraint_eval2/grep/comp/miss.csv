@@ -1,0 +1,118 @@
+File,Arg,Type,Constr,Descp
+mxnet.ndarray.contrib.quantized_conv,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algo by running performance test.
+mxnet.registry.get_register_func,base_class,prim_dtype,['numpy.dtype'],base class for classes that will be reigstered
+mxnet.ndarray.maximum,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.maximum,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.op.sample_normal,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.registry.get_alias_func,base_class,prim_dtype,['numpy.dtype'],base class for classes that will be reigstered
+mxnet.ndarray.equal,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.equal,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.arange,start,prim_dtype,['int'],Start of interval. The default start value is 0.
+mxnet.ndarray.arange,stop,prim_dtype,['int'],End of interval.
+mxnet.ndarray.preloaded_multi_mp_sgd_mom_update,*data,prim_dtype,['float'],"Weights, gradients, momentums, learning rates and weight decays"
+mxnet.ndarray.sparse.add,lhs,prim_dtype,['numeric'],First array to be added.
+mxnet.ndarray.sparse.add,rhs,prim_dtype,['numeric'],"Second array to be added. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.lesser,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.lesser,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.not_equal,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.not_equal,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.contrib.ndarray.hawkesll,alpha,prim_dtype,['int'],"Shape (K,) The infectivity factor (branching ratio) for each process"
+mxnet.contrib.ndarray.hawkesll,beta,prim_dtype,['int'],"Shape (K,) The decay parameter for each process"
+mxnet.contrib.ndarray.hawkesll,lags,prim_dtype,['int'],"Shape (N, T) the interarrival times"
+mxnet.contrib.ndarray.hawkesll,lda,prim_dtype,['int'],"Shape (N, K) The intensity for each of the K processes, for each sample"
+mxnet.contrib.ndarray.hawkesll,marks,prim_dtype,['int'],"Shape (N, T) the marks (process ids)"
+mxnet.contrib.ndarray.hawkesll,state,prim_dtype,['int'],"Shape (N, K) the Hawkes state for each process"
+mxnet.ndarray.Convolution,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algo by running performance test.
+mxnet.ndarray.op.random_pdf_generalized_negative_binomial,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.power,base,prim_dtype,['numeric'],The base array
+mxnet.ndarray.power,exp,prim_dtype,['numeric'],"The exponent array. If `base.shape != exp.shape`, they must be broadcastable to a common shape."
+mxnet.contrib.ndarray.quantized_conv,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algo by running performance test.
+mxnet.ndarray.op.moments,axes,nonprim_dtype,['ndarray(int)'],Array of ints. Axes along which to compute mean and variance.
+mxnet.ndarray.op.preloaded_multi_mp_sgd_mom_update,*data,prim_dtype,['float'],"Weights, gradients, momentums, learning rates and weight decays"
+mxnet.ndarray.preloaded_multi_sgd_update,*data,prim_dtype,['float'],"Weights, gradients, learning rates and weight decays"
+mxnet.ndarray.op.unravel_index,data,prim_dtype,['int'],Array of flat indices
+mxnet.contrib.quantization.quantize_model,arg_params,prim_dtype,['string'],Dictionary of name to NDArray.
+mxnet.contrib.quantization.quantize_model,aux_params,prim_dtype,['string'],Dictionary of name to NDArray.
+mxnet.ndarray.sample_generalized_negative_binomial,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.Deconvolution,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algorithm by running performance test.
+mxnet.ndarray.multiply,lhs,prim_dtype,['numeric'],First array to be multiplied.
+mxnet.ndarray.multiply,rhs,prim_dtype,['numeric'],"Second array to be multiplied. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.linspace,start,prim_dtype,['int'],Start of interval.
+mxnet.ndarray.linspace,stop,prim_dtype,['int'],"End of interval, unless endpoint is set to False.  In that case, the sequence consists of all but the last of num + 1 evenly spaced samples, so that stop is excluded. Note that the step size changes when endpoint is False."
+mxnet.ndarray.op.Dropout,mode,prim_dtype,['boolean'],Whether to only turn on dropout during training or to also turn on for inference.
+mxnet.ndarray.contrib.hawkesll,alpha,prim_dtype,['int'],"Shape (K,) The infectivity factor (branching ratio) for each process"
+mxnet.ndarray.contrib.hawkesll,beta,prim_dtype,['int'],"Shape (K,) The decay parameter for each process"
+mxnet.ndarray.contrib.hawkesll,lags,prim_dtype,['int'],"Shape (N, T) the interarrival times"
+mxnet.ndarray.contrib.hawkesll,lda,prim_dtype,['int'],"Shape (N, K) The intensity for each of the K processes, for each sample"
+mxnet.ndarray.contrib.hawkesll,marks,prim_dtype,['int'],"Shape (N, T) the marks (process ids)"
+mxnet.ndarray.contrib.hawkesll,state,prim_dtype,['int'],"Shape (N, K) the Hawkes state for each process"
+mxnet.ndarray.op.preloaded_multi_sgd_update,*data,prim_dtype,['float'],"Weights, gradients, learning rates and weight decays"
+mxnet.ndarray.modulo,lhs,prim_dtype,['numeric'],First array in modulo.
+mxnet.ndarray.modulo,rhs,prim_dtype,['numeric'],"Second array in modulo. The arrays to be taken modulo. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.minimum,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.minimum,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.histogram,range,nonprim_dtype,['tuple(float)'],"The lower and upper range of the bins. If not provided, range is simply (a.min(), a.max()). Values outside the range are ignored. The first element of the range must be less than or equal to the second. range affects the automatic bin computation as well, the range will be equally divided by the number of bins."
+mxnet.ndarray.sparse.multiply,lhs,prim_dtype,['numeric'],First array to be multiplied.
+mxnet.ndarray.sparse.multiply,rhs,prim_dtype,['numeric'],"Second array to be multiplied. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.test_utils.simple_forward,**inputs,nonprim_dtype,['sequence'],Mapping each input name to a NumPy array.
+mxnet.ndarray.preloaded_multi_sgd_mom_update,*data,prim_dtype,['float'],"Weights, gradients, momentum, learning rates and weight decays"
+mxnet.ndarray.logical_and,lhs,prim_dtype,['numeric'],First input of the function.
+mxnet.ndarray.logical_and,rhs,prim_dtype,['numeric'],"Second input of the function. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.contrib.quantize,max_range,prim_dtype,['numeric'],The maximum scalar value possibly produced for the input
+mxnet.ndarray.contrib.quantize,min_range,prim_dtype,['numeric'],The minimum scalar value possibly produced for the input
+mxnet.ndarray.greater_equal,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.greater_equal,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.op.multi_lars,lrs,prim_dtype,['float'],Learning rates to scale by LARS coefficient
+mxnet.ndarray.op.multi_lars,wds,prim_dtype,['numeric'],weight decays
+mxnet.ndarray.moments,axes,nonprim_dtype,['ndarray(int)'],Array of ints. Axes along which to compute mean and variance.
+mxnet.ndarray.sample_normal,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.op.random_pdf_normal,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.random_pdf_generalized_negative_binomial,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.random_pdf_normal,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.test_utils.chi_square_check,buckets,prim_dtype,['int'],"The buckets to run the chi-square the test. Make sure that the buckets cover the whole range of the distribution. Also, the buckets must be in ascending order and have no intersection"
+mxnet.test_utils.chi_square_check,probs,prim_dtype,['float'],The ground-truth probability of the random value fall in a specific bucket.
+mxnet.ndarray.lesser_equal,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.lesser_equal,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.op.sample_generalized_negative_binomial,mu,prim_dtype,['numeric'],Means of the distributions.
+mxnet.ndarray.logical_xor,lhs,prim_dtype,['numeric'],First input of the function.
+mxnet.ndarray.logical_xor,rhs,prim_dtype,['numeric'],"Second input of the function. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.registry.get_create_func,base_class,prim_dtype,['numpy.dtype'],base class for classes that will be reigstered
+mxnet.ndarray.op.preloaded_multi_mp_sgd_update,*data,prim_dtype,['float'],"Weights, gradients, learning rates and weight decays"
+mxnet.test_utils.verify_generator,buckets,prim_dtype,['int'],"The buckets to run the chi-square the test. Make sure that the buckets coverthe whole range of the distribution. Also, the buckets must be in ascending order and have no intersection   "
+mxnet.test_utils.verify_generator,probs,prim_dtype,['float'],The ground-truth probability of the random value fall in a specific bucket.
+mxnet.ndarray.greater,lhs,prim_dtype,['numeric'],First array to be compared.
+mxnet.ndarray.greater,rhs,prim_dtype,['numeric'],"Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.moveaxis,tensor,nonprim_dtype,['ndarray'],The array which axes should be reordered
+mxnet.ndarray.preloaded_multi_mp_sgd_update,*data,prim_dtype,['float'],"Weights, gradients, learning rates and weight decays"
+mxnet.ndarray.sparse.divide,lhs,prim_dtype,['numeric'],First array in division.
+mxnet.ndarray.sparse.divide,rhs,prim_dtype,['numeric'],"Second array in division. The arrays to be divided. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.op.Convolution,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algo by running performance test.
+mxnet.ndarray.contrib.quantized_flatten,max_data,prim_dtype,['numeric'],The maximum scalar value possibly produced for the data
+mxnet.ndarray.contrib.quantized_flatten,min_data,prim_dtype,['numeric'],The minimum scalar value possibly produced for the data
+mxnet.ndarray.subtract,lhs,prim_dtype,['numeric'],First array to be subtracted.
+mxnet.ndarray.subtract,rhs,prim_dtype,['numeric'],"Second array to be subtracted. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.add,lhs,prim_dtype,['numeric'],First array to be added.
+mxnet.ndarray.add,rhs,prim_dtype,['numeric'],"Second array to be added. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.full,val,prim_dtype,['numeric'],Fill value.
+mxnet.ndarray.logical_or,lhs,prim_dtype,['numeric'],First input of the function.
+mxnet.ndarray.logical_or,rhs,prim_dtype,['numeric'],"Second input of the function. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.sparse.subtract,lhs,prim_dtype,['numeric'],First array to be subtracted.
+mxnet.ndarray.sparse.subtract,rhs,prim_dtype,['numeric'],"Second array to be subtracted. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape.__spec__"
+mxnet.ndarray.divide,lhs,prim_dtype,['numeric'],First array in division.
+mxnet.ndarray.divide,rhs,prim_dtype,['numeric'],"Second array in division. The arrays to be divided. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape."
+mxnet.ndarray.op.preloaded_multi_sgd_mom_update,*data,prim_dtype,['float'],"Weights, gradients, momentum, learning rates and weight decays"
+mxnet.ndarray.unravel_index,data,prim_dtype,['int'],Array of flat indices
+mxnet.image.random_crop,size,nonprim_dtype,['tuple'],"than the image, then the source image is upsampled to size and returned."
+mxnet.contrib.ndarray.quantize,max_range,prim_dtype,['numeric'],The maximum scalar value possibly produced for the input
+mxnet.contrib.ndarray.quantize,min_range,prim_dtype,['numeric'],The minimum scalar value possibly produced for the input
+mxnet.contrib.ndarray.quantized_flatten,max_data,prim_dtype,['numeric'],The maximum scalar value possibly produced for the data
+mxnet.contrib.ndarray.quantized_flatten,min_data,prim_dtype,['numeric'],The minimum scalar value possibly produced for the data
+mxnet.ndarray.Dropout,mode,prim_dtype,['boolean'],Whether to only turn on dropout during training or to also turn on for inference.
+mxnet.ndarray.multi_lars,lrs,prim_dtype,['float'],Learning rates to scale by LARS coefficient
+mxnet.ndarray.multi_lars,wds,prim_dtype,['numeric'],weight decays
+mxnet.contrib.quantization.quantize_graph,arg_params,prim_dtype,['string'],Dictionary of name to NDArray.
+mxnet.contrib.quantization.quantize_graph,aux_params,prim_dtype,['string'],Dictionary of name to NDArray.
+mxnet.ndarray.op.Deconvolution,cudnn_tune,prim_dtype,['boolean'],Whether to pick convolution algorithm by running performance test.
+mxnet.gluon.utils.replace_file,dst,prim_dtype,['string'],
+mxnet.gluon.utils.replace_file,src,prim_dtype,['string'],
+mxnet.registry.get_registry,base_class,prim_dtype,['numpy.dtype'],base class for classes that will be registered.

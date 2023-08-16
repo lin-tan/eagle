@@ -1,0 +1,114 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  batch_size:
+    descp: Batch size.
+    doc_dtype: int (non-negative), required
+    normalized_descp:
+    - Batch size
+    normalized_docdtype: D_TYPE BSTR required
+  ctx:
+    default: None
+    descp: Context data loader optimized for.
+    doc_dtype: '{''cpu'', ''gpu''},optional, default=''gpu'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Context data loader optimized for
+    normalized_docdtype: QSTR optional default QSTR
+  data_libsvm:
+    descp: The input zero-base indexed LibSVM data file or a directory path.
+    doc_dtype: string, required
+    normalized_descp:
+    - The input zero base indexed LibSVM data file or a directory path
+    normalized_docdtype: D_TYPE required
+  data_shape:
+    descp: The shape of one example.
+    doc_dtype: Shape(tuple), required
+    normalized_descp:
+    - The shape of one example
+    normalized_docdtype: Shape BSTR required
+  dtype:
+    default: None
+    descp: Output data type. `None` means no change.
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8'', ''uint8''},optional, default=''None'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Output data type
+    - QSTR means no change
+    normalized_docdtype: None QSTR optional default QSTR
+  label_libsvm:
+    default: None
+    descp: The input LibSVM label file or a directory path. If NULL, all labels will
+      be read from `data_libsvm`.
+    doc_dtype: string, optional, default='NULL'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input LibSVM label file or a directory path
+    - If NULL all labels will be read from PARAM
+    normalized_docdtype: D_TYPE optional default QSTR
+  label_shape:
+    default: None
+    descp: The shape of one label.
+    doc_dtype: Shape(tuple), optional, default=[1]
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The shape of one label
+    normalized_docdtype: Shape BSTR optional default BSTR
+  num_parts:
+    default: None
+    descp: partition the data into multiple parts
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - partition the data into multiple parts
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  part_index:
+    default: None
+    descp: the index of the part will read
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the index of the part will read
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  prefetch_buffer:
+    default: None
+    descp: Maximum number of batches to prefetch.
+    doc_dtype: long (non-negative), optional, default=4
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum number of batches to prefetch
+    normalized_docdtype: long BSTR optional default CONSTANT_NUM
+  round_batch:
+    default: None
+    descp: Whether to use round robin to handle overflow batch or not.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to use round robin to handle overflow batch or not
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - label_libsvm
+  - label_shape
+  - num_parts
+  - part_index
+  - round_batch
+  - prefetch_buffer
+  - ctx
+  - dtype
+  required:
+  - '*args'
+  - '**kwargs'
+  - data_libsvm
+  - data_shape
+  - batch_size
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/io/index.html#mxnet.io.LibSVMIter
+package: mxnet
+target: LibSVMIter
+title: mxnet.io.LibSVMIter
+version: 1.6.0

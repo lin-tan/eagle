@@ -1,0 +1,75 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  constant_value:
+    default: _Null
+    descp: The value used for padding when mode is "constant".
+    doc_dtype: double, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The value used for padding when PARAM is QSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  data:
+    default: None
+    descp: An n-dimensional input array.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An n dimensional input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mode:
+    default: _Null
+    descp: Padding type to use. "constant" pads with constant_value "edge" pads using
+      the edge values of the input array "reflect" pads by reflecting values with
+      respect to the edges.
+    doc_dtype: '{''constant'', ''edge'', ''reflect''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Padding type to use
+    - QSTR pads with PARAM QSTR pads using the edge values of the input D_STRUCTURE
+      QSTR pads by reflecting values with respect to the edges
+    normalized_docdtype: QSTR , required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  pad_width:
+    default: _Null
+    descp: Widths of the padding regions applied to the edges of each axis. It is
+      a tuple of integer padding widths for each axis of the format `(before_1, after_1,
+      ... , before_N, after_N)`. It should be of length `2*N` where `N` is the number
+      of dimensions of the array.This is equivalent to pad_width in numpy.pad, but
+      flattened.
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Widths of the padding regions applied to the edges of each axis
+    - It is a D_STRUCTURE of D_TYPE padding widths for each axis of the format BSTR
+    - It should be of length CONSTANT_NUM N QSTR N is the number of dimensions of
+      the D_STRUCTURE This is equivalent to pad_width in numpy pad, but flattened
+    normalized_docdtype: Shape BSTR, required
+inputs:
+  optional:
+  - data
+  - mode
+  - pad_width
+  - constant_value
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.pad
+package: mxnet
+target: pad
+title: mxnet.ndarray.pad
+version: 1.6.0

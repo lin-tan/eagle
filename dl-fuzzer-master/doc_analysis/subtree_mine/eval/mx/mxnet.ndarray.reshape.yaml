@@ -1,0 +1,20 @@
+constraints:
+  data:
+    default: None
+    descp: Input data to reshape.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  reverse:
+    default: _Null
+    descp: If true then the special values are inferred from right to left
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.reshape

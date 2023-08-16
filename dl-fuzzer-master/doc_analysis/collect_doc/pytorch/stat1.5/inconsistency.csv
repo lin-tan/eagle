@@ -1,0 +1,17 @@
+arg,API,url
+new_state,torch.cuda.set_rng_state_all,https://pytorch.org/docs/stable/cuda.html#torch.cuda.set_rng_state_all
+list,torch.distributed.all_reduce_multigpu,https://pytorch.org/docs/stable/distributed.html#torch.distributed.all_reduce_multigpu
+example_inputs,torch.jit.trace_module,https://pytorch.org/docs/stable/jit.html#torch.jit.trace_module
+"last element is the size of the input, or the ending index position of the last bag",torch.nn.functional.embedding_bag,https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.embedding_bag
+with 'leaky_relu'),torch.nn.init.kaiming_uniform_,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.kaiming_uniform_
+with 'leaky_relu'),torch.nn.init.kaiming_normal_,https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.kaiming_normal_
+module,torch.quantization.quantize_dynamic,https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize_dynamic
+we want to quantize,torch.quantization.add_quant_dequant,https://pytorch.org/docs/stable/quantization.html#torch.quantization.add_quant_dequant
+memory_format,torch.empty,https://pytorch.org/docs/stable/torch.html#torch.empty
+indices,torch.take,https://pytorch.org/docs/stable/torch.html#torch.take
+input,torch.poisson,https://pytorch.org/docs/stable/torch.html#torch.poisson
+value,torch.add,https://pytorch.org/docs/stable/torch.html#torch.add
+value,torch.clamp,https://pytorch.org/docs/stable/torch.html#torch.clamp
+value,torch.clamp,https://pytorch.org/docs/stable/torch.html#torch.clamp
+{input},torch.mul,https://pytorch.org/docs/stable/torch.html#torch.mul
+b,torch.lu_solve,https://pytorch.org/docs/stable/torch.html#torch.lu_solve

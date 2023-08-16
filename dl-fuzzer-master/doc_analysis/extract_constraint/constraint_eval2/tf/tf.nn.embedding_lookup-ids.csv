@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor` with type `int32` or `int64` containing the ids to be looked up in `params`.,,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,A `Tensor` with type `int32` or `int64` containing the ids to be looked up in `params`.,,nonprim_dtype,tensor_t(tf.tensor),,1

@@ -1,0 +1,82 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  reshuffle_each_iteration:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  seed:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  seed2:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  seed_generator:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - reshuffle_each_iteration
+  - name
+  required:
+  - input_dataset
+  - buffer_size
+  - seed
+  - seed2
+  - seed_generator
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ShuffleDatasetV3
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ShuffleDatasetV3
+title: tf.raw_ops.ShuffleDatasetV3
+version: 2.3.0

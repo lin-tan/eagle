@@ -1,0 +1,61 @@
+constraints:
+  input:
+    descp: 1-D input vector
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[b,p,m]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: optional output matrix
+    doc_dtype: Tensor, optional
+    ndim:
+    - '0'
+    - '1'
+    tensor_t:
+    - torch.tensor
+  vec2:
+    descp: 1-D input vector
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '&input'
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - vec2
+link: https://pytorch.org/docs/stable/torch.html#torch.ger
+package: torch
+ret_type: Tensor
+target: ger
+title: torch.ger
+version: 1.5.0

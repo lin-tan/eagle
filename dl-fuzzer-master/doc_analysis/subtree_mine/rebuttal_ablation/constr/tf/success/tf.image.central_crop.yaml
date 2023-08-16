@@ -1,0 +1,67 @@
+aliases:
+- tf.compat.v1.image.central_crop
+constraints:
+  central_fraction:
+    descp: 'float (0, 1], fraction of size to crop Usage Example: `python >> import
+      tensorflow as tf >> x = tf.random.normal(shape=(256, 256, 3)) >> tf.image.central_crop(x,
+      0.5)`'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[0,1]'
+    - '[x,0.5]'
+  image:
+    descp: Either a 3-D float Tensor of shape [height, width, depth], or a 4-D Tensor
+      of shape [batch_size, height, width, depth].
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - '[batch_size'
+    - '[height'
+    - depth]
+    - height
+    - width
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    - '4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[3]'
+    - '[4]'
+    - '[batch_size,height,width,depth]'
+    - '[height,width,depth]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: if central_crop_fraction is not within (0, 1].
+inputs:
+  optional: []
+  required:
+  - image
+  - central_fraction
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/central_crop
+outputs: 3-D / 4-D float Tensor, as per the input.
+package: tensorflow
+target: central_crop
+title: tf.image.central_crop
+version: 2.1.0

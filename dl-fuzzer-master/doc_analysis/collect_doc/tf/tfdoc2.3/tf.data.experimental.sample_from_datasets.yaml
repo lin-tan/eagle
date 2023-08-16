@@ -1,0 +1,31 @@
+constraints:
+  datasets:
+    descp: A list of tf.data.Dataset objects with compatible structure.
+  seed:
+    default: None
+    descp: (Optional.) A tf.int64 scalar tf.Tensor, representing the random seed that
+      will be used to create the distribution. See tf.random.set_seed for behavior.
+  weights:
+    default: None
+    descp: (Optional.) A list of len(datasets) floating-point values where weights[i]
+      represents the probability with which an element should be sampled from datasets[i],
+      or a tf.data.Dataset object where each element is such a list. Defaults to a
+      uniform distribution across datasets.
+exceptions:
+- TypeError: If the datasets or weights arguments have the wrong type.
+- ValueError: If the weights argument is specified and does not match the length of
+    the datasets element.
+inputs:
+  optional:
+  - weights
+  - seed
+  required:
+  - datasets
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/sample_from_datasets
+outputs:
+- A dataset that interleaves elements from datasets at random, according to weights
+  if provided, otherwise with uniform probability.
+package: tensorflow
+target: sample_from_datasets
+title: tf.data.experimental.sample_from_datasets
+version: 2.3.0

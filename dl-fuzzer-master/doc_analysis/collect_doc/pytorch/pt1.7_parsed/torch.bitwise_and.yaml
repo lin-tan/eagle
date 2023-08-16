@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: the first input tensor
+  other:
+    descp: the second input tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.bitwise_and.html#torch.bitwise_and#torch.bitwise_and
+package: torch
+ret_type: Tensor
+target: bitwise_and
+title: torch.bitwise_and
+version: 1.7.0

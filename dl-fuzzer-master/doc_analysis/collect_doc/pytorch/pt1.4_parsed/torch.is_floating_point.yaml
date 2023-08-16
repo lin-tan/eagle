@@ -1,0 +1,15 @@
+constraints:
+  input:
+    descp: the PyTorch tensor to test
+    doc_dtype:
+    - Tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.is_floating_point
+package: torch
+ret_type: (bool)
+target: is_floating_point
+title: torch.is_floating_point
+version: 1.4.0

@@ -1,0 +1,1653 @@
+,idx,freq,sequence,sentence,api,len
+0,2,609,['SOME_DTYPE'],bool,torch.nn.utils.rnn.pad_sequence.yaml,1
+1,2,609,['SOME_DTYPE'],float,torch.nn.utils.rnn.pad_sequence.yaml,1
+2,2,609,['SOME_DTYPE'],int,torch.std2.yaml,1
+3,2,609,['SOME_DTYPE'],tuple of python:ints,torch.std2.yaml,1
+4,2,609,['SOME_DTYPE'],bool,torch.std2.yaml,1
+5,2,609,['SOME_DTYPE'],bool,torch.std2.yaml,1
+6,2,609,['SOME_DTYPE'],int,torch.prod2.yaml,1
+7,2,609,['SOME_DTYPE'],bool,torch.prod2.yaml,1
+8,2,609,['SOME_DTYPE'],torch.device,torch.empty_strided.yaml,1
+9,2,609,['SOME_DTYPE'],torch.layout,torch.empty_strided.yaml,1
+10,2,609,['SOME_DTYPE'],bool,torch.empty_strided.yaml,1
+11,2,609,['SOME_DTYPE'],bool,torch.empty_strided.yaml,1
+12,2,609,['SOME_DTYPE'],tuple of python:ints,torch.empty_strided.yaml,1
+13,2,609,['SOME_DTYPE'],tuple of python:ints,torch.empty_strided.yaml,1
+14,2,609,['SOME_DTYPE'],float,torch.pow.yaml,1
+15,2,609,['SOME_DTYPE'],int,torch.cummax.yaml,1
+16,2,609,['SOME_DTYPE'],int,torch.mean2.yaml,1
+17,2,609,['SOME_DTYPE'],tuple of python:ints,torch.mean2.yaml,1
+18,2,609,['SOME_DTYPE'],bool,torch.mean2.yaml,1
+19,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.hvp.yaml,1
+20,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.hvp.yaml,1
+21,2,609,['SOME_DTYPE'],tuple of python:ints,torch.reshape.yaml,1
+22,2,609,['SOME_DTYPE'],torch.device,torch.cuda.max_memory_reserved.yaml,1
+23,2,609,['SOME_DTYPE'],int,torch.cuda.max_memory_reserved.yaml,1
+24,2,609,['SOME_DTYPE'],torch.device,torch.arange.yaml,1
+25,2,609,['SOME_DTYPE'],torch.layout,torch.arange.yaml,1
+26,2,609,['SOME_DTYPE'],bool,torch.arange.yaml,1
+27,2,609,['SOME_DTYPE'],bool,torch.cholesky.yaml,1
+28,2,609,['SOME_DTYPE'],int,torch.sum2.yaml,1
+29,2,609,['SOME_DTYPE'],tuple of python:ints,torch.sum2.yaml,1
+30,2,609,['SOME_DTYPE'],bool,torch.sum2.yaml,1
+31,2,609,['SOME_DTYPE'],torch.device,torch.cuda.memory_reserved.yaml,1
+32,2,609,['SOME_DTYPE'],int,torch.cuda.memory_reserved.yaml,1
+33,2,609,['SOME_DTYPE'],bool,torch.nn.functional.grid_sample.yaml,1
+34,2,609,['SOME_DTYPE'],str,torch.nn.functional.grid_sample.yaml,1
+35,2,609,['SOME_DTYPE'],str,torch.nn.functional.grid_sample.yaml,1
+36,2,609,['SOME_DTYPE'],int,torch.trapz.yaml,1
+37,2,609,['SOME_DTYPE'],float,torch.lerp.yaml,1
+38,2,609,['SOME_DTYPE'],bool,torch.var_mean.yaml,1
+39,2,609,['SOME_DTYPE'],ints,torch.as_strided.yaml,1
+40,2,609,['SOME_DTYPE'],int,torch.as_strided.yaml,1
+41,2,609,['SOME_DTYPE'],ints,torch.as_strided.yaml,1
+42,2,609,['SOME_DTYPE'],torch.device,torch.ones_like.yaml,1
+43,2,609,['SOME_DTYPE'],torch.layout,torch.ones_like.yaml,1
+44,2,609,['SOME_DTYPE'],bool,torch.ones_like.yaml,1
+45,2,609,['SOME_DTYPE'],bool,torch.distributed.all_reduce.yaml,1
+46,2,609,['SOME_DTYPE'],int,torch.distributed.isend.yaml,1
+47,2,609,['SOME_DTYPE'],int,torch.distributed.isend.yaml,1
+48,2,609,['SOME_DTYPE'],bool,torch.random.fork_rng.yaml,1
+49,2,609,['SOME_DTYPE'],int,torch.nn.functional.ctc_loss.yaml,1
+50,2,609,['SOME_DTYPE'],string,torch.nn.functional.ctc_loss.yaml,1
+51,2,609,['SOME_DTYPE'],bool,torch.nn.functional.ctc_loss.yaml,1
+52,2,609,['SOME_DTYPE'],LongTensor,torch.nonzero.yaml,1
+53,2,609,['SOME_DTYPE'],string,torch.einsum.yaml,1
+54,2,609,['SOME_DTYPE'],bool,torch.eig.yaml,1
+55,2,609,['SOME_DTYPE'],bool,torch.var.yaml,1
+56,2,609,['SOME_DTYPE'],bool,torch.distributed.barrier.yaml,1
+57,2,609,['SOME_DTYPE'],bool,torch.std_mean.yaml,1
+58,2,609,['SOME_DTYPE'],torch.device,torch.cuda.reset_max_memory_allocated.yaml,1
+59,2,609,['SOME_DTYPE'],int,torch.cuda.reset_max_memory_allocated.yaml,1
+60,2,609,['SOME_DTYPE'],int,torch.nn.functional.glu.yaml,1
+61,2,609,['SOME_DTYPE'],torch.device,torch.cuda.memory_stats.yaml,1
+62,2,609,['SOME_DTYPE'],int,torch.cuda.memory_stats.yaml,1
+63,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.vjp.yaml,1
+64,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.vjp.yaml,1
+65,2,609,['SOME_DTYPE'],int,torch.tensordot.yaml,1
+66,2,609,['SOME_DTYPE'],tuple of two lists of python:integers,torch.tensordot.yaml,1
+67,2,609,['SOME_DTYPE'],callable,torch.jit.script.yaml,1
+68,2,609,['SOME_DTYPE'],nn.Module,torch.jit.script.yaml,1
+69,2,609,['SOME_DTYPE'],torch.ByteTensor,torch.set_rng_state.yaml,1
+70,2,609,['SOME_DTYPE'],float,torch.autograd.gradgradcheck.yaml,1
+71,2,609,['SOME_DTYPE'],float,torch.autograd.gradgradcheck.yaml,1
+72,2,609,['SOME_DTYPE'],bool,torch.autograd.gradgradcheck.yaml,1
+73,2,609,['SOME_DTYPE'],float,torch.autograd.gradgradcheck.yaml,1
+74,2,609,['SOME_DTYPE'],bool,torch.autograd.gradgradcheck.yaml,1
+75,2,609,['SOME_DTYPE'],float,torch.autograd.gradgradcheck.yaml,1
+76,2,609,['SOME_DTYPE'],int,torch.nn.functional.gumbel_softmax.yaml,1
+77,2,609,['SOME_DTYPE'],float,torch.le.yaml,1
+78,2,609,['SOME_DTYPE'],int,torch.nn.functional.normalize.yaml,1
+79,2,609,['SOME_DTYPE'],float,torch.nn.functional.normalize.yaml,1
+80,2,609,['SOME_DTYPE'],float,torch.nn.functional.normalize.yaml,1
+81,2,609,['SOME_DTYPE'],bool,torch.nn.utils.rnn.pack_padded_sequence.yaml,1
+82,2,609,['SOME_DTYPE'],bool,torch.nn.utils.rnn.pack_padded_sequence.yaml,1
+83,2,609,['SOME_DTYPE'],int,torch.diag.yaml,1
+84,2,609,['SOME_DTYPE'],torch.device,torch.cuda.get_device_name.yaml,1
+85,2,609,['SOME_DTYPE'],int,torch.cuda.get_device_name.yaml,1
+86,2,609,['SOME_DTYPE'],int,torch.nn.utils.spectral_norm.yaml,1
+87,2,609,['SOME_DTYPE'],float,torch.nn.utils.spectral_norm.yaml,1
+88,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.spectral_norm.yaml,1
+89,2,609,['SOME_DTYPE'],int,torch.nn.utils.spectral_norm.yaml,1
+90,2,609,['SOME_DTYPE'],str,torch.nn.utils.spectral_norm.yaml,1
+91,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.l1_unstructured.yaml,1
+92,2,609,['SOME_DTYPE'],float,torch.nn.utils.prune.l1_unstructured.yaml,1
+93,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.l1_unstructured.yaml,1
+94,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.l1_unstructured.yaml,1
+95,2,609,['SOME_DTYPE'],bool,torch.distributed.all_gather.yaml,1
+96,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.jvp.yaml,1
+97,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.jvp.yaml,1
+98,2,609,['SOME_DTYPE'],bool,torch.irfft.yaml,1
+99,2,609,['SOME_DTYPE'],bool,torch.irfft.yaml,1
+100,2,609,['SOME_DTYPE'],int,torch.irfft.yaml,1
+101,2,609,['SOME_DTYPE'],float,torch.fmod.yaml,1
+102,2,609,['SOME_DTYPE'],float,torch.pow2.yaml,1
+103,2,609,['SOME_DTYPE'],torch.device,torch.empty_like.yaml,1
+104,2,609,['SOME_DTYPE'],torch.layout,torch.empty_like.yaml,1
+105,2,609,['SOME_DTYPE'],bool,torch.empty_like.yaml,1
+106,2,609,['SOME_DTYPE'],torch.ByteTensor,torch.random.set_rng_state.yaml,1
+107,2,609,['SOME_DTYPE'],int,torch.nn.functional.cosine_similarity.yaml,1
+108,2,609,['SOME_DTYPE'],float,torch.nn.functional.cosine_similarity.yaml,1
+109,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.random_unstructured.yaml,1
+110,2,609,['SOME_DTYPE'],float,torch.nn.utils.prune.random_unstructured.yaml,1
+111,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.random_unstructured.yaml,1
+112,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.random_unstructured.yaml,1
+113,2,609,['SOME_DTYPE'],int,torch.combinations.yaml,1
+114,2,609,['SOME_DTYPE'],boolean,torch.combinations.yaml,1
+115,2,609,['SOME_DTYPE'],torch.device,torch.cuda.memory_allocated.yaml,1
+116,2,609,['SOME_DTYPE'],int,torch.cuda.memory_allocated.yaml,1
+117,2,609,['SOME_DTYPE'],float,torch.nn.utils.clip_grad_norm_.yaml,1
+118,2,609,['SOME_DTYPE'],int,torch.nn.utils.clip_grad_norm_.yaml,1
+119,2,609,['SOME_DTYPE'],float,torch.nn.utils.clip_grad_norm_.yaml,1
+120,2,609,['SOME_DTYPE'],int,torch.nn.utils.clip_grad_norm_.yaml,1
+121,2,609,['SOME_DTYPE'],float,torch.nn.utils.clip_grad_value_.yaml,1
+122,2,609,['SOME_DTYPE'],int,torch.nn.utils.clip_grad_value_.yaml,1
+123,2,609,['SOME_DTYPE'],float,torch.gt.yaml,1
+124,2,609,['SOME_DTYPE'],float,torch.ne.yaml,1
+125,2,609,['SOME_DTYPE'],bool,torch.random.fork_rng2.yaml,1
+126,2,609,['SOME_DTYPE'],BoolTensor,torch.where.yaml,1
+127,2,609,['SOME_DTYPE'],int,torch.cummin.yaml,1
+128,2,609,['SOME_DTYPE'],torch.device,torch.hann_window.yaml,1
+129,2,609,['SOME_DTYPE'],torch.layout,torch.hann_window.yaml,1
+130,2,609,['SOME_DTYPE'],bool,torch.hann_window.yaml,1
+131,2,609,['SOME_DTYPE'],bool,torch.hann_window.yaml,1
+132,2,609,['SOME_DTYPE'],int,torch.hann_window.yaml,1
+133,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.vhp.yaml,1
+134,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.vhp.yaml,1
+135,2,609,['SOME_DTYPE'],LongTensor,torch.nn.functional.embedding.yaml,1
+136,2,609,['SOME_DTYPE'],float,torch.nn.functional.embedding.yaml,1
+137,2,609,['SOME_DTYPE'],float,torch.nn.functional.embedding.yaml,1
+138,2,609,['SOME_DTYPE'],int,torch.nn.functional.embedding.yaml,1
+139,2,609,['SOME_DTYPE'],boolean,torch.nn.functional.embedding.yaml,1
+140,2,609,['SOME_DTYPE'],bool,torch.nn.functional.embedding.yaml,1
+141,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.ln_structured.yaml,1
+142,2,609,['SOME_DTYPE'],float,torch.nn.utils.prune.ln_structured.yaml,1
+143,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.ln_structured.yaml,1
+144,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.ln_structured.yaml,1
+145,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.ln_structured.yaml,1
+146,2,609,['SOME_DTYPE'],float,torch.nn.utils.prune.ln_structured.yaml,1
+147,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.ln_structured.yaml,1
+148,2,609,['SOME_DTYPE'],float,torch.pinverse.yaml,1
+149,2,609,['SOME_DTYPE'],bool,torch.distributed.gather.yaml,1
+150,2,609,['SOME_DTYPE'],int,torch.distributed.gather.yaml,1
+151,2,609,['SOME_DTYPE'],list of python:int,torch.nn.parallel.data_parallel.yaml,1
+152,2,609,['SOME_DTYPE'],torch.device,torch.nn.parallel.data_parallel.yaml,1
+153,2,609,['SOME_DTYPE'],Module,torch.nn.parallel.data_parallel.yaml,1
+154,2,609,['SOME_DTYPE'],list of python:int,torch.nn.parallel.data_parallel.yaml,1
+155,2,609,['SOME_DTYPE'],torch.device,torch.nn.parallel.data_parallel.yaml,1
+156,2,609,['SOME_DTYPE'],int,torch.topk.yaml,1
+157,2,609,['SOME_DTYPE'],int,torch.topk.yaml,1
+158,2,609,['SOME_DTYPE'],bool,torch.topk.yaml,1
+159,2,609,['SOME_DTYPE'],bool,torch.topk.yaml,1
+160,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.jacobian.yaml,1
+161,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.jacobian.yaml,1
+162,2,609,['SOME_DTYPE'],int,torch.sparse.sum.yaml,1
+163,2,609,['SOME_DTYPE'],tuple of python:ints,torch.sparse.sum.yaml,1
+164,2,609,['SOME_DTYPE'],int,torch.quantize_per_channel.yaml,1
+165,2,609,['SOME_DTYPE'],int,torch.quantize_per_channel.yaml,1
+166,2,609,['SOME_DTYPE'],torch.device,torch.cuda.current_stream.yaml,1
+167,2,609,['SOME_DTYPE'],int,torch.cuda.current_stream.yaml,1
+168,2,609,['SOME_DTYPE'],bool,torch.nn.functional.affine_grid.yaml,1
+169,2,609,['SOME_DTYPE'],torch.device,torch.zeros_like.yaml,1
+170,2,609,['SOME_DTYPE'],torch.layout,torch.zeros_like.yaml,1
+171,2,609,['SOME_DTYPE'],bool,torch.zeros_like.yaml,1
+172,2,609,['SOME_DTYPE'],int,torch.cuda.comm.broadcast_coalesced.yaml,1
+173,2,609,['SOME_DTYPE'],"Iterable of (module, name) tuples",torch.nn.utils.prune.global_unstructured.yaml,1
+174,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+175,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+176,2,609,['SOME_DTYPE'],"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,1
+177,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+178,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+179,2,609,['SOME_DTYPE'],list of strings,torch.onnx.export.yaml,1
+180,2,609,['SOME_DTYPE'],torch.nn.Module,torch.onnx.export.yaml,1
+181,2,609,['SOME_DTYPE'],int,torch.onnx.export.yaml,1
+182,2,609,['SOME_DTYPE'],list of strings,torch.onnx.export.yaml,1
+183,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+184,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+185,2,609,['SOME_DTYPE'],bool,torch.onnx.export.yaml,1
+186,2,609,['SOME_DTYPE'],BoolTensor,torch.masked_select.yaml,1
+187,2,609,['SOME_DTYPE'],int,torch.matrix_power.yaml,1
+188,2,609,['SOME_DTYPE'],Module,torch.nn.utils.remove_weight_norm.yaml,1
+189,2,609,['SOME_DTYPE'],str,torch.nn.utils.remove_weight_norm.yaml,1
+190,2,609,['SOME_DTYPE'],torch.device,torch.cuda.set_device.yaml,1
+191,2,609,['SOME_DTYPE'],int,torch.cuda.set_device.yaml,1
+192,2,609,['SOME_DTYPE'],int,torch.min2.yaml,1
+193,2,609,['SOME_DTYPE'],bool,torch.min2.yaml,1
+194,2,609,['SOME_DTYPE'],int,torch.split.yaml,1
+195,2,609,['SOME_DTYPE'],int) or (list(int),torch.split.yaml,1
+196,2,609,['SOME_DTYPE'],int,torch.rand.yaml,1
+197,2,609,['SOME_DTYPE'],torch.device,torch.rand.yaml,1
+198,2,609,['SOME_DTYPE'],torch.layout,torch.rand.yaml,1
+199,2,609,['SOME_DTYPE'],bool,torch.rand.yaml,1
+200,2,609,['SOME_DTYPE'],int,torch.polygamma.yaml,1
+201,2,609,['SOME_DTYPE'],bool,torch.fft.yaml,1
+202,2,609,['SOME_DTYPE'],int,torch.fft.yaml,1
+203,2,609,['SOME_DTYPE'],int,torch.cross.yaml,1
+204,2,609,['SOME_DTYPE'],bool,torch.triangular_solve.yaml,1
+205,2,609,['SOME_DTYPE'],bool,torch.triangular_solve.yaml,1
+206,2,609,['SOME_DTYPE'],bool,torch.triangular_solve.yaml,1
+207,2,609,['SOME_DTYPE'],string,torch.cuda.nvtx.range_push.yaml,1
+208,2,609,['SOME_DTYPE'],int,torch.argmin2.yaml,1
+209,2,609,['SOME_DTYPE'],bool,torch.argmin2.yaml,1
+210,2,609,['SOME_DTYPE'],bool,torch.nn.functional.kl_div.yaml,1
+211,2,609,['SOME_DTYPE'],string,torch.nn.functional.kl_div.yaml,1
+212,2,609,['SOME_DTYPE'],bool,torch.nn.functional.kl_div.yaml,1
+213,2,609,['SOME_DTYPE'],torch.device,torch.eye.yaml,1
+214,2,609,['SOME_DTYPE'],torch.layout,torch.eye.yaml,1
+215,2,609,['SOME_DTYPE'],int,torch.eye.yaml,1
+216,2,609,['SOME_DTYPE'],int,torch.eye.yaml,1
+217,2,609,['SOME_DTYPE'],bool,torch.eye.yaml,1
+218,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.random_structured.yaml,1
+219,2,609,['SOME_DTYPE'],float,torch.nn.utils.prune.random_structured.yaml,1
+220,2,609,['SOME_DTYPE'],int,torch.nn.utils.prune.random_structured.yaml,1
+221,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.random_structured.yaml,1
+222,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.random_structured.yaml,1
+223,2,609,['SOME_DTYPE'],int,torch.trapz2.yaml,1
+224,2,609,['SOME_DTYPE'],float,torch.trapz2.yaml,1
+225,2,609,['SOME_DTYPE'],bool,torch.lu_unpack.yaml,1
+226,2,609,['SOME_DTYPE'],bool,torch.lu_unpack.yaml,1
+227,2,609,['SOME_DTYPE'],torch.device,torch.randn_like.yaml,1
+228,2,609,['SOME_DTYPE'],torch.layout,torch.randn_like.yaml,1
+229,2,609,['SOME_DTYPE'],bool,torch.randn_like.yaml,1
+230,2,609,['SOME_DTYPE'],string,torch.hub.download_url_to_file.yaml,1
+231,2,609,['SOME_DTYPE'],string,torch.hub.download_url_to_file.yaml,1
+232,2,609,['SOME_DTYPE'],bool,torch.hub.download_url_to_file.yaml,1
+233,2,609,['SOME_DTYPE'],string,torch.hub.download_url_to_file.yaml,1
+234,2,609,['SOME_DTYPE'],torch.device,torch.cuda.get_device_capability.yaml,1
+235,2,609,['SOME_DTYPE'],int,torch.cuda.get_device_capability.yaml,1
+236,2,609,['SOME_DTYPE'],integer,torch.lobpcg.yaml,1
+237,2,609,['SOME_DTYPE'],bool,torch.lobpcg.yaml,1
+238,2,609,['SOME_DTYPE'],str,torch.lobpcg.yaml,1
+239,2,609,['SOME_DTYPE'],integer,torch.lobpcg.yaml,1
+240,2,609,['SOME_DTYPE'],int,torch.lobpcg.yaml,1
+241,2,609,['SOME_DTYPE'],float,torch.lobpcg.yaml,1
+242,2,609,['SOME_DTYPE'],callable,torch.lobpcg.yaml,1
+243,2,609,['SOME_DTYPE'],str,torch.autograd.profiler.load_nvprof.yaml,1
+244,2,609,['SOME_DTYPE'],bool,torch.nn.functional.binary_cross_entropy.yaml,1
+245,2,609,['SOME_DTYPE'],string,torch.nn.functional.binary_cross_entropy.yaml,1
+246,2,609,['SOME_DTYPE'],bool,torch.nn.functional.binary_cross_entropy.yaml,1
+247,2,609,['SOME_DTYPE'],bool,torch.nn.utils.rnn.pack_sequence.yaml,1
+248,2,609,['SOME_DTYPE'],int,torch.nn.functional.log_softmax.yaml,1
+249,2,609,['SOME_DTYPE'],bool,torch.ifft.yaml,1
+250,2,609,['SOME_DTYPE'],int,torch.ifft.yaml,1
+251,2,609,['SOME_DTYPE'],int,torch.var_mean2.yaml,1
+252,2,609,['SOME_DTYPE'],tuple of python:ints,torch.var_mean2.yaml,1
+253,2,609,['SOME_DTYPE'],bool,torch.var_mean2.yaml,1
+254,2,609,['SOME_DTYPE'],bool,torch.var_mean2.yaml,1
+255,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.remove.yaml,1
+256,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.remove.yaml,1
+257,2,609,['SOME_DTYPE'],str,torch.distributed.init_process_group.yaml,1
+258,2,609,['SOME_DTYPE'],str,torch.distributed.init_process_group.yaml,1
+259,2,609,['SOME_DTYPE'],str,torch.distributed.init_process_group.yaml,1
+260,2,609,['SOME_DTYPE'],int,torch.distributed.init_process_group.yaml,1
+261,2,609,['SOME_DTYPE'],timedelta,torch.distributed.init_process_group.yaml,1
+262,2,609,['SOME_DTYPE'],int,torch.distributed.init_process_group.yaml,1
+263,2,609,['SOME_DTYPE'],Iterable[int],torch.cuda.comm.scatter.yaml,1
+264,2,609,['SOME_DTYPE'],Iterable[int],torch.cuda.comm.scatter.yaml,1
+265,2,609,['SOME_DTYPE'],int,torch.cuda.comm.scatter.yaml,1
+266,2,609,['SOME_DTYPE'],int,torch.distributed.recv.yaml,1
+267,2,609,['SOME_DTYPE'],int,torch.distributed.recv.yaml,1
+268,2,609,['SOME_DTYPE'],int,torch.cuda.manual_seed.yaml,1
+269,2,609,['SOME_DTYPE'],int,torch.repeat_interleave.yaml,1
+270,2,609,['SOME_DTYPE'],int,torch.repeat_interleave.yaml,1
+271,2,609,['SOME_DTYPE'],float,torch.remainder.yaml,1
+272,2,609,['SOME_DTYPE'],bool,torch.cholesky_solve.yaml,1
+273,2,609,['SOME_DTYPE'],int,torch.median2.yaml,1
+274,2,609,['SOME_DTYPE'],bool,torch.median2.yaml,1
+275,2,609,['SOME_DTYPE'],int,torch.histc.yaml,1
+276,2,609,['SOME_DTYPE'],int,torch.histc.yaml,1
+277,2,609,['SOME_DTYPE'],int,torch.histc.yaml,1
+278,2,609,['SOME_DTYPE'],bool,torch.distributed.broadcast_multigpu.yaml,1
+279,2,609,['SOME_DTYPE'],int,torch.distributed.broadcast_multigpu.yaml,1
+280,2,609,['SOME_DTYPE'],int,torch.distributed.broadcast_multigpu.yaml,1
+281,2,609,['SOME_DTYPE'],boolean,torch.symeig.yaml,1
+282,2,609,['SOME_DTYPE'],boolean,torch.symeig.yaml,1
+283,2,609,['SOME_DTYPE'],bool,torch.distributed.reduce.yaml,1
+284,2,609,['SOME_DTYPE'],int,torch.distributed.reduce.yaml,1
+285,2,609,['SOME_DTYPE'],bool,torch.distributed.all_gather_multigpu.yaml,1
+286,2,609,['SOME_DTYPE'],int,torch.flatten.yaml,1
+287,2,609,['SOME_DTYPE'],int,torch.flatten.yaml,1
+288,2,609,['SOME_DTYPE'],bool,torch.autograd.backward.yaml,1
+289,2,609,['SOME_DTYPE'],bool,torch.autograd.backward.yaml,1
+290,2,609,['SOME_DTYPE'],bool,torch.argsort.yaml,1
+291,2,609,['SOME_DTYPE'],int,torch.argsort.yaml,1
+292,2,609,['SOME_DTYPE'],torch.device,torch.cuda.max_memory_allocated.yaml,1
+293,2,609,['SOME_DTYPE'],int,torch.cuda.max_memory_allocated.yaml,1
+294,2,609,['SOME_DTYPE'],float,torch.eq.yaml,1
+295,2,609,['SOME_DTYPE'],int,torch.logsumexp.yaml,1
+296,2,609,['SOME_DTYPE'],tuple of python:ints,torch.logsumexp.yaml,1
+297,2,609,['SOME_DTYPE'],bool,torch.logsumexp.yaml,1
+298,2,609,['SOME_DTYPE'],bool,torch.lu.yaml,1
+299,2,609,['SOME_DTYPE'],bool,torch.lu.yaml,1
+300,2,609,['SOME_DTYPE'],Scalar,torch.true_divide.yaml,1
+301,2,609,['SOME_DTYPE'],bool,torch.sort.yaml,1
+302,2,609,['SOME_DTYPE'],int,torch.sort.yaml,1
+303,2,609,['SOME_DTYPE'],bool,torch.cuda.memory_summary.yaml,1
+304,2,609,['SOME_DTYPE'],torch.device,torch.cuda.memory_summary.yaml,1
+305,2,609,['SOME_DTYPE'],int,torch.cuda.memory_summary.yaml,1
+306,2,609,['SOME_DTYPE'],int,torch.cuda.comm.reduce_add.yaml,1
+307,2,609,['SOME_DTYPE'],int,torch.distributed.send.yaml,1
+308,2,609,['SOME_DTYPE'],int,torch.distributed.send.yaml,1
+309,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.is_pruned.yaml,1
+310,2,609,['SOME_DTYPE'],int,torch.ones.yaml,1
+311,2,609,['SOME_DTYPE'],torch.device,torch.ones.yaml,1
+312,2,609,['SOME_DTYPE'],torch.layout,torch.ones.yaml,1
+313,2,609,['SOME_DTYPE'],bool,torch.ones.yaml,1
+314,2,609,['SOME_DTYPE'],torch.device,torch.randperm.yaml,1
+315,2,609,['SOME_DTYPE'],torch.layout,torch.randperm.yaml,1
+316,2,609,['SOME_DTYPE'],int,torch.randperm.yaml,1
+317,2,609,['SOME_DTYPE'],bool,torch.randperm.yaml,1
+318,2,609,['SOME_DTYPE'],int,torch.stack.yaml,1
+319,2,609,['SOME_DTYPE'],float,torch.normal222.yaml,1
+320,2,609,['SOME_DTYPE'],int,torch.normal222.yaml,1
+321,2,609,['SOME_DTYPE'],float,torch.normal222.yaml,1
+322,2,609,['SOME_DTYPE'],bool,torch.hub.load.yaml,1
+323,2,609,['SOME_DTYPE'],string,torch.hub.load.yaml,1
+324,2,609,['SOME_DTYPE'],string,torch.hub.load.yaml,1
+325,2,609,['SOME_DTYPE'],bool,torch.hub.load.yaml,1
+326,2,609,['SOME_DTYPE'],int,torch.max2.yaml,1
+327,2,609,['SOME_DTYPE'],bool,torch.max2.yaml,1
+328,2,609,['SOME_DTYPE'],int,torch.cumprod.yaml,1
+329,2,609,['SOME_DTYPE'],int,torch.diag_embed.yaml,1
+330,2,609,['SOME_DTYPE'],int,torch.diag_embed.yaml,1
+331,2,609,['SOME_DTYPE'],int,torch.diag_embed.yaml,1
+332,2,609,['SOME_DTYPE'],bool,torch.hub.help.yaml,1
+333,2,609,['SOME_DTYPE'],string,torch.hub.help.yaml,1
+334,2,609,['SOME_DTYPE'],string,torch.hub.help.yaml,1
+335,2,609,['SOME_DTYPE'],bool,torch.utils.model_zoo.load_url.yaml,1
+336,2,609,['SOME_DTYPE'],string,torch.utils.model_zoo.load_url.yaml,1
+337,2,609,['SOME_DTYPE'],bool,torch.utils.model_zoo.load_url.yaml,1
+338,2,609,['SOME_DTYPE'],string,torch.utils.model_zoo.load_url.yaml,1
+339,2,609,['SOME_DTYPE'],torch.device,torch.cuda.synchronize.yaml,1
+340,2,609,['SOME_DTYPE'],int,torch.cuda.synchronize.yaml,1
+341,2,609,['SOME_DTYPE'],int,torch.triu_indices.yaml,1
+342,2,609,['SOME_DTYPE'],torch.device,torch.triu_indices.yaml,1
+343,2,609,['SOME_DTYPE'],torch.layout,torch.triu_indices.yaml,1
+344,2,609,['SOME_DTYPE'],int,torch.triu_indices.yaml,1
+345,2,609,['SOME_DTYPE'],int,torch.triu_indices.yaml,1
+346,2,609,['SOME_DTYPE'],int,torch.argmax2.yaml,1
+347,2,609,['SOME_DTYPE'],bool,torch.argmax2.yaml,1
+348,2,609,['SOME_DTYPE'],double,torch.nn.quantized.functional.linear.yaml,1
+349,2,609,['SOME_DTYPE'],long,torch.nn.quantized.functional.linear.yaml,1
+350,2,609,['SOME_DTYPE'],bool,torch.stft.yaml,1
+351,2,609,['SOME_DTYPE'],int,torch.stft.yaml,1
+352,2,609,['SOME_DTYPE'],int,torch.stft.yaml,1
+353,2,609,['SOME_DTYPE'],bool,torch.stft.yaml,1
+354,2,609,['SOME_DTYPE'],bool,torch.stft.yaml,1
+355,2,609,['SOME_DTYPE'],string,torch.stft.yaml,1
+356,2,609,['SOME_DTYPE'],int,torch.stft.yaml,1
+357,2,609,['SOME_DTYPE'],float,torch.normal22.yaml,1
+358,2,609,['SOME_DTYPE'],callable,torch.jit.trace.yaml,1
+359,2,609,['SOME_DTYPE'],torch.nn.Module,torch.jit.trace.yaml,1
+360,2,609,['SOME_DTYPE'],torch.ByteTensor,torch.random.set_rng_state2.yaml,1
+361,2,609,['SOME_DTYPE'],int,torch.tril_indices.yaml,1
+362,2,609,['SOME_DTYPE'],torch.device,torch.tril_indices.yaml,1
+363,2,609,['SOME_DTYPE'],torch.layout,torch.tril_indices.yaml,1
+364,2,609,['SOME_DTYPE'],int,torch.tril_indices.yaml,1
+365,2,609,['SOME_DTYPE'],int,torch.tril_indices.yaml,1
+366,2,609,['SOME_DTYPE'],torch.device,torch.linspace.yaml,1
+367,2,609,['SOME_DTYPE'],float,torch.linspace.yaml,1
+368,2,609,['SOME_DTYPE'],torch.layout,torch.linspace.yaml,1
+369,2,609,['SOME_DTYPE'],bool,torch.linspace.yaml,1
+370,2,609,['SOME_DTYPE'],float,torch.linspace.yaml,1
+371,2,609,['SOME_DTYPE'],int,torch.linspace.yaml,1
+372,2,609,['SOME_DTYPE'],bool,torch.autograd.grad.yaml,1
+373,2,609,['SOME_DTYPE'],bool,torch.autograd.grad.yaml,1
+374,2,609,['SOME_DTYPE'],bool,torch.autograd.grad.yaml,1
+375,2,609,['SOME_DTYPE'],float,torch.normal2.yaml,1
+376,2,609,['SOME_DTYPE'],int,torch.mvlgamma.yaml,1
+377,2,609,['SOME_DTYPE'],float,torch.quantize_per_tensor.yaml,1
+378,2,609,['SOME_DTYPE'],int,torch.quantize_per_tensor.yaml,1
+379,2,609,['SOME_DTYPE'],float,torch.ge.yaml,1
+380,2,609,['SOME_DTYPE'],str,torch.utils.cpp_extension.check_compiler_abi_compatibility.yaml,1
+381,2,609,['SOME_DTYPE'],float,torch.hamming_window.yaml,1
+382,2,609,['SOME_DTYPE'],float,torch.hamming_window.yaml,1
+383,2,609,['SOME_DTYPE'],torch.device,torch.hamming_window.yaml,1
+384,2,609,['SOME_DTYPE'],torch.layout,torch.hamming_window.yaml,1
+385,2,609,['SOME_DTYPE'],bool,torch.hamming_window.yaml,1
+386,2,609,['SOME_DTYPE'],bool,torch.hamming_window.yaml,1
+387,2,609,['SOME_DTYPE'],int,torch.hamming_window.yaml,1
+388,2,609,['SOME_DTYPE'],bool,torch.set_flush_denormal.yaml,1
+389,2,609,['SOME_DTYPE'],int,torch.narrow.yaml,1
+390,2,609,['SOME_DTYPE'],int,torch.narrow.yaml,1
+391,2,609,['SOME_DTYPE'],int,torch.narrow.yaml,1
+392,2,609,['SOME_DTYPE'],int,torch.manual_seed.yaml,1
+393,2,609,['SOME_DTYPE'],int,torch.random.manual_seed2.yaml,1
+394,2,609,['SOME_DTYPE'],int,torch.norm.yaml,1
+395,2,609,['SOME_DTYPE'],2-tuple of python:ints,torch.norm.yaml,1
+396,2,609,['SOME_DTYPE'],2-list of python:ints,torch.norm.yaml,1
+397,2,609,['SOME_DTYPE'],bool,torch.norm.yaml,1
+398,2,609,['SOME_DTYPE'],int,torch.norm.yaml,1
+399,2,609,['SOME_DTYPE'],float,torch.norm.yaml,1
+400,2,609,['SOME_DTYPE'],float,torch.lt.yaml,1
+401,2,609,['SOME_DTYPE'],torch.device,torch.cuda.default_stream.yaml,1
+402,2,609,['SOME_DTYPE'],int,torch.cuda.default_stream.yaml,1
+403,2,609,['SOME_DTYPE'],int,torch.unique.yaml,1
+404,2,609,['SOME_DTYPE'],bool,torch.unique.yaml,1
+405,2,609,['SOME_DTYPE'],bool,torch.unique.yaml,1
+406,2,609,['SOME_DTYPE'],bool,torch.unique.yaml,1
+407,2,609,['SOME_DTYPE'],int,torch.index_select.yaml,1
+408,2,609,['SOME_DTYPE'],LongTensor,torch.index_select.yaml,1
+409,2,609,['SOME_DTYPE'],int,torch.kthvalue.yaml,1
+410,2,609,['SOME_DTYPE'],int,torch.kthvalue.yaml,1
+411,2,609,['SOME_DTYPE'],bool,torch.kthvalue.yaml,1
+412,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.custom_from_mask.yaml,1
+413,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.custom_from_mask.yaml,1
+414,2,609,['SOME_DTYPE'],bool,torch.qr.yaml,1
+415,2,609,['SOME_DTYPE'],torch.device,torch.blackman_window.yaml,1
+416,2,609,['SOME_DTYPE'],torch.layout,torch.blackman_window.yaml,1
+417,2,609,['SOME_DTYPE'],bool,torch.blackman_window.yaml,1
+418,2,609,['SOME_DTYPE'],bool,torch.blackman_window.yaml,1
+419,2,609,['SOME_DTYPE'],int,torch.blackman_window.yaml,1
+420,2,609,['SOME_DTYPE'],int,torch.var2.yaml,1
+421,2,609,['SOME_DTYPE'],tuple of python:ints,torch.var2.yaml,1
+422,2,609,['SOME_DTYPE'],bool,torch.var2.yaml,1
+423,2,609,['SOME_DTYPE'],bool,torch.var2.yaml,1
+424,2,609,['SOME_DTYPE'],str,torch.distributed.new_group.yaml,1
+425,2,609,['SOME_DTYPE'],list[int],torch.distributed.new_group.yaml,1
+426,2,609,['SOME_DTYPE'],timedelta,torch.distributed.new_group.yaml,1
+427,2,609,['SOME_DTYPE'],int,torch.multinomial.yaml,1
+428,2,609,['SOME_DTYPE'],bool,torch.multinomial.yaml,1
+429,2,609,['SOME_DTYPE'],bool,torch.cholesky_inverse.yaml,1
+430,2,609,['SOME_DTYPE'],torch.device,torch.as_tensor.yaml,1
+431,2,609,['SOME_DTYPE'],float,torch.autograd.gradcheck.yaml,1
+432,2,609,['SOME_DTYPE'],bool,torch.autograd.gradcheck.yaml,1
+433,2,609,['SOME_DTYPE'],float,torch.autograd.gradcheck.yaml,1
+434,2,609,['SOME_DTYPE'],float,torch.autograd.gradcheck.yaml,1
+435,2,609,['SOME_DTYPE'],bool,torch.autograd.gradcheck.yaml,1
+436,2,609,['SOME_DTYPE'],float,torch.autograd.gradcheck.yaml,1
+437,2,609,['SOME_DTYPE'],int,torch.mode.yaml,1
+438,2,609,['SOME_DTYPE'],bool,torch.mode.yaml,1
+439,2,609,['SOME_DTYPE'],int,torch.nn.functional.nll_loss.yaml,1
+440,2,609,['SOME_DTYPE'],bool,torch.nn.functional.nll_loss.yaml,1
+441,2,609,['SOME_DTYPE'],string,torch.nn.functional.nll_loss.yaml,1
+442,2,609,['SOME_DTYPE'],bool,torch.nn.functional.nll_loss.yaml,1
+443,2,609,['SOME_DTYPE'],int,torch.random.manual_seed.yaml,1
+444,2,609,['SOME_DTYPE'],torch.device,torch.bartlett_window.yaml,1
+445,2,609,['SOME_DTYPE'],torch.layout,torch.bartlett_window.yaml,1
+446,2,609,['SOME_DTYPE'],bool,torch.bartlett_window.yaml,1
+447,2,609,['SOME_DTYPE'],bool,torch.bartlett_window.yaml,1
+448,2,609,['SOME_DTYPE'],int,torch.bartlett_window.yaml,1
+449,2,609,['SOME_DTYPE'],int,torch.tril.yaml,1
+450,2,609,['SOME_DTYPE'],float,torch.logspace.yaml,1
+451,2,609,['SOME_DTYPE'],torch.device,torch.logspace.yaml,1
+452,2,609,['SOME_DTYPE'],float,torch.logspace.yaml,1
+453,2,609,['SOME_DTYPE'],torch.layout,torch.logspace.yaml,1
+454,2,609,['SOME_DTYPE'],bool,torch.logspace.yaml,1
+455,2,609,['SOME_DTYPE'],float,torch.logspace.yaml,1
+456,2,609,['SOME_DTYPE'],int,torch.logspace.yaml,1
+457,2,609,['SOME_DTYPE'],int,torch.bincount.yaml,1
+458,2,609,['SOME_DTYPE'],torch.device,torch.cuda.reset_max_memory_cached.yaml,1
+459,2,609,['SOME_DTYPE'],int,torch.cuda.reset_max_memory_cached.yaml,1
+460,2,609,['SOME_DTYPE'],int,torch.triu.yaml,1
+461,2,609,['SOME_DTYPE'],string,torch.jit.load.yaml,1
+462,2,609,['SOME_DTYPE'],torch.device,torch.jit.load.yaml,1
+463,2,609,['SOME_DTYPE'],bool,torch.nn.quantized.functional.interpolate.yaml,1
+464,2,609,['SOME_DTYPE'],str,torch.nn.quantized.functional.interpolate.yaml,1
+465,2,609,['SOME_DTYPE'],float,torch.nn.quantized.functional.interpolate.yaml,1
+466,2,609,['SOME_DTYPE'],Tuple[float],torch.nn.quantized.functional.interpolate.yaml,1
+467,2,609,['SOME_DTYPE'],int,torch.nn.quantized.functional.interpolate.yaml,1
+468,2,609,['SOME_DTYPE'],Tuple[int] ,torch.nn.quantized.functional.interpolate.yaml,1
+469,2,609,['SOME_DTYPE'],Tuple[int,torch.nn.quantized.functional.interpolate.yaml,1
+470,2,609,['SOME_DTYPE'],int] ,torch.nn.quantized.functional.interpolate.yaml,1
+471,2,609,['SOME_DTYPE'],Tuple[int,torch.nn.quantized.functional.interpolate.yaml,1
+472,2,609,['SOME_DTYPE'],int,torch.nn.quantized.functional.interpolate.yaml,1
+473,2,609,['SOME_DTYPE'],int],torch.nn.quantized.functional.interpolate.yaml,1
+474,2,609,['SOME_DTYPE'],bool,torch.utils.checkpoint.checkpoint_sequential.yaml,1
+475,2,609,['SOME_DTYPE'],nn.Module,torch.nn.utils.prune.identity.yaml,1
+476,2,609,['SOME_DTYPE'],str,torch.nn.utils.prune.identity.yaml,1
+477,2,609,['SOME_DTYPE'],int,torch.nn.functional.softmin.yaml,1
+478,2,609,['SOME_DTYPE'],int,torch.unsqueeze.yaml,1
+479,2,609,['SOME_DTYPE'],float,torch.allclose.yaml,1
+480,2,609,['SOME_DTYPE'],bool,torch.allclose.yaml,1
+481,2,609,['SOME_DTYPE'],float,torch.allclose.yaml,1
+482,2,609,['SOME_DTYPE'],int,torch.nn.functional.one_hot.yaml,1
+483,2,609,['SOME_DTYPE'],LongTensor,torch.nn.functional.one_hot.yaml,1
+484,2,609,['SOME_DTYPE'],int,torch.chunk.yaml,1
+485,2,609,['SOME_DTYPE'],int,torch.chunk.yaml,1
+486,2,609,['SOME_DTYPE'],int,torch.nn.functional.cross_entropy.yaml,1
+487,2,609,['SOME_DTYPE'],bool,torch.nn.functional.cross_entropy.yaml,1
+488,2,609,['SOME_DTYPE'],string,torch.nn.functional.cross_entropy.yaml,1
+489,2,609,['SOME_DTYPE'],bool,torch.nn.functional.cross_entropy.yaml,1
+490,2,609,['SOME_DTYPE'],string,torch.hub.set_dir.yaml,1
+491,2,609,['SOME_DTYPE'],torch.device,torch.tensor.yaml,1
+492,2,609,['SOME_DTYPE'],bool,torch.tensor.yaml,1
+493,2,609,['SOME_DTYPE'],bool,torch.tensor.yaml,1
+494,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.hessian.yaml,1
+495,2,609,['SOME_DTYPE'],bool,torch.autograd.functional.hessian.yaml,1
+496,2,609,['SOME_DTYPE'],int,torch.nn.utils.weight_norm.yaml,1
+497,2,609,['SOME_DTYPE'],Module,torch.nn.utils.weight_norm.yaml,1
+498,2,609,['SOME_DTYPE'],str,torch.nn.utils.weight_norm.yaml,1
+499,2,609,['SOME_DTYPE'],int,torch.std_mean2.yaml,1
+500,2,609,['SOME_DTYPE'],tuple of python:ints,torch.std_mean2.yaml,1
+501,2,609,['SOME_DTYPE'],bool,torch.std_mean2.yaml,1
+502,2,609,['SOME_DTYPE'],bool,torch.std_mean2.yaml,1
+503,2,609,['SOME_DTYPE'],torch.device,torch.sparse_coo_tensor.yaml,1
+504,2,609,['SOME_DTYPE'],bool,torch.sparse_coo_tensor.yaml,1
+505,2,609,['SOME_DTYPE'],int,torch.cat.yaml,1
+506,2,609,['SOME_DTYPE'],int,torch.cuda.manual_seed_all.yaml,1
+507,2,609,['SOME_DTYPE'],int,torch.unique_consecutive.yaml,1
+508,2,609,['SOME_DTYPE'],bool,torch.unique_consecutive.yaml,1
+509,2,609,['SOME_DTYPE'],bool,torch.unique_consecutive.yaml,1
+510,2,609,['SOME_DTYPE'],bool,torch.distributed.scatter.yaml,1
+511,2,609,['SOME_DTYPE'],int,torch.distributed.scatter.yaml,1
+512,2,609,['SOME_DTYPE'],Module,torch.nn.utils.remove_spectral_norm.yaml,1
+513,2,609,['SOME_DTYPE'],str,torch.nn.utils.remove_spectral_norm.yaml,1
+514,2,609,['SOME_DTYPE'],int,torch.rot90.yaml,1
+515,2,609,['SOME_DTYPE'],int,torch.distributed.irecv.yaml,1
+516,2,609,['SOME_DTYPE'],int,torch.distributed.irecv.yaml,1
+517,2,609,['SOME_DTYPE'],float,torch.dist.yaml,1
+518,2,609,['SOME_DTYPE'],int,torch.squeeze.yaml,1
+519,2,609,['SOME_DTYPE'],int,torch.cumsum.yaml,1
+520,2,609,['SOME_DTYPE'],bool,torch.distributed.reduce_multigpu.yaml,1
+521,2,609,['SOME_DTYPE'],int,torch.distributed.reduce_multigpu.yaml,1
+522,2,609,['SOME_DTYPE'],int,torch.distributed.reduce_multigpu.yaml,1
+523,2,609,['SOME_DTYPE'],string,torch.cuda.nvtx.mark.yaml,1
+524,2,609,['SOME_DTYPE'],int,torch.zeros.yaml,1
+525,2,609,['SOME_DTYPE'],torch.device,torch.zeros.yaml,1
+526,2,609,['SOME_DTYPE'],torch.layout,torch.zeros.yaml,1
+527,2,609,['SOME_DTYPE'],bool,torch.zeros.yaml,1
+528,2,609,['SOME_DTYPE'],int,torch.nn.functional.softmax.yaml,1
+529,2,609,['SOME_DTYPE'],torch.device,torch.cuda.get_rng_state.yaml,1
+530,2,609,['SOME_DTYPE'],int,torch.cuda.get_rng_state.yaml,1
+531,2,609,['SOME_DTYPE'],bool,torch.nn.functional.binary_cross_entropy_with_logits.yaml,1
+532,2,609,['SOME_DTYPE'],string,torch.nn.functional.binary_cross_entropy_with_logits.yaml,1
+533,2,609,['SOME_DTYPE'],bool,torch.nn.functional.binary_cross_entropy_with_logits.yaml,1
+534,2,609,['SOME_DTYPE'],bool,torch.svd.yaml,1
+535,2,609,['SOME_DTYPE'],bool,torch.svd.yaml,1
+536,2,609,['SOME_DTYPE'],int,torch.randn.yaml,1
+537,2,609,['SOME_DTYPE'],torch.device,torch.randn.yaml,1
+538,2,609,['SOME_DTYPE'],torch.layout,torch.randn.yaml,1
+539,2,609,['SOME_DTYPE'],bool,torch.randn.yaml,1
+540,2,609,['SOME_DTYPE'],int,torch.transpose.yaml,1
+541,2,609,['SOME_DTYPE'],int,torch.transpose.yaml,1
+542,2,609,['SOME_DTYPE'],torch.device,torch.cuda.set_rng_state.yaml,1
+543,2,609,['SOME_DTYPE'],int,torch.cuda.set_rng_state.yaml,1
+544,2,609,['SOME_DTYPE'],torch.ByteTensor,torch.cuda.set_rng_state.yaml,1
+545,2,609,['SOME_DTYPE'],float,torch.nn.functional.poisson_nll_loss.yaml,1
+546,2,609,['SOME_DTYPE'],bool,torch.nn.functional.poisson_nll_loss.yaml,1
+547,2,609,['SOME_DTYPE'],string,torch.nn.functional.poisson_nll_loss.yaml,1
+548,2,609,['SOME_DTYPE'],bool,torch.nn.functional.poisson_nll_loss.yaml,1
+549,2,609,['SOME_DTYPE'],bool,torch.matrix_rank.yaml,1
+550,2,609,['SOME_DTYPE'],float,torch.matrix_rank.yaml,1
+551,2,609,['SOME_DTYPE'],int,torch.gather.yaml,1
+552,2,609,['SOME_DTYPE'],LongTensor,torch.gather.yaml,1
+553,2,609,['SOME_DTYPE'],bool,torch.gather.yaml,1
+554,2,609,['SOME_DTYPE'],string,torch.set_default_tensor_type.yaml,1
+555,2,609,['SOME_DTYPE'],bool,torch.hub.list.yaml,1
+556,2,609,['SOME_DTYPE'],string,torch.hub.list.yaml,1
+557,2,609,['SOME_DTYPE'],bool,torch.set_grad_enabled.yaml,1
+558,2,609,['SOME_DTYPE'],bool,torch.utils.checkpoint.checkpoint.yaml,1
+559,2,609,['SOME_DTYPE'],torch.device,torch.rand_like.yaml,1
+560,2,609,['SOME_DTYPE'],torch.layout,torch.rand_like.yaml,1
+561,2,609,['SOME_DTYPE'],bool,torch.rand_like.yaml,1
+562,2,609,['SOME_DTYPE'],int,torch.roll.yaml,1
+563,2,609,['SOME_DTYPE'],tuple of python:ints,torch.roll.yaml,1
+564,2,609,['SOME_DTYPE'],int,torch.roll.yaml,1
+565,2,609,['SOME_DTYPE'],tuple of python:ints,torch.roll.yaml,1
+566,2,609,['SOME_DTYPE'],int,torch.unbind.yaml,1
+567,2,609,['SOME_DTYPE'],bool,torch.nn.functional.interpolate.yaml,1
+568,2,609,['SOME_DTYPE'],str,torch.nn.functional.interpolate.yaml,1
+569,2,609,['SOME_DTYPE'],bool,torch.nn.functional.interpolate.yaml,1
+570,2,609,['SOME_DTYPE'],float,torch.nn.functional.interpolate.yaml,1
+571,2,609,['SOME_DTYPE'],Tuple[float],torch.nn.functional.interpolate.yaml,1
+572,2,609,['SOME_DTYPE'],int,torch.nn.functional.interpolate.yaml,1
+573,2,609,['SOME_DTYPE'],Tuple[int] ,torch.nn.functional.interpolate.yaml,1
+574,2,609,['SOME_DTYPE'],Tuple[int,torch.nn.functional.interpolate.yaml,1
+575,2,609,['SOME_DTYPE'],int] ,torch.nn.functional.interpolate.yaml,1
+576,2,609,['SOME_DTYPE'],Tuple[int,torch.nn.functional.interpolate.yaml,1
+577,2,609,['SOME_DTYPE'],int,torch.nn.functional.interpolate.yaml,1
+578,2,609,['SOME_DTYPE'],int],torch.nn.functional.interpolate.yaml,1
+579,2,609,['SOME_DTYPE'],int,torch.cuda.comm.gather.yaml,1
+580,2,609,['SOME_DTYPE'],int,torch.cuda.comm.gather.yaml,1
+581,2,609,['SOME_DTYPE'],Scalar,torch.floor_divide.yaml,1
+582,2,609,['SOME_DTYPE'],bool,torch.std.yaml,1
+583,2,609,['SOME_DTYPE'],bool,torch.hub.load_state_dict_from_url.yaml,1
+584,2,609,['SOME_DTYPE'],string,torch.hub.load_state_dict_from_url.yaml,1
+585,2,609,['SOME_DTYPE'],bool,torch.hub.load_state_dict_from_url.yaml,1
+586,2,609,['SOME_DTYPE'],string,torch.hub.load_state_dict_from_url.yaml,1
+587,2,609,['SOME_DTYPE'],torch.device,torch.full.yaml,1
+588,2,609,['SOME_DTYPE'],torch.layout,torch.full.yaml,1
+589,2,609,['SOME_DTYPE'],bool,torch.full.yaml,1
+590,2,609,['SOME_DTYPE'],int,torch.full.yaml,1
+591,2,609,['SOME_DTYPE'],int,torch.diagonal.yaml,1
+592,2,609,['SOME_DTYPE'],int,torch.diagonal.yaml,1
+593,2,609,['SOME_DTYPE'],int,torch.diagonal.yaml,1
+594,2,609,['SOME_DTYPE'],int,torch.diagflat.yaml,1
+595,2,609,['SOME_DTYPE'],int,torch.renorm.yaml,1
+596,2,609,['SOME_DTYPE'],float,torch.renorm.yaml,1
+597,2,609,['SOME_DTYPE'],float,torch.renorm.yaml,1
+598,2,609,['SOME_DTYPE'],bool,torch.distributed.broadcast.yaml,1
+599,2,609,['SOME_DTYPE'],int,torch.distributed.broadcast.yaml,1
+600,2,609,['SOME_DTYPE'],bool,torch.nn.utils.rnn.pad_packed_sequence.yaml,1
+601,2,609,['SOME_DTYPE'],float,torch.nn.utils.rnn.pad_packed_sequence.yaml,1
+602,2,609,['SOME_DTYPE'],int,torch.nn.utils.rnn.pad_packed_sequence.yaml,1
+603,2,609,['SOME_DTYPE'],bool,torch.rfft.yaml,1
+604,2,609,['SOME_DTYPE'],bool,torch.rfft.yaml,1
+605,2,609,['SOME_DTYPE'],int,torch.rfft.yaml,1
+606,2,609,['SOME_DTYPE'],bool,torch.pca_lowrank.yaml,1
+607,2,609,['SOME_DTYPE'],int,torch.pca_lowrank.yaml,1
+608,2,609,['SOME_DTYPE'],int,torch.pca_lowrank.yaml,1
+609,3,470,['tensor'],list[Tensor],torch.nn.utils.rnn.pad_sequence.yaml,1
+610,3,470,['tensor'],Tensor,torch.std2.yaml,1
+611,3,470,['tensor'],Tensor,torch.std2.yaml,1
+612,3,470,['tensor'],Tensor,torch.bitwise_xor.yaml,1
+613,3,470,['tensor'],Tensor,torch.real.yaml,1
+614,3,470,['tensor'],Tensor,torch.real.yaml,1
+615,3,470,['tensor'],Tensor,torch.addcdiv.yaml,1
+616,3,470,['tensor'],Tensor,torch.addcdiv.yaml,1
+617,3,470,['tensor'],Tensor,torch.addcdiv.yaml,1
+618,3,470,['tensor'],Tensor,torch.addcdiv.yaml,1
+619,3,470,['tensor'],Tensor,torch.log1p.yaml,1
+620,3,470,['tensor'],Tensor,torch.log1p.yaml,1
+621,3,470,['tensor'],Tensor,torch.prod2.yaml,1
+622,3,470,['tensor'],Tensor,torch.bernoulli.yaml,1
+623,3,470,['tensor'],Tensor,torch.bernoulli.yaml,1
+624,3,470,['tensor'],tensor,torch.pow.yaml,1
+625,3,470,['tensor'],Tensor,torch.pow.yaml,1
+626,3,470,['tensor'],Tensor,torch.pow.yaml,1
+627,3,470,['tensor'],Tensor,torch.exp.yaml,1
+628,3,470,['tensor'],Tensor,torch.exp.yaml,1
+629,3,470,['tensor'],Tensor,torch.cummax.yaml,1
+630,3,470,['tensor'],Tensor,torch.mean2.yaml,1
+631,3,470,['tensor'],Tensor,torch.mean2.yaml,1
+632,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.hvp.yaml,1
+633,3,470,['tensor'],Tensor,torch.autograd.functional.hvp.yaml,1
+634,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.hvp.yaml,1
+635,3,470,['tensor'],Tensor,torch.autograd.functional.hvp.yaml,1
+636,3,470,['tensor'],Tensor,torch.reshape.yaml,1
+637,3,470,['tensor'],Tensors,torch.chain_matmul.yaml,1
+638,3,470,['tensor'],Tensor,torch.div2.yaml,1
+639,3,470,['tensor'],Tensor,torch.div2.yaml,1
+640,3,470,['tensor'],Tensor,torch.arange.yaml,1
+641,3,470,['tensor'],Tensor,torch.cholesky.yaml,1
+642,3,470,['tensor'],Tensor,torch.cholesky.yaml,1
+643,3,470,['tensor'],Tensor,torch.ceil.yaml,1
+644,3,470,['tensor'],Tensor,torch.ceil.yaml,1
+645,3,470,['tensor'],Tensor,torch.sum2.yaml,1
+646,3,470,['tensor'],Tensor,torch.min22.yaml,1
+647,3,470,['tensor'],Tensor,torch.min22.yaml,1
+648,3,470,['tensor'],Tensor,torch.min22.yaml,1
+649,3,470,['tensor'],Tensor,torch.nn.functional.grid_sample.yaml,1
+650,3,470,['tensor'],Tensor,torch.nn.functional.grid_sample.yaml,1
+651,3,470,['tensor'],Tensor,torch.trapz.yaml,1
+652,3,470,['tensor'],Tensor,torch.trapz.yaml,1
+653,3,470,['tensor'],Tensor,torch.lerp.yaml,1
+654,3,470,['tensor'],Tensor,torch.lerp.yaml,1
+655,3,470,['tensor'],Tensor,torch.lerp.yaml,1
+656,3,470,['tensor'],tensor,torch.lerp.yaml,1
+657,3,470,['tensor'],Tensor,torch.sum.yaml,1
+658,3,470,['tensor'],Tensor,torch.var_mean.yaml,1
+659,3,470,['tensor'],Tensor,torch.as_strided.yaml,1
+660,3,470,['tensor'],Tensor,torch.max22.yaml,1
+661,3,470,['tensor'],Tensor,torch.max22.yaml,1
+662,3,470,['tensor'],Tensor,torch.max22.yaml,1
+663,3,470,['tensor'],Tensor,torch.ones_like.yaml,1
+664,3,470,['tensor'],Tensor,torch.distributed.all_reduce.yaml,1
+665,3,470,['tensor'],Tensor,torch.div.yaml,1
+666,3,470,['tensor'],Tensor,torch.distributed.isend.yaml,1
+667,3,470,['tensor'],Tensor,torch.nonzero.yaml,1
+668,3,470,['tensor'],Tensor,torch.einsum.yaml,1
+669,3,470,['tensor'],Tensor,torch.sinh.yaml,1
+670,3,470,['tensor'],Tensor,torch.sinh.yaml,1
+671,3,470,['tensor'],Tensor,torch.eig.yaml,1
+672,3,470,['tensor'],Tensor,torch.var.yaml,1
+673,3,470,['tensor'],Tensor,torch.std_mean.yaml,1
+674,3,470,['tensor'],Tensor,torch.nn.functional.glu.yaml,1
+675,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.vjp.yaml,1
+676,3,470,['tensor'],Tensor,torch.autograd.functional.vjp.yaml,1
+677,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.vjp.yaml,1
+678,3,470,['tensor'],Tensor,torch.autograd.functional.vjp.yaml,1
+679,3,470,['tensor'],Tensor,torch.tensordot.yaml,1
+680,3,470,['tensor'],Tensor,torch.tensordot.yaml,1
+681,3,470,['tensor'],Tensor,torch.erf.yaml,1
+682,3,470,['tensor'],Tensor,torch.erf.yaml,1
+683,3,470,['tensor'],tuple of Tensor,torch.autograd.gradgradcheck.yaml,1
+684,3,470,['tensor'],Tensor,torch.autograd.gradgradcheck.yaml,1
+685,3,470,['tensor'],tuple of Tensor,torch.autograd.gradgradcheck.yaml,1
+686,3,470,['tensor'],Tensor,torch.autograd.gradgradcheck.yaml,1
+687,3,470,['tensor'],Tensor,torch.det.yaml,1
+688,3,470,['tensor'],Tensor,torch.neg.yaml,1
+689,3,470,['tensor'],Tensor,torch.neg.yaml,1
+690,3,470,['tensor'],Tensor,torch.baddbmm.yaml,1
+691,3,470,['tensor'],Tensor,torch.baddbmm.yaml,1
+692,3,470,['tensor'],Tensor,torch.baddbmm.yaml,1
+693,3,470,['tensor'],Tensor,torch.baddbmm.yaml,1
+694,3,470,['tensor'],Tensor,torch.le.yaml,1
+695,3,470,['tensor'],Tensor,torch.le.yaml,1
+696,3,470,['tensor'],Tensor,torch.le.yaml,1
+697,3,470,['tensor'],Tensor,torch.nn.functional.normalize.yaml,1
+698,3,470,['tensor'],Tensor,torch.nn.utils.rnn.pack_padded_sequence.yaml,1
+699,3,470,['tensor'],Tensor,torch.nn.utils.rnn.pack_padded_sequence.yaml,1
+700,3,470,['tensor'],Tensor,torch.add.yaml,1
+701,3,470,['tensor'],Tensor,torch.add.yaml,1
+702,3,470,['tensor'],Tensor,torch.diag.yaml,1
+703,3,470,['tensor'],Tensor,torch.diag.yaml,1
+704,3,470,['tensor'],Tensor,torch.distributed.all_gather.yaml,1
+705,3,470,['tensor'],list[Tensor],torch.distributed.all_gather.yaml,1
+706,3,470,['tensor'],Tensor,torch.is_floating_point.yaml,1
+707,3,470,['tensor'],Tensor,torch.mv.yaml,1
+708,3,470,['tensor'],Tensor,torch.mv.yaml,1
+709,3,470,['tensor'],Tensor,torch.mv.yaml,1
+710,3,470,['tensor'],Tensor,torch.addr.yaml,1
+711,3,470,['tensor'],Tensor,torch.addr.yaml,1
+712,3,470,['tensor'],Tensor,torch.addr.yaml,1
+713,3,470,['tensor'],Tensor,torch.addr.yaml,1
+714,3,470,['tensor'],Tensor,torch.sigmoid.yaml,1
+715,3,470,['tensor'],Tensor,torch.sigmoid.yaml,1
+716,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.jvp.yaml,1
+717,3,470,['tensor'],Tensor,torch.autograd.functional.jvp.yaml,1
+718,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.jvp.yaml,1
+719,3,470,['tensor'],Tensor,torch.autograd.functional.jvp.yaml,1
+720,3,470,['tensor'],Tensor,torch.irfft.yaml,1
+721,3,470,['tensor'],Tensor,torch.fmod.yaml,1
+722,3,470,['tensor'],Tensor,torch.fmod.yaml,1
+723,3,470,['tensor'],Tensor,torch.fmod.yaml,1
+724,3,470,['tensor'],Tensor,torch.pow2.yaml,1
+725,3,470,['tensor'],Tensor,torch.pow2.yaml,1
+726,3,470,['tensor'],Tensor,torch.empty_like.yaml,1
+727,3,470,['tensor'],Tensor,torch.nn.functional.cosine_similarity.yaml,1
+728,3,470,['tensor'],Tensor,torch.nn.functional.cosine_similarity.yaml,1
+729,3,470,['tensor'],Tensor,torch.combinations.yaml,1
+730,3,470,['tensor'],Iterable[Tensor] ,torch.nn.utils.clip_grad_norm_.yaml,1
+731,3,470,['tensor'],Tensor,torch.nn.utils.clip_grad_norm_.yaml,1
+732,3,470,['tensor'],Iterable[Tensor] ,torch.nn.utils.clip_grad_value_.yaml,1
+733,3,470,['tensor'],Tensor,torch.nn.utils.clip_grad_value_.yaml,1
+734,3,470,['tensor'],Tensor,torch.gt.yaml,1
+735,3,470,['tensor'],Tensor,torch.gt.yaml,1
+736,3,470,['tensor'],Tensor,torch.gt.yaml,1
+737,3,470,['tensor'],Tensor,torch.ormqr.yaml,1
+738,3,470,['tensor'],Tensor,torch.ormqr.yaml,1
+739,3,470,['tensor'],Tensor,torch.ormqr.yaml,1
+740,3,470,['tensor'],Tensor,torch.ne.yaml,1
+741,3,470,['tensor'],Tensor,torch.ne.yaml,1
+742,3,470,['tensor'],Tensor,torch.ne.yaml,1
+743,3,470,['tensor'],Tensor,torch.erfinv.yaml,1
+744,3,470,['tensor'],Tensor,torch.erfinv.yaml,1
+745,3,470,['tensor'],Tensor,torch.cdist.yaml,1
+746,3,470,['tensor'],Tensor,torch.cdist.yaml,1
+747,3,470,['tensor'],Tensor,torch.addbmm.yaml,1
+748,3,470,['tensor'],Tensor,torch.addbmm.yaml,1
+749,3,470,['tensor'],Tensor,torch.addbmm.yaml,1
+750,3,470,['tensor'],Tensor,torch.addbmm.yaml,1
+751,3,470,['tensor'],Tensor,torch.where.yaml,1
+752,3,470,['tensor'],Tensor,torch.where.yaml,1
+753,3,470,['tensor'],Tensor,torch.cummin.yaml,1
+754,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.vhp.yaml,1
+755,3,470,['tensor'],Tensor,torch.autograd.functional.vhp.yaml,1
+756,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.vhp.yaml,1
+757,3,470,['tensor'],Tensor,torch.autograd.functional.vhp.yaml,1
+758,3,470,['tensor'],Tensor,torch.bitwise_and.yaml,1
+759,3,470,['tensor'],Tensor,torch.nn.functional.embedding.yaml,1
+760,3,470,['tensor'],Tensor,torch.pinverse.yaml,1
+761,3,470,['tensor'],list[Tensor],torch.distributed.gather.yaml,1
+762,3,470,['tensor'],Tensor,torch.distributed.gather.yaml,1
+763,3,470,['tensor'],Tensor,torch.nn.parallel.data_parallel.yaml,1
+764,3,470,['tensor'],Tensor,torch.topk.yaml,1
+765,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.jacobian.yaml,1
+766,3,470,['tensor'],Tensor,torch.autograd.functional.jacobian.yaml,1
+767,3,470,['tensor'],Tensor,torch.sparse.sum.yaml,1
+768,3,470,['tensor'],Tensor,torch.reciprocal.yaml,1
+769,3,470,['tensor'],Tensor,torch.reciprocal.yaml,1
+770,3,470,['tensor'],Tensor,torch.quantize_per_channel.yaml,1
+771,3,470,['tensor'],Tensor,torch.quantize_per_channel.yaml,1
+772,3,470,['tensor'],Tensor,torch.nn.functional.affine_grid.yaml,1
+773,3,470,['tensor'],Tensor,torch.zeros_like.yaml,1
+774,3,470,['tensor'],tuple of Tensors,torch.onnx.export.yaml,1
+775,3,470,['tensor'],Tensor,torch.cos.yaml,1
+776,3,470,['tensor'],Tensor,torch.cos.yaml,1
+777,3,470,['tensor'],Tensor,torch.masked_select.yaml,1
+778,3,470,['tensor'],Tensor,torch.masked_select.yaml,1
+779,3,470,['tensor'],Tensor,torch.matrix_power.yaml,1
+780,3,470,['tensor'],Tensor,torch.min2.yaml,1
+781,3,470,['tensor'],Tensor,torch.angle.yaml,1
+782,3,470,['tensor'],Tensor,torch.angle.yaml,1
+783,3,470,['tensor'],Tensor,torch.split.yaml,1
+784,3,470,['tensor'],Tensor,torch.erfc.yaml,1
+785,3,470,['tensor'],Tensor,torch.erfc.yaml,1
+786,3,470,['tensor'],Tensor,torch.rand.yaml,1
+787,3,470,['tensor'],Tensor,torch.round.yaml,1
+788,3,470,['tensor'],Tensor,torch.round.yaml,1
+789,3,470,['tensor'],Tensor,torch.polygamma.yaml,1
+790,3,470,['tensor'],Tensor,torch.polygamma.yaml,1
+791,3,470,['tensor'],Tensor,torch.fft.yaml,1
+792,3,470,['tensor'],Tensor,torch.cross.yaml,1
+793,3,470,['tensor'],Tensor,torch.cross.yaml,1
+794,3,470,['tensor'],Tensor,torch.cross.yaml,1
+795,3,470,['tensor'],Tensor,torch.triangular_solve.yaml,1
+796,3,470,['tensor'],Tensor,torch.triangular_solve.yaml,1
+797,3,470,['tensor'],Tensor,torch.argmin2.yaml,1
+798,3,470,['tensor'],Tensor,torch.acos.yaml,1
+799,3,470,['tensor'],Tensor,torch.acos.yaml,1
+800,3,470,['tensor'],Tensor,torch.eye.yaml,1
+801,3,470,['tensor'],Tensor,torch.trapz2.yaml,1
+802,3,470,['tensor'],Tensor,torch.numel.yaml,1
+803,3,470,['tensor'],Tensor,torch.lu_unpack.yaml,1
+804,3,470,['tensor'],Tensor,torch.lu_unpack.yaml,1
+805,3,470,['tensor'],Tensor,torch.addmm.yaml,1
+806,3,470,['tensor'],Tensor,torch.addmm.yaml,1
+807,3,470,['tensor'],Tensor,torch.addmm.yaml,1
+808,3,470,['tensor'],Tensor,torch.addmm.yaml,1
+809,3,470,['tensor'],Tensor,torch.randn_like.yaml,1
+810,3,470,['tensor'],Tensor,torch.lobpcg.yaml,1
+811,3,470,['tensor'],Tensor,torch.lobpcg.yaml,1
+812,3,470,['tensor'],tensor,torch.lobpcg.yaml,1
+813,3,470,['tensor'],tensor,torch.lobpcg.yaml,1
+814,3,470,['tensor'],Tensor,torch.nn.functional.binary_cross_entropy.yaml,1
+815,3,470,['tensor'],Tensor,torch.orgqr.yaml,1
+816,3,470,['tensor'],Tensor,torch.orgqr.yaml,1
+817,3,470,['tensor'],list[Tensor],torch.nn.utils.rnn.pack_sequence.yaml,1
+818,3,470,['tensor'],Tensor,torch.addcmul.yaml,1
+819,3,470,['tensor'],Tensor,torch.addcmul.yaml,1
+820,3,470,['tensor'],Tensor,torch.addcmul.yaml,1
+821,3,470,['tensor'],Tensor,torch.addcmul.yaml,1
+822,3,470,['tensor'],Tensor,torch.nn.functional.log_softmax.yaml,1
+823,3,470,['tensor'],Tensor,torch.bitwise_not.yaml,1
+824,3,470,['tensor'],Tensor,torch.bitwise_not.yaml,1
+825,3,470,['tensor'],Tensor,torch.ifft.yaml,1
+826,3,470,['tensor'],Tensor,torch.var_mean2.yaml,1
+827,3,470,['tensor'],Tensor,torch.cuda.comm.scatter.yaml,1
+828,3,470,['tensor'],Tensor,torch.distributed.recv.yaml,1
+829,3,470,['tensor'],Tensor,torch.trunc.yaml,1
+830,3,470,['tensor'],Tensor,torch.trunc.yaml,1
+831,3,470,['tensor'],Tensor,torch.conj.yaml,1
+832,3,470,['tensor'],Tensor,torch.conj.yaml,1
+833,3,470,['tensor'],Tensor,torch.repeat_interleave.yaml,1
+834,3,470,['tensor'],Tensor,torch.repeat_interleave.yaml,1
+835,3,470,['tensor'],Tensor,torch.mul.yaml,1
+836,3,470,['tensor'],Tensor,torch.mul.yaml,1
+837,3,470,['tensor'],Tensor,torch.mul.yaml,1
+838,3,470,['tensor'],Tensor,torch.remainder.yaml,1
+839,3,470,['tensor'],Tensor,torch.remainder.yaml,1
+840,3,470,['tensor'],Tensor,torch.remainder.yaml,1
+841,3,470,['tensor'],Tensor,torch.cholesky_solve.yaml,1
+842,3,470,['tensor'],Tensor,torch.cholesky_solve.yaml,1
+843,3,470,['tensor'],Tensor,torch.cholesky_solve.yaml,1
+844,3,470,['tensor'],Tensor,torch.median2.yaml,1
+845,3,470,['tensor'],Tensor,torch.histc.yaml,1
+846,3,470,['tensor'],Tensor,torch.histc.yaml,1
+847,3,470,['tensor'],List[Tensor],torch.distributed.broadcast_multigpu.yaml,1
+848,3,470,['tensor'],Tensor,torch.symeig.yaml,1
+849,3,470,['tensor'],Tensor,torch.distributed.reduce.yaml,1
+850,3,470,['tensor'],Tensor,torch.clamp.yaml,1
+851,3,470,['tensor'],Tensor,torch.clamp.yaml,1
+852,3,470,['tensor'],List[Tensor],torch.distributed.all_gather_multigpu.yaml,1
+853,3,470,['tensor'],List[List[Tensor]],torch.distributed.all_gather_multigpu.yaml,1
+854,3,470,['tensor'],Tensor,torch.flatten.yaml,1
+855,3,470,['tensor'],sequence of (Tensor or None),torch.autograd.backward.yaml,1
+856,3,470,['tensor'],sequence of Tensor,torch.autograd.backward.yaml,1
+857,3,470,['tensor'],Tensor,torch.argsort.yaml,1
+858,3,470,['tensor'],Tensor,torch.eq.yaml,1
+859,3,470,['tensor'],Tensor,torch.eq.yaml,1
+860,3,470,['tensor'],Tensor,torch.eq.yaml,1
+861,3,470,['tensor'],Tensor,torch.logical_or.yaml,1
+862,3,470,['tensor'],Tensor,torch.logical_or.yaml,1
+863,3,470,['tensor'],Tensor,torch.logical_or.yaml,1
+864,3,470,['tensor'],Tensor,torch.normal.yaml,1
+865,3,470,['tensor'],Tensor,torch.normal.yaml,1
+866,3,470,['tensor'],Tensor,torch.normal.yaml,1
+867,3,470,['tensor'],Tensor,torch.inverse.yaml,1
+868,3,470,['tensor'],Tensor,torch.inverse.yaml,1
+869,3,470,['tensor'],Tensor,torch.sparse.addmm.yaml,1
+870,3,470,['tensor'],Tensor,torch.sparse.addmm.yaml,1
+871,3,470,['tensor'],Tensor,torch.logsumexp.yaml,1
+872,3,470,['tensor'],Tensor,torch.logsumexp.yaml,1
+873,3,470,['tensor'],Tensor,torch.lu.yaml,1
+874,3,470,['tensor'],Tensor,torch.true_divide.yaml,1
+875,3,470,['tensor'],Tensor,torch.true_divide.yaml,1
+876,3,470,['tensor'],Tensor,torch.mean.yaml,1
+877,3,470,['tensor'],Tensor,torch.sort.yaml,1
+878,3,470,['tensor'],Iterable[Tensor],torch.cuda.comm.reduce_add.yaml,1
+879,3,470,['tensor'],Tensor,torch.distributed.send.yaml,1
+880,3,470,['tensor'],Tensor,torch.logical_and.yaml,1
+881,3,470,['tensor'],Tensor,torch.logical_and.yaml,1
+882,3,470,['tensor'],Tensor,torch.logical_and.yaml,1
+883,3,470,['tensor'],Iterable[Tensor],torch.nn.utils.vector_to_parameters.yaml,1
+884,3,470,['tensor'],Tensor,torch.nn.utils.vector_to_parameters.yaml,1
+885,3,470,['tensor'],Tensor,torch.ones.yaml,1
+886,3,470,['tensor'],Tensor,torch.randperm.yaml,1
+887,3,470,['tensor'],Tensor,torch.sin.yaml,1
+888,3,470,['tensor'],Tensor,torch.sin.yaml,1
+889,3,470,['tensor'],Tensor,torch.tan.yaml,1
+890,3,470,['tensor'],Tensor,torch.tan.yaml,1
+891,3,470,['tensor'],Tensor,torch.is_complex.yaml,1
+892,3,470,['tensor'],Tensor,torch.stack.yaml,1
+893,3,470,['tensor'],sequence of Tensors,torch.stack.yaml,1
+894,3,470,['tensor'],Tensor,torch.normal222.yaml,1
+895,3,470,['tensor'],Tensor,torch.argmin.yaml,1
+896,3,470,['tensor'],Tensor,torch.max2.yaml,1
+897,3,470,['tensor'],Tensor,torch.cumprod.yaml,1
+898,3,470,['tensor'],Tensor,torch.cumprod.yaml,1
+899,3,470,['tensor'],Tensor,torch.diag_embed.yaml,1
+900,3,470,['tensor'],Tensor,torch.imag.yaml,1
+901,3,470,['tensor'],Tensor,torch.imag.yaml,1
+902,3,470,['tensor'],Tensor,torch.matmul.yaml,1
+903,3,470,['tensor'],Tensor,torch.matmul.yaml,1
+904,3,470,['tensor'],Tensor,torch.matmul.yaml,1
+905,3,470,['tensor'],Tensor,torch.atan.yaml,1
+906,3,470,['tensor'],Tensor,torch.atan.yaml,1
+907,3,470,['tensor'],Tensor,torch.cosh.yaml,1
+908,3,470,['tensor'],Tensor,torch.cosh.yaml,1
+909,3,470,['tensor'],Tensor,torch.asin.yaml,1
+910,3,470,['tensor'],Tensor,torch.asin.yaml,1
+911,3,470,['tensor'],Tensor,torch.argmax2.yaml,1
+912,3,470,['tensor'],Tensor,torch.nn.quantized.functional.linear.yaml,1
+913,3,470,['tensor'],Tensor,torch.nn.quantized.functional.linear.yaml,1
+914,3,470,['tensor'],Tensor,torch.nn.quantized.functional.linear.yaml,1
+915,3,470,['tensor'],Tensor,torch.stft.yaml,1
+916,3,470,['tensor'],Tensor,torch.stft.yaml,1
+917,3,470,['tensor'],Tensor,torch.normal22.yaml,1
+918,3,470,['tensor'],Tensor,torch.normal22.yaml,1
+919,3,470,['tensor'],Tensor,torch.square.yaml,1
+920,3,470,['tensor'],Tensor,torch.square.yaml,1
+921,3,470,['tensor'],Tensor,torch.median.yaml,1
+922,3,470,['tensor'],Tensor,torch.sparse.mm.yaml,1
+923,3,470,['tensor'],Tensor,torch.slogdet.yaml,1
+924,3,470,['tensor'],Tensor,torch.linspace.yaml,1
+925,3,470,['tensor'],sequence of Tensor,torch.autograd.grad.yaml,1
+926,3,470,['tensor'],sequence of Tensor,torch.autograd.grad.yaml,1
+927,3,470,['tensor'],sequence of Tensor,torch.autograd.grad.yaml,1
+928,3,470,['tensor'],Tensor,torch.bmm.yaml,1
+929,3,470,['tensor'],Tensor,torch.bmm.yaml,1
+930,3,470,['tensor'],Tensor,torch.bmm.yaml,1
+931,3,470,['tensor'],Tensor,torch.normal2.yaml,1
+932,3,470,['tensor'],Tensor,torch.normal2.yaml,1
+933,3,470,['tensor'],Tensor,torch.mvlgamma.yaml,1
+934,3,470,['tensor'],Tensor,torch.quantize_per_tensor.yaml,1
+935,3,470,['tensor'],Tensor,torch.ge.yaml,1
+936,3,470,['tensor'],Tensor,torch.ge.yaml,1
+937,3,470,['tensor'],Tensor,torch.ge.yaml,1
+938,3,470,['tensor'],Tensor,torch.log2.yaml,1
+939,3,470,['tensor'],Tensor,torch.log2.yaml,1
+940,3,470,['tensor'],Tensor,torch.logical_xor.yaml,1
+941,3,470,['tensor'],Tensor,torch.logical_xor.yaml,1
+942,3,470,['tensor'],Tensor,torch.logical_xor.yaml,1
+943,3,470,['tensor'],Tensor,torch.cuda.comm.broadcast.yaml,1
+944,3,470,['tensor'],Tensor,torch.prod.yaml,1
+945,3,470,['tensor'],Tensor,torch.argmax.yaml,1
+946,3,470,['tensor'],Tensor,torch.floor.yaml,1
+947,3,470,['tensor'],Tensor,torch.floor.yaml,1
+948,3,470,['tensor'],Tensor,torch.addmv.yaml,1
+949,3,470,['tensor'],Tensor,torch.addmv.yaml,1
+950,3,470,['tensor'],Tensor,torch.addmv.yaml,1
+951,3,470,['tensor'],Tensor,torch.addmv.yaml,1
+952,3,470,['tensor'],Tensor,torch.narrow.yaml,1
+953,3,470,['tensor'],Tensor,torch.norm.yaml,1
+954,3,470,['tensor'],Tensor,torch.norm.yaml,1
+955,3,470,['tensor'],Tensor,torch.lt.yaml,1
+956,3,470,['tensor'],Tensor,torch.lt.yaml,1
+957,3,470,['tensor'],Tensor,torch.lt.yaml,1
+958,3,470,['tensor'],Tensor,torch.unique.yaml,1
+959,3,470,['tensor'],Tensor,torch.index_select.yaml,1
+960,3,470,['tensor'],Tensor,torch.index_select.yaml,1
+961,3,470,['tensor'],Tensor,torch.kthvalue.yaml,1
+962,3,470,['tensor'],Tensor,torch.solve.yaml,1
+963,3,470,['tensor'],Tensor,torch.solve.yaml,1
+964,3,470,['tensor'],"(Tensor, Tensor)",torch.solve.yaml,1
+965,3,470,['tensor'],Tensor,torch.nn.utils.prune.custom_from_mask.yaml,1
+966,3,470,['tensor'],Tensor,torch.nn.functional.pad.yaml,1
+967,3,470,['tensor'],Tensor,torch.atan2.yaml,1
+968,3,470,['tensor'],Tensor,torch.atan2.yaml,1
+969,3,470,['tensor'],Tensor,torch.atan2.yaml,1
+970,3,470,['tensor'],Tensor,torch.flip.yaml,1
+971,3,470,['tensor'],Tensor,torch.qr.yaml,1
+972,3,470,['tensor'],Tensor,torch.var2.yaml,1
+973,3,470,['tensor'],Tensor,torch.var2.yaml,1
+974,3,470,['tensor'],Tensor,torch.logical_not.yaml,1
+975,3,470,['tensor'],Tensor,torch.logical_not.yaml,1
+976,3,470,['tensor'],Tensor,torch.lstsq.yaml,1
+977,3,470,['tensor'],Tensor,torch.lstsq.yaml,1
+978,3,470,['tensor'],Tensor,torch.multinomial.yaml,1
+979,3,470,['tensor'],Tensor,torch.multinomial.yaml,1
+980,3,470,['tensor'],Tensor,torch.cholesky_inverse.yaml,1
+981,3,470,['tensor'],Tensor,torch.cholesky_inverse.yaml,1
+982,3,470,['tensor'],tuple of Tensor,torch.autograd.gradcheck.yaml,1
+983,3,470,['tensor'],Tensor,torch.autograd.gradcheck.yaml,1
+984,3,470,['tensor'],Tensor,torch.min.yaml,1
+985,3,470,['tensor'],Tensor,torch.expm1.yaml,1
+986,3,470,['tensor'],Tensor,torch.expm1.yaml,1
+987,3,470,['tensor'],Tensor,torch.mode.yaml,1
+988,3,470,['tensor'],Tensor,torch.nn.functional.nll_loss.yaml,1
+989,3,470,['tensor'],Tensor,torch.log.yaml,1
+990,3,470,['tensor'],Tensor,torch.log.yaml,1
+991,3,470,['tensor'],Tensor,torch.abs.yaml,1
+992,3,470,['tensor'],Tensor,torch.abs.yaml,1
+993,3,470,['tensor'],Tensor,torch.tril.yaml,1
+994,3,470,['tensor'],Tensor,torch.tril.yaml,1
+995,3,470,['tensor'],Tensor,torch.logspace.yaml,1
+996,3,470,['tensor'],Tensor,torch.bincount.yaml,1
+997,3,470,['tensor'],Tensor,torch.bincount.yaml,1
+998,3,470,['tensor'],Tensor,torch.triu.yaml,1
+999,3,470,['tensor'],Tensor,torch.triu.yaml,1
+1000,3,470,['tensor'],Tensor,torch.nn.quantized.functional.interpolate.yaml,1
+1001,3,470,['tensor'],Tensor,torch.nn.functional.softmin.yaml,1
+1002,3,470,['tensor'],Tensor,torch.unsqueeze.yaml,1
+1003,3,470,['tensor'],Tensor,torch.allclose.yaml,1
+1004,3,470,['tensor'],Tensor,torch.allclose.yaml,1
+1005,3,470,['tensor'],Tensor,torch.result_type.yaml,1
+1006,3,470,['tensor'],Tensor,torch.result_type.yaml,1
+1007,3,470,['tensor'],Tensor,torch.log10.yaml,1
+1008,3,470,['tensor'],Tensor,torch.log10.yaml,1
+1009,3,470,['tensor'],Tensor,torch.chunk.yaml,1
+1010,3,470,['tensor'],Tensor,torch.nn.functional.cross_entropy.yaml,1
+1011,3,470,['tensor'],Tensor,torch.nn.functional.cross_entropy.yaml,1
+1012,3,470,['tensor'],Tensor,torch.nn.functional.cross_entropy.yaml,1
+1013,3,470,['tensor'],Tensor,torch.ger.yaml,1
+1014,3,470,['tensor'],Tensor,torch.ger.yaml,1
+1015,3,470,['tensor'],Tensor,torch.ger.yaml,1
+1016,3,470,['tensor'],tuple of Tensors,torch.autograd.functional.hessian.yaml,1
+1017,3,470,['tensor'],Tensor,torch.autograd.functional.hessian.yaml,1
+1018,3,470,['tensor'],Tensor,torch.bitwise_or.yaml,1
+1019,3,470,['tensor'],Tensor,torch.std_mean2.yaml,1
+1020,3,470,['tensor'],Tensor,torch.sqrt.yaml,1
+1021,3,470,['tensor'],Tensor,torch.sqrt.yaml,1
+1022,3,470,['tensor'],Tensor,torch.lgamma.yaml,1
+1023,3,470,['tensor'],Tensor,torch.lgamma.yaml,1
+1024,3,470,['tensor'],Tensor,torch.sign.yaml,1
+1025,3,470,['tensor'],Tensor,torch.sign.yaml,1
+1026,3,470,['tensor'],Tensor,torch.cat.yaml,1
+1027,3,470,['tensor'],sequence of Tensors,torch.cat.yaml,1
+1028,3,470,['tensor'],Tensor,torch.unique_consecutive.yaml,1
+1029,3,470,['tensor'],list[Tensor],torch.distributed.scatter.yaml,1
+1030,3,470,['tensor'],Tensor,torch.distributed.scatter.yaml,1
+1031,3,470,['tensor'],Tensor,torch.rot90.yaml,1
+1032,3,470,['tensor'],Tensor,torch.distributed.irecv.yaml,1
+1033,3,470,['tensor'],Tensor,torch.geqrf.yaml,1
+1034,3,470,['tensor'],Tensor,torch.dist.yaml,1
+1035,3,470,['tensor'],Tensor,torch.dist.yaml,1
+1036,3,470,['tensor'],Tensor,torch.squeeze.yaml,1
+1037,3,470,['tensor'],Tensor,torch.squeeze.yaml,1
+1038,3,470,['tensor'],Tensor,torch.cumsum.yaml,1
+1039,3,470,['tensor'],Tensor,torch.cumsum.yaml,1
+1040,3,470,['tensor'],List[Tensor],torch.distributed.reduce_multigpu.yaml,1
+1041,3,470,['tensor'],Tensor,torch.zeros.yaml,1
+1042,3,470,['tensor'],Tensor,torch.nn.functional.softmax.yaml,1
+1043,3,470,['tensor'],Tensor,torch.tanh.yaml,1
+1044,3,470,['tensor'],Tensor,torch.tanh.yaml,1
+1045,3,470,['tensor'],Tensor,torch.t.yaml,1
+1046,3,470,['tensor'],Tensor,torch.nn.functional.binary_cross_entropy_with_logits.yaml,1
+1047,3,470,['tensor'],Tensor,torch.nn.functional.binary_cross_entropy_with_logits.yaml,1
+1048,3,470,['tensor'],Tensor,torch.svd.yaml,1
+1049,3,470,['tensor'],Tensor,torch.randn.yaml,1
+1050,3,470,['tensor'],Tensor,torch.transpose.yaml,1
+1051,3,470,['tensor'],Tensor,torch.logdet.yaml,1
+1052,3,470,['tensor'],Tensor,torch.matrix_rank.yaml,1
+1053,3,470,['tensor'],Tensor,torch.gather.yaml,1
+1054,3,470,['tensor'],Tensor,torch.gather.yaml,1
+1055,3,470,['tensor'],Tensor,torch.rand_like.yaml,1
+1056,3,470,['tensor'],Iterable[Tensor],torch.nn.utils.parameters_to_vector.yaml,1
+1057,3,470,['tensor'],Tensor,torch.roll.yaml,1
+1058,3,470,['tensor'],Tensor,torch.unbind.yaml,1
+1059,3,470,['tensor'],Tensor,torch.nn.functional.interpolate.yaml,1
+1060,3,470,['tensor'],Iterable[Tensor],torch.cuda.comm.gather.yaml,1
+1061,3,470,['tensor'],Tensor,torch.floor_divide.yaml,1
+1062,3,470,['tensor'],Tensor,torch.floor_divide.yaml,1
+1063,3,470,['tensor'],Tensor,torch.std.yaml,1
+1064,3,470,['tensor'],Tensor,torch.full.yaml,1
+1065,3,470,['tensor'],Tensor,torch.diagonal.yaml,1
+1066,3,470,['tensor'],Tensor,torch.diagflat.yaml,1
+1067,3,470,['tensor'],Tensor,torch.renorm.yaml,1
+1068,3,470,['tensor'],Tensor,torch.renorm.yaml,1
+1069,3,470,['tensor'],Tensor,torch.rsqrt.yaml,1
+1070,3,470,['tensor'],Tensor,torch.rsqrt.yaml,1
+1071,3,470,['tensor'],Tensor,torch.distributed.broadcast.yaml,1
+1072,3,470,['tensor'],Tensor,torch.digamma.yaml,1
+1073,3,470,['tensor'],Tensor,torch.rfft.yaml,1
+1074,3,470,['tensor'],Tensor,torch.max.yaml,1
+1075,3,470,['tensor'],Tensor,torch.mm.yaml,1
+1076,3,470,['tensor'],Tensor,torch.mm.yaml,1
+1077,3,470,['tensor'],Tensor,torch.mm.yaml,1
+1078,3,470,['tensor'],Tensor,torch.pca_lowrank.yaml,1
+1079,4,124,['torch'],torch.dtype,torch.prod2.yaml,1
+1080,4,124,['torch'],torch.Generator,torch.bernoulli.yaml,1
+1081,4,124,['torch'],torch.device,torch.empty_strided.yaml,1
+1082,4,124,['torch'],torch.dtype,torch.empty_strided.yaml,1
+1083,4,124,['torch'],torch.layout,torch.empty_strided.yaml,1
+1084,4,124,['torch'],torch.device,torch.cuda.max_memory_reserved.yaml,1
+1085,4,124,['torch'],torch.device,torch.arange.yaml,1
+1086,4,124,['torch'],torch.dtype,torch.arange.yaml,1
+1087,4,124,['torch'],torch.layout,torch.arange.yaml,1
+1088,4,124,['torch'],torch.dtype,torch.sum2.yaml,1
+1089,4,124,['torch'],torch.device,torch.cuda.memory_reserved.yaml,1
+1090,4,124,['torch'],torch.dtype,torch.sum.yaml,1
+1091,4,124,['torch'],torch.device,torch.ones_like.yaml,1
+1092,4,124,['torch'],torch.dtype,torch.ones_like.yaml,1
+1093,4,124,['torch'],torch.layout,torch.ones_like.yaml,1
+1094,4,124,['torch'],torch.memory_format,torch.ones_like.yaml,1
+1095,4,124,['torch'],torch.device,torch.cuda.reset_max_memory_allocated.yaml,1
+1096,4,124,['torch'],torch.dtype,torch.set_default_dtype.yaml,1
+1097,4,124,['torch'],torch.device,torch.cuda.memory_stats.yaml,1
+1098,4,124,['torch'],torch.ByteTensor,torch.set_rng_state.yaml,1
+1099,4,124,['torch'],torch.device,torch.cuda.get_device_name.yaml,1
+1100,4,124,['torch'],torch.Size,torch.irfft.yaml,1
+1101,4,124,['torch'],torch.device,torch.empty_like.yaml,1
+1102,4,124,['torch'],torch.dtype,torch.empty_like.yaml,1
+1103,4,124,['torch'],torch.layout,torch.empty_like.yaml,1
+1104,4,124,['torch'],torch.memory_format,torch.empty_like.yaml,1
+1105,4,124,['torch'],torch.ByteTensor,torch.random.set_rng_state.yaml,1
+1106,4,124,['torch'],torch.device,torch.cuda.memory_allocated.yaml,1
+1107,4,124,['torch'],torch.device,torch.hann_window.yaml,1
+1108,4,124,['torch'],torch.dtype,torch.hann_window.yaml,1
+1109,4,124,['torch'],torch.layout,torch.hann_window.yaml,1
+1110,4,124,['torch'],torch.device,torch.nn.parallel.data_parallel.yaml,1
+1111,4,124,['torch'],torch.device,torch.nn.parallel.data_parallel.yaml,1
+1112,4,124,['torch'],torch.dtype,torch.sparse.sum.yaml,1
+1113,4,124,['torch'],torch.dtype,torch.quantize_per_channel.yaml,1
+1114,4,124,['torch'],torch.device,torch.cuda.current_stream.yaml,1
+1115,4,124,['torch'],torch.Size,torch.nn.functional.affine_grid.yaml,1
+1116,4,124,['torch'],torch.device,torch.zeros_like.yaml,1
+1117,4,124,['torch'],torch.dtype,torch.zeros_like.yaml,1
+1118,4,124,['torch'],torch.layout,torch.zeros_like.yaml,1
+1119,4,124,['torch'],torch.memory_format,torch.zeros_like.yaml,1
+1120,4,124,['torch'],torch.nn.Module,torch.onnx.export.yaml,1
+1121,4,124,['torch'],torch.device,torch.cuda.set_device.yaml,1
+1122,4,124,['torch'],torch.device,torch.rand.yaml,1
+1123,4,124,['torch'],torch.dtype,torch.rand.yaml,1
+1124,4,124,['torch'],torch.layout,torch.rand.yaml,1
+1125,4,124,['torch'],torch.device,torch.eye.yaml,1
+1126,4,124,['torch'],torch.dtype,torch.eye.yaml,1
+1127,4,124,['torch'],torch.layout,torch.eye.yaml,1
+1128,4,124,['torch'],torch.device,torch.randn_like.yaml,1
+1129,4,124,['torch'],torch.dtype,torch.randn_like.yaml,1
+1130,4,124,['torch'],torch.layout,torch.randn_like.yaml,1
+1131,4,124,['torch'],torch.memory_format,torch.randn_like.yaml,1
+1132,4,124,['torch'],torch.device,torch.cuda.get_device_capability.yaml,1
+1133,4,124,['torch'],torch.dtype,torch.nn.functional.log_softmax.yaml,1
+1134,4,124,['torch'],torch.device,torch.cuda.max_memory_allocated.yaml,1
+1135,4,124,['torch'],torch.Generator,torch.normal.yaml,1
+1136,4,124,['torch'],torch.device,torch.cuda.memory_summary.yaml,1
+1137,4,124,['torch'],torch.device,torch.ones.yaml,1
+1138,4,124,['torch'],torch.dtype,torch.ones.yaml,1
+1139,4,124,['torch'],torch.layout,torch.ones.yaml,1
+1140,4,124,['torch'],torch.device,torch.randperm.yaml,1
+1141,4,124,['torch'],torch.dtype,torch.randperm.yaml,1
+1142,4,124,['torch'],torch.layout,torch.randperm.yaml,1
+1143,4,124,['torch'],torch.dtype,torch.cumprod.yaml,1
+1144,4,124,['torch'],torch.device,torch.cuda.synchronize.yaml,1
+1145,4,124,['torch'],torch.device,torch.triu_indices.yaml,1
+1146,4,124,['torch'],torch.dtype,torch.triu_indices.yaml,1
+1147,4,124,['torch'],torch.layout,torch.triu_indices.yaml,1
+1148,4,124,['torch'],torch.nn.Module,torch.jit.trace.yaml,1
+1149,4,124,['torch'],torch.ByteTensor,torch.random.set_rng_state2.yaml,1
+1150,4,124,['torch'],torch.device,torch.tril_indices.yaml,1
+1151,4,124,['torch'],torch.dtype,torch.tril_indices.yaml,1
+1152,4,124,['torch'],torch.layout,torch.tril_indices.yaml,1
+1153,4,124,['torch'],torch.device,torch.linspace.yaml,1
+1154,4,124,['torch'],torch.dtype,torch.linspace.yaml,1
+1155,4,124,['torch'],torch.layout,torch.linspace.yaml,1
+1156,4,124,['torch'],torch.dtype,torch.quantize_per_tensor.yaml,1
+1157,4,124,['torch'],torch.device,torch.hamming_window.yaml,1
+1158,4,124,['torch'],torch.dtype,torch.hamming_window.yaml,1
+1159,4,124,['torch'],torch.layout,torch.hamming_window.yaml,1
+1160,4,124,['torch'],torch.dtype,torch.prod.yaml,1
+1161,4,124,['torch'],torch.dtype,torch.norm.yaml,1
+1162,4,124,['torch'],torch.device,torch.cuda.default_stream.yaml,1
+1163,4,124,['torch'],torch.device,torch.blackman_window.yaml,1
+1164,4,124,['torch'],torch.dtype,torch.blackman_window.yaml,1
+1165,4,124,['torch'],torch.layout,torch.blackman_window.yaml,1
+1166,4,124,['torch'],torch.Generator,torch.multinomial.yaml,1
+1167,4,124,['torch'],torch.device,torch.as_tensor.yaml,1
+1168,4,124,['torch'],torch.dtype,torch.as_tensor.yaml,1
+1169,4,124,['torch'],torch.device,torch.bartlett_window.yaml,1
+1170,4,124,['torch'],torch.dtype,torch.bartlett_window.yaml,1
+1171,4,124,['torch'],torch.layout,torch.bartlett_window.yaml,1
+1172,4,124,['torch'],torch.device,torch.logspace.yaml,1
+1173,4,124,['torch'],torch.dtype,torch.logspace.yaml,1
+1174,4,124,['torch'],torch.layout,torch.logspace.yaml,1
+1175,4,124,['torch'],torch.device,torch.cuda.reset_max_memory_cached.yaml,1
+1176,4,124,['torch'],torch.device,torch.jit.load.yaml,1
+1177,4,124,['torch'],torch.dtype,torch.nn.functional.softmin.yaml,1
+1178,4,124,['torch'],torch.device,torch.tensor.yaml,1
+1179,4,124,['torch'],torch.dtype,torch.tensor.yaml,1
+1180,4,124,['torch'],torch.device,torch.sparse_coo_tensor.yaml,1
+1181,4,124,['torch'],torch.dtype,torch.sparse_coo_tensor.yaml,1
+1182,4,124,['torch'],torch.Size,torch.sparse_coo_tensor.yaml,1
+1183,4,124,['torch'],torch.dtype,torch.promote_types.yaml,1
+1184,4,124,['torch'],torch.dtype,torch.promote_types.yaml,1
+1185,4,124,['torch'],torch.dtype,torch.cumsum.yaml,1
+1186,4,124,['torch'],torch.device,torch.zeros.yaml,1
+1187,4,124,['torch'],torch.dtype,torch.zeros.yaml,1
+1188,4,124,['torch'],torch.layout,torch.zeros.yaml,1
+1189,4,124,['torch'],torch.dtype,torch.nn.functional.softmax.yaml,1
+1190,4,124,['torch'],torch.device,torch.cuda.get_rng_state.yaml,1
+1191,4,124,['torch'],torch.device,torch.randn.yaml,1
+1192,4,124,['torch'],torch.dtype,torch.randn.yaml,1
+1193,4,124,['torch'],torch.layout,torch.randn.yaml,1
+1194,4,124,['torch'],torch.device,torch.cuda.set_rng_state.yaml,1
+1195,4,124,['torch'],torch.ByteTensor,torch.cuda.set_rng_state.yaml,1
+1196,4,124,['torch'],torch.device,torch.rand_like.yaml,1
+1197,4,124,['torch'],torch.dtype,torch.rand_like.yaml,1
+1198,4,124,['torch'],torch.layout,torch.rand_like.yaml,1
+1199,4,124,['torch'],torch.memory_format,torch.rand_like.yaml,1
+1200,4,124,['torch'],torch.device,torch.full.yaml,1
+1201,4,124,['torch'],torch.dtype,torch.full.yaml,1
+1202,4,124,['torch'],torch.layout,torch.full.yaml,1
+1203,5,111,['SOME_STRUCTURE'],sequence,torch.utils.data.random_split.yaml,1
+1204,5,111,['SOME_STRUCTURE'],list[Tensor],torch.nn.utils.rnn.pad_sequence.yaml,1
+1205,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.std2.yaml,1
+1206,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.empty_strided.yaml,1
+1207,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.empty_strided.yaml,1
+1208,5,111,['SOME_STRUCTURE'],tuple,torch.cummax.yaml,1
+1209,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.mean2.yaml,1
+1210,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.hvp.yaml,1
+1211,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.hvp.yaml,1
+1212,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.reshape.yaml,1
+1213,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.sum2.yaml,1
+1214,5,111,['SOME_STRUCTURE'],tuple,torch.as_strided.yaml,1
+1215,5,111,['SOME_STRUCTURE'],tuple,torch.as_strided.yaml,1
+1216,5,111,['SOME_STRUCTURE'],iterable of CUDA IDs,torch.random.fork_rng.yaml,1
+1217,5,111,['SOME_STRUCTURE'],tuple,torch.eig.yaml,1
+1218,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.vjp.yaml,1
+1219,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.vjp.yaml,1
+1220,5,111,['SOME_STRUCTURE'],tuple of two lists of python:integers,torch.tensordot.yaml,1
+1221,5,111,['SOME_STRUCTURE'],tuple of Tensor,torch.autograd.gradgradcheck.yaml,1
+1222,5,111,['SOME_STRUCTURE'],tuple of Tensor,torch.autograd.gradgradcheck.yaml,1
+1223,5,111,['SOME_STRUCTURE'],list[Tensor],torch.distributed.all_gather.yaml,1
+1224,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.jvp.yaml,1
+1225,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.jvp.yaml,1
+1226,5,111,['SOME_STRUCTURE'],list,torch.irfft.yaml,1
+1227,5,111,['SOME_STRUCTURE'],Iterable[Tensor] ,torch.nn.utils.clip_grad_norm_.yaml,1
+1228,5,111,['SOME_STRUCTURE'],Iterable[Tensor] ,torch.nn.utils.clip_grad_value_.yaml,1
+1229,5,111,['SOME_STRUCTURE'],iterable of CUDA IDs,torch.random.fork_rng2.yaml,1
+1230,5,111,['SOME_STRUCTURE'],tuple,torch.cummin.yaml,1
+1231,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.vhp.yaml,1
+1232,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.vhp.yaml,1
+1233,5,111,['SOME_STRUCTURE'],list[Tensor],torch.distributed.gather.yaml,1
+1234,5,111,['SOME_STRUCTURE'],list of python:int,torch.nn.parallel.data_parallel.yaml,1
+1235,5,111,['SOME_STRUCTURE'],list of python:int,torch.nn.parallel.data_parallel.yaml,1
+1236,5,111,['SOME_STRUCTURE'],tuple,torch.topk.yaml,1
+1237,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.jacobian.yaml,1
+1238,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.sparse.sum.yaml,1
+1239,5,111,['SOME_STRUCTURE'],Iterable,torch.cuda.comm.broadcast_coalesced.yaml,1
+1240,5,111,['SOME_STRUCTURE'],sequence,torch.cuda.comm.broadcast_coalesced.yaml,1
+1241,5,111,['SOME_STRUCTURE'],"Iterable of (module, name) tuples",torch.nn.utils.prune.global_unstructured.yaml,1
+1242,5,111,['SOME_STRUCTURE'],tuple of arguments,torch.onnx.export.yaml,1
+1243,5,111,['SOME_STRUCTURE'],"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,1
+1244,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.onnx.export.yaml,1
+1245,5,111,['SOME_STRUCTURE'],list of strings,torch.onnx.export.yaml,1
+1246,5,111,['SOME_STRUCTURE'],default empty list,torch.onnx.export.yaml,1
+1247,5,111,['SOME_STRUCTURE'],list of strings,torch.onnx.export.yaml,1
+1248,5,111,['SOME_STRUCTURE'],default empty list,torch.onnx.export.yaml,1
+1249,5,111,['SOME_STRUCTURE'],tuple,torch.min2.yaml,1
+1250,5,111,['SOME_STRUCTURE'],int) or (list(int),torch.split.yaml,1
+1251,5,111,['SOME_STRUCTURE'],list[Tensor],torch.nn.utils.rnn.pack_sequence.yaml,1
+1252,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.var_mean2.yaml,1
+1253,5,111,['SOME_STRUCTURE'],Iterable[int],torch.cuda.comm.scatter.yaml,1
+1254,5,111,['SOME_STRUCTURE'],Iterable[int],torch.cuda.comm.scatter.yaml,1
+1255,5,111,['SOME_STRUCTURE'],tuple,torch.median2.yaml,1
+1256,5,111,['SOME_STRUCTURE'],List[Tensor],torch.distributed.broadcast_multigpu.yaml,1
+1257,5,111,['SOME_STRUCTURE'],tuple,torch.symeig.yaml,1
+1258,5,111,['SOME_STRUCTURE'],List[Tensor],torch.distributed.all_gather_multigpu.yaml,1
+1259,5,111,['SOME_STRUCTURE'],List[List[Tensor]],torch.distributed.all_gather_multigpu.yaml,1
+1260,5,111,['SOME_STRUCTURE'],sequence of (Tensor or None),torch.autograd.backward.yaml,1
+1261,5,111,['SOME_STRUCTURE'],sequence of Tensor,torch.autograd.backward.yaml,1
+1262,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.logsumexp.yaml,1
+1263,5,111,['SOME_STRUCTURE'],tuple,torch.lu.yaml,1
+1264,5,111,['SOME_STRUCTURE'],tuple,torch.sort.yaml,1
+1265,5,111,['SOME_STRUCTURE'],Iterable[Tensor],torch.cuda.comm.reduce_add.yaml,1
+1266,5,111,['SOME_STRUCTURE'],Iterable[Tensor],torch.nn.utils.vector_to_parameters.yaml,1
+1267,5,111,['SOME_STRUCTURE'],sequence of Tensors,torch.stack.yaml,1
+1268,5,111,['SOME_STRUCTURE'],tuple,torch.max2.yaml,1
+1269,5,111,['SOME_STRUCTURE'],tuple,torch.jit.trace.yaml,1
+1270,5,111,['SOME_STRUCTURE'],sequence of Tensor,torch.autograd.grad.yaml,1
+1271,5,111,['SOME_STRUCTURE'],sequence of Tensor,torch.autograd.grad.yaml,1
+1272,5,111,['SOME_STRUCTURE'],sequence of Tensor,torch.autograd.grad.yaml,1
+1273,5,111,['SOME_STRUCTURE'],Iterable,torch.cuda.comm.broadcast.yaml,1
+1274,5,111,['SOME_STRUCTURE'],2-tuple of python:ints,torch.norm.yaml,1
+1275,5,111,['SOME_STRUCTURE'],2-list of python:ints,torch.norm.yaml,1
+1276,5,111,['SOME_STRUCTURE'],tuple,torch.kthvalue.yaml,1
+1277,5,111,['SOME_STRUCTURE'],tuple,torch.nn.functional.pad.yaml,1
+1278,5,111,['SOME_STRUCTURE'],a list,torch.flip.yaml,1
+1279,5,111,['SOME_STRUCTURE'],tuple,torch.flip.yaml,1
+1280,5,111,['SOME_STRUCTURE'],tuple,torch.qr.yaml,1
+1281,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.var2.yaml,1
+1282,5,111,['SOME_STRUCTURE'],list[int],torch.distributed.new_group.yaml,1
+1283,5,111,['SOME_STRUCTURE'],tuple,torch.lstsq.yaml,1
+1284,5,111,['SOME_STRUCTURE'],array_like,torch.as_tensor.yaml,1
+1285,5,111,['SOME_STRUCTURE'],tuple of Tensor,torch.autograd.gradcheck.yaml,1
+1286,5,111,['SOME_STRUCTURE'],tuple,torch.mode.yaml,1
+1287,5,111,['SOME_STRUCTURE'],dictionary of filename to content,torch.jit.load.yaml,1
+1288,5,111,['SOME_STRUCTURE'],Tuple[float],torch.nn.quantized.functional.interpolate.yaml,1
+1289,5,111,['SOME_STRUCTURE'],Tuple[int] ,torch.nn.quantized.functional.interpolate.yaml,1
+1290,5,111,['SOME_STRUCTURE'],Tuple[int,torch.nn.quantized.functional.interpolate.yaml,1
+1291,5,111,['SOME_STRUCTURE'],Tuple[int,torch.nn.quantized.functional.interpolate.yaml,1
+1292,5,111,['SOME_STRUCTURE'],array_like,torch.tensor.yaml,1
+1293,5,111,['SOME_STRUCTURE'],tuple of Tensors,torch.autograd.functional.hessian.yaml,1
+1294,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.std_mean2.yaml,1
+1295,5,111,['SOME_STRUCTURE'],array_like,torch.sparse_coo_tensor.yaml,1
+1296,5,111,['SOME_STRUCTURE'],list,torch.sparse_coo_tensor.yaml,1
+1297,5,111,['SOME_STRUCTURE'],tuple,torch.sparse_coo_tensor.yaml,1
+1298,5,111,['SOME_STRUCTURE'],array_like,torch.sparse_coo_tensor.yaml,1
+1299,5,111,['SOME_STRUCTURE'],sequence of Tensors,torch.cat.yaml,1
+1300,5,111,['SOME_STRUCTURE'],list[Tensor],torch.distributed.scatter.yaml,1
+1301,5,111,['SOME_STRUCTURE'],a list,torch.rot90.yaml,1
+1302,5,111,['SOME_STRUCTURE'],tuple,torch.rot90.yaml,1
+1303,5,111,['SOME_STRUCTURE'],tuple,torch.geqrf.yaml,1
+1304,5,111,['SOME_STRUCTURE'],List[Tensor],torch.distributed.reduce_multigpu.yaml,1
+1305,5,111,['SOME_STRUCTURE'],tuple,torch.svd.yaml,1
+1306,5,111,['SOME_STRUCTURE'],Iterable[Tensor],torch.nn.utils.parameters_to_vector.yaml,1
+1307,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.roll.yaml,1
+1308,5,111,['SOME_STRUCTURE'],tuple of python:ints,torch.roll.yaml,1
+1309,5,111,['SOME_STRUCTURE'],Tuple[float],torch.nn.functional.interpolate.yaml,1
+1310,5,111,['SOME_STRUCTURE'],Tuple[int] ,torch.nn.functional.interpolate.yaml,1
+1311,5,111,['SOME_STRUCTURE'],Tuple[int,torch.nn.functional.interpolate.yaml,1
+1312,5,111,['SOME_STRUCTURE'],Tuple[int,torch.nn.functional.interpolate.yaml,1
+1313,5,111,['SOME_STRUCTURE'],Iterable[Tensor],torch.cuda.comm.gather.yaml,1
+1314,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.empty_strided.yaml,2
+1315,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.empty_strided.yaml,2
+1316,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.max_memory_reserved.yaml,2
+1317,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.arange.yaml,2
+1318,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.arange.yaml,2
+1319,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.memory_reserved.yaml,2
+1320,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.ones_like.yaml,2
+1321,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.ones_like.yaml,2
+1322,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.reset_max_memory_allocated.yaml,2
+1323,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.memory_stats.yaml,2
+1324,6,72,"['torch', 'SOME_DTYPE']",torch.ByteTensor,torch.set_rng_state.yaml,2
+1325,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.get_device_name.yaml,2
+1326,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.empty_like.yaml,2
+1327,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.empty_like.yaml,2
+1328,6,72,"['torch', 'SOME_DTYPE']",torch.ByteTensor,torch.random.set_rng_state.yaml,2
+1329,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.memory_allocated.yaml,2
+1330,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.hann_window.yaml,2
+1331,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.hann_window.yaml,2
+1332,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.nn.parallel.data_parallel.yaml,2
+1333,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.nn.parallel.data_parallel.yaml,2
+1334,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.current_stream.yaml,2
+1335,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.zeros_like.yaml,2
+1336,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.zeros_like.yaml,2
+1337,6,72,"['torch', 'SOME_DTYPE']",torch.nn.Module,torch.onnx.export.yaml,2
+1338,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.set_device.yaml,2
+1339,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.rand.yaml,2
+1340,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.rand.yaml,2
+1341,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.eye.yaml,2
+1342,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.eye.yaml,2
+1343,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.randn_like.yaml,2
+1344,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.randn_like.yaml,2
+1345,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.get_device_capability.yaml,2
+1346,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.max_memory_allocated.yaml,2
+1347,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.memory_summary.yaml,2
+1348,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.ones.yaml,2
+1349,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.ones.yaml,2
+1350,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.randperm.yaml,2
+1351,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.randperm.yaml,2
+1352,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.synchronize.yaml,2
+1353,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.triu_indices.yaml,2
+1354,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.triu_indices.yaml,2
+1355,6,72,"['torch', 'SOME_DTYPE']",torch.nn.Module,torch.jit.trace.yaml,2
+1356,6,72,"['torch', 'SOME_DTYPE']",torch.ByteTensor,torch.random.set_rng_state2.yaml,2
+1357,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.tril_indices.yaml,2
+1358,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.tril_indices.yaml,2
+1359,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.linspace.yaml,2
+1360,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.linspace.yaml,2
+1361,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.hamming_window.yaml,2
+1362,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.hamming_window.yaml,2
+1363,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.default_stream.yaml,2
+1364,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.blackman_window.yaml,2
+1365,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.blackman_window.yaml,2
+1366,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.as_tensor.yaml,2
+1367,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.bartlett_window.yaml,2
+1368,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.bartlett_window.yaml,2
+1369,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.logspace.yaml,2
+1370,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.logspace.yaml,2
+1371,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.reset_max_memory_cached.yaml,2
+1372,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.jit.load.yaml,2
+1373,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.tensor.yaml,2
+1374,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.sparse_coo_tensor.yaml,2
+1375,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.zeros.yaml,2
+1376,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.zeros.yaml,2
+1377,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.get_rng_state.yaml,2
+1378,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.randn.yaml,2
+1379,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.randn.yaml,2
+1380,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.cuda.set_rng_state.yaml,2
+1381,6,72,"['torch', 'SOME_DTYPE']",torch.ByteTensor,torch.cuda.set_rng_state.yaml,2
+1382,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.rand_like.yaml,2
+1383,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.rand_like.yaml,2
+1384,6,72,"['torch', 'SOME_DTYPE']",torch.device,torch.full.yaml,2
+1385,6,72,"['torch', 'SOME_DTYPE']",torch.layout,torch.full.yaml,2
+1386,7,41,"['torch', 'dtype']",torch.dtype,torch.prod2.yaml,2
+1387,7,41,"['torch', 'dtype']",torch.dtype,torch.empty_strided.yaml,2
+1388,7,41,"['torch', 'dtype']",torch.dtype,torch.arange.yaml,2
+1389,7,41,"['torch', 'dtype']",torch.dtype,torch.sum2.yaml,2
+1390,7,41,"['torch', 'dtype']",torch.dtype,torch.sum.yaml,2
+1391,7,41,"['torch', 'dtype']",torch.dtype,torch.ones_like.yaml,2
+1392,7,41,"['torch', 'dtype']",torch.dtype,torch.set_default_dtype.yaml,2
+1393,7,41,"['torch', 'dtype']",torch.dtype,torch.empty_like.yaml,2
+1394,7,41,"['torch', 'dtype']",torch.dtype,torch.hann_window.yaml,2
+1395,7,41,"['torch', 'dtype']",torch.dtype,torch.sparse.sum.yaml,2
+1396,7,41,"['torch', 'dtype']",torch.dtype,torch.quantize_per_channel.yaml,2
+1397,7,41,"['torch', 'dtype']",torch.dtype,torch.zeros_like.yaml,2
+1398,7,41,"['torch', 'dtype']",torch.dtype,torch.rand.yaml,2
+1399,7,41,"['torch', 'dtype']",torch.dtype,torch.eye.yaml,2
+1400,7,41,"['torch', 'dtype']",torch.dtype,torch.randn_like.yaml,2
+1401,7,41,"['torch', 'dtype']",torch.dtype,torch.nn.functional.log_softmax.yaml,2
+1402,7,41,"['torch', 'dtype']",torch.dtype,torch.ones.yaml,2
+1403,7,41,"['torch', 'dtype']",torch.dtype,torch.randperm.yaml,2
+1404,7,41,"['torch', 'dtype']",torch.dtype,torch.cumprod.yaml,2
+1405,7,41,"['torch', 'dtype']",torch.dtype,torch.triu_indices.yaml,2
+1406,7,41,"['torch', 'dtype']",torch.dtype,torch.tril_indices.yaml,2
+1407,7,41,"['torch', 'dtype']",torch.dtype,torch.linspace.yaml,2
+1408,7,41,"['torch', 'dtype']",torch.dtype,torch.quantize_per_tensor.yaml,2
+1409,7,41,"['torch', 'dtype']",torch.dtype,torch.hamming_window.yaml,2
+1410,7,41,"['torch', 'dtype']",torch.dtype,torch.prod.yaml,2
+1411,7,41,"['torch', 'dtype']",torch.dtype,torch.norm.yaml,2
+1412,7,41,"['torch', 'dtype']",torch.dtype,torch.blackman_window.yaml,2
+1413,7,41,"['torch', 'dtype']",torch.dtype,torch.as_tensor.yaml,2
+1414,7,41,"['torch', 'dtype']",torch.dtype,torch.bartlett_window.yaml,2
+1415,7,41,"['torch', 'dtype']",torch.dtype,torch.logspace.yaml,2
+1416,7,41,"['torch', 'dtype']",torch.dtype,torch.nn.functional.softmin.yaml,2
+1417,7,41,"['torch', 'dtype']",torch.dtype,torch.tensor.yaml,2
+1418,7,41,"['torch', 'dtype']",torch.dtype,torch.sparse_coo_tensor.yaml,2
+1419,7,41,"['torch', 'dtype']",torch.dtype,torch.promote_types.yaml,2
+1420,7,41,"['torch', 'dtype']",torch.dtype,torch.promote_types.yaml,2
+1421,7,41,"['torch', 'dtype']",torch.dtype,torch.cumsum.yaml,2
+1422,7,41,"['torch', 'dtype']",torch.dtype,torch.zeros.yaml,2
+1423,7,41,"['torch', 'dtype']",torch.dtype,torch.nn.functional.softmax.yaml,2
+1424,7,41,"['torch', 'dtype']",torch.dtype,torch.randn.yaml,2
+1425,7,41,"['torch', 'dtype']",torch.dtype,torch.rand_like.yaml,2
+1426,7,41,"['torch', 'dtype']",torch.dtype,torch.full.yaml,2
+1427,8,36,"['SOME_STRUCTURE', 'tensor']",list[Tensor],torch.nn.utils.rnn.pad_sequence.yaml,2
+1428,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.hvp.yaml,2
+1429,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.hvp.yaml,2
+1430,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.vjp.yaml,2
+1431,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.vjp.yaml,2
+1432,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensor,torch.autograd.gradgradcheck.yaml,2
+1433,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensor,torch.autograd.gradgradcheck.yaml,2
+1434,8,36,"['SOME_STRUCTURE', 'tensor']",list[Tensor],torch.distributed.all_gather.yaml,2
+1435,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.jvp.yaml,2
+1436,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.jvp.yaml,2
+1437,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor] ,torch.nn.utils.clip_grad_norm_.yaml,2
+1438,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor] ,torch.nn.utils.clip_grad_value_.yaml,2
+1439,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.vhp.yaml,2
+1440,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.vhp.yaml,2
+1441,8,36,"['SOME_STRUCTURE', 'tensor']",list[Tensor],torch.distributed.gather.yaml,2
+1442,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.jacobian.yaml,2
+1443,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.onnx.export.yaml,2
+1444,8,36,"['SOME_STRUCTURE', 'tensor']",list[Tensor],torch.nn.utils.rnn.pack_sequence.yaml,2
+1445,8,36,"['SOME_STRUCTURE', 'tensor']",List[Tensor],torch.distributed.broadcast_multigpu.yaml,2
+1446,8,36,"['SOME_STRUCTURE', 'tensor']",List[Tensor],torch.distributed.all_gather_multigpu.yaml,2
+1447,8,36,"['SOME_STRUCTURE', 'tensor']",List[List[Tensor]],torch.distributed.all_gather_multigpu.yaml,2
+1448,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of (Tensor or None),torch.autograd.backward.yaml,2
+1449,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensor,torch.autograd.backward.yaml,2
+1450,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor],torch.cuda.comm.reduce_add.yaml,2
+1451,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor],torch.nn.utils.vector_to_parameters.yaml,2
+1452,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensors,torch.stack.yaml,2
+1453,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensor,torch.autograd.grad.yaml,2
+1454,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensor,torch.autograd.grad.yaml,2
+1455,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensor,torch.autograd.grad.yaml,2
+1456,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensor,torch.autograd.gradcheck.yaml,2
+1457,8,36,"['SOME_STRUCTURE', 'tensor']",tuple of Tensors,torch.autograd.functional.hessian.yaml,2
+1458,8,36,"['SOME_STRUCTURE', 'tensor']",sequence of Tensors,torch.cat.yaml,2
+1459,8,36,"['SOME_STRUCTURE', 'tensor']",list[Tensor],torch.distributed.scatter.yaml,2
+1460,8,36,"['SOME_STRUCTURE', 'tensor']",List[Tensor],torch.distributed.reduce_multigpu.yaml,2
+1461,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor],torch.nn.utils.parameters_to_vector.yaml,2
+1462,8,36,"['SOME_STRUCTURE', 'tensor']",Iterable[Tensor],torch.cuda.comm.gather.yaml,2
+1463,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.std2.yaml,2
+1464,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.empty_strided.yaml,2
+1465,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.empty_strided.yaml,2
+1466,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.mean2.yaml,2
+1467,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.reshape.yaml,2
+1468,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.sum2.yaml,2
+1469,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of two lists of python:integers,torch.tensordot.yaml,2
+1470,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",list of python:int,torch.nn.parallel.data_parallel.yaml,2
+1471,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",list of python:int,torch.nn.parallel.data_parallel.yaml,2
+1472,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.sparse.sum.yaml,2
+1473,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']","Iterable of (module, name) tuples",torch.nn.utils.prune.global_unstructured.yaml,2
+1474,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,2
+1475,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",list of strings,torch.onnx.export.yaml,2
+1476,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",list of strings,torch.onnx.export.yaml,2
+1477,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",int) or (list(int),torch.split.yaml,2
+1478,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.var_mean2.yaml,2
+1479,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Iterable[int],torch.cuda.comm.scatter.yaml,2
+1480,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Iterable[int],torch.cuda.comm.scatter.yaml,2
+1481,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.logsumexp.yaml,2
+1482,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",2-tuple of python:ints,torch.norm.yaml,2
+1483,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",2-list of python:ints,torch.norm.yaml,2
+1484,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.var2.yaml,2
+1485,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",list[int],torch.distributed.new_group.yaml,2
+1486,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[float],torch.nn.quantized.functional.interpolate.yaml,2
+1487,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int] ,torch.nn.quantized.functional.interpolate.yaml,2
+1488,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int,torch.nn.quantized.functional.interpolate.yaml,2
+1489,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int,torch.nn.quantized.functional.interpolate.yaml,2
+1490,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.std_mean2.yaml,2
+1491,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.roll.yaml,2
+1492,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",tuple of python:ints,torch.roll.yaml,2
+1493,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[float],torch.nn.functional.interpolate.yaml,2
+1494,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int] ,torch.nn.functional.interpolate.yaml,2
+1495,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int,torch.nn.functional.interpolate.yaml,2
+1496,9,34,"['SOME_STRUCTURE', 'SOME_DTYPE']",Tuple[int,torch.nn.functional.interpolate.yaml,2
+1497,10,23,['number'],Number,torch.addcdiv.yaml,1
+1498,10,23,['number'],Number,torch.arange.yaml,1
+1499,10,23,['number'],Number,torch.arange.yaml,1
+1500,10,23,['number'],Number,torch.arange.yaml,1
+1501,10,23,['number'],Number,torch.div.yaml,1
+1502,10,23,['number'],Number,torch.baddbmm.yaml,1
+1503,10,23,['number'],Number,torch.baddbmm.yaml,1
+1504,10,23,['number'],Number,torch.add.yaml,1
+1505,10,23,['number'],Number,torch.addr.yaml,1
+1506,10,23,['number'],Number,torch.addr.yaml,1
+1507,10,23,['number'],Number,torch.addbmm.yaml,1
+1508,10,23,['number'],Number,torch.addbmm.yaml,1
+1509,10,23,['number'],Number,torch.addmm.yaml,1
+1510,10,23,['number'],Number,torch.addmm.yaml,1
+1511,10,23,['number'],Number,torch.addcmul.yaml,1
+1512,10,23,['number'],Number,torch.clamp.yaml,1
+1513,10,23,['number'],Number,torch.clamp.yaml,1
+1514,10,23,['number'],Number,torch.sparse.addmm.yaml,1
+1515,10,23,['number'],Number,torch.sparse.addmm.yaml,1
+1516,10,23,['number'],Number,torch.addmv.yaml,1
+1517,10,23,['number'],Number,torch.addmv.yaml,1
+1518,10,23,['number'],Number,torch.result_type.yaml,1
+1519,10,23,['number'],Number,torch.result_type.yaml,1
+1520,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.std2.yaml,3
+1521,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.empty_strided.yaml,3
+1522,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.empty_strided.yaml,3
+1523,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.mean2.yaml,3
+1524,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.reshape.yaml,3
+1525,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.sum2.yaml,3
+1526,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of two lists of python:integers,torch.tensordot.yaml,3
+1527,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",list of python:int,torch.nn.parallel.data_parallel.yaml,3
+1528,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",list of python:int,torch.nn.parallel.data_parallel.yaml,3
+1529,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.sparse.sum.yaml,3
+1530,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,3
+1531,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.var_mean2.yaml,3
+1532,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.logsumexp.yaml,3
+1533,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",2-tuple of python:ints,torch.norm.yaml,3
+1534,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",2-list of python:ints,torch.norm.yaml,3
+1535,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.var2.yaml,3
+1536,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.std_mean2.yaml,3
+1537,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.roll.yaml,3
+1538,11,19,"['SOME_STRUCTURE', 'python', 'SOME_DTYPE']",tuple of python:ints,torch.roll.yaml,3
+1539,12,17,['processgroup'],ProcessGroup,torch.distributed.get_backend.yaml,1
+1540,12,17,['processgroup'],ProcessGroup,torch.distributed.all_reduce.yaml,1
+1541,12,17,['processgroup'],ProcessGroup,torch.distributed.isend.yaml,1
+1542,12,17,['processgroup'],ProcessGroup,torch.distributed.barrier.yaml,1
+1543,12,17,['processgroup'],ProcessGroup,torch.distributed.all_gather.yaml,1
+1544,12,17,['processgroup'],ProcessGroup,torch.distributed.gather.yaml,1
+1545,12,17,['processgroup'],ProcessGroup,torch.distributed.recv.yaml,1
+1546,12,17,['processgroup'],ProcessGroup,torch.distributed.broadcast_multigpu.yaml,1
+1547,12,17,['processgroup'],ProcessGroup,torch.distributed.reduce.yaml,1
+1548,12,17,['processgroup'],ProcessGroup,torch.distributed.all_gather_multigpu.yaml,1
+1549,12,17,['processgroup'],ProcessGroup,torch.distributed.send.yaml,1
+1550,12,17,['processgroup'],ProcessGroup,torch.distributed.get_world_size.yaml,1
+1551,12,17,['processgroup'],ProcessGroup,torch.distributed.scatter.yaml,1
+1552,12,17,['processgroup'],ProcessGroup,torch.distributed.irecv.yaml,1
+1553,12,17,['processgroup'],ProcessGroup,torch.distributed.reduce_multigpu.yaml,1
+1554,12,17,['processgroup'],ProcessGroup,torch.distributed.broadcast.yaml,1
+1555,12,17,['processgroup'],ProcessGroup,torch.distributed.get_rank.yaml,1
+1556,13,15,['default'],default False,torch.onnx.export.yaml,1
+1557,13,15,['default'],default False,torch.onnx.export.yaml,1
+1558,13,15,['default'],"dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,1
+1559,13,15,['default'],default None,torch.onnx.export.yaml,1
+1560,13,15,['default'],default True,torch.onnx.export.yaml,1
+1561,13,15,['default'],default False,torch.onnx.export.yaml,1
+1562,13,15,['default'],default empty list,torch.onnx.export.yaml,1
+1563,13,15,['default'],default OperatorExportTypes.ONNX,torch.onnx.export.yaml,1
+1564,13,15,['default'],default is 9,torch.onnx.export.yaml,1
+1565,13,15,['default'],default empty list,torch.onnx.export.yaml,1
+1566,13,15,['default'],default True,torch.onnx.export.yaml,1
+1567,13,15,['default'],default False,torch.onnx.export.yaml,1
+1568,13,15,['default'],default False,torch.onnx.export.yaml,1
+1569,13,15,['default'],default=True,torch.utils.checkpoint.checkpoint_sequential.yaml,1
+1570,13,15,['default'],default=True,torch.utils.checkpoint.checkpoint.yaml,1
+1571,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.jit.script.yaml,2
+1572,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.spectral_norm.yaml,2
+1573,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.l1_unstructured.yaml,2
+1574,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.random_unstructured.yaml,2
+1575,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.ln_structured.yaml,2
+1576,14,12,"['nn', 'SOME_DTYPE']",torch.nn.Module,torch.onnx.export.yaml,2
+1577,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.random_structured.yaml,2
+1578,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.remove.yaml,2
+1579,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.is_pruned.yaml,2
+1580,14,12,"['nn', 'SOME_DTYPE']",torch.nn.Module,torch.jit.trace.yaml,2
+1581,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.custom_from_mask.yaml,2
+1582,14,12,"['nn', 'SOME_DTYPE']",nn.Module,torch.nn.utils.prune.identity.yaml,2
+1583,15,9,['function'],function,torch.autograd.functional.hvp.yaml,1
+1584,15,9,['function'],function,torch.autograd.functional.vjp.yaml,1
+1585,15,9,['function'],function,torch.autograd.gradgradcheck.yaml,1
+1586,15,9,['function'],function,torch.autograd.functional.jvp.yaml,1
+1587,15,9,['function'],function,torch.autograd.functional.vhp.yaml,1
+1588,15,9,['function'],function,torch.autograd.functional.jacobian.yaml,1
+1589,15,9,['function'],function,torch.nn.utils.prune.global_unstructured.yaml,1
+1590,15,9,['function'],function,torch.autograd.gradcheck.yaml,1
+1591,15,9,['function'],function,torch.autograd.functional.hessian.yaml,1
+1592,16,5,"['torch', 'memory_format']",torch.memory_format,torch.ones_like.yaml,2
+1593,16,5,"['torch', 'memory_format']",torch.memory_format,torch.empty_like.yaml,2
+1594,16,5,"['torch', 'memory_format']",torch.memory_format,torch.zeros_like.yaml,2
+1595,16,5,"['torch', 'memory_format']",torch.memory_format,torch.randn_like.yaml,2
+1596,16,5,"['torch', 'memory_format']",torch.memory_format,torch.rand_like.yaml,2
+1597,17,5,['type'],type,torch.distributions.kl.register_kl.yaml,1
+1598,17,5,['type'],type,torch.distributions.kl.register_kl.yaml,1
+1599,17,5,['type'],dpython:type,torch.can_cast.yaml,1
+1600,17,5,['type'],dpython:type,torch.can_cast.yaml,1
+1601,17,5,['type'],type,torch.set_default_tensor_type.yaml,1
+1602,18,5,"['default', 'false']",default False,torch.onnx.export.yaml,2
+1603,18,5,"['default', 'false']",default False,torch.onnx.export.yaml,2
+1604,18,5,"['default', 'false']",default False,torch.onnx.export.yaml,2
+1605,18,5,"['default', 'false']",default False,torch.onnx.export.yaml,2
+1606,18,5,"['default', 'false']",default False,torch.onnx.export.yaml,2
+1607,19,4,['inf'],inf,torch.nn.utils.prune.ln_structured.yaml,1
+1608,19,4,['inf'],-inf,torch.nn.utils.prune.ln_structured.yaml,1
+1609,19,4,['inf'],inf,torch.norm.yaml,1
+1610,19,4,['inf'],-inf,torch.norm.yaml,1
+1611,20,4,"['default', 'true']",default True,torch.onnx.export.yaml,2
+1612,20,4,"['default', 'true']",default True,torch.onnx.export.yaml,2
+1613,20,4,"['default', 'true']",default=True,torch.utils.checkpoint.checkpoint_sequential.yaml,2
+1614,20,4,"['default', 'true']",default=True,torch.utils.checkpoint.checkpoint.yaml,2
+1615,21,3,"['torch', 'generator']",torch.Generator,torch.bernoulli.yaml,2
+1616,21,3,"['torch', 'generator']",torch.Generator,torch.normal.yaml,2
+1617,21,3,"['torch', 'generator']",torch.Generator,torch.multinomial.yaml,2
+1618,22,3,"['torch', 'size']",torch.Size,torch.irfft.yaml,2
+1619,22,3,"['torch', 'size']",torch.Size,torch.nn.functional.affine_grid.yaml,2
+1620,22,3,"['torch', 'size']",torch.Size,torch.sparse_coo_tensor.yaml,2
+1621,23,3,"['default', 'empty', 'SOME_STRUCTURE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,3
+1622,23,3,"['default', 'empty', 'SOME_STRUCTURE']",default empty list,torch.onnx.export.yaml,3
+1623,23,3,"['default', 'empty', 'SOME_STRUCTURE']",default empty list,torch.onnx.export.yaml,3
+1624,24,2,"['SOME_STRUCTURE', 'cuda', 'ids']",iterable of CUDA IDs,torch.random.fork_rng.yaml,3
+1625,24,2,"['SOME_STRUCTURE', 'cuda', 'ids']",iterable of CUDA IDs,torch.random.fork_rng2.yaml,3
+1626,25,2,"['SOME_STRUCTURE', 'SOME_STRUCTURE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,2
+1627,25,2,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",List[List[Tensor]],torch.distributed.all_gather_multigpu.yaml,2
+1628,26,2,"['SOME_DTYPE', 'SOME_STRUCTURE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,2
+1629,26,2,"['SOME_DTYPE', 'SOME_STRUCTURE']",int) or (list(int),torch.split.yaml,2
+1630,27,2,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE']","dict<string, dict<python:int, string>> or dict<string, list(int)>, default empty dict",torch.onnx.export.yaml,3
+1631,27,2,"['SOME_DTYPE', 'SOME_STRUCTURE', 'SOME_DTYPE']",int) or (list(int),torch.split.yaml,3
+1632,28,2,"['torch', 'nn', 'SOME_DTYPE']",torch.nn.Module,torch.onnx.export.yaml,3
+1633,28,2,"['torch', 'nn', 'SOME_DTYPE']",torch.nn.Module,torch.jit.trace.yaml,3
+1634,29,2,['distribution'],Distribution,torch.distributions.kl.kl_divergence.yaml,1
+1635,29,2,['distribution'],Distribution,torch.distributions.kl.kl_divergence.yaml,1
+1636,30,2,['fro'],'fro',torch.nn.utils.prune.ln_structured.yaml,1
+1637,30,2,['fro'],'fro',torch.norm.yaml,1
+1638,31,2,['nuc'],'nuc',torch.nn.utils.prune.ln_structured.yaml,1
+1639,31,2,['nuc'],'nuc',torch.norm.yaml,1
+1640,32,2,['none'],default None,torch.onnx.export.yaml,1
+1641,32,2,['none'],sequence of (Tensor or None),torch.autograd.backward.yaml,1
+1642,33,2,"['dpython', 'type']",dpython:type,torch.can_cast.yaml,2
+1643,33,2,"['dpython', 'type']",dpython:type,torch.can_cast.yaml,2
+1644,34,2,['object'],Object,torch.is_tensor.yaml,1
+1645,34,2,['object'],Object,torch.is_storage.yaml,1
+1646,35,2,['ortho_iparams'],ortho_iparams,torch.lobpcg.yaml,1
+1647,35,2,['ortho_iparams'],ortho_iparams,torch.lobpcg.yaml,1
+1648,36,2,['backend'],Backend,torch.distributed.init_process_group.yaml,1
+1649,36,2,['backend'],Backend,torch.distributed.new_group.yaml,1
+1650,37,2,['ssparsetensor'],SparseTensor,torch.sparse.addmm.yaml,1
+1651,37,2,['ssparsetensor'],SparseTensor,torch.sparse.mm.yaml,1

@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.backend.set_floatx
+constraints:
+  value:
+    descp: String; 'float16', 'float32', or 'float64'.
+exceptions:
+- ValueError: In case of invalid value.
+inputs:
+  optional: []
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/set_floatx
+package: tensorflow
+target: set_floatx
+title: tf.keras.backend.set_floatx
+version: 2.3.0

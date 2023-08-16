@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=20) The total number of features. These comprise ``n_informative`` informative features, ``n_redundant`` redundant features, ``n_repeated`` duplicated features and ``n_features-n_informative-n_redundant-n_repeated`` useless features drawn at random.",20,prim_dtype,dtype(int),,1
+,"int, optional (default=20) The total number of features. These comprise ``n_informative`` informative features, ``n_redundant`` redundant features, ``n_repeated`` duplicated features and ``n_features-n_informative-n_redundant-n_repeated`` useless features drawn at random.",20,shape,ndim(0),,1
+,"int, optional (default=20) The total number of features. These comprise ``n_informative`` informative features, ``n_redundant`` redundant features, ``n_repeated`` duplicated features and ``n_features-n_informative-n_redundant-n_repeated`` useless features drawn at random.",20,validvalue,"range([0,inf))",,1

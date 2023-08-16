@@ -1,0 +1,24 @@
+constraints:
+  axis:
+    default: '0'
+    descp: An optional int. Defaults to 0. Dimension along which to pack. Negative
+      values wrap around, so the valid range is [-(R+1), R+1).
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  values:
+    descp: A list of at least 1 Tensor objects with the same type. Must be of same
+      shape and type.
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Pack
+outputs:
+- A Tensor. Has the same type as values.
+package: tensorflow
+target: Pack
+title: tf.raw_ops.Pack
+version: 2.2.0

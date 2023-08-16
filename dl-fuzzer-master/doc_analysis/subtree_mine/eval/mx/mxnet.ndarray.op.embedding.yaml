@@ -1,0 +1,17 @@
+constraints:
+  dtype:
+    default: _Null
+    descp: Data type of weight.
+    doc_dtype:
+    - '{''float16'', ''float32'', ''float64'', ''int32'', ''int64'', ''int8'', ''uint8''}'
+    - optional
+    - default='float32'
+    enum:
+    - float16
+    - float32
+    - float64
+    - int32
+    - int64
+    - int8
+    - uint8
+title: mxnet.ndarray.op.Embedding

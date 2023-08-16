@@ -1,0 +1,22 @@
+constraints:
+  base:
+    descp: The base array
+    doc_dtype:
+    - scalar
+    - NDArray
+  exp:
+    descp: The exponent array. If `base.shape != exp.shape`, they must be broadcastable
+      to a common shape.
+    doc_dtype:
+    - scalar
+    - NDArray
+inputs:
+  optional: []
+  required:
+  - base
+  - exp
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.power
+package: mxnet
+target: power
+title: mxnet.ndarray.power
+version: 1.7.0

@@ -1,0 +1,17 @@
+aliases:
+- tf.metrics.serialize
+- tf.compat.v1.keras.metrics.serialize
+constraints:
+  metric:
+    descp: A Keras Metric instance or a metric function.
+inputs:
+  optional: []
+  required:
+  - metric
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/metrics/serialize
+outputs:
+- Metric configuration dictionary.
+package: tensorflow
+target: serialize
+title: tf.keras.metrics.serialize
+version: 2.3.0

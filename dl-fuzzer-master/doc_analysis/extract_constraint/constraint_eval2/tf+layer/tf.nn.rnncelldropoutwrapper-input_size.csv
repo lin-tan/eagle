@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,(optional) (possibly nested tuple of) `TensorShape` objects containing the depth(s) of the input tensors expected to be passed in to the `DropoutWrapper`.  Required and used <strong>iff</strong> `variational_recurrent = True` and `input_keep_prob < 1`.,None,prim_dtype,dtype(numeric),,1
+,(optional) (possibly nested tuple of) `TensorShape` objects containing the depth(s) of the input tensors expected to be passed in to the `DropoutWrapper`.  Required and used <strong>iff</strong> `variational_recurrent = True` and `input_keep_prob < 1`.,None,validvalue,"range([0,inf))",,1

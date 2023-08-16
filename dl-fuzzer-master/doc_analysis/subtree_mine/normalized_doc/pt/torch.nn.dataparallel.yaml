@@ -1,0 +1,40 @@
+constraints:
+  device_ids:
+    default: None
+    descp: 'CUDA devices (default: all devices)'
+    doc_dtype: list of python:int or torch.device
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - CUDA devices default all devices
+    normalized_docdtype: D_STRUCTURE of python D_TYPE or torch device
+  dim:
+    default: '0'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp: []
+  module:
+    descp: module to be parallelized
+    doc_dtype: Module
+    normalized_descp:
+    - module to be parallelized
+    normalized_docdtype: ONE_WORD Module
+  output_device:
+    default: None
+    descp: 'device location of output (default: device_ids[0])'
+    doc_dtype: int or torch.device
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - device location of output default PARAM BSTR
+    normalized_docdtype: D_TYPE or torch device
+inputs:
+  optional:
+  - device_ids
+  - output_device
+  - dim
+  required:
+  - module
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.DataParallel
+package: torch
+target: DataParallel
+title: torch.nn.DataParallel
+version: 1.5.0

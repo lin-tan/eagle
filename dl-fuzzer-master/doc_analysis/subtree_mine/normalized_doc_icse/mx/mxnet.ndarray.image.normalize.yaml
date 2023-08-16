@@ -1,0 +1,57 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input ndarray
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mean:
+    default: _Null
+    descp: Sequence of means for each channel. Default value is 0.
+    doc_dtype: tuple of <float>, optional, default=[0,0,0,0]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - D_STRUCTURE of means for each channel
+    - Default value is CONSTANT_NUM
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  std:
+    default: _Null
+    descp: Sequence of standard deviations for each channel. Default value is 1.
+    doc_dtype: tuple of <float>, optional, default=[1,1,1,1]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - D_STRUCTURE of standard deviations for each channel
+    - Default value is CONSTANT_NUM
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+inputs:
+  optional:
+  - data
+  - mean
+  - std
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/image/index.html#mxnet.ndarray.image.normalize
+package: mxnet
+target: normalize
+title: mxnet.ndarray.image.normalize
+version: 1.6.0

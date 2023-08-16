@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Number,the number to be divided to each element of `input`,,prim_dtype,dtype(int),,1
+Number,the number to be divided to each element of `input`,,shape,ndim(0),,1
+Number,the number to be divided to each element of `input`,,validvalue,"range([0,inf))",,1

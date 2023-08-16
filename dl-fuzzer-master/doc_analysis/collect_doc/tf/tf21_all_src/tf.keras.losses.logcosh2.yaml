@@ -1,0 +1,19 @@
+aliases:
+- tf.losses.logcosh
+- tf.compat.v1.keras.losses.logcosh
+constraints:
+  y_pred:
+    descp: tensor of predicted targets.
+  y_true:
+    descp: tensor of true targets.
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/losses/logcosh
+outputs: Tensor with one scalar loss entry per sample.
+package: tensorflow
+target: logcosh
+title: tf.keras.losses.logcosh
+version: 2.1.0

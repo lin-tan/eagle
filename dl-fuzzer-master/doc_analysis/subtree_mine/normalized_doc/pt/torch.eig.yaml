@@ -1,0 +1,39 @@
+constraints:
+  eigenvectors:
+    default: 'False'
+    descp: '`True` to compute both eigenvalues and eigenvectors; otherwise, only eigenvalues
+      will be computed'
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - CONSTANT_BOOL to compute both eigenvalues and eigenvectors otherwise, only eigenvalues
+      will be computed
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the square matrix of shape (n  times n)  for which the eigenvalues and
+      eigenvectors will be computed
+    doc_dtype: Tensor
+    normalized_descp:
+    - the square matrix of shape BSTR for which the eigenvalues and PARAM will be
+      computed
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensors
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - eigenvectors
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.eig
+package: torch
+ret_type: (Tensor, Tensor)
+target: eig
+title: torch.eig
+version: 1.5.0

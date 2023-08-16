@@ -1,0 +1,45 @@
+constraints:
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype: '`torch.Generator`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a pseudorandom number generator for sampling
+    normalized_docdtype: torch Generator optional
+  mean:
+    descp: the tensor of per-element means
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE of per element means
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  std:
+    descp: the tensor of per-element standard deviations
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE of per element standard deviations
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  keyword_only:
+  - generator
+  - out
+  optional:
+  - generator
+  - out
+  required:
+  - mean
+  - std
+link: https://pytorch.org/docs/stable/torch.html#torch.normal
+package: torch
+ret_type: Tensor
+target: normal
+title: torch.normal
+version: 1.5.0

@@ -1,0 +1,48 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: multiplier for mat1 @ mat2  ( alpha )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM PARAM BSTR
+    normalized_docdtype: Number optional
+  beta:
+    default: '1'
+    descp: multiplier for `mat` ( beta )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM BSTR
+    normalized_docdtype: Number optional
+  mat:
+    descp: a dense matrix to be added
+    doc_dtype: Tensor
+    normalized_descp:
+    - a dense matrix to be added
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat1:
+    descp: a sparse matrix to be multiplied
+    doc_dtype: SparseTensor
+    normalized_descp:
+    - a sparse matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat2:
+    descp: a dense matrix be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - a dense matrix be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - beta
+  - alpha
+  required:
+  - mat
+  - mat1
+  - mat2
+link: https://pytorch.org/docs/stable/sparse.html#torch.sparse.addmm
+package: torch
+target: addmm
+title: torch.sparse.addmm
+version: 1.5.0

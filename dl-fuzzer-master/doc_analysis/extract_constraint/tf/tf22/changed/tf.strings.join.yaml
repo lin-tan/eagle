@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.string_join
+- tf.compat.v1.strings.join
+constraints:
+  inputs:
+    descp: A list of tf.Tensor objects of same size and tf.string dtype.
+    dtype:
+    - tf.string
+    structure:
+    - list
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  separator:
+    default: ''
+    descp: A string added between each string being joined.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - separator
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/strings/join
+outputs:
+- A tf.string tensor.
+package: tensorflow
+target: join
+title: tf.strings.join
+version: 2.2.0

@@ -1,0 +1,52 @@
+constraints:
+  bias:
+    default: None
+    descp: None or fp32 bias of type torch.float
+    doc_dtype: Tensor
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - None or fp32 bias of type D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input:
+    descp: Quantized input of type torch.quint8
+    doc_dtype: Tensor
+    normalized_descp:
+    - Quantized input of type D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  scale:
+    default: None
+    descp: output scale. If None, derived from the input scale
+    doc_dtype: double
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output scale
+    - If None, derived from the PARAM scale
+    normalized_docdtype: ONE_WORD D_TYPE
+  weight:
+    descp: Quantized weight of type torch.qint8
+    doc_dtype: Tensor
+    normalized_descp:
+    - Quantized weight of type D_TYPE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  zero_point:
+    default: None
+    descp: output zero point. If None, derived from the input zero_point
+    doc_dtype: long
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output zero point
+    - If None, derived from the PARAM zero_point
+    normalized_docdtype: ONE_WORD long
+inputs:
+  optional:
+  - bias
+  - scale
+  - zero_point
+  required:
+  - input
+  - weight
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.linear
+package: torch
+target: linear
+title: torch.nn.quantized.functional.linear
+version: 1.5.0

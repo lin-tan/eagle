@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `float32`. 2-D with shape `[length, channels]`.",,prim_dtype,dtype(tf.float32),,1
+,"A `Tensor` of type `float32`. 2-D with shape `[length, channels]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `float32`. 2-D with shape `[length, channels]`.",,shape,"shape([length,channels]), ndim(2)",,1

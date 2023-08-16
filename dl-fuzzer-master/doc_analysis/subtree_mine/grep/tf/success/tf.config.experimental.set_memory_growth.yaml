@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.config.experimental.set_memory_growth
+constraints:
+  device:
+    descp: '`PhysicalDevice` to configure'
+  enable:
+    descp: (Boolean) Whether to enable or disable memory growth
+    dtype:
+    - tf.bool
+exceptions:
+- ValueError: Invalid `PhysicalDevice` specified.
+- RuntimeError: Runtime is already initialized.
+inputs:
+  optional: []
+  required:
+  - device
+  - enable
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/config/experimental/set_memory_growth
+package: tensorflow
+target: set_memory_growth
+title: tf.config.experimental.set_memory_growth
+version: 2.1.0

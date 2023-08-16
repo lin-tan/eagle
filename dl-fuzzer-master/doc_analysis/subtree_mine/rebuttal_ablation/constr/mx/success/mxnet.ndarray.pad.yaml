@@ -1,0 +1,102 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  constant_value:
+    default: _Null
+    descp: The value used for padding when mode is "constant".
+    doc_dtype: double, optional, default=0
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.double
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  data:
+    default: None
+    descp: An n-dimensional input array.
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  mode:
+    default: _Null
+    descp: Padding type to use. "constant" pads with constant_value "edge" pads using
+      the edge values of the input array "reflect" pads by reflecting values with
+      respect to the edges.
+    doc_dtype: '{''constant'', ''edge'', ''reflect''}, required'
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  pad_width:
+    default: _Null
+    descp: Widths of the padding regions applied to the edges of each axis. It is
+      a tuple of integer padding widths for each axis of the format `(before_1, after_1,
+      ... , before_N, after_N)`. It should be of length `2*N` where `N` is the number
+      of dimensions of the array.This is equivalent to pad_width in numpy.pad, but
+      flattened.
+    doc_dtype: Shape(tuple), required
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    - '>=4'
+    range:
+    - (before_1,after_1,...,before_n,after_n)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[before_1,after_1,...,before_n,after_n]'
+    - '[tuple]'
+    structure:
+    - ndarray
+    - tuple
+inputs:
+  optional:
+  - data
+  - mode
+  - pad_width
+  - constant_value
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.pad
+package: mxnet
+target: pad
+title: mxnet.ndarray.pad
+version: 1.6.0

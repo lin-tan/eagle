@@ -1,0 +1,620 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  aug_seq:
+    default: None
+    descp: The augmenter names to represent sequence of augmenters to be applied,
+      seperated by comma. Additional keyword parameters will be seen by these augmenters.
+    doc_dtype: string, optional, default='aug_default'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The augmenter names to represent D_STRUCTURE of augmenters to be applied, seperated
+      by comma
+    - Additional keyword parameters will be seen by these augmenters
+    normalized_docdtype: D_TYPE, optional, default QSTR
+  batch_size:
+    descp: Batch size.
+    doc_dtype: int (non-negative), required
+    normalized_descp:
+    - Batch size
+    normalized_docdtype: D_TYPE BSTR, required
+  brightness:
+    default: None
+    descp: Add a random value in `[-brightness, brightness]` to the brightness of
+      image.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the brightness of image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  contrast:
+    default: None
+    descp: Add a random value in `[-contrast, contrast]` to the contrast of image.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the contrast of image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  ctx:
+    default: None
+    descp: Context data loader optimized for.
+    doc_dtype: '{''cpu'', ''gpu''},optional, default=''gpu'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Context data loader optimized for
+    normalized_docdtype: QSTR ,optional, default QSTR
+  data_shape:
+    descp: The shape of one output image in (channels, height, width) format.
+    doc_dtype: Shape(tuple), required
+    normalized_descp:
+    - The shape of one output image in BSTR format
+    normalized_docdtype: Shape BSTR, required
+  device_id:
+    default: None
+    descp: The device id used to create context for internal NDArray. Setting device_id
+      to -1 will create Context::CPU(0). Setting device_id to valid positive device
+      id will create Context::CPUPinned(device_id). Default is 0.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The device id used to create context for internal D_STRUCTURE
+    - Setting device_id to CONSTANT_NUM will create Context CPU BSTR
+    - Setting device_id to valid positive device id will create Context CPUPinned
+      BSTR
+    - Default is CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  dtype:
+    default: None
+    descp: Output data type. `None` means no change.
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8'', ''uint8''},optional, default=''None'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Output data type
+    - QSTR means no change
+    normalized_docdtype: None, QSTR ,optional, default QSTR
+  fill_value:
+    default: None
+    descp: Set the padding pixels value to `fill_value`.
+    doc_dtype: int, optional, default='255'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Set the padding pixels value to QSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  inter_method:
+    default: None
+    descp: 'The interpolation method: 0-NN 1-bilinear 2-cubic 3-area 4-lanczos4 9-auto
+      10-rand.'
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The interpolation method CONSTANT_NUM NN CONSTANT_NUM bilinear CONSTANT_NUM
+      cubic CONSTANT_NUM area CONSTANT_NUM lanczos4 CONSTANT_NUM auto CONSTANT_NUM0
+      rand
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  label_width:
+    default: None
+    descp: The number of labels per image.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The number of labels per image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_aspect_ratio:
+    default: None
+    descp: Change the aspect (namely width/height) to a random value. If min_aspect_ratio
+      is None then the aspect ratio ins sampled from [1 - max_aspect_ratio, 1 + max_aspect_ratio],
+      else it is in `[min_aspect_ratio, max_aspect_ratio]`
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the aspect BSTR to a random value
+    - If PARAM is None then the aspect ratio ins sampled from BSTR, else it is in
+      BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_crop_size:
+    default: None
+    descp: Crop both width and height into a random size in `[min_crop_size, max_crop_size].``Ignored
+      if ``random_resized_crop` is True.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Crop both width and height into a random size in BSTR Ignored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_img_size:
+    default: None
+    descp: Set the maximal width and height after all resize and rotate argumentation  are
+      applied
+    doc_dtype: float, optional, default=1e+10
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Set the maximal width and height after all PARAM and PARAM argumentation are
+      applied
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  max_random_area:
+    default: None
+    descp: Change the area (namely width * height) to a random value in `[min_random_area,
+      max_random_area]`. Ignored if `random_resized_crop` is False.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the area BSTR to a random value in BSTR
+    - Ignored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_random_contrast:
+    default: None
+    descp: Change the contrast with a value randomly chosen from `[-max_random_contrast,
+      max_random_contrast]`
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the PARAM with a value randomly chosen from BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_random_illumination:
+    default: None
+    descp: Change the illumination with a value randomly chosen from `[-max_random_illumination,
+      max_random_illumination]`
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the illumination with a value randomly chosen from BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_random_scale:
+    default: None
+    descp: Resize into `[width*s, height*s]` with `s` randomly chosen from `[min_random_scale,
+      max_random_scale]`. Ignored if `random_resized_crop` is True.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - PARAM into BSTR with QSTR randomly chosen from BSTR
+    - Ignored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_rotate_angle:
+    default: None
+    descp: Rotate by a random degree in `[-v, v]`
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - PARAM by a random degree in BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  max_shear_ratio:
+    default: None
+    descp: Apply a shear transformation (namely `(x,y)->(x+my,y)`) with `m` randomly
+      chose from `[-max_shear_ratio, max_shear_ratio]`
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Apply a shear transformation namely BSTR REXPR with QSTR randomly chose from
+      BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  mean_a:
+    default: None
+    descp: The mean value to be subtracted on the alpha channel
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The mean value to be subtracted on the alpha channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  mean_b:
+    default: None
+    descp: The mean value to be subtracted on the B channel
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The mean value to be subtracted on the B channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  mean_g:
+    default: None
+    descp: The mean value to be subtracted on the G channel
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The mean value to be subtracted on the G channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  mean_img:
+    default: None
+    descp: Filename of the mean image.
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Filename of the mean image
+    normalized_docdtype: D_TYPE, optional, default
+  mean_r:
+    default: None
+    descp: The mean value to be subtracted on the R channel
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The mean value to be subtracted on the R channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  min_aspect_ratio:
+    default: None
+    descp: Change the aspect (namely width/height) to a random value in `[min_aspect_ratio,
+      max_aspect_ratio]`
+    doc_dtype: float or None, optional, default=None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the aspect BSTR to a random value in BSTR
+    normalized_docdtype: D_TYPE or None, optional, default None
+  min_crop_size:
+    default: None
+    descp: Crop both width and height into a random size in `[min_crop_size, max_crop_size].``Ignored
+      if ``random_resized_crop` is True.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Crop both width and height into a random size in BSTR Ignored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  min_img_size:
+    default: None
+    descp: Set the minimal width and height after all resize and rotate argumentation  are
+      applied
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Set the minimal width and height after all PARAM and PARAM argumentation are
+      applied
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  min_random_area:
+    default: None
+    descp: Change the area (namely width * height) to a random value in `[min_random_area,
+      max_random_area]`. Ignored if `random_resized_crop` is False.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change the area BSTR to a random value in BSTR
+    - Ignored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  min_random_scale:
+    default: None
+    descp: Resize into `[width*s, height*s]` with `s` randomly chosen from `[min_random_scale,
+      max_random_scale]``Ignored if ``random_resized_crop` is True.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - PARAM into BSTR with QSTR randomly chosen from BSTRIgnored if PARAM is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  mirror:
+    default: None
+    descp: Whether to mirror the image or not. If true, images are flipped along the
+      horizontal axis.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to mirror the image or not
+    - If CONSTANT_BOOL, images are flipped along the horizontal axis
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  num_parts:
+    default: None
+    descp: Virtually partition the data into these many parts.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Virtually partition the data into these many parts
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  pad:
+    default: None
+    descp: Change size from `[width, height]` into `[pad + width + pad, pad + height
+      + pad]` by padding pixes
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Change size from BSTR into BSTR by padding pixes
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  part_index:
+    default: None
+    descp: The i-th virtual partition to be read.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The i th virtual partition to be read
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  path_imgidx:
+    default: None
+    descp: Path to the image RecordIO index (.idx) file. Created with tools/im2rec.py.
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Path to the image RecordIO index BSTR file
+    - Created with tools im2rec py
+    normalized_docdtype: D_TYPE, optional, default
+  path_imglist:
+    default: None
+    descp: 'Path to the image list (.lst) file. Generally created with tools/im2rec.py.
+      Format (Tab separated): <index of record>       <one or more labels>    <relative
+      path from root folder>.'
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Path to the image D_STRUCTURE BSTR file
+    - Generally created with tools im2rec py
+    - Format BSTR REXPR of record REXPR or more labels REXPR path from root folder
+      REXPR
+    normalized_docdtype: D_TYPE, optional, default
+  path_imgrec:
+    default: None
+    descp: Path to the image RecordIO (.rec) file or a directory path. Created with
+      tools/im2rec.py.
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Path to the image RecordIO BSTR file or a directory path
+    - Created with tools im2rec py
+    normalized_docdtype: D_TYPE, optional, default
+  pca_noise:
+    default: None
+    descp: Add PCA based noise to the image.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add PCA based noise to the image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  prefetch_buffer:
+    default: None
+    descp: Maximum number of batches to prefetch.
+    doc_dtype: long (non-negative), optional, default=4
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum number of batches to prefetch
+    normalized_docdtype: long BSTR, optional, default CONSTANT_NUM
+  preprocess_threads:
+    default: None
+    descp: The number of threads to do preprocessing.
+    doc_dtype: int, optional, default='4'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The number of threads to do preprocessing
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  rand_crop:
+    default: None
+    descp: If or not randomly crop the image
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If or not randomly crop the image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  rand_mirror:
+    default: None
+    descp: Whether to randomly mirror images or not. If true, 50% of the images will
+      be randomly mirrored (flipped along the horizontal axis)
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to randomly PARAM images or not
+    - If CONSTANT_BOOL, CONSTANT_NUM of the images will be randomly mirrored BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  random_h:
+    default: None
+    descp: Add a random value in `[-random_h, random_h]` to the H channel in HSL color
+      space.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the H channel in HSL color space
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  random_l:
+    default: None
+    descp: Add a random value in `[-random_l, random_l]` to the L channel in HSL color
+      space.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the L channel in HSL color space
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  random_resized_crop:
+    default: None
+    descp: If or not perform random resized cropping on the image, as a standard preprocessing
+      for resnet training on ImageNet data.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If or not perform random resized cropping on the image, as a standard preprocessing
+      for resnet training on ImageNet data
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  random_s:
+    default: None
+    descp: Add a random value in `[-random_s, random_s]` to the S channel in HSL color
+      space.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the S channel in HSL color space
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  resize:
+    default: None
+    descp: Down scale the shorter edge to a new size  before applying other augmentations.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Down PARAM the shorter edge to a new size before applying other augmentations
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  rotate:
+    default: None
+    descp: Rotate by an angle. If set, it overwrites the `max_rotate_angle` option.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Rotate by an angle
+    - If set, it overwrites the PARAM option
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  round_batch:
+    default: None
+    descp: Whether to use round robin to handle overflow batch or not.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to use round robin to handle overflow batch or not
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  saturation:
+    default: None
+    descp: Add a random value in `[-saturation, saturation]` to the saturation of
+      image.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Add a random value in BSTR to the saturation of image
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  scale:
+    default: None
+    descp: Multiply the image with a scale value.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Multiply the image with a scale value
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  seed:
+    default: None
+    descp: The random seed.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The random seed
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  seed_aug:
+    default: None
+    descp: Random seed for augmentations.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Random PARAM for augmentations
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+  shuffle:
+    default: None
+    descp: Whether to shuffle data randomly or not.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to shuffle data randomly or not
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  shuffle_chunk_seed:
+    default: None
+    descp: The random seed for shuffling
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The random PARAM for shuffling
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  shuffle_chunk_size:
+    default: None
+    descp: The data shuffle buffer size in MB. Only valid if shuffle is true.
+    doc_dtype: long (non-negative), optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The data PARAM buffer size in MB
+    - Only valid if PARAM is CONSTANT_BOOL
+    normalized_docdtype: long BSTR, optional, default CONSTANT_NUM
+  std_a:
+    default: None
+    descp: 'Augmentation Param: Standard deviation on Alpha channel.'
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Standard deviation on Alpha channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  std_b:
+    default: None
+    descp: 'Augmentation Param: Standard deviation on B channel.'
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Standard deviation on B channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  std_g:
+    default: None
+    descp: 'Augmentation Param: Standard deviation on G channel.'
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Standard deviation on G channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  std_r:
+    default: None
+    descp: 'Augmentation Param: Standard deviation on R channel.'
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Standard deviation on R channel
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  verbose:
+    default: None
+    descp: If or not output verbose information.
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If or not output verbose information
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - path_imglist
+  - path_imgrec
+  - path_imgidx
+  - aug_seq
+  - label_width
+  - preprocess_threads
+  - verbose
+  - num_parts
+  - part_index
+  - device_id
+  - shuffle_chunk_size
+  - shuffle_chunk_seed
+  - seed_aug
+  - shuffle
+  - seed
+  - round_batch
+  - prefetch_buffer
+  - ctx
+  - dtype
+  - resize
+  - rand_crop
+  - random_resized_crop
+  - max_rotate_angle
+  - max_aspect_ratio
+  - min_aspect_ratio
+  - max_shear_ratio
+  - max_crop_size
+  - min_crop_size
+  - max_random_scale
+  - min_random_scale
+  - max_random_area
+  - min_random_area
+  - max_img_size
+  - min_img_size
+  - brightness
+  - contrast
+  - saturation
+  - pca_noise
+  - random_h
+  - random_s
+  - random_l
+  - rotate
+  - fill_value
+  - inter_method
+  - pad
+  - mirror
+  - rand_mirror
+  - mean_img
+  - mean_r
+  - mean_g
+  - mean_b
+  - mean_a
+  - std_r
+  - std_g
+  - std_b
+  - std_a
+  - scale
+  - max_random_contrast
+  - max_random_illumination
+  required:
+  - '*args'
+  - '**kwargs'
+  - data_shape
+  - batch_size
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/io/index.html#mxnet.io.ImageRecordIter
+package: mxnet
+target: ImageRecordIter
+title: mxnet.io.ImageRecordIter
+version: 1.6.0

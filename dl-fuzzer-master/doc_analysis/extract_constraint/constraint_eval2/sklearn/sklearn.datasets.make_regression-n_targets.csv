@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=1) The number of regression targets, i.e., the dimension of the y output vector associated with a sample. By default, the output is a scalar.",1,prim_dtype,dtype(int),,1
+,"int, optional (default=1) The number of regression targets, i.e., the dimension of the y output vector associated with a sample. By default, the output is a scalar.",1,shape,ndim(0),,1
+,"int, optional (default=1) The number of regression targets, i.e., the dimension of the y output vector associated with a sample. By default, the output is a scalar.",1,validvalue,"range([0,inf))",,1

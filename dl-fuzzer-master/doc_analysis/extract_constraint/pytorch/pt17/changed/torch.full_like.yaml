@@ -1,0 +1,79 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, defaults to
+      the device of `input`.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: if `None`, defaults
+      to the dtype of `input`.'
+    doc_dtype:
+    - torch.dtype
+    dtype:
+    - torch.dtype
+    ndim:
+    - '0'
+  fill_value:
+    descp: the number to fill the output tensor with.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the size of `input` will determine size of the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned tensor. Default: if `None`, defaults to
+      the layout of `input`.'
+    doc_dtype:
+    - torch.layout
+  memory_format:
+    default: torch.preserve_format
+    descp: 'the desired memory format of returned Tensor. Default: `torch.preserve_format`.'
+    doc_dtype:
+    - torch.memory_format
+  out:
+    default: None
+    descp: ''
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  keyword_only:
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - memory_format
+  optional:
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - memory_format
+  required:
+  - input
+  - fill_value
+link: https://pytorch.org/docs/1.7.0/generated/torch.full_like.html#torch.full_like#torch.full_like
+package: torch
+ret_type: Tensor
+target: full_like
+title: torch.full_like
+version: 1.7.0

@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: the tensor to compare
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the tensor or value to compare
+    doc_dtype:
+    - Tensor
+    - float
+  out:
+    default: None
+    descp: the output tensor that must be a BoolTensor
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.ge
+package: torch
+ret_type: Tensor
+target: ge
+title: torch.ge
+version: 1.5.0

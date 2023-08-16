@@ -1,0 +1,41 @@
+constraints:
+  buffer_size:
+    default: '10485760'
+    descp: maximum size of the buffer used for coalescing
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  devices:
+    descp: an iterable of GPU devices, among which to broadcast.
+    doc_dtype:
+    - Iterable[torch.device
+    - str
+    - int]
+    dtype:
+    - string
+    structure:
+    - list
+  tensors:
+    descp: tensors to broadcast. Must be on the same device, either CPU or GPU.
+    doc_dtype:
+    - sequence
+    structure:
+    - sequence
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - buffer_size
+  required:
+  - tensors
+  - devices
+link: https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.comm.broadcast_coalesced
+package: torch
+target: broadcast_coalesced
+title: torch.cuda.comm.broadcast_coalesced
+version: 1.9.0

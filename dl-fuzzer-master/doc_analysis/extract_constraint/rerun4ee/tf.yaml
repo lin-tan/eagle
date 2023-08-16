@@ -1,0 +1,3613 @@
+tf.argsort.yaml:
+- axis
+- direction
+- name
+- stable
+- values
+tf.audio.decode_wav.yaml:
+- contents
+- desired_samples
+- name
+tf.audio.encode_wav.yaml:
+- audio
+- name
+- sample_rate
+tf.autograph.experimental.do_not_convert.yaml:
+- func
+tf.autograph.set_verbosity.yaml:
+- alsologtostdout
+- level
+tf.autograph.to_code.yaml:
+- entity
+- experimental_optional_features
+- recursive
+tf.autograph.to_graph.yaml:
+- entity
+- experimental_optional_features
+- recursive
+tf.batch_to_space.yaml:
+- input
+- name
+tf.bitcast.yaml:
+- input
+- name
+tf.bitwise.bitwise_and.yaml:
+- name
+- x
+- y
+tf.bitwise.bitwise_or.yaml:
+- name
+- x
+- y
+tf.bitwise.bitwise_xor.yaml:
+- name
+- x
+- y
+tf.bitwise.invert.yaml:
+- name
+- x
+tf.bitwise.left_shift.yaml:
+- name
+- x
+- y
+tf.bitwise.right_shift.yaml:
+- name
+- x
+- y
+tf.boolean_mask.yaml:
+- axis
+- mask
+- name
+- tensor
+tf.broadcast_to.yaml:
+- input
+- name
+tf.case.yaml:
+- default
+- exclusive
+- name
+- pred_fn_pairs
+- strict
+tf.cast.yaml:
+- dtype
+- name
+- x
+tf.clip_by_global_norm.yaml:
+- name
+- t_list
+- use_norm
+tf.clip_by_norm.yaml:
+- axes
+- name
+- t
+tf.clip_by_value.yaml:
+- clip_value_max
+- clip_value_min
+- name
+- t
+tf.compat.as_bytes.yaml:
+- bytes_or_text
+- encoding
+tf.compat.as_text.yaml:
+- bytes_or_text
+- encoding
+tf.compat.dimension_at_index.yaml:
+- index
+tf.compat.dimension_value.yaml:
+- dimension
+tf.compat.forward_compatibility_horizon.yaml:
+- day
+- month
+- year
+tf.compat.forward_compatible.yaml:
+- day
+- month
+- year
+tf.compat.path_to_str.yaml:
+- path
+tf.concat.yaml:
+- name
+- values
+tf.cond.yaml:
+- false_fn
+- name
+- pred
+- true_fn
+tf.config.experimental.set_device_policy.yaml:
+- device_policy
+tf.config.experimental.set_memory_growth.yaml:
+- device
+- enable
+tf.config.experimental.set_synchronous_execution.yaml:
+- enable
+tf.config.experimental_connect_to_cluster.yaml:
+- cluster_spec_or_resolver
+- job_name
+- make_master_device_default
+- protocol
+- task_index
+tf.config.experimental_connect_to_host.yaml:
+- job_name
+- remote_host
+tf.config.experimental_run_functions_eagerly.yaml:
+- run_eagerly
+tf.config.get_visible_devices.yaml:
+- device_type
+tf.config.list_logical_devices.yaml:
+- device_type
+tf.config.list_physical_devices.yaml:
+- device_type
+tf.config.optimizer.set_jit.yaml:
+- enabled
+tf.config.set_logical_device_configuration.yaml:
+- device
+- logical_devices
+tf.config.set_soft_device_placement.yaml:
+- enabled
+tf.config.set_visible_devices.yaml:
+- device_type
+- devices
+tf.constant.yaml:
+- dtype
+- name
+- value
+tf.control_dependencies.yaml:
+- control_inputs
+tf.convert_to_tensor.yaml:
+- dtype
+- dtype_hint
+- name
+- value
+tf.custom_gradient.yaml:
+- f
+tf.data.experimental.Counter.yaml:
+- dtype
+- start
+- step
+tf.data.experimental.bucket_by_sequence_length.yaml:
+- bucket_boundaries
+- drop_remainder
+- element_length_func
+- no_padding
+- pad_to_bucket_boundary
+- padded_shapes
+- padding_values
+tf.data.experimental.bytes_produced_stats.yaml:
+- tag
+tf.data.experimental.choose_from_datasets.yaml:
+- choice_dataset
+- datasets
+tf.data.experimental.copy_to_device.yaml:
+- source_device
+- target_device
+tf.data.experimental.dense_to_ragged_batch.yaml:
+- drop_remainder
+- row_splits_dtype
+tf.data.experimental.from_variant.yaml:
+- structure
+- variant
+tf.data.experimental.group_by_reducer.yaml:
+- key_func
+- reducer
+tf.data.experimental.group_by_window.yaml:
+- key_func
+- reduce_func
+- window_size_func
+tf.data.experimental.latency_stats.yaml:
+- tag
+tf.data.experimental.make_batched_features_dataset.yaml:
+- drop_final_batch
+- features
+- file_pattern
+- label_key
+- reader
+- reader_args
+- shuffle
+- shuffle_seed
+- sloppy_ordering
+tf.data.experimental.make_csv_dataset.yaml:
+- column_defaults
+- column_names
+- compression_type
+- field_delim
+- file_pattern
+- header
+- ignore_errors
+- label_name
+- na_value
+- select_columns
+- shuffle
+- shuffle_seed
+- sloppy
+- use_quote_delim
+tf.data.experimental.parse_example_dataset.yaml:
+- features
+tf.data.experimental.prefetch_to_device.yaml:
+- device
+tf.data.experimental.rejection_resample.yaml:
+- class_func
+- initial_dist
+- seed
+- target_dist
+tf.data.experimental.sample_from_datasets.yaml:
+- datasets
+- seed
+- weights
+tf.data.experimental.scan.yaml:
+- initial_state
+- scan_func
+tf.data.experimental.take_while.yaml:
+- predicate
+tf.debugging.Assert.yaml:
+- condition
+- data
+- name
+tf.debugging.assert_all_finite.yaml:
+- message
+- name
+- x
+tf.debugging.assert_equal.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_greater.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_greater_equal.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_integer.yaml:
+- message
+- name
+- x
+tf.debugging.assert_less.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_less_equal.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_near.yaml:
+- atol
+- message
+- name
+- rtol
+- x
+- y
+tf.debugging.assert_negative.yaml:
+- message
+- name
+- x
+tf.debugging.assert_non_negative.yaml:
+- message
+- name
+- x
+tf.debugging.assert_non_positive.yaml:
+- message
+- name
+- x
+tf.debugging.assert_none_equal.yaml:
+- message
+- name
+- x
+- y
+tf.debugging.assert_positive.yaml:
+- message
+- name
+- x
+tf.debugging.assert_rank.yaml:
+- message
+- name
+- rank
+- x
+tf.debugging.assert_rank_at_least.yaml:
+- message
+- name
+- rank
+- x
+tf.debugging.assert_rank_in.yaml:
+- message
+- name
+- ranks
+- x
+tf.debugging.assert_same_float_dtype.yaml:
+- dtype
+- tensors
+tf.debugging.assert_scalar.yaml:
+- message
+- name
+- tensor
+tf.debugging.assert_shapes.yaml:
+- data
+- message
+- name
+- shapes
+tf.debugging.assert_type.yaml:
+- message
+- name
+- tensor
+- tf_type
+tf.debugging.check_numerics.yaml:
+- message
+- name
+- tensor
+tf.debugging.enable_check_numerics.yaml:
+- path_length_limit
+tf.debugging.experimental.enable_dump_debug_info.yaml:
+- dump_root
+- op_regex
+- tensor_debug_mode
+- tensor_dtypes
+tf.debugging.set_log_device_placement.yaml:
+- enabled
+tf.device.yaml:
+- device_name
+tf.dtypes.complex.yaml:
+- imag
+- name
+- real
+tf.dtypes.saturate_cast.yaml:
+- dtype
+- name
+- value
+tf.dynamic_partition.yaml:
+- data
+- name
+- partitions
+tf.dynamic_stitch.yaml:
+- data
+- indices
+- name
+tf.edit_distance.yaml:
+- hypothesis
+- name
+- normalize
+- truth
+tf.eig.yaml:
+- name
+- tensor
+tf.eigvals.yaml:
+- name
+- tensor
+tf.einsum.yaml:
+- equation
+tf.ensure_shape.yaml:
+- name
+- x
+tf.estimator.add_metrics.yaml:
+- estimator
+- metric_fn
+tf.estimator.classifier_parse_example_spec.yaml:
+- feature_columns
+- label_default
+- label_dtype
+- label_key
+- weight_column
+tf.estimator.experimental.build_raw_supervised_input_receiver_fn.yaml:
+- features
+- labels
+tf.estimator.experimental.call_logit_fn.yaml:
+- config
+- features
+- logit_fn
+- mode
+- params
+tf.estimator.experimental.make_early_stopping_hook.yaml:
+- estimator
+- run_every_secs
+- run_every_steps
+- should_stop_fn
+tf.estimator.experimental.stop_if_higher_hook.yaml:
+- estimator
+- eval_dir
+- metric_name
+- min_steps
+- run_every_secs
+- run_every_steps
+- threshold
+tf.estimator.experimental.stop_if_lower_hook.yaml:
+- estimator
+- eval_dir
+- metric_name
+- min_steps
+- run_every_secs
+- run_every_steps
+- threshold
+tf.estimator.experimental.stop_if_no_decrease_hook.yaml:
+- estimator
+- eval_dir
+- metric_name
+- min_steps
+- run_every_secs
+- run_every_steps
+tf.estimator.experimental.stop_if_no_increase_hook.yaml:
+- estimator
+- eval_dir
+- metric_name
+- min_steps
+- run_every_secs
+- run_every_steps
+tf.estimator.export.build_parsing_serving_input_receiver_fn.yaml:
+- feature_spec
+tf.estimator.export.build_raw_serving_input_receiver_fn.yaml:
+- features
+tf.estimator.regressor_parse_example_spec.yaml:
+- feature_columns
+- label_default
+- label_dtype
+- label_key
+- weight_column
+tf.expand_dims.yaml:
+- input
+- name
+tf.experimental.function_executor_type.yaml:
+- executor_type
+tf.extract_volume_patches.yaml:
+- input
+- name
+- strides
+tf.eye.yaml:
+- batch_shape
+- dtype
+- name
+tf.feature_column.bucketized_column.yaml:
+- boundaries
+- source_column
+tf.feature_column.categorical_column_with_hash_bucket.yaml:
+- dtype
+- key
+tf.feature_column.categorical_column_with_identity.yaml:
+- default_value
+- key
+tf.feature_column.categorical_column_with_vocabulary_file.yaml:
+- default_value
+- dtype
+- key
+- vocabulary_file
+tf.feature_column.categorical_column_with_vocabulary_list.yaml:
+- default_value
+- dtype
+- key
+- vocabulary_list
+tf.feature_column.crossed_column.yaml:
+- hash_key
+- keys
+tf.feature_column.embedding_column.yaml:
+- categorical_column
+- ckpt_to_load_from
+- initializer
+- max_norm
+- tensor_name_in_ckpt
+- trainable
+tf.feature_column.make_parse_example_spec.yaml:
+- feature_columns
+tf.feature_column.numeric_column.yaml:
+- dtype
+- key
+- normalizer_fn
+tf.feature_column.sequence_categorical_column_with_hash_bucket.yaml:
+- dtype
+- key
+tf.feature_column.sequence_categorical_column_with_identity.yaml:
+- key
+tf.feature_column.sequence_categorical_column_with_vocabulary_file.yaml:
+- default_value
+- dtype
+- key
+- vocabulary_file
+tf.feature_column.sequence_categorical_column_with_vocabulary_list.yaml:
+- default_value
+- dtype
+- key
+- vocabulary_list
+tf.feature_column.sequence_numeric_column.yaml:
+- default_value
+- dtype
+- key
+- normalizer_fn
+tf.feature_column.shared_embeddings.yaml:
+- categorical_columns
+- ckpt_to_load_from
+- initializer
+- max_norm
+- shared_embedding_collection_name
+- tensor_name_in_ckpt
+- trainable
+tf.feature_column.weighted_categorical_column.yaml:
+- categorical_column
+- dtype
+- weight_feature_key
+tf.fill.yaml:
+- name
+- value
+tf.fingerprint.yaml:
+- data
+- method
+- name
+tf.foldl.yaml:
+- back_prop
+- elems
+- fn
+- initializer
+- name
+- swap_memory
+tf.foldr.yaml:
+- back_prop
+- elems
+- fn
+- initializer
+- name
+- swap_memory
+tf.function.yaml:
+- autograph
+- experimental_autograph_options
+- experimental_compile
+- experimental_implements
+- experimental_relax_shapes
+- func
+- input_signature
+tf.gather.yaml:
+- axis
+- indices
+- name
+- params
+tf.gather_nd.yaml:
+- indices
+- name
+- params
+tf.get_static_value.yaml:
+- partial
+- tensor
+tf.grad_pass_through.yaml:
+- f
+tf.gradients.yaml:
+- aggregation_method
+- gate_gradients
+- grad_ys
+- name
+- stop_gradients
+- unconnected_gradients
+- xs
+- ys
+tf.graph_util.import_graph_def.yaml:
+- graph_def
+- input_map
+- name
+- producer_op_list
+- return_elements
+tf.group.yaml:
+- name
+tf.guarantee_const.yaml:
+- input
+- name
+tf.histogram_fixed_width.yaml:
+- dtype
+- name
+- values
+tf.histogram_fixed_width_bins.yaml:
+- dtype
+- name
+- values
+tf.identity.yaml:
+- input
+- name
+tf.identity_n.yaml:
+- input
+- name
+tf.image.adjust_brightness.yaml:
+- delta
+- image
+tf.image.adjust_contrast.yaml:
+- contrast_factor
+- images
+tf.image.adjust_gamma.yaml:
+- gain
+- gamma
+- image
+tf.image.adjust_hue.yaml:
+- delta
+- name
+tf.image.adjust_jpeg_quality.yaml:
+- jpeg_quality
+- name
+tf.image.adjust_saturation.yaml:
+- name
+- saturation_factor
+tf.image.central_crop.yaml:
+- central_fraction
+- image
+tf.image.combined_non_max_suppression.yaml:
+- clip_boxes
+- iou_threshold
+- name
+- pad_per_class
+- score_threshold
+- scores
+tf.image.convert_image_dtype.yaml:
+- dtype
+- image
+- name
+- saturate
+tf.image.crop_and_resize.yaml:
+- boxes
+- extrapolation_value
+- image
+- name
+tf.image.crop_to_bounding_box.yaml:
+- image
+tf.image.draw_bounding_boxes.yaml:
+- boxes
+- colors
+- images
+- name
+tf.image.encode_png.yaml:
+- compression
+- image
+- name
+tf.image.extract_glimpse.yaml:
+- centered
+- input
+- name
+- noise
+- normalized
+- offsets
+tf.image.extract_patches.yaml:
+- images
+- name
+- padding
+- rates
+- strides
+tf.image.flip_left_right.yaml:
+- image
+tf.image.flip_up_down.yaml:
+- image
+tf.image.grayscale_to_rgb.yaml:
+- images
+- name
+tf.image.hsv_to_rgb.yaml:
+- images
+- name
+tf.image.image_gradients.yaml:
+- image
+tf.image.non_max_suppression.yaml:
+- boxes
+- iou_threshold
+- name
+- score_threshold
+- scores
+tf.image.non_max_suppression_overlaps.yaml:
+- name
+- overlap_threshold
+- overlaps
+- score_threshold
+- scores
+tf.image.non_max_suppression_padded.yaml:
+- boxes
+- iou_threshold
+- name
+- score_threshold
+- scores
+tf.image.non_max_suppression_with_scores.yaml:
+- boxes
+- iou_threshold
+- name
+- score_threshold
+- scores
+- soft_nms_sigma
+tf.image.pad_to_bounding_box.yaml:
+- image
+tf.image.per_image_standardization.yaml:
+- image
+tf.image.psnr.yaml:
+- a
+- b
+- max_val
+- name
+tf.image.random_brightness.yaml:
+- image
+- seed
+tf.image.random_contrast.yaml:
+- image
+- lower
+- seed
+- upper
+tf.image.random_crop.yaml:
+- name
+- seed
+- value
+tf.image.random_flip_left_right.yaml:
+- image
+- seed
+tf.image.random_flip_up_down.yaml:
+- image
+- seed
+tf.image.random_hue.yaml:
+- max_delta
+- seed
+tf.image.random_jpeg_quality.yaml:
+- max_jpeg_quality
+- min_jpeg_quality
+- seed
+tf.image.random_saturation.yaml:
+- lower
+- seed
+- upper
+tf.image.resize.yaml:
+- antialias
+- images
+- method
+- name
+tf.image.resize_with_crop_or_pad.yaml:
+- image
+tf.image.resize_with_pad.yaml:
+- antialias
+- image
+- method
+tf.image.rgb_to_grayscale.yaml:
+- images
+- name
+tf.image.rgb_to_hsv.yaml:
+- images
+- name
+tf.image.rgb_to_yiq.yaml:
+- images
+tf.image.rgb_to_yuv.yaml:
+- images
+tf.image.sample_distorted_bounding_box.yaml:
+- area_range
+- aspect_ratio_range
+- bounding_boxes
+- name
+- seed
+- use_image_if_no_bounding_boxes
+tf.image.sobel_edges.yaml:
+- image
+tf.image.ssim.yaml:
+- img1
+- img2
+- k1
+- k2
+- max_val
+tf.image.ssim_multiscale.yaml:
+- img1
+- img2
+- k1
+- k2
+- max_val
+tf.image.total_variation.yaml:
+- images
+- name
+tf.image.transpose.yaml:
+- image
+- name
+tf.image.yiq_to_rgb.yaml:
+- images
+tf.image.yuv_to_rgb.yaml:
+- images
+tf.io.decode_and_crop_jpeg.yaml:
+- acceptable_fraction
+- contents
+- crop_window
+- fancy_upscaling
+- name
+- ratio
+- try_recover_truncated
+tf.io.decode_base64.yaml:
+- input
+- name
+tf.io.decode_bmp.yaml:
+- channels
+- contents
+- name
+tf.io.decode_compressed.yaml:
+- bytes
+- compression_type
+- name
+tf.io.decode_csv.yaml:
+- field_delim
+- na_value
+- name
+- record_defaults
+- records
+- select_cols
+- use_quote_delim
+tf.io.decode_gif.yaml:
+- contents
+- name
+tf.io.decode_image.yaml:
+- contents
+- dtype
+- expand_animations
+- name
+tf.io.decode_jpeg.yaml:
+- acceptable_fraction
+- contents
+- fancy_upscaling
+- name
+- ratio
+- try_recover_truncated
+tf.io.decode_json_example.yaml:
+- json_examples
+- name
+tf.io.decode_png.yaml:
+- contents
+- name
+tf.io.decode_proto.yaml:
+- bytes
+- descriptor_source
+- field_names
+- message_type
+- name
+- output_types
+- sanitize
+tf.io.decode_raw.yaml:
+- input_bytes
+- little_endian
+- name
+- out_type
+tf.io.deserialize_many_sparse.yaml:
+- dtype
+- name
+- rank
+- serialized_sparse
+tf.io.encode_base64.yaml:
+- input
+- name
+- pad
+tf.io.encode_jpeg.yaml:
+- chroma_downsampling
+- image
+- name
+- progressive
+- quality
+- x_density
+- xmp_metadata
+- y_density
+tf.io.encode_proto.yaml:
+- descriptor_source
+- field_names
+- message_type
+- name
+- values
+tf.io.extract_jpeg_shape.yaml:
+- contents
+- name
+tf.io.gfile.copy.yaml:
+- dst
+- overwrite
+- src
+tf.io.gfile.exists.yaml:
+- path
+tf.io.gfile.glob.yaml:
+- pattern
+tf.io.gfile.isdir.yaml:
+- path
+tf.io.gfile.listdir.yaml:
+- path
+tf.io.gfile.makedirs.yaml:
+- path
+tf.io.gfile.mkdir.yaml:
+- path
+tf.io.gfile.remove.yaml:
+- path
+tf.io.gfile.rename.yaml:
+- dst
+- overwrite
+- src
+tf.io.gfile.rmtree.yaml:
+- path
+tf.io.gfile.stat.yaml:
+- path
+tf.io.gfile.walk.yaml:
+- onerror
+- top
+- topdown
+tf.io.is_jpeg.yaml:
+- contents
+- name
+tf.io.match_filenames_once.yaml:
+- name
+- pattern
+tf.io.matching_files.yaml:
+- name
+- pattern
+tf.io.parse_example.yaml:
+- example_names
+- features
+- name
+- serialized
+tf.io.parse_sequence_example.yaml:
+- context_features
+- example_names
+- name
+- sequence_features
+- serialized
+tf.io.parse_single_example.yaml:
+- example_names
+- features
+- name
+- serialized
+tf.io.parse_single_sequence_example.yaml:
+- context_features
+- example_name
+- name
+- sequence_features
+- serialized
+tf.io.parse_tensor.yaml:
+- name
+- out_type
+- serialized
+tf.io.read_file.yaml:
+- filename
+- name
+tf.io.serialize_many_sparse.yaml:
+- name
+- out_type
+- sp_input
+tf.io.serialize_sparse.yaml:
+- name
+- out_type
+- sp_input
+tf.io.serialize_tensor.yaml:
+- name
+- tensor
+tf.io.write_file.yaml:
+- contents
+- filename
+- name
+tf.io.write_graph.yaml:
+- as_text
+- graph_or_graph_def
+- logdir
+- name
+tf.keras.Input.yaml:
+- dtype
+- name
+- tensor
+tf.keras.activations.elu.yaml:
+- alpha
+- x
+tf.keras.activations.exponential.yaml:
+- x
+tf.keras.activations.get.yaml:
+- identifier
+tf.keras.activations.hard_sigmoid.yaml:
+- x
+tf.keras.activations.linear.yaml:
+- x
+tf.keras.activations.relu.yaml:
+- alpha
+- max_value
+- threshold
+- x
+tf.keras.activations.selu.yaml:
+- x
+tf.keras.activations.sigmoid.yaml:
+- x
+tf.keras.activations.softmax.yaml:
+- axis
+- x
+tf.keras.activations.softplus.yaml:
+- x
+tf.keras.activations.softsign.yaml:
+- x
+tf.keras.activations.tanh.yaml:
+- x
+tf.keras.backend.abs.yaml:
+- x
+tf.keras.backend.all.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.any.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.arange.yaml:
+- dtype
+- start
+- step
+- stop
+tf.keras.backend.argmax.yaml:
+- axis
+- x
+tf.keras.backend.argmin.yaml:
+- axis
+- x
+tf.keras.backend.batch_dot.yaml:
+- axes
+- x
+- y
+tf.keras.backend.batch_flatten.yaml:
+- x
+tf.keras.backend.batch_get_value.yaml:
+- tensors
+tf.keras.backend.batch_normalization.yaml:
+- axis
+- beta
+- epsilon
+- gamma
+- mean
+- var
+- x
+tf.keras.backend.batch_set_value.yaml:
+- tuples
+tf.keras.backend.bias_add.yaml:
+- bias
+- x
+tf.keras.backend.binary_crossentropy.yaml:
+- from_logits
+- output
+- target
+tf.keras.backend.cast.yaml:
+- x
+tf.keras.backend.cast_to_floatx.yaml:
+- x
+tf.keras.backend.categorical_crossentropy.yaml:
+- axis
+- from_logits
+- output
+- target
+tf.keras.backend.clip.yaml:
+- max_value
+- min_value
+- x
+tf.keras.backend.concatenate.yaml:
+- axis
+- tensors
+tf.keras.backend.constant.yaml:
+- dtype
+- name
+- value
+tf.keras.backend.conv1d.yaml:
+- dilation_rate
+- kernel
+- strides
+- x
+tf.keras.backend.conv2d.yaml:
+- data_format
+- dilation_rate
+- kernel
+- strides
+- x
+tf.keras.backend.conv2d_transpose.yaml:
+- dilation_rate
+- kernel
+- output_shape
+- strides
+- x
+tf.keras.backend.conv3d.yaml:
+- dilation_rate
+- kernel
+- strides
+- x
+tf.keras.backend.cos.yaml:
+- x
+tf.keras.backend.count_params.yaml:
+- x
+tf.keras.backend.ctc_batch_cost.yaml:
+- y_pred
+- y_true
+tf.keras.backend.ctc_decode.yaml:
+- greedy
+- top_paths
+- y_pred
+tf.keras.backend.ctc_label_dense_to_sparse.yaml:
+- labels
+tf.keras.backend.cumprod.yaml:
+- axis
+- x
+tf.keras.backend.cumsum.yaml:
+- axis
+- x
+tf.keras.backend.depthwise_conv2d.yaml:
+- depthwise_kernel
+- dilation_rate
+- strides
+- x
+tf.keras.backend.dot.yaml:
+- x
+- y
+tf.keras.backend.dropout.yaml:
+- level
+- seed
+- x
+tf.keras.backend.dtype.yaml:
+- x
+tf.keras.backend.elu.yaml:
+- alpha
+- x
+tf.keras.backend.equal.yaml:
+- x
+- y
+tf.keras.backend.exp.yaml:
+- x
+tf.keras.backend.expand_dims.yaml:
+- axis
+- x
+tf.keras.backend.eye.yaml:
+- dtype
+- name
+tf.keras.backend.flatten.yaml:
+- x
+tf.keras.backend.foldl.yaml:
+- elems
+- fn
+- initializer
+- name
+tf.keras.backend.foldr.yaml:
+- elems
+- fn
+- initializer
+- name
+tf.keras.backend.function.yaml:
+- inputs
+- name
+- outputs
+- updates
+tf.keras.backend.gather.yaml:
+- indices
+- reference
+tf.keras.backend.get_uid.yaml:
+- prefix
+tf.keras.backend.gradients.yaml:
+- loss
+- variables
+tf.keras.backend.greater.yaml:
+- x
+- y
+tf.keras.backend.greater_equal.yaml:
+- x
+- y
+tf.keras.backend.hard_sigmoid.yaml:
+- x
+tf.keras.backend.in_test_phase.yaml:
+- alt
+- training
+- x
+tf.keras.backend.in_top_k.yaml:
+- predictions
+- targets
+tf.keras.backend.in_train_phase.yaml:
+- alt
+- training
+- x
+tf.keras.backend.int_shape.yaml:
+- x
+tf.keras.backend.is_keras_tensor.yaml:
+- x
+tf.keras.backend.is_sparse.yaml:
+- tensor
+tf.keras.backend.l2_normalize.yaml:
+- axis
+- x
+tf.keras.backend.less.yaml:
+- x
+- y
+tf.keras.backend.less_equal.yaml:
+- x
+- y
+tf.keras.backend.local_conv1d.yaml:
+- data_format
+- inputs
+- kernel
+- strides
+tf.keras.backend.local_conv2d.yaml:
+- data_format
+- inputs
+- kernel
+tf.keras.backend.log.yaml:
+- x
+tf.keras.backend.manual_variable_initialization.yaml:
+- value
+tf.keras.backend.map_fn.yaml:
+- dtype
+- elems
+- fn
+- name
+tf.keras.backend.max.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.maximum.yaml:
+- x
+- y
+tf.keras.backend.mean.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.min.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.minimum.yaml:
+- x
+- y
+tf.keras.backend.moving_average_update.yaml:
+- momentum
+- value
+- x
+tf.keras.backend.name_scope.yaml:
+- name
+tf.keras.backend.ndim.yaml:
+- x
+tf.keras.backend.normalize_batch_in_training.yaml:
+- beta
+- epsilon
+- gamma
+- reduction_axes
+- x
+tf.keras.backend.not_equal.yaml:
+- x
+- y
+tf.keras.backend.one_hot.yaml:
+- indices
+tf.keras.backend.ones.yaml:
+- dtype
+- name
+tf.keras.backend.ones_like.yaml:
+- dtype
+- name
+- x
+tf.keras.backend.permute_dimensions.yaml:
+- pattern
+- x
+tf.keras.backend.placeholder.yaml:
+- dtype
+- name
+- ndim
+- ragged
+- sparse
+tf.keras.backend.pool2d.yaml:
+- strides
+- x
+tf.keras.backend.pool3d.yaml:
+- strides
+- x
+tf.keras.backend.pow.yaml:
+- a
+- x
+tf.keras.backend.print_tensor.yaml:
+- message
+- x
+tf.keras.backend.prod.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.random_binomial.yaml:
+- dtype
+- p
+- seed
+tf.keras.backend.random_normal.yaml:
+- dtype
+- mean
+- seed
+- stddev
+tf.keras.backend.random_normal_variable.yaml:
+- dtype
+- mean
+- name
+- scale
+- seed
+tf.keras.backend.random_uniform.yaml:
+- dtype
+- maxval
+- minval
+- seed
+tf.keras.backend.random_uniform_variable.yaml:
+- dtype
+- high
+- low
+- name
+- seed
+tf.keras.backend.relu.yaml:
+- alpha
+- max_value
+- threshold
+- x
+tf.keras.backend.repeat.yaml:
+- x
+tf.keras.backend.repeat_elements.yaml:
+- axis
+- x
+tf.keras.backend.reshape.yaml:
+- x
+tf.keras.backend.resize_images.yaml:
+- x
+tf.keras.backend.resize_volumes.yaml:
+- x
+tf.keras.backend.reverse.yaml:
+- axes
+- x
+tf.keras.backend.rnn.yaml:
+- constants
+- go_backwards
+- inputs
+- mask
+- step_function
+- time_major
+- unroll
+- zero_output_for_mask
+tf.keras.backend.round.yaml:
+- x
+tf.keras.backend.separable_conv2d.yaml:
+- depthwise_kernel
+- dilation_rate
+- pointwise_kernel
+- strides
+- x
+tf.keras.backend.set_epsilon.yaml:
+- value
+tf.keras.backend.set_image_data_format.yaml:
+- data_format
+tf.keras.backend.set_value.yaml:
+- value
+- x
+tf.keras.backend.shape.yaml:
+- x
+tf.keras.backend.sigmoid.yaml:
+- x
+tf.keras.backend.sign.yaml:
+- x
+tf.keras.backend.sin.yaml:
+- x
+tf.keras.backend.softmax.yaml:
+- axis
+- x
+tf.keras.backend.softplus.yaml:
+- x
+tf.keras.backend.softsign.yaml:
+- x
+tf.keras.backend.sparse_categorical_crossentropy.yaml:
+- axis
+- from_logits
+- output
+- target
+tf.keras.backend.spatial_2d_padding.yaml:
+- padding
+- x
+tf.keras.backend.spatial_3d_padding.yaml:
+- padding
+- x
+tf.keras.backend.sqrt.yaml:
+- x
+tf.keras.backend.square.yaml:
+- x
+tf.keras.backend.squeeze.yaml:
+- axis
+- x
+tf.keras.backend.stack.yaml:
+- axis
+- x
+tf.keras.backend.std.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.stop_gradient.yaml:
+- variables
+tf.keras.backend.sum.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.switch.yaml:
+- condition
+- else_expression
+- then_expression
+tf.keras.backend.tanh.yaml:
+- x
+tf.keras.backend.temporal_padding.yaml:
+- padding
+- x
+tf.keras.backend.tile.yaml:
+- x
+tf.keras.backend.to_dense.yaml:
+- tensor
+tf.keras.backend.transpose.yaml:
+- x
+tf.keras.backend.truncated_normal.yaml:
+- dtype
+- mean
+- seed
+- stddev
+tf.keras.backend.update_add.yaml:
+- increment
+- x
+tf.keras.backend.update_sub.yaml:
+- decrement
+- x
+tf.keras.backend.var.yaml:
+- axis
+- keepdims
+- x
+tf.keras.backend.variable.yaml:
+- constraint
+- dtype
+- name
+- value
+tf.keras.backend.zeros.yaml:
+- dtype
+- name
+tf.keras.backend.zeros_like.yaml:
+- dtype
+- name
+- x
+tf.keras.datasets.boston_housing.load_data.yaml:
+- path
+- seed
+- test_split
+tf.keras.datasets.imdb.get_word_index.yaml:
+- path
+tf.keras.datasets.imdb.load_data.yaml:
+- index_from
+- maxlen
+- oov_char
+- path
+- seed
+- skip_top
+- start_char
+tf.keras.datasets.mnist.load_data.yaml:
+- path
+tf.keras.datasets.reuters.get_word_index.yaml:
+- path
+tf.keras.datasets.reuters.load_data.yaml:
+- index_from
+- maxlen
+- oov_char
+- path
+- seed
+- skip_top
+- start_char
+- test_split
+tf.keras.estimator.model_to_estimator.yaml:
+- checkpoint_format
+- config
+- custom_objects
+- keras_model
+- keras_model_path
+- model_dir
+tf.keras.experimental.SequenceFeatures.yaml:
+- feature_columns
+- name
+- trainable
+tf.keras.experimental.terminate_keras_multiprocessing_pools.yaml:
+- grace_period
+- use_sigkill
+tf.keras.initializers.he_normal.yaml:
+- seed
+tf.keras.initializers.he_uniform.yaml:
+- seed
+tf.keras.initializers.lecun_normal.yaml:
+- seed
+tf.keras.initializers.lecun_uniform.yaml:
+- seed
+tf.keras.layers.AdditiveAttention.yaml:
+- causal
+- use_scale
+tf.keras.layers.Attention.yaml:
+- causal
+- use_scale
+tf.keras.layers.AveragePooling1D.yaml:
+- strides
+tf.keras.layers.AveragePooling2D.yaml:
+- strides
+tf.keras.layers.AveragePooling3D.yaml:
+- strides
+tf.keras.layers.BatchNormalization.yaml:
+- adjustment
+- axis
+- beta_constraint
+- beta_initializer
+- beta_regularizer
+- center
+- epsilon
+- fused
+- gamma_constraint
+- gamma_initializer
+- gamma_regularizer
+- momentum
+- moving_mean_initializer
+- moving_variance_initializer
+- name
+- renorm
+- renorm_clipping
+- renorm_momentum
+- scale
+- trainable
+tf.keras.layers.Concatenate.yaml:
+- axis
+tf.keras.layers.Conv1D.yaml:
+- activation
+- activity_regularizer
+- bias_constraint
+- bias_initializer
+- bias_regularizer
+- kernel_constraint
+- kernel_initializer
+- kernel_regularizer
+- strides
+- use_bias
+tf.keras.layers.Conv2D.yaml:
+- activation
+- activity_regularizer
+- bias_constraint
+- bias_initializer
+- bias_regularizer
+- kernel_constraint
+- kernel_initializer
+- kernel_regularizer
+- use_bias
+tf.keras.layers.Conv3D.yaml:
+- activation
+- activity_regularizer
+- bias_constraint
+- bias_initializer
+- bias_regularizer
+- kernel_constraint
+- kernel_initializer
+- kernel_regularizer
+- use_bias
+tf.keras.layers.Dot.yaml:
+- axes
+- normalize
+tf.keras.layers.MaxPool1D.yaml:
+- strides
+tf.keras.layers.MaxPool2D.yaml:
+- strides
+tf.keras.layers.MaxPool3D.yaml:
+- strides
+tf.keras.layers.SeparableConv1D.yaml:
+- activation
+- activity_regularizer
+- bias_constraint
+- bias_initializer
+- bias_regularizer
+- depthwise_constraint
+- depthwise_initializer
+- depthwise_regularizer
+- name
+- pointwise_constraint
+- pointwise_initializer
+- pointwise_regularizer
+- trainable
+- use_bias
+tf.keras.layers.SeparableConv2D.yaml:
+- activation
+- activity_regularizer
+- bias_constraint
+- bias_initializer
+- bias_regularizer
+- depthwise_constraint
+- depthwise_initializer
+- depthwise_regularizer
+- pointwise_constraint
+- pointwise_initializer
+- pointwise_regularizer
+- use_bias
+tf.keras.layers.add2.yaml:
+- inputs
+tf.keras.layers.average2.yaml:
+- inputs
+tf.keras.layers.concatenate2.yaml:
+- axis
+- inputs
+tf.keras.layers.deserialize.yaml:
+- config
+- custom_objects
+tf.keras.layers.dot2.yaml:
+- axes
+- inputs
+- normalize
+tf.keras.layers.maximum2.yaml:
+- inputs
+tf.keras.layers.minimum2.yaml:
+- inputs
+tf.keras.layers.multiply2.yaml:
+- inputs
+tf.keras.layers.subtract2.yaml:
+- inputs
+tf.keras.losses.KLD.yaml:
+- y_pred
+- y_true
+tf.keras.losses.categorical_crossentropy.yaml:
+- from_logits
+- y_pred
+- y_true
+tf.keras.losses.cosine_similarity.yaml:
+- axis
+- y_pred
+- y_true
+tf.keras.losses.logcosh2.yaml:
+- y_pred
+- y_true
+tf.keras.losses.poisson2.yaml:
+- y_pred
+- y_true
+tf.keras.models.clone_model.yaml:
+- clone_function
+- input_tensors
+- model
+tf.keras.models.load_model.yaml:
+- compile
+- custom_objects
+- filepath
+tf.keras.models.model_from_config.yaml:
+- config
+- custom_objects
+tf.keras.models.model_from_json.yaml:
+- custom_objects
+- json_string
+tf.keras.models.model_from_yaml.yaml:
+- custom_objects
+- yaml_string
+tf.keras.models.save_model.yaml:
+- filepath
+- include_optimizer
+- model
+- options
+- overwrite
+- signatures
+tf.keras.optimizers.deserialize.yaml:
+- config
+- custom_objects
+tf.keras.preprocessing.image.apply_affine_transform.yaml:
+- channel_axis
+- col_axis
+- cval
+- order
+- row_axis
+- shear
+- theta
+- tx
+- ty
+- x
+- zx
+- zy
+tf.keras.preprocessing.image.apply_channel_shift.yaml:
+- channel_axis
+- intensity
+- x
+tf.keras.preprocessing.image.array_to_img.yaml:
+- dtype
+- x
+tf.keras.preprocessing.image.img_to_array.yaml:
+- dtype
+- img
+tf.keras.preprocessing.image.load_img.yaml:
+- interpolation
+- path
+tf.keras.preprocessing.image.random_channel_shift.yaml:
+- channel_axis
+- intensity_range
+- x
+tf.keras.preprocessing.image.random_rotation.yaml:
+- channel_axis
+- col_axis
+- cval
+- interpolation_order
+- rg
+- row_axis
+- x
+tf.keras.preprocessing.image.random_shear.yaml:
+- channel_axis
+- col_axis
+- cval
+- intensity
+- interpolation_order
+- row_axis
+- x
+tf.keras.preprocessing.image.random_shift.yaml:
+- channel_axis
+- col_axis
+- cval
+- hrg
+- interpolation_order
+- row_axis
+- wrg
+- x
+tf.keras.preprocessing.image.random_zoom.yaml:
+- channel_axis
+- col_axis
+- cval
+- interpolation_order
+- row_axis
+- x
+- zoom_range
+tf.keras.preprocessing.image.save_img.yaml:
+- file_format
+- path
+- x
+tf.keras.preprocessing.sequence.make_sampling_table.yaml:
+- sampling_factor
+tf.keras.preprocessing.sequence.pad_sequences.yaml:
+- dtype
+- maxlen
+- sequences
+- value
+tf.keras.preprocessing.sequence.skipgrams.yaml:
+- categorical
+- negative_samples
+- sampling_table
+- seed
+- sequence
+- shuffle
+tf.keras.preprocessing.text.hashing_trick.yaml:
+- filters
+- hash_function
+- lower
+- n
+- split
+- text
+tf.keras.preprocessing.text.one_hot.yaml:
+- filters
+- lower
+- split
+- text
+tf.keras.preprocessing.text.text_to_word_sequence.yaml:
+- filters
+- lower
+- split
+- text
+tf.keras.preprocessing.text.tokenizer_from_json.yaml:
+- json_string
+tf.keras.regularizers.l1.yaml:
+- l
+tf.keras.regularizers.l1_l2.yaml:
+- l1
+- l2
+tf.keras.regularizers.l2.yaml:
+- l
+tf.keras.utils.get_file.yaml:
+- archive_format
+- cache_dir
+- cache_subdir
+- extract
+- file_hash
+- fname
+- hash_algorithm
+- origin
+tf.keras.utils.get_source_inputs.yaml:
+- layer
+- node_index
+- tensor
+tf.keras.utils.model_to_dot.yaml:
+- dpi
+- expand_nested
+- model
+- rankdir
+- show_layer_names
+- show_shapes
+- subgraph
+tf.keras.utils.normalize.yaml:
+- axis
+- order
+- x
+tf.keras.utils.plot_model.yaml:
+- dpi
+- expand_nested
+- model
+- rankdir
+- show_layer_names
+- show_shapes
+- to_file
+tf.keras.utils.register_keras_serializable.yaml:
+- name
+- package
+tf.keras.utils.to_categorical.yaml:
+- dtype
+- y
+tf.linalg.adjoint.yaml:
+- matrix
+- name
+tf.linalg.band_part.yaml:
+- input
+- name
+tf.linalg.cholesky.yaml:
+- input
+- name
+tf.linalg.cholesky_solve.yaml:
+- chol
+- name
+- rhs
+tf.linalg.cross.yaml:
+- a
+- b
+- name
+tf.linalg.det.yaml:
+- input
+- name
+tf.linalg.diag.yaml:
+- diagonal
+- k
+- name
+- padding_value
+tf.linalg.diag_part.yaml:
+- input
+- k
+- name
+- padding_value
+tf.linalg.eigh.yaml:
+- name
+- tensor
+tf.linalg.eigvalsh.yaml:
+- name
+- tensor
+tf.linalg.expm.yaml:
+- input
+- name
+tf.linalg.global_norm.yaml:
+- name
+- t_list
+tf.linalg.inv.yaml:
+- adjoint
+- input
+- name
+tf.linalg.logdet.yaml:
+- matrix
+- name
+tf.linalg.logm.yaml:
+- input
+- name
+tf.linalg.lstsq.yaml:
+- fast
+- l2_regularizer
+- matrix
+- name
+- rhs
+tf.linalg.lu.yaml:
+- input
+- name
+tf.linalg.lu_matrix_inverse.yaml:
+- lower_upper
+- name
+- perm
+- validate_args
+tf.linalg.lu_reconstruct.yaml:
+- lower_upper
+- name
+- perm
+- validate_args
+tf.linalg.lu_solve.yaml:
+- lower_upper
+- name
+- perm
+- rhs
+- validate_args
+tf.linalg.matmul.yaml:
+- a
+- a_is_sparse
+- adjoint_a
+- adjoint_b
+- b
+- b_is_sparse
+- name
+- transpose_a
+- transpose_b
+tf.linalg.matrix_rank.yaml:
+- a
+- name
+- tol
+- validate_args
+tf.linalg.matrix_transpose.yaml:
+- a
+- conjugate
+- name
+tf.linalg.matvec.yaml:
+- a
+- a_is_sparse
+- adjoint_a
+- b
+- b_is_sparse
+- name
+- transpose_a
+tf.linalg.normalize.yaml:
+- axis
+- name
+- tensor
+tf.linalg.pinv.yaml:
+- a
+- name
+- rcond
+- validate_args
+tf.linalg.qr.yaml:
+- full_matrices
+- input
+- name
+tf.linalg.set_diag.yaml:
+- diagonal
+- input
+- k
+- name
+tf.linalg.slogdet.yaml:
+- input
+- name
+tf.linalg.solve.yaml:
+- adjoint
+- matrix
+- name
+- rhs
+tf.linalg.sqrtm.yaml:
+- input
+- name
+tf.linalg.svd.yaml:
+- compute_uv
+- full_matrices
+- name
+- tensor
+tf.linalg.tensor_diag.yaml:
+- diagonal
+- name
+tf.linalg.tensor_diag_part.yaml:
+- input
+- name
+tf.linalg.trace.yaml:
+- name
+- x
+tf.linalg.triangular_solve.yaml:
+- adjoint
+- lower
+- matrix
+- name
+- rhs
+tf.linalg.tridiagonal_matmul.yaml:
+- diagonals
+- name
+- rhs
+tf.linalg.tridiagonal_solve.yaml:
+- conjugate_rhs
+- diagonals
+- name
+- partial_pivoting
+- rhs
+- transpose_rhs
+tf.linspace.yaml:
+- name
+- start
+- stop
+tf.lite.RepresentativeDataset.yaml:
+- input_gen
+tf.lite.experimental.load_delegate.yaml:
+- library
+- options
+tf.load_library.yaml:
+- library_location
+tf.load_op_library.yaml:
+- library_filename
+tf.make_ndarray.yaml:
+- tensor
+tf.make_tensor_proto.yaml:
+- allow_broadcast
+- dtype
+- values
+- verify_shape
+tf.map_fn.yaml:
+- back_prop
+- dtype
+- elems
+- fn
+- infer_shape
+- name
+- swap_memory
+tf.math.abs.yaml:
+- name
+- x
+tf.math.accumulate_n.yaml:
+- inputs
+- name
+- tensor_dtype
+tf.math.acos.yaml:
+- name
+- x
+tf.math.acosh.yaml:
+- name
+- x
+tf.math.add.yaml:
+- name
+- x
+- y
+tf.math.add_n.yaml:
+- inputs
+- name
+tf.math.angle.yaml:
+- input
+- name
+tf.math.argmax.yaml:
+- axis
+- input
+- name
+tf.math.argmin.yaml:
+- axis
+- input
+- name
+tf.math.asin.yaml:
+- name
+- x
+tf.math.asinh.yaml:
+- name
+- x
+tf.math.atan.yaml:
+- name
+- x
+tf.math.atan2.yaml:
+- name
+- x
+- y
+tf.math.atanh.yaml:
+- name
+- x
+tf.math.bessel_i0.yaml:
+- name
+- x
+tf.math.bessel_i0e.yaml:
+- name
+- x
+tf.math.bessel_i1.yaml:
+- name
+- x
+tf.math.bessel_i1e.yaml:
+- name
+- x
+tf.math.betainc.yaml:
+- a
+- b
+- name
+- x
+tf.math.bincount.yaml:
+- dtype
+- maxlength
+- minlength
+- name
+- weights
+tf.math.ceil.yaml:
+- name
+- x
+tf.math.confusion_matrix.yaml:
+- dtype
+- labels
+- name
+- predictions
+- weights
+tf.math.conj.yaml:
+- name
+- x
+tf.math.cos.yaml:
+- name
+- x
+tf.math.cosh.yaml:
+- name
+- x
+tf.math.count_nonzero.yaml:
+- dtype
+- input
+- keepdims
+- name
+tf.math.cumprod.yaml:
+- exclusive
+- name
+- reverse
+- x
+tf.math.cumsum.yaml:
+- exclusive
+- name
+- reverse
+- x
+tf.math.cumulative_logsumexp.yaml:
+- exclusive
+- name
+- reverse
+- x
+tf.math.digamma.yaml:
+- name
+- x
+tf.math.divide_no_nan.yaml:
+- name
+- x
+- y
+tf.math.equal.yaml:
+- name
+- x
+- y
+tf.math.erf.yaml:
+- name
+- x
+tf.math.erfc.yaml:
+- name
+- x
+tf.math.erfinv.yaml:
+- name
+- x
+tf.math.exp.yaml:
+- name
+- x
+tf.math.expm1.yaml:
+- name
+- x
+tf.math.floor.yaml:
+- name
+- x
+tf.math.floordiv.yaml:
+- name
+- x
+- y
+tf.math.floormod.yaml:
+- name
+- x
+- y
+tf.math.greater.yaml:
+- name
+- x
+- y
+tf.math.greater_equal.yaml:
+- name
+- x
+- y
+tf.math.igamma.yaml:
+- a
+- name
+- x
+tf.math.igammac.yaml:
+- a
+- name
+- x
+tf.math.imag.yaml:
+- input
+- name
+tf.math.in_top_k.yaml:
+- name
+- predictions
+- targets
+tf.math.invert_permutation.yaml:
+- name
+- x
+tf.math.is_finite.yaml:
+- name
+- x
+tf.math.is_inf.yaml:
+- name
+- x
+tf.math.is_nan.yaml:
+- name
+- x
+tf.math.is_non_decreasing.yaml:
+- name
+- x
+tf.math.is_strictly_increasing.yaml:
+- name
+- x
+tf.math.l2_normalize.yaml:
+- axis
+- epsilon
+- name
+- x
+tf.math.lbeta.yaml:
+- name
+- x
+tf.math.less.yaml:
+- name
+- x
+- y
+tf.math.less_equal.yaml:
+- name
+- x
+- y
+tf.math.lgamma.yaml:
+- name
+- x
+tf.math.log.yaml:
+- name
+- x
+tf.math.log1p.yaml:
+- name
+- x
+tf.math.log_sigmoid.yaml:
+- name
+- x
+tf.math.logical_and.yaml:
+- name
+- x
+- y
+tf.math.logical_not.yaml:
+- name
+- x
+tf.math.logical_or.yaml:
+- name
+- x
+- y
+tf.math.logical_xor.yaml:
+- name
+- x
+- y
+tf.math.maximum.yaml:
+- name
+- x
+- y
+tf.math.minimum.yaml:
+- name
+- x
+- y
+tf.math.multiply.yaml:
+- name
+- x
+- y
+tf.math.multiply_no_nan.yaml:
+- name
+- x
+- y
+tf.math.ndtri.yaml:
+- name
+- x
+tf.math.negative.yaml:
+- name
+- x
+tf.math.nextafter.yaml:
+- name
+- x1
+- x2
+tf.math.not_equal.yaml:
+- name
+- x
+- y
+tf.math.polygamma.yaml:
+- a
+- name
+- x
+tf.math.polyval.yaml:
+- coeffs
+- name
+- x
+tf.math.pow.yaml:
+- name
+- x
+- y
+tf.math.real.yaml:
+- input
+- name
+tf.math.reciprocal.yaml:
+- name
+- x
+tf.math.reciprocal_no_nan.yaml:
+- name
+- x
+tf.math.reduce_any.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_euclidean_norm.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_logsumexp.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_max.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_mean.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_min.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_prod.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_std.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_sum.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.reduce_variance.yaml:
+- input_tensor
+- keepdims
+- name
+tf.math.rint.yaml:
+- name
+- x
+tf.math.round.yaml:
+- name
+- x
+tf.math.rsqrt.yaml:
+- name
+- x
+tf.math.scalar_mul.yaml:
+- name
+- scalar
+- x
+tf.math.segment_max.yaml:
+- data
+- name
+- segment_ids
+tf.math.segment_mean.yaml:
+- data
+- name
+- segment_ids
+tf.math.segment_min.yaml:
+- data
+- name
+- segment_ids
+tf.math.segment_prod.yaml:
+- data
+- name
+- segment_ids
+tf.math.segment_sum.yaml:
+- data
+- name
+- segment_ids
+tf.math.sigmoid.yaml:
+- name
+- x
+tf.math.sign.yaml:
+- name
+- x
+tf.math.sin.yaml:
+- name
+- x
+tf.math.sinh.yaml:
+- name
+- x
+tf.math.softplus.yaml:
+- features
+- name
+tf.math.sqrt.yaml:
+- name
+- x
+tf.math.square.yaml:
+- name
+- x
+tf.math.squared_difference.yaml:
+- name
+- x
+- y
+tf.math.subtract.yaml:
+- name
+- x
+- y
+tf.math.tan.yaml:
+- name
+- x
+tf.math.tanh.yaml:
+- name
+- x
+tf.math.top_k.yaml:
+- input
+- name
+- sorted
+tf.math.truediv.yaml:
+- name
+- x
+- y
+tf.math.unsorted_segment_max.yaml:
+- data
+- name
+- segment_ids
+tf.math.unsorted_segment_mean.yaml:
+- data
+- name
+- segment_ids
+tf.math.unsorted_segment_min.yaml:
+- data
+- name
+- segment_ids
+tf.math.unsorted_segment_prod.yaml:
+- data
+- name
+- segment_ids
+tf.math.unsorted_segment_sqrt_n.yaml:
+- data
+- name
+- segment_ids
+tf.math.unsorted_segment_sum.yaml:
+- data
+- name
+- segment_ids
+tf.math.xdivy.yaml:
+- name
+- x
+- y
+tf.math.xlogy.yaml:
+- name
+- x
+- y
+tf.math.zero_fraction.yaml:
+- name
+- value
+tf.math.zeta.yaml:
+- name
+- q
+- x
+tf.mlir.experimental.convert_graph_def.yaml:
+- graph_def
+- pass_pipeline
+tf.nest.assert_same_structure.yaml:
+- check_types
+- expand_composites
+- nest1
+- nest2
+tf.nest.flatten.yaml:
+- expand_composites
+- structure
+tf.nest.map_structure.yaml:
+- func
+tf.nest.pack_sequence_as.yaml:
+- expand_composites
+- flat_sequence
+- structure
+tf.nn.atrous_conv2d.yaml:
+- filters
+- name
+- value
+tf.nn.atrous_conv2d_transpose.yaml:
+- filters
+- name
+- value
+tf.nn.avg_pool.yaml:
+- input
+- name
+tf.nn.avg_pool1d.yaml:
+- input
+- name
+tf.nn.avg_pool2d.yaml:
+- input
+- name
+tf.nn.avg_pool3d.yaml:
+- input
+- name
+tf.nn.batch_norm_with_global_normalization.yaml:
+- beta
+- gamma
+- input
+- mean
+- name
+- scale_after_normalization
+- variance
+- variance_epsilon
+tf.nn.batch_normalization.yaml:
+- mean
+- name
+- offset
+- scale
+- variance
+- variance_epsilon
+- x
+tf.nn.bias_add.yaml:
+- bias
+- name
+- value
+tf.nn.collapse_repeated.yaml:
+- labels
+- name
+tf.nn.compute_accidental_hits.yaml:
+- name
+- sampled_candidates
+- seed
+- true_classes
+tf.nn.compute_average_loss.yaml:
+- per_example_loss
+- sample_weight
+tf.nn.conv1d.yaml:
+- dilations
+- filters
+- input
+- name
+- padding
+tf.nn.conv1d_transpose.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.conv2d.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.conv2d_transpose.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.conv3d.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.conv3d_transpose.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.conv_transpose.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.convolution.yaml:
+- dilations
+- filters
+- input
+- name
+- strides
+tf.nn.crelu.yaml:
+- axis
+- features
+- name
+tf.nn.ctc_beam_search_decoder.yaml:
+- inputs
+- top_paths
+tf.nn.ctc_greedy_decoder.yaml:
+- inputs
+- merge_repeated
+tf.nn.ctc_loss.yaml:
+- blank_index
+- labels
+- logits
+- logits_time_major
+- name
+- unique
+tf.nn.ctc_unique_labels.yaml:
+- labels
+- name
+tf.nn.depth_to_space.yaml:
+- input
+- name
+tf.nn.depthwise_conv2d.yaml:
+- filter
+- input
+- name
+tf.nn.depthwise_conv2d_backprop_filter.yaml:
+- dilations
+- input
+- name
+- out_backprop
+tf.nn.depthwise_conv2d_backprop_input.yaml:
+- dilations
+- filter
+- name
+- out_backprop
+tf.nn.dilation2d.yaml:
+- dilations
+- filters
+- input
+- name
+tf.nn.dropout.yaml:
+- name
+- rate
+- seed
+- x
+tf.nn.elu.yaml:
+- features
+- name
+tf.nn.embedding_lookup.yaml:
+- ids
+- max_norm
+- name
+- params
+tf.nn.embedding_lookup_sparse.yaml:
+- max_norm
+- name
+- params
+- sp_ids
+- sp_weights
+tf.nn.erosion2d.yaml:
+- dilations
+- filters
+- name
+- value
+tf.nn.fractional_avg_pool.yaml:
+- name
+- overlapping
+- pooling_ratio
+- pseudo_random
+- seed
+- value
+tf.nn.fractional_max_pool.yaml:
+- name
+- overlapping
+- pooling_ratio
+- pseudo_random
+- seed
+- value
+tf.nn.l2_loss.yaml:
+- name
+- t
+tf.nn.leaky_relu.yaml:
+- alpha
+- features
+- name
+tf.nn.local_response_normalization.yaml:
+- alpha
+- beta
+- bias
+- input
+- name
+tf.nn.log_poisson_loss.yaml:
+- compute_full_loss
+- log_input
+- name
+- targets
+tf.nn.log_softmax.yaml:
+- axis
+- logits
+- name
+tf.nn.max_pool.yaml:
+- input
+- name
+tf.nn.max_pool1d.yaml:
+- input
+- name
+tf.nn.max_pool2d.yaml:
+- input
+- name
+tf.nn.max_pool3d.yaml:
+- input
+- name
+tf.nn.max_pool_with_argmax.yaml:
+- data_format
+- include_batch_in_index
+- input
+- name
+tf.nn.moments.yaml:
+- axes
+- keepdims
+- name
+- shift
+- x
+tf.nn.nce_loss.yaml:
+- biases
+- inputs
+- labels
+- name
+- remove_accidental_hits
+- sampled_values
+- weights
+tf.nn.normalize_moments.yaml:
+- mean_ss
+- name
+- shift
+- variance_ss
+tf.nn.pool.yaml:
+- input
+- name
+- padding
+- pooling_type
+- strides
+- window_shape
+tf.nn.relu.yaml:
+- features
+- name
+tf.nn.relu6.yaml:
+- features
+- name
+tf.nn.safe_embedding_lookup_sparse.yaml:
+- default_id
+- embedding_weights
+- max_norm
+- name
+- sparse_ids
+- sparse_weights
+tf.nn.sampled_softmax_loss.yaml:
+- biases
+- inputs
+- labels
+- name
+- remove_accidental_hits
+- sampled_values
+- seed
+- weights
+tf.nn.selu.yaml:
+- features
+- name
+tf.nn.separable_conv2d.yaml:
+- depthwise_filter
+- input
+- name
+- pointwise_filter
+- strides
+tf.nn.sigmoid_cross_entropy_with_logits.yaml:
+- labels
+- logits
+- name
+tf.nn.softmax.yaml:
+- axis
+- logits
+- name
+tf.nn.softmax_cross_entropy_with_logits.yaml:
+- axis
+- labels
+- logits
+- name
+tf.nn.softsign.yaml:
+- features
+- name
+tf.nn.space_to_depth.yaml:
+- input
+- name
+tf.nn.sparse_softmax_cross_entropy_with_logits.yaml:
+- logits
+- name
+tf.nn.sufficient_statistics.yaml:
+- axes
+- keepdims
+- name
+- shift
+- x
+tf.nn.weighted_cross_entropy_with_logits.yaml:
+- labels
+- logits
+- name
+- pos_weight
+tf.nn.weighted_moments.yaml:
+- axes
+- keepdims
+- name
+- x
+tf.nn.with_space_to_batch.yaml:
+- dilation_rate
+- filter_shape
+- input
+- op
+- padding
+- spatial_dims
+tf.no_gradient.yaml:
+- op_type
+tf.no_op.yaml:
+- name
+tf.nondifferentiable_batch_function.yaml:
+- autograph
+- max_enqueued_batches
+tf.norm.yaml:
+- axis
+- keepdims
+- name
+- tensor
+tf.numpy_function.yaml:
+- Tout
+- func
+- inp
+- name
+tf.one_hot.yaml:
+- axis
+- depth
+- dtype
+- indices
+- name
+- off_value
+- on_value
+tf.ones.yaml:
+- dtype
+- name
+tf.ones_like.yaml:
+- dtype
+- input
+- name
+tf.pad.yaml:
+- constant_values
+- name
+- paddings
+- tensor
+tf.parallel_stack.yaml:
+- name
+- values
+tf.print.yaml:
+- end
+- name
+- output_stream
+- sep
+- summarize
+tf.py_function.yaml:
+- Tout
+- func
+- inp
+- name
+tf.quantization.dequantize.yaml:
+- axis
+- input
+- max_range
+- min_range
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_args.yaml:
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_args_gradient.yaml:
+- gradients
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_vars.yaml:
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_vars_gradient.yaml:
+- gradients
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_vars_per_channel.yaml:
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient.yaml:
+- gradients
+- inputs
+- max
+- min
+- name
+- narrow_range
+tf.quantization.quantize.yaml:
+- axis
+- ensure_minimum_range
+- input
+- max_range
+- min_range
+- name
+- narrow_range
+tf.quantization.quantize_and_dequantize.yaml:
+- axis
+- input
+- input_max
+- input_min
+- name
+- narrow_range
+- range_given
+- round_mode
+- signed_input
+tf.quantization.quantized_concat.yaml:
+- input_maxes
+- input_mins
+- name
+- values
+tf.ragged.boolean_mask.yaml:
+- data
+- mask
+- name
+tf.ragged.constant.yaml:
+- dtype
+- inner_shape
+- name
+- pylist
+tf.ragged.map_flat_values.yaml:
+- op
+tf.ragged.range.yaml:
+- deltas
+- dtype
+- limits
+- name
+- starts
+tf.ragged.row_splits_to_segment_ids.yaml:
+- name
+- out_type
+- splits
+tf.ragged.segment_ids_to_row_splits.yaml:
+- name
+- out_type
+- segment_ids
+tf.ragged.stack.yaml:
+- axis
+- name
+- values
+tf.ragged.stack_dynamic_partitions.yaml:
+- data
+- name
+- partitions
+tf.random.all_candidate_sampler.yaml:
+- name
+- seed
+- true_classes
+- unique
+tf.random.categorical.yaml:
+- dtype
+- logits
+- name
+- seed
+tf.random.experimental.create_rng_state.yaml:
+- algorithm
+- seed
+tf.random.fixed_unigram_candidate_sampler.yaml:
+- distortion
+- name
+- seed
+- true_classes
+- unique
+tf.random.gamma.yaml:
+- alpha
+- beta
+- dtype
+- name
+- seed
+tf.random.learned_unigram_candidate_sampler.yaml:
+- name
+- seed
+- true_classes
+- unique
+tf.random.log_uniform_candidate_sampler.yaml:
+- name
+- seed
+- true_classes
+- unique
+tf.random.normal.yaml:
+- dtype
+- mean
+- name
+- seed
+- stddev
+tf.random.poisson.yaml:
+- dtype
+- lam
+- name
+- seed
+tf.random.set_seed.yaml:
+- seed
+tf.random.shuffle.yaml:
+- name
+- seed
+- value
+tf.random.stateless_categorical.yaml:
+- dtype
+- logits
+- name
+tf.random.stateless_normal.yaml:
+- dtype
+- mean
+- name
+- stddev
+tf.random.stateless_truncated_normal.yaml:
+- dtype
+- mean
+- name
+- stddev
+tf.random.stateless_uniform.yaml:
+- dtype
+- maxval
+- minval
+- name
+tf.random.truncated_normal.yaml:
+- dtype
+- mean
+- name
+- seed
+- stddev
+tf.random.uniform.yaml:
+- dtype
+- maxval
+- minval
+- name
+- seed
+tf.random.uniform_candidate_sampler.yaml:
+- name
+- seed
+- true_classes
+- unique
+tf.range.yaml:
+- delta
+- dtype
+- limit
+- name
+- start
+tf.rank.yaml:
+- input
+- name
+tf.realdiv.yaml:
+- name
+- x
+- y
+tf.recompute_grad.yaml:
+- f
+tf.reduce_all.yaml:
+- input_tensor
+- keepdims
+- name
+tf.register_tensor_conversion_function.yaml:
+- base_type
+- conversion_func
+- priority
+tf.repeat.yaml:
+- axis
+- input
+- name
+- repeats
+tf.required_space_to_batch_paddings.yaml:
+- block_shape
+- input_shape
+- name
+tf.reshape.yaml:
+- name
+- tensor
+tf.reverse.yaml:
+- name
+- tensor
+tf.roll.yaml:
+- axis
+- input
+- name
+tf.saved_model.contains_saved_model.yaml:
+- export_dir
+tf.saved_model.load.yaml:
+- export_dir
+- tags
+tf.saved_model.save.yaml:
+- export_dir
+- obj
+- options
+- signatures
+tf.scan.yaml:
+- back_prop
+- elems
+- fn
+- infer_shape
+- initializer
+- name
+- reverse
+- swap_memory
+tf.scatter_nd.yaml:
+- indices
+- name
+- updates
+tf.searchsorted.yaml:
+- name
+- out_type
+- side
+- sorted_sequence
+- values
+tf.sequence_mask.yaml:
+- dtype
+- name
+tf.sets.difference.yaml:
+- a
+- aminusb
+- b
+- validate_indices
+tf.sets.intersection.yaml:
+- a
+- b
+- validate_indices
+tf.sets.size.yaml:
+- a
+- validate_indices
+tf.sets.union.yaml:
+- a
+- b
+- validate_indices
+tf.shape.yaml:
+- input
+- name
+- out_type
+tf.shape_n.yaml:
+- input
+- name
+- out_type
+tf.signal.dct.yaml:
+- axis
+- input
+- n
+- name
+- norm
+- type
+tf.signal.fft.yaml:
+- input
+- name
+tf.signal.fft2d.yaml:
+- input
+- name
+tf.signal.fft3d.yaml:
+- input
+- name
+tf.signal.fftshift.yaml:
+- name
+- x
+tf.signal.frame.yaml:
+- axis
+- frame_step
+- name
+- pad_end
+- pad_value
+- signal
+tf.signal.hamming_window.yaml:
+- dtype
+- name
+- periodic
+tf.signal.hann_window.yaml:
+- dtype
+- name
+- periodic
+tf.signal.idct.yaml:
+- axis
+- input
+- n
+- name
+- norm
+- type
+tf.signal.ifft.yaml:
+- input
+- name
+tf.signal.ifft2d.yaml:
+- input
+- name
+tf.signal.ifft3d.yaml:
+- input
+- name
+tf.signal.ifftshift.yaml:
+- name
+- x
+tf.signal.inverse_stft.yaml:
+- name
+- stfts
+- window_fn
+tf.signal.inverse_stft_window_fn.yaml:
+- forward_window_fn
+- name
+tf.signal.linear_to_mel_weight_matrix.yaml:
+- dtype
+- lower_edge_hertz
+- name
+- sample_rate
+- upper_edge_hertz
+tf.signal.mfccs_from_log_mel_spectrograms.yaml:
+- log_mel_spectrograms
+- name
+tf.signal.overlap_and_add.yaml:
+- frame_step
+- name
+- signal
+tf.signal.stft.yaml:
+- name
+- pad_end
+- signals
+- window_fn
+tf.slice.yaml:
+- begin
+- input_
+- name
+tf.sort.yaml:
+- axis
+- direction
+- name
+- values
+tf.space_to_batch.yaml:
+- input
+- name
+tf.space_to_batch_nd.yaml:
+- input
+- name
+tf.sparse.add.yaml:
+- a
+- b
+- threshold
+tf.sparse.cross.yaml:
+- inputs
+- name
+tf.sparse.cross_hashed.yaml:
+- hash_key
+- inputs
+- name
+tf.sparse.expand_dims.yaml:
+- name
+- sp_input
+tf.sparse.eye.yaml:
+- dtype
+- name
+tf.sparse.fill_empty_rows.yaml:
+- default_value
+- name
+- sp_input
+tf.sparse.from_dense.yaml:
+- name
+- tensor
+tf.sparse.mask.yaml:
+- a
+- mask_indices
+- name
+tf.sparse.maximum.yaml:
+- name
+- sp_a
+- sp_b
+tf.sparse.minimum.yaml:
+- name
+- sp_a
+- sp_b
+tf.sparse.reduce_max.yaml:
+- axis
+- keepdims
+- name
+- output_is_sparse
+- sp_input
+tf.sparse.reduce_sum.yaml:
+- axis
+- keepdims
+- name
+- output_is_sparse
+- sp_input
+tf.sparse.reorder.yaml:
+- name
+- sp_input
+tf.sparse.reset_shape.yaml:
+- sp_input
+tf.sparse.reshape.yaml:
+- name
+- sp_input
+tf.sparse.retain.yaml:
+- sp_input
+- to_retain
+tf.sparse.segment_mean.yaml:
+- data
+- indices
+- name
+- segment_ids
+tf.sparse.segment_sqrt_n.yaml:
+- data
+- indices
+- name
+- segment_ids
+tf.sparse.segment_sum.yaml:
+- data
+- indices
+- name
+- segment_ids
+tf.sparse.slice.yaml:
+- name
+- sp_input
+- start
+tf.sparse.softmax.yaml:
+- name
+- sp_input
+tf.sparse.sparse_dense_matmul.yaml:
+- adjoint_a
+- adjoint_b
+- b
+- name
+- sp_a
+tf.sparse.split.yaml:
+- axis
+- name
+- sp_input
+tf.sparse.to_dense.yaml:
+- default_value
+- name
+- sp_input
+- validate_indices
+tf.sparse.to_indicator.yaml:
+- name
+- sp_input
+tf.sparse.transpose.yaml:
+- name
+- perm
+- sp_input
+tf.split.yaml:
+- name
+- value
+tf.squeeze.yaml:
+- input
+- name
+tf.stack.yaml:
+- axis
+- name
+- values
+tf.stop_gradient.yaml:
+- input
+- name
+tf.strided_slice.yaml:
+- begin
+- begin_mask
+- ellipsis_mask
+- end
+- end_mask
+- input_
+- name
+- new_axis_mask
+- shrink_axis_mask
+- strides
+- var
+tf.strings.as_string.yaml:
+- fill
+- input
+- name
+- precision
+- scientific
+- shortest
+tf.strings.bytes_split.yaml:
+- input
+- name
+tf.strings.format.yaml:
+- inputs
+- name
+- placeholder
+- summarize
+- template
+tf.strings.join.yaml:
+- inputs
+- name
+- separator
+tf.strings.lower.yaml:
+- encoding
+- input
+- name
+tf.strings.ngrams.yaml:
+- data
+- name
+- pad_values
+- preserve_short_sequences
+- separator
+tf.strings.reduce_join.yaml:
+- axis
+- inputs
+- keepdims
+- name
+- separator
+tf.strings.regex_full_match.yaml:
+- input
+- name
+- pattern
+tf.strings.regex_replace.yaml:
+- input
+- name
+- pattern
+- replace_global
+- rewrite
+tf.strings.split.yaml:
+- input
+- maxsplit
+- name
+- sep
+tf.strings.strip.yaml:
+- input
+- name
+tf.strings.substr.yaml:
+- input
+- name
+- pos
+tf.strings.to_hash_bucket.yaml:
+- input
+- name
+tf.strings.to_hash_bucket_fast.yaml:
+- input
+- name
+tf.strings.to_hash_bucket_strong.yaml:
+- input
+- key
+- name
+tf.strings.to_number.yaml:
+- input
+- name
+tf.strings.unicode_decode.yaml:
+- input
+- input_encoding
+- name
+- replace_control_characters
+- replacement_char
+tf.strings.unicode_decode_with_offsets.yaml:
+- input
+- input_encoding
+- name
+- replace_control_characters
+- replacement_char
+tf.strings.unicode_encode.yaml:
+- errors
+- input
+- name
+- output_encoding
+- replacement_char
+tf.strings.unicode_script.yaml:
+- input
+- name
+tf.strings.unicode_split.yaml:
+- input
+- input_encoding
+- name
+- replacement_char
+tf.strings.unicode_split_with_offsets.yaml:
+- input
+- input_encoding
+- name
+- replacement_char
+tf.strings.unicode_transcode.yaml:
+- input
+- input_encoding
+- name
+- replace_control_characters
+- replacement_char
+tf.strings.unsorted_segment_join.yaml:
+- inputs
+- name
+- segment_ids
+- separator
+tf.strings.upper.yaml:
+- encoding
+- input
+- name
+tf.summary.audio.yaml:
+- description
+- name
+- step
+tf.summary.create_file_writer.yaml:
+- filename_suffix
+- flush_millis
+- logdir
+- name
+tf.summary.experimental.set_step.yaml:
+- step
+tf.summary.experimental.summary_scope.yaml:
+- default_name
+- name
+- values
+tf.summary.experimental.write_raw_pb.yaml:
+- name
+- step
+- tensor
+tf.summary.flush.yaml:
+- name
+- writer
+tf.summary.histogram.yaml:
+- data
+- description
+- name
+- step
+tf.summary.image.yaml:
+- description
+- name
+- step
+tf.summary.record_if.yaml:
+- condition
+tf.summary.scalar.yaml:
+- data
+- description
+- name
+- step
+tf.summary.text.yaml:
+- data
+- description
+- name
+- step
+tf.summary.trace_export.yaml:
+- name
+- profiler_outdir
+- step
+tf.summary.trace_on.yaml:
+- graph
+- profiler
+tf.summary.write.yaml:
+- metadata
+- name
+- step
+- tag
+- tensor
+tf.switch_case.yaml:
+- branch_fns
+- branch_index
+- default
+- name
+tf.tensor_scatter_nd_add.yaml:
+- indices
+- name
+- tensor
+- updates
+tf.tensor_scatter_nd_sub.yaml:
+- indices
+- name
+- tensor
+- updates
+tf.tensor_scatter_nd_update.yaml:
+- indices
+- name
+- tensor
+- updates
+tf.tensordot.yaml:
+- a
+- axes
+- b
+- name
+tf.test.compute_gradient.yaml:
+- delta
+- f
+- x
+tf.test.create_local_cluster.yaml:
+- protocol
+- ps_config
+- worker_config
+tf.tile.yaml:
+- input
+- name
+tf.timestamp.yaml:
+- name
+tf.train.checkpoints_iterator.yaml:
+- checkpoint_dir
+- timeout_fn
+tf.train.experimental.enable_mixed_precision_graph_rewrite.yaml:
+- loss_scale
+- opt
+tf.train.get_checkpoint_state.yaml:
+- checkpoint_dir
+- latest_filename
+tf.train.latest_checkpoint.yaml:
+- checkpoint_dir
+- latest_filename
+tf.train.list_variables.yaml:
+- ckpt_dir_or_file
+tf.train.load_checkpoint.yaml:
+- ckpt_dir_or_file
+tf.train.load_variable.yaml:
+- ckpt_dir_or_file
+- name
+tf.transpose.yaml:
+- a
+- conjugate
+- name
+- perm
+tf.truncatediv.yaml:
+- name
+- x
+- y
+tf.truncatemod.yaml:
+- name
+- x
+- y
+tf.tuple.yaml:
+- control_inputs
+- name
+- tensors
+tf.unique.yaml:
+- name
+- x
+tf.unique_with_counts.yaml:
+- name
+- x
+tf.unravel_index.yaml:
+- dims
+- indices
+- name
+tf.unstack.yaml:
+- axis
+- name
+- value
+tf.vectorized_map.yaml:
+- elems
+- fn
+tf.where.yaml:
+- condition
+- name
+- x
+- y
+tf.while_loop.yaml:
+- back_prop
+- body
+- cond
+- loop_vars
+- name
+- swap_memory
+tf.xla.experimental.compile.yaml:
+- computation
+- inputs
+tf.xla.experimental.jit_scope.yaml:
+- compile_ops
+- separate_compiled_gradients
+tf.zeros.yaml:
+- dtype
+- name
+tf.zeros_like.yaml:
+- dtype
+- input
+- name

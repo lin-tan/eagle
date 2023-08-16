@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.nn.ctc_beam_search_decoder_v2
+constraints:
+  beam_width:
+    default: '100'
+    descp: An int scalar >= 0 (beam search beam width).
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE scalar REXPR BSTR
+  inputs:
+    descp: 3-D `float` `Tensor`, size `[max_time, batch_size, num_classes]`. The logits.
+    normalized_descp:
+    - CONSTANT_NUM D D_TYPE D_STRUCTURE size BSTR
+    - The logits
+  sequence_length:
+    descp: 1-D `int32` vector containing sequence lengths, having size`[batch_size]`.
+    normalized_descp:
+    - CONSTANT_NUM D D_TYPE vector containing D_STRUCTURE lengths having size BSTR
+  top_paths:
+    default: '1'
+    descp: An int scalar >= 0, <= beam_width (controls output size).
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE scalar REXPR REXPR BSTR
+inputs:
+  optional:
+  - beam_width
+  - top_paths
+  required:
+  - inputs
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/ctc_beam_search_decoder
+outputs: A tuple `(decoded, log_probabilities)` where
+package: tensorflow
+target: ctc_beam_search_decoder
+title: tf.nn.ctc_beam_search_decoder
+version: 2.1.0

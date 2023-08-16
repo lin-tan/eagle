@@ -1,0 +1,37 @@
+constraints:
+  dims:
+    default: None
+    descp: Axis along which to roll
+    doc_dtype: int or tuple of python:ints
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Axis along which to roll
+    normalized_docdtype: D_TYPE or D_STRUCTURE of python D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  shifts:
+    descp: The number of places by which the elements of the tensor are shifted. If
+      shifts is a tuple, dims must be a tuple of the same size, and each dimension
+      will be rolled by the corresponding value
+    doc_dtype: int or tuple of python:ints
+    normalized_descp:
+    - The number of places by which the elements of the D_STRUCTURE are shifted
+    - If shifts is a D_STRUCTURE PARAM must be a D_STRUCTURE of the same size and
+      each dimension will be rolled by the corresponding value
+    normalized_docdtype: D_TYPE or D_STRUCTURE of python D_TYPE
+inputs:
+  optional:
+  - dims
+  required:
+  - input
+  - shifts
+link: https://pytorch.org/docs/stable/torch.html#torch.roll
+package: torch
+ret_type: Tensor
+target: roll
+title: torch.roll
+version: 1.5.0

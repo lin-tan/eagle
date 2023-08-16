@@ -1,0 +1,41 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix}, shape [n_samples, n_features] The data to
+      binarize, element by element. scipy.sparse matrices should be in CSR or CSC
+      format to avoid an un-necessary copy.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  copy:
+    default: 'True'
+    descp: boolean, optional, default True set to False to perform inplace binarization
+      and avoid a copy (if the input is already a numpy array or a scipy.sparse CSR
+      / CSC matrix and if axis is 1).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  threshold:
+    default: '0.0'
+    descp: float, optional (0.0 by default) Feature values below or equal to this
+      are replaced by 0, above it by 1. Threshold may not be less than 0 for operations
+      on sparse matrices.
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - threshold
+  - copy
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: binarize
+title: sklearn.preprocessing.binarize
+version: 0.24.X

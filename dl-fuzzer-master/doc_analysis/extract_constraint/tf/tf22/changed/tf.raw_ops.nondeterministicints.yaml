@@ -1,0 +1,38 @@
+constraints:
+  dtype:
+    default: tf.dtypes.int64
+    descp: An optional tf.DType. Defaults to tf.int64. The type of the output.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A Tensor. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/NonDeterministicInts
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: NonDeterministicInts
+title: tf.raw_ops.NonDeterministicInts
+version: 2.2.0

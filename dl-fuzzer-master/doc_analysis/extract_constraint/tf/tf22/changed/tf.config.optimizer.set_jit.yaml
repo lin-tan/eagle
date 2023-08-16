@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.config.optimizer.set_jit
+constraints:
+  enabled:
+    descp: Whether to enable JIT compilation.
+    dtype:
+    - tf.bool
+inputs:
+  optional: []
+  required:
+  - enabled
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/config/optimizer/set_jit
+package: tensorflow
+target: set_jit
+title: tf.config.optimizer.set_jit
+version: 2.2.0

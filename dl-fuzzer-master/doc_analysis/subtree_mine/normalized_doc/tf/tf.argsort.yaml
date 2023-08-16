@@ -1,0 +1,56 @@
+aliases:
+- tf.compat.v1.argsort
+constraints:
+  axis:
+    default: '-1'
+    descp: The axis along which to sort. The default is -1, which sorts the last axis.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The axis along which to sort
+    - The default is CONSTANT_NUM, which sorts the last axis
+  direction:
+    default: ASCENDING
+    descp: The direction in which to sort the values (`'ASCENDING'` or`'DESCENDING'`).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - The direction in which to sort the PARAM QSTR
+  name:
+    default: None
+    descp: Optional name for the operation.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional name for the operation
+  stable:
+    default: 'False'
+    descp: If True, equal elements in the original tensor will not be re-ordered in
+      the returned order. Unstable sort is not yet implemented, but will eventually
+      be the default for performance reasons. If you require a stable order, pass
+      `stable=True` for forwards compatibility.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, equal elements in the original D_STRUCTURE will not be re
+      ordered in the returned order
+    - Unstable sort is not yet implemented, but will eventually be the default for
+      performance reasons
+    - If you require a stable order, pass stable CONSTANT_BOOL for forwards compatibility
+  values:
+    descp: 1-D or higher numeric `Tensor`.
+    normalized_descp:
+    - CONSTANT_NUM-D or higher D_TYPE D_STRUCTURE
+exceptions:
+- ValueError: If axis is not a constant scalar, or the direction is invalid.
+inputs:
+  optional:
+  - axis
+  - direction
+  - stable
+  - name
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/argsort
+outputs: An int32 `Tensor` with the same shape as `values`. The indices that would     sort
+  each slice of the given `values` along the given `axis`.
+package: tensorflow
+target: argsort
+title: tf.argsort
+version: 2.1.0

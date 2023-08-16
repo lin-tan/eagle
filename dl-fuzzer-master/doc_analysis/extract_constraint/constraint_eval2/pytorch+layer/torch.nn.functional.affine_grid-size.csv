@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+torch.Size,"the target output image size. (N  times C  times H  times W  for 2D or N  times C  times D  times H  times W  for 3D) Example: torch.Size((32, 3, 24, 24))",,prim_dtype,dtype(int),,1
+torch.Size,"the target output image size. (N  times C  times H  times W  for 2D or N  times C  times D  times H  times W  for 3D) Example: torch.Size((32, 3, 24, 24))",,shape,"shape([n,c,d,h,w], [n,c,h,w]), ndim(1, 2, 3)",,1
+torch.Size,"the target output image size. (N  times C  times H  times W  for 2D or N  times C  times D  times H  times W  for 3D) Example: torch.Size((32, 3, 24, 24))",,validvalue,"range([0,inf))",,1

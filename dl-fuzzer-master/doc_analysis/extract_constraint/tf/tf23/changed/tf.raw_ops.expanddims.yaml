@@ -1,0 +1,37 @@
+constraints:
+  axis:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D (scalar).
+      Specifies the dimension index at which to expand the shape of input. Must be
+      in the range [-rank(input) - 1, rank(input)].'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[-ndim:&input-1,ndim:&input]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - axis
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ExpandDims
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: ExpandDims
+title: tf.raw_ops.ExpandDims
+version: 2.3.0

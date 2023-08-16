@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Either a 3-D float Tensor of shape [height, width, depth], or a 4-D Tensor of shape [batch_size, height, width, depth].",,prim_dtype,dtype(float),,1
+,"Either a 3-D float Tensor of shape [height, width, depth], or a 4-D Tensor of shape [batch_size, height, width, depth].",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"Either a 3-D float Tensor of shape [height, width, depth], or a 4-D Tensor of shape [batch_size, height, width, depth].",,shape,"shape([batch_size,height,width,depth], [height,width,depth]), ndim(3, 4)",,1

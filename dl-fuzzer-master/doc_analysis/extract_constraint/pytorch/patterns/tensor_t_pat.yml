@@ -1,0 +1,46 @@
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: tensor_t
+findall: True
+
+stop_word:
+    - and
+    - or
+    - etc
+
+sep:
+    - /
+    - '`'
+    - \'
+    - \"
+    - ' '
+    - ','
+
+
+pat:
+    '^the\s+(first|second)?\s*(input|output)\s+(tensor)':
+        group: 3
+
+    '^(second|first|output)\s+tensor':
+        dtype: tensor
+
+    'input\s+(tensor)':
+        group: 1
+    
+    '\d-d\s+(input)?\s*tensor':
+        dtype: tensor
+    
+    '^(a|the)\s*tensor':
+        dtype: tensor
+
+
+    'an\s+input\s+(tensor\s+or\s+number)':
+        group: 1
+        ndim: 0
+
+    'a\s+single\s+(tensor)':  # how to represent single?
+        group: 1

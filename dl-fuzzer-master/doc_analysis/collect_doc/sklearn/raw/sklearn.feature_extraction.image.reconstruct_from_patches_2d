@@ -1,0 +1,25 @@
+sklearn.feature_extraction.image.reconstruct_from_patches_2d = reconstruct_from_patches_2d(patches, image_size)
+    Reconstruct the image from all of its patches.
+    
+    Patches are assumed to overlap and the image is constructed by filling in
+    the patches from left to right, top to bottom, averaging the overlapping
+    regions.
+    
+    Read more in the :ref:`User Guide <image_feature_extraction>`.
+    
+    Parameters
+    ----------
+    patches : array, shape = (n_patches, patch_height, patch_width) or
+        (n_patches, patch_height, patch_width, n_channels)
+        The complete set of patches. If the patches contain colour information,
+        channels are indexed along the last dimension: RGB patches would
+        have `n_channels=3`.
+    
+    image_size : tuple of ints (image_height, image_width) or
+        (image_height, image_width, n_channels)
+        the size of the image that will be reconstructed
+    
+    Returns
+    -------
+    image : array, shape = image_size
+        the reconstructed image

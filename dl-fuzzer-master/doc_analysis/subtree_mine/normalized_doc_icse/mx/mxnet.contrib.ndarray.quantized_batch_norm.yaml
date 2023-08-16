@@ -1,0 +1,185 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Specify which shape axis the channel is specified
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Specify which shape axis the channel is specified
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  beta:
+    default: None
+    descp: beta.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD beta
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  cudnn_off:
+    default: _Null
+    descp: Do not select CUDNN operator, if available
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Do not select CUDNN operator if available
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: Epsilon to prevent div 0. Must be no less than CUDNN_BN_MIN_EPSILON defined
+      in cudnn.h when using cudnn (usually 1e-5)
+    doc_dtype: double, optional, default=0.0010000000474974513
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Epsilon to prevent div CONSTANT_NUM
+    - Must be no less than CUDNN_BN_MIN_EPSILON defined in cudnn h when using cudnn
+      BSTR
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  fix_gamma:
+    default: _Null
+    descp: Fix gamma while training
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Fix PARAM while training
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  gamma:
+    default: None
+    descp: gamma.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD gamma
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_calib_range:
+    default: _Null
+    descp: 'The maximum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to by quantized batch norm op to calculate primitive
+      scale.Note: this calib_range is to calib bn output.'
+    doc_dtype: float or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The maximum scalar value in the form of D_TYPE obtained through calibration
+    - If present it will be used to by quantized batch norm op to calculate primitive
+      scale Note this calib_range is to calib bn output
+    normalized_docdtype: D_TYPE or None optional default None
+  max_data:
+    default: None
+    descp: Maximum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  min_calib_range:
+    default: _Null
+    descp: 'The minimum scalar value in the form of float32 obtained through calibration.
+      If present, it will be used to by quantized batch norm op to calculate primitive
+      scale.Note: this calib_range is to calib bn output.'
+    doc_dtype: float or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The minimum scalar value in the form of D_TYPE obtained through calibration
+    - If present it will be used to by quantized batch norm op to calculate primitive
+      scale Note this calib_range is to calib bn output
+    normalized_docdtype: D_TYPE or None optional default None
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Minimum value of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  momentum:
+    default: _Null
+    descp: Momentum for moving average
+    doc_dtype: float, optional, default=0.899999976
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Momentum for moving average
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  moving_mean:
+    default: None
+    descp: moving_mean.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD moving_mean
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  moving_var:
+    default: None
+    descp: moving_var.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD moving_var
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  output_mean_var:
+    default: _Null
+    descp: Output the mean and inverse std
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output the mean and inverse std
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  use_global_stats:
+    default: _Null
+    descp: Whether use global moving statistics instead of local batch-norm. This
+      will force change batch-norm into a scale shift operator.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether use global moving statistics instead of local batch norm
+    - This will force change batch norm into a scale shift operator
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - gamma
+  - beta
+  - moving_mean
+  - moving_var
+  - min_data
+  - max_data
+  - eps
+  - momentum
+  - fix_gamma
+  - use_global_stats
+  - output_mean_var
+  - axis
+  - cudnn_off
+  - min_calib_range
+  - max_calib_range
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.quantized_batch_norm
+package: mxnet
+target: quantized_batch_norm
+title: mxnet.contrib.ndarray.quantized_batch_norm
+version: 1.6.0

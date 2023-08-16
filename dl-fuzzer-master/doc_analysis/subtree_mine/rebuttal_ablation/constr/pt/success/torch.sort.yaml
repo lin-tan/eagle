@@ -1,0 +1,83 @@
+constraints:
+  descending:
+    default: 'False'
+    descp: controls the sorting order (ascending or descending)
+    doc_dtype: bool, optional
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+  dim:
+    default: '-1'
+    descp: the dimension to sort along
+    doc_dtype: int, optional
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) that can be optionally given to
+      be used as output buffers
+    doc_dtype: tuple, optional
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    - '[tensor,longtensor]'
+    - '[tuple,longtensor]'
+    structure:
+    - tuple
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - dim
+  - descending
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.sort
+package: torch
+ret_type: (Tensor, LongTensor)
+target: sort
+title: torch.sort
+version: 1.5.0

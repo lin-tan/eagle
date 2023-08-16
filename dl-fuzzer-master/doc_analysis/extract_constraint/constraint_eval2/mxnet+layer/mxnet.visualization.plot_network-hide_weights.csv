@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, optional","If True (default), then inputs with names of form _weight (corresponding to weight tensors) or _bias (corresponding to bias vectors) will be hidden for a cleaner visualization.",True,prim_dtype,dtype(boolean),,1
+"bool, optional","If True (default), then inputs with names of form _weight (corresponding to weight tensors) or _bias (corresponding to bias vectors) will be hidden for a cleaner visualization.",True,shape,ndim(0),,1

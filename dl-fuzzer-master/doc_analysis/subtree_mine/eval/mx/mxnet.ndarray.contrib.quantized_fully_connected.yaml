@@ -1,0 +1,13 @@
+constraints:
+  flatten:
+    default: _Null
+    descp: Whether to collapse all but the first axis of the input data tensor.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=1
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.contrib.quantized_fully_connected

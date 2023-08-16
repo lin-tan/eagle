@@ -1,0 +1,46 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  act_type:
+    default: _Null
+    descp: Activation function to be applied.
+    doc_dtype: '{''relu'', ''sigmoid'', ''softrelu'', ''softsign'', ''tanh''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Activation function to be applied
+    normalized_docdtype: QSTR , required
+  data:
+    default: None
+    descp: The input array.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - act_type
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.Activation
+package: mxnet
+target: Activation
+title: mxnet.ndarray.Activation
+version: 1.6.0

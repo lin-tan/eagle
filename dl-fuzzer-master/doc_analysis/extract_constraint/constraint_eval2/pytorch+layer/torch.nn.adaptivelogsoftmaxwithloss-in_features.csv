@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,Number of features in the input tensor,,prim_dtype,dtype(int),,1
+int,Number of features in the input tensor,,nonprim_dtype,tensor_t(torch.tensor),,1
+int,Number of features in the input tensor,,shape,ndim(0),,1
+int,Number of features in the input tensor,,validvalue,"range([0,inf))",,1

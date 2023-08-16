@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A scalar (0-D Tensor) of strings (optional), the name of the serialized proto.",None,prim_dtype,dtype(tf.string),,1
+,"A scalar (0-D Tensor) of strings (optional), the name of the serialized proto.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A scalar (0-D Tensor) of strings (optional), the name of the serialized proto.",None,shape,ndim(0),,1

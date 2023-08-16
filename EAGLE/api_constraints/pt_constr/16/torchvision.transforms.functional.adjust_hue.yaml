@@ -1,0 +1,32 @@
+constraints:
+  hue_factor:
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[-0.5,0.5]'
+  img:
+    dtype:
+    - float
+    ndim:
+    - '4'
+    range:
+    - '(0,1)'
+    shape:
+    - '[n,3,h,w]'
+    tensor_t:
+    - torch.tensor
+dependency:
+- h
+- n
+- w
+inputs:
+  required:
+  - img
+  - hue_factor
+  optional: []
+package: torchvision
+target: adjust_hue
+title: torchvision.transforms.functional.adjust_hue
+version: 0.7.0

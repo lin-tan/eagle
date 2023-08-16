@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float or array-like of shape (n_samples,), default=None Individual weights for each sample. If given a float, every sample will have the same weight. If sample_weight is not None and solver='auto', the solver will be set to 'cholesky'.",None,prim_dtype,dtype(float),,1
+,"float or array-like of shape (n_samples,), default=None Individual weights for each sample. If given a float, every sample will have the same weight. If sample_weight is not None and solver='auto', the solver will be set to 'cholesky'.",None,shape,"shape([n_samples]), ndim(0, 1)",,1

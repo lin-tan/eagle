@@ -1,0 +1,42 @@
+constraints:
+  arg_params:
+    descp: Model parameter, dict of name to NDArray of net's weights.
+    doc_dtype:
+    - dict of str to NDArray
+  aux_params:
+    descp: Model parameter, dict of name to NDArray of net's auxiliary states.
+    doc_dtype:
+    - dict of str to NDArray
+  epoch:
+    descp: The epoch number of the model.
+    doc_dtype:
+    - int
+  prefix:
+    descp: Prefix of model name.
+    doc_dtype:
+    - str
+  remove_amp_cast:
+    default: 'True'
+    descp: Whether to remove the amp_cast and amp_multicast operators, before saving
+      the model.
+    doc_dtype:
+    - bool
+    - optional
+  symbol:
+    descp: The input Symbol.
+    doc_dtype:
+    - Symbol
+inputs:
+  optional:
+  - remove_amp_cast
+  required:
+  - prefix
+  - epoch
+  - symbol
+  - arg_params
+  - aux_params
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/model/index.html#mxnet.model.save_checkpoint
+package: mxnet
+target: save_checkpoint
+title: mxnet.model.save_checkpoint
+version: 1.7.0

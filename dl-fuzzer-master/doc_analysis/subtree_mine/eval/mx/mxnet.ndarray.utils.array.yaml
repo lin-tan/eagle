@@ -1,0 +1,8 @@
+constraints:
+  ctx:
+    default: None
+    descp: Device context (default is the current default context).
+    doc_dtype:
+    - Context
+    - optional
+title: mxnet.ndarray.utils.array

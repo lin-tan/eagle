@@ -1,0 +1,34 @@
+constraints:
+  compute_v:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  input:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - compute_v
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BatchSelfAdjointEigV2
+outputs:
+- A tuple of Tensor objects (e, v).
+- e: A Tensor. Has the same type as input.
+- v: A Tensor. Has the same type as input.
+package: tensorflow
+target: BatchSelfAdjointEigV2
+title: tf.raw_ops.BatchSelfAdjointEigV2
+version: 2.3.0

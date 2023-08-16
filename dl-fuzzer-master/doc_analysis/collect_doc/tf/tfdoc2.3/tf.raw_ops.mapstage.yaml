@@ -1,0 +1,48 @@
+constraints:
+  capacity:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0. Maximum number of elements
+      in the Staging Area. If > 0, inserts on the container will block when the capacity
+      is reached.
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this queue is placed
+      in the given container. Otherwise, a default container is used.
+  dtypes:
+    descp: A list of tf.DTypes.
+  indices:
+    descp: A Tensor of type int32.
+  key:
+    descp: A Tensor of type int64. int64
+  memory_limit:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". It is necessary to match this name
+      to the matching Unstage Op.
+  values:
+    descp: A list of Tensor objects. a list of tensors dtypes A list of data types
+      that inserted values should adhere to.
+inputs:
+  optional:
+  - capacity
+  - memory_limit
+  - container
+  - shared_name
+  - name
+  required:
+  - key
+  - indices
+  - values
+  - dtypes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MapStage
+outputs:
+- The created Operation.
+package: tensorflow
+target: MapStage
+title: tf.raw_ops.MapStage
+version: 2.3.0

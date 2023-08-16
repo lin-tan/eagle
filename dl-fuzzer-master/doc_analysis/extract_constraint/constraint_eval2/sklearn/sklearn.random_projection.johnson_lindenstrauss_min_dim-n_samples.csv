@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int or numpy array of int greater than 0, Number of samples. If an array is given, it will compute a safe number of components array-wise.",,prim_dtype,dtype(int),,1
+,"int or numpy array of int greater than 0, Number of samples. If an array is given, it will compute a safe number of components array-wise.",,shape,"ndim(0, 1)",,1
+,"int or numpy array of int greater than 0, Number of samples. If an array is given, it will compute a safe number of components array-wise.",,validvalue,"range([0,inf))",,1

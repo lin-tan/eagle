@@ -1,0 +1,67 @@
+constraints:
+  overwrite:
+    default: 'False'
+    descp: Whether to overwrite destination file if already exists.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to overwrite destination file if already exists
+    normalized_docdtype: D_TYPE, optional
+  path:
+    default: None
+    descp: Destination path to store downloaded file. By default stores to the current
+      directory with same name as in url.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Destination path to store downloaded file
+    - By default stores to the current directory with same name as in PARAM
+    normalized_docdtype: D_TYPE, optional
+  retries:
+    default: '5'
+    descp: The number of times to attempt the download in case of failure or non 200
+      return codes
+    doc_dtype: integer, default 5
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The number of times to attempt the download in case of failure or non CONSTANT_NUM
+      return codes
+    normalized_docdtype: D_TYPE, default CONSTANT_NUM
+  sha1_hash:
+    default: None
+    descp: Expected sha1 hash in hexadecimal digits. Will ignore existing file when
+      hash is specified but doesn't match.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Expected sha1 hash in hexadecimal digits
+    - Will ignore existing file when hash is specified but doesn t match
+    normalized_docdtype: D_TYPE, optional
+  url:
+    descp: URL to download
+    doc_dtype: str
+    normalized_descp:
+    - URL to download
+    normalized_docdtype: ONE_WORD D_TYPE
+  verify_ssl:
+    default: 'True'
+    descp: Verify SSL certificates.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Verify SSL certificates
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+inputs:
+  optional:
+  - path
+  - overwrite
+  - sha1_hash
+  - retries
+  - verify_ssl
+  required:
+  - url
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/gluon/utils/index.html#mxnet.gluon.utils.download
+package: mxnet
+target: download
+title: mxnet.gluon.utils.download
+version: 1.6.0

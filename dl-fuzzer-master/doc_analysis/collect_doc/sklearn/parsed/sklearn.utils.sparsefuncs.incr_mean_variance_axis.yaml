@@ -1,0 +1,17 @@
+constraints:
+  X: {descp: 'CSR or CSC sparse matrix, shape (n_samples, n_features) Input data.'}
+  axis: {descp: int (either 0 or 1) Axis along which the axis should be computed.}
+  last_mean: {descp: 'float array with shape (n_features,) Array of feature-wise means
+      to update with the new data X.'}
+  last_n: {descp: 'int with shape (n_features,) Number of samples seen so far, excluded
+      X.'}
+  last_var: {descp: 'float array with shape (n_features,) Array of feature-wise var
+      to update with the new data X.'}
+inputs:
+  optional: []
+  required: [X, axis, last_mean, last_var, last_n]
+link: ''
+package: sklearn
+target: incr_mean_variance_axis
+title: sklearn.utils.sparsefuncs.incr_mean_variance_axis
+version: 0.24.2

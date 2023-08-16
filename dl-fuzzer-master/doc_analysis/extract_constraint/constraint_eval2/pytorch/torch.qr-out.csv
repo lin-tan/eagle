@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple,"tuple of Q and R tensors satisfying `input = torch.matmul(Q, R)`. The dimensions of Q and R are (*, m, k)  and (*, k, n)  respectively, where k =  min(m, n)  if `some:` is `True` and k = m  otherwise.",None,nonprim_dtype,structure(tuple),,1

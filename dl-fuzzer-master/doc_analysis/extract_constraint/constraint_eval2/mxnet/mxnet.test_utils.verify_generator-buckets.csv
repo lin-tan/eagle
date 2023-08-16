@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list of tuple, list of number","The buckets to run the chi-square the test. Make sure that the buckets coverthe whole range of the distribution. Also, the buckets must be in ascending order and have no intersection   ",,prim_dtype,dtype(int),,1
+"list of tuple, list of number","The buckets to run the chi-square the test. Make sure that the buckets coverthe whole range of the distribution. Also, the buckets must be in ascending order and have no intersection   ",,nonprim_dtype,"structure(list(int), list(tuple))",,1
+"list of tuple, list of number","The buckets to run the chi-square the test. Make sure that the buckets coverthe whole range of the distribution. Also, the buckets must be in ascending order and have no intersection   ",,shape,ndim(1),,1

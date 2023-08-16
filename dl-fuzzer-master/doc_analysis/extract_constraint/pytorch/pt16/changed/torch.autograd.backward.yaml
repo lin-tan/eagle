@@ -1,0 +1,66 @@
+constraints:
+  create_graph:
+    default: 'False'
+    descp: If `True`, graph of the derivative will be constructed, allowing to compute
+      higher order derivative products. Defaults to `False`.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  grad_tensors:
+    default: None
+    descp: The "vector" in the Jacobian-vector product, usually gradients w.r.t. each
+      element of corresponding tensors. None values can be specified for scalar Tensors
+      or ones that don't require grad. If a None value would be acceptable for all
+      grad_tensors, then this argument is optional.
+    doc_dtype:
+    - sequence of (Tensor or None)
+    ndim:
+    - '1'
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor],None]
+    structure:
+    - sequence(torch.tensor)
+    tensor_t:
+    - torch.tensor
+  grad_variables:
+    default: None
+    descp: ''
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor],None]
+  retain_graph:
+    default: None
+    descp: If `False`, the graph used to compute the grad will be freed. Note that
+      in nearly all cases setting this option to `True` is not needed and often can
+      be worked around in a much more efficient way. Defaults to the value of `create_graph`.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: Optional[bool]
+  tensors:
+    descp: Tensors of which the derivative will be computed.
+    doc_dtype:
+    - sequence of Tensor
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor]]
+    structure:
+    - sequence(torch.tensor)
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - grad_tensors
+  - retain_graph
+  - create_graph
+  - grad_variables
+  required:
+  - tensors
+link: https://pytorch.org/docs/1.6.0/autograd.html#torch.autograd.backward
+package: torch
+ret_type: None
+target: backward
+title: torch.autograd.backward
+version: 1.6.0

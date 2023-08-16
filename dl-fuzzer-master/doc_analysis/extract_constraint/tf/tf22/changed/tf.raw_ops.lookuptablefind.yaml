@@ -1,0 +1,34 @@
+constraints:
+  default_value:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  keys:
+    descp: A Tensor. Any shape. Keys to look up.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  table_handle:
+    descp: A Tensor of type mutable string. Handle to the table.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - keys
+  - default_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LookupTableFind
+outputs:
+- A Tensor. Has the same type as default_value.
+package: tensorflow
+target: LookupTableFind
+title: tf.raw_ops.LookupTableFind
+version: 2.2.0

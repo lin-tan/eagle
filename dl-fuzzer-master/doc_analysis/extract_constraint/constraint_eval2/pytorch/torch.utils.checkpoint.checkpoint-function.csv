@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"describes what to run in the forward pass of the model or part of the model. It should also know how to handle the inputs passed as the tuple. For example, in LSTM, if user passes `(activation, hidden)`, `function` should correctly use the first input as `activation` and the second input as `hidden`",,prim_dtype,dtype(callable),,1

@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  s0:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  s1:
+    descp: A Tensor. Must have the same type as s0.
+inputs:
+  optional:
+  - name
+  required:
+  - s0
+  - s1
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BroadcastArgs
+outputs:
+- A Tensor. Has the same type as s0.
+package: tensorflow
+target: BroadcastArgs
+title: tf.raw_ops.BroadcastArgs
+version: 2.2.0

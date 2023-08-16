@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"dict, 'balanced' or None If 'balanced', class weights will be given by ``n_samples / (n_classes * np.bincount(y))``. If a dictionary is given, keys are classes and values are corresponding class weights. If None is given, the class weights will be uniform.",,prim_dtype,dtype(numeric),,1
+,"dict, 'balanced' or None If 'balanced', class weights will be given by ``n_samples / (n_classes * np.bincount(y))``. If a dictionary is given, keys are classes and values are corresponding class weights. If None is given, the class weights will be uniform.",,nonprim_dtype,structure(dictionary),,1
+,"dict, 'balanced' or None If 'balanced', class weights will be given by ``n_samples / (n_classes * np.bincount(y))``. If a dictionary is given, keys are classes and values are corresponding class weights. If None is given, the class weights will be uniform.",,shape,"shape([&y]), ndim(1)",,1

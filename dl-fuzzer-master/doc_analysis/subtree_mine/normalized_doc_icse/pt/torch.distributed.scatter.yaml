@@ -1,0 +1,53 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether this op should be an async op
+    normalized_docdtype: D_TYPE optional
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup optional
+  scatter_list:
+    default: None
+    descp: List of tensors to scatter (default is None, must be specified on the source
+      rank)
+    doc_dtype: list[Tensor]
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of D_STRUCTURE to scatter BSTR
+    normalized_docdtype: D_STRUCTURE BSTR
+  src:
+    default: '0'
+    descp: Source rank (default is 0)
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Source rank BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  tensor:
+    descp: Output tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - Output D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - scatter_list
+  - src
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.scatter
+package: torch
+target: scatter
+title: torch.distributed.scatter
+version: 1.5.0

@@ -1,0 +1,16 @@
+sklearn.utils.estimator_checks.parametrize_with_checks = parametrize_with_checks(estimators)
+    Pytest specific decorator for parametrizing estimator checks.
+    
+    The `id` of each test is set to be a pprint version of the estimator
+    and the name of the check with its keyword arguments.
+    
+    Read more in the :ref:`User Guide<rolling_your_own_estimator>`.
+    
+    Parameters
+    ----------
+    estimators : list of estimators objects or classes
+        Estimators to generated checks for.
+    
+    Returns
+    -------
+    decorator : `pytest.mark.parametrize`

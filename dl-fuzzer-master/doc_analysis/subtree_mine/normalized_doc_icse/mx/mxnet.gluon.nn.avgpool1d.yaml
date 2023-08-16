@@ -1,0 +1,78 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  ceil_mode:
+    default: 'False'
+    descp: When True, will use ceil instead of floor to compute the output shape.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - When CONSTANT_BOOL will use ceil instead of floor to compute the output shape
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+  count_include_pad:
+    default: 'True'
+    descp: When 'False', will exclude padding elements when computing the average
+      value.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - When CONSTANT_BOOL will exclude PARAM elements when computing the average value
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+  layout:
+    default: NCW
+    descp: Dimension ordering of data and out ('NCW' or 'NWC'). 'N', 'C', 'W' stands
+      for batch, channel, and width (time) dimensions respectively. padding is applied
+      on 'W' dimension.
+    doc_dtype: str, default 'NCW'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Dimension ordering of data and out QSTR
+    - QSTR stands for batch channel and width BSTR dimensions respectively
+    - PARAM is applied on QSTR dimension
+    normalized_docdtype: D_TYPE default QSTR
+  padding:
+    default: '0'
+    descp: If padding is non-zero, then the input is implicitly zero-padded on both
+      sides for padding number of points.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - If padding is non zero then the input is implicitly zero padded on both sides
+      for padding number of points
+    normalized_docdtype: ONE_WORD D_TYPE
+  pool_size:
+    default: '2'
+    descp: Size of the average pooling windows.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Size of the average pooling windows
+    normalized_docdtype: ONE_WORD D_TYPE
+  strides:
+    default: None
+    descp: Factor by which to downscale. E.g. 2 will halve the input size. If None,
+      it will default to pool_size.
+    doc_dtype: int, or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Factor by which to downscale
+    - E g
+    - CONSTANT_NUM will halve the input size
+    - If None it will default to PARAM
+    normalized_docdtype: D_TYPE or None
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - layout
+  - ceil_mode
+  - count_include_pad
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.AvgPool1D
+package: mxnet
+target: AvgPool1D
+title: mxnet.gluon.nn.AvgPool1D
+version: 1.6.0

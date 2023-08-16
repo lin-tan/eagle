@@ -1,0 +1,41 @@
+constraints:
+  dst:
+    descp: Destination rank.
+    doc_dtype: int
+    normalized_descp:
+    - Destination rank
+    normalized_docdtype: ONE_WORD D_TYPE
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The process group to work on
+    normalized_docdtype: ProcessGroup optional
+  tag:
+    default: '0'
+    descp: Tag to match send with remote recv
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Tag to match send with remote recv
+    normalized_docdtype: D_TYPE optional
+  tensor:
+    descp: Tensor to send.
+    doc_dtype: Tensor
+    normalized_descp:
+    - D_STRUCTURE to send
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - group
+  - tag
+  required:
+  - tensor
+  - dst
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.send
+package: torch
+target: send
+title: torch.distributed.send
+version: 1.5.0

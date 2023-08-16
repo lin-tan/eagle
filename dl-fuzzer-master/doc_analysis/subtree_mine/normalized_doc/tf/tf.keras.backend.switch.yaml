@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.backend.switch
+constraints:
+  condition:
+    descp: tensor (`int` or `bool`).
+    normalized_descp:
+    - D_STRUCTURE BSTR
+  else_expression:
+    descp: either a tensor, or a callable that returns a tensor.
+    normalized_descp:
+    - either a D_STRUCTURE, or a callable that returns a D_STRUCTURE
+  then_expression:
+    descp: either a tensor, or a callable that returns a tensor.
+    normalized_descp:
+    - either a D_STRUCTURE, or a callable that returns a D_STRUCTURE
+exceptions:
+- ValueError: If rank of `condition` is greater than rank of expressions.
+inputs:
+  optional: []
+  required:
+  - condition
+  - then_expression
+  - else_expression
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/switch
+outputs: The selected tensor.
+package: tensorflow
+target: switch
+title: tf.keras.backend.switch
+version: 2.1.0

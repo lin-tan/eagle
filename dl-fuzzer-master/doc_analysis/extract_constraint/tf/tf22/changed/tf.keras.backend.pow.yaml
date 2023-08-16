@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.backend.pow
+constraints:
+  a:
+    descp: Python integer.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  x:
+    descp: Tensor or variable.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+  - a
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/pow
+outputs:
+- A tensor.
+package: tensorflow
+target: pow
+title: tf.keras.backend.pow
+version: 2.2.0

@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.layers.Average
+constraints:
+  '**kwargs':
+    default: null
+    descp: standard layer keyword arguments.
+exceptions:
+- ValueError: If there is a shape mismatch between the inputs and the shapes cannot
+    be broadcasted to match.
+inputs:
+  optional:
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/Average
+package: tensorflow
+target: Average
+title: tf.keras.layers.Average
+version: 2.2.0

@@ -1,0 +1,77 @@
+constraints:
+  X:
+    descp: array-like of shape (n_samples, n_features) Input data.
+  bandwidth:
+    default: None
+    descp: float, optional Kernel bandwidth. If bandwidth is not given, it is determined
+      using a heuristic based on the median of all pairwise distances. This will take
+      quadratic time in the number of samples. The sklearn.cluster.estimate_bandwidth
+      function can be used to do this more efficiently.
+    dtype:
+    - float
+  bin_seeding:
+    default: 'False'
+    descp: boolean, default=False If true, initial kernel locations are not locations
+      of all points, but rather the location of the discretized version of points,
+      where points are binned onto a grid whose coarseness corresponds to the bandwidth.
+      Setting this option to True will speed up the algorithm because fewer seeds
+      will be initialized. Ignored if seeds argument is not None.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  cluster_all:
+    default: 'True'
+    descp: boolean, default True If true, then all points are clustered, even those
+      orphans that are not within any kernel. Orphans are assigned to the nearest
+      kernel. If false, then orphans are given cluster label -1.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  max_iter:
+    default: '300'
+    descp: int, default 300 Maximum number of iterations, per seed point before the
+      clustering operation terminates (for that seed point), if has not converged
+      yet.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  min_bin_freq:
+    default: '1'
+    descp: int, default=1 To speed up the algorithm, accept only those bins with at
+      least min_bin_freq points as seeds.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n_jobs:
+    default: None
+    descp: 'int or None, optional (default=None) The number of jobs to use for the
+      computation. This works by computing each of the n_init runs in parallel. ``None``
+      means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using
+      all processors. See :term:`Glossary <n_jobs>` for more details. '
+    dtype:
+    - int
+  seeds:
+    default: None
+    descp: array-like of shape (n_seeds, n_features) or None Point used as initial
+      kernel locations. If None and bin_seeding=False, each data point is used as
+      a seed. If None and bin_seeding=True, see bin_seeding.
+inputs:
+  optional:
+  - bandwidth
+  - seeds
+  - bin_seeding
+  - min_bin_freq
+  - cluster_all
+  - max_iter
+  - n_jobs
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: mean_shift
+title: sklearn.cluster.mean_shift
+version: 0.24.X

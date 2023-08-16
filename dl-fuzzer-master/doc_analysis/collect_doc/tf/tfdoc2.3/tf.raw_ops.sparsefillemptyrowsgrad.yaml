@@ -1,0 +1,23 @@
+constraints:
+  grad_values:
+    descp: A Tensor. 1-D. The gradients from backprop.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reverse_index_map:
+    descp: A Tensor of type int64. 1-D. The reverse index map from SparseFillEmptyRows.
+inputs:
+  optional:
+  - name
+  required:
+  - reverse_index_map
+  - grad_values
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseFillEmptyRowsGrad
+outputs:
+- A tuple of Tensor objects (d_values, d_default_value).
+- d_values: A Tensor. Has the same type as grad_values.
+- d_default_value: A Tensor. Has the same type as grad_values.
+package: tensorflow
+target: SparseFillEmptyRowsGrad
+title: tf.raw_ops.SparseFillEmptyRowsGrad
+version: 2.3.0

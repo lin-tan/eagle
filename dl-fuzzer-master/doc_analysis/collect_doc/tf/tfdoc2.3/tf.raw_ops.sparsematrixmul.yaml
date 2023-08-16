@@ -1,0 +1,21 @@
+constraints:
+  a:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+  b:
+    descp: A Tensor. A dense tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - b
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseMatrixMul
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixMul
+title: tf.raw_ops.SparseMatrixMul
+version: 2.3.0

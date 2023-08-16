@@ -1,0 +1,67 @@
+aliases:
+- tf.compat.v1.io.encode_proto
+constraints:
+  descriptor_source:
+    default: local://
+    descp: An optional string. Defaults to "local://".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  field_names:
+    descp: A list of strings. List of strings containing proto field names.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list(list)
+    - list(tf.string)
+  message_type:
+    descp: A string. Name of the proto message type to decode.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sizes:
+    descp: A Tensor of type int32. Tensor of int32 with shape [batch_shape, len(field_names)].
+    dtype:
+    - tf.int32
+    ndim:
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[batch_shape,len:&field_names]'
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: A list of Tensor objects. List of tensors containing values for the corresponding
+      field.
+    structure:
+    - list(tf.tensor)
+dependency:
+- batch_shape
+inputs:
+  optional:
+  - descriptor_source
+  - name
+  required:
+  - sizes
+  - values
+  - field_names
+  - message_type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/io/encode_proto
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: encode_proto
+title: tf.io.encode_proto
+version: 2.2.0

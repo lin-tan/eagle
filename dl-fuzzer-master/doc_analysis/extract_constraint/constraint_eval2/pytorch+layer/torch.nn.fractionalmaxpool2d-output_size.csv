@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"the target output size of the image of the form oH x oW. Can be a tuple (oH, oW) or a single number oH for a square image oH x oH",None,prim_dtype,dtype(int),,1
+,"the target output size of the image of the form oH x oW. Can be a tuple (oH, oW) or a single number oH for a square image oH x oH",None,nonprim_dtype,"structure(tuple, tuple:(oh,ow))",,1
+,"the target output size of the image of the form oH x oW. Can be a tuple (oH, oW) or a single number oH for a square image oH x oH",None,shape,"shape([2]), ndim(0, 1)",,1
+,"the target output size of the image of the form oH x oW. Can be a tuple (oH, oW) or a single number oH for a square image oH x oH",None,validvalue,"range([0,inf))",,1

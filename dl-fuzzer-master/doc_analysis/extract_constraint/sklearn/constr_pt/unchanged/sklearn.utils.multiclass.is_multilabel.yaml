@@ -1,0 +1,12 @@
+constraints:
+  y:
+    descp: numpy array of shape [n_samples] Target values.
+inputs:
+  optional: []
+  required:
+  - y
+link: ''
+package: scikit-learn
+target: is_multilabel
+title: sklearn.utils.multiclass.is_multilabel
+version: 0.24.X

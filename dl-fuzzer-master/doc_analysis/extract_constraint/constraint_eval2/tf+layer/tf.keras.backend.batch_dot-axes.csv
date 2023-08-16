@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Tuple or list of integers with target dimensions, or single integer. The sizes of `x.shape[axes[0]]` and `y.shape[axes[1]]` should be equal.",None,prim_dtype,dtype(int),,1
+,"Tuple or list of integers with target dimensions, or single integer. The sizes of `x.shape[axes[0]]` and `y.shape[axes[1]]` should be equal.",None,nonprim_dtype,"structure(list(int), tuple(int))",,1
+,"Tuple or list of integers with target dimensions, or single integer. The sizes of `x.shape[axes[0]]` and `y.shape[axes[1]]` should be equal.",None,shape,"ndim(0, 1)",,1

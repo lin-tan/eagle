@@ -1,0 +1,49 @@
+constraints:
+  Tcomplex:
+    default: tf.dtypes.complex64
+    descp: 'An optional tf.DType from: tf.complex64, tf.complex128. Defaults to tf.complex64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  fft_length:
+    descp: A Tensor of type int32. An int32 tensor of shape [2]. The FFT length for
+      each dimension.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. A float32
+      tensor.'
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Tcomplex
+  - name
+  required:
+  - input
+  - fft_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RFFT2D
+outputs:
+- A Tensor of type Tcomplex.
+package: tensorflow
+target: RFFT2D
+title: tf.raw_ops.RFFT2D
+version: 2.3.0

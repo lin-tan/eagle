@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of (int, int)","Size of the crop formatted as (width, height).",,prim_dtype,dtype(int),,1
+"tuple of (int, int)","Size of the crop formatted as (width, height).",,nonprim_dtype,"structure(tuple(int), tuple(int):(width,height))",,1
+"tuple of (int, int)","Size of the crop formatted as (width, height).",,shape,"shape([2]), ndim(1)",,1

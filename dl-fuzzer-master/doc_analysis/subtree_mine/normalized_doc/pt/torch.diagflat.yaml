@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  offset:
+    default: '0'
+    descp: 'the diagonal to consider. Default: 0 (main diagonal).'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the diagonal to consider
+    - Default CONSTANT_NUM BSTR
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - offset
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.diagflat
+package: torch
+ret_type: Tensor
+target: diagflat
+title: torch.diagflat
+version: 1.5.0

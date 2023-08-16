@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `TensorShape` representing the shape of this tensor, a`TensorShapeProto`, a list, a tuple, or None.",,prim_dtype,dtype(int),,1
+,"A `TensorShape` representing the shape of this tensor, a`TensorShapeProto`, a list, a tuple, or None.",,shape,ndim(1),,1
+,"A `TensorShape` representing the shape of this tensor, a`TensorShapeProto`, a list, a tuple, or None.",,validvalue,"range([0,inf))",,1

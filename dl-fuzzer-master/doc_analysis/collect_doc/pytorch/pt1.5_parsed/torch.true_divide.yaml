@@ -1,0 +1,21 @@
+constraints:
+  dividend:
+    descp: the dividend
+    doc_dtype:
+    - Tensor
+  divisor:
+    descp: the divisor
+    doc_dtype:
+    - Tensor
+    - Scalar
+inputs:
+  optional: []
+  required:
+  - dividend
+  - divisor
+link: https://pytorch.org/docs/stable/torch.html#torch.true_divide
+package: torch
+ret_type: Tensor
+target: true_divide
+title: torch.true_divide
+version: 1.5.0

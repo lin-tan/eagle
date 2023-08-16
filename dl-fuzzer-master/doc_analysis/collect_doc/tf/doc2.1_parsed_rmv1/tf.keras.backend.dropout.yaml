@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.keras.backend.dropout
+constraints:
+  level:
+    descp: fraction of the entries in the tensor that will be set to 0.
+  noise_shape:
+    default: None
+    descp: shape for randomly generated keep/drop flags, must be broadcastable to
+      the shape of `x`
+  seed:
+    default: None
+    descp: random seed to ensure determinism.
+  x:
+    descp: tensor
+inputs:
+  optional:
+  - noise_shape
+  - seed
+  required:
+  - x
+  - level
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/dropout
+outputs: A tensor.
+package: tensorflow
+target: dropout
+title: tf.keras.backend.dropout
+version: 2.1.0

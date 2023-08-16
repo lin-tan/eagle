@@ -1,0 +1,45 @@
+constraints:
+  data:
+    descp: A list of Tensor objects. N tensors to save.
+    structure:
+    - list(tf.tensor)
+  filename:
+    descp: A Tensor of type string. Must have a single element. The name of the file
+      to which we write the tensor.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor_names:
+    descp: A Tensor of type string. Shape [N]. The names of the tensors to be saved.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    shape:
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- n
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+  - tensor_names
+  - data
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Save
+outputs:
+- The created Operation.
+package: tensorflow
+target: Save
+title: tf.raw_ops.Save
+version: 2.3.0

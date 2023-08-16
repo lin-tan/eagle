@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.backend.square
+constraints:
+  x:
+    descp: Tensor or variable.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/square
+outputs:
+- A tensor.
+package: tensorflow
+target: square
+title: tf.keras.backend.square
+version: 2.2.0

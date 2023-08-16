@@ -1,0 +1,36 @@
+constraints:
+  dim:
+    descp: the dimension to reduce. If `None`, the argmax of the flattened input is
+      returned.
+    doc_dtype: int
+    normalized_descp:
+    - the dimension to reduce
+    - If QSTR , the argmax of the flattened PARAM is returned
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not. Ignored if `dim=None`.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether the output D_STRUCTURE has PARAM retained or not
+    - Ignored if PARAM None
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - keepdim
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.argmax
+package: torch
+ret_type: LongTensor
+target: argmax
+title: torch.argmax
+version: 1.5.0

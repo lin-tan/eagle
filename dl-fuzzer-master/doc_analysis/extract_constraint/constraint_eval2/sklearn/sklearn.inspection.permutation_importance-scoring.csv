@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"string, callable or None, default=None Scorer to use. It can be a single string (see :ref:`scoring_parameter`) or a callable (see :ref:`scoring`). If None, the estimator's default scorer is used.",None,prim_dtype,dtype(string),,1
+,"string, callable or None, default=None Scorer to use. It can be a single string (see :ref:`scoring_parameter`) or a callable (see :ref:`scoring`). If None, the estimator's default scorer is used.",None,shape,ndim(0),,1

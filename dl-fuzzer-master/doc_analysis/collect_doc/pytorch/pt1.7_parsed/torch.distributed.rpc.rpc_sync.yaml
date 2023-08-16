@@ -1,0 +1,43 @@
+constraints:
+  args:
+    default: None
+    descp: the argument tuple for the `func` invocation.
+    doc_dtype:
+    - tuple
+  func:
+    descp: a callable function, such as Python callables, builtin operators (e.g.
+      `add()`) and annotated TorchScript functions.
+    doc_dtype:
+    - callable
+  kwargs:
+    default: None
+    descp: is a dictionary of keyword arguments for the `func` invocation.
+    doc_dtype:
+    - dict
+  timeout:
+    default: '-1.0'
+    descp: timeout in seconds to use for this RPC. If the RPC does not complete in
+      this amount of time, an exception indicating it has timed out will be raised.
+      A value of 0 indicates an infinite timeout, i.e. a timeout error will never
+      be raised. If not provided, the default value set during initialization or with
+      `_set_rpc_timeout` is used.
+    doc_dtype:
+    - float
+  to:
+    descp: id or name of the destination worker.
+    doc_dtype:
+    - str
+    - WorkerInfo
+inputs:
+  optional:
+  - args
+  - kwargs
+  - timeout
+  required:
+  - to
+  - func
+link: https://pytorch.org/docs/1.7.0/rpc.html#torch.distributed.rpc.rpc_sync
+package: torch
+target: rpc_sync
+title: torch.distributed.rpc.rpc_sync
+version: 1.7.0

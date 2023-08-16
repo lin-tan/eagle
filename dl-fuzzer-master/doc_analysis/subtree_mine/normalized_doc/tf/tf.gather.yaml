@@ -1,0 +1,62 @@
+constraints:
+  axis:
+    default: None
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. The`axis`
+      in `params` to gather `indices` from. Must be greater than or equal to `batch_dims`.  Defaults
+      to the first non-batch dimension. Supports negative indexes.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - The QSTR in PARAM to gather PARAM from
+    - Must be greater than or equal to PARAM
+    - Defaults to the first non batch dimension
+    - Supports negative indexes
+  batch_dims:
+    default: '0'
+    descp: An `integer`.  The number of batch dimensions.  Must be less than `rank(indices)`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE
+    - The number of batch dimensions
+    - Must be less than rank BSTR
+  indices:
+    descp: 'The index `Tensor`.  Must be one of the following types: `int32`,`int64`.
+      Must be in range `[0, params.shape[axis])`.'
+    normalized_descp:
+    - The index D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - Must be in range CONSTANT_NUM, PARAM shape BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  params:
+    descp: The `Tensor` from which to gather values. Must be at least rank`axis +
+      1`.
+    normalized_descp:
+    - The D_STRUCTURE from which to gather values
+    - Must be at least rank PARAM CONSTANT_NUM
+  validate_indices:
+    default: None
+    descp: Deprecated, does nothing.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Deprecated, does nothing
+inputs:
+  optional:
+  - validate_indices
+  - axis
+  - batch_dims
+  - name
+  required:
+  - params
+  - indices
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/gather
+outputs: A `Tensor`. Has the same type as `params`.
+package: tensorflow
+target: gather
+title: tf.gather
+version: 2.1.0

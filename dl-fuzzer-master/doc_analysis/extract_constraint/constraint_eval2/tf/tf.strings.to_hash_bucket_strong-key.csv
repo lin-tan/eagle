@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A list of `ints`. The key used to seed the hash function, passed as a list of two uint64 elements.",,prim_dtype,"dtype(int, tf.uint64)",,1
+,"A list of `ints`. The key used to seed the hash function, passed as a list of two uint64 elements.",,nonprim_dtype,"structure(list, list(int), list(tf.uint64))",,1
+,"A list of `ints`. The key used to seed the hash function, passed as a list of two uint64 elements.",,shape,ndim(1),,1

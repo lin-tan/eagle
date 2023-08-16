@@ -1,0 +1,34 @@
+constraints:
+  labels:
+    default: None
+    descp: array-like of shape (n_classes), default=None List of labels to index the
+      matrix. This may be used to reorder or select a subset of labels. If ``None``
+      is given, those that appear at least once in ``y_true`` or ``y_pred`` are used
+      in sorted order.
+  normalize:
+    default: None
+    descp: '{''true'', ''pred'', ''all''}, default=None Normalizes confusion matrix
+      over the true (rows), predicted (columns) conditions or all the population.
+      If None, confusion matrix will not be normalized.'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+  y_pred:
+    descp: array-like of shape (n_samples,) Estimated targets as returned by a classifier.
+  y_true:
+    descp: array-like of shape (n_samples,) Ground truth (correct) target values.
+inputs:
+  optional:
+  - labels
+  - sample_weight
+  - normalize
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: confusion_matrix
+title: sklearn.metrics.confusion_matrix
+version: 0.24.X

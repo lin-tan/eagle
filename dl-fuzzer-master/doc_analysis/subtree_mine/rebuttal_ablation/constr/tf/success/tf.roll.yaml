@@ -1,0 +1,121 @@
+aliases:
+- tf.compat.v1.manip.roll
+- tf.compat.v1.roll
+constraints:
+  axis:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. Dimension
+      must be 0-D or 1-D. `axis[i]` specifies the dimension that the shift`shift[i]`
+      should occur. If the same axis is referenced more than once, the total shift
+      for that axis will be the sum of all the shifts that belong to that axis.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - '[i]'
+    ndim:
+    - '0'
+    - '1'
+    - '>=0'
+    - '>=1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    - '[i]'
+    shape:
+    - '[0]'
+    - '[1]'
+    - '[2]'
+    - '[i]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shift:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. Dimension
+      must be 0-D or 1-D. `shift[i]` specifies the number of places by which elements
+      are shifted positively (towards larger indices) along the dimension specified
+      by `axis[i]`. Negative shifts will roll the elements in the opposite direction.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - (towards
+    - '[i]'
+    - indices)
+    - larger
+    ndim:
+    - '0'
+    - '1'
+    - '>=0'
+    - '>=1'
+    range:
+    - (towards_larger_indices)
+    - '[0,1]'
+    - '[0,inf)'
+    - '[i]'
+    shape:
+    - '[0]'
+    - '[1]'
+    - '[2]'
+    - '[i]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shift
+  - axis
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/roll
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: roll
+title: tf.roll
+version: 2.1.0

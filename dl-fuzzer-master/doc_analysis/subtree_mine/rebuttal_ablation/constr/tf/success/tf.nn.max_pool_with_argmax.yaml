@@ -1,0 +1,231 @@
+constraints:
+  data_format:
+    default: NHWC
+    descp: An optional `string`, must be set to `"NHWC"`. Defaults to`"NHWC"`. Specify
+      the data format of the input and output data.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  include_batch_in_index:
+    default: 'False'
+    descp: An optional `boolean`. Defaults to `False`. Whether to include batch dimension
+      in flattened index of `argmax`.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - argmax
+    - boolean
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[argmax]'
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`,`int32`,
+      `uint8`, `int16`, `int8`, `int64`, `bfloat16`, `uint16`, `half`,`uint32`, `uint64`.
+      4-D with shape `[batch, height, width, channels]`.  Input to pool over.'
+    dtype:
+    - int
+    - numeric
+    - tf.bfloat16
+    - tf.bool
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int16
+    - tf.int32
+    - tf.int64
+    - tf.int8
+    - tf.string
+    - tf.uint16
+    - tf.uint32
+    - tf.uint64
+    - tf.uint8
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[4]'
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  ksize:
+    descp: An int or list of `ints` that has length `1`, `2` or `4`. The size of the
+      window for each dimension of the input tensor.
+    dtype:
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[2]'
+    - '[4]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  output_dtype:
+    default: tf.dtypes.int64
+    descp: 'An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int64`.
+      The dtype of the returned argmax tensor.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - int64
+    - tf.DType
+    - tf.dtypes
+    - tf.int32
+    - tf.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  padding:
+    descp: 'A `string` from: `"SAME", "VALID"`. The type of padding algorithm to use.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[same]'
+    - '[valid]'
+  strides:
+    descp: An int or list of `ints` that has length `1`, `2` or `4`. The stride of
+      the sliding window for each dimension of the input tensor.
+    dtype:
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[2]'
+    - '[4]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - data_format
+  - output_dtype
+  - include_batch_in_index
+  - name
+  required:
+  - input
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/max_pool_with_argmax
+outputs: A tuple of `Tensor` objects (output, argmax).
+package: tensorflow
+target: max_pool_with_argmax
+title: tf.nn.max_pool_with_argmax
+version: 2.1.0

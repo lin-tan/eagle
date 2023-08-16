@@ -1,0 +1,75 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to the pooling operator, a 4D Feature maps
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the pooling operator, a CONSTANT_NUM-D Feature maps
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  pooled_size:
+    default: _Null
+    descp: RROI align output shape (h,w)
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - RROI align output shape BSTR
+    normalized_docdtype: Shape BSTR, required
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Bounding box coordinates, a CONSTANT_NUM-D D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  sampling_ratio:
+    default: _Null
+    descp: Optional sampling ratio of RROI align, using adaptive size by default.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Optional sampling ratio of RROI align, using adaptive size by default
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or width) to raw image height (or width).
+      Equals the reciprocal of total stride in convolutional layers
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Ratio of input feature map height BSTR
+    - Equals the reciprocal of total stride in convolutional layers
+    normalized_docdtype: D_TYPE, required
+inputs:
+  optional:
+  - data
+  - rois
+  - pooled_size
+  - spatial_scale
+  - sampling_ratio
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.RROIAlign
+package: mxnet
+target: RROIAlign
+title: mxnet.ndarray.contrib.RROIAlign
+version: 1.6.0

@@ -1,0 +1,45 @@
+aliases:
+- tf.compat.v1.py_function
+constraints:
+  Tout:
+    descp: A list or tuple of tensorflow data types or a single tensorflow data type
+      if there is only one, indicating what `func` returns; an empty list if no value
+      is returned (i.e., if the return value is `None`).
+    normalized_descp:
+    - A D_STRUCTURE of tensorflow data types or a single tensorflow data type if there
+      is only one, indicating what PARAM returns an empty D_STRUCTURE if no value
+      is returned i e , if the return value is QSTR
+  func:
+    descp: A Python function which accepts a list of `Tensor` objects having element
+      types that match the corresponding `tf.Tensor` objects in `inp`and returns a
+      list of `Tensor` objects (or a single `Tensor`, or `None`) having element types
+      that match the corresponding values in `Tout`.
+    normalized_descp:
+    - A Python function which accepts a D_STRUCTURE of D_STRUCTURE objects having
+      element types that match the corresponding D_STRUCTURE objects in PARAMand returns
+      a D_STRUCTURE of D_STRUCTURE objects or a single D_STRUCTURE, or QSTR having
+      element types that match the corresponding values in PARAM
+  inp:
+    descp: A list of `Tensor` objects.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE objects
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - func
+  - inp
+  - Tout
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/py_function
+outputs: A list of `Tensor` or a single `Tensor` which `func` computes; an empty list
+  if `func` returns None.
+package: tensorflow
+target: py_function
+title: tf.py_function
+version: 2.1.0

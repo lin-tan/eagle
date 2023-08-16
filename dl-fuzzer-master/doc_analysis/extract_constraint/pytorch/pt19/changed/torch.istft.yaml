@@ -1,0 +1,124 @@
+constraints:
+  center:
+    default: 'True'
+    descp: 'Whether `input` was padded on both sides so that the t -th frame is centered
+      at time t  times hop _length . (Default: `True`)'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  hop_length:
+    default: None
+    descp: 'The distance between neighboring sliding window frames. (Default: `n_fft
+      // 4`)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+    sig_dtype: Optional[int]
+  input:
+    descp: The input tensor. Expected to be output of `stft()`, can either be complex
+      (`channel`, `fft_size`, `n_frame`), or real (`channel`, `fft_size`, `n_frame`,
+      2) where the `channel` dimension is optional.
+    doc_dtype:
+    - Tensor
+    sig_dtype: torch.Tensor
+    tensor_t:
+    - torch.tensor
+  length:
+    default: None
+    descp: 'The amount to trim the signal by (i.e. the original signal length). (Default:
+      whole signal)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+    sig_dtype: Optional[int]
+  n_fft:
+    descp: Size of Fourier transform
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    sig_dtype: int
+  normalized:
+    default: 'False'
+    descp: 'Whether the STFT was normalized. (Default: `False`)'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  onesided:
+    default: None
+    descp: 'Whether the STFT was onesided. (Default: `True` if `n_fft != fft_size`
+      in the input size)'
+    doc_dtype:
+    - Optional[bool]
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: Optional[bool]
+  return_complex:
+    default: 'False'
+    descp: 'Whether the output should be complex, or if the input should be assumed
+      to derive from a real signal and window. Note that this is incompatible with
+      `onesided=True`. (Default: `False`)'
+    doc_dtype:
+    - Optional[bool]
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  win_length:
+    default: None
+    descp: 'The size of window frame and STFT filter. (Default: `n_fft`)'
+    doc_dtype:
+    - Optional[int]
+    dtype:
+    - numeric
+    range:
+    - '[0,inf)'
+    sig_dtype: Optional[int]
+  window:
+    default: None
+    descp: 'The optional window function. (Default: `torch.ones(win_length)`)'
+    doc_dtype:
+    - Optional[torch.Tensor]
+    dtype:
+    - callable
+    sig_dtype: Optional[torch.Tensor]
+inputs:
+  optional:
+  - hop_length
+  - win_length
+  - window
+  - center
+  - normalized
+  - onesided
+  - length
+  - return_complex
+  required:
+  - input
+  - n_fft
+link: https://pytorch.org/docs/1.7.0/generated/torch.istft.html#torch.istft#torch.istft
+package: torch
+ret_type: torch.Tensor
+target: istft
+title: torch.istft
+version: 1.9.0

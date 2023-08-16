@@ -1,0 +1,55 @@
+constraints:
+  inputs:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. 3-D, shape:
+      (max_time x batch_size x num_classes), the logits.'
+    ndim:
+    - '1'
+    shape:
+    - '[max_time_xbatch_size_xnum_classes]'
+    tensor_t:
+    - tf.tensor
+  merge_repeated:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, merge repeated classes in
+      output.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sequence_length:
+    descp: A Tensor of type int32. A vector containing sequence lengths, size (batch_size).
+    dtype:
+    - tf.int32
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch_size_x
+- max_time_x
+- num_classes
+inputs:
+  optional:
+  - merge_repeated
+  - name
+  required:
+  - inputs
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CTCGreedyDecoder
+outputs:
+- A tuple of Tensor objects (decoded_indices, decoded_values, decoded_shape, log_probability).
+- decoded_indices: A Tensor of type int64.
+- decoded_values: A Tensor of type int64.
+- decoded_shape: A Tensor of type int64.
+- log_probability: A Tensor. Has the same type as inputs.
+package: tensorflow
+target: CTCGreedyDecoder
+title: tf.raw_ops.CTCGreedyDecoder
+version: 2.3.0

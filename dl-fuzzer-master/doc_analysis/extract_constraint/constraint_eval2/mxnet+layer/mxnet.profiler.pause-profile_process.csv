@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+string,"whether to profile kvstore server or worker. server can only be profiled when kvstore is of type dist. if this is not passed, defaults to worker",worker,prim_dtype,"dtype(boolean, string)",,1
+string,"whether to profile kvstore server or worker. server can only be profiled when kvstore is of type dist. if this is not passed, defaults to worker",worker,shape,ndim(0),,1

@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.ragged.cross
+constraints:
+  inputs:
+    descp: A list of RaggedTensor or Tensor or SparseTensor.
+    structure:
+    - list
+    - list(tf.tensor)
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+  name:
+    default: None
+    descp: Optional name for the op.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/ragged/cross
+outputs:
+- A 2D RaggedTensor of type string.
+package: tensorflow
+target: cross
+title: tf.ragged.cross
+version: 2.3.0

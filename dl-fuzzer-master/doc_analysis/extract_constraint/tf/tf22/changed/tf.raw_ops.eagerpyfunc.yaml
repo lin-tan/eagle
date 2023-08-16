@@ -1,0 +1,44 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes.
+    structure:
+    - list
+  input:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  is_async:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  token:
+    descp: A string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - is_async
+  - name
+  required:
+  - input
+  - token
+  - Tout
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/EagerPyFunc
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: EagerPyFunc
+title: tf.raw_ops.EagerPyFunc
+version: 2.2.0

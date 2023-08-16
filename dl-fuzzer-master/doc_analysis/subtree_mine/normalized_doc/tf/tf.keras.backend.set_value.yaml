@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.keras.backend.set_value
+constraints:
+  value:
+    descp: Value to set the tensor to, as a Numpy array (of the same shape).
+    normalized_descp:
+    - Value to set the D_STRUCTURE to, as a Numpy D_STRUCTURE BSTR
+  x:
+    descp: Tensor to set to a new value.
+    normalized_descp:
+    - D_STRUCTURE to set to a new PARAM
+inputs:
+  optional: []
+  required:
+  - x
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/set_value
+package: tensorflow
+target: set_value
+title: tf.keras.backend.set_value
+version: 2.1.0

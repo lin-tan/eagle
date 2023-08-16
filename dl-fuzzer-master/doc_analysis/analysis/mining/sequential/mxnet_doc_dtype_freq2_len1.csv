@@ -1,0 +1,145 @@
+,freq,sequence,len
+0,2423,['SOME_STRUCTURE'],1
+1,2322,['optional'],1
+2,1921,['SOME_DTYPE'],1
+3,1583,['default'],1
+4,393,['none'],1
+5,258,['required'],1
+6,187,"['default', 'none']",2
+7,179,['shape'],1
+8,143,"['shape', 'SOME_STRUCTURE']",2
+9,117,"['SOME_STRUCTURE', 'SOME_DTYPE']",2
+10,74,"['SOME_DTYPE', 'SOME_DTYPE']",2
+11,73,['context'],1
+12,66,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+13,49,"['non', 'negative']",2
+14,45,['cpu'],1
+15,44,['array'],1
+16,43,"['none', 'SOME_DTYPE', 'SOME_DTYPE']",3
+17,41,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+18,41,"['mxnet', 'SOME_STRUCTURE']",2
+19,40,"['default', 'cpu']",2
+20,40,"['mxnet', 'SOME_STRUCTURE', 'array']",3
+21,39,"['default', 'false']",2
+22,37,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",2
+23,32,"['SOME_DTYPE', 'non', 'negative']",3
+24,32,"['default', '$mxnet_home', 'models']",3
+25,30,['uint'],1
+26,29,"['default', 'e']",2
+27,28,"['SOME_DTYPE', 'uint']",2
+28,28,['numpy'],1
+29,24,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4
+30,23,['long'],1
+31,22,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5
+32,22,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",5
+33,22,['corner'],1
+34,21,['np'],1
+35,20,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",6
+36,19,"['default', 'SOME_DTYPE']",2
+37,18,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6
+38,18,"['np', 'SOME_STRUCTURE']",2
+39,17,"['long', 'non', 'negative']",3
+40,16,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",7
+41,16,['first'],1
+42,16,['center'],1
+43,16,"['numpy', 'dtype']",2
+44,16,['function'],1
+45,14,['null'],1
+46,14,['valid'],1
+47,12,"['none', 'ncdhw', 'nchw', 'ncw']",4
+48,12,"['center', 'corner']",2
+49,12,['clip'],1
+50,10,"['default', 'corner']",2
+51,10,"['none', 'ncdhw', 'nchw', 'ncw', 'ndhwc', 'nhwc']",6
+52,10,['ssparse'],1
+53,10,['gpu'],1
+54,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_STRUCTURE']",3
+55,8,"['default', 'first']",2
+56,8,"['default', 'null']",2
+57,8,"['csr', 'default', 'row_ssparse']",3
+58,8,"['first', 'last']",2
+59,8,['instance'],1
+60,8,"['mxnet', 'SOME_STRUCTURE', 'ssparse', 'array']",4
+61,8,"['numpy', 'SOME_STRUCTURE']",2
+62,8,['max'],1
+63,7,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7
+64,7,['number'],1
+65,7,['rowssparsendarray'],1
+66,7,['csrndarray'],1
+67,7,['python'],1
+68,6,"['default', 'clip']",2
+69,6,"['default', 'true']",2
+70,6,"['none', 'fastest', 'limited_workspace']",3
+71,6,"['clip', 'wrap']",2
+72,6,"['python', 'function']",2
+73,6,['object'],1
+74,6,"['batch', 'null', 'valid']",3
+75,6,['sum'],1
+76,5,"['default', 'gpu']",2
+77,5,"['SOME_STRUCTURE', 'np', 'SOME_STRUCTURE']",3
+78,5,"['none', 'csr', 'default', 'row_ssparse']",4
+79,5,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",8
+80,5,"['cpu', 'gpu']",2
+81,5,['type'],1
+82,5,['size'],1
+83,4,"['default', 'instance']",2
+84,4,"['default', 'max']",2
+85,4,"['default', 'valid']",2
+86,4,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+87,4,"['SOME_STRUCTURE', 'numpy', 'SOME_STRUCTURE']",3
+88,4,"['none', 'ncdhw', 'nchw', 'ncw', 'ndhwc', 'nhwc', 'nwc']",7
+89,4,"['channel', 'instance']",2
+90,4,"['auto', 'SOME_DTYPE', 'uint']",3
+91,4,['affine'],1
+92,4,['mx'],1
+93,4,"['relu', 'sigmoid', 'softrelu', 'softsign', 'tanh']",5
+94,4,['bilinear'],1
+95,4,['training'],1
+96,4,['indices'],1
+97,4,"['avg', 'lp', 'max', 'sum']",4
+98,4,"['full', 'valid']",2
+99,4,['concat'],1
+100,4,['leaky'],1
+101,3,"['default', 'center']",2
+102,3,"['SOME_STRUCTURE', 'SOME_DTYPE', 'np', 'SOME_STRUCTURE']",4
+103,3,"['np', 'SOME_DTYPE']",2
+104,3,"['mx', 'nd', 'array']",3
+105,3,['like'],1
+106,3,['class'],1
+107,2,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",8
+108,2,"['SOME_DTYPE', 'object']",2
+109,2,"['default', 'area', 'based']",3
+110,2,"['default', 'train', 'idx', 'ubyte']",4
+111,2,"['default', 'size']",2
+112,2,"['default', 'training']",2
+113,2,"['default', 'indices']",2
+114,2,"['default', 'uint']",2
+115,2,"['default', 'concat']",2
+116,2,"['default', 'leaky']",2
+117,2,"['SOME_STRUCTURE', 'SOME_DTYPE', 'numpy', 'SOME_STRUCTURE']",4
+118,2,"['SOME_STRUCTURE', 'context']",2
+119,2,"['SOME_STRUCTURE', 'SOME_STRUCTURE', 'SOME_DTYPE']",3
+120,2,"['SOME_STRUCTURE', 'strs']",2
+121,2,"['SOME_STRUCTURE', 'long']",2
+122,2,"['channel', 'instance', 'spatial']",3
+123,2,"['numpy', 'compatible', 'function', 'wrapped', 'better', 'error', 'handling']",7
+124,2,"['affine', 'warp']",2
+125,2,['data'],1
+126,2,['force'],1
+127,2,"['clip', 'raise', 'wrap']",3
+128,2,['irheader'],1
+129,2,"['like', 'odd_scale', 'size', 'to_even_down', 'to_even_up', 'to_odd_down', 'to_odd_up']",7
+130,2,['dataiter'],1
+131,2,"['constant', 'edge', 'reflect']",3
+132,2,"['bilinear', 'nearest']",2
+133,2,['gluon'],1
+134,2,"['always', 'training']",2
+135,2,"['indices', 'mask', 'value']",3
+136,2,"['file', 'path']",2
+137,2,['source'],1
+138,2,"['gru', 'lstm', 'rnn_relu', 'rnn_tanh']",4
+139,2,"['concat', 'sum']",2
+140,2,"['user', 'provided', 'SOME_DTYPE', 'function']",4
+141,2,"['class', 'scoped', 'numpy', 'semantics']",4
+142,2,"['elu', 'gelu', 'leaky', 'prelu', 'rrelu', 'selu']",6
+143,2,"['scipy', 'ssparse']",2

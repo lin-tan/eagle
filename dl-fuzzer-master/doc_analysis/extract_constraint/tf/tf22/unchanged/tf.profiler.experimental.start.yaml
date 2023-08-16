@@ -1,0 +1,14 @@
+constraints:
+  logdir:
+    descp: A log directory read by TensorBoard to export the profile results.
+exceptions:
+- AlreadyExistsError: If another profiling session is running.
+inputs:
+  optional: []
+  required:
+  - logdir
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/profiler/experimental/start
+package: tensorflow
+target: start
+title: tf.profiler.experimental.start
+version: 2.2.0

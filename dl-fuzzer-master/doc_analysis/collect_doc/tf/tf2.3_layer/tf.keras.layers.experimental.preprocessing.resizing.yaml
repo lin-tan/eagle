@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.Resizing
+constraints:
+  '**kwargs':
+    descp: ''
+  height:
+    descp: Integer, the height of the output shape.
+  interpolation:
+    default: bilinear
+    descp: String, the interpolation method. Defaults to bilinear. Supports bilinear,
+      nearest, bicubic, area, lanczos3, lanczos5, gaussian, mitchellcubic
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  width:
+    descp: Integer, the width of the output shape.
+inputs:
+  optional:
+  - interpolation
+  - name
+  required:
+  - height
+  - width
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Resizing
+package: tensorflow
+target: Resizing
+title: tf.keras.layers.experimental.preprocessing.Resizing
+version: 2.3.0

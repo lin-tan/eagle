@@ -1,0 +1,82 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: the scalar multiplier for `other`
+    doc_dtype: Number
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the first input tensor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the second input tensor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '&input'
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - alpha
+  - out
+  optional:
+  - alpha
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.add
+package: torch
+target: add
+title: torch.add
+version: 1.5.0

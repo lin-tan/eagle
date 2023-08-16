@@ -1,0 +1,130 @@
+aliases:
+- tf.compat.v1.keras.backend.local_conv2d
+constraints:
+  data_format:
+    default: None
+    descp: the data format, channels_first or channels_last.
+  inputs:
+    descp: '4D tensor with shape: (batch_size, filters, new_rows, new_cols) if data_format=''channels_first''
+      or 4D tensor with shape: (batch_size, new_rows, new_cols, filters) if data_format=''channels_last''.'
+    dtype:
+    - '&data_format'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '4'
+    - channels_first
+    - channels_last
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&data_format'
+    - '[1]'
+    - '[4]'
+    - '[batch_size,filters,new_rows,new_cols]'
+    - '[batch_size,new_rows,new_cols,filters]'
+    - '[channels_first,channels_first]'
+    - '[channels_first]'
+    - '[channels_last,channels_last]'
+    - '[channels_last]'
+    tensor_t:
+    - tf.tensor
+  kernel:
+    descp: the unshared weight for convolution, with shape (output_items, feature_dim,
+      filters).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[output_items,feature_dim,filters]'
+  kernel_size:
+    descp: a tuple of 2 integers, specifying the width and height of the 2D convolution
+      window.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - tuple
+  output_shape:
+    descp: a tuple with (output_row, output_col).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[output_row,output_col]'
+    structure:
+    - tuple
+  strides:
+    descp: a tuple of 2 integers, specifying the strides of the convolution along
+      the width and height.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - tuple
+inputs:
+  optional:
+  - data_format
+  required:
+  - inputs
+  - kernel
+  - kernel_size
+  - strides
+  - output_shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/local_conv2d
+outputs: 'A 4D tensor with shape: (batch_size, filters, new_rows, new_cols) if data_format=''channels_first''
+  or 4D tensor with shape: (batch_size, new_rows, new_cols, filters) if data_format=''channels_last''.'
+package: tensorflow
+target: local_conv2d
+title: tf.keras.backend.local_conv2d
+version: 2.1.0

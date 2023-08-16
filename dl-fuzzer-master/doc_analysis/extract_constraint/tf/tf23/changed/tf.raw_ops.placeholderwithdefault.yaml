@@ -1,0 +1,35 @@
+constraints:
+  input:
+    descp: A Tensor. The default value to produce when output is not fed.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A tf.TensorShape or list of ints. The (possibly partial) shape of the tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PlaceholderWithDefault
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: PlaceholderWithDefault
+title: tf.raw_ops.PlaceholderWithDefault
+version: 2.3.0

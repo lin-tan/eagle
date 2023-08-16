@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An optional `Tensor` whose shape matches `predictions`.,None,prim_dtype,dtype(numeric),,1
+,An optional `Tensor` whose shape matches `predictions`.,None,nonprim_dtype,tensor_t(tf.tensor),,1
+,An optional `Tensor` whose shape matches `predictions`.,None,shape,shape(shape:&predictions),,1

@@ -1,0 +1,7 @@
+class,Type,name,input,link,source_code
+,function,torch.hub.list,"github,force_reload=False",https://pytorch.org/docs/stable/hub.html#torch.hub.list,https://pytorch.org/docs/stable/_modules/torch/hub.html#list
+,function,torch.hub.help,"github,model,force_reload=False",https://pytorch.org/docs/stable/hub.html#torch.hub.help,https://pytorch.org/docs/stable/_modules/torch/hub.html#help
+,function,torch.hub.load,"github,model,*args,**kwargs",https://pytorch.org/docs/stable/hub.html#torch.hub.load,https://pytorch.org/docs/stable/_modules/torch/hub.html#load
+,function,torch.hub.download_url_to_file,"url,dst,hash_prefix=None,progress=True",https://pytorch.org/docs/stable/hub.html#torch.hub.download_url_to_file,https://pytorch.org/docs/stable/_modules/torch/hub.html#download_url_to_file
+,function,torch.hub.load_state_dict_from_url,"url,model_dir=None,map_location=None,progress=True,check_hash=False",https://pytorch.org/docs/stable/hub.html#torch.hub.load_state_dict_from_url,https://pytorch.org/docs/stable/_modules/torch/hub.html#load_state_dict_from_url
+,function,torch.hub.set_dir,d,https://pytorch.org/docs/stable/hub.html#torch.hub.set_dir,https://pytorch.org/docs/stable/_modules/torch/hub.html#set_dir

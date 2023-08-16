@@ -1,0 +1,37 @@
+constraints:
+  default_value:
+    descp: A Tensor. Must have the same type as sparse_values. Scalar value to set
+      for indices not specified in sparse_indices.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shape:
+    descp: A Tensor. Must have the same type as sparse_indices. 1-D. Shape of the
+      dense output tensor.
+  sparse_indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D, 1-D,
+      or 2-D. sparse_indices[i] contains the complete index where sparse_values[i]
+      will be placed.'
+  sparse_values:
+    descp: A Tensor. 1-D. Values corresponding to each row of sparse_indices, or a
+      scalar value to be used for all sparse indices.
+  validate_indices:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true, indices are checked to make
+      sure they are sorted in lexicographic order and that there are no repeats.
+inputs:
+  optional:
+  - validate_indices
+  - name
+  required:
+  - sparse_indices
+  - output_shape
+  - sparse_values
+  - default_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseToDense
+outputs:
+- A Tensor. Has the same type as sparse_values.
+package: tensorflow
+target: SparseToDense
+title: tf.raw_ops.SparseToDense
+version: 2.2.0

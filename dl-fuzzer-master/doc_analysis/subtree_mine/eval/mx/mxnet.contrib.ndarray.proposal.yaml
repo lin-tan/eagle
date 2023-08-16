@@ -1,0 +1,13 @@
+constraints:
+  output_score:
+    default: _Null
+    descp: Add score to outputs
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.contrib.ndarray.Proposal

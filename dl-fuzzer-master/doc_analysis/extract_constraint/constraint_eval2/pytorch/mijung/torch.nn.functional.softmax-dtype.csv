@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+torch.dtype,"the desired data type of returned tensor. If specified, the input tensor is casted to `dtype` before the operation is performed. This is useful for preventing data type overflows. Default: None.",None,prim_dtype,dtype(torch.dtype),1,1
+torch.dtype,"the desired data type of returned tensor. If specified, the input tensor is casted to `dtype` before the operation is performed. This is useful for preventing data type overflows. Default: None.",None,nonprim_dtype,tensor_t(torch.tensor),0,1

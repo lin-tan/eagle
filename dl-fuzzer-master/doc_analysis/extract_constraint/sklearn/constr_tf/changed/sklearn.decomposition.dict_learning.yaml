@@ -1,0 +1,155 @@
+constraints:
+  X:
+    descp: array of shape (n_samples, n_features) Data matrix.
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  alpha:
+    descp: int, Sparsity controlling parameter.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  callback:
+    default: None
+    descp: 'callable or None, optional (default: None) Callable that gets invoked
+      every five iterations'
+  code_init:
+    default: None
+    descp: array of shape (n_samples, n_components), Initial value for the sparse
+      code for warm restart scenarios.
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples,&n_components]'
+  dict_init:
+    default: None
+    descp: array of shape (n_components, n_features), Initial value for the dictionary
+      for warm restart scenarios.
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[&n_components,n_features]'
+  max_iter:
+    default: '100'
+    descp: int, Maximum number of iterations to perform.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  method:
+    default: lars
+    descp: '{''lars'', ''cd''} lars: uses the least angle regression method to solve
+      the lasso problem (linear_model.lars_path) cd: uses the coordinate descent method
+      to compute the Lasso solution (linear_model.Lasso). Lars will be faster if the
+      estimated components are sparse.'
+    dtype:
+    - string
+  method_max_iter:
+    default: '1000'
+    descp: int, optional (default=1000) Maximum number of iterations to perform.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_components:
+    descp: int, Number of dictionary atoms to extract.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) Number of parallel jobs to run. ``None``
+      means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using
+      all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  positive_code:
+    default: 'False'
+    descp: bool Whether to enforce positivity when finding the code.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  positive_dict:
+    default: 'False'
+    descp: bool Whether to enforce positivity when finding the dictionary.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  return_n_iter:
+    default: 'False'
+    descp: bool Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  tol:
+    default: 1e-08
+    descp: float, Tolerance for the stopping condition.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  verbose:
+    default: 'False'
+    descp: 'bool, optional (default: False) To control the verbosity of the procedure.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - max_iter
+  - tol
+  - method
+  - n_jobs
+  - dict_init
+  - code_init
+  - callback
+  - verbose
+  - random_state
+  - return_n_iter
+  - positive_dict
+  - positive_code
+  - method_max_iter
+  required:
+  - X
+  - n_components
+  - alpha
+link: ''
+package: scikit-learn
+target: dict_learning
+title: sklearn.decomposition.dict_learning
+version: 0.24.X

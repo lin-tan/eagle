@@ -1,0 +1,31 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+  src:
+    descp: Source rank.
+    doc_dtype:
+    - python:int
+  tag:
+    default: '0'
+    descp: Tag to match recv with remote send
+    doc_dtype:
+    - python:int
+  tensor:
+    descp: Tensor to fill with received data.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - group
+  - tag
+  required:
+  - tensor
+  - src
+link: https://pytorch.org/docs/1.4.0/distributed.html#torch.distributed.irecv
+package: torch
+target: irecv
+title: torch.distributed.irecv
+version: 1.4.0

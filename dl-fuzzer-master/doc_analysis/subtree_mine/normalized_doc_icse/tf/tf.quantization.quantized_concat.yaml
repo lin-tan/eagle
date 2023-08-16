@@ -1,0 +1,55 @@
+aliases:
+- tf.compat.v1.quantization.quantized_concat
+- tf.compat.v1.quantized_concat
+constraints:
+  concat_dim:
+    descp: A `Tensor` of type `int32`. 0-D.  The dimension along which to concatenate.  Must
+      be in the range [0, rank(values)).
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - CONSTANT_NUM D
+    - The dimension along which to concatenate
+    - Must be in the range BSTR
+  input_maxes:
+    descp: A list with the same length as `values` of `Tensor` objects with type `float32`.
+      The maximum scalar values for each of the input tensors.
+    normalized_descp:
+    - A D_STRUCTURE with the same length as PARAM of D_STRUCTURE objects with type
+      D_TYPE
+    - The maximum scalar PARAM for each of the input D_STRUCTURE
+  input_mins:
+    descp: A list with the same length as `values` of `Tensor` objects with type `float32`.
+      The minimum scalar values for each of the input tensors.
+    normalized_descp:
+    - A D_STRUCTURE with the same length as PARAM of D_STRUCTURE objects with type
+      D_TYPE
+    - The minimum scalar PARAM for each of the input D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  values:
+    descp: A list of at least 2 `Tensor` objects with the same type. The `N` Tensors
+      to concatenate. Their ranks and types must match, and their sizes must match
+      in all dimensions except `concat_dim`.
+    normalized_descp:
+    - A D_STRUCTURE of at least CONSTANT_NUM D_STRUCTURE objects with the same type
+    - The QSTR D_STRUCTURE to concatenate
+    - Their ranks and types must match and their sizes must match in all dimensions
+      except PARAM
+inputs:
+  optional:
+  - name
+  required:
+  - concat_dim
+  - values
+  - input_mins
+  - input_maxes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/quantization/quantized_concat
+outputs: A tuple of `Tensor` objects (output, output_min, output_max).
+package: tensorflow
+target: quantized_concat
+title: tf.quantization.quantized_concat
+version: 2.1.0

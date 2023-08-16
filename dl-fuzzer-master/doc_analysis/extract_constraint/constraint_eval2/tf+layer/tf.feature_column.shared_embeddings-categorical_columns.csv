@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,List of categorical columns created by a`categorical_column_with_*` function. These columns produce the sparse IDs that are inputs to the embedding lookup. All columns must be of the same type and have the same arguments except `key`. E.g. they can be categorical_column_with_vocabulary_file with the same vocabulary_file. Some or all columns could also be weighted_categorical_column.,,nonprim_dtype,structure(list),,1

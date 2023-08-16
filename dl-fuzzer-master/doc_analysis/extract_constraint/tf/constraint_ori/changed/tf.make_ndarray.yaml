@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.make_ndarray
+constraints:
+  tensor:
+    descp: A TensorProto.
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: if tensor has unsupported type.
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/make_ndarray
+outputs: A numpy array with the tensor contents.
+package: tensorflow
+target: make_ndarray
+title: tf.make_ndarray
+version: 2.1.0

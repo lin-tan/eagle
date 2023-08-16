@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, optional, default=0",Augmentation Param: Probability to apply random illumination.,None,prim_dtype,dtype(float),,1
+"float, optional, default=0",Augmentation Param: Probability to apply random illumination.,None,shape,ndim(0),,1
+"float, optional, default=0",Augmentation Param: Probability to apply random illumination.,None,validvalue,"range([0,1])",,1

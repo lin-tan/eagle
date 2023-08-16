@@ -1,0 +1,185 @@
+aliases:
+- tf.compat.v1.quantization.quantize_and_dequantize
+constraints:
+  axis:
+    default: None
+    descp: Integer. If specified, refers to a dimension of the input tensor, such
+      that quantization will be per slice along that dimension.
+    dtype:
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A `Tensor` to quantize and dequantize.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  input_max:
+    descp: If range_given=True, the maximum input value that needs to be represented
+      in the quantized representation. If axis is specified, this should be a vector
+      of maximum values for each slice along axis.
+    dtype:
+    - '&axis'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&axis'
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+  input_min:
+    descp: If range_given=True, the minimum input value, that needs to be represented
+      in the quantized representation. If axis is specified, this should be a vector
+      of minimum values for each slice along axis.
+    dtype:
+    - '&axis'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&axis'
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+  name:
+    default: None
+    descp: Optional name for the operation.
+    dtype:
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  narrow_range:
+    default: 'False'
+    descp: If true, then the absolute value of the quantized minimum value is the
+      same as the quantized maximum value, instead of 1 greater. i.e. for 8 bit quantization,
+      the minimum value is -127 instead of -128.
+    dtype:
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+  num_bits:
+    default: '8'
+    descp: The bitwidth of the quantization.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+  range_given:
+    default: 'False'
+    descp: If true use `input_min` and `input_max` for the range of the input, otherwise
+      determine min and max from the input `Tensor`.
+    dtype:
+    - '&input'
+    - '&input_max'
+    - '&input_min'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '&input_max'
+    - '&input_min'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  round_mode:
+    default: HALF_TO_EVEN
+    descp: Rounding mode when rounding from float values to quantized ones. one of
+      ['HALF_TO_EVEN', 'HALF_UP']
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - HALF_TO_EVEN
+    - HALF_UP
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[half_to_even]'
+    - '[half_up]'
+  signed_input:
+    default: 'True'
+    descp: True if the quantization is signed or unsigned.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - signed_input
+  - num_bits
+  - range_given
+  - round_mode
+  - name
+  - narrow_range
+  - axis
+  required:
+  - input
+  - input_min
+  - input_max
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/quantization/quantize_and_dequantize
+outputs: A `Tensor`. Each element is the result of quantizing and dequantizing the
+  corresponding element of `input`.
+package: tensorflow
+target: quantize_and_dequantize
+title: tf.quantization.quantize_and_dequantize
+version: 2.1.0

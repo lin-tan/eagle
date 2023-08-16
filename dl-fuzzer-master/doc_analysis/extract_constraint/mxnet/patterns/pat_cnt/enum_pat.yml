@@ -1,0 +1,40 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  '"(\w+)"\s+(means|-)\s':
+    cnt: 22
+    group: 1
+  (\d)\s+for\s+[\w\s]+output:
+    cnt: 3
+    group: 1
+  (\d+):\s:
+    cnt: 4
+    group: 1
+  \s(\d+)-((?!d)(?!th)[a-zA-Z])+:
+    cnt: 5
+    group: 1
+  currently\s+(.*?)\s+is\s+supported:
+    cnt: 3
+    group: 1
+    replace:
+      '=': ''
+      ord: ''
+  currently\s+support\s+(((\s*and\s*)?\'\w+\'[,\s]*)+)\.:
+    cnt: 4
+    group: 1
+  if\s+(\w+)='(\w+)':
+    check_arg: 1
+    cnt: 3
+    group: 2
+  only\s+(values\s+of\s+)?(.*?)\s+(are|is)\s+currently\s+supported:
+    cnt: 6
+    group: 2
+stop_word:
+- or
+- and
+- ','
+target: enum

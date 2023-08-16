@@ -1,0 +1,22 @@
+constraints:
+  X:
+    descp: array or sparse matrix
+    dtype:
+    - numeric
+  allow_nan:
+    default: 'False'
+    descp: bool
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - allow_nan
+  required:
+  - X
+link: ''
+package: sklearn
+target: assert_all_finite
+title: sklearn.utils.assert_all_finite
+version: 0.24.2

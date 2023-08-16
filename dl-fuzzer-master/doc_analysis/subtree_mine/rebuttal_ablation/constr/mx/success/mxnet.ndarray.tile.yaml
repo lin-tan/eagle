@@ -1,0 +1,79 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: Input data array
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  reps:
+    default: _Null
+    descp: The number of times for repeating the tensor a. Each dim size of reps must
+      be a positive integer. If reps has length d, the result will have dimension
+      of max(d, a.ndim); If a.ndim < d, a is promoted to be d-dimensional by prepending
+      new axes. If a.ndim > d, reps is promoted to a.ndim by pre-pending 1's to it.
+    doc_dtype: Shape(tuple), required
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - (d,a.ndim)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[d,a.ndim]'
+    - '[tuple]'
+    structure:
+    - tuple
+    tensor_t:
+    - tensor
+inputs:
+  optional:
+  - data
+  - reps
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.tile
+package: mxnet
+target: tile
+title: mxnet.ndarray.tile
+version: 1.6.0

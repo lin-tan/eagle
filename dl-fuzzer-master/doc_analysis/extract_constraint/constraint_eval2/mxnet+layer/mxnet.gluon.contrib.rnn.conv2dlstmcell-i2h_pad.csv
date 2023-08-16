@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple of int, default (0, 0)",Pad for input convolution.,"(0,0)",prim_dtype,dtype(int),,1
+"int, tuple of int, default (0, 0)",Pad for input convolution.,"(0,0)",nonprim_dtype,"structure(tuple, tuple(int))",,1
+"int, tuple of int, default (0, 0)",Pad for input convolution.,"(0,0)",shape,"shape([2]), ndim(1)",,1

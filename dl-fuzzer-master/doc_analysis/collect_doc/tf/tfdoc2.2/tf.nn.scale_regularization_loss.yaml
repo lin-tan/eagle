@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.nn.scale_regularization_loss
+constraints:
+  regularization_loss:
+    descp: Regularization loss.
+inputs:
+  optional: []
+  required:
+  - regularization_loss
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/scale_regularization_loss
+outputs:
+- Scalar loss value.
+package: tensorflow
+target: scale_regularization_loss
+title: tf.nn.scale_regularization_loss
+version: 2.2.0

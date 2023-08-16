@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional, default: 2 Number of dimensions in which to immerse the dissimilarities. If an ``init`` array is provided, this option is overridden and the shape of ``init`` is used to determine the dimensionality of the embedding space.",2,prim_dtype,dtype(int),,1
+,"int, optional, default: 2 Number of dimensions in which to immerse the dissimilarities. If an ``init`` array is provided, this option is overridden and the shape of ``init`` is used to determine the dimensionality of the embedding space.",2,shape,ndim(0),,1
+,"int, optional, default: 2 Number of dimensions in which to immerse the dissimilarities. If an ``init`` array is provided, this option is overridden and the shape of ``init`` is used to determine the dimensionality of the embedding space.",2,validvalue,"range([0,inf))",,1

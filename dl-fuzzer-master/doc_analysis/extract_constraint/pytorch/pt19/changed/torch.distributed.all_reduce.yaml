@@ -1,0 +1,37 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+  op:
+    default: ReduceOp.SUM
+    descp: One of the values from `torch.distributed.ReduceOp` enum.  Specifies an
+      operation used for element-wise reductions.
+  tensor:
+    descp: Input and output of the collective. The function operates in-place.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - op
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.all_reduce
+package: torch
+target: all_reduce
+title: torch.distributed.all_reduce
+version: 1.9.0

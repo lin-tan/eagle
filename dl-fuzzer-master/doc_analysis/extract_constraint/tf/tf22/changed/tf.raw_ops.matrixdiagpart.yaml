@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: A Tensor. Rank k tensor where k >= 2.
+    ndim:
+    - k
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+dependency:
+- k
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixDiagPart
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MatrixDiagPart
+title: tf.raw_ops.MatrixDiagPart
+version: 2.2.0

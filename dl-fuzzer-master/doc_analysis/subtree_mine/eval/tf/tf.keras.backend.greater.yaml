@@ -1,0 +1,6 @@
+constraints:
+  y:
+    descp: Tensor or variable.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.backend.greater

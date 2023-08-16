@@ -1,0 +1,40 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: carry out model transformations in-place, the original module is mutated
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - carry out PARAM transformations in place the original module is mutated
+  mapping:
+    default: None
+    descp: correspondence between original module types and quantized counterparts
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - correspondence between original module types and quantized counterparts
+  model:
+    descp: input model
+    normalized_descp:
+    - input model
+  run_args:
+    descp: positional arguments for run_fn
+    normalized_descp:
+    - positional arguments for PARAM
+  run_fn:
+    descp: a function for evaluating the prepared model, can be a function that simply
+      runs the prepared model or a training loop
+    normalized_descp:
+    - a function for evaluating the prepared PARAM can be a function that simply runs
+      the prepared PARAM or a training loop
+inputs:
+  optional:
+  - mapping
+  - inplace
+  required:
+  - model
+  - run_fn
+  - run_args
+link: https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize
+package: torch
+target: quantize
+title: torch.quantization.quantize
+version: 1.5.0

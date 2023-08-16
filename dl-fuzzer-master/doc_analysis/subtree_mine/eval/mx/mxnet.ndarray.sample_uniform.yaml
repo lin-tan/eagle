@@ -1,0 +1,13 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  low:
+    default: None
+    descp: Lower bounds of the distributions.
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    structure:
+    - ndarray
+title: mxnet.ndarray.sample_uniform

@@ -1,0 +1,88 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: qint8, quint8, qint32, qint16,
+      quint16. 4-D with shape [batch, height, width, channels].'
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  ksize:
+    descp: A list of ints. The size of the window for each dimension of the input
+      tensor. The length must be 4 to match the number of dimensions of the input.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  max_input:
+    descp: A Tensor of type float32. The float value that the highest quantized input
+      value represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_input:
+    descp: A Tensor of type float32. The float value that the lowest quantized input
+      value represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+    dtype:
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+  strides:
+    descp: A list of ints. The stride of the sliding window for each dimension of
+      the input tensor. The length must be 4 to match the number of dimensions of
+      the input.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+dependency:
+- batch
+- channels
+- height
+- width
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - min_input
+  - max_input
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QuantizedAvgPool
+outputs:
+- A tuple of Tensor objects (output, min_output, max_output).
+- output: A Tensor. Has the same type as input.
+- min_output: A Tensor of type float32.
+- max_output: A Tensor of type float32.
+package: tensorflow
+target: QuantizedAvgPool
+title: tf.raw_ops.QuantizedAvgPool
+version: 2.2.0

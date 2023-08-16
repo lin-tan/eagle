@@ -1,0 +1,85 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.sequence.skipgrams
+constraints:
+  categorical:
+    default: 'False'
+    descp: bool. if False, labels will be     integers (eg. `[0, 1, 1 .. ]`),     if
+      `True`, labels will be categorical, e.g.     `[[1,0],[0,1],[0,1] .. ]`.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - ONE_WORD D_TYPE
+    - if CONSTANT_BOOL labels will be D_TYPE eg
+    - BSTR if CONSTANT_BOOL labels will be categorical e g
+    - BSTR BSTR BSTR
+  negative_samples:
+    default: '1.0'
+    descp: Float >= 0. 0 for no negative (i.e. random) samples.     1 for same number
+      as positive samples.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - D_TYPE REXPR
+    - CONSTANT_NUM for no negative i e
+    - random samples
+    - CONSTANT_NUM for same number as positive samples
+  sampling_table:
+    default: None
+    descp: 1D array of size `vocabulary_size` where the entry i     encodes the probability
+      to sample a word of rank i.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE of size PARAM where the entry i encodes the probability
+      to sample a word of rank i
+  seed:
+    default: None
+    descp: Random seed.`
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Random seed
+  sequence:
+    descp: A word sequence (sentence), encoded as a list     of word indices (integers).
+      If using a `sampling_table`,     word indices are expected to match the rank     of
+      the words in a reference dataset (e.g. 10 would encode     the 10-th most frequently
+      occurring token).     Note that index 0 is expected to be a non-word and will
+      be skipped.
+    normalized_descp:
+    - A word D_STRUCTURE BSTR
+    - If using a PARAM word indices are expected to match the rank of the words in
+      a reference dataset e g
+    - CONSTANT_NUM would encode the CONSTANT_NUM th most frequently occurring token
+    - Note that index CONSTANT_NUM is expected to be a non word and will be skipped
+  shuffle:
+    default: 'True'
+    descp: Whether to shuffle the word couples before returning them.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to shuffle the word couples before returning them
+  vocabulary_size:
+    descp: Int, maximum possible word index + 1
+    normalized_descp:
+    - D_TYPE maximum possible word index CONSTANT_NUM
+  window_size:
+    default: '4'
+    descp: Int, size of sampling windows (technically half-window).     The window
+      of a word `w_i` will be     `[i - window_size, i + window_size+1]`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE size of sampling windows BSTR
+    - The window of a word QSTR will be BSTR
+inputs:
+  optional:
+  - window_size
+  - negative_samples
+  - shuffle
+  - categorical
+  - sampling_table
+  - seed
+  required:
+  - sequence
+  - vocabulary_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/sequence/skipgrams
+outputs:
+- labels: where `couples` are int pairs and     `labels` are either 0 or 1.`
+package: tensorflow
+target: skipgrams
+title: tf.keras.preprocessing.sequence.skipgrams
+version: 2.1.0

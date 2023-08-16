@@ -1,0 +1,53 @@
+constraints:
+  accum:
+    descp: ''
+  accum_update:
+    descp: ''
+  epsilon:
+    descp: ''
+  grad:
+    descp: ''
+  indices:
+    descp: ''
+    dtype:
+    - int
+  lr:
+    descp: ''
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  rho:
+    descp: ''
+  use_locking:
+    default: 'False'
+    descp: ''
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  var:
+    descp: ''
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - var
+  - accum
+  - accum_update
+  - lr
+  - rho
+  - epsilon
+  - grad
+  - indices
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseApplyAdadelta
+outputs:
+- A mutable Tensor. Has the same type as var.
+package: tensorflow
+target: SparseApplyAdadelta
+title: tf.raw_ops.SparseApplyAdadelta
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An `N+1` dimensional potentially ragged integer tensor with shape`[D1...DN, num_chars]`.",,prim_dtype,dtype(int),,1
+,"An `N+1` dimensional potentially ragged integer tensor with shape`[D1...DN, num_chars]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An `N+1` dimensional potentially ragged integer tensor with shape`[D1...DN, num_chars]`.",,shape,"shape([...,num_chars]), ndim(>1)",,1

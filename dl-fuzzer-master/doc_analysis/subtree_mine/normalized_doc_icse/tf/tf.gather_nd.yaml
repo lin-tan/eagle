@@ -1,0 +1,39 @@
+constraints:
+  batch_dims:
+    default: '0'
+    descp: An integer or a scalar 'Tensor'. The number of batch dimensions.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE or a scalar QSTR
+    - The number of batch dimensions
+  indices:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. Index
+      tensor.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - Index D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  params:
+    descp: A `Tensor`. The tensor from which to gather values.
+    normalized_descp:
+    - A D_STRUCTURE
+    - The D_STRUCTURE from which to gather values
+inputs:
+  optional:
+  - batch_dims
+  - name
+  required:
+  - params
+  - indices
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/gather_nd
+outputs: A `Tensor`. Has the same type as `params`.
+package: tensorflow
+target: gather_nd
+title: tf.gather_nd
+version: 2.1.0

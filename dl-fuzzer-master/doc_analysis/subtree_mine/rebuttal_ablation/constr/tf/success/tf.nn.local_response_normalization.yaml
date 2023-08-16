@@ -1,0 +1,145 @@
+aliases:
+- tf.nn.lrn
+- tf.compat.v1.nn.local_response_normalization
+- tf.compat.v1.nn.lrn
+constraints:
+  alpha:
+    default: '1'
+    descp: An optional `float`. Defaults to `1`. A scale factor, usually positive.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  beta:
+    default: '0.5'
+    descp: An optional `float`. Defaults to `0.5`. An exponent.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  bias:
+    default: '1'
+    descp: An optional `float`. Defaults to `1`. An offset (usually positive to avoid
+      dividing by 0).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  depth_radius:
+    default: '5'
+    descp: An optional `int`. Defaults to `5`. 0-D.  Half-width of the 1-D normalization
+      window.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[5]'
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`.
+      4-D.'
+    dtype:
+    - int
+    - numeric
+    - tf.bfloat16
+    - tf.bool
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[4]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - depth_radius
+  - bias
+  - alpha
+  - beta
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/local_response_normalization
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: local_response_normalization
+title: tf.nn.local_response_normalization
+version: 2.1.0

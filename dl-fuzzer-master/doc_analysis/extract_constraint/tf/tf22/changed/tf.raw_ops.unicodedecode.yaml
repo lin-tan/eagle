@@ -1,0 +1,86 @@
+constraints:
+  Tsplits:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  errors:
+    default: replace
+    descp: 'An optional string from: "strict", "replace", "ignore". Defaults to "replace".
+      Error handling policy when there is invalid formatting found in the input. The
+      value of ''strict'' will cause the operation to produce a InvalidArgument error
+      on any invalid input formatting. A value of ''replace'' (the default) will cause
+      the operation to replace any invalid formatting in the input with the replacement_char
+      codepoint. A value of ''ignore'' will cause the operation to skip any invalid
+      formatting in the input and produce no corresponding output character.'
+    dtype:
+    - tf.string
+    enum:
+    - ignore
+    - replace
+    - strict
+    ndim:
+    - '0'
+  input:
+    descp: A Tensor of type string. The text to be decoded. Can have any shape. Note
+      that the output is flattened to a vector of char values.
+    dtype:
+    - tf.string
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  input_encoding:
+    descp: 'A string. Text encoding of the input strings. This is any of the encodings
+      supported by ICU ucnv algorithmic converters. Examples: "UTF-16", "US ASCII",
+      "UTF-8".'
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  replace_control_characters:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether to replace the C0 control
+      characters (00-1F) with the replacement_char. Default is false.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  replacement_char:
+    default: '65533'
+    descp: An optional int. Defaults to 65533. The replacement character codepoint
+      to be used in place of any invalid formatting in the input when errors='replace'.
+      Any valid unicode codepoint may be used. The default value is the default unicode
+      replacement character is 0xFFFD or U+65533.)
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - errors
+  - replacement_char
+  - replace_control_characters
+  - Tsplits
+  - name
+  required:
+  - input
+  - input_encoding
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/UnicodeDecode
+outputs:
+- A tuple of Tensor objects (row_splits, char_values).
+- row_splits: A Tensor of type Tsplits.
+- char_values: A Tensor of type int32.
+package: tensorflow
+target: UnicodeDecode
+title: tf.raw_ops.UnicodeDecode
+version: 2.2.0

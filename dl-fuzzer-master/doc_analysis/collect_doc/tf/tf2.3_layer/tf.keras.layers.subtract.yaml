@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.keras.layers.Subtract
+constraints:
+  '**kwargs':
+    descp: standard layer keyword arguments.
+inputs:
+  optional: []
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Subtract
+package: tensorflow
+target: Subtract
+title: tf.keras.layers.Subtract
+version: 2.3.0

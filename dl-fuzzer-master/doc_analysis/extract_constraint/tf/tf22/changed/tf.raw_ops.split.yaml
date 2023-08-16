@@ -1,0 +1,50 @@
+constraints:
+  axis:
+    descp: A Tensor of type int32. 0-D. The dimension along which to split. Must be
+      in the range [-rank(value), rank(value)).
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[-ndim:&value,ndim:&value)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_split:
+    descp: An int that is >= 1. The number of ways to split. Must evenly divide value.shape[split_dim].
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[split_dim]'
+  value:
+    descp: A Tensor. The tensor to split.
+    tensor_t:
+    - tf.tensor
+dependency:
+- split_dim
+inputs:
+  optional:
+  - name
+  required:
+  - axis
+  - value
+  - num_split
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Split
+outputs:
+- A list of num_split Tensor objects with the same type as value.
+package: tensorflow
+target: Split
+title: tf.raw_ops.Split
+version: 2.2.0

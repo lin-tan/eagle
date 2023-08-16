@@ -1,0 +1,52 @@
+constraints:
+  align_corners:
+    default: None
+    descp: 'if `True`, the corner pixels of the input and output tensors are aligned,
+      and thus preserving the values at those pixels. This only has effect when `mode`
+      is `''linear''`, `''bilinear''`, or `''trilinear''`. Default: `False`'
+    doc_dtype:
+    - bool
+    sig_dtype: Optional[bool]
+  mode:
+    default: nearest
+    descp: 'the upsampling algorithm: one of `''nearest''`, `''linear''`, `''bilinear''`,
+      `''bicubic''` and `''trilinear''`. Default: `''nearest''`'
+    doc_dtype:
+    - str
+    sig_dtype: str
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size. Has to match input size if it is a tuple.
+    doc_dtype:
+    - float
+    - 'Tuple[float] '
+    - Tuple[float
+    - 'float] '
+    - Tuple[float
+    - float
+    - float]
+    sig_dtype: Optional[Union[T,Tuple[T,...]]]
+  size:
+    default: None
+    descp: output spatial sizes
+    doc_dtype:
+    - int
+    - 'Tuple[int] '
+    - Tuple[int
+    - 'int] '
+    - Tuple[int
+    - int
+    - int]
+    sig_dtype: Optional[Union[T,Tuple[T,...]]]
+inputs:
+  optional:
+  - size
+  - scale_factor
+  - mode
+  - align_corners
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Upsample.html#torch.nn.Upsample#torch.nn.Upsample
+package: torch
+target: Upsample
+title: torch.nn.Upsample
+version: 1.6.0

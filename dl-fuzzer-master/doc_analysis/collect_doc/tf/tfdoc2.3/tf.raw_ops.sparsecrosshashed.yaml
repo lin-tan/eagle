@@ -1,0 +1,45 @@
+constraints:
+  dense_inputs:
+    descp: 'A list of Tensor objects with types from: int64, string. 2-D. Columns
+      represented by dense Tensor.'
+  indices:
+    descp: A list of Tensor objects with type int64. 2-D. Indices of each input SparseTensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_buckets:
+    descp: A Tensor of type int64. It is used if hashed_output is true. output = hashed_value%num_buckets
+      if num_buckets > 0 else hashed_value.
+  salt:
+    descp: A Tensor of type int64. Specify the salt that will be used by the siphash
+      function.
+  shapes:
+    descp: A list with the same length as indices of Tensor objects with type int64.
+      1-D. Shapes of each SparseTensor.
+  strong_hash:
+    descp: A Tensor of type bool. boolean, if true, siphash with salt will be used
+      instead of farmhash.
+  values:
+    descp: 'A list of Tensor objects with types from: int64, string. 1-D. values of
+      each SparseTensor.'
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - shapes
+  - dense_inputs
+  - num_buckets
+  - strong_hash
+  - salt
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseCrossHashed
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_shape).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor of type int64.
+- output_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseCrossHashed
+title: tf.raw_ops.SparseCrossHashed
+version: 2.3.0

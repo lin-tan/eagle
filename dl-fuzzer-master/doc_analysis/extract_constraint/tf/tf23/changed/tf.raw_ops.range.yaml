@@ -1,0 +1,41 @@
+constraints:
+  delta:
+    descp: A Tensor. Must have the same type as start. 0-D (scalar). Optional. Default
+      is 1. Number that increments start.
+    dtype:
+    - dtype:&start
+    tensor_t:
+    - tf.tensor
+  limit:
+    descp: A Tensor. Must have the same type as start. 0-D (scalar). Upper limit of
+      sequence, exclusive.
+    dtype:
+    - dtype:&start
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  start:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, int32, int64. 0-D (scalar). First entry in the sequence.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - start
+  - limit
+  - delta
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Range
+outputs:
+- A Tensor. Has the same type as start.
+package: tensorflow
+target: Range
+title: tf.raw_ops.Range
+version: 2.3.0

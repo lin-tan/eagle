@@ -1,52 +1,59 @@
 # EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries
 
-This repository contains code for reproducing bugs detected in the [ICSE 2022](https://conf.researchr.org/track/icse-2022/icse-2022-papers?#program) paper *EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries*. 
+This repo contains reproduction code for the [ICSE 2022](https://conf.researchr.org/track/icse-2022/icse-2022-papers?#program) paper *EAGLE: Creating Equivalent Graphs to Test Deep Learning Libraries*. 
 
-If a specific input is needed to reproduce a bug, the input file is provided in the same directory as the reproducing code.
-
-The 24 bugs detected by EAGLE are listed below. One inconsistency included  in the paper was excluded in this list, because this bug was later found to be a false positive.  This bug was detected using equivalence rule 13 between [tfio.image.encode_gif, tf.io.decode_gif](tensorflow/rule_13/rule_13_tf_bug_1.ipynb). It is a false positive, because the assumption of lossless conversion is false in this API pair. The detailed discussion can be found [here](https://github.com/tensorflow/tensorflow/issues/54266).
+## Folder/File Structure
 
 
-## The list of bugs
+The `EAGLE` directory contains codes for reproducing our experiment. It has four sub directories. 
 
-### TensorFlow
+Dir `rules` contains the 16 rules described in the EAGLE paper, along with api config for each rule. The formats of api configs are defined [here]((./EAGLE/rules/README.md)). 
 
-|Rule|API|New|Bug Report|
-|---|---|---|---|
-| Rule 1  | [tf.math.xdivy](tensorflow/rule_1/rule_1_tf_bug_1.ipynb)                                    | yes | [Link](https://github.com/tensorflow/tensorflow/issues/51643) |
-| Rule 1  | [tf.realdiv](tensorflow/rule_1/rule_1_tf_bug_2.ipynb)                                       | yes | [Link](https://github.com/tensorflow/tensorflow/issues/51643) |
-| Rule 1  | [tf.nn.compute_average_loss](tensorflow/rule_1/rule_1_tf_bug_3.ipynb)                       | yes | [Link](https://github.com/tensorflow/tensorflow/issues/51643) |
-| Rule 1  | [tf.math.sign](tensorflow/rule_1/rule_1_tf_bug_4.ipynb)                                     | yes | fixed in 2.7 |
-| Rule 1  | [tf.math.log1p](tensorflow/rule_1/rule_1_tf_bug_5.ipynb)                                    | yes | fixed in 2.7 |
-| Rule 1  | [tf.linalg.matrix_rank](tensorflow/rule_1/rule_1_tf_bug_6.ipynb)                            | yes | fixed in 2.7 |
-| Rule 1  | [tf.image.non_max_suppression](tensorflow/rule_1/rule_1_tf_bug_7.ipynb)                     | yes | [Link](https://github.com/tensorflow/tensorflow/issues/54264) |
-| Rule 1  | [tf.math.count_nonzero](tensorflow/rule_1/rule_1_tf_bug_8.ipynb)                            | yes | fixed in 2.7 |
-| Rule 1  | [tf.math.reduce_sum](tensorflow/rule_1/rule_1_tf_bug_9.ipynb)                               | yes | [Link](https://github.com/tensorflow/tensorflow/issues/54265) |
-| Rule 1  | [tf.math.reduce_mean](tensorflow/rule_1/rule_1_tf_bug_10.ipynb)                             | yes | [Link](https://github.com/tensorflow/tensorflow/issues/54265) |
-| Rule 8  | [tf.keras.layers.ReLU](tensorflow/rule_8/rule_8_tf_bug_1.ipynb)                             | yes | [Link](https://github.com/keras-team/keras/issues/15009) |
-| Rule 8  | [tf.keras.layers.BatchNormalization](tensorflow/rule_8/rule_8_tf_bug_2.ipynb)               | yes | [Link](https://github.com/keras-team/keras/issues/15009) |
-| Rule 8  | [tf.keras.layers.Dropout](tensorflow/rule_8/rule_8_tf_bug_3.ipynb)                          | no | [Link](https://github.com/tensorflow/tensorflow/issues/25980) |
-| Rule 10 | [tf.keras.layers.Bidirectional](tensorflow/rule_10/rule_10_tf_bug_1.ipynb)                  | no | [Link](https://github.com/tensorflow/tensorflow/issues/39635) |
-| Rule 14 | [tf.image.extract_glimpse](tensorflow/rule_14/rule_14_tf_bug_1.ipynb)                       | no | [Link](https://github.com/tensorflow/tensorflow/issues/38545) |
-| Rule 16 | [tf.keras.Sequential.from_config](tensorflow/rule_16/rule_16_tf_bug_1.ipynb)                | no | [Link](https://github.com/tensorflow/tensorflow/issues/40981) |
-| Rule 16 | [tf.keras.models.save](tensorflow/rule_16/rule_16_tf_bug_2.ipynb)                           | no | [Link](https://github.com/tensorflow/tensorflow/issues/42459) |
+Dir `docker_files` contains the docker file for creating containers for the specific enviroment. 
 
-### PyTorch
+Dir `api_constraints` contains some customized api constraints we defined manually. 
 
-|Rule|API|New|Bug Report|
-|---|---|---|---|
-| Rule 8  | [torch.sspaddmm](pytorch/rule_8/rule_8_pt_bug_1.ipynb)                            | no | [Link](https://github.com/pytorch/pytorch/issues/45113) |
-| Rule 8  | [torch.smm](pytorch/rule_8/rule_8_pt_bug_2.ipynb)                                 | no | [Link](https://github.com/pytorch/pytorch/issues/45113) |
-| Rule 8  | [torch.sspaddmm](pytorch/rule_8/rule_8_pt_bug_3.ipynb) (crash)                    | no | fixed in 1.8 |
-| Rule 8  | [torch.smm](pytorch/rule_8/rule_8_pt_bug_4.ipynb) (crash)                         | no | fixed in 1.8 |
-| Rule 12  | [torch.fmod](pytorch/rule_12/rule_12_pt_bug_1.ipynb)                             | no | [Link](https://github.com/pytorch/pytorch/issues/47779) |
-| Rule 12  | [torch.remainder](pytorch/rule_12/rule_12_pt_bug_2.ipynb)                        | no | [Link](https://github.com/pytorch/pytorch/issues/47779) |
-| Rule 12  | [torch.nn.functional.cosine_similarity](pytorch/rule_12/rule_12_pt_bug_3.ipynb)  | no | [Link](https://github.com/pytorch/pytorch/issues/61454) |
+Dir `input_generation` contains code which calls Ddoctor to generate inputs. It also contains two lists for the list of APIs for which we want to generate inputs. 
+
+The `dl-fuzzer-master` directory contains codes from Ddoctor, which is a fuzzing tool to test deep learning libraries. We use it to generate inputs for EAGLE.
+
+The `bug-reproduction` directory contains code for reproducing bugs detected in the EAGLE paper.
 
 
+## Instruction
 
+### Create enviroment
+To use EAGLE, first you need to create an environment that can run EAGLE. 
 
+We provide docker files under `EAGLE/docker_files` which can help you to create environments. 
 
+We provide docker files for pytorch 1.6, 1.9 and tensorflow 2.1, 2.2, 2.3, which are the versions EAGLE tested.
 
+To create the docker image: as a example, in project root, `docker build -f EAGLE/docker_files/tf2.1.dockerfile .`, which will create docker image for tensorflow 2.1.
 
+We also provide example docker commands at `EAGLE/docker_command`.
 
+### Generate input
+After creating enviroment, we need to generate inputs using Ddoctor.
+
+To generate inputs, under `EAGLE` directory, execute `bash generate_all_input.sh LIB VER` to generate inputs for specific library and version. 
+
+The `LIB VER` can be `tensorflow 21`, `tensorflow 22`, `tensorflow 23`, `pytorch 16`, or `pytorch 19`.
+
+### Execute EAGLE rules
+To execute EAGLE, under `EAGLE` directory, execute `bash execute_testing_rules_multi.sh LIB VER` if you want to execute rule 1-14, or execute `bash execute_testing_rules_15_16_multi.sh LIB VER` if you want to execute rule 1-14. The `LIB VER` is the same as above.
+
+If you don't want to run all rules, you can specify which rules to run by modifying the `rule_list` variable in `execute_testing_rules_multi.py` or `execute_testing_rules_15_16_multi.py`.
+
+We also create a done file at `os.path.join(DATA_DIR, "rule_output", TEST_DONE_FILE)`. 
+
+Both DATA_DIR and TEST_DONE_FILE are defined at `EAGLE\config.py`. 
+
+The done file will record the config combination that are already executed so it won't be executed again. 
+
+However, if you want to rerun the experiment, you should clean the done file first.
+
+### Analyze results
+After execution, run `python analyze_results.py LIB VER` under `EAGLE` directory to analyze the results for rules 1-16. Use `pythonanalyze_results_distributed.py` for the new rules regarding distributed versus non-distributed training and inference (e.g., rule 17). It will generate a `.csv` file which contains the api and input that cause inconsistent outputs. It contains four column: `rule, api_name, Linf, result_file`.
+
+Noted that `EAGLE\config.py` defines a parameter `DATA_DIR` which is the location where all the input and output files are stored. Be sure that it is a valid path.

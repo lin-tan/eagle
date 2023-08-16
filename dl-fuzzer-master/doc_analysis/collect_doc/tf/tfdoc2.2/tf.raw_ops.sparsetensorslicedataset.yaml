@@ -1,0 +1,24 @@
+constraints:
+  dense_shape:
+    descp: A Tensor of type int64.
+  indices:
+    descp: A Tensor of type int64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  values:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - dense_shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseTensorSliceDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseTensorSliceDataset
+title: tf.raw_ops.SparseTensorSliceDataset
+version: 2.2.0

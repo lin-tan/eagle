@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,number of rows in the 2-D matrix.,,prim_dtype,dtype(int),,1
+int,number of rows in the 2-D matrix.,,shape,ndim(2),,1
+int,number of rows in the 2-D matrix.,,validvalue,"range([0,inf))",,1

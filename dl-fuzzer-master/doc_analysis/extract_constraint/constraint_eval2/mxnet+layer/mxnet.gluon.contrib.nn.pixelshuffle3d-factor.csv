@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, 3-tuple of int","Upsampling factors, applied to the `D`, `H` and `W` dimensions, in that order.",,prim_dtype,dtype(int),,1
+"int, 3-tuple of int","Upsampling factors, applied to the `D`, `H` and `W` dimensions, in that order.",,nonprim_dtype,structure(tuple(int)),,1
+"int, 3-tuple of int","Upsampling factors, applied to the `D`, `H` and `W` dimensions, in that order.",,shape,ndim(1),,1

@@ -1,0 +1,59 @@
+constraints:
+  amount:
+    descp: quantity of parameters to prune. If `float`, should be between 0.0 and
+      1.0 and represent the fraction of parameters to prune. If `int`, it represents
+      the absolute number of parameters to prune.
+    doc_dtype:
+    - int
+    - float
+    dtype:
+    - int
+    - torch.float32
+    ndim:
+    - '0'
+    range:
+    - int:[0,inf)
+    - torch.float32:[0,1]
+  dim:
+    descp: index of the dim along which we define channels to prune.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype:
+    - nn.Module
+  n:
+    descp: See documentation of valid entries for argument `p` in `torch.norm()`.
+    doc_dtype:
+    - int
+    - float
+    - inf
+    - -inf
+    - '''fro'''
+    - '''nuc'''
+    dtype:
+    - int
+    - torch.float32
+  name:
+    descp: parameter name within `module` on which pruning will act.
+    doc_dtype:
+    - str
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - module
+  - name
+  - amount
+  - n
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.prune.ln_structured.html#torch.nn.utils.prune.ln_structured#torch.nn.utils.prune.ln_structured
+package: torch
+target: ln_structured
+title: torch.nn.utils.prune.ln_structured
+version: 1.9.0

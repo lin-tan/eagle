@@ -1,0 +1,20 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype: int, tuple
+    normalized_descp:
+    - the size of the padding
+    - If is D_TYPE, uses the same padding in all boundaries
+    - If a CONSTANT_NUM D_STRUCTURE, uses BSTR
+    normalized_docdtype: D_TYPE, D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - padding
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ReflectionPad2d
+package: torch
+target: ReflectionPad2d
+title: torch.nn.ReflectionPad2d
+version: 1.5.0

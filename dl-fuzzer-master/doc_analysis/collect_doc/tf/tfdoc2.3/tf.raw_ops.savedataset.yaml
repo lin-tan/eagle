@@ -1,0 +1,35 @@
+constraints:
+  compression:
+    default: ''
+    descp: An optional string. Defaults to "".
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  path:
+    descp: A Tensor of type string.
+  shard_func:
+    descp: A function decorated with @Defun.
+  shard_func_other_args:
+    descp: A list of Tensor objects.
+  use_shard_func:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - compression
+  - use_shard_func
+  - name
+  required:
+  - input_dataset
+  - path
+  - shard_func_other_args
+  - shard_func
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SaveDataset
+outputs:
+- The created Operation.
+package: tensorflow
+target: SaveDataset
+title: tf.raw_ops.SaveDataset
+version: 2.3.0

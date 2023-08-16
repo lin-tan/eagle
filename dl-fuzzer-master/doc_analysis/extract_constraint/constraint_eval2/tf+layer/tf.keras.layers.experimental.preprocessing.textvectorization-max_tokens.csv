@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The maximum size of the vocabulary for this layer. If None, there is no cap on the size of the vocabulary.",None,prim_dtype,dtype(numeric),,1
+,"The maximum size of the vocabulary for this layer. If None, there is no cap on the size of the vocabulary.",None,shape,ndim(0),,1
+,"The maximum size of the vocabulary for this layer. If None, there is no cap on the size of the vocabulary.",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,14 @@
+constraints:
+  use_global_stats:
+    default: _Null
+    descp: Whether use global moving statistics instead of local batch-norm. This
+      will force change batch-norm into a scale shift operator.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.BatchNorm

@@ -1,0 +1,9 @@
+constraints:
+  seed:
+    default: None
+    descp: A Python integer to use as random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.keras.layers.AlphaDropout

@@ -1,0 +1,36 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix}  shape = (n_samples, n_features) The set of
+      regressors that will be tested sequentially.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+    structure:
+    - ndarray
+  center:
+    default: 'True'
+    descp: True, bool, If true, X and y will be centered.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  y:
+    descp: array of shape(n_samples). The data matrix
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - center
+  required:
+  - X
+  - y
+link: ''
+package: sklearn
+target: f_regression
+title: sklearn.feature_selection.f_regression
+version: 0.24.2

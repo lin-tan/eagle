@@ -1,0 +1,34 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_replicas:
+    descp: A Tensor of type int64. A scalar representing the number of replicas to
+      distribute this batch across. As a result of this transformation the current
+      batch size would end up being divided by this parameter.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  use_fallback:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - use_fallback
+  - name
+  required:
+  - input_dataset
+  - num_replicas
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ExperimentalRebatchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalRebatchDataset
+title: tf.raw_ops.ExperimentalRebatchDataset
+version: 2.3.0

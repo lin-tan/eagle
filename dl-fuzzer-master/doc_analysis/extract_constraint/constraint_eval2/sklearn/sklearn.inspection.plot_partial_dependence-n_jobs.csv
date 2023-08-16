@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=None) The number of CPUs to use to compute the partial dependences. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.",None,prim_dtype,dtype(int),,1
+,"int, optional (default=None) The number of CPUs to use to compute the partial dependences. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.",None,shape,ndim(0),,1
+,"int, optional (default=None) The number of CPUs to use to compute the partial dependences. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,20 @@
+constraints:
+  tensors:
+    descp: A list of quantized Tensors
+    doc_dtype:
+    - sequence of Tensors
+    structure:
+    - list
+    - sequence(torch.tensor)
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - tensors
+link: https://pytorch.org/docs/1.7.0/generated/torch.dequantize.html#torch.dequantize#torch.dequantize
+package: torch
+ret_type: sequence of Tensors
+target: dequantize
+title: torch.dequantize
+version: 1.7.0

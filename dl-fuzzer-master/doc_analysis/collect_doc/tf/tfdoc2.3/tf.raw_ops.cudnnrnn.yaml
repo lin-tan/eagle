@@ -1,0 +1,62 @@
+constraints:
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+  input_c:
+    descp: A Tensor. Must have the same type as input.
+  input_h:
+    descp: A Tensor. Must have the same type as input.
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+  is_training:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  params:
+    descp: A Tensor. Must have the same type as input.
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - is_training
+  - name
+  required:
+  - input
+  - input_h
+  - input_c
+  - params
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CudnnRNN
+outputs:
+- A tuple of Tensor objects (output, output_h, output_c, reserve_space).
+- output: A Tensor. Has the same type as input.
+- output_h: A Tensor. Has the same type as input.
+- output_c: A Tensor. Has the same type as input.
+- reserve_space: A Tensor. Has the same type as input.
+package: tensorflow
+target: CudnnRNN
+title: tf.raw_ops.CudnnRNN
+version: 2.3.0

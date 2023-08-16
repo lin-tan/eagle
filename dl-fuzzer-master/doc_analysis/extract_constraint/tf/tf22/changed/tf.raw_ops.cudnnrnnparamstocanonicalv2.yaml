@@ -1,0 +1,149 @@
+constraints:
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+    dtype:
+    - tf.string
+    enum:
+    - bidirectional
+    - unidirectional
+    ndim:
+    - '0'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+    dtype:
+    - tf.string
+    enum:
+    - auto_select
+    - linear_input
+    - skip_input
+    ndim:
+    - '0'
+  input_size:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_layers:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  num_params_biases:
+    descp: An int that is >= 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_params_weights:
+    descp: An int that is >= 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_proj:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_units:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  params:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+    tensor_t:
+    - tf.tensor
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+    dtype:
+    - tf.string
+    enum:
+    - gru
+    - lstm
+    - rnn_relu
+    - rnn_tanh
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - num_proj
+  - name
+  required:
+  - num_layers
+  - num_units
+  - input_size
+  - params
+  - num_params_weights
+  - num_params_biases
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CudnnRNNParamsToCanonicalV2
+outputs:
+- A tuple of Tensor objects (weights, biases).
+- weights: A list of num_params_weights Tensor objects with the same type as params.
+- biases: A list of num_params_biases Tensor objects with the same type as params.
+package: tensorflow
+target: CudnnRNNParamsToCanonicalV2
+title: tf.raw_ops.CudnnRNNParamsToCanonicalV2
+version: 2.2.0

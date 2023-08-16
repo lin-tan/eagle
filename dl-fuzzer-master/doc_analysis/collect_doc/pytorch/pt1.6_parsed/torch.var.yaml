@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  unbiased:
+    default: 'True'
+    descp: whether to use the unbiased estimation or not
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - unbiased
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.var.html#torch.var#torch.var
+package: torch
+ret_type: Tensor
+target: var
+title: torch.var
+version: 1.6.0

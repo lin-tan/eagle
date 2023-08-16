@@ -1,0 +1,95 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  clip_gradient:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip gradient to the range of BSTR If clip_gradient REXPR, gradient clipping
+      is turned off
+    - PARAM max BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  epsilon:
+    default: _Null
+    descp: Epsilon for numerical stability
+    doc_dtype: float, optional, default=9.99999975e-06
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Epsilon for numerical stability
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Gradient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  history:
+    default: None
+    descp: History
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD History
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE, required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Rescale gradient to PARAM rescale_grad PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - grad
+  - history
+  - lr
+  - rescale_grad
+  - clip_gradient
+  - epsilon
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.group_adagrad_update
+package: mxnet
+target: group_adagrad_update
+title: mxnet.ndarray.contrib.group_adagrad_update
+version: 1.6.0

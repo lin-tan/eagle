@@ -1,0 +1,9 @@
+constraints:
+  a:
+    descp: ''
+    doc_dtype:
+    - np.ndarray
+    - mx.nd.array
+    structure:
+    - ndarray
+title: mxnet.test_utils.assert_almost_equal

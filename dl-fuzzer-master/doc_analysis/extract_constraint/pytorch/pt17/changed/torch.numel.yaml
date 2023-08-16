@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.numel.html#torch.numel#torch.numel
+package: torch
+ret_type: int
+target: numel
+title: torch.numel
+version: 1.7.0

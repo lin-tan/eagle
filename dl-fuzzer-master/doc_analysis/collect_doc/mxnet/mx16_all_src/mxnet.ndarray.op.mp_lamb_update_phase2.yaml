@@ -1,0 +1,78 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  g:
+    default: None
+    descp: Output of mp_lamb_update_phase 1
+    doc_dtype:
+    - NDArray
+  lower_bound:
+    default: _Null
+    descp: Lower limit of norm of weight. If lower_bound <= 0, Lower limit is not
+      set
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype:
+    - float
+    - required
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  r1:
+    default: None
+    descp: r1
+    doc_dtype:
+    - NDArray
+  r2:
+    default: None
+    descp: r2
+    doc_dtype:
+    - NDArray
+  upper_bound:
+    default: _Null
+    descp: Upper limit of norm of weight. If upper_bound <= 0, Upper limit is not
+      set
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype:
+    - NDArray
+  weight32:
+    default: None
+    descp: Weight32
+    doc_dtype:
+    - NDArray
+inputs:
+  optional:
+  - weight
+  - g
+  - r1
+  - r2
+  - weight32
+  - lr
+  - lower_bound
+  - upper_bound
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.mp_lamb_update_phase2
+package: mxnet
+target: mp_lamb_update_phase2
+title: mxnet.ndarray.op.mp_lamb_update_phase2
+version: 1.6.0

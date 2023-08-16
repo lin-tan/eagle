@@ -1,0 +1,43 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.text.text_to_word_sequence
+constraints:
+  filters:
+    default: '!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n'
+    descp: 'list (or concatenation) of characters to filter out, such as     punctuation.
+      Default: ``!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\t\n``,     includes basic punctuation,
+      tabs, and newlines.'
+    ndim:
+    - '1'
+    structure:
+    - list
+  lower:
+    default: 'True'
+    descp: boolean. Whether to convert the input to lowercase.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  split:
+    default: ' '
+    descp: str. Separator for word splitting.`
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  text:
+    descp: Input text (string).
+    dtype:
+    - tf.string
+inputs:
+  optional:
+  - filters
+  - lower
+  - split
+  required:
+  - text
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/text/text_to_word_sequence
+outputs: '`A list of words (or tokens).`'
+package: tensorflow
+target: text_to_word_sequence
+title: tf.keras.preprocessing.text.text_to_word_sequence
+version: 2.1.0

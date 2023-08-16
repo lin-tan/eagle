@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The minimum number of seconds between yielding checkpoints.,0,prim_dtype,dtype(int),,1
+,The minimum number of seconds between yielding checkpoints.,0,shape,ndim(0),,1
+,The minimum number of seconds between yielding checkpoints.,0,validvalue,"range([0,inf))",,1

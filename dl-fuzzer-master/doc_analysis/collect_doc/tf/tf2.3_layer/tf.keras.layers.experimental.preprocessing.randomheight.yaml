@@ -1,0 +1,39 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.RandomHeight
+constraints:
+  '**kwargs':
+    descp: ''
+  factor:
+    descp: A positive float (fraction of original height), or a tuple of size 2 representing
+      lower and upper bound for resizing vertically. When represented as a single
+      float, this value is used for both the upper and lower bound. For instance,
+      factor=(0.2, 0.3) results in an output with height changed by a random amount
+      in the range [20%, 30%]. factor=(-0.2, 0.3) results in an output with height
+      changed by a random amount in the range [-20%, +30%].factor=0.2results in an
+      output with height changed by a random amount in the range[-20%, +20%]. </td>
+      </tr><tr> <td>interpolation</td> <td> String, the interpolation method. Defaults
+      tobilinear. Supportsbilinear,nearest,bicubic,area,lanczos3,lanczos5,gaussian,mitchellcubic</td>
+      </tr><tr> <td>seed</td> <td> Integer. Used to create a random seed. </td> </tr><tr>
+      <td>name`
+  interpolation:
+    default: bilinear
+    descp: ''
+  name:
+    default: None
+    descp: ''
+  seed:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - interpolation
+  - seed
+  - name
+  required:
+  - factor
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomHeight
+package: tensorflow
+target: RandomHeight
+title: tf.keras.layers.experimental.preprocessing.RandomHeight
+version: 2.3.0

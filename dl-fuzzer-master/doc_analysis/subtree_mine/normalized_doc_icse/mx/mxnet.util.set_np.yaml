@@ -1,0 +1,41 @@
+constraints:
+  array:
+    default: 'True'
+    descp: A boolean value indicating whether the NumPy-array semantics should be
+      turned on or off. When this flag is set to True, it enables Gluon code flow
+      to use or generate mxnet.numpy.ndarray`s instead of `mxnet.ndarray.NDArray.
+      For example, a Block would create parameters of type mxnet.numpy.ndarray.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - A D_TYPE value indicating whether the NumPy D_STRUCTURE semantics should be
+      turned on or off
+    - When this flag is set to CONSTANT_BOOL it enables Gluon code flow to use or
+      generate mxnet numpy D_STRUCTUREs instead of mxnet D_STRUCTURE D_STRUCTURE
+    - For example a Block would create parameters of type mxnet numpy D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  shape:
+    default: 'True'
+    descp: A boolean value indicating whether the NumPy-shape semantics should be
+      turned on or off. When this flag is set to True, zero-size and zero-dim shapes
+      are all valid shapes in shape inference process, instead of treated as unknown
+      shapes in legacy mode.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - A D_TYPE value indicating whether the NumPy shape semantics should be turned
+      on or off
+    - When this flag is set to CONSTANT_BOOL zero size and zero dim shapes are all
+      valid shapes in shape inference process instead of treated as unknown shapes
+      in legacy mode
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - shape
+  - array
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/util/index.html#mxnet.util.set_np
+package: mxnet
+target: set_np
+title: mxnet.util.set_np
+version: 1.6.0

@@ -1,0 +1,32 @@
+constraints:
+  axis:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The axis in
+      params to gather indices from. Defaults to the first dimension. Supports negative
+      indexes.'
+  batch_dims:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Index tensor.
+      Must be in range [0, params.shape[axis]).'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  params:
+    descp: A Tensor. The tensor from which to gather values. Must be at least rank
+      axis + 1.
+inputs:
+  optional:
+  - batch_dims
+  - name
+  required:
+  - params
+  - indices
+  - axis
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GatherV2
+outputs:
+- A Tensor. Has the same type as params.
+package: tensorflow
+target: GatherV2
+title: tf.raw_ops.GatherV2
+version: 2.3.0

@@ -1,0 +1,23 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.floor.html#torch.floor#torch.floor
+package: torch
+ret_type: Tensor
+target: floor
+title: torch.floor
+version: 1.7.0

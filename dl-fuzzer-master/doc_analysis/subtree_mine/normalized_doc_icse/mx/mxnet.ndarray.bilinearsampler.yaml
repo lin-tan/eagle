@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  cudnn_off:
+    default: _Null
+    descp: whether to turn cudnn off
+    doc_dtype: boolean or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - whether to turn cudnn off
+    normalized_docdtype: D_TYPE or None optional default None
+  data:
+    default: None
+    descp: Input data to the BilinearsamplerOp.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the BilinearsamplerOp
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  grid:
+    default: None
+    descp: 'Input grid to the BilinearsamplerOp.grid has two channels: x_src, y_src'
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input grid to the BilinearsamplerOp grid has two channels x_src y_src
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - grid
+  - cudnn_off
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.BilinearSampler
+package: mxnet
+target: BilinearSampler
+title: mxnet.ndarray.BilinearSampler
+version: 1.6.0

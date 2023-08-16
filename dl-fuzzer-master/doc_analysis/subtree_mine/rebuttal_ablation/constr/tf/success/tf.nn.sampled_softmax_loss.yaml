@@ -1,0 +1,245 @@
+constraints:
+  biases:
+    descp: A `Tensor` of shape `[num_classes]`.  The class biases.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - num_classes]
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[&num_classes]'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  inputs:
+    descp: A `Tensor` of shape `[batch_size, dim]`.  The forward activations of the
+      input network.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - '[batch_size'
+    - dim]
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[batch_size,dim]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  labels:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.  Note that this format differs from the `labels` argument of `nn.softmax_cross_entropy_with_logits`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[batch_size,&num_true]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: sampled_softmax_loss
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  num_classes:
+    descp: An `int`. The number of possible classes.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  num_sampled:
+    descp: An `int`.  The number of classes to randomly sample per batch.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  num_true:
+    default: '1'
+    descp: An `int`.  The number of target classes per training example.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  remove_accidental_hits:
+    default: 'True'
+    descp: A `bool`.  whether to remove "accidental hits" where a sampled class equals
+      one of the target classes.  Default is True.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - accidental
+    - hits
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  sampled_values:
+    default: None
+    descp: a tuple of (`sampled_candidates`, `true_expected_count`,`sampled_expected_count`)
+      returned by a `*_candidate_sampler` function. (if None, we default to `log_uniform_candidate_sampler`)
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - sampled_candidates
+    - sampled_expected_count
+    - true_expected_count
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - sampled_candidates
+    - sampled_expected_count
+    - true_expected_count
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    - '[sampled_candidates,sampled_candidates]'
+    - '[sampled_candidates]'
+    - '[sampled_expected_count,sampled_expected_count]'
+    - '[sampled_expected_count]'
+    - '[true_expected_count,true_expected_count]'
+    - '[true_expected_count]'
+    structure:
+    - tuple
+  seed:
+    default: None
+    descp: random seed for candidate sampling. Default to None, which doesn't set
+      the op-level random seed for candidate sampling.
+  weights:
+    descp: A `Tensor` of shape `[num_classes, dim]`, or a list of `Tensor`objects
+      whose concatenation along dimension 0 has shape [num_classes, dim].  The (possibly-sharded)
+      class embeddings.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - dim]
+    - num_classes
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[&num_classes,dim]'
+    - '[0]'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - num_true
+  - sampled_values
+  - remove_accidental_hits
+  - seed
+  - name
+  required:
+  - weights
+  - biases
+  - labels
+  - inputs
+  - num_sampled
+  - num_classes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/sampled_softmax_loss
+outputs: A `batch_size` 1-D tensor of per-example sampled softmax losses.
+package: tensorflow
+target: sampled_softmax_loss
+title: tf.nn.sampled_softmax_loss
+version: 2.1.0

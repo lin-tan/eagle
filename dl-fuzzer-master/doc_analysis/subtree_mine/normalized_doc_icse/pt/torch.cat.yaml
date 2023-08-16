@@ -1,0 +1,37 @@
+constraints:
+  dim:
+    default: '0'
+    descp: the dimension over which the tensors are concatenated
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the dimension over which the D_STRUCTURE are concatenated
+    normalized_docdtype: D_TYPE optional
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  tensors:
+    descp: any python sequence of tensors of the same type. Non-empty tensors provided
+      must have the same shape, except in the cat dimension.
+    doc_dtype: sequence of Tensors
+    normalized_descp:
+    - any python D_STRUCTURE of D_STRUCTURE of the same type
+    - Non empty D_STRUCTURE provided must have the same shape except in the cat dimension
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  - out
+  required:
+  - tensors
+link: https://pytorch.org/docs/stable/torch.html#torch.cat
+package: torch
+ret_type: Tensor
+target: cat
+title: torch.cat
+version: 1.5.0

@@ -1,0 +1,27 @@
+constraints:
+  config:
+    descp: A string. Serialized tensorflow.tpu.TPUEmbeddingConfiguration that describes
+      the embedding lookups of the program.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - config
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ConfigureTPUEmbedding
+outputs:
+- The created Operation.
+package: tensorflow
+target: ConfigureTPUEmbedding
+title: tf.raw_ops.ConfigureTPUEmbedding
+version: 2.2.0

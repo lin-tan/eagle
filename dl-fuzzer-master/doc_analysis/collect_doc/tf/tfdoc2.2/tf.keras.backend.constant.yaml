@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.keras.backend.constant
+constraints:
+  dtype:
+    default: None
+    descp: The type of the elements of the resulting tensor.
+  name:
+    default: None
+    descp: Optional name for the tensor.
+  shape:
+    default: None
+    descp: Optional dimensions of resulting tensor.
+  value:
+    descp: A constant value (or list)
+inputs:
+  optional:
+  - dtype
+  - shape
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/constant
+outputs:
+- A Constant Tensor.
+package: tensorflow
+target: constant
+title: tf.keras.backend.constant
+version: 2.2.0

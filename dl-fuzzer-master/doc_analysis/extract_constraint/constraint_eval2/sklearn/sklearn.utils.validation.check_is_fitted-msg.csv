@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"string The default error message is, ""This %(name)s instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator."" For custom messages if ""%(name)s"" is present in the message string, it is substituted for the estimator name. Eg. : ""Estimator, %(name)s, must be fitted before sparsifying"".",None,prim_dtype,dtype(string),,1
+,"string The default error message is, ""This %(name)s instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator."" For custom messages if ""%(name)s"" is present in the message string, it is substituted for the estimator name. Eg. : ""Estimator, %(name)s, must be fitted before sparsifying"".",None,shape,ndim(0),,1

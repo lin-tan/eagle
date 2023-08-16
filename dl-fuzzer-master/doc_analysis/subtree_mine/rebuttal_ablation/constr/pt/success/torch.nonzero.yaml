@@ -1,0 +1,61 @@
+constraints:
+  as_tuple:
+    default: 'False'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor containing indices
+    doc_dtype: LongTensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    - torch.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  - as_tuple
+  optional:
+  - out
+  - as_tuple
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.nonzero
+package: torch
+ret_type: LongTensor or tuple of LongTensors
+target: nonzero
+title: torch.nonzero
+version: 1.5.0

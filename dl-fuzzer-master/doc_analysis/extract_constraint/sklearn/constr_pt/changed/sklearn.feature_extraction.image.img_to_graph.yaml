@@ -1,0 +1,35 @@
+constraints:
+  dtype:
+    default: None
+    descp: ''
+    dtype:
+    - numpy.dtype
+  img:
+    descp: 'ndarray, 2D or 3D 2D or 3D image mask : ndarray of booleans, optional
+      An optional mask of the image, to consider only part of the pixels. return_as
+      : np.ndarray or a sparse matrix class, optional The class to use to build the
+      returned adjacency matrix. dtype : None or dtype, optional The data of the returned
+      sparse matrix. By default it is the dtype of img'
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    - '3'
+  mask:
+    default: None
+    descp: ''
+  return_as:
+    default: <class scipy.sparse.coo.coo_matrix>
+    descp: ''
+inputs:
+  optional:
+  - mask
+  - return_as
+  - dtype
+  required:
+  - img
+link: ''
+package: scikit-learn
+target: img_to_graph
+title: sklearn.feature_extraction.image.img_to_graph
+version: 0.24.X

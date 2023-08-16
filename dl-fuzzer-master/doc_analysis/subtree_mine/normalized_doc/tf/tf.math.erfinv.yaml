@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.math.erfinv
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: '`Tensor` with type `float` or `double`.'
+    normalized_descp:
+    - D_STRUCTURE with type D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/erfinv
+outputs: Inverse error function of `x`.
+package: tensorflow
+target: erfinv
+title: tf.math.erfinv
+version: 2.1.0

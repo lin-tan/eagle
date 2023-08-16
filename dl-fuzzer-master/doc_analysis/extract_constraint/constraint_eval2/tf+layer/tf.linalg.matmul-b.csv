@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,`tf.Tensor` with same type and rank as `a`.,,prim_dtype,dtype(dtype:&a),,1
+,`tf.Tensor` with same type and rank as `a`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,`tf.Tensor` with same type and rank as `a`.,,shape,ndim(ndim:&a),,1

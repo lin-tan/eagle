@@ -1,0 +1,62 @@
+constraints:
+  data_format:
+    descp: A `string`, only `"NHWC"` is currently supported.
+    normalized_descp:
+    - A D_TYPE, only QSTR is currently supported
+  dilations:
+    descp: A list of `ints` that has length `>= 4`. The input stride for atrous morphological
+      dilation. Must be:`[1, rate_height, rate_width, 1]`.
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE that has length REXPR
+    - The PARAM stride for atrous morphological dilation
+    - Must be BSTR
+  filters:
+    descp: A `Tensor`. Must have the same type as `input`. 3-D with shape `[filter_height,
+      filter_width, depth]`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - CONSTANT_NUM-D with shape BSTR
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`,`int32`,
+      `uint8`, `int16`, `int8`, `int64`, `bfloat16`, `uint16`, `half`,`uint32`, `uint64`.
+      4-D with shape `[batch, in_height, in_width, depth]`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM-D with shape BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  padding:
+    descp: 'A `string` from: `"SAME", "VALID"`. The type of padding algorithm to use.'
+    normalized_descp:
+    - A D_TYPE from QSTR
+    - The type of padding algorithm to use
+  strides:
+    descp: 'A list of `ints` that has length `>= 4`. The stride of the sliding window
+      for each dimension of the input tensor. Must be: `[1, stride_height, stride_width,
+      1]`.'
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE that has length REXPR
+    - The stride of the sliding window for each dimension of the PARAM D_STRUCTURE
+    - Must be BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - filters
+  - strides
+  - padding
+  - data_format
+  - dilations
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/dilation2d
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: dilation2d
+title: tf.nn.dilation2d
+version: 2.1.0

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional argument specifying whether to clear the state of the layer at the start of the call to `adapt`, or whether to start from the existing state. Subclasses may choose to throw if reset_state is set to 'False'.",None,prim_dtype,dtype(tf.bool),,1

@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.assert_proper_iterable
+- tf.compat.v1.debugging.assert_proper_iterable
+constraints:
+  values:
+    descp: Object to be checked.
+    normalized_descp:
+    - Object to be checked
+exceptions:
+- TypeError: If `values` is not iterable or is one of`Tensor`, `SparseTensor`, `np.array`,
+    `tf.compat.bytes_or_text_types`.
+inputs:
+  optional: []
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_proper_iterable
+package: tensorflow
+target: assert_proper_iterable
+title: tf.debugging.assert_proper_iterable
+version: 2.1.0

@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: A Tensor. a tensor of type T.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ZerosLike
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: ZerosLike
+title: tf.raw_ops.ZerosLike
+version: 2.3.0

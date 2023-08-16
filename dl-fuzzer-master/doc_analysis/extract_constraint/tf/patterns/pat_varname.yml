@@ -1,0 +1,157 @@
+target: dtype
+pat:
+
+    '^(\w+_)?tensors*$':
+        tensor_t: tensor
+        ow: True
+        append: True
+
+
+    '^(\w+_)?name[_]*$': 
+        dtype: tf.string
+        ndim: 0
+        ow: True
+        append: True
+
+
+    '^(\w+_)?name[s]*$': 
+        dtype: tf.string
+        ndim: 1
+        ow: True
+        append: True
+    
+
+    '^(\w+_)?path$': 
+        dtype: tf.string
+        ow: True
+        append: False
+
+    '^(\w+_)?(fn|func|function)[\d_]*$':
+        dtype: callable
+        ow: True
+        append: False
+
+    '^num(_\w+)?$':
+        dtype: int
+        ndim: 0
+        range: '[0,inf)'
+        ow: False
+        append: False
+
+    
+    '^(\w+_)?dtypes*$': 
+        dtype: dtype
+        ow: True
+        append: True
+
+    '^(\w+_)?types*$': 
+        dtype: dtype
+        ow: False
+        append: False
+    
+
+    '^shape$': 
+        dtype: tensorshape
+        ndim: 1
+        ow: True
+        append: True
+
+    '^\w+_shape$': 
+        dtype: tensorshape
+        ndim: 1
+        ow: False
+        append: False
+
+
+    '^image$':
+        dtype: image
+        ow: False
+        append: False
+    
+    '^images$':
+        dtype: image
+        structure: 'list(image)'
+        ow: False
+        append: False
+
+
+    '^(\w+_)*axis$':
+        dtype: int
+        ndim: 0
+        ow: False
+        append: False
+
+    '^(\w+_)*axes$':
+        dtype: int
+        ndim: 1
+        ow: False
+        append: False
+
+    '^(\w+_)*id$':
+        dtype: int
+        # range: '[0,inf)'
+        # ndim: 0
+        ow: False
+        append: False
+
+    '^(\w+_)*ids$':
+        dtype: int
+        # range: '[0,inf)'
+        # ndim: 1
+        ow: False
+        append: False
+
+    '^(\w+_)*(width|height)$':
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+    
+    '^(\w+_)*lengths*$':
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+
+
+
+    '^(\w+_)*weights*$':
+        dtype: numeric
+        ow: False
+        append: False
+        
+    '^strids*$':
+        dtype: int
+        # range: '[0,inf)'
+        ow: False
+        append: False
+
+
+    '^(\w+_)?(dim|dimension)s*$':
+        dtype: int
+        ow: False
+        append: False
+
+
+    '^(\w+_)?(index|indices)$':
+        dtype: int
+        # ndim: 1
+        ow: False
+        append: False
+
+    '^(\w+_)?list$':
+        structure: list
+        ndim: 1
+        ow: False
+        append: False
+
+    '^(\w+_)?sizes*$':
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+    
+    '^text$':
+        dtype: string
+        ow: True
+        append: True

@@ -1,0 +1,30 @@
+constraints:
+  input:
+    descp: A Tensor. The input tensor to be padded.
+  mode:
+    descp: 'A string from: "REFLECT", "SYMMETRIC". Either REFLECT or SYMMETRIC. In
+      reflect mode the padded regions do not include the borders, while in symmetric
+      mode the padded regions do include the borders. For example, if input is [1,
+      2, 3] and paddings is [0, 2], then the output is [1, 2, 3, 2, 1] in reflect
+      mode, and it is [1, 2, 3, 3, 2] in symmetric mode.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  paddings:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A two-column
+      matrix specifying the padding sizes. The number of rows must be the same as
+      the rank of input.'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - paddings
+  - mode
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MirrorPad
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MirrorPad
+title: tf.raw_ops.MirrorPad
+version: 2.3.0

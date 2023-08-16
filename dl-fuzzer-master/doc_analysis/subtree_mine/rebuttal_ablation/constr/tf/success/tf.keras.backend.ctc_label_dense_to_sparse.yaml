@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.keras.backend.ctc_label_dense_to_sparse
+constraints:
+  label_lengths:
+    descp: length of the labels.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&labels'
+    tensor_t:
+    - tf.tensor
+  labels:
+    descp: dense CTC labels.
+inputs:
+  optional: []
+  required:
+  - labels
+  - label_lengths
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/ctc_label_dense_to_sparse
+outputs: A sparse tensor representation of the labels.
+package: tensorflow
+target: ctc_label_dense_to_sparse
+title: tf.keras.backend.ctc_label_dense_to_sparse
+version: 2.1.0

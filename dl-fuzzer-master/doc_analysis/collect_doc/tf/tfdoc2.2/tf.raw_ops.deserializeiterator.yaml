@@ -1,0 +1,22 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource_handle:
+    descp: A Tensor of type resource. A handle to an iterator resource.
+  serialized:
+    descp: A Tensor of type variant. A variant tensor storing the state of the iterator
+      contained in the resource.
+inputs:
+  optional:
+  - name
+  required:
+  - resource_handle
+  - serialized
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DeserializeIterator
+outputs:
+- The created Operation.
+package: tensorflow
+target: DeserializeIterator
+title: tf.raw_ops.DeserializeIterator
+version: 2.2.0

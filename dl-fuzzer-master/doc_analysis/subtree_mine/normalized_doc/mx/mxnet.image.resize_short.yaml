@@ -1,0 +1,57 @@
+constraints:
+  interp:
+    default: '2'
+    descp: 'Interpolation method used for resizing the image. Possible values: 0:
+      Nearest Neighbors Interpolation. 1: Bilinear interpolation. 2: Bicubic interpolation
+      over 4x4 pixel neighborhood. 3: Area-based (resampling using pixel area relation).
+      It may be a preferred method for image decimation, as it gives moire-free results.
+      But when the image is zoomed, it is similar to the Nearest Neighbors method.
+      (used by default). 4: Lanczos interpolation over 8x8 pixel neighborhood. 9:
+      Cubic for enlarge, area for shrink, bilinear for others 10: Random select from
+      interpolation method metioned above. Note: When shrinking an image, it will
+      generally look best with AREA-based interpolation, whereas, when enlarging an
+      image, it will generally look best with Bicubic (slow) or Bilinear (faster but
+      still looks OK). More details can be found in the documentation of OpenCV, please
+      refer to http://docs.opencv.org/master/da/d54/group__imgproc__transform.html.'
+    doc_dtype: int, optional, default=2
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Interpolation method used for resizing the image
+    - Possible values CONSTANT_NUM Nearest Neighbors Interpolation
+    - CONSTANT_NUM Bilinear interpolation
+    - CONSTANT_NUM Bicubic interpolation over 4x4 pixel neighborhood
+    - CONSTANT_NUM Area based BSTR
+    - It may be a preferred method for image decimation, as it gives moire free results
+    - But when the image is zoomed, it is similar to the Nearest Neighbors method
+    - ONE_WORD BSTR
+    - CONSTANT_NUM Lanczos interpolation over 8x8 pixel neighborhood
+    - CONSTANT_NUM Cubic for enlarge, area for shrink, bilinear for others CONSTANT_NUM
+      Random select from interpolation method metioned above
+    - Note When shrinking an image, it will generally look best with AREA based interpolation,
+      whereas, when enlarging an image, it will generally look best with Bicubic BSTR
+    - More details can be found in the documentation of OpenCV, please refer to http
+      docs opencv org master da d54 group_imgproc_transform html
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  size:
+    descp: The length to be set for the shorter edge.
+    doc_dtype: int
+    normalized_descp:
+    - The length to be set for the shorter edge
+    normalized_docdtype: ONE_WORD D_TYPE
+  src:
+    descp: The original image.
+    doc_dtype: NDArray
+    normalized_descp:
+    - The original image
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - interp
+  required:
+  - src
+  - size
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/image/index.html#mxnet.image.resize_short
+package: mxnet
+target: resize_short
+title: mxnet.image.resize_short
+version: 1.6.0

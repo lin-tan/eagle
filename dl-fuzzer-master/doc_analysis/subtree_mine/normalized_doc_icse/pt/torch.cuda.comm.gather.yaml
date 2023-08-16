@@ -1,0 +1,34 @@
+constraints:
+  destination:
+    default: None
+    descp: 'output device (-1 means CPU, default: current device)'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output device CONSTANT_NUM means CPU default current device
+    normalized_docdtype: D_TYPE optional
+  dim:
+    default: '0'
+    descp: a dimension along which the tensors will be concatenated.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - a dimension along which the D_STRUCTURE will be concatenated
+    normalized_docdtype: ONE_WORD D_TYPE
+  tensors:
+    descp: iterable of tensors to gather.
+    doc_dtype: Iterable[Tensor]
+    normalized_descp:
+    - D_STRUCTURE of D_STRUCTURE to gather
+    normalized_docdtype: D_STRUCTURE BSTR
+inputs:
+  optional:
+  - dim
+  - destination
+  required:
+  - tensors
+link: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.gather
+package: torch
+target: gather
+title: torch.cuda.comm.gather
+version: 1.5.0

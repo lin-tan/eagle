@@ -1,0 +1,14 @@
+constraints:
+  fft_length:
+    default: None
+    descp: An integer scalar `Tensor`. The size of the FFT that produced`stfts`. If
+      not provided, uses the smallest power of 2 enclosing`frame_length`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+title: tf.signal.inverse_stft

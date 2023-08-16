@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.dynamic_stitch
+constraints:
+  data:
+    descp: A list with the same length as `indices` of `Tensor` objects with the same
+      type.
+    ndim:
+    - '1'
+    shape:
+    - shape:&indices
+    structure:
+    - list
+  indices:
+    descp: A list of at least 1 `Tensor` objects with type `int32`.
+    dtype:
+    - tf.int32
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - data
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/dynamic_stitch
+outputs: A `Tensor`. Has the same type as `data`.
+package: tensorflow
+target: dynamic_stitch
+title: tf.dynamic_stitch
+version: 2.1.0

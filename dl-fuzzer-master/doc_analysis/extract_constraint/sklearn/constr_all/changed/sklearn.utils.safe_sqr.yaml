@@ -1,0 +1,23 @@
+constraints:
+  X:
+    descp: array like, matrix, sparse matrix
+    dtype:
+    - numeric
+  copy:
+    default: 'True'
+    descp: boolean, optional, default True Whether to create a copy of X and operate
+      on it or to perform inplace computation (default behaviour).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - copy
+  required:
+  - X
+link: ''
+package: sklearn
+target: safe_sqr
+title: sklearn.utils.safe_sqr
+version: 0.24.2

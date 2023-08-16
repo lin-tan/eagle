@@ -1,0 +1,50 @@
+constraints:
+  description:
+    default: ''
+    descp: An optional string. Defaults to "". A json-encoded SummaryDescription proto.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  display_name:
+    default: ''
+    descp: An optional string. Defaults to "". An unused string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  labels:
+    default: '[]'
+    descp: An optional list of strings. Defaults to []. An unused list of strings.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list(tf.string)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor:
+    descp: A Tensor. A tensor to serialize.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - description
+  - labels
+  - display_name
+  - name
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorSummary
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: TensorSummary
+title: tf.raw_ops.TensorSummary
+version: 2.2.0

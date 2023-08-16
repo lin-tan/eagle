@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An integer or a 1-D Tensor, depending on whether the time dimension is fixed-length or not. In case of variable length input, it is used for masking in case there's no mask specified.",None,prim_dtype,"dtype(int, tf.bool)",,1
+,"An integer or a 1-D Tensor, depending on whether the time dimension is fixed-length or not. In case of variable length input, it is used for masking in case there's no mask specified.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An integer or a 1-D Tensor, depending on whether the time dimension is fixed-length or not. In case of variable length input, it is used for masking in case there's no mask specified.",None,shape,"ndim(0, 1)",,1
+,"An integer or a 1-D Tensor, depending on whether the time dimension is fixed-length or not. In case of variable length input, it is used for masking in case there's no mask specified.",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,21 @@
+constraints:
+  device:
+    default: None
+    descp: parent device, if any
+  module:
+    descp: input module with qconfig attributes for all the leaf modules that we want
+      to quantize
+  non_leaf_module_list:
+    default: None
+    descp: list of non-leaf modules we want to add observer
+inputs:
+  optional:
+  - non_leaf_module_list
+  - device
+  required:
+  - module
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.add_observer_
+package: torch
+target: add_observer_
+title: torch.quantization.add_observer_
+version: 1.6.0

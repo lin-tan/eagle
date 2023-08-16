@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.expm1
+- tf.compat.v1.math.expm1
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`, `complex64`, `complex128`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/expm1
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: expm1
+title: tf.math.expm1
+version: 2.1.0

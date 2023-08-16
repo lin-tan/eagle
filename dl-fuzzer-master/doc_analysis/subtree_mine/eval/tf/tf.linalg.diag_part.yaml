@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: diag_part
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.linalg.diag_part

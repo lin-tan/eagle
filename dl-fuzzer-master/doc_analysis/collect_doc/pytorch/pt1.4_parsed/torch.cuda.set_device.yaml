@@ -1,0 +1,15 @@
+constraints:
+  device:
+    descp: selected device. This function is a no-op if this argument is negative.
+    doc_dtype:
+    - torch.device
+    - python:int
+inputs:
+  optional: []
+  required:
+  - device
+link: https://pytorch.org/docs/1.4.0/cuda.html#torch.cuda.set_device
+package: torch
+target: set_device
+title: torch.cuda.set_device
+version: 1.4.0

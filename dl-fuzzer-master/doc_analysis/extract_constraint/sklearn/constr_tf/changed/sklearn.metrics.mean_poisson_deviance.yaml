@@ -1,0 +1,33 @@
+constraints:
+  sample_weight:
+    default: None
+    descp: array-like, shape (n_samples,), optional Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_pred:
+    descp: array-like of shape (n_samples,) Estimated target values. Requires y_pred
+      > 0.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array-like of shape (n_samples,) Ground truth (correct) target values.
+      Requires y_true >= 0.
+dependency:
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: mean_poisson_deviance
+title: sklearn.metrics.mean_poisson_deviance
+version: 0.24.X

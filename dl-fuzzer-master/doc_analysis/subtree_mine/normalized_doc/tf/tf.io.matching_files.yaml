@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.io.matching_files
+- tf.compat.v1.matching_files
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  pattern:
+    descp: A `Tensor` of type `string`. Shell wildcard pattern(s). Scalar or vector
+      of type string.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - Shell wildcard pattern BSTR
+    - Scalar or D_STRUCTURE of type D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - pattern
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/matching_files
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: matching_files
+title: tf.io.matching_files
+version: 2.1.0

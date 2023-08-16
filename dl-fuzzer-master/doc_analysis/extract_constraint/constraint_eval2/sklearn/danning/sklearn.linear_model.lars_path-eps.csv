@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float, optional The machine-precision regularization in the computation of the Cholesky diagonal factors. Increase this for very ill-conditioned systems. By default, ``np.finfo(np.float).eps`` is used.",2.220446049250313e-16,prim_dtype,dtype(float),1,1
+,"float, optional The machine-precision regularization in the computation of the Cholesky diagonal factors. Increase this for very ill-conditioned systems. By default, ``np.finfo(np.float).eps`` is used.",2.220446049250313e-16,shape,ndim(0),1,1

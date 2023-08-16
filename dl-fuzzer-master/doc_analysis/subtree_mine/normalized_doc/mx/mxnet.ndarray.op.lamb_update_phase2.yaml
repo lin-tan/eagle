@@ -1,0 +1,95 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  g:
+    default: None
+    descp: Output of lamb_update_phase 1
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Output of lamb_update_phase CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lower_bound:
+    default: _Null
+    descp: Lower limit of norm of weight. If lower_bound <= 0, Lower limit is not
+      set
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Lower limit of norm of PARAM
+    - If lower_bound REXPR, Lower limit is not set
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE, required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  r1:
+    default: None
+    descp: r1
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD r1
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  r2:
+    default: None
+    descp: r2
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD r2
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  upper_bound:
+    default: _Null
+    descp: Upper limit of norm of weight. If upper_bound <= 0, Upper limit is not
+      set
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Upper limit of norm of PARAM
+    - If upper_bound REXPR, Upper limit is not set
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - g
+  - r1
+  - r2
+  - lr
+  - lower_bound
+  - upper_bound
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.lamb_update_phase2
+package: mxnet
+target: lamb_update_phase2
+title: mxnet.ndarray.op.lamb_update_phase2
+version: 1.6.0

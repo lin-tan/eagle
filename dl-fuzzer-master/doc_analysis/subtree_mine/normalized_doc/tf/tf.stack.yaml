@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.stack
+constraints:
+  axis:
+    default: '0'
+    descp: An `int`. The axis to stack along. Defaults to the first dimension. Negative
+      values wrap around, so the valid range is `[-(R+1), R+1)`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE
+    - The axis to stack along
+    - Defaults to the first dimension
+    - Negative PARAM wrap around, so the valid range is BSTR
+  name:
+    default: stack
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A name for this operation BSTR
+  values:
+    descp: A list of `Tensor` objects with the same shape and type.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE objects with the same shape and type
+exceptions:
+- ValueError: If `axis` is out of the range [-(R+1), R+1).
+inputs:
+  optional:
+  - axis
+  - name
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/stack
+outputs:
+- output: A stacked `Tensor` with the same type as `values`.
+package: tensorflow
+target: stack
+title: tf.stack
+version: 2.1.0

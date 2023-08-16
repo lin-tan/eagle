@@ -1,0 +1,26 @@
+constraints:
+  data:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_segments:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  segment_ids:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor whose
+      shape is a prefix of data.shape.'
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - segment_ids
+  - num_segments
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/UnsortedSegmentMax
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: UnsortedSegmentMax
+title: tf.raw_ops.UnsortedSegmentMax
+version: 2.2.0

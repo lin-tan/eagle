@@ -1,0 +1,135 @@
+constraints:
+  atol:
+    default: 1e-05
+    descp: absolute tolerance
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    sig_dtype: float
+  check_grad_dtypes:
+    default: 'False'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  check_undefined_grad:
+    default: 'True'
+    descp: if True, check if undefined output grads are supported and treated as zeros
+    doc_dtype:
+    - bool
+    - options
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  eps:
+    default: 1e-06
+    descp: perturbation for finite differences
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    sig_dtype: float
+  func:
+    descp: a Python function that takes Tensor inputs and returns a Tensor or a tuple
+      of Tensors
+    doc_dtype:
+    - function
+    dtype:
+    - callable
+    sig_dtype: Callable[...,Union[torch.Tensor,Sequence[torch.Tensor]]]
+  gen_non_contig_grad_outputs:
+    default: 'False'
+    descp: if `grad_outputs` is `None` and `gen_non_contig_grad_outputs` is `True`,
+      the randomly generated gradient outputs are made to be noncontiguous
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  grad_outputs:
+    default: None
+    descp: The gradients with respect to the function's outputs.
+    doc_dtype:
+    - tuple of Tensor
+    - Tensor
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor],None]
+    structure:
+    - tuple(torch.tensor)
+    tensor_t:
+    - torch.tensor
+  inputs:
+    descp: inputs to the function
+    doc_dtype:
+    - tuple of Tensor
+    - Tensor
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor]]
+    structure:
+    - tuple(torch.tensor)
+    tensor_t:
+    - torch.tensor
+  nondet_tol:
+    default: '0.0'
+    descp: tolerance for non-determinism. When running identical inputs through the
+      differentiation, the results must either match exactly (default, 0.0) or be
+      within this tolerance. Note that a small amount of nondeterminism in the gradient
+      will lead to larger inaccuracies in the second derivative.
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    sig_dtype: float
+  raise_exception:
+    default: 'True'
+    descp: indicating whether to raise an exception if the check fails. The exception
+      gives more information about the exact nature of the failure. This is helpful
+      when debugging gradchecks.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    sig_dtype: bool
+  rtol:
+    default: '0.001'
+    descp: relative tolerance
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+    sig_dtype: float
+inputs:
+  optional:
+  - grad_outputs
+  - eps
+  - atol
+  - rtol
+  - gen_non_contig_grad_outputs
+  - raise_exception
+  - nondet_tol
+  - check_undefined_grad
+  - check_grad_dtypes
+  required:
+  - func
+  - inputs
+link: https://pytorch.org/docs/1.7.0/autograd.html#torch.autograd.gradgradcheck
+package: torch
+ret_type: bool
+target: gradgradcheck
+title: torch.autograd.gradgradcheck
+version: 1.7.0

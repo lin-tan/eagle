@@ -1,0 +1,17 @@
+constraints:
+  d:
+    descp: the floating point dtype to make the default
+    doc_dtype:
+    - torch.dtype
+    dtype:
+    - torch.dtype
+    - torch.float32
+inputs:
+  optional: []
+  required:
+  - d
+link: https://pytorch.org/docs/1.6.0/generated/torch.set_default_dtype.html#torch.set_default_dtype#torch.set_default_dtype
+package: torch
+target: set_default_dtype
+title: torch.set_default_dtype
+version: 1.6.0

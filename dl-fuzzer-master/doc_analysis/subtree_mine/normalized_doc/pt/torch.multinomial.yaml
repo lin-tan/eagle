@@ -1,0 +1,54 @@
+constraints:
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype: '`torch.Generator`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a pseudorandom number generator for sampling
+    normalized_docdtype: torch Generator , optional
+  input:
+    descp: the input tensor containing probabilities
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE containing probabilities
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  num_samples:
+    descp: number of samples to draw
+    doc_dtype: int
+    normalized_descp:
+    - number of samples to draw
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  replacement:
+    default: 'False'
+    descp: whether to draw with replacement or not
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to draw with replacement or not
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  keyword_only:
+  - generator
+  - out
+  optional:
+  - replacement
+  - generator
+  - out
+  required:
+  - input
+  - num_samples
+link: https://pytorch.org/docs/stable/torch.html#torch.multinomial
+package: torch
+ret_type: LongTensor
+target: multinomial
+title: torch.multinomial
+version: 1.5.0

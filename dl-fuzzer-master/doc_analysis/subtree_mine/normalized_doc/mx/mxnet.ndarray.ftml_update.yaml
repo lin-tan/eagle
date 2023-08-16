@@ -1,0 +1,153 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta1:
+    default: _Null
+    descp: Generally close to 0.5.
+    doc_dtype: float, optional, default=0.600000024
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Generally close to CONSTANT_FLOAT
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  beta2:
+    default: _Null
+    descp: Generally close to 1.
+    doc_dtype: float, optional, default=0.999000013
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Generally close to CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  clip_grad:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip gradient to the range of BSTR If clip_gradient REXPR, gradient clipping
+      is turned off
+    - PARAM max BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  d:
+    default: None
+    descp: Internal state `d_t`
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Internal state QSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  epsilon:
+    default: _Null
+    descp: Epsilon to prevent div 0.
+    doc_dtype: double, optional, default=9.9999999392252903e-09
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Epsilon to prevent div CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Gradient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lr:
+    default: _Null
+    descp: Learning rate.
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE, required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Rescale gradient to PARAM rescale_grad PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  t:
+    default: _Null
+    descp: Number of update.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of update
+    normalized_docdtype: D_TYPE, required
+  v:
+    default: None
+    descp: Internal state `v_t`
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Internal state QSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  wd:
+    default: _Null
+    descp: Weight decay augments the objective function with a regularization term
+      that penalizes large weights. The penalty scales with the square of the magnitude
+      of each weight.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM decay augments the objective function with a regularization term that
+      penalizes large weights
+    - The penalty scales with the square of the magnitude of each PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  z:
+    default: None
+    descp: Internal state `z_t`
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Internal state QSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - grad
+  - d
+  - v
+  - z
+  - lr
+  - beta1
+  - beta2
+  - epsilon
+  - t
+  - wd
+  - rescale_grad
+  - clip_grad
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.ftml_update
+package: mxnet
+target: ftml_update
+title: mxnet.ndarray.ftml_update
+version: 1.6.0

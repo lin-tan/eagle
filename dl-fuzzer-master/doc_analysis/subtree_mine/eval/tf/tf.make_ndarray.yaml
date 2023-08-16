@@ -1,0 +1,6 @@
+constraints:
+  tensor:
+    descp: A TensorProto.
+    tensor_t:
+    - tf.tensor
+title: tf.make_ndarray

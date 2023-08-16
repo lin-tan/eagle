@@ -1,0 +1,30 @@
+constraints:
+  data_input_datasets:
+    descp: A list of at least 1 Tensor objects with type variant. N datasets with
+      the same type that will be interleaved according to the values of selector_input_dataset.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  selector_input_dataset:
+    descp: A Tensor of type variant. A dataset of scalar DT_INT64 elements that determines
+      which of the N data inputs should produce the next output element.
+inputs:
+  optional:
+  - name
+  required:
+  - selector_input_dataset
+  - data_input_datasets
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DirectedInterleaveDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: DirectedInterleaveDataset
+title: tf.raw_ops.DirectedInterleaveDataset
+version: 2.3.0

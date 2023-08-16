@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of <float>, optional, default=[0]",Augmentation Param: Minimum ratio of intersect/crop_area between crop box and ground-truths.,None,prim_dtype,dtype(float),,1
+"tuple of <float>, optional, default=[0]",Augmentation Param: Minimum ratio of intersect/crop_area between crop box and ground-truths.,None,nonprim_dtype,structure(tuple(float)),,1
+"tuple of <float>, optional, default=[0]",Augmentation Param: Minimum ratio of intersect/crop_area between crop box and ground-truths.,None,shape,ndim(1),,1

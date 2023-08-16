@@ -1,0 +1,39 @@
+aliases:
+- tf.compat.v1.keras.backend.random_binomial
+constraints:
+  dtype:
+    default: None
+    descp: String, dtype of returned tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE, dtype of returned D_STRUCTURE
+  p:
+    default: '0.0'
+    descp: A float, `0. <= p <= 1`, probability of binomial distribution.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A D_TYPE, CONSTANT_NUM
+    - REXPR REXPR, probability of binomial distribution
+  seed:
+    default: None
+    descp: Integer, random seed.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE, random seed
+  shape:
+    descp: A tuple of integers, the shape of tensor to create.
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE, the shape of D_STRUCTURE to create
+inputs:
+  optional:
+  - p
+  - dtype
+  - seed
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/random_binomial
+outputs: A tensor.
+package: tensorflow
+target: random_binomial
+title: tf.keras.backend.random_binomial
+version: 2.1.0

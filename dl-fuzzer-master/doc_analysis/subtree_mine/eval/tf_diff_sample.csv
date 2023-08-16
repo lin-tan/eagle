@@ -1,0 +1,14 @@
+API,Arg,Descp,default,doc_dtype,Catrgory,Label,Extracted
+tf.keras.backend.resize_images,width_factor,Positive integer.,,,range,"['(0,inf)']",[]
+tf.debugging.assert_none_equal,y,"Numeric `Tensor`, same dtype as and broadcastable to `x`.",,,tensor_t,['tf.tensor'],[]
+tf.signal.inverse_stft,fft_length,"An integer scalar `Tensor`. The size of the FFT that produced`stfts`. If not provided, uses the smallest power of 2 enclosing`frame_length`.",None,,range,"['[0,inf)']",[]
+tf.sequence_mask,maxlen,"scalar integer tensor, size of last dimension of returned tensor. Default is the maximum value in `lengths`.",None,,tensor_t,['tf.tensor'],[]
+tf.keras.activations.sigmoid,x,Input tensor.,,tensor_t,['tf.tensor'],
+tf.keras.layers.ConvLSTM2D,dropout,Float between 0 and 1. Fraction of the units to drop for the linear transformation of the inputs.,0.0,,range,"['[0,1]']",[]
+tf.nn.ctc_beam_search_decoder,sequence_length,"1-D `int32` vector containing sequence lengths, having size`[batch_size]`.",,,structure,['list'],[]
+tf.sort,direction,The direction in which to sort the values (`'ASCENDING'` or`'DESCENDING'`).,ASCENDING,,enum,"['ASCENDING', 'DESCENDING']",[]
+tf.nn.dilation2d,filters,"A `Tensor`. Must have the same type as `input`. 3-D with shape `[filter_height, filter_width, depth]`.",,,dtype,['dtype:&input'],['&input']
+tf.linalg.trace,x,tensor.,,,tensor_t,['tf.tensor'],[]
+tf.summary.scalar,step,"Explicit `int64`-castable monotonic step value for this summary. If omitted, this defaults to `tf.summary.experimental.get_step()`, which must not be None.",None,,dtype,['tf.int64'],[]
+tf.keras.layers.DepthwiseConv2D,padding,one of `'valid'` or `'same'` (case-insensitive).,valid,,ndim,[],['0']
+tf.clip_by_global_norm,use_norm,"A 0-D (scalar) `Tensor` of type `float` (optional). The global norm to use. If not provided, `global_norm()` is used to compute the norm.",None,,ndim,['0'],[]

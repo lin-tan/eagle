@@ -1,0 +1,26 @@
+aliases:
+- tf.nn.zero_fraction
+- tf.compat.v1.math.zero_fraction
+- tf.compat.v1.nn.zero_fraction
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  value:
+    descp: A tensor of numeric type.
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE type
+inputs:
+  optional:
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/zero_fraction
+outputs: The fraction of zeros in `value`, with type `float32`.
+package: tensorflow
+target: zero_fraction
+title: tf.math.zero_fraction
+version: 2.1.0

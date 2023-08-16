@@ -1,0 +1,53 @@
+constraints:
+  '**kwargs':
+    descp: additional arguments Additional parameters to be passed to score_func.
+  greater_is_better:
+    default: 'True'
+    descp: boolean, default=True Whether score_func is a score function (default),
+      meaning high is good, or a loss function, meaning low is good. In the latter
+      case, the scorer object will sign-flip the outcome of the score_func.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  needs_proba:
+    default: 'False'
+    descp: boolean, default=False Whether score_func requires predict_proba to get
+      probability estimates out of a classifier. If True, for binary `y_true`, the
+      score function is supposed to accept a 1D `y_pred` (i.e., probability of the
+      positive class, shape `(n_samples,)`).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    - '1'
+  needs_threshold:
+    default: 'False'
+    descp: boolean, default=False Whether score_func takes a continuous decision certainty.
+      This only works for binary classification using estimators that have either
+      a decision_function or predict_proba method. If True, for binary `y_true`, the
+      score function is supposed to accept a 1D `y_pred` (i.e., probability of the
+      positive class or the decision function, shape `(n_samples,)`). For example
+      ``average_precision`` or the area under the roc curve can not be computed using
+      discrete predictions alone.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    - '1'
+  score_func:
+    descp: callable, Score function (or loss function) with signature ``score_func(y,
+      y_pred, **kwargs)``.
+inputs:
+  optional:
+  - greater_is_better
+  - needs_proba
+  - needs_threshold
+  required:
+  - score_func
+  - '**kwargs'
+link: ''
+package: scikit-learn
+target: make_scorer
+title: sklearn.metrics.make_scorer
+version: 0.24.X

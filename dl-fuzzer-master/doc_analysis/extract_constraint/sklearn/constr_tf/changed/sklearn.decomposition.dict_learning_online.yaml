@@ -1,0 +1,197 @@
+constraints:
+  X:
+    descp: array of shape (n_samples, n_features) Data matrix.
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  alpha:
+    default: '1'
+    descp: float, Sparsity controlling parameter.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  batch_size:
+    default: '3'
+    descp: int, The number of samples to take in each batch.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  callback:
+    default: None
+    descp: 'callable or None, optional (default: None) callable that gets invoked
+      every five iterations'
+  dict_init:
+    default: None
+    descp: array of shape (n_components, n_features), Initial value for the dictionary
+      for warm restart scenarios.
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[&n_components,n_features]'
+  inner_stats:
+    default: None
+    descp: tuple of (A, B) ndarrays Inner sufficient statistics that are kept by the
+      algorithm. Passing them at initialization is useful in online settings, to avoid
+      losing the history of the evolution. A (n_components, n_components) is the dictionary
+      covariance matrix. B (n_features, n_components) is the data approximation matrix
+    ndim:
+    - '1'
+  iter_offset:
+    default: '0'
+    descp: int, default 0 Number of previous iterations completed on the dictionary
+      used for initialization.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  method:
+    default: lars
+    descp: '{''lars'', ''cd''} lars: uses the least angle regression method to solve
+      the lasso problem (linear_model.lars_path) cd: uses the coordinate descent method
+      to compute the Lasso solution (linear_model.Lasso). Lars will be faster if the
+      estimated components are sparse.'
+    dtype:
+    - string
+  method_max_iter:
+    default: '1000'
+    descp: int, optional (default=1000) Maximum number of iterations to perform when
+      solving the lasso problem.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_components:
+    default: '2'
+    descp: int, Number of dictionary atoms to extract.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_iter:
+    default: '100'
+    descp: int, Number of mini-batch iterations to perform.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) Number of parallel jobs to run. ``None``
+      means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1`` means using
+      all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  positive_code:
+    default: 'False'
+    descp: bool Whether to enforce positivity when finding the code.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  positive_dict:
+    default: 'False'
+    descp: bool Whether to enforce positivity when finding the dictionary.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  return_code:
+    default: 'True'
+    descp: boolean, Whether to also return the code U or just the dictionary V.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_inner_stats:
+    default: 'False'
+    descp: boolean, optional Return the inner statistics A (dictionary covariance)
+      and B (data approximation). Useful to restart the algorithm in an online setting.
+      If return_inner_stats is True, return_code is ignored
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_n_iter:
+    default: 'False'
+    descp: bool Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  shuffle:
+    default: 'True'
+    descp: boolean, Whether to shuffle the data before splitting it in batches.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  verbose:
+    default: 'False'
+    descp: 'bool, optional (default: False) To control the verbosity of the procedure.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - n_components
+  - alpha
+  - n_iter
+  - return_code
+  - dict_init
+  - callback
+  - batch_size
+  - verbose
+  - shuffle
+  - n_jobs
+  - method
+  - iter_offset
+  - random_state
+  - return_inner_stats
+  - inner_stats
+  - return_n_iter
+  - positive_dict
+  - positive_code
+  - method_max_iter
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: dict_learning_online
+title: sklearn.decomposition.dict_learning_online
+version: 0.24.X

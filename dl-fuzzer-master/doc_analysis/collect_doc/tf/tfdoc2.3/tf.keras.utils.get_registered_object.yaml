@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.keras.utils.get_registered_object
+constraints:
+  custom_objects:
+    default: None
+    descp: A dictionary of custom objects to look the name up in. Generally, custom_objects
+      is provided by the user.
+  module_objects:
+    default: None
+    descp: A dictionary of custom objects to look the name up in. Generally, module_objects
+      is provided by midlevel library implementers.
+  name:
+    descp: The name to look up.
+inputs:
+  optional:
+  - custom_objects
+  - module_objects
+  required:
+  - name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/utils/get_registered_object
+outputs:
+- An instantiable class associated with 'name', or None if no such class exists.
+package: tensorflow
+target: get_registered_object
+title: tf.keras.utils.get_registered_object
+version: 2.3.0

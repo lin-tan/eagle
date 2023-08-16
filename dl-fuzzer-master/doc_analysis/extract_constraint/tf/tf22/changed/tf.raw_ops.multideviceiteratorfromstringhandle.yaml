@@ -1,0 +1,50 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    default: '[]'
+    descp: An optional list of shapes (each a tf.TensorShape or list of ints). Defaults
+      to []. The list of shapes being produced.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(int)
+  output_types:
+    default: '[]'
+    descp: An optional list of tf.DTypes. Defaults to []. The type list for the return
+      values.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.dtype)
+  string_handle:
+    descp: A Tensor of type string. String representing the resource.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - output_types
+  - output_shapes
+  - name
+  required:
+  - string_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MultiDeviceIteratorFromStringHandle
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: MultiDeviceIteratorFromStringHandle
+title: tf.raw_ops.MultiDeviceIteratorFromStringHandle
+version: 2.2.0

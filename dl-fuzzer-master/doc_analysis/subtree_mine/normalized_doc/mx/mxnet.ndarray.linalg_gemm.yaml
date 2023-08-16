@@ -1,0 +1,100 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  A:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of input matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  B:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of input matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  C:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of input matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  alpha:
+    default: _Null
+    descp: Scalar factor multiplied with A*B.
+    doc_dtype: double, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Scalar factor multiplied with A B
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  axis:
+    default: _Null
+    descp: Axis corresponding to the matrix rows.
+    doc_dtype: int, optional, default='-2'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Axis corresponding to the matrix rows
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  beta:
+    default: _Null
+    descp: Scalar factor multiplied with C.
+    doc_dtype: double, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Scalar factor multiplied with C
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  transpose_a:
+    default: _Null
+    descp: Multiply with transposed of first input (A).
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Multiply with transposed of first input BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  transpose_b:
+    default: _Null
+    descp: Multiply with transposed of second input (B).
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Multiply with transposed of second input BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - A
+  - B
+  - C
+  - transpose_a
+  - transpose_b
+  - alpha
+  - beta
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.linalg_gemm
+package: mxnet
+target: linalg_gemm
+title: mxnet.ndarray.linalg_gemm
+version: 1.6.0

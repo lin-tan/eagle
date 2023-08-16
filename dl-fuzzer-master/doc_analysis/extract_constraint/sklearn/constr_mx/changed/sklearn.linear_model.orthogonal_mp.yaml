@@ -1,0 +1,65 @@
+constraints:
+  X:
+    descp: array, shape (n_samples, n_features) Input data. Columns are assumed to
+      have unit norm.
+  copy_X:
+    default: 'True'
+    descp: bool, optional Whether the design matrix X must be copied by the algorithm.
+      A false value is only helpful if X is already Fortran-ordered, otherwise a copy
+      is made anyway.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  n_nonzero_coefs:
+    default: None
+    descp: int Desired number of non-zero entries in the solution. If None (by default)
+      this value is set to 10% of n_features.
+    dtype:
+    - int
+  precompute:
+    default: 'False'
+    descp: '{True, False, ''auto''}, Whether to perform precomputations. Improves
+      performance when n_targets or n_samples is very large.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_n_iter:
+    default: 'False'
+    descp: bool, optional default False Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_path:
+    default: 'False'
+    descp: 'bool, optional. Default: False Whether to return every value of the nonzero
+      coefficients along the forward path. Useful for cross-validation.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  tol:
+    default: None
+    descp: float Maximum norm of the residual. If not None, overrides n_nonzero_coefs.
+    dtype:
+    - float
+  y:
+    descp: array, shape (n_samples,) or (n_samples, n_targets) Input targets
+inputs:
+  optional:
+  - n_nonzero_coefs
+  - tol
+  - precompute
+  - copy_X
+  - return_path
+  - return_n_iter
+  required:
+  - X
+  - y
+link: ''
+package: scikit-learn
+target: orthogonal_mp
+title: sklearn.linear_model.orthogonal_mp
+version: 0.24.X

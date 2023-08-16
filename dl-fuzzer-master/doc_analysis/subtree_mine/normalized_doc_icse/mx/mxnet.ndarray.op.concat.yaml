@@ -1,0 +1,38 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*data':
+    descp: List of arrays to concatenate
+    doc_dtype: NDArray[]
+    normalized_descp:
+    - D_STRUCTURE of D_STRUCTURE to concatenate
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dim:
+    default: None
+    descp: the dimension to be concated.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the dimension to be concated
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - dim
+  - out
+  required:
+  - '*data'
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.concat
+package: mxnet
+target: concat
+title: mxnet.ndarray.op.concat
+version: 1.6.0

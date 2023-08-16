@@ -1,0 +1,48 @@
+constraints:
+  X:
+    descp: array, shape (n_samples, n_features) or (n_samples, n_samples) If the metric
+      is 'precomputed' X must be a square distance matrix. Otherwise it contains a
+      sample per row.
+  X_embedded:
+    descp: array, shape (n_samples, n_components) Embedding of the training data in
+      low-dimensional space.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_components]'
+  metric:
+    default: euclidean
+    descp: string, or callable, optional, default 'euclidean' Which metric to use
+      for computing pairwise distances between samples from the original input space.
+      If metric is 'precomputed', X must be a matrix of pairwise distances or squared
+      distances. Otherwise, see the documentation of argument metric in sklearn.pairwise.pairwise_distances
+      for a list of available metrics.
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+  n_neighbors:
+    default: '5'
+    descp: 'int, optional (default: 5) Number of neighbors k that will be considered.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+dependency:
+- n_components
+- n_samples
+inputs:
+  optional:
+  - n_neighbors
+  - metric
+  required:
+  - X
+  - X_embedded
+link: ''
+package: scikit-learn
+target: trustworthiness
+title: sklearn.manifold.trustworthiness
+version: 0.24.X

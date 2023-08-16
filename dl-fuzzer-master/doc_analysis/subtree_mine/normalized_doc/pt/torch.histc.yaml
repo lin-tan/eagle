@@ -1,0 +1,53 @@
+constraints:
+  bins:
+    default: '100'
+    descp: number of histogram bins
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - number of histogram bins
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max:
+    default: '0'
+    descp: upper end of the range (inclusive)
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - upper end of the range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  min:
+    default: '0'
+    descp: lower end of the range (inclusive)
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - lower end of the range BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - bins
+  - min
+  - max
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.histc
+package: torch
+ret_type: Tensor
+target: histc
+title: torch.histc
+version: 1.5.0

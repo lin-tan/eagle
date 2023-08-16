@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.train.list_variables
+constraints:
+  ckpt_dir_or_file:
+    descp: Directory with checkpoints file or path to checkpoint.
+inputs:
+  optional: []
+  required:
+  - ckpt_dir_or_file
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/train/list_variables
+outputs:
+- List of tuples (name, shape).
+package: tensorflow
+target: list_variables
+title: tf.train.list_variables
+version: 2.2.0

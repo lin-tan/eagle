@@ -1,0 +1,35 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatsAggregatorHandleV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: StatsAggregatorHandleV2
+title: tf.raw_ops.StatsAggregatorHandleV2
+version: 2.3.0

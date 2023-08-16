@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An int representing the number of records to combine in a single batch.,,prim_dtype,dtype(int),1,1
+,An int representing the number of records to combine in a single batch.,,shape,ndim(0),1,1
+,An int representing the number of records to combine in a single batch.,,validvalue,"range([0,inf))",1,1

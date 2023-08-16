@@ -1,0 +1,26 @@
+constraints:
+  i:
+    descp: A Tensor of type int32. A vector. Indices into the left-most dimension
+      of x.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  v:
+    descp: A Tensor. Must have the same type as x. A Tensor of type T. Same dimension
+      sizes as x except the first dimension, which must be the same as i's size.
+  x:
+    descp: A Tensor. A tensor of type T.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - i
+  - v
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/InplaceUpdate
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: InplaceUpdate
+title: tf.raw_ops.InplaceUpdate
+version: 2.2.0

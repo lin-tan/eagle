@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: first tensor in the dot product. Its conjugate is used if it's complex.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: second tensor in the dot product.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.vdot.html#torch.vdot#torch.vdot
+package: torch
+ret_type: Tensor
+target: vdot
+title: torch.vdot
+version: 1.7.0

@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  area:
+    descp: If tuple, minimum area and maximum area to be maintained after cropping
+      If float, minimum area to be maintained after cropping, maximum area is set
+      to 1.0
+    doc_dtype: float in (0, 1] or tuple of (float, float
+    normalized_descp:
+    - If D_STRUCTURE minimum area and maximum area to be maintained after cropping
+      If D_TYPE minimum area to be maintained after cropping maximum area is set to
+      CONSTANT_FLOAT
+    normalized_docdtype: D_TYPE in BSTR or D_STRUCTURE of D_TYPE
+  interp:
+    default: '2'
+    descp: Interpolation method. See resize_short for details.
+    doc_dtype: int, optional, default=2
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Interpolation method
+    - See resize_short for details
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  ratio:
+    descp: Aspect ratio range as (min_aspect_ratio, max_aspect_ratio)
+    doc_dtype: tuple of (float, float
+    normalized_descp:
+    - Aspect ratio range as BSTR
+    normalized_docdtype: D_STRUCTURE of D_TYPE
+  size:
+    descp: Size of the crop formatted as (width, height).
+    doc_dtype: tuple of (int, int
+    normalized_descp:
+    - Size of the crop formatted as BSTR
+    normalized_docdtype: D_STRUCTURE of D_TYPE
+  src:
+    descp: Input image
+    doc_dtype: NDArray
+    normalized_descp:
+    - Input image
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - interp
+  required:
+  - src
+  - size
+  - area
+  - ratio
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/image/index.html#mxnet.image.random_size_crop
+package: mxnet
+target: random_size_crop
+title: mxnet.image.random_size_crop
+version: 1.6.0

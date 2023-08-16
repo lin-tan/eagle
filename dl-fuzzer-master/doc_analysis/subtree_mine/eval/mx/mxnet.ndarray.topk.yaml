@@ -1,0 +1,15 @@
+constraints:
+  axis:
+    default: _Null
+    descp: Axis along which to choose the top k indices. If not given, the flattened
+      array is used. Default is -1.
+    doc_dtype:
+    - int
+    - None
+    - optional
+    - default='-1'
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: mxnet.ndarray.topk

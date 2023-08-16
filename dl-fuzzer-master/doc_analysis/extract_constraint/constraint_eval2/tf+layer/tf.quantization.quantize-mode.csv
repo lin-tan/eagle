@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `string` from: `""MIN_COMBINED"", ""MIN_FIRST"", ""SCALED""`. Defaults to `""MIN_COMBINED""`.",MIN_COMBINED,prim_dtype,dtype(tf.string),,1
+,"An optional `string` from: `""MIN_COMBINED"", ""MIN_FIRST"", ""SCALED""`. Defaults to `""MIN_COMBINED""`.",MIN_COMBINED,shape,ndim(0),,1
+,"An optional `string` from: `""MIN_COMBINED"", ""MIN_FIRST"", ""SCALED""`. Defaults to `""MIN_COMBINED""`.",MIN_COMBINED,validvalue,"enum(MIN_COMBINED, MIN_FIRST, SCALED)",,1

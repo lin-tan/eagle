@@ -1,0 +1,12 @@
+constraints:
+  range_max:
+    descp: The number of possible classes.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: mxnet.ndarray.contrib.rand_zipfian

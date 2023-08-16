@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `int32`. A 1-D tensor of 2 elements containing the size of the glimpses to extract.  The glimpse height must be specified first, following by the glimpse width.",,prim_dtype,dtype(tf.int32),,1
+,"A `Tensor` of type `int32`. A 1-D tensor of 2 elements containing the size of the glimpses to extract.  The glimpse height must be specified first, following by the glimpse width.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `int32`. A 1-D tensor of 2 elements containing the size of the glimpses to extract.  The glimpse height must be specified first, following by the glimpse width.",,shape,"shape([2]), ndim(1)",,1
+,"A `Tensor` of type `int32`. A 1-D tensor of 2 elements containing the size of the glimpses to extract.  The glimpse height must be specified first, following by the glimpse width.",,validvalue,"range([0,inf))",,1

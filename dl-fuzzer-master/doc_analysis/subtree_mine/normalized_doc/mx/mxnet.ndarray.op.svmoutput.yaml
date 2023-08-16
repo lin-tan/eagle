@@ -1,0 +1,78 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data for SVM transformation.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data for SVM transformation
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  label:
+    default: None
+    descp: Class label for the input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Class label for the input PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  margin:
+    default: _Null
+    descp: The loss function penalizes outputs that lie outside this margin. Default
+      margin is 1.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The loss function penalizes outputs that lie outside this margin
+    - Default margin is CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  regularization_coefficient:
+    default: _Null
+    descp: Regularization parameter for the SVM. This balances the tradeoff between
+      coefficient size and error.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Regularization parameter for the SVM
+    - This balances the tradeoff between coefficient size and error
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  use_linear:
+    default: _Null
+    descp: Whether to use L1-SVM objective. L2-SVM objective is used by default.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to use L1 SVM objective
+    - L2 SVM objective is used by default
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - label
+  - margin
+  - regularization_coefficient
+  - use_linear
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.SVMOutput
+package: mxnet
+target: SVMOutput
+title: mxnet.ndarray.op.SVMOutput
+version: 1.6.0

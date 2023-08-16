@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,List of pairs of a boolean scalar tensor and a callable which returns a list of tensors.,,prim_dtype,dtype(tf.bool),,1
+,List of pairs of a boolean scalar tensor and a callable which returns a list of tensors.,,nonprim_dtype,"tensor_t(tf.tensor), structure(list, list(tf.tensor))",,1
+,List of pairs of a boolean scalar tensor and a callable which returns a list of tensors.,,shape,ndim(0),,1

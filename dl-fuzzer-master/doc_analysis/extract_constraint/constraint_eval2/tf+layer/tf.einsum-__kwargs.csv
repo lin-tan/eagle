@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"- optimize: Optimization strategy to use to find contraction path using opt_einsum. Must be 'greedy', 'optimal', 'branch-2', 'branch-all' or   'auto'. (optional, default: 'greedy'). name: A name for the operation (optional). ",,prim_dtype,dtype(tf.string),,1
+,"- optimize: Optimization strategy to use to find contraction path using opt_einsum. Must be 'greedy', 'optimal', 'branch-2', 'branch-all' or   'auto'. (optional, default: 'greedy'). name: A name for the operation (optional). ",,shape,ndim(0),,1

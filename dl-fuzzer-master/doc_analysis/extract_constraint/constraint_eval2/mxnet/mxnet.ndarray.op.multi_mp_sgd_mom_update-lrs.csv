@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of <float>, required",Learning rates.,,prim_dtype,dtype(float),,1
+"tuple of <float>, required",Learning rates.,,nonprim_dtype,structure(tuple(float)),,1
+"tuple of <float>, required",Learning rates.,,shape,"ndim(0, 1)",,1
+"tuple of <float>, required",Learning rates.,,validvalue,"range([0,1])",,1

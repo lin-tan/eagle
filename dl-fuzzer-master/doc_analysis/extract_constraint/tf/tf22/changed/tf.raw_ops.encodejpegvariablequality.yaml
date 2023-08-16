@@ -1,0 +1,33 @@
+constraints:
+  images:
+    descp: A Tensor of type uint8. Images to adjust. At least 3-D.
+    dtype:
+    - tf.uint8
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  quality:
+    descp: A Tensor of type int32. An int quality to encode to.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - images
+  - quality
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/EncodeJpegVariableQuality
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: EncodeJpegVariableQuality
+title: tf.raw_ops.EncodeJpegVariableQuality
+version: 2.2.0

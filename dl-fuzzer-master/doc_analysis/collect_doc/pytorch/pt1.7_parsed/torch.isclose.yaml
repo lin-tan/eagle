@@ -1,0 +1,38 @@
+constraints:
+  atol:
+    default: 1e-08
+    descp: 'absolute tolerance. Default: 1e-08'
+    doc_dtype:
+    - float
+  equal_nan:
+    default: 'False'
+    descp: 'if `True`, then two `NaN` s will be considered equal. Default: `False`'
+    doc_dtype:
+    - bool
+  input:
+    descp: first tensor to compare
+    doc_dtype:
+    - Tensor
+  other:
+    descp: second tensor to compare
+    doc_dtype:
+    - Tensor
+  rtol:
+    default: 1e-05
+    descp: 'relative tolerance. Default: 1e-05'
+    doc_dtype:
+    - float
+inputs:
+  optional:
+  - rtol
+  - atol
+  - equal_nan
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.isclose.html#torch.isclose#torch.isclose
+package: torch
+ret_type: Tensor
+target: isclose
+title: torch.isclose
+version: 1.7.0

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"string, optional, default=''","Context of output, in format [cpu|gpu|cpu_pinned](n). Only used for imperative calls.",_Null,prim_dtype,"dtype(context, string)",1,1

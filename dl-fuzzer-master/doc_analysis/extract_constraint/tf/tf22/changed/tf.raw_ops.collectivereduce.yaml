@@ -1,0 +1,97 @@
+constraints:
+  communication_hint:
+    default: auto
+    descp: An optional string. Defaults to "auto".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  final_op:
+    descp: 'A string from: "Id", "Div".'
+    dtype:
+    - tf.string
+    enum:
+    - Div
+    - Id
+    ndim:
+    - '0'
+  group_key:
+    descp: An int.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  group_size:
+    descp: An int.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, half, float64,
+      int32, int64.'
+    tensor_t:
+    - tf.tensor
+  instance_key:
+    descp: An int.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  merge_op:
+    descp: 'A string from: "Min", "Max", "Mul", "Add".'
+    dtype:
+    - tf.string
+    enum:
+    - Add
+    - Max
+    - Min
+    - Mul
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  subdiv_offsets:
+    descp: A list of ints.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  wait_for:
+    default: '[]'
+    descp: An optional list of ints. Defaults to [].
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+inputs:
+  optional:
+  - wait_for
+  - communication_hint
+  - name
+  required:
+  - input
+  - group_size
+  - group_key
+  - instance_key
+  - merge_op
+  - final_op
+  - subdiv_offsets
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CollectiveReduce
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: CollectiveReduce
+title: tf.raw_ops.CollectiveReduce
+version: 2.2.0

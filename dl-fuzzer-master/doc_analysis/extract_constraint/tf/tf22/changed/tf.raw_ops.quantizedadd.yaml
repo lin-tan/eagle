@@ -1,0 +1,75 @@
+constraints:
+  Toutput:
+    default: tf.dtypes.qint32
+    descp: 'An optional tf.DType from: tf.qint8, tf.quint8, tf.qint32, tf.qint16,
+      tf.quint16. Defaults to tf.qint32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  max_x:
+    descp: A Tensor of type float32. The float value that the highest quantized x
+      value represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  max_y:
+    descp: A Tensor of type float32. The float value that the highest quantized y
+      value represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_x:
+    descp: A Tensor of type float32. The float value that the lowest quantized x value
+      represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_y:
+    descp: A Tensor of type float32. The float value that the lowest quantized y value
+      represents.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor. Must be one of the following types: qint8, quint8, qint32, qint16,
+      quint16.'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: 'A Tensor. Must be one of the following types: qint8, quint8, qint32, qint16,
+      quint16.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - Toutput
+  - name
+  required:
+  - x
+  - y
+  - min_x
+  - max_x
+  - min_y
+  - max_y
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QuantizedAdd
+outputs:
+- A tuple of Tensor objects (z, min_z, max_z).
+- z: A Tensor of type Toutput.
+- min_z: A Tensor of type float32.
+- max_z: A Tensor of type float32.
+package: tensorflow
+target: QuantizedAdd
+title: tf.raw_ops.QuantizedAdd
+version: 2.2.0

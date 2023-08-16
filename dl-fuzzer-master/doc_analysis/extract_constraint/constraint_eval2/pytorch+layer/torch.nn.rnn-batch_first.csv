@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If `True`, then the input and output tensors are provided as (batch, seq, feature). Default: `False`",None,prim_dtype,dtype(torch.bool),,1
+,"If `True`, then the input and output tensors are provided as (batch, seq, feature). Default: `False`",None,shape,ndim(0),,1

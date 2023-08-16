@@ -1,0 +1,53 @@
+constraints:
+  multioutput:
+    default: uniform_average
+    descp: 'string in [''raw_values'', ''uniform_average'']             or array-like
+      of shape (n_outputs) Defines aggregating of multiple output values. Array-like
+      value defines weights used to average errors. ''raw_values'' : Returns a full
+      set of errors when the input is of multioutput format. ''uniform_average'' :
+      Errors of all outputs are averaged with uniform weight.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[n_outputs]'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), optional Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_pred:
+    descp: array-like of shape (n_samples,) or (n_samples, n_outputs) Estimated target
+      values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array-like of shape (n_samples,) or (n_samples, n_outputs) Ground truth
+      (correct) target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_outputs
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  - multioutput
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: sklearn
+target: mean_squared_log_error
+title: sklearn.metrics.mean_squared_log_error
+version: 0.24.2

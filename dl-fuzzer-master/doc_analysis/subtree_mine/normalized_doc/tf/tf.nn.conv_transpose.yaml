@@ -1,0 +1,105 @@
+aliases:
+- tf.compat.v1.nn.conv_transpose
+constraints:
+  data_format:
+    default: None
+    descp: A string or None.  Specifies whether the channel dimension of the `input`
+      and output is the last dimension (default, or if `data_format`does not start
+      with "NC"), or the second dimension (if `data_format`starts with "NC").  For
+      N=1, the valid values are "NWC" (default) and "NCW".  For N=2, the valid values
+      are "NHWC" (default) and "NCHW". For N=3, the valid values are "NDHWC" (default)
+      and "NCDHW".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE or None
+    - Specifies whether the channel dimension of the PARAM and output is the last
+      dimension default, or if QSTR does not start with QSTR , or the second dimension
+      if QSTR starts with QSTR
+    - For N CONSTANT_NUM, the valid values are QSTR BSTR and QSTR
+    - For N CONSTANT_NUM, the valid values are QSTR BSTR and QSTR
+    - For N CONSTANT_NUM, the valid values are QSTR BSTR and QSTR
+  dilations:
+    default: None
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`, defaults to
+      1. The dilation factor for each dimension of`input`. If a single value is given
+      it is replicated in the spatial dimensions. By default the `N` and `C` dimensions
+      are set to 1. If set to k > 1, there will be k-1 skipped cells between each
+      filter element on that dimension. The dimension order is determined by the value
+      of `data_format`, see above for details.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of D_TYPE that has length CONSTANT_NUM, QSTR or N CONSTANT_NUM,
+      defaults to CONSTANT_NUM
+    - The dilation factor for each dimension of PARAM
+    - If a single value is given it is replicated in the spatial dimensions
+    - By default the QSTR dimensions are set to CONSTANT_NUM
+    - If set to k REXPR, there will be k CONSTANT_NUM skipped cells between each filter
+      element on that dimension
+    - The dimension order is determined by the value of PARAM, see above for details
+  filters:
+    descp: An N+2 dimensional `Tensor` with the same type as `input` and shape `spatial_filter_shape
+      + [in_channels, out_channels]`.
+    normalized_descp:
+    - An N CONSTANT_NUM dimensional D_STRUCTURE with the same type as PARAM and shape
+      spatial_filter_shape BSTR
+  input:
+    descp: An N+2 dimensional `Tensor` of shape`[batch_size] + input_spatial_shape
+      + [in_channels]` if data_format does not start with "NC" (default), or`[batch_size,
+      in_channels] + input_spatial_shape` if data_format starts with "NC". It must
+      be one of the following types:`half`, `bfloat16`, `float32`, `float64`.
+    normalized_descp:
+    - An N CONSTANT_NUM dimensional D_STRUCTURE of shape BSTR input_spatial_shape
+      BSTR if PARAM does not start with QSTR BSTR, or BSTR input_spatial_shape QSTR
+      NC
+    - It must be one of the following types D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional). If not specified "conv_transpose"
+      is used.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+    - If not specified QSTR is used
+  output_shape:
+    descp: A 1-D `Tensor` representing the output shape of the deconvolution op.
+    normalized_descp:
+    - A CONSTANT_NUM-D D_STRUCTURE representing the output shape of the deconvolution
+      op
+  padding:
+    default: SAME
+    descp: A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the
+      "returns" section of `tf.nn.convolution` for details.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_TYPE, either QSTR
+    - The padding algorithm
+    - See the QSTR section of tf nn convolution for details
+  strides:
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`.  The stride
+      of the sliding window for each dimension of `input`. If a single value is given
+      it is replicated in the spatial dimensions. By default the `N` and `C` dimensions
+      are set to 0. The dimension order is determined by the value of `data_format`,
+      see below for details.
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of D_TYPE that has length CONSTANT_NUM, QSTR or N CONSTANT_NUM
+    - The stride of the sliding window for each dimension of PARAM
+    - If a single value is given it is replicated in the spatial dimensions
+    - By default the QSTR dimensions are set to CONSTANT_NUM
+    - The dimension order is determined by the value of PARAM, see below for details
+inputs:
+  optional:
+  - padding
+  - data_format
+  - dilations
+  - name
+  required:
+  - input
+  - filters
+  - output_shape
+  - strides
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/conv_transpose
+outputs: A `Tensor` with the same type as `value`.
+package: tensorflow
+target: conv_transpose
+title: tf.nn.conv_transpose
+version: 2.1.0

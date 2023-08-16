@@ -1,0 +1,34 @@
+constraints:
+  data:
+    descp: A list of Tensor objects. A list of tensors to print out when op is evaluated.
+  first_n:
+    default: '-1'
+    descp: An optional int. Defaults to -1. Only log first_n number of times. -1 disables
+      logging.
+  input:
+    descp: A Tensor. The tensor passed to output
+  message:
+    default: ''
+    descp: An optional string. Defaults to "". A string, prefix of the error message.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  summarize:
+    default: '3'
+    descp: An optional int. Defaults to 3. Only print this many entries of each tensor.
+inputs:
+  optional:
+  - message
+  - first_n
+  - summarize
+  - name
+  required:
+  - input
+  - data
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Print
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Print
+title: tf.raw_ops.Print
+version: 2.3.0

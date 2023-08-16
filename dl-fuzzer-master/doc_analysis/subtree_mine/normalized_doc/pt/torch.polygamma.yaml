@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  n:
+    descp: the order of the polygamma function
+    doc_dtype: int
+    normalized_descp:
+    - the order of the polygamma function
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - out
+  required:
+  - n
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.polygamma
+package: torch
+ret_type: Tensor
+target: polygamma
+title: torch.polygamma
+version: 1.5.0

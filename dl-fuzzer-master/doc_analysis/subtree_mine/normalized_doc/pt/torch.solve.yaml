@@ -1,0 +1,34 @@
+constraints:
+  A:
+    descp: input square matrix of size (*, m, m) , where *  is zero or more batch
+      dimensions.
+    doc_dtype: Tensor
+    normalized_descp:
+    - PARAM square matrix of size BSTR , where is zero or more batch dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input:
+    descp: input matrix B  of size (*, m, k)  , where *  is zero or more batch dimensions.
+    doc_dtype: Tensor
+    normalized_descp:
+    - input matrix B of size BSTR , where is zero or more batch dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: optional output tuple.
+    doc_dtype: Tensor, Tensor), optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE , optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.solve
+package: torch
+ret_type: (Tensor, Tensor)
+target: solve
+title: torch.solve
+version: 1.5.0

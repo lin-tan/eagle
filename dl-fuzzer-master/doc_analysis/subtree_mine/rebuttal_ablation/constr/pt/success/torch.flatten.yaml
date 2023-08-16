@@ -1,0 +1,54 @@
+constraints:
+  end_dim:
+    default: '-1'
+    descp: the last dim to flatten
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  start_dim:
+    default: '0'
+    descp: the first dim to flatten
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - start_dim
+  - end_dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.flatten
+package: torch
+ret_type: Tensor
+target: flatten
+title: torch.flatten
+version: 1.5.0

@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.keras.layers.Attention
+constraints:
+  '**kwargs':
+    descp: ''
+  causal:
+    default: None
+    descp: Boolean. Set to `True` for decoder self-attention. Adds a mask such that
+      position `i` cannot attend to positions `j > i`. This prevents the flow of information
+      from the future towards the past.
+  use_scale:
+    default: 'False'
+    descp: If `True`, will create a scalar variable to scale the attention scores.
+inputs:
+  optional:
+  - use_scale
+  - causal
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/Attention
+package: tensorflow
+target: Attention
+title: tf.keras.layers.Attention
+version: 2.1.0

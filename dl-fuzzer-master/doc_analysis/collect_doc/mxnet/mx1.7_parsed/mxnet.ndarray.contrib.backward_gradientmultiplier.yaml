@@ -1,0 +1,45 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: source input
+    doc_dtype:
+    - NDArray
+  is_int:
+    default: _Null
+    descp: Indicate whether scalar input is int type
+    doc_dtype:
+    - boolean
+    - optional
+    - default=1
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  scalar:
+    default: _Null
+    descp: Scalar input value
+    doc_dtype:
+    - double
+    - optional
+    - default=1
+inputs:
+  optional:
+  - data
+  - scalar
+  - is_int
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.backward_gradientmultiplier
+package: mxnet
+target: backward_gradientmultiplier
+title: mxnet.ndarray.contrib.backward_gradientmultiplier
+version: 1.7.0

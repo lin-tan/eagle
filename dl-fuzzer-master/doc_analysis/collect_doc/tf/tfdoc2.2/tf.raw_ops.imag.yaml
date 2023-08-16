@@ -1,0 +1,22 @@
+constraints:
+  Tout:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.float32, tf.float64. Defaults to tf.float32.'
+  input:
+    descp: 'A Tensor. Must be one of the following types: complex64, complex128.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - Tout
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Imag
+outputs:
+- A Tensor of type Tout.
+package: tensorflow
+target: Imag
+title: tf.raw_ops.Imag
+version: 2.2.0

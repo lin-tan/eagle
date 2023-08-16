@@ -1,0 +1,37 @@
+constraints:
+  clear_after_read:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+  dtype:
+    descp: A tf.DType.
+  dynamic_size:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  element_shape:
+    default: None
+    descp: An optional tf.TensorShape or list of ints. Defaults to None.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: A Tensor of type int32.
+  tensor_array_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - dynamic_size
+  - clear_after_read
+  - tensor_array_name
+  - element_shape
+  - name
+  required:
+  - size
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorArray
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: TensorArray
+title: tf.raw_ops.TensorArray
+version: 2.3.0

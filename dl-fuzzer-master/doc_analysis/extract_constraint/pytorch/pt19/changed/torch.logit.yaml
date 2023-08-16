@@ -1,0 +1,35 @@
+constraints:
+  eps:
+    default: None
+    descp: 'the epsilon for input clamp bound. Default: `None`'
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - eps
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.logit.html#torch.logit#torch.logit
+package: torch
+ret_type: Tensor
+target: logit
+title: torch.logit
+version: 1.9.0

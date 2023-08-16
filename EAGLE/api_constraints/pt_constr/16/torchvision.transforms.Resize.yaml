@@ -1,0 +1,26 @@
+constraints:
+  max_size:
+    default: 'None'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  size:
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - list
+inputs:
+  optional:
+  - max_size
+  required:
+  - size
+package: torchvision
+target: Resize
+title: torchvision.transforms.Resize
+version: 0.7.0
+

@@ -1,0 +1,36 @@
+constraints:
+  fill_mode:
+    default: CONSTANT
+    descp: An optional string. Defaults to "CONSTANT". Fill mode, "REFLECT", "WRAP",
+      or "CONSTANT".
+  images:
+    descp: 'A Tensor. Must be one of the following types: uint8, int32, int64, half,
+      float32, float64. 4-D with shape [batch, height, width, channels].'
+  interpolation:
+    descp: A string. Interpolation method, "NEAREST" or "BILINEAR".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shape:
+    descp: A Tensor of type int32. 1-D Tensor [new_height, new_width].
+  transforms:
+    descp: A Tensor of type float32. 2-D Tensor, [batch, 8] or [1, 8] matrix, where
+      each row corresponds to a 3 x 3 projective transformation matrix, with the last
+      entry assumed to be 1. If there is one row, the same transformation will be
+      applied to all images.
+inputs:
+  optional:
+  - fill_mode
+  - name
+  required:
+  - images
+  - transforms
+  - output_shape
+  - interpolation
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ImageProjectiveTransformV2
+outputs:
+- A Tensor. Has the same type as images.
+package: tensorflow
+target: ImageProjectiveTransformV2
+title: tf.raw_ops.ImageProjectiveTransformV2
+version: 2.3.0

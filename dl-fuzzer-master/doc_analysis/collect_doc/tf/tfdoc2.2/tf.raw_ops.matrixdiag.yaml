@@ -1,0 +1,18 @@
+constraints:
+  diagonal:
+    descp: A Tensor. Rank k, where k >= 1.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixDiag
+outputs:
+- A Tensor. Has the same type as diagonal.
+package: tensorflow
+target: MatrixDiag
+title: tf.raw_ops.MatrixDiag
+version: 2.2.0

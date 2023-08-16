@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(optional) If True (default), logits is shaped [time, batch, logits]. If False, shape is [batch, time, logits]",True,prim_dtype,dtype(tf.bool),,1
+,"(optional) If True (default), logits is shaped [time, batch, logits]. If False, shape is [batch, time, logits]",True,shape,"shape([batch,time,&logits], [time,batch,&logits]), ndim(0, 3)",,1

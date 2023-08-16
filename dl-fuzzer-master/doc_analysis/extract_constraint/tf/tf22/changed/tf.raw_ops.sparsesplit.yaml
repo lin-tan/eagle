@@ -1,0 +1,74 @@
+constraints:
+  indices:
+    descp: A Tensor of type int64. 2-D tensor represents the indices of the sparse
+      tensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '2'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_split:
+    descp: An int that is >= 1. The number of ways to split.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  shape:
+    descp: 'A Tensor of type int64. 1-D. tensor represents the shape of the sparse
+      tensor. output indices: A list of 1-D tensors represents the indices of the
+      output sparse tensors.'
+    dtype:
+    - int
+    - tf.int64
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  split_dim:
+    descp: A Tensor of type int64. 0-D. The dimension along which to split. Must be
+      in the range [0, rank(shape)).
+    dtype:
+    - tf.int64
+    range:
+    - '[0,ndim:&shape)'
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: A Tensor. 1-D tensor represents the values of the sparse tensor.
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - split_dim
+  - indices
+  - values
+  - shape
+  - num_split
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSplit
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_shape).
+- output_indices: A list of num_split Tensor objects with type int64.
+- output_values: A list of num_split Tensor objects with the same type as values.
+- output_shape: A list of num_split Tensor objects with type int64.
+package: tensorflow
+target: SparseSplit
+title: tf.raw_ops.SparseSplit
+version: 2.2.0

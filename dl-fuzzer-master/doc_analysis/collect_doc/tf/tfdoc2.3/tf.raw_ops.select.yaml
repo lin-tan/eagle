@@ -1,0 +1,25 @@
+constraints:
+  condition:
+    descp: A Tensor of type bool.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: A Tensor which may have the same shape as condition. If condition is rank
+      1, x may have higher rank, but its first dimension must match the size of condition.
+  y:
+    descp: A Tensor with the same type and shape as x.
+inputs:
+  optional:
+  - name
+  required:
+  - condition
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Select
+outputs:
+- A Tensor. Has the same type as t.
+package: tensorflow
+target: Select
+title: tf.raw_ops.Select
+version: 2.3.0

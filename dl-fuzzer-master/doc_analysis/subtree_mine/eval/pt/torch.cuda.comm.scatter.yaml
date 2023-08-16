@@ -1,0 +1,11 @@
+constraints:
+  dim:
+    default: '0'
+    descp: A dimension along which to chunk the tensor.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.cuda.comm.scatter

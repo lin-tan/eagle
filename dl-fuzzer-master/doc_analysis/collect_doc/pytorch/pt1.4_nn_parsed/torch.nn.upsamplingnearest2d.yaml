@@ -1,0 +1,25 @@
+constraints:
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size.
+    doc_dtype:
+    - python:float
+    - Tuple[python:float
+    - python:float]
+  size:
+    default: None
+    descp: output spatial sizes
+    doc_dtype:
+    - python:int
+    - Tuple[python:int
+    - python:int]
+inputs:
+  optional:
+  - size
+  - scale_factor
+  required: []
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.UpsamplingNearest2d
+package: torch
+target: UpsamplingNearest2d
+title: torch.nn.UpsamplingNearest2d
+version: 1.4.0

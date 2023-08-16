@@ -1,0 +1,96 @@
+aliases:
+- tf.compat.v1.nn.depthwise_conv2d_backprop_input
+- tf.compat.v1.nn.depthwise_conv2d_native_backprop_input
+constraints:
+  data_format:
+    default: NHWC
+    descp: 'An optional `string` from: `"NHWC", "NCHW"`. Defaults to `"NHWC"`. Specify
+      the data format of the input and output data. With the default format "NHWC",
+      the data is stored in the order of:   [batch, height, width, channels]. Alternatively,
+      the format could be "NCHW", the data storage order of:   [batch, channels, height,
+      width].'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - An optional D_TYPE from QSTR
+    - Defaults to QSTR
+    - Specify the data format of the input and output data
+    - With the default format QSTR , the data is stored in the order of BSTR
+    - Alternatively, the format could be QSTR , the data storage order of BSTR
+  dilations:
+    default: '[1, 1, 1, 1]'
+    descp: An optional list of `ints`. Defaults to `[1, 1, 1, 1]`. 1-D tensor of length
+      4.  The dilation factor for each dimension of`input`. If set to k > 1, there
+      will be k-1 skipped cells between each filter element on that dimension. The
+      dimension order is determined by the value of`data_format`, see above for details.
+      Dilations in the batch and depth dimensions must be 1.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_STRUCTURE of D_TYPE
+    - Defaults to BSTR
+    - CONSTANT_NUM-D D_STRUCTURE of length CONSTANT_NUM
+    - The dilation factor for each dimension of QSTR
+    - If set to k REXPR, there will be k CONSTANT_NUM skipped cells between each PARAM
+      element on that dimension
+    - The dimension order is determined by the value of PARAM, see above for details
+    - Dilations in the batch and depth dimensions must be CONSTANT_NUM
+  filter:
+    descp: 'A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`,
+      `float64`. 4-D with shape`[filter_height, filter_width, in_channels, depthwise_multiplier]`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM-D with shape BSTR
+  input_sizes:
+    descp: A `Tensor` of type `int32`. An integer vector representing the shape of
+      `input`, based on `data_format`.  For example, if `data_format` is 'NHWC' then`input`
+      is a 4-D `[batch, height, width, channels]` tensor.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - An D_TYPE D_STRUCTURE representing the shape of QSTR , based on PARAM
+    - For example, if PARAM is QSTR then QSTR is a CONSTANT_NUM-D BSTR D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  out_backprop:
+    descp: A `Tensor`. Must have the same type as `filter`. 4-D with shape  based
+      on `data_format`. For example, if `data_format` is 'NHWC' then out_backprop
+      shape is `[batch, out_height, out_width, out_channels]`. Gradients w.r.t. the
+      output of the convolution.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - CONSTANT_NUM-D with shape based on PARAM
+    - For example, if PARAM is QSTR then out_backprop shape is BSTR
+    - Gradients w r t
+    - the output of the convolution
+  padding:
+    descp: 'A `string` from: `"SAME", "VALID"`. The type of padding algorithm to use.'
+    normalized_descp:
+    - A D_TYPE from QSTR
+    - The type of padding algorithm to use
+  strides:
+    descp: A list of `ints`. The stride of the sliding window for each dimension of
+      the input of the convolution.
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE
+    - The stride of the sliding window for each dimension of the input of the convolution
+inputs:
+  optional:
+  - data_format
+  - dilations
+  - name
+  required:
+  - input_sizes
+  - filter
+  - out_backprop
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/depthwise_conv2d_backprop_input
+outputs: A `Tensor`. Has the same type as `filter`.
+package: tensorflow
+target: depthwise_conv2d_backprop_input
+title: tf.nn.depthwise_conv2d_backprop_input
+version: 2.1.0

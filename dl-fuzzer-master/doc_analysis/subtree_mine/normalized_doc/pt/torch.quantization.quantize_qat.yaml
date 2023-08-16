@@ -1,0 +1,32 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  model:
+    descp: input model
+    normalized_descp:
+    - input model
+  run_args:
+    descp: positional arguments for run_fn
+    normalized_descp:
+    - positional arguments for PARAM
+  run_fn:
+    descp: a function for evaluating the prepared model, can be a function that simply
+      runs the prepared model or a training loop
+    normalized_descp:
+    - a function for evaluating the prepared PARAM, can be a function that simply
+      runs the prepared PARAM or a training loop
+inputs:
+  optional:
+  - inplace
+  required:
+  - model
+  - run_fn
+  - run_args
+link: https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize_qat
+package: torch
+target: quantize_qat
+title: torch.quantization.quantize_qat
+version: 1.5.0

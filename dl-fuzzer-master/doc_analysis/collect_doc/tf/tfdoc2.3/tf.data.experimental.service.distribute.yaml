@@ -1,0 +1,33 @@
+aliases:
+- tf.compat.v1.data.experimental.service.distribute
+constraints:
+  job_name:
+    default: None
+    descp: (Optional.) The name of the job. This argument makes it possible for multiple
+      datasets to share the same job. The default behavior is that the dataset creates
+      anonymous, exclusively owned jobs.
+  max_outstanding_requests:
+    default: None
+    descp: (Optional.) A limit on how many elements may be requested at the same time.
+      You can use this option to control the amount of memory used, since distribute
+      won't use more than element_size * max_outstanding_requests of memory.
+  processing_mode:
+    descp: A string specifying the policy for how data should be processed by tf.data
+      workers. Currently, the only supported value is "parallel_epochs".
+  service:
+    descp: A string indicating how to connect to the tf.data service. The string should
+      be in the format ://, e.g. grpc://localhost:5000.
+inputs:
+  optional:
+  - job_name
+  - max_outstanding_requests
+  required:
+  - processing_mode
+  - service
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/service/distribute
+outputs:
+- Dataset: A Dataset of the elements produced by the data service.
+package: tensorflow
+target: distribute
+title: tf.data.experimental.service.distribute
+version: 2.3.0

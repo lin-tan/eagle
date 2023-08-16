@@ -1,0 +1,8 @@
+constraints:
+  length:
+    descp: the distance to the ending dimension
+    doc_dtype:
+    - int
+    dtype:
+    - int
+title: torch.narrow

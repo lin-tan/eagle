@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.saved_model.load_v2
+constraints:
+  export_dir:
+    descp: The SavedModel directory to load from.
+  tags:
+    default: None
+    descp: A tag or sequence of tags identifying the MetaGraph to load. Optional if
+      the SavedModel contains a single MetaGraph, as for those exported from`tf.saved_model.load`.
+exceptions:
+- ValueError: If `tags` don't match a MetaGraph in the SavedModel.
+inputs:
+  optional:
+  - tags
+  required:
+  - export_dir
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/saved_model/load
+outputs: A trackable object with a `signatures` attribute mapping from signature keys
+  to functions. If the SavedModel was exported by `tf.saved_model.load`, it also points
+  to trackable objects and functions which were attached to the exported object.
+package: tensorflow
+target: load
+title: tf.saved_model.load
+version: 2.1.0

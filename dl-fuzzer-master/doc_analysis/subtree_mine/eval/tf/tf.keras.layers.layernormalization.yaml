@@ -1,0 +1,14 @@
+constraints:
+  axis:
+    default: '-1'
+    descp: Integer or List/Tuple. The axis that should be normalized (typically the
+      features axis).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+    - tuple
+title: tf.keras.layers.LayerNormalization

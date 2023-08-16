@@ -1,0 +1,12 @@
+constraints:
+  port:
+    descp: port profiler server listens to.
+inputs:
+  optional: []
+  required:
+  - port
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/profiler/experimental/server/start
+package: tensorflow
+target: start
+title: tf.profiler.experimental.server.start
+version: 2.3.0

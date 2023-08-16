@@ -1,0 +1,46 @@
+constraints:
+  power:
+    default: '0'
+    descp: 'float, default=0 Tweedie power parameter. Either power <= 0 or power >=
+      1. The higher `p` the less weight is given to extreme deviations between true
+      and predicted targets. - power < 0: Extreme stable distribution. Requires: y_pred
+      > 0. - power = 0 : Normal distribution, output corresponds to mean_squared_error.
+      y_true and y_pred can be any real numbers. - power = 1 : Poisson distribution.
+      Requires: y_true >= 0 and y_pred > 0. - 1 < p < 2 : Compound Poisson distribution.
+      Requires: y_true >= 0 and y_pred > 0. - power = 2 : Gamma distribution. Requires:
+      y_true > 0 and y_pred > 0. - power = 3 : Inverse Gaussian distribution. Requires:
+      y_true > 0 and y_pred > 0. - otherwise : Positive stable distribution. Requires:
+      y_true > 0 and y_pred > 0.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sample_weight:
+    default: None
+    descp: array-like, shape (n_samples,), optional Sample weights.
+  y_pred:
+    descp: array-like of shape (n_samples,) Estimated target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array-like of shape (n_samples,) Ground truth (correct) target values.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  - power
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: mean_tweedie_deviance
+title: sklearn.metrics.mean_tweedie_deviance
+version: 0.24.X

@@ -1,0 +1,35 @@
+constraints:
+  batch_index:
+    descp: A Tensor of type int64.
+  batched_tensor:
+    descp: A Tensor.
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  id:
+    descp: A Tensor of type int64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+  timeout_micros:
+    descp: An int.
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - batched_tensor
+  - batch_index
+  - id
+  - timeout_micros
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Unbatch
+outputs:
+- A Tensor. Has the same type as batched_tensor.
+package: tensorflow
+target: Unbatch
+title: tf.raw_ops.Unbatch
+version: 2.3.0

@@ -1,0 +1,161 @@
+constraints:
+  distortion:
+    default: '1'
+    descp: An optional float. Defaults to 1. The distortion is used to skew the unigram
+      probability distribution. Each weight is first raised to the distortion's power
+      before adding to the internal unigram distribution. As a result, distortion
+      = 1.0 gives regular unigram sampling (as defined by the vocab file), and distortion
+      = 0.0 gives a uniform distribution.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_reserved_ids:
+    default: '0'
+    descp: An optional int. Defaults to 0. Optionally some reserved IDs can be added
+      in the range [0, ..., num_reserved_ids) by the users. One use case is that a
+      special unknown word token is used as ID 0. These IDs will have a sampling probability
+      of 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_sampled:
+    descp: An int that is >= 1. Number of candidates to randomly sample.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_shards:
+    default: '1'
+    descp: An optional int that is >= 1. Defaults to 1. A sampler can be used to sample
+      from a subset of the original range in order to speed up the whole computation
+      through parallelism. This parameter (together with 'shard') indicates the number
+      of partitions that are being used in the overall computation.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  num_true:
+    descp: An int that is >= 1. Number of true labels per context.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  range_max:
+    descp: An int that is >= 1. The sampler will sample integers from the interval
+      [0, range_max).
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to be non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. An second seed to avoid seed collision.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shard:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0. A sampler can be used to sample
+      from a subset of the original range in order to speed up the whole computation
+      through parallelism. This parameter (together with 'num_shards') indicates the
+      particular partition number of a sampler op, when partitioning is being used.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  true_classes:
+    descp: A Tensor of type int64. A batch_size * num_true matrix, in which each row
+      contains the IDs of the num_true target_classes in the corresponding original
+      label.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  unigrams:
+    default: '[]'
+    descp: An optional list of floats. Defaults to []. A list of unigram counts or
+      probabilities, one per ID in sequential order. Exactly one of vocab_file and
+      unigrams should be passed to this op.
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(float)
+  unique:
+    descp: A bool. If unique is true, we sample with rejection, so that all sampled
+      candidates in a batch are unique. This requires some approximation to estimate
+      the post-rejection sampling probabilities.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  vocab_file:
+    default: ''
+    descp: An optional string. Defaults to "". Each valid line in this file (which
+      should have a CSV-like format) corresponds to a valid word ID. IDs are in sequential
+      order, starting from num_reserved_ids. The last entry in each line is expected
+      to be a value corresponding to the count or relative probability. Exactly one
+      of vocab_file and unigrams needs to be passed to this op.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - vocab_file
+  - distortion
+  - num_reserved_ids
+  - num_shards
+  - shard
+  - unigrams
+  - seed
+  - seed2
+  - name
+  required:
+  - true_classes
+  - num_true
+  - num_sampled
+  - unique
+  - range_max
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FixedUnigramCandidateSampler
+outputs:
+- A tuple of Tensor objects (sampled_candidates, true_expected_count, sampled_expected_count).
+- sampled_candidates: A Tensor of type int64.
+- true_expected_count: A Tensor of type float32.
+- sampled_expected_count: A Tensor of type float32.
+package: tensorflow
+target: FixedUnigramCandidateSampler
+title: tf.raw_ops.FixedUnigramCandidateSampler
+version: 2.3.0

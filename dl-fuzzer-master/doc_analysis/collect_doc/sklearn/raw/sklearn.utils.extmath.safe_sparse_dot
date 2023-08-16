@@ -1,0 +1,15 @@
+sklearn.utils.extmath.safe_sparse_dot = safe_sparse_dot(a, b, dense_output=False)
+    Dot product that handle the sparse matrix case correctly
+    
+    Parameters
+    ----------
+    a : array or sparse matrix
+    b : array or sparse matrix
+    dense_output : boolean, (default=False)
+        When False, ``a`` and ``b`` both being sparse will yield sparse output.
+        When True, output will always be a dense array.
+    
+    Returns
+    -------
+    dot_product : array or sparse matrix
+        sparse if ``a`` and ``b`` are sparse and ``dense_output=False``.

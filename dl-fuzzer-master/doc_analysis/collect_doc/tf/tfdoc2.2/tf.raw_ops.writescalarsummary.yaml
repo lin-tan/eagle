@@ -1,0 +1,28 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  step:
+    descp: A Tensor of type int64.
+  tag:
+    descp: A Tensor of type string.
+  value:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64.'
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - step
+  - tag
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WriteScalarSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteScalarSummary
+title: tf.raw_ops.WriteScalarSummary
+version: 2.2.0

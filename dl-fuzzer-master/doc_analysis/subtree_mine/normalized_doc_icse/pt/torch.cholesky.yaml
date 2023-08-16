@@ -1,0 +1,39 @@
+constraints:
+  input:
+    descp: the input tensor A  of size (*, n, n)  where * is zero or more batch dimensions
+      consisting of symmetric positive-definite matrices.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE A of size BSTR where is zero or more batch dimensions
+      consisting of symmetric positive definite matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output matrix
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output matrix
+    normalized_docdtype: D_STRUCTURE optional
+  upper:
+    default: 'False'
+    descp: 'flag that indicates whether to return a upper or lower triangular matrix.
+      Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - flag that indicates whether to return a upper or lower triangular matrix
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - upper
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.cholesky
+package: torch
+ret_type: Tensor
+target: cholesky
+title: torch.cholesky
+version: 1.5.0

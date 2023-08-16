@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=50) The sum of the features (number of words if documents) is drawn from a Poisson distribution with this expected value.",50,prim_dtype,dtype(int),,1
+,"int, optional (default=50) The sum of the features (number of words if documents) is drawn from a Poisson distribution with this expected value.",50,shape,ndim(0),,1
+,"int, optional (default=50) The sum of the features (number of words if documents) is drawn from a Poisson distribution with this expected value.",50,validvalue,"range([0,inf))",,1

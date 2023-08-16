@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+string,"`""sum""`, `""mean""` or `""max""`. Specifies the way to reduce the bag. `""sum""` computes the weighted sum, taking `per_sample_weights` into consideration. `""mean""` computes the average of the values in the bag, `""max""` computes the max value over each bag. Default: `""mean""`",mean,prim_dtype,dtype(string),,1

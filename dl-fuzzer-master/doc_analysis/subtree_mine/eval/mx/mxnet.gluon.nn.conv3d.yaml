@@ -1,0 +1,17 @@
+constraints:
+  groups:
+    default: '1'
+    descp: Controls the connections between inputs and outputs. At groups=1, all inputs
+      are convolved to all outputs. At groups=2, the operation becomes equivalent
+      to having two conv layers side by side, each seeing half the input channels,
+      and producing half the output channels, and both subsequently concatenated.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    enum:
+    - '1'
+    - '2'
+title: mxnet.gluon.nn.Conv3D

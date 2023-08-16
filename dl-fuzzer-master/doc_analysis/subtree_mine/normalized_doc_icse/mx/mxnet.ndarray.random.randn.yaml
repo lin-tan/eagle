@@ -1,0 +1,75 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*shape':
+    descp: The number of samples to draw. If shape is, e.g., (m, n) and loc and scale
+      are scalars, output shape will be (m, n). If loc and scale are NDArrays with
+      shape, e.g., (x, y), then output will have shape (x, y, m, n), where m*n samples
+      are drawn for each [loc, scale) pair.
+    doc_dtype: int or tuple of ints
+    normalized_descp:
+    - The number of samples to draw
+    - If shape is e g BSTR
+    - If PARAM and PARAM are NDArrays with shape e g BSTR where m n samples are drawn
+      for each BSTR pair
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE
+  ctx:
+    default: None
+    descp: Device context of output. Default is current context. Overridden by loc.context
+      when loc is an NDArray.
+    doc_dtype: Context
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context of output
+    - Default is current context
+    - Overridden by PARAM context when PARAM is an D_STRUCTURE
+    normalized_docdtype: ONE_WORD Context
+  dtype:
+    default: None
+    descp: Data type of output samples. Default is 'float32'
+    doc_dtype: '{''float16'', ''float32'', ''float64''}'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Data type of output samples
+    - Default is QSTR
+    normalized_docdtype: ONE_WORD QSTR
+  loc:
+    default: None
+    descp: Mean (centre) of the distribution.
+    doc_dtype: float or NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Mean BSTR of the distribution
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Store output to an existing D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  scale:
+    default: None
+    descp: Standard deviation (spread or width) of the distribution.
+    doc_dtype: float or NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Standard deviation BSTR of the distribution
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+inputs:
+  optional:
+  - loc
+  - scale
+  - dtype
+  - ctx
+  - out
+  required:
+  - '*shape'
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.randn
+package: mxnet
+target: randn
+title: mxnet.ndarray.random.randn
+version: 1.6.0

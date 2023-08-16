@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,whether the output tensor has `dim` retained or not.,False,prim_dtype,dtype(torch.bool),,1
+bool,whether the output tensor has `dim` retained or not.,False,shape,ndim(0),,1

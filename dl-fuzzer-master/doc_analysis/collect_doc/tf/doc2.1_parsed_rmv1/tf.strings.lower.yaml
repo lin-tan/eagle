@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.strings.lower
+constraints:
+  encoding:
+    default: ''
+    descp: An optional `string`. Defaults to `""`.
+  input:
+    descp: A `Tensor` of type `string`.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - encoding
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/lower
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: lower
+title: tf.strings.lower
+version: 2.1.0

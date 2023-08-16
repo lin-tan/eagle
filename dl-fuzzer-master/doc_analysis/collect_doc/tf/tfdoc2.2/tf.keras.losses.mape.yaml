@@ -1,0 +1,34 @@
+aliases:
+- tf.keras.losses.mean_absolute_percentage_error
+- tf.keras.metrics.MAPE
+- tf.keras.metrics.mape
+- tf.keras.metrics.mean_absolute_percentage_error
+- tf.losses.MAPE
+- tf.losses.mape
+- tf.losses.mean_absolute_percentage_error
+- tf.metrics.MAPE
+- tf.metrics.mape
+- tf.metrics.mean_absolute_percentage_error
+- tf.compat.v1.keras.losses.MAPE
+- tf.compat.v1.keras.losses.mape
+- tf.compat.v1.keras.losses.mean_absolute_percentage_error
+- tf.compat.v1.keras.metrics.MAPE
+- tf.compat.v1.keras.metrics.mape
+- tf.compat.v1.keras.metrics.mean_absolute_percentage_error
+constraints:
+  y_pred:
+    descp: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true:
+    descp: Ground truth values. shape = [batch_size, d0, .. dN].
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/losses/MAPE
+outputs:
+- Mean absolute percentage error values. shape = [batch_size, d0, .. dN-1].
+package: tensorflow
+target: MAPE
+title: tf.keras.losses.MAPE
+version: 2.2.0

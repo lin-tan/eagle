@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array-like of shape (n_seeds, n_features) or None Point used as initial kernel locations. If None and bin_seeding=False, each data point is used as a seed. If None and bin_seeding=True, see bin_seeding.",None,shape,"shape([n_seeds,n_features]), ndim(2)",,1

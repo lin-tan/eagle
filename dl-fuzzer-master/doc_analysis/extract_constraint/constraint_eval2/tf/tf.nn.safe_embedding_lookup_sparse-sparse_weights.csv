@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`SparseTensor` of same shape as `sparse_ids`, containing float weights corresponding to `sparse_ids`, or `None` if all weights are be assumed to be 1.0.",None,prim_dtype,dtype(numeric),,1
+,"`SparseTensor` of same shape as `sparse_ids`, containing float weights corresponding to `sparse_ids`, or `None` if all weights are be assumed to be 1.0.",None,nonprim_dtype,tensor_t(SparseTensor),,1
+,"`SparseTensor` of same shape as `sparse_ids`, containing float weights corresponding to `sparse_ids`, or `None` if all weights are be assumed to be 1.0.",None,shape,shape(shape:&sparse_ids),,1

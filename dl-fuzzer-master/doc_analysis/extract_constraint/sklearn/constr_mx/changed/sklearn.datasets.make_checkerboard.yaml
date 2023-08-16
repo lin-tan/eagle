@@ -1,0 +1,64 @@
+constraints:
+  maxval:
+    default: '100'
+    descp: int, optional (default=100) Maximum value of a bicluster.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  minval:
+    default: '10'
+    descp: int, optional (default=10) Minimum value of a bicluster.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n_clusters:
+    descp: integer or iterable (n_row_clusters, n_column_clusters) The number of row
+      and column clusters.
+    dtype:
+    - int
+  noise:
+    default: '0.0'
+    descp: float, optional (default=0.0) The standard deviation of the gaussian noise.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset creation. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+  shape:
+    descp: iterable (n_rows, n_cols) The shape of the result.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  shuffle:
+    default: 'True'
+    descp: boolean, optional (default=True) Shuffle the samples.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - noise
+  - minval
+  - maxval
+  - shuffle
+  - random_state
+  required:
+  - shape
+  - n_clusters
+link: ''
+package: scikit-learn
+target: make_checkerboard
+title: sklearn.datasets.make_checkerboard
+version: 0.24.X

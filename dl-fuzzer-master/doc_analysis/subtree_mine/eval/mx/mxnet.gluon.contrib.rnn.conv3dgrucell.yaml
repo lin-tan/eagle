@@ -1,0 +1,11 @@
+constraints:
+  h2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the recurrent convolution bias vectors.
+    doc_dtype:
+    - str
+    - Initializer
+    - default zeros
+    dtype:
+    - string
+title: mxnet.gluon.contrib.rnn.Conv3DGRUCell

@@ -1,0 +1,6 @@
+constraints:
+  initial_state:
+    descp: A nested structure of tensors, representing the initial state of the accumulator.
+    tensor_t:
+    - tf.tensor
+title: tf.data.experimental.scan

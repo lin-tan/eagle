@@ -1,0 +1,62 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: multiplier for batch1  mathbin{@} batch2  ( alpha )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM mathbin PARAM BSTR
+    normalized_docdtype: Number, optional
+  batch1:
+    descp: the first batch of matrices to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the first batch of matrices to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  batch2:
+    descp: the second batch of matrices to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second batch of matrices to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  beta:
+    default: '1'
+    descp: multiplier for `input` ( beta )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM BSTR
+    normalized_docdtype: Number, optional
+  input:
+    descp: the tensor to be added
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to be added
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  keyword_only:
+  - beta
+  - alpha
+  - out
+  optional:
+  - beta
+  - alpha
+  - out
+  required:
+  - input
+  - batch1
+  - batch2
+link: https://pytorch.org/docs/stable/torch.html#torch.baddbmm
+package: torch
+ret_type: Tensor
+target: baddbmm
+title: torch.baddbmm
+version: 1.5.0

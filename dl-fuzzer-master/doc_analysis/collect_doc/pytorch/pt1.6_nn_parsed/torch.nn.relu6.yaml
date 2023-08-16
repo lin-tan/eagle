@@ -1,0 +1,14 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+    sig_dtype: bool
+inputs:
+  optional:
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.ReLU6.html#torch.nn.ReLU6#torch.nn.ReLU6
+package: torch
+target: ReLU6
+title: torch.nn.ReLU6
+version: 1.6.0

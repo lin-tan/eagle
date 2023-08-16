@@ -1,0 +1,19 @@
+constraints:
+  features:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - features
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Elu
+outputs:
+- A Tensor. Has the same type as features.
+package: tensorflow
+target: Elu
+title: tf.raw_ops.Elu
+version: 2.2.0

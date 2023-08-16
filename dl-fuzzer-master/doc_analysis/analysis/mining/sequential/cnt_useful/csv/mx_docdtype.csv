@@ -1,0 +1,84 @@
+idx,freq,sequence,len,cat
+0,2423,['SOME_STRUCTURE'],1,ds
+1,2322,['optional'],1,not useful
+2,1921,['SOME_DTYPE'],1,dtype
+3,1583,['default'],1,not useful
+4,393,['none'],1,not useful
+5,258,['required'],1,not useful
+6,187,"['default', 'none']",2,not useful
+7,179,['shape'],1,dtype+ds+validvalue
+8,143,"['shape', 'SOME_STRUCTURE']",2,dtype+ds+validvalue
+9,117,"['SOME_STRUCTURE', 'SOME_DTYPE']",2,ds
+10,74,"['SOME_DTYPE', 'SOME_DTYPE']",2,validvalue
+11,73,['context'],1,dtype
+12,66,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",3,validvalue
+13,49,"['non', 'negative']",2,validvalue
+14,45,['cpu'],1,validvalue
+15,44,['array'],1,ds
+16,43,"['none', 'SOME_DTYPE', 'SOME_DTYPE']",3,validvalue
+17,41,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4,validvalue
+18,41,"['mxnet', 'SOME_STRUCTURE']",2,ds
+19,40,"['default', 'cpu']",2,dtype
+20,40,"['mxnet', 'SOME_STRUCTURE', 'array']",3,ds
+21,39,"['default', 'false']",2,dtype
+22,37,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",2,ds
+23,32,"['SOME_DTYPE', 'non', 'negative']",3,dtype+validvalue
+24,32,"['default', '$mxnet_home', 'models']",3,complex
+25,30,['uint'],1,validvalue
+26,29,"['default', 'e']",2,dtype+shape
+27,28,"['SOME_DTYPE', 'uint']",2,not useful
+28,28,['numpy'],1,not useful
+29,24,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",4,validvalue
+30,23,['long'],1,dtype
+31,22,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",5,validvalue
+32,22,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",5,validvalue
+33,22,['corner'],1,validvalue
+34,21,['np'],1,not useful
+35,20,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",6,validvalue
+36,19,"['default', 'SOME_DTYPE']",2,dtype
+37,18,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",6,validvalue
+38,18,"['np', 'SOME_STRUCTURE']",2,ds
+39,17,"['long', 'non', 'negative']",3,dtype+validvalue
+40,16,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",7,validvalue
+41,16,['first'],1,validvalue
+42,16,['center'],1,validvalue
+43,16,"['numpy', 'dtype']",2,dtype
+44,16,['function'],1,dtype
+45,14,['null'],1,validvalue
+46,14,['valid'],1,validvalue
+47,12,"['none', 'ncdhw', 'nchw', 'ncw']",4,validvalue
+48,12,"['center', 'corner']",2,validvalue
+49,12,['clip'],1,validvalue
+50,10,"['default', 'corner']",2,validvalue
+51,10,"['none', 'ncdhw', 'nchw', 'ncw', 'ndhwc', 'nhwc']",6,validvalue
+52,10,['ssparse'],1,ds
+53,10,['gpu'],1,validvalue
+54,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_STRUCTURE']",3,ds
+55,8,"['default', 'first']",2,not useful
+56,8,"['default', 'null']",2,not useful
+57,8,"['csr', 'default', 'row_ssparse']",3,validvalue
+58,8,"['first', 'last']",2,validvalue
+59,8,['instance'],1,validvalue
+60,8,"['mxnet', 'SOME_STRUCTURE', 'ssparse', 'array']",4,ds
+61,8,"['numpy', 'SOME_STRUCTURE']",2,ds
+62,8,['max'],1,validvalue
+63,7,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",7,validvalue
+64,7,['number'],1,dtype
+65,7,['rowssparsendarray'],1,not useful
+66,7,['csrndarray'],1,not useful
+67,7,['python'],1,dtype
+68,6,"['default', 'clip']",2,not useful
+69,6,"['default', 'true']",2,not useful
+70,6,"['none', 'fastest', 'limited_workspace']",3,validvalue
+71,6,"['clip', 'wrap']",2,validvalue
+72,6,"['python', 'function']",2,dtype
+73,6,['object'],1,not useful
+74,6,"['batch', 'null', 'valid']",3,validvalue
+75,6,['sum'],1,validvalue
+76,5,"['default', 'gpu']",2,not useful
+77,5,"['SOME_STRUCTURE', 'np', 'SOME_STRUCTURE']",3,ds
+78,5,"['none', 'csr', 'default', 'row_ssparse']",4,validvalue
+79,5,"['none', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE', 'uint']",8,validvalue
+80,5,"['cpu', 'gpu']",2,validvalue
+81,5,['type'],1,dtype
+82,5,['size'],1,validvalue

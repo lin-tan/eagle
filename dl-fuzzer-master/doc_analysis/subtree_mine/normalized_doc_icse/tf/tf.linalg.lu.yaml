@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.linalg.lu
+constraints:
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float64`, `float32`,
+      `half`, `complex64`, `complex128`. A tensor of shape `[..., M, M]` whose inner-most
+      2 dimensions form matrices of size `[M, M]`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - A D_STRUCTURE of shape BSTR whose inner most CONSTANT_NUM dimensions form matrices
+      of size BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  output_idx_type:
+    default: tf.dtypes.int32
+    descp: 'An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`.'
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - An optional D_TYPE from D_TYPE
+    - Defaults to D_TYPE
+inputs:
+  optional:
+  - output_idx_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/lu
+outputs: A tuple of `Tensor` objects (lu, p).
+package: tensorflow
+target: lu
+title: tf.linalg.lu
+version: 2.1.0

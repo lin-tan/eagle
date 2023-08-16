@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Optional. Specifies the gradient value returned when the given input tensors are unconnected. Accepted values are constants defined in the class `tf.UnconnectedGradients` and the default value is`none`.,tf.UnconnectedGradients.NONE,,,0,0

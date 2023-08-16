@@ -1,0 +1,11 @@
+constraints:
+  X: {descp: 'array-like, shape (n_samples, n_features)'}
+  Y: {descp: 'array-like, shape (n_samples, n_features)'}
+inputs:
+  optional: []
+  required: [X, Y]
+link: ''
+package: sklearn
+target: paired_euclidean_distances
+title: sklearn.metrics.pairwise.paired_euclidean_distances
+version: 0.24.2

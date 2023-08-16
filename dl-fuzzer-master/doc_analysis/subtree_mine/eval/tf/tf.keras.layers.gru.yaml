@@ -1,0 +1,33 @@
+constraints:
+  bias_constraint:
+    default: None
+    descp: Constraint function applied to the bias vector. Default:`None`.
+    enum:
+    - 'None'
+  bias_initializer:
+    default: zeros
+    descp: 'Initializer for the bias vector. Default: `zeros`.'
+    dtype:
+    - tf.string
+    ndim: 
+    - '0'
+    enum:
+    - 'zeros'
+
+  unroll:
+    default: 'False'
+    descp: Boolean (default False). If True, the network will be unrolled, else a
+      symbolic loop will be used. Unrolling can speed-up a RNN, although it tends
+      to be more memory-intensive. Unrolling is only suitable for short sequences.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  use_bias:
+    default: 'True'
+    descp: Boolean, (default `True`), whether the layer uses a bias vector.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.keras.layers.GRU

@@ -1,0 +1,15 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.is_nonzero.html#torch.is_nonzero#torch.is_nonzero
+package: torch
+ret_type: (bool)
+target: is_nonzero
+title: torch.is_nonzero
+version: 1.7.0

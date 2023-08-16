@@ -1,0 +1,46 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If set to False, the layer will not learn an additive bias. Default: `True`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  in1_features:
+    descp: size of each first input sample
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  in2_features:
+    descp: size of each second input sample
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+  out_features:
+    descp: size of each output sample
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - bias
+  required:
+  - in1_features
+  - in2_features
+  - out_features
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Bilinear
+package: torch
+target: Bilinear
+title: torch.nn.Bilinear
+version: 1.5.0
+layer_constructor: true
+check_nan: true

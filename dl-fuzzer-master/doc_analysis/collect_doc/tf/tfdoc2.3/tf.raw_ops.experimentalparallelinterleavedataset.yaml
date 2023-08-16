@@ -1,0 +1,48 @@
+constraints:
+  block_length:
+    descp: A Tensor of type int64.
+  buffer_output_elements:
+    descp: A Tensor of type int64.
+  cycle_length:
+    descp: A Tensor of type int64.
+  f:
+    descp: A function decorated with @Defun. A function mapping elements of input_dataset,
+      concatenated with other_arguments, to a Dataset variant that contains elements
+      matching output_types and output_shapes.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  other_arguments:
+    descp: A list of Tensor objects.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  prefetch_input_elements:
+    descp: A Tensor of type int64.
+  sloppy:
+    descp: A Tensor of type bool.
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - cycle_length
+  - block_length
+  - sloppy
+  - buffer_output_elements
+  - prefetch_input_elements
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ExperimentalParallelInterleaveDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalParallelInterleaveDataset
+title: tf.raw_ops.ExperimentalParallelInterleaveDataset
+version: 2.3.0

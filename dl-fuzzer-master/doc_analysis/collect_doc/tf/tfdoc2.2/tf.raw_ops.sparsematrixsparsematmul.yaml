@@ -1,0 +1,40 @@
+constraints:
+  a:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+  adjoint_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether a should be conjugate-transposed.
+  adjoint_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether b should be conjugate-transposed.
+  b:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  transpose_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether a should be transposed.
+  transpose_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether b should be transposed.
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+inputs:
+  optional:
+  - transpose_a
+  - transpose_b
+  - adjoint_a
+  - adjoint_b
+  - name
+  required:
+  - a
+  - b
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixSparseMatMul
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixSparseMatMul
+title: tf.raw_ops.SparseMatrixSparseMatMul
+version: 2.2.0

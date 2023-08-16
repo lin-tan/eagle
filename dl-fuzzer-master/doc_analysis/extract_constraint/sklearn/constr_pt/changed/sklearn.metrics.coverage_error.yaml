@@ -1,0 +1,28 @@
+constraints:
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_score:
+    descp: array, shape = [n_samples, n_labels] Target scores, can either be probability
+      estimates of the positive class, confidence values, or non-thresholded measure
+      of decisions (as returned by "decision_function" on some classifiers).
+  y_true:
+    descp: array, shape = [n_samples, n_labels] True binary labels in binary indicator
+      format.
+dependency:
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  required:
+  - y_true
+  - y_score
+link: ''
+package: scikit-learn
+target: coverage_error
+title: sklearn.metrics.coverage_error
+version: 0.24.X

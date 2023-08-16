@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.signal.vorbis_window
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: The data type to produce. Must be a floating point type.
+  name:
+    default: None
+    descp: An optional name for the operation.
+  window_length:
+    descp: A scalar Tensor indicating the window length to generate.
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - window_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/signal/vorbis_window
+outputs:
+- A Tensor of shape [window_length] of type dtype.
+package: tensorflow
+target: vorbis_window
+title: tf.signal.vorbis_window
+version: 2.3.0

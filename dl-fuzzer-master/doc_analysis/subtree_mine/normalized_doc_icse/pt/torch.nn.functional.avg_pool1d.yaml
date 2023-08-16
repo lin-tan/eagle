@@ -1,0 +1,59 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: 'when True, will use ceil instead of floor to compute the output shape.
+      Default: `False`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will use ceil instead of floor to compute the output shape
+    - Default CONSTANT_BOOL
+  count_include_pad:
+    default: 'True'
+    descp: 'when True, will include the zero-padding in the averaging calculation.
+      Default: `True`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will include the zero PARAM in the averaging calculation
+    - Default CONSTANT_BOOL
+  input:
+    descp: 'input tensor of shape (minibatch , in _channels , iW) '
+    normalized_descp:
+    - input D_STRUCTURE of shape BSTR
+  kernel_size:
+    descp: the size of the window. Can be a single number or a tuple (kW,)
+    normalized_descp:
+    - the size of the window
+    - Can be a single number or a D_STRUCTURE BSTR
+  padding:
+    default: '0'
+    descp: 'implicit zero paddings on both sides of the input. Can be a single number
+      or a tuple (padW,). Default: 0'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - implicit zero paddings on both sides of the PARAM
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  stride:
+    default: None
+    descp: 'the stride of the window. Can be a single number or a tuple (sW,). Default:
+      `kernel_size`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the stride of the window
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default PARAM
+inputs:
+  optional:
+  - stride
+  - padding
+  - ceil_mode
+  - count_include_pad
+  required:
+  - input
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.avg_pool1d
+package: torch
+ret_type: Tensor
+target: avg_pool1d
+title: torch.nn.functional.avg_pool1d
+version: 1.5.0

@@ -1,0 +1,27 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  cast_inputs:
+    default: None
+    descp: If not `None`, when `forward` runs in an autocast-enabled region, casts
+      incoming floating-point CUDA Tensors to the target dtype (non-floating-point
+      Tensors are not affected), then executes `forward` with autocast disabled. If
+      `None`, `forward`'s internal ops execute with the current autocast state.
+    doc_dtype:
+    - torch.dtype
+    - None
+    - default=None
+  fwd:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - fwd
+  - cast_inputs
+  required:
+  - '**kwargs'
+link: https://pytorch.org/docs/1.7.0/amp.html#torch.cuda.amp.custom_fwd
+package: torch
+target: custom_fwd
+title: torch.cuda.amp.custom_fwd
+version: 1.7.0

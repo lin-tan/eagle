@@ -1,0 +1,10 @@
+constraints:
+  overwrite:
+    default: 'False'
+    descp: boolean, if false it's an error for `dst` to be occupied by an existing
+      file.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.io.gfile.copy

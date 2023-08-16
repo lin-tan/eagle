@@ -1,0 +1,26 @@
+constraints:
+  '**kwargs':
+    descp: Additional arguments to metric constructor. Only used when metric is str
+    doc_dtype:
+    - dict
+  '*args':
+    descp: Additional arguments to metric constructor. Only used when metric is str.
+    doc_dtype:
+    - list
+  metric:
+    descp: 'Specifies the metric to create. This argument must be one of the below:  Name
+      of a metric.'
+    doc_dtype:
+    - str
+    - callable
+inputs:
+  optional: []
+  required:
+  - metric
+  - '*args'
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/metric/index.html#mxnet.metric.create
+package: mxnet
+target: create
+title: mxnet.metric.create
+version: 1.7.0

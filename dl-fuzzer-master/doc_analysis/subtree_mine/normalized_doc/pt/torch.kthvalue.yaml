@@ -1,0 +1,53 @@
+constraints:
+  dim:
+    default: None
+    descp: the dimension to find the kth value along
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the dimension to find the kth value along
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  k:
+    descp: k for the k-th smallest element
+    doc_dtype: int
+    normalized_descp:
+    - k for the k th smallest element
+    normalized_docdtype: ONE_WORD D_TYPE
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether the output D_STRUCTURE has PARAM retained or not
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) can be optionally given to be
+      used as output buffers
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE of BSTR can be optionally given to be used as output
+      buffers
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - dim
+  - keepdim
+  - out
+  required:
+  - input
+  - k
+link: https://pytorch.org/docs/stable/torch.html#torch.kthvalue
+package: torch
+ret_type: (Tensor, LongTensor)
+target: kthvalue
+title: torch.kthvalue
+version: 1.5.0

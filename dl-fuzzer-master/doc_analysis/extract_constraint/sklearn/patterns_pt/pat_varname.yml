@@ -1,0 +1,58 @@
+target: dtype
+pat:
+
+    '^dtype$':
+        dtype: dtype
+        ow: True
+        append: True
+   
+
+    '^f$':
+        dtype: string
+        ow: True
+        append: False
+
+
+    '^mat\d*$':
+        dtype: numeric
+        ow: True
+        append: True
+
+    '^dim\d*$':
+        dtype: int
+        # range: '[-1,inf)'
+        ow: True
+        append: True
+
+    '_lists*$':
+        structure: list
+        ow: False
+        append: False
+
+    'sequence':   # weak
+        structure: sequence
+        ow: False
+        append: False
+
+
+    '^name$':
+        dtype: string
+        ow: True
+        append: True
+
+    '^vec\d*$':
+        ndim: 1
+        ow: True
+        append: True
+
+    '^(\w+_)?size$':  # weak
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+
+    '^(\w+_)?length$':  # weak
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False

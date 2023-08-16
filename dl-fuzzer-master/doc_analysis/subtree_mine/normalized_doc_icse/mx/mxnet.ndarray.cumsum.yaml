@@ -1,0 +1,65 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  a:
+    default: None
+    descp: Input ndarray
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  axis:
+    default: _Null
+    descp: Axis along which the cumulative sum is computed. The default (None) is
+      to compute the cumsum over the flattened array.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Axis along which the cumulative sum is computed
+    - The default BSTR is to compute the cumsum over the flattened D_STRUCTURE
+    normalized_docdtype: D_TYPE or None optional default QSTR
+  dtype:
+    default: _Null
+    descp: Type of the returned array and of the accumulator in which the elements
+      are summed. If dtype is not specified, it defaults to the dtype of a, unless
+      a has an integer dtype with a precision less than that of the default platform
+      integer. In that case, the default platform integer is used.
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Type of the returned D_STRUCTURE and of the accumulator in which the elements
+      are summed
+    - If dtype is not specified it defaults to the dtype of a unless a has an D_TYPE
+      dtype with a precision less than that of the default platform D_TYPE
+    - In that case the default platform D_TYPE is used
+    normalized_docdtype: None QSTR optional default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - a
+  - axis
+  - dtype
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.cumsum
+package: mxnet
+target: cumsum
+title: mxnet.ndarray.cumsum
+version: 1.6.0

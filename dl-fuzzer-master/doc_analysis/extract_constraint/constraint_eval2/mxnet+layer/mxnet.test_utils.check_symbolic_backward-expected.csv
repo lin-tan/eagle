@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list of np.ndarray, dict of str to np.ndarray",expected gradient values   if type is list of np.ndarrayContains arrays corresponding to exe.grad_arrays   ,,prim_dtype,dtype(string),,1
+"list of np.ndarray, dict of str to np.ndarray",expected gradient values   if type is list of np.ndarrayContains arrays corresponding to exe.grad_arrays   ,,nonprim_dtype,"structure(dict(string:ndarray), list, ndarray)",,1

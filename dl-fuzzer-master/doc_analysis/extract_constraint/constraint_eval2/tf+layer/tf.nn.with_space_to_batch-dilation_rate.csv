@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,int32 Tensor of known shape [num_spatial_dims].,,prim_dtype,dtype(tf.int32),,1
+,int32 Tensor of known shape [num_spatial_dims].,,nonprim_dtype,tensor_t(tf.tensor),,1
+,int32 Tensor of known shape [num_spatial_dims].,,shape,"shape([num_spatial_dims]), ndim(1)",,1

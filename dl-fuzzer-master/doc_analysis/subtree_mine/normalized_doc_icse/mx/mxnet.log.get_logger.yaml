@@ -1,0 +1,47 @@
+constraints:
+  filemode:
+    default: None
+    descp: The file mode to open the file (corresponding to filename), default is
+      'a' if filename is not `None`.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The file mode to open the file BSTR default is QSTR if PARAM is not QSTR
+    normalized_docdtype: D_TYPE optional
+  filename:
+    default: None
+    descp: The filename to which the logger's output will be sent.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The filename to which the logger output will be sent
+    normalized_docdtype: D_TYPE optional
+  level:
+    default: '30'
+    descp: 'The logging level for the logger. See: https://docs.python.org/2/library/logging.html#logging-levels'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The logging level for the logger
+    - See https docs python org CONSTANT_NUM library logging html logging levels
+    normalized_docdtype: D_TYPE optional
+  name:
+    default: None
+    descp: Name of the logger.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Name of the logger
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - name
+  - filename
+  - filemode
+  - level
+  required: []
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/log/index.html#mxnet.log.get_logger
+package: mxnet
+target: get_logger
+title: mxnet.log.get_logger
+version: 1.6.0

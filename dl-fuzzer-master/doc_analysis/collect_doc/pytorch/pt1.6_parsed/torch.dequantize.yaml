@@ -1,0 +1,15 @@
+constraints:
+  tensor:
+    descp: A quantized Tensor
+    doc_dtype:
+    - Tensor
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.6.0/generated/torch.dequantize.html#torch.dequantize#torch.dequantize
+package: torch
+ret_type: Tensor
+target: dequantize
+title: torch.dequantize
+version: 1.6.0

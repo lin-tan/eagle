@@ -1,0 +1,31 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  seed_generator:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - buffer_size
+  - seed_generator
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ShuffleDatasetV2
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ShuffleDatasetV2
+title: tf.raw_ops.ShuffleDatasetV2
+version: 2.2.0

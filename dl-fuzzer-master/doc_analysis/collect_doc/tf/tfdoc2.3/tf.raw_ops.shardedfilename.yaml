@@ -1,0 +1,24 @@
+constraints:
+  basename:
+    descp: A Tensor of type string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_shards:
+    descp: A Tensor of type int32.
+  shard:
+    descp: A Tensor of type int32.
+inputs:
+  optional:
+  - name
+  required:
+  - basename
+  - shard
+  - num_shards
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ShardedFilename
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ShardedFilename
+title: tf.raw_ops.ShardedFilename
+version: 2.3.0

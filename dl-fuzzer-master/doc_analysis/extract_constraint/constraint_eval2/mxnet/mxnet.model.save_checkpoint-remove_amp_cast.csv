@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, optional","Whether to remove the amp_cast and amp_multicast operators, before saving the model.",True,prim_dtype,dtype(boolean),,1
+"bool, optional","Whether to remove the amp_cast and amp_multicast operators, before saving the model.",True,shape,ndim(0),,1

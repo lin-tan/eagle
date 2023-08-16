@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.string_to_hash_bucket_strong
+- tf.compat.v1.strings.to_hash_bucket_strong
+constraints:
+  input:
+    descp: A `Tensor` of type `string`. The strings to assign a hash bucket.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - The D_TYPE to assign a hash bucket
+  key:
+    descp: A list of `ints`. The key used to seed the hash function, passed as a list
+      of two uint64 elements.
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE
+    - The key used to seed the hash function, passed as a D_STRUCTURE of two D_TYPE
+      elements
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  num_buckets:
+    descp: An `int` that is `>= 1`. The number of buckets.
+    normalized_descp:
+    - An D_TYPE that is REXPR
+    - The number of buckets
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - num_buckets
+  - key
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/to_hash_bucket_strong
+outputs: A `Tensor` of type `int64`.
+package: tensorflow
+target: to_hash_bucket_strong
+title: tf.strings.to_hash_bucket_strong
+version: 2.1.0

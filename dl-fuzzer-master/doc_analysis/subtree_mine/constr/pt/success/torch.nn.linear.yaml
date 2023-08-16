@@ -1,0 +1,34 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If set to `False`, the layer will not learn an additive bias. Default:
+      `True`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  in_features:
+    descp: size of each input sample
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+  out_features:
+    descp: size of each output sample
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - bias
+  required:
+  - in_features
+  - out_features
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Linear
+package: torch
+target: Linear
+title: torch.nn.Linear
+version: 1.5.0
+layer_constructor: true
+check_nan: true

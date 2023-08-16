@@ -1,0 +1,36 @@
+constraints:
+  rotation_degrees:
+    descp: Wanted rotation in degrees. In case of src being a single image a scalar
+      is needed, otherwise a mono-dimensional vector of angles or a scalar.
+    doc_dtype:
+    - scalar
+    - NDArray
+  src:
+    descp: Input image (format CHW) or batch of images (format NCHW), in both case
+      is required a float32 data type.
+    doc_dtype:
+    - NDArray
+  zoom_in:
+    default: 'False'
+    descp: If True input image(s) will be zoomed in a way so that no padding will
+      be shown in the output result.
+    doc_dtype:
+    - bool
+  zoom_out:
+    default: 'False'
+    descp: If True input image(s) will be zoomed in a way so that the whole original
+      image will be contained in the output result.
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - zoom_in
+  - zoom_out
+  required:
+  - src
+  - rotation_degrees
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/image/index.html#mxnet.image.imrotate
+package: mxnet
+target: imrotate
+title: mxnet.image.imrotate
+version: 1.7.0

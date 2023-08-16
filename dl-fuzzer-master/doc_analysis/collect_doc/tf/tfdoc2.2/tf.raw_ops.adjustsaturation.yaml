@@ -1,0 +1,22 @@
+constraints:
+  images:
+    descp: 'A Tensor. Must be one of the following types: half, float32. Images to
+      adjust. At least 3-D.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  scale:
+    descp: A Tensor of type float32. A float scale to add to the saturation.
+inputs:
+  optional:
+  - name
+  required:
+  - images
+  - scale
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AdjustSaturation
+outputs:
+- A Tensor. Has the same type as images.
+package: tensorflow
+target: AdjustSaturation
+title: tf.raw_ops.AdjustSaturation
+version: 2.2.0

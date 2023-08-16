@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,input batch of affine matrices with shape (N  times 2  times 3 ) for 2D or (N  times 3  times 4 ) for 3D,,prim_dtype,dtype(numeric),,1
+Tensor,input batch of affine matrices with shape (N  times 2  times 3 ) for 2D or (N  times 3  times 4 ) for 3D,,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,input batch of affine matrices with shape (N  times 2  times 3 ) for 2D or (N  times 3  times 4 ) for 3D,,shape,"shape([n,2,3], [n,3,4]), ndim(2, 3)",,1

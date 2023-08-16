@@ -1,0 +1,80 @@
+aliases:
+- tf.complex
+- tf.compat.v1.complex
+- tf.compat.v1.dtypes.complex
+constraints:
+  imag:
+    descp: A `Tensor`. Must have the same type as `real`.
+    dtype:
+    - '&real'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '&real'
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&real'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  real:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: Real and imag must be correct types
+inputs:
+  optional:
+  - name
+  required:
+  - real
+  - imag
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/dtypes/complex
+outputs: A `Tensor` of type `complex64` or `complex128`.
+package: tensorflow
+target: complex
+title: tf.dtypes.complex
+version: 2.1.0

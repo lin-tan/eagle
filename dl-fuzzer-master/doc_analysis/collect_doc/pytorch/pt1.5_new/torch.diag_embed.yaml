@@ -1,0 +1,29 @@
+constraints:
+  dim1:
+    default: '-2'
+    descp: 'first dimension with respect to which to take diagonal. Default: -2.'
+    doc_dtype: int, optional
+  dim2:
+    default: '-1'
+    descp: 'second dimension with respect to which to take diagonal. Default: -1.'
+    doc_dtype: int, optional
+  input:
+    descp: the input tensor. Must be at least 1-dimensional.
+    doc_dtype: Tensor
+  offset:
+    default: '0'
+    descp: 'which diagonal to consider. Default: 0 (main diagonal).'
+    doc_dtype: int, optional
+inputs:
+  optional:
+  - offset
+  - dim1
+  - dim2
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.diag_embed
+package: torch
+ret_type: Tensor
+target: diag_embed
+title: torch.diag_embed
+version: 1.5.0

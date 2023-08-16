@@ -1,0 +1,43 @@
+constraints:
+  input_indices:
+    descp: A Tensor of type int64. 2-D. N x R matrix with the indices of non-empty
+      values in a SparseTensor, possibly not in canonical ordering.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  input_shape:
+    descp: A Tensor of type int64. 1-D. Shape of the input SparseTensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  input_values:
+    descp: A Tensor. 1-D. N non-empty values corresponding to input_indices.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input_indices
+  - input_values
+  - input_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseReorder
+outputs:
+- A tuple of Tensor objects (output_indices, output_values).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as input_values.
+package: tensorflow
+target: SparseReorder
+title: tf.raw_ops.SparseReorder
+version: 2.3.0

@@ -1,0 +1,78 @@
+aliases:
+- tf.compat.v1.math.multiply_no_nan
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A `Tensor` whose dtype is compatible with `x`.
+    dtype:
+    - '&x'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '&x'
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&x'
+    - '[&x,&x]'
+    - '[&x]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/multiply_no_nan
+outputs: The element-wise value of the x times y.
+package: tensorflow
+target: multiply_no_nan
+title: tf.math.multiply_no_nan
+version: 2.1.0

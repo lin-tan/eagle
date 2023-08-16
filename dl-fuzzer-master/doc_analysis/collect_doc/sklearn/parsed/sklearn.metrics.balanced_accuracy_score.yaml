@@ -1,0 +1,16 @@
+constraints:
+  adjusted: {default: 'False', descp: 'bool, default=False When true, the result is
+      adjusted for chance, so that random performance would score 0, and perfect performance
+      scores 1.'}
+  sample_weight: {default: None, descp: 'array-like of shape (n_samples,), default=None
+      Sample weights.'}
+  y_pred: {descp: 1d array-like Estimated targets as returned by a classifier.}
+  y_true: {descp: 1d array-like Ground truth (correct) target values.}
+inputs:
+  optional: [sample_weight, adjusted]
+  required: [y_true, y_pred]
+link: ''
+package: sklearn
+target: balanced_accuracy_score
+title: sklearn.metrics.balanced_accuracy_score
+version: 0.24.2

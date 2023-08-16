@@ -1,0 +1,55 @@
+aliases:
+- tf.compat.v1.nn.ctc_greedy_decoder
+constraints:
+  inputs:
+    descp: 3-D float Tensor sized [max_time, batch_size, num_classes]. The logits.
+    dtype:
+    - float
+    ndim:
+    - '3'
+    shape:
+    - '[max_time,batch_size,num_classes]'
+    tensor_t:
+    - tf.tensor
+  merge_repeated:
+    default: 'True'
+    descp: 'Boolean. Default: True.'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  sequence_length:
+    descp: 1-D int32 vector containing sequence lengths, having size [batch_size].
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[batch_size]'
+dependency:
+- batch_size
+- max_time
+- num_classes
+inputs:
+  optional:
+  - merge_repeated
+  required:
+  - inputs
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/ctc_greedy_decoder
+outputs:
+- A tuple (decoded, neg_sum_logits) where
+- decoded: 'A single-element list. decoded[0] is an SparseTensor containing the decoded
+    outputs s.t.: decoded.indices: Indices matrix (total_decoded_outputs, 2). The
+    rows store: [batch, time]. decoded.values: Values vector, size (total_decoded_outputs).
+    The vector stores the decoded classes. decoded.dense_shape: Shape vector, size
+    (2). The shape values are: [batch_size, max_decoded_length]'
+- neg_sum_logits: A float matrix (batch_size x 1) containing, for the sequence found,
+    the negative of the sum of the greatest logit at each timeframe.
+package: tensorflow
+target: ctc_greedy_decoder
+title: tf.nn.ctc_greedy_decoder
+version: 2.2.0

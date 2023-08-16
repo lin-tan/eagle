@@ -1,0 +1,41 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  \d-d\s+(input)?\s*tensor:
+    cnt: 7
+    dtype: tensor
+  ^(a|the)\s*tensor:
+    cnt: 38
+    dtype: tensor
+  ^(second|first|output)\s+tensor:
+    cnt: 8
+    dtype: tensor
+  ^the\s+(first|second)?\s*(input|output)\s+(tensor):
+    cnt: 344
+    group: 3
+  a\s+single\s+(tensor):
+    cnt: 2
+    group: 1
+  an\s+input\s+(tensor\s+or\s+number):
+    cnt: 4
+    group: 1
+    ndim: 0
+  input\s+(tensor):
+    cnt: 246
+    group: 1
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+stop_word:
+- and
+- or
+- etc
+target: tensor_t

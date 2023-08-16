@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"Controls the connections between inputs and outputs. At groups=1, all inputs are convolved to all outputs. At groups=2, the operation becomes equivalent to having two conv layers side by side, each seeing half the input channels, and producing half the output channels, and both subsequently concatenated.",1,prim_dtype,dtype(int),,1
+int,"Controls the connections between inputs and outputs. At groups=1, all inputs are convolved to all outputs. At groups=2, the operation becomes equivalent to having two conv layers side by side, each seeing half the input channels, and producing half the output channels, and both subsequently concatenated.",1,shape,ndim(0),,1

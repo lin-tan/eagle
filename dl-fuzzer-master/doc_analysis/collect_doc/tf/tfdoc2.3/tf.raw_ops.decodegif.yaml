@@ -1,0 +1,18 @@
+constraints:
+  contents:
+    descp: A Tensor of type string. 0-D. The GIF-encoded image.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - contents
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DecodeGif
+outputs:
+- A Tensor of type uint8.
+package: tensorflow
+target: DecodeGif
+title: tf.raw_ops.DecodeGif
+version: 2.3.0

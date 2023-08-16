@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Iterable of (module, name) tuples","parameters of the model to prune in a global fashion, i.e. by aggregating all weights prior to deciding which ones to prune. module must be of type `nn.Module`, and name must be a string.",,prim_dtype,dtype(string),,1
+"Iterable of (module, name) tuples","parameters of the model to prune in a global fashion, i.e. by aggregating all weights prior to deciding which ones to prune. module must be of type `nn.Module`, and name must be a string.",,nonprim_dtype,structure(list),,1
+"Iterable of (module, name) tuples","parameters of the model to prune in a global fashion, i.e. by aggregating all weights prior to deciding which ones to prune. module must be of type `nn.Module`, and name must be a string.",,shape,ndim(0),,1

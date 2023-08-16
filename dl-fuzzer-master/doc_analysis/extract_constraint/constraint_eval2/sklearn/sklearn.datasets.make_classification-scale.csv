@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float, array of shape [n_features] or None, optional (default=1.0) Multiply features by the specified value. If None, then features are scaled by a random value drawn in [1, 100]. Note that scaling happens after shifting.",1.0,prim_dtype,"dtype(float, int)",,1
+,"float, array of shape [n_features] or None, optional (default=1.0) Multiply features by the specified value. If None, then features are scaled by a random value drawn in [1, 100]. Note that scaling happens after shifting.",1.0,nonprim_dtype,structure(list(shape)),,1
+,"float, array of shape [n_features] or None, optional (default=1.0) Multiply features by the specified value. If None, then features are scaled by a random value drawn in [1, 100]. Note that scaling happens after shifting.",1.0,shape,"shape([&n_features]), ndim(0, 1)",,1
+,"float, array of shape [n_features] or None, optional (default=1.0) Multiply features by the specified value. If None, then features are scaled by a random value drawn in [1, 100]. Note that scaling happens after shifting.",1.0,validvalue,"range([1,100])",,1

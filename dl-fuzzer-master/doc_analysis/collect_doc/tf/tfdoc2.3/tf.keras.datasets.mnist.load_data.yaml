@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.keras.datasets.mnist.load_data
+constraints:
+  path:
+    default: mnist.npz
+    descp: path where to cache the dataset locally (relative to ~/.keras/datasets).
+inputs:
+  optional:
+  - path
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/datasets/mnist/load_data
+outputs:
+- 'Tuple of Numpy arrays: (x_train, y_train), (x_test, y_test). x_train, x_test: uint8
+  arrays of grayscale image data with shapes (num_samples, 28, 28). y_train, y_test:
+  uint8 arrays of digit labels (integers in range 0-9) with shapes (num_samples,).'
+package: tensorflow
+target: load_data
+title: tf.keras.datasets.mnist.load_data
+version: 2.3.0

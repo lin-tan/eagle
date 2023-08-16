@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"3D image. Size of the last dimension must be None, 1 or 3.",,prim_dtype,dtype(image),,1
+,"3D image. Size of the last dimension must be None, 1 or 3.",,shape,ndim(0),,1
+,"3D image. Size of the last dimension must be None, 1 or 3.",,validvalue,"range([0,inf))",,1

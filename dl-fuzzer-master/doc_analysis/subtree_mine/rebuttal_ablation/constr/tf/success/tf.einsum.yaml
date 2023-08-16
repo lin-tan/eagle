@@ -1,0 +1,66 @@
+aliases:
+- tf.linalg.einsum
+- tf.compat.v1.einsum
+- tf.compat.v1.linalg.einsum
+constraints:
+  '**kwargs':
+    descp: '- optimize: Optimization strategy to use to find contraction path using
+      opt_einsum. Must be ''greedy'', ''optimal'', ''branch-2'', ''branch-all'' or   ''auto''.
+      (optional, default: ''greedy''). name: A name for the operation (optional). '
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    - greedy
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  '*inputs':
+    descp: the inputs to contract (each one a `Tensor`), whose shapes should be consistent
+      with `equation`.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (each_one_atensor)
+    shape:
+    - '&equation'
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  equation:
+    descp: a `str` describing the contraction, in the same format as`numpy.einsum`.
+exceptions:
+- ValueError: 'If the format of `equation` is incorrect,number of inputs or their
+    shapes are inconsistent with `equation`. '
+inputs:
+  optional: []
+  required:
+  - equation
+  - '*inputs'
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/einsum
+outputs: The contracted `Tensor`, with shape determined by `equation`.
+package: tensorflow
+target: einsum
+title: tf.einsum
+version: 2.1.0

@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.debugging.is_finite
+- tf.compat.v1.is_finite
+- tf.compat.v1.math.is_finite
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/is_finite
+outputs: A `Tensor` of type `bool`.
+package: tensorflow
+target: is_finite
+title: tf.math.is_finite
+version: 2.1.0

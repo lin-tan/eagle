@@ -1,0 +1,73 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  ctx:
+    default: None
+    descp: Device context of output. Default is current context. Overridden by low.context
+      when low is an NDArray.
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context of output
+    - Default is current context
+    - Overridden by PARAM context when PARAM is an D_STRUCTURE
+    normalized_docdtype: Context, optional
+  dtype:
+    default: _Null
+    descp: Data type of output samples. Default is 'int32'
+    doc_dtype: '{''int32'', ''int64''}, optional'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Data type of output samples
+    - Default is QSTR
+    normalized_docdtype: QSTR , optional
+  high:
+    descp: Upper boundary of the output interval. All values generated will be less
+      than high.
+    doc_dtype: int, required
+    normalized_descp:
+    - Upper boundary of the output interval
+    - All values generated will be less than high
+    normalized_docdtype: D_TYPE, required
+  low:
+    descp: Lower boundary of the output interval. All values generated will be greater
+      than or equal to low.
+    doc_dtype: int, required
+    normalized_descp:
+    - Lower boundary of the output interval
+    - All values generated will be greater than or equal to low
+    normalized_docdtype: D_TYPE, required
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Store output to an existing D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  shape:
+    default: _Null
+    descp: The number of samples to draw. If shape is, e.g., (m, n) and low and high
+      are scalars, output shape will be (m, n).
+    doc_dtype: int or tuple of ints, optional
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The number of samples to draw
+    - If shape is, e g , BSTR
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE, optional
+inputs:
+  optional:
+  - shape
+  - dtype
+  - ctx
+  - out
+  required:
+  - low
+  - high
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.randint
+package: mxnet
+target: randint
+title: mxnet.ndarray.random.randint
+version: 1.6.0

@@ -1,0 +1,100 @@
+(docter_fuzz) ➜  subtree_mine git:(master) ✗ python eval.py ./grep/tf/success ./eval/tf/
+Precision
+{'dtype': 0.9431818181818182, 'structure': 0.7083333333333334, 'shape': 0, 'validvalue': 0, 'all': 0.8928571428571429}
+Recall
+{'dtype': 0.6102941176470589, 'structure': 1.0, 'shape': 0.0, 'validvalue': 0.0, 'all': 0.3184713375796178}
+F1
+{'dtype': 0.7410714285714285, 'structure': 0.8292682926829268, 'shape': 0, 'validvalue': 0, 'all': 0.4694835680751173}
+accuracy
+0.20238095238095238
+
+
+
+(docter_fuzz) ➜  subtree_mine git:(master) ✗ python eval.py ./grep/pt/success ./eval/pt
+Precision
+{'dtype': 0.9565217391304348, 'structure': 0.7916666666666666, 'shape': 0, 'validvalue': 0, 'all': 0.9}
+Recall
+{'dtype': 0.676923076923077, 'structure': 1.0, 'shape': 0.0, 'validvalue': 0.0, 'all': 0.39622641509433965}
+F1
+{'dtype': 0.7927927927927929, 'structure': 0.8837209302325582, 'shape': 0, 'validvalue': 0, 'all': 0.5502183406113538}
+accuracy
+0.26436781609195403
+
+
+
+(docter_fuzz) ➜  subtree_mine git:(master) ✗ python eval.py ./grep/mx/success ./eval/mx
+Precision
+{'dtype': 0.9541284403669725, 'structure': 0.9015151515151515, 'shape': 0, 'validvalue': 0, 'all': 0.9253112033195021}
+Recall
+{'dtype': 0.8, 'structure': 0.9754098360655737, 'shape': 0.0, 'validvalue': 0.0, 'all': 0.6076294277929155}
+F1
+{'dtype': 0.8702928870292888, 'structure': 0.937007874015748, 'shape': 0, 'validvalue': 0, 'all': 0.7335526315789475}
+accuracy
+0.4782608695652174
+
+
+avg_pre = 90.6
+avg_recall = 44.1
+avg_f1 = 58.4
+
+
+
+compare with docter 
+
+tf:
+
+Counting results of DocTer
+Number of files: 904
+Grouped result:
+{'prim_dtype': 2337, 'nonprim_dtype': 1240, 'shape': 1768, 'validvalue': 338, 'total': 5683}
+
+Counting results of grep
+Number of files: 928
+Grouped result:
+{'prim_dtype': 1577, 'nonprim_dtype': 1661, 'shape': 0, 'validvalue': 0, 'total': 3238}
+
+compare results (diff):
+{'prim_dtype': 1086, 'nonprim_dtype': 43, 'shape': 1768, 'validvalue': 338, 'total': 3235}
+Common:
+{'prim_dtype': 1251, 'nonprim_dtype': 1197, 'shape': 0, 'validvalue': 0, 'total': 2448}
+
+
+pt: 
+
+
+Number of files: 498
+Grouped result:
+{'prim_dtype': 1163, 'nonprim_dtype': 885, 'shape': 860, 'validvalue': 296, 'total': 3204}
+
+Counting results of grep
+Number of files: 468
+Grouped result:
+{'prim_dtype': 788, 'nonprim_dtype': 919, 'shape': 0, 'validvalue': 0, 'total': 1707}
+
+compare results (diff):
+{'prim_dtype': 510, 'nonprim_dtype': 26, 'shape': 860, 'validvalue': 296, 'total': 1692}
+Common:
+{'prim_dtype': 653, 'nonprim_dtype': 859, 'shape': 0, 'validvalue': 0, 'total': 1512}
+
+
+
+
+mx:
+
+Counting results of DocTer
+Number of files: 1006
+Grouped result:
+{'prim_dtype': 2272, 'nonprim_dtype': 2413, 'shape': 1699, 'validvalue': 489, 'total': 6873}
+
+Counting results of grep
+Number of files: 1009
+Grouped result:
+{'prim_dtype': 2274, 'nonprim_dtype': 2725, 'shape': 0, 'validvalue': 0, 'total': 4999}
+
+compare results (diff):
+{'prim_dtype': 309, 'nonprim_dtype': 111, 'shape': 1699, 'validvalue': 489, 'total': 2608}
+Common:
+{'prim_dtype': 1963, 'nonprim_dtype': 2302, 'shape': 0, 'validvalue': 0, 'total': 4265}
+
+
+

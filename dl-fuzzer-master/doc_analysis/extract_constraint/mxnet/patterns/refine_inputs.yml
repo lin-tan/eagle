@@ -1,0 +1,8 @@
+pat:
+    '^required\.*$':
+        dest: required
+        remove_from: optional
+
+    '^optional\.*$':
+        dest: optional
+        remove_from: required

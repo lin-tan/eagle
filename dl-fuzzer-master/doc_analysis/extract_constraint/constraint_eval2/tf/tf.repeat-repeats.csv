@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An 1-D `int` Tensor. The number of repetitions for each element. repeats is broadcasted to fit the shape of the given axis. `len(repeats)`must equal `input.shape[axis]` if axis is not None.,,prim_dtype,dtype(int),,1
+,An 1-D `int` Tensor. The number of repetitions for each element. repeats is broadcasted to fit the shape of the given axis. `len(repeats)`must equal `input.shape[axis]` if axis is not None.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,An 1-D `int` Tensor. The number of repetitions for each element. repeats is broadcasted to fit the shape of the given axis. `len(repeats)`must equal `input.shape[axis]` if axis is not None.,,shape,"shape([&axis]), ndim(0, 1)",,1

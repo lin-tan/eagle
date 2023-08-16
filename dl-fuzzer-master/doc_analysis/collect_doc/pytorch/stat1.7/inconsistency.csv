@@ -1,0 +1,24 @@
+arg,API,url
+new_state,torch.cuda.set_rng_state,https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.set_rng_state
+key,torch.distributed.Store.set,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.set
+key,torch.distributed.Store.get,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.get
+key,torch.distributed.Store.add,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.add
+key,torch.distributed.Store.delete_key,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.delete_key
+timeout,torch.distributed.Store.set_timeout,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.set_timeout
+list,torch.distributed.all_reduce_multigpu,https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.all_reduce_multigpu
+value,torch.add,https://pytorch.org/docs/1.7.0/generated/torch.add.html#torch.add#torch.add
+input,torch.atleast_1d,https://pytorch.org/docs/1.7.0/generated/torch.atleast_1d.html#torch.atleast_1d#torch.atleast_1d
+input,torch.istft,https://pytorch.org/docs/1.7.0/generated/torch.istft.html#torch.istft#torch.istft
+A,torch.lobpcg,https://pytorch.org/docs/1.7.0/generated/torch.lobpcg.html#torch.lobpcg#torch.lobpcg
+b,torch.lu_solve,https://pytorch.org/docs/1.7.0/generated/torch.lu_solve.html#torch.lu_solve#torch.lu_solve
+{input},torch.mul,https://pytorch.org/docs/1.7.0/generated/torch.mul.html#torch.mul#torch.mul
+vec,torch.nn.utils.vector_to_parameters,https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.vector_to_parameters.html#torch.nn.utils.vector_to_parameters#torch.nn.utils.vector_to_parameters
+input,torch.stft,https://pytorch.org/docs/1.7.0/generated/torch.stft.html#torch.stft#torch.stft
+indices,torch.take,https://pytorch.org/docs/1.7.0/generated/torch.take.html#torch.take#torch.take
+perserved_methods,torch.utils.mobile_optimizer.optimize_for_mobile,https://pytorch.org/docs/1.7.0/mobile_optimizer.html#torch.utils.mobile_optimizer.optimize_for_mobile
+inplace,torch.nn.functional.hardsigmoid,https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.hardsigmoid
+"last element is the size of the input, or the ending index position of the last bag",torch.nn.functional.embedding_bag,https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.embedding_bag
+external_data_format,torch.onnx.export,https://pytorch.org/docs/1.7.0/onnx.html#torch.onnx.export
+mat,torch.sparse.addmm,https://pytorch.org/docs/1.7.0/sparse.html#torch.sparse.addmm
+mat1,torch.sparse.mm,https://pytorch.org/docs/1.7.0/sparse.html#torch.sparse.mm
+input,torch.sparse.sum,https://pytorch.org/docs/1.7.0/sparse.html#torch.sparse.sum

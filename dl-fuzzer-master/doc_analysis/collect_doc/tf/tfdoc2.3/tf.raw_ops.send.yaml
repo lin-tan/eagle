@@ -1,0 +1,37 @@
+constraints:
+  client_terminated:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If set to true, this indicates that
+      the node was added to the graph as a result of a client-side feed or fetch of
+      Tensor data, in which case the corresponding send or recv is expected to be
+      managed locally by the caller.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  recv_device:
+    descp: A string. The name of the device receiving the tensor.
+  send_device:
+    descp: A string. The name of the device sending the tensor.
+  send_device_incarnation:
+    descp: An int. The current incarnation of send_device.
+  tensor:
+    descp: A Tensor. The tensor to send.
+  tensor_name:
+    descp: A string. The name of the tensor to send.
+inputs:
+  optional:
+  - client_terminated
+  - name
+  required:
+  - tensor
+  - tensor_name
+  - send_device
+  - send_device_incarnation
+  - recv_device
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Send
+outputs:
+- The created Operation.
+package: tensorflow
+target: Send
+title: tf.raw_ops.Send
+version: 2.3.0

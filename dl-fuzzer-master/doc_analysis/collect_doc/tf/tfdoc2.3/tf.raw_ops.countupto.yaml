@@ -1,0 +1,23 @@
+constraints:
+  limit:
+    descp: An int. If incrementing ref would bring it above limit, instead generates
+      an 'OutOfRange' error.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  ref:
+    descp: 'A mutable Tensor. Must be one of the following types: int32, int64. Should
+      be from a scalar Variable node.'
+inputs:
+  optional:
+  - name
+  required:
+  - ref
+  - limit
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CountUpTo
+outputs:
+- A Tensor. Has the same type as ref.
+package: tensorflow
+target: CountUpTo
+title: tf.raw_ops.CountUpTo
+version: 2.3.0

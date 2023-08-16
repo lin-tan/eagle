@@ -1,0 +1,125 @@
+aliases:
+- tf.compat.v1.keras.layers.Lambda
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  arguments:
+    default: None
+    descp: 'Optional dictionary of keyword arguments to be passed to the function.
+      Input shape: Arbitrary. Use the keyword argument input_shape (tuple of integers,
+      does not include the samples axis) when using this layer as the first layer
+      in a model. Output shape: Specified by `output_shape` argument'
+    dtype:
+    - '&function'
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (tuple
+    - axis)
+    - does
+    - include
+    - integers
+    - not
+    - samples
+    - the
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (tuple_of_integers,does_not_include_the_samples_axis)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&function'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - dict
+    tensor_t:
+    - tf.tensor
+  function:
+    descp: The function to be evaluated. Takes input tensor as first argument.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    tensor_t:
+    - tf.tensor
+  mask:
+    default: None
+    descp: Either None (indicating no masking) or a callable with the same signature
+      as the `compute_mask` layer method, or a tensor that will be returned as output
+      mask regardless what the input is.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (indicating
+    - compute_mask
+    - masking)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (indicating_no_masking)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  output_shape:
+    default: None
+    descp: 'Expected output shape from function. This argument can be inferred if
+      not explicitly provided. Can be a tuple or function. If a tuple, it only specifies
+      the first dimension onward; sample dimension is assumed either the same as the
+      input: `output_shape = (input_shape[0], ) + output_shape` or, the input is `None`
+      and the sample dimension is also `None`: `output_shape = (None, ) + output_shape`
+      If a function, it specifies the entire shape as a function of the input shape:
+      `output_shape = f(input_shape)`'
+    dtype:
+    - '&function'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&function'
+    - '[1]'
+    structure:
+    - tuple
+inputs:
+  optional:
+  - output_shape
+  - mask
+  - arguments
+  - '**kwargs'
+  required:
+  - function
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/Lambda
+package: tensorflow
+target: Lambda
+title: tf.keras.layers.Lambda
+version: 2.1.0

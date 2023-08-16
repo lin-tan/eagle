@@ -1,0 +1,37 @@
+constraints:
+  auto_shard_policy:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  index:
+    descp: A Tensor of type int64. A scalar representing the index of the current
+      worker out of num_workers.
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_workers:
+    descp: A Tensor of type int64. A scalar representing the number of workers to
+      distribute this dataset across.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - auto_shard_policy
+  - name
+  required:
+  - input_dataset
+  - num_workers
+  - index
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalAutoShardDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalAutoShardDataset
+title: tf.raw_ops.ExperimentalAutoShardDataset
+version: 2.2.0

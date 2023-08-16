@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(Optional.)  A floating point type tensor, shaped`[num_classes]`.  If not provided, the true class distribution is estimated live in a streaming fashion.",None,prim_dtype,"dtype(float, tf.dtype)",,1
+,"(Optional.)  A floating point type tensor, shaped`[num_classes]`.  If not provided, the true class distribution is estimated live in a streaming fashion.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"(Optional.)  A floating point type tensor, shaped`[num_classes]`.  If not provided, the true class distribution is estimated live in a streaming fashion.",None,shape,"shape([num_classes]), ndim(0, 1)",,1

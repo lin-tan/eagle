@@ -1,0 +1,35 @@
+aliases:
+- tf.metrics.sparse_top_k_categorical_accuracy
+- tf.compat.v1.keras.metrics.sparse_top_k_categorical_accuracy
+constraints:
+  k:
+    default: '5'
+    descp: (Optional) Number of top elements to look at for computing accuracy. Defaults
+      to 5.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  y_pred:
+    descp: tensor of predicted targets.
+    tensor_t:
+    - tf.tensor
+  y_true:
+    descp: tensor of true targets.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - k
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/metrics/sparse_top_k_categorical_accuracy
+outputs:
+- Sparse top K categorical accuracy value.
+package: tensorflow
+target: sparse_top_k_categorical_accuracy
+title: tf.keras.metrics.sparse_top_k_categorical_accuracy
+version: 2.2.0

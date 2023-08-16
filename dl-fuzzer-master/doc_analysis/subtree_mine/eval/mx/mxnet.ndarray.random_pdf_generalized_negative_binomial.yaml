@@ -1,0 +1,21 @@
+constraints:
+  is_log:
+    default: _Null
+    descp: If set, compute the density of the log-probability instead of the probability.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.ndarray.random_pdf_generalized_negative_binomial

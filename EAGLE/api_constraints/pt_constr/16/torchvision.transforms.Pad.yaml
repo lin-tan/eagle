@@ -1,0 +1,26 @@
+constraints:
+  fill:
+    default: '0'
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+  padding:
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[4]'
+    structure:
+    - list
+inputs:
+  optional:
+  - fill
+  required:
+  - padding
+package: torchvision
+target: Pad
+title: torchvision.transforms.Pad
+version: 0.7.0
+

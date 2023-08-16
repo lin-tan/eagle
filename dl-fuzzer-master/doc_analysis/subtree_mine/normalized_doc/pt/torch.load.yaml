@@ -1,0 +1,40 @@
+constraints:
+  '**pickle_load_args':
+    descp: (Python 3 only) optional keyword arguments passed over to `pickle_module.load()`
+      and `pickle_module.Unpickler()`, e.g., `errors=...`.
+    normalized_descp:
+    - BSTR and PARAM Unpickler , e g , errors
+  f:
+    descp: a file-like object (has to implement `read()`, :meth`readline`, :meth`tell`,
+      and :meth`seek`), or a string containing a file name
+    normalized_descp:
+    - a file like object has to implement read , meth QSTR , meth QSTR , and meth
+      QSTR , or a D_TYPE containing a file name
+  map_location:
+    default: None
+    descp: a function, `torch.device`, string or a dict specifying how to remap storage
+      locations
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a function, torch device , D_TYPE or a D_STRUCTURE specifying how to remap storage
+      locations
+  pickle_module:
+    default: <modulepicklefrom/opt/conda/lib/python3.6/pickle.py>
+    descp: module used for unpickling metadata and objects (has to match the `pickle_module`
+      used to serialize file)
+    normalized_default: REXPR opt conda lib python3 CONSTANT_NUM pickle py
+    normalized_descp:
+    - module used for unpickling metadata and objects has to match the QSTR used to
+      serialize file
+inputs:
+  optional:
+  - map_location
+  - pickle_module
+  required:
+  - f
+  - '**pickle_load_args'
+link: https://pytorch.org/docs/stable/torch.html#torch.load
+package: torch
+target: load
+title: torch.load
+version: 1.5.0

@@ -1,0 +1,17 @@
+[torch.cuda.set_rng_state_all] Inconsistency detected, arg new_state doesn't exist https://pytorch.org/docs/1.4.0/cuda.html#torch.cuda.set_rng_state_all
+[torch.distributed.all_reduce_multigpu] Inconsistency detected, arg list doesn't exist https://pytorch.org/docs/1.4.0/distributed.html#torch.distributed.all_reduce_multigpu
+[torch.jit.trace_module] Inconsistency detected, arg example_inputs doesn't exist https://pytorch.org/docs/1.4.0/jit.html#torch.jit.trace_module
+[torch.nn.init.kaiming_uniform_] Inconsistency detected, arg with 'leaky_relu') doesn't exist https://pytorch.org/docs/1.4.0/nn.init.html#torch.nn.init.kaiming_uniform_
+[torch.nn.init.kaiming_normal_] Inconsistency detected, arg with 'leaky_relu') doesn't exist https://pytorch.org/docs/1.4.0/nn.init.html#torch.nn.init.kaiming_normal_
+[torch.quantization.quantize_dynamic] Inconsistency detected, arg module doesn't exist https://pytorch.org/docs/1.4.0/quantization.html#torch.quantization.quantize_dynamic
+[torch.quantization.add_quant_dequant] Inconsistency detected, arg we want to quantize doesn't exist https://pytorch.org/docs/1.4.0/quantization.html#torch.quantization.add_quant_dequant
+[torch.take] Inconsistency detected, arg indices doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.take
+[torch.add] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.add
+[torch.clamp] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.clamp
+[torch.clamp] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.clamp
+[torch.mul] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.mul
+[torch.max] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.max
+[torch.max] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.max
+[torch.min] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.min
+[torch.min] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.min
+[torch.lu_solve] Inconsistency detected, arg b doesn't exist https://pytorch.org/docs/1.4.0/torch.html#torch.lu_solve

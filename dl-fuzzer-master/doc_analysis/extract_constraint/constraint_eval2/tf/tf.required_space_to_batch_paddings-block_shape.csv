@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,int32 Tensor of shape [N].,,prim_dtype,dtype(tf.int32),,1
+,int32 Tensor of shape [N].,,nonprim_dtype,tensor_t(tf.tensor),,1
+,int32 Tensor of shape [N].,,shape,"shape([n]), ndim(1)",,1

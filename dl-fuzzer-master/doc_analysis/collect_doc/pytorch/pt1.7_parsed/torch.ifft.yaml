@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: the input tensor of at least `signal_ndim` `+ 1` dimensions
+    doc_dtype:
+    - Tensor
+  normalized:
+    default: 'False'
+    descp: 'controls whether to return normalized results. Default: `False`'
+    doc_dtype:
+    - bool
+  signal_ndim:
+    descp: the number of dimensions in each signal. `signal_ndim` can only be 1, 2
+      or 3
+    doc_dtype:
+    - int
+inputs:
+  optional:
+  - normalized
+  required:
+  - input
+  - signal_ndim
+link: https://pytorch.org/docs/1.7.0/generated/torch.ifft.html#torch.ifft#torch.ifft
+package: torch
+ret_type: Tensor
+target: ifft
+title: torch.ifft
+version: 1.7.0

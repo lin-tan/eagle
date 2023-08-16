@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Int, number of possible words to sample.",,prim_dtype,dtype(int),,1
+,"Int, number of possible words to sample.",,shape,ndim(0),,1
+,"Int, number of possible words to sample.",,validvalue,"range([0,inf))",,1

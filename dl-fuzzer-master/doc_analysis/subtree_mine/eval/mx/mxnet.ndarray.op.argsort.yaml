@@ -1,0 +1,25 @@
+constraints:
+  data:
+    default: None
+    descp: The input array
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  dtype:
+    default: _Null
+    descp: DType of the output indices. It is only valid when ret_typ is "indices"
+      or "both". An error will be raised if the selected data type cannot precisely
+      represent the indices.
+    doc_dtype:
+    - '{''float16'', ''float32'', ''float64'', ''int32'', ''int64'', ''uint8''}'
+    - optional
+    - default='float32'
+    enum:
+    - float16
+    - float32
+    - float64
+    - int32
+    - int64
+    - uint8
+title: mxnet.ndarray.op.argsort

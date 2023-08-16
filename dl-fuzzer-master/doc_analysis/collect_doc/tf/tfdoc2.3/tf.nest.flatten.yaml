@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.nest.flatten
+constraints:
+  expand_composites:
+    default: 'False'
+    descp: If true, then composite tensors such as tf.sparse.SparseTensor and tf.RaggedTensor
+      are expanded into their component tensors.
+  structure:
+    descp: an arbitrarily nested structure. Note, numpy arrays are considered atoms
+      and are not flattened.
+exceptions:
+- TypeError: The nest is or contains a dict with non-sortable keys.
+inputs:
+  optional:
+  - expand_composites
+  required:
+  - structure
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nest/flatten
+outputs:
+- A Python list, the flattened version of the input.
+package: tensorflow
+target: flatten
+title: tf.nest.flatten
+version: 2.3.0

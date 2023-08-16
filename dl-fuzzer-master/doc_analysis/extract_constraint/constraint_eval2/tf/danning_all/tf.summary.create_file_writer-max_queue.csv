@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,the largest number of summaries to keep in a queue; will flush once the queue gets bigger than this. Defaults to 10.,None,prim_dtype,dtype(int),1,1
+,the largest number of summaries to keep in a queue; will flush once the queue gets bigger than this. Defaults to 10.,None,shape,ndim(0),1,1
+,the largest number of summaries to keep in a queue; will flush once the queue gets bigger than this. Defaults to 10.,None,validvalue,"range([0,inf))",1,1

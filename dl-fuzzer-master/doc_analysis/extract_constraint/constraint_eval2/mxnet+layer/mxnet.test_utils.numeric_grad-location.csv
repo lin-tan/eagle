@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list of numpy.ndarray, dict of str to numpy.ndarray",Argument values used as location to compute gradient Maps the name of arguments to the corresponding numpy.ndarray. Value of all the arguments must be provided.,,prim_dtype,dtype(string),,1
+"list of numpy.ndarray, dict of str to numpy.ndarray",Argument values used as location to compute gradient Maps the name of arguments to the corresponding numpy.ndarray. Value of all the arguments must be provided.,,nonprim_dtype,"structure(dict(string:ndarray), list, ndarray)",,1

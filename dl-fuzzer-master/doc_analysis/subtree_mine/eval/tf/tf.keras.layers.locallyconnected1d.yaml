@@ -1,0 +1,9 @@
+constraints:
+  kernel_initializer:
+    default: glorot_uniform
+    descp: Initializer for the `kernel` weights matrix.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.keras.layers.LocallyConnected1D

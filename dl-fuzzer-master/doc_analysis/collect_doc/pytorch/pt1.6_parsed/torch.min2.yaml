@@ -1,0 +1,32 @@
+constraints:
+  dim:
+    descp: the dimension to reduce.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the tuple of two output tensors (min, min_indices)
+    doc_dtype:
+    - tuple
+inputs:
+  optional:
+  - keepdim
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.6.0/generated/torch.min.html#torch.min#torch.min
+package: torch
+ret_type: (Tensor, LongTensor)
+target: min
+title: torch.min
+version: 1.6.0

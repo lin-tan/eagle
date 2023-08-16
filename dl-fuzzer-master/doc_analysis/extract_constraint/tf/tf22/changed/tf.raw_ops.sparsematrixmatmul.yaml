@@ -1,0 +1,79 @@
+constraints:
+  a:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  adjoint_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether a should be conjugate-transposed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  adjoint_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether b should be conjugate-transposed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  b:
+    descp: A Tensor. A dense tensor.
+    tensor_t:
+    - tf.tensor
+  conjugate_output:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Conjugates the product of a and b.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  transpose_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether a should be transposed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  transpose_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Indicates whether b should be transposed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  transpose_output:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Transposes the product of a and b.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - transpose_a
+  - transpose_b
+  - adjoint_a
+  - adjoint_b
+  - transpose_output
+  - conjugate_output
+  - name
+  required:
+  - a
+  - b
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixMatMul
+outputs:
+- A Tensor. Has the same type as b.
+package: tensorflow
+target: SparseMatrixMatMul
+title: tf.raw_ops.SparseMatrixMatMul
+version: 2.2.0

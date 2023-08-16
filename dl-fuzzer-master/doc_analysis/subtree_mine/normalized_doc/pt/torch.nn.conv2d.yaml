@@ -1,0 +1,92 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If `True`, adds a learnable bias to the output. Default: `True`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, adds a learnable bias to the output
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  dilation:
+    default: '1'
+    descp: 'Spacing between kernel elements. Default: 1'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Spacing between kernel elements
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE, optional
+  groups:
+    default: '1'
+    descp: 'Number of blocked connections from input channels to output channels.
+      Default: 1'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of blocked connections from input channels to output channels
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  in_channels:
+    descp: Number of channels in the input image
+    doc_dtype: int
+    normalized_descp:
+    - Number of channels in the input image
+    normalized_docdtype: ONE_WORD D_TYPE
+  kernel_size:
+    descp: Size of the convolving kernel
+    doc_dtype: int or tuple
+    normalized_descp:
+    - Size of the convolving kernel
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+  out_channels:
+    descp: Number of channels produced by the convolution
+    doc_dtype: int
+    normalized_descp:
+    - Number of channels produced by the convolution
+    normalized_docdtype: ONE_WORD D_TYPE
+  padding:
+    default: '0'
+    descp: 'Zero-padding added to both sides of the input. Default: 0'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Zero padding added to both sides of the input
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE, optional
+  padding_mode:
+    default: zeros
+    descp: '`''zeros''`, `''reflect''`, `''replicate''` or `''circular''`. Default:
+      `''zeros''`'
+    doc_dtype: string, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - ONE_WORD QSTR
+    - Default QSTR
+    normalized_docdtype: D_TYPE, optional
+  stride:
+    default: '1'
+    descp: 'Stride of the convolution. Default: 1'
+    doc_dtype: int or tuple, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Stride of the convolution
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE or D_STRUCTURE, optional
+inputs:
+  optional:
+  - stride
+  - padding
+  - dilation
+  - groups
+  - bias
+  - padding_mode
+  required:
+  - in_channels
+  - out_channels
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Conv2d
+package: torch
+target: Conv2d
+title: torch.nn.Conv2d
+version: 1.5.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An n-D Tensor with at least 3 dimensions, the last 3 of which are the dimensions of each image.",,prim_dtype,dtype(image),,1
+,"An n-D Tensor with at least 3 dimensions, the last 3 of which are the dimensions of each image.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An n-D Tensor with at least 3 dimensions, the last 3 of which are the dimensions of each image.",,shape,ndim(n),,1

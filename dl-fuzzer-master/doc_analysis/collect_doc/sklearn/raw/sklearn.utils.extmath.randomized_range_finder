@@ -1,0 +1,48 @@
+sklearn.utils.extmath.randomized_range_finder = randomized_range_finder(A, size, n_iter, power_iteration_normalizer='auto', random_state=None)
+    Computes an orthonormal matrix whose range approximates the range of A.
+    
+    Parameters
+    ----------
+    A : 2D array
+        The input data matrix
+    
+    size : integer
+        Size of the return array
+    
+    n_iter : integer
+        Number of power iterations used to stabilize the result
+    
+    power_iteration_normalizer : 'auto' (default), 'QR', 'LU', 'none'
+        Whether the power iterations are normalized with step-by-step
+        QR factorization (the slowest but most accurate), 'none'
+        (the fastest but numerically unstable when `n_iter` is large, e.g.
+        typically 5 or larger), or 'LU' factorization (numerically stable
+        but can lose slightly in accuracy). The 'auto' mode applies no
+        normalization if `n_iter` <= 2 and switches to LU otherwise.
+    
+        .. versionadded:: 0.18
+    
+    random_state : int, RandomState instance or None, optional (default=None)
+        The seed of the pseudo random number generator to use when shuffling
+        the data.  If int, random_state is the seed used by the random number
+        generator; If RandomState instance, random_state is the random number
+        generator; If None, the random number generator is the RandomState
+        instance used by `np.random`.
+    
+    Returns
+    -------
+    Q : 2D array
+        A (size x size) projection matrix, the range of which
+        approximates well the range of the input matrix A.
+    
+    Notes
+    -----
+    
+    Follows Algorithm 4.3 of
+    Finding structure with randomness: Stochastic algorithms for constructing
+    approximate matrix decompositions
+    Halko, et al., 2009 (arXiv:909) https://arxiv.org/pdf/0909.4061.pdf
+    
+    An implementation of a randomized algorithm for principal component
+    analysis
+    A. Szlam et al. 2014

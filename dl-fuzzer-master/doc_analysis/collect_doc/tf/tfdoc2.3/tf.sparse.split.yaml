@@ -1,0 +1,29 @@
+constraints:
+  axis:
+    default: None
+    descp: A 0-D int32 Tensor. The dimension along which to split.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_split:
+    default: None
+    descp: A Python integer. The number of ways to split.
+  sp_input:
+    default: None
+    descp: The SparseTensor to split.
+exceptions:
+- TypeError: If sp_input is not a SparseTensor.
+inputs:
+  optional:
+  - sp_input
+  - num_split
+  - axis
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/sparse/split
+outputs:
+- num_split SparseTensor objects resulting from splitting value.
+package: tensorflow
+target: split
+title: tf.sparse.split
+version: 2.3.0

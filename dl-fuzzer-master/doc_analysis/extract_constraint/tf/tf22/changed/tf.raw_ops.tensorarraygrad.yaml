@@ -1,0 +1,40 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  source:
+    descp: A string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - flow_in
+  - source
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayGrad
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: TensorArrayGrad
+title: tf.raw_ops.TensorArrayGrad
+version: 2.2.0

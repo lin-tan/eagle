@@ -1,0 +1,51 @@
+aliases:
+- tf.compat.v1.keras.layers.PReLU
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  alpha_constraint:
+    default: None
+    descp: Constraint for the weights.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Constraint for the weights
+  alpha_initializer:
+    default: zeros
+    descp: Initializer function for the weights.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer function for the weights
+  alpha_regularizer:
+    default: None
+    descp: Regularizer for the weights.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Regularizer for the weights
+  shared_axes:
+    default: None
+    descp: The axes along which to share learnable parameters for the activation function.
+      For example, if the incoming feature maps are from a 2D convolution with output
+      shape `(batch, height, width, channels)`, and you wish to share parameters across
+      space so that each filter only has one set of parameters, set `shared_axes=[1,
+      2]`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The axes along which to share learnable parameters for the activation function
+    - For example if the incoming feature maps are from a CONSTANT_NUM D convolution
+      with output shape BSTR and you wish to share parameters across space so that
+      each filter only has one set of parameters set shared_axes BSTR
+inputs:
+  optional:
+  - alpha_initializer
+  - alpha_regularizer
+  - alpha_constraint
+  - shared_axes
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/PReLU
+package: tensorflow
+target: PReLU
+title: tf.keras.layers.PReLU
+version: 2.1.0

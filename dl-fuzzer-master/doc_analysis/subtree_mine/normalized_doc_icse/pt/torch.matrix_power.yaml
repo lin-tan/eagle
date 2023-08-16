@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  n:
+    descp: the power to raise the matrix to
+    doc_dtype: int
+    normalized_descp:
+    - the power to raise the matrix to
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - input
+  - n
+link: https://pytorch.org/docs/stable/torch.html#torch.matrix_power
+package: torch
+ret_type: Tensor
+target: matrix_power
+title: torch.matrix_power
+version: 1.5.0

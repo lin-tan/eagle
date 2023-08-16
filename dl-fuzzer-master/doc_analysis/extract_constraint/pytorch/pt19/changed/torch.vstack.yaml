@@ -1,0 +1,29 @@
+constraints:
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  tensors:
+    descp: sequence of tensors to concatenate
+    doc_dtype:
+    - sequence of Tensors
+    structure:
+    - sequence(torch.tensor)
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - tensors
+link: https://pytorch.org/docs/1.7.0/generated/torch.vstack.html#torch.vstack#torch.vstack
+package: torch
+ret_type: Tensor
+target: vstack
+title: torch.vstack
+version: 1.9.0

@@ -1,0 +1,146 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta1:
+    default: _Null
+    descp: The decay rate for the 1st moment estimates.
+    doc_dtype: float, optional, default=0.899999976
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The decay rate for the 1st moment estimates
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  beta2:
+    default: _Null
+    descp: The decay rate for the 2nd moment estimates.
+    doc_dtype: float, optional, default=0.999000013
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The decay rate for the 2nd moment estimates
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  clip_gradient:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip gradient to the range of BSTR If clip_gradient REXPR, gradient clipping
+      is turned off
+    - PARAM max BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  epsilon:
+    default: _Null
+    descp: A small constant for numerical stability.
+    doc_dtype: float, optional, default=9.99999994e-09
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - A small constant for numerical stability
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Gradient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lazy_update:
+    default: _Null
+    descp: If true, lazy updates are applied if gradient's stype is row_sparse and
+      all of w, m and v have the same stype
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If CONSTANT_BOOL, lazy updates are applied if gradient stype is row_sparse and
+      all of w, m and v have the same stype
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE, required
+  mean:
+    default: None
+    descp: Moving mean
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Moving mean
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Rescale gradient to PARAM rescale_grad PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  var:
+    default: None
+    descp: Moving variance
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Moving variance
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  wd:
+    default: _Null
+    descp: Weight decay augments the objective function with a regularization term
+      that penalizes large weights. The penalty scales with the square of the magnitude
+      of each weight.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM decay augments the objective function with a regularization term that
+      penalizes large weights
+    - The penalty scales with the square of the magnitude of each PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - grad
+  - mean
+  - var
+  - lr
+  - beta1
+  - beta2
+  - epsilon
+  - wd
+  - rescale_grad
+  - clip_gradient
+  - lazy_update
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.adam_update
+package: mxnet
+target: adam_update
+title: mxnet.ndarray.adam_update
+version: 1.6.0

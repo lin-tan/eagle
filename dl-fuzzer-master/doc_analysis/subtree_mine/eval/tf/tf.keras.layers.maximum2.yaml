@@ -1,0 +1,8 @@
+constraints:
+  inputs:
+    descp: A list of input tensors (at least 2) of same shape.
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+title: tf.keras.layers.maximum

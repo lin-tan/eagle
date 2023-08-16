@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: the first matrix to be multiplied
+    doc_dtype:
+    - Tensor
+  mat2:
+    descp: the second matrix to be multiplied
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - mat2
+link: https://pytorch.org/docs/1.7.0/generated/torch.mm.html#torch.mm#torch.mm
+package: torch
+ret_type: Tensor
+target: mm
+title: torch.mm
+version: 1.7.0

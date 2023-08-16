@@ -1,0 +1,48 @@
+constraints:
+  data:
+    default: None
+    descp: The tensors to print out if the condition is False.  Defaults to error
+      message and first few entries of the violating tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The D_STRUCTURE to print out if the condition is CONSTANT_BOOL
+    - Defaults to error PARAM and first few entries of the violating D_STRUCTURE
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE to prefix to the default message
+  name:
+    default: None
+    descp: A name for this operation (optional).  Defaults to "assert_shapes".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+    - Defaults to QSTR
+  shapes:
+    descp: dictionary with (`Tensor` to shape) items. A shape must be an iterable.
+    normalized_descp:
+    - D_STRUCTURE with BSTR items
+    - A shape must be an D_STRUCTURE
+  summarize:
+    default: None
+    descp: Print this many entries of the tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Print this many entries of the D_STRUCTURE
+exceptions:
+- ValueError: If static checks determine any shape constraint is violated.
+inputs:
+  optional:
+  - data
+  - summarize
+  - message
+  - name
+  required:
+  - shapes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_shapes
+package: tensorflow
+target: assert_shapes
+title: tf.debugging.assert_shapes
+version: 2.1.0

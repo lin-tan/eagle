@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: the first input tensor
+  other:
+    descp: the second input tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.bitwise_xor
+package: torch
+ret_type: Tensor
+target: bitwise_xor
+title: torch.bitwise_xor
+version: 1.4.0

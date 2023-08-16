@@ -1,0 +1,39 @@
+constraints:
+  delimiter:
+    default: \t
+    descp: An optional string. Defaults to "\t". Delimiter to separate fields in a
+      line.
+  filename:
+    descp: A Tensor of type string. Filename of a vocabulary text file.
+  key_index:
+    descp: An int that is >= -2. Column index in a line to get the table key values
+      from.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  table_handle:
+    descp: A Tensor of type resource. Handle to a table which will be initialized.
+  value_index:
+    descp: An int that is >= -2. Column index that represents information of a line
+      to get the table value values from.
+  vocab_size:
+    default: '-1'
+    descp: An optional int that is >= -1. Defaults to -1. Number of elements of the
+      file, use -1 if unknown.
+inputs:
+  optional:
+  - vocab_size
+  - delimiter
+  - name
+  required:
+  - table_handle
+  - filename
+  - key_index
+  - value_index
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/InitializeTableFromTextFileV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: InitializeTableFromTextFileV2
+title: tf.raw_ops.InitializeTableFromTextFileV2
+version: 2.2.0

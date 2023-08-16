@@ -1,0 +1,29 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  set_indices:
+    descp: A Tensor of type int64. 2D Tensor, indices of a SparseTensor.
+  set_shape:
+    descp: A Tensor of type int64. 1D Tensor, shape of a SparseTensor.
+  set_values:
+    descp: 'A Tensor. Must be one of the following types: int8, int16, int32, int64,
+      uint8, uint16, string. 1D Tensor, values of a SparseTensor.'
+  validate_indices:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - validate_indices
+  - name
+  required:
+  - set_indices
+  - set_values
+  - set_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SetSize
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: SetSize
+title: tf.raw_ops.SetSize
+version: 2.3.0

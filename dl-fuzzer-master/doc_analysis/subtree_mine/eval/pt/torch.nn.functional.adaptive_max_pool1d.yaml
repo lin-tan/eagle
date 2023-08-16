@@ -1,0 +1,9 @@
+constraints:
+  return_indices:
+    default: None
+    descp: 'whether to return pooling indices. Default: `False`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.nn.functional.adaptive_max_pool1d

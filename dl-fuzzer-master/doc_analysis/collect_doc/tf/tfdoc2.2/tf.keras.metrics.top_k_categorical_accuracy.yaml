@@ -1,0 +1,25 @@
+aliases:
+- tf.metrics.top_k_categorical_accuracy
+- tf.compat.v1.keras.metrics.top_k_categorical_accuracy
+constraints:
+  k:
+    default: '5'
+    descp: (Optional) Number of top elements to look at for computing accuracy. Defaults
+      to 5.
+  y_pred:
+    descp: The prediction values.
+  y_true:
+    descp: The ground truth values.
+inputs:
+  optional:
+  - k
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/metrics/top_k_categorical_accuracy
+outputs:
+- Top K categorical accuracy value.
+package: tensorflow
+target: top_k_categorical_accuracy
+title: tf.keras.metrics.top_k_categorical_accuracy
+version: 2.2.0

@@ -1,0 +1,28 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+  src:
+    default: None
+    descp: Source rank. Will receive from any process if unspecified.
+    doc_dtype: int, optional
+  tag:
+    default: '0'
+    descp: Tag to match recv with remote send
+    doc_dtype: int, optional
+  tensor:
+    descp: Tensor to fill with received data.
+    doc_dtype: Tensor
+inputs:
+  optional:
+  - src
+  - group
+  - tag
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.recv
+package: torch
+target: recv
+title: torch.distributed.recv
+version: 1.5.0

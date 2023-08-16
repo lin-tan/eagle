@@ -1,0 +1,95 @@
+aliases:
+- tf.compat.v1.linalg.qr
+- tf.compat.v1.qr
+constraints:
+  full_matrices:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. If true, compute full-sized `q`
+      and `r`. If false (the default), compute only the leading `P` columns of `q`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[p]'
+    - '[q]'
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `float64`, `float32`,
+      `half`, `complex64`, `complex128`. A tensor of shape `[..., M, N]` whose inner-most
+      2 dimensions form matrices of size `[M, N]`. Let `P` be the minimum of `M` and
+      `N`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.string
+    enum:
+    - '[...'
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '>=2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[...,m,n]'
+    - '[1]'
+    - '[2]'
+    - '[m,n]'
+    - '[m]'
+    - '[n]'
+    - '[p]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - full_matrices
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/qr
+outputs: A tuple of `Tensor` objects (q, r).
+package: tensorflow
+target: qr
+title: tf.linalg.qr
+version: 2.1.0

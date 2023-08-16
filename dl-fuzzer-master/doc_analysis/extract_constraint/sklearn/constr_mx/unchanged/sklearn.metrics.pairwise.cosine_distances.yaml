@@ -1,0 +1,16 @@
+constraints:
+  X:
+    descp: array_like, sparse matrix with shape (n_samples_X, n_features).
+  Y:
+    default: None
+    descp: array_like, sparse matrix (optional) with shape (n_samples_Y, n_features).
+inputs:
+  optional:
+  - Y
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: cosine_distances
+title: sklearn.metrics.pairwise.cosine_distances
+version: 0.24.X

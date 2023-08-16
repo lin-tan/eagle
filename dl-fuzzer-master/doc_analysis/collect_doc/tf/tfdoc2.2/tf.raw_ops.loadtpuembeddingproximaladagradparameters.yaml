@@ -1,0 +1,41 @@
+constraints:
+  accumulators:
+    descp: A Tensor of type float32. Value of accumulators used in the proximal Adagrad
+      optimization algorithm.
+  config:
+    default: ''
+    descp: An optional string. Defaults to "".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_shards:
+    descp: An int.
+  parameters:
+    descp: A Tensor of type float32. Value of parameters used in the proximal Adagrad
+      optimization algorithm.
+  shard_id:
+    descp: An int.
+  table_id:
+    default: '-1'
+    descp: An optional int that is >= -1. Defaults to -1.
+  table_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - table_id
+  - table_name
+  - config
+  - name
+  required:
+  - parameters
+  - accumulators
+  - num_shards
+  - shard_id
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/LoadTPUEmbeddingProximalAdagradParameters
+outputs:
+- The created Operation.
+package: tensorflow
+target: LoadTPUEmbeddingProximalAdagradParameters
+title: tf.raw_ops.LoadTPUEmbeddingProximalAdagradParameters
+version: 2.2.0

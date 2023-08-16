@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,int number of samples to generate,,prim_dtype,dtype(int),,1
+,int number of samples to generate,,shape,ndim(0),,1
+,int number of samples to generate,,validvalue,"range([0,inf))",,1

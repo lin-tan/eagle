@@ -1,0 +1,77 @@
+aliases:
+- tf.compat.v1.nn.ctc_loss_v2
+constraints:
+  blank_index:
+    default: None
+    descp: (optional) Set the class index to use for the blank label. Negative values
+      will start from num_classes, ie, -1 will reproduce the ctc_loss behavior of
+      using num_classes - 1 for the blank symbol. There is some memory/performance
+      overhead to switching from the default of 0 as an additional shifted copy of
+      the logits may be created.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR Set the class index to use for the blank label
+    - Negative values will start from num_classes ie CONSTANT_NUM will reproduce the
+      ctc_loss behavior of using num_classes CONSTANT_NUM for the blank symbol
+    - There is some memory performance overhead to switching from the default of CONSTANT_NUM
+      as an additional shifted copy of the PARAM may be created
+  label_length:
+    descp: tensor of shape [batch_size], None if labels is SparseTensor Length of
+      reference label sequence in labels.
+    normalized_descp:
+    - D_STRUCTURE of shape BSTR None if PARAM is D_STRUCTURE Length of reference label
+      D_STRUCTURE in PARAM
+  labels:
+    descp: tensor of shape [batch_size, max_label_seq_length] or SparseTensor
+    normalized_descp:
+    - D_STRUCTURE of shape BSTR or D_STRUCTURE
+  logit_length:
+    descp: tensor of shape [batch_size] Length of input sequence in logits.
+    normalized_descp:
+    - D_STRUCTURE of shape BSTR Length of input D_STRUCTURE in PARAM
+  logits:
+    descp: tensor of shape [frames, batch_size, num_labels], if logits_time_major
+      == False, shape is [batch_size, frames, num_labels].
+    normalized_descp:
+    - D_STRUCTURE of shape BSTR if PARAM CONSTANT_BOOL shape is BSTR
+  logits_time_major:
+    default: 'True'
+    descp: (optional) If True (default), logits is shaped [time, batch, logits]. If
+      False, shape is [batch, time, logits]
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - BSTR PARAM is shaped BSTR
+    - If CONSTANT_BOOL shape is BSTR
+  name:
+    default: None
+    descp: A name for this `Op`. Defaults to "ctc_loss_dense".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this QSTR
+    - Defaults to QSTR
+  unique:
+    default: None
+    descp: (optional) Unique label indices as computed by ctc_unique_labels(labels).  If
+      supplied, enable a faster, memory efficient implementation on TPU.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - If supplied enable a faster memory efficient implementation on TPU
+inputs:
+  optional:
+  - logits_time_major
+  - unique
+  - blank_index
+  - name
+  required:
+  - labels
+  - logits
+  - label_length
+  - logit_length
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/ctc_loss
+outputs:
+- loss: tensor of shape [batch_size], negative log probabilities.
+package: tensorflow
+target: ctc_loss
+title: tf.nn.ctc_loss
+version: 2.1.0

@@ -1,0 +1,32 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this variable is placed
+      in the given container. Otherwise, a default container is used.
+  dtype:
+    descp: A tf.DType. The type of elements in the variable tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. The shape of the variable tensor.
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this variable is named
+      in the given bucket with this shared_name. Otherwise, the node name is used
+      instead.
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - shape
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/VariableV2
+outputs:
+- A mutable Tensor of type dtype.
+package: tensorflow
+target: VariableV2
+title: tf.raw_ops.VariableV2
+version: 2.3.0

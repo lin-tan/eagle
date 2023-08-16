@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.random.experimental.stateless_fold_in
+constraints:
+  data:
+    descp: an int32 or int64 scalar representing data to be folded in to the seed.
+  seed:
+    descp: an RNG seed (a tensor with shape [2] and dtype int32 or int64). (When using
+      XLA, only int32 is allowed.)
+inputs:
+  optional: []
+  required:
+  - seed
+  - data
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/random/experimental/stateless_fold_in
+outputs:
+- A new RNG seed that is a deterministic function of the inputs and is statistically
+  safe for producing a stream of new pseudo-random values. It will have the same dtype
+  as data (if data doesn't have an explict dtype, the dtype will be determined by
+  tf.convert_to_tensor).
+package: tensorflow
+target: stateless_fold_in
+title: tf.random.experimental.stateless_fold_in
+version: 2.3.0

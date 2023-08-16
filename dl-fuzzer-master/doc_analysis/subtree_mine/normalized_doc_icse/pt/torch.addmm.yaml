@@ -1,0 +1,62 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: multiplier for mat1 @ mat2  ( alpha )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM PARAM BSTR
+    normalized_docdtype: Number optional
+  beta:
+    default: '1'
+    descp: multiplier for `input` ( beta )
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM BSTR
+    normalized_docdtype: Number optional
+  input:
+    descp: matrix to be added
+    doc_dtype: Tensor
+    normalized_descp:
+    - matrix to be added
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat1:
+    descp: the first matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the first matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat2:
+    descp: the second matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  keyword_only:
+  - beta
+  - alpha
+  - out
+  optional:
+  - beta
+  - alpha
+  - out
+  required:
+  - input
+  - mat1
+  - mat2
+link: https://pytorch.org/docs/stable/torch.html#torch.addmm
+package: torch
+ret_type: Tensor
+target: addmm
+title: torch.addmm
+version: 1.5.0

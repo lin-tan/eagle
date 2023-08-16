@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If True and a cluster resolver is passed, will automatically enter the master task device scope, which indicates the master becomes the default device to run ops. It won't do anything if a cluster spec is passed. Will throw an error if the caller is currently already in some device scope.",True,prim_dtype,dtype(tf.bool),,1
+,"If True and a cluster resolver is passed, will automatically enter the master task device scope, which indicates the master becomes the default device to run ops. It won't do anything if a cluster spec is passed. Will throw an error if the caller is currently already in some device scope.",True,shape,ndim(0),,1

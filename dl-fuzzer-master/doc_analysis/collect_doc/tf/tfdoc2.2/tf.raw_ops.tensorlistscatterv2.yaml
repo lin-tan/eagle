@@ -1,0 +1,27 @@
+constraints:
+  element_shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  indices:
+    descp: A Tensor of type int32.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_elements:
+    descp: A Tensor of type int32.
+  tensor:
+    descp: A Tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - indices
+  - element_shape
+  - num_elements
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListScatterV2
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListScatterV2
+title: tf.raw_ops.TensorListScatterV2
+version: 2.2.0

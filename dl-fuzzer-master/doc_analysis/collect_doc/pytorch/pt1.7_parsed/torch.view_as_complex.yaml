@@ -1,0 +1,15 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.view_as_complex.html#torch.view_as_complex#torch.view_as_complex
+package: torch
+ret_type: Tensor
+target: view_as_complex
+title: torch.view_as_complex
+version: 1.7.0

@@ -1,0 +1,43 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  axis:
+    default: _Null
+    descp: An integer that represents the axis in NDArray to mask from.
+    doc_dtype:
+    - int
+    - optional
+    - default='0'
+  data:
+    default: None
+    descp: Data
+    doc_dtype:
+    - NDArray
+  index:
+    default: None
+    descp: Mask
+    doc_dtype:
+    - NDArray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+inputs:
+  optional:
+  - data
+  - index
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.boolean_mask
+package: mxnet
+target: boolean_mask
+title: mxnet.contrib.ndarray.boolean_mask
+version: 1.7.0

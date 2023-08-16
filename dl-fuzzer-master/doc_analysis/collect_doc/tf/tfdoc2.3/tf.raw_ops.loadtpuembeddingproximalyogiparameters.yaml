@@ -1,0 +1,42 @@
+constraints:
+  config:
+    default: ''
+    descp: An optional string. Defaults to "".
+  m:
+    descp: A Tensor of type float32.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_shards:
+    descp: An int.
+  parameters:
+    descp: A Tensor of type float32.
+  shard_id:
+    descp: An int.
+  table_id:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+  table_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+  v:
+    descp: A Tensor of type float32.
+inputs:
+  optional:
+  - table_id
+  - table_name
+  - config
+  - name
+  required:
+  - parameters
+  - v
+  - m
+  - num_shards
+  - shard_id
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LoadTPUEmbeddingProximalYogiParameters
+outputs:
+- The created Operation.
+package: tensorflow
+target: LoadTPUEmbeddingProximalYogiParameters
+title: tf.raw_ops.LoadTPUEmbeddingProximalYogiParameters
+version: 2.3.0

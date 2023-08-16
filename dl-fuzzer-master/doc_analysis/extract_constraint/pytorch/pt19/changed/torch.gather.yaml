@@ -1,0 +1,52 @@
+constraints:
+  dim:
+    descp: the axis along which to index
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  index:
+    descp: the indices of elements to gather
+    doc_dtype:
+    - LongTensor
+    dtype:
+    - torch.int64
+  input:
+    descp: the source tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the destination tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  sparse_grad:
+    default: 'False'
+    descp: If `True`, gradient w.r.t. `input` will be a sparse tensor.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  keyword_only:
+  - sparse_grad
+  - out
+  optional:
+  - sparse_grad
+  - out
+  required:
+  - input
+  - dim
+  - index
+link: https://pytorch.org/docs/1.7.0/generated/torch.gather.html#torch.gather#torch.gather
+package: torch
+ret_type: Tensor
+target: gather
+title: torch.gather
+version: 1.9.0

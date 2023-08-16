@@ -1,0 +1,32 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A Tensor. Must have the same type as y.
+    dtype:
+    - dtype:&y
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - y
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Atan2
+outputs:
+- A Tensor. Has the same type as y.
+package: tensorflow
+target: Atan2
+title: tf.raw_ops.Atan2
+version: 2.2.0

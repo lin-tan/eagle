@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 3-D `Tensor` with the same type as `value` and shape`[filter_width, output_channels, in_channels]`.  `filter`'s`in_channels` dimension must match that of `value`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 3-D `Tensor` with the same type as `value` and shape`[filter_width, output_channels, in_channels]`.  `filter`'s`in_channels` dimension must match that of `value`.",,shape,"shape([filter_width,output_channels,in_channels]), ndim(3)",,1

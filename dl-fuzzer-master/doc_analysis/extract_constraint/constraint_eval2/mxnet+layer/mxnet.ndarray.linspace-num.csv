@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+number,Number of samples to generate. Must be non-negative.,,prim_dtype,dtype(int),,1
+number,Number of samples to generate. Must be non-negative.,,shape,ndim(0),,1
+number,Number of samples to generate. Must be non-negative.,,validvalue,"range([0,inf))",,1

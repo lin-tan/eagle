@@ -1,0 +1,29 @@
+constraints:
+  dim:
+    default: None
+    descp: if given, the input will be squeezed only in this dimension
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - dim
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.squeeze.html#torch.squeeze#torch.squeeze
+package: torch
+ret_type: Tensor
+target: squeeze
+title: torch.squeeze
+version: 1.7.0

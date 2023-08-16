@@ -1,0 +1,47 @@
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  lower:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  matrix:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  rhs:
+    descp: A Tensor. Must have the same type as matrix.
+    dtype:
+    - dtype:&matrix
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - lower
+  - adjoint
+  - name
+  required:
+  - matrix
+  - rhs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchMatrixTriangularSolve
+outputs:
+- A Tensor. Has the same type as matrix.
+package: tensorflow
+target: BatchMatrixTriangularSolve
+title: tf.raw_ops.BatchMatrixTriangularSolve
+version: 2.2.0

@@ -1,0 +1,60 @@
+constraints:
+  labels:
+    default: None
+    descp: array-like A list of classes or column indices to select some (or to force
+      inclusion of classes absent from the data)
+    ndim:
+    - '1'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  samplewise:
+    default: 'False'
+    descp: bool, default=False In the multilabel case, this calculates a confusion
+      matrix per sample
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  y_pred:
+    descp: 1d array-like, or label indicator array / sparse matrix of shape (n_samples,
+      n_outputs) or (n_samples,) Estimated targets as returned by a classifier
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples,n_outputs]'
+  y_true:
+    descp: 1d array-like, or label indicator array / sparse matrix of shape (n_samples,
+      n_outputs) or (n_samples,) Ground truth (correct) target values.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples,n_outputs]'
+dependency:
+- n_outputs
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  - labels
+  - samplewise
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: sklearn
+target: multilabel_confusion_matrix
+title: sklearn.metrics.multilabel_confusion_matrix
+version: 0.24.2

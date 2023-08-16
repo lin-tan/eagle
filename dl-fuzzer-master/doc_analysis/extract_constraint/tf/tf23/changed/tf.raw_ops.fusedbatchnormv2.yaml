@@ -1,0 +1,109 @@
+constraints:
+  data_format:
+    default: NHWC
+    descp: 'An optional string from: "NHWC", "NCHW". Defaults to "NHWC". The data
+      format for x and y. Either "NHWC" (default) or "NCHW".'
+    dtype:
+    - tf.string
+    enum:
+    - NCHW
+    - NHWC
+    ndim:
+    - '0'
+  epsilon:
+    default: '0.0001'
+    descp: An optional float. Defaults to 0.0001. A small float number added to the
+      variance of x.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  exponential_avg_factor:
+    default: '1'
+    descp: An optional float. Defaults to 1.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  is_training:
+    default: 'True'
+    descp: An optional bool. Defaults to True. A bool value to indicate the operation
+      is for training (default) or inference.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  mean:
+    descp: A Tensor. Must have the same type as scale. A 1D Tensor for population
+      mean. Used for inference only; must be empty for training.
+    dtype:
+    - dtype:&scale
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  offset:
+    descp: A Tensor. Must have the same type as scale. A 1D Tensor for offset, to
+      shift to the normalized x.
+    dtype:
+    - dtype:&scale
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  scale:
+    descp: 'A Tensor. Must be one of the following types: float32. A 1D Tensor for
+      scaling factor, to scale the normalized x.'
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  variance:
+    descp: A Tensor. Must have the same type as scale. A 1D Tensor for population
+      variance. Used for inference only; must be empty for training.
+    dtype:
+    - dtype:&scale
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32.
+      A 4D Tensor for input data.'
+    ndim:
+    - '4'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - epsilon
+  - exponential_avg_factor
+  - data_format
+  - is_training
+  - name
+  required:
+  - x
+  - scale
+  - offset
+  - mean
+  - variance
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/FusedBatchNormV2
+outputs:
+- A tuple of Tensor objects (y, batch_mean, batch_variance, reserve_space_1, reserve_space_2).
+- y: A Tensor. Has the same type as x.
+- batch_mean: A Tensor. Has the same type as scale.
+- batch_variance: A Tensor. Has the same type as scale.
+- reserve_space_1: A Tensor. Has the same type as scale.
+- reserve_space_2: A Tensor. Has the same type as scale.
+package: tensorflow
+target: FusedBatchNormV2
+title: tf.raw_ops.FusedBatchNormV2
+version: 2.3.0

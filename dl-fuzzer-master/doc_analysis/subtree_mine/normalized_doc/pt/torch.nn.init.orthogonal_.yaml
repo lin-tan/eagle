@@ -1,0 +1,21 @@
+constraints:
+  gain:
+    default: '1'
+    descp: optional scaling factor
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - optional scaling factor
+  tensor:
+    descp: 'an n-dimensional torch.Tensor, where n  >= 2 '
+    normalized_descp:
+    - an n dimensional D_STRUCTURE, where n REXPR
+inputs:
+  optional:
+  - gain
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.orthogonal_
+package: torch
+target: orthogonal_
+title: torch.nn.init.orthogonal_
+version: 1.5.0

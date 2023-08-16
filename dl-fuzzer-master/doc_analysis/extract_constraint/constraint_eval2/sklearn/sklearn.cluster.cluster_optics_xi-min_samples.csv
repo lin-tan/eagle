@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,int > 1 or float between 0 and 1 The same as the min_samples given to OPTICS. Up and down steep regions can't have more then ``min_samples`` consecutive non-steep points. Expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2).,,prim_dtype,dtype(int),,1
+,int > 1 or float between 0 and 1 The same as the min_samples given to OPTICS. Up and down steep regions can't have more then ``min_samples`` consecutive non-steep points. Expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2).,,shape,ndim(0),,1
+,int > 1 or float between 0 and 1 The same as the min_samples given to OPTICS. Up and down steep regions can't have more then ``min_samples`` consecutive non-steep points. Expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2).,,validvalue,"range([0,inf))",,1

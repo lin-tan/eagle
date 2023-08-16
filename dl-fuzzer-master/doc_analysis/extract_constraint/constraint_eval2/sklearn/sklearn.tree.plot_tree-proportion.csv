@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"bool, optional (default=False) When set to ``True``, change the display of 'values' and/or 'samples' to be proportions and percentages respectively.",False,prim_dtype,"dtype(boolean, float)",,1
+,"bool, optional (default=False) When set to ``True``, change the display of 'values' and/or 'samples' to be proportions and percentages respectively.",False,shape,ndim(0),,1
+,"bool, optional (default=False) When set to ``True``, change the display of 'values' and/or 'samples' to be proportions and percentages respectively.",False,validvalue,"range([0,1])",,1

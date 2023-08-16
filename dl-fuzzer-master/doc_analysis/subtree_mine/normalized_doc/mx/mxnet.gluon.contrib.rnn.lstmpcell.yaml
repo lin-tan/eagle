@@ -1,0 +1,102 @@
+constraints:
+  h2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the bias D_STRUCTURE
+    normalized_docdtype: D_TYPE or Initializer
+  h2h_weight_initializer:
+    default: None
+    descp: Initializer for the recurrent weights matrix, used for the linear transformation
+      of the hidden state.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the recurrent weights matrix, used for the linear transformation
+      of the hidden state
+    normalized_docdtype: D_TYPE or Initializer
+  h2r_weight_initializer:
+    default: None
+    descp: Initializer for the projection weights matrix, used for the linear transformation
+      of the recurrent state.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the projection weights matrix, used for the linear transformation
+      of the recurrent state
+    normalized_docdtype: D_TYPE or Initializer
+  hidden_size:
+    descp: Number of units in cell state symbol.
+    doc_dtype: int
+    normalized_descp:
+    - Number of units in cell state symbol
+    normalized_docdtype: ONE_WORD D_TYPE
+  i2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector. By default, bias for the forget gate is
+      initialized to 1 while all other biases are initialized to zero.
+    doc_dtype: str or Initializer, default 'lstmbias'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the bias D_STRUCTURE
+    - By default, bias for the forget gate is initialized to CONSTANT_NUM while all
+      other biases are initialized to zero
+    normalized_docdtype: D_TYPE or Initializer, default QSTR
+  i2h_weight_initializer:
+    default: None
+    descp: Initializer for the input weights matrix, used for the linear transformation
+      of the inputs.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the input weights matrix, used for the linear transformation
+      of the inputs
+    normalized_docdtype: D_TYPE or Initializer
+  input_size:
+    default: '0'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp: []
+  params:
+    default: None
+    descp: Container for weight sharing between cells. Created if None.
+    doc_dtype: Parameter or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Container for weight sharing between cells
+    - Created if None
+    normalized_docdtype: Parameter or None
+  prefix:
+    default: None
+    descp: Prefix for name of Block`s (and name of weight if params is `None).
+    doc_dtype: "str, default `'lstmp_`\u2019"
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Prefix for name of Block and name of weight if PARAM is None
+    normalized_docdtype: D_TYPE, default QSTR
+  projection_size:
+    descp: Number of units in output symbol.
+    doc_dtype: int
+    normalized_descp:
+    - Number of units in output symbol
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - i2h_weight_initializer
+  - h2h_weight_initializer
+  - h2r_weight_initializer
+  - i2h_bias_initializer
+  - h2h_bias_initializer
+  - input_size
+  - prefix
+  - params
+  required:
+  - hidden_size
+  - projection_size
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.LSTMPCell
+package: mxnet
+target: LSTMPCell
+title: mxnet.gluon.contrib.rnn.LSTMPCell
+version: 1.6.0

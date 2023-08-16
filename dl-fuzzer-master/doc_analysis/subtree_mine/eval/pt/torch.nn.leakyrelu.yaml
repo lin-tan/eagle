@@ -1,0 +1,9 @@
+constraints:
+  negative_slope:
+    default: '0.01'
+    descp: 'Controls the angle of the negative slope. Default: 1e-2'
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+title: torch.nn.LeakyReLU

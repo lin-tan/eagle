@@ -1,0 +1,11 @@
+constraints:
+  X: {descp: '{array-like, sparse matrix}, shape [n_samples, n_features] Data.'}
+  value: {default: '1.0', descp: float Value to use for the dummy feature.}
+inputs:
+  optional: [value]
+  required: [X]
+link: ''
+package: sklearn
+target: add_dummy_feature
+title: sklearn.preprocessing.add_dummy_feature
+version: 0.24.2

@@ -1,0 +1,14 @@
+constraints:
+  offset:
+    default: _Null
+    descp: Offset of the diagonal versus the main diagonal. 0 corresponds to the main
+      diagonal, a negative/positive value to diagonals below/above the main diagonal.
+    doc_dtype:
+    - int
+    - optional
+    - default='0'
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.linalg_makediag

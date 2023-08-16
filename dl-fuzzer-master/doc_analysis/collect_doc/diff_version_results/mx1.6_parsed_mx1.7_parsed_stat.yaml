@@ -1,0 +1,66 @@
+descp_diff:
+- filename: mxnet.ndarray.contrib.gradientmultiplier.yaml
+  param: scalar
+- filename: mxnet.contrib.ndarray.gradientmultiplier.yaml
+  param: scalar
+- filename: mxnet.contrib.ndarray.backward_gradientmultiplier.yaml
+  param: scalar
+- filename: mxnet.ndarray.image.resize.yaml
+  param: interp
+- filename: mxnet.ndarray.contrib.backward_gradientmultiplier.yaml
+  param: scalar
+param_diff:
+- filename: mxnet.ndarray.contrib.roialign.yaml
+  param:
+  - aligned
+- filename: mxnet.contrib.quantization.quantize_graph.yaml
+  param:
+  - LayerOutputCollector
+  - quantize_granularity
+  - quantize_mode
+- filename: mxnet.ndarray.from_numpy.yaml
+  param:
+  - array_cls
+- filename: mxnet.ndarray.contrib.bilinearresize2d.yaml
+  param:
+  - align_corners
+- filename: mxnet.contrib.ndarray.bilinearresize2d.yaml
+  param:
+  - align_corners
+- filename: mxnet.contrib.ndarray.roialign.yaml
+  param:
+  - aligned
+- filename: mxnet.ndarray.contrib.gradientmultiplier.yaml
+  param:
+  - is_int
+- filename: mxnet.contrib.ndarray.gradientmultiplier.yaml
+  param:
+  - is_int
+- filename: mxnet.contrib.ndarray.backward_gradientmultiplier.yaml
+  param:
+  - is_int
+- filename: mxnet.ndarray.contrib.backward_gradientmultiplier.yaml
+  param:
+  - is_int
+- filename: mxnet.contrib.quantization.quantize_model.yaml
+  param:
+  - quantize_granularity
+uniqu_mx1.6_parsed:
+- mxnet.kvstore.create.yaml
+- mxnet.contrib.quantization.quantize_net.yaml
+uniqu_mx1.7_parsed:
+- mxnet.contrib.ndarray.modulateddeformableconvolution.yaml
+- mxnet.contrib.ndarray.quantized_embedding.yaml
+- mxnet.test_utils.check_gluon_hybridize_consistency.yaml
+- mxnet.ndarray.contrib.modulateddeformableconvolution.yaml
+- mxnet.ndarray.contrib.quantized_embedding.yaml
+- mxnet.ndarray.contrib.quantized_elemwise_mul.yaml
+- mxnet.contrib.ndarray.quantized_elemwise_mul.yaml
+- mxnet.ndarray.op.im2col.yaml
+- mxnet.ndarray.im2col.yaml
+- mxnet.image.random_rotate.yaml
+- mxnet.ndarray.col2im.yaml
+- mxnet.ndarray.op.col2im.yaml
+- mxnet.image.imrotate.yaml
+- mxnet.test_utils.locationerror.yaml
+- mxnet.contrib.quantization.quantize_net_v2.yaml

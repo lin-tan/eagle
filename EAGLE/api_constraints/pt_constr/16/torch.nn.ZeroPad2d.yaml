@@ -1,0 +1,21 @@
+constraints:
+  padding:
+    dtype:
+      - int
+    ndim:
+      - '0'
+      - '1'
+    range:
+      - '[0,100]'
+    shape:
+      - '[4]'
+    structure:
+      - list(int)
+      - tuple(int)
+inputs:
+  required:
+  - padding
+package: torch
+target: ZeroPad2d
+title: torch.nn.ZeroPad2d
+version: 1.6.0

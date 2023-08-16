@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If set, values outside of range `[0, num_buckets)` will be replaced with this value. If not set, values >= num_buckets will cause a failure while values < 0 will be dropped.",None,,,0,0

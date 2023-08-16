@@ -1,0 +1,42 @@
+constraints:
+  affine:
+    default: 'True'
+    descp: 'a boolean value that when set to `True`, this module has learnable per-channel
+      affine parameters initialized to ones (for weights) and zeros (for biases).
+      Default: `True`.'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - a D_TYPE value that when set to CONSTANT_BOOL, this module has learnable per
+      channel affine parameters initialized to ones BSTR
+    - Default CONSTANT_BOOL
+  eps:
+    default: 1e-05
+    descp: 'a value added to the denominator for numerical stability. Default: 1e-5'
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - a value added to the denominator for numerical stability
+    - Default CONSTANT_FLOAT
+  num_channels:
+    descp: number of channels expected in input
+    doc_dtype: int
+    normalized_descp:
+    - number of channels expected in input
+    normalized_docdtype: ONE_WORD D_TYPE
+  num_groups:
+    descp: number of groups to separate the channels into
+    doc_dtype: int
+    normalized_descp:
+    - number of groups to separate the channels into
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - eps
+  - affine
+  required:
+  - num_groups
+  - num_channels
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.GroupNorm
+package: torch
+target: GroupNorm
+title: torch.nn.GroupNorm
+version: 1.5.0

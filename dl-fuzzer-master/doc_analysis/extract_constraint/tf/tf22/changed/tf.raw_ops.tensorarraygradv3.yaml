@@ -1,0 +1,45 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32. A float scalar that enforces proper chaining
+      of operations.
+    dtype:
+    - float
+    - tf.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type resource. The handle to the forward TensorArray.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  source:
+    descp: A string. The gradient source string, used to decide which gradient TensorArray
+      to return.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - flow_in
+  - source
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayGradV3
+outputs:
+- A tuple of Tensor objects (grad_handle, flow_out).
+- grad_handle: A Tensor of type resource.
+- flow_out: A Tensor of type float32.
+package: tensorflow
+target: TensorArrayGradV3
+title: tf.raw_ops.TensorArrayGradV3
+version: 2.2.0

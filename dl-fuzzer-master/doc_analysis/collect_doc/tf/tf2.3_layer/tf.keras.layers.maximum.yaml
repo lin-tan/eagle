@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.keras.layers.Maximum
+constraints:
+  '**kwargs':
+    descp: standard layer keyword arguments.
+inputs:
+  optional: []
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Maximum
+package: tensorflow
+target: Maximum
+title: tf.keras.layers.Maximum
+version: 2.3.0

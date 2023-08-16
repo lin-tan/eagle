@@ -1,0 +1,52 @@
+aliases:
+- tf.compat.v1.image.rot90
+constraints:
+  image:
+    descp: 4-D Tensor of shape [batch, height, width, channels] or 3-D Tensor of shape
+      [height, width, channels].
+    dtype:
+    - numeric
+    ndim:
+    - '3'
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    - '[height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  k:
+    default: '1'
+    descp: A scalar integer. The number of times the image is rotated by 90 degrees.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+dependency:
+- batch
+- channels
+- height
+- width
+exceptions:
+- ValueError: if the shape of image not supported.
+inputs:
+  optional:
+  - k
+  - name
+  required:
+  - image
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/image/rot90
+outputs:
+- A rotated tensor of the same type and shape as image.
+package: tensorflow
+target: rot90
+title: tf.image.rot90
+version: 2.2.0

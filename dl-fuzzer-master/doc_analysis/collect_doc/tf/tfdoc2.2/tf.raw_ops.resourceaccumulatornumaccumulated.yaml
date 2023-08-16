@@ -1,0 +1,18 @@
+constraints:
+  handle:
+    descp: A Tensor of type resource. The handle to an accumulator.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceAccumulatorNumAccumulated
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: ResourceAccumulatorNumAccumulated
+title: tf.raw_ops.ResourceAccumulatorNumAccumulated
+version: 2.2.0

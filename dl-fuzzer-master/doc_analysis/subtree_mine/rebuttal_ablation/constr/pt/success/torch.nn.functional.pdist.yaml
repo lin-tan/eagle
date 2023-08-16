@@ -1,0 +1,44 @@
+constraints:
+  input:
+    descp: input tensor of shape N  times M .
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,&p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  p:
+    default: '2'
+    descp: p value for the p-norm distance to calculate between each vector pair  in
+      [0,  infty] .
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - p
+  required:
+  - input
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.pdist
+package: torch
+ret_type: Tensor
+target: pdist
+title: torch.nn.functional.pdist
+version: 1.5.0

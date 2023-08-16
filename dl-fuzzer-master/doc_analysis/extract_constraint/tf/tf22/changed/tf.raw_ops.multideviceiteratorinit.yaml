@@ -1,0 +1,43 @@
+constraints:
+  dataset:
+    descp: A Tensor of type variant. Dataset to be iterated upon.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  max_buffer_size:
+    descp: A Tensor of type int64. The maximum size of the host side per device buffer
+      to keep.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  multi_device_iterator:
+    descp: A Tensor of type resource. A MultiDeviceIteratorResource.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - dataset
+  - multi_device_iterator
+  - max_buffer_size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MultiDeviceIteratorInit
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: MultiDeviceIteratorInit
+title: tf.raw_ops.MultiDeviceIteratorInit
+version: 2.2.0

@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.keras.layers.Wrapper
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  layer:
+    descp: The layer to be wrapped.
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - layer
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/Wrapper
+package: tensorflow
+target: Wrapper
+title: tf.keras.layers.Wrapper
+version: 2.1.0

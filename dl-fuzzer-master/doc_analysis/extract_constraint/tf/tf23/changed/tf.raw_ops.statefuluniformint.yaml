@@ -1,0 +1,56 @@
+constraints:
+  algorithm:
+    descp: A Tensor of type int64. The RNG algorithm.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  maxval:
+    descp: A Tensor. Must have the same type as minval. Maximum value (exclusive,
+      scalar).
+    dtype:
+    - dtype:&minval
+    tensor_t:
+    - tf.tensor
+  minval:
+    descp: A Tensor. Minimum value (inclusive, scalar).
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. The handle of the resource variable that stores
+      the state of the RNG.
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: A Tensor. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - algorithm
+  - shape
+  - minval
+  - maxval
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatefulUniformInt
+outputs:
+- A Tensor. Has the same type as minval.
+package: tensorflow
+target: StatefulUniformInt
+title: tf.raw_ops.StatefulUniformInt
+version: 2.3.0

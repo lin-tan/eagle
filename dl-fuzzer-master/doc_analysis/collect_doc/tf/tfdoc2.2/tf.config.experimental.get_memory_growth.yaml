@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.config.experimental.get_memory_growth
+constraints:
+  device:
+    descp: PhysicalDevice to query
+exceptions:
+- ValueError: Invalid PhysicalDevice specified.
+inputs:
+  optional: []
+  required:
+  - device
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/config/experimental/get_memory_growth
+outputs:
+- A boolean indicating the memory growth setting for the PhysicalDevice.
+package: tensorflow
+target: get_memory_growth
+title: tf.config.experimental.get_memory_growth
+version: 2.2.0

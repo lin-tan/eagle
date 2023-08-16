@@ -1,0 +1,34 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32. A float scalar that enforces proper chaining
+      of operations.
+  handle:
+    descp: A Tensor of type resource. The handle to the forward TensorArray.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape_to_prepend:
+    descp: A Tensor of type int32. An int32 vector representing a shape. Elements
+      in the gradient accumulator will have shape which is this shape_to_prepend value
+      concatenated with shape of the elements in the TensorArray corresponding to
+      the input handle.
+  source:
+    descp: A string. The gradient source string, used to decide which gradient TensorArray
+      to return.
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - flow_in
+  - shape_to_prepend
+  - source
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayGradWithShape
+outputs:
+- A tuple of Tensor objects (grad_handle, flow_out).
+- grad_handle: A Tensor of type resource.
+- flow_out: A Tensor of type float32.
+package: tensorflow
+target: TensorArrayGradWithShape
+title: tf.raw_ops.TensorArrayGradWithShape
+version: 2.2.0

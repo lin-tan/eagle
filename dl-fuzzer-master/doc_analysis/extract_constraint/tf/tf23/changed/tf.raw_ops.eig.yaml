@@ -1,0 +1,51 @@
+constraints:
+  Tout:
+    descp: 'A tf.DType from: tf.complex64, tf.complex128.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  compute_v:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If True then eigenvectors will be computed
+      and returned in v. Otherwise, only the eigenvalues will be computed.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, complex64,
+      complex128. Tensor input of shape [N, N].'
+    dtype:
+    - tf.complex128
+    ndim:
+    - '2'
+    shape:
+    - '[n,n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+dependency:
+- n
+inputs:
+  optional:
+  - compute_v
+  - name
+  required:
+  - input
+  - Tout
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Eig
+outputs:
+- A tuple of Tensor objects (e, v).
+- e: A Tensor of type Tout.
+- v: A Tensor of type Tout.
+package: tensorflow
+target: Eig
+title: tf.raw_ops.Eig
+version: 2.3.0

@@ -1,0 +1,9 @@
+constraints:
+  input:
+    descp: An `N` dimensional potentially ragged `string` tensor with shape`[D1...DN]`.  `N`
+      must be statically known.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+title: tf.strings.unicode_split

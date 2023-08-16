@@ -1,0 +1,124 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (of|with)\s+size\s*[`'"]*([\w]+)[`'"]*:
+    cnt: 0
+    dependent: true
+    group: 2
+  (of|with|and|having)\s+(shape|size)\s*:*\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`'"]*:
+    cnt: 131
+    group: 3
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      d_*0,\s*d_*1,\s*\.\.\.,\s*d_*n: '...'
+      d_*1,*\s*\.\.\.,*\s*d_*n: '...'
+      d_0,\s*d_1,\s*...,\s*d_{r-1}: '...'
+      dim1,\s+dim2,\s+...\s+dim\(n-1\): '...'
+      len\((.*)\): len:\1
+      max\s*value\s*in\s*(\w+): max_value:\1
+      rank\((.*?)\): ndim:\1
+  (shape|shaped)\s*:*\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`'"]*:
+    cnt: 83
+    group: 2
+    keep_nonvar: true
+    keep_var: true
+    prereq:
+    - (of|with|and|having)\s+(shape|size)\s*:*\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`'"]*
+    replace:
+      d_*0,\s*d_*1,\s*\.\.\.,\s*d_*n: '...'
+      d_*1,*\s*\.\.\.,*\s*d_*n: '...'
+      d_0,\s*d_1,\s*...,\s*d_{r-1}: '...'
+      dim1,\s+dim2,\s+...\s+dim\(n-1\): '...'
+      len\((.*)\): len:\1
+      max\s*value\s*in\s*(\w+): max_value:\1
+      rank\((.*?)\): ndim:\1
+  (size|sized)\s*:*\s*[`'"]*\[([\w\s\.,\(\)\+\-\*\/{}]+)\][`'"]*:
+    cnt: 0
+    group: 2
+    keep_nonvar: true
+    keep_var: true
+    prereq:
+    - (of|with|and|having)\s+(shape|size)\s*:*\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`'"]*
+    replace:
+      d_*0,\s*d_*1,\s*\.\.\.,\s*d_*n: '...'
+      d_*1,*\s*\.\.\.,*\s*d_*n: '...'
+      d_0,\s*d_1,\s*...,\s*d_{r-1}: '...'
+      dim1,\s+dim2,\s+...\s+dim\(n-1\): '...'
+      len\((.*)\): len:\1
+      max\s*value\s*in\s*(\w+): max_value:\1
+      rank\((.*?)\): ndim:\1
+  ? (the\s+)?same\s+(((dtype|type)\s+and\s+shape)|(shape\s+and\s+(type|dtype))|(shape|length|size)|dimensions*)\s+(with|as)\s*[`'"]*([\w]+)[`'"]*
+  : cnt: 0
+    dependent: true
+    group: 9
+  \b\w\b-d\s+(`*tensor`*\s+)?of\s+(length|size)\s+(\d):
+    cnt: 0
+    group: 3
+  ^(\ba\b|an)?\s*[`'"][\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`'"]:
+    cnt: 0
+    group: 2
+  '`*tensor`*\s+of\s+length\s+(\d+|`[\w]+`)':
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      '`': ''
+  its\s+shape\s+is\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`'"]*:
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      d_*0,\s*d_*1,\s*\.\.\.,\s*d_*n: '...'
+      d_*1,*\s*\.\.\.,*\s*d_*n: '...'
+      d_0,\s*d_1,\s*...,\s*d_{r-1}: '...'
+      dim1,\s+dim2,\s+...\s+dim\(n-1\): '...'
+      len\((.*)\): len:\1
+      max\s*value\s*in\s*(\w+): max_value:\1
+      rank\((.*?)\): ndim:\1
+  shape\s+(is|should\s+be)\s*[`'"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`'"]*:
+    cnt: 0
+    group: 2
+    keep_nonvar: true
+    keep_var: true
+    replace:
+      d_*0,\s*d_*1,\s*\.\.\.,\s*d_*n: '...'
+      d_*1,*\s*\.\.\.,*\s*d_*n: '...'
+      d_0,\s*d_1,\s*...,\s*d_{r-1}: '...'
+      dim1,\s+dim2,\s+...\s+dim\(n-1\): '...'
+      e_0,\s+e_1,\s+...,\s+e_m: '...'
+      len\((.*)\): len:\1
+      max\s*value\s*in\s*(\w+): max_value:\1
+      rank\((.*?)\): ndim:\1
+  tensor\s+of\s+(\d)\s+element:
+    cnt: 0
+    group: 1
+    keep_nonvar: true
+    keep_var: true
+  whose\s+(shape|dimension|dimensions)\s+(must\s*)?(matches|match)\s*(the\s+shape\s+of\s*)?[`'"]*([\w]+)[`'"]*:
+    cnt: 0
+    dependent: true
+    group: 5
+split_word:
+- ' '
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- '...'
+- /
+- '`'
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+target: shape

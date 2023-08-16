@@ -1,0 +1,1107 @@
+Creating path ./constr/tf_mx_on_pt/fail
+Creating path ./constr/tf_mx_on_pt/success
+[5610] Extracting torch.nn.gelu.yaml
+Finish torch.nn.gelu.yaml, Time: 0.21486377716064453
+[5610] Extracting torch.mvlgamma.yaml
+Finish torch.mvlgamma.yaml, Time: 5.06374716758728
+[5610] Extracting torch.nn.maxunpool2d.yaml
+Finish torch.nn.maxunpool2d.yaml, Time: 5.656982183456421
+[5610] Extracting torch.nn.pairwisedistance.yaml
+Finish torch.nn.pairwisedistance.yaml, Time: 6.413392782211304
+[5610] Extracting torch.rsqrt.yaml
+Finish torch.rsqrt.yaml, Time: 6.475873708724976
+[5610] Extracting torch.nn.functional.adaptive_max_pool3d.yaml
+Finish torch.nn.functional.adaptive_max_pool3d.yaml, Time: 6.626860857009888
+[5610] Extracting torch.nn.maxpool3d.yaml
+Finish torch.nn.maxpool3d.yaml, Time: 6.830071687698364
+[5610] Extracting torch.cuda.comm.gather.yaml
+Finish torch.cuda.comm.gather.yaml, Time: 7.0449748039245605
+[5610] Extracting torch.sort.yaml
+Finish torch.sort.yaml, Time: 7.038820028305054
+[5610] Extracting torch.is_floating_point.yaml
+Finish torch.is_floating_point.yaml, Time: 7.172045707702637
+[5610] Extracting torch.mm.yaml
+Finish torch.mm.yaml, Time: 7.518617630004883
+[5610] Extracting torch.angle.yaml
+Finish torch.angle.yaml, Time: 7.535313367843628
+[5610] Extracting torch.nn.maxunpool1d.yaml
+Finish torch.nn.maxunpool1d.yaml, Time: 7.676289081573486
+[5610] Extracting torch.renorm.yaml
+Finish torch.renorm.yaml, Time: 7.681478023529053
+[5610] Extracting torch.lgamma.yaml
+Finish torch.lgamma.yaml, Time: 7.909759759902954
+[5610] Extracting torch.ne.yaml
+Finish torch.ne.yaml, Time: 8.002278089523315
+[5610] Extracting torch.transpose.yaml
+Finish torch.transpose.yaml, Time: 8.078256130218506
+[5610] Extracting torch.utils.model_zoo.load_url.yaml
+Finish torch.utils.model_zoo.load_url.yaml, Time: 8.391688823699951
+[5610] Extracting torch.cumsum.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.cumsum.yaml, Time: 9.002491474151611
+[5610] Extracting torch.std2.yaml
+Finish torch.std2.yaml, Time: 9.05396819114685
+[5610] Extracting torch.nn.functional.dropout3d.yaml
+Finish torch.nn.functional.dropout3d.yaml, Time: 8.955048084259033
+[5610] Extracting torch.addr.yaml
+Finish torch.addr.yaml, Time: 9.128907918930054
+[5610] Extracting torch.cuda.set_rng_state.yaml
+Finish torch.cuda.set_rng_state.yaml, Time: 8.973751306533813
+[5610] Extracting torch.eig.yaml
+Finish torch.eig.yaml, Time: 9.37086820602417
+[5610] Extracting torch.nn.maxpool1d.yaml
+Finish torch.nn.maxpool1d.yaml, Time: 9.504592418670654
+[5610] Extracting torch.nn.functional.normalize.yaml
+Finish torch.nn.functional.normalize.yaml, Time: 9.716157913208008
+[5610] Extracting torch.pinverse.yaml
+Finish torch.pinverse.yaml, Time: 9.6537446975708
+[5610] Extracting torch.distributed.all_gather_multigpu.yaml
+Finish torch.distributed.all_gather_multigpu.yaml, Time: 9.804701328277588
+[5610] Extracting torch.nn.functional.kl_div.yaml
+Finish torch.nn.functional.kl_div.yaml, Time: 9.974371194839478
+[5610] Extracting torch.det.yaml
+Finish torch.det.yaml, Time: 9.900505781173706
+[5610] Extracting torch.argmax.yaml
+Finish torch.argmax.yaml, Time: 10.024789333343506
+[5610] Extracting torch.nn.relu.yaml
+Finish torch.nn.relu.yaml, Time: 10.189200401306152
+[5610] Extracting torch.trunc.yaml
+Finish torch.trunc.yaml, Time: 10.202411413192749
+[5610] Extracting torch.le.yaml
+Finish torch.le.yaml, Time: 10.376255750656128
+[5610] Extracting torch.cuda.memory_reserved.yaml
+Finish torch.cuda.memory_reserved.yaml, Time: 10.40729546546936
+[5610] Extracting torch.distributed.barrier.yaml
+Finish torch.distributed.barrier.yaml, Time: 10.081681251525879
+[5610] Extracting torch.nn.dropout3d.yaml
+Finish torch.nn.dropout3d.yaml, Time: 10.446216106414795
+[5610] Extracting torch.normal2.yaml
+Finish torch.normal2.yaml, Time: 10.407111644744873
+[5610] Extracting torch.distributed.get_rank.yaml
+Finish torch.distributed.get_rank.yaml, Time: 10.407141208648682
+[5610] Extracting torch.random.manual_seed.yaml
+Finish torch.random.manual_seed.yaml, Time: 10.365704774856567
+[5610] Extracting torch.cross.yaml
+Finish torch.cross.yaml, Time: 10.541327238082886
+[5610] Extracting torch.stack.yaml
+Finish torch.stack.yaml, Time: 10.632339477539062
+[5610] Extracting torch.erf.yaml
+Finish torch.erf.yaml, Time: 10.48569631576538
+[5610] Extracting torch.index_select.yaml
+Finish torch.index_select.yaml, Time: 10.600711584091187
+[5610] Extracting torch.nn.init.uniform_.yaml
+Finish torch.nn.init.uniform_.yaml, Time: 10.383593797683716
+[5610] Extracting torch.masked_select.yaml
+Finish torch.masked_select.yaml, Time: 10.652392387390137
+[5610] Extracting torch.nn.constantpad3d.yaml
+Finish torch.nn.constantpad3d.yaml, Time: 10.401396989822388
+[5610] Extracting torch.nn.init.constant_.yaml
+Finish torch.nn.init.constant_.yaml, Time: 10.289210557937622
+[5610] Extracting torch.sigmoid.yaml
+Finish torch.sigmoid.yaml, Time: 10.452645301818848
+[5610] Extracting torch.cos.yaml
+Finish torch.cos.yaml, Time: 10.45939564704895
+[5610] Extracting torch.nn.transformerencoderlayer.yaml
+Finish torch.nn.transformerencoderlayer.yaml, Time: 10.699138164520264
+[5610] Extracting torch.nn.relu6.yaml
+Finish torch.nn.relu6.yaml, Time: 10.368999242782593
+[5610] Extracting torch.cuda.reset_max_memory_allocated.yaml
+Finish torch.cuda.reset_max_memory_allocated.yaml, Time: 10.72003698348999
+[5610] Extracting torch.erfc.yaml
+Finish torch.erfc.yaml, Time: 10.504360914230347
+[5610] Extracting torch.erfinv.yaml
+Finish torch.erfinv.yaml, Time: 10.453269243240356
+[5610] Extracting torch.can_cast.yaml
+Finish torch.can_cast.yaml, Time: 10.536623001098633
+[5610] Extracting torch.logical_and.yaml
+Finish torch.logical_and.yaml, Time: 10.792884826660156
+[5610] Extracting torch.nn.replicationpad1d.yaml
+Finish torch.nn.replicationpad1d.yaml, Time: 10.558370351791382
+[5610] Extracting torch.real.yaml
+Finish torch.real.yaml, Time: 10.516233682632446
+[5610] Extracting torch.log2.yaml
+Finish torch.log2.yaml, Time: 10.566951513290405
+[5610] Extracting torch.exp.yaml
+Finish torch.exp.yaml, Time: 10.816320180892944
+[5610] Extracting torch.tril.yaml
+Finish torch.tril.yaml, Time: 10.797215938568115
+[5610] Extracting torch.nn.functional.pdist.yaml
+Finish torch.nn.functional.pdist.yaml, Time: 10.905483961105347
+[5610] Extracting torch.mean2.yaml
+Finish torch.mean2.yaml, Time: 10.849180698394775
+[5610] Extracting torch.hub.load_state_dict_from_url.yaml
+Finish torch.hub.load_state_dict_from_url.yaml, Time: 11.26855206489563
+[5610] Extracting torch.addcmul.yaml
+Finish torch.addcmul.yaml, Time: 11.195095300674438
+[5610] Extracting torch.clamp.yaml
+Finish torch.clamp.yaml, Time: 10.92470669746399
+[5610] Extracting torch.nn.functional.log_softmax.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.nn.functional.log_softmax.yaml, Time: 11.001611471176147
+[5610] Extracting torch.mode.yaml
+Finish torch.mode.yaml, Time: 11.209897756576538
+[5610] Extracting torch.nn.utils.rnn.pad_sequence.yaml
+Finish torch.nn.utils.rnn.pad_sequence.yaml, Time: 11.206763982772827
+[5610] Extracting torch.distributed.all_gather.yaml
+Finish torch.distributed.all_gather.yaml, Time: 11.24285364151001
+[5610] Extracting torch.diagonal.yaml
+Finish torch.diagonal.yaml, Time: 11.299680471420288
+[5610] Extracting torch.set_printoptions.yaml
+Finish torch.set_printoptions.yaml, Time: 11.66105341911316
+[5610] Extracting torch.kthvalue.yaml
+Finish torch.kthvalue.yaml, Time: 11.547809600830078
+[5610] Extracting torch.quantization.quantize.yaml
+Finish torch.quantization.quantize.yaml, Time: 11.97031855583191
+[5610] Extracting torch.nn.kldivloss.yaml
+Finish torch.nn.kldivloss.yaml, Time: 12.015753269195557
+[5610] Extracting torch.topk.yaml
+Finish torch.topk.yaml, Time: 11.768654346466064
+[5610] Extracting torch.ones_like.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.ones_like.yaml, Time: 11.866575956344604
+[5610] Extracting torch.lu.yaml
+Finish torch.lu.yaml, Time: 11.746867179870605
+[5610] Extracting torch.randperm.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.randperm.yaml, Time: 12.176904916763306
+[5610] Extracting torch.nn.functional.avg_pool3d.yaml
+Finish torch.nn.functional.avg_pool3d.yaml, Time: 12.402757167816162
+[5610] Extracting torch.sum.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.sum.yaml, Time: 12.800037622451782
+[5610] Extracting torch.triangular_solve.yaml
+Finish torch.triangular_solve.yaml, Time: 12.785468339920044
+[5610] Extracting torch.rand.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.rand.yaml, Time: 13.021842241287231
+[5610] Extracting torch.svd.yaml
+Finish torch.svd.yaml, Time: 12.949190378189087
+[5610] Extracting torch.empty_strided.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.empty_strided.yaml, Time: 13.315903902053833
+[5610] Extracting torch.quantization.quantize_qat.yaml
+Finish torch.quantization.quantize_qat.yaml, Time: 13.466692686080933
+[5610] Extracting torch.unique_consecutive.yaml
+Finish torch.unique_consecutive.yaml, Time: 13.854369878768921
+[5610] Extracting torch.unique.yaml
+Finish torch.unique.yaml, Time: 14.020119190216064
+[5610] Extracting torch.cholesky_solve.yaml
+Finish torch.cholesky_solve.yaml, Time: 14.649999856948853
+[5610] Extracting torch.quantization.fuse_modules.yaml
+Finish torch.quantization.fuse_modules.yaml, Time: 14.917044401168823
+[5610] Extracting torch.distributed.new_group.yaml
+Finish torch.distributed.new_group.yaml, Time: 18.42438840866089
+[5610] Extracting torch.autograd.backward.yaml
+Finish torch.autograd.backward.yaml, Time: 48.6562933921814
+[5610] Extracting torch.nn.functional.binary_cross_entropy_with_logits.yaml
+Finish torch.nn.functional.binary_cross_entropy_with_logits.yaml, Time: 55.885120153427124
+[5610] Extracting torch.nn.functional.binary_cross_entropy.yaml
+Finish torch.nn.functional.binary_cross_entropy.yaml, Time: 55.93885922431946
+[5610] Extracting torch.nn.nllloss.yaml
+Finish torch.nn.nllloss.yaml, Time: 58.83591866493225
+[5610] Extracting torch.nn.multimarginloss.yaml
+Finish torch.nn.multimarginloss.yaml, Time: 58.834221601486206
+[5610] Extracting torch.quantization.propagate_qconfig_.yaml
+Finish torch.quantization.propagate_qconfig_.yaml, Time: 59.845701456069946
+[5610] Extracting torch.distributed.init_process_group.yaml
+Finish torch.distributed.init_process_group.yaml, Time: 73.51814889907837
+[5610] Extracting torch.random.fork_rng2.yaml
+Finish torch.random.fork_rng2.yaml, Time: 74.64266729354858
+[5610] Extracting torch.nn.softsign.yaml
+Finish torch.nn.softsign.yaml, Time: 0.7819650173187256
+[5610] Extracting torch.nn.softmax2d.yaml
+Finish torch.nn.softmax2d.yaml, Time: 1.467435359954834
+[5610] Extracting torch.autograd.profiler.load_nvprof.yaml
+Finish torch.autograd.profiler.load_nvprof.yaml, Time: 4.420441389083862
+[5610] Extracting torch.log.yaml
+Finish torch.log.yaml, Time: 4.812576055526733
+[5610] Extracting torch.nn.adaptiveavgpool3d.yaml
+Finish torch.nn.adaptiveavgpool3d.yaml, Time: 5.161657333374023
+[5610] Extracting torch.bitwise_not.yaml
+Finish torch.bitwise_not.yaml, Time: 5.270526170730591
+[5610] Extracting torch.std.yaml
+Finish torch.std.yaml, Time: 5.401200532913208
+[5610] Extracting torch.bitwise_or.yaml
+Finish torch.bitwise_or.yaml, Time: 5.985645055770874
+[5610] Extracting torch.quantize_per_tensor.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.quantize_per_tensor.yaml, Time: 6.19340968132019
+[5610] Extracting torch.std_mean.yaml
+Finish torch.std_mean.yaml, Time: 6.591909885406494
+[5610] Extracting torch.nn.reflectionpad1d.yaml
+Finish torch.nn.reflectionpad1d.yaml, Time: 6.644858360290527
+[5610] Extracting torch.nn.lstmcell.yaml
+Finish torch.nn.lstmcell.yaml, Time: 6.92949652671814
+[5610] Extracting torch.nn.constantpad2d.yaml
+Finish torch.nn.constantpad2d.yaml, Time: 6.840691566467285
+[5610] Extracting torch.sinh.yaml
+Finish torch.sinh.yaml, Time: 7.122157096862793
+[5610] Extracting torch.sparse.mm.yaml
+Finish torch.sparse.mm.yaml, Time: 7.227049350738525
+[5610] Extracting torch.distributed.send.yaml
+Finish torch.distributed.send.yaml, Time: 7.410245180130005
+[5610] Extracting torch.nn.hardshrink.yaml
+Finish torch.nn.hardshrink.yaml, Time: 7.463715314865112
+[5610] Extracting torch.std_mean2.yaml
+Finish torch.std_mean2.yaml, Time: 7.579823732376099
+[5610] Extracting torch.expm1.yaml
+Finish torch.expm1.yaml, Time: 7.691986083984375
+[5610] Extracting torch.nn.functional.adaptive_avg_pool1d.yaml
+Finish torch.nn.functional.adaptive_avg_pool1d.yaml, Time: 7.892225027084351
+[5610] Extracting torch.cuda.synchronize.yaml
+Finish torch.cuda.synchronize.yaml, Time: 7.894524574279785
+[5610] Extracting torch.addcdiv.yaml
+Finish torch.addcdiv.yaml, Time: 8.232556104660034
+[5610] Extracting torch.fmod.yaml
+Finish torch.fmod.yaml, Time: 8.3466215133667
+[5610] Extracting torch.sparse.sum.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.sparse.sum.yaml, Time: 8.56043267250061
+[5610] Extracting torch.reciprocal.yaml
+Finish torch.reciprocal.yaml, Time: 8.579076766967773
+[5610] Extracting torch.quantization.prepare.yaml
+Finish torch.quantization.prepare.yaml, Time: 8.807890176773071
+[5610] Extracting torch.orgqr.yaml
+Finish torch.orgqr.yaml, Time: 8.954187154769897
+[5610] Extracting torch.nn.softmax.yaml
+Finish torch.nn.softmax.yaml, Time: 8.895172357559204
+[5610] Extracting torch.nn.maxpool2d.yaml
+Finish torch.nn.maxpool2d.yaml, Time: 9.126040697097778
+[5610] Extracting torch.logical_not.yaml
+Finish torch.logical_not.yaml, Time: 9.359742641448975
+[5610] Extracting torch.nn.utils.prune.random_structured.yaml
+Finish torch.nn.utils.prune.random_structured.yaml, Time: 9.59299921989441
+[5610] Extracting torch.combinations.yaml
+Finish torch.combinations.yaml, Time: 9.559717178344727
+[5610] Extracting torch.log10.yaml
+Finish torch.log10.yaml, Time: 9.695554733276367
+[5610] Extracting torch.cuda.set_device.yaml
+Finish torch.cuda.set_device.yaml, Time: 9.467877626419067
+[5610] Extracting torch.logical_xor.yaml
+Finish torch.logical_xor.yaml, Time: 9.806535959243774
+[5610] Extracting torch.cuda.get_rng_state.yaml
+Finish torch.cuda.get_rng_state.yaml, Time: 9.562574625015259
+[5610] Extracting torch.nn.transformerencoder.yaml
+Finish torch.nn.transformerencoder.yaml, Time: 9.865261316299438
+[5610] Extracting torch.digamma.yaml
+Finish torch.digamma.yaml, Time: 9.935570478439331
+[5610] Extracting torch.nn.utils.vector_to_parameters.yaml
+Finish torch.nn.utils.vector_to_parameters.yaml, Time: 9.881369829177856
+[5610] Extracting torch.set_default_tensor_type.yaml
+Finish torch.set_default_tensor_type.yaml, Time: 9.738005876541138
+[5610] Extracting torch.normal222.yaml
+Finish torch.normal222.yaml, Time: 10.230233907699585
+[5610] Extracting torch.tanh.yaml
+Finish torch.tanh.yaml, Time: 9.835960149765015
+[5610] Extracting torch.atan.yaml
+Finish torch.atan.yaml, Time: 10.045113325119019
+[5610] Extracting torch.quantization.swap_module.yaml
+Finish torch.quantization.swap_module.yaml, Time: 10.056749105453491
+[5610] Extracting torch.bitwise_xor.yaml
+Finish torch.bitwise_xor.yaml, Time: 10.27028203010559
+[5610] Extracting torch.nn.selu.yaml
+Finish torch.nn.selu.yaml, Time: 10.245365858078003
+[5610] Extracting torch.add.yaml
+Finish torch.add.yaml, Time: 10.346010208129883
+[5610] Extracting torch.ge.yaml
+Finish torch.ge.yaml, Time: 10.333188533782959
+[5610] Extracting torch.distributions.kl.kl_divergence.yaml
+Finish torch.distributions.kl.kl_divergence.yaml, Time: 10.177247524261475
+[5610] Extracting torch.poisson.yaml
+Finish torch.poisson.yaml, Time: 10.280381917953491
+[5610] Extracting torch.rot90.yaml
+Finish torch.rot90.yaml, Time: 10.293083429336548
+[5610] Extracting torch.random.set_rng_state2.yaml
+Finish torch.random.set_rng_state2.yaml, Time: 10.066395044326782
+[5610] Extracting torch.var2.yaml
+Finish torch.var2.yaml, Time: 10.378015518188477
+[5610] Extracting torch.round.yaml
+Finish torch.round.yaml, Time: 10.32945704460144
+[5610] Extracting torch.ceil.yaml
+Finish torch.ceil.yaml, Time: 10.369360446929932
+[5610] Extracting torch.nn.upsamplingnearest2d.yaml
+Finish torch.nn.upsamplingnearest2d.yaml, Time: 10.43599820137024
+[5610] Extracting torch.cosh.yaml
+Finish torch.cosh.yaml, Time: 10.38013243675232
+[5610] Extracting torch.argmin.yaml
+Finish torch.argmin.yaml, Time: 10.38652229309082
+[5610] Extracting torch.eq.yaml
+Finish torch.eq.yaml, Time: 10.251113891601562
+[5610] Extracting torch.argmin2.yaml
+Finish torch.argmin2.yaml, Time: 10.560068368911743
+[5610] Extracting torch.matrix_power.yaml
+Finish torch.matrix_power.yaml, Time: 10.326889276504517
+[5610] Extracting torch.cuda.max_memory_allocated.yaml
+Finish torch.cuda.max_memory_allocated.yaml, Time: 10.415427207946777
+[5610] Extracting torch.nn.bilinear.yaml
+Finish torch.nn.bilinear.yaml, Time: 10.45159912109375
+[5610] Extracting torch.trapz2.yaml
+Finish torch.trapz2.yaml, Time: 10.594937562942505
+[5610] Extracting torch.addmv.yaml
+Finish torch.addmv.yaml, Time: 10.727450609207153
+[5610] Extracting torch.logical_or.yaml
+Finish torch.logical_or.yaml, Time: 10.704514026641846
+[5610] Extracting torch.hub.list.yaml
+Finish torch.hub.list.yaml, Time: 10.574418783187866
+[5610] Extracting torch.nn.avgpool1d.yaml
+Finish torch.nn.avgpool1d.yaml, Time: 10.748798131942749
+[5610] Extracting torch.normal.yaml
+Finish torch.normal.yaml, Time: 10.712074756622314
+[5610] Extracting torch.baddbmm.yaml
+Finish torch.baddbmm.yaml, Time: 10.769124269485474
+[5610] Extracting torch.nn.utils.rnn.pack_sequence.yaml
+Finish torch.nn.utils.rnn.pack_sequence.yaml, Time: 10.89795708656311
+[5610] Extracting torch.nn.utils.rnn.pad_packed_sequence.yaml
+Finish torch.nn.utils.rnn.pad_packed_sequence.yaml, Time: 11.011065483093262
+[5610] Extracting torch.irfft.yaml
+Finish torch.irfft.yaml, Time: 11.437674045562744
+[5610] Extracting torch.symeig.yaml
+Finish torch.symeig.yaml, Time: 11.492521524429321
+[5610] Extracting torch.nn.fold.yaml
+Finish torch.nn.fold.yaml, Time: 11.48015022277832
+[5610] Extracting torch.empty_like.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.empty_like.yaml, Time: 11.648402452468872
+[5610] Extracting torch.nn.functional.affine_grid.yaml
+Finish torch.nn.functional.affine_grid.yaml, Time: 12.01439642906189
+[5610] Extracting torch.distributed.reduce_multigpu.yaml
+Finish torch.distributed.reduce_multigpu.yaml, Time: 12.353281259536743
+[5610] Extracting torch.nn.quantized.functional.avg_pool2d.yaml
+Finish torch.nn.quantized.functional.avg_pool2d.yaml, Time: 12.608945846557617
+[5610] Extracting torch.tril_indices.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.tril_indices.yaml, Time: 12.617259502410889
+[5610] Extracting torch.nn.functional.avg_pool2d.yaml
+Finish torch.nn.functional.avg_pool2d.yaml, Time: 12.571094036102295
+[5610] Extracting torch.cuda.comm.broadcast.yaml
+Finish torch.cuda.comm.broadcast.yaml, Time: 12.724735498428345
+[5610] Extracting torch.prod.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.prod.yaml, Time: 13.016196489334106
+[5610] Extracting torch.repeat_interleave.yaml
+Finish torch.repeat_interleave.yaml, Time: 13.25957441329956
+[5610] Extracting torch.sum2.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.sum2.yaml, Time: 13.506239891052246
+[5610] Extracting torch.logspace.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.logspace.yaml, Time: 13.504016876220703
+[5610] Extracting torch.nn.layernorm.yaml
+Finish torch.nn.layernorm.yaml, Time: 13.90803074836731
+[5610] Extracting torch.cholesky.yaml
+Finish torch.cholesky.yaml, Time: 14.421566247940063
+[5610] Extracting torch.autograd.gradcheck.yaml
+Finish torch.autograd.gradcheck.yaml, Time: 16.070112466812134
+[5610] Extracting torch.autograd.functional.jacobian.yaml
+Finish torch.autograd.functional.jacobian.yaml, Time: 32.997331857681274
+[5610] Extracting torch.nn.ctcloss.yaml
+Finish torch.nn.ctcloss.yaml, Time: 34.331998109817505
+[5610] Extracting torch.nn.utils.spectral_norm.yaml
+Finish torch.nn.utils.spectral_norm.yaml, Time: 39.43255949020386
+[5610] Extracting torch.autograd.functional.hvp.yaml
+Finish torch.autograd.functional.hvp.yaml, Time: 39.293888092041016
+[5610] Extracting torch.nn.quantized.functional.interpolate.yaml
+Finish torch.nn.quantized.functional.interpolate.yaml, Time: 42.64232325553894
+[5610] Extracting torch.nn.l1loss.yaml
+Finish torch.nn.l1loss.yaml, Time: 45.386035203933716
+[5610] Extracting torch.nn.hingeembeddingloss.yaml
+Finish torch.nn.hingeembeddingloss.yaml, Time: 45.594696044921875
+[5610] Extracting torch.nn.bceloss.yaml
+Finish torch.nn.bceloss.yaml, Time: 46.65213203430176
+[5610] Extracting torch.nn.cosineembeddingloss.yaml
+Finish torch.nn.cosineembeddingloss.yaml, Time: 47.60832405090332
+[5610] Extracting torch.nn.functional.nll_loss.yaml
+Finish torch.nn.functional.nll_loss.yaml, Time: 50.78358817100525
+[5610] Extracting torch.nn.functional.interpolate.yaml
+Finish torch.nn.functional.interpolate.yaml, Time: 76.95606803894043
+[5610] Extracting torch.nn.logsigmoid.yaml
+Finish torch.nn.logsigmoid.yaml, Time: 1.8628652095794678
+[5610] Extracting torch.nn.functional.adaptive_avg_pool3d.yaml
+Finish torch.nn.functional.adaptive_avg_pool3d.yaml, Time: 5.225838661193848
+[5610] Extracting torch.abs.yaml
+Finish torch.abs.yaml, Time: 5.8827033042907715
+[5610] Extracting torch.cummin.yaml
+Finish torch.cummin.yaml, Time: 7.018133878707886
+[5610] Extracting torch.nn.dropout.yaml
+Finish torch.nn.dropout.yaml, Time: 7.35277795791626
+[5610] Extracting torch.nn.utils.prune.identity.yaml
+Finish torch.nn.utils.prune.identity.yaml, Time: 7.423252105712891
+[5610] Extracting torch.nn.utils.remove_weight_norm.yaml
+Finish torch.nn.utils.remove_weight_norm.yaml, Time: 7.469399452209473
+[5610] Extracting torch.is_tensor.yaml
+Finish torch.is_tensor.yaml, Time: 7.6625142097473145
+[5610] Extracting torch.ger.yaml
+Finish torch.ger.yaml, Time: 7.718930959701538
+[5610] Extracting torch.nn.logsoftmax.yaml
+Finish torch.nn.logsoftmax.yaml, Time: 7.810298681259155
+[5610] Extracting torch.nn.celu.yaml
+Finish torch.nn.celu.yaml, Time: 8.00242829322815
+[5610] Extracting torch.multinomial.yaml
+Finish torch.multinomial.yaml, Time: 8.335074663162231
+[5610] Extracting torch.nn.functional.pad.yaml
+Finish torch.nn.functional.pad.yaml, Time: 8.416064262390137
+[5610] Extracting torch.cuda.reset_max_memory_cached.yaml
+Finish torch.cuda.reset_max_memory_cached.yaml, Time: 8.556213855743408
+[5610] Extracting torch.imag.yaml
+Finish torch.imag.yaml, Time: 8.46851396560669
+[5610] Extracting torch.cuda.get_device_capability.yaml
+Finish torch.cuda.get_device_capability.yaml, Time: 8.799940347671509
+[5610] Extracting torch.distributed.gather.yaml
+Finish torch.distributed.gather.yaml, Time: 9.533276796340942
+[5610] Extracting torch.broadcast_tensors.yaml
+Finish torch.broadcast_tensors.yaml, Time: 9.359845638275146
+[5610] Extracting torch.result_type.yaml
+Finish torch.result_type.yaml, Time: 9.505579948425293
+[5610] Extracting torch.nn.linear.yaml
+Finish torch.nn.linear.yaml, Time: 9.910090208053589
+[5610] Extracting torch.nn.utils.prune.custom_from_mask.yaml
+Finish torch.nn.utils.prune.custom_from_mask.yaml, Time: 9.998647928237915
+[5610] Extracting torch.nn.quantized.functional.adaptive_avg_pool2d.yaml
+Finish torch.nn.quantized.functional.adaptive_avg_pool2d.yaml, Time: 9.991158723831177
+[5610] Extracting torch.nn.identity.yaml
+Finish torch.nn.identity.yaml, Time: 10.090489864349365
+[5610] Extracting torch.addbmm.yaml
+Finish torch.addbmm.yaml, Time: 10.071545124053955
+[5610] Extracting torch.cuda.nvtx.range_push.yaml
+Finish torch.cuda.nvtx.range_push.yaml, Time: 9.924593210220337
+[5610] Extracting torch.nn.parallel.data_parallel.yaml
+Finish torch.nn.parallel.data_parallel.yaml, Time: 10.477166652679443
+[5610] Extracting torch.lerp.yaml
+Finish torch.lerp.yaml, Time: 10.498565673828125
+[5610] Extracting torch.nn.elu.yaml
+Finish torch.nn.elu.yaml, Time: 10.347075462341309
+[5610] Extracting torch.nn.replicationpad2d.yaml
+Finish torch.nn.replicationpad2d.yaml, Time: 10.473814010620117
+[5610] Extracting torch.trapz.yaml
+Finish torch.trapz.yaml, Time: 10.796059131622314
+[5610] Extracting torch.nn.utils.prune.remove.yaml
+Finish torch.nn.utils.prune.remove.yaml, Time: 10.530562400817871
+[5610] Extracting torch.t.yaml
+Finish torch.t.yaml, Time: 10.879667520523071
+[5610] Extracting torch.chunk.yaml
+Finish torch.chunk.yaml, Time: 10.967285871505737
+[5610] Extracting torch.numel.yaml
+Finish torch.numel.yaml, Time: 10.962513446807861
+[5610] Extracting torch.promote_types.yaml
+Finish torch.promote_types.yaml, Time: 11.026938199996948
+[5610] Extracting torch.geqrf.yaml
+Finish torch.geqrf.yaml, Time: 10.85467267036438
+[5610] Extracting torch.utils.dlpack.from_dlpack.yaml
+Finish torch.utils.dlpack.from_dlpack.yaml, Time: 10.748546361923218
+[5610] Extracting torch.nn.softmin.yaml
+Finish torch.nn.softmin.yaml, Time: 11.129954099655151
+[5610] Extracting torch.hub.set_dir.yaml
+Finish torch.hub.set_dir.yaml, Time: 11.199565172195435
+[5610] Extracting torch.nn.utils.parameters_to_vector.yaml
+Finish torch.nn.utils.parameters_to_vector.yaml, Time: 10.877441883087158
+[5610] Extracting torch.nn.zeropad2d.yaml
+Finish torch.nn.zeropad2d.yaml, Time: 11.275016784667969
+[5610] Extracting torch.cummax.yaml
+Finish torch.cummax.yaml, Time: 11.402027606964111
+[5610] Extracting torch.nn.transformerdecoder.yaml
+Finish torch.nn.transformerdecoder.yaml, Time: 11.338579654693604
+[5610] Extracting torch.nn.functional.adaptive_max_pool2d.yaml
+Finish torch.nn.functional.adaptive_max_pool2d.yaml, Time: 11.206116676330566
+[5610] Extracting torch.nn.functional.dropout2d.yaml
+Finish torch.nn.functional.dropout2d.yaml, Time: 11.192005634307861
+[5610] Extracting torch.div.yaml
+Finish torch.div.yaml, Time: 11.414591789245605
+[5610] Extracting torch.nn.init.xavier_normal_.yaml
+Finish torch.nn.init.xavier_normal_.yaml, Time: 11.369678258895874
+[5610] Extracting torch.ifft.yaml
+Finish torch.ifft.yaml, Time: 11.583624362945557
+[5610] Extracting torch.lstsq.yaml
+Finish torch.lstsq.yaml, Time: 11.334964513778687
+[5610] Extracting torch.nn.convtranspose3d.yaml
+Finish torch.nn.convtranspose3d.yaml, Time: 11.891840934753418
+[5610] Extracting torch.as_strided.yaml
+Finish torch.as_strided.yaml, Time: 11.464775323867798
+[5610] Extracting torch.nn.init.xavier_uniform_.yaml
+Finish torch.nn.init.xavier_uniform_.yaml, Time: 11.612978458404541
+[5610] Extracting torch.sqrt.yaml
+Finish torch.sqrt.yaml, Time: 11.447188138961792
+[5610] Extracting torch.max2.yaml
+Finish torch.max2.yaml, Time: 11.83181357383728
+[5610] Extracting torch.nn.adaptivemaxpool2d.yaml
+Finish torch.nn.adaptivemaxpool2d.yaml, Time: 11.788060426712036
+[5610] Extracting torch.zeros.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.zeros.yaml, Time: 12.056020498275757
+[5610] Extracting torch.atan2.yaml
+Finish torch.atan2.yaml, Time: 11.888744592666626
+[5610] Extracting torch.cuda.get_device_name.yaml
+Finish torch.cuda.get_device_name.yaml, Time: 11.624297380447388
+[5610] Extracting torch.nn.softplus.yaml
+Finish torch.nn.softplus.yaml, Time: 11.81983208656311
+[5610] Extracting torch.cuda.comm.reduce_add.yaml
+Finish torch.cuda.comm.reduce_add.yaml, Time: 11.658032655715942
+[5610] Extracting torch.chain_matmul.yaml
+Finish torch.chain_matmul.yaml, Time: 11.984726428985596
+[5610] Extracting torch.nn.localresponsenorm.yaml
+Finish torch.nn.localresponsenorm.yaml, Time: 11.948156833648682
+[5610] Extracting torch.nn.leakyrelu.yaml
+Finish torch.nn.leakyrelu.yaml, Time: 11.846779108047485
+[5610] Extracting torch.normal22.yaml
+Finish torch.normal22.yaml, Time: 11.913989782333374
+[5610] Extracting torch.nn.convtranspose2d.yaml
+Finish torch.nn.convtranspose2d.yaml, Time: 12.43873929977417
+[5610] Extracting torch.nn.cosinesimilarity.yaml
+Finish torch.nn.cosinesimilarity.yaml, Time: 11.926758050918579
+[5610] Extracting torch.nn.avgpool3d.yaml
+Finish torch.nn.avgpool3d.yaml, Time: 12.266399383544922
+[5610] Extracting torch.nn.init.sparse_.yaml
+Finish torch.nn.init.sparse_.yaml, Time: 12.245354652404785
+[5610] Extracting torch.nn.utils.prune.random_unstructured.yaml
+Finish torch.nn.utils.prune.random_unstructured.yaml, Time: 12.272741794586182
+[5610] Extracting torch.narrow.yaml
+Finish torch.narrow.yaml, Time: 12.09243392944336
+[5610] Extracting torch.distributed.recv.yaml
+Finish torch.distributed.recv.yaml, Time: 12.341891050338745
+[5610] Extracting torch.nn.functional.cosine_similarity.yaml
+Finish torch.nn.functional.cosine_similarity.yaml, Time: 12.440828084945679
+[5610] Extracting torch.logsumexp.yaml
+Finish torch.logsumexp.yaml, Time: 12.424014806747437
+[5610] Extracting torch.triu.yaml
+Finish torch.triu.yaml, Time: 12.24286961555481
+[5610] Extracting torch.quantize_per_channel.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.quantize_per_channel.yaml, Time: 12.637197494506836
+[5610] Extracting torch.cat.yaml
+Finish torch.cat.yaml, Time: 12.67506456375122
+[5610] Extracting torch.distributed.scatter.yaml
+Finish torch.distributed.scatter.yaml, Time: 12.378843545913696
+[5610] Extracting torch.nn.utils.prune.ln_structured.yaml
+Finish torch.nn.utils.prune.ln_structured.yaml, Time: 12.590377569198608
+[5610] Extracting torch.tensor.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.tensor.yaml, Time: 13.028535604476929
+[5610] Extracting torch.cuda.comm.scatter.yaml
+Finish torch.cuda.comm.scatter.yaml, Time: 12.54417085647583
+[5610] Extracting torch.nn.batchnorm1d.yaml
+Finish torch.nn.batchnorm1d.yaml, Time: 12.726827383041382
+[5610] Extracting torch.addmm.yaml
+Finish torch.addmm.yaml, Time: 12.696355104446411
+[5610] Extracting torch.jit.load.yaml
+Finish torch.jit.load.yaml, Time: 14.03793454170227
+[5610] Extracting torch.nn.conv3d.yaml
+Finish torch.nn.conv3d.yaml, Time: 14.38346004486084
+[5610] Extracting torch.eye.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.eye.yaml, Time: 15.101590394973755
+[5610] Extracting torch.triu_indices.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.triu_indices.yaml, Time: 15.855294942855835
+[5610] Extracting torch.linspace.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.linspace.yaml, Time: 16.758780002593994
+[5610] Extracting torch.arange.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.arange.yaml, Time: 20.761285305023193
+[5610] Extracting torch.nn.fractionalmaxpool2d.yaml
+Finish torch.nn.fractionalmaxpool2d.yaml, Time: 23.652814865112305
+[5610] Extracting torch.utils.cpp_extension.load.yaml
+Finish torch.utils.cpp_extension.load.yaml, Time: 24.198529958724976
+[5610] Extracting torch.autograd.gradgradcheck.yaml
+Finish torch.autograd.gradgradcheck.yaml, Time: 24.553891897201538
+[5610] Extracting torch.stft.yaml
+Finish torch.stft.yaml, Time: 29.05978536605835
+[5610] Extracting torch.distributed.broadcast.yaml
+Finish torch.distributed.broadcast.yaml, Time: 29.188663721084595
+[5610] Extracting torch.nn.rnn.yaml
+Finish torch.nn.rnn.yaml, Time: 30.969860315322876
+[5610] Extracting torch.nn.gru.yaml
+Finish torch.nn.gru.yaml, Time: 32.39674377441406
+[5610] Extracting torch.autograd.functional.hessian.yaml
+Finish torch.autograd.functional.hessian.yaml, Time: 35.01011848449707
+[5610] Extracting torch.autograd.functional.vhp.yaml
+Finish torch.autograd.functional.vhp.yaml, Time: 41.31112575531006
+[5610] Extracting torch.autograd.functional.jvp.yaml
+Finish torch.autograd.functional.jvp.yaml, Time: 41.448700189590454
+[5610] Extracting torch.nn.smoothl1loss.yaml
+Finish torch.nn.smoothl1loss.yaml, Time: 47.75509595870972
+[5610] Extracting torch.nn.functional.cross_entropy.yaml
+Finish torch.nn.functional.cross_entropy.yaml, Time: 51.97744131088257
+[5610] Extracting torch.set_rng_state.yaml
+Finish torch.set_rng_state.yaml, Time: 4.163557291030884
+[5610] Extracting torch.argmax2.yaml
+Finish torch.argmax2.yaml, Time: 5.15707802772522
+[5610] Extracting torch.nn.adaptiveavgpool1d.yaml
+Finish torch.nn.adaptiveavgpool1d.yaml, Time: 5.427810430526733
+[5610] Extracting torch.nn.utils.clip_grad_value_.yaml
+Finish torch.nn.utils.clip_grad_value_.yaml, Time: 6.036184787750244
+[5610] Extracting torch.var_mean.yaml
+Finish torch.var_mean.yaml, Time: 6.2555012702941895
+[5610] Extracting torch.utils.data.random_split.yaml
+Finish torch.utils.data.random_split.yaml, Time: 6.379968881607056
+[5610] Extracting torch.is_storage.yaml
+Finish torch.is_storage.yaml, Time: 6.558779954910278
+[5610] Extracting torch.min22.yaml
+Finish torch.min22.yaml, Time: 6.934650897979736
+[5610] Extracting torch.bitwise_and.yaml
+Finish torch.bitwise_and.yaml, Time: 6.930311441421509
+[5610] Extracting torch.distributed.isend.yaml
+Finish torch.distributed.isend.yaml, Time: 7.176363945007324
+[5610] Extracting torch.reshape.yaml
+Finish torch.reshape.yaml, Time: 6.79946494102478
+[5610] Extracting torch.cuda.memory_stats.yaml
+Finish torch.cuda.memory_stats.yaml, Time: 7.29680609703064
+[5610] Extracting torch.is_complex.yaml
+Finish torch.is_complex.yaml, Time: 7.536274194717407
+[5610] Extracting torch.squeeze.yaml
+Finish torch.squeeze.yaml, Time: 7.7599265575408936
+[5610] Extracting torch.acos.yaml
+Finish torch.acos.yaml, Time: 7.799229621887207
+[5610] Extracting torch.utils.dlpack.to_dlpack.yaml
+Finish torch.utils.dlpack.to_dlpack.yaml, Time: 7.823041677474976
+[5610] Extracting torch.nn.utils.clip_grad_norm_.yaml
+Finish torch.nn.utils.clip_grad_norm_.yaml, Time: 8.117297410964966
+[5610] Extracting torch.nn.init.ones_.yaml
+Finish torch.nn.init.ones_.yaml, Time: 8.327371835708618
+[5610] Extracting torch.median.yaml
+Finish torch.median.yaml, Time: 8.887131214141846
+[5610] Extracting torch.nn.maxunpool3d.yaml
+Finish torch.nn.maxunpool3d.yaml, Time: 8.953632116317749
+[5610] Extracting torch.diagflat.yaml
+Finish torch.diagflat.yaml, Time: 8.912059545516968
+[5610] Extracting torch.cumprod.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.cumprod.yaml, Time: 9.511046409606934
+[5610] Extracting torch.nn.functional.avg_pool1d.yaml
+Finish torch.nn.functional.avg_pool1d.yaml, Time: 10.185849666595459
+[5610] Extracting torch.cuda.max_memory_reserved.yaml
+Finish torch.cuda.max_memory_reserved.yaml, Time: 10.20064902305603
+[5610] Extracting torch.nn.init.eye_.yaml
+Finish torch.nn.init.eye_.yaml, Time: 10.254430294036865
+[5610] Extracting torch.sign.yaml
+Finish torch.sign.yaml, Time: 10.26055359840393
+[5610] Extracting torch.allclose.yaml
+Finish torch.allclose.yaml, Time: 10.53405213356018
+[5610] Extracting torch.nn.avgpool2d.yaml
+Finish torch.nn.avgpool2d.yaml, Time: 10.5357084274292
+[5610] Extracting torch.sparse.addmm.yaml
+Finish torch.sparse.addmm.yaml, Time: 10.478492021560669
+[5610] Extracting torch.nn.quantized.functional.relu.yaml
+Finish torch.nn.quantized.functional.relu.yaml, Time: 10.58060359954834
+[5610] Extracting torch.var.yaml
+Finish torch.var.yaml, Time: 10.565942287445068
+[5610] Extracting torch.cuda.manual_seed_all.yaml
+Finish torch.cuda.manual_seed_all.yaml, Time: 10.371422052383423
+[5610] Extracting torch.nonzero.yaml
+Finish torch.nonzero.yaml, Time: 10.805630207061768
+[5610] Extracting torch.conj.yaml
+Finish torch.conj.yaml, Time: 10.713395595550537
+[5610] Extracting torch.mean.yaml
+Finish torch.mean.yaml, Time: 10.780452013015747
+[5610] Extracting torch.polygamma.yaml
+Finish torch.polygamma.yaml, Time: 10.95274043083191
+[5610] Extracting torch.set_flush_denormal.yaml
+Finish torch.set_flush_denormal.yaml, Time: 10.737616062164307
+[5610] Extracting torch.nn.alphadropout.yaml
+Finish torch.nn.alphadropout.yaml, Time: 10.970666408538818
+[5610] Extracting torch.distributions.kl.register_kl.yaml
+Finish torch.distributions.kl.register_kl.yaml, Time: 10.795342445373535
+[5610] Extracting torch.cuda.stream.yaml
+Finish torch.cuda.stream.yaml, Time: 11.001465082168579
+[5610] Extracting torch.nn.adaptivemaxpool1d.yaml
+Finish torch.nn.adaptivemaxpool1d.yaml, Time: 10.952296018600464
+[5610] Extracting torch.set_default_dtype.yaml
+Finish torch.set_default_dtype.yaml, Time: 10.861135959625244
+[5610] Extracting torch.matmul.yaml
+Finish torch.matmul.yaml, Time: 11.261198997497559
+[5610] Extracting torch.nn.functional.adaptive_max_pool1d.yaml
+Finish torch.nn.functional.adaptive_max_pool1d.yaml, Time: 10.882144689559937
+[5610] Extracting torch.quantization.add_observer_.yaml
+Finish torch.quantization.add_observer_.yaml, Time: 11.085159301757812
+[5610] Extracting torch.pow.yaml
+Finish torch.pow.yaml, Time: 10.96023941040039
+[5610] Extracting torch.rfft.yaml
+Finish torch.rfft.yaml, Time: 11.357450485229492
+[5610] Extracting torch.slogdet.yaml
+Finish torch.slogdet.yaml, Time: 11.212462186813354
+[5610] Extracting torch.nn.functional.conv_transpose3d.yaml
+Finish torch.nn.functional.conv_transpose3d.yaml, Time: 11.551094055175781
+[5610] Extracting torch.nn.functional.glu.yaml
+Finish torch.nn.functional.glu.yaml, Time: 11.189924716949463
+[5610] Extracting torch.gt.yaml
+Finish torch.gt.yaml, Time: 11.112815618515015
+[5610] Extracting torch.distributed.get_backend.yaml
+Finish torch.distributed.get_backend.yaml, Time: 11.170031547546387
+[5610] Extracting torch.bincount.yaml
+Finish torch.bincount.yaml, Time: 11.47748589515686
+[5610] Extracting torch.nn.init.normal_.yaml
+Finish torch.nn.init.normal_.yaml, Time: 11.319570541381836
+[5610] Extracting torch.inverse.yaml
+Finish torch.inverse.yaml, Time: 11.195324420928955
+[5610] Extracting torch.jit.save.yaml
+Finish torch.jit.save.yaml, Time: 11.538235902786255
+[5610] Extracting torch.flip.yaml
+Finish torch.flip.yaml, Time: 11.555127620697021
+[5610] Extracting torch.cuda.memory_summary.yaml
+Finish torch.cuda.memory_summary.yaml, Time: 11.593367338180542
+[5610] Extracting torch.max22.yaml
+Finish torch.max22.yaml, Time: 11.406925916671753
+[5610] Extracting torch.split.yaml
+Finish torch.split.yaml, Time: 11.677417278289795
+[5610] Extracting torch.blackman_window.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.blackman_window.yaml, Time: 12.305869579315186
+[5610] Extracting torch.lu_unpack.yaml
+Finish torch.lu_unpack.yaml, Time: 11.96676754951477
+[5610] Extracting torch.mul.yaml
+Finish torch.mul.yaml, Time: 11.784534215927124
+[5610] Extracting torch.nn.unfold.yaml
+Finish torch.nn.unfold.yaml, Time: 12.256184577941895
+[5610] Extracting torch.distributed.reduce.yaml
+Finish torch.distributed.reduce.yaml, Time: 12.135701417922974
+[5610] Extracting torch.nn.quantized.functional.linear.yaml
+Finish torch.nn.quantized.functional.linear.yaml, Time: 12.23211932182312
+[5610] Extracting torch.lt.yaml
+Finish torch.lt.yaml, Time: 11.915249347686768
+[5610] Extracting torch.distributed.all_reduce.yaml
+Finish torch.distributed.all_reduce.yaml, Time: 12.255732536315918
+[5610] Extracting torch.nn.functional.conv1d.yaml
+Finish torch.nn.functional.conv1d.yaml, Time: 12.380134582519531
+[5610] Extracting torch.nn.functional.softmin.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.nn.functional.softmin.yaml, Time: 12.378896474838257
+[5610] Extracting torch.nn.adaptivelogsoftmaxwithloss.yaml
+Finish torch.nn.adaptivelogsoftmaxwithloss.yaml, Time: 12.426560401916504
+[5610] Extracting torch.nn.quantized.functional.conv3d.yaml
+Finish torch.nn.quantized.functional.conv3d.yaml, Time: 12.90441608428955
+[5610] Extracting torch.nn.functional.conv3d.yaml
+Finish torch.nn.functional.conv3d.yaml, Time: 12.915311574935913
+[5610] Extracting torch.as_tensor.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.as_tensor.yaml, Time: 13.232454061508179
+[5610] Extracting torch.remainder.yaml
+Finish torch.remainder.yaml, Time: 12.918643474578857
+[5610] Extracting torch.full.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.full.yaml, Time: 13.44406533241272
+[5610] Extracting torch.nn.conv1d.yaml
+Finish torch.nn.conv1d.yaml, Time: 13.26468825340271
+[5610] Extracting torch.nn.quantized.functional.conv2d.yaml
+Finish torch.nn.quantized.functional.conv2d.yaml, Time: 13.40907883644104
+[5610] Extracting torch.distributed.broadcast_multigpu.yaml
+Finish torch.distributed.broadcast_multigpu.yaml, Time: 13.991535425186157
+[5610] Extracting torch.cuda.comm.broadcast_coalesced.yaml
+Finish torch.cuda.comm.broadcast_coalesced.yaml, Time: 13.712791681289673
+[5610] Extracting torch.prod2.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.prod2.yaml, Time: 13.824099779129028
+[5610] Extracting torch.nn.functional.ctc_loss.yaml
+Finish torch.nn.functional.ctc_loss.yaml, Time: 14.377341508865356
+[5610] Extracting torch.randn.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.randn.yaml, Time: 14.00594711303711
+[5610] Extracting torch.hann_window.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.hann_window.yaml, Time: 14.151427268981934
+[5610] Extracting torch.hamming_window.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.hamming_window.yaml, Time: 14.713894844055176
+[5610] Extracting torch.quantization.convert.yaml
+Finish torch.quantization.convert.yaml, Time: 14.64363169670105
+[5610] Extracting torch.sparse_coo_tensor.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.sparse_coo_tensor.yaml, Time: 15.098551988601685
+[5610] Extracting torch.load.yaml
+Finish torch.load.yaml, Time: 14.956331491470337
+[5610] Extracting torch.nn.upsample.yaml
+Finish torch.nn.upsample.yaml, Time: 15.142418146133423
+[5610] Extracting torch.norm.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.norm.yaml, Time: 18.302268981933594
+[5610] Extracting torch.roll.yaml
+Finish torch.roll.yaml, Time: 19.700972080230713
+[5610] Extracting torch.nn.functional.embedding.yaml
+Finish torch.nn.functional.embedding.yaml, Time: 23.402012825012207
+[5610] Extracting torch.lobpcg.yaml
+Finish torch.lobpcg.yaml, Time: 24.046736240386963
+[5610] Extracting torch.autograd.functional.vjp.yaml
+Finish torch.autograd.functional.vjp.yaml, Time: 28.058674097061157
+[5610] Extracting torch.nn.bcewithlogitsloss.yaml
+Finish torch.nn.bcewithlogitsloss.yaml, Time: 39.228530406951904
+[5610] Extracting torch.nn.functional.poisson_nll_loss.yaml
+Finish torch.nn.functional.poisson_nll_loss.yaml, Time: 47.77733135223389
+[5610] Extracting torch.nn.multilabelsoftmarginloss.yaml
+Finish torch.nn.multilabelsoftmarginloss.yaml, Time: 48.77016091346741
+[5610] Extracting torch.nn.tripletmarginloss.yaml
+Finish torch.nn.tripletmarginloss.yaml, Time: 53.71166706085205
+[5610] Extracting torch.onnx.export.yaml
+Finish torch.onnx.export.yaml, Time: 65.63038778305054
+[5610] Extracting torch.random.fork_rng.yaml
+Finish torch.random.fork_rng.yaml, Time: 65.97284579277039
+[5610] Extracting torch.nn.tanh.yaml
+Finish torch.nn.tanh.yaml, Time: 0.521146297454834
+[5610] Extracting torch.nn.tanhshrink.yaml
+Finish torch.nn.tanhshrink.yaml, Time: 1.6858861446380615
+[5610] Extracting torch.cuda.manual_seed.yaml
+Finish torch.cuda.manual_seed.yaml, Time: 3.929394006729126
+[5610] Extracting torch.nn.constantpad1d.yaml
+Finish torch.nn.constantpad1d.yaml, Time: 4.030549049377441
+[5610] Extracting torch.flatten.yaml
+Finish torch.flatten.yaml, Time: 4.596057891845703
+[5610] Extracting torch.nn.utils.prune.is_pruned.yaml
+Finish torch.nn.utils.prune.is_pruned.yaml, Time: 5.555601596832275
+[5610] Extracting torch.logdet.yaml
+Finish torch.logdet.yaml, Time: 5.7503790855407715
+[5610] Extracting torch.cuda.memory_allocated.yaml
+Finish torch.cuda.memory_allocated.yaml, Time: 6.067994117736816
+[5610] Extracting torch.nn.dropout2d.yaml
+Finish torch.nn.dropout2d.yaml, Time: 6.037044286727905
+[5610] Extracting torch.sin.yaml
+Finish torch.sin.yaml, Time: 6.107464075088501
+[5610] Extracting torch.max.yaml
+Finish torch.max.yaml, Time: 6.216273784637451
+[5610] Extracting torch.nn.replicationpad3d.yaml
+Finish torch.nn.replicationpad3d.yaml, Time: 7.112862825393677
+[5610] Extracting torch.utils.cpp_extension.check_compiler_abi_compatibility.yaml
+Finish torch.utils.cpp_extension.check_compiler_abi_compatibility.yaml, Time: 7.11653470993042
+[5610] Extracting torch.matrix_rank.yaml
+Finish torch.matrix_rank.yaml, Time: 7.424240827560425
+[5610] Extracting torch.utils.cpp_extension.include_paths.yaml
+Finish torch.utils.cpp_extension.include_paths.yaml, Time: 7.810442209243774
+[5610] Extracting torch.cuda.current_stream.yaml
+Finish torch.cuda.current_stream.yaml, Time: 7.950024127960205
+[5610] Extracting torch.nn.functional.softmax.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.nn.functional.softmax.yaml, Time: 8.00485610961914
+[5610] Extracting torch.cuda.nvtx.mark.yaml
+Finish torch.cuda.nvtx.mark.yaml, Time: 8.008023023605347
+[5610] Extracting torch.where.yaml
+Finish torch.where.yaml, Time: 8.168836832046509
+[5610] Extracting torch.nn.reflectionpad2d.yaml
+Finish torch.nn.reflectionpad2d.yaml, Time: 8.037169456481934
+[5610] Extracting torch.nn.transformerdecoderlayer.yaml
+Finish torch.nn.transformerdecoderlayer.yaml, Time: 8.43466329574585
+[5610] Extracting torch.argsort.yaml
+Finish torch.argsort.yaml, Time: 8.574110984802246
+[5610] Extracting torch.gather.yaml
+Finish torch.gather.yaml, Time: 8.627159833908081
+[5610] Extracting torch.median2.yaml
+Finish torch.median2.yaml, Time: 8.745601654052734
+[5610] Extracting torch.nn.lppool1d.yaml
+Finish torch.nn.lppool1d.yaml, Time: 8.789524793624878
+[5610] Extracting torch.nn.utils.weight_norm.yaml
+Finish torch.nn.utils.weight_norm.yaml, Time: 9.074857234954834
+[5610] Extracting torch.nn.init.zeros_.yaml
+Finish torch.nn.init.zeros_.yaml, Time: 8.909519672393799
+[5610] Extracting torch.nn.functional.adaptive_avg_pool2d.yaml
+Finish torch.nn.functional.adaptive_avg_pool2d.yaml, Time: 8.626279830932617
+[5610] Extracting torch.save.yaml
+Finish torch.save.yaml, Time: 9.20303201675415
+[5610] Extracting torch.unsqueeze.yaml
+Finish torch.unsqueeze.yaml, Time: 9.511793851852417
+[5610] Extracting torch.unbind.yaml
+Finish torch.unbind.yaml, Time: 9.207752704620361
+[5610] Extracting torch.set_grad_enabled.yaml
+Finish torch.set_grad_enabled.yaml, Time: 9.451561450958252
+[5610] Extracting torch.distributed.get_world_size.yaml
+Finish torch.distributed.get_world_size.yaml, Time: 9.305821657180786
+[5610] Extracting torch.nn.adaptiveavgpool2d.yaml
+Finish torch.nn.adaptiveavgpool2d.yaml, Time: 9.39606785774231
+[5610] Extracting torch.nn.lppool2d.yaml
+Finish torch.nn.lppool2d.yaml, Time: 9.740325212478638
+[5610] Extracting torch.fft.yaml
+Finish torch.fft.yaml, Time: 10.128048419952393
+[5610] Extracting torch.nn.utils.remove_spectral_norm.yaml
+Finish torch.nn.utils.remove_spectral_norm.yaml, Time: 9.843753576278687
+[5610] Extracting torch.random.manual_seed2.yaml
+Finish torch.random.manual_seed2.yaml, Time: 9.834279537200928
+[5610] Extracting torch.neg.yaml
+Finish torch.neg.yaml, Time: 10.045371532440186
+[5610] Extracting torch.nn.init.orthogonal_.yaml
+Finish torch.nn.init.orthogonal_.yaml, Time: 10.062008619308472
+[5610] Extracting torch.utils.checkpoint.checkpoint_sequential.yaml
+Finish torch.utils.checkpoint.checkpoint_sequential.yaml, Time: 10.39392352104187
+[5610] Extracting torch.manual_seed.yaml
+Finish torch.manual_seed.yaml, Time: 10.257100343704224
+[5610] Extracting torch.min.yaml
+Finish torch.min.yaml, Time: 10.266235113143921
+[5610] Extracting torch.pow2.yaml
+Finish torch.pow2.yaml, Time: 10.251746892929077
+[5610] Extracting torch.nn.utils.prune.l1_unstructured.yaml
+Finish torch.nn.utils.prune.l1_unstructured.yaml, Time: 10.605982065200806
+[5610] Extracting torch.diag.yaml
+Finish torch.diag.yaml, Time: 10.620689630508423
+[5610] Extracting torch.diag_embed.yaml
+Finish torch.diag_embed.yaml, Time: 10.641000270843506
+[5610] Extracting torch.random.set_rng_state.yaml
+Finish torch.random.set_rng_state.yaml, Time: 10.153564691543579
+[5610] Extracting torch.nn.init.calculate_gain.yaml
+Finish torch.nn.init.calculate_gain.yaml, Time: 10.55350947380066
+[5610] Extracting torch.histc.yaml
+Finish torch.histc.yaml, Time: 10.713784217834473
+[5610] Extracting torch.cdist.yaml
+Finish torch.cdist.yaml, Time: 10.79239535331726
+[5610] Extracting torch.bmm.yaml
+Finish torch.bmm.yaml, Time: 10.682559728622437
+[5610] Extracting torch.tan.yaml
+Finish torch.tan.yaml, Time: 10.446184873580933
+[5610] Extracting torch.nn.dataparallel.yaml
+Finish torch.nn.dataparallel.yaml, Time: 10.51866865158081
+[5610] Extracting torch.nn.softshrink.yaml
+Finish torch.nn.softshrink.yaml, Time: 10.57627248764038
+[5610] Extracting torch.dist.yaml
+Finish torch.dist.yaml, Time: 10.680524349212646
+[5610] Extracting torch.cuda.default_stream.yaml
+Finish torch.cuda.default_stream.yaml, Time: 10.7257080078125
+[5610] Extracting torch.nn.adaptivemaxpool3d.yaml
+Finish torch.nn.adaptivemaxpool3d.yaml, Time: 10.799389123916626
+[5610] Extracting torch.nn.init.dirac_.yaml
+Finish torch.nn.init.dirac_.yaml, Time: 10.494274377822876
+[5610] Extracting torch.mv.yaml
+Finish torch.mv.yaml, Time: 10.581751108169556
+[5610] Extracting torch.nn.rrelu.yaml
+Finish torch.nn.rrelu.yaml, Time: 10.533849716186523
+[5610] Extracting torch.asin.yaml
+Finish torch.asin.yaml, Time: 10.791773080825806
+[5610] Extracting torch.quantization.prepare_qat.yaml
+Finish torch.quantization.prepare_qat.yaml, Time: 10.856554508209229
+[5610] Extracting torch.nn.transformer.yaml
+Finish torch.nn.transformer.yaml, Time: 11.130121231079102
+[5610] Extracting torch.tensordot.yaml
+Finish torch.tensordot.yaml, Time: 10.841405630111694
+[5610] Extracting torch.nn.upsamplingbilinear2d.yaml
+Finish torch.nn.upsamplingbilinear2d.yaml, Time: 10.68912410736084
+[5610] Extracting torch.nn.utils.rnn.pack_padded_sequence.yaml
+Finish torch.nn.utils.rnn.pack_padded_sequence.yaml, Time: 11.161662101745605
+[5610] Extracting torch.nn.batchnorm2d.yaml
+Finish torch.nn.batchnorm2d.yaml, Time: 11.180218696594238
+[5610] Extracting torch.cholesky_inverse.yaml
+Finish torch.cholesky_inverse.yaml, Time: 10.974573373794556
+[5610] Extracting torch.solve.yaml
+Finish torch.solve.yaml, Time: 10.875030517578125
+[5610] Extracting torch.min2.yaml
+Finish torch.min2.yaml, Time: 10.838597536087036
+[5610] Extracting torch.var_mean2.yaml
+Finish torch.var_mean2.yaml, Time: 10.976927280426025
+[5610] Extracting torch.hub.download_url_to_file.yaml
+Finish torch.hub.download_url_to_file.yaml, Time: 11.023612260818481
+[5610] Extracting torch.hub.help.yaml
+Finish torch.hub.help.yaml, Time: 11.262868165969849
+[5610] Extracting torch.nn.syncbatchnorm.yaml
+Finish torch.nn.syncbatchnorm.yaml, Time: 11.523268461227417
+[5610] Extracting torch.nn.batchnorm3d.yaml
+Finish torch.nn.batchnorm3d.yaml, Time: 11.08711576461792
+[5610] Extracting torch.nn.conv2d.yaml
+Finish torch.nn.conv2d.yaml, Time: 11.783175945281982
+[5610] Extracting torch.nn.functional.conv2d.yaml
+Finish torch.nn.functional.conv2d.yaml, Time: 11.658228397369385
+[5610] Extracting torch.zeros_like.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.zeros_like.yaml, Time: 11.816891193389893
+[5610] Extracting torch.rand_like.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.rand_like.yaml, Time: 11.745774984359741
+[5610] Extracting torch.pca_lowrank.yaml
+Finish torch.pca_lowrank.yaml, Time: 11.736248970031738
+[5610] Extracting torch.nn.functional.conv_transpose2d.yaml
+Finish torch.nn.functional.conv_transpose2d.yaml, Time: 12.465030908584595
+[5610] Extracting torch.nn.functional.conv_transpose1d.yaml
+Finish torch.nn.functional.conv_transpose1d.yaml, Time: 12.6177978515625
+[5610] Extracting torch.utils.cpp_extension.load_inline.yaml
+Finish torch.utils.cpp_extension.load_inline.yaml, Time: 12.621110916137695
+[5610] Extracting torch.nn.groupnorm.yaml
+Finish torch.nn.groupnorm.yaml, Time: 13.254809617996216
+[5610] Extracting torch.nn.embedding.yaml
+Finish torch.nn.embedding.yaml, Time: 14.209401607513428
+[5610] Extracting torch.nn.prelu.yaml
+Finish torch.nn.prelu.yaml, Time: 15.567490100860596
+[5610] Extracting torch.qr.yaml
+Finish torch.qr.yaml, Time: 16.306879997253418
+[5610] Extracting torch.utils.checkpoint.checkpoint.yaml
+Finish torch.utils.checkpoint.checkpoint.yaml, Time: 16.27316689491272
+[5610] Extracting torch.nn.instancenorm3d.yaml
+Finish torch.nn.instancenorm3d.yaml, Time: 18.290714263916016
+[5610] Extracting torch.nn.lstm.yaml
+Finish torch.nn.lstm.yaml, Time: 19.350976705551147
+[5610] Extracting torch.nn.functional.gumbel_softmax.yaml
+Finish torch.nn.functional.gumbel_softmax.yaml, Time: 19.831185579299927
+[5610] Extracting torch.autograd.grad.yaml
+Finish torch.autograd.grad.yaml, Time: 45.528541564941406
+[5610] Extracting torch.nn.mseloss.yaml
+Finish torch.nn.mseloss.yaml, Time: 46.65363883972168
+[5610] Extracting torch.nn.poissonnllloss.yaml
+Finish torch.nn.poissonnllloss.yaml, Time: 47.19099259376526
+[5610] Extracting torch.nn.crossentropyloss.yaml
+Finish torch.nn.crossentropyloss.yaml, Time: 48.09105110168457
+[5610] Extracting torch.nn.multilabelmarginloss.yaml
+Finish torch.nn.multilabelmarginloss.yaml, Time: 49.05702543258667
+[5610] Extracting torch.nn.softmarginloss.yaml
+Finish torch.nn.softmarginloss.yaml, Time: 50.23813009262085
+[5610] Extracting torch.nn.marginrankingloss.yaml
+Finish torch.nn.marginrankingloss.yaml, Time: 55.369361877441406
+[5610] Extracting torch.nn.functional.grid_sample.yaml
+Finish torch.nn.functional.grid_sample.yaml, Time: 86.69628810882568
+All finish
+[5610] Extracting torch.nn.sigmoid.yaml
+Finish torch.nn.sigmoid.yaml, Time: 0.1254749298095703
+[5610] Extracting torch.div2.yaml
+Finish torch.div2.yaml, Time: 2.715892791748047
+[5610] Extracting torch.ormqr.yaml
+Finish torch.ormqr.yaml, Time: 2.9535322189331055
+[5610] Extracting torch.cartesian_prod.yaml
+Finish torch.cartesian_prod.yaml, Time: 3.2167410850524902
+[5610] Extracting torch.nn.threshold.yaml
+Finish torch.nn.threshold.yaml, Time: 3.3585474491119385
+[5610] Extracting torch.floor.yaml
+Finish torch.floor.yaml, Time: 3.4219532012939453
+[5610] Extracting torch.nn.pixelshuffle.yaml
+Finish torch.nn.pixelshuffle.yaml, Time: 3.4890496730804443
+[5610] Extracting torch.jit.script.yaml
+Finish torch.jit.script.yaml, Time: 3.4393093585968018
+[5610] Extracting torch.square.yaml
+Finish torch.square.yaml, Time: 3.5094404220581055
+[5610] Extracting torch.log1p.yaml
+Finish torch.log1p.yaml, Time: 3.6138689517974854
+[5610] Extracting torch.distributed.irecv.yaml
+Finish torch.distributed.irecv.yaml, Time: 3.7070019245147705
+[5610] Extracting torch.floor_divide.yaml
+Finish torch.floor_divide.yaml, Time: 3.7257533073425293
+[5610] Extracting torch.nn.hardtanh.yaml
+Finish torch.nn.hardtanh.yaml, Time: 3.802447557449341
+[5610] Extracting torch.nn.grucell.yaml
+Finish torch.nn.grucell.yaml, Time: 3.730524778366089
+[5610] Extracting torch.nn.rnncell.yaml
+Finish torch.nn.rnncell.yaml, Time: 3.9122812747955322
+[5610] Extracting torch.bernoulli.yaml
+Finish torch.bernoulli.yaml, Time: 3.8662424087524414
+[5610] Extracting torch.nn.functional.dropout.yaml
+Finish torch.nn.functional.dropout.yaml, Time: 3.8382997512817383
+[5610] Extracting torch.randn_like.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.randn_like.yaml, Time: 4.700517654418945
+[5610] Extracting torch.hub.load.yaml
+Finish torch.hub.load.yaml, Time: 4.932034969329834
+[5610] Extracting torch.nn.convtranspose1d.yaml
+Finish torch.nn.convtranspose1d.yaml, Time: 5.531865358352661
+[5610] Extracting torch.bartlett_window.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.bartlett_window.yaml, Time: 5.809679269790649
+[5610] Extracting torch.ones.yaml
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish torch.ones.yaml, Time: 5.887240409851074
+[5610] Extracting torch.nn.embeddingbag.yaml
+Finish torch.nn.embeddingbag.yaml, Time: 7.937550067901611
+[5610] Extracting torch.nn.instancenorm2d.yaml
+Finish torch.nn.instancenorm2d.yaml, Time: 10.407030582427979
+[5610] Extracting torch.nn.instancenorm1d.yaml
+Finish torch.nn.instancenorm1d.yaml, Time: 10.657116174697876
+[5610] Extracting torch.nn.functional.one_hot.yaml
+Finish torch.nn.functional.one_hot.yaml, Time: 10.919641494750977
+[5610] Extracting torch.nn.utils.prune.global_unstructured.yaml
+Finish torch.nn.utils.prune.global_unstructured.yaml, Time: 11.956677675247192
+[5610] Extracting torch.einsum.yaml
+Finish torch.einsum.yaml, Time: 29.91577458381653
+[5610] Extracting torch.jit.trace.yaml
+Finish torch.jit.trace.yaml, Time: 110.26767420768738
+Precision
+{'dtype': 0, 'structure': 0, 'shape': 0, 'validvalue': 0, 'all': 0}
+Recall
+{'dtype': 0.0, 'structure': 0.0, 'shape': 0.0, 'validvalue': 0.0, 'all': 0.0}
+F1
+{'dtype': 0, 'structure': 0, 'shape': 0, 'validvalue': 0, 'all': 0}
+accuracy
+0.12048192771084337

@@ -1,0 +1,27 @@
+constraints:
+  data_home: {default: None, descp: 'string, optional Specify another download and
+      cache folder for the datasets. By default all scikit-learn data is stored in
+      ''~/scikit_learn_data'' subfolders.'}
+  download_if_missing: {default: 'True', descp: 'boolean, default=True If False, raise
+      a IOError if the data is not locally available instead of trying to download
+      the data from the source site.'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset shuffling. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+  return_X_y: {default: 'False', descp: 'boolean, default=False. If True, returns
+      ``(dataset.data, dataset.target)`` instead of a Bunch object. See below for
+      more information about the `dataset.data` and `dataset.target` object.'}
+  shuffle: {default: 'False', descp: 'bool, default=False Whether to shuffle dataset.'}
+  subset: {default: all, descp: 'string, ''train'', ''test'', or ''all'', default=''all''
+      Select the dataset to load: ''train'' for the training set (23149 samples),
+      ''test'' for the test set (781265 samples), ''all'' for both, with the training
+      samples first if shuffle is False. This follows the official LYRL2004 chronological
+      split.'}
+inputs:
+  optional: [data_home, subset, download_if_missing, random_state, shuffle, return_X_y]
+  required: []
+link: ''
+package: sklearn
+target: fetch_rcv1
+title: sklearn.datasets.fetch_rcv1
+version: 0.24.2

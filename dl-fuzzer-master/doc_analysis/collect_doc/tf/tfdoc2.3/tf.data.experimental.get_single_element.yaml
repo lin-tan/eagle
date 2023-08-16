@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.data.experimental.get_single_element
+constraints:
+  dataset:
+    descp: A tf.data.Dataset object containing a single element.
+exceptions:
+- TypeError: 'if dataset is not a tf.data.Dataset object. InvalidArgumentError (at
+    runtime): if dataset does not contain exactly one element.'
+inputs:
+  optional: []
+  required:
+  - dataset
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/get_single_element
+outputs:
+- A nested structure of tf.Tensor objects, corresponding to the single element of
+  dataset.
+package: tensorflow
+target: get_single_element
+title: tf.data.experimental.get_single_element
+version: 2.3.0

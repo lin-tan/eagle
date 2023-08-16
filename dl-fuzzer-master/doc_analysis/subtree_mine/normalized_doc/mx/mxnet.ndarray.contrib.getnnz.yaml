@@ -1,0 +1,48 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Select between the number of values across the whole matrix, in each column,
+      or in each row.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Select between the number of values across the whole matrix, in each column,
+      or in each row
+    normalized_docdtype: D_TYPE or None, optional, default QSTR
+  data:
+    default: None
+    descp: Input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.getnnz
+package: mxnet
+target: getnnz
+title: mxnet.ndarray.contrib.getnnz
+version: 1.6.0

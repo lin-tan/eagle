@@ -1,0 +1,10 @@
+constraints:
+  description:
+    default: None
+    descp: Optional long-form description for this summary, as a constant `str`. Markdown
+      is supported. Defaults to empty.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.summary.text

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new size for the images.",,prim_dtype,dtype(tf.int32),,1
+,"A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new size for the images.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new size for the images.",,shape,"shape([2]), ndim(1)",,1
+,"A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new size for the images.",,validvalue,"range([0,inf))",,1

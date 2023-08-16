@@ -1,0 +1,20 @@
+aliases:
+- tf.losses.categorical_hinge
+- tf.compat.v1.keras.losses.categorical_hinge
+constraints:
+  y_pred:
+    descp: The predicted values.
+  y_true:
+    descp: The ground truth values. y_true values are expected to be 0 or 1.
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/losses/categorical_hinge
+outputs:
+- Categorical hinge loss values.
+package: tensorflow
+target: categorical_hinge
+title: tf.keras.losses.categorical_hinge
+version: 2.3.0

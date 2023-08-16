@@ -1,0 +1,41 @@
+constraints:
+  output_size:
+    descp: the target output size of the image of the form D x H x W. Can be a tuple
+      (D, H, W) or a single D for a cube D x D x D. D, H and W can be either a `int`,
+      or `None` which means the size will be the same as that of the input.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[3]'
+    - '[d,h,w]'
+    structure:
+    - tuple
+    - tuple:(d,h,w)
+  return_indices:
+    default: 'False'
+    descp: 'if `True`, will return the indices along with the outputs. Useful to pass
+      to nn.MaxUnpool3d. Default: `False`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    - '3'
+dependency:
+- d
+- h
+- w
+inputs:
+  optional:
+  - return_indices
+  required:
+  - output_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.AdaptiveMaxPool3d
+package: torch
+target: AdaptiveMaxPool3d
+title: torch.nn.AdaptiveMaxPool3d
+version: 1.5.0

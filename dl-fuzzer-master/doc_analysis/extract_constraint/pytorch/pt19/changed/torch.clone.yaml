@@ -1,0 +1,25 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  memory_format:
+    default: torch.preserve_format
+    descp: 'the desired memory format of returned tensor. Default: `torch.preserve_format`.'
+    doc_dtype:
+    - torch.memory_format
+inputs:
+  keyword_only:
+  - memory_format
+  optional:
+  - memory_format
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.clone.html#torch.clone#torch.clone
+package: torch
+ret_type: Tensor
+target: clone
+title: torch.clone
+version: 1.9.0

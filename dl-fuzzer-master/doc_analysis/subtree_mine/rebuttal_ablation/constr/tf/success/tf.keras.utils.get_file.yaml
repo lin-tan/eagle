@@ -1,0 +1,150 @@
+aliases:
+- tf.compat.v1.keras.utils.get_file
+constraints:
+  archive_format:
+    default: auto
+    descp: Archive format to try for extracting the file. Options are 'auto', 'tar',
+      'zip', and None. 'tar' includes tar, tar.gz, and tar.bz files. The default 'auto'
+      is ['tar', 'zip']. None or an empty list will return no matches found.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - auto
+    - tar
+    - zip
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+  cache_dir:
+    default: None
+    descp: Location to store cached files, when None it defaults to the Keras   Directory.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+  cache_subdir:
+    default: datasets
+    descp: Subdirectory under the Keras cache dir where the file is saved. If an absolute
+      path `/path/to/folder` is specified the file will be saved at that location.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  extract:
+    default: 'False'
+    descp: True tries extracting the file as an Archive, like tar or zip.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  file_hash:
+    default: None
+    descp: The expected hash string of the file after download. The sha256 and md5
+      hash algorithms are both supported.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  fname:
+    descp: Name of the file. If an absolute path `/path/to/file.txt` is specified
+      the file will be saved at that location.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  hash_algorithm:
+    default: auto
+    descp: Select the hash algorithm to verify the file. options are 'md5', 'sha256',
+      and 'auto'. The default 'auto' detects the hash algorithm in use.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - auto
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  md5_hash:
+    default: None
+    descp: Deprecated in favor of 'file_hash'. md5 hash of the file for verification
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&file_hash'
+    tensor_t:
+    - tf.tensor
+  origin:
+    descp: Original URL of the file.
+  untar:
+    default: 'False'
+    descp: Deprecated in favor of 'extract'. boolean, whether the file should be decompressed
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&extract'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - untar
+  - md5_hash
+  - file_hash
+  - cache_subdir
+  - hash_algorithm
+  - extract
+  - archive_format
+  - cache_dir
+  required:
+  - fname
+  - origin
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/utils/get_file
+outputs: Path to the downloaded file
+package: tensorflow
+target: get_file
+title: tf.keras.utils.get_file
+version: 2.1.0

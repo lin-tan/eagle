@@ -1,0 +1,49 @@
+aliases:
+- tf.compat.v1.group
+constraints:
+  '**kwargs':
+    descp: ''
+  '*inputs':
+    descp: Zero or more tensors to group.
+    dtype:
+    - int
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: If an unknown keyword argument is provided.
+inputs:
+  optional:
+  - name
+  required:
+  - '*inputs'
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/group
+outputs: An Operation that executes all its inputs.
+package: tensorflow
+target: group
+title: tf.group
+version: 2.1.0

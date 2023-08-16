@@ -1,0 +1,35 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: The dimension along which to take the one dimensional real IFFT.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor representing a half-Hermitian signal
+    doc_dtype:
+    - Tensor
+  n:
+    default: None
+    descp: 'Output signal length. This determines the length of the output signal.
+      If given, the input will either be zero-padded or trimmed to this length before
+      computing the real IFFT. Defaults to even output: `n=2*(input.size(dim) - 1)`.'
+    doc_dtype:
+    - int
+  norm:
+    default: None
+    descp: ''
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - n
+  - dim
+  - norm
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/fft.html#torch.fft.irfft
+package: torch
+ret_type: Tensor
+target: irfft
+title: torch.fft.irfft
+version: 1.7.0

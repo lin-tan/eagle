@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"multiple right-hand sides of size (*, m, k)  where *  is zero of more batch dimensions (b )",,nonprim_dtype,tensor_t(torch.tensor),1,1
+Tensor,"multiple right-hand sides of size (*, m, k)  where *  is zero of more batch dimensions (b )",,shape,"shape([...,m,k]), ndim(>=2)",1,1

@@ -1,0 +1,46 @@
+constraints:
+  batch_size:
+    default: '32'
+    descp: An optional int. Defaults to 32. The batch size.
+  compression_type:
+    default: ''
+    descp: An optional string. Defaults to "". The type of compression for the file.
+      Currently ZLIB and GZIP are supported. Defaults to none.
+  file_buffer_size:
+    default: '10000'
+    descp: An optional int. Defaults to 10000. The randomization shuffling buffer.
+  file_parallelism:
+    default: '16'
+    descp: An optional int. Defaults to 16. How many sstables are opened and concurrently
+      iterated over.
+  file_pattern:
+    descp: A string. Glob pattern for the data files.
+  file_random_seed:
+    default: '301'
+    descp: An optional int. Defaults to 301. Random seeds used to produce randomized
+      records.
+  file_shuffle_shift_ratio:
+    default: '0'
+    descp: An optional float. Defaults to 0. Shifts the list of files after the list
+      is randomly shuffled.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - file_random_seed
+  - file_shuffle_shift_ratio
+  - file_buffer_size
+  - file_parallelism
+  - batch_size
+  - compression_type
+  - name
+  required:
+  - file_pattern
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RecordInput
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: RecordInput
+title: tf.raw_ops.RecordInput
+version: 2.3.0

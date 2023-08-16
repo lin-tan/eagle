@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[1]",The shape of one label.,None,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[1]",The shape of one label.,None,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[1]",The shape of one label.,None,shape,ndim(1),,1
+"Shape(tuple), optional, default=[1]",The shape of one label.,None,validvalue,"range([0,inf))",,1

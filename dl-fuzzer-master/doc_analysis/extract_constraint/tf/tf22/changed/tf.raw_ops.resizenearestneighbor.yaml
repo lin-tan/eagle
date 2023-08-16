@@ -1,0 +1,69 @@
+constraints:
+  align_corners:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, the centers of the 4 corner
+      pixels of the input and output tensors are aligned, preserving the values at
+      the corner pixels. Defaults to false.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  half_pixel_centers:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  images:
+    descp: 'A Tensor. Must be one of the following types: int8, uint8, int16, uint16,
+      int32, int64, half, float32, float64. 4-D with shape [batch, height, width,
+      channels].'
+    dtype:
+    - numeric
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  size:
+    descp: 'A 1-D int32 Tensor of 2 elements: new_height, new_width. The new size
+      for the images.'
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch
+- channels
+- height
+- width
+inputs:
+  optional:
+  - align_corners
+  - half_pixel_centers
+  - name
+  required:
+  - images
+  - size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResizeNearestNeighbor
+outputs:
+- A Tensor. Has the same type as images.
+package: tensorflow
+target: ResizeNearestNeighbor
+title: tf.raw_ops.ResizeNearestNeighbor
+version: 2.2.0

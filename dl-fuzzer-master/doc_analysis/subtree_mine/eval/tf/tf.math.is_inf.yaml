@@ -1,0 +1,12 @@
+constraints:
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`.'
+    dtype:
+    - tf.bfloat16
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    tensor_t:
+    - tf.tensor
+title: tf.math.is_inf

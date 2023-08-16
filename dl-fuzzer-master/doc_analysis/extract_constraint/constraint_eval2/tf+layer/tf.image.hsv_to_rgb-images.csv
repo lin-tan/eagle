@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`, `float64`. 1-D or higher rank. HSV data to convert. Last dimension must be size 3.",,prim_dtype,"dtype(tf.bfloat16, tf.float16, tf.float32, tf.float64)",,1
+,"A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`, `float64`. 1-D or higher rank. HSV data to convert. Last dimension must be size 3.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `half`, `bfloat16`, `float32`, `float64`. 1-D or higher rank. HSV data to convert. Last dimension must be size 3.",,shape,ndim(>=1),,1

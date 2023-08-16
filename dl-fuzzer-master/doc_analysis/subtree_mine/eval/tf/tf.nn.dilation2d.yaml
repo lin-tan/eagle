@@ -1,0 +1,13 @@
+constraints:
+  filters:
+    descp: A `Tensor`. Must have the same type as `input`. 3-D with shape `[filter_height,
+      filter_width, depth]`.
+    dtype:
+    - dtype:&input
+    ndim:
+    - '3'
+    shape:
+    - '[filter_height,filter_width,depth]'
+    tensor_t:
+    - tf.tensor
+title: tf.nn.dilation2d

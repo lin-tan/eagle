@@ -1,0 +1,19 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension to remove
+    doc_dtype: int
+  input:
+    descp: the tensor to unbind
+    doc_dtype: Tensor
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.unbind
+package: torch
+ret_type: seq
+target: unbind
+title: torch.unbind
+version: 1.5.0

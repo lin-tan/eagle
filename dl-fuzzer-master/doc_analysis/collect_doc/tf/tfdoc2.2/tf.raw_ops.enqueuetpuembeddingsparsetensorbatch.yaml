@@ -1,0 +1,62 @@
+constraints:
+  aggregation_weights:
+    descp: 'A list with the same length as sample_indices of Tensor objects with the
+      same type in: float32, float64. A list of rank 1 Tensors containing per training
+      example aggregation weights. It corresponds to sp_weights.values in embedding_lookup_sparse().'
+  combiners:
+    default: '[]'
+    descp: An optional list of strings. Defaults to []. A list of string scalars,
+      one for each embedding table that specify how to normalize the embedding activations
+      after weighted summation. Supported combiners are 'mean', 'sum', or 'sqrtn'.
+      It is invalid to have the sum of the weights be 0 for 'mean' or the sum of the
+      squared weights be 0 for 'sqrtn'. If combiners isn't passed, the default is
+      to use 'sum' for all tables.
+  device_ordinal:
+    default: '-1'
+    descp: An optional int. Defaults to -1. The TPU device to use. Should be >= 0
+      and less than the number of TPU cores in the task on which the node is placed.
+  embedding_indices:
+    descp: 'A list with the same length as sample_indices of Tensor objects with the
+      same type in: int32, int64. A list of rank 1 Tensors, indices into the embedding
+      tables. It corresponds to sp_ids.values in embedding_lookup_sparse().'
+  max_sequence_lengths:
+    default: '[]'
+    descp: An optional list of ints. Defaults to [].
+  mode_override:
+    descp: A Tensor of type string. A string input that overrides the mode specified
+      in the TPUEmbeddingConfiguration. Supported values are {'unspecified', 'inference',
+      'training', 'backward_pass_only'}. When set to 'unspecified', the mode set in
+      TPUEmbeddingConfiguration is used, otherwise mode_override is used.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  sample_indices:
+    descp: 'A list of at least 1 Tensor objects with the same type in: int32, int64.
+      A list of rank 1 Tensors specifying the training example to which the corresponding
+      embedding_indices and aggregation_weights values belong. It corresponds to sp_ids.indices[:,0]
+      in embedding_lookup_sparse().'
+  table_ids:
+    descp: A list of ints. A list of integers specifying the identifier of the embedding
+      table (offset of TableDescriptor in the TPUEmbeddingConfiguration) to lookup
+      the corresponding input. The ith input is looked up using table_ids[i]. The
+      size of the table_ids list must be equal to that of sample_indices, embedding_indices
+      and aggregation_weights.
+inputs:
+  optional:
+  - device_ordinal
+  - combiners
+  - max_sequence_lengths
+  - name
+  required:
+  - sample_indices
+  - embedding_indices
+  - aggregation_weights
+  - mode_override
+  - table_ids
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/EnqueueTPUEmbeddingSparseTensorBatch
+outputs:
+- The created Operation.
+package: tensorflow
+target: EnqueueTPUEmbeddingSparseTensorBatch
+title: tf.raw_ops.EnqueueTPUEmbeddingSparseTensorBatch
+version: 2.2.0

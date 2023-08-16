@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal).`(2, 2)` will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.","(2, 2)",prim_dtype,dtype(int),,1
+,"integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal).`(2, 2)` will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.","(2, 2)",nonprim_dtype,structure(tuple(int)),,1
+,"integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal).`(2, 2)` will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.","(2, 2)",shape,"shape([2]), ndim(0, 1)",,1
+,"integer or tuple of 2 integers, factors by which to downscale (vertical, horizontal).`(2, 2)` will halve the input in both spatial dimension. If only one integer is specified, the same window length will be used for both dimensions.","(2, 2)",validvalue,"range([0,inf))",,1

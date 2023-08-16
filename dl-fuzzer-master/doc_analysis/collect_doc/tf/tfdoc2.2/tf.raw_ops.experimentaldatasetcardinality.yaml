@@ -1,0 +1,19 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the dataset to
+      return cardinality for.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalDatasetCardinality
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: ExperimentalDatasetCardinality
+title: tf.raw_ops.ExperimentalDatasetCardinality
+version: 2.2.0

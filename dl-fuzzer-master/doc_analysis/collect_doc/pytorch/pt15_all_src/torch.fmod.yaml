@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: the dividend
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the divisor, which may be either a number or a tensor of the same shape
+      as the dividend
+    doc_dtype:
+    - Tensor
+    - float
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.fmod
+package: torch
+ret_type: Tensor
+target: fmod
+title: torch.fmod
+version: 1.5.0

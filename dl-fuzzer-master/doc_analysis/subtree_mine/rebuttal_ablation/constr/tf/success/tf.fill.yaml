@@ -1,0 +1,78 @@
+aliases:
+- tf.compat.v1.fill
+constraints:
+  dims:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D.
+      Represents the shape of the output tensor.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '>=1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  value:
+    descp: A `Tensor`. 0-D (scalar). Value to fill the returned tensor. @compatibility(numpy)
+      Equivalent to np.full @end_compatibility
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[scalar]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - dims
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/fill
+outputs: A `Tensor`. Has the same type as `value`.
+package: tensorflow
+target: fill
+title: tf.fill
+version: 2.1.0

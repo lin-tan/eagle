@@ -1,0 +1,48 @@
+constraints:
+  begin:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. begin[i] specifies
+      the offset into the ''i''th dimension of ''input'' to slice from.'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  size:
+    descp: A Tensor. Must have the same type as begin. size[i] specifies the number
+      of elements of the 'i'th dimension of 'input' to slice. If size[i] is -1, all
+      remaining elements in dimension i are included in the slice (i.e. this is equivalent
+      to setting size[i] = input.dim_size(i) - begin[i]).
+    dtype:
+    - dtype:&begin
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[i]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- i
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - begin
+  - size
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Slice
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Slice
+title: tf.raw_ops.Slice
+version: 2.3.0

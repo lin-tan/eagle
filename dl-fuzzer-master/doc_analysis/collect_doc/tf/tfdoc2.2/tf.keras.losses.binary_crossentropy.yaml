@@ -1,0 +1,32 @@
+aliases:
+- tf.keras.metrics.binary_crossentropy
+- tf.losses.binary_crossentropy
+- tf.metrics.binary_crossentropy
+- tf.compat.v1.keras.losses.binary_crossentropy
+- tf.compat.v1.keras.metrics.binary_crossentropy
+constraints:
+  from_logits:
+    default: 'False'
+    descp: Whether y_pred is expected to be a logits tensor. By default, we assume
+      that y_pred encodes a probability distribution.
+  label_smoothing:
+    default: '0'
+    descp: Float in [0, 1]. If > 0 then smooth the labels.
+  y_pred:
+    descp: The predicted values. shape = [batch_size, d0, .. dN].
+  y_true:
+    descp: Ground truth values. shape = [batch_size, d0, .. dN].
+inputs:
+  optional:
+  - from_logits
+  - label_smoothing
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/losses/binary_crossentropy
+outputs:
+- Binary crossentropy loss value. shape = [batch_size, d0, .. dN-1].
+package: tensorflow
+target: binary_crossentropy
+title: tf.keras.losses.binary_crossentropy
+version: 2.2.0

@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: A `Tensor` of type `string`.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  out_type:
+    default: tf.dtypes.float32
+    descp: 'An optional `tf.DType` from: `tf.float32, tf.float64, tf.int32, tf.int64`.
+      Defaults to `tf.float32`. The numeric type to interpret each string in `string_tensor`
+      as.'
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - An optional D_TYPE from D_TYPE
+    - Defaults to D_TYPE
+    - The D_TYPE type to interpret each D_TYPE in QSTR as
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/to_number
+outputs: A `Tensor` of type `out_type`.
+package: tensorflow
+target: to_number
+title: tf.strings.to_number
+version: 2.1.0

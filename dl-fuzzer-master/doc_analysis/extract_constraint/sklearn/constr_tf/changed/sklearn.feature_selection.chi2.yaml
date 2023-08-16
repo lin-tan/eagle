@@ -1,0 +1,22 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix} of shape (n_samples, n_features) Sample vectors.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  y:
+    descp: array-like of shape (n_samples,) Target vector (class labels).
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional: []
+  required:
+  - X
+  - y
+link: ''
+package: scikit-learn
+target: chi2
+title: sklearn.feature_selection.chi2
+version: 0.24.X

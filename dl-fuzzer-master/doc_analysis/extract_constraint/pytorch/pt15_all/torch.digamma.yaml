@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: the tensor to compute the digamma function on
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.digamma
+package: torch
+ret_type: Tensor
+target: digamma
+title: torch.digamma
+version: 1.5.0

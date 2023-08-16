@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.keras.backend.repeat_elements
+constraints:
+  axis:
+    descp: Axis along which to repeat.
+  rep:
+    descp: Python integer, number of times to repeat.
+  x:
+    descp: Tensor or variable.
+inputs:
+  optional: []
+  required:
+  - x
+  - rep
+  - axis
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/repeat_elements
+outputs:
+- A tensor.
+package: tensorflow
+target: repeat_elements
+title: tf.keras.backend.repeat_elements
+version: 2.3.0

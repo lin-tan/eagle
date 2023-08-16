@@ -1,0 +1,87 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (dictionary|dict)\s+of\s+(\w+)\s+to\s+(\w+):
+    cnt: 6
+    ds_dtype:
+    - \1
+    - \2
+    structure: dict
+  (tuple|list|array)\s+of\s+(\w+):
+    cnt: 73
+    ds_dtype:
+    - \2
+    prereq:
+    - array\s+of\s+flat\s+indices
+    structure: \1
+  ^(first|second|gamma|beta)\s+array:
+    cnt: 50
+    structure: ndarray
+  ^(the\s+)?(input|output)\s+(data\s+)?(array|ndarray):
+    cnt: 986
+    structure: ndarray
+  ^a\s+ndarray\/symbol\s+:
+    cnt: 14
+    structure: ndarray
+  ^the\s+index\s+array:
+    cnt: 5
+    ds_dtype:
+    - int
+    structure: ndarray
+  array\s+of\s+flat\s+indices:
+    cnt: 2
+    ds_dtype:
+    - int
+    structure: ndarray
+  could\s+be\s+(\(.*?\))\s+or\s+\(.*?\):
+    cnt: 1
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  could\s+be\s+\(.*?\)\s+or\s+(\(.*?\)):
+    cnt: 1
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  formatted\s+as\s+(\(.*?\)):
+    cnt: 1
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  height\s+and\s+width:\s+(\((.*?)\)):
+    cnt: 2
+    ds_dtype:
+    - int
+    range: '[0,inf)'
+    structure: tuple
+    value: \1
+  in\s+(\(.*?\))\s+format:
+    cnt: 3
+    structure: tuple
+    value: \1
+  output\s+shape\s+(\(.*?\)):
+    cnt: 6
+    ds_dtype:
+    - int
+    structure: tuple
+    value: \1
+  store\s+output\s+to\s+an\s+existing\s+ndarray:
+    cnt: 10
+    structure: ndarray
+  vector\s+of\s+length\s+'(.*?)':
+    cnt: 4
+    len: \1
+    ndim: 1
+    structure: ndarray
+split_word:
+- ','
+- (
+- )
+target: structure

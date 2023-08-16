@@ -1,0 +1,53 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.apply_channel_shift
+constraints:
+  channel_axis:
+    default: '0'
+    descp: Index of axis for channels in the input tensor.`
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  intensity:
+    descp: Transformation intensity.
+  x:
+    descp: Input tensor. Must be 3D.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    - '>=3'
+    range:
+    - '[0,1]'
+    shape:
+    - '[3]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - channel_axis
+  required:
+  - x
+  - intensity
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/image/apply_channel_shift
+outputs: '`Numpy image tensor.`'
+package: tensorflow
+target: apply_channel_shift
+title: tf.keras.preprocessing.image.apply_channel_shift
+version: 2.1.0

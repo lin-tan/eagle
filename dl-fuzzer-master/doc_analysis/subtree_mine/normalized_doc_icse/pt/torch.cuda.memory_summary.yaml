@@ -1,0 +1,30 @@
+constraints:
+  abbreviated:
+    default: 'False'
+    descp: 'whether to return an abbreviated summary (default: False).'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to return an abbreviated summary default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  device:
+    default: None
+    descp: selected device. Returns printout for the current device, given by `current_device()`,
+      if `device` is `None` (default).
+    doc_dtype: torch.device or int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - selected device
+    - Returns printout for the current device given by current_device if QSTR is QSTR
+      BSTR
+    normalized_docdtype: torch device or D_TYPE optional
+inputs:
+  optional:
+  - device
+  - abbreviated
+  required: []
+link: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_summary
+package: torch
+target: memory_summary
+title: torch.cuda.memory_summary
+version: 1.5.0

@@ -1,0 +1,46 @@
+constraints:
+  backend:
+    default: None
+    descp: The backend to use. Depending on build-time configurations, valid values
+      are `gloo` and `nccl`. By default uses the same backend as the global group.
+      This field should be given as a lowercase string (e.g., `"gloo"`), which can
+      also be accessed via `Backend` attributes (e.g., `Backend.GLOO`).
+    doc_dtype: str or Backend, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The backend to use
+    - Depending on build time configurations, valid values are QSTR
+    - By default uses the same backend as the global group
+    - This field should be given as a lowercase D_TYPE e g , QSTR , which can also
+      be accessed via QSTR attributes e g , Backend GLOO
+    normalized_docdtype: D_TYPE or Backend, optional
+  ranks:
+    default: None
+    descp: List of ranks of group members.
+    doc_dtype: list[int]
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of ranks of group members
+    normalized_docdtype: D_STRUCTURE BSTR
+  timeout:
+    default: datetime.timedelta(0,1800)
+    descp: Timeout for operations executed against the process group. Default value
+      equals 30 minutes. This is only applicable for the `gloo` backend.
+    doc_dtype: timedelta, optional
+    normalized_default: datetime timedelta CONSTANT_NUM CONSTANT_NUM
+    normalized_descp:
+    - Timeout for operations executed against the process group
+    - Default value equals CONSTANT_NUM minutes
+    - This is only applicable for the QSTR PARAM
+    normalized_docdtype: timedelta, optional
+inputs:
+  optional:
+  - ranks
+  - timeout
+  - backend
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.new_group
+package: torch
+target: new_group
+title: torch.distributed.new_group
+version: 1.5.0

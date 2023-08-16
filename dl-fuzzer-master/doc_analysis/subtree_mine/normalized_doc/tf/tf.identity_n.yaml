@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.identity_n
+constraints:
+  input:
+    descp: A list of `Tensor` objects.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE objects
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/identity_n
+outputs: A list of `Tensor` objects. Has the same type as `input`.
+package: tensorflow
+target: identity_n
+title: tf.identity_n
+version: 2.1.0

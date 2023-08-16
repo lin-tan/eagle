@@ -1,0 +1,34 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  values:
+    descp: The values to use where `input` is zero.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - values
+link: https://pytorch.org/docs/1.7.0/generated/torch.heaviside.html#torch.heaviside#torch.heaviside
+package: torch
+ret_type: Tensor
+target: heaviside
+title: torch.heaviside
+version: 1.9.0

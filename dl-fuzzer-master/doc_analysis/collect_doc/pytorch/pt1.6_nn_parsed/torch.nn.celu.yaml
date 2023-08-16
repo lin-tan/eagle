@@ -1,0 +1,19 @@
+constraints:
+  alpha:
+    default: '1.0'
+    descp: 'the  alpha  value for the CELU formulation. Default: 1.0'
+    sig_dtype: float
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+    sig_dtype: bool
+inputs:
+  optional:
+  - alpha
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.CELU.html#torch.nn.CELU#torch.nn.CELU
+package: torch
+target: CELU
+title: torch.nn.CELU
+version: 1.6.0

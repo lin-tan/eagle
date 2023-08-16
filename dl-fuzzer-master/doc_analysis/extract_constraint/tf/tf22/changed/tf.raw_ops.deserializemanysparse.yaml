@@ -1,0 +1,37 @@
+constraints:
+  dtype:
+    descp: A tf.DType. The dtype of the serialized SparseTensor objects.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  serialized_sparse:
+    descp: A Tensor of type string. 2-D, The N serialized SparseTensor objects. Must
+      have 3 columns.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - serialized_sparse
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DeserializeManySparse
+outputs:
+- A tuple of Tensor objects (sparse_indices, sparse_values, sparse_shape).
+- sparse_indices: A Tensor of type int64.
+- sparse_values: A Tensor of type dtype.
+- sparse_shape: A Tensor of type int64.
+package: tensorflow
+target: DeserializeManySparse
+title: tf.raw_ops.DeserializeManySparse
+version: 2.2.0

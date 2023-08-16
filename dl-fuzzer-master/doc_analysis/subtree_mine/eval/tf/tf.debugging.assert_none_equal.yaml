@@ -1,0 +1,8 @@
+constraints:
+  y:
+    descp: Numeric `Tensor`, same dtype as and broadcastable to `x`.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+title: tf.debugging.assert_none_equal

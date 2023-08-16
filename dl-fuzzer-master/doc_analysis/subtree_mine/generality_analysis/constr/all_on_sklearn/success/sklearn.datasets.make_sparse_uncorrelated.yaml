@@ -1,0 +1,37 @@
+constraints:
+  n_features:
+    default: '10'
+    descp: int, optional (default=10) The number of features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_samples:
+    default: '100'
+    descp: int, optional (default=100) The number of samples.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset creation. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+inputs:
+  optional:
+  - n_samples
+  - n_features
+  - random_state
+  required: []
+link: ''
+package: sklearn
+target: make_sparse_uncorrelated
+title: sklearn.datasets.make_sparse_uncorrelated
+version: 0.24.2

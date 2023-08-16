@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.cumprod
+- tf.compat.v1.math.cumprod
+constraints:
+  axis:
+    default: '0'
+    descp: 'A Tensor of type int32 (default: 0). Must be in the range [-rank(x), rank(x)).'
+  exclusive:
+    default: 'False'
+    descp: If True, perform exclusive cumprod.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reverse:
+    default: 'False'
+    descp: 'A bool (default: False).'
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int64,
+      int32, uint8, uint16, int16, int8, complex64, complex128, qint8, quint8, qint32,
+      half.'
+inputs:
+  optional:
+  - axis
+  - exclusive
+  - reverse
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/cumprod
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: cumprod
+title: tf.math.cumprod
+version: 2.2.0

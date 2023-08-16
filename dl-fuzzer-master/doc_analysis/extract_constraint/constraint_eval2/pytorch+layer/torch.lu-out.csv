@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple,"optional output tuple. If `get_infos` is `True`, then the elements in the tuple are Tensor, IntTensor, and IntTensor. If `get_infos` is `False`, then the elements in the tuple are Tensor, IntTensor. Default: `None`",None,nonprim_dtype,structure(tuple),,1
+tuple,"optional output tuple. If `get_infos` is `True`, then the elements in the tuple are Tensor, IntTensor, and IntTensor. If `get_infos` is `False`, then the elements in the tuple are Tensor, IntTensor. Default: `None`",None,shape,ndim(1),,1

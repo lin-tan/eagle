@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Specifies the response when an input string can't be converted using the indicated encoding. One of: `'strict'`: Raise an exception for any illegal substrings.`'replace'`: Replace illegal substrings with `replacement_char`.`'ignore'`: Skip illegal substrings. ",replace,prim_dtype,dtype(tf.string),1,1
+,"Specifies the response when an input string can't be converted using the indicated encoding. One of: `'strict'`: Raise an exception for any illegal substrings.`'replace'`: Replace illegal substrings with `replacement_char`.`'ignore'`: Skip illegal substrings. ",replace,validvalue,enum(strict),0,1
+"","","",validvalue,"enum([strict, replace, ignore]) ",1,0

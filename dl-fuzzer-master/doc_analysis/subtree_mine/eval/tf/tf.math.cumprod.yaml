@@ -1,0 +1,12 @@
+constraints:
+  axis:
+    default: '0'
+    descp: 'A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x),
+      rank(x))`.'
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+title: tf.math.cumprod

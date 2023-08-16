@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  begin:
+    default: _Null
+    descp: starting indices for the slice operation, supports negative indices.
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - starting indices for the slice operation, supports negative indices
+    normalized_docdtype: Shape BSTR, required
+  data:
+    default: None
+    descp: Source input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Source input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  end:
+    default: _Null
+    descp: ending indices for the slice operation, supports negative indices.
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - ending indices for the slice operation, supports negative indices
+    normalized_docdtype: Shape BSTR, required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  step:
+    default: _Null
+    descp: step for the slice operation, supports negative values.
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - step for the slice operation, supports negative values
+    normalized_docdtype: Shape BSTR, optional, default
+inputs:
+  optional:
+  - data
+  - begin
+  - end
+  - step
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.slice
+package: mxnet
+target: slice
+title: mxnet.ndarray.op.slice
+version: 1.6.0

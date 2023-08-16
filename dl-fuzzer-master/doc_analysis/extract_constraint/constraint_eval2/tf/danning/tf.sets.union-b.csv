@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`Tensor` or `SparseTensor` of the same type as `a`. If sparse, indices must be sorted in row-major order.",,prim_dtype,dtype(dtype:&a),1,1
+,"`Tensor` or `SparseTensor` of the same type as `a`. If sparse, indices must be sorted in row-major order.",,nonprim_dtype,"tensor_t(SparseTensor, tf.tensor)",1,1

@@ -1,0 +1,22 @@
+aliases:
+- tf.sqrt
+- tf.compat.v1.math.sqrt
+- tf.compat.v1.sqrt
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`, `complex64`, `complex128`.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/sqrt
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: sqrt
+title: tf.math.sqrt
+version: 2.1.0

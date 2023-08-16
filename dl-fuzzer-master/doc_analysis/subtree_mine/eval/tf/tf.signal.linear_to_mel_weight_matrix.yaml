@@ -1,0 +1,14 @@
+constraints:
+  sample_rate:
+    default: '8000'
+    descp: An integer or float `Tensor`. Samples per second of the input signal used
+      to create the spectrogram. Used to figure out the frequencies corresponding
+      to each spectrogram bin, which dictates how they are mapped into the mel scale.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+title: tf.signal.linear_to_mel_weight_matrix

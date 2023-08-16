@@ -1,0 +1,47 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  lengths:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  value:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - value
+  - lengths
+  - flow_in
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorArraySplitV2
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: TensorArraySplitV2
+title: tf.raw_ops.TensorArraySplitV2
+version: 2.3.0

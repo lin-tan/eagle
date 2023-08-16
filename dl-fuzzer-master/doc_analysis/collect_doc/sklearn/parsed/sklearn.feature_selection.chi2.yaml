@@ -1,0 +1,12 @@
+constraints:
+  X: {descp: '{array-like, sparse matrix} of shape (n_samples, n_features) Sample
+      vectors.'}
+  y: {descp: 'array-like of shape (n_samples,) Target vector (class labels).'}
+inputs:
+  optional: []
+  required: [X, y]
+link: ''
+package: sklearn
+target: chi2
+title: sklearn.feature_selection.chi2
+version: 0.24.2

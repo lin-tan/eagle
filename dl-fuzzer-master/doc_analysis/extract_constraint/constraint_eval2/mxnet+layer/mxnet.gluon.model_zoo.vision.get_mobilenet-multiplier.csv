@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+float,The width multiplier for controling the model size. Only multipliers that are no less than 0.25 are supported. The actual number of channels is equal to the original channel size multiplied by this multiplier.,,prim_dtype,dtype(float),,1
+float,The width multiplier for controling the model size. Only multipliers that are no less than 0.25 are supported. The actual number of channels is equal to the original channel size multiplied by this multiplier.,,validvalue,"range([0,inf))",,1

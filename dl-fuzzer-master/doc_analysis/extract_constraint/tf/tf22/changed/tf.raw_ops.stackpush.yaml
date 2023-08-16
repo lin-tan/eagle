@@ -1,0 +1,37 @@
+constraints:
+  elem:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type mutable string.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  swap_memory:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - swap_memory
+  - name
+  required:
+  - handle
+  - elem
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StackPush
+outputs:
+- A Tensor. Has the same type as elem.
+package: tensorflow
+target: StackPush
+title: tf.raw_ops.StackPush
+version: 2.2.0

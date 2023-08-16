@@ -1,0 +1,67 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: False
+findall: True
+target: ndim
+
+split_word:
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '/'
+    - '>'
+    - '<'
+    - '='
+    # - 'len:'
+    # - 'ndim:'
+    # - 'max_value:'
+    # - 'inf'
+
+pat:
+    '^(a)?\s*(\d)-d':
+        group: 2
+
+    '(\d)-*d\s+tensor':
+        group: 1
+
+    'n-dimensional.*?where\s+n\s*>=\s*(\d)':
+        group: 1
+        prefix: '>='
+
+    'n-dimensional':
+        prereq:
+            - 'n-dimensional.*?where\s+n\s*>=\s*(\d)'
+        ndim: '?'
+
+    'at\s+least\s+(\d)-*(dimensional|d)':
+        group: 1
+        prefix: '>='
+
+    'of\s+at\s+least\s+`(.*)`\s*dimensions':
+        replace:
+            '`': ''
+            '\s': ''
+
+        group: 1
+        prefix: '>='
+        keep_shapevar: True
+
+
+    '(\d)-*(dimensional|d)':
+        prereq: 
+            - 'at\s+least\s+(\d)-*(dimensional|d)'
+        group: 1
+
+    'the\s+(first)?\s*["]*vector["]*':
+        ndim: 1
+
+    
+        
+

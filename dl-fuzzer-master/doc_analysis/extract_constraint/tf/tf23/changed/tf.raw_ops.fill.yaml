@@ -1,0 +1,36 @@
+constraints:
+  dims:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 1-D. Represents
+      the shape of the output tensor.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  value:
+    descp: A Tensor. 0-D (scalar). Value to fill the returned tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - dims
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Fill
+outputs:
+- A Tensor. Has the same type as value.
+package: tensorflow
+target: Fill
+title: tf.raw_ops.Fill
+version: 2.3.0

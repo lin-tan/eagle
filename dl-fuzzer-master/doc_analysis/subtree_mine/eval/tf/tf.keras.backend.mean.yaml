@@ -1,0 +1,9 @@
+constraints:
+  axis:
+    default: None
+    descp: A list of integer. Axes to compute the mean.
+    dtype:
+    - int
+    structure:
+    - list
+title: tf.keras.backend.mean

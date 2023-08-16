@@ -1,0 +1,13 @@
+constraints:
+  grad_scale:
+    default: _Null
+    descp: Scale the gradient by a float factor
+    doc_dtype:
+    - float
+    - optional
+    - default=1
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.LinearRegressionOutput

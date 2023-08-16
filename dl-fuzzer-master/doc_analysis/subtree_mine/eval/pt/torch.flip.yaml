@@ -1,0 +1,12 @@
+constraints:
+  dims:
+    descp: axis to flip on
+    doc_dtype:
+    - a list
+    - tuple
+    structure:
+    - tuple
+    - list
+    dtype:
+    - int
+title: torch.flip

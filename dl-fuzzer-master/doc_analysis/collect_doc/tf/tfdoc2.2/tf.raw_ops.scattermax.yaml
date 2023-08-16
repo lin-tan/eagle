@@ -1,0 +1,32 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor of
+      indices into the first dimension of ref.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  ref:
+    descp: 'A mutable Tensor. Must be one of the following types: half, bfloat16,
+      float32, float64, int32, int64. Should be from a Variable node.'
+  updates:
+    descp: A Tensor. Must have the same type as ref. A tensor of updated values to
+      reduce into ref.
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, the update will be protected
+      by a lock; otherwise the behavior is undefined, but may exhibit less contention.
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - ref
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ScatterMax
+outputs:
+- A mutable Tensor. Has the same type as ref.
+package: tensorflow
+target: ScatterMax
+title: tf.raw_ops.ScatterMax
+version: 2.2.0

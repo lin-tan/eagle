@@ -1,0 +1,48 @@
+constraints:
+  normalize:
+    default: 'True'
+    descp: bool, optional (default=True) If ``False``, return the number of misclassifications.
+      Otherwise, return the fraction of misclassifications.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_pred:
+    descp: 1d array-like, or label indicator array / sparse matrix Predicted labels,
+      as returned by a classifier.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+  y_true:
+    descp: 1d array-like, or label indicator array / sparse matrix Ground truth (correct)
+      labels.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - normalize
+  - sample_weight
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: sklearn
+target: zero_one_loss
+title: sklearn.metrics.zero_one_loss
+version: 0.24.2

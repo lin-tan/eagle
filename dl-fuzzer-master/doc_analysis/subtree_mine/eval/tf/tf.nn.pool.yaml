@@ -1,0 +1,12 @@
+constraints:
+  window_shape:
+    descp: Sequence of N ints >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    range:
+    - '[1,inf)'
+    ndim:
+    - '1'
+title: tf.nn.pool

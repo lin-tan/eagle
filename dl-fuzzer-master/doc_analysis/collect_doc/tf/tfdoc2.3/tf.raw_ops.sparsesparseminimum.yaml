@@ -1,0 +1,40 @@
+constraints:
+  a_indices:
+    descp: A Tensor of type int64. 2-D. N x R matrix with the indices of non-empty
+      values in a SparseTensor, in the canonical lexicographic ordering.
+  a_shape:
+    descp: A Tensor of type int64. 1-D. Shape of the input SparseTensor.
+  a_values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. 1-D. N non-empty values corresponding to a_indices.'
+  b_indices:
+    descp: A Tensor of type int64. counterpart to a_indices for the other operand.
+  b_shape:
+    descp: A Tensor of type int64. counterpart to a_shape for the other operand; the
+      two shapes must be equal.
+  b_values:
+    descp: A Tensor. Must have the same type as a_values. counterpart to a_values
+      for the other operand; must be of the same dtype.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - a_indices
+  - a_values
+  - a_shape
+  - b_indices
+  - b_values
+  - b_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseSparseMinimum
+outputs:
+- A tuple of Tensor objects (output_indices, output_values).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as a_values.
+package: tensorflow
+target: SparseSparseMinimum
+title: tf.raw_ops.SparseSparseMinimum
+version: 2.3.0

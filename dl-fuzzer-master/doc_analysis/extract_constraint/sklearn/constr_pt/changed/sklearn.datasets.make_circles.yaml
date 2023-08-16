@@ -1,0 +1,49 @@
+constraints:
+  factor:
+    default: '0.8'
+    descp: 0 < double < 1 (default=.8) Scale factor between inner and outer circle.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n_samples:
+    default: '100'
+    descp: int, optional (default=100) The total number of points generated. If odd,
+      the inner circle will have one point more than the outer circle.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  noise:
+    default: None
+    descp: double or None (default=None) Standard deviation of Gaussian noise added
+      to the data.
+    dtype:
+    - numpy.double
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset shuffling and noise. Pass an int for reproducible output across
+      multiple function calls. See :term:`Glossary <random_state>`.
+  shuffle:
+    default: 'True'
+    descp: bool, optional (default=True) Whether to shuffle the samples.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_samples
+  - shuffle
+  - noise
+  - random_state
+  - factor
+  required: []
+link: ''
+package: scikit-learn
+target: make_circles
+title: sklearn.datasets.make_circles
+version: 0.24.X

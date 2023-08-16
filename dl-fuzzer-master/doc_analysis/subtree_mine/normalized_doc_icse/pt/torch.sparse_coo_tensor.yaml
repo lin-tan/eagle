@@ -1,0 +1,85 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if None, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype: '`torch.device`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired device of returned D_STRUCTURE
+    - Default if None uses the current device for the default D_STRUCTURE type see
+      torch set_default_tensor_type
+    - QSTR will be the CPU for CPU D_STRUCTURE types and the current CUDA device for
+      CUDA D_STRUCTURE types
+    normalized_docdtype: torch device optional
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if None, infers data
+      type from `values`.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Default if None infers data type from PARAM
+    normalized_docdtype: D_TYPE optional
+  indices:
+    descp: Initial data for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar,
+      and other types. Will be cast to a `torch.LongTensor` internally. The indices
+      are the coordinates of the non-zero values in the matrix, and thus should be
+      two-dimensional where the first dimension is the number of tensor dimensions
+      and the second dimension is the number of non-zero values.
+    doc_dtype: array_like
+    normalized_descp:
+    - Initial data for the D_STRUCTURE
+    - Can be a D_STRUCTURE NumPy D_STRUCTURE scalar and other types
+    - Will be cast to a D_TYPE internally
+    - The indices are the coordinates of the non zero PARAM in the matrix and thus
+      should be two dimensional where the first dimension is the number of D_STRUCTURE
+      dimensions and the second dimension is the number of non zero PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If autograd should record operations on the returned D_STRUCTURE
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  size:
+    default: None
+    descp: Size of the sparse tensor. If not provided the size will be inferred as
+      the minimum size big enough to hold all non-zero elements.
+    doc_dtype: list, tuple, or `torch.Size`, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Size of the sparse D_STRUCTURE
+    - If not provided the size will be inferred as the minimum size big enough to
+      hold all non zero elements
+    normalized_docdtype: D_STRUCTURE or torch Size optional
+  values:
+    descp: Initial values for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar,
+      and other types.
+    doc_dtype: array_like
+    normalized_descp:
+    - Initial values for the D_STRUCTURE
+    - Can be a D_STRUCTURE NumPy D_STRUCTURE scalar and other types
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - size
+  - dtype
+  - device
+  - requires_grad
+  required:
+  - indices
+  - values
+link: https://pytorch.org/docs/stable/torch.html#torch.sparse_coo_tensor
+package: torch
+ret_type: Tensor
+target: sparse_coo_tensor
+title: torch.sparse_coo_tensor
+version: 1.5.0

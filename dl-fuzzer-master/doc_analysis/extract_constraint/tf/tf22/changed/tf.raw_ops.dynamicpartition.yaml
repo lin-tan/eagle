@@ -1,0 +1,40 @@
+constraints:
+  data:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_partitions:
+    descp: An int that is >= 1. The number of partitions to output.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  partitions:
+    descp: A Tensor of type int32. Any shape. Indices in the range [0, num_partitions).
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - partitions
+  - num_partitions
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DynamicPartition
+outputs:
+- A list of num_partitions Tensor objects with the same type as data.
+package: tensorflow
+target: DynamicPartition
+title: tf.raw_ops.DynamicPartition
+version: 2.2.0

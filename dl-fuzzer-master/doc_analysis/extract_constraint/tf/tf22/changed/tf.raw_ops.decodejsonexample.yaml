@@ -1,0 +1,27 @@
+constraints:
+  json_examples:
+    descp: A Tensor of type string. Each string is a JSON object serialized according
+      to the JSON mapping of the Example proto.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - json_examples
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DecodeJSONExample
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: DecodeJSONExample
+title: tf.raw_ops.DecodeJSONExample
+version: 2.2.0

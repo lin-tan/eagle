@@ -1,0 +1,30 @@
+constraints:
+  tensor1:
+    descp: an input tensor or number
+    doc_dtype:
+    - Tensor
+    - Number
+    dtype:
+    - int
+    tensor_t:
+    - torch.tensor
+  tensor2:
+    descp: an input tensor or number
+    doc_dtype:
+    - Tensor
+    - Number
+    dtype:
+    - int
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - tensor1
+  - tensor2
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.result_type
+package: torch
+ret_type: dtype
+target: result_type
+title: torch.result_type
+version: 1.4.0

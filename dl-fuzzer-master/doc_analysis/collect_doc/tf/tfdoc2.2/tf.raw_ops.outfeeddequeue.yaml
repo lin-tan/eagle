@@ -1,0 +1,27 @@
+constraints:
+  device_ordinal:
+    default: '-1'
+    descp: An optional int. Defaults to -1. The TPU device to use. This should be
+      -1 when the Op is running on a TPU device, and >= 0 when the Op is running on
+      the CPU device.
+  dtype:
+    descp: A tf.DType. The type of elements in the tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. The shape of the tensor.
+inputs:
+  optional:
+  - device_ordinal
+  - name
+  required:
+  - dtype
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/OutfeedDequeue
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: OutfeedDequeue
+title: tf.raw_ops.OutfeedDequeue
+version: 2.2.0

@@ -1,0 +1,40 @@
+constraints:
+  n_samples:
+    default: '100'
+    descp: int, optional (default=100) The total number of points generated.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  noise:
+    default: None
+    descp: double or None (default=None) Standard deviation of Gaussian noise added
+      to the data.
+    dtype:
+    - numpy.double
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset shuffling and noise. Pass an int for reproducible output across
+      multiple function calls. See :term:`Glossary <random_state>`.
+  shuffle:
+    default: 'True'
+    descp: bool, optional (default=True) Whether to shuffle the samples.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_samples
+  - shuffle
+  - noise
+  - random_state
+  required: []
+link: ''
+package: scikit-learn
+target: make_moons
+title: sklearn.datasets.make_moons
+version: 0.24.X

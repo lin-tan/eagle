@@ -1,0 +1,22 @@
+constraints:
+  dtype:
+    descp: A tf.DType. the dtype of the value.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource. handle to the resource in which to store the
+      variable.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReadVariableOp
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: ReadVariableOp
+title: tf.raw_ops.ReadVariableOp
+version: 2.3.0

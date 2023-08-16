@@ -1,0 +1,8 @@
+constraints:
+  url:
+    descp: URL to download
+    doc_dtype:
+    - str
+    dtype:
+    - string
+title: mxnet.test_utils.download

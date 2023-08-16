@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.utils.get_registered_name
+constraints:
+  obj:
+    descp: The object to look up.
+inputs:
+  optional: []
+  required:
+  - obj
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/utils/get_registered_name
+outputs:
+- The name associated with the object, or the default Python name if the object is
+  not registered.
+package: tensorflow
+target: get_registered_name
+title: tf.keras.utils.get_registered_name
+version: 2.3.0

@@ -1,0 +1,67 @@
+constraints:
+  bias:
+    default: None
+    descp: 'optional bias of shape (out _channels) . Default: `None`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional bias of shape BSTR
+    - Default QSTR
+  dilation:
+    default: '1'
+    descp: 'the spacing between kernel elements. Can be a single number or a one-element
+      tuple (dW,). Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the spacing between kernel elements
+    - Can be a single number or a one element D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  groups:
+    default: '1'
+    descp: 'split input into groups, in _channels  should be divisible by the number
+      of groups. Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - split PARAM into groups, in channels should be divisible by the number of groups
+    - Default CONSTANT_NUM
+  input:
+    descp: 'input tensor of shape (minibatch , in _channels , iW) '
+    normalized_descp:
+    - input D_STRUCTURE of shape BSTR
+  padding:
+    default: '0'
+    descp: 'implicit paddings on both sides of the input. Can be a single number or
+      a one-element tuple (padW,). Default: 0'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - implicit paddings on both sides of the PARAM
+    - Can be a single number or a one element D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a one-element
+      tuple (sW,). Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the stride of the convolving kernel
+    - Can be a single number or a one element D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  weight:
+    descp: 'filters of shape (out _channels ,  in _channels/groups , kW) '
+    normalized_descp:
+    - filters of shape BSTR
+inputs:
+  optional:
+  - bias
+  - stride
+  - padding
+  - dilation
+  - groups
+  required:
+  - input
+  - weight
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv1d
+package: torch
+ret_type: Tensor
+target: conv1d
+title: torch.nn.functional.conv1d
+version: 1.5.0

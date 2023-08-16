@@ -1,0 +1,11 @@
+constraints:
+  input_signature:
+    default: None
+    descp: A possibly nested sequence of `tf.TensorSpec` objects specifying the shapes
+      and dtypes of the Tensors that will be supplied to this function. If `None`,
+      a separate function is instantiated for each inferred input signature.  If input_signature
+      is specified, every input to`func` must be a `Tensor`, and `func` cannot accept
+      `**kwargs`.
+    structure:
+    - list
+title: tf.function

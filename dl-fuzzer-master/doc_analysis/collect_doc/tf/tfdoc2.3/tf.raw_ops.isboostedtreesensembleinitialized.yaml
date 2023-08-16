@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the tree ensemble resource.
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/IsBoostedTreesEnsembleInitialized
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: IsBoostedTreesEnsembleInitialized
+title: tf.raw_ops.IsBoostedTreesEnsembleInitialized
+version: 2.3.0

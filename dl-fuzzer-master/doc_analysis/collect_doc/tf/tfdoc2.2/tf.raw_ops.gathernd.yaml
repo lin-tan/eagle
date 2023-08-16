@@ -1,0 +1,21 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Index tensor.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  params:
+    descp: A Tensor. The tensor from which to gather values.
+inputs:
+  optional:
+  - name
+  required:
+  - params
+  - indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/GatherNd
+outputs:
+- A Tensor. Has the same type as params.
+package: tensorflow
+target: GatherNd
+title: tf.raw_ops.GatherNd
+version: 2.2.0

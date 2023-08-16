@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.unravel_index
+constraints:
+  dims:
+    descp: A `Tensor`. Must have the same type as `indices`. An 1-D `int` Tensor.
+      The shape of the array to use for unraveling indices.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - An CONSTANT_NUM D D_TYPE D_STRUCTURE
+    - The shape of the D_STRUCTURE to use for unraveling PARAM
+  indices:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. An 0-D
+      or 1-D `int` Tensor whose elements are indices into the flattened version of
+      an array of dimensions dims.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - An CONSTANT_NUM D or CONSTANT_NUM D D_TYPE D_STRUCTURE whose elements are indices
+      into the flattened version of an D_STRUCTURE of dimensions PARAM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - dims
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/unravel_index
+outputs: A `Tensor`. Has the same type as `indices`.
+package: tensorflow
+target: unravel_index
+title: tf.unravel_index
+version: 2.1.0

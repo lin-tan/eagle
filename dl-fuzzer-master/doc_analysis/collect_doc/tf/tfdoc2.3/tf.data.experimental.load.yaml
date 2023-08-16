@@ -1,0 +1,29 @@
+constraints:
+  compression:
+    default: None
+    descp: Optional. The algorithm to use to decompress the data when reading it.
+      Supported options are GZIP and NONE. Defaults to NONE.
+  element_spec:
+    descp: Required. A nested structure of tf.TypeSpec objects matching the structure
+      of an element of the saved dataset and specifying the type of individual element
+      components.
+  path:
+    descp: Required. A path pointing to a previously saved dataset.
+  reader_func:
+    default: None
+    descp: Optional. A function to control how to read data from shards. If present,
+      the function will be traced and executed as graph computation.
+inputs:
+  optional:
+  - compression
+  - reader_func
+  required:
+  - path
+  - element_spec
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/load
+outputs:
+- A tf.data.Dataset instance.
+package: tensorflow
+target: load
+title: tf.data.experimental.load
+version: 2.3.0

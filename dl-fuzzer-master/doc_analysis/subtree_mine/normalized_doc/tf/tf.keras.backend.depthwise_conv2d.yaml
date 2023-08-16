@@ -1,0 +1,52 @@
+aliases:
+- tf.compat.v1.keras.backend.depthwise_conv2d
+constraints:
+  data_format:
+    default: None
+    descp: string, `"channels_last"` or `"channels_first"`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_TYPE, QSTR
+  depthwise_kernel:
+    descp: convolution kernel for the depthwise convolution.
+    normalized_descp:
+    - convolution kernel for the depthwise convolution
+  dilation_rate:
+    default: (1, 1)
+    descp: tuple of integers, dilation rates for the separable convolution.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_STRUCTURE of D_TYPE, dilation rates for the separable convolution
+  padding:
+    default: valid
+    descp: string, `"same"` or `"valid"`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - D_TYPE, QSTR
+  strides:
+    default: (1, 1)
+    descp: strides tuple (length 2).
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - strides D_STRUCTURE BSTR
+  x:
+    descp: input tensor
+    normalized_descp:
+    - input D_STRUCTURE
+exceptions:
+- ValueError: if `data_format` is neither `channels_last` or`channels_first`.
+inputs:
+  optional:
+  - strides
+  - padding
+  - data_format
+  - dilation_rate
+  required:
+  - x
+  - depthwise_kernel
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/depthwise_conv2d
+outputs: Output tensor.
+package: tensorflow
+target: depthwise_conv2d
+title: tf.keras.backend.depthwise_conv2d
+version: 2.1.0

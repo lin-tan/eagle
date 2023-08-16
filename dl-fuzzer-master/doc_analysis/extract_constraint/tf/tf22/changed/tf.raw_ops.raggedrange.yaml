@@ -1,0 +1,49 @@
+constraints:
+  Tsplits:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  deltas:
+    descp: A Tensor. Must have the same type as starts. The deltas of each range.
+    dtype:
+    - dtype:&starts
+    tensor_t:
+    - tf.tensor
+  limits:
+    descp: A Tensor. Must have the same type as starts. The limits of each range.
+    dtype:
+    - dtype:&starts
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  starts:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, float32, float64,
+      int32, int64. The starts of each range.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - Tsplits
+  - name
+  required:
+  - starts
+  - limits
+  - deltas
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RaggedRange
+outputs:
+- A tuple of Tensor objects (rt_nested_splits, rt_dense_values).
+- rt_nested_splits: A Tensor of type Tsplits.
+- rt_dense_values: A Tensor. Has the same type as starts.
+package: tensorflow
+target: RaggedRange
+title: tf.raw_ops.RaggedRange
+version: 2.2.0

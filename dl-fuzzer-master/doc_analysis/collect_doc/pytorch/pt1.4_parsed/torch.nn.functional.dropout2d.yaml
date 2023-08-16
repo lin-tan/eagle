@@ -1,0 +1,24 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'If set to `True`, will do this operation in-place. Default: `False`'
+  input:
+    descp: ''
+  p:
+    default: '0.5'
+    descp: 'probability of a channel to be zeroed. Default: 0.5'
+  training:
+    default: 'True'
+    descp: 'apply dropout if is `True`. Default: `True`'
+inputs:
+  optional:
+  - p
+  - training
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/nn.functional.html#torch.nn.functional.dropout2d
+package: torch
+target: dropout2d
+title: torch.nn.functional.dropout2d
+version: 1.4.0

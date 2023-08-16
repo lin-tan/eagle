@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,0-D `int32` `Tensor`.  Number of top elements to look for along the last dimension (along each row for matrices).,1,prim_dtype,"dtype(int, tf.int32)",,1
+,0-D `int32` `Tensor`.  Number of top elements to look for along the last dimension (along each row for matrices).,1,nonprim_dtype,tensor_t(tf.tensor),,1
+,0-D `int32` `Tensor`.  Number of top elements to look for along the last dimension (along each row for matrices).,1,shape,ndim(0),,1
+,0-D `int32` `Tensor`.  Number of top elements to look for along the last dimension (along each row for matrices).,1,validvalue,"range([0,inf))",,1

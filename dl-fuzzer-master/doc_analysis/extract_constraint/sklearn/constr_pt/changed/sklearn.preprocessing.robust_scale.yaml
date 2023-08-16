@@ -1,0 +1,62 @@
+constraints:
+  X:
+    descp: array-like The data to center and scale.
+  axis:
+    default: '0'
+    descp: int (0 by default) axis used to compute the medians and IQR along. If 0,
+      independently scale each feature, otherwise (if 1) scale each sample.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  copy:
+    default: 'True'
+    descp: boolean, optional, default is True set to False to perform inplace row
+      normalization and avoid a copy (if the input is already a numpy array or a scipy.sparse
+      CSR matrix and if axis is 1).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  quantile_range:
+    default: (25.0, 75.0)
+    descp: 'tuple (q_min, q_max), 0.0 < q_min < q_max < 100.0 Default: (25.0, 75.0)
+      = (1st quantile, 3rd quantile) = IQR Quantile range used to calculate ``scale_``.'
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple:(q_min,q_max)
+  with_centering:
+    default: 'True'
+    descp: boolean, True by default If True, center the data before scaling.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  with_scaling:
+    default: 'True'
+    descp: boolean, True by default If True, scale the data to unit variance (or equivalently,
+      unit standard deviation).
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+dependency:
+- q_max
+- q_min
+inputs:
+  optional:
+  - axis
+  - with_centering
+  - with_scaling
+  - quantile_range
+  - copy
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: robust_scale
+title: sklearn.preprocessing.robust_scale
+version: 0.24.X

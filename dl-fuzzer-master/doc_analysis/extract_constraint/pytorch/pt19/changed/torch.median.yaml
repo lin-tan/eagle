@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.median.html#torch.median#torch.median
+package: torch
+ret_type: Tensor
+target: median
+title: torch.median
+version: 1.9.0

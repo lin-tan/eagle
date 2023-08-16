@@ -1,0 +1,97 @@
+constraints:
+  create_graph:
+    default: 'False'
+    descp: Whether to record gradient graph for computing higher order
+    doc_dtype: bool
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  head_grads:
+    default: None
+    descp: Gradients with respect to heads.
+    doc_dtype: NDArray or list of NDArray or None
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+  heads:
+    descp: Output NDArray(s)
+    doc_dtype: NDArray or list of NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+  retain_graph:
+    default: None
+    descp: Whether to keep computation graph to differentiate again, instead of clearing
+      history and release memory. Defaults to the same value as create_graph.
+    doc_dtype: bool
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  train_mode:
+    default: 'True'
+    descp: Whether to do backward for training or prediction.
+    doc_dtype: bool, optional
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    - '1'
+  variables:
+    descp: Input variables to compute gradients for.
+    doc_dtype: NDArray or list of NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+inputs:
+  optional:
+  - head_grads
+  - retain_graph
+  - create_graph
+  - train_mode
+  required:
+  - heads
+  - variables
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/autograd/index.html#mxnet.autograd.grad
+package: mxnet
+target: grad
+title: mxnet.autograd.grad
+version: 1.6.0

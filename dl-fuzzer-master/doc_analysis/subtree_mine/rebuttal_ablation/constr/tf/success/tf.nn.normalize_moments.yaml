@@ -1,0 +1,105 @@
+aliases:
+- tf.compat.v1.nn.normalize_moments
+constraints:
+  counts:
+    descp: A `Tensor` containing the total count of the data (one value).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  mean_ss:
+    descp: 'A `Tensor` containing the mean sufficient statistics: the (possibly shifted)
+      sum of the elements to average over.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: Name used to scope the operations that compute the moments.
+  shift:
+    descp: A `Tensor` containing the value by which the data is shifted for numerical
+      stability, or `None` if no shift was performed.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - none
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[none,none]'
+    - '[none]'
+    tensor_t:
+    - tf.tensor
+  variance_ss:
+    descp: 'A `Tensor` containing the variance sufficient statistics: the (possibly
+      shifted) squared sum of the data to compute the variance over.'
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (possibly
+    - shifted)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (possibly_shifted)
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - counts
+  - mean_ss
+  - variance_ss
+  - shift
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/normalize_moments
+outputs: 'Two `Tensor` objects: `mean` and `variance`.'
+package: tensorflow
+target: normalize_moments
+title: tf.nn.normalize_moments
+version: 2.1.0

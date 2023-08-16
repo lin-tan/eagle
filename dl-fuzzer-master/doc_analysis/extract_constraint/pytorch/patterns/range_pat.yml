@@ -1,0 +1,20 @@
+append: True
+break: False
+check_dt: False
+direct_map: False
+findall: True
+parse_sent: False
+#save_as_list: True # save as key-value (save only one value)
+target: range
+
+pat:
+    'if\s+`float`,\s+should\s+be\s+between\s+0.0\s+and\s+1.0':
+        brackets: False
+        range: 'torch.float32:[0,1]'
+
+    'absolute\s+number\s+of':
+        brakcets: False
+        range: 'int:[0,inf)'
+
+    'in\s+\[0,\s+infty\]':
+        range: '[0,inf)'

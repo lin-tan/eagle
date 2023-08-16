@@ -1,0 +1,37 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'If set to `True`, will do this operation in-place. Default: `False`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If set to CONSTANT_BOOL, will do this operation in place
+    - Default CONSTANT_BOOL
+  input:
+    descp: ''
+    normalized_descp: []
+  p:
+    default: '0.5'
+    descp: 'probability of an element to be zeroed. Default: 0.5'
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - probability of an element to be zeroed
+    - Default CONSTANT_FLOAT
+  training:
+    default: 'True'
+    descp: 'apply dropout if is `True`. Default: `True`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - apply dropout if is CONSTANT_BOOL
+    - Default CONSTANT_BOOL
+inputs:
+  optional:
+  - p
+  - training
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.dropout
+package: torch
+target: dropout
+title: torch.nn.functional.dropout
+version: 1.5.0

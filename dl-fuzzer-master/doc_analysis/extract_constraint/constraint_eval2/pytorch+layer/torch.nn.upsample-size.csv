@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, Tuple[int] , Tuple[int, int] , Tuple[int, int, int]",output spatial sizes,None,prim_dtype,dtype(int),,1
+"int, Tuple[int] , Tuple[int, int] , Tuple[int, int, int]",output spatial sizes,None,nonprim_dtype,structure(tuple(int)),,1
+"int, Tuple[int] , Tuple[int, int] , Tuple[int, int, int]",output spatial sizes,None,shape,ndim(1),,1
+"int, Tuple[int] , Tuple[int, int] , Tuple[int, int, int]",output spatial sizes,None,validvalue,"range([0,inf))",,1

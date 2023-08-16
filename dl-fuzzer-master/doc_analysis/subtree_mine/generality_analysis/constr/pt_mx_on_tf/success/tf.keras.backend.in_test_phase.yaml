@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.backend.in_test_phase
+constraints:
+  alt:
+    descp: What to return otherwise (tensor or callable that returns a tensor).
+  training:
+    default: None
+    descp: Optional scalar tensor (or Python boolean, or Python integer) specifying
+      the learning phase.
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: What to return in test phase (tensor or callable that returns a tensor).
+inputs:
+  optional:
+  - training
+  required:
+  - x
+  - alt
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/in_test_phase
+outputs: Either `x` or `alt` based on `K.learning_phase`.
+package: tensorflow
+target: in_test_phase
+title: tf.keras.backend.in_test_phase
+version: 2.1.0

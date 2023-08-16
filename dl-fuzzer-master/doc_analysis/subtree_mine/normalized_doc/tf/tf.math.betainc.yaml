@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.betainc
+- tf.compat.v1.math.betainc
+constraints:
+  a:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+  b:
+    descp: A `Tensor`. Must have the same type as `a`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: A `Tensor`. Must have the same type as `a`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - b
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/betainc
+outputs: A `Tensor`. Has the same type as `a`.
+package: tensorflow
+target: betainc
+title: tf.math.betainc
+version: 2.1.0

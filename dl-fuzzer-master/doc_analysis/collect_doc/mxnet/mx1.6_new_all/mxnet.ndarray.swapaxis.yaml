@@ -1,0 +1,36 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: Input array.
+    doc_dtype: NDArray
+  dim1:
+    default: _Null
+    descp: the first axis to be swapped.
+    doc_dtype: int, optional, default='0'
+  dim2:
+    default: _Null
+    descp: the second axis to be swapped.
+    doc_dtype: int, optional, default='0'
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+inputs:
+  optional:
+  - data
+  - dim1
+  - dim2
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.SwapAxis
+package: mxnet
+target: SwapAxis
+title: mxnet.ndarray.SwapAxis
+version: 1.6.0

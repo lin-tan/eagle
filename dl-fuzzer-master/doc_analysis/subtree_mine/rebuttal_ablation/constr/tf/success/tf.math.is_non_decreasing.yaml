@@ -1,0 +1,51 @@
+aliases:
+- tf.compat.v1.debugging.is_non_decreasing
+- tf.compat.v1.is_non_decreasing
+- tf.compat.v1.math.is_non_decreasing
+constraints:
+  name:
+    default: None
+    descp: A name for this operation (optional).  Defaults to "is_non_decreasing"
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: Numeric `Tensor`.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: if `x` is not a numeric tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/is_non_decreasing
+outputs: Boolean `Tensor`, equal to `True` iff `x` is non-decreasing.
+package: tensorflow
+target: is_non_decreasing
+title: tf.math.is_non_decreasing
+version: 2.1.0

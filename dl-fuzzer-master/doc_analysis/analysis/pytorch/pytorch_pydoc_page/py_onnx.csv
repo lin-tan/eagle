@@ -1,0 +1,6 @@
+class,Type,name,input,link,source_code
+,function,torch.onnx.export,"model,args,f,export_params=True,verbose=False,training=False,input_names=None,output_names=None,aten=False,export_raw_ir=False,operator_export_type=None,opset_version=None,_retain_param_name=True,do_constant_folding=False,example_outputs=None,strip_doc_string=True,dynamic_axes=None,keep_initializers_as_inputs=None",https://pytorch.org/docs/stable/onnx.html#torch.onnx.export,https://pytorch.org/docs/stable/_modules/torch/onnx.html#export
+,function,torch.onnx.register_custom_op_symbolic,"symbolic_name,symbolic_fn,opset_version",https://pytorch.org/docs/stable/onnx.html#torch.onnx.register_custom_op_symbolic,https://pytorch.org/docs/stable/_modules/torch/onnx.html#register_custom_op_symbolic
+,function,torch.onnx.operators.shape_as_tensor,x,https://pytorch.org/docs/stable/onnx.html#torch.onnx.operators.shape_as_tensor,https://pytorch.org/docs/stable/_modules/torch/onnx/operators.html#shape_as_tensor
+,function,torch.onnx.set_training,"model,mode",https://pytorch.org/docs/stable/onnx.html#torch.onnx.set_training,https://pytorch.org/docs/stable/_modules/torch/onnx.html#set_training
+,function,torch.onnx.is_in_onnx_export,,https://pytorch.org/docs/stable/onnx.html#torch.onnx.is_in_onnx_export,https://pytorch.org/docs/stable/_modules/torch/onnx.html#is_in_onnx_export

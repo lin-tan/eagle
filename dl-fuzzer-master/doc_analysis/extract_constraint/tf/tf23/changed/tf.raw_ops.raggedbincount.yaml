@@ -1,0 +1,69 @@
+constraints:
+  binary_output:
+    default: 'False'
+    descp: An optional bool. Defaults to False. bool; Whether the kernel should count
+      the appearance or number of occurrences.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  size:
+    descp: A Tensor. Must have the same type as values. non-negative int scalar Tensor.
+    dtype:
+    - dtype:&values
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  splits:
+    descp: A Tensor of type int64. 1D int64 Tensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2D int Tensor.'
+    dtype:
+    - int
+    ndim:
+    - '2'
+    tensor_t:
+    - tf.tensor
+  weights:
+    descp: 'A Tensor. Must be one of the following types: int32, int64, float32, float64.
+      is an int32, int64, float32, or float64 Tensor with the same shape as input,
+      or a length-0 Tensor, in which case it acts as all weights equal to 1.'
+    dtype:
+    - tf.float64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - binary_output
+  - name
+  required:
+  - splits
+  - values
+  - size
+  - weights
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RaggedBincount
+outputs:
+- A Tensor. Has the same type as weights.
+package: tensorflow
+target: RaggedBincount
+title: tf.raw_ops.RaggedBincount
+version: 2.3.0

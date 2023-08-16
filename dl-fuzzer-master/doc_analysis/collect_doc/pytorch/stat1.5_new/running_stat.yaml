@@ -1,0 +1,751 @@
+class_api: []
+class_method:
+- to: https://pytorch.org/docs/stable/nn.html
+- to: https://pytorch.org/docs/stable/nn.html
+- to: https://pytorch.org/docs/stable/nn.html
+- to: https://pytorch.org/docs/stable/nn.html
+- bernoulli_: https://pytorch.org/docs/stable/tensors.html
+- bernoulli_: https://pytorch.org/docs/stable/tensors.html
+- to: https://pytorch.org/docs/stable/tensors.html
+- to: https://pytorch.org/docs/stable/tensors.html
+- to: https://pytorch.org/docs/stable/tensors.html
+- all: https://pytorch.org/docs/stable/tensors.html
+- all: https://pytorch.org/docs/stable/tensors.html
+- any: https://pytorch.org/docs/stable/tensors.html
+- any: https://pytorch.org/docs/stable/tensors.html
+collected:
+  ./pt1.5_new/torch.abs.yaml: https://pytorch.org/docs/stable/torch.html#torch.abs
+  ./pt1.5_new/torch.acos.yaml: https://pytorch.org/docs/stable/torch.html#torch.acos
+  ./pt1.5_new/torch.add.yaml: https://pytorch.org/docs/stable/torch.html#torch.add
+  ./pt1.5_new/torch.addbmm.yaml: https://pytorch.org/docs/stable/torch.html#torch.addbmm
+  ./pt1.5_new/torch.addcdiv.yaml: https://pytorch.org/docs/stable/torch.html#torch.addcdiv
+  ./pt1.5_new/torch.addcmul.yaml: https://pytorch.org/docs/stable/torch.html#torch.addcmul
+  ./pt1.5_new/torch.addmm.yaml: https://pytorch.org/docs/stable/torch.html#torch.addmm
+  ./pt1.5_new/torch.addmv.yaml: https://pytorch.org/docs/stable/torch.html#torch.addmv
+  ./pt1.5_new/torch.addr.yaml: https://pytorch.org/docs/stable/torch.html#torch.addr
+  ./pt1.5_new/torch.allclose.yaml: https://pytorch.org/docs/stable/torch.html#torch.allclose
+  ./pt1.5_new/torch.angle.yaml: https://pytorch.org/docs/stable/torch.html#torch.angle
+  ./pt1.5_new/torch.arange.yaml: https://pytorch.org/docs/stable/torch.html#torch.arange
+  ./pt1.5_new/torch.argmax.yaml: https://pytorch.org/docs/stable/torch.html#torch.argmax
+  ./pt1.5_new/torch.argmax2.yaml: https://pytorch.org/docs/stable/torch.html#torch.argmax
+  ./pt1.5_new/torch.argmin.yaml: https://pytorch.org/docs/stable/torch.html#torch.argmin
+  ./pt1.5_new/torch.argmin2.yaml: https://pytorch.org/docs/stable/torch.html#torch.argmin
+  ./pt1.5_new/torch.argsort.yaml: https://pytorch.org/docs/stable/torch.html#torch.argsort
+  ./pt1.5_new/torch.as_strided.yaml: https://pytorch.org/docs/stable/torch.html#torch.as_strided
+  ./pt1.5_new/torch.as_tensor.yaml: https://pytorch.org/docs/stable/torch.html#torch.as_tensor
+  ./pt1.5_new/torch.asin.yaml: https://pytorch.org/docs/stable/torch.html#torch.asin
+  ./pt1.5_new/torch.atan.yaml: https://pytorch.org/docs/stable/torch.html#torch.atan
+  ./pt1.5_new/torch.atan2.yaml: https://pytorch.org/docs/stable/torch.html#torch.atan2
+  ./pt1.5_new/torch.autograd.backward.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.backward
+  ./pt1.5_new/torch.autograd.functional.hessian.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.hessian
+  ./pt1.5_new/torch.autograd.functional.hvp.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.hvp
+  ./pt1.5_new/torch.autograd.functional.jacobian.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.jacobian
+  ./pt1.5_new/torch.autograd.functional.jvp.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.jvp
+  ./pt1.5_new/torch.autograd.functional.vhp.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.vhp
+  ./pt1.5_new/torch.autograd.functional.vjp.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.vjp
+  ./pt1.5_new/torch.autograd.grad.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.grad
+  ./pt1.5_new/torch.autograd.gradcheck.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.gradcheck
+  ./pt1.5_new/torch.autograd.gradgradcheck.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.gradgradcheck
+  ./pt1.5_new/torch.autograd.profiler.load_nvprof.yaml: https://pytorch.org/docs/stable/autograd.html#torch.autograd.profiler.load_nvprof
+  ./pt1.5_new/torch.baddbmm.yaml: https://pytorch.org/docs/stable/torch.html#torch.baddbmm
+  ./pt1.5_new/torch.bartlett_window.yaml: https://pytorch.org/docs/stable/torch.html#torch.bartlett_window
+  ./pt1.5_new/torch.bernoulli.yaml: https://pytorch.org/docs/stable/torch.html#torch.bernoulli
+  ./pt1.5_new/torch.bincount.yaml: https://pytorch.org/docs/stable/torch.html#torch.bincount
+  ./pt1.5_new/torch.bitwise_and.yaml: https://pytorch.org/docs/stable/torch.html#torch.bitwise_and
+  ./pt1.5_new/torch.bitwise_not.yaml: https://pytorch.org/docs/stable/torch.html#torch.bitwise_not
+  ./pt1.5_new/torch.bitwise_or.yaml: https://pytorch.org/docs/stable/torch.html#torch.bitwise_or
+  ./pt1.5_new/torch.bitwise_xor.yaml: https://pytorch.org/docs/stable/torch.html#torch.bitwise_xor
+  ./pt1.5_new/torch.blackman_window.yaml: https://pytorch.org/docs/stable/torch.html#torch.blackman_window
+  ./pt1.5_new/torch.bmm.yaml: https://pytorch.org/docs/stable/torch.html#torch.bmm
+  ./pt1.5_new/torch.broadcast_tensors.yaml: https://pytorch.org/docs/stable/torch.html#torch.broadcast_tensors
+  ./pt1.5_new/torch.can_cast.yaml: https://pytorch.org/docs/stable/torch.html#torch.can_cast
+  ./pt1.5_new/torch.cartesian_prod.yaml: https://pytorch.org/docs/stable/torch.html#torch.cartesian_prod
+  ./pt1.5_new/torch.cat.yaml: https://pytorch.org/docs/stable/torch.html#torch.cat
+  ./pt1.5_new/torch.cdist.yaml: https://pytorch.org/docs/stable/torch.html#torch.cdist
+  ./pt1.5_new/torch.ceil.yaml: https://pytorch.org/docs/stable/torch.html#torch.ceil
+  ./pt1.5_new/torch.chain_matmul.yaml: https://pytorch.org/docs/stable/torch.html#torch.chain_matmul
+  ./pt1.5_new/torch.cholesky.yaml: https://pytorch.org/docs/stable/torch.html#torch.cholesky
+  ./pt1.5_new/torch.cholesky_inverse.yaml: https://pytorch.org/docs/stable/torch.html#torch.cholesky_inverse
+  ./pt1.5_new/torch.cholesky_solve.yaml: https://pytorch.org/docs/stable/torch.html#torch.cholesky_solve
+  ./pt1.5_new/torch.chunk.yaml: https://pytorch.org/docs/stable/torch.html#torch.chunk
+  ./pt1.5_new/torch.clamp.yaml: https://pytorch.org/docs/stable/torch.html#torch.clamp
+  ./pt1.5_new/torch.combinations.yaml: https://pytorch.org/docs/stable/torch.html#torch.combinations
+  ./pt1.5_new/torch.conj.yaml: https://pytorch.org/docs/stable/torch.html#torch.conj
+  ./pt1.5_new/torch.cos.yaml: https://pytorch.org/docs/stable/torch.html#torch.cos
+  ./pt1.5_new/torch.cosh.yaml: https://pytorch.org/docs/stable/torch.html#torch.cosh
+  ./pt1.5_new/torch.cross.yaml: https://pytorch.org/docs/stable/torch.html#torch.cross
+  ./pt1.5_new/torch.cuda.comm.broadcast.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.broadcast
+  ./pt1.5_new/torch.cuda.comm.broadcast_coalesced.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.broadcast_coalesced
+  ./pt1.5_new/torch.cuda.comm.gather.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.gather
+  ./pt1.5_new/torch.cuda.comm.reduce_add.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.reduce_add
+  ./pt1.5_new/torch.cuda.comm.scatter.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.scatter
+  ./pt1.5_new/torch.cuda.current_stream.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.current_stream
+  ./pt1.5_new/torch.cuda.default_stream.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.default_stream
+  ./pt1.5_new/torch.cuda.get_device_capability.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.get_device_capability
+  ./pt1.5_new/torch.cuda.get_device_name.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.get_device_name
+  ./pt1.5_new/torch.cuda.get_rng_state.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.get_rng_state
+  ./pt1.5_new/torch.cuda.manual_seed.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.manual_seed
+  ./pt1.5_new/torch.cuda.manual_seed_all.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.manual_seed_all
+  ./pt1.5_new/torch.cuda.max_memory_allocated.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.max_memory_allocated
+  ./pt1.5_new/torch.cuda.max_memory_reserved.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.max_memory_reserved
+  ./pt1.5_new/torch.cuda.memory_allocated.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_allocated
+  ./pt1.5_new/torch.cuda.memory_reserved.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_reserved
+  ./pt1.5_new/torch.cuda.memory_stats.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_stats
+  ./pt1.5_new/torch.cuda.memory_summary.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_summary
+  ./pt1.5_new/torch.cuda.nvtx.mark.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.nvtx.mark
+  ./pt1.5_new/torch.cuda.nvtx.range_push.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.nvtx.range_push
+  ./pt1.5_new/torch.cuda.reset_max_memory_allocated.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.reset_max_memory_allocated
+  ./pt1.5_new/torch.cuda.reset_max_memory_cached.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.reset_max_memory_cached
+  ./pt1.5_new/torch.cuda.set_device.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.set_device
+  ./pt1.5_new/torch.cuda.set_rng_state.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.set_rng_state
+  ./pt1.5_new/torch.cuda.stream.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.stream
+  ./pt1.5_new/torch.cuda.synchronize.yaml: https://pytorch.org/docs/stable/cuda.html#torch.cuda.synchronize
+  ./pt1.5_new/torch.cummax.yaml: https://pytorch.org/docs/stable/torch.html#torch.cummax
+  ./pt1.5_new/torch.cummin.yaml: https://pytorch.org/docs/stable/torch.html#torch.cummin
+  ./pt1.5_new/torch.cumprod.yaml: https://pytorch.org/docs/stable/torch.html#torch.cumprod
+  ./pt1.5_new/torch.cumsum.yaml: https://pytorch.org/docs/stable/torch.html#torch.cumsum
+  ./pt1.5_new/torch.det.yaml: https://pytorch.org/docs/stable/torch.html#torch.det
+  ./pt1.5_new/torch.diag.yaml: https://pytorch.org/docs/stable/torch.html#torch.diag
+  ./pt1.5_new/torch.diag_embed.yaml: https://pytorch.org/docs/stable/torch.html#torch.diag_embed
+  ./pt1.5_new/torch.diagflat.yaml: https://pytorch.org/docs/stable/torch.html#torch.diagflat
+  ./pt1.5_new/torch.diagonal.yaml: https://pytorch.org/docs/stable/torch.html#torch.diagonal
+  ./pt1.5_new/torch.digamma.yaml: https://pytorch.org/docs/stable/torch.html#torch.digamma
+  ./pt1.5_new/torch.dist.yaml: https://pytorch.org/docs/stable/torch.html#torch.dist
+  ./pt1.5_new/torch.distributed.all_gather.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.all_gather
+  ./pt1.5_new/torch.distributed.all_gather_multigpu.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.all_gather_multigpu
+  ./pt1.5_new/torch.distributed.all_reduce.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.all_reduce
+  ./pt1.5_new/torch.distributed.barrier.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.barrier
+  ./pt1.5_new/torch.distributed.broadcast.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.broadcast
+  ./pt1.5_new/torch.distributed.broadcast_multigpu.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.broadcast_multigpu
+  ./pt1.5_new/torch.distributed.gather.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.gather
+  ./pt1.5_new/torch.distributed.get_backend.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_backend
+  ./pt1.5_new/torch.distributed.get_rank.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_rank
+  ./pt1.5_new/torch.distributed.get_world_size.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_world_size
+  ./pt1.5_new/torch.distributed.init_process_group.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.init_process_group
+  ./pt1.5_new/torch.distributed.irecv.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.irecv
+  ./pt1.5_new/torch.distributed.isend.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.isend
+  ./pt1.5_new/torch.distributed.new_group.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.new_group
+  ./pt1.5_new/torch.distributed.recv.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.recv
+  ./pt1.5_new/torch.distributed.reduce.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.reduce
+  ./pt1.5_new/torch.distributed.reduce_multigpu.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.reduce_multigpu
+  ./pt1.5_new/torch.distributed.scatter.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.scatter
+  ./pt1.5_new/torch.distributed.send.yaml: https://pytorch.org/docs/stable/distributed.html#torch.distributed.send
+  ./pt1.5_new/torch.distributions.kl.kl_divergence.yaml: https://pytorch.org/docs/stable/distributions.html#torch.distributions.kl.kl_divergence
+  ./pt1.5_new/torch.distributions.kl.register_kl.yaml: https://pytorch.org/docs/stable/distributions.html#torch.distributions.kl.register_kl
+  ./pt1.5_new/torch.div.yaml: https://pytorch.org/docs/stable/torch.html#torch.div
+  ./pt1.5_new/torch.div2.yaml: https://pytorch.org/docs/stable/torch.html#torch.div
+  ./pt1.5_new/torch.eig.yaml: https://pytorch.org/docs/stable/torch.html#torch.eig
+  ./pt1.5_new/torch.einsum.yaml: https://pytorch.org/docs/stable/torch.html#torch.einsum
+  ./pt1.5_new/torch.empty_like.yaml: https://pytorch.org/docs/stable/torch.html#torch.empty_like
+  ./pt1.5_new/torch.empty_strided.yaml: https://pytorch.org/docs/stable/torch.html#torch.empty_strided
+  ./pt1.5_new/torch.eq.yaml: https://pytorch.org/docs/stable/torch.html#torch.eq
+  ./pt1.5_new/torch.erf.yaml: https://pytorch.org/docs/stable/torch.html#torch.erf
+  ./pt1.5_new/torch.erfc.yaml: https://pytorch.org/docs/stable/torch.html#torch.erfc
+  ./pt1.5_new/torch.erfinv.yaml: https://pytorch.org/docs/stable/torch.html#torch.erfinv
+  ./pt1.5_new/torch.exp.yaml: https://pytorch.org/docs/stable/torch.html#torch.exp
+  ./pt1.5_new/torch.expm1.yaml: https://pytorch.org/docs/stable/torch.html#torch.expm1
+  ./pt1.5_new/torch.eye.yaml: https://pytorch.org/docs/stable/torch.html#torch.eye
+  ./pt1.5_new/torch.fft.yaml: https://pytorch.org/docs/stable/torch.html#torch.fft
+  ./pt1.5_new/torch.flatten.yaml: https://pytorch.org/docs/stable/torch.html#torch.flatten
+  ./pt1.5_new/torch.flip.yaml: https://pytorch.org/docs/stable/torch.html#torch.flip
+  ./pt1.5_new/torch.floor.yaml: https://pytorch.org/docs/stable/torch.html#torch.floor
+  ./pt1.5_new/torch.floor_divide.yaml: https://pytorch.org/docs/stable/torch.html#torch.floor_divide
+  ./pt1.5_new/torch.fmod.yaml: https://pytorch.org/docs/stable/torch.html#torch.fmod
+  ./pt1.5_new/torch.full.yaml: https://pytorch.org/docs/stable/torch.html#torch.full
+  ./pt1.5_new/torch.gather.yaml: https://pytorch.org/docs/stable/torch.html#torch.gather
+  ./pt1.5_new/torch.ge.yaml: https://pytorch.org/docs/stable/torch.html#torch.ge
+  ./pt1.5_new/torch.geqrf.yaml: https://pytorch.org/docs/stable/torch.html#torch.geqrf
+  ./pt1.5_new/torch.ger.yaml: https://pytorch.org/docs/stable/torch.html#torch.ger
+  ./pt1.5_new/torch.gt.yaml: https://pytorch.org/docs/stable/torch.html#torch.gt
+  ./pt1.5_new/torch.hamming_window.yaml: https://pytorch.org/docs/stable/torch.html#torch.hamming_window
+  ./pt1.5_new/torch.hann_window.yaml: https://pytorch.org/docs/stable/torch.html#torch.hann_window
+  ./pt1.5_new/torch.histc.yaml: https://pytorch.org/docs/stable/torch.html#torch.histc
+  ./pt1.5_new/torch.hub.download_url_to_file.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.download_url_to_file
+  ./pt1.5_new/torch.hub.help.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.help
+  ./pt1.5_new/torch.hub.list.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.list
+  ./pt1.5_new/torch.hub.load.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.load
+  ./pt1.5_new/torch.hub.load_state_dict_from_url.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.load_state_dict_from_url
+  ./pt1.5_new/torch.hub.set_dir.yaml: https://pytorch.org/docs/stable/hub.html#torch.hub.set_dir
+  ./pt1.5_new/torch.ifft.yaml: https://pytorch.org/docs/stable/torch.html#torch.ifft
+  ./pt1.5_new/torch.imag.yaml: https://pytorch.org/docs/stable/torch.html#torch.imag
+  ./pt1.5_new/torch.index_select.yaml: https://pytorch.org/docs/stable/torch.html#torch.index_select
+  ./pt1.5_new/torch.inverse.yaml: https://pytorch.org/docs/stable/torch.html#torch.inverse
+  ./pt1.5_new/torch.irfft.yaml: https://pytorch.org/docs/stable/torch.html#torch.irfft
+  ./pt1.5_new/torch.is_complex.yaml: https://pytorch.org/docs/stable/torch.html#torch.is_complex
+  ./pt1.5_new/torch.is_floating_point.yaml: https://pytorch.org/docs/stable/torch.html#torch.is_floating_point
+  ./pt1.5_new/torch.is_storage.yaml: https://pytorch.org/docs/stable/torch.html#torch.is_storage
+  ./pt1.5_new/torch.is_tensor.yaml: https://pytorch.org/docs/stable/torch.html#torch.is_tensor
+  ./pt1.5_new/torch.jit.load.yaml: https://pytorch.org/docs/stable/jit.html#torch.jit.load
+  ./pt1.5_new/torch.jit.save.yaml: https://pytorch.org/docs/stable/jit.html#torch.jit.save
+  ./pt1.5_new/torch.jit.script.yaml: https://pytorch.org/docs/stable/jit.html#torch.jit.script
+  ./pt1.5_new/torch.jit.trace.yaml: https://pytorch.org/docs/stable/jit.html#torch.jit.trace
+  ./pt1.5_new/torch.kthvalue.yaml: https://pytorch.org/docs/stable/torch.html#torch.kthvalue
+  ./pt1.5_new/torch.le.yaml: https://pytorch.org/docs/stable/torch.html#torch.le
+  ./pt1.5_new/torch.lerp.yaml: https://pytorch.org/docs/stable/torch.html#torch.lerp
+  ./pt1.5_new/torch.lgamma.yaml: https://pytorch.org/docs/stable/torch.html#torch.lgamma
+  ./pt1.5_new/torch.linspace.yaml: https://pytorch.org/docs/stable/torch.html#torch.linspace
+  ./pt1.5_new/torch.load.yaml: https://pytorch.org/docs/stable/torch.html#torch.load
+  ./pt1.5_new/torch.lobpcg.yaml: https://pytorch.org/docs/stable/torch.html#torch.lobpcg
+  ./pt1.5_new/torch.log.yaml: https://pytorch.org/docs/stable/torch.html#torch.log
+  ./pt1.5_new/torch.log10.yaml: https://pytorch.org/docs/stable/torch.html#torch.log10
+  ./pt1.5_new/torch.log1p.yaml: https://pytorch.org/docs/stable/torch.html#torch.log1p
+  ./pt1.5_new/torch.log2.yaml: https://pytorch.org/docs/stable/torch.html#torch.log2
+  ./pt1.5_new/torch.logdet.yaml: https://pytorch.org/docs/stable/torch.html#torch.logdet
+  ./pt1.5_new/torch.logical_and.yaml: https://pytorch.org/docs/stable/torch.html#torch.logical_and
+  ./pt1.5_new/torch.logical_not.yaml: https://pytorch.org/docs/stable/torch.html#torch.logical_not
+  ./pt1.5_new/torch.logical_or.yaml: https://pytorch.org/docs/stable/torch.html#torch.logical_or
+  ./pt1.5_new/torch.logical_xor.yaml: https://pytorch.org/docs/stable/torch.html#torch.logical_xor
+  ./pt1.5_new/torch.logspace.yaml: https://pytorch.org/docs/stable/torch.html#torch.logspace
+  ./pt1.5_new/torch.logsumexp.yaml: https://pytorch.org/docs/stable/torch.html#torch.logsumexp
+  ./pt1.5_new/torch.lstsq.yaml: https://pytorch.org/docs/stable/torch.html#torch.lstsq
+  ./pt1.5_new/torch.lt.yaml: https://pytorch.org/docs/stable/torch.html#torch.lt
+  ./pt1.5_new/torch.lu.yaml: https://pytorch.org/docs/stable/torch.html#torch.lu
+  ./pt1.5_new/torch.lu_unpack.yaml: https://pytorch.org/docs/stable/torch.html#torch.lu_unpack
+  ./pt1.5_new/torch.manual_seed.yaml: https://pytorch.org/docs/stable/torch.html#torch.manual_seed
+  ./pt1.5_new/torch.masked_select.yaml: https://pytorch.org/docs/stable/torch.html#torch.masked_select
+  ./pt1.5_new/torch.matmul.yaml: https://pytorch.org/docs/stable/torch.html#torch.matmul
+  ./pt1.5_new/torch.matrix_power.yaml: https://pytorch.org/docs/stable/torch.html#torch.matrix_power
+  ./pt1.5_new/torch.matrix_rank.yaml: https://pytorch.org/docs/stable/torch.html#torch.matrix_rank
+  ./pt1.5_new/torch.max.yaml: https://pytorch.org/docs/stable/torch.html#torch.max
+  ./pt1.5_new/torch.max2.yaml: https://pytorch.org/docs/stable/torch.html#torch.max
+  ./pt1.5_new/torch.max22.yaml: https://pytorch.org/docs/stable/torch.html#torch.max
+  ./pt1.5_new/torch.mean.yaml: https://pytorch.org/docs/stable/torch.html#torch.mean
+  ./pt1.5_new/torch.mean2.yaml: https://pytorch.org/docs/stable/torch.html#torch.mean
+  ./pt1.5_new/torch.median.yaml: https://pytorch.org/docs/stable/torch.html#torch.median
+  ./pt1.5_new/torch.median2.yaml: https://pytorch.org/docs/stable/torch.html#torch.median
+  ./pt1.5_new/torch.min.yaml: https://pytorch.org/docs/stable/torch.html#torch.min
+  ./pt1.5_new/torch.min2.yaml: https://pytorch.org/docs/stable/torch.html#torch.min
+  ./pt1.5_new/torch.min22.yaml: https://pytorch.org/docs/stable/torch.html#torch.min
+  ./pt1.5_new/torch.mm.yaml: https://pytorch.org/docs/stable/torch.html#torch.mm
+  ./pt1.5_new/torch.mode.yaml: https://pytorch.org/docs/stable/torch.html#torch.mode
+  ./pt1.5_new/torch.mul.yaml: https://pytorch.org/docs/stable/torch.html#torch.mul
+  ./pt1.5_new/torch.multinomial.yaml: https://pytorch.org/docs/stable/torch.html#torch.multinomial
+  ./pt1.5_new/torch.mv.yaml: https://pytorch.org/docs/stable/torch.html#torch.mv
+  ./pt1.5_new/torch.mvlgamma.yaml: https://pytorch.org/docs/stable/torch.html#torch.mvlgamma
+  ./pt1.5_new/torch.narrow.yaml: https://pytorch.org/docs/stable/torch.html#torch.narrow
+  ./pt1.5_new/torch.ne.yaml: https://pytorch.org/docs/stable/torch.html#torch.ne
+  ./pt1.5_new/torch.neg.yaml: https://pytorch.org/docs/stable/torch.html#torch.neg
+  ./pt1.5_new/torch.nn.functional.adaptive_avg_pool1d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_avg_pool1d
+  ./pt1.5_new/torch.nn.functional.adaptive_avg_pool2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_avg_pool2d
+  ./pt1.5_new/torch.nn.functional.adaptive_avg_pool3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_avg_pool3d
+  ./pt1.5_new/torch.nn.functional.adaptive_max_pool1d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_max_pool1d
+  ./pt1.5_new/torch.nn.functional.adaptive_max_pool2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_max_pool2d
+  ./pt1.5_new/torch.nn.functional.adaptive_max_pool3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.adaptive_max_pool3d
+  ./pt1.5_new/torch.nn.functional.affine_grid.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.affine_grid
+  ./pt1.5_new/torch.nn.functional.avg_pool1d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.avg_pool1d
+  ./pt1.5_new/torch.nn.functional.avg_pool2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.avg_pool2d
+  ./pt1.5_new/torch.nn.functional.avg_pool3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.avg_pool3d
+  ./pt1.5_new/torch.nn.functional.binary_cross_entropy.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.binary_cross_entropy
+  ./pt1.5_new/torch.nn.functional.binary_cross_entropy_with_logits.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.binary_cross_entropy_with_logits
+  ./pt1.5_new/torch.nn.functional.conv1d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv1d
+  ./pt1.5_new/torch.nn.functional.conv2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv2d
+  ./pt1.5_new/torch.nn.functional.conv3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv3d
+  ./pt1.5_new/torch.nn.functional.conv_transpose1d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv_transpose1d
+  ./pt1.5_new/torch.nn.functional.conv_transpose2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv_transpose2d
+  ./pt1.5_new/torch.nn.functional.conv_transpose3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.conv_transpose3d
+  ./pt1.5_new/torch.nn.functional.cosine_similarity.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.cosine_similarity
+  ./pt1.5_new/torch.nn.functional.cross_entropy.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.cross_entropy
+  ./pt1.5_new/torch.nn.functional.ctc_loss.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.ctc_loss
+  ./pt1.5_new/torch.nn.functional.dropout.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.dropout
+  ./pt1.5_new/torch.nn.functional.dropout2d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.dropout2d
+  ./pt1.5_new/torch.nn.functional.dropout3d.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.dropout3d
+  ./pt1.5_new/torch.nn.functional.embedding.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.embedding
+  ./pt1.5_new/torch.nn.functional.glu.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.glu
+  ./pt1.5_new/torch.nn.functional.grid_sample.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.grid_sample
+  ./pt1.5_new/torch.nn.functional.gumbel_softmax.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gumbel_softmax
+  ./pt1.5_new/torch.nn.functional.interpolate.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.interpolate
+  ./pt1.5_new/torch.nn.functional.kl_div.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.kl_div
+  ./pt1.5_new/torch.nn.functional.log_softmax.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.log_softmax
+  ./pt1.5_new/torch.nn.functional.nll_loss.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.nll_loss
+  ./pt1.5_new/torch.nn.functional.normalize.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.normalize
+  ./pt1.5_new/torch.nn.functional.one_hot.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.one_hot
+  ./pt1.5_new/torch.nn.functional.pad.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.pad
+  ./pt1.5_new/torch.nn.functional.pdist.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.pdist
+  ./pt1.5_new/torch.nn.functional.poisson_nll_loss.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.poisson_nll_loss
+  ./pt1.5_new/torch.nn.functional.softmax.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.softmax
+  ./pt1.5_new/torch.nn.functional.softmin.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.softmin
+  ./pt1.5_new/torch.nn.init.calculate_gain.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.calculate_gain
+  ./pt1.5_new/torch.nn.init.constant_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.constant_
+  ./pt1.5_new/torch.nn.init.dirac_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.dirac_
+  ./pt1.5_new/torch.nn.init.eye_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.eye_
+  ./pt1.5_new/torch.nn.init.normal_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.normal_
+  ./pt1.5_new/torch.nn.init.ones_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.ones_
+  ./pt1.5_new/torch.nn.init.orthogonal_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.orthogonal_
+  ./pt1.5_new/torch.nn.init.sparse_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.sparse_
+  ./pt1.5_new/torch.nn.init.uniform_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.uniform_
+  ./pt1.5_new/torch.nn.init.xavier_normal_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.xavier_normal_
+  ./pt1.5_new/torch.nn.init.xavier_uniform_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.xavier_uniform_
+  ./pt1.5_new/torch.nn.init.zeros_.yaml: https://pytorch.org/docs/stable/nn.init.html#torch.nn.init.zeros_
+  ./pt1.5_new/torch.nn.parallel.data_parallel.yaml: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.parallel.data_parallel
+  ./pt1.5_new/torch.nn.quantized.functional.adaptive_avg_pool2d.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.adaptive_avg_pool2d
+  ./pt1.5_new/torch.nn.quantized.functional.avg_pool2d.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.avg_pool2d
+  ./pt1.5_new/torch.nn.quantized.functional.conv2d.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.conv2d
+  ./pt1.5_new/torch.nn.quantized.functional.conv3d.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.conv3d
+  ./pt1.5_new/torch.nn.quantized.functional.interpolate.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.interpolate
+  ./pt1.5_new/torch.nn.quantized.functional.linear.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.linear
+  ./pt1.5_new/torch.nn.quantized.functional.relu.yaml: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.relu
+  ./pt1.5_new/torch.nn.utils.clip_grad_norm_.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.clip_grad_norm_
+  ./pt1.5_new/torch.nn.utils.clip_grad_value_.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.clip_grad_value_
+  ./pt1.5_new/torch.nn.utils.parameters_to_vector.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.parameters_to_vector
+  ./pt1.5_new/torch.nn.utils.prune.custom_from_mask.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.custom_from_mask
+  ./pt1.5_new/torch.nn.utils.prune.global_unstructured.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.global_unstructured
+  ./pt1.5_new/torch.nn.utils.prune.identity.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.identity
+  ./pt1.5_new/torch.nn.utils.prune.is_pruned.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.is_pruned
+  ./pt1.5_new/torch.nn.utils.prune.l1_unstructured.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.l1_unstructured
+  ./pt1.5_new/torch.nn.utils.prune.ln_structured.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.ln_structured
+  ./pt1.5_new/torch.nn.utils.prune.random_structured.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.random_structured
+  ./pt1.5_new/torch.nn.utils.prune.random_unstructured.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.random_unstructured
+  ./pt1.5_new/torch.nn.utils.prune.remove.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.prune.remove
+  ./pt1.5_new/torch.nn.utils.remove_spectral_norm.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.remove_spectral_norm
+  ./pt1.5_new/torch.nn.utils.remove_weight_norm.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.remove_weight_norm
+  ./pt1.5_new/torch.nn.utils.rnn.pack_padded_sequence.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pack_padded_sequence
+  ./pt1.5_new/torch.nn.utils.rnn.pack_sequence.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pack_sequence
+  ./pt1.5_new/torch.nn.utils.rnn.pad_packed_sequence.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pad_packed_sequence
+  ./pt1.5_new/torch.nn.utils.rnn.pad_sequence.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pad_sequence
+  ./pt1.5_new/torch.nn.utils.spectral_norm.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.spectral_norm
+  ./pt1.5_new/torch.nn.utils.vector_to_parameters.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.vector_to_parameters
+  ./pt1.5_new/torch.nn.utils.weight_norm.yaml: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.weight_norm
+  ./pt1.5_new/torch.nonzero.yaml: https://pytorch.org/docs/stable/torch.html#torch.nonzero
+  ./pt1.5_new/torch.norm.yaml: https://pytorch.org/docs/stable/torch.html#torch.norm
+  ./pt1.5_new/torch.normal.yaml: https://pytorch.org/docs/stable/torch.html#torch.normal
+  ./pt1.5_new/torch.normal2.yaml: https://pytorch.org/docs/stable/torch.html#torch.normal
+  ./pt1.5_new/torch.normal22.yaml: https://pytorch.org/docs/stable/torch.html#torch.normal
+  ./pt1.5_new/torch.normal222.yaml: https://pytorch.org/docs/stable/torch.html#torch.normal
+  ./pt1.5_new/torch.numel.yaml: https://pytorch.org/docs/stable/torch.html#torch.numel
+  ./pt1.5_new/torch.ones.yaml: https://pytorch.org/docs/stable/torch.html#torch.ones
+  ./pt1.5_new/torch.ones_like.yaml: https://pytorch.org/docs/stable/torch.html#torch.ones_like
+  ./pt1.5_new/torch.onnx.export.yaml: https://pytorch.org/docs/stable/onnx.html#torch.onnx.export
+  ./pt1.5_new/torch.orgqr.yaml: https://pytorch.org/docs/stable/torch.html#torch.orgqr
+  ./pt1.5_new/torch.ormqr.yaml: https://pytorch.org/docs/stable/torch.html#torch.ormqr
+  ./pt1.5_new/torch.pca_lowrank.yaml: https://pytorch.org/docs/stable/torch.html#torch.pca_lowrank
+  ./pt1.5_new/torch.pinverse.yaml: https://pytorch.org/docs/stable/torch.html#torch.pinverse
+  ./pt1.5_new/torch.poisson.yaml: https://pytorch.org/docs/stable/torch.html#torch.poisson
+  ./pt1.5_new/torch.polygamma.yaml: https://pytorch.org/docs/stable/torch.html#torch.polygamma
+  ./pt1.5_new/torch.pow.yaml: https://pytorch.org/docs/stable/torch.html#torch.pow
+  ./pt1.5_new/torch.pow2.yaml: https://pytorch.org/docs/stable/torch.html#torch.pow
+  ./pt1.5_new/torch.prod.yaml: https://pytorch.org/docs/stable/torch.html#torch.prod
+  ./pt1.5_new/torch.prod2.yaml: https://pytorch.org/docs/stable/torch.html#torch.prod
+  ./pt1.5_new/torch.promote_types.yaml: https://pytorch.org/docs/stable/torch.html#torch.promote_types
+  ./pt1.5_new/torch.qr.yaml: https://pytorch.org/docs/stable/torch.html#torch.qr
+  ./pt1.5_new/torch.quantization.add_observer_.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.add_observer_
+  ./pt1.5_new/torch.quantization.convert.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.convert
+  ./pt1.5_new/torch.quantization.fuse_modules.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.fuse_modules
+  ./pt1.5_new/torch.quantization.prepare.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.prepare
+  ./pt1.5_new/torch.quantization.prepare_qat.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.prepare_qat
+  ./pt1.5_new/torch.quantization.propagate_qconfig_.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.propagate_qconfig_
+  ./pt1.5_new/torch.quantization.quantize.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize
+  ./pt1.5_new/torch.quantization.quantize_qat.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.quantize_qat
+  ./pt1.5_new/torch.quantization.swap_module.yaml: https://pytorch.org/docs/stable/quantization.html#torch.quantization.swap_module
+  ./pt1.5_new/torch.quantize_per_channel.yaml: https://pytorch.org/docs/stable/torch.html#torch.quantize_per_channel
+  ./pt1.5_new/torch.quantize_per_tensor.yaml: https://pytorch.org/docs/stable/torch.html#torch.quantize_per_tensor
+  ./pt1.5_new/torch.rand.yaml: https://pytorch.org/docs/stable/torch.html#torch.rand
+  ./pt1.5_new/torch.rand_like.yaml: https://pytorch.org/docs/stable/torch.html#torch.rand_like
+  ./pt1.5_new/torch.randn.yaml: https://pytorch.org/docs/stable/torch.html#torch.randn
+  ./pt1.5_new/torch.randn_like.yaml: https://pytorch.org/docs/stable/torch.html#torch.randn_like
+  ./pt1.5_new/torch.random.fork_rng.yaml: https://pytorch.org/docs/stable/random.html#torch.random.fork_rng
+  ./pt1.5_new/torch.random.fork_rng2.yaml: https://pytorch.org/docs/stable/random.html
+  ./pt1.5_new/torch.random.manual_seed.yaml: https://pytorch.org/docs/stable/random.html#torch.random.manual_seed
+  ./pt1.5_new/torch.random.manual_seed2.yaml: https://pytorch.org/docs/stable/random.html
+  ./pt1.5_new/torch.random.set_rng_state.yaml: https://pytorch.org/docs/stable/random.html#torch.random.set_rng_state
+  ./pt1.5_new/torch.random.set_rng_state2.yaml: https://pytorch.org/docs/stable/random.html
+  ./pt1.5_new/torch.randperm.yaml: https://pytorch.org/docs/stable/torch.html#torch.randperm
+  ./pt1.5_new/torch.real.yaml: https://pytorch.org/docs/stable/torch.html#torch.real
+  ./pt1.5_new/torch.reciprocal.yaml: https://pytorch.org/docs/stable/torch.html#torch.reciprocal
+  ./pt1.5_new/torch.remainder.yaml: https://pytorch.org/docs/stable/torch.html#torch.remainder
+  ./pt1.5_new/torch.renorm.yaml: https://pytorch.org/docs/stable/torch.html#torch.renorm
+  ./pt1.5_new/torch.repeat_interleave.yaml: https://pytorch.org/docs/stable/torch.html#torch.repeat_interleave
+  ./pt1.5_new/torch.reshape.yaml: https://pytorch.org/docs/stable/torch.html#torch.reshape
+  ./pt1.5_new/torch.result_type.yaml: https://pytorch.org/docs/stable/torch.html#torch.result_type
+  ./pt1.5_new/torch.rfft.yaml: https://pytorch.org/docs/stable/torch.html#torch.rfft
+  ./pt1.5_new/torch.roll.yaml: https://pytorch.org/docs/stable/torch.html#torch.roll
+  ./pt1.5_new/torch.rot90.yaml: https://pytorch.org/docs/stable/torch.html#torch.rot90
+  ./pt1.5_new/torch.round.yaml: https://pytorch.org/docs/stable/torch.html#torch.round
+  ./pt1.5_new/torch.rsqrt.yaml: https://pytorch.org/docs/stable/torch.html#torch.rsqrt
+  ./pt1.5_new/torch.save.yaml: https://pytorch.org/docs/stable/torch.html#torch.save
+  ./pt1.5_new/torch.set_default_dtype.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_default_dtype
+  ./pt1.5_new/torch.set_default_tensor_type.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_default_tensor_type
+  ./pt1.5_new/torch.set_flush_denormal.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_flush_denormal
+  ./pt1.5_new/torch.set_grad_enabled.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_grad_enabled
+  ./pt1.5_new/torch.set_printoptions.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_printoptions
+  ./pt1.5_new/torch.set_rng_state.yaml: https://pytorch.org/docs/stable/torch.html#torch.set_rng_state
+  ./pt1.5_new/torch.sigmoid.yaml: https://pytorch.org/docs/stable/torch.html#torch.sigmoid
+  ./pt1.5_new/torch.sign.yaml: https://pytorch.org/docs/stable/torch.html#torch.sign
+  ./pt1.5_new/torch.sin.yaml: https://pytorch.org/docs/stable/torch.html#torch.sin
+  ./pt1.5_new/torch.sinh.yaml: https://pytorch.org/docs/stable/torch.html#torch.sinh
+  ./pt1.5_new/torch.slogdet.yaml: https://pytorch.org/docs/stable/torch.html#torch.slogdet
+  ./pt1.5_new/torch.solve.yaml: https://pytorch.org/docs/stable/torch.html#torch.solve
+  ./pt1.5_new/torch.sort.yaml: https://pytorch.org/docs/stable/torch.html#torch.sort
+  ./pt1.5_new/torch.sparse.addmm.yaml: https://pytorch.org/docs/stable/sparse.html#torch.sparse.addmm
+  ./pt1.5_new/torch.sparse.mm.yaml: https://pytorch.org/docs/stable/sparse.html#torch.sparse.mm
+  ./pt1.5_new/torch.sparse.sum.yaml: https://pytorch.org/docs/stable/sparse.html#torch.sparse.sum
+  ./pt1.5_new/torch.sparse_coo_tensor.yaml: https://pytorch.org/docs/stable/torch.html#torch.sparse_coo_tensor
+  ./pt1.5_new/torch.split.yaml: https://pytorch.org/docs/stable/torch.html#torch.split
+  ./pt1.5_new/torch.sqrt.yaml: https://pytorch.org/docs/stable/torch.html#torch.sqrt
+  ./pt1.5_new/torch.square.yaml: https://pytorch.org/docs/stable/torch.html#torch.square
+  ./pt1.5_new/torch.squeeze.yaml: https://pytorch.org/docs/stable/torch.html#torch.squeeze
+  ./pt1.5_new/torch.stack.yaml: https://pytorch.org/docs/stable/torch.html#torch.stack
+  ./pt1.5_new/torch.std.yaml: https://pytorch.org/docs/stable/torch.html#torch.std
+  ./pt1.5_new/torch.std2.yaml: https://pytorch.org/docs/stable/torch.html#torch.std
+  ./pt1.5_new/torch.std_mean.yaml: https://pytorch.org/docs/stable/torch.html#torch.std_mean
+  ./pt1.5_new/torch.std_mean2.yaml: https://pytorch.org/docs/stable/torch.html#torch.std_mean
+  ./pt1.5_new/torch.stft.yaml: https://pytorch.org/docs/stable/torch.html#torch.stft
+  ./pt1.5_new/torch.sum.yaml: https://pytorch.org/docs/stable/torch.html#torch.sum
+  ./pt1.5_new/torch.sum2.yaml: https://pytorch.org/docs/stable/torch.html#torch.sum
+  ./pt1.5_new/torch.svd.yaml: https://pytorch.org/docs/stable/torch.html#torch.svd
+  ./pt1.5_new/torch.symeig.yaml: https://pytorch.org/docs/stable/torch.html#torch.symeig
+  ./pt1.5_new/torch.t.yaml: https://pytorch.org/docs/stable/torch.html#torch.t
+  ./pt1.5_new/torch.tan.yaml: https://pytorch.org/docs/stable/torch.html#torch.tan
+  ./pt1.5_new/torch.tanh.yaml: https://pytorch.org/docs/stable/torch.html#torch.tanh
+  ./pt1.5_new/torch.tensor.yaml: https://pytorch.org/docs/stable/torch.html#torch.tensor
+  ./pt1.5_new/torch.tensordot.yaml: https://pytorch.org/docs/stable/torch.html#torch.tensordot
+  ./pt1.5_new/torch.topk.yaml: https://pytorch.org/docs/stable/torch.html#torch.topk
+  ./pt1.5_new/torch.transpose.yaml: https://pytorch.org/docs/stable/torch.html#torch.transpose
+  ./pt1.5_new/torch.trapz.yaml: https://pytorch.org/docs/stable/torch.html#torch.trapz
+  ./pt1.5_new/torch.trapz2.yaml: https://pytorch.org/docs/stable/torch.html#torch.trapz
+  ./pt1.5_new/torch.triangular_solve.yaml: https://pytorch.org/docs/stable/torch.html#torch.triangular_solve
+  ./pt1.5_new/torch.tril.yaml: https://pytorch.org/docs/stable/torch.html#torch.tril
+  ./pt1.5_new/torch.tril_indices.yaml: https://pytorch.org/docs/stable/torch.html#torch.tril_indices
+  ./pt1.5_new/torch.triu.yaml: https://pytorch.org/docs/stable/torch.html#torch.triu
+  ./pt1.5_new/torch.triu_indices.yaml: https://pytorch.org/docs/stable/torch.html#torch.triu_indices
+  ./pt1.5_new/torch.trunc.yaml: https://pytorch.org/docs/stable/torch.html#torch.trunc
+  ./pt1.5_new/torch.unbind.yaml: https://pytorch.org/docs/stable/torch.html#torch.unbind
+  ./pt1.5_new/torch.unique.yaml: https://pytorch.org/docs/stable/torch.html#torch.unique
+  ./pt1.5_new/torch.unique_consecutive.yaml: https://pytorch.org/docs/stable/torch.html#torch.unique_consecutive
+  ./pt1.5_new/torch.unsqueeze.yaml: https://pytorch.org/docs/stable/torch.html#torch.unsqueeze
+  ./pt1.5_new/torch.utils.checkpoint.checkpoint.yaml: https://pytorch.org/docs/stable/checkpoint.html#torch.utils.checkpoint.checkpoint
+  ./pt1.5_new/torch.utils.checkpoint.checkpoint_sequential.yaml: https://pytorch.org/docs/stable/checkpoint.html#torch.utils.checkpoint.checkpoint_sequential
+  ./pt1.5_new/torch.utils.cpp_extension.check_compiler_abi_compatibility.yaml: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.check_compiler_abi_compatibility
+  ./pt1.5_new/torch.utils.cpp_extension.include_paths.yaml: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.include_paths
+  ./pt1.5_new/torch.utils.cpp_extension.load.yaml: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.load
+  ./pt1.5_new/torch.utils.cpp_extension.load_inline.yaml: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.load_inline
+  ./pt1.5_new/torch.utils.data.random_split.yaml: https://pytorch.org/docs/stable/data.html#torch.utils.data.random_split
+  ./pt1.5_new/torch.utils.dlpack.from_dlpack.yaml: https://pytorch.org/docs/stable/dlpack.html#torch.utils.dlpack.from_dlpack
+  ./pt1.5_new/torch.utils.dlpack.to_dlpack.yaml: https://pytorch.org/docs/stable/dlpack.html#torch.utils.dlpack.to_dlpack
+  ./pt1.5_new/torch.utils.model_zoo.load_url.yaml: https://pytorch.org/docs/stable/model_zoo.html#torch.utils.model_zoo.load_url
+  ./pt1.5_new/torch.var.yaml: https://pytorch.org/docs/stable/torch.html#torch.var
+  ./pt1.5_new/torch.var2.yaml: https://pytorch.org/docs/stable/torch.html#torch.var
+  ./pt1.5_new/torch.var_mean.yaml: https://pytorch.org/docs/stable/torch.html#torch.var_mean
+  ./pt1.5_new/torch.var_mean2.yaml: https://pytorch.org/docs/stable/torch.html#torch.var_mean
+  ./pt1.5_new/torch.where.yaml: https://pytorch.org/docs/stable/torch.html#torch.where
+  ./pt1.5_new/torch.zeros.yaml: https://pytorch.org/docs/stable/torch.html#torch.zeros
+  ./pt1.5_new/torch.zeros_like.yaml: https://pytorch.org/docs/stable/torch.html#torch.zeros_like
+deprecated:
+- https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_cached
+- https://pytorch.org/docs/stable/cuda.html#torch.cuda.max_memory_cached
+- https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.upsample
+- https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.upsample_nearest
+- https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.upsample_bilinear
+- https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.upsample
+- https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.upsample_bilinear
+- https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.upsample_nearest
+- https://pytorch.org/docs/stable/torch.html#torch.range
+inside_func:
+- torch.where: https://pytorch.org/docs/stable/torch.html
+- torch.where: https://pytorch.org/docs/stable/torch.html
+- torch.normal: https://pytorch.org/docs/stable/torch.html
+- torch.normal: https://pytorch.org/docs/stable/torch.html
+- torch.normal: https://pytorch.org/docs/stable/torch.html
+- torch.normal: https://pytorch.org/docs/stable/torch.html
+- torch.add: https://pytorch.org/docs/stable/torch.html
+- torch.add: https://pytorch.org/docs/stable/torch.html
+- torch.clamp: https://pytorch.org/docs/stable/torch.html
+- torch.clamp: https://pytorch.org/docs/stable/torch.html
+- torch.div: https://pytorch.org/docs/stable/torch.html
+- torch.div: https://pytorch.org/docs/stable/torch.html
+- torch.mul: https://pytorch.org/docs/stable/torch.html
+- torch.mul: https://pytorch.org/docs/stable/torch.html
+- torch.pow: https://pytorch.org/docs/stable/torch.html
+- torch.pow: https://pytorch.org/docs/stable/torch.html
+- torch.argmax: https://pytorch.org/docs/stable/torch.html
+- torch.argmax: https://pytorch.org/docs/stable/torch.html
+- torch.argmin: https://pytorch.org/docs/stable/torch.html
+- torch.argmin: https://pytorch.org/docs/stable/torch.html
+- torch.mean: https://pytorch.org/docs/stable/torch.html
+- torch.mean: https://pytorch.org/docs/stable/torch.html
+- torch.median: https://pytorch.org/docs/stable/torch.html
+- torch.median: https://pytorch.org/docs/stable/torch.html
+- torch.prod: https://pytorch.org/docs/stable/torch.html
+- torch.prod: https://pytorch.org/docs/stable/torch.html
+- torch.std: https://pytorch.org/docs/stable/torch.html
+- torch.std: https://pytorch.org/docs/stable/torch.html
+- torch.std_mean: https://pytorch.org/docs/stable/torch.html
+- torch.std_mean: https://pytorch.org/docs/stable/torch.html
+- torch.sum: https://pytorch.org/docs/stable/torch.html
+- torch.sum: https://pytorch.org/docs/stable/torch.html
+- torch.var: https://pytorch.org/docs/stable/torch.html
+- torch.var: https://pytorch.org/docs/stable/torch.html
+- torch.var_mean: https://pytorch.org/docs/stable/torch.html
+- torch.var_mean: https://pytorch.org/docs/stable/torch.html
+- torch.max: https://pytorch.org/docs/stable/torch.html
+- torch.max: https://pytorch.org/docs/stable/torch.html
+- torch.max: https://pytorch.org/docs/stable/torch.html
+- torch.min: https://pytorch.org/docs/stable/torch.html
+- torch.min: https://pytorch.org/docs/stable/torch.html
+- torch.min: https://pytorch.org/docs/stable/torch.html
+- torch.repeat_interleave: https://pytorch.org/docs/stable/torch.html
+- torch.repeat_interleave: https://pytorch.org/docs/stable/torch.html
+- torch.trapz: https://pytorch.org/docs/stable/torch.html
+- torch.trapz: https://pytorch.org/docs/stable/torch.html
+multi_func:
+  https://pytorch.org/docs/stable/torch.html#torch.add: 3
+  https://pytorch.org/docs/stable/torch.html#torch.argmax: 3
+  https://pytorch.org/docs/stable/torch.html#torch.argmin: 3
+  https://pytorch.org/docs/stable/torch.html#torch.clamp: 3
+  https://pytorch.org/docs/stable/torch.html#torch.div: 3
+  https://pytorch.org/docs/stable/torch.html#torch.max: 4
+  https://pytorch.org/docs/stable/torch.html#torch.mean: 3
+  https://pytorch.org/docs/stable/torch.html#torch.median: 3
+  https://pytorch.org/docs/stable/torch.html#torch.min: 4
+  https://pytorch.org/docs/stable/torch.html#torch.mul: 3
+  https://pytorch.org/docs/stable/torch.html#torch.normal: 5
+  https://pytorch.org/docs/stable/torch.html#torch.pow: 3
+  https://pytorch.org/docs/stable/torch.html#torch.prod: 3
+  https://pytorch.org/docs/stable/torch.html#torch.repeat_interleave: 3
+  https://pytorch.org/docs/stable/torch.html#torch.std: 3
+  https://pytorch.org/docs/stable/torch.html#torch.std_mean: 3
+  https://pytorch.org/docs/stable/torch.html#torch.sum: 3
+  https://pytorch.org/docs/stable/torch.html#torch.trapz: 3
+  https://pytorch.org/docs/stable/torch.html#torch.var: 3
+  https://pytorch.org/docs/stable/torch.html#torch.var_mean: 3
+  https://pytorch.org/docs/stable/torch.html#torch.where: 3
+no_arg_sect:
+- torch.utils.cpp_extension.CppExtension: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.CppExtension
+- torch.utils.cpp_extension.CUDAExtension: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.CUDAExtension
+- torch.utils.cpp_extension.BuildExtension: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.BuildExtension
+- torch.jit.ignore: https://pytorch.org/docs/stable/jit.html#torch.jit.ignore
+- torch.jit.unused: https://pytorch.org/docs/stable/jit.html#torch.jit.unused
+- torch.jit.export: https://pytorch.org/docs/stable/jit.html#torch.jit.export
+- torch.nn.functional.unfold: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.unfold
+- torch.nn.functional.fold: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.fold
+- torch.nn.functional.max_pool1d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_pool1d
+- torch.nn.functional.max_pool2d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_pool2d
+- torch.nn.functional.max_pool3d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_pool3d
+- torch.nn.functional.max_unpool1d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_unpool1d
+- torch.nn.functional.max_unpool2d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_unpool2d
+- torch.nn.functional.max_unpool3d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.max_unpool3d
+- torch.nn.functional.lp_pool1d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.lp_pool1d
+- torch.nn.functional.lp_pool2d: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.lp_pool2d
+- torch.nn.functional.threshold: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.threshold
+- torch.nn.functional.threshold_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.threshold_
+- torch.nn.functional.relu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.relu
+- torch.nn.functional.relu_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.relu_
+- torch.nn.functional.hardtanh: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.hardtanh
+- torch.nn.functional.hardtanh_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.hardtanh_
+- torch.nn.functional.relu6: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.relu6
+- torch.nn.functional.elu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.elu
+- torch.nn.functional.elu_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.elu_
+- torch.nn.functional.selu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.selu
+- torch.nn.functional.celu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.celu
+- torch.nn.functional.leaky_relu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.leaky_relu
+- torch.nn.functional.leaky_relu_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.leaky_relu_
+- torch.nn.functional.prelu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.prelu
+- torch.nn.functional.rrelu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.rrelu
+- torch.nn.functional.rrelu_: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.rrelu_
+- torch.nn.functional.gelu: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.gelu
+- torch.nn.functional.logsigmoid: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.logsigmoid
+- torch.nn.functional.hardshrink: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.hardshrink
+- torch.nn.functional.tanhshrink: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.tanhshrink
+- torch.nn.functional.softsign: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.softsign
+- torch.nn.functional.softplus: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.softplus
+- torch.nn.functional.softshrink: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.softshrink
+- torch.nn.functional.tanh: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.tanh
+- torch.nn.functional.sigmoid: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.sigmoid
+- torch.nn.functional.batch_norm: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.batch_norm
+- torch.nn.functional.instance_norm: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.instance_norm
+- torch.nn.functional.layer_norm: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.layer_norm
+- torch.nn.functional.local_response_norm: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.local_response_norm
+- torch.nn.functional.linear: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.linear
+- torch.nn.functional.bilinear: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.bilinear
+- torch.nn.functional.alpha_dropout: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.alpha_dropout
+- torch.nn.functional.pairwise_distance: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.pairwise_distance
+- torch.nn.functional.cosine_embedding_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.cosine_embedding_loss
+- torch.nn.functional.hinge_embedding_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.hinge_embedding_loss
+- torch.nn.functional.l1_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.l1_loss
+- torch.nn.functional.mse_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.mse_loss
+- torch.nn.functional.margin_ranking_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.margin_ranking_loss
+- torch.nn.functional.multilabel_margin_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.multilabel_margin_loss
+- torch.nn.functional.multilabel_soft_margin_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.multilabel_soft_margin_loss
+- torch.nn.functional.multi_margin_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.multi_margin_loss
+- torch.nn.functional.smooth_l1_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.smooth_l1_loss
+- torch.nn.functional.soft_margin_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.soft_margin_loss
+- torch.nn.functional.triplet_margin_loss: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.triplet_margin_loss
+- torch.nn.utils.rnn.PackedSequence: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.PackedSequence
+- torch.onnx.register_custom_op_symbolic: https://pytorch.org/docs/stable/onnx.html#torch.onnx.register_custom_op_symbolic
+- torch.onnx.operators.shape_as_tensor: https://pytorch.org/docs/stable/onnx.html#torch.onnx.operators.shape_as_tensor
+- torch.onnx.set_training: https://pytorch.org/docs/stable/onnx.html#torch.onnx.set_training
+- torch.quantization.default_eval_fn: https://pytorch.org/docs/stable/quantization.html#torch.quantization.default_eval_fn
+- torch.quantization.get_observer_dict: https://pytorch.org/docs/stable/quantization.html#torch.quantization.get_observer_dict
+- torch.nn.quantized.functional.max_pool2d: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.max_pool2d
+- torch.from_numpy: https://pytorch.org/docs/stable/torch.html#torch.from_numpy
+- torch.where: https://pytorch.org/docs/stable/torch.html#torch.where
+- torch.set_num_threads: https://pytorch.org/docs/stable/torch.html#torch.set_num_threads
+- torch.set_num_interop_threads: https://pytorch.org/docs/stable/torch.html#torch.set_num_interop_threads
+- torch.frac: https://pytorch.org/docs/stable/torch.html#torch.frac
+- torch.equal: https://pytorch.org/docs/stable/torch.html#torch.equal
+- torch.meshgrid: https://pytorch.org/docs/stable/torch.html#torch.meshgrid
+- torch.repeat_interleave: https://pytorch.org/docs/stable/torch.html#torch.repeat_interleave
+- torch.trace: https://pytorch.org/docs/stable/torch.html#torch.trace
+- torch.dot: https://pytorch.org/docs/stable/torch.html#torch.dot
+- torch.svd_lowrank: https://pytorch.org/docs/stable/torch.html#torch.svd_lowrank
+no_input:
+- torch.utils.cpp_extension.verify_ninja_availability: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.verify_ninja_availability
+- torch.cuda.current_blas_handle: https://pytorch.org/docs/stable/cuda.html#torch.cuda.current_blas_handle
+- torch.cuda.current_device: https://pytorch.org/docs/stable/cuda.html#torch.cuda.current_device
+- torch.cuda.device_count: https://pytorch.org/docs/stable/cuda.html#torch.cuda.device_count
+- torch.cuda.init: https://pytorch.org/docs/stable/cuda.html#torch.cuda.init
+- torch.cuda.ipc_collect: https://pytorch.org/docs/stable/cuda.html#torch.cuda.ipc_collect
+- torch.cuda.is_available: https://pytorch.org/docs/stable/cuda.html#torch.cuda.is_available
+- torch.cuda.is_initialized: https://pytorch.org/docs/stable/cuda.html#torch.cuda.is_initialized
+- torch.cuda.get_rng_state_all: https://pytorch.org/docs/stable/cuda.html#torch.cuda.get_rng_state_all
+- torch.cuda.seed: https://pytorch.org/docs/stable/cuda.html#torch.cuda.seed
+- torch.cuda.seed_all: https://pytorch.org/docs/stable/cuda.html#torch.cuda.seed_all
+- torch.cuda.initial_seed: https://pytorch.org/docs/stable/cuda.html#torch.cuda.initial_seed
+- torch.cuda.empty_cache: https://pytorch.org/docs/stable/cuda.html#torch.cuda.empty_cache
+- torch.cuda.memory_snapshot: https://pytorch.org/docs/stable/cuda.html#torch.cuda.memory_snapshot
+- torch.cuda.nvtx.range_pop: https://pytorch.org/docs/stable/cuda.html#torch.cuda.nvtx.range_pop
+- torch.utils.data.get_worker_info: https://pytorch.org/docs/stable/data.html#torch.utils.data.get_worker_info
+- torch.distributed.is_initialized: https://pytorch.org/docs/stable/distributed.html#torch.distributed.is_initialized
+- torch.distributed.is_mpi_available: https://pytorch.org/docs/stable/distributed.html#torch.distributed.is_mpi_available
+- torch.distributed.is_nccl_available: https://pytorch.org/docs/stable/distributed.html#torch.distributed.is_nccl_available
+- torch.nn.functional.pixel_shuffle: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.pixel_shuffle
+- torch.onnx.is_in_onnx_export: https://pytorch.org/docs/stable/onnx.html#torch.onnx.is_in_onnx_export
+- torch.random.get_rng_state: https://pytorch.org/docs/stable/random.html#torch.random.get_rng_state
+- torch.random.initial_seed: https://pytorch.org/docs/stable/random.html#torch.random.initial_seed
+- torch.random.seed: https://pytorch.org/docs/stable/random.html#torch.random.seed
+- torch.random.get_rng_state: https://pytorch.org/docs/stable/random.html
+- torch.random.seed: https://pytorch.org/docs/stable/random.html
+- torch.random.initial_seed: https://pytorch.org/docs/stable/random.html
+- torch.get_default_dtype: https://pytorch.org/docs/stable/torch.html#torch.get_default_dtype
+- torch.full_like: https://pytorch.org/docs/stable/torch.html#torch.full_like
+- torch.where: https://pytorch.org/docs/stable/torch.html#torch.where
+- torch.seed: https://pytorch.org/docs/stable/torch.html#torch.seed
+- torch.initial_seed: https://pytorch.org/docs/stable/torch.html#torch.initial_seed
+- torch.get_rng_state: https://pytorch.org/docs/stable/torch.html#torch.get_rng_state
+- torch.normal: https://pytorch.org/docs/stable/torch.html#torch.normal
+- torch.randint: https://pytorch.org/docs/stable/torch.html#torch.randint
+- torch.randint_like: https://pytorch.org/docs/stable/torch.html#torch.randint_like
+- torch.get_num_threads: https://pytorch.org/docs/stable/torch.html#torch.get_num_threads
+- torch.get_num_interop_threads: https://pytorch.org/docs/stable/torch.html#torch.get_num_interop_threads
+- torch.no_grad: https://pytorch.org/docs/stable/torch.html#torch.no_grad
+- torch.enable_grad: https://pytorch.org/docs/stable/torch.html#torch.enable_grad
+- torch.add: https://pytorch.org/docs/stable/torch.html#torch.add
+- torch.div: https://pytorch.org/docs/stable/torch.html#torch.div
+- torch.mul: https://pytorch.org/docs/stable/torch.html#torch.mul
+- torch.pow: https://pytorch.org/docs/stable/torch.html#torch.pow
+- torch.argmax: https://pytorch.org/docs/stable/torch.html#torch.argmax
+- torch.argmin: https://pytorch.org/docs/stable/torch.html#torch.argmin
+- torch.mean: https://pytorch.org/docs/stable/torch.html#torch.mean
+- torch.median: https://pytorch.org/docs/stable/torch.html#torch.median
+- torch.prod: https://pytorch.org/docs/stable/torch.html#torch.prod
+- torch.std: https://pytorch.org/docs/stable/torch.html#torch.std
+- torch.std_mean: https://pytorch.org/docs/stable/torch.html#torch.std_mean
+- torch.sum: https://pytorch.org/docs/stable/torch.html#torch.sum
+- torch.var: https://pytorch.org/docs/stable/torch.html#torch.var
+- torch.var_mean: https://pytorch.org/docs/stable/torch.html#torch.var_mean
+- torch.isfinite: https://pytorch.org/docs/stable/torch.html#torch.isfinite
+- torch.isinf: https://pytorch.org/docs/stable/torch.html#torch.isinf
+- torch.isnan: https://pytorch.org/docs/stable/torch.html#torch.isnan
+- torch.max: https://pytorch.org/docs/stable/torch.html#torch.max
+- torch.min: https://pytorch.org/docs/stable/torch.html#torch.min
+- torch.repeat_interleave: https://pytorch.org/docs/stable/torch.html#torch.repeat_interleave
+- torch.trapz: https://pytorch.org/docs/stable/torch.html#torch.trapz
+- torch.compiled_with_cxx11_abi: https://pytorch.org/docs/stable/torch.html#torch.compiled_with_cxx11_abi
+warning:
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/nn.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/nn.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/nn.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/nn.html'
+- 'Warning: [torch.random.get_rng_state] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [torch.random.set_rng_state] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [torch.random.manual_seed] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [torch.random.seed] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [torch.random.initial_seed] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [torch.random.fork_rng] get url offset failed, use parent url https://pytorch.org/docs/stable/random.html'
+- 'Warning: [bernoulli_] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [bernoulli_] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [to] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [all] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [all] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [any] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [any] get url offset failed, use parent url https://pytorch.org/docs/stable/tensors.html'
+- 'Warning: [torch.where] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.where] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.normal] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.normal] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.normal] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.normal] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.add] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.add] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.clamp] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.clamp] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.div] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.div] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.mul] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.mul] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.pow] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.pow] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.argmax] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.argmax] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.argmin] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.argmin] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.median] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.median] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.prod] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.prod] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.std] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.std] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.std_mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.std_mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.sum] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.sum] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.var] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.var] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.var_mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.var_mean] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.max] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.max] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.max] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.min] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.min] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.min] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.repeat_interleave] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.repeat_interleave] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.trapz] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+- 'Warning: [torch.trapz] get url offset failed, use parent url https://pytorch.org/docs/stable/torch.html'
+word_cnt:
+  https://pytorch.org/docs/stable/__config__.html: 0
+  https://pytorch.org/docs/stable/amp.html: 964
+  https://pytorch.org/docs/stable/autograd.html: 6120
+  https://pytorch.org/docs/stable/bottleneck.html: 0
+  https://pytorch.org/docs/stable/checkpoint.html: 404
+  https://pytorch.org/docs/stable/cpp_extension.html: 1376
+  https://pytorch.org/docs/stable/cuda.html: 2713
+  https://pytorch.org/docs/stable/data.html: 1865
+  https://pytorch.org/docs/stable/distributed.html: 2442
+  https://pytorch.org/docs/stable/distributions.html: 5382
+  https://pytorch.org/docs/stable/dlpack.html: 72
+  https://pytorch.org/docs/stable/hub.html: 585
+  https://pytorch.org/docs/stable/jit.html: 2757
+  https://pytorch.org/docs/stable/model_zoo.html: 185
+  https://pytorch.org/docs/stable/name_inference.html: 0
+  https://pytorch.org/docs/stable/named_tensor.html: 963
+  https://pytorch.org/docs/stable/nn.functional.html: 10065
+  https://pytorch.org/docs/stable/nn.html: 44338
+  https://pytorch.org/docs/stable/nn.init.html: 956
+  https://pytorch.org/docs/stable/onnx.html: 1166
+  https://pytorch.org/docs/stable/optim.html: 4413
+  https://pytorch.org/docs/stable/quantization.html: 6049
+  https://pytorch.org/docs/stable/random.html: 394
+  https://pytorch.org/docs/stable/rpc/index.html: 0
+  https://pytorch.org/docs/stable/sparse.html: 544
+  https://pytorch.org/docs/stable/storage.html: 475
+  https://pytorch.org/docs/stable/tensor_attributes.html: 8
+  https://pytorch.org/docs/stable/tensor_view.html: 0
+  https://pytorch.org/docs/stable/tensorboard.html: 1950
+  https://pytorch.org/docs/stable/tensors.html: 9522
+  https://pytorch.org/docs/stable/torch.html: 38829
+  https://pytorch.org/docs/stable/type_info.html: 4

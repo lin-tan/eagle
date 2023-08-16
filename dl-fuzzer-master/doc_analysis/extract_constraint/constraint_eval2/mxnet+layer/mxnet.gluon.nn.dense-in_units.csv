@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional","Size of the input data. If not specified, initialization will be deferred to the first time forward is called and in_units will be inferred from the shape of input data.",0,prim_dtype,dtype(int),,1
+"int, optional","Size of the input data. If not specified, initialization will be deferred to the first time forward is called and in_units will be inferred from the shape of input data.",0,shape,ndim(0),,1

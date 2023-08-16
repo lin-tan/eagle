@@ -1,0 +1,30 @@
+constraints:
+  db_uri:
+    descp: A Tensor of type string.
+  experiment_name:
+    descp: A Tensor of type string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  run_name:
+    descp: A Tensor of type string.
+  user_name:
+    descp: A Tensor of type string.
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - db_uri
+  - experiment_name
+  - run_name
+  - user_name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CreateSummaryDbWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: CreateSummaryDbWriter
+title: tf.raw_ops.CreateSummaryDbWriter
+version: 2.3.0

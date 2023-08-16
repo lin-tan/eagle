@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, optional, default=0",Augmentation Param: Probability to apply random contrast.,None,prim_dtype,dtype(float),,1
+"float, optional, default=0",Augmentation Param: Probability to apply random contrast.,None,shape,ndim(0),,1
+"float, optional, default=0",Augmentation Param: Probability to apply random contrast.,None,validvalue,"range([0,1])",,1

@@ -1,0 +1,37 @@
+constraints:
+  arguments:
+    descp: A list of Tensor objects. A list of tensors whose types are Targuments,
+      corresponding to the inputs the function should be mapped over.
+  captured_inputs:
+    descp: A list of Tensor objects. A list of tensors whose types are Tcaptured,
+      corresponding to the captured inputs of the defun.
+  f:
+    descp: A function decorated with @Defun.
+  max_intra_op_parallelism:
+    default: '1'
+    descp: An optional int. Defaults to 1.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1. A list of shapes.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1. A list of types.
+inputs:
+  optional:
+  - max_intra_op_parallelism
+  - name
+  required:
+  - arguments
+  - captured_inputs
+  - output_types
+  - output_shapes
+  - f
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MapDefun
+outputs:
+- A list of Tensor objects of type output_types.
+package: tensorflow
+target: MapDefun
+title: tf.raw_ops.MapDefun
+version: 2.3.0

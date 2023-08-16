@@ -1,0 +1,23 @@
+constraints:
+  group_assignment:
+    descp: A Tensor of type int32. An int32 tensor with shape [num_groups, num_replicas_per_group].
+      group_assignment[i] represents the replica ids in the ith subgroup.
+  input:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, float32, int32,
+      uint32. The local input to the sum.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - group_assignment
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CrossReplicaSum
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: CrossReplicaSum
+title: tf.raw_ops.CrossReplicaSum
+version: 2.2.0

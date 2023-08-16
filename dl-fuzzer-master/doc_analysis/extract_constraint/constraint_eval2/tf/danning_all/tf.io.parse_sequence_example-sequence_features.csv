@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `dict` mapping feature keys to`FixedLenSequenceFeature` or `VarLenFeature` or `RaggedFeature` values. These features are associated with data within the `FeatureList` section of the `SequenceExample` proto.,None,nonprim_dtype,structure(dict),1,1

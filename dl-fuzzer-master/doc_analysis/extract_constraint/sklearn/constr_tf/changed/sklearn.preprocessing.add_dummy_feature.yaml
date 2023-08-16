@@ -1,0 +1,27 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix}, shape [n_samples, n_features] Data.'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  value:
+    default: '1.0'
+    descp: float Value to use for the dummy feature.
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - value
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: add_dummy_feature
+title: sklearn.preprocessing.add_dummy_feature
+version: 0.24.X

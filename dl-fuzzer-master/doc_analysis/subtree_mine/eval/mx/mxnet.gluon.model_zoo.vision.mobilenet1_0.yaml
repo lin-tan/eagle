@@ -1,0 +1,12 @@
+constraints:
+  pretrained:
+    default: None
+    descp: Whether to load the pretrained weights for model.
+    doc_dtype:
+    - bool
+    - default False
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.gluon.model_zoo.vision.mobilenet1_0

@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.applications.inception_resnet_v2.decode_predictions
+constraints:
+  preds:
+    descp: Numpy array encoding a batch of predictions.
+  top:
+    default: '5'
+    descp: Integer, how many top-guesses to return. Defaults to 5.
+exceptions:
+- ValueError: In case of invalid shape of the pred array (must be 2D).
+inputs:
+  optional:
+  - top
+  required:
+  - preds
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/applications/inception_resnet_v2/decode_predictions
+outputs:
+- A list of lists of top class prediction tuples (class_name, class_description, score).
+  One list of tuples per sample in batch input.
+package: tensorflow
+target: decode_predictions
+title: tf.keras.applications.inception_resnet_v2.decode_predictions
+version: 2.3.0

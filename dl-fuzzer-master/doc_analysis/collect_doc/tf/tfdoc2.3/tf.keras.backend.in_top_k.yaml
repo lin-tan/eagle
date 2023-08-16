@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.backend.in_top_k
+constraints:
+  k:
+    descp: An int, number of top elements to consider.
+  predictions:
+    descp: A tensor of shape (batch_size, classes) and type float32.
+  targets:
+    descp: A 1D tensor of length batch_size and type int32 or int64.
+inputs:
+  optional: []
+  required:
+  - predictions
+  - targets
+  - k
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/in_top_k
+outputs:
+- A 1D tensor of length batch_size and type bool. output[i] is True if predictions[i,
+  targets[i]] is within top-k values of predictions[i].
+package: tensorflow
+target: in_top_k
+title: tf.keras.backend.in_top_k
+version: 2.3.0

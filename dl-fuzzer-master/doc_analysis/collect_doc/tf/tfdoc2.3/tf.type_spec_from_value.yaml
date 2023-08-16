@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.type_spec_from_value
+constraints:
+  value:
+    descp: A value that can be accepted or returned by TensorFlow APIs. Accepted types
+      for value include tf.Tensor, any value that can be converted to tf.Tensor using
+      tf.convert_to_tensor, and any subclass of CompositeTensor (such as tf.RaggedTensor).
+exceptions:
+- TypeError: If a TypeSpec cannot be built for value, because its type is not supported.
+inputs:
+  optional: []
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/type_spec_from_value
+outputs:
+- A TypeSpec that is compatible with value.
+package: tensorflow
+target: type_spec_from_value
+title: tf.type_spec_from_value
+version: 2.3.0

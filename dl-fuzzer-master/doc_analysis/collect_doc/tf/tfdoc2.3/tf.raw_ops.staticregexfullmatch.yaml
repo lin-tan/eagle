@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: A Tensor of type string. A string tensor of the text to be processed.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  pattern:
+    descp: A string. The regular expression to match the input.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - pattern
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StaticRegexFullMatch
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: StaticRegexFullMatch
+title: tf.raw_ops.StaticRegexFullMatch
+version: 2.3.0

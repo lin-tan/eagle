@@ -1,0 +1,25 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  optional:
+    descp: A Tensor of type variant.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - optional
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OptionalGetValue
+outputs:
+- A list of Tensor objects of type output_types.
+package: tensorflow
+target: OptionalGetValue
+title: tf.raw_ops.OptionalGetValue
+version: 2.3.0

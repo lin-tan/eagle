@@ -1,0 +1,36 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*data':
+    descp: Arrays
+    doc_dtype: NDArray[]
+    normalized_descp:
+    - ONE_WORD D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  num_arrays:
+    descp: number of input arrays.
+    doc_dtype: int, required
+    normalized_descp:
+    - number of input D_STRUCTURE
+    normalized_docdtype: D_TYPE, required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - out
+  required:
+  - '*data'
+  - '**kwargs'
+  - num_arrays
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.reset_arrays
+package: mxnet
+target: reset_arrays
+title: mxnet.ndarray.op.reset_arrays
+version: 1.6.0

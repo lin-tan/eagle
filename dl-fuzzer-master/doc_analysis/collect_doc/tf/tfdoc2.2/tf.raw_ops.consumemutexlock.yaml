@@ -1,0 +1,18 @@
+constraints:
+  mutex_lock:
+    descp: A Tensor of type variant. A tensor returned by MutexLock.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - mutex_lock
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ConsumeMutexLock
+outputs:
+- The created Operation.
+package: tensorflow
+target: ConsumeMutexLock
+title: tf.raw_ops.ConsumeMutexLock
+version: 2.2.0

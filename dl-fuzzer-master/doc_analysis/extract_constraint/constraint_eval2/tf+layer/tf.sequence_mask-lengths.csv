@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"integer tensor, all its values <= maxlen.",,prim_dtype,dtype(int),,1
+,"integer tensor, all its values <= maxlen.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"integer tensor, all its values <= maxlen.",,validvalue,"range([0,inf))",,1

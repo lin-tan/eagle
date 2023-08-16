@@ -1,0 +1,18 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T,T]]
+inputs:
+  optional: []
+  required:
+  - padding
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.ReplicationPad2d.html#torch.nn.ReplicationPad2d#torch.nn.ReplicationPad2d
+package: torch
+target: ReplicationPad2d
+title: torch.nn.ReplicationPad2d
+version: 1.6.0

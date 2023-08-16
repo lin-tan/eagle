@@ -1,0 +1,23 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesQuantileStreamResourceHandleOp
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: BoostedTreesQuantileStreamResourceHandleOp
+title: tf.raw_ops.BoostedTreesQuantileStreamResourceHandleOp
+version: 2.2.0

@@ -1,0 +1,67 @@
+constraints:
+  min_cluster_size:
+    default: None
+    descp: int > 1 or float between 0 and 1 (default=None) Minimum number of samples
+      in an OPTICS cluster, expressed as an absolute number or a fraction of the number
+      of samples (rounded to be at least 2). If ``None``, the value of ``min_samples``
+      is used instead.
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  min_samples:
+    descp: int > 1 or float between 0 and 1 The same as the min_samples given to OPTICS.
+      Up and down steep regions can't have more then ``min_samples`` consecutive non-steep
+      points. Expressed as an absolute number or a fraction of the number of samples
+      (rounded to be at least 2).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  ordering:
+    descp: array, shape (n_samples,) OPTICS ordered point indices (`ordering_`)
+  predecessor:
+    descp: array, shape (n_samples,) Predecessors calculated by OPTICS.
+  predecessor_correction:
+    default: 'True'
+    descp: bool, optional (default=True) Correct clusters based on the calculated
+      predecessors.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  reachability:
+    descp: array, shape (n_samples,) Reachability distances calculated by OPTICS (`reachability_`)
+  xi:
+    default: '0.05'
+    descp: float, between 0 and 1, optional (default=0.05) Determines the minimum
+      steepness on the reachability plot that constitutes a cluster boundary. For
+      example, an upwards point in the reachability plot is defined by the ratio from
+      one point to its successor being at most 1-xi.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - min_cluster_size
+  - xi
+  - predecessor_correction
+  required:
+  - reachability
+  - predecessor
+  - ordering
+  - min_samples
+link: ''
+package: sklearn
+target: cluster_optics_xi
+title: sklearn.cluster.cluster_optics_xi
+version: 0.24.2

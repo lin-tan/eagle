@@ -1,0 +1,70 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this accumulator is placed
+      in the given container. Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  dtype:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.int32, tf.uint8, tf.int16,
+      tf.int8, tf.complex64, tf.int64, tf.qint8, tf.quint8, tf.qint32, tf.bfloat16,
+      tf.uint16, tf.complex128, tf.half, tf.uint32, tf.uint64. The type of the value
+      being accumulated.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reduction_type:
+    default: MEAN
+    descp: 'An optional string from: "MEAN", "SUM". Defaults to "MEAN".'
+    dtype:
+    - tf.string
+    enum:
+    - MEAN
+    - SUM
+    ndim:
+    - '0'
+  shape:
+    descp: A tf.TensorShape or list of ints. The shape of the values, can be [], in
+      which case shape is unknown.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this accumulator will
+      be shared under the given name across multiple sessions.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - reduction_type
+  - name
+  required:
+  - dtype
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceConditionalAccumulator
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: ResourceConditionalAccumulator
+title: tf.raw_ops.ResourceConditionalAccumulator
+version: 2.2.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,"If `True`, the Jacobian will be computed in a differentiable manner. Note that when `strict` is `False`, the result can not require gradients or be disconnected from the inputs. Defaults to `False`.",False,prim_dtype,dtype(torch.bool),,1
+bool,"If `True`, the Jacobian will be computed in a differentiable manner. Note that when `strict` is `False`, the result can not require gradients or be disconnected from the inputs. Defaults to `False`.",False,shape,ndim(0),,1

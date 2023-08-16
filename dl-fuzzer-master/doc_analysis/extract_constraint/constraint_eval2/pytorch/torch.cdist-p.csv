@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"p value for the p-norm distance to calculate between each vector pair  in [0,  infty] .",2.0,prim_dtype,dtype(torch.float32),,1
+,"p value for the p-norm distance to calculate between each vector pair  in [0,  infty] .",2.0,shape,ndim(0),,1
+,"p value for the p-norm distance to calculate between each vector pair  in [0,  infty] .",2.0,validvalue,"range([0,inf))",,1

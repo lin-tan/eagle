@@ -1,0 +1,25 @@
+constraints:
+  algorithm:
+    descp: A Tensor of type int64. The RNG algorithm.
+  delta:
+    descp: A Tensor of type int64. The amount of advancement.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource. The handle of the resource variable that stores
+      the state of the RNG.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - algorithm
+  - delta
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RngSkip
+outputs:
+- The created Operation.
+package: tensorflow
+target: RngSkip
+title: tf.raw_ops.RngSkip
+version: 2.2.0

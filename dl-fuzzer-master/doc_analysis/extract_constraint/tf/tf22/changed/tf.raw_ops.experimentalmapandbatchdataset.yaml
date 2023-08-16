@@ -1,0 +1,100 @@
+constraints:
+  batch_size:
+    descp: A Tensor of type int64. A scalar representing the number of elements to
+      accumulate in a batch. It determines the number of concurrent invocations of
+      f that process elements from input_dataset in parallel.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  drop_remainder:
+    descp: A Tensor of type bool. A scalar representing whether the last batch should
+      be dropped in case its size is smaller than desired.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+  f:
+    descp: A function decorated with @Defun. A function to apply to the outputs of
+      input_dataset.
+    dtype:
+    - callable
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the input dataset.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_parallel_calls:
+    descp: A Tensor of type int64. A scalar representing the maximum number of parallel
+      invocations of the map_fn function. Applying the map_fn on consecutive input
+      elements in parallel has the potential to improve input pipeline throughput.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  other_arguments:
+    descp: A list of Tensor objects. A list of tensors, typically values that were
+      captured when building a closure for f.
+    structure:
+    - list(tf.tensor)
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  preserve_cardinality:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - preserve_cardinality
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - batch_size
+  - num_parallel_calls
+  - drop_remainder
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalMapAndBatchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalMapAndBatchDataset
+title: tf.raw_ops.ExperimentalMapAndBatchDataset
+version: 2.2.0

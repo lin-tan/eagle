@@ -1,0 +1,47 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  block_size:
+    default: _Null
+    descp: Blocks of [block_size. block_size] are moved
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Blocks of block_size
+    - block_size are moved
+    normalized_docdtype: D_TYPE, required
+  data:
+    default: None
+    descp: Input ndarray
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - block_size
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.depth_to_space
+package: mxnet
+target: depth_to_space
+title: mxnet.ndarray.depth_to_space
+version: 1.6.0

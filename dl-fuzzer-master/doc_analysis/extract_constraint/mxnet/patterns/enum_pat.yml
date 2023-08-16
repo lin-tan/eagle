@@ -1,0 +1,53 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: enum
+
+stop_word:
+    - 'or'
+    - 'and'
+    # - ''''
+    - ','
+
+
+pat:
+    # group the two togther
+    '"(\w+)"\s+(means|-)\s':
+        group: 1
+
+    '(\d+):\s':
+        group: 1
+
+
+
+
+    'if\s+(\w+)=''(\w+)''':
+        group: 2
+        check_arg: 1
+        
+    '(\d)\s+for\s+[\w\s]+output':
+        group: 1
+
+
+    'currently\s+support\s+(((\s*and\s*)?\''\w+\''[,\s]*)+)\.':
+        group: 1
+
+
+    'only\s+(values\s+of\s+)?(.*?)\s+(are|is)\s+currently\s+supported':
+        group: 2
+
+
+    # Currently ord=1 and ord=2 is supported.
+    'currently\s+(.*?)\s+is\s+supported':
+        replace:
+            'ord': ''
+            '=': ''
+
+        group: 1
+
+    # 0-NN 1-bilinear 2-cubic 3-area 4-lanczos4 9-auto 10-rand.
+    '\s(\d+)-((?!d)(?!th)[a-zA-Z])+':
+        group: 1

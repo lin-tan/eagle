@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If true, then ensure that at least one ngram is generated for each input sequence.  In particular, if an input sequence is shorter than `min(ngram_width) + 2*pad_width`, then generate a single ngram containing the entire sequence.  If false, then no ngrams are generated for these short input sequences.",False,prim_dtype,dtype(tf.bool),,1
+,"If true, then ensure that at least one ngram is generated for each input sequence.  In particular, if an input sequence is shorter than `min(ngram_width) + 2*pad_width`, then generate a single ngram containing the entire sequence.  If false, then no ngrams are generated for these short input sequences.",False,shape,ndim(0),,1

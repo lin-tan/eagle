@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of <float>, optional, default=[1]",Augmentation Param: Maximum crop IOU between crop_box and ground-truth.,None,prim_dtype,dtype(float),,1
+"tuple of <float>, optional, default=[1]",Augmentation Param: Maximum crop IOU between crop_box and ground-truth.,None,nonprim_dtype,structure(tuple(float)),,1
+"tuple of <float>, optional, default=[1]",Augmentation Param: Maximum crop IOU between crop_box and ground-truth.,None,shape,ndim(1),,1

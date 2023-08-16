@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Print this many entries of each tensor.,None,prim_dtype,dtype(int),1,1
+,Print this many entries of each tensor.,None,shape,ndim(0),1,1
+,Print this many entries of each tensor.,None,validvalue,"range([0,inf))",1,1

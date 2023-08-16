@@ -1,0 +1,21 @@
+constraints:
+  beta1:
+    default: _Null
+    descp: The decay rate for the 1st moment estimates.
+    doc_dtype:
+    - float
+    - optional
+    - default=0.899999976
+    dtype:
+    - float
+    ndim:
+    - '0'
+  t:
+    default: _Null
+    descp: Index update count.
+    doc_dtype:
+    - int
+    - required
+    dtype:
+    - int
+title: mxnet.ndarray.op.lamb_update_phase1

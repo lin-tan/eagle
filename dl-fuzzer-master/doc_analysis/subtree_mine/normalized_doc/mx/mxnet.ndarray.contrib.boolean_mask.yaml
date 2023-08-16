@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: An integer that represents the axis in NDArray to mask from.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - An D_TYPE that represents the axis in D_STRUCTURE to mask from
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  data:
+    default: None
+    descp: Data
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  index:
+    default: None
+    descp: Mask
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Mask
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - index
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.boolean_mask
+package: mxnet
+target: boolean_mask
+title: mxnet.ndarray.contrib.boolean_mask
+version: 1.6.0

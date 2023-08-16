@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `bool`. Defaults to `False`. If True, spend CPU/RAM to reduce size with no quality change.",False,prim_dtype,dtype(tf.bool),,1
+,"An optional `bool`. Defaults to `False`. If True, spend CPU/RAM to reduce size with no quality change.",False,shape,ndim(0),,1
+,"An optional `bool`. Defaults to `False`. If True, spend CPU/RAM to reduce size with no quality change.",False,validvalue,"range([0,inf))",,1

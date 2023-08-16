@@ -1,0 +1,24 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'If set to `True`, will do this operation in-place. Default: `False`'
+  input:
+    descp: ''
+  p:
+    default: '0.5'
+    descp: 'dropout probability of a channel to be zeroed. Default: 0.5'
+  training:
+    default: 'False'
+    descp: 'apply dropout if is `True`. Default: `True`'
+inputs:
+  optional:
+  - p
+  - training
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.feature_alpha_dropout
+package: torch
+target: feature_alpha_dropout
+title: torch.nn.functional.feature_alpha_dropout
+version: 1.7.0

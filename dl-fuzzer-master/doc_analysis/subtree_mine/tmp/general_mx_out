@@ -1,0 +1,2392 @@
+Creating path ./constr/tf_pt_on_mx/fail
+Creating path ./constr/tf_pt_on_mx/success
+[9853] Extracting mxnet.gluon.nn.globalmaxpool3d.yaml
+Finish mxnet.gluon.nn.globalmaxpool3d.yaml, Time: 5.009418249130249
+[9853] Extracting mxnet.ndarray.utils.load.yaml
+Finish mxnet.ndarray.utils.load.yaml, Time: 5.181753396987915
+[9853] Extracting mxnet.ndarray.to_dlpack_for_write.yaml
+Finish mxnet.ndarray.to_dlpack_for_write.yaml, Time: 5.476907730102539
+[9853] Extracting mxnet.ndarray.arcsin.yaml
+Finish mxnet.ndarray.arcsin.yaml, Time: 7.685389280319214
+[9853] Extracting mxnet.util.get_cuda_compute_capability.yaml
+Finish mxnet.util.get_cuda_compute_capability.yaml, Time: 7.702042818069458
+[9853] Extracting mxnet.ndarray.op.slice.yaml
+Finish mxnet.ndarray.op.slice.yaml, Time: 7.969031572341919
+[9853] Extracting mxnet.ndarray.op.shape_array.yaml
+Finish mxnet.ndarray.op.shape_array.yaml, Time: 7.9292311668396
+[9853] Extracting mxnet.ndarray.op.lrn.yaml
+Finish mxnet.ndarray.op.lrn.yaml, Time: 8.349284648895264
+[9853] Extracting mxnet.ndarray.op.cosh.yaml
+Finish mxnet.ndarray.op.cosh.yaml, Time: 8.515908002853394
+[9853] Extracting mxnet.ndarray.op.elemwise_sub.yaml
+Finish mxnet.ndarray.op.elemwise_sub.yaml, Time: 8.586129188537598
+[9853] Extracting mxnet.ndarray.equal.yaml
+Finish mxnet.ndarray.equal.yaml, Time: 8.686321496963501
+[9853] Extracting mxnet.ndarray.op.cast_storage.yaml
+Finish mxnet.ndarray.op.cast_storage.yaml, Time: 8.805884838104248
+[9853] Extracting mxnet.optimizer.ndabs.yaml
+Finish mxnet.optimizer.ndabs.yaml, Time: 8.947017669677734
+[9853] Extracting mxnet.ndarray.reverse.yaml
+Finish mxnet.ndarray.reverse.yaml, Time: 9.086670160293579
+[9853] Extracting mxnet.ndarray.multi_sum_sq.yaml
+Finish mxnet.ndarray.multi_sum_sq.yaml, Time: 9.226541996002197
+[9853] Extracting mxnet.ndarray.op.amp_multicast.yaml
+Unable to find map from None to data type for arg cast_narrow with subtree type the
+Unable to find map from None to data type for arg num_outputs with subtree type the
+Finish mxnet.ndarray.op.amp_multicast.yaml, Time: 9.671282529830933
+[9853] Extracting mxnet.ndarray.op.log10.yaml
+Finish mxnet.ndarray.op.log10.yaml, Time: 9.698607444763184
+[9853] Extracting mxnet.ndarray.sparse.log2.yaml
+Finish mxnet.ndarray.sparse.log2.yaml, Time: 9.75515604019165
+[9853] Extracting mxnet.contrib.ndarray.allclose.yaml
+Finish mxnet.contrib.ndarray.allclose.yaml, Time: 9.885561466217041
+[9853] Extracting mxnet.ndarray.op.sgd_update.yaml
+Finish mxnet.ndarray.op.sgd_update.yaml, Time: 9.93495798110962
+[9853] Extracting mxnet.ndarray.fullyconnected.yaml
+Finish mxnet.ndarray.fullyconnected.yaml, Time: 10.101911067962646
+[9853] Extracting mxnet.autograd.record.yaml
+Finish mxnet.autograd.record.yaml, Time: 10.22533917427063
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet_v2_1_0.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet_v2_1_0.yaml, Time: 10.23110580444336
+[9853] Extracting mxnet.ndarray.sign.yaml
+Finish mxnet.ndarray.sign.yaml, Time: 10.33374834060669
+[9853] Extracting mxnet.ndarray.logical_and.yaml
+Finish mxnet.ndarray.logical_and.yaml, Time: 10.445504188537598
+[9853] Extracting mxnet.test_utils.same_array.yaml
+Finish mxnet.test_utils.same_array.yaml, Time: 10.62731671333313
+[9853] Extracting mxnet.contrib.ndarray.quantized_elemwise_add.yaml
+Finish mxnet.contrib.ndarray.quantized_elemwise_add.yaml, Time: 11.016867637634277
+[9853] Extracting mxnet.kvstore.create.yaml
+Unable to find map from None to data type for arg name with subtree type of
+Unable to find map from None to data type for arg name with subtree type the
+Unable to find map from None to data type for arg name with subtree type the -1 of
+Unable to find map from None to data type for arg name with subtree type the -1 of
+Finish mxnet.kvstore.create.yaml, Time: 11.016938209533691
+[9853] Extracting mxnet.ndarray.size_array.yaml
+Finish mxnet.ndarray.size_array.yaml, Time: 11.127762794494629
+[9853] Extracting mxnet.ndarray.log1p.yaml
+Finish mxnet.ndarray.log1p.yaml, Time: 11.238914728164673
+[9853] Extracting mxnet.ndarray.random.generalized_negative_binomial_like.yaml
+Finish mxnet.ndarray.random.generalized_negative_binomial_like.yaml, Time: 11.373297929763794
+[9853] Extracting mxnet.ndarray.elementwisesum.yaml
+Finish mxnet.ndarray.elementwisesum.yaml, Time: 10.99477505683899
+[9853] Extracting mxnet.ndarray.contrib.fft.yaml
+Finish mxnet.ndarray.contrib.fft.yaml, Time: 11.40653109550476
+[9853] Extracting mxnet.ndarray.op.one_hot.yaml
+Finish mxnet.ndarray.op.one_hot.yaml, Time: 11.50788950920105
+[9853] Extracting mxnet.contrib.ndarray.backward_index_copy.yaml
+Finish mxnet.contrib.ndarray.backward_index_copy.yaml, Time: 11.357087135314941
+[9853] Extracting mxnet.ndarray.linalg.gelqf.yaml
+Finish mxnet.ndarray.linalg.gelqf.yaml, Time: 11.49678921699524
+[9853] Extracting mxnet.contrib.onnx.import_model.yaml
+Finish mxnet.contrib.onnx.import_model.yaml, Time: 11.335294961929321
+[9853] Extracting mxnet.contrib.autograd.mark_variables.yaml
+Finish mxnet.contrib.autograd.mark_variables.yaml, Time: 11.517185926437378
+[9853] Extracting mxnet.ndarray.ravel_multi_index.yaml
+Finish mxnet.ndarray.ravel_multi_index.yaml, Time: 11.431328296661377
+[9853] Extracting mxnet.ndarray.identity.yaml
+Finish mxnet.ndarray.identity.yaml, Time: 11.423957824707031
+[9853] Extracting mxnet.ndarray.linalg.syrk.yaml
+Finish mxnet.ndarray.linalg.syrk.yaml, Time: 11.395862579345703
+[9853] Extracting mxnet.ndarray.contrib.backward_hawkesll.yaml
+Finish mxnet.ndarray.contrib.backward_hawkesll.yaml, Time: 11.595088481903076
+[9853] Extracting mxnet.ndarray.op.tanh.yaml
+Finish mxnet.ndarray.op.tanh.yaml, Time: 11.44542670249939
+[9853] Extracting mxnet.ndarray.contrib.interleaved_matmul_selfatt_valatt.yaml
+Finish mxnet.ndarray.contrib.interleaved_matmul_selfatt_valatt.yaml, Time: 11.603170156478882
+[9853] Extracting mxnet.ndarray.contrib.while_loop.yaml
+Finish mxnet.ndarray.contrib.while_loop.yaml, Time: 11.47052788734436
+[9853] Extracting mxnet.gluon.model_zoo.vision.inception_v3.yaml
+Finish mxnet.gluon.model_zoo.vision.inception_v3.yaml, Time: 11.750017881393433
+[9853] Extracting mxnet.ndarray.argmin.yaml
+Finish mxnet.ndarray.argmin.yaml, Time: 12.014808654785156
+[9853] Extracting mxnet.ndarray.op.flip.yaml
+Finish mxnet.ndarray.op.flip.yaml, Time: 11.866224765777588
+[9853] Extracting mxnet.ndarray.op.mp_lamb_update_phase2.yaml
+Finish mxnet.ndarray.op.mp_lamb_update_phase2.yaml, Time: 12.140956401824951
+[9853] Extracting mxnet.ndarray.bilinearsampler.yaml
+Finish mxnet.ndarray.bilinearsampler.yaml, Time: 12.070240497589111
+[9853] Extracting mxnet.contrib.ndarray.quantized_concat.yaml
+Finish mxnet.contrib.ndarray.quantized_concat.yaml, Time: 12.096113920211792
+[9853] Extracting mxnet.ndarray.op.stack.yaml
+Finish mxnet.ndarray.op.stack.yaml, Time: 12.092529773712158
+[9853] Extracting mxnet.gluon.nn.symbolblock.yaml
+Finish mxnet.gluon.nn.symbolblock.yaml, Time: 12.199077129364014
+[9853] Extracting mxnet.ndarray.op.logisticregressionoutput.yaml
+Finish mxnet.ndarray.op.logisticregressionoutput.yaml, Time: 12.293227672576904
+[9853] Extracting mxnet.ndarray.op.linalg_inverse.yaml
+Finish mxnet.ndarray.op.linalg_inverse.yaml, Time: 11.958873510360718
+[9853] Extracting mxnet.ndarray.rsqrt.yaml
+Finish mxnet.ndarray.rsqrt.yaml, Time: 12.00180721282959
+[9853] Extracting mxnet.ndarray.radians.yaml
+Finish mxnet.ndarray.radians.yaml, Time: 12.239978313446045
+[9853] Extracting mxnet.ndarray.contrib.edge_id.yaml
+Finish mxnet.ndarray.contrib.edge_id.yaml, Time: 12.183524131774902
+[9853] Extracting mxnet.ndarray.op.space_to_depth.yaml
+Finish mxnet.ndarray.op.space_to_depth.yaml, Time: 12.058863878250122
+[9853] Extracting mxnet.ndarray.shuffle.yaml
+Finish mxnet.ndarray.shuffle.yaml, Time: 12.17448616027832
+[9853] Extracting mxnet.ndarray.cos.yaml
+Finish mxnet.ndarray.cos.yaml, Time: 12.163988828659058
+[9853] Extracting mxnet.ndarray.op.log1p.yaml
+Finish mxnet.ndarray.op.log1p.yaml, Time: 12.185532569885254
+[9853] Extracting mxnet.ndarray.op.multi_sum_sq.yaml
+Finish mxnet.ndarray.op.multi_sum_sq.yaml, Time: 12.206912994384766
+[9853] Extracting mxnet.ndarray.op.softmax_cross_entropy.yaml
+Finish mxnet.ndarray.op.softmax_cross_entropy.yaml, Time: 12.299967050552368
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg11.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg11.yaml, Time: 12.427810907363892
+[9853] Extracting mxnet.ndarray.broadcast_mod.yaml
+Finish mxnet.ndarray.broadcast_mod.yaml, Time: 12.406709671020508
+[9853] Extracting mxnet.ndarray.contrib.dgl_graph_compact.yaml
+Finish mxnet.ndarray.contrib.dgl_graph_compact.yaml, Time: 12.415606498718262
+[9853] Extracting mxnet.contrib.ndarray.interleaved_matmul_selfatt_valatt.yaml
+Finish mxnet.contrib.ndarray.interleaved_matmul_selfatt_valatt.yaml, Time: 12.582808017730713
+[9853] Extracting mxnet.ndarray.op.sort.yaml
+Finish mxnet.ndarray.op.sort.yaml, Time: 12.534605503082275
+[9853] Extracting mxnet.ndarray.sample_uniform.yaml
+Finish mxnet.ndarray.sample_uniform.yaml, Time: 12.694241046905518
+[9853] Extracting mxnet.ndarray.multi_lars.yaml
+Finish mxnet.ndarray.multi_lars.yaml, Time: 12.998218774795532
+[9853] Extracting mxnet.model.save_checkpoint.yaml
+Finish mxnet.model.save_checkpoint.yaml, Time: 12.727534770965576
+[9853] Extracting mxnet.ndarray.op.multi_sgd_mom_update.yaml
+Finish mxnet.ndarray.op.multi_sgd_mom_update.yaml, Time: 13.117679119110107
+[9853] Extracting mxnet.ndarray.random_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.random_generalized_negative_binomial.yaml, Time: 12.884424448013306
+[9853] Extracting mxnet.ndarray.contrib.arange_like.yaml
+Finish mxnet.ndarray.contrib.arange_like.yaml, Time: 13.240314960479736
+[9853] Extracting mxnet.ndarray.op.embedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg sparse_grad with subtree type the
+Finish mxnet.ndarray.op.embedding.yaml, Time: 13.157297372817993
+[9853] Extracting mxnet.ndarray.op.random_normal.yaml
+Finish mxnet.ndarray.op.random_normal.yaml, Time: 12.826641082763672
+[9853] Extracting mxnet.ndarray.op.multi_mp_sgd_update.yaml
+Finish mxnet.ndarray.op.multi_mp_sgd_update.yaml, Time: 13.196070194244385
+[9853] Extracting mxnet.gluon.rnn.rnncell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.rnn.rnncell.yaml, Time: 13.362361192703247
+[9853] Extracting mxnet.ndarray.random_negative_binomial.yaml
+Finish mxnet.ndarray.random_negative_binomial.yaml, Time: 13.243788719177246
+[9853] Extracting mxnet.ndarray.signsgd_update.yaml
+Finish mxnet.ndarray.signsgd_update.yaml, Time: 13.450370788574219
+[9853] Extracting mxnet.ndarray.contrib.hawkesll.yaml
+Finish mxnet.ndarray.contrib.hawkesll.yaml, Time: 13.256030559539795
+[9853] Extracting mxnet.ndarray.op.linalg_trmm.yaml
+Finish mxnet.ndarray.op.linalg_trmm.yaml, Time: 13.440391540527344
+[9853] Extracting mxnet.contrib.ndarray.psroipooling.yaml
+Finish mxnet.contrib.ndarray.psroipooling.yaml, Time: 13.493584156036377
+[9853] Extracting mxnet.recordio.pack_img.yaml
+Finish mxnet.recordio.pack_img.yaml, Time: 13.424428224563599
+[9853] Extracting mxnet.profiler.set_config.yaml
+Unable to find map from None to data type for arg profile_process with subtree type of
+Finish mxnet.profiler.set_config.yaml, Time: 13.656425476074219
+[9853] Extracting mxnet.contrib.ndarray.quantized_fully_connected.yaml
+Finish mxnet.contrib.ndarray.quantized_fully_connected.yaml, Time: 14.320738554000854
+[9853] Extracting mxnet.ndarray.mp_lamb_update_phase1.yaml
+Finish mxnet.ndarray.mp_lamb_update_phase1.yaml, Time: 14.957427978515625
+[9853] Extracting mxnet.ndarray.op.rmspropalex_update.yaml
+Finish mxnet.ndarray.op.rmspropalex_update.yaml, Time: 14.964308738708496
+[9853] Extracting mxnet.ndarray.op.sum_axis.yaml
+Finish mxnet.ndarray.op.sum_axis.yaml, Time: 16.060383558273315
+[9853] Extracting mxnet.gluon.contrib.rnn.conv1dgrucell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv1dgrucell.yaml, Time: 16.344711780548096
+[9853] Extracting mxnet.ndarray.op.softmax.yaml
+Finish mxnet.ndarray.op.softmax.yaml, Time: 16.172960996627808
+[9853] Extracting mxnet.ndarray.op.sgd_mom_update.yaml
+Finish mxnet.ndarray.op.sgd_mom_update.yaml, Time: 16.408957481384277
+[9853] Extracting mxnet.gluon.contrib.rnn.conv2dlstmcell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv2dlstmcell.yaml, Time: 16.467137813568115
+[9853] Extracting mxnet.ndarray.linspace.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.linspace.yaml, Time: 17.219425439834595
+[9853] Extracting mxnet.ndarray.op.adam_update.yaml
+Finish mxnet.ndarray.op.adam_update.yaml, Time: 17.97537875175476
+[9853] Extracting mxnet.ndarray.norm.yaml
+Unable to find map from None to data type for arg out_dtype with subtree type of
+Unable to find map from None to data type for arg out_dtype with subtree type the
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Finish mxnet.ndarray.norm.yaml, Time: 22.84713125228882
+[9853] Extracting mxnet.ndarray.op.pad.yaml
+Finish mxnet.ndarray.op.pad.yaml, Time: 41.22068476676941
+[9853] Extracting mxnet.ndarray.cumsum.yaml
+Unable to find map from None to data type for arg dtype with subtree d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type returned
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 returned
+Finish mxnet.ndarray.cumsum.yaml, Time: 51.6973295211792
+[9853] Extracting mxnet.ndarray.op.topk.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg ret_typ with subtree type the
+Finish mxnet.ndarray.op.topk.yaml, Time: 65.65269160270691
+[9853] Extracting mxnet.ndarray.contrib.sign_ste.yaml
+Finish mxnet.ndarray.contrib.sign_ste.yaml, Time: 6.357501268386841
+[9853] Extracting mxnet.ndarray.arctan.yaml
+Finish mxnet.ndarray.arctan.yaml, Time: 6.804834365844727
+[9853] Extracting mxnet.ndarray.op.reset_arrays.yaml
+Finish mxnet.ndarray.op.reset_arrays.yaml, Time: 7.449075698852539
+[9853] Extracting mxnet.ndarray.ceil.yaml
+Finish mxnet.ndarray.ceil.yaml, Time: 7.424763441085815
+[9853] Extracting mxnet.ndarray.sparse.ceil.yaml
+Finish mxnet.ndarray.sparse.ceil.yaml, Time: 8.700287580490112
+[9853] Extracting mxnet.ndarray.identityattachklsparsereg.yaml
+Finish mxnet.ndarray.identityattachklsparsereg.yaml, Time: 8.784696102142334
+[9853] Extracting mxnet.ndarray.rint.yaml
+Finish mxnet.ndarray.rint.yaml, Time: 8.878427028656006
+[9853] Extracting mxnet.ndarray.trunc.yaml
+Finish mxnet.ndarray.trunc.yaml, Time: 9.029939889907837
+[9853] Extracting mxnet.ndarray.log.yaml
+Finish mxnet.ndarray.log.yaml, Time: 9.043355703353882
+[9853] Extracting mxnet.ndarray.subtract.yaml
+Finish mxnet.ndarray.subtract.yaml, Time: 9.40246319770813
+[9853] Extracting mxnet.recordio.unpack.yaml
+Finish mxnet.recordio.unpack.yaml, Time: 9.314839363098145
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg19_bn.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg19_bn.yaml, Time: 9.218727350234985
+[9853] Extracting mxnet.ndarray.op.swapaxis.yaml
+Finish mxnet.ndarray.op.swapaxis.yaml, Time: 9.528814792633057
+[9853] Extracting mxnet.ndarray.elemwise_mul.yaml
+Finish mxnet.ndarray.elemwise_mul.yaml, Time: 9.925070762634277
+[9853] Extracting mxnet.ndarray.not_equal.yaml
+Finish mxnet.ndarray.not_equal.yaml, Time: 10.360770225524902
+[9853] Extracting mxnet.ndarray.sparse.maeregressionoutput.yaml
+Finish mxnet.ndarray.sparse.maeregressionoutput.yaml, Time: 10.583500623703003
+[9853] Extracting mxnet.ndarray.sparse.arctanh.yaml
+Finish mxnet.ndarray.sparse.arctanh.yaml, Time: 10.63260817527771
+[9853] Extracting mxnet.ndarray.contrib.deformablepsroipooling.yaml
+Finish mxnet.ndarray.contrib.deformablepsroipooling.yaml, Time: 10.787370443344116
+[9853] Extracting mxnet.ndarray.op.where.yaml
+Finish mxnet.ndarray.op.where.yaml, Time: 10.60309362411499
+[9853] Extracting mxnet.ndarray.linalg_potri.yaml
+Finish mxnet.ndarray.linalg_potri.yaml, Time: 11.131123304367065
+[9853] Extracting mxnet.context.cpu.yaml
+Finish mxnet.context.cpu.yaml, Time: 11.141567468643188
+[9853] Extracting mxnet.ndarray.contrib.backward_index_copy.yaml
+Finish mxnet.ndarray.contrib.backward_index_copy.yaml, Time: 11.037878036499023
+[9853] Extracting mxnet.gluon.utils.clip_global_norm.yaml
+Finish mxnet.gluon.utils.clip_global_norm.yaml, Time: 11.413287162780762
+[9853] Extracting mxnet.ndarray.sparse.arcsin.yaml
+Finish mxnet.ndarray.sparse.arcsin.yaml, Time: 11.413496971130371
+[9853] Extracting mxnet.ndarray.sparse.add_n.yaml
+Finish mxnet.ndarray.sparse.add_n.yaml, Time: 11.502910375595093
+[9853] Extracting mxnet.ndarray.op.fix.yaml
+Finish mxnet.ndarray.op.fix.yaml, Time: 11.590156078338623
+[9853] Extracting mxnet.ndarray.hard_sigmoid.yaml
+Finish mxnet.ndarray.hard_sigmoid.yaml, Time: 11.793121337890625
+[9853] Extracting mxnet.gluon.utils.replace_file.yaml
+Finish mxnet.gluon.utils.replace_file.yaml, Time: 11.666346549987793
+[9853] Extracting mxnet.ndarray.broadcast_plus.yaml
+Finish mxnet.ndarray.broadcast_plus.yaml, Time: 11.711280345916748
+[9853] Extracting mxnet.contrib.ndarray.fft.yaml
+Finish mxnet.contrib.ndarray.fft.yaml, Time: 11.976470470428467
+[9853] Extracting mxnet.ndarray.op.broadcast_equal.yaml
+Finish mxnet.ndarray.op.broadcast_equal.yaml, Time: 12.144837617874146
+[9853] Extracting mxnet.ndarray.tan.yaml
+Finish mxnet.ndarray.tan.yaml, Time: 12.046508073806763
+[9853] Extracting mxnet.ndarray.op.l2normalization.yaml
+Finish mxnet.ndarray.op.l2normalization.yaml, Time: 12.337822914123535
+[9853] Extracting mxnet.ndarray.image.adjust_lighting.yaml
+Finish mxnet.ndarray.image.adjust_lighting.yaml, Time: 12.238462686538696
+[9853] Extracting mxnet.ndarray.sparse.sigmoid.yaml
+Finish mxnet.ndarray.sparse.sigmoid.yaml, Time: 12.265828371047974
+[9853] Extracting mxnet.ndarray.op.arctan.yaml
+Finish mxnet.ndarray.op.arctan.yaml, Time: 12.51233720779419
+[9853] Extracting mxnet.ndarray.where.yaml
+Finish mxnet.ndarray.where.yaml, Time: 12.447046518325806
+[9853] Extracting mxnet.contrib.ndarray.backward_quadratic.yaml
+Finish mxnet.contrib.ndarray.backward_quadratic.yaml, Time: 12.38880467414856
+[9853] Extracting mxnet.ndarray.log10.yaml
+Finish mxnet.ndarray.log10.yaml, Time: 12.669088363647461
+[9853] Extracting mxnet.ndarray.op.stop_gradient.yaml
+Finish mxnet.ndarray.op.stop_gradient.yaml, Time: 12.353765726089478
+[9853] Extracting mxnet.ndarray.maeregressionoutput.yaml
+Finish mxnet.ndarray.maeregressionoutput.yaml, Time: 12.512199640274048
+[9853] Extracting mxnet.ndarray.exp.yaml
+Finish mxnet.ndarray.exp.yaml, Time: 12.509549856185913
+[9853] Extracting mxnet.ndarray.sparse.cos.yaml
+Finish mxnet.ndarray.sparse.cos.yaml, Time: 12.528002977371216
+[9853] Extracting mxnet.ndarray.op.arccos.yaml
+Finish mxnet.ndarray.op.arccos.yaml, Time: 12.606597185134888
+[9853] Extracting mxnet.gluon.rnn.bidirectionalcell.yaml
+Finish mxnet.gluon.rnn.bidirectionalcell.yaml, Time: 12.77871561050415
+[9853] Extracting mxnet.ndarray.op.round.yaml
+Finish mxnet.ndarray.op.round.yaml, Time: 12.830007076263428
+[9853] Extracting mxnet.ndarray.sparse.cbrt.yaml
+Finish mxnet.ndarray.sparse.cbrt.yaml, Time: 12.777409791946411
+[9853] Extracting mxnet.ndarray.sparse.square.yaml
+Finish mxnet.ndarray.sparse.square.yaml, Time: 12.779987096786499
+[9853] Extracting mxnet.ndarray.op.depth_to_space.yaml
+Finish mxnet.ndarray.op.depth_to_space.yaml, Time: 12.739904880523682
+[9853] Extracting mxnet.ndarray.op.erf.yaml
+Finish mxnet.ndarray.op.erf.yaml, Time: 12.9201078414917
+[9853] Extracting mxnet.ndarray.image.flip_left_right.yaml
+Finish mxnet.ndarray.image.flip_left_right.yaml, Time: 12.870920658111572
+[9853] Extracting mxnet.contrib.ndarray.box_encode.yaml
+Finish mxnet.contrib.ndarray.box_encode.yaml, Time: 13.198468685150146
+[9853] Extracting mxnet.ndarray.sparse.cosh.yaml
+Finish mxnet.ndarray.sparse.cosh.yaml, Time: 12.75908374786377
+[9853] Extracting mxnet.ndarray.softmax_cross_entropy.yaml
+Finish mxnet.ndarray.softmax_cross_entropy.yaml, Time: 12.808295965194702
+[9853] Extracting mxnet.ndarray.linalg_potrf.yaml
+Finish mxnet.ndarray.linalg_potrf.yaml, Time: 13.026856899261475
+[9853] Extracting mxnet.ndarray.clip.yaml
+Finish mxnet.ndarray.clip.yaml, Time: 13.23625373840332
+[9853] Extracting mxnet.ndarray.contrib.interleaved_matmul_encdec_qk.yaml
+Finish mxnet.ndarray.contrib.interleaved_matmul_encdec_qk.yaml, Time: 13.025383710861206
+[9853] Extracting mxnet.ndarray.op.preloaded_multi_sgd_mom_update.yaml
+Finish mxnet.ndarray.op.preloaded_multi_sgd_mom_update.yaml, Time: 13.323457956314087
+[9853] Extracting mxnet.contrib.ndarray.backward_gradientmultiplier.yaml
+Finish mxnet.contrib.ndarray.backward_gradientmultiplier.yaml, Time: 13.104496955871582
+[9853] Extracting mxnet.ndarray.op.broadcast_logical_and.yaml
+Finish mxnet.ndarray.op.broadcast_logical_and.yaml, Time: 13.196964740753174
+[9853] Extracting mxnet.ndarray.op.broadcast_power.yaml
+Finish mxnet.ndarray.op.broadcast_power.yaml, Time: 13.260072708129883
+[9853] Extracting mxnet.ndarray.l2normalization.yaml
+Finish mxnet.ndarray.l2normalization.yaml, Time: 13.512591123580933
+[9853] Extracting mxnet.ndarray.op.broadcast_mod.yaml
+Finish mxnet.ndarray.op.broadcast_mod.yaml, Time: 13.198583841323853
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet152_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet152_v2.yaml, Time: 13.222440242767334
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg11_bn.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg11_bn.yaml, Time: 13.271411418914795
+[9853] Extracting mxnet.ndarray.broadcast_hypot.yaml
+Finish mxnet.ndarray.broadcast_hypot.yaml, Time: 13.486761808395386
+[9853] Extracting mxnet.ndarray.zeros2.yaml
+Unable to find map from None to data type for arg stype with subtree type d_structure
+Unable to find map from None to data type for arg stype with subtree type d_structure of
+Unable to find map from None to data type for arg stype with subtree type of
+Unable to find map from None to data type for arg stype with subtree type the
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Finish mxnet.ndarray.zeros2.yaml, Time: 13.721569776535034
+[9853] Extracting mxnet.ndarray.op.moments.yaml
+Finish mxnet.ndarray.op.moments.yaml, Time: 13.739467859268188
+[9853] Extracting mxnet.ndarray.image.random_contrast.yaml
+Finish mxnet.ndarray.image.random_contrast.yaml, Time: 13.74479341506958
+[9853] Extracting mxnet.ndarray.op.linalg_maketrian.yaml
+Finish mxnet.ndarray.op.linalg_maketrian.yaml, Time: 13.874474287033081
+[9853] Extracting mxnet.ndarray.random_pdf_poisson.yaml
+Finish mxnet.ndarray.random_pdf_poisson.yaml, Time: 13.744082689285278
+[9853] Extracting mxnet.ndarray.random_pdf_dirichlet.yaml
+Finish mxnet.ndarray.random_pdf_dirichlet.yaml, Time: 13.716939449310303
+[9853] Extracting mxnet.ndarray.lrn.yaml
+Finish mxnet.ndarray.lrn.yaml, Time: 13.54718828201294
+[9853] Extracting mxnet.ndarray.op.batch_dot.yaml
+Finish mxnet.ndarray.op.batch_dot.yaml, Time: 13.996764659881592
+[9853] Extracting mxnet.ndarray.sample_negative_binomial.yaml
+Finish mxnet.ndarray.sample_negative_binomial.yaml, Time: 13.862485885620117
+[9853] Extracting mxnet.ndarray.broadcast_like.yaml
+Finish mxnet.ndarray.broadcast_like.yaml, Time: 13.907953262329102
+[9853] Extracting mxnet.ndarray.op.multi_lars.yaml
+Finish mxnet.ndarray.op.multi_lars.yaml, Time: 14.257982969284058
+[9853] Extracting mxnet.ndarray.log_softmax.yaml
+Finish mxnet.ndarray.log_softmax.yaml, Time: 14.02179503440857
+[9853] Extracting mxnet.ndarray.op.correlation.yaml
+Finish mxnet.ndarray.op.correlation.yaml, Time: 14.41964840888977
+[9853] Extracting mxnet.gluon.utils.download.yaml
+Finish mxnet.gluon.utils.download.yaml, Time: 14.602585554122925
+[9853] Extracting mxnet.ndarray.sparse.sgd_update.yaml
+Finish mxnet.ndarray.sparse.sgd_update.yaml, Time: 14.867920398712158
+[9853] Extracting mxnet.ndarray.image.resize.yaml
+Finish mxnet.ndarray.image.resize.yaml, Time: 15.022838592529297
+[9853] Extracting mxnet.ndarray.diag.yaml
+Finish mxnet.ndarray.diag.yaml, Time: 15.64882779121399
+[9853] Extracting mxnet.ndarray.ftml_update.yaml
+Finish mxnet.ndarray.ftml_update.yaml, Time: 15.667639255523682
+[9853] Extracting mxnet.ndarray.op.mp_lamb_update_phase1.yaml
+Finish mxnet.ndarray.op.mp_lamb_update_phase1.yaml, Time: 15.972493171691895
+[9853] Extracting mxnet.ndarray.prod.yaml
+Finish mxnet.ndarray.prod.yaml, Time: 16.354674577713013
+[9853] Extracting mxnet.contrib.ndarray.box_nms.yaml
+Finish mxnet.contrib.ndarray.box_nms.yaml, Time: 16.874693155288696
+[9853] Extracting mxnet.ndarray.op.softmaxoutput.yaml
+Finish mxnet.ndarray.op.softmaxoutput.yaml, Time: 17.323291540145874
+[9853] Extracting mxnet.ndarray.op.mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.op.mp_sgd_mom_update.yaml, Time: 17.526210069656372
+[9853] Extracting mxnet.gluon.contrib.rnn.conv2dgrucell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv2dgrucell.yaml, Time: 17.948451280593872
+[9853] Extracting mxnet.contrib.ndarray.roialign.yaml
+Finish mxnet.contrib.ndarray.roialign.yaml, Time: 20.902074575424194
+[9853] Extracting mxnet.contrib.ndarray.ctcloss.yaml
+Finish mxnet.contrib.ndarray.ctcloss.yaml, Time: 21.219621658325195
+[9853] Extracting mxnet.ndarray.op.choose_element_0index.yaml
+Finish mxnet.ndarray.op.choose_element_0index.yaml, Time: 21.881968021392822
+[9853] Extracting mxnet.ndarray.reshape.yaml
+Finish mxnet.ndarray.reshape.yaml, Time: 23.898645162582397
+[9853] Extracting mxnet.ndarray.contrib.syncbatchnorm.yaml
+Finish mxnet.ndarray.contrib.syncbatchnorm.yaml, Time: 24.28313183784485
+[9853] Extracting mxnet.contrib.ndarray.proposal.yaml
+Finish mxnet.contrib.ndarray.proposal.yaml, Time: 28.53522562980652
+[9853] Extracting mxnet.gluon.nn.conv3d.yaml
+Finish mxnet.gluon.nn.conv3d.yaml, Time: 28.43080997467041
+[9853] Extracting mxnet.gluon.nn.conv2dtranspose.yaml
+Finish mxnet.gluon.nn.conv2dtranspose.yaml, Time: 32.002827882766724
+[9853] Extracting mxnet.contrib.quantization.quantize_graph.yaml
+Unable to find map from None to data type for arg quantized_dtype with subtree type data
+Unable to find map from None to data type for arg quantized_dtype with subtree type the
+Unable to find map from None to data type for arg quantized_dtype with subtree type the -1 data
+Finish mxnet.contrib.quantization.quantize_graph.yaml, Time: 53.20994687080383
+[9853] Extracting mxnet.image.resize_short.yaml
+Finish mxnet.image.resize_short.yaml, Time: 74.43451237678528
+[9853] Extracting mxnet.test_utils.same.yaml
+Finish mxnet.test_utils.same.yaml, Time: 9.76630973815918
+[9853] Extracting mxnet.ndarray.load.yaml
+Finish mxnet.ndarray.load.yaml, Time: 11.045892238616943
+[9853] Extracting mxnet.contrib.ndarray.interleaved_matmul_encdec_valatt.yaml
+Finish mxnet.contrib.ndarray.interleaved_matmul_encdec_valatt.yaml, Time: 12.219985723495483
+[9853] Extracting mxnet.ndarray.sparse.elementwisesum.yaml
+Finish mxnet.ndarray.sparse.elementwisesum.yaml, Time: 12.187176942825317
+[9853] Extracting mxnet.gluon.contrib.nn.pixelshuffle2d.yaml
+Finish mxnet.gluon.contrib.nn.pixelshuffle2d.yaml, Time: 12.734669923782349
+[9853] Extracting mxnet.ndarray.op.amp_cast.yaml
+Finish mxnet.ndarray.op.amp_cast.yaml, Time: 12.924203395843506
+[9853] Extracting mxnet.ndarray.linalg_slogdet.yaml
+Finish mxnet.ndarray.linalg_slogdet.yaml, Time: 13.010507345199585
+[9853] Extracting mxnet.ndarray.sparse.arccos.yaml
+Finish mxnet.ndarray.sparse.arccos.yaml, Time: 13.279930591583252
+[9853] Extracting mxnet.ndarray.linalg.potrf.yaml
+Finish mxnet.ndarray.linalg.potrf.yaml, Time: 13.54029130935669
+[9853] Extracting mxnet.ndarray.maximum.yaml
+Finish mxnet.ndarray.maximum.yaml, Time: 13.622365713119507
+[9853] Extracting mxnet.ndarray.sparse.trunc.yaml
+Finish mxnet.ndarray.sparse.trunc.yaml, Time: 13.612810850143433
+[9853] Extracting mxnet.image.scale_down.yaml
+Finish mxnet.image.scale_down.yaml, Time: 13.519940853118896
+[9853] Extracting mxnet.ndarray.sparse.tanh.yaml
+Finish mxnet.ndarray.sparse.tanh.yaml, Time: 13.128169059753418
+[9853] Extracting mxnet.ndarray.embedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg sparse_grad with subtree type the
+Finish mxnet.ndarray.embedding.yaml, Time: 13.594337463378906
+[9853] Extracting mxnet.ndarray.contrib.rand_zipfian.yaml
+Finish mxnet.ndarray.contrib.rand_zipfian.yaml, Time: 13.808414220809937
+[9853] Extracting mxnet.ndarray.sparse.rint.yaml
+Finish mxnet.ndarray.sparse.rint.yaml, Time: 13.645384788513184
+[9853] Extracting mxnet.ndarray.image.random_lighting.yaml
+Finish mxnet.ndarray.image.random_lighting.yaml, Time: 13.527029275894165
+[9853] Extracting mxnet.ndarray.arctanh.yaml
+Finish mxnet.ndarray.arctanh.yaml, Time: 13.87121295928955
+[9853] Extracting mxnet.ndarray.op.transpose.yaml
+Finish mxnet.ndarray.op.transpose.yaml, Time: 14.072110414505005
+[9853] Extracting mxnet.ndarray.linalg_det.yaml
+Finish mxnet.ndarray.linalg_det.yaml, Time: 13.842259645462036
+[9853] Extracting mxnet.test_utils.get_zip_data.yaml
+Finish mxnet.test_utils.get_zip_data.yaml, Time: 13.78631067276001
+[9853] Extracting mxnet.ndarray.sparse.multiply.yaml
+Finish mxnet.ndarray.sparse.multiply.yaml, Time: 13.694629669189453
+[9853] Extracting mxnet.ndarray.op.random_pdf_negative_binomial.yaml
+Finish mxnet.ndarray.op.random_pdf_negative_binomial.yaml, Time: 14.21938180923462
+[9853] Extracting mxnet.optimizer.create.yaml
+Finish mxnet.optimizer.create.yaml, Time: 14.019566535949707
+[9853] Extracting mxnet.engine.set_bulk_size.yaml
+Finish mxnet.engine.set_bulk_size.yaml, Time: 13.828489303588867
+[9853] Extracting mxnet.test_utils.np_reduce.yaml
+Finish mxnet.test_utils.np_reduce.yaml, Time: 14.252104997634888
+[9853] Extracting mxnet.ndarray.image.random_flip_left_right.yaml
+Finish mxnet.ndarray.image.random_flip_left_right.yaml, Time: 14.184470415115356
+[9853] Extracting mxnet.gluon.nn.globalmaxpool2d.yaml
+Finish mxnet.gluon.nn.globalmaxpool2d.yaml, Time: 14.160787343978882
+[9853] Extracting mxnet.recordio.pack.yaml
+Finish mxnet.recordio.pack.yaml, Time: 14.13293170928955
+[9853] Extracting mxnet.ndarray.op.broadcast_maximum.yaml
+Finish mxnet.ndarray.op.broadcast_maximum.yaml, Time: 14.523914337158203
+[9853] Extracting mxnet.ndarray.contrib.dequantize.yaml
+Finish mxnet.ndarray.contrib.dequantize.yaml, Time: 14.325574398040771
+[9853] Extracting mxnet.util.use_np_shape.yaml
+Finish mxnet.util.use_np_shape.yaml, Time: 13.90616250038147
+[9853] Extracting mxnet.ndarray.op.trunc.yaml
+Finish mxnet.ndarray.op.trunc.yaml, Time: 14.100321531295776
+[9853] Extracting mxnet.ndarray.linalg.inverse.yaml
+Finish mxnet.ndarray.linalg.inverse.yaml, Time: 13.939018964767456
+[9853] Extracting mxnet.ndarray.all_finite.yaml
+Finish mxnet.ndarray.all_finite.yaml, Time: 14.58295750617981
+[9853] Extracting mxnet.ndarray.op.sinh.yaml
+Finish mxnet.ndarray.op.sinh.yaml, Time: 14.308127164840698
+[9853] Extracting mxnet.ndarray.random.normal_like.yaml
+Finish mxnet.ndarray.random.normal_like.yaml, Time: 14.260596513748169
+[9853] Extracting mxnet.ndarray.op.expm1.yaml
+Finish mxnet.ndarray.op.expm1.yaml, Time: 14.801909446716309
+[9853] Extracting mxnet.ndarray.broadcast_div.yaml
+Finish mxnet.ndarray.broadcast_div.yaml, Time: 14.546499013900757
+[9853] Extracting mxnet.ndarray.op.log2.yaml
+Finish mxnet.ndarray.op.log2.yaml, Time: 14.979495763778687
+[9853] Extracting mxnet.ndarray.op.random_pdf_dirichlet.yaml
+Finish mxnet.ndarray.op.random_pdf_dirichlet.yaml, Time: 14.673583984375
+[9853] Extracting mxnet.contrib.ndarray.gradientmultiplier.yaml
+Finish mxnet.contrib.ndarray.gradientmultiplier.yaml, Time: 14.874384641647339
+[9853] Extracting mxnet.ndarray.broadcast_lesser_equal.yaml
+Finish mxnet.ndarray.broadcast_lesser_equal.yaml, Time: 14.590452909469604
+[9853] Extracting mxnet.contrib.ndarray.group_adagrad_update.yaml
+Finish mxnet.contrib.ndarray.group_adagrad_update.yaml, Time: 15.041916131973267
+[9853] Extracting mxnet.ndarray.ones.yaml
+Finish mxnet.ndarray.ones.yaml, Time: 15.164624691009521
+[9853] Extracting mxnet.ndarray.utils.zeros.yaml
+Unable to find map from None to data type for arg stype with subtree type d_structure
+Unable to find map from None to data type for arg stype with subtree type d_structure of
+Unable to find map from None to data type for arg stype with subtree type of
+Unable to find map from None to data type for arg stype with subtree type the
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Finish mxnet.ndarray.utils.zeros.yaml, Time: 14.693228721618652
+[9853] Extracting mxnet.ndarray.op.preloaded_multi_mp_sgd_update.yaml
+Finish mxnet.ndarray.op.preloaded_multi_mp_sgd_update.yaml, Time: 15.437847137451172
+[9853] Extracting mxnet.ndarray.linalg_gemm2.yaml
+Finish mxnet.ndarray.linalg_gemm2.yaml, Time: 15.69148874282837
+[9853] Extracting mxnet.contrib.ndarray.quantized_flatten.yaml
+Finish mxnet.contrib.ndarray.quantized_flatten.yaml, Time: 15.412717819213867
+[9853] Extracting mxnet.ndarray.contrib.quadratic.yaml
+Finish mxnet.ndarray.contrib.quadratic.yaml, Time: 15.625395774841309
+[9853] Extracting mxnet.contrib.ndarray.box_iou.yaml
+Finish mxnet.contrib.ndarray.box_iou.yaml, Time: 15.522413492202759
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_model2.yaml
+Finish mxnet.gluon.model_zoo.vision.get_model2.yaml, Time: 15.25854778289795
+[9853] Extracting mxnet.ndarray.op.identityattachklsparsereg.yaml
+Finish mxnet.ndarray.op.identityattachklsparsereg.yaml, Time: 15.1751708984375
+[9853] Extracting mxnet.ndarray.arange.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.arange.yaml, Time: 15.709205150604248
+[9853] Extracting mxnet.contrib.onnx.export_model.yaml
+Unable to find map from None to data type for arg input_type with subtree type data
+Finish mxnet.contrib.onnx.export_model.yaml, Time: 15.739319801330566
+[9853] Extracting mxnet.ndarray.op.linalg_gemm2.yaml
+Finish mxnet.ndarray.op.linalg_gemm2.yaml, Time: 16.31489324569702
+[9853] Extracting mxnet.ndarray.random_normal.yaml
+Finish mxnet.ndarray.random_normal.yaml, Time: 16.312968492507935
+[9853] Extracting mxnet.ndarray.op.random_pdf_gamma.yaml
+Finish mxnet.ndarray.op.random_pdf_gamma.yaml, Time: 16.210502862930298
+[9853] Extracting mxnet.ndarray.op.argmax.yaml
+Finish mxnet.ndarray.op.argmax.yaml, Time: 16.54496121406555
+[9853] Extracting mxnet.ndarray.groupnorm.yaml
+Finish mxnet.ndarray.groupnorm.yaml, Time: 15.97667646408081
+[9853] Extracting mxnet.ndarray.random_pdf_uniform.yaml
+Finish mxnet.ndarray.random_pdf_uniform.yaml, Time: 15.970441102981567
+[9853] Extracting mxnet.ndarray.layernorm.yaml
+Finish mxnet.ndarray.layernorm.yaml, Time: 16.573341608047485
+[9853] Extracting mxnet.ndarray.op.random_negative_binomial.yaml
+Finish mxnet.ndarray.op.random_negative_binomial.yaml, Time: 16.157958507537842
+[9853] Extracting mxnet.contrib.ndarray.getnnz.yaml
+Finish mxnet.contrib.ndarray.getnnz.yaml, Time: 16.120140314102173
+[9853] Extracting mxnet.ndarray.random.randint.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.randint.yaml, Time: 16.491559267044067
+[9853] Extracting mxnet.contrib.ndarray.bipartite_matching.yaml
+Finish mxnet.contrib.ndarray.bipartite_matching.yaml, Time: 16.51765203475952
+[9853] Extracting mxnet.ndarray.op.multi_mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.op.multi_mp_sgd_mom_update.yaml, Time: 17.200218200683594
+[9853] Extracting mxnet.ndarray.contrib.psroipooling.yaml
+Finish mxnet.ndarray.contrib.psroipooling.yaml, Time: 17.01721692085266
+[9853] Extracting mxnet.contrib.ndarray.sparseembedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg sparse_grad with subtree type the
+Finish mxnet.contrib.ndarray.sparseembedding.yaml, Time: 16.65764808654785
+[9853] Extracting mxnet.ndarray.linalg.extracttrian.yaml
+Finish mxnet.ndarray.linalg.extracttrian.yaml, Time: 17.15943956375122
+[9853] Extracting mxnet.ndarray.argmax.yaml
+Finish mxnet.ndarray.argmax.yaml, Time: 17.23755431175232
+[9853] Extracting mxnet.io.csviter.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Finish mxnet.io.csviter.yaml, Time: 17.33770990371704
+[9853] Extracting mxnet.ndarray.sequencemask.yaml
+Finish mxnet.ndarray.sequencemask.yaml, Time: 17.777996063232422
+[9853] Extracting mxnet.ndarray.op.sequencemask.yaml
+Finish mxnet.ndarray.op.sequencemask.yaml, Time: 17.664629220962524
+[9853] Extracting mxnet.ndarray.nag_mom_update.yaml
+Finish mxnet.ndarray.nag_mom_update.yaml, Time: 17.908428192138672
+[9853] Extracting mxnet.ndarray.ftrl_update.yaml
+Finish mxnet.ndarray.ftrl_update.yaml, Time: 18.19382095336914
+[9853] Extracting mxnet.ndarray.makeloss.yaml
+Finish mxnet.ndarray.makeloss.yaml, Time: 18.95084047317505
+[9853] Extracting mxnet.ndarray.op.pooling.yaml
+Finish mxnet.ndarray.op.pooling.yaml, Time: 19.54093909263611
+[9853] Extracting mxnet.gluon.nn.maxpool3d.yaml
+Finish mxnet.gluon.nn.maxpool3d.yaml, Time: 19.518847227096558
+[9853] Extracting mxnet.gluon.rnn.rnn.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Finish mxnet.gluon.rnn.rnn.yaml, Time: 19.921199083328247
+[9853] Extracting mxnet.ndarray.random.uniform.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.uniform.yaml, Time: 20.0595965385437
+[9853] Extracting mxnet.contrib.ndarray.box_non_maximum_suppression.yaml
+Finish mxnet.contrib.ndarray.box_non_maximum_suppression.yaml, Time: 19.48540425300598
+[9853] Extracting mxnet.ndarray.sum_axis.yaml
+Finish mxnet.ndarray.sum_axis.yaml, Time: 20.452173233032227
+[9853] Extracting mxnet.ndarray.sparse.mean.yaml
+Finish mxnet.ndarray.sparse.mean.yaml, Time: 20.762519359588623
+[9853] Extracting mxnet.ndarray.op.mean.yaml
+Finish mxnet.ndarray.op.mean.yaml, Time: 20.882258415222168
+[9853] Extracting mxnet.ndarray.sparse.sum.yaml
+Finish mxnet.ndarray.sparse.sum.yaml, Time: 21.172083854675293
+[9853] Extracting mxnet.ndarray.softmax.yaml
+Finish mxnet.ndarray.softmax.yaml, Time: 21.20765781402588
+[9853] Extracting mxnet.ndarray.op.rnn.yaml
+Unable to find map from None to data type for arg mode with subtree type of
+Unable to find map from None to data type for arg mode with subtree type the
+Unable to find map from None to data type for arg mode with subtree type the -1 of
+Unable to find map from None to data type for arg mode with subtree type the -1 of
+Finish mxnet.ndarray.op.rnn.yaml, Time: 21.48846960067749
+[9853] Extracting mxnet.gluon.contrib.rnn.conv3dlstmcell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv3dlstmcell.yaml, Time: 21.955789804458618
+[9853] Extracting mxnet.ndarray.ctcloss.yaml
+Finish mxnet.ndarray.ctcloss.yaml, Time: 24.064305305480957
+[9853] Extracting mxnet.ndarray.pick.yaml
+Finish mxnet.ndarray.pick.yaml, Time: 24.40330195426941
+[9853] Extracting mxnet.ndarray.contrib.roialign.yaml
+Finish mxnet.ndarray.contrib.roialign.yaml, Time: 24.392235279083252
+[9853] Extracting mxnet.ndarray.op.ctc_loss.yaml
+Finish mxnet.ndarray.op.ctc_loss.yaml, Time: 24.485248804092407
+[9853] Extracting mxnet.ndarray.op.take.yaml
+Finish mxnet.ndarray.op.take.yaml, Time: 25.368255138397217
+[9853] Extracting mxnet.ndarray.contrib.multiproposal.yaml
+Finish mxnet.ndarray.contrib.multiproposal.yaml, Time: 29.842632293701172
+[9853] Extracting mxnet.gluon.nn.conv2d.yaml
+Finish mxnet.gluon.nn.conv2d.yaml, Time: 30.899544715881348
+[9853] Extracting mxnet.contrib.quantization.quantize_net.yaml
+Unable to find map from None to data type for arg quantized_dtype with subtree type data
+Unable to find map from None to data type for arg quantized_dtype with subtree type the
+Unable to find map from None to data type for arg quantized_dtype with subtree type the -1 data
+Finish mxnet.contrib.quantization.quantize_net.yaml, Time: 63.56438994407654
+[9853] Extracting mxnet.contrib.quantization.quantize_model.yaml
+Unable to find map from None to data type for arg quantized_dtype with subtree type data
+Unable to find map from None to data type for arg quantized_dtype with subtree type the
+Unable to find map from None to data type for arg quantized_dtype with subtree type the -1 data
+Finish mxnet.contrib.quantization.quantize_model.yaml, Time: 65.32035231590271
+[9853] Extracting mxnet.image.imresize.yaml
+Finish mxnet.image.imresize.yaml, Time: 68.71581435203552
+[9853] Extracting mxnet.io.imagedetrecorditer.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Finish mxnet.io.imagedetrecorditer.yaml, Time: 74.49055004119873
+[9853] Extracting mxnet.ndarray.sparse.floor.yaml
+Finish mxnet.ndarray.sparse.floor.yaml, Time: 6.895541667938232
+[9853] Extracting mxnet.ndarray.contrib.index_array.yaml
+Finish mxnet.ndarray.contrib.index_array.yaml, Time: 6.963680028915405
+[9853] Extracting mxnet.gluon.nn.elu.yaml
+Finish mxnet.gluon.nn.elu.yaml, Time: 7.138517618179321
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet_v2_0_75.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet_v2_0_75.yaml, Time: 7.998448371887207
+[9853] Extracting mxnet.ndarray.make_loss.yaml
+Finish mxnet.ndarray.make_loss.yaml, Time: 8.10158920288086
+[9853] Extracting mxnet.ndarray.sparse.elemwise_div.yaml
+Finish mxnet.ndarray.sparse.elemwise_div.yaml, Time: 8.308067560195923
+[9853] Extracting mxnet.contrib.onnx.get_model_metadata.yaml
+Finish mxnet.contrib.onnx.get_model_metadata.yaml, Time: 8.299215316772461
+[9853] Extracting mxnet.ndarray.linalg.det.yaml
+Finish mxnet.ndarray.linalg.det.yaml, Time: 8.558309555053711
+[9853] Extracting mxnet.ndarray.sparse.retain.yaml
+Finish mxnet.ndarray.sparse.retain.yaml, Time: 8.564121961593628
+[9853] Extracting mxnet.ndarray.moments.yaml
+Finish mxnet.ndarray.moments.yaml, Time: 8.799623489379883
+[9853] Extracting mxnet.ndarray.moveaxis.yaml
+Finish mxnet.ndarray.moveaxis.yaml, Time: 8.84276795387268
+[9853] Extracting mxnet.ndarray.empty.yaml
+Finish mxnet.ndarray.empty.yaml, Time: 8.8963463306427
+[9853] Extracting mxnet.ndarray.instancenorm.yaml
+Finish mxnet.ndarray.instancenorm.yaml, Time: 8.947874307632446
+[9853] Extracting mxnet.ndarray.sparse.elemwise_sub.yaml
+Finish mxnet.ndarray.sparse.elemwise_sub.yaml, Time: 8.961452960968018
+[9853] Extracting mxnet.ndarray.sparse.negative.yaml
+Finish mxnet.ndarray.sparse.negative.yaml, Time: 9.230252504348755
+[9853] Extracting mxnet.gluon.contrib.nn.hybridconcurrent.yaml
+Finish mxnet.gluon.contrib.nn.hybridconcurrent.yaml, Time: 9.23236346244812
+[9853] Extracting mxnet.ndarray.linalg.slogdet.yaml
+Finish mxnet.ndarray.linalg.slogdet.yaml, Time: 8.967118740081787
+[9853] Extracting mxnet.ndarray.op.random_pdf_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.op.random_pdf_generalized_negative_binomial.yaml, Time: 9.909775972366333
+[9853] Extracting mxnet.ndarray.zeros.yaml
+Unable to find map from None to data type for arg stype with subtree type d_structure
+Unable to find map from None to data type for arg stype with subtree type d_structure of
+Unable to find map from None to data type for arg stype with subtree type of
+Unable to find map from None to data type for arg stype with subtree type the
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg stype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Unable to find map from None to data type for arg stype with subtree type the -1 of
+Finish mxnet.ndarray.zeros.yaml, Time: 9.892565965652466
+[9853] Extracting mxnet.ndarray.random_exponential.yaml
+Finish mxnet.ndarray.random_exponential.yaml, Time: 10.185278415679932
+[9853] Extracting mxnet.ndarray.op.broadcast_not_equal.yaml
+Finish mxnet.ndarray.op.broadcast_not_equal.yaml, Time: 10.221869707107544
+[9853] Extracting mxnet.ndarray.modulo.yaml
+Finish mxnet.ndarray.modulo.yaml, Time: 10.26056456565857
+[9853] Extracting mxnet.ndarray.gamma.yaml
+Finish mxnet.ndarray.gamma.yaml, Time: 10.382294416427612
+[9853] Extracting mxnet.ndarray.random_pdf_gamma.yaml
+Finish mxnet.ndarray.random_pdf_gamma.yaml, Time: 10.528188705444336
+[9853] Extracting mxnet.ndarray.op.gammaln.yaml
+Finish mxnet.ndarray.op.gammaln.yaml, Time: 10.432804822921753
+[9853] Extracting mxnet.ndarray.op.random_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.op.random_generalized_negative_binomial.yaml, Time: 10.93146276473999
+[9853] Extracting mxnet.ndarray.arcsinh.yaml
+Finish mxnet.ndarray.arcsinh.yaml, Time: 10.778565168380737
+[9853] Extracting mxnet.gluon.nn.reflectionpad2d.yaml
+Finish mxnet.gluon.nn.reflectionpad2d.yaml, Time: 10.838283061981201
+[9853] Extracting mxnet.autograd.set_training.yaml
+Finish mxnet.autograd.set_training.yaml, Time: 10.665360689163208
+[9853] Extracting mxnet.ndarray.op.custom.yaml
+Finish mxnet.ndarray.op.custom.yaml, Time: 10.996876001358032
+[9853] Extracting mxnet.callback.module_checkpoint.yaml
+Finish mxnet.callback.module_checkpoint.yaml, Time: 11.009692907333374
+[9853] Extracting mxnet.callback.log_train_metric.yaml
+Finish mxnet.callback.log_train_metric.yaml, Time: 10.935574054718018
+[9853] Extracting mxnet.ndarray.logical_not.yaml
+Finish mxnet.ndarray.logical_not.yaml, Time: 10.959633111953735
+[9853] Extracting mxnet.ndarray.logical_or.yaml
+Finish mxnet.ndarray.logical_or.yaml, Time: 11.141489505767822
+[9853] Extracting mxnet.ndarray.flatten.yaml
+Finish mxnet.ndarray.flatten.yaml, Time: 11.20493221282959
+[9853] Extracting mxnet.optimizer.get_updater.yaml
+Finish mxnet.optimizer.get_updater.yaml, Time: 11.021025896072388
+[9853] Extracting mxnet.ndarray.linalg_syrk.yaml
+Finish mxnet.ndarray.linalg_syrk.yaml, Time: 11.357358455657959
+[9853] Extracting mxnet.image.imdecode.yaml
+Finish mxnet.image.imdecode.yaml, Time: 11.578858852386475
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg13_bn.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg13_bn.yaml, Time: 11.48265552520752
+[9853] Extracting mxnet.gluon.model_zoo.vision.alexnet.yaml
+Finish mxnet.gluon.model_zoo.vision.alexnet.yaml, Time: 11.295547008514404
+[9853] Extracting mxnet.ndarray.op.negative.yaml
+Finish mxnet.ndarray.op.negative.yaml, Time: 11.233229637145996
+[9853] Extracting mxnet.ndarray.softsign.yaml
+Finish mxnet.ndarray.softsign.yaml, Time: 11.383991479873657
+[9853] Extracting mxnet.ndarray.broadcast_power.yaml
+Finish mxnet.ndarray.broadcast_power.yaml, Time: 11.448730945587158
+[9853] Extracting mxnet.ndarray.op.rsqrt.yaml
+Finish mxnet.ndarray.op.rsqrt.yaml, Time: 11.232070922851562
+[9853] Extracting mxnet.ndarray.op.broadcast_lesser.yaml
+Finish mxnet.ndarray.op.broadcast_lesser.yaml, Time: 11.608815908432007
+[9853] Extracting mxnet.ndarray.argsort.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Finish mxnet.ndarray.argsort.yaml, Time: 11.94459867477417
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet18_v1.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet18_v1.yaml, Time: 11.555143594741821
+[9853] Extracting mxnet.context.cpu_pinned.yaml
+Finish mxnet.context.cpu_pinned.yaml, Time: 11.693797826766968
+[9853] Extracting mxnet.gluon.model_zoo.vision.densenet201.yaml
+Finish mxnet.gluon.model_zoo.vision.densenet201.yaml, Time: 11.577106952667236
+[9853] Extracting mxnet.ndarray.degrees.yaml
+Finish mxnet.ndarray.degrees.yaml, Time: 11.746596813201904
+[9853] Extracting mxnet.contrib.ndarray.boolean_mask.yaml
+Finish mxnet.contrib.ndarray.boolean_mask.yaml, Time: 11.914710521697998
+[9853] Extracting mxnet.ndarray.sparse.divide.yaml
+Finish mxnet.ndarray.sparse.divide.yaml, Time: 11.919336795806885
+[9853] Extracting mxnet.ndarray.sample_normal.yaml
+Finish mxnet.ndarray.sample_normal.yaml, Time: 12.04423189163208
+[9853] Extracting mxnet.ndarray.op.activation.yaml
+Finish mxnet.ndarray.op.activation.yaml, Time: 11.8971266746521
+[9853] Extracting mxnet.ndarray.op.gamma.yaml
+Finish mxnet.ndarray.op.gamma.yaml, Time: 11.841682434082031
+[9853] Extracting mxnet.gluon.nn.embedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.gluon.nn.embedding.yaml, Time: 12.230676651000977
+[9853] Extracting mxnet.autograd.backward.yaml
+Finish mxnet.autograd.backward.yaml, Time: 12.198220252990723
+[9853] Extracting mxnet.ndarray.sparse.elemwise_mul.yaml
+Finish mxnet.ndarray.sparse.elemwise_mul.yaml, Time: 12.057842016220093
+[9853] Extracting mxnet.ndarray.slice.yaml
+Finish mxnet.ndarray.slice.yaml, Time: 12.3078453540802
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet34_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet34_v2.yaml, Time: 12.134070634841919
+[9853] Extracting mxnet.ndarray.op.broadcast_axes.yaml
+Finish mxnet.ndarray.op.broadcast_axes.yaml, Time: 12.342296123504639
+[9853] Extracting mxnet.ndarray.sparse.broadcast_mul.yaml
+Finish mxnet.ndarray.sparse.broadcast_mul.yaml, Time: 12.252667427062988
+[9853] Extracting mxnet.ndarray.squeeze.yaml
+Finish mxnet.ndarray.squeeze.yaml, Time: 12.288910865783691
+[9853] Extracting mxnet.ndarray.image.random_hue.yaml
+Finish mxnet.ndarray.image.random_hue.yaml, Time: 12.211550235748291
+[9853] Extracting mxnet.ndarray.transpose.yaml
+Finish mxnet.ndarray.transpose.yaml, Time: 12.162649154663086
+[9853] Extracting mxnet.ndarray.sparse.ftrl_update.yaml
+Finish mxnet.ndarray.sparse.ftrl_update.yaml, Time: 12.701246738433838
+[9853] Extracting mxnet.gluon.utils.split_and_load.yaml
+Finish mxnet.gluon.utils.split_and_load.yaml, Time: 12.23301649093628
+[9853] Extracting mxnet.ndarray.sample_exponential.yaml
+Finish mxnet.ndarray.sample_exponential.yaml, Time: 12.277469635009766
+[9853] Extracting mxnet.ndarray.op.sample_uniform.yaml
+Finish mxnet.ndarray.op.sample_uniform.yaml, Time: 12.300525426864624
+[9853] Extracting mxnet.ndarray.image.random_brightness.yaml
+Finish mxnet.ndarray.image.random_brightness.yaml, Time: 12.357283353805542
+[9853] Extracting mxnet.ndarray.op.sample_normal.yaml
+Finish mxnet.ndarray.op.sample_normal.yaml, Time: 12.578601837158203
+[9853] Extracting mxnet.ndarray.sample_poisson.yaml
+Finish mxnet.ndarray.sample_poisson.yaml, Time: 12.464075565338135
+[9853] Extracting mxnet.ndarray.sample_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.sample_generalized_negative_binomial.yaml, Time: 12.660912275314331
+[9853] Extracting mxnet.test_utils.numeric_grad.yaml
+Finish mxnet.test_utils.numeric_grad.yaml, Time: 13.201820135116577
+[9853] Extracting mxnet.ndarray.contrib.quantize_v2.yaml
+Finish mxnet.ndarray.contrib.quantize_v2.yaml, Time: 12.79289722442627
+[9853] Extracting mxnet.ndarray.contrib.sparseembedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg sparse_grad with subtree type the
+Finish mxnet.ndarray.contrib.sparseembedding.yaml, Time: 13.004336833953857
+[9853] Extracting mxnet.ndarray.linalg.extractdiag.yaml
+Finish mxnet.ndarray.linalg.extractdiag.yaml, Time: 12.993454933166504
+[9853] Extracting mxnet.ndarray.op.fullyconnected.yaml
+Finish mxnet.ndarray.op.fullyconnected.yaml, Time: 12.895363569259644
+[9853] Extracting mxnet.ndarray.softmax2.yaml
+Finish mxnet.ndarray.softmax2.yaml, Time: 13.165963411331177
+[9853] Extracting mxnet.ndarray.op.softmin.yaml
+Finish mxnet.ndarray.op.softmin.yaml, Time: 12.889843702316284
+[9853] Extracting mxnet.ndarray.lamb_update_phase2.yaml
+Finish mxnet.ndarray.lamb_update_phase2.yaml, Time: 13.183260917663574
+[9853] Extracting mxnet.ndarray.op.ftrl_update.yaml
+Finish mxnet.ndarray.op.ftrl_update.yaml, Time: 13.298703908920288
+[9853] Extracting mxnet.ndarray.op.svmoutput.yaml
+Finish mxnet.ndarray.op.svmoutput.yaml, Time: 13.135819673538208
+[9853] Extracting mxnet.ndarray.linalg.trmm.yaml
+Finish mxnet.ndarray.linalg.trmm.yaml, Time: 13.132895708084106
+[9853] Extracting mxnet.ndarray.op.signsgd_update.yaml
+Finish mxnet.ndarray.op.signsgd_update.yaml, Time: 13.398007869720459
+[9853] Extracting mxnet.ndarray.contrib.bipartite_matching.yaml
+Finish mxnet.ndarray.contrib.bipartite_matching.yaml, Time: 13.279606342315674
+[9853] Extracting mxnet.ndarray.sgd_update.yaml
+Finish mxnet.ndarray.sgd_update.yaml, Time: 13.559836864471436
+[9853] Extracting mxnet.ndarray.upsampling.yaml
+Finish mxnet.ndarray.upsampling.yaml, Time: 13.893609762191772
+[9853] Extracting mxnet.io.mnistiter.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Finish mxnet.io.mnistiter.yaml, Time: 14.088209629058838
+[9853] Extracting mxnet.ndarray.op.broadcast_to.yaml
+Finish mxnet.ndarray.op.broadcast_to.yaml, Time: 14.550142288208008
+[9853] Extracting mxnet.gluon.contrib.rnn.conv1dlstmcell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv1dlstmcell.yaml, Time: 15.156188488006592
+[9853] Extracting mxnet.ndarray.op.split.yaml
+Finish mxnet.ndarray.op.split.yaml, Time: 14.983016967773438
+[9853] Extracting mxnet.ndarray.contrib.quantized_pooling.yaml
+Finish mxnet.ndarray.contrib.quantized_pooling.yaml, Time: 15.153881311416626
+[9853] Extracting mxnet.ndarray.rmspropalex_update.yaml
+Finish mxnet.ndarray.rmspropalex_update.yaml, Time: 14.845194101333618
+[9853] Extracting mxnet.ndarray.op.slice_like.yaml
+Finish mxnet.ndarray.op.slice_like.yaml, Time: 14.944379568099976
+[9853] Extracting mxnet.ndarray.op.signum_update.yaml
+Finish mxnet.ndarray.op.signum_update.yaml, Time: 14.925189733505249
+[9853] Extracting mxnet.ndarray.min_axis.yaml
+Finish mxnet.ndarray.min_axis.yaml, Time: 15.839962005615234
+[9853] Extracting mxnet.ndarray.take.yaml
+Finish mxnet.ndarray.take.yaml, Time: 18.85688543319702
+[9853] Extracting mxnet.ndarray.deconvolution.yaml
+Finish mxnet.ndarray.deconvolution.yaml, Time: 27.798076152801514
+[9853] Extracting mxnet.ndarray.topk.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg ret_typ with subtree type the
+Finish mxnet.ndarray.topk.yaml, Time: 54.67621922492981
+[9853] Extracting mxnet.ndarray.op.broadcast_lesser_equal.yaml
+Finish mxnet.ndarray.op.broadcast_lesser_equal.yaml, Time: 5.446626424789429
+[9853] Extracting mxnet.ndarray.random.negative_binomial_like.yaml
+Finish mxnet.ndarray.random.negative_binomial_like.yaml, Time: 7.282934904098511
+[9853] Extracting mxnet.ndarray.op.broadcast_logical_or.yaml
+Finish mxnet.ndarray.op.broadcast_logical_or.yaml, Time: 7.95851993560791
+[9853] Extracting mxnet.ndarray.op.maeregressionoutput.yaml
+Finish mxnet.ndarray.op.maeregressionoutput.yaml, Time: 8.180638313293457
+[9853] Extracting mxnet.test_utils.download_model.yaml
+Finish mxnet.test_utils.download_model.yaml, Time: 8.287871360778809
+[9853] Extracting mxnet.ndarray.contrib.dgl_adjacency.yaml
+Finish mxnet.ndarray.contrib.dgl_adjacency.yaml, Time: 8.389927387237549
+[9853] Extracting mxnet.ndarray.arccosh.yaml
+Finish mxnet.ndarray.arccosh.yaml, Time: 8.55316162109375
+[9853] Extracting mxnet.ndarray.linalg_sumlogdiag.yaml
+Finish mxnet.ndarray.linalg_sumlogdiag.yaml, Time: 8.666052341461182
+[9853] Extracting mxnet.initializer.register.yaml
+Finish mxnet.initializer.register.yaml, Time: 8.873440265655518
+[9853] Extracting mxnet.ndarray.broadcast_minus.yaml
+Finish mxnet.ndarray.broadcast_minus.yaml, Time: 8.892049789428711
+[9853] Extracting mxnet.ndarray.sparse.sin.yaml
+Finish mxnet.ndarray.sparse.sin.yaml, Time: 8.982249021530151
+[9853] Extracting mxnet.ndarray.stack.yaml
+Finish mxnet.ndarray.stack.yaml, Time: 8.740874528884888
+[9853] Extracting mxnet.profiler.set_state.yaml
+Unable to find map from None to data type for arg profile_process with subtree type of
+Finish mxnet.profiler.set_state.yaml, Time: 9.440691471099854
+[9853] Extracting mxnet.ndarray.save.yaml
+Finish mxnet.ndarray.save.yaml, Time: 9.552858114242554
+[9853] Extracting mxnet.gluon.contrib.rnn.variationaldropoutcell.yaml
+Finish mxnet.gluon.contrib.rnn.variationaldropoutcell.yaml, Time: 9.572741270065308
+[9853] Extracting mxnet.gluon.contrib.nn.concurrent.yaml
+Finish mxnet.gluon.contrib.nn.concurrent.yaml, Time: 9.940298318862915
+[9853] Extracting mxnet.gluon.contrib.nn.pixelshuffle1d.yaml
+Finish mxnet.gluon.contrib.nn.pixelshuffle1d.yaml, Time: 10.00659465789795
+[9853] Extracting mxnet.ndarray.full.yaml
+Unable to find map from None to data type for arg dtype with subtree d_structure returned
+Unable to find map from None to data type for arg dtype with subtree d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type returned
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 returned
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type data -1 of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type the -1 of -1 returned
+Finish mxnet.ndarray.full.yaml, Time: 10.45850682258606
+[9853] Extracting mxnet.contrib.ndarray.round_ste.yaml
+Finish mxnet.contrib.ndarray.round_ste.yaml, Time: 10.457557201385498
+[9853] Extracting mxnet.ndarray.sparse.add.yaml
+Finish mxnet.ndarray.sparse.add.yaml, Time: 10.835024118423462
+[9853] Extracting mxnet.ndarray.op.groupnorm.yaml
+Finish mxnet.ndarray.op.groupnorm.yaml, Time: 11.084938287734985
+[9853] Extracting mxnet.gluon.nn.prelu.yaml
+Finish mxnet.gluon.nn.prelu.yaml, Time: 10.820580005645752
+[9853] Extracting mxnet.ndarray.op.cos.yaml
+Finish mxnet.ndarray.op.cos.yaml, Time: 10.966557025909424
+[9853] Extracting mxnet.ndarray.linalg.potri.yaml
+Finish mxnet.ndarray.linalg.potri.yaml, Time: 10.923104286193848
+[9853] Extracting mxnet.autograd.pause.yaml
+Finish mxnet.autograd.pause.yaml, Time: 10.862458229064941
+[9853] Extracting mxnet.ndarray.op.linalg_sumlogdiag.yaml
+Finish mxnet.ndarray.op.linalg_sumlogdiag.yaml, Time: 11.094624996185303
+[9853] Extracting mxnet.contrib.onnx.import_to_gluon.yaml
+Finish mxnet.contrib.onnx.import_to_gluon.yaml, Time: 10.868052005767822
+[9853] Extracting mxnet.contrib.autograd.grad.yaml
+Finish mxnet.contrib.autograd.grad.yaml, Time: 11.272037029266357
+[9853] Extracting mxnet.ndarray.op.cast.yaml
+Finish mxnet.ndarray.op.cast.yaml, Time: 11.315043687820435
+[9853] Extracting mxnet.ndarray.sparse.degrees.yaml
+Finish mxnet.ndarray.sparse.degrees.yaml, Time: 11.348276615142822
+[9853] Extracting mxnet.ndarray.erf.yaml
+Finish mxnet.ndarray.erf.yaml, Time: 11.361816644668579
+[9853] Extracting mxnet.random.seed.yaml
+Finish mxnet.random.seed.yaml, Time: 11.41860818862915
+[9853] Extracting mxnet.ndarray.custom.yaml
+Finish mxnet.ndarray.custom.yaml, Time: 11.502416372299194
+[9853] Extracting mxnet.ndarray.op.broadcast_minimum.yaml
+Finish mxnet.ndarray.op.broadcast_minimum.yaml, Time: 11.59507441520691
+[9853] Extracting mxnet.gluon.nn.globalavgpool2d.yaml
+Finish mxnet.gluon.nn.globalavgpool2d.yaml, Time: 11.57038426399231
+[9853] Extracting mxnet.recordio.unpack_img.yaml
+Finish mxnet.recordio.unpack_img.yaml, Time: 11.655073404312134
+[9853] Extracting mxnet.ndarray.op.radians.yaml
+Finish mxnet.ndarray.op.radians.yaml, Time: 11.967426538467407
+[9853] Extracting mxnet.util.use_np_array.yaml
+Finish mxnet.util.use_np_array.yaml, Time: 11.60318398475647
+[9853] Extracting mxnet.ndarray.sparse.cast_storage.yaml
+Finish mxnet.ndarray.sparse.cast_storage.yaml, Time: 11.86251950263977
+[9853] Extracting mxnet.ndarray.op.relu.yaml
+Finish mxnet.ndarray.op.relu.yaml, Time: 11.808137893676758
+[9853] Extracting mxnet.image.imread.yaml
+Finish mxnet.image.imread.yaml, Time: 12.200440645217896
+[9853] Extracting mxnet.ndarray.op.rcbrt.yaml
+Finish mxnet.ndarray.op.rcbrt.yaml, Time: 12.028146028518677
+[9853] Extracting mxnet.ndarray.linalg_gemm.yaml
+Finish mxnet.ndarray.linalg_gemm.yaml, Time: 12.401900053024292
+[9853] Extracting mxnet.ndarray.sparse.broadcast_add.yaml
+Finish mxnet.ndarray.sparse.broadcast_add.yaml, Time: 12.234830379486084
+[9853] Extracting mxnet.ndarray.op.random_randint.yaml
+Finish mxnet.ndarray.op.random_randint.yaml, Time: 12.499928712844849
+[9853] Extracting mxnet.contrib.ndarray.quadratic.yaml
+Finish mxnet.contrib.ndarray.quadratic.yaml, Time: 12.424041986465454
+[9853] Extracting mxnet.gluon.rnn.grucell.yaml
+Finish mxnet.gluon.rnn.grucell.yaml, Time: 12.653015851974487
+[9853] Extracting mxnet.ndarray.op.preloaded_multi_mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.op.preloaded_multi_mp_sgd_mom_update.yaml, Time: 12.48065996170044
+[9853] Extracting mxnet.ndarray.op.all_finite.yaml
+Finish mxnet.ndarray.op.all_finite.yaml, Time: 12.469311952590942
+[9853] Extracting mxnet.ndarray.op.linalg_gemm.yaml
+Finish mxnet.ndarray.op.linalg_gemm.yaml, Time: 12.66466736793518
+[9853] Extracting mxnet.gluon.nn.swish.yaml
+Finish mxnet.gluon.nn.swish.yaml, Time: 12.241611957550049
+[9853] Extracting mxnet.ndarray.relu.yaml
+Finish mxnet.ndarray.relu.yaml, Time: 12.389358520507812
+[9853] Extracting mxnet.ndarray.smooth_l1.yaml
+Finish mxnet.ndarray.smooth_l1.yaml, Time: 12.416719913482666
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg13.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg13.yaml, Time: 12.588238000869751
+[9853] Extracting mxnet.gluon.model_zoo.vision.densenet169.yaml
+Finish mxnet.gluon.model_zoo.vision.densenet169.yaml, Time: 12.563854455947876
+[9853] Extracting mxnet.image.color_normalize.yaml
+Finish mxnet.image.color_normalize.yaml, Time: 12.335959672927856
+[9853] Extracting mxnet.ndarray.op.broadcast_logical_xor.yaml
+Finish mxnet.ndarray.op.broadcast_logical_xor.yaml, Time: 12.581943988800049
+[9853] Extracting mxnet.ndarray.amp_multicast.yaml
+Unable to find map from None to data type for arg cast_narrow with subtree type the
+Unable to find map from None to data type for arg num_outputs with subtree type the
+Finish mxnet.ndarray.amp_multicast.yaml, Time: 12.548096179962158
+[9853] Extracting mxnet.image.random_crop.yaml
+Finish mxnet.image.random_crop.yaml, Time: 12.620351314544678
+[9853] Extracting mxnet.contrib.ndarray.interleaved_matmul_encdec_qk.yaml
+Finish mxnet.contrib.ndarray.interleaved_matmul_encdec_qk.yaml, Time: 12.817268133163452
+[9853] Extracting mxnet.ndarray.op.linalg_extractdiag.yaml
+Finish mxnet.ndarray.op.linalg_extractdiag.yaml, Time: 12.969219207763672
+[9853] Extracting mxnet.ndarray.swapaxis.yaml
+Finish mxnet.ndarray.swapaxis.yaml, Time: 12.948888063430786
+[9853] Extracting mxnet.contrib.ndarray.quantize.yaml
+Finish mxnet.contrib.ndarray.quantize.yaml, Time: 12.855518102645874
+[9853] Extracting mxnet.contrib.ndarray.quantized_act.yaml
+Finish mxnet.contrib.ndarray.quantized_act.yaml, Time: 13.075105428695679
+[9853] Extracting mxnet.ndarray.contrib.interleaved_matmul_encdec_valatt.yaml
+Finish mxnet.ndarray.contrib.interleaved_matmul_encdec_valatt.yaml, Time: 13.059213638305664
+[9853] Extracting mxnet.ndarray.contrib.quantized_act.yaml
+Finish mxnet.ndarray.contrib.quantized_act.yaml, Time: 13.069504737854004
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet101_v1.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet101_v1.yaml, Time: 12.927051544189453
+[9853] Extracting mxnet.ndarray.linalg.makediag.yaml
+Finish mxnet.ndarray.linalg.makediag.yaml, Time: 13.302147626876831
+[9853] Extracting mxnet.ndarray.op.hard_sigmoid.yaml
+Finish mxnet.ndarray.op.hard_sigmoid.yaml, Time: 13.1095290184021
+[9853] Extracting mxnet.ndarray.op.log_softmax.yaml
+Finish mxnet.ndarray.op.log_softmax.yaml, Time: 13.385009288787842
+[9853] Extracting mxnet.image.fixed_crop.yaml
+Finish mxnet.image.fixed_crop.yaml, Time: 13.229484558105469
+[9853] Extracting mxnet.ndarray.repeat.yaml
+Finish mxnet.ndarray.repeat.yaml, Time: 13.26759147644043
+[9853] Extracting mxnet.ndarray.linalg_extracttrian.yaml
+Finish mxnet.ndarray.linalg_extracttrian.yaml, Time: 13.616215944290161
+[9853] Extracting mxnet.ndarray.contrib.quantized_elemwise_add.yaml
+Finish mxnet.ndarray.contrib.quantized_elemwise_add.yaml, Time: 13.369807481765747
+[9853] Extracting mxnet.ndarray.contrib.count_sketch.yaml
+Finish mxnet.ndarray.contrib.count_sketch.yaml, Time: 13.396920919418335
+[9853] Extracting mxnet.ndarray.multi_sgd_mom_update.yaml
+Finish mxnet.ndarray.multi_sgd_mom_update.yaml, Time: 13.797722101211548
+[9853] Extracting mxnet.ndarray.op.sample_negative_binomial.yaml
+Finish mxnet.ndarray.op.sample_negative_binomial.yaml, Time: 13.346855163574219
+[9853] Extracting mxnet.ndarray.image.random_color_jitter.yaml
+Finish mxnet.ndarray.image.random_color_jitter.yaml, Time: 13.478808641433716
+[9853] Extracting mxnet.autograd.grad.yaml
+Finish mxnet.autograd.grad.yaml, Time: 13.448684453964233
+[9853] Extracting mxnet.contrib.ndarray.multiboxtarget.yaml
+Finish mxnet.contrib.ndarray.multiboxtarget.yaml, Time: 13.827454328536987
+[9853] Extracting mxnet.ndarray.dropout.yaml
+Finish mxnet.ndarray.dropout.yaml, Time: 13.6389639377594
+[9853] Extracting mxnet.gluon.rnn.lstmcell.yaml
+Unable to find map from None to data type for arg recurrent_activation with subtree type the
+Finish mxnet.gluon.rnn.lstmcell.yaml, Time: 14.18470811843872
+[9853] Extracting mxnet.test_utils.download.yaml
+Finish mxnet.test_utils.download.yaml, Time: 14.544065713882446
+[9853] Extracting mxnet.ndarray.slice_like.yaml
+Finish mxnet.ndarray.slice_like.yaml, Time: 15.20647668838501
+[9853] Extracting mxnet.ndarray.rnn.yaml
+Unable to find map from None to data type for arg mode with subtree type of
+Unable to find map from None to data type for arg mode with subtree type the
+Unable to find map from None to data type for arg mode with subtree type the -1 of
+Unable to find map from None to data type for arg mode with subtree type the -1 of
+Finish mxnet.ndarray.rnn.yaml, Time: 15.868316650390625
+[9853] Extracting mxnet.ndarray.op.prod.yaml
+Finish mxnet.ndarray.op.prod.yaml, Time: 15.8855459690094
+[9853] Extracting mxnet.test_utils.verify_generator.yaml
+Finish mxnet.test_utils.verify_generator.yaml, Time: 16.075167655944824
+[9853] Extracting mxnet.ndarray.random.generalized_negative_binomial.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.generalized_negative_binomial.yaml, Time: 15.907333612442017
+[9853] Extracting mxnet.ndarray.op.sum.yaml
+Finish mxnet.ndarray.op.sum.yaml, Time: 16.30226993560791
+[9853] Extracting mxnet.ndarray.random.normal.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.normal.yaml, Time: 16.404082775115967
+[9853] Extracting mxnet.ndarray.nansum.yaml
+Finish mxnet.ndarray.nansum.yaml, Time: 17.181421279907227
+[9853] Extracting mxnet.ndarray.histogram.yaml
+Finish mxnet.ndarray.histogram.yaml, Time: 17.516756772994995
+[9853] Extracting mxnet.ndarray.op.nansum.yaml
+Finish mxnet.ndarray.op.nansum.yaml, Time: 17.457997798919678
+[9853] Extracting mxnet.ndarray.ctc_loss.yaml
+Finish mxnet.ndarray.ctc_loss.yaml, Time: 19.23421812057495
+[9853] Extracting mxnet.ndarray.sparse.norm.yaml
+Unable to find map from None to data type for arg out_dtype with subtree type of
+Unable to find map from None to data type for arg out_dtype with subtree type the
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Finish mxnet.ndarray.sparse.norm.yaml, Time: 21.469100952148438
+[9853] Extracting mxnet.gluon.nn.conv1d.yaml
+Finish mxnet.gluon.nn.conv1d.yaml, Time: 34.345558166503906
+[9853] Extracting mxnet.gluon.nn.dense.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.gluon.nn.dense.yaml, Time: 36.28771424293518
+[9853] Extracting mxnet.io.imagerecorditer.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Finish mxnet.io.imagerecorditer.yaml, Time: 38.737542152404785
+[9853] Extracting mxnet.ndarray.op.deconvolution.yaml
+Finish mxnet.ndarray.op.deconvolution.yaml, Time: 39.11747097969055
+[9853] Extracting mxnet.ndarray.contrib.quantized_batch_norm.yaml
+Finish mxnet.ndarray.contrib.quantized_batch_norm.yaml, Time: 40.45933556556702
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet1_0.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet1_0.yaml, Time: 5.464509963989258
+[9853] Extracting mxnet.ndarray.tanh.yaml
+Finish mxnet.ndarray.tanh.yaml, Time: 5.6395955085754395
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_vgg.yaml
+Finish mxnet.gluon.model_zoo.vision.get_vgg.yaml, Time: 6.165921449661255
+[9853] Extracting mxnet.ndarray.floor.yaml
+Finish mxnet.ndarray.floor.yaml, Time: 6.394556045532227
+[9853] Extracting mxnet.util.np_shape.yaml
+Finish mxnet.util.np_shape.yaml, Time: 6.563283920288086
+[9853] Extracting mxnet.ndarray.utils.empty.yaml
+Finish mxnet.ndarray.utils.empty.yaml, Time: 6.586364507675171
+[9853] Extracting mxnet.ndarray.broadcast_not_equal.yaml
+Finish mxnet.ndarray.broadcast_not_equal.yaml, Time: 6.774481534957886
+[9853] Extracting mxnet.test_utils.assert_almost_equal_ignore_nan.yaml
+Finish mxnet.test_utils.assert_almost_equal_ignore_nan.yaml, Time: 7.308903455734253
+[9853] Extracting mxnet.ndarray.square.yaml
+Finish mxnet.ndarray.square.yaml, Time: 7.485068321228027
+[9853] Extracting mxnet.ndarray.cast_storage.yaml
+Finish mxnet.ndarray.cast_storage.yaml, Time: 8.780847549438477
+[9853] Extracting mxnet.gluon.nn.globalavgpool1d.yaml
+Finish mxnet.gluon.nn.globalavgpool1d.yaml, Time: 8.78808069229126
+[9853] Extracting mxnet.ndarray.broadcast_maximum.yaml
+Finish mxnet.ndarray.broadcast_maximum.yaml, Time: 9.180650472640991
+[9853] Extracting mxnet.util.wrap_np_binary_func.yaml
+Finish mxnet.util.wrap_np_binary_func.yaml, Time: 9.781606674194336
+[9853] Extracting mxnet.ndarray.op.make_loss.yaml
+Finish mxnet.ndarray.op.make_loss.yaml, Time: 9.884374141693115
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet152_v1.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet152_v1.yaml, Time: 10.170313358306885
+[9853] Extracting mxnet.ndarray.utils.save.yaml
+Finish mxnet.ndarray.utils.save.yaml, Time: 10.35548996925354
+[9853] Extracting mxnet.ndarray.op.broadcast_mul.yaml
+Finish mxnet.ndarray.op.broadcast_mul.yaml, Time: 10.440175294876099
+[9853] Extracting mxnet.ndarray.add.yaml
+Finish mxnet.ndarray.add.yaml, Time: 10.319730520248413
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet_v2_0_5.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet_v2_0_5.yaml, Time: 10.816166400909424
+[9853] Extracting mxnet.contrib.autograd.grad_and_loss.yaml
+Finish mxnet.contrib.autograd.grad_and_loss.yaml, Time: 10.985906839370728
+[9853] Extracting mxnet.contrib.ndarray.div_sqrt_dim.yaml
+Finish mxnet.contrib.ndarray.div_sqrt_dim.yaml, Time: 10.77857780456543
+[9853] Extracting mxnet.gluon.nn.globalavgpool3d.yaml
+Finish mxnet.gluon.nn.globalavgpool3d.yaml, Time: 10.735862970352173
+[9853] Extracting mxnet.util.wrap_np_unary_func.yaml
+Finish mxnet.util.wrap_np_unary_func.yaml, Time: 11.025810241699219
+[9853] Extracting mxnet.util.set_np_shape.yaml
+Finish mxnet.util.set_np_shape.yaml, Time: 10.891252994537354
+[9853] Extracting mxnet.ndarray.sparse.gamma.yaml
+Finish mxnet.ndarray.sparse.gamma.yaml, Time: 11.34038519859314
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet101_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet101_v2.yaml, Time: 11.27293872833252
+[9853] Extracting mxnet.ndarray.sparse.broadcast_minus.yaml
+Finish mxnet.ndarray.sparse.broadcast_minus.yaml, Time: 11.247104406356812
+[9853] Extracting mxnet.ndarray.linalg_maketrian.yaml
+Finish mxnet.ndarray.linalg_maketrian.yaml, Time: 11.821179628372192
+[9853] Extracting mxnet.ndarray.op.spatialtransformer.yaml
+Finish mxnet.ndarray.op.spatialtransformer.yaml, Time: 11.78061032295227
+[9853] Extracting mxnet.profiler.dump.yaml
+Unable to find map from None to data type for arg profile_process with subtree type of
+Finish mxnet.profiler.dump.yaml, Time: 11.835168600082397
+[9853] Extracting mxnet.ndarray.op.linalg_gelqf.yaml
+Finish mxnet.ndarray.op.linalg_gelqf.yaml, Time: 11.458946943283081
+[9853] Extracting mxnet.ndarray.contrib.box_encode.yaml
+Finish mxnet.ndarray.contrib.box_encode.yaml, Time: 12.024349212646484
+[9853] Extracting mxnet.ndarray.op.random_pdf_poisson.yaml
+Finish mxnet.ndarray.op.random_pdf_poisson.yaml, Time: 11.857466459274292
+[9853] Extracting mxnet.ndarray.sparse.concat.yaml
+Finish mxnet.ndarray.sparse.concat.yaml, Time: 11.909721374511719
+[9853] Extracting mxnet.ndarray.op.broadcast_minus.yaml
+Finish mxnet.ndarray.op.broadcast_minus.yaml, Time: 11.739698886871338
+[9853] Extracting mxnet.ndarray.op.rint.yaml
+Finish mxnet.ndarray.op.rint.yaml, Time: 12.01169753074646
+[9853] Extracting mxnet.util.np_ufunc_legal_option.yaml
+Finish mxnet.util.np_ufunc_legal_option.yaml, Time: 11.775582790374756
+[9853] Extracting mxnet.ndarray.broadcast_axis.yaml
+Finish mxnet.ndarray.broadcast_axis.yaml, Time: 11.832782983779907
+[9853] Extracting mxnet.ndarray.to_dlpack_for_read.yaml
+Finish mxnet.ndarray.to_dlpack_for_read.yaml, Time: 11.73643970489502
+[9853] Extracting mxnet.ndarray.cosh.yaml
+Finish mxnet.ndarray.cosh.yaml, Time: 11.830404281616211
+[9853] Extracting mxnet.ndarray.sparse.gammaln.yaml
+Finish mxnet.ndarray.sparse.gammaln.yaml, Time: 12.164139986038208
+[9853] Extracting mxnet.ndarray.sparse.exp.yaml
+Finish mxnet.ndarray.sparse.exp.yaml, Time: 12.155079126358032
+[9853] Extracting mxnet.ndarray.op.smooth_l1.yaml
+Finish mxnet.ndarray.op.smooth_l1.yaml, Time: 12.231786966323853
+[9853] Extracting mxnet.ndarray.op.linalg_potri.yaml
+Finish mxnet.ndarray.op.linalg_potri.yaml, Time: 12.203704595565796
+[9853] Extracting mxnet.gluon.rnn.dropoutcell.yaml
+Finish mxnet.gluon.rnn.dropoutcell.yaml, Time: 12.097573280334473
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg16.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg16.yaml, Time: 12.082618474960327
+[9853] Extracting mxnet.ndarray.contrib.calibrate_entropy.yaml
+Finish mxnet.ndarray.contrib.calibrate_entropy.yaml, Time: 12.291332960128784
+[9853] Extracting mxnet.ndarray.sparse.tan.yaml
+Finish mxnet.ndarray.sparse.tan.yaml, Time: 12.169432878494263
+[9853] Extracting mxnet.ndarray.lesser.yaml
+Finish mxnet.ndarray.lesser.yaml, Time: 12.228123903274536
+[9853] Extracting mxnet.gluon.nn.dropout.yaml
+Finish mxnet.gluon.nn.dropout.yaml, Time: 12.281821966171265
+[9853] Extracting mxnet.ndarray.sparse.log10.yaml
+Finish mxnet.ndarray.sparse.log10.yaml, Time: 12.443093061447144
+[9853] Extracting mxnet.ndarray.leakyrelu.yaml
+Finish mxnet.ndarray.leakyrelu.yaml, Time: 12.783176898956299
+[9853] Extracting mxnet.ndarray.op.broadcast_sub.yaml
+Finish mxnet.ndarray.op.broadcast_sub.yaml, Time: 12.235845565795898
+[9853] Extracting mxnet.contrib.ndarray.quantize_v2.yaml
+Finish mxnet.contrib.ndarray.quantize_v2.yaml, Time: 12.553812503814697
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet18_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet18_v2.yaml, Time: 12.3323655128479
+[9853] Extracting mxnet.gluon.model_zoo.vision.densenet161.yaml
+Finish mxnet.gluon.model_zoo.vision.densenet161.yaml, Time: 12.496045112609863
+[9853] Extracting mxnet.metric.check_label_shapes.yaml
+Finish mxnet.metric.check_label_shapes.yaml, Time: 12.643373727798462
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_mobilenet_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.get_mobilenet_v2.yaml, Time: 12.59444808959961
+[9853] Extracting mxnet.ndarray.stop_gradient.yaml
+Finish mxnet.ndarray.stop_gradient.yaml, Time: 12.456449270248413
+[9853] Extracting mxnet.ndarray.sparse.clip.yaml
+Finish mxnet.ndarray.sparse.clip.yaml, Time: 12.765100240707397
+[9853] Extracting mxnet.ndarray.op.broadcast_greater_equal.yaml
+Finish mxnet.ndarray.op.broadcast_greater_equal.yaml, Time: 12.53100848197937
+[9853] Extracting mxnet.ndarray.contrib.quantize.yaml
+Finish mxnet.ndarray.contrib.quantize.yaml, Time: 12.467772245407104
+[9853] Extracting mxnet.ndarray.op.elemwise_add.yaml
+Finish mxnet.ndarray.op.elemwise_add.yaml, Time: 12.688468217849731
+[9853] Extracting mxnet.ndarray.op.erfinv.yaml
+Finish mxnet.ndarray.op.erfinv.yaml, Time: 12.473325252532959
+[9853] Extracting mxnet.ndarray.op.sigmoid.yaml
+Finish mxnet.ndarray.op.sigmoid.yaml, Time: 12.582816362380981
+[9853] Extracting mxnet.contrib.ndarray.calibrate_entropy.yaml
+Finish mxnet.contrib.ndarray.calibrate_entropy.yaml, Time: 12.599706888198853
+[9853] Extracting mxnet.ndarray.one_hot.yaml
+Finish mxnet.ndarray.one_hot.yaml, Time: 13.086777210235596
+[9853] Extracting mxnet.ndarray.sparse.where.yaml
+Finish mxnet.ndarray.sparse.where.yaml, Time: 12.910741090774536
+[9853] Extracting mxnet.ndarray.op.expand_dims.yaml
+Finish mxnet.ndarray.op.expand_dims.yaml, Time: 13.031301975250244
+[9853] Extracting mxnet.contrib.quantization.calib_graph.yaml
+Unable to find map from None to data type for arg quantized_dtype with subtree type data
+Unable to find map from None to data type for arg quantized_dtype with subtree type the
+Unable to find map from None to data type for arg quantized_dtype with subtree type the -1 data
+Finish mxnet.contrib.quantization.calib_graph.yaml, Time: 12.852071523666382
+[9853] Extracting mxnet.ndarray.linearregressionoutput.yaml
+Finish mxnet.ndarray.linearregressionoutput.yaml, Time: 12.798003911972046
+[9853] Extracting mxnet.ndarray.linalg_extractdiag.yaml
+Finish mxnet.ndarray.linalg_extractdiag.yaml, Time: 13.17576003074646
+[9853] Extracting mxnet.ndarray.sparse.dot.yaml
+Finish mxnet.ndarray.sparse.dot.yaml, Time: 13.210391998291016
+[9853] Extracting mxnet.ndarray.op.slice_axis.yaml
+Finish mxnet.ndarray.op.slice_axis.yaml, Time: 13.041526556015015
+[9853] Extracting mxnet.ndarray.op.sample_exponential.yaml
+Finish mxnet.ndarray.op.sample_exponential.yaml, Time: 13.1743483543396
+[9853] Extracting mxnet.ndarray.linalg_trsm.yaml
+Finish mxnet.ndarray.linalg_trsm.yaml, Time: 13.394396781921387
+[9853] Extracting mxnet.log.get_logger.yaml
+Finish mxnet.log.get_logger.yaml, Time: 13.225953340530396
+[9853] Extracting mxnet.ndarray.op.multi_sgd_update.yaml
+Finish mxnet.ndarray.op.multi_sgd_update.yaml, Time: 13.330875635147095
+[9853] Extracting mxnet.ndarray.op.sample_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.op.sample_generalized_negative_binomial.yaml, Time: 13.221808195114136
+[9853] Extracting mxnet.ndarray.sparse.adagrad_update.yaml
+Finish mxnet.ndarray.sparse.adagrad_update.yaml, Time: 13.689573526382446
+[9853] Extracting mxnet.ndarray.preloaded_multi_sgd_mom_update.yaml
+Finish mxnet.ndarray.preloaded_multi_sgd_mom_update.yaml, Time: 13.376906633377075
+[9853] Extracting mxnet.ndarray.multi_mp_sgd_update.yaml
+Finish mxnet.ndarray.multi_mp_sgd_update.yaml, Time: 13.598008155822754
+[9853] Extracting mxnet.ndarray.sparse.embedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg sparse_grad with subtree type the
+Finish mxnet.ndarray.sparse.embedding.yaml, Time: 13.43738865852356
+[9853] Extracting mxnet.ndarray.correlation.yaml
+Finish mxnet.ndarray.correlation.yaml, Time: 13.876117467880249
+[9853] Extracting mxnet.ndarray.op.reshape_like.yaml
+Finish mxnet.ndarray.op.reshape_like.yaml, Time: 14.246877908706665
+[9853] Extracting mxnet.gluon.rnn.gru.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Finish mxnet.gluon.rnn.gru.yaml, Time: 14.620457887649536
+[9853] Extracting mxnet.ndarray.broadcast_to.yaml
+Finish mxnet.ndarray.broadcast_to.yaml, Time: 14.61317777633667
+[9853] Extracting mxnet.ndarray.lamb_update_phase1.yaml
+Finish mxnet.ndarray.lamb_update_phase1.yaml, Time: 14.744605302810669
+[9853] Extracting mxnet.ndarray.random.randn.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.randn.yaml, Time: 15.105493068695068
+[9853] Extracting mxnet.ndarray.op.rmsprop_update.yaml
+Finish mxnet.ndarray.op.rmsprop_update.yaml, Time: 14.919044971466064
+[9853] Extracting mxnet.ndarray.op.max_axis.yaml
+Finish mxnet.ndarray.op.max_axis.yaml, Time: 15.407600164413452
+[9853] Extracting mxnet.visualization.plot_network.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Finish mxnet.visualization.plot_network.yaml, Time: 15.935124158859253
+[9853] Extracting mxnet.ndarray.op.min.yaml
+Finish mxnet.ndarray.op.min.yaml, Time: 16.31771755218506
+[9853] Extracting mxnet.ndarray.op.nanprod.yaml
+Finish mxnet.ndarray.op.nanprod.yaml, Time: 16.38996648788452
+[9853] Extracting mxnet.ndarray.max_axis.yaml
+Finish mxnet.ndarray.max_axis.yaml, Time: 16.407665252685547
+[9853] Extracting mxnet.ndarray.max.yaml
+Finish mxnet.ndarray.max.yaml, Time: 16.678990125656128
+[9853] Extracting mxnet.test_utils.check_symbolic_forward.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Finish mxnet.test_utils.check_symbolic_forward.yaml, Time: 21.530261278152466
+[9853] Extracting mxnet.ndarray.eye.yaml
+Finish mxnet.ndarray.eye.yaml, Time: 24.974663496017456
+[9853] Extracting mxnet.contrib.ndarray.quantized_conv.yaml
+Finish mxnet.contrib.ndarray.quantized_conv.yaml, Time: 28.21173405647278
+[9853] Extracting mxnet.ndarray.op.cumsum.yaml
+Unable to find map from None to data type for arg dtype with subtree d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type d_structure of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type d_structure returned
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type of -1 returned
+Unable to find map from None to data type for arg dtype with subtree type returned
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 returned
+Finish mxnet.ndarray.op.cumsum.yaml, Time: 42.780975341796875
+[9853] Extracting mxnet.ndarray.scatter_nd.yaml
+Finish mxnet.ndarray.scatter_nd.yaml, Time: 4.938290119171143
+[9853] Extracting mxnet.ndarray.op.softsign.yaml
+Finish mxnet.ndarray.op.softsign.yaml, Time: 5.998953104019165
+[9853] Extracting mxnet.ndarray.elemwise_add.yaml
+Finish mxnet.ndarray.elemwise_add.yaml, Time: 6.941909551620483
+[9853] Extracting mxnet.ndarray.op.size_array.yaml
+Finish mxnet.ndarray.op.size_array.yaml, Time: 7.0197343826293945
+[9853] Extracting mxnet.ndarray.greater.yaml
+Finish mxnet.ndarray.greater.yaml, Time: 7.109658479690552
+[9853] Extracting mxnet.ndarray.sparse.make_loss.yaml
+Finish mxnet.ndarray.sparse.make_loss.yaml, Time: 7.179073333740234
+[9853] Extracting mxnet.ndarray.fill_element_0index.yaml
+Finish mxnet.ndarray.fill_element_0index.yaml, Time: 7.383344888687134
+[9853] Extracting mxnet.ndarray.gammaln.yaml
+Finish mxnet.ndarray.gammaln.yaml, Time: 7.659775972366333
+[9853] Extracting mxnet.ndarray.op.gather_nd.yaml
+Finish mxnet.ndarray.op.gather_nd.yaml, Time: 7.779310703277588
+[9853] Extracting mxnet.ndarray.negative.yaml
+Finish mxnet.ndarray.negative.yaml, Time: 7.911840200424194
+[9853] Extracting mxnet.ndarray.sparse.broadcast_plus.yaml
+Finish mxnet.ndarray.sparse.broadcast_plus.yaml, Time: 8.013626098632812
+[9853] Extracting mxnet.ndarray.op.dot.yaml
+Finish mxnet.ndarray.op.dot.yaml, Time: 8.37979507446289
+[9853] Extracting mxnet.ndarray.op.reverse.yaml
+Finish mxnet.ndarray.op.reverse.yaml, Time: 8.803990602493286
+[9853] Extracting mxnet.contrib.ndarray.ifft.yaml
+Finish mxnet.contrib.ndarray.ifft.yaml, Time: 8.941990375518799
+[9853] Extracting mxnet.ndarray.sqrt.yaml
+Finish mxnet.ndarray.sqrt.yaml, Time: 8.869415521621704
+[9853] Extracting mxnet.ndarray.load_frombuffer.yaml
+Finish mxnet.ndarray.load_frombuffer.yaml, Time: 9.047103881835938
+[9853] Extracting mxnet.ndarray.from_dlpack.yaml
+Finish mxnet.ndarray.from_dlpack.yaml, Time: 9.469492435455322
+[9853] Extracting mxnet.gluon.contrib.nn.sparseembedding.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.gluon.contrib.nn.sparseembedding.yaml, Time: 9.697043418884277
+[9853] Extracting mxnet.ndarray.op.bilinearsampler.yaml
+Finish mxnet.ndarray.op.bilinearsampler.yaml, Time: 9.750393390655518
+[9853] Extracting mxnet.gluon.nn.leakyrelu.yaml
+Finish mxnet.gluon.nn.leakyrelu.yaml, Time: 9.721105575561523
+[9853] Extracting mxnet.contrib.ndarray.backward_hawkesll.yaml
+Finish mxnet.contrib.ndarray.backward_hawkesll.yaml, Time: 9.86232614517212
+[9853] Extracting mxnet.ndarray.sigmoid.yaml
+Finish mxnet.ndarray.sigmoid.yaml, Time: 9.918608665466309
+[9853] Extracting mxnet.ndarray.sparse.arcsinh.yaml
+Finish mxnet.ndarray.sparse.arcsinh.yaml, Time: 10.005654096603394
+[9853] Extracting mxnet.ndarray.op.linalg_slogdet.yaml
+Finish mxnet.ndarray.op.linalg_slogdet.yaml, Time: 10.03103232383728
+[9853] Extracting mxnet.ndarray.broadcast_greater_equal.yaml
+Finish mxnet.ndarray.broadcast_greater_equal.yaml, Time: 10.489524126052856
+[9853] Extracting mxnet.ndarray.sparse.stop_gradient.yaml
+Finish mxnet.ndarray.sparse.stop_gradient.yaml, Time: 10.261536836624146
+[9853] Extracting mxnet.ndarray.contrib.cond.yaml
+Finish mxnet.ndarray.contrib.cond.yaml, Time: 10.718808650970459
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_mobilenet.yaml
+Finish mxnet.gluon.model_zoo.vision.get_mobilenet.yaml, Time: 10.888128519058228
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg19.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg19.yaml, Time: 10.730385541915894
+[9853] Extracting mxnet.gluon.utils.check_sha1.yaml
+Finish mxnet.gluon.utils.check_sha1.yaml, Time: 10.413097143173218
+[9853] Extracting mxnet.ndarray.op.squeeze.yaml
+Finish mxnet.ndarray.op.squeeze.yaml, Time: 10.632638931274414
+[9853] Extracting mxnet.ndarray.sparse.arccosh.yaml
+Finish mxnet.ndarray.sparse.arccosh.yaml, Time: 10.84076714515686
+[9853] Extracting mxnet.test_utils.gen_buckets_probs_with_ppf.yaml
+Finish mxnet.test_utils.gen_buckets_probs_with_ppf.yaml, Time: 10.651665687561035
+[9853] Extracting mxnet.ndarray.divide.yaml
+Finish mxnet.ndarray.divide.yaml, Time: 10.990984201431274
+[9853] Extracting mxnet.ndarray.image.to_tensor.yaml
+Finish mxnet.ndarray.image.to_tensor.yaml, Time: 10.91153621673584
+[9853] Extracting mxnet.ndarray.elemwise_div.yaml
+Finish mxnet.ndarray.elemwise_div.yaml, Time: 11.067614316940308
+[9853] Extracting mxnet.ndarray.logical_xor.yaml
+Finish mxnet.ndarray.logical_xor.yaml, Time: 11.041351079940796
+[9853] Extracting mxnet.ndarray.sparse.broadcast_div.yaml
+Finish mxnet.ndarray.sparse.broadcast_div.yaml, Time: 11.062990665435791
+[9853] Extracting mxnet.ndarray.op.ceil.yaml
+Finish mxnet.ndarray.op.ceil.yaml, Time: 11.185045003890991
+[9853] Extracting mxnet.ndarray.contrib.round_ste.yaml
+Finish mxnet.ndarray.contrib.round_ste.yaml, Time: 11.25433611869812
+[9853] Extracting mxnet.ndarray.expm1.yaml
+Finish mxnet.ndarray.expm1.yaml, Time: 11.209939956665039
+[9853] Extracting mxnet.profiler.resume.yaml
+Unable to find map from None to data type for arg profile_process with subtree type of
+Finish mxnet.profiler.resume.yaml, Time: 11.142543077468872
+[9853] Extracting mxnet.ndarray.op.scatter_nd.yaml
+Finish mxnet.ndarray.op.scatter_nd.yaml, Time: 11.45002031326294
+[9853] Extracting mxnet.ndarray.image.random_flip_top_bottom.yaml
+Finish mxnet.ndarray.image.random_flip_top_bottom.yaml, Time: 11.254904508590698
+[9853] Extracting mxnet.ndarray.image.flip_top_bottom.yaml
+Finish mxnet.ndarray.image.flip_top_bottom.yaml, Time: 11.404828548431396
+[9853] Extracting mxnet.ndarray.multi_all_finite.yaml
+Finish mxnet.ndarray.multi_all_finite.yaml, Time: 11.581169366836548
+[9853] Extracting mxnet.ndarray.sparse.log1p.yaml
+Finish mxnet.ndarray.sparse.log1p.yaml, Time: 11.341848373413086
+[9853] Extracting mxnet.ndarray.sparse.logisticregressionoutput.yaml
+Finish mxnet.ndarray.sparse.logisticregressionoutput.yaml, Time: 11.767475843429565
+[9853] Extracting mxnet.ndarray.op.linalg_syrk.yaml
+Finish mxnet.ndarray.op.linalg_syrk.yaml, Time: 11.717253684997559
+[9853] Extracting mxnet.ndarray.op.ravel_multi_index.yaml
+Finish mxnet.ndarray.op.ravel_multi_index.yaml, Time: 11.566315650939941
+[9853] Extracting mxnet.ndarray.sample_gamma.yaml
+Finish mxnet.ndarray.sample_gamma.yaml, Time: 11.766422271728516
+[9853] Extracting mxnet.contrib.ndarray.rroialign.yaml
+Finish mxnet.contrib.ndarray.rroialign.yaml, Time: 11.945936918258667
+[9853] Extracting mxnet.ndarray.op.random_gamma.yaml
+Finish mxnet.ndarray.op.random_gamma.yaml, Time: 11.99216103553772
+[9853] Extracting mxnet.gluon.model_zoo.vision.squeezenet1_1.yaml
+Finish mxnet.gluon.model_zoo.vision.squeezenet1_1.yaml, Time: 11.667045831680298
+[9853] Extracting mxnet.ndarray.blockgrad.yaml
+Finish mxnet.ndarray.blockgrad.yaml, Time: 11.65557050704956
+[9853] Extracting mxnet.ndarray.broadcast_mul.yaml
+Finish mxnet.ndarray.broadcast_mul.yaml, Time: 11.566007852554321
+[9853] Extracting mxnet.ndarray.broadcast_lesser.yaml
+Finish mxnet.ndarray.broadcast_lesser.yaml, Time: 11.739238023757935
+[9853] Extracting mxnet.ndarray.svmoutput.yaml
+Finish mxnet.ndarray.svmoutput.yaml, Time: 11.993223190307617
+[9853] Extracting mxnet.test_utils.assert_almost_equal.yaml
+Finish mxnet.test_utils.assert_almost_equal.yaml, Time: 11.680134773254395
+[9853] Extracting mxnet.ndarray.random.poisson_like.yaml
+Finish mxnet.ndarray.random.poisson_like.yaml, Time: 11.849674224853516
+[9853] Extracting mxnet.ndarray.sample_multinomial.yaml
+Finish mxnet.ndarray.sample_multinomial.yaml, Time: 12.164443731307983
+[9853] Extracting mxnet.ndarray.op.sample_poisson.yaml
+Finish mxnet.ndarray.op.sample_poisson.yaml, Time: 11.929914712905884
+[9853] Extracting mxnet.ndarray.sparse.linearregressionoutput.yaml
+Finish mxnet.ndarray.sparse.linearregressionoutput.yaml, Time: 11.865435123443604
+[9853] Extracting mxnet.ndarray.op.linalg_trsm.yaml
+Finish mxnet.ndarray.op.linalg_trsm.yaml, Time: 12.230997562408447
+[9853] Extracting mxnet.ndarray.contrib.index_copy.yaml
+Finish mxnet.ndarray.contrib.index_copy.yaml, Time: 11.917333364486694
+[9853] Extracting mxnet.ndarray.op.sample_gamma.yaml
+Finish mxnet.ndarray.op.sample_gamma.yaml, Time: 12.019466161727905
+[9853] Extracting mxnet.ndarray.op.layernorm.yaml
+Finish mxnet.ndarray.op.layernorm.yaml, Time: 12.183931589126587
+[9853] Extracting mxnet.ndarray.random_pdf_generalized_negative_binomial.yaml
+Finish mxnet.ndarray.random_pdf_generalized_negative_binomial.yaml, Time: 12.128811597824097
+[9853] Extracting mxnet.ndarray.op.sequencelast.yaml
+Finish mxnet.ndarray.op.sequencelast.yaml, Time: 12.702946662902832
+[9853] Extracting mxnet.ndarray.op.leakyrelu.yaml
+Finish mxnet.ndarray.op.leakyrelu.yaml, Time: 12.593421936035156
+[9853] Extracting mxnet.ndarray.reshape_like.yaml
+Finish mxnet.ndarray.reshape_like.yaml, Time: 12.770078659057617
+[9853] Extracting mxnet.ndarray.sparse.csr_matrix.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.sparse.csr_matrix.yaml, Time: 12.643473625183105
+[9853] Extracting mxnet.ndarray.linalg.gemm.yaml
+Finish mxnet.ndarray.linalg.gemm.yaml, Time: 12.929800033569336
+[9853] Extracting mxnet.ndarray.op.linalg_extracttrian.yaml
+Finish mxnet.ndarray.op.linalg_extracttrian.yaml, Time: 13.065930843353271
+[9853] Extracting mxnet.contrib.ndarray.requantize.yaml
+Finish mxnet.contrib.ndarray.requantize.yaml, Time: 13.336878776550293
+[9853] Extracting mxnet.ndarray.mp_sgd_update.yaml
+Finish mxnet.ndarray.mp_sgd_update.yaml, Time: 13.113807678222656
+[9853] Extracting mxnet.ndarray.contrib.requantize.yaml
+Finish mxnet.ndarray.contrib.requantize.yaml, Time: 13.70107913017273
+[9853] Extracting mxnet.profiler.dumps.yaml
+Finish mxnet.profiler.dumps.yaml, Time: 13.379664659500122
+[9853] Extracting mxnet.ndarray.sequencelast.yaml
+Finish mxnet.ndarray.sequencelast.yaml, Time: 13.712605237960815
+[9853] Extracting mxnet.ndarray.mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.mp_sgd_mom_update.yaml, Time: 14.359965085983276
+[9853] Extracting mxnet.ndarray.op.makeloss.yaml
+Finish mxnet.ndarray.op.makeloss.yaml, Time: 14.668899774551392
+[9853] Extracting mxnet.gluon.nn.avgpool3d.yaml
+Finish mxnet.gluon.nn.avgpool3d.yaml, Time: 15.417634963989258
+[9853] Extracting mxnet.gluon.contrib.rnn.conv2drnncell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv2drnncell.yaml, Time: 15.735307693481445
+[9853] Extracting mxnet.gluon.rnn.recurrentcell.yaml
+Finish mxnet.gluon.rnn.recurrentcell.yaml, Time: 15.988348007202148
+[9853] Extracting mxnet.gluon.contrib.rnn.conv3drnncell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv3drnncell.yaml, Time: 16.695029735565186
+[9853] Extracting mxnet.ndarray.mean.yaml
+Finish mxnet.ndarray.mean.yaml, Time: 16.666066884994507
+[9853] Extracting mxnet.ndarray.nanprod.yaml
+Finish mxnet.ndarray.nanprod.yaml, Time: 16.647321224212646
+[9853] Extracting mxnet.gluon.contrib.rnn.conv1drnncell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv1drnncell.yaml, Time: 16.377824544906616
+[9853] Extracting mxnet.ndarray.op.roipooling.yaml
+Finish mxnet.ndarray.op.roipooling.yaml, Time: 18.587960481643677
+[9853] Extracting mxnet.ndarray.roipooling.yaml
+Finish mxnet.ndarray.roipooling.yaml, Time: 18.954745292663574
+[9853] Extracting mxnet.ndarray.op.ctcloss.yaml
+Finish mxnet.ndarray.op.ctcloss.yaml, Time: 19.75566029548645
+[9853] Extracting mxnet.contrib.ndarray.syncbatchnorm.yaml
+Finish mxnet.contrib.ndarray.syncbatchnorm.yaml, Time: 21.272192001342773
+[9853] Extracting mxnet.gluon.nn.block.yaml
+Finish mxnet.gluon.nn.block.yaml, Time: 21.72765040397644
+[9853] Extracting mxnet.gluon.nn.layernorm.yaml
+Finish mxnet.gluon.nn.layernorm.yaml, Time: 22.918305158615112
+[9853] Extracting mxnet.gluon.nn.batchnorm.yaml
+Finish mxnet.gluon.nn.batchnorm.yaml, Time: 24.09991478919983
+[9853] Extracting mxnet.ndarray.contrib.proposal.yaml
+Finish mxnet.ndarray.contrib.proposal.yaml, Time: 25.85412049293518
+[9853] Extracting mxnet.ndarray.op.convolution.yaml
+Finish mxnet.ndarray.op.convolution.yaml, Time: 26.754098176956177
+[9853] Extracting mxnet.metric.np.yaml
+Finish mxnet.metric.np.yaml, Time: 44.746113538742065
+[9853] Extracting mxnet.image.createaugmenter.yaml
+Finish mxnet.image.createaugmenter.yaml, Time: 58.96744346618652
+[9853] Extracting mxnet.util.set_np.yaml
+Finish mxnet.util.set_np.yaml, Time: 58.86499357223511
+[9853] Extracting mxnet.ndarray.contrib.div_sqrt_dim.yaml
+Finish mxnet.ndarray.contrib.div_sqrt_dim.yaml, Time: 5.737416982650757
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet0_75.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet0_75.yaml, Time: 9.678851842880249
+[9853] Extracting mxnet.context.gpu_memory_info.yaml
+Finish mxnet.context.gpu_memory_info.yaml, Time: 10.775313138961792
+[9853] Extracting mxnet.registry.get_registry.yaml
+Finish mxnet.registry.get_registry.yaml, Time: 10.977879762649536
+[9853] Extracting mxnet.ndarray.contrib.quantized_concat.yaml
+Finish mxnet.ndarray.contrib.quantized_concat.yaml, Time: 11.276084661483765
+[9853] Extracting mxnet.ndarray.sparse.radians.yaml
+Finish mxnet.ndarray.sparse.radians.yaml, Time: 11.618613719940186
+[9853] Extracting mxnet.ndarray.op.zeros_like.yaml
+Finish mxnet.ndarray.op.zeros_like.yaml, Time: 11.61214303970337
+[9853] Extracting mxnet.test_utils.mean_check.yaml
+Finish mxnet.test_utils.mean_check.yaml, Time: 11.846279859542847
+[9853] Extracting mxnet.ndarray.sparse.rsqrt.yaml
+Finish mxnet.ndarray.sparse.rsqrt.yaml, Time: 11.93437385559082
+[9853] Extracting mxnet.ndarray.op.khatri_rao.yaml
+Finish mxnet.ndarray.op.khatri_rao.yaml, Time: 11.817653894424438
+[9853] Extracting mxnet.ndarray.amp_cast.yaml
+Finish mxnet.ndarray.amp_cast.yaml, Time: 11.979797840118408
+[9853] Extracting mxnet.ndarray.contrib.quantized_flatten.yaml
+Finish mxnet.ndarray.contrib.quantized_flatten.yaml, Time: 11.839380025863647
+[9853] Extracting mxnet.ndarray.concat.yaml
+Finish mxnet.ndarray.concat.yaml, Time: 12.302711248397827
+[9853] Extracting mxnet.ndarray.op.arcsinh.yaml
+Finish mxnet.ndarray.op.arcsinh.yaml, Time: 12.408729553222656
+[9853] Extracting mxnet.test_utils.set_env_var.yaml
+Finish mxnet.test_utils.set_env_var.yaml, Time: 12.574175119400024
+[9853] Extracting mxnet.test_utils.var_check.yaml
+Finish mxnet.test_utils.var_check.yaml, Time: 12.605194091796875
+[9853] Extracting mxnet.ndarray.sparse.subtract.yaml
+Finish mxnet.ndarray.sparse.subtract.yaml, Time: 12.782597541809082
+[9853] Extracting mxnet.ndarray.op.preloaded_multi_sgd_update.yaml
+Finish mxnet.ndarray.op.preloaded_multi_sgd_update.yaml, Time: 12.891390085220337
+[9853] Extracting mxnet.ndarray.random.gamma_like.yaml
+Finish mxnet.ndarray.random.gamma_like.yaml, Time: 12.95358943939209
+[9853] Extracting mxnet.ndarray.op.arctanh.yaml
+Finish mxnet.ndarray.op.arctanh.yaml, Time: 12.937599182128906
+[9853] Extracting mxnet.autograd.set_recording.yaml
+Finish mxnet.autograd.set_recording.yaml, Time: 12.621293544769287
+[9853] Extracting mxnet.ndarray.space_to_depth.yaml
+Finish mxnet.ndarray.space_to_depth.yaml, Time: 13.27151608467102
+[9853] Extracting mxnet.ndarray.sparse.sinh.yaml
+Finish mxnet.ndarray.sparse.sinh.yaml, Time: 13.152434587478638
+[9853] Extracting mxnet.ndarray.round.yaml
+Finish mxnet.ndarray.round.yaml, Time: 13.156018733978271
+[9853] Extracting mxnet.ndarray.op.random_pdf_exponential.yaml
+Finish mxnet.ndarray.op.random_pdf_exponential.yaml, Time: 13.217864274978638
+[9853] Extracting mxnet.autograd.get_symbol.yaml
+Finish mxnet.autograd.get_symbol.yaml, Time: 13.14910888671875
+[9853] Extracting mxnet.util.np_array.yaml
+Finish mxnet.util.np_array.yaml, Time: 13.322351217269897
+[9853] Extracting mxnet.ndarray.contrib.backward_gradientmultiplier.yaml
+Finish mxnet.ndarray.contrib.backward_gradientmultiplier.yaml, Time: 13.122944355010986
+[9853] Extracting mxnet.ndarray.broadcast_axes.yaml
+Finish mxnet.ndarray.broadcast_axes.yaml, Time: 13.738651275634766
+[9853] Extracting mxnet.ndarray.sparse.expm1.yaml
+Finish mxnet.ndarray.sparse.expm1.yaml, Time: 13.5238196849823
+[9853] Extracting mxnet.ndarray.random.uniform_like.yaml
+Finish mxnet.ndarray.random.uniform_like.yaml, Time: 13.762346267700195
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_resnet.yaml
+Finish mxnet.gluon.model_zoo.vision.get_resnet.yaml, Time: 13.914813995361328
+[9853] Extracting mxnet.profiler.pause.yaml
+Unable to find map from None to data type for arg profile_process with subtree type of
+Finish mxnet.profiler.pause.yaml, Time: 13.605253458023071
+[9853] Extracting mxnet.ndarray.op.arccosh.yaml
+Finish mxnet.ndarray.op.arccosh.yaml, Time: 13.565650701522827
+[9853] Extracting mxnet.contrib.ndarray.dequantize.yaml
+Finish mxnet.contrib.ndarray.dequantize.yaml, Time: 14.174663543701172
+[9853] Extracting mxnet.ndarray.op.square.yaml
+Finish mxnet.ndarray.op.square.yaml, Time: 13.645560503005981
+[9853] Extracting mxnet.ndarray.linalg.syevd.yaml
+Finish mxnet.ndarray.linalg.syevd.yaml, Time: 14.05460238456726
+[9853] Extracting mxnet.ndarray.op.ones_like.yaml
+Finish mxnet.ndarray.op.ones_like.yaml, Time: 14.150998592376709
+[9853] Extracting mxnet.ndarray.sparse.fix.yaml
+Finish mxnet.ndarray.sparse.fix.yaml, Time: 13.994975328445435
+[9853] Extracting mxnet.ndarray.op.sign.yaml
+Finish mxnet.ndarray.op.sign.yaml, Time: 14.18364429473877
+[9853] Extracting mxnet.image.center_crop.yaml
+Finish mxnet.image.center_crop.yaml, Time: 14.007941007614136
+[9853] Extracting mxnet.ndarray.op.abs.yaml
+Finish mxnet.ndarray.op.abs.yaml, Time: 14.177253723144531
+[9853] Extracting mxnet.ndarray.image.crop.yaml
+Finish mxnet.ndarray.image.crop.yaml, Time: 14.27903938293457
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet50_v1.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet50_v1.yaml, Time: 14.091578245162964
+[9853] Extracting mxnet.ndarray.op.linalg_det.yaml
+Finish mxnet.ndarray.op.linalg_det.yaml, Time: 13.843958139419556
+[9853] Extracting mxnet.ndarray.op.argmax_channel.yaml
+Finish mxnet.ndarray.op.argmax_channel.yaml, Time: 13.93983006477356
+[9853] Extracting mxnet.ndarray.sparse.log.yaml
+Finish mxnet.ndarray.sparse.log.yaml, Time: 13.873435258865356
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet34_v1.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet34_v1.yaml, Time: 14.18865180015564
+[9853] Extracting mxnet.ndarray.op.flatten.yaml
+Finish mxnet.ndarray.op.flatten.yaml, Time: 14.108240842819214
+[9853] Extracting mxnet.ndarray.op.nag_mom_update.yaml
+Finish mxnet.ndarray.op.nag_mom_update.yaml, Time: 14.585803747177124
+[9853] Extracting mxnet.ndarray.flip.yaml
+Finish mxnet.ndarray.flip.yaml, Time: 13.963504552841187
+[9853] Extracting mxnet.ndarray.linalg_makediag.yaml
+Finish mxnet.ndarray.linalg_makediag.yaml, Time: 14.537099599838257
+[9853] Extracting mxnet.ndarray.contrib.rroialign.yaml
+Finish mxnet.ndarray.contrib.rroialign.yaml, Time: 14.324938774108887
+[9853] Extracting mxnet.ndarray.random.exponential_like.yaml
+Finish mxnet.ndarray.random.exponential_like.yaml, Time: 14.321677684783936
+[9853] Extracting mxnet.gluon.model_zoo.vision.resnet50_v2.yaml
+Finish mxnet.gluon.model_zoo.vision.resnet50_v2.yaml, Time: 14.17803692817688
+[9853] Extracting mxnet.ndarray.broadcast_greater.yaml
+Finish mxnet.ndarray.broadcast_greater.yaml, Time: 14.138208150863647
+[9853] Extracting mxnet.ndarray.random_pdf_exponential.yaml
+Finish mxnet.ndarray.random_pdf_exponential.yaml, Time: 14.648765563964844
+[9853] Extracting mxnet.ndarray.op.swapaxes.yaml
+Finish mxnet.ndarray.op.swapaxes.yaml, Time: 14.493681192398071
+[9853] Extracting mxnet.ndarray.op.repeat.yaml
+Finish mxnet.ndarray.op.repeat.yaml, Time: 14.4433274269104
+[9853] Extracting mxnet.ndarray.image.normalize.yaml
+Finish mxnet.ndarray.image.normalize.yaml, Time: 14.758887767791748
+[9853] Extracting mxnet.contrib.ndarray.index_array.yaml
+Finish mxnet.contrib.ndarray.index_array.yaml, Time: 14.389452934265137
+[9853] Extracting mxnet.ndarray.contrib.gradientmultiplier.yaml
+Finish mxnet.ndarray.contrib.gradientmultiplier.yaml, Time: 14.672148942947388
+[9853] Extracting mxnet.ndarray.op.broadcast_hypot.yaml
+Finish mxnet.ndarray.op.broadcast_hypot.yaml, Time: 14.7107572555542
+[9853] Extracting mxnet.ndarray.sparse.row_sparse_array.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.sparse.row_sparse_array.yaml, Time: 14.589259386062622
+[9853] Extracting mxnet.ndarray.linalg.trsm.yaml
+Finish mxnet.ndarray.linalg.trsm.yaml, Time: 15.247573375701904
+[9853] Extracting mxnet.ndarray.random_poisson.yaml
+Finish mxnet.ndarray.random_poisson.yaml, Time: 14.992956399917603
+[9853] Extracting mxnet.contrib.ndarray.multiboxprior.yaml
+Finish mxnet.contrib.ndarray.multiboxprior.yaml, Time: 15.232995986938477
+[9853] Extracting mxnet.ndarray.op.softmaxactivation.yaml
+Finish mxnet.ndarray.op.softmaxactivation.yaml, Time: 14.980566501617432
+[9853] Extracting mxnet.ndarray.gridgenerator.yaml
+Unable to find map from None to data type for arg transform_type with subtree type of
+Unable to find map from None to data type for arg transform_type with subtree type the
+Unable to find map from None to data type for arg transform_type with subtree type the -1 of
+Unable to find map from None to data type for arg transform_type with subtree type the -1 of
+Finish mxnet.ndarray.gridgenerator.yaml, Time: 15.390850067138672
+[9853] Extracting mxnet.ndarray.op.diag.yaml
+Finish mxnet.ndarray.op.diag.yaml, Time: 15.64935827255249
+[9853] Extracting mxnet.ndarray.dot.yaml
+Finish mxnet.ndarray.dot.yaml, Time: 15.293887615203857
+[9853] Extracting mxnet.ndarray.preloaded_multi_sgd_update.yaml
+Finish mxnet.ndarray.preloaded_multi_sgd_update.yaml, Time: 15.222867965698242
+[9853] Extracting mxnet.contrib.ndarray.hawkesll.yaml
+Finish mxnet.contrib.ndarray.hawkesll.yaml, Time: 15.605421543121338
+[9853] Extracting mxnet.gluon.nn.maxpool1d.yaml
+Finish mxnet.gluon.nn.maxpool1d.yaml, Time: 16.108396768569946
+[9853] Extracting mxnet.ndarray.op.lamb_update_phase2.yaml
+Finish mxnet.ndarray.op.lamb_update_phase2.yaml, Time: 16.105546236038208
+[9853] Extracting mxnet.ndarray.mp_lamb_update_phase2.yaml
+Finish mxnet.ndarray.mp_lamb_update_phase2.yaml, Time: 15.914292097091675
+[9853] Extracting mxnet.contrib.ndarray.multiboxdetection.yaml
+Finish mxnet.contrib.ndarray.multiboxdetection.yaml, Time: 16.140738248825073
+[9853] Extracting mxnet.contrib.ndarray.arange_like.yaml
+Finish mxnet.contrib.ndarray.arange_like.yaml, Time: 16.149461269378662
+[9853] Extracting mxnet.ndarray.op.mp_sgd_update.yaml
+Finish mxnet.ndarray.op.mp_sgd_update.yaml, Time: 16.1221342086792
+[9853] Extracting mxnet.contrib.ndarray.box_decode.yaml
+Finish mxnet.contrib.ndarray.box_decode.yaml, Time: 16.42331862449646
+[9853] Extracting mxnet.ndarray.op.mp_nag_mom_update.yaml
+Finish mxnet.ndarray.op.mp_nag_mom_update.yaml, Time: 16.224926948547363
+[9853] Extracting mxnet.ndarray.op.ftml_update.yaml
+Finish mxnet.ndarray.op.ftml_update.yaml, Time: 16.884302139282227
+[9853] Extracting mxnet.ndarray.contrib.quantized_fully_connected.yaml
+Finish mxnet.ndarray.contrib.quantized_fully_connected.yaml, Time: 16.547990798950195
+[9853] Extracting mxnet.gluon.nn.avgpool1d.yaml
+Finish mxnet.gluon.nn.avgpool1d.yaml, Time: 17.361016511917114
+[9853] Extracting mxnet.ndarray.split.yaml
+Finish mxnet.ndarray.split.yaml, Time: 17.45646333694458
+[9853] Extracting mxnet.ndarray.signum_update.yaml
+Finish mxnet.ndarray.signum_update.yaml, Time: 17.974212408065796
+[9853] Extracting mxnet.ndarray.min.yaml
+Finish mxnet.ndarray.min.yaml, Time: 18.665149688720703
+[9853] Extracting mxnet.ndarray.op.min_axis.yaml
+Finish mxnet.ndarray.op.min_axis.yaml, Time: 18.959601163864136
+[9853] Extracting mxnet.ndarray.sparse.sgd_mom_update.yaml
+Finish mxnet.ndarray.sparse.sgd_mom_update.yaml, Time: 18.684444665908813
+[9853] Extracting mxnet.ndarray.random.exponential.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.exponential.yaml, Time: 18.791106462478638
+[9853] Extracting mxnet.contrib.ndarray.ctc_loss.yaml
+Finish mxnet.contrib.ndarray.ctc_loss.yaml, Time: 23.233949422836304
+[9853] Extracting mxnet.ndarray.choose_element_0index.yaml
+Finish mxnet.ndarray.choose_element_0index.yaml, Time: 23.776458740234375
+[9853] Extracting mxnet.ndarray.op.norm.yaml
+Unable to find map from None to data type for arg out_dtype with subtree type of
+Unable to find map from None to data type for arg out_dtype with subtree type the
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Unable to find map from None to data type for arg out_dtype with subtree type the -1 of
+Finish mxnet.ndarray.op.norm.yaml, Time: 24.363685131072998
+[9853] Extracting mxnet.ndarray.split_v2.yaml
+Finish mxnet.ndarray.split_v2.yaml, Time: 24.464054584503174
+[9853] Extracting mxnet.contrib.ndarray.multiproposal.yaml
+Finish mxnet.contrib.ndarray.multiproposal.yaml, Time: 29.733813524246216
+[9853] Extracting mxnet.image.random_size_crop.yaml
+Finish mxnet.image.random_size_crop.yaml, Time: 30.675434589385986
+[9853] Extracting mxnet.ndarray.convolution.yaml
+Finish mxnet.ndarray.convolution.yaml, Time: 31.050480127334595
+[9853] Extracting mxnet.ndarray.pad.yaml
+Finish mxnet.ndarray.pad.yaml, Time: 35.477511167526245
+[9853] Extracting mxnet.ndarray.op.tile.yaml
+Finish mxnet.ndarray.op.tile.yaml, Time: 36.09532284736633
+[9853] Extracting mxnet.ndarray.tile.yaml
+Finish mxnet.ndarray.tile.yaml, Time: 36.70645070075989
+[9853] Extracting mxnet.ndarray.erfinv.yaml
+Finish mxnet.ndarray.erfinv.yaml, Time: 6.2090466022491455
+[9853] Extracting mxnet.ndarray.op.elemwise_div.yaml
+Finish mxnet.ndarray.op.elemwise_div.yaml, Time: 6.7104456424713135
+[9853] Extracting mxnet.ndarray.abs.yaml
+Finish mxnet.ndarray.abs.yaml, Time: 6.751436710357666
+[9853] Extracting mxnet.ndarray.random_pdf_negative_binomial.yaml
+Finish mxnet.ndarray.random_pdf_negative_binomial.yaml, Time: 7.050554037094116
+[9853] Extracting mxnet.callback.do_checkpoint.yaml
+Finish mxnet.callback.do_checkpoint.yaml, Time: 7.335024356842041
+[9853] Extracting mxnet.ndarray.utils.load_frombuffer.yaml
+Finish mxnet.ndarray.utils.load_frombuffer.yaml, Time: 7.581977844238281
+[9853] Extracting mxnet.ndarray.sparse.round.yaml
+Finish mxnet.ndarray.sparse.round.yaml, Time: 7.705398797988892
+[9853] Extracting mxnet.ndarray.sparse.sign.yaml
+Finish mxnet.ndarray.sparse.sign.yaml, Time: 7.914684295654297
+[9853] Extracting mxnet.ndarray.linalg.sumlogdiag.yaml
+Finish mxnet.ndarray.linalg.sumlogdiag.yaml, Time: 8.04822587966919
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet0_25.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet0_25.yaml, Time: 8.139206647872925
+[9853] Extracting mxnet.ndarray.random_randint.yaml
+Finish mxnet.ndarray.random_randint.yaml, Time: 8.417896032333374
+[9853] Extracting mxnet.ndarray.activation.yaml
+Finish mxnet.ndarray.activation.yaml, Time: 8.56312370300293
+[9853] Extracting mxnet.gluon.nn.activation.yaml
+Finish mxnet.gluon.nn.activation.yaml, Time: 8.511306762695312
+[9853] Extracting mxnet.ndarray.arccos.yaml
+Finish mxnet.ndarray.arccos.yaml, Time: 8.555852890014648
+[9853] Extracting mxnet.ndarray.linalg_inverse.yaml
+Finish mxnet.ndarray.linalg_inverse.yaml, Time: 8.652358293533325
+[9853] Extracting mxnet.contrib.ndarray.edge_id.yaml
+Finish mxnet.contrib.ndarray.edge_id.yaml, Time: 8.828476190567017
+[9853] Extracting mxnet.ndarray.linalg_gelqf.yaml
+Finish mxnet.ndarray.linalg_gelqf.yaml, Time: 9.021047353744507
+[9853] Extracting mxnet.ndarray.from_numpy.yaml
+Finish mxnet.ndarray.from_numpy.yaml, Time: 9.348994493484497
+[9853] Extracting mxnet.ndarray.op.concat.yaml
+Finish mxnet.ndarray.op.concat.yaml, Time: 9.353670120239258
+[9853] Extracting mxnet.contrib.ndarray.sign_ste.yaml
+Finish mxnet.contrib.ndarray.sign_ste.yaml, Time: 9.412123203277588
+[9853] Extracting mxnet.ndarray.shape_array.yaml
+Finish mxnet.ndarray.shape_array.yaml, Time: 9.534272909164429
+[9853] Extracting mxnet.ndarray.sparse.relu.yaml
+Finish mxnet.ndarray.sparse.relu.yaml, Time: 9.6011483669281
+[9853] Extracting mxnet.context.gpu.yaml
+Finish mxnet.context.gpu.yaml, Time: 9.64864706993103
+[9853] Extracting mxnet.contrib.ndarray.dgl_adjacency.yaml
+Finish mxnet.contrib.ndarray.dgl_adjacency.yaml, Time: 9.541061639785767
+[9853] Extracting mxnet.ndarray.linalg.gemm2.yaml
+Finish mxnet.ndarray.linalg.gemm2.yaml, Time: 10.128822803497314
+[9853] Extracting mxnet.ndarray.op.floor.yaml
+Finish mxnet.ndarray.op.floor.yaml, Time: 9.994307518005371
+[9853] Extracting mxnet.ndarray.reciprocal.yaml
+Finish mxnet.ndarray.reciprocal.yaml, Time: 10.045528173446655
+[9853] Extracting mxnet.ndarray.op.sample_multinomial.yaml
+Finish mxnet.ndarray.op.sample_multinomial.yaml, Time: 10.409489154815674
+[9853] Extracting mxnet.ndarray.batch_dot.yaml
+Finish mxnet.ndarray.batch_dot.yaml, Time: 10.496930360794067
+[9853] Extracting mxnet.gluon.utils.split_data.yaml
+Finish mxnet.gluon.utils.split_data.yaml, Time: 10.50797152519226
+[9853] Extracting mxnet.registry.get_alias_func.yaml
+Finish mxnet.registry.get_alias_func.yaml, Time: 10.313279151916504
+[9853] Extracting mxnet.registry.get_register_func.yaml
+Finish mxnet.registry.get_register_func.yaml, Time: 10.654642343521118
+[9853] Extracting mxnet.ndarray.op.random_pdf_uniform.yaml
+Finish mxnet.ndarray.op.random_pdf_uniform.yaml, Time: 10.686583042144775
+[9853] Extracting mxnet.contrib.autograd.set_is_training.yaml
+Finish mxnet.contrib.autograd.set_is_training.yaml, Time: 10.362056016921997
+[9853] Extracting mxnet.ndarray.lesser_equal.yaml
+Finish mxnet.ndarray.lesser_equal.yaml, Time: 10.620766162872314
+[9853] Extracting mxnet.ndarray.contrib.ifft.yaml
+Finish mxnet.ndarray.contrib.ifft.yaml, Time: 10.897921562194824
+[9853] Extracting mxnet.ndarray.greater_equal.yaml
+Finish mxnet.ndarray.greater_equal.yaml, Time: 10.576342582702637
+[9853] Extracting mxnet.ndarray.op.linalg_potrf.yaml
+Finish mxnet.ndarray.op.linalg_potrf.yaml, Time: 10.843658685684204
+[9853] Extracting mxnet.ndarray.log2.yaml
+Finish mxnet.ndarray.log2.yaml, Time: 10.780861139297485
+[9853] Extracting mxnet.ndarray.op.sin.yaml
+Finish mxnet.ndarray.op.sin.yaml, Time: 10.477848529815674
+[9853] Extracting mxnet.ndarray.op.logical_not.yaml
+Finish mxnet.ndarray.op.logical_not.yaml, Time: 11.005506753921509
+[9853] Extracting mxnet.ndarray.sin.yaml
+Finish mxnet.ndarray.sin.yaml, Time: 10.852102518081665
+[9853] Extracting mxnet.ndarray.sparse.abs.yaml
+Finish mxnet.ndarray.sparse.abs.yaml, Time: 10.539021015167236
+[9853] Extracting mxnet.ndarray.op.broadcast_div.yaml
+Finish mxnet.ndarray.op.broadcast_div.yaml, Time: 11.055613040924072
+[9853] Extracting mxnet.ndarray.sparse.zeros_like.yaml
+Finish mxnet.ndarray.sparse.zeros_like.yaml, Time: 10.663570165634155
+[9853] Extracting mxnet.ndarray.preloaded_multi_mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.preloaded_multi_mp_sgd_mom_update.yaml, Time: 11.128905534744263
+[9853] Extracting mxnet.ndarray.op.identity.yaml
+Finish mxnet.ndarray.op.identity.yaml, Time: 10.90815782546997
+[9853] Extracting mxnet.ndarray.broadcast_logical_and.yaml
+Finish mxnet.ndarray.broadcast_logical_and.yaml, Time: 10.880531072616577
+[9853] Extracting mxnet.gluon.model_zoo.vision.squeezenet1_0.yaml
+Finish mxnet.gluon.model_zoo.vision.squeezenet1_0.yaml, Time: 11.107311487197876
+[9853] Extracting mxnet.test_utils.get_bz2_data.yaml
+Finish mxnet.test_utils.get_bz2_data.yaml, Time: 11.230336666107178
+[9853] Extracting mxnet.test_utils.simple_forward.yaml
+Finish mxnet.test_utils.simple_forward.yaml, Time: 11.131070613861084
+[9853] Extracting mxnet.ndarray.khatri_rao.yaml
+Finish mxnet.ndarray.khatri_rao.yaml, Time: 11.017338037490845
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet_v2_0_25.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet_v2_0_25.yaml, Time: 10.944215536117554
+[9853] Extracting mxnet.ndarray.elemwise_sub.yaml
+Finish mxnet.ndarray.elemwise_sub.yaml, Time: 10.904682874679565
+[9853] Extracting mxnet.model.load_checkpoint.yaml
+Finish mxnet.model.load_checkpoint.yaml, Time: 11.099727869033813
+[9853] Extracting mxnet.ndarray.random.shuffle.yaml
+Finish mxnet.ndarray.random.shuffle.yaml, Time: 11.05211615562439
+[9853] Extracting mxnet.ndarray.op.broadcast_axis.yaml
+Finish mxnet.ndarray.op.broadcast_axis.yaml, Time: 10.975152254104614
+[9853] Extracting mxnet.ndarray.cast.yaml
+Finish mxnet.ndarray.cast.yaml, Time: 11.512519121170044
+[9853] Extracting mxnet.ndarray.op.arcsin.yaml
+Finish mxnet.ndarray.op.arcsin.yaml, Time: 11.213045597076416
+[9853] Extracting mxnet.ndarray.sparse.broadcast_sub.yaml
+Finish mxnet.ndarray.sparse.broadcast_sub.yaml, Time: 11.258619546890259
+[9853] Extracting mxnet.ndarray.op.tan.yaml
+Finish mxnet.ndarray.op.tan.yaml, Time: 11.085508823394775
+[9853] Extracting mxnet.gluon.nn.globalmaxpool1d.yaml
+Finish mxnet.gluon.nn.globalmaxpool1d.yaml, Time: 11.31646203994751
+[9853] Extracting mxnet.metric.create.yaml
+Finish mxnet.metric.create.yaml, Time: 11.199374675750732
+[9853] Extracting mxnet.ndarray.contrib.adaptiveavgpooling2d.yaml
+Finish mxnet.ndarray.contrib.adaptiveavgpooling2d.yaml, Time: 11.425215721130371
+[9853] Extracting mxnet.ndarray.op.broadcast_plus.yaml
+Finish mxnet.ndarray.op.broadcast_plus.yaml, Time: 11.414186716079712
+[9853] Extracting mxnet.ndarray.contrib.interleaved_matmul_selfatt_qk.yaml
+Finish mxnet.ndarray.contrib.interleaved_matmul_selfatt_qk.yaml, Time: 11.548911333084106
+[9853] Extracting mxnet.ndarray.op.multi_all_finite.yaml
+Finish mxnet.ndarray.op.multi_all_finite.yaml, Time: 11.66744089126587
+[9853] Extracting mxnet.gluon.model_zoo.vision.vgg16_bn.yaml
+Finish mxnet.gluon.model_zoo.vision.vgg16_bn.yaml, Time: 11.386345386505127
+[9853] Extracting mxnet.ndarray.op.degrees.yaml
+Finish mxnet.ndarray.op.degrees.yaml, Time: 11.369443416595459
+[9853] Extracting mxnet.ndarray.depth_to_space.yaml
+Finish mxnet.ndarray.depth_to_space.yaml, Time: 11.409148216247559
+[9853] Extracting mxnet.ndarray.sparse.elemwise_add.yaml
+Finish mxnet.ndarray.sparse.elemwise_add.yaml, Time: 11.389365196228027
+[9853] Extracting mxnet.ndarray.op.upsampling.yaml
+Finish mxnet.ndarray.op.upsampling.yaml, Time: 12.019540786743164
+[9853] Extracting mxnet.ndarray.op.instancenorm.yaml
+Finish mxnet.ndarray.op.instancenorm.yaml, Time: 11.63464879989624
+[9853] Extracting mxnet.ndarray.op.linearregressionoutput.yaml
+Finish mxnet.ndarray.op.linearregressionoutput.yaml, Time: 11.552133560180664
+[9853] Extracting mxnet.ndarray.preloaded_multi_mp_sgd_update.yaml
+Finish mxnet.ndarray.preloaded_multi_mp_sgd_update.yaml, Time: 12.04595685005188
+[9853] Extracting mxnet.ndarray.op.broadcast_like.yaml
+Finish mxnet.ndarray.op.broadcast_like.yaml, Time: 11.553473949432373
+[9853] Extracting mxnet.ndarray.spatialtransformer.yaml
+Finish mxnet.ndarray.spatialtransformer.yaml, Time: 11.982683420181274
+[9853] Extracting mxnet.gluon.nn.groupnorm.yaml
+Finish mxnet.gluon.nn.groupnorm.yaml, Time: 11.980484247207642
+[9853] Extracting mxnet.ndarray.linalg_trmm.yaml
+Finish mxnet.ndarray.linalg_trmm.yaml, Time: 12.006293058395386
+[9853] Extracting mxnet.ndarray.sparse.fullyconnected.yaml
+Finish mxnet.ndarray.sparse.fullyconnected.yaml, Time: 12.159361362457275
+[9853] Extracting mxnet.ndarray.op.gridgenerator.yaml
+Unable to find map from None to data type for arg transform_type with subtree type of
+Unable to find map from None to data type for arg transform_type with subtree type the
+Unable to find map from None to data type for arg transform_type with subtree type the -1 of
+Unable to find map from None to data type for arg transform_type with subtree type the -1 of
+Finish mxnet.ndarray.op.gridgenerator.yaml, Time: 11.93982219696045
+[9853] Extracting mxnet.ndarray.multi_mp_sgd_mom_update.yaml
+Finish mxnet.ndarray.multi_mp_sgd_mom_update.yaml, Time: 12.206928014755249
+[9853] Extracting mxnet.ndarray.softmin.yaml
+Finish mxnet.ndarray.softmin.yaml, Time: 12.077857255935669
+[9853] Extracting mxnet.ndarray.op.sequencereverse.yaml
+Finish mxnet.ndarray.op.sequencereverse.yaml, Time: 12.831313133239746
+[9853] Extracting mxnet.ndarray.mp_nag_mom_update.yaml
+Finish mxnet.ndarray.mp_nag_mom_update.yaml, Time: 13.071799755096436
+[9853] Extracting mxnet.ndarray.contrib.deformableconvolution.yaml
+Finish mxnet.ndarray.contrib.deformableconvolution.yaml, Time: 14.069644927978516
+[9853] Extracting mxnet.ndarray.contrib.bilinearresize2d.yaml
+Finish mxnet.ndarray.contrib.bilinearresize2d.yaml, Time: 14.136062383651733
+[9853] Extracting mxnet.ndarray.pooling.yaml
+Finish mxnet.ndarray.pooling.yaml, Time: 14.442996740341187
+[9853] Extracting mxnet.ndarray.contrib.box_non_maximum_suppression.yaml
+Finish mxnet.ndarray.contrib.box_non_maximum_suppression.yaml, Time: 14.760175466537476
+[9853] Extracting mxnet.gluon.contrib.rnn.conv3dgrucell.yaml
+Unable to find map from None to data type for arg activation with subtree type of
+Finish mxnet.gluon.contrib.rnn.conv3dgrucell.yaml, Time: 15.49685263633728
+[9853] Extracting mxnet.ndarray.sum.yaml
+Finish mxnet.ndarray.sum.yaml, Time: 15.383099555969238
+[9853] Extracting mxnet.ndarray.op.max.yaml
+Finish mxnet.ndarray.op.max.yaml, Time: 15.854982614517212
+[9853] Extracting mxnet.ndarray.op.pick.yaml
+Finish mxnet.ndarray.op.pick.yaml, Time: 17.54302668571472
+[9853] Extracting mxnet.ndarray.contrib.ctcloss.yaml
+Finish mxnet.ndarray.contrib.ctcloss.yaml, Time: 18.438499689102173
+[9853] Extracting mxnet.gluon.nn.hybridlambda.yaml
+Finish mxnet.gluon.nn.hybridlambda.yaml, Time: 18.59053087234497
+[9853] Extracting mxnet.gluon.rnn.lstm.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Finish mxnet.gluon.rnn.lstm.yaml, Time: 20.058772087097168
+[9853] Extracting mxnet.gluon.contrib.nn.syncbatchnorm.yaml
+Finish mxnet.gluon.contrib.nn.syncbatchnorm.yaml, Time: 23.190800189971924
+[9853] Extracting mxnet.gluon.nn.conv1dtranspose.yaml
+Finish mxnet.gluon.nn.conv1dtranspose.yaml, Time: 28.033968210220337
+[9853] Extracting mxnet.ndarray.op.batchnorm.yaml
+Finish mxnet.ndarray.op.batchnorm.yaml, Time: 28.453340768814087
+[9853] Extracting mxnet.image.createdetaugmenter.yaml
+Finish mxnet.image.createdetaugmenter.yaml, Time: 53.349114656448364
+[9853] Extracting mxnet.ndarray.op.add_n.yaml
+Finish mxnet.ndarray.op.add_n.yaml, Time: 5.088991641998291
+[9853] Extracting mxnet.ndarray.op.cbrt.yaml
+Finish mxnet.ndarray.op.cbrt.yaml, Time: 6.175286531448364
+[9853] Extracting mxnet.ndarray.op.reciprocal.yaml
+Finish mxnet.ndarray.op.reciprocal.yaml, Time: 6.186969518661499
+[9853] Extracting mxnet.ndarray.op.log.yaml
+Finish mxnet.ndarray.op.log.yaml, Time: 7.168226957321167
+[9853] Extracting mxnet.ndarray.op.blockgrad.yaml
+Finish mxnet.ndarray.op.blockgrad.yaml, Time: 7.2852783203125
+[9853] Extracting mxnet.ndarray.broadcast_add.yaml
+Finish mxnet.ndarray.broadcast_add.yaml, Time: 7.726244926452637
+[9853] Extracting mxnet.contrib.autograd.backward.yaml
+Finish mxnet.contrib.autograd.backward.yaml, Time: 7.706788539886475
+[9853] Extracting mxnet.registry.get_create_func.yaml
+Finish mxnet.registry.get_create_func.yaml, Time: 7.819921970367432
+[9853] Extracting mxnet.ndarray.op.elemwise_mul.yaml
+Finish mxnet.ndarray.op.elemwise_mul.yaml, Time: 7.926089763641357
+[9853] Extracting mxnet.ndarray.logisticregressionoutput.yaml
+Finish mxnet.ndarray.logisticregressionoutput.yaml, Time: 8.31978702545166
+[9853] Extracting mxnet.test_utils.chi_square_check.yaml
+Finish mxnet.test_utils.chi_square_check.yaml, Time: 8.436979293823242
+[9853] Extracting mxnet.ndarray.broadcast_minimum.yaml
+Finish mxnet.ndarray.broadcast_minimum.yaml, Time: 8.52340030670166
+[9853] Extracting mxnet.ndarray.contrib.getnnz.yaml
+Finish mxnet.ndarray.contrib.getnnz.yaml, Time: 8.701817274093628
+[9853] Extracting mxnet.test_utils.get_im2rec_path.yaml
+Finish mxnet.test_utils.get_im2rec_path.yaml, Time: 8.637585401535034
+[9853] Extracting mxnet.ndarray.op.exp.yaml
+Finish mxnet.ndarray.op.exp.yaml, Time: 8.308801174163818
+[9853] Extracting mxnet.ndarray.op.unravel_index.yaml
+Finish mxnet.ndarray.op.unravel_index.yaml, Time: 8.937782764434814
+[9853] Extracting mxnet.contrib.ndarray.count_sketch.yaml
+Finish mxnet.contrib.ndarray.count_sketch.yaml, Time: 9.040908098220825
+[9853] Extracting mxnet.ndarray.add_n.yaml
+Finish mxnet.ndarray.add_n.yaml, Time: 9.087815761566162
+[9853] Extracting mxnet.ndarray.ones_like.yaml
+Finish mxnet.ndarray.ones_like.yaml, Time: 9.709251642227173
+[9853] Extracting mxnet.ndarray.minimum.yaml
+Finish mxnet.ndarray.minimum.yaml, Time: 9.219940185546875
+[9853] Extracting mxnet.ndarray.rcbrt.yaml
+Finish mxnet.ndarray.rcbrt.yaml, Time: 9.823702335357666
+[9853] Extracting mxnet.ndarray.reset_arrays.yaml
+Finish mxnet.ndarray.reset_arrays.yaml, Time: 9.683664560317993
+[9853] Extracting mxnet.operator.get_operator_arguments.yaml
+Finish mxnet.operator.get_operator_arguments.yaml, Time: 9.527972221374512
+[9853] Extracting mxnet.ndarray.broadcast_logical_or.yaml
+Finish mxnet.ndarray.broadcast_logical_or.yaml, Time: 9.964549779891968
+[9853] Extracting mxnet.autograd.mark_variables.yaml
+Finish mxnet.autograd.mark_variables.yaml, Time: 9.668538331985474
+[9853] Extracting mxnet.gluon.contrib.nn.pixelshuffle3d.yaml
+Finish mxnet.gluon.contrib.nn.pixelshuffle3d.yaml, Time: 9.774705410003662
+[9853] Extracting mxnet.ndarray.contrib.backward_quadratic.yaml
+Finish mxnet.ndarray.contrib.backward_quadratic.yaml, Time: 10.143520593643188
+[9853] Extracting mxnet.ndarray.broadcast_equal.yaml
+Finish mxnet.ndarray.broadcast_equal.yaml, Time: 10.388511657714844
+[9853] Extracting mxnet.ndarray.argmax_channel.yaml
+Finish mxnet.ndarray.argmax_channel.yaml, Time: 10.174297332763672
+[9853] Extracting mxnet.ndarray.fix.yaml
+Finish mxnet.ndarray.fix.yaml, Time: 9.960646152496338
+[9853] Extracting mxnet.ndarray.op.dropout.yaml
+Finish mxnet.ndarray.op.dropout.yaml, Time: 10.772526502609253
+[9853] Extracting mxnet.ndarray.op.broadcast_add.yaml
+Finish mxnet.ndarray.op.broadcast_add.yaml, Time: 10.354662656784058
+[9853] Extracting mxnet.ndarray.op.elementwisesum.yaml
+Finish mxnet.ndarray.op.elementwisesum.yaml, Time: 10.039654970169067
+[9853] Extracting mxnet.visualization.print_summary.yaml
+Finish mxnet.visualization.print_summary.yaml, Time: 10.53271484375
+[9853] Extracting mxnet.ndarray.broadcast_sub.yaml
+Finish mxnet.ndarray.broadcast_sub.yaml, Time: 10.597532749176025
+[9853] Extracting mxnet.contrib.ndarray.index_copy.yaml
+Finish mxnet.contrib.ndarray.index_copy.yaml, Time: 10.694388151168823
+[9853] Extracting mxnet.contrib.ndarray.adaptiveavgpooling2d.yaml
+Finish mxnet.contrib.ndarray.adaptiveavgpooling2d.yaml, Time: 10.315445899963379
+[9853] Extracting mxnet.ndarray.contrib.multiboxdetection.yaml
+Finish mxnet.ndarray.contrib.multiboxdetection.yaml, Time: 11.06705379486084
+[9853] Extracting mxnet.ndarray.op.broadcast_greater.yaml
+Finish mxnet.ndarray.op.broadcast_greater.yaml, Time: 10.803431987762451
+[9853] Extracting mxnet.ndarray.power.yaml
+Finish mxnet.ndarray.power.yaml, Time: 10.408838987350464
+[9853] Extracting mxnet.ndarray.sinh.yaml
+Finish mxnet.ndarray.sinh.yaml, Time: 10.429337978363037
+[9853] Extracting mxnet.ndarray.broadcast_logical_xor.yaml
+Finish mxnet.ndarray.broadcast_logical_xor.yaml, Time: 10.851775407791138
+[9853] Extracting mxnet.ndarray.op.linalg_makediag.yaml
+Finish mxnet.ndarray.op.linalg_makediag.yaml, Time: 11.018152952194214
+[9853] Extracting mxnet.ndarray.sparse.arctan.yaml
+Finish mxnet.ndarray.sparse.arctan.yaml, Time: 10.81517505645752
+[9853] Extracting mxnet.ndarray.gather_nd.yaml
+Finish mxnet.ndarray.gather_nd.yaml, Time: 10.798429012298584
+[9853] Extracting mxnet.ndarray.op.sqrt.yaml
+Finish mxnet.ndarray.op.sqrt.yaml, Time: 10.767478942871094
+[9853] Extracting mxnet.gluon.model_zoo.vision.get_model.yaml
+Finish mxnet.gluon.model_zoo.vision.get_model.yaml, Time: 11.00106692314148
+[9853] Extracting mxnet.gluon.model_zoo.vision.mobilenet0_5.yaml
+Finish mxnet.gluon.model_zoo.vision.mobilenet0_5.yaml, Time: 10.958805084228516
+[9853] Extracting mxnet.ndarray.contrib.boolean_mask.yaml
+Finish mxnet.ndarray.contrib.boolean_mask.yaml, Time: 11.203070402145386
+[9853] Extracting mxnet.ndarray.cbrt.yaml
+Finish mxnet.ndarray.cbrt.yaml, Time: 10.930353164672852
+[9853] Extracting mxnet.ndarray.op.random_poisson.yaml
+Finish mxnet.ndarray.op.random_poisson.yaml, Time: 11.457956314086914
+[9853] Extracting mxnet.ndarray.contrib.box_decode.yaml
+Finish mxnet.ndarray.contrib.box_decode.yaml, Time: 11.66390085220337
+[9853] Extracting mxnet.ndarray.op.clip.yaml
+Finish mxnet.ndarray.op.clip.yaml, Time: 10.8914635181427
+[9853] Extracting mxnet.ndarray.swapaxes.yaml
+Finish mxnet.ndarray.swapaxes.yaml, Time: 11.180185079574585
+[9853] Extracting mxnet.ndarray.op.fill_element_0index.yaml
+Finish mxnet.ndarray.op.fill_element_0index.yaml, Time: 11.179198265075684
+[9853] Extracting mxnet.ndarray.random_pdf_normal.yaml
+Finish mxnet.ndarray.random_pdf_normal.yaml, Time: 11.528476476669312
+[9853] Extracting mxnet.ndarray.contrib.allclose.yaml
+Finish mxnet.ndarray.contrib.allclose.yaml, Time: 11.712907791137695
+[9853] Extracting mxnet.ndarray.image.random_saturation.yaml
+Finish mxnet.ndarray.image.random_saturation.yaml, Time: 11.191091537475586
+[9853] Extracting mxnet.contrib.ndarray.dgl_graph_compact.yaml
+Finish mxnet.contrib.ndarray.dgl_graph_compact.yaml, Time: 11.246172428131104
+[9853] Extracting mxnet.ndarray.random_gamma.yaml
+Finish mxnet.ndarray.random_gamma.yaml, Time: 11.58073616027832
+[9853] Extracting mxnet.test_utils.rand_sparse_ndarray.yaml
+Finish mxnet.test_utils.rand_sparse_ndarray.yaml, Time: 11.572654485702515
+[9853] Extracting mxnet.ndarray.sequencereverse.yaml
+Finish mxnet.ndarray.sequencereverse.yaml, Time: 11.925584316253662
+[9853] Extracting mxnet.ndarray.softmaxactivation.yaml
+Finish mxnet.ndarray.softmaxactivation.yaml, Time: 11.50016713142395
+[9853] Extracting mxnet.ndarray.sort.yaml
+Finish mxnet.ndarray.sort.yaml, Time: 11.555505752563477
+[9853] Extracting mxnet.ndarray.op.softmax2.yaml
+Finish mxnet.ndarray.op.softmax2.yaml, Time: 11.953211784362793
+[9853] Extracting mxnet.ndarray.unravel_index.yaml
+Finish mxnet.ndarray.unravel_index.yaml, Time: 11.420878887176514
+[9853] Extracting mxnet.ndarray.sparse.slice.yaml
+Finish mxnet.ndarray.sparse.slice.yaml, Time: 11.683642148971558
+[9853] Extracting mxnet.ndarray.slice_axis.yaml
+Finish mxnet.ndarray.slice_axis.yaml, Time: 11.439167499542236
+[9853] Extracting mxnet.ndarray.op.argsort.yaml
+Unable to find map from None to data type for arg dtype with subtree type the
+Finish mxnet.ndarray.op.argsort.yaml, Time: 11.512700319290161
+[9853] Extracting mxnet.ndarray.op.random_uniform.yaml
+Finish mxnet.ndarray.op.random_uniform.yaml, Time: 11.858181715011597
+[9853] Extracting mxnet.ndarray.contrib.multiboxprior.yaml
+Finish mxnet.ndarray.contrib.multiboxprior.yaml, Time: 11.97409439086914
+[9853] Extracting mxnet.ndarray.random_uniform.yaml
+Finish mxnet.ndarray.random_uniform.yaml, Time: 11.808658123016357
+[9853] Extracting mxnet.image.copymakeborder.yaml
+Finish mxnet.image.copymakeborder.yaml, Time: 12.477457761764526
+[9853] Extracting mxnet.ndarray.utils.array.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.utils.array.yaml, Time: 12.369590997695923
+[9853] Extracting mxnet.io.libsvmiter.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Finish mxnet.io.libsvmiter.yaml, Time: 12.346968412399292
+[9853] Extracting mxnet.contrib.ndarray.deformablepsroipooling.yaml
+Finish mxnet.contrib.ndarray.deformablepsroipooling.yaml, Time: 12.99755334854126
+[9853] Extracting mxnet.ndarray.op.lamb_update_phase1.yaml
+Finish mxnet.ndarray.op.lamb_update_phase1.yaml, Time: 13.308751344680786
+[9853] Extracting mxnet.contrib.ndarray.quantized_pooling.yaml
+Finish mxnet.contrib.ndarray.quantized_pooling.yaml, Time: 13.749575138092041
+[9853] Extracting mxnet.ndarray.rmsprop_update.yaml
+Finish mxnet.ndarray.rmsprop_update.yaml, Time: 13.16325306892395
+[9853] Extracting mxnet.ndarray.softmaxoutput.yaml
+Finish mxnet.ndarray.softmaxoutput.yaml, Time: 14.068788290023804
+[9853] Extracting mxnet.gluon.nn.lambda.yaml
+Finish mxnet.gluon.nn.lambda.yaml, Time: 13.869200468063354
+[9853] Extracting mxnet.test_utils.check_symbolic_backward.yaml
+Finish mxnet.test_utils.check_symbolic_backward.yaml, Time: 14.194216966629028
+[9853] Extracting mxnet.contrib.ndarray.deformableconvolution.yaml
+Finish mxnet.contrib.ndarray.deformableconvolution.yaml, Time: 14.292215347290039
+[9853] Extracting mxnet.contrib.ndarray.bilinearresize2d.yaml
+Finish mxnet.contrib.ndarray.bilinearresize2d.yaml, Time: 14.142447471618652
+[9853] Extracting mxnet.ndarray.contrib.box_nms.yaml
+Finish mxnet.ndarray.contrib.box_nms.yaml, Time: 14.588409900665283
+[9853] Extracting mxnet.gluon.nn.maxpool2d.yaml
+Finish mxnet.gluon.nn.maxpool2d.yaml, Time: 14.32137393951416
+[9853] Extracting mxnet.image.createmultirandcropaugmenter.yaml
+Finish mxnet.image.createmultirandcropaugmenter.yaml, Time: 15.207310199737549
+[9853] Extracting mxnet.gluon.nn.avgpool2d.yaml
+Finish mxnet.gluon.nn.avgpool2d.yaml, Time: 14.67212200164795
+[9853] Extracting mxnet.ndarray.random.negative_binomial.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.negative_binomial.yaml, Time: 14.973007917404175
+[9853] Extracting mxnet.ndarray.sparse.adam_update.yaml
+Finish mxnet.ndarray.sparse.adam_update.yaml, Time: 15.770539999008179
+[9853] Extracting mxnet.ndarray.random.poisson.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.poisson.yaml, Time: 15.082014560699463
+[9853] Extracting mxnet.gluon.contrib.rnn.lstmpcell.yaml
+Finish mxnet.gluon.contrib.rnn.lstmpcell.yaml, Time: 15.1659677028656
+[9853] Extracting mxnet.ndarray.contrib.ctc_loss.yaml
+Finish mxnet.ndarray.contrib.ctc_loss.yaml, Time: 16.707107543945312
+[9853] Extracting mxnet.ndarray.adam_update.yaml
+Finish mxnet.ndarray.adam_update.yaml, Time: 17.194219827651978
+[9853] Extracting mxnet.ndarray.random.multinomial.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Finish mxnet.ndarray.random.multinomial.yaml, Time: 17.6334125995636
+[9853] Extracting mxnet.gluon.nn.instancenorm.yaml
+Finish mxnet.gluon.nn.instancenorm.yaml, Time: 22.010504484176636
+[9853] Extracting mxnet.ndarray.contrib.quantized_conv.yaml
+Finish mxnet.ndarray.contrib.quantized_conv.yaml, Time: 25.642420291900635
+[9853] Extracting mxnet.ndarray.batchnorm.yaml
+Finish mxnet.ndarray.batchnorm.yaml, Time: 27.353089570999146
+[9853] Extracting mxnet.gluon.nn.conv3dtranspose.yaml
+Finish mxnet.gluon.nn.conv3dtranspose.yaml, Time: 27.704320192337036
+[9853] Extracting mxnet.contrib.ndarray.quantized_batch_norm.yaml
+Finish mxnet.contrib.ndarray.quantized_batch_norm.yaml, Time: 28.526691675186157
+All finish
+[9853] Extracting mxnet.ndarray.zeros_like.yaml
+Finish mxnet.ndarray.zeros_like.yaml, Time: 2.244940757751465
+[9853] Extracting mxnet.ndarray.op.shuffle.yaml
+Finish mxnet.ndarray.op.shuffle.yaml, Time: 2.3566787242889404
+[9853] Extracting mxnet.gluon.model_zoo.vision.densenet121.yaml
+Finish mxnet.gluon.model_zoo.vision.densenet121.yaml, Time: 2.4257421493530273
+[9853] Extracting mxnet.test_utils.almost_equal_ignore_nan.yaml
+Finish mxnet.test_utils.almost_equal_ignore_nan.yaml, Time: 2.632014274597168
+[9853] Extracting mxnet.ndarray.sparse.sqrt.yaml
+Finish mxnet.ndarray.sparse.sqrt.yaml, Time: 2.6659350395202637
+[9853] Extracting mxnet.ndarray.contrib.box_iou.yaml
+Finish mxnet.ndarray.contrib.box_iou.yaml, Time: 2.9270200729370117
+[9853] Extracting mxnet.ndarray.multiply.yaml
+Finish mxnet.ndarray.multiply.yaml, Time: 3.0173113346099854
+[9853] Extracting mxnet.ndarray.op.random_pdf_normal.yaml
+Finish mxnet.ndarray.op.random_pdf_normal.yaml, Time: 2.9842469692230225
+[9853] Extracting mxnet.test_utils.check_speed.yaml
+Finish mxnet.test_utils.check_speed.yaml, Time: 3.081467628479004
+[9853] Extracting mxnet.ndarray.array.yaml
+Unable to find map from None to data type for arg dtype with subtree type d_structure
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type the
+Unable to find map from None to data type for arg dtype with subtree type d_structure of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Unable to find map from None to data type for arg dtype with subtree type data -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 d_structure of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 of
+Unable to find map from None to data type for arg dtype with subtree type the -1 data -1 d_structure of
+Finish mxnet.ndarray.array.yaml, Time: 3.4519262313842773
+[9853] Extracting mxnet.contrib.ndarray.interleaved_matmul_selfatt_qk.yaml
+Finish mxnet.contrib.ndarray.interleaved_matmul_selfatt_qk.yaml, Time: 3.4468531608581543
+[9853] Extracting mxnet.ndarray.linalg.maketrian.yaml
+Finish mxnet.ndarray.linalg.maketrian.yaml, Time: 3.630272150039673
+[9853] Extracting mxnet.ndarray.expand_dims.yaml
+Finish mxnet.ndarray.expand_dims.yaml, Time: 3.7703311443328857
+[9853] Extracting mxnet.ndarray.op.random_exponential.yaml
+Finish mxnet.ndarray.op.random_exponential.yaml, Time: 4.104240655899048
+[9853] Extracting mxnet.ndarray.multi_sgd_update.yaml
+Finish mxnet.ndarray.multi_sgd_update.yaml, Time: 4.225667238235474
+[9853] Extracting mxnet.ndarray.contrib.multiboxtarget.yaml
+Finish mxnet.ndarray.contrib.multiboxtarget.yaml, Time: 4.572767496109009
+[9853] Extracting mxnet.ndarray.contrib.group_adagrad_update.yaml
+Finish mxnet.ndarray.contrib.group_adagrad_update.yaml, Time: 4.558452844619751
+[9853] Extracting mxnet.ndarray.op.argmin.yaml
+Finish mxnet.ndarray.op.argmin.yaml, Time: 4.702745199203491
+[9853] Extracting mxnet.ndarray.random.gamma.yaml
+Unable to find map from None to data type for arg dtype with subtree type data
+Unable to find map from None to data type for arg dtype with subtree type of
+Unable to find map from None to data type for arg dtype with subtree type data -1 of
+Finish mxnet.ndarray.random.gamma.yaml, Time: 5.882358074188232
+[9853] Extracting mxnet.ndarray.sgd_mom_update.yaml
+Finish mxnet.ndarray.sgd_mom_update.yaml, Time: 6.531266212463379
+[9853] Extracting mxnet.ndarray.op.reshape.yaml
+Finish mxnet.ndarray.op.reshape.yaml, Time: 11.272432088851929
+Precision
+{'dtype': 0, 'structure': 0, 'shape': 0, 'validvalue': 0, 'all': 0}
+Recall
+{'dtype': 0.0, 'structure': 0.0, 'shape': 0.0, 'validvalue': 0.0, 'all': 0.0}
+F1
+{'dtype': 0, 'structure': 0, 'shape': 0, 'validvalue': 0, 'all': 0}
+accuracy
+0.0

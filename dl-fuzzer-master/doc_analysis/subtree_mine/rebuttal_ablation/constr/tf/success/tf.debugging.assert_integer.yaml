@@ -1,0 +1,62 @@
+constraints:
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  name:
+    default: None
+    descp: A name for this operation (optional). Defaults to "assert_integer".
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- TypeError: If `x.dtype` is not a non-quantized integer type.
+inputs:
+  optional:
+  - message
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_integer
+package: tensorflow
+target: assert_integer
+title: tf.debugging.assert_integer
+version: 2.1.0

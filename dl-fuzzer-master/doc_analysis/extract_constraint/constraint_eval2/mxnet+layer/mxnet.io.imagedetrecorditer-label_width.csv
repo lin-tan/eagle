@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='-1'","Dataset Param: How many labels for an image, -1 for variable label size.",None,prim_dtype,dtype(int),,1
+"int, optional, default='-1'","Dataset Param: How many labels for an image, -1 for variable label size.",None,shape,ndim(0),,1
+"int, optional, default='-1'","Dataset Param: How many labels for an image, -1 for variable label size.",None,validvalue,"range([0,inf))",,1

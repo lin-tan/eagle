@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.io.deserialize_many_sparse

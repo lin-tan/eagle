@@ -1,0 +1,16 @@
+constraints:
+  seed:
+    descp: integer.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - seed
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/random/set_seed
+package: tensorflow
+target: set_seed
+title: tf.random.set_seed
+version: 2.3.0

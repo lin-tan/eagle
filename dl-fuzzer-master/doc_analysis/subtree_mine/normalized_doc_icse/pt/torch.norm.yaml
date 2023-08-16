@@ -1,0 +1,79 @@
+constraints:
+  dim:
+    default: None
+    descp: If it is an int, vector norm will be calculated, if it is 2-tuple of ints,
+      matrix norm will be calculated. If the value is None, matrix norm will be calculated
+      when the input tensor only has two dimensions, vector norm will be calculated
+      when the input tensor only has one dimension. If the input tensor has more than
+      two dimensions, the vector norm will be applied to last dimension.
+    doc_dtype: int, 2-tuple of python:ints, 2-list of python:ints, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If it is an D_TYPE vector norm will be calculated if it is CONSTANT_NUM D_STRUCTURE
+      of D_TYPE matrix norm will be calculated
+    - If the value is None matrix norm will be calculated when the PARAM D_STRUCTURE
+      only has two dimensions vector norm will be calculated when the PARAM D_STRUCTURE
+      only has one dimension
+    - If the PARAM D_STRUCTURE has more than two dimensions the vector norm will be
+      applied to last dimension
+    normalized_docdtype: D_TYPE CONSTANT_NUM D_STRUCTURE of python D_TYPE CONSTANT_NUM
+      D_STRUCTURE of python D_TYPE optional
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. If specified, the input tensor
+      is casted to :attr:''dtype'' while performing the operation. Default: None.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - If specified the PARAM D_STRUCTURE is casted to attr QSTR while performing the
+      operation
+    - Default None
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keepdim:
+    default: 'False'
+    descp: 'whether the output tensors have `dim` retained or not. Ignored if `dim`
+      = `None` and `out` = `None`. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether the output D_STRUCTURE have PARAM retained or not
+    - Ignored if PARAM QSTR and PARAM QSTR
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  out:
+    default: None
+    descp: the output tensor. Ignored if `dim` = `None` and `out` = `None`.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    - Ignored if PARAM QSTR QSTR
+    normalized_docdtype: D_STRUCTURE optional
+  p:
+    default: fro
+    descp: ''
+    doc_dtype: int, float, inf, -inf, 'fro', 'nuc', optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp: []
+    normalized_docdtype: D_TYPE inf inf QSTR optional
+inputs:
+  optional:
+  - p
+  - dim
+  - keepdim
+  - out
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.norm
+package: torch
+target: norm
+title: torch.norm
+version: 1.5.0

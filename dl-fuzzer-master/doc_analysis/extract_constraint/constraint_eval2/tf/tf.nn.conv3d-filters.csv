@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must have the same type as `input`. Shape `[filter_depth, filter_height, filter_width, in_channels, out_channels]`. `in_channels` must match between `input` and `filters`.",,prim_dtype,dtype(dtype:&input),,1
+,"A `Tensor`. Must have the same type as `input`. Shape `[filter_depth, filter_height, filter_width, in_channels, out_channels]`. `in_channels` must match between `input` and `filters`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must have the same type as `input`. Shape `[filter_depth, filter_height, filter_width, in_channels, out_channels]`. `in_channels` must match between `input` and `filters`.",,shape,"shape([filter_depth,filter_height,filter_width,in_channels,out_channels]), ndim(5)",,1

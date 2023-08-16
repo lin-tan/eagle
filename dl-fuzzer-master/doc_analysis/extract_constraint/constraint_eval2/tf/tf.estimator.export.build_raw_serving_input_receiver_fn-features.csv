@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,a dict of string to `Tensor`.,,prim_dtype,dtype(tf.string),,1
+,a dict of string to `Tensor`.,,nonprim_dtype,structure(dict(tf.string:tf.tensor)),,1

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"iterable (n_rows, n_cols) The shape of the result.",,prim_dtype,dtype(int),,1
+,"iterable (n_rows, n_cols) The shape of the result.",,nonprim_dtype,structure(list),,1
+,"iterable (n_rows, n_cols) The shape of the result.",,shape,ndim(1),,1
+,"iterable (n_rows, n_cols) The shape of the result.",,validvalue,"range([0,inf))",,1

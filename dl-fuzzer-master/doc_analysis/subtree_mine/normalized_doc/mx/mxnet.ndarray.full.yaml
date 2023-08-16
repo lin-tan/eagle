@@ -1,0 +1,51 @@
+constraints:
+  ctx:
+    default: None
+    descp: Device context (default is the current default context).
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context BSTR
+    normalized_docdtype: Context, optional
+  dtype:
+    default: <classnumpy.float32>
+    descp: The data type of the returned NDArray. The default datatype is float32.
+    doc_dtype: str or numpy.dtype, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The data type of the returned D_STRUCTURE
+    - The default datatype is D_TYPE
+    normalized_docdtype: D_TYPE, optional
+  out:
+    default: None
+    descp: The output NDArray (default is None).
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE BSTR
+    normalized_docdtype: D_STRUCTURE, optional
+  shape:
+    descp: The shape of the new array.
+    doc_dtype: int or tuple of int
+    normalized_descp:
+    - The shape of the new D_STRUCTURE
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE
+  val:
+    descp: Fill value.
+    doc_dtype: scalar
+    normalized_descp:
+    - Fill value
+    normalized_docdtype: ONE_WORD scalar
+inputs:
+  optional:
+  - ctx
+  - dtype
+  - out
+  required:
+  - shape
+  - val
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.full
+package: mxnet
+target: full
+title: mxnet.ndarray.full
+version: 1.6.0

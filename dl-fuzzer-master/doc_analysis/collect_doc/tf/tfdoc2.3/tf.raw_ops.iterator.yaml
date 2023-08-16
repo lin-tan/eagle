@@ -1,0 +1,28 @@
+constraints:
+  container:
+    descp: A string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  shared_name:
+    descp: A string.
+inputs:
+  optional:
+  - name
+  required:
+  - shared_name
+  - container
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Iterator
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: Iterator
+title: tf.raw_ops.Iterator
+version: 2.3.0

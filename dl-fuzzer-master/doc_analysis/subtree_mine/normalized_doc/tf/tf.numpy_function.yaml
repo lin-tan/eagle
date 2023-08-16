@@ -1,0 +1,66 @@
+aliases:
+- tf.compat.v1.numpy_function
+constraints:
+  Tout:
+    descp: 'A list or tuple of tensorflow data types or a single tensorflow data type
+      if there is only one, indicating what `func` returns. stateful (bool): If True,
+      the function should be considered stateful. If a function is stateless, when
+      given the same input it will return the same output and have no observable side
+      effects. Optimizations such as common subexpression elimination are only performed
+      on stateless operations.'
+    normalized_descp:
+    - A D_STRUCTURE of tensorflow data types or a single tensorflow data type if there
+      is only one, indicating what PARAM returns
+    - stateful BSTR If CONSTANT_BOOL, the function should be considered stateful
+    - If a function is stateless, when given the same input it will return the same
+      output and have no observable side effects
+    - Optimizations such as common subexpression elimination are only performed on
+      stateless operations
+  func:
+    descp: 'A Python function, which accepts `numpy.ndarray` objects as arguments
+      and returns a list of `numpy.ndarray` objects (or a single`numpy.ndarray`).
+      This function must accept as many arguments as there are tensors in `inp`, and
+      these argument types will match the corresponding`tf.Tensor` objects in `inp`.
+      The returns `numpy.ndarray`s must match the number and types defined `Tout`.
+      Important Note: Input and output `numpy.ndarray`s of `func` are not guaranteed
+      to be copies. In some cases their underlying memory will be shared with the
+      corresponding TensorFlow tensors. In-place modification or storing `func` input
+      or return values in python datastructures without explicit (np.)copy can have
+      non-deterministic consequences.'
+    normalized_descp:
+    - A Python function, which accepts numpy D_STRUCTURE objects as arguments and
+      returns a D_STRUCTURE of numpy D_STRUCTURE objects or a single numpy D_STRUCTURE
+    - This function must accept as many arguments as there are D_STRUCTURE in PARAM,
+      and these argument types will match the correspondingD_STRUCTURE objects in
+      PARAM
+    - The returns numpy D_STRUCTUREs must match the number and types defined PARAM
+    - Important Note Input and output numpy D_STRUCTUREs of QSTR are not guaranteed
+      to be copies
+    - In some cases their underlying memory will be shared with the corresponding
+      TensorFlow D_STRUCTURE
+    - In place modification or storing QSTR input or return values in python datastructures
+      without explicit np
+    - copy can have non deterministic consequences
+  inp:
+    descp: A list of `tf.Tensor` objects.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE objects
+  name:
+    default: None
+    descp: (Optional) A name for the operation.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR A name for the operation
+inputs:
+  optional:
+  - name
+  required:
+  - func
+  - inp
+  - Tout
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/numpy_function
+outputs: Single or list of `tf.Tensor` which `func` computes.
+package: tensorflow
+target: numpy_function
+title: tf.numpy_function
+version: 2.1.0

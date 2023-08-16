@@ -1,0 +1,6 @@
+constraints:
+  n:
+    descp: Integer, repetition factor.
+    dtype:
+    - int
+title: tf.keras.layers.RepeatVector

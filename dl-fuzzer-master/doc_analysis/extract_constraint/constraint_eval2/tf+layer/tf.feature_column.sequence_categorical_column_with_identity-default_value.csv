@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If `None`, this column's graph operations will fail for out-of-range inputs. Otherwise, this value must be in the range`[0, num_buckets)`, and will replace out-of-range inputs.",None,validvalue,"range([0,&num_buckets))",,1

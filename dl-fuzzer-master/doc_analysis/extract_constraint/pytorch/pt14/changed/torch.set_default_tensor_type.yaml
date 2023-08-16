@@ -1,0 +1,18 @@
+constraints:
+  t:
+    descp: the floating point tensor type or its name
+    doc_dtype:
+    - python:type
+    - string
+    dtype:
+    - string
+    - torch.float32
+inputs:
+  optional: []
+  required:
+  - t
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.set_default_tensor_type
+package: torch
+target: set_default_tensor_type
+title: torch.set_default_tensor_type
+version: 1.4.0

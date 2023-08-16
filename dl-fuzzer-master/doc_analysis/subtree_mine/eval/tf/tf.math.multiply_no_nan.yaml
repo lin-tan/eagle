@@ -1,0 +1,6 @@
+constraints:
+  y:
+    descp: A `Tensor` whose dtype is compatible with `x`.
+    tensor_t:
+    - tf.tensor
+title: tf.math.multiply_no_nan

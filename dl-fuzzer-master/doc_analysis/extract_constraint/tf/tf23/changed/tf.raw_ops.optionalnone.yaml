@@ -1,0 +1,19 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OptionalNone
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: OptionalNone
+title: tf.raw_ops.OptionalNone
+version: 2.3.0

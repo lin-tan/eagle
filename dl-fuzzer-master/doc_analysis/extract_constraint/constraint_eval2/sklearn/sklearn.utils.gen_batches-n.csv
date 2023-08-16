@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int batch_size : int Number of element in each batch min_batch_size : int, default=0 Minimum batch size to produce.",,prim_dtype,dtype(int),,1
+,"int batch_size : int Number of element in each batch min_batch_size : int, default=0 Minimum batch size to produce.",,shape,ndim(0),,1
+,"int batch_size : int Number of element in each batch min_batch_size : int, default=0 Minimum batch size to produce.",,validvalue,"range([0,inf))",,1

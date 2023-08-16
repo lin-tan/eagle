@@ -1,0 +1,35 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.CategoryCrossing
+constraints:
+  '**kwargs':
+    descp: Keyword arguments to construct a layer.
+  depth:
+    default: None
+    descp: depth of input crossing. By default None, all inputs are crossed into one
+      output. It can also be an int or tuple/list of ints. Passing an integer will
+      create combinations of crossed outputs with depth up to that integer, i.e.,
+      [1, 2, ..., depth), and passing a tuple of integers will create crossed outputs
+      with depth for the specified values in the tuple, i.e., depth=(N1, N2) will
+      create all possible crossed outputs with depth equal to N1 or N2. Passing None
+      means a single crossed output with all inputs. For example, with inputs a, b
+      and c, depth=2 means the output will be [a;b;c;cross(a, b);cross(bc);cross(ca)].
+  name:
+    default: None
+    descp: Name to give to the layer.
+  separator:
+    default: None
+    descp: A string added between each input being joined. Defaults to 'X'.
+inputs:
+  optional:
+  - depth
+  - name
+  - separator
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryCrossing
+outputs: If any input is RaggedTensor, the output is RaggedTensor. Else, if any input
+  is SparseTensor, the output is SparseTensor. Otherwise, the output is Tensor.
+package: tensorflow
+target: CategoryCrossing
+title: tf.keras.layers.experimental.preprocessing.CategoryCrossing
+version: 2.3.0

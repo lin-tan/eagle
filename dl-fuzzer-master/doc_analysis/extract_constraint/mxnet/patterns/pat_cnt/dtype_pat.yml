@@ -1,0 +1,181 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (augmenter|data|label|the)\s+names:
+    cnt: 12
+    dtype: string
+    ndim: 1
+  (learning|drop)\s+rate:
+    cnt: 60
+    dtype: float
+    ndim: 0
+    range: '[0,1]'
+  (model|file)\s+name:
+    cnt: 6
+    dtype: string
+    ndim: 0
+  \(deprecated!:
+    cnt: 5
+    dtype: deprecated
+  \bid\b\s+of:
+    cnt: 8
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  ^(\w+):
+    cnt: 303
+    group: 1
+  ^(a|an)\s+(optional\s+)?([\w.]+):
+    cnt: 7
+    group: 3
+    ndim: 0
+  ^(binary|input)\s+(source\s+)?image:
+    cnt: 5
+    dtype: image
+  ^(indicates\s+)whether:
+    cnt: 7
+    dtype: bool
+    ndim: 0
+  ^(input|output|the)\s+data\s+type:
+    cnt: 28
+    dtype: numpy.dtype
+  ^(the\s+)?((minimum|maximum|total|epoch)\s+)?number\s+of:
+    cnt: 147
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  ^(the\s+)?(minimum|maximum)?\s*scalar:
+    cnt: 50
+    dtype: scalar
+  ^(the\s+)?(optional,|start)?\s*index\s+of:
+    cnt: 18
+    dtype: int
+    ndim: 0
+  ^(the\s+)?(target|input|output)?\s*(shape):
+    cnt: 78
+    group: 3
+  ^(the\s+)?decay\s+rate:
+    cnt: 39
+    dtype: float
+    ndim: 0
+    range: '[0,1]'
+  ^(the\s+)?dimension:
+    cnt: 37
+    dtype: int
+  ^(the\s+)?path\s:
+    cnt: 7
+    dtype: string
+  ^(true|false)\s+(if|for):
+    cnt: 7
+    dtype: bool
+    ndim: 0
+  ^a\s+.*?\s+of\s+type\s+(\w+):
+    cnt: 14
+    group: 1
+  ^an\s+optional\s+value\s+type:
+    cnt: 7
+    dtype: numpy.dtype
+    ndim: 0
+  ^data\s+type\s+of:
+    cnt: 18
+    dtype: dtype
+    ndim: 0
+  ^dtype\s+of:
+    cnt: 44
+    dtype: dtype
+    ndim: 0
+  ^failure\s+probabilities:
+    cnt: 4
+    dtype: float
+    range: '[0,1]'
+  ^if\s+`*(true|false)`*:
+    cnt: 56
+    dtype: bool
+    ndim: 0
+  ^if\s+set,:
+    cnt: 16
+    dtype: bool
+    ndim: 0
+  ^lengths\s+of\s+:
+    cnt: 16
+    dtype: int
+    ndim: 1
+    range: '[0,inf)'
+  ^offset:
+    cnt: 12
+    dtype: int
+    ndim: 0
+  ^the\s+`*(\w+)`*:
+    cnt: 60
+    group: 1
+  ^the\s+length\s+of:
+    cnt: 2
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  ^turn\s+off:
+    cnt: 10
+    dtype: bool
+    ndim: 0
+  ^whether\s+to\s+:
+    cnt: 167
+    dtype: bool
+    ndim: 0
+  device\s+id:
+    cnt: 5
+    dtype: int
+    ndim: 0
+    range: '[0,inf)'
+  directory\s+path:
+    cnt: 5
+    dtype: string
+    ndim: 0
+  if\s+(\w+)\s+is\s+(a|an)\s+(\w+)[,\s.]:
+    check_arg: 1
+    cnt: 2
+    group: 3
+    ndim: 0
+  if\s+(this\s+is\s+)?set\s+to\s+`*(true|false)`*:
+    cnt: 62
+    dtype: bool
+    ndim: 0
+  in\s+the\s+form\s+of\s+(\w+):
+    cnt: 20
+    group: 1
+  location\s+for:
+    cnt: 32
+    dtype: string
+  the\s+(beginning|ending)\s+index:
+    cnt: 12
+    dtype: int
+    ndim: 0
+  the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+:
+    cnt: 8
+    dtype: numeric
+    ndim: 0
+    prereq:
+    - the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+)
+  the\s+(minimum|maximum)\s+scalar\s+value\s+possibly\s+produced\s+for\s+the\s+input\s+in\s+(\w+):
+    cnt: 4
+    group: 2
+    ndim: 0
+  type\s+for:
+    cnt: 8
+    dtype: dtype
+    ndim: 0
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+stop_word:
+- and
+- or
+- etc
+target: dtype

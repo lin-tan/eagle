@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D. The indices of the dimensions to reverse. Must be in the range`[-rank(tensor), rank(tensor))`.",,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D. The indices of the dimensions to reverse. Must be in the range`[-rank(tensor), rank(tensor))`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D. The indices of the dimensions to reverse. Must be in the range`[-rank(tensor), rank(tensor))`.",,shape,ndim(0),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D. The indices of the dimensions to reverse. Must be in the range`[-rank(tensor), rank(tensor))`.",,validvalue,"range([-ndim:&tensor,ndim:&tensor))",,1

@@ -1,0 +1,22 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource handle referring to a QuantileStreamResource.
+  summaries:
+    descp: A list of Tensor objects with type float32. string; List of Rank 2 Tensor
+      each containing the summaries for a single feature.
+inputs:
+  optional:
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - summaries
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesQuantileStreamResourceAddSummaries
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesQuantileStreamResourceAddSummaries
+title: tf.raw_ops.BoostedTreesQuantileStreamResourceAddSummaries
+version: 2.3.0

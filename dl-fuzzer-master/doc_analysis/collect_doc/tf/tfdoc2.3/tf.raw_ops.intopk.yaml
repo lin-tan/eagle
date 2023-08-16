@@ -1,0 +1,25 @@
+constraints:
+  k:
+    descp: An int. Number of top elements to look at for computing precision.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  predictions:
+    descp: A Tensor of type float32. A batch_size x classes tensor.
+  targets:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A batch_size
+      vector of class ids.'
+inputs:
+  optional:
+  - name
+  required:
+  - predictions
+  - targets
+  - k
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/InTopK
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: InTopK
+title: tf.raw_ops.InTopK
+version: 2.3.0

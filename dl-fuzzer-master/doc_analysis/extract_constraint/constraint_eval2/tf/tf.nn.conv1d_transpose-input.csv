@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 3-D `Tensor` of type `float` and shape`[batch, in_width, in_channels]` for `NWC` data format or`[batch, in_channels, in_width]` for `NCW` data format.",,prim_dtype,dtype(float),,1
+,"A 3-D `Tensor` of type `float` and shape`[batch, in_width, in_channels]` for `NWC` data format or`[batch, in_channels, in_width]` for `NCW` data format.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 3-D `Tensor` of type `float` and shape`[batch, in_width, in_channels]` for `NWC` data format or`[batch, in_channels, in_width]` for `NCW` data format.",,shape,"shape([batch,in_width,in_channels]), ndim(3)",,1

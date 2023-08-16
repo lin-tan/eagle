@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Optional bool. Setting it to `True` is mathematically equivalent to tf.math.conj(tf.transpose(input)).,False,prim_dtype,dtype(tf.bool),,1
+,Optional bool. Setting it to `True` is mathematically equivalent to tf.math.conj(tf.transpose(input)).,False,shape,ndim(0),,1

@@ -1,0 +1,68 @@
+constraints:
+  container:
+    descp: A string. If non-empty, this resource is placed in the given container.
+      Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  devices:
+    descp: A list of strings that has length >= 1. A list of devices the iterator
+      works across.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.string)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1. The list of shapes being produced.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1. The type list for the return
+      values.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  shared_name:
+    descp: A string. If non-empty, this resource will be shared under the given name
+      across multiple sessions.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - devices
+  - shared_name
+  - container
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MultiDeviceIterator
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: MultiDeviceIterator
+title: tf.raw_ops.MultiDeviceIterator
+version: 2.3.0

@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.argmax.html#torch.argmax#torch.argmax
+package: torch
+ret_type: LongTensor
+target: argmax
+title: torch.argmax
+version: 1.6.0

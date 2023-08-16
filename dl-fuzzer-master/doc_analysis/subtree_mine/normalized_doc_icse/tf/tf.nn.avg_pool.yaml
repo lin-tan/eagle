@@ -1,0 +1,64 @@
+aliases:
+- tf.compat.v1.nn.avg_pool_v2
+constraints:
+  data_format:
+    default: None
+    descp: A string. Specifies the channel dimension. For N=1 it can be either "NWC"
+      (default) or "NCW", for N=2 it can be either "NHWC" (default) or "NCHW" and
+      for N=3 either "NDHWC" (default) or "NCDHW".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE
+    - Specifies the channel dimension
+    - For N CONSTANT_NUM it can be either QSTR BSTR or QSTR for N CONSTANT_NUM it
+      can be either QSTR BSTR or QSTR and for N CONSTANT_NUM either QSTR BSTR or QSTR
+  input:
+    descp: Tensor of rank N+2, of shape `[batch_size] + input_spatial_shape + [num_channels]`
+      if `data_format` does not start with "NC" (default), or`[batch_size, num_channels]
+      + input_spatial_shape` if data_format starts with "NC". Pooling happens over
+      the spatial dimensions only.
+    normalized_descp:
+    - D_STRUCTURE of rank N CONSTANT_NUM of shape BSTR input_spatial_shape BSTR if
+      PARAM does not start with QSTR BSTR or BSTR input_spatial_shape QSTR NC
+    - Pooling happens over the spatial dimensions only
+  ksize:
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`. The size of
+      the window for each dimension of the input tensor.
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of D_TYPE that has length CONSTANT_NUM QSTR or N CONSTANT_NUM
+    - The size of the window for each dimension of the PARAM D_STRUCTURE
+  name:
+    default: None
+    descp: Optional name for the operation.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional name for the operation
+  padding:
+    descp: A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the
+      "returns" section of `tf.nn.convolution` for details.
+    normalized_descp:
+    - A D_TYPE either QSTR
+    - The padding algorithm
+    - See the QSTR section of tf nn convolution for details
+  strides:
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`. The stride
+      of the sliding window for each dimension of the input tensor.
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of D_TYPE that has length CONSTANT_NUM QSTR or N CONSTANT_NUM
+    - The stride of the sliding window for each dimension of the PARAM D_STRUCTURE
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - input
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/avg_pool
+outputs: A `Tensor` of format specified by `data_format`. The average pooled output
+  tensor.
+package: tensorflow
+target: avg_pool
+title: tf.nn.avg_pool
+version: 2.1.0

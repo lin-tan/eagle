@@ -1,0 +1,12 @@
+constraints:
+  pool_size:
+    descp: tuple of 3 integers.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[3]'
+    structure:
+    - tuple
+title: tf.keras.backend.pool3d

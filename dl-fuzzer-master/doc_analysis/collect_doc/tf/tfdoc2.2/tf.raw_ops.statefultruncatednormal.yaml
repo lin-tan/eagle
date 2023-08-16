@@ -1,0 +1,29 @@
+constraints:
+  algorithm:
+    descp: A Tensor of type int64. The RNG algorithm.
+  dtype:
+    default: tf.dtypes.float32
+    descp: An optional tf.DType. Defaults to tf.float32. The type of the output.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource. The handle of the resource variable that stores
+      the state of the RNG.
+  shape:
+    descp: A Tensor. The shape of the output tensor.
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - resource
+  - algorithm
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatefulTruncatedNormal
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: StatefulTruncatedNormal
+title: tf.raw_ops.StatefulTruncatedNormal
+version: 2.2.0

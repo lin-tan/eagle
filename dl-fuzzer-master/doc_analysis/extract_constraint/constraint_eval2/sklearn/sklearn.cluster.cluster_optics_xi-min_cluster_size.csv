@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int > 1 or float between 0 and 1 (default=None) Minimum number of samples in an OPTICS cluster, expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2). If ``None``, the value of ``min_samples`` is used instead.",None,prim_dtype,dtype(int),,1
+,"int > 1 or float between 0 and 1 (default=None) Minimum number of samples in an OPTICS cluster, expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2). If ``None``, the value of ``min_samples`` is used instead.",None,shape,ndim(0),,1
+,"int > 1 or float between 0 and 1 (default=None) Minimum number of samples in an OPTICS cluster, expressed as an absolute number or a fraction of the number of samples (rounded to be at least 2). If ``None``, the value of ``min_samples`` is used instead.",None,validvalue,"range([0,inf))",,1

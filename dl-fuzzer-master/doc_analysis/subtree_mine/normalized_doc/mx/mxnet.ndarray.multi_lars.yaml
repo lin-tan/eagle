@@ -1,0 +1,91 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  eps:
+    default: _Null
+    descp: LARS eps
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - LARS eps
+    normalized_docdtype: D_TYPE, required
+  eta:
+    default: _Null
+    descp: LARS eta
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - LARS eta
+    normalized_docdtype: D_TYPE, required
+  grads_sum_sq:
+    default: None
+    descp: sum of square of gradients arrays
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - sum of square of gradients D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lrs:
+    default: None
+    descp: Learning rates to scale by LARS coefficient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Learning rates to scale by LARS coefficient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rescale_grad:
+    default: _Null
+    descp: Gradient rescaling factor
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Gradient rescaling factor
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  wds:
+    default: None
+    descp: weight decays
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - weight decays
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  weights_sum_sq:
+    default: None
+    descp: sum of square of weights arrays
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - sum of square of weights D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - lrs
+  - weights_sum_sq
+  - grads_sum_sq
+  - wds
+  - eta
+  - eps
+  - rescale_grad
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.multi_lars
+package: mxnet
+target: multi_lars
+title: mxnet.ndarray.multi_lars
+version: 1.6.0

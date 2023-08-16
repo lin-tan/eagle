@@ -1,0 +1,15 @@
+constraints:
+  data_home:
+    default: None
+    descp: str | None The path to scikit-learn data dir.
+    dtype:
+    - string
+inputs:
+  optional:
+  - data_home
+  required: []
+link: ''
+package: scikit-learn
+target: clear_data_home
+title: sklearn.datasets.clear_data_home
+version: 0.24.X

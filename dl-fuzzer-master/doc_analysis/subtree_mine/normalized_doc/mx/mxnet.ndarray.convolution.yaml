@@ -1,0 +1,172 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  bias:
+    default: None
+    descp: Bias parameter.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Bias parameter
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  cudnn_off:
+    default: _Null
+    descp: Turn off cudnn for this layer.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Turn off cudnn for this layer
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  cudnn_tune:
+    default: _Null
+    descp: Whether to pick convolution algo by running performance test.
+    doc_dtype: '{None, ''fastest'', ''limited_workspace'', ''off''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to pick convolution algo by running performance test
+    normalized_docdtype: None, QSTR ,optional, default QSTR
+  data:
+    default: None
+    descp: Input data to the ConvolutionOp.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the ConvolutionOp
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dilate:
+    default: _Null
+    descp: 'Convolution dilate: (w,), (h, w) or (d, h, w). Defaults to 1 for each
+      dimension.'
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Convolution dilate BSTR
+    - Defaults to CONSTANT_NUM for each dimension
+    normalized_docdtype: Shape BSTR, optional, default
+  kernel:
+    default: _Null
+    descp: 'Convolution kernel size: (w,), (h, w) or (d, h, w)'
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Convolution kernel size BSTR
+    normalized_docdtype: Shape BSTR, required
+  layout:
+    default: _Null
+    descp: 'Set layout for input, output and weight. Empty for default layout: NCW
+      for 1d, NCHW for 2d and NCDHW for 3d.NHWC and NDHWC are only supported on GPU.'
+    doc_dtype: '{None, ''NCDHW'', ''NCHW'', ''NCW'', ''NDHWC'', ''NHWC''},optional,
+      default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Set layout for input, output and PARAM
+    - Empty for default layout NCW for 1d, NCHW for CONSTANT_NUM-D and NCDHW for CONSTANT_NUM-D
+      NHWC and NDHWC are only supported on GPU
+    normalized_docdtype: None, QSTR ,optional, default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  no_bias:
+    default: _Null
+    descp: Whether to disable bias parameter.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to disable PARAM parameter
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  num_filter:
+    default: _Null
+    descp: Convolution filter(channel) number
+    doc_dtype: int (non-negative), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Convolution filter BSTR number
+    normalized_docdtype: D_TYPE BSTR, required
+  num_group:
+    default: _Null
+    descp: Number of group partitions.
+    doc_dtype: int (non-negative), optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of group partitions
+    normalized_docdtype: D_TYPE BSTR, optional, default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  pad:
+    default: _Null
+    descp: 'Zero pad for convolution: (w,), (h, w) or (d, h, w). Defaults to no padding.'
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Zero pad for convolution BSTR
+    - Defaults to no padding
+    normalized_docdtype: Shape BSTR, optional, default
+  stride:
+    default: _Null
+    descp: 'Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each
+      dimension.'
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Convolution stride BSTR
+    - Defaults to CONSTANT_NUM for each dimension
+    normalized_docdtype: Shape BSTR, optional, default
+  weight:
+    default: None
+    descp: Weight matrix.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Weight matrix
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  workspace:
+    default: _Null
+    descp: Maximum temporary workspace allowed (MB) in convolution.This parameter
+      has two usages. When CUDNN is not used, it determines the effective batch size
+      of the convolution kernel. When CUDNN is used, it controls the maximum temporary
+      storage used for tuning the best CUDNN kernel when limited_workspace strategy
+      is used.
+    doc_dtype: long (non-negative), optional, default=1024
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Maximum temporary workspace allowed BSTR in convolution This parameter has two
+      usages
+    - When CUDNN is not used, it determines the effective batch size of the convolution
+      PARAM
+    - When CUDNN is used, it controls the maximum temporary storage used for tuning
+      the best CUDNN PARAM when limited_workspace strategy is used
+    normalized_docdtype: long BSTR, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - weight
+  - bias
+  - kernel
+  - stride
+  - dilate
+  - pad
+  - num_filter
+  - num_group
+  - workspace
+  - no_bias
+  - cudnn_tune
+  - cudnn_off
+  - layout
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.Convolution
+package: mxnet
+target: Convolution
+title: mxnet.ndarray.Convolution
+version: 1.6.0

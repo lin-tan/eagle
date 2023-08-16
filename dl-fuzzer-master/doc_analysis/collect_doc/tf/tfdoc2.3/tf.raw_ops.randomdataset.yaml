@@ -1,0 +1,30 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  seed:
+    descp: A Tensor of type int64. A scalar seed for the random number generator.
+      If either seed or seed2 is set to be non-zero, the random number generator is
+      seeded by the given seed. Otherwise, a random seed is used.
+  seed2:
+    descp: A Tensor of type int64. A second scalar seed to avoid seed collision.
+inputs:
+  optional:
+  - name
+  required:
+  - seed
+  - seed2
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RandomDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: RandomDataset
+title: tf.raw_ops.RandomDataset
+version: 2.3.0

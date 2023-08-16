@@ -1,0 +1,12 @@
+sklearn.get_config = get_config()
+    Retrieve current values for configuration set by :func:`set_config`
+    
+    Returns
+    -------
+    config : dict
+        Keys are parameter names that can be passed to :func:`set_config`.
+    
+    See Also
+    --------
+    config_context: Context manager for global scikit-learn configuration
+    set_config: Set global scikit-learn configuration

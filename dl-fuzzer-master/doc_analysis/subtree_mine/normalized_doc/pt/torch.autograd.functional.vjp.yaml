@@ -1,0 +1,71 @@
+constraints:
+  create_graph:
+    default: 'False'
+    descp: If `True`, both the output and result will be computed in a differentiable
+      way. Note that when `strict` is `False`, the result can not require gradients
+      or be disconnected from the inputs. Defaults to `False`.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, both the output and result will be computed in a differentiable
+      way
+    - Note that when PARAM is CONSTANT_BOOL, the result can not require gradients
+      or be disconnected from the PARAM
+    - Defaults to CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  func:
+    descp: a Python function that takes Tensor inputs and returns a tuple of Tensors
+      or a Tensor.
+    doc_dtype: function
+    normalized_descp:
+    - a Python function that takes D_STRUCTURE PARAM and returns a D_STRUCTURE of
+      D_STRUCTURE
+    normalized_docdtype: ONE_WORD function
+  inputs:
+    descp: inputs to the function `func`.
+    doc_dtype: tuple of Tensors or Tensor
+    normalized_descp:
+    - inputs to the function PARAM
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  strict:
+    default: 'False'
+    descp: If `True`, an error will be raised when we detect that there exists an
+      input such that all the outputs are independent of it. If `False`, we return
+      a Tensor of zeros as the vjp for said inputs, which is the expected mathematical
+      value. Defaults to `False`.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, an error will be raised when we detect that there exists an
+      input such that all the outputs are independent of it
+    - If CONSTANT_BOOL, we return a D_STRUCTURE of zeros as the vjp for said PARAM,
+      which is the expected mathematical value
+    - Defaults to CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  v:
+    default: None
+    descp: The vector for which the vector Jacobian product is computed. Must be the
+      same size as the output of `func`. This argument is optional when `func`'s output
+      contains a single element and (if it is not provided) will be set as a Tensor
+      containing a single `1`.
+    doc_dtype: tuple of Tensors or Tensor
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The D_STRUCTURE for which the D_STRUCTURE Jacobian product is computed
+    - Must be the same size as the output of PARAM
+    - This argument is optional when PARAMs output contains a single element and BSTR
+      will be set as a D_STRUCTURE containing a single CONSTANT_NUM
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - v
+  - create_graph
+  - strict
+  required:
+  - func
+  - inputs
+link: https://pytorch.org/docs/stable/autograd.html#torch.autograd.functional.vjp
+package: torch
+target: vjp
+title: torch.autograd.functional.vjp
+version: 1.5.0

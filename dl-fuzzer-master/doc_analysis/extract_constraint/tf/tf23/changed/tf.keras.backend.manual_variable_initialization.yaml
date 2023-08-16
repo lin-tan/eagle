@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.backend.manual_variable_initialization
+constraints:
+  value:
+    descp: Python boolean.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/manual_variable_initialization
+package: tensorflow
+target: manual_variable_initialization
+title: tf.keras.backend.manual_variable_initialization
+version: 2.3.0

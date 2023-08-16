@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  a:
+    default: _Null
+    descp: Coefficient of the quadratic term in the quadratic function.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Coefficient of the quadratic term in the quadratic function
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  b:
+    default: _Null
+    descp: Coefficient of the linear term in the quadratic function.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Coefficient of the linear term in the quadratic function
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  c:
+    default: _Null
+    descp: Constant term in the quadratic function.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Constant term in the quadratic function
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  data:
+    default: None
+    descp: Input ndarray
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - a
+  - b
+  - c
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.quadratic
+package: mxnet
+target: quadratic
+title: mxnet.ndarray.contrib.quadratic
+version: 1.6.0

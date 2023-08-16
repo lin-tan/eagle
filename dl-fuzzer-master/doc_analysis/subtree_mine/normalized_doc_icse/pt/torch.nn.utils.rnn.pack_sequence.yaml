@@ -1,0 +1,29 @@
+constraints:
+  enforce_sorted:
+    default: 'True'
+    descp: 'if `True`, checks that the input contains sequences sorted by length in
+      a decreasing order. If `False`, this condition is not checked. Default: `True`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL checks that the input contains PARAM sorted by length in a
+      decreasing order
+    - If CONSTANT_BOOL this condition is not checked
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  sequences:
+    descp: A list of sequences of decreasing length.
+    doc_dtype: list[Tensor]
+    normalized_descp:
+    - A D_STRUCTURE of sequences of decreasing length
+    normalized_docdtype: D_STRUCTURE BSTR
+inputs:
+  optional:
+  - enforce_sorted
+  required:
+  - sequences
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.rnn.pack_sequence
+package: torch
+target: pack_sequence
+title: torch.nn.utils.rnn.pack_sequence
+version: 1.5.0

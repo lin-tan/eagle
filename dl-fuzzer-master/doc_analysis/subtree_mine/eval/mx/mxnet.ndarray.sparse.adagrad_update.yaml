@@ -1,0 +1,9 @@
+constraints:
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.sparse.adagrad_update

@@ -1,0 +1,29 @@
+constraints:
+  X:
+    descp: array-like, shape (n_samples, n_features) Data from which to compute the
+      covariance estimate.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    structure:
+    - ndarray
+  assume_centered:
+    default: 'False'
+    descp: boolean If True, data will not be centered before computation. Useful to
+      work with data whose mean is significantly equal to zero but is not exactly
+      zero. If False, data will be centered before computation.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - assume_centered
+  required:
+  - X
+link: ''
+package: sklearn
+target: oas
+title: sklearn.covariance.oas
+version: 0.24.2

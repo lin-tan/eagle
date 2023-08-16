@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,int Desired number of non-zero entries in the solution. If None (by default) this value is set to 10% of n_features.,None,prim_dtype,dtype(int),,1
+,int Desired number of non-zero entries in the solution. If None (by default) this value is set to 10% of n_features.,None,shape,ndim(0),,1
+,int Desired number of non-zero entries in the solution. If None (by default) this value is set to 10% of n_features.,None,validvalue,"range([0,inf))",,1

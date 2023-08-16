@@ -1,0 +1,25 @@
+constraints:
+  adjoint:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  matrix:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rhs:
+    descp: A Tensor. Must have the same type as matrix.
+inputs:
+  optional:
+  - adjoint
+  - name
+  required:
+  - matrix
+  - rhs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BatchMatrixSolve
+outputs:
+- A Tensor. Has the same type as matrix.
+package: tensorflow
+target: BatchMatrixSolve
+title: tf.raw_ops.BatchMatrixSolve
+version: 2.3.0

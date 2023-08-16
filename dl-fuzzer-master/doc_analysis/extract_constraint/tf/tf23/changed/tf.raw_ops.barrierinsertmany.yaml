@@ -1,0 +1,52 @@
+constraints:
+  component_index:
+    descp: An int. The component of the barrier elements that is being assigned.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  handle:
+    descp: A Tensor of type mutable string. The handle to a barrier.
+    tensor_t:
+    - tf.tensor
+  keys:
+    descp: A Tensor of type string. A one-dimensional tensor of keys, with length
+      n.
+    dtype:
+    - tf.string
+    ndim:
+    - one
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  values:
+    descp: A Tensor. An any-dimensional tensor of values, which are associated with
+      the respective keys. The 0th dimension must have length n.
+    ndim:
+    - any
+    tensor_t:
+    - tf.tensor
+dependency:
+- any
+- one
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - keys
+  - values
+  - component_index
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BarrierInsertMany
+outputs:
+- The created Operation.
+package: tensorflow
+target: BarrierInsertMany
+title: tf.raw_ops.BarrierInsertMany
+version: 2.3.0

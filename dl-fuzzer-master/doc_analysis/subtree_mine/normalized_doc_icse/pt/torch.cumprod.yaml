@@ -1,0 +1,48 @@
+constraints:
+  dim:
+    descp: the dimension to do the operation over
+    doc_dtype: int
+    normalized_descp:
+    - the dimension to do the operation over
+    normalized_docdtype: ONE_WORD D_TYPE
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. If specified, the input tensor
+      is casted to `dtype` before the operation is performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - If specified the PARAM D_STRUCTURE is casted to QSTR before the operation is
+      performed
+    - This is useful for preventing data type overflows
+    - Default None
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  - dtype
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.cumprod
+package: torch
+ret_type: Tensor
+target: cumprod
+title: torch.cumprod
+version: 1.5.0

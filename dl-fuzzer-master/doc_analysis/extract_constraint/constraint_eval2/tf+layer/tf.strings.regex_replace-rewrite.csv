@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"string or scalar string `Tensor`, value to use in match replacement, supports backslash-escaped digits (\1 to \9) can be to insert text matching corresponding parenthesized group.",,prim_dtype,dtype(tf.string),,1
+,"string or scalar string `Tensor`, value to use in match replacement, supports backslash-escaped digits (\1 to \9) can be to insert text matching corresponding parenthesized group.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"string or scalar string `Tensor`, value to use in match replacement, supports backslash-escaped digits (\1 to \9) can be to insert text matching corresponding parenthesized group.",,shape,ndim(0),,1

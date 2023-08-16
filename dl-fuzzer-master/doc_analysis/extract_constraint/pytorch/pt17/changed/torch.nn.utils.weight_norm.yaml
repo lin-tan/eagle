@@ -1,0 +1,36 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension over which to compute the norm
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    sig_dtype: int
+  module:
+    descp: containing module
+    doc_dtype:
+    - Module
+    sig_dtype: T_module
+  name:
+    default: weight
+    descp: name of weight parameter
+    doc_dtype:
+    - str
+    dtype:
+    - string
+    sig_dtype: str
+inputs:
+  optional:
+  - name
+  - dim
+  required:
+  - module
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.weight_norm.html#torch.nn.utils.weight_norm#torch.nn.utils.weight_norm
+package: torch
+ret_type: T_module
+target: weight_norm
+title: torch.nn.utils.weight_norm
+version: 1.7.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of (float, float)","Aspect ratio range as (min_aspect_ratio, max_aspect_ratio)",,prim_dtype,dtype(float),,1
+"tuple of (float, float)","Aspect ratio range as (min_aspect_ratio, max_aspect_ratio)",,nonprim_dtype,structure(tuple(float)),,1
+"tuple of (float, float)","Aspect ratio range as (min_aspect_ratio, max_aspect_ratio)",,shape,"shape([2]), ndim(1)",,1

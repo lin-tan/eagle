@@ -1,0 +1,10 @@
+constraints:
+  bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype:
+    - str
+    - Initializer
+    dtype:
+    - string
+title: mxnet.gluon.nn.Conv1D

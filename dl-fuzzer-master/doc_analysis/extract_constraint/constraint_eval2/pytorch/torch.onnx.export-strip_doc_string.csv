@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, default True","if True, strips the field ""doc_string"" from the exported model, which information about the stack trace.",True,prim_dtype,dtype(torch.bool),,1
+"bool, default True","if True, strips the field ""doc_string"" from the exported model, which information about the stack trace.",True,shape,ndim(0),,1

@@ -1,0 +1,43 @@
+constraints:
+  block_shape:
+    descp: 'A 1-D Tensor with shape [M]. Must be one of the following types: int32,
+      int64. All values must be >= 1. For backwards compatibility with TF 1.0, this
+      parameter may be an int, in which case it is converted to numpy.array([block_shape,
+      block_shape], dtype=numpy.int64).'
+  crops:
+    descp: 'A 2-D Tensor with shape [M, 2]. Must be one of the following types: int32,
+      int64. All values must be >= 0. crops[i] = [crop_start, crop_end] specifies
+      the amount to crop from input dimension i + 1, which corresponds to spatial
+      dimension i. It is required that crop_start[i] + crop_end[i] <= block_shape[i]
+      * input_shape[i + 1]. This operation is equivalent to the following steps: Reshape
+      input to reshaped of shape: [block_shape[0], ..., block_shape[M-1], batch /
+      prod(block_shape), input_shape[1], ..., input_shape[N-1]] Permute dimensions
+      of reshaped to produce permuted of shape [batch / prod(block_shape), input_shape[1],
+      block_shape[0], ..., input_shape[M], block_shape[M-1], input_shape[M+1], ...,
+      input_shape[N-1]] Reshape permuted to produce reshaped_permuted of shape [batch
+      / prod(block_shape), input_shape[1] * block_shape[0], ..., input_shape[M] *
+      block_shape[M-1], input_shape[M+1], ..., input_shape[N-1]] Crop the start and
+      end of dimensions [1, ..., M] of reshaped_permuted according to crops to produce
+      the output of shape: [batch / prod(block_shape), input_shape[1] * block_shape[0]
+      - crops[0,0] - crops[0,1], ..., input_shape[M] * block_shape[M-1] - crops[M-1,0]
+      - crops[M-1,1], input_shape[M+1], ..., input_shape[N-1]]'
+  input:
+    descp: A N-D Tensor with shape input_shape = [batch] + spatial_shape + remaining_shape,
+      where spatial_shape has M dimensions.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - block_shape
+  - crops
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/batch_to_space
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: batch_to_space
+title: tf.batch_to_space
+version: 2.3.0

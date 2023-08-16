@@ -1,0 +1,63 @@
+constraints:
+  b_c:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  b_ru:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  h_prev:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  w_c:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  w_ru:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - h_prev
+  - w_ru
+  - w_c
+  - b_ru
+  - b_c
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/GRUBlockCell
+outputs:
+- A tuple of Tensor objects (r, u, c, h).
+- r: A Tensor. Has the same type as x.
+- u: A Tensor. Has the same type as x.
+- c: A Tensor. Has the same type as x.
+- h: A Tensor. Has the same type as x.
+package: tensorflow
+target: GRUBlockCell
+title: tf.raw_ops.GRUBlockCell
+version: 2.2.0

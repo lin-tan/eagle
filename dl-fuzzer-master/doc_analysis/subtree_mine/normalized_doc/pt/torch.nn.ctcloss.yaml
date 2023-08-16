@@ -1,0 +1,47 @@
+constraints:
+  blank:
+    default: '0'
+    descp: blank label. Default 0 .
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - blank label
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  reduction:
+    default: mean
+    descp: 'Specifies the reduction to apply to the output: `''none''` | `''mean''`
+      | `''sum''`. `''none''`: no reduction will be applied, `''mean''`: the output
+      losses will be divided by the target lengths and then the mean over the batch
+      is taken. Default: `''mean''`'
+    doc_dtype: string, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Specifies the reduction to apply to the output QSTR QSTR QSTR
+    - QSTR no reduction will be applied, QSTR the output losses will be divided by
+      the target lengths and then the mean over the batch is taken
+    - Default QSTR
+    normalized_docdtype: D_TYPE, optional
+  zero_infinity:
+    default: 'False'
+    descp: 'Whether to zero infinite losses and the associated gradients. Default:
+      `False` Infinite losses mainly occur when the inputs are too short to be aligned
+      to the targets.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to zero infinite losses and the associated gradients
+    - Default CONSTANT_BOOL Infinite losses mainly occur when the inputs are too D_TYPE
+      to be aligned to the targets
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - blank
+  - reduction
+  - zero_infinity
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.CTCLoss
+package: torch
+target: CTCLoss
+title: torch.nn.CTCLoss
+version: 1.5.0

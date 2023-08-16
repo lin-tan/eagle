@@ -1,0 +1,40 @@
+constraints:
+  a:
+    default: '0'
+    descp: the negative slope of the rectifier used after this layer (only used with
+      `'leaky_relu'`)
+    dtype:
+    - int
+    ndim:
+    - '0'
+  mode:
+    default: fan_in
+    descp: either `'fan_in'` (default) or `'fan_out'`. Choosing `'fan_in'` preserves
+      the magnitude of the variance of the weights in the forward pass. Choosing `'fan_out'`
+      preserves the magnitudes in the backwards pass.
+    dtype:
+    - string
+  nonlinearity:
+    default: leaky_relu
+    descp: the non-linear function (nn.functional name), recommended to use only with
+      `'relu'` or `'leaky_relu'` (default).
+    dtype:
+    - string
+  tensor:
+    descp: an n-dimensional torch.Tensor
+    ndim:
+    - '?'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - a
+  - mode
+  - nonlinearity
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.7.0/nn.init.html#torch.nn.init.kaiming_uniform_
+package: torch
+target: kaiming_uniform_
+title: torch.nn.init.kaiming_uniform_
+version: 1.9.0

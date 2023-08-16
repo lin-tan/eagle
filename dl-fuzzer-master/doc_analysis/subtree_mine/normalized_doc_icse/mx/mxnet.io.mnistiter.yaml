@@ -1,0 +1,127 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  batch_size:
+    default: None
+    descp: 'Batch Param: Batch Size.'
+    doc_dtype: int, optional, default='128'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Batch Param Batch Size
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  ctx:
+    default: None
+    descp: Context data loader optimized for.
+    doc_dtype: '{''cpu'', ''gpu''},optional, default=''gpu'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Context data loader optimized for
+    normalized_docdtype: QSTR optional default QSTR
+  dtype:
+    default: None
+    descp: Output data type. `None` means no change.
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8'', ''uint8''},optional, default=''None'''
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Output data type
+    - QSTR means no change
+    normalized_docdtype: None QSTR optional default QSTR
+  flat:
+    default: None
+    descp: 'Augmentation Param: Whether to flat the data into 1D.'
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Whether to flat the data into CONSTANT_NUM D
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  image:
+    default: None
+    descp: 'Dataset Param: Mnist image path.'
+    doc_dtype: string, optional, default='./train-images-idx3-ubyte'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Dataset Param Mnist image path
+    normalized_docdtype: D_TYPE optional default train images idx3 ubyte
+  label:
+    default: None
+    descp: 'Dataset Param: Mnist label path.'
+    doc_dtype: string, optional, default='./train-labels-idx1-ubyte'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Dataset Param Mnist label path
+    normalized_docdtype: D_TYPE optional default train labels idx1 ubyte
+  num_parts:
+    default: None
+    descp: partition the data into multiple parts
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - partition the data into multiple parts
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  part_index:
+    default: None
+    descp: the index of the part will read
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the index of the part will read
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  prefetch_buffer:
+    default: None
+    descp: Maximum number of batches to prefetch.
+    doc_dtype: long (non-negative), optional, default=4
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Maximum number of batches to prefetch
+    normalized_docdtype: long BSTR optional default CONSTANT_NUM
+  seed:
+    default: None
+    descp: 'Augmentation Param: Random Seed.'
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Random Seed
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  shuffle:
+    default: None
+    descp: 'Augmentation Param: Whether to shuffle data.'
+    doc_dtype: boolean, optional, default=1
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Augmentation Param Whether to shuffle data
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  silent:
+    default: None
+    descp: 'Auxiliary Param: Whether to print out data info.'
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Auxiliary Param Whether to print out data info
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - image
+  - label
+  - batch_size
+  - shuffle
+  - flat
+  - seed
+  - silent
+  - num_parts
+  - part_index
+  - prefetch_buffer
+  - ctx
+  - dtype
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/io/index.html#mxnet.io.MNISTIter
+package: mxnet
+target: MNISTIter
+title: mxnet.io.MNISTIter
+version: 1.6.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"the spacing between kernel elements. Can be a single number or a tuple (dT, dH, dW). Default: 1",1,prim_dtype,dtype(int),,1
+,"the spacing between kernel elements. Can be a single number or a tuple (dT, dH, dW). Default: 1",1,nonprim_dtype,"structure(tuple:(dt,dh,dw))",,1
+,"the spacing between kernel elements. Can be a single number or a tuple (dT, dH, dW). Default: 1",1,shape,"shape([3]), ndim(0, 1)",,1

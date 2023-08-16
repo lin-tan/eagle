@@ -1,0 +1,35 @@
+constraints:
+  bytes:
+    descp: A Tensor of type string. A Tensor of string which is compressed.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  compression_type:
+    default: ''
+    descp: An optional string. Defaults to "". A scalar containing either (i) the
+      empty string (no compression), (ii) "ZLIB", or (iii) "GZIP".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - compression_type
+  - name
+  required:
+  - bytes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DecodeCompressed
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: DecodeCompressed
+title: tf.raw_ops.DecodeCompressed
+version: 2.2.0

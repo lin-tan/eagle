@@ -1,0 +1,25 @@
+constraints:
+  batch_dims:
+    default: '0'
+    descp: An integer or a scalar 'Tensor'. The number of batch dimensions.
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Index tensor.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  params:
+    descp: A Tensor. The tensor from which to gather values.
+inputs:
+  optional:
+  - batch_dims
+  - name
+  required:
+  - params
+  - indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/gather_nd
+outputs:
+- A Tensor. Has the same type as params.
+package: tensorflow
+target: gather_nd
+title: tf.gather_nd
+version: 2.2.0

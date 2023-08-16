@@ -1,0 +1,39 @@
+constraints:
+  gain:
+    default: '1'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  gamma:
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  img:
+    dtype:
+    - float
+    ndim:
+    - '4'
+    range:
+    - '(0,1)'
+    shape:
+    - '[n,3,h,w]'
+    tensor_t:
+    - torch.tensor
+dependency:
+- h
+- n
+- w
+inputs:
+  required:
+  - img
+  - gamma
+  optional:
+  - gain
+package: torchvision
+target: adjust_gamma
+title: torchvision.transforms.functional.adjust_gamma
+version: 0.10.0

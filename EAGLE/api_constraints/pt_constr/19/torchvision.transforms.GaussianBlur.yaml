@@ -1,0 +1,21 @@
+constraints:
+  kernel_size:
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sigma:
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - kernel_size
+  - sigma
+package: torchvision
+target: GaussianBlur
+title: torchvision.transforms.GaussianBlur
+version: 0.10.0
+

@@ -1,0 +1,12 @@
+constraints:
+  padding_mode:
+    default: zeros
+    descp: 'the padding mode to use. Only "zeros" is supported for quantized convolution
+      at the moment. Default: "zeros"'
+    dtype:
+    - string
+    enum:
+    - zeros
+    ndim: 
+    - '0'
+title: torch.nn.quantized.functional.conv3d

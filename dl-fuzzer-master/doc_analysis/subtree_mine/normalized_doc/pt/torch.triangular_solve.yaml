@@ -1,0 +1,63 @@
+constraints:
+  A:
+    descp: the input triangular coefficient matrix of size (*, m, m)  where *  is
+      zero or more batch dimensions
+    doc_dtype: Tensor
+    normalized_descp:
+    - the PARAM triangular coefficient matrix of size BSTR where is zero or more batch
+      dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input:
+    descp: multiple right-hand sides of size (*, m, k)  where *  is zero of more batch
+      dimensions (b )
+    doc_dtype: Tensor
+    normalized_descp:
+    - multiple right hand sides of size BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  transpose:
+    default: 'False'
+    descp: 'whether A  should be transposed before being sent into the solver. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether A should be transposed before being sent into the solver
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  unitriangular:
+    default: 'False'
+    descp: 'whether A  is unit triangular. If True, the diagonal elements of A  are
+      assumed to be 1 and not referenced from A . Default: `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether A is unit triangular
+    - If CONSTANT_BOOL, the diagonal elements of A are assumed to be CONSTANT_NUM
+      and not referenced from A
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  upper:
+    default: 'True'
+    descp: 'whether to solve the upper-triangular system of equations (default) or
+      the lower-triangular system of equations. Default: `True`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to solve the upper triangular system of equations BSTR or the lower
+      triangular system of equations
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - upper
+  - transpose
+  - unitriangular
+  required:
+  - input
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.triangular_solve
+package: torch
+ret_type: (Tensor, Tensor)
+target: triangular_solve
+title: torch.triangular_solve
+version: 1.5.0

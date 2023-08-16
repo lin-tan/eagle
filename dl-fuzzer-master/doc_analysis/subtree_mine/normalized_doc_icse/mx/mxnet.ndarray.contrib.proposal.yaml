@@ -1,0 +1,138 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  bbox_pred:
+    default: None
+    descp: BBox Predicted deltas from anchors for proposals
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BBox Predicted deltas from anchors for proposals
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  cls_prob:
+    default: None
+    descp: Score of how likely proposal is object.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Score of how likely proposal is object
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  feature_stride:
+    default: _Null
+    descp: The size of the receptive field each unit in the convolution layer of the
+      rpn,for example the product of all stride's prior to this layer.
+    doc_dtype: int, optional, default='16'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The size of the receptive field each unit in the convolution layer of the rpn
+      for example the product of all stride prior to this layer
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  im_info:
+    default: None
+    descp: Image size and scale.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Image size and scale
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  iou_loss:
+    default: _Null
+    descp: Usage of IoU Loss
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Usage of IoU Loss
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  output_score:
+    default: _Null
+    descp: Add score to outputs
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Add score to outputs
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  ratios:
+    default: _Null
+    descp: Used to generate anchor windows by enumerating ratios
+    doc_dtype: tuple of <float>, optional, default=[0.5,1,2]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Used to generate anchor windows by enumerating ratios
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  rpn_min_size:
+    default: _Null
+    descp: Minimum height or width in proposal
+    doc_dtype: int, optional, default='16'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Minimum height or width in proposal
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  rpn_post_nms_top_n:
+    default: _Null
+    descp: Number of top scoring boxes to keep after applying NMS to RPN proposals
+    doc_dtype: int, optional, default='300'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of top scoring boxes to keep after applying NMS to RPN proposals
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  rpn_pre_nms_top_n:
+    default: _Null
+    descp: Number of top scoring boxes to keep before applying NMS to RPN proposals
+    doc_dtype: int, optional, default='6000'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of top scoring boxes to keep before applying NMS to RPN proposals
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  scales:
+    default: _Null
+    descp: Used to generate anchor windows by enumerating scales
+    doc_dtype: tuple of <float>, optional, default=[4,8,16,32]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Used to generate anchor windows by enumerating scales
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  threshold:
+    default: _Null
+    descp: NMS value, below which to suppress.
+    doc_dtype: float, optional, default=0.699999988
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - NMS value below which to suppress
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+inputs:
+  optional:
+  - cls_prob
+  - bbox_pred
+  - im_info
+  - rpn_pre_nms_top_n
+  - rpn_post_nms_top_n
+  - threshold
+  - rpn_min_size
+  - scales
+  - ratios
+  - feature_stride
+  - output_score
+  - iou_loss
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.Proposal
+package: mxnet
+target: Proposal
+title: mxnet.ndarray.contrib.Proposal
+version: 1.6.0

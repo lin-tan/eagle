@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, optional","Whether prediction output is allowed to have extra outputs. This is useful in cases like RNN where states are also part of output which can then be fed back to the RNN in the next step. By default, extra outputs are not allowed.",False,prim_dtype,dtype(boolean),,1
+"bool, optional","Whether prediction output is allowed to have extra outputs. This is useful in cases like RNN where states are also part of output which can then be fed back to the RNN in the next step. By default, extra outputs are not allowed.",False,shape,ndim(0),,1

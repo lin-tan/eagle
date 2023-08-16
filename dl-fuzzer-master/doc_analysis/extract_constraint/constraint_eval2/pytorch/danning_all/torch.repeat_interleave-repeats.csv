@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Tensor, int",The number of repetitions for each element.repeats is broadcasted to fit the shape of the given axis.,,prim_dtype,dtype(int),1,1
+"Tensor, int",The number of repetitions for each element.repeats is broadcasted to fit the shape of the given axis.,,nonprim_dtype,tensor_t(torch.tensor),1,1
+"Tensor, int",The number of repetitions for each element.repeats is broadcasted to fit the shape of the given axis.,,shape,ndim(0),1,1
+"Tensor, int",The number of repetitions for each element.repeats is broadcasted to fit the shape of the given axis.,,validvalue,"range([0,inf))",1,1

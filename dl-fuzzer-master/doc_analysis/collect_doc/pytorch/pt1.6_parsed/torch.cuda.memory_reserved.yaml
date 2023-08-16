@@ -1,0 +1,19 @@
+constraints:
+  device:
+    default: None
+    descp: selected device. Returns statistic for the current device, given by `current_device()`,
+      if `device` is `None` (default).
+    doc_dtype:
+    - torch.device
+    - int
+    sig_dtype: Union[torch.device,str,None,int]
+inputs:
+  optional:
+  - device
+  required: []
+link: https://pytorch.org/docs/1.6.0/cuda.html#torch.cuda.memory_reserved
+package: torch
+ret_type: int
+target: memory_reserved
+title: torch.cuda.memory_reserved
+version: 1.6.0

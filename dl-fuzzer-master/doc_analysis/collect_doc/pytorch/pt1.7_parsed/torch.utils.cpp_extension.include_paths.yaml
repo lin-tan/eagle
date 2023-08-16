@@ -1,0 +1,15 @@
+constraints:
+  cuda:
+    default: 'False'
+    descp: If True, includes CUDA-specific include paths.
+    sig_dtype: bool
+inputs:
+  optional:
+  - cuda
+  required: []
+link: https://pytorch.org/docs/1.7.0/cpp_extension.html#torch.utils.cpp_extension.include_paths
+package: torch
+ret_type: List[str]
+target: include_paths
+title: torch.utils.cpp_extension.include_paths
+version: 1.7.0

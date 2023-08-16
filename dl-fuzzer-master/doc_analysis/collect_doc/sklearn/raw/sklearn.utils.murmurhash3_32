@@ -1,0 +1,20 @@
+sklearn.utils.murmurhash3_32 = murmurhash3_32(...)
+    Compute the 32bit murmurhash3 of key at seed.
+    
+    The underlying implementation is MurmurHash3_x86_32 generating low
+    latency 32bits hash suitable for implementing lookup tables, Bloom
+    filters, count min sketch or feature hashing.
+    
+    Parameters
+    ----------
+    key : int32, bytes, unicode or ndarray with dtype int32
+        the physical object to hash
+    
+    seed : int, optional default is 0
+        integer seed for the hashing algorithm.
+    
+    positive : boolean, optional default is False
+        True: the results is casted to an unsigned int
+          from 0 to 2 ** 32 - 1
+        False: the results is casted to a signed int
+          from -(2 ** 31) to 2 ** 31 - 1

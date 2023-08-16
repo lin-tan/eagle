@@ -1,0 +1,48 @@
+constraints:
+  ctx:
+    default: None
+    descp: Device context. Default context is the current default context.
+    doc_dtype:
+    - Context
+    - optional
+  dtype:
+    default: <class numpy.float32>
+    descp: The data type of the NDArray. The default datatype is np.float32.
+    doc_dtype:
+    - str
+    - numpy.dtype
+    - optional
+  endpoint:
+    default: 'True'
+    descp: If True, stop is the last sample. Otherwise, it is not included. The default
+      is True.
+    doc_dtype:
+    - bool
+  num:
+    descp: Number of samples to generate. Must be non-negative.
+    doc_dtype:
+    - number
+  start:
+    descp: Start of interval.
+    doc_dtype:
+    - number
+  stop:
+    descp: End of interval, unless endpoint is set to False.  In that case, the sequence
+      consists of all but the last of num + 1 evenly spaced samples, so that stop
+      is excluded. Note that the step size changes when endpoint is False.
+    doc_dtype:
+    - number
+inputs:
+  optional:
+  - endpoint
+  - ctx
+  - dtype
+  required:
+  - start
+  - stop
+  - num
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.linspace
+package: mxnet
+target: linspace
+title: mxnet.ndarray.linspace
+version: 1.6.0

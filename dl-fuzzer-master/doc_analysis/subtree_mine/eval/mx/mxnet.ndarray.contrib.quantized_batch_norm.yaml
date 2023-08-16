@@ -1,0 +1,23 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  eps:
+    default: _Null
+    descp: Epsilon to prevent div 0. Must be no less than CUDNN_BN_MIN_EPSILON defined
+      in cudnn.h when using cudnn (usually 1e-5)
+    doc_dtype:
+    - double
+    - optional
+    - default=0.0010000000474974513
+    dtype:
+    - numpy.double
+    ndim:
+    - '0'
+  moving_mean:
+    default: None
+    descp: moving_mean.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.contrib.quantized_batch_norm

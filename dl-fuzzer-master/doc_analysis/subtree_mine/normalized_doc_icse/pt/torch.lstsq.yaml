@@ -1,0 +1,33 @@
+constraints:
+  A:
+    descp: 'the m  by n  matrix A '
+    doc_dtype: Tensor
+    normalized_descp:
+    - the m by n matrix A
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  input:
+    descp: 'the matrix B '
+    doc_dtype: Tensor
+    normalized_descp:
+    - the matrix B
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the optional destination tensor
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the optional destination D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.lstsq
+package: torch
+ret_type: Tensor
+target: lstsq
+title: torch.lstsq
+version: 1.5.0

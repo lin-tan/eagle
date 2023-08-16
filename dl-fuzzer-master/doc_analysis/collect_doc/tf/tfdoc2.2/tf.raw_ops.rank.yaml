@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Rank
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: Rank
+title: tf.raw_ops.Rank
+version: 2.2.0

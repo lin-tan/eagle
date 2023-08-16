@@ -1,0 +1,93 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: enum
+
+# replace:
+#     '(default)': ' '
+stop_word:
+    - and
+    - or
+    - '(default)'
+
+pat: 
+    '(a|an)\s+(optional)?\s*[`''"]*([\w.]+)[`''"]*\s+from:*\s*`(.*?)`\.':
+        group: 4
+        # dtype: string
+        ndim: 0
+    
+    # valid values are ...
+    # the valid values are "NWC" (default) and "NCW"
+    # valid values are ["INTEGER_FAST", "INTEGER_ACCURATE"].
+    'valid\s+values\s+are\s*\[?((,?\s*((or|and)\s*)?[`''"]\w+[`''"](\s*\(default\))?)+)\]?':
+        group: 1
+        dtype: string
+    
+    # one of ...
+    #  One of "mean", "sqrtn", and "sum".
+    #  One of: `"BYTE"` (...) or `"UTF8_CHAR"` (...).
+    'one\s+of:?\s*(`{\s*)?((,?\s*((or|and)\s*)?[`''"]+[\w.]+[`''"]+(\s*\(.*?\)\s*)?)+)(}`)?':
+        replace:
+            '\(.+?\)': ''
+        group: 2
+        # dtype: tf.string
+        
+    #A string, either `'VALID'` or `'SAME'`.
+    # string, either (`'float16'`, `'float32'`, or `'float64'`).
+    # String, 'pre' or 'post'..
+    '(string|format)[,;]\s+(either\s+)?\(?(([`''"]+\w+[`''"]+,?\s+)+or\s+[`''"]+\w+[`''"]+)\)?':
+        group: 3
+        dtype: string
+
+    # # string, 
+    # 'string,\s+(([`''"]+\w+[`''"]+,?\s+)+or\s+[`''"]+\w+[`''"]+)':
+    #     group: 1
+    #     dtype: string
+
+    # supported values are 'fro', 'euclidean',`1`, `2`, `np.inf` 
+    'supported\s+values\s+are\s*((,?\s*((or|and)\s*)?[`''"]+[\w.]+[`''"]+)+)':
+        group: 1
+    
+    # it can be either "NHWC" (default) or "NCHW"
+    # can have more than 2 items
+    'it\s+can\s+be\s+either\s+((,?\s*((or|and)\s*)?[`''"]+[\w.]+[`''"]+(\s*\(default\)\s*)?)+)':
+        group: 1
+
+    # either <> or <>
+    'either\s+([`''"]+\w+[`''"]+\s+(\(default\))?\s*or\s+[`''"]+\w+[`''"]+)':
+        group: 1
+
+    # only <> is currently supported
+    # A `string`, only `"NHWC"` is currently supported.
+    'only\s+[`''"]+(\w+)[`''"]+\s+is\s+currently\s+supported':
+        group: 1
+
+    #  # "only" hardcode (?<!only )
+    # 'one\s+of\s*(`{)?((,?\s*((or|and)\s*)?[`''"]+\w+[`''"]+(\s*\(default\))?)+)(}`)?':
+    #     group: 2
+    #     dtype: tf.string
+
+
+    'string`*\s+from:(([\s,`''"]+(\w+)[`''"]+)+)\.':
+        group: 1
+        dtype: tf.string
+
+    
+    # Either the `string` `"SAME"` or `"VALID"`...
+    'either\s+the\s+`*string`*\s*([`''"]+(\w+)[`''"]+\s+or\s+[`''"]+(\w+)[`''"]+)':
+        group: 1
+        dtype: string
+    
+
+
+
+    
+    '((,?\s+((or|and)\s*)?[`''"]+[\w.]+[`''"]+)+)\s+are\s+supported':
+        group: 1
+        dtype: tf.string
+
+    
+

@@ -1,0 +1,92 @@
+dtype:
+    tf.qint8: tf.qint8
+    qint8: tf.qint8
+    quint8: tf.quint8
+    tf.quint8: tf.quint8
+    qint16: tf.qint16
+    tf.qint16: tf.qint16
+    quint16: tf.quint16
+    tf.quint16: tf.quint16
+    qint32: tf.qint32
+    tf.qint32: tf.qint32
+    tf.int8: tf.int8
+    int8: tf.int8
+    uint8: tf.uint8
+    tf.uint8: tf.uint8
+    int16: tf.int16
+    tf.int16: tf.int16
+    uint16: tf.uint16
+    tf.uint16: tf.uint16
+    int32: tf.int32
+    tf.int32: tf.int32
+    uint32: tf.uint32
+    tf.uint32: tf.uint32
+    int64: tf.int64
+    tf.int64: tf.int64
+    uint64: tf.uint64
+    tf.uint64: tf.uint64
+    float16: tf.float16
+    tf.float16: tf.float16
+    half: tf.float16
+    tf.half: tf.float16
+    bfloat16: tf.bfloat16
+    tf.bfloat16: tf.bfloat16
+    float32: tf.float32
+    tf.float32: tf.float32
+    float64: tf.float64
+    tf.float64: tf.float64
+    double: tf.float64
+    complex: tf.complex
+    tf.complex: tf.complex
+    complex64: tf.complex64
+    tf.complex64: tf.complex64
+    complex128: tf.complex128
+    tf.complex128: tf.complex128
+    tf.float: float
+    floats: float
+    float: float
+    floating: float
+    integer: int
+    int: int
+    ints: int
+    integers: int
+    tf.int: int
+    uint: tf.uint
+    tf.uint: tf.uint
+    bool: tf.bool
+    tf.bool: tf.bool
+    tf.boolean: tf.bool
+    boolean: tf.bool
+    string: tf.string
+    strings: tf.string
+    tf.string: tf.string
+    str: tf.string
+    tf.str: tf.string
+    tf.dtypes: tf.dtype
+    tf.dtype: tf.dtype
+    numeric: numeric
+tensor_t:
+    tf.sparsetensor: SparseTensor
+    sparsetensor: SparseTensor
+    tf.tensor: tf.tensor
+    tensors: tf.tensor
+    tensor: tf.tensor
+structure:
+    list: list
+    lists: list
+    array: list
+    arrays: list
+    tuple: tuple
+    dict: dict
+    dictionary: dict
+    iterable: list
+    sequence: list
+    ndarray: list
+    array_like: list
+    vector: list
+    vectors: list
+
+
+    
+    
+    

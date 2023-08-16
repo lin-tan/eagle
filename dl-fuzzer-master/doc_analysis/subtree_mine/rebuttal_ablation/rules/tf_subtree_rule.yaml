@@ -1,0 +1,5386 @@
+axis the:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+axis to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+bstr a:
+  dtype:
+  - tf.dtype
+  - string
+  - bool
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - BSTR
+  - '[2]'
+  structure:
+  - tensor
+bstr a -1 for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr a -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr be:
+  dtype:
+  - float
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - BSTR
+  shape:
+  - BSTR
+  - '[2]'
+  structure:
+  - tensor
+bstr bstr:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - BSTR
+bstr constant_num:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+bstr d_structure:
+  dtype:
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+bstr d_type:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - BSTR
+  - '[0,inf)'
+  shape:
+  - BSTR
+  - '[2]'
+bstr for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+bstr for -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+bstr for -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr in:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - BSTR
+  - '[0,inf)'
+  shape:
+  - BSTR
+bstr must:
+  range:
+  - BSTR
+  shape:
+  - BSTR
+bstr must -1 be:
+  range:
+  - BSTR
+  shape:
+  - BSTR
+bstr name:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name a -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr name this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr of:
+  dtype:
+  - tf.dtype
+  - string
+  - bool
+  - int
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  - '[2]'
+  structure:
+  - tensor
+bstr of -1 or:
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+bstr of -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr of -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+bstr of -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr of -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr of -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr of -1 shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - BSTR
+bstr operation:
+  dtype:
+  - string
+  - tf.dtype
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+bstr operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr or:
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - BSTR
+  - '[2]'
+bstr or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr qstr:
+  dtype:
+  - QSTR
+  - string
+  - bool
+  - int
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+  - '[2]'
+bstr qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[2]'
+bstr qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+bstr qstr -1 qstr:
+  dtype:
+  - bool
+  - int
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+bstr shape:
+  dtype:
+  - numeric
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+bstr shape -1 bstr:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+bstr the:
+  dtype:
+  - bool
+  - string
+  - int
+  - float
+  - tf.dtype
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - BSTR
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  - '[2]'
+  structure:
+  - tensor
+bstr the -1 operation:
+  dtype:
+  - string
+  - tf.dtype
+  enum:
+  - BSTR
+  ndim:
+  - '0'
+bstr this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+bstr with:
+  dtype:
+  - numeric
+  - int
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+bstr with -1 shape:
+  dtype:
+  - numeric
+  - int
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+constant_bool default:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_bool to:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+constant_float default:
+  dtype:
+  - float
+  ndim:
+  - '0'
+constant_num default:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+constant_num length:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[CONSTANT_NUM]'
+constant_num to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[CONSTANT_NUM]'
+d constant_num:
+  ndim:
+  - '1'
+  - '>=CONSTANT_NUM'
+  - CONSTANT_NUM
+  shape:
+  - '[CONSTANT_NUM]'
+d_structure a:
+  dtype:
+  - numeric
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 a:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 and:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 as:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 be:
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 bstr:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 bstr of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 bstr of -1 shape:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 bstr shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 bstr:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 bstr shape:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 bstr:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 bstr shape:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 of:
+  dtype:
+  - int
+  ndim:
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 d -1 with:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 of:
+  dtype:
+  - int
+  ndim:
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 type:
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 with:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 constant_num -1 with -1 the:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 bstr:
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 bstr shape:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 of:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 type:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d -1 with:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d_structure:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d_type of -1 type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure a -1 d_type type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure a -1 is:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 length:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 and:
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 bstr:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 d_structure:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 of:
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 shape:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 the:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 to:
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 of -1 type:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 or:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 or -1 d_structure:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 or -1 of:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 or -1 python:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 param of:
+  dtype:
+  - PARAM
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 python:
+  dtype:
+  - int
+  structure:
+  - D_STRUCTURE
+d_structure a -1 qstr:
+  dtype:
+  - '&QSTR'
+  - QSTR
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[QSTR]'
+  - '[QSTR,QSTR]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 the -1 of:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 the -1 param:
+  dtype:
+  - '&PARAM'
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 the -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 the -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 type:
+  structure:
+  - D_STRUCTURE
+d_structure a -1 with:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 with -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 with -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure a -1 with -1 the -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure an:
+  dtype:
+  - tf.dtype
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure an -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure and:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure as:
+  dtype:
+  - '&D_STRUCTURE'
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure be:
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure bstr:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure bstr bstr:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure bstr of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure bstr of -1 shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure bstr shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure bstr shape -1 bstr:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 and:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 bstr:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 bstr of:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 bstr shape:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 bstr:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 bstr shape:
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - CONSTANT_NUM
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 of:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 of -1 shape:
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 or:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d -1 with:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 of:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 of -1 shape:
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 or:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 type:
+  ndim:
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 with:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure constant_num -1 with -1 the:
+  ndim:
+  - '0'
+  - CONSTANT_NUM
+  structure:
+  - D_STRUCTURE
+d_structure containing:
+  dtype:
+  - int
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 bstr:
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure d -1 bstr shape:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure d -1 d_type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure d -1 of:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 of -1 shape:
+  structure:
+  - D_STRUCTURE
+d_structure d -1 or:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 param:
+  dtype:
+  - PARAM
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 shape:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d -1 type:
+  structure:
+  - D_STRUCTURE
+d_structure d -1 with:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure d_structure:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d_structure of:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[N]'
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure d_type -1 bstr:
+  dtype:
+  - D_TYPE
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure d_type -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d_type -1 shape:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure d_type -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d_type -1 to:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure d_type of -1 type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure d_type type:
+  dtype:
+  - D_TYPE
+  structure:
+  - D_STRUCTURE
+d_structure each:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure for:
+  dtype:
+  - bool
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure for -1 the:
+  dtype:
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure in:
+  dtype:
+  - bool
+  - string
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure in -1 the:
+  dtype:
+  - bool
+  - string
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure input:
+  dtype:
+  - numeric
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  structure:
+  - D_STRUCTURE
+d_structure is:
+  dtype:
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure length:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure objects:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure of:
+  dtype:
+  - numeric
+  - string
+  - int
+  - tf.dtype
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[N]'
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 a:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 and:
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 bstr:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure of -1 bstr shape:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure of -1 constant_num:
+  ndim:
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 d_structure:
+  structure:
+  - D_STRUCTURE
+d_structure of -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[N]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 each:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 of:
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 or:
+  structure:
+  - D_STRUCTURE
+d_structure of -1 param:
+  dtype:
+  - string
+  - PARAM
+  - int
+  - '&PARAM'
+  - tf.dtype
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 qstr:
+  dtype:
+  - '&QSTR'
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&QSTR'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 same:
+  structure:
+  - D_STRUCTURE
+d_structure of -1 shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 shape -1 bstr:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure of -1 the:
+  dtype:
+  - string
+  - numeric
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 the -1 param:
+  dtype:
+  - '&PARAM'
+  - string
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 to:
+  dtype:
+  - string
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure of -1 type:
+  structure:
+  - D_STRUCTURE
+d_structure of -1 with:
+  dtype:
+  - tf.dtype
+  structure:
+  - D_STRUCTURE
+d_structure or:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure or -1 bstr:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure or -1 d_structure:
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+d_structure or -1 of:
+  structure:
+  - D_STRUCTURE
+d_structure or -1 param:
+  dtype:
+  - PARAM
+  structure:
+  - D_STRUCTURE
+d_structure or -1 python:
+  structure:
+  - D_STRUCTURE
+d_structure or -1 variable:
+  structure:
+  - D_STRUCTURE
+d_structure output:
+  dtype:
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure param:
+  dtype:
+  - string
+  - PARAM
+  - int
+  - tf.dtype
+  - '&PARAM'
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure param of:
+  dtype:
+  - PARAM
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure python:
+  dtype:
+  - int
+  structure:
+  - D_STRUCTURE
+d_structure qstr:
+  dtype:
+  - '&QSTR'
+  - QSTR
+  - bool
+  - int
+  ndim:
+  - '0'
+  - QSTR
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '&QSTR'
+  - '[QSTR]'
+  - '[QSTR,QSTR]'
+  structure:
+  - D_STRUCTURE
+d_structure qstr as:
+  dtype:
+  - '&QSTR'
+  ndim:
+  - '0'
+  shape:
+  - '&QSTR'
+  structure:
+  - D_STRUCTURE
+d_structure representing:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure returned:
+  dtype:
+  - bool
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure same -1 as:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure same -1 qstr:
+  dtype:
+  - '&QSTR'
+  ndim:
+  - '0'
+  shape:
+  - '&QSTR'
+  structure:
+  - D_STRUCTURE
+d_structure same -1 qstr as:
+  dtype:
+  - '&QSTR'
+  ndim:
+  - '0'
+  shape:
+  - '&QSTR'
+  structure:
+  - D_STRUCTURE
+d_structure scalar:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure shape:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure shape -1 bstr:
+  shape:
+  - BSTR
+  structure:
+  - D_STRUCTURE
+d_structure shape -1 of:
+  dtype:
+  - int
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure shape -1 shape:
+  structure:
+  - D_STRUCTURE
+d_structure the:
+  dtype:
+  - numeric
+  - string
+  - int
+  - tf.dtype
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 and:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 as:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 input:
+  dtype:
+  - numeric
+  - bool
+  - int
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 of:
+  dtype:
+  - string
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 of -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 output:
+  dtype:
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 param:
+  dtype:
+  - '&PARAM'
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 qstr:
+  dtype:
+  - '&QSTR'
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 same -1 as:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 the:
+  dtype:
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_structure the -1 to:
+  dtype:
+  - string
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure to:
+  dtype:
+  - string
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure to -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+  structure:
+  - D_STRUCTURE
+d_structure type:
+  structure:
+  - D_STRUCTURE
+d_structure type same:
+  structure:
+  - D_STRUCTURE
+d_structure type the:
+  structure:
+  - D_STRUCTURE
+d_structure type the -1 same:
+  structure:
+  - D_STRUCTURE
+d_structure variable:
+  structure:
+  - D_STRUCTURE
+d_structure which:
+  dtype:
+  - string
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure with:
+  dtype:
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure with -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_structure with -1 shape:
+  dtype:
+  - int
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure with -1 the:
+  dtype:
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  structure:
+  - D_STRUCTURE
+d_structure with -1 the -1 same:
+  ndim:
+  - '0'
+  structure:
+  - D_STRUCTURE
+d_type a:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type a -1 for:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type a -1 single:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type a -1 the:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type a -1 the -1 for:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type a -1 to:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+d_type a -1 to -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type an:
+  dtype:
+  - D_TYPE
+  enum:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type an -1 d_structure:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_structure -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 d_type:
+  dtype:
+  - D_TYPE
+  enum:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type an -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 optional:
+  dtype:
+  - D_TYPE
+  enum:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type an -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 or -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type an -1 or -1 d_structure:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_structure -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type an -1 or -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 or -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 or -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 or -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 or -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type an -1 or -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type an -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type and:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+d_type be:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type be -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 of:
+  dtype:
+  - D_TYPE
+d_type be -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type be -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type be -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 types:
+  dtype:
+  - D_TYPE
+d_type be -1 types following:
+  dtype:
+  - D_TYPE
+d_type be -1 types of:
+  dtype:
+  - D_TYPE
+d_type be -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type be -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type be -1 types the:
+  dtype:
+  - D_TYPE
+d_type be -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type between:
+  dtype:
+  - D_TYPE
+  range:
+  - '[0,1]'
+d_type bstr:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - BSTR
+d_type constant_num:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,1]'
+  - CONSTANT_NUM
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type constant_num -1 of:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  - CONSTANT_NUM
+  range:
+  - '[0,inf)'
+  shape:
+  - '[CONSTANT_NUM]'
+d_type d_structure:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 d_type of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 of:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type d_structure -1 that:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+d_type d_type:
+  dtype:
+  - D_TYPE
+  enum:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type d_type constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type d_type of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type following:
+  dtype:
+  - D_TYPE
+d_type for:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+d_type length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type must:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type must -1 be:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type must -1 be -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 of:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types of:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types the:
+  dtype:
+  - D_TYPE
+d_type must -1 be -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 of:
+  dtype:
+  - D_TYPE
+d_type must -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 types:
+  dtype:
+  - D_TYPE
+d_type must -1 types following:
+  dtype:
+  - D_TYPE
+d_type must -1 types of:
+  dtype:
+  - D_TYPE
+d_type must -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type must -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type must -1 types the:
+  dtype:
+  - D_TYPE
+d_type must -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type of:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type of -1 and:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+d_type of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type of -1 following:
+  dtype:
+  - D_TYPE
+d_type of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type of -1 of:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type of -1 the:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type of -1 to:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+d_type of -1 type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+d_type one:
+  dtype:
+  - D_TYPE
+d_type one be:
+  dtype:
+  - D_TYPE
+d_type one be -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 of:
+  dtype:
+  - D_TYPE
+d_type one be -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type one be -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 the:
+  dtype:
+  - D_TYPE
+d_type one be -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 types:
+  dtype:
+  - D_TYPE
+d_type one be -1 types following:
+  dtype:
+  - D_TYPE
+d_type one be -1 types of:
+  dtype:
+  - D_TYPE
+d_type one be -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type one be -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one be -1 types the:
+  dtype:
+  - D_TYPE
+d_type one be -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type one following:
+  dtype:
+  - D_TYPE
+d_type one must:
+  dtype:
+  - D_TYPE
+d_type one must -1 be:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 of:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types of:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types the:
+  dtype:
+  - D_TYPE
+d_type one must -1 be -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 of:
+  dtype:
+  - D_TYPE
+d_type one must -1 of -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 of -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 types:
+  dtype:
+  - D_TYPE
+d_type one must -1 types following:
+  dtype:
+  - D_TYPE
+d_type one must -1 types of:
+  dtype:
+  - D_TYPE
+d_type one must -1 types of -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 types of -1 the:
+  dtype:
+  - D_TYPE
+d_type one must -1 types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one must -1 types the:
+  dtype:
+  - D_TYPE
+d_type one must -1 types the -1 following:
+  dtype:
+  - D_TYPE
+d_type one of:
+  dtype:
+  - D_TYPE
+d_type one of -1 following:
+  dtype:
+  - D_TYPE
+d_type one of -1 the:
+  dtype:
+  - D_TYPE
+d_type one of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one the:
+  dtype:
+  - D_TYPE
+d_type one the -1 following:
+  dtype:
+  - D_TYPE
+d_type one types:
+  dtype:
+  - D_TYPE
+d_type one types following:
+  dtype:
+  - D_TYPE
+d_type one types of:
+  dtype:
+  - D_TYPE
+d_type one types of -1 following:
+  dtype:
+  - D_TYPE
+d_type one types of -1 the:
+  dtype:
+  - D_TYPE
+d_type one types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type one types the:
+  dtype:
+  - D_TYPE
+d_type one types the -1 following:
+  dtype:
+  - D_TYPE
+d_type one_word:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+d_type optional:
+  dtype:
+  - D_TYPE
+  enum:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type or -1 d_structure:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 d_type of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_structure -1 that:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  structure:
+  - D_STRUCTURE
+d_type or -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 d_type constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type or -1 d_type of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 d_type of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type or -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 of -1 constant_num:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[CONSTANT_NUM]'
+d_type or -1 of -1 length:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type or -1 that:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+d_type param:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+d_type python:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+d_type qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[QSTR]'
+d_type single:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type specifying:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type specifying the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type that:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+d_type the:
+  dtype:
+  - D_TYPE
+  - string
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type the -1 following:
+  dtype:
+  - D_TYPE
+d_type the -1 for:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+d_type the -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type the -1 of -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type the -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+d_type the -1 to:
+  dtype:
+  - D_TYPE
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+d_type to:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+d_type to -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+  - '1'
+d_type type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '1'
+d_type types:
+  dtype:
+  - D_TYPE
+d_type types following:
+  dtype:
+  - D_TYPE
+d_type types of:
+  dtype:
+  - D_TYPE
+d_type types of -1 following:
+  dtype:
+  - D_TYPE
+d_type types of -1 the:
+  dtype:
+  - D_TYPE
+d_type types of -1 the -1 following:
+  dtype:
+  - D_TYPE
+d_type types the:
+  dtype:
+  - D_TYPE
+d_type types the -1 following:
+  dtype:
+  - D_TYPE
+d_type whether:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type whether -1 the:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+d_type with:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+defaults constant_num:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[CONSTANT_NUM]'
+defaults constant_num to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[CONSTANT_NUM]'
+defaults to:
+  dtype:
+  - bool
+  - string
+  - int
+  - float
+  - tf.dtype
+  ndim:
+  - '0'
+  - '1'
+df_str default:
+  dtype:
+  - string
+  enum:
+  - DF_STR
+  ndim:
+  - '0'
+dimension of:
+  dtype:
+  - numeric
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+dimension of -1 the:
+  dtype:
+  - numeric
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+dimension the:
+  dtype:
+  - numeric
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+dimensions the:
+  dtype:
+  - numeric
+  - int
+drop the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+drop the -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+has constant_num:
+  ndim:
+  - '0'
+  - '1'
+  shape:
+  - '[CONSTANT_NUM]'
+has length:
+  ndim:
+  - '0'
+  - '1'
+has that:
+  ndim:
+  - '0'
+  - '1'
+has that -1 length:
+  ndim:
+  - '0'
+  - '1'
+have same:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+have the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+have the -1 same:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+if constant_bool:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+input the:
+  dtype:
+  - bool
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+name a:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr for -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr for -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 bstr the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 for -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 for -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name a -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr for -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr for -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name bstr the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+name for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name for -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name for -1 the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name of:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name optional:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name optional -1 for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name optional -1 for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name optional -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name the -1 operation:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name the -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+name to:
+  dtype:
+  - string
+  ndim:
+  - '0'
+number of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+number of -1 the:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+number of -1 to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+number the:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+number the -1 of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+number to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+one a:
+  ndim:
+  - '0'
+one a -1 bstr:
+  ndim:
+  - '0'
+one a -1 bstr of:
+  ndim:
+  - '0'
+one a -1 bstr of -1 or:
+  ndim:
+  - '0'
+one a -1 bstr of -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr of -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr of -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr of -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr of -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr or:
+  ndim:
+  - '0'
+one a -1 bstr or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 bstr qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr of -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 bstr qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 of -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one a -1 d_type -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 d_type -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 of:
+  ndim:
+  - '0'
+one a -1 of -1 or:
+  ndim:
+  - '0'
+one a -1 of -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 of -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 of -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 of -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 of -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 or:
+  ndim:
+  - '0'
+one a -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one a -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr:
+  ndim:
+  - '0'
+one bstr of:
+  ndim:
+  - '0'
+one bstr of -1 or:
+  ndim:
+  - '0'
+one bstr of -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr of -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr of -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr of -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr of -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr or:
+  ndim:
+  - '0'
+one bstr or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one bstr qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 bstr:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 bstr of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr of -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 bstr or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 bstr qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 of:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 of -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 of -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 of -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 of -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 of -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 of -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 or:
+  dtype:
+  - D_TYPE
+  ndim:
+  - '0'
+one d_type -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 qstr -1 or:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 qstr -1 or -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one d_type -1 qstr -1 qstr:
+  dtype:
+  - D_TYPE
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+one of -1 or:
+  ndim:
+  - '0'
+one of -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of -1 qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of -1 qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of -1 qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one of -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+one or:
+  ndim:
+  - '0'
+one or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one qstr -1 or:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one qstr -1 or -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one qstr -1 qstr:
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+one the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+operation for:
+  dtype:
+  - string
+  ndim:
+  - '0'
+operation for -1 the:
+  dtype:
+  - string
+  ndim:
+  - '0'
+operation for -1 this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+operation the:
+  dtype:
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+operation this:
+  dtype:
+  - string
+  ndim:
+  - '0'
+param as:
+  dtype:
+  - '&PARAM'
+  ndim:
+  - '&PARAM'
+  shape:
+  - '&PARAM'
+param of:
+  dtype:
+  - bool
+  - string
+  - numeric
+  - PARAM
+  - int
+  - tf.dtype
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '&PARAM'
+  structure:
+  - tensor
+param of -1 the:
+  dtype:
+  - numeric
+  - string
+  - int
+  - tf.dtype
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  structure:
+  - tensor
+param the:
+  dtype:
+  - numeric
+  - string
+  - int
+  - tf.dtype
+  - bool
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  structure:
+  - tensor
+param type:
+  dtype:
+  - PARAM
+  - string
+  shape:
+  - '&PARAM'
+param with:
+  dtype:
+  - PARAM
+  - tf.dtype
+  ndim:
+  - '0'
+  shape:
+  - '&PARAM'
+qstr as:
+  dtype:
+  - '&QSTR'
+  - string
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  shape:
+  - '&QSTR'
+qstr default:
+  dtype:
+  - string
+  enum:
+  - QSTR
+qstr of:
+  dtype:
+  - QSTR
+  - tf.dtype
+  - bool
+  - int
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  - '[-1.0,1.0]'
+  shape:
+  - '[QSTR]'
+qstr the:
+  dtype:
+  - QSTR
+  - string
+  - int
+  - tf.dtype
+  - bool
+  enum:
+  - QSTR
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+reduce to:
+  dtype:
+  - int
+  ndim:
+  - '0'
+representing the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[-1.0,1.0]'
+  - '[0,inf)'
+representing to:
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+shape of:
+  dtype:
+  - int
+  ndim:
+  - '1'
+  range:
+  - '[0,inf)'
+shape the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+size of:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+size the:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+specifying of:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[2]'
+specifying of -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[2]'
+specifying the:
+  dtype:
+  - bool
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[2]'
+specifying the -1 of:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+  - '[2]'
+specifying the -1 of -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+specifying the -1 the:
+  dtype:
+  - bool
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+type as:
+  dtype:
+  - tf.dtype
+type d_type:
+  dtype:
+  - D_TYPE
+  - tf.dtype
+  ndim:
+  - '0'
+type of:
+  dtype:
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+type of -1 the:
+  dtype:
+  - string
+  - tf.dtype
+type param:
+  dtype:
+  - '&PARAM'
+  - tf.dtype
+type param as:
+  dtype:
+  - '&PARAM'
+type qstr:
+  dtype:
+  - '&QSTR'
+  - tf.dtype
+type same -1 param:
+  dtype:
+  - '&PARAM'
+type same -1 param as:
+  dtype:
+  - '&PARAM'
+type the:
+  dtype:
+  - string
+  - tf.dtype
+  ndim:
+  - '0'
+type the -1 as:
+  dtype:
+  - tf.dtype
+type the -1 of:
+  dtype:
+  - tf.dtype
+  ndim:
+  - '0'
+type the -1 param:
+  dtype:
+  - '&PARAM'
+  - tf.dtype
+type the -1 param as:
+  dtype:
+  - '&PARAM'
+type the -1 qstr:
+  dtype:
+  - '&QSTR'
+  - tf.dtype
+type the -1 same -1 param:
+  dtype:
+  - '&PARAM'
+type the -1 same -1 param as:
+  dtype:
+  - '&PARAM'
+types of:
+  dtype:
+  - bool
+  - tf.dtype
+  ndim:
+  - '0'
+use to:
+  dtype:
+  - bool
+  - numeric
+  - string
+  - int
+  - tf.dtype
+  ndim:
+  - '0'
+  range:
+  - '[0,1]'
+  - '[0,inf)'
+value the:
+  dtype:
+  - numeric
+  - tf.dtype
+  ndim:
+  - '0'
+values of:
+  dtype:
+  - bool
+  - numeric
+  - tf.dtype
+  - int
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+values the:
+  dtype:
+  - bool
+  - float
+  - numeric
+  - tf.dtype
+  ndim:
+  - '0'
+  range:
+  - '[0,inf)'
+window of:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+window of -1 the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'
+window the:
+  dtype:
+  - int
+  ndim:
+  - '0'
+  - '1'
+  range:
+  - '[0,inf)'
+  shape:
+  - '[1]'

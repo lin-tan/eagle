@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor` of type `string`. Shell wildcard pattern(s). Scalar or vector of type string.,,prim_dtype,"dtype(tf.dtype, tf.string)",,1
+,A `Tensor` of type `string`. Shell wildcard pattern(s). Scalar or vector of type string.,,nonprim_dtype,"tensor_t(tf.tensor), structure(list(tf.dtype), list(tf.string))",,1
+,A `Tensor` of type `string`. Shell wildcard pattern(s). Scalar or vector of type string.,,shape,ndim(1),,1

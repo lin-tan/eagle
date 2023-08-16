@@ -1,0 +1,10 @@
+constraints:
+  data_format:
+    default: None
+    descp: string, one of "channels_last", "channels_first".
+    dtype:
+    - tf.string
+    enum:
+    - channels_first
+    - channels_last
+title: tf.keras.backend.conv1d

@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.train.load_checkpoint
+constraints:
+  ckpt_dir_or_file:
+    descp: Directory with checkpoints file or path to checkpoint file.
+exceptions:
+- ValueError: If `ckpt_dir_or_file` resolves to a directory with no checkpoints.
+inputs:
+  optional: []
+  required:
+  - ckpt_dir_or_file
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/train/load_checkpoint
+outputs: '`CheckpointReader` object.'
+package: tensorflow
+target: load_checkpoint
+title: tf.train.load_checkpoint
+version: 2.1.0

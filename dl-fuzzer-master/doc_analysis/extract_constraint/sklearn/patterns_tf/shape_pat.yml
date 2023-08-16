@@ -1,0 +1,146 @@
+
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: shape
+
+# use this list to split the string when adding into shape_var
+split_word:
+    - ' '
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '...'
+    - '/'
+    - '`'
+    - 'len:'
+    - 'ndim:'
+    - 'max_value:'
+
+
+pat:
+    # with/of/has/have the same (dtype and) shape with/as
+    '(the\s+)?same\s+(((dtype|type)\s+and\s+shape)|(shape\s+and\s+(type|dtype))|(shape|length|size)|dimensions*)\s+(with|as)\s*[`''"]*([\w]+)[`''"]*':
+        group: 9
+        dependent: True
+    
+
+    
+    # of shape `[2,num_dim]`
+    # keep the value if it is a variable
+    # keep the value if it is a non-variable  (correlation)
+    # "shape\s+" -> filter out shape[0] ...
+    '(of|with|and|having)\s+(shape|size)\s*:*\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`''"]*':
+        group: 3
+        replace: 
+            'd_*0,\s*d_*1,\s*\.\.\.,\s*d_*n': '...'
+            'd_*1,*\s*\.\.\.,*\s*d_*n': '...'
+            'd_0,\s*d_1,\s*...,\s*d_{r-1}': '...'
+            'dim1,\s+dim2,\s+...\s+dim\(n-1\)': '...'
+            'len\((.*)\)': 'len:\1'
+            'rank\((.*?)\)': 'ndim:\1'
+            'max\s*value\s*in\s*(\w+)': 'max_value:\1'
+        keep_var: True
+        keep_nonvar: True
+
+    # shape `[..]` 
+    '(shape|shaped)\s*:*\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`''"]*':
+        group: 2
+        prereq:
+            - '(of|with|and|having)\s+(shape|size)\s*:*\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*\/{}]+)[\]\)][`''"]*'
+        replace: 
+            'd_*0,\s*d_*1,\s*\.\.\.,\s*d_*n': '...'
+            'd_*1,*\s*\.\.\.,*\s*d_*n': '...'
+            'd_0,\s*d_1,\s*...,\s*d_{r-1}': '...'
+            'dim1,\s+dim2,\s+...\s+dim\(n-1\)': '...'
+            'len\((.*)\)': 'len:\1'
+            'rank\((.*?)\)': 'ndim:\1'
+            'max\s*value\s*in\s*(\w+)': 'max_value:\1'
+        keep_var: True
+        keep_nonvar: True
+
+    # size/sized must have [  not (
+    '(size|sized)\s*:*\s*[`''"]*\[([\w\s\.,\(\)\+\-\*\/{}]+)\][`''"]*':
+        group: 2
+        prereq:
+            - '(of|with|and|having)\s+(shape|size)\s*:*\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`''"]*'
+        replace: 
+            'd_*0,\s*d_*1,\s*\.\.\.,\s*d_*n': '...'
+            'd_*1,*\s*\.\.\.,*\s*d_*n': '...'
+            'd_0,\s*d_1,\s*...,\s*d_{r-1}': '...'
+            'dim1,\s+dim2,\s+...\s+dim\(n-1\)': '...'
+            'len\((.*)\)': 'len:\1'
+            'rank\((.*?)\)': 'ndim:\1'
+            'max\s*value\s*in\s*(\w+)': 'max_value:\1'
+        keep_var: True
+        keep_nonvar: True
+
+
+    'shape\s+(is|should\s+be)\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`''"]*':
+        group: 2
+        replace: 
+            'd_*0,\s*d_*1,\s*\.\.\.,\s*d_*n': '...'
+            'd_*1,*\s*\.\.\.,*\s*d_*n': '...'
+            'd_0,\s*d_1,\s*...,\s*d_{r-1}': '...'
+            'e_0,\s+e_1,\s+...,\s+e_m': '...'
+            'dim1,\s+dim2,\s+...\s+dim\(n-1\)': '...'
+            'len\((.*)\)': 'len:\1'
+            'rank\((.*?)\)': 'ndim:\1'
+            'max\s*value\s*in\s*(\w+)': 'max_value:\1'
+        keep_var: True
+        keep_nonvar: True
+
+    'whose\s+(shape|dimension|dimensions)\s+(must\s*)?(matches|match)\s*(the\s+shape\s+of\s*)?[`''"]*([\w]+)[`''"]*':
+        group: 5
+        dependent: True
+
+    '(of|with)\s+size\s*[`''"]*([\w]+)[`''"]*':
+        group: 2
+        dependent: True
+
+
+
+    'its\s+shape\s+is\s*[`''"]*[\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`''"]*':
+        group: 1
+        replace: 
+            'd_*0,\s*d_*1,\s*\.\.\.,\s*d_*n': '...'
+            'd_*1,*\s*\.\.\.,*\s*d_*n': '...'
+            'd_0,\s*d_1,\s*...,\s*d_{r-1}': '...'
+            'dim1,\s+dim2,\s+...\s+dim\(n-1\)': '...'
+            'len\((.*)\)': 'len:\1'
+            'rank\((.*?)\)': 'ndim:\1'
+            'max\s*value\s*in\s*(\w+)': 'max_value:\1'
+        keep_var: True
+        keep_nonvar: True
+
+    # tensor of \d element
+    'tensor\s+of\s+(\d)\s+element':
+        group: 1
+        keep_var: True
+        keep_nonvar: True
+    
+    # tensor of length \d
+    '`*tensor`*\s+of\s+length\s+(\d+|`[\w]+`)':
+        group: 1
+        replace:
+            '`': ''
+        keep_var: True
+        keep_nonvar: True
+
+    
+    '\b\w\b-d\s+(`*tensor`*\s+)?of\s+(length|size)\s+(\d)':
+        group: 3
+
+    '^(\ba\b|an)?\s*[`''"][\[\(]([\w\s\.,\(\)\+\-\*/{}]+)[\]\)][`''"]':
+        group: 2
+
+
+ 

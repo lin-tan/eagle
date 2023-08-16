@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int or 'auto' (default is 'auto') Number of power iterations. It can be used to deal with very noisy problems. When 'auto', it is set to 4, unless `n_components` is small (< .1 * min(X.shape)) `n_iter` in which case is set to 7. This improves precision with few components.",auto,prim_dtype,dtype(int),,1
+,"int or 'auto' (default is 'auto') Number of power iterations. It can be used to deal with very noisy problems. When 'auto', it is set to 4, unless `n_components` is small (< .1 * min(X.shape)) `n_iter` in which case is set to 7. This improves precision with few components.",auto,shape,ndim(0),,1
+,"int or 'auto' (default is 'auto') Number of power iterations. It can be used to deal with very noisy problems. When 'auto', it is set to 4, unless `n_components` is small (< .1 * min(X.shape)) `n_iter` in which case is set to 7. This improves precision with few components.",auto,validvalue,"range([0,inf))",,1

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+timedelta,"Timeout for operations executed against the process group. Default value equals 30 minutes. This is applicable for the `gloo` backend. For `nccl`, this is applicable only if the environment variable `NCCL_BLOCKING_WAIT` is set to 1.","datetime.timedelta(0, 1800)",,,0,0

@@ -1,0 +1,30 @@
+constraints:
+  index:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+  inputs:
+    descp: A list of at least 1 Tensor objects with the same type.
+  is_mirrored_variable:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  is_packed:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - is_mirrored_variable
+  - index
+  - is_packed
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TPUReplicatedInput
+outputs:
+- A Tensor. Has the same type as inputs.
+package: tensorflow
+target: TPUReplicatedInput
+title: tf.raw_ops.TPUReplicatedInput
+version: 2.3.0

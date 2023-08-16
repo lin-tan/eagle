@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"None or array-like of shape (n_samples, n_features) Input data. Note that if X is None then the Gram matrix must be specified, i.e., cannot be None or False. The use of ``X`` is ``None`` in combination with ``Gram`` is not ``None`` will be removed in v0.23. Use :func:`lars_path_gram` instead.",,prim_dtype,dtype(numeric),,1
+,"None or array-like of shape (n_samples, n_features) Input data. Note that if X is None then the Gram matrix must be specified, i.e., cannot be None or False. The use of ``X`` is ``None`` in combination with ``Gram`` is not ``None`` will be removed in v0.23. Use :func:`lars_path_gram` instead.",,shape,"shape([n_samples,n_features]), ndim(2)",,1

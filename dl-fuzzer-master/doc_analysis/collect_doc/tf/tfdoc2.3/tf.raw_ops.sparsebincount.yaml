@@ -1,0 +1,37 @@
+constraints:
+  binary_output:
+    default: 'False'
+    descp: An optional bool. Defaults to False. bool; Whether the kernel should count
+      the appearance or number of occurrences.
+  dense_shape:
+    descp: A Tensor of type int64. 1D int64 Tensor.
+  indices:
+    descp: A Tensor of type int64. 2D int64 Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: A Tensor. Must have the same type as values. non-negative int scalar Tensor.
+  values:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 1D int Tensor.'
+  weights:
+    descp: 'A Tensor. Must be one of the following types: int32, int64, float32, float64.
+      is an int32, int64, float32, or float64 Tensor with the same shape as input,
+      or a length-0 Tensor, in which case it acts as all weights equal to 1.'
+inputs:
+  optional:
+  - binary_output
+  - name
+  required:
+  - indices
+  - values
+  - dense_shape
+  - size
+  - weights
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseBincount
+outputs:
+- A Tensor. Has the same type as weights.
+package: tensorflow
+target: SparseBincount
+title: tf.raw_ops.SparseBincount
+version: 2.3.0

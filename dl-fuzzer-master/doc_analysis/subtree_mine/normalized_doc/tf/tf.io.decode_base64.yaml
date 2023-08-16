@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.decode_base64
+- tf.compat.v1.io.decode_base64
+constraints:
+  input:
+    descp: A `Tensor` of type `string`. Base64 strings to decode.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - Base64 D_TYPE to decode
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/decode_base64
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: decode_base64
+title: tf.io.decode_base64
+version: 2.1.0

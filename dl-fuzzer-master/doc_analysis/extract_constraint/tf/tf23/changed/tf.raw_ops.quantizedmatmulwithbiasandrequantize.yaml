@@ -1,0 +1,117 @@
+constraints:
+  Toutput:
+    default: tf.dtypes.quint8
+    descp: 'An optional tf.DType from: tf.qint8, tf.quint8, tf.qint32, tf.qint16,
+      tf.quint16. Defaults to tf.quint8.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  a:
+    descp: 'A Tensor. Must be one of the following types: qint8, quint8, qint32, qint16,
+      quint16.'
+    tensor_t:
+    - tf.tensor
+  b:
+    descp: 'A Tensor. Must be one of the following types: qint8, quint8, qint32, qint16,
+      quint16.'
+    tensor_t:
+    - tf.tensor
+  bias:
+    descp: 'A Tensor. Must be one of the following types: float32, qint32.'
+    tensor_t:
+    - tf.tensor
+  input_quant_mode:
+    default: MIN_FIRST
+    descp: 'An optional string from: "MIN_FIRST", "SCALED". Defaults to "MIN_FIRST".'
+    dtype:
+    - tf.string
+    enum:
+    - MIN_FIRST
+    - SCALED
+    ndim:
+    - '0'
+  max_a:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  max_b:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  max_freezed_output:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_a:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_b:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  min_freezed_output:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  transpose_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  transpose_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Toutput
+  - transpose_a
+  - transpose_b
+  - input_quant_mode
+  - name
+  required:
+  - a
+  - b
+  - bias
+  - min_a
+  - max_a
+  - min_b
+  - max_b
+  - min_freezed_output
+  - max_freezed_output
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/QuantizedMatMulWithBiasAndRequantize
+outputs:
+- A tuple of Tensor objects (out, min_out, max_out).
+- out: A Tensor of type Toutput.
+- min_out: A Tensor of type float32.
+- max_out: A Tensor of type float32.
+package: tensorflow
+target: QuantizedMatMulWithBiasAndRequantize
+title: tf.raw_ops.QuantizedMatMulWithBiasAndRequantize
+version: 2.3.0

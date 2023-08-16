@@ -1,0 +1,10 @@
+warning: signature parsing failed on [torch.nn.GELU]
+warning: signature parsing failed on [torch.nn.Hardsigmoid]
+warning: signature parsing failed on [torch.nn.Hardswish]
+warning: signature parsing failed on [torch.nn.LogSigmoid]
+[torch.nn.MultiheadAttention] Inconsistency detected, arg Note doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.nn.MultiheadAttention.html#torch.nn.MultiheadAttention#torch.nn.MultiheadAttention
+warning: signature parsing failed on [torch.nn.Sigmoid]
+warning: signature parsing failed on [torch.nn.Softmax2d]
+warning: signature parsing failed on [torch.nn.Softsign]
+warning: signature parsing failed on [torch.nn.Tanh]
+warning: signature parsing failed on [torch.nn.Tanhshrink]

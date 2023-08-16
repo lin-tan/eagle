@@ -1,0 +1,108 @@
+constraints:
+  X:
+    descp: array-like of shape at least 2D The data to fit.
+    structure:
+    - ndarray
+  cv:
+    default: None
+    descp: 'int, cross-validation generator or an iterable, optional Determines the
+      cross-validation splitting strategy. Possible inputs for cv are: - None, to
+      use the default 5-fold cross validation, - integer, to specify the number of
+      folds in a `(Stratified)KFold`, - :term:`CV splitter`, - An iterable yielding
+      (train, test) splits as arrays of indices. For integer/None inputs, if the estimator
+      is a classifier and ``y`` is either binary or multiclass, :class:`StratifiedKFold`
+      is used. In all other cases, :class:`KFold` is used. Refer :ref:`User Guide
+      <cross_validation>` for the various cross-validation strategies that can be
+      used here.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    structure:
+    - list
+  estimator:
+    descp: estimator object implementing 'fit' The object to use to fit the data.
+    dtype:
+    - boolean
+    enum:
+    - fit
+    ndim:
+    - '0'
+  groups:
+    default: None
+    descp: array-like, with shape (n_samples,), optional Labels to constrain permutation
+      within groups, i.e. ``y`` values are permuted among samples with the same group
+      identifier. When not specified, ``y`` values are permuted among all samples.
+      When a grouped cross-validator is used, the group labels are also passed on
+      to the ``split`` method of the cross-validator. The cross-validator uses them
+      for grouping the samples  while splitting the dataset into train/test set.
+    structure:
+    - ndarray
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of CPUs to use to do the
+      computation. ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
+      ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_permutations:
+    default: '100'
+    descp: integer, optional Number of times to permute ``y``.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  random_state:
+    default: '0'
+    descp: int, RandomState instance or None, optional (default=0) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  scoring:
+    default: None
+    descp: 'string, callable or None, optional, default: None A single string (see
+      :ref:`scoring_parameter`) or a callable (see :ref:`scoring`) to evaluate the
+      predictions on the test set. If None the estimator''s score method is used.'
+    dtype:
+    - string
+  verbose:
+    default: '0'
+    descp: integer, optional The verbosity level.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  y:
+    descp: array-like The target variable to try to predict in the case of supervised
+      learning.
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - groups
+  - cv
+  - n_permutations
+  - n_jobs
+  - random_state
+  - verbose
+  - scoring
+  required:
+  - estimator
+  - X
+  - y
+link: ''
+package: sklearn
+target: permutation_test_score
+title: sklearn.model_selection.permutation_test_score
+version: 0.24.2

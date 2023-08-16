@@ -1,0 +1,63 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  attention:
+    default: None
+    descp: Attention maps
+    doc_dtype: NDArray
+    structure:
+    - ndarray
+  heads:
+    default: _Null
+    descp: Set number of heads
+    doc_dtype: int, required
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  queries_keys_values:
+    default: None
+    descp: Queries, keys and values interleaved
+    doc_dtype: NDArray
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - queries_keys_values
+  - attention
+  - heads
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.interleaved_matmul_selfatt_valatt
+package: mxnet
+target: interleaved_matmul_selfatt_valatt
+title: mxnet.contrib.ndarray.interleaved_matmul_selfatt_valatt
+version: 1.6.0

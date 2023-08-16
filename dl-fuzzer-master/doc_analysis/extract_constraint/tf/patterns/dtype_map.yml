@@ -1,0 +1,125 @@
+dtype_map:    
+    float16: tf.float16 
+    tf.float16: tf.float16 
+    float32: tf.float32 
+    tf.float32: tf.float32 
+    float64: tf.float64
+    tf.float64: tf.float64
+    bfloat16: tf.bfloat16
+    tf.bfloat16: tf.bfloat16
+    complex64: tf.complex64
+    tf.complex64: tf.complex64
+    complex128: tf.complex128
+    tf.complex128: tf.complex128
+    int8: tf.int8
+    tf.int8: tf.int8
+    uint8: tf.uint8
+    tf.uint8: tf.uint8
+    uint16: tf.uint16
+    tf.uint16: tf.uint16
+    uint32: tf.uint32
+    tf.uint32: tf.uint32
+    uint64: tf.uint64
+    tf.uint64: tf.uint64
+    int16: tf.int16
+    tf.int16: tf.int16
+    int32: tf.int32
+    tf.int32: tf.int32
+    int64: tf.int64
+    tf.int64: tf.int64
+
+    bool: tf.bool
+    boolean: tf.bool
+    tf.boolean: tf.bool
+    tf.bool: tf.bool
+
+    string: tf.string
+    str: tf.string
+    tf.str: tf.string
+    tf.string: tf.string
+
+
+    qint8: tf.qint8
+    tf.qint8: tf.qint8
+    quint8: tf.quint8
+    tf.quint8: tf.quint8
+    qint16: tf.qint16
+    tf.qint16: tf.qint16
+    quint16: tf.quint16
+    tf.quint16: tf.quint16
+    qint32: tf.qint32
+    tf.qint32: tf.qint32
+
+    tf.resource: tf.resource
+    tf.variant: tf.variant
+    variant: tf.variant
+
+    int: int
+    tf.int: int
+    integer: int
+    uint: tf.uint
+    tf.uint: tf.uint
+    float: float
+    floating: float
+    tf.float: float
+    complex: tf.complex
+    tf.complex: tf.complex
+    half: tf.float16
+    tf.half: tf.float16
+    double: tf.float64
+
+
+    type: tf.dtype
+    dtype: tf.dtype
+    tf.dtype: tf.dtype
+    tf.dtypes: tf.dtype
+    #shape: TensorShape
+    scalar: scalar
+    numeric: numeric
+
+
+    path: tf.string
+    name: tf.string
+    tf.string: tf.string
+    str: tf.string
+    
+
+tensor_t_map:
+
+    tensor: tf.tensor
+    tensors: tf.tensor
+    tf.tensor: tf.tensor
+    tensorproto: tf.tensor
+    sparsetensor: SparseTensor
+    tf.sparsetensor: SparseTensor
+
+
+plural_map:
+    ints: int
+    integers: int
+    tf.dtypes: tf.dtype
+    floats: float
+    types: tf.dtype
+    dtypes: tf.dtype
+    strings: tf.string
+    images: image
+    image: image
+    callable: callable
+    function: callable
+    method: callable
+    operation: callable
+    tensorshape: shape  # should be 1d
+    tf.tensorshape: shape
+    shape: shape
+
+structure:
+    dictionary: dict
+    list: list
+    lists: list
+    tuple: tuple
+    iterable: list
+    sequence: list # new added
+    vector: list # new added
+    dict: dict
+    array: list # new added
+

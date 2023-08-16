@@ -1,0 +1,21 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: True
+break: False   # keep going when pattern matched, don't break
+append: True
+target: dtype
+findall: True
+
+
+pat:
+    '^(.*)$':
+        group: 1
+        # ndim: 0
+
+    'default\s(true|false)':
+        gourp: 1
+        dtype: bool
+        ndim: 0
+
+    
+        

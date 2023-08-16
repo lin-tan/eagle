@@ -1,0 +1,17 @@
+constraints:
+  dim:
+    default: None
+    descp: A dimension along which Softmax will be computed (so every slice along
+      dim will sum to 1).
+    doc_dtype:
+    - int
+    sig_dtype: Optional[int]
+inputs:
+  optional:
+  - dim
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Softmax.html#torch.nn.Softmax#torch.nn.Softmax
+package: torch
+target: Softmax
+title: torch.nn.Softmax
+version: 1.6.0

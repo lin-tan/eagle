@@ -1,0 +1,20 @@
+constraints:
+  delegate:
+    descp: string, list of strings or tuple of strings Name of the sub-estimator that
+      can be accessed as an attribute of the base object. If a list or a tuple of
+      names are provided, the first sub-estimator that is an attribute of the base
+      object will be used.
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional: []
+  required:
+  - delegate
+link: ''
+package: scikit-learn
+target: if_delegate_has_method
+title: sklearn.utils.metaestimators.if_delegate_has_method
+version: 0.24.X

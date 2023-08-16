@@ -1,0 +1,9 @@
+constraints:
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.debugging.assert_less

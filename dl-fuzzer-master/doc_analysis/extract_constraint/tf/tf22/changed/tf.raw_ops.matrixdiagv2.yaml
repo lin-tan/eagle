@@ -1,0 +1,75 @@
+constraints:
+  diagonal:
+    descp: A Tensor. Rank r, where r >= 1
+    ndim:
+    - r
+    tensor_t:
+    - tf.tensor
+  k:
+    descp: A Tensor of type int32. Diagonal offset(s). Positive value means superdiagonal,
+      0 refers to the main diagonal, and negative value means subdiagonals. k can
+      be a single integer (for a single diagonal) or a pair of integers specifying
+      the low and high ends of a matrix band. k[0] must not be larger than k[1].
+    dtype:
+    - int
+    - tf.int32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_cols:
+    descp: A Tensor of type int32. The number of columns of the output matrix. If
+      it is not provided, the op assumes the output matrix is a square matrix and
+      infers the matrix size from k and the innermost dimension of diagonal.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  num_rows:
+    descp: A Tensor of type int32. The number of rows of the output matrix. If it
+      is not provided, the op assumes the output matrix is a square matrix and infers
+      the matrix size from k and the innermost dimension of diagonal.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  padding_value:
+    descp: A Tensor. Must have the same type as diagonal. The number to fill the area
+      outside the specified diagonal band with. Default is 0.
+    dtype:
+    - dtype:&diagonal
+    tensor_t:
+    - tf.tensor
+dependency:
+- r
+inputs:
+  optional:
+  - name
+  required:
+  - diagonal
+  - k
+  - num_rows
+  - num_cols
+  - padding_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixDiagV2
+outputs:
+- A Tensor. Has the same type as diagonal.
+package: tensorflow
+target: MatrixDiagV2
+title: tf.raw_ops.MatrixDiagV2
+version: 2.2.0

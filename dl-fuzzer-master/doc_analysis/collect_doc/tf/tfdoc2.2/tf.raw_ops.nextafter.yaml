@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x1:
+    descp: 'A Tensor. Must be one of the following types: float64, float32.'
+  x2:
+    descp: A Tensor. Must have the same type as x1.
+inputs:
+  optional:
+  - name
+  required:
+  - x1
+  - x2
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/NextAfter
+outputs:
+- A Tensor. Has the same type as x1.
+package: tensorflow
+target: NextAfter
+title: tf.raw_ops.NextAfter
+version: 2.2.0

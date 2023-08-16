@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `float32`. Values passed as inputs to the FakeQuantWithMinMaxVars operation, shape same as `gradients`. min, max: Quantization interval, floats of shape `[d]`.",,prim_dtype,dtype(tf.float32),,1
+,"A `Tensor` of type `float32`. Values passed as inputs to the FakeQuantWithMinMaxVars operation, shape same as `gradients`. min, max: Quantization interval, floats of shape `[d]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `float32`. Values passed as inputs to the FakeQuantWithMinMaxVars operation, shape same as `gradients`. min, max: Quantization interval, floats of shape `[d]`.",,shape,"shape([d]), ndim(1)",,1

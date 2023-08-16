@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An integer `Tensor`. How many bins there are in the source spectrogram data, which is understood to be `fft_size // 2 + 1`, i.e. the spectrogram only contains the nonredundant FFT bins.",129,prim_dtype,dtype(int),,1
+,"An integer `Tensor`. How many bins there are in the source spectrogram data, which is understood to be `fft_size // 2 + 1`, i.e. the spectrogram only contains the nonredundant FFT bins.",129,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An integer `Tensor`. How many bins there are in the source spectrogram data, which is understood to be `fft_size // 2 + 1`, i.e. the spectrogram only contains the nonredundant FFT bins.",129,shape,ndim(0),,1
+,"An integer `Tensor`. How many bins there are in the source spectrogram data, which is understood to be `fft_size // 2 + 1`, i.e. the spectrogram only contains the nonredundant FFT bins.",129,validvalue,"range([0,inf))",,1

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A tuple of integers, the shape of tensor to create.",,prim_dtype,dtype(int),,1
+,"A tuple of integers, the shape of tensor to create.",,nonprim_dtype,structure(tuple(int)),,1
+,"A tuple of integers, the shape of tensor to create.",,shape,ndim(1),,1
+,"A tuple of integers, the shape of tensor to create.",,validvalue,"range([0,inf))",,1

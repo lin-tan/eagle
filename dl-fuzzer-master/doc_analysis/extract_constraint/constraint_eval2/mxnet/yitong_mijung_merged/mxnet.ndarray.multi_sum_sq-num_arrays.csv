@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, required",number of input arrays.,,prim_dtype,dtype(int),1,1
+"int, required",number of input arrays.,,shape,ndim(0),1,1
+"int, required",number of input arrays.,,validvalue,"range([0,inf))",1,1

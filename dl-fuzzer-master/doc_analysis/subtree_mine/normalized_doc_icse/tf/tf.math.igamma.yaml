@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.igamma
+- tf.compat.v1.math.igamma
+constraints:
+  a:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: A `Tensor`. Must have the same type as `a`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/igamma
+outputs: A `Tensor`. Has the same type as `a`.
+package: tensorflow
+target: igamma
+title: tf.math.igamma
+version: 2.1.0

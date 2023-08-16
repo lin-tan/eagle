@@ -1,0 +1,42 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sp_indices:
+    descp: A Tensor of type int64. 2-D. NNZ x R matrix with the indices of non-empty
+      values in a SparseTensor, in canonical ordering.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  sp_shape:
+    descp: A Tensor of type int64. 1-D. Shape of the input SparseTensor.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  sp_values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. 1-D. NNZ
+      non-empty values corresponding to sp_indices.'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - sp_indices
+  - sp_values
+  - sp_shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSoftmax
+outputs:
+- A Tensor. Has the same type as sp_values.
+package: tensorflow
+target: SparseSoftmax
+title: tf.raw_ops.SparseSoftmax
+version: 2.2.0

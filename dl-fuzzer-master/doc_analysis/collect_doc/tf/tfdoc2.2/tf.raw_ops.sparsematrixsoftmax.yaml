@@ -1,0 +1,21 @@
+constraints:
+  logits:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64.'
+inputs:
+  optional:
+  - name
+  required:
+  - logits
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixSoftmax
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixSoftmax
+title: tf.raw_ops.SparseMatrixSoftmax
+version: 2.2.0

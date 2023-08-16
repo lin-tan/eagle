@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x), rank(x))`.",0,prim_dtype,"dtype(int, tf.int32)",,1
+,"A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x), rank(x))`.",0,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x), rank(x))`.",0,shape,ndim(0),,1
+,"A `Tensor` of type `int32` (default: 0). Must be in the range`[-rank(x), rank(x))`.",0,validvalue,"range([-ndim:&x,ndim:&x))",,1

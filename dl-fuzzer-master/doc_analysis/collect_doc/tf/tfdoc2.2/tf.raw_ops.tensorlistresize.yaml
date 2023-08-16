@@ -1,0 +1,21 @@
+constraints:
+  input_handle:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  size:
+    descp: A Tensor of type int32.
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListResize
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListResize
+title: tf.raw_ops.TensorListResize
+version: 2.2.0

@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the PyTorch tensor to test
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.is_nonzero.html#torch.is_nonzero#torch.is_nonzero
+package: torch
+ret_type: (bool)
+target: is_nonzero
+title: torch.is_nonzero
+version: 1.6.0

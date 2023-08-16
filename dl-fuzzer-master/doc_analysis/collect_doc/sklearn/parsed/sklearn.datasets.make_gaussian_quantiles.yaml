@@ -1,0 +1,25 @@
+constraints:
+  cov: {default: '1.0', descp: 'float, optional (default=1.) The covariance matrix
+      will be this value times the unit matrix. This dataset only produces symmetric
+      normal distributions.'}
+  mean: {default: None, descp: 'array of shape [n_features], optional (default=None)
+      The mean of the multi-dimensional normal distribution. If None then use the
+      origin (0, 0, ...).'}
+  n_classes: {default: '3', descp: 'int, optional (default=3) The number of classes'}
+  n_features: {default: '2', descp: 'int, optional (default=2) The number of features
+      for each sample.'}
+  n_samples: {default: '100', descp: 'int, optional (default=100) The total number
+      of points equally divided among classes.'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset creation. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+  shuffle: {default: 'True', descp: 'boolean, optional (default=True) Shuffle the
+      samples.'}
+inputs:
+  optional: [mean, cov, n_samples, n_features, n_classes, shuffle, random_state]
+  required: []
+link: ''
+package: sklearn
+target: make_gaussian_quantiles
+title: sklearn.datasets.make_gaussian_quantiles
+version: 0.24.2

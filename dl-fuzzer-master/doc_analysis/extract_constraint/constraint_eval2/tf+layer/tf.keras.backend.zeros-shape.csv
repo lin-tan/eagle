@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Tuple or list of integers, shape of returned Keras variable",,prim_dtype,dtype(int),,1
+,"Tuple or list of integers, shape of returned Keras variable",,nonprim_dtype,"structure(list(int), tuple(int))",,1
+,"Tuple or list of integers, shape of returned Keras variable",,shape,ndim(1),,1
+,"Tuple or list of integers, shape of returned Keras variable",,validvalue,"range([0,inf))",,1

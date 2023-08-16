@@ -1,0 +1,23 @@
+constraints:
+  input:
+    descp: the tensor to compute the digamma function on
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to compute the digamma function on
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.digamma
+package: torch
+ret_type: Tensor
+target: digamma
+title: torch.digamma
+version: 1.5.0

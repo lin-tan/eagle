@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Whether to rescale image values to be within `[0, 255]`.",True,prim_dtype,dtype(tf.bool),,1
+,"Whether to rescale image values to be within `[0, 255]`.",True,shape,ndim(0),,1
+,"Whether to rescale image values to be within `[0, 255]`.",True,validvalue,"range([0,255])",,1

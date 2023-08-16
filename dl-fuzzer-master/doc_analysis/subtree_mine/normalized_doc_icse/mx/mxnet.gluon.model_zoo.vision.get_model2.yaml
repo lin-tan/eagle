@@ -1,0 +1,56 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  classes:
+    default: None
+    descp: Number of classes for the output layer.
+    doc_dtype: int
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Number of classes for the output layer
+    normalized_docdtype: ONE_WORD D_TYPE
+  ctx:
+    default: None
+    descp: The context in which to load the pretrained weights.
+    doc_dtype: Context, default CPU
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The context in which to load the PARAM weights
+    normalized_docdtype: Context default CPU
+  name:
+    descp: Name of the model.
+    doc_dtype: str
+    normalized_descp:
+    - Name of the model
+    normalized_docdtype: ONE_WORD D_TYPE
+  pretrained:
+    default: None
+    descp: Whether to load the pretrained weights for model.
+    doc_dtype: bool
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to load the pretrained weights for model
+    normalized_docdtype: ONE_WORD D_TYPE
+  root:
+    default: None
+    descp: Location for keeping the model parameters.
+    doc_dtype: str, default '$MXNET_HOME/models'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Location for keeping the model parameters
+    normalized_docdtype: D_TYPE default MXNET_HOME models
+inputs:
+  optional:
+  - pretrained
+  - classes
+  - ctx
+  - root
+  required:
+  - name
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/gluon/model_zoo/index.html#mxnet.gluon.model_zoo.vision.get_model
+package: mxnet
+target: get_model
+title: mxnet.gluon.model_zoo.vision.get_model
+version: 1.6.0

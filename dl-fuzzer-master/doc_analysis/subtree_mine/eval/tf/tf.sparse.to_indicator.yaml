@@ -1,0 +1,14 @@
+constraints:
+  vocab_size:
+    descp: A scalar int64 Tensor (or Python int) containing the new size of the last
+      dimension, `all(0 <= sp_input.values < vocab_size)`.
+    dtype:
+    - tf.int64
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+title: tf.sparse.to_indicator

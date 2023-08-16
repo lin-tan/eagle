@@ -1,0 +1,13 @@
+append: True
+break: False
+check_dt: False
+direct_map: False
+findall: True
+parse_sent: False
+target: range
+
+pat:
+
+
+    'in\s+\[0,\s+infty\]':
+        range: '[0,inf)'

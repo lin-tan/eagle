@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array, shape (n_samples,), optional Weight of each sample, such that a sample with a weight of at least ``min_samples`` is by itself a core sample; a sample with negative weight may inhibit its eps-neighbor from being core. Note that weights are absolute, and default to 1.",None,prim_dtype,dtype(numeric),,1
+,"array, shape (n_samples,), optional Weight of each sample, such that a sample with a weight of at least ``min_samples`` is by itself a core sample; a sample with negative weight may inhibit its eps-neighbor from being core. Note that weights are absolute, and default to 1.",None,shape,"shape([n_samples]), ndim(1)",,1

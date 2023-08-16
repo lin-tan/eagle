@@ -1,0 +1,14 @@
+constraints:
+  size_average:
+    default: None
+    descp: 'Deprecated (see `reduction`). By default, the losses are averaged over
+      each loss element in the batch. Note that for some losses, there multiple elements
+      per sample. If the field `size_average` is set to `False`, the losses are instead
+      summed for each minibatch. Ignored when reduce is `False`. Default: `True`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.nn.functional.binary_cross_entropy

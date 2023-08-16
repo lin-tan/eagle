@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `float32`. 3-D with shape `[batch, num_bounding_boxes, 4]` containing bounding boxes.",,prim_dtype,dtype(tf.float32),,1
+,"A `Tensor` of type `float32`. 3-D with shape `[batch, num_bounding_boxes, 4]` containing bounding boxes.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `float32`. 3-D with shape `[batch, num_bounding_boxes, 4]` containing bounding boxes.",,shape,"shape([batch,num_bounding_boxes,4]), ndim(3)",,1

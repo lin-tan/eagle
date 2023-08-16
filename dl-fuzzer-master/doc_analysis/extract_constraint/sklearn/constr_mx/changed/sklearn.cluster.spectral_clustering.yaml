@@ -1,0 +1,76 @@
+constraints:
+  affinity:
+    descp: 'array-like or sparse matrix, shape: (n_samples, n_samples) The affinity
+      matrix describing the relationship of the samples to embed. **Must be symmetric**.
+      Possible examples: - adjacency matrix of a graph, - heat kernel of the pairwise
+      distance matrix of the samples, - symmetric k-nearest neighbours connectivity
+      matrix of the samples.'
+  assign_labels:
+    default: kmeans
+    descp: '{''kmeans'', ''discretize''}, default: ''kmeans'' The strategy to use
+      to assign labels in the embedding space.  There are two ways to assign labels
+      after the laplacian embedding.  k-means can be applied and is a popular choice.
+      But it can also be sensitive to initialization. Discretization is another approach
+      which is less sensitive to random initialization. See the ''Multiclass spectral
+      clustering'' paper referenced below for more details on the discretization approach.'
+    dtype:
+    - string
+  eigen_solver:
+    default: None
+    descp: '{None, ''arpack'', ''lobpcg'', or ''amg''} The eigenvalue decomposition
+      strategy to use. AMG requires pyamg to be installed. It can be faster on very
+      large, sparse problems, but may also lead to instabilities'
+  eigen_tol:
+    default: '0.0'
+    descp: 'float, optional, default: 0.0 Stopping criterion for eigendecomposition
+      of the Laplacian matrix when using arpack eigen_solver.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n_clusters:
+    default: '8'
+    descp: integer, optional Number of clusters to extract.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  n_components:
+    default: None
+    descp: integer, optional, default is n_clusters Number of eigen vectors to use
+      for the spectral embedding
+    dtype:
+    - int
+  n_init:
+    default: '10'
+    descp: 'int, optional, default: 10 Number of time the k-means algorithm will be
+      run with different centroid seeds. The final results will be the best output
+      of n_init consecutive runs in terms of inertia.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) A pseudo random number generator
+      used for the initialization of the lobpcg eigen vectors decomposition when eigen_solver
+      == 'amg' and by the K-Means initialization. Use an int to make the randomness
+      deterministic. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+inputs:
+  optional:
+  - n_clusters
+  - n_components
+  - eigen_solver
+  - random_state
+  - n_init
+  - eigen_tol
+  - assign_labels
+  required:
+  - affinity
+link: ''
+package: scikit-learn
+target: spectral_clustering
+title: sklearn.cluster.spectral_clustering
+version: 0.24.X

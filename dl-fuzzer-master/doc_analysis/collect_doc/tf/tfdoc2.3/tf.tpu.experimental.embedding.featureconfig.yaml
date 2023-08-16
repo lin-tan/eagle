@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.tpu.experimental.embedding.FeatureConfig
+constraints:
+  max_sequence_length:
+    default: '0'
+    descp: If positive, the feature is a sequence feature with the corresponding maximum
+      sequence length. If the sequence is longer than this, it will be truncated.
+      If 0, the feature is not a sequence feature.
+  name:
+    default: None
+    descp: An optional name for the feature, useful for debugging.
+  table:
+    descp: An instance of tf.tpu.experimental.embedding.TableConfig, describing the
+      table in which this feature should be looked up.
+exceptions:
+- ValueError: if table is not an instance of tf.tpu.experimental.embedding.TableConfig.
+- ValueError: if max_sequence_length not an integer or is negative.
+inputs:
+  optional:
+  - max_sequence_length
+  - name
+  required:
+  - table
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/tpu/experimental/embedding/FeatureConfig
+package: tensorflow
+target: FeatureConfig
+title: tf.tpu.experimental.embedding.FeatureConfig
+version: 2.3.0

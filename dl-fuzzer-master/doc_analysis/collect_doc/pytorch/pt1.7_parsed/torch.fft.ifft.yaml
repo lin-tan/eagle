@@ -1,0 +1,34 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: The dimension along which to take the one dimensional IFFT.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor
+    doc_dtype:
+    - Tensor
+  n:
+    default: None
+    descp: Signal length. If given, the input will either be zero-padded or trimmed
+      to this length before computing the IFFT.
+    doc_dtype:
+    - int
+  norm:
+    default: None
+    descp: ''
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - n
+  - dim
+  - norm
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/fft.html#torch.fft.ifft
+package: torch
+ret_type: Tensor
+target: ifft
+title: torch.fft.ifft
+version: 1.7.0

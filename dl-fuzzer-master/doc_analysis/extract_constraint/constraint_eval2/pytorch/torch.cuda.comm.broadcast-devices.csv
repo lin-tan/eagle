@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Iterable,"an iterable of devices among which to broadcast. Note that it should be like (src, dst1, dst2,  u2026), the first element of which is the source device to broadcast from.",,prim_dtype,dtype(torch.device),,1
+Iterable,"an iterable of devices among which to broadcast. Note that it should be like (src, dst1, dst2,  u2026), the first element of which is the source device to broadcast from.",,nonprim_dtype,"structure(iterable, iterable(torch.device))",,1
+Iterable,"an iterable of devices among which to broadcast. Note that it should be like (src, dst1, dst2,  u2026), the first element of which is the source device to broadcast from.",,shape,ndim(1),,1

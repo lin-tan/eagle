@@ -1,0 +1,9 @@
+constraints:
+  rhs:
+    default: None
+    descp: second input
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.contrib.ndarray.quantized_elemwise_add

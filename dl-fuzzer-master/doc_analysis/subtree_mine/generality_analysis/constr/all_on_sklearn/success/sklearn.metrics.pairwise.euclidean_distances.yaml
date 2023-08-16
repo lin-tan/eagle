@@ -1,0 +1,58 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix}, shape (n_samples_1, n_features)'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_1,n_features]'
+    structure:
+    - ndarray
+  X_norm_squared:
+    default: None
+    descp: array-like of shape (n_samples,), optional Pre-computed dot-products of
+      vectors in X (e.g., ``(X**2).sum(axis=1)``) May be ignored in some cases, see
+      the note below.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,]'
+    structure:
+    - list
+    - ndarray
+  Y:
+    default: None
+    descp: '{array-like, sparse matrix}, shape (n_samples_2, n_features)'
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_2,n_features]'
+    structure:
+    - ndarray
+  Y_norm_squared:
+    default: None
+    descp: array-like, shape (n_samples_2, ), optional Pre-computed dot-products of
+      vectors in Y (e.g., ``(Y**2).sum(axis=1)``) May be ignored in some cases, see
+      the note below.
+    structure:
+    - list
+    - ndarray
+  squared:
+    default: 'False'
+    descp: boolean, optional Return squared Euclidean distances.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Y
+  - Y_norm_squared
+  - squared
+  - X_norm_squared
+  required:
+  - X
+link: ''
+package: sklearn
+target: euclidean_distances
+title: sklearn.metrics.pairwise.euclidean_distances
+version: 0.24.2

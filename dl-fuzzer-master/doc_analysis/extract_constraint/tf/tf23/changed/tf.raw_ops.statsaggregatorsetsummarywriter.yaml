@@ -1,0 +1,29 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  stats_aggregator:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+  summary:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - stats_aggregator
+  - summary
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatsAggregatorSetSummaryWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: StatsAggregatorSetSummaryWriter
+title: tf.raw_ops.StatsAggregatorSetSummaryWriter
+version: 2.3.0

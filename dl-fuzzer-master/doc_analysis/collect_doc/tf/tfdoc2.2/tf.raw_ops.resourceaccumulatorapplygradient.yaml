@@ -1,0 +1,27 @@
+constraints:
+  gradient:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. A tensor of the gradient to be accumulated.'
+  handle:
+    descp: A Tensor of type resource. The handle to a accumulator.
+  local_step:
+    descp: A Tensor of type int64. The local_step value at which the gradient was
+      computed.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - local_step
+  - gradient
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceAccumulatorApplyGradient
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceAccumulatorApplyGradient
+title: tf.raw_ops.ResourceAccumulatorApplyGradient
+version: 2.2.0

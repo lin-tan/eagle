@@ -1,0 +1,44 @@
+constraints:
+  max_val:
+    default: None
+    descp: float or int, optional (default=None) The maximum valid value the parameter
+      can take. If None (default) it is implied that the parameter does not have an
+      upper bound.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  min_val:
+    default: None
+    descp: float or int, optional (default=None) The minimum valid value the parameter
+      can take. If None (default) it is implied that the parameter does not have a
+      lower bound.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  name:
+    descp: str The name of the parameter to be printed in error messages.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  target_type:
+    descp: type or tuple Acceptable data types for the parameter.
+  x:
+    descp: object The scalar parameter to validate.
+inputs:
+  optional:
+  - min_val
+  - max_val
+  required:
+  - x
+  - name
+  - target_type
+link: ''
+package: sklearn
+target: check_scalar
+title: sklearn.utils.check_scalar
+version: 0.24.2

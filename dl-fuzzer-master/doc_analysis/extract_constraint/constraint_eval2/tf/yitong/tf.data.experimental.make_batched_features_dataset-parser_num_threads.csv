@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Number of threads to use for parsing `Example` tensors into a dictionary of `Feature` tensors. Defaults to `2`.,None,prim_dtype,dtype(int),1,1
+,Number of threads to use for parsing `Example` tensors into a dictionary of `Feature` tensors. Defaults to `2`.,None,nonprim_dtype,structure(dict),0,1
+,Number of threads to use for parsing `Example` tensors into a dictionary of `Feature` tensors. Defaults to `2`.,None,shape,ndim(0),1,1
+,Number of threads to use for parsing `Example` tensors into a dictionary of `Feature` tensors. Defaults to `2`.,None,validvalue,"range([0,inf))",1,1

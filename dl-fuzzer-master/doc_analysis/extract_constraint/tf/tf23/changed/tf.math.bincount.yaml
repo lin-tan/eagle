@@ -1,0 +1,77 @@
+constraints:
+  arr:
+    descp: A Tensor, RaggedTensor, or SparseTensor whose values should be counted.
+      These tensors must have a rank of 2 if axis=-1.
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+  axis:
+    default: None
+    descp: The axis to slice over. Axes at and below axis will be flattened before
+      bin counting. Currently, only 0, and -1 are supported. If None, all axes will
+      be flattened (identical to passing 0).
+    dtype:
+    - int
+    ndim:
+    - '0'
+  binary_output:
+    default: 'False'
+    descp: If True, this op will output 1 instead of the number of times a token appears
+      (equivalent to one_hot + reduce_any instead of one_hot + reduce_add). Defaults
+      to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  dtype:
+    default: tf.dtypes.int32
+    descp: If weights is None, determines the type of the output bins.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  maxlength:
+    default: None
+    descp: If given, skips values in arr that are equal or greater than maxlength,
+      ensuring that the output has length at most maxlength.
+  minlength:
+    default: None
+    descp: If given, ensures the output has length at least minlength, padding with
+      zeros at the end if necessary.
+  name:
+    default: None
+    descp: A name scope for the associated operations (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  weights:
+    default: None
+    descp: If non-None, must be the same shape as arr. For each value in arr, the
+      bin will be incremented by the corresponding weight instead of 1.
+    dtype:
+    - numeric
+    shape:
+    - shape:&arr
+exceptions:
+- InvalidArgumentError if negative values are provided as an input.
+inputs:
+  optional:
+  - weights
+  - minlength
+  - maxlength
+  - dtype
+  - name
+  - axis
+  - binary_output
+  required:
+  - arr
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/math/bincount
+outputs:
+- A vector with the same dtype as weights or the given dtype. The bin values.
+package: tensorflow
+target: bincount
+title: tf.math.bincount
+version: 2.3.0

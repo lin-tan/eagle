@@ -1,0 +1,26 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_records:
+    descp: A Tensor of type int64. number of records to read from Reader.
+  queue_handle:
+    descp: A Tensor of type mutable string. Handle to a Queue, with string work items.
+  reader_handle:
+    descp: A Tensor of type mutable string. Handle to a Reader.
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+  - queue_handle
+  - num_records
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReaderReadUpTo
+outputs:
+- A tuple of Tensor objects (keys, values).
+- keys: A Tensor of type string.
+- values: A Tensor of type string.
+package: tensorflow
+target: ReaderReadUpTo
+title: tf.raw_ops.ReaderReadUpTo
+version: 2.3.0

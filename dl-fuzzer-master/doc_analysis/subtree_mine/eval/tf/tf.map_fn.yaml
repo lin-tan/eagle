@@ -1,0 +1,13 @@
+constraints:
+  parallel_iterations:
+    default: None
+    descp: (optional) The number of iterations allowed to run in parallel. When graph
+      building, the default value is 10. While executing eagerly, the default value
+      is set to 1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: tf.map_fn

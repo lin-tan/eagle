@@ -1,0 +1,135 @@
+constraints:
+  Gram:
+    descp: array-like of shape (n_features, n_features) Gram = np.dot(X.T * X).
+    ndim:
+    - '2'
+    shape:
+    - '[n_features,n_features]'
+    structure:
+    - ndarray
+  Xy:
+    descp: array-like of shape (n_samples,) or (n_samples, n_targets) Xy = np.dot(X.T,
+      y).
+    ndim:
+    - '2'
+    shape:
+    - '[x.t,y]'
+    structure:
+    - ndarray
+  alpha_min:
+    default: '0'
+    descp: float, default=0 Minimum correlation along the path. It corresponds to
+      the regularization parameter alpha parameter in the Lasso.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  copy_Gram:
+    default: 'True'
+    descp: bool, default=True If ``False``, ``Gram`` is overwritten.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  copy_X:
+    default: 'True'
+    descp: bool, default=True If ``False``, ``X`` is overwritten.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  eps:
+    default: '2.220446049250313e-16'
+    descp: float, optional The machine-precision regularization in the computation
+      of the Cholesky diagonal factors. Increase this for very ill-conditioned systems.
+      By default, ``np.finfo(np.float).eps`` is used.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  max_iter:
+    default: '500'
+    descp: int, default=500 Maximum number of iterations to perform, set to infinity
+      for no limit.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  method:
+    default: lar
+    descp: '{''lar'', ''lasso''}, default=''lar'' Specifies the returned model. Select
+      ``''lar''`` for Least Angle Regression, ``''lasso''`` for the Lasso.'
+    dtype:
+    - string
+    enum:
+    - lar
+    - lasso
+    ndim:
+    - '0'
+  n_samples:
+    descp: int or float Equivalent size of sample.
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+  positive:
+    default: 'False'
+    descp: bool, default=False Restrict coefficients to be >= 0. This option is only
+      allowed with method 'lasso'. Note that the model coefficients will not converge
+      to the ordinary-least-squares solution for small values of alpha. Only coefficients
+      up to the smallest alpha value (``alphas_[alphas_ > 0.].min()`` when fit_path=True)
+      reached by the stepwise Lars-Lasso algorithm are typically in congruence with
+      the solution of the coordinate descent lasso_path function.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_n_iter:
+    default: 'False'
+    descp: bool, default=False Whether to return the number of iterations.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  return_path:
+    default: 'True'
+    descp: bool, default=True If ``return_path==True`` returns the entire path, else
+      returns only the last point of the path.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  verbose:
+    default: '0'
+    descp: int, default=0 Controls output verbosity.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - max_iter
+  - alpha_min
+  - method
+  - copy_X
+  - eps
+  - copy_Gram
+  - verbose
+  - return_path
+  - return_n_iter
+  - positive
+  required:
+  - Xy
+  - Gram
+  - n_samples
+link: ''
+package: sklearn
+target: lars_path_gram
+title: sklearn.linear_model.lars_path_gram
+version: 0.24.2

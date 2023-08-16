@@ -1,0 +1,97 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: structure
+
+split_word:
+    - ','
+    - '('
+    - ')'
+
+
+
+pat:
+    '^(the\s+)?(input|output)\s+(data\s+)?(array|ndarray)':
+        structure: ndarray
+
+    'store\s+output\s+to\s+an\s+existing\s+ndarray':
+        structure: ndarray
+
+    '^(first|second|gamma|beta)\s+array':
+        structure: array
+
+    '^a\s+ndarray\/symbol\s+':  # ignore symbol
+        structure: ndarray
+
+    'in\s+(\(.*?\))\s+format':
+        structure: tuple
+        value: \1
+        
+    'formatted\s+as\s+(\(.*?\))':
+        structure: tuple
+        ds_dtype:
+            - int
+        value: \1
+
+    'output\s+shape\s+(\(.*?\))':
+        structure: tuple
+        ds_dtype:
+            - int
+        value: \1
+
+    'vector\s+of\s+length\s+''(.*?)''':
+        structure: array  
+        ndim: 1
+        len: \1 
+
+    '(dictionary|dict)\s+of\s+(\w+)\s+to\s+(\w+)':
+        structure: dict
+        ds_dtype:
+            - \1
+            - \2
+
+    
+    'array\s+of\s+flat\s+indices':
+        structure: array
+        ds_dtype:
+            - int
+
+    '^the\s+index\s+array':
+        structure: array
+        ds_dtype:
+            - int
+
+    '(tuple|list|array)\s+of\s+(\w+)':
+        prereq:
+            - 'array\s+of\s+flat\s+indices'
+        structure: \1
+        ds_dtype:
+            - \2
+
+    'height\s+and\s+width:\s+(\((.*?)\))':
+        structure: tuple
+        ds_dtype:
+            - int
+        range: '[0,inf)'
+        value: \1
+
+    # for "Could be (width, height) or (size)"
+    'could\s+be\s+(\(.*?\))\s+or\s+\(.*?\)':
+        structure: tuple
+        ds_dtype:
+            - int
+        value: \1
+
+    'could\s+be\s+\(.*?\)\s+or\s+(\(.*?\))':
+        structure: tuple
+        ds_dtype:
+            - int
+        value: \1
+
+
+        
+
+

@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.where_v2
+constraints:
+  condition:
+    descp: A tf.Tensor of type bool
+  name:
+    default: None
+    descp: A name of the operation (optional).
+  x:
+    default: None
+    descp: If provided, a Tensor which is of the same type as y, and has a shape broadcastable
+      with condition and y.
+  y:
+    default: None
+    descp: If provided, a Tensor which is of the same type as y, and has a shape broadcastable
+      with condition and x.
+exceptions:
+- ValueError: When exactly one of x or y is non-None, or the shapes are not all broadcastable.
+inputs:
+  optional:
+  - x
+  - y
+  - name
+  required:
+  - condition
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/where
+outputs:
+- 'If x and y are provided: A Tensor with the same type as x and y, and shape that
+  is broadcast from condition, x, and y. Otherwise, a Tensor with shape (num_true,
+  dim_size(condition)).'
+package: tensorflow
+target: where
+title: tf.where
+version: 2.3.0

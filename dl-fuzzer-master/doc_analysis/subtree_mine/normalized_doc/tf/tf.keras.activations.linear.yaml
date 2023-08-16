@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.activations.linear
+constraints:
+  x:
+    descp: Input tensor.
+    normalized_descp:
+    - Input D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/linear
+outputs: the input unmodified.
+package: tensorflow
+target: linear
+title: tf.keras.activations.linear
+version: 2.1.0

@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.identity
+constraints:
+  input:
+    descp: A `Tensor`.
+    normalized_descp:
+    - A D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/identity
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: identity
+title: tf.identity
+version: 2.1.0

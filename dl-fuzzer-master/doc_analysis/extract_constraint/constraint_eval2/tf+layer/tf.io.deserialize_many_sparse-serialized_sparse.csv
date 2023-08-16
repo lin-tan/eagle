@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"2-D `Tensor` of type `string` of shape `[N, 3]`. The serialized and packed `SparseTensor` objects.",,prim_dtype,dtype(tf.string),,1
+,"2-D `Tensor` of type `string` of shape `[N, 3]`. The serialized and packed `SparseTensor` objects.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"2-D `Tensor` of type `string` of shape `[N, 3]`. The serialized and packed `SparseTensor` objects.",,shape,"shape([n,3]), ndim(2)",,1

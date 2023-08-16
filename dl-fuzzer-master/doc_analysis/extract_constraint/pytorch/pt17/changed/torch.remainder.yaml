@@ -1,0 +1,41 @@
+constraints:
+  input:
+    descp: the dividend
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the divisor that may be either a number or a Tensor of the same shape as
+      the dividend
+    doc_dtype:
+    - Tensor
+    - float
+    dtype:
+    - int
+    - torch.float32
+    ndim:
+    - '0'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.remainder.html#torch.remainder#torch.remainder
+package: torch
+ret_type: Tensor
+target: remainder
+title: torch.remainder
+version: 1.7.0

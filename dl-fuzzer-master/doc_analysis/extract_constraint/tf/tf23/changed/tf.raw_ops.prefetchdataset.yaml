@@ -1,0 +1,74 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64. The maximum number of elements to buffer in an
+      iterator over this dataset.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  input_dataset:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  legacy_autotune:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  slack_period:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - slack_period
+  - legacy_autotune
+  - name
+  required:
+  - input_dataset
+  - buffer_size
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PrefetchDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: PrefetchDataset
+title: tf.raw_ops.PrefetchDataset
+version: 2.3.0

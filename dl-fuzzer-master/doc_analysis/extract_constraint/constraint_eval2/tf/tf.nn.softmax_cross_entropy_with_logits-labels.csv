@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Each vector along the class dimension should hold a valid probability distribution e.g. for the case in which labels are of shape`[batch_size, num_classes]`, each row of `labels[i]` must be a valid probability distribution.",,shape,"shape([batch_size,num_classes]), ndim(2)",,1

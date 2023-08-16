@@ -1,0 +1,15 @@
+constraints:
+  '**kwargs':
+    descp: 'other keyword arguments such as: amount (int or float): quantity of parameters
+      to prune across the specified parameters. If `float`, should be between 0.0
+      and 1.0 and represent the fraction of parameters to prune. If `int`, it represents
+      the absolute number of parameters to prune.'
+    dtype:
+    - int
+    - torch.float32
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+title: torch.nn.utils.prune.global_unstructured

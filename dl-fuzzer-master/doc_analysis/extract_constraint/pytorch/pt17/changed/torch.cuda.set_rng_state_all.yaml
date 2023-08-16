@@ -1,0 +1,22 @@
+constraints:
+  new_states:
+    descp: The desired state for each device
+    doc_dtype:
+    - Iterable of torch.ByteTensor
+    dtype:
+    - torch.uint8
+    ndim:
+    - '1'
+    sig_dtype: Iterable[torch.Tensor]
+    structure:
+    - list(torch.uint8)
+inputs:
+  optional: []
+  required:
+  - new_states
+link: https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.set_rng_state_all
+package: torch
+ret_type: None
+target: set_rng_state_all
+title: torch.cuda.set_rng_state_all
+version: 1.7.0

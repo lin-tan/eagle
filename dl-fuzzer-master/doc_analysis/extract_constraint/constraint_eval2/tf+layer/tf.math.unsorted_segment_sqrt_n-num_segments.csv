@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An integer scalar `Tensor`.  The number of distinct segment IDs.,,prim_dtype,dtype(int),,1
+,An integer scalar `Tensor`.  The number of distinct segment IDs.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,An integer scalar `Tensor`.  The number of distinct segment IDs.,,shape,ndim(0),,1
+,An integer scalar `Tensor`.  The number of distinct segment IDs.,,validvalue,"range([0,inf))",,1

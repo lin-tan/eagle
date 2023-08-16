@@ -1,0 +1,22 @@
+constraints:
+  dtype:
+    descp: A tf.DType. The type of the output value.
+  handle:
+    descp: A Tensor of type string. The handle for a tensor stored in the session
+      state.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GetSessionTensor
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: GetSessionTensor
+title: tf.raw_ops.GetSessionTensor
+version: 2.3.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. An 1-D `int` Tensor. The shape of the desired output.",,prim_dtype,"dtype(int, tf.int32, tf.int64)",,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. An 1-D `int` Tensor. The shape of the desired output.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. An 1-D `int` Tensor. The shape of the desired output.",,shape,ndim(1),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. An 1-D `int` Tensor. The shape of the desired output.",,validvalue,"range([0,inf))",,1

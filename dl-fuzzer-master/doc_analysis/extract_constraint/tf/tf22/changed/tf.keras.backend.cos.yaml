@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.backend.cos
+constraints:
+  x:
+    descp: Tensor or variable.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/cos
+outputs:
+- A tensor.
+package: tensorflow
+target: cos
+title: tf.keras.backend.cos
+version: 2.2.0

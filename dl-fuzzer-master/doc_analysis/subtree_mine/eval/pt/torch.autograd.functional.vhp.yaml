@@ -1,0 +1,11 @@
+constraints:
+  inputs:
+    descp: inputs to the function `func`.
+    doc_dtype:
+    - tuple of Tensors
+    - Tensor
+    structure:
+    - tuple
+    tensor_t:
+    - torch.tensor
+title: torch.autograd.functional.vhp

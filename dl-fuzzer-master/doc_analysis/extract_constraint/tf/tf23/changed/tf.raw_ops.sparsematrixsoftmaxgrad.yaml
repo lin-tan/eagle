@@ -1,0 +1,40 @@
+constraints:
+  grad_softmax:
+    descp: A Tensor of type variant. The gradient of softmax.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  softmax:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - softmax
+  - grad_softmax
+  - type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseMatrixSoftmaxGrad
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseMatrixSoftmaxGrad
+title: tf.raw_ops.SparseMatrixSoftmaxGrad
+version: 2.3.0

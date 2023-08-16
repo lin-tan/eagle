@@ -1,0 +1,28 @@
+constraints:
+  diagonal:
+    descp: A Tensor. Must have the same type as input. Rank r when k is an integer
+      or k[0] == k[1]. Otherwise, it has rank r+1. k >= 1.
+  input:
+    descp: A Tensor. Rank r+1, where r >= 1.
+  k:
+    descp: A Tensor of type int32. Diagonal offset(s). Positive value means superdiagonal,
+      0 refers to the main diagonal, and negative value means subdiagonals. k can
+      be a single integer (for a single diagonal) or a pair of integers specifying
+      the low and high ends of a matrix band. k[0] must not be larger than k[1].
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - diagonal
+  - k
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MatrixSetDiagV2
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MatrixSetDiagV2
+title: tf.raw_ops.MatrixSetDiagV2
+version: 2.3.0

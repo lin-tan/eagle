@@ -1,0 +1,26 @@
+constraints:
+  A:
+    descp: 'the m  by n  matrix A '
+    doc_dtype:
+    - Tensor
+  input:
+    descp: 'the matrix B '
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the optional destination tensor
+    doc_dtype:
+    - tuple
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.lstsq
+package: torch
+ret_type: Tensor
+target: lstsq
+title: torch.lstsq
+version: 1.5.0

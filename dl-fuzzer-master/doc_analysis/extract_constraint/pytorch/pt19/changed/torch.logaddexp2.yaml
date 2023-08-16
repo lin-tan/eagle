@@ -1,0 +1,34 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the second input tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.logaddexp2.html#torch.logaddexp2#torch.logaddexp2
+package: torch
+ret_type: Tensor
+target: logaddexp2
+title: torch.logaddexp2
+version: 1.9.0

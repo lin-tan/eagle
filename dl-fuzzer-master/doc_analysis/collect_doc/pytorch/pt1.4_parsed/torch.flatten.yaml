@@ -1,0 +1,27 @@
+constraints:
+  end_dim:
+    default: '-1'
+    descp: the last dim to flatten
+    doc_dtype:
+    - python:int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  start_dim:
+    default: '0'
+    descp: the first dim to flatten
+    doc_dtype:
+    - python:int
+inputs:
+  optional:
+  - start_dim
+  - end_dim
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.flatten
+package: torch
+ret_type: Tensor
+target: flatten
+title: torch.flatten
+version: 1.4.0

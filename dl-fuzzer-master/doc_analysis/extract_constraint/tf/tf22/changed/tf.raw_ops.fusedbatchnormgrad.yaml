@@ -1,0 +1,108 @@
+constraints:
+  data_format:
+    default: NHWC
+    descp: 'An optional string from: "NHWC", "NCHW". Defaults to "NHWC". The data
+      format for y_backprop, x, x_backprop. Either "NHWC" (default) or "NCHW".'
+    dtype:
+    - tf.string
+    enum:
+    - NCHW
+    - NHWC
+    ndim:
+    - '0'
+  epsilon:
+    default: '0.0001'
+    descp: An optional float. Defaults to 0.0001. A small float number added to the
+      variance of x.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  is_training:
+    default: 'True'
+    descp: An optional bool. Defaults to True. A bool value to indicate the operation
+      is for training (default) or inference.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reserve_space_1:
+    descp: A Tensor. Must have the same type as y_backprop. When is_training is True,
+      a 1D Tensor for the computed batch mean to be reused in gradient computation.
+      When is_training is False, a 1D Tensor for the population mean to be reused
+      in both 1st and 2nd order gradient computation.
+    dtype:
+    - dtype:&y_backprop
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  reserve_space_2:
+    descp: A Tensor. Must have the same type as y_backprop. When is_training is True,
+      a 1D Tensor for the computed batch variance (inverted variance in the cuDNN
+      case) to be reused in gradient computation. When is_training is False, a 1D
+      Tensor for the population variance to be reused in both 1st and 2nd order gradient
+      computation.
+    dtype:
+    - dtype:&y_backprop
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  scale:
+    descp: A Tensor. Must have the same type as y_backprop. A 1D Tensor for scaling
+      factor, to scale the normalized x.
+    dtype:
+    - dtype:&y_backprop
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: A Tensor. Must have the same type as y_backprop. A 4D Tensor for input
+      data.
+    dtype:
+    - dtype:&y_backprop
+    ndim:
+    - '4'
+    tensor_t:
+    - tf.tensor
+  y_backprop:
+    descp: 'A Tensor. Must be one of the following types: float32. A 4D Tensor for
+      the gradient with respect to y.'
+    ndim:
+    - '4'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - epsilon
+  - data_format
+  - is_training
+  - name
+  required:
+  - y_backprop
+  - x
+  - scale
+  - reserve_space_1
+  - reserve_space_2
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/FusedBatchNormGrad
+outputs:
+- A tuple of Tensor objects (x_backprop, scale_backprop, offset_backprop, reserve_space_3,
+  reserve_space_4).
+- x_backprop: A Tensor. Has the same type as y_backprop.
+- scale_backprop: A Tensor. Has the same type as y_backprop.
+- offset_backprop: A Tensor. Has the same type as y_backprop.
+- reserve_space_3: A Tensor. Has the same type as y_backprop.
+- reserve_space_4: A Tensor. Has the same type as y_backprop.
+package: tensorflow
+target: FusedBatchNormGrad
+title: tf.raw_ops.FusedBatchNormGrad
+version: 2.2.0

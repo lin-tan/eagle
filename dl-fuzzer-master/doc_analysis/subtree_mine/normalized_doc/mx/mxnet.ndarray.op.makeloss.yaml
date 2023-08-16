@@ -1,0 +1,72 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input array.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  grad_scale:
+    default: _Null
+    descp: Gradient scale as a supplement to unary and binary operators
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Gradient scale as a supplement to unary and binary operators
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  normalization:
+    default: _Null
+    descp: If this is set to null, the output gradient will not be normalized. If
+      this is set to batch, the output gradient will be divided by the batch size.
+      If this is set to valid, the output gradient will be divided by the number of
+      valid input elements.
+    doc_dtype: '{''batch'', ''null'', ''valid''},optional, default=''null'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If this is set to null, the output gradient will not be normalized
+    - If this is set to batch, the output gradient will be divided by the batch size
+    - If this is set to valid, the output gradient will be divided by the number of
+      valid input elements
+    normalized_docdtype: QSTR ,optional, default QSTR
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  valid_thresh:
+    default: _Null
+    descp: clip each element in the array to 0 when it is less than `valid_thresh`.
+      This is used when `normalization` is set to `'valid'`.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - clip each element in the D_STRUCTURE to CONSTANT_NUM when it is less than QSTR
+    - This is used when PARAM is set to QSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - grad_scale
+  - valid_thresh
+  - normalization
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.MakeLoss
+package: mxnet
+target: MakeLoss
+title: mxnet.ndarray.op.MakeLoss
+version: 1.6.0

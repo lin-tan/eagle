@@ -1,0 +1,25 @@
+constraints:
+  x:
+    descp: array-like of shape (n_samples,) Training data.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y:
+    descp: array-like of shape (n_samples,) Training target.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - x
+  - y
+link: ''
+package: scikit-learn
+target: check_increasing
+title: sklearn.isotonic.check_increasing
+version: 0.24.X

@@ -1,0 +1,46 @@
+aliases:
+- tf.compat.v1.signal.hann_window
+constraints:
+  dtype:
+    default: tf.dtypes.float32
+    descp: The data type to produce. Must be a floating point type.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The data type to produce
+    - Must be a D_TYPE type
+  name:
+    default: None
+    descp: An optional name for the operation.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An optional name for the operation
+  periodic:
+    default: 'True'
+    descp: A bool `Tensor` indicating whether to generate a periodic or symmetric
+      window. Periodic windows are typically used for spectral analysis while symmetric
+      windows are typically used for digital filter design.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - A D_TYPE D_STRUCTURE indicating whether to generate a periodic or symmetric
+      window
+    - Periodic windows are typically used for spectral analysis while symmetric windows
+      are typically used for digital filter design
+  window_length:
+    descp: A scalar `Tensor` indicating the window length to generate.
+    normalized_descp:
+    - A scalar D_STRUCTURE indicating the window length to generate
+exceptions:
+- ValueError: If `dtype` is not a floating point type.
+inputs:
+  optional:
+  - periodic
+  - dtype
+  - name
+  required:
+  - window_length
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/signal/hann_window
+outputs: A `Tensor` of shape `[window_length]` of type `dtype`.
+package: tensorflow
+target: hann_window
+title: tf.signal.hann_window
+version: 2.1.0

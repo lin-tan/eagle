@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.random.experimental.set_global_generator
+constraints:
+  generator:
+    descp: the new `Generator` object.
+inputs:
+  optional: []
+  required:
+  - generator
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/random/experimental/set_global_generator
+package: tensorflow
+target: set_global_generator
+title: tf.random.experimental.set_global_generator
+version: 2.1.0

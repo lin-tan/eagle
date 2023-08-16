@@ -1,0 +1,13 @@
+constraints:
+  p:
+    default: _Null
+    descp: Fraction of the input that gets dropped out during training time.
+    doc_dtype:
+    - float
+    - optional
+    - default=0.5
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.Dropout

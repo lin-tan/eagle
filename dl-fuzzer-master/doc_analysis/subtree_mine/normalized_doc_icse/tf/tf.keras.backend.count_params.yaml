@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.backend.count_params
+constraints:
+  x:
+    descp: Variable or tensor.
+    normalized_descp:
+    - Variable or D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/count_params
+outputs: Integer, the number of scalars in `x`.
+package: tensorflow
+target: count_params
+title: tf.keras.backend.count_params
+version: 2.1.0

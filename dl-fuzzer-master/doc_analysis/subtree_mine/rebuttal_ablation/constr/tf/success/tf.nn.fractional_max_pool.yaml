@@ -1,0 +1,180 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  overlapping:
+    default: 'False'
+    descp: An optional `bool`.  Defaults to `False`.  When set to `True`, it means
+      when pooling, the values at the boundary of adjacent pooling cells are used
+      by both cells. For example:`index  0  1  2  3  4``value  20 5  16 3  7`If the
+      pooling sequence is [0, 2, 4], then 16, at index 2 will be used twice.  The
+      result would be [20, 16] for fractional max pooling.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - 16]
+    - '[20'
+    - bool
+    ndim:
+    - '0'
+    - '1'
+    - '16'
+    - '2'
+    - '20'
+    - '3'
+    - '4'
+    - '5'
+    - '7'
+    range:
+    - '[0,1]'
+    - '[0,2,4]'
+    - '[0,inf)'
+    - '[20,16]'
+    shape:
+    - '[0,2,4]'
+    - '[1]'
+    - '[20,16]'
+    - '[2]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  pooling_ratio:
+    descp: An int or list of `ints` that has length `1`, `2` or `4`. Pooling ratio
+      for each dimension of `value`, currently only supports row and col dimension
+      and should be >= 1.0. For example, a valid pooling ratio looks like [1.0, 1.44,
+      1.73, 1.0]. The first and last elements must be 1.0 because we don't allow pooling
+      on batch and channels dimensions.  1.44 and 1.73 are pooling ratio on height
+      and width dimensions respectively.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - '4'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&value'
+    - '[1]'
+    - '[2]'
+    - '[4]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  pseudo_random:
+    default: 'False'
+    descp: An optional `bool`.  Defaults to `False`. When set to `True`, generates
+      the pooling sequence in a pseudorandom fashion, otherwise, in a random fashion.
+      Check paper Benjamin Graham, Fractional Max-Pooling for difference between pseudorandom
+      and random.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    structure:
+    - list
+  seed:
+    default: '0'
+    descp: An optional `int`.  Defaults to `0`.  If set to be non-zero, the random
+      number generator is seeded by the given seed.  Otherwise it is seeded by a random
+      seed.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[0]'
+    - '[1]'
+  value:
+    descp: A `Tensor`. 4-D with shape `[batch, height, width, channels]`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    - '>=4'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[4]'
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - pseudo_random
+  - overlapping
+  - seed
+  - name
+  required:
+  - value
+  - pooling_ratio
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/fractional_max_pool
+outputs: 'A tuple of `Tensor` objects (`output`, `row_pooling_sequence`,`col_pooling_sequence`).   output:
+  Output `Tensor` after fractional max pooling.  Has the same type as     `value`.   row_pooling_sequence:
+  A `Tensor` of type `int64`.   col_pooling_sequence: A `Tensor` of type `int64`.'
+package: tensorflow
+target: fractional_max_pool
+title: tf.nn.fractional_max_pool
+version: 2.1.0

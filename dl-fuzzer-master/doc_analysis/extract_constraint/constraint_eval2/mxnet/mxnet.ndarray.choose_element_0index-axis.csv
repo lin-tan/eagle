@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, None, optional, default='-1'","int or None. The axis to picking the elements. Negative values means indexing from right to left. If is None, the elements in the index w.r.t the flattened input will be picked.",_Null,prim_dtype,dtype(int),,1
+"int, None, optional, default='-1'","int or None. The axis to picking the elements. Negative values means indexing from right to left. If is None, the elements in the index w.r.t the flattened input will be picked.",_Null,shape,ndim(0),,1

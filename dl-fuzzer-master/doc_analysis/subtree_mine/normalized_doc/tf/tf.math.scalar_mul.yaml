@@ -1,0 +1,32 @@
+aliases:
+- tf.scalar_mul
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  scalar:
+    descp: A 0-D scalar `Tensor`. Must have known shape.
+    normalized_descp:
+    - A CONSTANT_NUM-D scalar D_STRUCTURE
+    - Must have known shape
+  x:
+    descp: A `Tensor` or `IndexedSlices` to be scaled.
+    normalized_descp:
+    - A D_STRUCTURE or QSTR to be scaled
+exceptions:
+- ValueError: if scalar is not a 0-D `scalar`.
+inputs:
+  optional:
+  - name
+  required:
+  - scalar
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/scalar_mul
+outputs: '`scalar * x` of the same type (`Tensor` or `IndexedSlices`) as `x`.'
+package: tensorflow
+target: scalar_mul
+title: tf.math.scalar_mul
+version: 2.1.0

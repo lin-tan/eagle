@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+float,residual tolerance for stopping criterion. Default is feps ** 0.5 where feps is smallest non-zero floating-point number of the given input tensor A data type.,None,prim_dtype,dtype(torch.float32),,1
+float,residual tolerance for stopping criterion. Default is feps ** 0.5 where feps is smallest non-zero floating-point number of the given input tensor A data type.,None,nonprim_dtype,tensor_t(torch.tensor),,1

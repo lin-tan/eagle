@@ -1,0 +1,49 @@
+constraints:
+  input:
+    descp: A Tensor of type string. 1-D string Tensor, the strings to split.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  maxsplit:
+    default: '-1'
+    descp: An optional int. Defaults to -1. An int. If maxsplit > 0, limit of the
+      split of the result.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sep:
+    descp: A Tensor of type string. 0-D string Tensor, the delimiter character.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - maxsplit
+  - name
+  required:
+  - input
+  - sep
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StringSplitV2
+outputs:
+- A tuple of Tensor objects (indices, values, shape).
+- indices: A Tensor of type int64.
+- values: A Tensor of type string.
+- shape: A Tensor of type int64.
+package: tensorflow
+target: StringSplitV2
+title: tf.raw_ops.StringSplitV2
+version: 2.3.0

@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"""warn"", 0 or 1, default=""warn"" Sets the value to return when there is a zero division. If set to ""warn"", this acts as 0, but warnings are also raised.",warn,prim_dtype,dtype(string),,1

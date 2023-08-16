@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: A Tensor of type variant. A CSRSparseMatrix.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseMatrixOrderingAMD
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: SparseMatrixOrderingAMD
+title: tf.raw_ops.SparseMatrixOrderingAMD
+version: 2.2.0

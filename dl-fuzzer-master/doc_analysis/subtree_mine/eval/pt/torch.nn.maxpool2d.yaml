@@ -1,0 +1,9 @@
+constraints:
+  padding:
+    default: '0'
+    descp: implicit zero padding to be added on both sides
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.nn.MaxPool2d

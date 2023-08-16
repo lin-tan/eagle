@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(optional) The `dtype` of the input, state, and output tensors. Required and used <strong>iff</strong> `variational_recurrent = True`.",None,prim_dtype,dtype(tf.dtype),,1
+,"(optional) The `dtype` of the input, state, and output tensors. Required and used <strong>iff</strong> `variational_recurrent = True`.",None,shape,ndim(0),,1

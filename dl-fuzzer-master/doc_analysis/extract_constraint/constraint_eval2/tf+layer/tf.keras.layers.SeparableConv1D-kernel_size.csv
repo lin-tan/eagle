@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A single integer specifying the spatial dimensions of the filters.,,prim_dtype,dtype(int),,1
+,A single integer specifying the spatial dimensions of the filters.,,shape,ndim(0),,1
+,A single integer specifying the spatial dimensions of the filters.,,validvalue,"range([0,inf))",,1

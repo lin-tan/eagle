@@ -1,0 +1,32 @@
+constraints:
+  args:
+    default: None
+    descp: the argument tuple for the `func` invocation.
+    doc_dtype:
+    - tuple
+  func:
+    descp: builtin functions (like `torch.add()`).
+    doc_dtype:
+    - callable
+  kwargs:
+    default: None
+    descp: is a dictionary of keyword arguments for the `func` invocation.
+    doc_dtype:
+    - dict
+  to:
+    descp: id or name of the destination worker.
+    doc_dtype:
+    - str
+    - WorkerInfo
+inputs:
+  optional:
+  - args
+  - kwargs
+  required:
+  - to
+  - func
+link: https://pytorch.org/docs/1.4.0/rpc.html#torch.distributed.rpc.remote
+package: torch
+target: remote
+title: torch.distributed.rpc.remote
+version: 1.4.0

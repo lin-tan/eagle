@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An integer or scalar `int32` `Tensor`. The dimension along which to split. Must be in the range `[-rank(value), rank(value))`. Defaults to 0.",0,prim_dtype,"dtype(int, tf.int32)",,1
+,"An integer or scalar `int32` `Tensor`. The dimension along which to split. Must be in the range `[-rank(value), rank(value))`. Defaults to 0.",0,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An integer or scalar `int32` `Tensor`. The dimension along which to split. Must be in the range `[-rank(value), rank(value))`. Defaults to 0.",0,shape,ndim(0),,1
+,"An integer or scalar `int32` `Tensor`. The dimension along which to split. Must be in the range `[-rank(value), rank(value))`. Defaults to 0.",0,validvalue,"range([-ndim:&value,ndim:&value))",,1

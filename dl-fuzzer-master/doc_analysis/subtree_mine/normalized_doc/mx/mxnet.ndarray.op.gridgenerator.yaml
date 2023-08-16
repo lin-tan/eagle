@@ -1,0 +1,62 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to the function.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the function
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  target_shape:
+    default: _Null
+    descp: Specifies the output shape (H, W). This is required if transformation type
+      is affine. If transformation type is warp, this parameter is ignored.
+    doc_dtype: Shape(tuple), optional, default=[0,0]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Specifies the output shape BSTR
+    - This is required if transformation type is affine
+    - If transformation type is warp, this parameter is ignored
+    normalized_docdtype: Shape BSTR, optional, default BSTR
+  transform_type:
+    default: _Null
+    descp: The type of transformation. For affine, input data should be an affine
+      matrix of size (batch, 6). For warp, input data should be an optical flow of
+      size (batch, 2, h, w).
+    doc_dtype: '{''affine'', ''warp''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The type of transformation
+    - For affine, input PARAM should be an affine matrix of size BSTR
+    - For warp, input PARAM should be an optical flow of size BSTR
+    normalized_docdtype: QSTR , required
+inputs:
+  optional:
+  - data
+  - transform_type
+  - target_shape
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.GridGenerator
+package: mxnet
+target: GridGenerator
+title: mxnet.ndarray.op.GridGenerator
+version: 1.6.0

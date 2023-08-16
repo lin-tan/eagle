@@ -1,0 +1,72 @@
+constraints:
+  data_format:
+    default: None
+    descp: The data format for input. Either "NHWC" (default) or "NCHW".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The data format for PARAM
+    - Either QSTR BSTR or QSTR
+  depthwise_filter:
+    descp: 4-D `Tensor` with shape `[filter_height, filter_width, in_channels, channel_multiplier]`.
+      Contains `in_channels` convolutional filters of depth 1.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE with shape BSTR
+    - Contains QSTR convolutional filters of depth CONSTANT_NUM
+  dilations:
+    default: None
+    descp: 1-D of size 2. The dilation rate in which we sample input values across
+      the `height` and `width` dimensions in atrous convolution. If it is greater
+      than 1, then all values of strides must be 1.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - CONSTANT_NUM D of size CONSTANT_NUM
+    - The dilation rate in which we sample PARAM values across the QSTR dimensions
+      in atrous convolution
+    - If it is greater than CONSTANT_NUM then all values of PARAM must be CONSTANT_NUM
+  input:
+    descp: 4-D `Tensor` with shape according to `data_format`.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE with shape according to PARAM
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  padding:
+    descp: A string, either `'VALID'` or `'SAME'`.  The padding algorithm. See the
+      "returns" section of `tf.nn.convolution` for details.
+    normalized_descp:
+    - A D_TYPE either QSTR
+    - The padding algorithm
+    - See the QSTR section of tf nn convolution for details
+  pointwise_filter:
+    descp: 4-D `Tensor` with shape `[1, 1, channel_multiplier * in_channels, out_channels]`.  Pointwise
+      filter to mix channels after`depthwise_filter` has convolved spatially.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE with shape BSTR
+    - Pointwise filter to mix channels after PARAM has convolved spatially
+  strides:
+    descp: 1-D of size 4.  The strides for the depthwise convolution for each dimension
+      of `input`.
+    normalized_descp:
+    - CONSTANT_NUM D of size CONSTANT_NUM
+    - The strides for the depthwise convolution for each dimension of PARAM
+inputs:
+  optional:
+  - data_format
+  - dilations
+  - name
+  required:
+  - input
+  - depthwise_filter
+  - pointwise_filter
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/separable_conv2d
+outputs: A 4-D `Tensor` with shape according to 'data_format'. For   example, with
+  data_format="NHWC", shape is [batch, out_height,   out_width, out_channels].
+package: tensorflow
+target: separable_conv2d
+title: tf.nn.separable_conv2d
+version: 2.1.0

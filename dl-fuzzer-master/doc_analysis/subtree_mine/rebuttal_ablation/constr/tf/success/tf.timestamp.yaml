@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.timestamp
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/timestamp
+outputs: A `Tensor` of type `float64`.
+package: tensorflow
+target: timestamp
+title: tf.timestamp
+version: 2.1.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A float representing the threshold for deciding whether boxes overlap too much with respect to IOU.,0.5,prim_dtype,"dtype(float, tf.bool)",0,1
+,A float representing the threshold for deciding whether boxes overlap too much with respect to IOU.,0.5,shape,ndim(0),1,1
+,A float representing the threshold for deciding whether boxes overlap too much with respect to IOU.,0.5,prim_dtype,"dtype(float)",1,0

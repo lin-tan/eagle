@@ -1,0 +1,86 @@
+constraints:
+  build_directory:
+    default: None
+    descp: optional path to use as build workspace.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional path to use as build workspace
+  extra_cflags:
+    default: None
+    descp: optional list of compiler flags to forward to the build.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional D_STRUCTURE of compiler flags to forward to the build
+  extra_cuda_cflags:
+    default: None
+    descp: optional list of compiler flags to forward to nvcc when building CUDA sources.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional D_STRUCTURE of compiler flags to forward to nvcc when building CUDA
+      PARAM
+  extra_include_paths:
+    default: None
+    descp: optional list of include directories to forward to the build.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional D_STRUCTURE of include directories to forward to the build
+  extra_ldflags:
+    default: None
+    descp: optional list of linker flags to forward to the build.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional D_STRUCTURE of linker flags to forward to the build
+  is_python_module:
+    default: 'True'
+    descp: If `True` (default), imports the produced shared library as a Python module.
+      If `False`, loads it into the process as a plain dynamic library.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL BSTR, imports the produced shared library as a Python module
+    - If CONSTANT_BOOL, loads it into the process as a plain dynamic library
+  name:
+    descp: The name of the extension to build. This MUST be the same as the name of
+      the pybind11 module!
+    normalized_descp:
+    - The name of the extension to build
+    - This MUST be the same as the name of the pybind11 module
+  sources:
+    descp: A list of relative or absolute paths to C++ source files.
+    normalized_descp:
+    - A D_STRUCTURE of relative or absolute paths to C source files
+  verbose:
+    default: 'False'
+    descp: If `True`, turns on verbose logging of load steps.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, turns on verbose logging of load steps
+  with_cuda:
+    default: None
+    descp: Determines whether CUDA headers and libraries are added to the build. If
+      set to `None` (default), this value is automatically determined based on the
+      existence of `.cu` or `.cuh` in `sources`. Set it to True` to force CUDA headers
+      and libraries to be included.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Determines whether CUDA headers and libraries are added to the build
+    - If set to QSTR BSTR, this value is automatically determined based on the existence
+      of cu QSTR cuh in PARAM
+    - Set it to CONSTANT_BOOL to force CUDA headers and libraries to be included
+inputs:
+  optional:
+  - extra_cflags
+  - extra_cuda_cflags
+  - extra_ldflags
+  - extra_include_paths
+  - build_directory
+  - verbose
+  - with_cuda
+  - is_python_module
+  required:
+  - name
+  - sources
+link: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.load
+package: torch
+target: load
+title: torch.utils.cpp_extension.load
+version: 1.5.0

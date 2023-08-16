@@ -1,0 +1,101 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype: '`torch.device`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired device of returned D_STRUCTURE
+    - Default if QSTR , uses the current device for the default D_STRUCTURE type see
+      torch set_default_tensor_type
+    - QSTR will be the CPU for CPU D_STRUCTURE types and the current CUDA device for
+      CUDA D_STRUCTURE types
+    normalized_docdtype: torch device , optional
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`). If dtype is not given, infer
+      the data type from the other input arguments. If any of start, end, or stop
+      are floating-point, the dtype is inferred to be the default dtype, see `get_default_dtype()`.
+      Otherwise, the dtype is inferred to be torch.int64.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Default if QSTR , uses a global default see torch set_default_tensor_type
+    - If dtype is not given, infer the data type from the other input arguments
+    - If any of PARAM, PARAM, or stop are D_TYPE, the dtype is inferred to be the
+      default dtype, see get_default_dtype
+    - Otherwise, the dtype is inferred to be D_TYPE
+    normalized_docdtype: D_TYPE, optional
+  end:
+    descp: the ending value for the set of points
+    doc_dtype: Number
+    normalized_descp:
+    - the ending value for the set of points
+    normalized_docdtype: ONE_WORD Number
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned Tensor. Default: `torch.strided`.'
+    doc_dtype: '`torch.layout`, optional'
+    normalized_default: torch strided
+    normalized_descp:
+    - the desired layout of returned D_STRUCTURE
+    - Default torch strided
+    normalized_docdtype: torch layout , optional
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If autograd should record operations on the returned D_STRUCTURE
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  start:
+    default: '0'
+    descp: 'the starting value for the set of points. Default: `0`.'
+    doc_dtype: Number
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the starting value for the set of points
+    - Default CONSTANT_NUM
+    normalized_docdtype: ONE_WORD Number
+  step:
+    default: '1'
+    descp: 'the gap between each pair of adjacent points. Default: `1`.'
+    doc_dtype: Number
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the gap between each pair of adjacent points
+    - Default CONSTANT_NUM
+    normalized_docdtype: ONE_WORD Number
+inputs:
+  optional:
+  - start
+  - step
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - end
+link: https://pytorch.org/docs/stable/torch.html#torch.arange
+package: torch
+ret_type: Tensor
+target: arange
+title: torch.arange
+version: 1.5.0

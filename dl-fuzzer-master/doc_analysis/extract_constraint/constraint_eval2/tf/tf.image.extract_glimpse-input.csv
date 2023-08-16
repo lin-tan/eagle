@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of type `float32`. A 4-D float tensor of shape`[batch_size, height, width, channels]`.",,prim_dtype,"dtype(float, tf.float32)",,1
+,"A `Tensor` of type `float32`. A 4-D float tensor of shape`[batch_size, height, width, channels]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor` of type `float32`. A 4-D float tensor of shape`[batch_size, height, width, channels]`.",,shape,"shape([batch_size,height,width,channels]), ndim(4)",,1

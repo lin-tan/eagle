@@ -1,0 +1,10 @@
+constraints:
+  level:
+    descp: int, the verbosity level; larger values specify increased verbosity; 0
+      means no logging. When reporting bugs, it is recommended to set this value to
+      a larger number, like 10.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.autograph.set_verbosity

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","Pad for pooling: (y, x) or (d, y, x). Defaults to no padding.",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","Pad for pooling: (y, x) or (d, y, x). Defaults to no padding.",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[]","Pad for pooling: (y, x) or (d, y, x). Defaults to no padding.",_Null,shape,"shape([d,y,x], [y,x]), ndim(2, 3)",,1

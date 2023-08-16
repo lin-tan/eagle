@@ -1,0 +1,17 @@
+constraints:
+  name:
+    default: None
+    descp: ''
+  p:
+    default: _Null
+    descp: drop rate of the dropout on the outputs of each RNN layer, except the last
+      layer.
+    doc_dtype:
+    - float
+    - optional
+    - default=0
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.RNN

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Limit to the file path included in the printed stack trace. Applicable only to ops in `tf.function`s (graphs).,50,prim_dtype,dtype(int),,1
+,Limit to the file path included in the printed stack trace. Applicable only to ops in `tf.function`s (graphs).,50,shape,ndim(0),,1

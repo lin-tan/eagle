@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.io.write_graph
+- tf.compat.v1.train.write_graph
+constraints:
+  as_text:
+    default: 'True'
+    descp: If `True`, writes the graph as an ASCII proto.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL writes the graph as an ASCII proto
+  graph_or_graph_def:
+    descp: A `Graph` or a `GraphDef` protocol buffer.
+    normalized_descp:
+    - A QSTR protocol buffer
+  logdir:
+    descp: Directory where to write the graph. This can refer to remote filesystems,
+      such as Google Cloud Storage (GCS).
+    normalized_descp:
+    - Directory where to write the graph
+    - This can refer to remote filesystems such as Google Cloud Storage BSTR
+  name:
+    descp: Filename for the graph.
+    normalized_descp:
+    - Filename for the graph
+inputs:
+  optional:
+  - as_text
+  required:
+  - graph_or_graph_def
+  - logdir
+  - name
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/write_graph
+outputs: The path of the output proto file.
+package: tensorflow
+target: write_graph
+title: tf.io.write_graph
+version: 2.1.0

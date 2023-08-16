@@ -1,0 +1,22 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: bool, half, float32, float64,
+      int8, int16, int32, int64. Values to compare against threshold and bitpack.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  threshold:
+    descp: A Tensor. Must have the same type as input. Threshold to compare against.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - threshold
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CompareAndBitpack
+outputs:
+- A Tensor of type uint8.
+package: tensorflow
+target: CompareAndBitpack
+title: tf.raw_ops.CompareAndBitpack
+version: 2.2.0

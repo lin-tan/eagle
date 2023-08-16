@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.Hashing
+constraints:
+  '**kwargs':
+    descp: Keyword arguments to construct a layer.
+  name:
+    default: None
+    descp: Name to give to the layer.
+  num_bins:
+    descp: Number of hash bins.
+  salt:
+    default: None
+    descp: A single unsigned integer or None. If passed, the hash function used will
+      be SipHash64, with these values used as an additional input (known as a "salt"
+      in cryptography). These should be non-zero. Defaults to None (in that case,
+      the FarmHash64 hash function is used). It also supports tuple/list of 2 unsigned
+      integer numbers, see reference paper for details.
+inputs:
+  optional:
+  - salt
+  - name
+  required:
+  - num_bins
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Hashing
+package: tensorflow
+target: Hashing
+title: tf.keras.layers.experimental.preprocessing.Hashing
+version: 2.3.0

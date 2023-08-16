@@ -1,0 +1,33 @@
+aliases:
+- tf.compat.v1.keras.backend.spatial_3d_padding
+constraints:
+  data_format:
+    default: None
+    descp: One of `channels_last` or `channels_first`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - One of QSTR
+  padding:
+    default: ((1, 1), (1, 1), (1, 1))
+    descp: Tuple of 3 tuples, padding pattern.
+    normalized_default: DEFAULT BSTR
+    normalized_descp:
+    - D_STRUCTURE of CONSTANT_NUM tuples, padding pattern
+  x:
+    descp: Tensor or variable.
+    normalized_descp:
+    - D_STRUCTURE or variable
+exceptions:
+- ValueError: if `data_format` is neither`channels_last` or `channels_first`.
+inputs:
+  optional:
+  - padding
+  - data_format
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/spatial_3d_padding
+outputs: A padded 5D tensor.
+package: tensorflow
+target: spatial_3d_padding
+title: tf.keras.backend.spatial_3d_padding
+version: 2.1.0

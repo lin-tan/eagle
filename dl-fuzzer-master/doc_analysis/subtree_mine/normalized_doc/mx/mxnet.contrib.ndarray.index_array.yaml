@@ -1,0 +1,47 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axes:
+    default: _Null
+    descp: The axes to include in the index array. Supports negative values.
+    doc_dtype: Shape or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axes to include in the index D_STRUCTURE
+    - Supports negative values
+    normalized_docdtype: Shape or None, optional, default None
+  data:
+    default: None
+    descp: Input data
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - axes
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.index_array
+package: mxnet
+target: index_array
+title: mxnet.contrib.ndarray.index_array
+version: 1.6.0

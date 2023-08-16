@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.t
+package: torch
+ret_type: Tensor
+target: t
+title: torch.t
+version: 1.5.0

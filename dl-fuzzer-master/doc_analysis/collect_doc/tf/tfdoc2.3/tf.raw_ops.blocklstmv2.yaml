@@ -1,0 +1,63 @@
+constraints:
+  b:
+    descp: A Tensor. Must have the same type as x. The bias vector.
+  cell_clip:
+    default: '0'
+    descp: An optional float. Defaults to 0. Value to clip the 'cs' value to.
+  cs_prev:
+    descp: A Tensor. Must have the same type as x. Value of the initial cell state.
+  h_prev:
+    descp: A Tensor. Must have the same type as x. Initial output of cell (to be used
+      for peephole).
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seq_len_max:
+    descp: A Tensor of type int64. Maximum time length actually used by this input.
+      Outputs are padded with zeros beyond this length.
+  use_peephole:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether to use peephole weights.
+  w:
+    descp: A Tensor. Must have the same type as x. The weight matrix.
+  wcf:
+    descp: A Tensor. Must have the same type as x. The weight matrix for forget gate
+      peephole connection.
+  wci:
+    descp: A Tensor. Must have the same type as x. The weight matrix for input gate
+      peephole connection.
+  wco:
+    descp: A Tensor. Must have the same type as x. The weight matrix for output gate
+      peephole connection.
+  x:
+    descp: 'A Tensor. Must be one of the following types: half, float32. The sequence
+      input to the LSTM, shape (timelen, batch_size, num_inputs).'
+inputs:
+  optional:
+  - cell_clip
+  - use_peephole
+  - name
+  required:
+  - seq_len_max
+  - x
+  - cs_prev
+  - h_prev
+  - w
+  - wci
+  - wcf
+  - wco
+  - b
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BlockLSTMV2
+outputs:
+- A tuple of Tensor objects (i, cs, f, o, ci, co, h).
+- i: A Tensor. Has the same type as x.
+- cs: A Tensor. Has the same type as x.
+- f: A Tensor. Has the same type as x.
+- o: A Tensor. Has the same type as x.
+- ci: A Tensor. Has the same type as x.
+- co: A Tensor. Has the same type as x.
+- h: A Tensor. Has the same type as x.
+package: tensorflow
+target: BlockLSTMV2
+title: tf.raw_ops.BlockLSTMV2
+version: 2.3.0

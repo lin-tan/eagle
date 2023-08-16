@@ -1,0 +1,452 @@
+descp_diff:
+- filename: tf.random.stateless_truncated_normal.yaml
+  param: seed
+- filename: tf.nn.embedding_lookup.yaml
+  param: params
+- filename: tf.raw_ops.loadtpuembeddingproximaladagradparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingproximaladagradparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.keras.activations.serialize.yaml
+  param: activation
+- filename: tf.raw_ops.loadtpuembeddingmomentumparameters.yaml
+  param: table_id
+- filename: tf.math.bincount.yaml
+  param: arr
+- filename: tf.batch_to_space.yaml
+  param: name
+- filename: tf.batch_to_space.yaml
+  param: crops
+- filename: tf.raw_ops.loadtpuembeddingmdladagradlightparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.loadtpuembeddingrmspropparameters.yaml
+  param: table_id
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: iou_threshold
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: pad_to_max_output_size
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: boxes
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: scores
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: name
+- filename: tf.image.non_max_suppression_padded.yaml
+  param: score_threshold
+- filename: tf.nn.conv2d.yaml
+  param: data_format
+- filename: tf.nn.conv2d.yaml
+  param: input
+- filename: tf.keras.activations.elu.yaml
+  param: alpha
+- filename: tf.raw_ops.retrievetpuembeddingcenteredrmspropparameters.yaml
+  param: table_id
+- filename: tf.random.stateless_gamma.yaml
+  param: seed
+- filename: tf.raw_ops.loadtpuembeddingadadeltaparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.keras.layers.experimental.syncbatchnormalization.yaml
+  param: renorm
+- filename: tf.random.stateless_uniform.yaml
+  param: minval
+- filename: tf.random.stateless_uniform.yaml
+  param: maxval
+- filename: tf.random.stateless_uniform.yaml
+  param: seed
+- filename: tf.test.compute_gradient.yaml
+  param: x
+- filename: tf.raw_ops.retrievetpuembeddingstochasticgradientdescentparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.expint.yaml
+  param: x
+- filename: tf.math.reduce_std.yaml
+  param: input_tensor
+- filename: tf.keras.utils.to_categorical.yaml
+  param: num_classes
+- filename: tf.function.yaml
+  param: experimental_implements
+- filename: tf.nn.depthwise_conv2d_backprop_input.yaml
+  param: padding
+- filename: tf.raw_ops.retrievetpuembeddingftrlparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.sparsesegmentsqrtn.yaml
+  param: segment_ids
+- filename: tf.nn.embedding_lookup_sparse.yaml
+  param: params
+- filename: tf.raw_ops.sparsesegmentmeangrad.yaml
+  param: segment_ids
+- filename: tf.random.stateless_normal.yaml
+  param: seed
+- filename: tf.raw_ops.loadtpuembeddingadamparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingadadeltaparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingrmspropparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingadagradparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.loadtpuembeddingadamparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.keras.utils.get_file.yaml
+  param: cache_dir
+- filename: tf.raw_ops.loadtpuembeddingadagradparameters.yaml
+  param: table_id
+- filename: tf.map_fn.yaml
+  param: back_prop
+- filename: tf.map_fn.yaml
+  param: elems
+- filename: tf.map_fn.yaml
+  param: fn
+- filename: tf.map_fn.yaml
+  param: dtype
+- filename: tf.raw_ops.loadtpuembeddingproximaladagradparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.keras.losses.categorical_hinge.yaml
+  param: y_true
+- filename: tf.raw_ops.retrievetpuembeddingproximaladagradparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.loadtpuembeddingadagradparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.sparsesegmentsqrtnwithnumsegments.yaml
+  param: segment_ids
+- filename: tf.nn.safe_embedding_lookup_sparse.yaml
+  param: default_id
+- filename: tf.nn.safe_embedding_lookup_sparse.yaml
+  param: embedding_weights
+- filename: tf.nn.convolution.yaml
+  param: dilations
+- filename: tf.nn.convolution.yaml
+  param: filters
+- filename: tf.raw_ops.retrievetpuembeddingmomentumparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.keras.backend.moving_average_update.yaml
+  param: x
+- filename: tf.keras.backend.moving_average_update.yaml
+  param: value
+- filename: tf.keras.layers.conv3d.yaml
+  param: data_format
+- filename: tf.raw_ops.loadtpuembeddingftrlparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.nn.depthwise_conv2d_backprop_filter.yaml
+  param: padding
+- filename: tf.nn.depthwise_conv2d.yaml
+  param: padding
+- filename: tf.raw_ops.spence.yaml
+  param: x
+- filename: tf.raw_ops.retrievetpuembeddingadamparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.loadtpuembeddingftrlparameters.yaml
+  param: table_id
+- filename: tf.debugging.assert_shapes.yaml
+  param: shapes
+- filename: tf.keras.layers.batchnormalization.yaml
+  param: renorm
+- filename: tf.raw_ops.loadtpuembeddingstochasticgradientdescentparameters.yaml
+  param: table_id
+- filename: tf.ragged.constant.yaml
+  param: ragged_rank
+- filename: tf.ragged.constant.yaml
+  param: inner_shape
+- filename: tf.ragged.constant.yaml
+  param: name
+- filename: tf.ragged.constant.yaml
+  param: row_splits_dtype
+- filename: tf.debugging.experimental.enable_dump_debug_info.yaml
+  param: tensor_debug_mode
+- filename: tf.raw_ops.retrievetpuembeddingftrlparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.nn.separable_conv2d.yaml
+  param: padding
+- filename: tf.raw_ops.fresnelcos.yaml
+  param: x
+- filename: tf.raw_ops.loadtpuembeddingadadeltaparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingadagradparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.sparsesegmentsum.yaml
+  param: segment_ids
+- filename: tf.random.uniform.yaml
+  param: minval
+- filename: tf.random.uniform.yaml
+  param: maxval
+- filename: tf.raw_ops.sparsesegmentsqrtngrad.yaml
+  param: segment_ids
+- filename: tf.keras.input.yaml
+  param: sparse
+- filename: tf.keras.input.yaml
+  param: ragged
+- filename: tf.raw_ops.retrievetpuembeddingadamparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.sparsesegmentsumwithnumsegments.yaml
+  param: segment_ids
+- filename: tf.nn.conv1d.yaml
+  param: data_format
+- filename: tf.nn.conv1d.yaml
+  param: input
+- filename: tf.nn.conv1d.yaml
+  param: filters
+- filename: tf.random.stateless_poisson.yaml
+  param: seed
+- filename: tf.math.reduce_variance.yaml
+  param: input_tensor
+- filename: tf.random.stateless_categorical.yaml
+  param: seed
+- filename: tf.raw_ops.sparsesegmentmeanwithnumsegments.yaml
+  param: segment_ids
+- filename: tf.raw_ops.retrievetpuembeddingmdladagradlightparameters.yaml
+  param: table_id
+- filename: tf.math.bessel_i0e.yaml
+  param: x
+- filename: tf.raw_ops.retrievetpuembeddingrmspropparameters.yaml
+  param: table_id
+- filename: tf.clip_by_norm.yaml
+  param: t
+- filename: tf.clip_by_norm.yaml
+  param: clip_norm
+- filename: tf.raw_ops.loadtpuembeddingmomentumparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.math.bessel_i1e.yaml
+  param: x
+- filename: tf.raw_ops.fresnelsin.yaml
+  param: x
+- filename: tf.raw_ops.dawsn.yaml
+  param: x
+- filename: tf.raw_ops.loadtpuembeddingrmspropparametersgradaccumdebug.yaml
+  param: table_id
+- filename: tf.raw_ops.retrievetpuembeddingmomentumparameters.yaml
+  param: table_id
+- filename: tf.raw_ops.sparsesegmentmean.yaml
+  param: segment_ids
+- filename: tf.raw_ops.loadtpuembeddingcenteredrmspropparameters.yaml
+  param: table_id
+- filename: tf.random.stateless_binomial.yaml
+  param: seed
+- filename: tf.raw_ops.retrievetpuembeddingadadeltaparameters.yaml
+  param: table_id
+param_diff:
+- filename: tf.raw_ops.tpureplicatedinput.yaml
+  param:
+  - is_packed
+- filename: tf.raw_ops.resourceapplyftrl.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.raw_ops.collectivebcastrecv.yaml
+  param:
+  - timeout_seconds
+- filename: tf.raw_ops.applyftrl.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.math.bincount.yaml
+  param:
+  - axis
+  - binary_output
+- filename: tf.image.non_max_suppression_padded.yaml
+  param:
+  - canonicalized_coordinates
+  - tile_size
+  - sorted_input
+- filename: tf.raw_ops.varhandleop.yaml
+  param:
+  - allowed_devices
+- filename: tf.raw_ops.depthwiseconv2dnative.yaml
+  param:
+  - explicit_paddings
+- filename: tf.profiler.experimental.client.trace.yaml
+  param:
+  - options
+- filename: tf.raw_ops.sparseapplyftrlv2.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.keras.models.load_model.yaml
+  param:
+  - options
+- filename: tf.saved_model.load.yaml
+  param:
+  - options
+- filename: tf.keras.layers.conv2d.yaml
+  param:
+  - groups
+- filename: tf.sparse.cross.yaml
+  param:
+  - separator
+- filename: tf.linspace.yaml
+  param:
+  - axis
+- filename: tf.profiler.experimental.start.yaml
+  param:
+  - options
+- filename: tf.raw_ops.resourcesparseapplyftrlv2.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.map_fn.yaml
+  param:
+  - fn_output_signature
+- filename: tf.vectorized_map.yaml
+  param:
+  - fallback_to_while_loop
+- filename: tf.keras.layers.conv1d.yaml
+  param:
+  - groups
+- filename: tf.raw_ops.sparseapplyftrl.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.raw_ops.collectivebcastsend.yaml
+  param:
+  - timeout_seconds
+- filename: tf.keras.layers.conv3d.yaml
+  param:
+  - groups
+- filename: tf.raw_ops.shuffleandrepeatdataset.yaml
+  param:
+  - reshuffle_each_iteration
+- filename: tf.raw_ops.depthwiseconv2dnativebackpropfilter.yaml
+  param:
+  - explicit_paddings
+- filename: tf.raw_ops.debugidentityv2.yaml
+  param:
+  - circular_buffer_size
+  - tfdbg_run_id
+- filename: tf.raw_ops.resourcesparseapplyftrl.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.raw_ops.resourceapplyftrlv2.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.raw_ops.collectivereduce.yaml
+  param:
+  - timeout_seconds
+- filename: tf.keras.estimator.model_to_estimator.yaml
+  param:
+  - metric_names_map
+- filename: tf.raw_ops.applyftrlv2.yaml
+  param:
+  - multiply_linear_by_lr
+- filename: tf.raw_ops.depthwiseconv2dnativebackpropinput.yaml
+  param:
+  - explicit_paddings
+- filename: tf.raw_ops.collectivegather.yaml
+  param:
+  - timeout_seconds
+uniqu_tfdoc2.2:
+- tf.image.encode_png.yaml
+- tf.keras.experimental.terminate_keras_multiprocessing_pools.yaml
+- tf.data.experimental.get_next_as_optional.yaml
+- tf.data.experimental.make_saveable_from_iterator.yaml
+- tf.keras.backend.learning_phase_scope.yaml
+- tf.keras.utils.custom_object_scope.yaml
+- tf.keras.initializers.lecun_uniform.yaml
+- tf.keras.initializers.he_normal.yaml
+- tf.keras.initializers.he_uniform.yaml
+- tf.keras.regularizers.l1.yaml
+- tf.config.experimental_run_functions_eagerly.yaml
+- tf.keras.regularizers.l2.yaml
+- tf.keras.backend.random_binomial.yaml
+- tf.keras.initializers.lecun_normal.yaml
+- tf.keras.losses.logcosh2.yaml
+- tf.reduce_all.yaml
+- tf.keras.backend.set_learning_phase.yaml
+uniqu_tfdoc2.3:
+- tf.keras.applications.efficientnetb3.yaml
+- tf.sparse.bincount.yaml
+- tf.raw_ops.sparsecrosshashed.yaml
+- tf.raw_ops.besselj1.yaml
+- tf.raw_ops.deviceindex.yaml
+- tf.math.special.bessel_j0.yaml
+- tf.raw_ops.shuffledatasetv3.yaml
+- tf.raw_ops.retrievetpuembeddingstochasticgradientdescentparametersgradaccumdebug.yaml
+- tf.math.special.bessel_k1e.yaml
+- tf.config.experimental.get_device_details.yaml
+- tf.raw_ops.compresselement.yaml
+- tf.raw_ops.loadtpuembeddingproximalyogiparametersgradaccumdebug.yaml
+- tf.keras.losses.huber2.yaml
+- tf.raw_ops.statelessparameterizedtruncatednormal.yaml
+- tf.raw_ops.dummyiterationcounter.yaml
+- tf.keras.applications.efficientnet.decode_predictions.yaml
+- tf.io.encode_png.yaml
+- tf.raw_ops.initializetablefromdataset.yaml
+- tf.keras.preprocessing.text_dataset_from_directory.yaml
+- tf.raw_ops.registerdataset.yaml
+- tf.raw_ops.besselj0.yaml
+- tf.math.special.bessel_j1.yaml
+- tf.raw_ops.sparsecountsparseoutput.yaml
+- tf.tpu.experimental.embedding.adam.yaml
+- tf.keras.backend.random_bernoulli.yaml
+- tf.raw_ops.loaddataset.yaml
+- tf.keras.preprocessing.text.text_to_word_sequence.yaml
+- tf.keras.applications.efficientnetb2.yaml
+- tf.keras.metrics.serialize.yaml
+- tf.keras.preprocessing.image.load_img.yaml
+- tf.raw_ops.besseli1.yaml
+- tf.keras.preprocessing.image_dataset_from_directory.yaml
+- tf.raw_ops.besselk1.yaml
+- tf.math.special.bessel_k0.yaml
+- tf.keras.applications.efficientnetb5.yaml
+- tf.math.special.bessel_k0e.yaml
+- tf.raw_ops.uncompresselement.yaml
+- tf.raw_ops.anonymousseedgenerator.yaml
+- tf.raw_ops.dataservicedataset.yaml
+- tf.data.experimental.load.yaml
+- tf.keras.applications.efficientnetb4.yaml
+- tf.raw_ops.besselk0.yaml
+- tf.math.special.bessel_k1.yaml
+- tf.raw_ops.extractglimpsev2.yaml
+- tf.data.experimental.snapshot.yaml
+- tf.raw_ops.besseli0.yaml
+- tf.raw_ops.loadtpuembeddingproximalyogiparameters.yaml
+- tf.raw_ops.raggedbincount.yaml
+- tf.ragged.cross_hashed.yaml
+- tf.keras.utils.pack_x_y_sample_weight.yaml
+- tf.type_spec_from_value.yaml
+- tf.raw_ops.besselk1e.yaml
+- tf.raw_ops.tensorscattermin.yaml
+- tf.raw_ops.raggedcountsparseoutput.yaml
+- tf.keras.preprocessing.timeseries_dataset_from_array.yaml
+- tf.tpu.experimental.embedding.sgd.yaml
+- tf.raw_ops.retrievetpuembeddingproximalyogiparameters.yaml
+- tf.raw_ops.enqueuetpuembeddingraggedtensorbatch.yaml
+- tf.math.reduce_all.yaml
+- tf.random.stateless_parameterized_truncated_normal.yaml
+- tf.raw_ops.scatterndmax.yaml
+- tf.keras.applications.efficientnetb7.yaml
+- tf.random.experimental.stateless_split.yaml
+- tf.keras.applications.efficientnetb6.yaml
+- tf.raw_ops.retrievetpuembeddingproximalyogiparametersgradaccumdebug.yaml
+- tf.raw_ops.scatterndmin.yaml
+- tf.raw_ops.shuffleandrepeatdatasetv2.yaml
+- tf.raw_ops.dummyseedgenerator.yaml
+- tf.raw_ops.tensorscattermax.yaml
+- tf.tpu.experimental.embedding.tableconfig.yaml
+- tf.raw_ops.sparsebincount.yaml
+- tf.tpu.experimental.embedding.featureconfig.yaml
+- tf.keras.metrics.deserialize.yaml
+- tf.keras.losses.log_cosh.yaml
+- tf.raw_ops.sparsecrossv2.yaml
+- tf.raw_ops.bandedtriangularsolve.yaml
+- tf.raw_ops.bessely1.yaml
+- tf.math.special.bessel_y0.yaml
+- tf.data.experimental.service.distribute.yaml
+- tf.random.experimental.stateless_fold_in.yaml
+- tf.keras.applications.efficientnetb1.yaml
+- tf.config.run_functions_eagerly.yaml
+- tf.raw_ops.savedataset.yaml
+- tf.reverse_sequence.yaml
+- tf.keras.metrics.get.yaml
+- tf.raw_ops.densecountsparseoutput.yaml
+- tf.raw_ops.resourcescatterndmax.yaml
+- tf.data.experimental.save.yaml
+- tf.linalg.banded_triangular_solve.yaml
+- tf.tensor_scatter_nd_max.yaml
+- tf.raw_ops.besselk0e.yaml
+- tf.raw_ops.densebincount.yaml
+- tf.raw_ops.resourcescatterndmin.yaml
+- tf.keras.utils.unpack_x_y_sample_weight.yaml
+- tf.ragged.cross.yaml
+- tf.tensor_scatter_nd_min.yaml
+- tf.raw_ops.snapshotdatasetv2.yaml
+- tf.tpu.experimental.embedding.adagrad.yaml
+- tf.keras.applications.efficientnetb0.yaml
+- tf.keras.preprocessing.text.one_hot.yaml
+- tf.raw_ops.deleteseedgenerator.yaml
+- tf.raw_ops.loadtpuembeddingstochasticgradientdescentparametersgradaccumdebug.yaml
+- tf.raw_ops.bessely0.yaml
+- tf.math.special.bessel_y1.yaml

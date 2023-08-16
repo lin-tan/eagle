@@ -1,0 +1,14 @@
+constraints:
+  probs:
+    descp: The ground-truth probability of the random value fall in a specific bucket.
+    doc_dtype:
+    - list
+    - tuple
+    dtype:
+    - float
+    range:
+    - '[0,1]'
+    structure:
+    - list
+    - tuple
+title: mxnet.test_utils.chi_square_check

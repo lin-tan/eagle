@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,Destination tensor rank within `tensor_list`,0,prim_dtype,dtype(int),,1
+int,Destination tensor rank within `tensor_list`,0,nonprim_dtype,tensor_t(torch.tensor),,1
+int,Destination tensor rank within `tensor_list`,0,shape,ndim(0),,1

@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  step:
+    descp: A Tensor of type int64.
+  tensor:
+    descp: A Tensor of type string.
+  writer:
+    descp: A Tensor of type resource.
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - step
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WriteGraphSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteGraphSummary
+title: tf.raw_ops.WriteGraphSummary
+version: 2.2.0

@@ -1,0 +1,34 @@
+constraints:
+  '**kwds':
+    descp: ''
+    structure:
+    - list
+  X:
+    descp: ndarray (n_samples, n_features) Array 1 for distance computation.
+  Y:
+    descp: ndarray (n_samples, n_features) Array 2 for distance computation.
+  metric:
+    default: euclidean
+    descp: string or callable The metric to use when calculating distance between
+      instances in a feature array. If metric is a string, it must be one of the options
+      specified in PAIRED_DISTANCES, including "euclidean", "manhattan", or "cosine".
+      Alternatively, if metric is a callable function, it is called on each pair of
+      instances (rows) and the resulting value recorded. The callable should take
+      two arrays from X as input and return a value indicating the distance between
+      them.
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - metric
+  required:
+  - X
+  - Y
+  - '**kwds'
+link: ''
+package: sklearn
+target: paired_distances
+title: sklearn.metrics.pairwise.paired_distances
+version: 0.24.2

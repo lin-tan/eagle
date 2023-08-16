@@ -1,0 +1,29 @@
+constraints:
+  num_classes:
+    default: '-1'
+    descp: Total number of classes. If set to -1, the number of classes will be inferred
+      as one greater than the largest class value in the input tensor.
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Total number of classes
+    - If set to CONSTANT_NUM the number of classes will be inferred as one greater
+      than the largest class value in the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+  tensor:
+    descp: class values of any shape.
+    doc_dtype: LongTensor
+    normalized_descp:
+    - class values of any shape
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - num_classes
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.one_hot
+package: torch
+ret_type: LongTensor
+target: one_hot
+title: torch.nn.functional.one_hot
+version: 1.5.0

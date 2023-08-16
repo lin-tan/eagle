@@ -1,0 +1,40 @@
+constraints:
+  boundaries:
+    descp: A list of floats. A sorted list of floats gives the boundary of the buckets.
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - list(float)
+  input:
+    descp: 'A Tensor. Must be one of the following types: int32, int64, float32, float64.
+      Any shape of Tensor contains with int or float type.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - boundaries
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Bucketize
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: Bucketize
+title: tf.raw_ops.Bucketize
+version: 2.3.0

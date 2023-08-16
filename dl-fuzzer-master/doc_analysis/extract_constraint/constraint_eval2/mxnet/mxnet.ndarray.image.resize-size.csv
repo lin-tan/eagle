@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","Size of new image. Could be (width, height) or (size)",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","Size of new image. Could be (width, height) or (size)",_Null,nonprim_dtype,"structure(tuple(int), tuple(int):(&size), tuple(int):(width,height))",,1
+"Shape(tuple), optional, default=[]","Size of new image. Could be (width, height) or (size)",_Null,shape,"shape([1], [2])",,1

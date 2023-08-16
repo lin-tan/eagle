@@ -1,0 +1,9 @@
+constraints:
+  alpha:
+    default: None
+    descp: Concentration parameters of the distributions.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.random_pdf_dirichlet

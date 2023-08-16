@@ -1,0 +1,48 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  act_type:
+    default: _Null
+    descp: Activation function to be applied.
+    doc_dtype:
+    - '{''relu'', ''sigmoid'', ''softrelu'', ''softsign'', ''tanh''}'
+    - required
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype:
+    - NDArray
+  max_data:
+    default: None
+    descp: Maximum value of data.
+    doc_dtype:
+    - NDArray
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype:
+    - NDArray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+inputs:
+  optional:
+  - data
+  - min_data
+  - max_data
+  - act_type
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.quantized_act
+package: mxnet
+target: quantized_act
+title: mxnet.contrib.ndarray.quantized_act
+version: 1.7.0

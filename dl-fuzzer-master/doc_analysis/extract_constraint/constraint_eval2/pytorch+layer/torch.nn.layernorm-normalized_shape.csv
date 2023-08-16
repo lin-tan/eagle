@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, list, torch.Size",,,prim_dtype,dtype(int),,1
+"int, list, torch.Size",,,nonprim_dtype,structure(list),,1
+"int, list, torch.Size",,,shape,ndim(1),,1
+"int, list, torch.Size",,,validvalue,"range([0,inf))",,1

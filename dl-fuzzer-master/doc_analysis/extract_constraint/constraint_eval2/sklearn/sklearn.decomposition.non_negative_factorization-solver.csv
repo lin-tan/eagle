@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,'cd' | 'mu' Numerical solver to use: - 'cd' is a Coordinate Descent solver that uses Fast Hierarchical Alternating Least Squares (Fast HALS). - 'mu' is a Multiplicative Update solver.,cd,prim_dtype,dtype(string),,1
+,'cd' | 'mu' Numerical solver to use: - 'cd' is a Coordinate Descent solver that uses Fast Hierarchical Alternating Least Squares (Fast HALS). - 'mu' is a Multiplicative Update solver.,cd,validvalue,"enum(, cd, mu)",,1

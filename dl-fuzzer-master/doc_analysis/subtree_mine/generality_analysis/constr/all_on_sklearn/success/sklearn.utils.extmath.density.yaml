@@ -1,0 +1,18 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  w:
+    descp: array_like The sparse vector
+    structure:
+    - list
+    - ndarray
+inputs:
+  optional: []
+  required:
+  - w
+  - '**kwargs'
+link: ''
+package: sklearn
+target: density
+title: sklearn.utils.extmath.density
+version: 0.24.2

@@ -1,0 +1,71 @@
+aliases:
+- tf.compat.v1.signal.mdct
+constraints:
+  frame_length:
+    descp: An integer scalar Tensor. The window length in samples which must be divisible
+      by 4.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: An optional name for the operation.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  norm:
+    default: None
+    descp: If it is None, unnormalized dct4 is used, if it is "ortho" orthonormal
+      dct4 is used.
+  pad_end:
+    default: 'False'
+    descp: Whether to pad the end of signals with zeros when the provided frame length
+      and step produces a frame that lies partially past its end.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  signals:
+    descp: A [..., samples] float32/float64 Tensor of real-valued signals.
+    dtype:
+    - tf.float32
+    - tf.float64
+    tensor_t:
+    - tf.tensor
+  window_fn:
+    default: tf.signal.vorbis_window
+    descp: A callable that takes a frame_length and a dtype keyword argument and returns
+      a [frame_length] Tensor of samples in the provided datatype. If set to None,
+      a rectangular window with a scale of 1/sqrt(2) is used. For perfect reconstruction
+      of a signal from mdct followed by inverse_mdct, please use tf.signal.vorbis_window,
+      tf.signal.kaiser_bessel_derived_window or None. If using another window function,
+      make sure that w[n]^2 + w[n + frame_length // 2]^2 = 1 and w[n] = w[frame_length
+      - n - 1] for n = 0,...,frame_length // 2 - 1 to achieve perfect reconstruction.
+    dtype:
+    - callable
+exceptions:
+- ValueError: If signals is not at least rank 1, frame_length is not scalar, or frame_length
+    is not a multiple of 4.
+inputs:
+  optional:
+  - window_fn
+  - pad_end
+  - norm
+  - name
+  required:
+  - signals
+  - frame_length
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/mdct.md
+outputs:
+- A [..., frames, frame_length // 2] Tensor of float32/float64 MDCT values where frames
+  is roughly samples // (frame_length // 2) when pad_end=False.
+package: tensorflow
+target: mdct
+title: tf.signal.mdct
+version: 2.2.0

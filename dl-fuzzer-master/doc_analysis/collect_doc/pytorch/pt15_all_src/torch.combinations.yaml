@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: 1D vector.
+    doc_dtype:
+    - Tensor
+  r:
+    default: '2'
+    descp: number of elements to combine
+    doc_dtype:
+    - int
+  with_replacement:
+    default: 'False'
+    descp: whether to allow duplication in combination
+    doc_dtype:
+    - boolean
+inputs:
+  optional:
+  - r
+  - with_replacement
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.combinations
+package: torch
+ret_type: seq
+target: combinations
+title: torch.combinations
+version: 1.5.0

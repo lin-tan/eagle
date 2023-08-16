@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 4-D `Tensor` with the same type as `input` and shape `[height, width, output_channels, in_channels]`.  `filter`'s `in_channels` dimension must match that of `input`.",,prim_dtype,dtype(dtype:&input),,1
+,"A 4-D `Tensor` with the same type as `input` and shape `[height, width, output_channels, in_channels]`.  `filter`'s `in_channels` dimension must match that of `input`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 4-D `Tensor` with the same type as `input` and shape `[height, width, output_channels, in_channels]`.  `filter`'s `in_channels` dimension must match that of `input`.",,shape,"shape([height,width,output_channels,in_channels]), ndim(4)",,1

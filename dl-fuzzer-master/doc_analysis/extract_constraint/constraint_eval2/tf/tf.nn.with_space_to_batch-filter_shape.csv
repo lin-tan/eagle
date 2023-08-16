@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"If padding = ""SAME"", specifies the shape of the convolution kernel/pooling window as an integer Tensor of shape [>=num_spatial_dims]. If padding = ""VALID"", filter_shape is ignored and need not be specified.",None,prim_dtype,dtype(int),,1
+,"If padding = ""SAME"", specifies the shape of the convolution kernel/pooling window as an integer Tensor of shape [>=num_spatial_dims]. If padding = ""VALID"", filter_shape is ignored and need not be specified.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"If padding = ""SAME"", specifies the shape of the convolution kernel/pooling window as an integer Tensor of shape [>=num_spatial_dims]. If padding = ""VALID"", filter_shape is ignored and need not be specified.",None,shape,ndim(1),,1

@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.is_tensor
+constraints:
+  x:
+    descp: A python object to check.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/is_tensor
+outputs:
+- True if x is a tensor or "tensor-like", False if not.
+package: tensorflow
+target: is_tensor
+title: tf.is_tensor
+version: 2.3.0

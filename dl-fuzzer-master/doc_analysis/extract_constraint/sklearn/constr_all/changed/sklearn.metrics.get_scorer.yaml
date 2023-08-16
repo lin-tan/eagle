@@ -1,0 +1,17 @@
+constraints:
+  scoring:
+    descp: str | callable scoring method as string. If callable it is returned as
+      is.
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - scoring
+link: ''
+package: sklearn
+target: get_scorer
+title: sklearn.metrics.get_scorer
+version: 0.24.2

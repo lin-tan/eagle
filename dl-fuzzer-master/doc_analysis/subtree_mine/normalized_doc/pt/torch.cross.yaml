@@ -1,0 +1,42 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: the dimension to take the cross-product in.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the dimension to take the cross product in
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  other:
+    descp: the second input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second PARAM D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - dim
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.cross
+package: torch
+ret_type: Tensor
+target: cross
+title: torch.cross
+version: 1.5.0

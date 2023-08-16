@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int with shape (n_features,) Number of samples seen so far, excluded X.",,prim_dtype,dtype(int),,1
+,"int with shape (n_features,) Number of samples seen so far, excluded X.",,shape,"shape([n_features]), ndim(0, 1)",,1
+,"int with shape (n_features,) Number of samples seen so far, excluded X.",,validvalue,"range([0,inf))",,1

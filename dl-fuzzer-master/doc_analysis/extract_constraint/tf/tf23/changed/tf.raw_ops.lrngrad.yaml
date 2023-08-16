@@ -1,0 +1,93 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: An optional float. Defaults to 1. A scale factor, usually positive.
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  beta:
+    default: '0.5'
+    descp: An optional float. Defaults to 0.5. An exponent.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  bias:
+    default: '1'
+    descp: An optional float. Defaults to 1. An offset (usually > 0 to avoid dividing
+      by 0).
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  depth_radius:
+    default: '5'
+    descp: An optional int. Defaults to 5. A depth radius.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  input_grads:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32.
+      4-D with shape [batch, height, width, channels].'
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  input_image:
+    descp: A Tensor. Must have the same type as input_grads. 4-D with shape [batch,
+      height, width, channels].
+    dtype:
+    - dtype:&input_grads
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_image:
+    descp: A Tensor. Must have the same type as input_grads. 4-D with shape [batch,
+      height, width, channels].
+    dtype:
+    - dtype:&input_grads
+    ndim:
+    - '4'
+    shape:
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch
+- channels
+- height
+- width
+inputs:
+  optional:
+  - depth_radius
+  - bias
+  - alpha
+  - beta
+  - name
+  required:
+  - input_grads
+  - input_image
+  - output_image
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LRNGrad
+outputs:
+- A Tensor. Has the same type as input_grads.
+package: tensorflow
+target: LRNGrad
+title: tf.raw_ops.LRNGrad
+version: 2.3.0

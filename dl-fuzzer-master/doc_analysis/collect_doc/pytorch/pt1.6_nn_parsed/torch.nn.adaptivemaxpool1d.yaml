@@ -1,0 +1,19 @@
+constraints:
+  output_size:
+    descp: the target output size H
+    sig_dtype: Union[T,Tuple[T,...]]
+  return_indices:
+    default: 'False'
+    descp: 'if `True`, will return the indices along with the outputs. Useful to pass
+      to nn.MaxUnpool1d. Default: `False`'
+    sig_dtype: bool
+inputs:
+  optional:
+  - return_indices
+  required:
+  - output_size
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.AdaptiveMaxPool1d.html#torch.nn.AdaptiveMaxPool1d#torch.nn.AdaptiveMaxPool1d
+package: torch
+target: AdaptiveMaxPool1d
+title: torch.nn.AdaptiveMaxPool1d
+version: 1.6.0

@@ -1,0 +1,27 @@
+constraints:
+  graph_def:
+    descp: A Tensor of type string. The graph representation of the dataset (as serialized
+      GraphDef).
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - graph_def
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DatasetFromGraph
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: DatasetFromGraph
+title: tf.raw_ops.DatasetFromGraph
+version: 2.3.0

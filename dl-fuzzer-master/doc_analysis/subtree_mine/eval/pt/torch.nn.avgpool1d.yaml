@@ -1,0 +1,9 @@
+constraints:
+  stride:
+    default: None
+    descp: the stride of the window. Default value is `kernel_size`
+    range:
+    - '[0,inf)'
+    dtype:
+    - int
+title: torch.nn.AvgPool1d

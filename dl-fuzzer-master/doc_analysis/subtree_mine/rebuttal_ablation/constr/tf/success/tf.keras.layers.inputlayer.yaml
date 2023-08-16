@@ -1,0 +1,140 @@
+aliases:
+- tf.compat.v1.keras.layers.InputLayer
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  batch_size:
+    default: None
+    descp: Optional input batch size (integer or None).
+  dtype:
+    default: None
+    descp: Datatype of the input.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  input_shape:
+    default: None
+    descp: Shape tuple (not including the batch axis), or `TensorShape`instance (not
+      including the batch axis).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.string
+    enum:
+    - TensorShape
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - tuple
+  input_tensor:
+    default: None
+    descp: Optional tensor to use as layer input instead of creating a placeholder.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: Name of the layer (string).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (string)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (string)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    - '[string]'
+    tensor_t:
+    - tf.tensor
+  ragged:
+    default: 'False'
+    descp: Boolean, whether the placeholder created is meant to be ragged. In this
+      case, values of 'None' in the 'shape' argument represent ragged dimensions.
+      For more information about RaggedTensors, seehttps://www.tensorflow.org/guide/ragged_tensors
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - None
+    - shape
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[none]'
+    - '[shape]'
+  sparse:
+    default: 'False'
+    descp: Boolean, whether the placeholder created is meant to be sparse.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+inputs:
+  optional:
+  - input_shape
+  - batch_size
+  - dtype
+  - input_tensor
+  - sparse
+  - name
+  - ragged
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/InputLayer
+package: tensorflow
+target: InputLayer
+title: tf.keras.layers.InputLayer
+version: 2.1.0

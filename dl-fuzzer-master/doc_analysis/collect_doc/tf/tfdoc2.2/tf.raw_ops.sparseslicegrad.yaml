@@ -1,0 +1,30 @@
+constraints:
+  backprop_val_grad:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. 1-D. The gradient with respect to the non-empty
+      values of the sliced SparseTensor.'
+  input_indices:
+    descp: A Tensor of type int64. 2-D. The indices of the input SparseTensor.
+  input_start:
+    descp: A Tensor of type int64. 1-D. tensor represents the start of the slice.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_indices:
+    descp: A Tensor of type int64. 2-D. The indices of the sliced SparseTensor.
+inputs:
+  optional:
+  - name
+  required:
+  - backprop_val_grad
+  - input_indices
+  - input_start
+  - output_indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSliceGrad
+outputs:
+- A Tensor. Has the same type as backprop_val_grad.
+package: tensorflow
+target: SparseSliceGrad
+title: tf.raw_ops.SparseSliceGrad
+version: 2.2.0

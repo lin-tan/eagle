@@ -1,0 +1,66 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  N:
+    default: '20'
+    descp: Repeat times.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Repeat times
+    normalized_docdtype: D_TYPE, optional
+  ctx:
+    default: None
+    descp: Running context.
+    doc_dtype: Context
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Running context
+    normalized_docdtype: ONE_WORD Context
+  grad_req:
+    default: None
+    descp: Gradient requirements.
+    doc_dtype: None or str or list of str or dict of str to str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Gradient requirements
+    normalized_docdtype: None or D_TYPE or D_STRUCTURE of D_TYPE or D_STRUCTURE of
+      D_TYPE to D_TYPE, optional
+  location:
+    default: None
+    descp: Location to evaluate the inner executor.
+    doc_dtype: none or dict of str to np.ndarray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Location to evaluate the inner executor
+    normalized_docdtype: none or D_STRUCTURE of D_TYPE to np D_STRUCTURE
+  sym:
+    descp: Symbol to run the speed test.
+    doc_dtype: Symbol
+    normalized_descp:
+    - Symbol to run the speed test
+    normalized_docdtype: ONE_WORD Symbol
+  typ:
+    default: whole
+    descp: '"whole" or "forward"   "whole"Test the forward_backward speed.   '
+    doc_dtype: str, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - QSTR Test the forward_backward speed
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - location
+  - ctx
+  - N
+  - grad_req
+  - typ
+  required:
+  - sym
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.check_speed
+package: mxnet
+target: check_speed
+title: mxnet.test_utils.check_speed
+version: 1.6.0

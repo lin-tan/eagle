@@ -1,0 +1,63 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  new_vocab_file:
+    descp: A Tensor of type string. Path to the new vocab file.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  new_vocab_offset:
+    descp: An int that is >= 0. How many entries into the new vocab file to start
+      reading.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  num_new_vocab:
+    descp: An int that is >= 0. Number of entries in the new vocab file to remap.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  old_vocab_file:
+    descp: A Tensor of type string. Path to the old vocab file.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  old_vocab_size:
+    default: '-1'
+    descp: An optional int that is >= -1. Defaults to -1. Number of entries in the
+      old vocab file to consider. If -1, use the entire old vocabulary.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - old_vocab_size
+  - name
+  required:
+  - new_vocab_file
+  - old_vocab_file
+  - new_vocab_offset
+  - num_new_vocab
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/GenerateVocabRemapping
+outputs:
+- A tuple of Tensor objects (remapping, num_present).
+- remapping: A Tensor of type int64.
+- num_present: A Tensor of type int32.
+package: tensorflow
+target: GenerateVocabRemapping
+title: tf.raw_ops.GenerateVocabRemapping
+version: 2.2.0

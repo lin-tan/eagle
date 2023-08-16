@@ -1,0 +1,80 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`).'
+    doc_dtype:
+    - torch.dtype
+    dtype:
+    - torch.dtype
+  layout:
+    default: None
+    descp: 'the desired layout of returned Tensor. Default: `torch.strided`.'
+    doc_dtype:
+    - torch.layout
+  pin_memory:
+    default: 'False'
+    descp: 'If set, returned tensor would be allocated in the pinned memory. Works
+      only for CPU tensors. Default: `False`.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  size:
+    descp: the shape of the output tensor
+    doc_dtype:
+    - tuple of python:ints
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+  stride:
+    descp: the strides of the output tensor
+    doc_dtype:
+    - tuple of python:ints
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  - pin_memory
+  required:
+  - size
+  - stride
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.empty_strided
+package: torch
+ret_type: Tensor
+target: empty_strided
+title: torch.empty_strided
+version: 1.4.0

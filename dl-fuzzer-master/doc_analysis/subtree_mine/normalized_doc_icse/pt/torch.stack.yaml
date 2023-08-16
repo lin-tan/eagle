@@ -1,0 +1,38 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension to insert. Has to be between 0 and the number of dimensions of
+      concatenated tensors (inclusive)
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension to insert
+    - Has to be between CONSTANT_NUM and the number of dimensions of concatenated
+      D_STRUCTURE BSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  tensors:
+    descp: sequence of tensors to concatenate
+    doc_dtype: sequence of Tensors
+    normalized_descp:
+    - D_STRUCTURE of D_STRUCTURE to concatenate
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  - out
+  required:
+  - tensors
+link: https://pytorch.org/docs/stable/torch.html#torch.stack
+package: torch
+ret_type: Tensor
+target: stack
+title: torch.stack
+version: 1.5.0

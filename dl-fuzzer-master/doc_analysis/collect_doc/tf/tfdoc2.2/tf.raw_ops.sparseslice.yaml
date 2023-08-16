@@ -1,0 +1,37 @@
+constraints:
+  indices:
+    descp: A Tensor of type int64. 2-D tensor represents the indices of the sparse
+      tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A Tensor of type int64. 1-D. tensor represents the shape of the sparse
+      tensor.
+  size:
+    descp: 'A Tensor of type int64. 1-D. tensor represents the size of the slice.
+      output indices: A list of 1-D tensors represents the indices of the output sparse
+      tensors.'
+  start:
+    descp: A Tensor of type int64. 1-D. tensor represents the start of the slice.
+  values:
+    descp: A Tensor. 1-D tensor represents the values of the sparse tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - shape
+  - start
+  - size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseSlice
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_shape).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as values.
+- output_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseSlice
+title: tf.raw_ops.SparseSlice
+version: 2.2.0

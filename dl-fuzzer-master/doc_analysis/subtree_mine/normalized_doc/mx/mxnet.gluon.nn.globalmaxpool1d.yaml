@@ -1,0 +1,26 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  layout:
+    default: NCW
+    descp: Dimension ordering of data and out ('NCW' or 'NWC'). 'N', 'C', 'W' stands
+      for batch, channel, and width (time) dimensions respectively. Pooling is applied
+      on the W dimension.
+    doc_dtype: str, default 'NCW'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Dimension ordering of data and out QSTR
+    - QSTR stands for batch, channel, and width BSTR dimensions respectively
+    - Pooling is applied on the W dimension
+    normalized_docdtype: D_TYPE, default QSTR
+inputs:
+  optional:
+  - layout
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalMaxPool1D
+package: mxnet
+target: GlobalMaxPool1D
+title: mxnet.gluon.nn.GlobalMaxPool1D
+version: 1.6.0

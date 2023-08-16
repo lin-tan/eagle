@@ -1,0 +1,49 @@
+constraints:
+  communication_hint:
+    default: auto
+    descp: An optional string. Defaults to "auto".
+  final_op:
+    descp: 'A string from: "Id", "Div".'
+  group_key:
+    descp: An int.
+  group_size:
+    descp: An int.
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, half, float64,
+      int32, int64.'
+  instance_key:
+    descp: An int.
+  merge_op:
+    descp: 'A string from: "Min", "Max", "Mul", "Add".'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  subdiv_offsets:
+    descp: A list of ints.
+  timeout_seconds:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  wait_for:
+    default: '[]'
+    descp: An optional list of ints. Defaults to [].
+inputs:
+  optional:
+  - wait_for
+  - communication_hint
+  - timeout_seconds
+  - name
+  required:
+  - input
+  - group_size
+  - group_key
+  - instance_key
+  - merge_op
+  - final_op
+  - subdiv_offsets
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CollectiveReduce
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: CollectiveReduce
+title: tf.raw_ops.CollectiveReduce
+version: 2.3.0

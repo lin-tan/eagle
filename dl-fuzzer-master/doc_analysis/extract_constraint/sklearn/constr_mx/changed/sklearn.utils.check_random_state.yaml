@@ -1,0 +1,19 @@
+constraints:
+  seed:
+    descp: None | int | instance of RandomState If seed is None, return the RandomState
+      singleton used by np.random. If seed is an int, return a new RandomState instance
+      seeded with seed. If seed is already a RandomState instance, return it. Otherwise
+      raise ValueError.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - seed
+link: ''
+package: scikit-learn
+target: check_random_state
+title: sklearn.utils.check_random_state
+version: 0.24.X

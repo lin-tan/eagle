@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple of int",Recurrent convolution kernel sizes. Only odd-numbered sizes are supported.,,prim_dtype,dtype(int),,1
+"int, tuple of int",Recurrent convolution kernel sizes. Only odd-numbered sizes are supported.,,nonprim_dtype,structure(tuple(int)),,1
+"int, tuple of int",Recurrent convolution kernel sizes. Only odd-numbered sizes are supported.,,shape,ndim(1),,1

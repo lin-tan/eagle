@@ -1,0 +1,24 @@
+constraints:
+  iterator:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - iterator
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ExperimentalStatsAggregatorSummary
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ExperimentalStatsAggregatorSummary
+title: tf.raw_ops.ExperimentalStatsAggregatorSummary
+version: 2.3.0

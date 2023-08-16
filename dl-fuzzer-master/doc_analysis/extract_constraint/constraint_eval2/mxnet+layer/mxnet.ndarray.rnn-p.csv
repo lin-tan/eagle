@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, optional, default=0","drop rate of the dropout on the outputs of each RNN layer, except the last layer.",_Null,prim_dtype,dtype(float),,1
+"float, optional, default=0","drop rate of the dropout on the outputs of each RNN layer, except the last layer.",_Null,shape,ndim(0),,1
+"float, optional, default=0","drop rate of the dropout on the outputs of each RNN layer, except the last layer.",_Null,validvalue,"range([0,1])",,1

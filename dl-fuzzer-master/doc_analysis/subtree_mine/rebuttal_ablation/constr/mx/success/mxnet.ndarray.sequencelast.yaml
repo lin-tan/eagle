@@ -1,0 +1,106 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  axis:
+    default: _Null
+    descp: The sequence axis. Only values of 0 and 1 are currently supported.
+    doc_dtype: int, optional, default='0'
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  data:
+    default: None
+    descp: n-dimensional input array of the form [max_sequence_length, batch_size,
+      other_feature_dims] where n>2
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    - '[max_sequence_length,batch_size,other_feature_dims]'
+    shape:
+    - '[max_sequence_length,batch_size,other_feature_dims]'
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  sequence_length:
+    default: None
+    descp: vector of sequence lengths of the form [batch_size]
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+  use_sequence_length:
+    default: _Null
+    descp: If set to true, this layer takes in an extra input parameter sequence_length
+      to specify variable length sequence
+    doc_dtype: boolean, optional, default=0
+    dtype:
+    - boolean
+    - int
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - data
+  - sequence_length
+  - use_sequence_length
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.SequenceLast
+package: mxnet
+target: SequenceLast
+title: mxnet.ndarray.SequenceLast
+version: 1.6.0

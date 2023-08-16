@@ -1,0 +1,67 @@
+constraints:
+  input:
+    descp: input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - torch.tensor
+  input2:
+    descp: input matrix u  of size (*, m, m) , where *  is zero of more batch dimensions
+      composed of upper or lower triangular Cholesky factor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor for c
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  upper:
+    default: 'False'
+    descp: 'whether to consider the Cholesky factor as a lower or upper triangular
+      matrix. Default: `False`.'
+    doc_dtype: bool, optional
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - upper
+  - out
+  required:
+  - input
+  - input2
+link: https://pytorch.org/docs/stable/torch.html#torch.cholesky_solve
+package: torch
+ret_type: Tensor
+target: cholesky_solve
+title: torch.cholesky_solve
+version: 1.5.0

@@ -1,0 +1,30 @@
+constraints:
+  axis:
+    default: '-1'
+    descp: The axis on which to concatenate the outputs.
+    doc_dtype: int, default -1
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The axis on which to concatenate the outputs
+    normalized_docdtype: D_TYPE default CONSTANT_NUM
+  params:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  prefix:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+inputs:
+  optional:
+  - axis
+  - prefix
+  - params
+  required: []
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.HybridConcurrent
+package: mxnet
+target: HybridConcurrent
+title: mxnet.gluon.contrib.nn.HybridConcurrent
+version: 1.6.0

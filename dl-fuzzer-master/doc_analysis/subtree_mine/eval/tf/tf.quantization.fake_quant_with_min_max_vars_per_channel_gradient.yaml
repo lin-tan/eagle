@@ -1,0 +1,10 @@
+constraints:
+  narrow_range:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Whether to quantize into 2^num_bits
+      - 1 distinct values.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient

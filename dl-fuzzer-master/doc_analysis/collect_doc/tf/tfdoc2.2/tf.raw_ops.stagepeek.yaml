@@ -1,0 +1,37 @@
+constraints:
+  capacity:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0.
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  dtypes:
+    descp: A list of tf.DTypes that has length >= 1.
+  index:
+    descp: A Tensor of type int32.
+  memory_limit:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - capacity
+  - memory_limit
+  - container
+  - shared_name
+  - name
+  required:
+  - index
+  - dtypes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StagePeek
+outputs:
+- A list of Tensor objects of type dtypes.
+package: tensorflow
+target: StagePeek
+title: tf.raw_ops.StagePeek
+version: 2.2.0

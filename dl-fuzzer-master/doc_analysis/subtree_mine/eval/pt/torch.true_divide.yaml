@@ -1,0 +1,11 @@
+constraints:
+  divisor:
+    descp: the divisor
+    doc_dtype:
+    - Tensor
+    - Scalar
+    ndim:
+    - '0'
+    tensor_t:
+    - torch.tensor
+title: torch.true_divide

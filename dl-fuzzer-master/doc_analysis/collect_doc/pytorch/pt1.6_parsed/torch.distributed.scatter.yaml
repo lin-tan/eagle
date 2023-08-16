@@ -1,0 +1,39 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype:
+    - bool
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+  scatter_list:
+    default: None
+    descp: List of tensors to scatter (default is None, must be specified on the source
+      rank)
+    doc_dtype:
+    - list[Tensor]
+  src:
+    default: '0'
+    descp: Source rank (default is 0)
+    doc_dtype:
+    - int
+  tensor:
+    descp: Output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - scatter_list
+  - src
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.6.0/distributed.html#torch.distributed.scatter
+package: torch
+target: scatter
+title: torch.distributed.scatter
+version: 1.6.0

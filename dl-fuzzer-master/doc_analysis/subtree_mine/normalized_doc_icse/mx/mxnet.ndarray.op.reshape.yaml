@@ -1,0 +1,83 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to reshape.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to reshape
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keep_highest:
+    default: _Null
+    descp: (Deprecated! Use `shape` instead.) Whether keep the highest dim unchanged.If
+      set to true, then the first dim in target_shape is ignored,and always fixed
+      as input
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - ONE_WORD Deprecated
+    - Use PARAM instead
+    - Whether keep the highest dim unchanged If set to CONSTANT_BOOL then the first
+      dim in PARAM is ignored and always fixed as input
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  reverse:
+    default: _Null
+    descp: If true then the special values are inferred from right to left
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If CONSTANT_BOOL then the special values are inferred from right to left
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  shape:
+    default: _Null
+    descp: The target shape
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The target shape
+    normalized_docdtype: Shape BSTR optional default
+  target_shape:
+    default: _Null
+    descp: (Deprecated! Use `shape` instead.) Target new shape. One and only one dim
+      can be 0, in which case it will be inferred from the rest of dims
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - ONE_WORD Deprecated
+    - Use PARAM instead
+    - Target new PARAM
+    - One and only one dim can be CONSTANT_NUM in which case it will be inferred from
+      the rest of dims
+    normalized_docdtype: PARAM BSTR optional default
+inputs:
+  optional:
+  - data
+  - shape
+  - reverse
+  - target_shape
+  - keep_highest
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.reshape
+package: mxnet
+target: reshape
+title: mxnet.ndarray.op.reshape
+version: 1.6.0

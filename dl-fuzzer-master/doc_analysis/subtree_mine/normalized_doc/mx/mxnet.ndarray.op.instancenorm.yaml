@@ -1,0 +1,67 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta:
+    default: None
+    descp: A vector of length 'channel', which is added to the product of the normalized
+      input and the weight.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of length QSTR , which is added to the product of the normalized
+      input and the weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  data:
+    default: None
+    descp: An n-dimensional input array (n > 2) of the form [batch, channel, spatial_dim1,
+      spatial_dim2, ...].
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An n dimensional input D_STRUCTURE n REXPR of the form BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: An epsilon parameter to prevent division by 0.
+    doc_dtype: float, optional, default=0.00100000005
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - An epsilon parameter to prevent division by CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  gamma:
+    default: None
+    descp: A vector of length 'channel', which multiplies the normalized input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of length QSTR , which multiplies the normalized input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - gamma
+  - beta
+  - eps
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.InstanceNorm
+package: mxnet
+target: InstanceNorm
+title: mxnet.ndarray.op.InstanceNorm
+version: 1.6.0

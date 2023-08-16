@@ -1,0 +1,51 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  prefix:
+    descp: A Tensor of type string. Must have a single element. The prefix of the
+      V2 checkpoint to which we write the tensors.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  shape_and_slices:
+    descp: A Tensor of type string. shape {N}. The slice specs of the tensors to be
+      saved. Empty strings indicate that they are non-partitioned tensors.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  tensor_names:
+    descp: A Tensor of type string. shape {N}. The names of the tensors to be saved.
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  tensors:
+    descp: A list of Tensor objects. N tensors to save.
+    structure:
+    - list(tf.tensor)
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - prefix
+  - tensor_names
+  - shape_and_slices
+  - tensors
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SaveV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: SaveV2
+title: tf.raw_ops.SaveV2
+version: 2.2.0

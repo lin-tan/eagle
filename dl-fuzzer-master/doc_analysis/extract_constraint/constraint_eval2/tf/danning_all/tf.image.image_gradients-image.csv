@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Tensor with shape [batch_size, h, w, d].",,prim_dtype,dtype(image),1,1
+,"Tensor with shape [batch_size, h, w, d].",,nonprim_dtype,tensor_t(tf.tensor),1,1
+,"Tensor with shape [batch_size, h, w, d].",,shape,"shape([batch_size,h,w,d]), ndim(4)",1,1

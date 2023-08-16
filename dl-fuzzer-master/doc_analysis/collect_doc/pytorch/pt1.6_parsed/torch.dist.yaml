@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the Right-hand-side input tensor
+    doc_dtype:
+    - Tensor
+  p:
+    default: '2'
+    descp: the norm to be computed
+    doc_dtype:
+    - float
+inputs:
+  optional:
+  - p
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.6.0/generated/torch.dist.html#torch.dist#torch.dist
+package: torch
+ret_type: Tensor
+target: dist
+title: torch.dist
+version: 1.6.0

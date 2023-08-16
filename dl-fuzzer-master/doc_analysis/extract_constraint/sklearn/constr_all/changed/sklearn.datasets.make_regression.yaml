@@ -1,0 +1,120 @@
+constraints:
+  bias:
+    default: '0.0'
+    descp: float, optional (default=0.0) The bias term in the underlying linear model.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  coef:
+    default: 'False'
+    descp: boolean, optional (default=False) If True, the coefficients of the underlying
+      linear model are returned.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  effective_rank:
+    default: None
+    descp: 'int or None, optional (default=None) if not None: The approximate number
+      of singular vectors required to explain most of the input data by linear combinations.
+      Using this kind of singular spectrum in the input allows the generator to reproduce
+      the correlations often observed in practice. if None: The input set is well
+      conditioned, centered and gaussian with unit variance.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_features:
+    default: '100'
+    descp: int, optional (default=100) The number of features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_informative:
+    default: '10'
+    descp: int, optional (default=10) The number of informative features, i.e., the
+      number of features used to build the linear model used to generate the output.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_samples:
+    default: '100'
+    descp: int, optional (default=100) The number of samples.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_targets:
+    default: '1'
+    descp: int, optional (default=1) The number of regression targets, i.e., the dimension
+      of the y output vector associated with a sample. By default, the output is a
+      scalar.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  noise:
+    default: '0.0'
+    descp: float, optional (default=0.0) The standard deviation of the gaussian noise
+      applied to the output.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None (default) Determines random number generation
+      for dataset creation. Pass an int for reproducible output across multiple function
+      calls. See :term:`Glossary <random_state>`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shuffle:
+    default: 'True'
+    descp: boolean, optional (default=True) Shuffle the samples and the features.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  tail_strength:
+    default: '0.5'
+    descp: float between 0.0 and 1.0, optional (default=0.5) The relative importance
+      of the fat noisy tail of the singular values profile if `effective_rank` is
+      not None.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - n_samples
+  - n_features
+  - n_informative
+  - n_targets
+  - bias
+  - effective_rank
+  - tail_strength
+  - noise
+  - shuffle
+  - coef
+  - random_state
+  required: []
+link: ''
+package: sklearn
+target: make_regression
+title: sklearn.datasets.make_regression
+version: 0.24.2

@@ -1,0 +1,25 @@
+sklearn.feature_selection.f_classif = f_classif(X, y)
+    Compute the ANOVA F-value for the provided sample.
+    
+    Read more in the :ref:`User Guide <univariate_feature_selection>`.
+    
+    Parameters
+    ----------
+    X : {array-like, sparse matrix} shape = [n_samples, n_features]
+        The set of regressors that will be tested sequentially.
+    
+    y : array of shape(n_samples)
+        The data matrix.
+    
+    Returns
+    -------
+    F : array, shape = [n_features,]
+        The set of F values.
+    
+    pval : array, shape = [n_features,]
+        The set of p-values.
+    
+    See also
+    --------
+    chi2: Chi-squared stats of non-negative features for classification tasks.
+    f_regression: F-value between label/feature for regression tasks.

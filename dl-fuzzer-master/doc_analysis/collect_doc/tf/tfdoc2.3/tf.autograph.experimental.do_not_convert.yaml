@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.autograph.experimental.do_not_convert
+constraints:
+  func:
+    default: None
+    descp: function to decorate.
+inputs:
+  optional:
+  - func
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/autograph/experimental/do_not_convert
+outputs:
+- If func is not None, returns a Callable which is equivalent to func, but is not
+  converted by AutoGraph. If func is None, returns a decorator that, when invoked
+  with a single func argument, returns a Callable equivalent to the above case.
+package: tensorflow
+target: do_not_convert
+title: tf.autograph.experimental.do_not_convert
+version: 2.3.0

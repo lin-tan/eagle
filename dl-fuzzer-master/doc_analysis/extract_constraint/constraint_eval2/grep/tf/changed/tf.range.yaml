@@ -1,0 +1,48 @@
+aliases:
+- tf.compat.v1.range
+constraints:
+  delta:
+    default: '1'
+    descp: A 0-D `Tensor` (scalar). Number that increments `start`. Defaults to 1.
+    dtype:
+    - numeric
+    tensor_t:
+    - tf.tensor
+  dtype:
+    default: None
+    descp: The type of the elements of the resulting tensor.
+    tensor_t:
+    - tf.tensor
+  limit:
+    descp: A 0-D `Tensor` (scalar). Upper limit of sequence, exclusive. If None, defaults
+      to the value of `start` while the first entry of the range defaults to 0.
+    dtype:
+    - numeric
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  name:
+    default: range
+    descp: A name for the operation. Defaults to "range".
+  start:
+    descp: A 0-D `Tensor` (scalar). Acts as first entry in the range if `limit`is
+      not None; otherwise, acts as range limit and first entry defaults to 0.
+    dtype:
+    - numeric
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - delta
+  - dtype
+  - name
+  required:
+  - start
+  - limit
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/range
+outputs: An 1-D `Tensor` of type `dtype`.
+package: tensorflow
+target: range
+title: tf.range
+version: 2.1.0

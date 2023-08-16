@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Total number of array elements which trigger summarization rather than full repr (default = 1000).,None,prim_dtype,dtype(int),,1
+,Total number of array elements which trigger summarization rather than full repr (default = 1000).,None,shape,ndim(0),,1
+,Total number of array elements which trigger summarization rather than full repr (default = 1000).,None,validvalue,"range([0,inf))",,1

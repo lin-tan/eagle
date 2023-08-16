@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: the input matrix
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input matrix
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tuple of (Tensor, Tensor)
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE of BSTR
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.geqrf
+package: torch
+ret_type: (Tensor, Tensor)
+target: geqrf
+title: torch.geqrf
+version: 1.5.0

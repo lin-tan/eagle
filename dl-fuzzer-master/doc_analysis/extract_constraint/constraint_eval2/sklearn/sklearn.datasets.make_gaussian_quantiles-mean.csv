@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array of shape [n_features], optional (default=None) The mean of the multi-dimensional normal distribution. If None then use the origin (0, 0, ...).",None,prim_dtype,dtype(int),,1
+,"array of shape [n_features], optional (default=None) The mean of the multi-dimensional normal distribution. If None then use the origin (0, 0, ...).",None,nonprim_dtype,structure(list(shape)),,1
+,"array of shape [n_features], optional (default=None) The mean of the multi-dimensional normal distribution. If None then use the origin (0, 0, ...).",None,shape,"shape([&n_features]), ndim(1)",,1
+,"array of shape [n_features], optional (default=None) The mean of the multi-dimensional normal distribution. If None then use the origin (0, 0, ...).",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,23 @@
+constraints:
+  epoch:
+    descp: Epoch number of model we would like to load.
+    doc_dtype: int
+    normalized_descp:
+    - Epoch number of model we would like to load
+    normalized_docdtype: ONE_WORD D_TYPE
+  prefix:
+    descp: Prefix of model name.
+    doc_dtype: str
+    normalized_descp:
+    - Prefix of model name
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - prefix
+  - epoch
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/model/index.html#mxnet.model.load_checkpoint
+package: mxnet
+target: load_checkpoint
+title: mxnet.model.load_checkpoint
+version: 1.6.0

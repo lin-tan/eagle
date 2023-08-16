@@ -1,0 +1,16 @@
+constraints:
+  backend:
+    default: None
+    descp: The backend to use. Depending on build-time configurations, valid values
+      are `gloo` and `nccl`. By default uses the same backend as the global group.
+      This field should be given as a lowercase string (e.g., `"gloo"`), which can
+      also be accessed via `Backend` attributes (e.g., `Backend.GLOO`).
+    doc_dtype:
+    - str
+    - Backend
+    dtype:
+    - string
+    enum:
+    - gloo
+    - nccl
+title: torch.distributed.new_group

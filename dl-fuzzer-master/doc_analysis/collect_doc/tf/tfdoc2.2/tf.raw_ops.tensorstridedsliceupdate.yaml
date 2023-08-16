@@ -1,0 +1,50 @@
+constraints:
+  begin:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  begin_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  ellipsis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  end:
+    descp: A Tensor. Must have the same type as begin.
+  end_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  input:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  new_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  shrink_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  strides:
+    descp: A Tensor. Must have the same type as begin.
+  value:
+    descp: A Tensor. Must have the same type as input.
+inputs:
+  optional:
+  - begin_mask
+  - end_mask
+  - ellipsis_mask
+  - new_axis_mask
+  - shrink_axis_mask
+  - name
+  required:
+  - input
+  - begin
+  - end
+  - strides
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorStridedSliceUpdate
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: TensorStridedSliceUpdate
+title: tf.raw_ops.TensorStridedSliceUpdate
+version: 2.2.0

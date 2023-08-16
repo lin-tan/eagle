@@ -1,0 +1,29 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rate:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+inputs:
+  optional:
+  - seed
+  - seed2
+  - name
+  required:
+  - shape
+  - rate
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RandomPoisson
+outputs:
+- A Tensor. Has the same type as rate.
+package: tensorflow
+target: RandomPoisson
+title: tf.raw_ops.RandomPoisson
+version: 2.3.0

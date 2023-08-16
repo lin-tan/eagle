@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A scalar integer `Tensor` indicating the axis to frame. Defaults to the last axis. Supports negative values for indexing from the end.,-1,prim_dtype,dtype(int),,1
+,A scalar integer `Tensor` indicating the axis to frame. Defaults to the last axis. Supports negative values for indexing from the end.,-1,nonprim_dtype,tensor_t(tf.tensor),,1
+,A scalar integer `Tensor` indicating the axis to frame. Defaults to the last axis. Supports negative values for indexing from the end.,-1,shape,ndim(0),,1

@@ -1,0 +1,46 @@
+constraints:
+  multioutput:
+    default: uniform_average
+    descp: 'string in [''raw_values'', ''uniform_average'',                 ''variance_weighted'']
+      or array-like of shape (n_outputs) Defines aggregating of multiple output scores.
+      Array-like value defines weights used to average scores. ''raw_values'' : Returns
+      a full set of scores in case of multioutput input. ''uniform_average'' : Scores
+      of all outputs are averaged with uniform weight. ''variance_weighted'' : Scores
+      of all outputs are averaged, weighted by the variances of each individual output.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[n_outputs]'
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), optional Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_pred:
+    descp: array-like of shape (n_samples,) or (n_samples, n_outputs) Estimated target
+      values.
+  y_true:
+    descp: array-like of shape (n_samples,) or (n_samples, n_outputs) Ground truth
+      (correct) target values.
+dependency:
+- n_outputs
+- n_samples
+inputs:
+  optional:
+  - sample_weight
+  - multioutput
+  required:
+  - y_true
+  - y_pred
+link: ''
+package: scikit-learn
+target: explained_variance_score
+title: sklearn.metrics.explained_variance_score
+version: 0.24.X

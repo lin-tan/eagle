@@ -1,0 +1,49 @@
+constraints:
+  input_indices:
+    descp: A Tensor of type int64. 2-D. N x R_in matrix with the indices of non-empty
+      values in a SparseTensor.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  input_shape:
+    descp: A Tensor of type int64. 1-D. R_in vector with the input SparseTensor's
+      dense shape.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  new_shape:
+    descp: A Tensor of type int64. 1-D. R_out vector with the requested new dense
+      shape.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input_indices
+  - input_shape
+  - new_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseReshape
+outputs:
+- A tuple of Tensor objects (output_indices, output_shape).
+- output_indices: A Tensor of type int64.
+- output_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseReshape
+title: tf.raw_ops.SparseReshape
+version: 2.3.0

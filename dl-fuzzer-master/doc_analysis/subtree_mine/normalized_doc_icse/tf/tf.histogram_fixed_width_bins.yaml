@@ -1,0 +1,51 @@
+aliases:
+- tf.compat.v1.histogram_fixed_width_bins
+constraints:
+  dtype:
+    default: tf.dtypes.int32
+    descp: dtype for returned histogram.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - dtype for returned histogram
+  name:
+    default: None
+    descp: A name for this operation (defaults to 'histogram_fixed_width').
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation defaults to QSTR
+  nbins:
+    default: '100'
+    descp: Scalar `int32 Tensor`.  Number of histogram bins.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Scalar D_TYPE D_STRUCTURE
+    - Number of histogram bins
+  value_range:
+    descp: Shape [2] `Tensor` of same `dtype` as `values`. values <= value_range[0]
+      will be mapped to hist[0], values >= value_range[1] will be mapped to hist[-1].
+    normalized_descp:
+    - Shape BSTR D_STRUCTURE of same PARAM as PARAM
+    - PARAM REXPR BSTR will be mapped to hist BSTR PARAM REXPR BSTR will be mapped
+      to hist BSTR
+  values:
+    descp: Numeric `Tensor`.
+    normalized_descp:
+    - D_TYPE D_STRUCTURE
+exceptions:
+- TypeError: If any unsupported dtype is provided.
+- tf.errors.InvalidArgumentError: If value_range does not satisfy value_range[0] <
+    value_range[1].
+inputs:
+  optional:
+  - nbins
+  - dtype
+  - name
+  required:
+  - values
+  - value_range
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/histogram_fixed_width_bins
+outputs: A `Tensor` holding the indices of the binned values whose shape matches`values`.
+package: tensorflow
+target: histogram_fixed_width_bins
+title: tf.histogram_fixed_width_bins
+version: 2.1.0

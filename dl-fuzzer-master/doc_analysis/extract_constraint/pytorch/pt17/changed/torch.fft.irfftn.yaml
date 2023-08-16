@@ -1,0 +1,57 @@
+constraints:
+  dim:
+    default: None
+    descp: 'Dimensions to be transformed. The last dimension must be the half-Hermitian
+      compressed dimension. Default: all dimensions, or the last `len(s)` dimensions
+      if `s` is given.'
+    doc_dtype:
+    - Tuple[int]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[&s]'
+    structure:
+    - tuple(int)
+  input:
+    descp: the input tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  norm:
+    default: None
+    descp: ''
+    doc_dtype:
+    - str
+    dtype:
+    - string
+  s:
+    default: None
+    descp: 'Signal size in the transformed dimensions. If given, each dimension `dim[i]`
+      will either be zero-padded or trimmed to the length `s[i]` before computing
+      the real FFT. If a length `-1` is specified, no padding is done in that dimension.
+      Defaults to even output in the last dimension: `s[-1] = 2*(input.size(dim[-1])
+      - 1)`.'
+    doc_dtype:
+    - Tuple[int]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - s
+  - dim
+  - norm
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/fft.html#torch.fft.irfftn
+package: torch
+ret_type: Tensor
+target: irfftn
+title: torch.fft.irfftn
+version: 1.7.0

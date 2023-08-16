@@ -1,0 +1,21 @@
+constraints:
+  dtype:
+    descp: A tf.DType. The type of elements in the tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints. The shape of the tensor.
+inputs:
+  optional:
+  - name
+  required:
+  - dtype
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/InfeedDequeue
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: InfeedDequeue
+title: tf.raw_ops.InfeedDequeue
+version: 2.3.0

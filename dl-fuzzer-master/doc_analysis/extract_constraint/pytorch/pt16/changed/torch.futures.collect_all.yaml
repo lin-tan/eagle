@@ -1,0 +1,16 @@
+constraints:
+  futures:
+    descp: a list of `Future` objects.
+    doc_dtype:
+    - list
+    structure:
+    - list
+inputs:
+  optional: []
+  required:
+  - futures
+link: https://pytorch.org/docs/1.6.0/futures.html#torch.futures.collect_all
+package: torch
+target: collect_all
+title: torch.futures.collect_all
+version: 1.6.0

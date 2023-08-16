@@ -1,0 +1,58 @@
+constraints:
+  capacity:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  dtypes:
+    descp: A list of tf.DTypes.
+    dtype:
+    - tf.dtype
+    structure:
+    - list
+  memory_limit:
+    default: '0'
+    descp: An optional int that is >= 0. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - capacity
+  - memory_limit
+  - container
+  - shared_name
+  - name
+  required:
+  - dtypes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/OrderedMapIncompleteSize
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: OrderedMapIncompleteSize
+title: tf.raw_ops.OrderedMapIncompleteSize
+version: 2.3.0

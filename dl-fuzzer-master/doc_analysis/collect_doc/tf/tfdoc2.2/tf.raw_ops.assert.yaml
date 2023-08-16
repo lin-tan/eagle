@@ -1,0 +1,25 @@
+constraints:
+  condition:
+    descp: A Tensor of type bool. The condition to evaluate.
+  data:
+    descp: A list of Tensor objects. The tensors to print out when condition is false.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  summarize:
+    default: '3'
+    descp: An optional int. Defaults to 3. Print this many entries of each tensor.
+inputs:
+  optional:
+  - summarize
+  - name
+  required:
+  - condition
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Assert
+outputs:
+- The created Operation.
+package: tensorflow
+target: Assert
+title: tf.raw_ops.Assert
+version: 2.2.0

@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.data.experimental.parse_example_dataset
+constraints:
+  deterministic:
+    default: None
+    descp: (Optional.) A boolean controlling whether determinism should be traded
+      for performance by allowing elements to be produced out of order if some parsing
+      calls complete faster than others. If deterministic is None, the tf.data.Options.experimental_deterministic
+      dataset option (True by default) is used to decide whether to produce elements
+      deterministically.
+  features:
+    descp: A dict mapping feature keys to FixedLenFeature, VarLenFeature, RaggedFeature,
+      and SparseFeature values.
+  num_parallel_calls:
+    default: '1'
+    descp: (Optional.) A tf.int32 scalar tf.Tensor, representing the number of parsing
+      processes to call in parallel.
+exceptions:
+- ValueError: if features argument is None.
+inputs:
+  optional:
+  - num_parallel_calls
+  - deterministic
+  required:
+  - features
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/parse_example_dataset
+outputs:
+- A dataset transformation function, which can be passed to tf.data.Dataset.apply.
+package: tensorflow
+target: parse_example_dataset
+title: tf.data.experimental.parse_example_dataset
+version: 2.3.0

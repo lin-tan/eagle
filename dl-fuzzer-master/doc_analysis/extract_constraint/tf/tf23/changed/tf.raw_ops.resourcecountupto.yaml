@@ -1,0 +1,39 @@
+constraints:
+  T:
+    descp: 'A tf.DType from: tf.int32, tf.int64.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  limit:
+    descp: An int. If incrementing ref would bring it above limit, instead generates
+      an 'OutOfRange' error.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. Should be from a scalar Variable node.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - limit
+  - T
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ResourceCountUpTo
+outputs:
+- A Tensor of type T.
+package: tensorflow
+target: ResourceCountUpTo
+title: tf.raw_ops.ResourceCountUpTo
+version: 2.3.0

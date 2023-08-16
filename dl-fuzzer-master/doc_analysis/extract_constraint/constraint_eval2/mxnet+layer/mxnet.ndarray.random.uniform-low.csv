@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, NDArray, optional",Lower boundary of the output interval. All values generated will be greater than or equal to low. The default value is 0.,0,prim_dtype,"dtype(float, int)",,1
+"float, NDArray, optional",Lower boundary of the output interval. All values generated will be greater than or equal to low. The default value is 0.,0,nonprim_dtype,structure(ndarray),,1
+"float, NDArray, optional",Lower boundary of the output interval. All values generated will be greater than or equal to low. The default value is 0.,0,shape,ndim(0),,1

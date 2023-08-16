@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`. (Optional) The output type of the operation (int32 or int64). Defaults to int32.",tf.dtypes.int32,prim_dtype,dtype(tf.dtype),,1
+,"An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`. (Optional) The output type of the operation (int32 or int64). Defaults to int32.",tf.dtypes.int32,shape,ndim(0),,1
+,"An optional `tf.DType` from: `tf.int32, tf.int64`. Defaults to `tf.int32`. (Optional) The output type of the operation (int32 or int64). Defaults to int32.",tf.dtypes.int32,validvalue,"enum(tf.int32, tf.int64)",,1

@@ -1,0 +1,38 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  step:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  tensor:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  writer:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - step
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/WriteRawProtoSummary
+outputs:
+- The created Operation.
+package: tensorflow
+target: WriteRawProtoSummary
+title: tf.raw_ops.WriteRawProtoSummary
+version: 2.2.0

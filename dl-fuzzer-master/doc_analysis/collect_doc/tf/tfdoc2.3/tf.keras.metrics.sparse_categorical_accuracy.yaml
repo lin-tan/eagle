@@ -1,0 +1,20 @@
+aliases:
+- tf.metrics.sparse_categorical_accuracy
+- tf.compat.v1.keras.metrics.sparse_categorical_accuracy
+constraints:
+  y_pred:
+    descp: The prediction values.
+  y_true:
+    descp: Integer ground truth values.
+inputs:
+  optional: []
+  required:
+  - y_true
+  - y_pred
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/metrics/sparse_categorical_accuracy
+outputs:
+- Sparse categorical accuracy values.
+package: tensorflow
+target: sparse_categorical_accuracy
+title: tf.keras.metrics.sparse_categorical_accuracy
+version: 2.3.0

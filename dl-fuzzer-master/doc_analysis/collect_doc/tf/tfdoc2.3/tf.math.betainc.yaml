@@ -1,0 +1,27 @@
+aliases:
+- tf.compat.v1.betainc
+- tf.compat.v1.math.betainc
+constraints:
+  a:
+    descp: 'A Tensor. Must be one of the following types: float32, float64.'
+  b:
+    descp: A Tensor. Must have the same type as a.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: A Tensor. Must have the same type as a.
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - b
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/math/betainc
+outputs:
+- A Tensor. Has the same type as a.
+package: tensorflow
+target: betainc
+title: tf.math.betainc
+version: 2.3.0

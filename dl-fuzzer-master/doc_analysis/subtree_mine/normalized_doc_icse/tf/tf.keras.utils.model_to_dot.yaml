@@ -1,0 +1,64 @@
+aliases:
+- tf.compat.v1.keras.utils.model_to_dot
+constraints:
+  dpi:
+    default: '96'
+    descp: Dots per inch.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Dots per inch
+  expand_nested:
+    default: 'False'
+    descp: whether to expand nested models into clusters.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to expand nested models into clusters
+  model:
+    descp: A Keras model instance.
+    normalized_descp:
+    - A Keras model instance
+  rankdir:
+    default: TB
+    descp: '`rankdir` argument passed to PyDot, a string specifying the format of
+      the plot: ''TB'' creates a vertical plot; ''LR'' creates a horizontal plot.'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - QSTR argument passed to PyDot a D_TYPE specifying the format of the plot QSTR
+      creates a vertical plot QSTR creates a horizontal plot
+  show_layer_names:
+    default: 'True'
+    descp: whether to display layer names.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to display layer names
+  show_shapes:
+    default: 'False'
+    descp: whether to display shape information.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to display shape information
+  subgraph:
+    default: 'False'
+    descp: whether to return a `pydot.Cluster` instance.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to return a pydot Cluster instance
+exceptions:
+- ImportError: if graphviz or pydot are not available.
+inputs:
+  optional:
+  - show_shapes
+  - show_layer_names
+  - rankdir
+  - expand_nested
+  - dpi
+  - subgraph
+  required:
+  - model
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/utils/model_to_dot
+outputs: A `pydot.Dot` instance representing the Keras model or a `pydot.Cluster`
+  instance representing nested model if`subgraph=True`.
+package: tensorflow
+target: model_to_dot
+title: tf.keras.utils.model_to_dot
+version: 2.1.0

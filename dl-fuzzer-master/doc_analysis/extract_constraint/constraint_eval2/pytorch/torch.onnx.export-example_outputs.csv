@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of Tensors, default None",Model's example outputs being exported. example_outputs must be provided when exporting a ScriptModule or TorchScript Function.,None,nonprim_dtype,"tensor_t(torch.tensor), structure(tuple(torch.tensor))",,1

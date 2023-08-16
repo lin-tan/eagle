@@ -1,0 +1,70 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes. A list of output types.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    structure:
+    - list
+    - list(tf.dtype)
+  args:
+    descp: A list of Tensor objects. A list of input tensors.
+    structure:
+    - list
+    - list(tf.tensor)
+  config:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  config_proto:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  executor_type:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  f:
+    descp: A function decorated with @Defun. A function that takes 'args', a list
+      of tensors, and returns 'output', another list of tensors. Input and output
+      types are specified by 'Tin' and 'Tout'. The function body of f will be placed
+      and partitioned across devices, setting this op apart from the regular Call
+      op. This op is stateful.
+    dtype:
+    - callable
+    structure:
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - config
+  - config_proto
+  - executor_type
+  - name
+  required:
+  - args
+  - Tout
+  - f
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StatefulPartitionedCall
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: StatefulPartitionedCall
+title: tf.raw_ops.StatefulPartitionedCall
+version: 2.2.0

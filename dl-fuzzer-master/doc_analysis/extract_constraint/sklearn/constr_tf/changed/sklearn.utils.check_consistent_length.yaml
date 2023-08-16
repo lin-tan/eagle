@@ -1,0 +1,15 @@
+constraints:
+  '*arrays':
+    descp: list or tuple of input objects. Objects that will be checked for consistent
+      length.
+    ndim:
+    - '1'
+inputs:
+  optional: []
+  required:
+  - '*arrays'
+link: ''
+package: scikit-learn
+target: check_consistent_length
+title: sklearn.utils.check_consistent_length
+version: 0.24.X

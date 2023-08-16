@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"bool, optional (default=False) If true the classification weights will be exported on each leaf. The classification weights are the number of samples each class.",False,prim_dtype,dtype(boolean),,1
+,"bool, optional (default=False) If true the classification weights will be exported on each leaf. The classification weights are the number of samples each class.",False,shape,ndim(0),,1
+,"bool, optional (default=False) If true the classification weights will be exported on each leaf. The classification weights are the number of samples each class.",False,validvalue,"range([0,inf))",,1

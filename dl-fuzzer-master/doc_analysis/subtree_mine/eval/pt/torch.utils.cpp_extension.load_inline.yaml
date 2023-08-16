@@ -1,0 +1,9 @@
+constraints:
+  cuda_sources:
+    default: None
+    descp: A string, or list of strings, containing CUDA source code.
+    dtype:
+    - string
+    structure:
+    - list
+title: torch.utils.cpp_extension.load_inline

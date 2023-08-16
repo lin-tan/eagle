@@ -1,0 +1,12 @@
+constraints:
+  memory:
+    descp: None, str or object with the joblib.Memory interface
+inputs:
+  optional: []
+  required:
+  - memory
+link: ''
+package: scikit-learn
+target: check_memory
+title: sklearn.utils.validation.check_memory
+version: 0.24.X

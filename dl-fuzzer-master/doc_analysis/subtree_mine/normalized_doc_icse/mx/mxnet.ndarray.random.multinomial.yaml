@@ -1,0 +1,74 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    descp: An n dimensional array whose last dimension has length k, where k is the
+      number of possible outcomes of each multinomial distribution. For example, data
+      with shape (m, n, k) specifies m*n multinomial distributions each with k possible
+      outcomes.
+    doc_dtype: NDArray
+    normalized_descp:
+    - An n dimensional D_STRUCTURE whose last dimension has length k where k is the
+      number of possible outcomes of each multinomial distribution
+    - For example data with PARAM BSTR specifies m n multinomial distributions each
+      with k possible outcomes
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dtype:
+    default: int32
+    descp: Data type of the sample output array. The default is int32. Note that the
+      data type of the log likelihood array is the same with that of data.
+    doc_dtype: str or numpy.dtype, optional
+    normalized_default: DEFAULT D_TYPE
+    normalized_descp:
+    - PARAM type of the sample output D_STRUCTURE
+    - The default is D_TYPE
+    - Note that the PARAM type of the log likelihood D_STRUCTURE is the same with
+      that of PARAM
+    normalized_docdtype: D_TYPE optional
+  get_prob:
+    default: 'False'
+    descp: If true, a second array containing log likelihood of the drawn samples
+      will also be returned. This is usually used for reinforcement learning, where
+      you can provide reward as head gradient w.r.t. this array to estimate gradient.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL a second D_STRUCTURE containing log likelihood of the drawn
+      samples will also be returned
+    - This is usually used for reinforcement learning where you can provide reward
+      as head gradient w r t
+    - this D_STRUCTURE to estimate gradient
+    normalized_docdtype: D_TYPE optional
+  out:
+    default: None
+    descp: Store output to an existing NDArray.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Store output to an existing D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+  shape:
+    default: _Null
+    descp: The number of samples to draw from each distribution. If shape is empty
+      one sample will be drawn from each distribution.
+    doc_dtype: int or tuple of ints, optional
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The number of samples to draw from each distribution
+    - If shape is empty one sample will be drawn from each distribution
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE optional
+inputs:
+  optional:
+  - shape
+  - get_prob
+  - out
+  - dtype
+  required:
+  - data
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.multinomial
+package: mxnet
+target: multinomial
+title: mxnet.ndarray.random.multinomial
+version: 1.6.0

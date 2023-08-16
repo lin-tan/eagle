@@ -1,0 +1,50 @@
+constraints:
+  begin:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  begin_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  ellipsis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  end:
+    descp: A Tensor. Must have the same type as begin.
+  end_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  new_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  ref:
+    descp: A Tensor of type resource.
+  shrink_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  strides:
+    descp: A Tensor. Must have the same type as begin.
+  value:
+    descp: A Tensor.
+inputs:
+  optional:
+  - begin_mask
+  - end_mask
+  - ellipsis_mask
+  - new_axis_mask
+  - shrink_axis_mask
+  - name
+  required:
+  - ref
+  - begin
+  - end
+  - strides
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ResourceStridedSliceAssign
+outputs:
+- The created Operation.
+package: tensorflow
+target: ResourceStridedSliceAssign
+title: tf.raw_ops.ResourceStridedSliceAssign
+version: 2.3.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A scalar float representing the Soft NMS sigma parameter; See Bodla et al, https://arxiv.org/abs/1704.04503).  When`soft_nms_sigma=0.0` (which is default), we fall back to standard (hard) NMS.",0.0,prim_dtype,dtype(float),,1
+,"A scalar float representing the Soft NMS sigma parameter; See Bodla et al, https://arxiv.org/abs/1704.04503).  When`soft_nms_sigma=0.0` (which is default), we fall back to standard (hard) NMS.",0.0,shape,ndim(0),,1

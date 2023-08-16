@@ -1,0 +1,40 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  unbiased:
+    default: 'True'
+    descp: whether to use the unbiased estimation or not
+    doc_dtype: bool
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - unbiased
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.var_mean
+package: torch
+ret_type: (Tensor, Tensor)
+target: var_mean
+title: torch.var_mean
+version: 1.5.0

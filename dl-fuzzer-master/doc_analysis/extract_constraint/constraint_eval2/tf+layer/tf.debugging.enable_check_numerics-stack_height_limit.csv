@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Limit to the height of the printed stack trace. Applicable only to ops in `tf.function`s (graphs).,30,prim_dtype,dtype(int),,1
+,Limit to the height of the printed stack trace. Applicable only to ops in `tf.function`s (graphs).,30,shape,ndim(0),,1
+,Limit to the height of the printed stack trace. Applicable only to ops in `tf.function`s (graphs).,30,validvalue,"range([0,inf))",,1

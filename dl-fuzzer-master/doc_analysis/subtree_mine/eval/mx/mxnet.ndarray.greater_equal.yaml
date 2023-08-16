@@ -1,0 +1,11 @@
+constraints:
+  lhs:
+    descp: First array to be compared.
+    doc_dtype:
+    - scalar
+    - mxnet.ndarray.array
+    ndim:
+    - '0'
+    structure:
+    - ndarray
+title: mxnet.ndarray.greater_equal

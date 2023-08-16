@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), required","The shape of one output image in (channels, height, width) format.",,prim_dtype,dtype(int),,1
+"Shape(tuple), required","The shape of one output image in (channels, height, width) format.",,nonprim_dtype,"structure(tuple(int), tuple:(channels,height,width))",,1
+"Shape(tuple), required","The shape of one output image in (channels, height, width) format.",,shape,"shape([3]), ndim(1)",,1
+"Shape(tuple), required","The shape of one output image in (channels, height, width) format.",,validvalue,"range([0,inf))",,1

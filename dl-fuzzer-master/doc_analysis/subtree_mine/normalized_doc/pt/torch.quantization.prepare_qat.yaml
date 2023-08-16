@@ -1,0 +1,28 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: carry out model transformations in-place, the original module is mutated
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - carry out PARAM transformations in place, the original module is mutated
+  mapping:
+    default: None
+    descp: dictionary that maps float modules to quantized modules to be replaced.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE that maps D_TYPE modules to quantized modules to be replaced
+  model:
+    descp: input model to be modified in-place
+    normalized_descp:
+    - input model to be modified in place
+inputs:
+  optional:
+  - mapping
+  - inplace
+  required:
+  - model
+link: https://pytorch.org/docs/stable/quantization.html#torch.quantization.prepare_qat
+package: torch
+target: prepare_qat
+title: torch.quantization.prepare_qat
+version: 1.5.0

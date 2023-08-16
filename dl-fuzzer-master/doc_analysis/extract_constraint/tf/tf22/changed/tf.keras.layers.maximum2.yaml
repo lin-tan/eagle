@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.layers.maximum
+constraints:
+  '**kwargs':
+    default: null
+    descp: Standard layer keyword arguments.
+  inputs:
+    descp: A list of input tensors (at least 2) of same shape.
+    structure:
+    - list
+    - list(tf.tensor)
+exceptions:
+- ValueError: If input tensors are of different shape.
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/maximum
+outputs:
+- A tensor (of same shape as input tensor) with the element-wise maximum of the inputs.
+package: tensorflow
+target: maximum
+title: tf.keras.layers.maximum
+version: 2.2.0

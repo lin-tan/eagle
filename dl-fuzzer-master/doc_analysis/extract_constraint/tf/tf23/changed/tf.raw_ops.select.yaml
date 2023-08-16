@@ -1,0 +1,49 @@
+constraints:
+  condition:
+    descp: A Tensor of type bool.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A Tensor which may have the same shape as condition. If condition is rank
+      1, x may have higher rank, but its first dimension must match the size of condition.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - shape:&condition
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A Tensor with the same type and shape as x.
+    dtype:
+    - dtype:&x
+    shape:
+    - shape:&x
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - condition
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Select
+outputs:
+- A Tensor. Has the same type as t.
+package: tensorflow
+target: Select
+title: tf.raw_ops.Select
+version: 2.3.0

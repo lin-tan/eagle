@@ -1,0 +1,31 @@
+constraints:
+  input_handle:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tensor:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - tensor
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListPushBack
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListPushBack
+title: tf.raw_ops.TensorListPushBack
+version: 2.3.0

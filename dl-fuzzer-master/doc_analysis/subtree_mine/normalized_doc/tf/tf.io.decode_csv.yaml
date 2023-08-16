@@ -1,0 +1,77 @@
+constraints:
+  field_delim:
+    default: ','
+    descp: An optional `string`. Defaults to `","`. char delimiter to separate fields
+      in a record.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to ,
+    - char delimiter to separate fields in a record
+  na_value:
+    default: ''
+    descp: Additional string to recognize as NA/NaN.
+    normalized_default: ''
+    normalized_descp:
+    - Additional D_TYPE to recognize as NA NaN
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  record_defaults:
+    descp: A list of `Tensor` objects with specific types. Acceptable types are `float32`,
+      `float64`, `int32`, `int64`, `string`. One tensor per column of the input record,
+      with either a scalar default value for that column or an empty vector if the
+      column is required.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE objects with specific types
+    - Acceptable types are D_TYPE
+    - One D_STRUCTURE per column of the input record, with either a scalar default
+      value for that column or an empty D_STRUCTURE if the column is required
+  records:
+    descp: A `Tensor` of type `string`. Each string is a record/row in the csv and
+      all records should have the same format.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - Each D_TYPE is a record row in the csv and all records should have the same
+      format
+  select_cols:
+    default: None
+    descp: Optional sorted list of column indices to select. If specified, only this
+      subset of columns will be parsed and returned.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional sorted D_STRUCTURE of column indices to select
+    - If specified, only this subset of columns will be parsed and returned
+  use_quote_delim:
+    default: 'True'
+    descp: An optional `bool`. Defaults to `True`. If false, treats double quotation
+      marks as regular characters inside of the string fields (ignoring RFC 4180,
+      Section 2, Bullet 5).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - If CONSTANT_BOOL, treats D_TYPE quotation marks as regular characters inside
+      of the D_TYPE fields BSTR
+exceptions:
+- ValueError: If any of the arguments is malformed.
+inputs:
+  optional:
+  - field_delim
+  - use_quote_delim
+  - na_value
+  - select_cols
+  - name
+  required:
+  - records
+  - record_defaults
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/decode_csv
+outputs: A list of `Tensor` objects. Has the same type as `record_defaults`. Each
+  tensor will have the same shape as records.
+package: tensorflow
+target: decode_csv
+title: tf.io.decode_csv
+version: 2.1.0

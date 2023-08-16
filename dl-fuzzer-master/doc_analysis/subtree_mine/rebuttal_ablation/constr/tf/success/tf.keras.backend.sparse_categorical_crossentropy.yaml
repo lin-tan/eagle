@@ -1,0 +1,99 @@
+aliases:
+- tf.compat.v1.keras.backend.sparse_categorical_crossentropy
+constraints:
+  axis:
+    default: '-1'
+    descp: Int specifying the channels axis. `axis=-1` corresponds to data format
+      `channels_last', and`axis=1`corresponds to data format`channels_first`.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+  from_logits:
+    default: 'False'
+    descp: Boolean, whether `output` is the result of a softmax, or is a tensor of
+      logits.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  output:
+    descp: A tensor resulting from a softmax (unless `from_logits` is True, in which
+      case `output` is expected to be the logits).
+    dtype:
+    - '&from_logits'
+    - '&output'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '&output'
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&from_logits'
+    - '&output'
+    - '[&output,&output]'
+    - '[&output]'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  target:
+    descp: An integer tensor.
+    dtype:
+    - int
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: if `axis` is neither -1 nor one of the axes of `output`.
+inputs:
+  optional:
+  - from_logits
+  - axis
+  required:
+  - target
+  - output
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/sparse_categorical_crossentropy
+outputs: Output tensor.
+package: tensorflow
+target: sparse_categorical_crossentropy
+title: tf.keras.backend.sparse_categorical_crossentropy
+version: 2.1.0

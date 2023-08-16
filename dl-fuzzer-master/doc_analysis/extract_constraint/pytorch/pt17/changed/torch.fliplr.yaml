@@ -1,0 +1,19 @@
+constraints:
+  input:
+    descp: Must be at least 2-dimensional.
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '>=2'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.fliplr.html#torch.fliplr#torch.fliplr
+package: torch
+ret_type: Tensor
+target: fliplr
+title: torch.fliplr
+version: 1.7.0

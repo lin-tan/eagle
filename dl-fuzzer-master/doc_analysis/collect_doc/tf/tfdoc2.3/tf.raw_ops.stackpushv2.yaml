@@ -1,0 +1,25 @@
+constraints:
+  elem:
+    descp: A Tensor. The tensor to be pushed onto the stack.
+  handle:
+    descp: A Tensor of type resource. The handle to a stack.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  swap_memory:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Swap elem to CPU. Default to false.
+inputs:
+  optional:
+  - swap_memory
+  - name
+  required:
+  - handle
+  - elem
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StackPushV2
+outputs:
+- A Tensor. Has the same type as elem.
+package: tensorflow
+target: StackPushV2
+title: tf.raw_ops.StackPushV2
+version: 2.3.0

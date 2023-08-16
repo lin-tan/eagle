@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int or array-like, optional (default=100) If int, it is the total number of points equally divided among clusters. If array-like, each element of the sequence indicates the number of samples per cluster.",100,prim_dtype,dtype(int),1,1
+,"int or array-like, optional (default=100) If int, it is the total number of points equally divided among clusters. If array-like, each element of the sequence indicates the number of samples per cluster.",100,shape,ndim(0),0,1
+,"int or array-like, optional (default=100) If int, it is the total number of points equally divided among clusters. If array-like, each element of the sequence indicates the number of samples per cluster.",100,validvalue,"range([0,inf))",1,1
+,,,shape,"ndim(0,1)",1,0

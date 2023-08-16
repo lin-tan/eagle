@@ -1,0 +1,45 @@
+constraints:
+  '*size':
+    descp: a sequence of integers defining the shape of the output tensor. Can be
+      a variable number of arguments or a collection like a list or tuple.
+    doc_dtype: int...
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype: '`torch.device`, optional'
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`).'
+    doc_dtype: '`torch.dtype`, optional'
+  layout:
+    default: torch.strided
+    descp: 'the desired layout of returned Tensor. Default: `torch.strided`.'
+    doc_dtype: '`torch.layout`, optional'
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+inputs:
+  optional:
+  - out
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - '*size'
+link: https://pytorch.org/docs/stable/torch.html#torch.zeros
+package: torch
+ret_type: Tensor
+target: zeros
+title: torch.zeros
+version: 1.5.0

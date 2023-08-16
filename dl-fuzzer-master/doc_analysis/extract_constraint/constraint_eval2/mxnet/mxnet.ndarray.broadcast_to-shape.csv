@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[]","The shape of the desired array. We can set the dim to zero if it's same as the original. E.g A = broadcast_to(B, shape=(10, 0, 0)) has the same meaning as A = broadcast_axis(B, axis=0, size=10).",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[]","The shape of the desired array. We can set the dim to zero if it's same as the original. E.g A = broadcast_to(B, shape=(10, 0, 0)) has the same meaning as A = broadcast_axis(B, axis=0, size=10).",_Null,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), optional, default=[]","The shape of the desired array. We can set the dim to zero if it's same as the original. E.g A = broadcast_to(B, shape=(10, 0, 0)) has the same meaning as A = broadcast_axis(B, axis=0, size=10).",_Null,shape,ndim(1),,1
+"Shape(tuple), optional, default=[]","The shape of the desired array. We can set the dim to zero if it's same as the original. E.g A = broadcast_to(B, shape=(10, 0, 0)) has the same meaning as A = broadcast_axis(B, axis=0, size=10).",_Null,validvalue,"range([0,inf))",,1

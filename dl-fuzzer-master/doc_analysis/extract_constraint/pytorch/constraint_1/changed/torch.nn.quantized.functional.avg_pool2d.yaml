@@ -1,0 +1,94 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: 'when True, will use ceil instead of floor in the formula to compute the
+      output shape. Default: `False`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  count_include_pad:
+    default: 'True'
+    descp: 'when True, will include the zero-padding in the averaging calculation.
+      Default: `True`'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  divisor_override:
+    default: None
+    descp: 'if specified, it will be used as divisor, otherwise size of the pooling
+      region will be used. Default: None'
+  input:
+    descp: 'quantized input tensor (minibatch , in _channels , iH , iW) '
+    ndim:
+    - '4'
+    shape:
+    - '[minibatch,in_channels,ih,iw]'
+    tensor_t:
+    - torch.tensor
+  kernel_size:
+    descp: size of the pooling region. Can be a single number or a tuple (kH, kW)
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - tuple:(kh,kw)
+  padding:
+    default: '0'
+    descp: 'implicit zero paddings on both sides of the input. Can be a single number
+      or a tuple (padH, padW). Default: 0'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple:(padh,padw)
+  stride:
+    default: None
+    descp: 'stride of the pooling operation. Can be a single number or a tuple (sH,
+      sW). Default: `kernel_size`'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple:(sh,sw)
+dependency:
+- ih
+- in_channels
+- iw
+- kh
+- kw
+- minibatch
+- padh
+- padw
+- sh
+- sw
+inputs:
+  optional:
+  - stride
+  - padding
+  - ceil_mode
+  - count_include_pad
+  - divisor_override
+  required:
+  - input
+  - kernel_size
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.avg_pool2d
+package: torch
+target: avg_pool2d
+title: torch.nn.quantized.functional.avg_pool2d
+version: 1.5.0

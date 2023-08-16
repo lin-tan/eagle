@@ -1,0 +1,24 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes.
+  input:
+    descp: A list of Tensor objects.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  token:
+    descp: A string.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - token
+  - Tout
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PyFuncStateless
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: PyFuncStateless
+title: tf.raw_ops.PyFuncStateless
+version: 2.3.0

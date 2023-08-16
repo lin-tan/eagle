@@ -1,0 +1,11 @@
+constraints:
+  beta_initializer:
+    default: zeros
+    descp: Initializer for the beta weight.
+    doc_dtype:
+    - str
+    - Initializer
+    - "default \u2018zeros\u2019"
+    dtype:
+    - string
+title: mxnet.gluon.nn.LayerNorm

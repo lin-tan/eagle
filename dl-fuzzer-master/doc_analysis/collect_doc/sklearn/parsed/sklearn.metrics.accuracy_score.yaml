@@ -1,0 +1,18 @@
+constraints:
+  normalize: {default: 'True', descp: 'bool, optional (default=True) If ``False``,
+      return the number of correctly classified samples. Otherwise, return the fraction
+      of correctly classified samples.'}
+  sample_weight: {default: None, descp: 'array-like of shape (n_samples,), default=None
+      Sample weights.'}
+  y_pred: {descp: '1d array-like, or label indicator array / sparse matrix Predicted
+      labels, as returned by a classifier.'}
+  y_true: {descp: '1d array-like, or label indicator array / sparse matrix Ground
+      truth (correct) labels.'}
+inputs:
+  optional: [normalize, sample_weight]
+  required: [y_true, y_pred]
+link: ''
+package: sklearn
+target: accuracy_score
+title: sklearn.metrics.accuracy_score
+version: 0.24.2

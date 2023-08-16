@@ -1,0 +1,39 @@
+aliases:
+- tf.compat.v1.ragged.map_flat_values
+constraints:
+  '**kwargs':
+    default: null
+    descp: Keyword arguments for op.
+  '*args':
+    default: null
+    descp: Arguments for op.
+  op:
+    descp: The operation that should be applied to the RaggedTensor flat_values. op
+      is typically an element-wise operation (such as math_ops.add), but any operation
+      that preserves the size of the outermost dimension can be used. I.e., shape[0]
+      of the value returned by op must match shape[0] of the RaggedTensors' flat_values
+      tensors.
+    dtype:
+    - callable
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[0]'
+exceptions:
+- ValueError: If args contains no RaggedTensors, or if the nested_splits of the input
+    RaggedTensors are not identical.
+inputs:
+  optional:
+  - '*args'
+  - '**kwargs'
+  required:
+  - op
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/ragged/map_flat_values
+outputs:
+- A RaggedTensor whose ragged_rank matches the ragged_rank of all input RaggedTensors.
+package: tensorflow
+target: map_flat_values
+title: tf.ragged.map_flat_values
+version: 2.3.0

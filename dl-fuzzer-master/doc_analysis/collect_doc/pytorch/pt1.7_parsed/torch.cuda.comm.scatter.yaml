@@ -1,0 +1,53 @@
+constraints:
+  chunk_sizes:
+    default: None
+    descp: sizes of chunks to be placed on each device. It should match `devices`
+      in length and sums to `tensor.size(dim)`. If not specified, `tensor` will be
+      divided into equal chunks.
+    doc_dtype:
+    - Iterable[int]
+  devices:
+    default: None
+    descp: an iterable of GPU devices, among which to scatter.
+    doc_dtype:
+    - Iterable[torch.device
+    - str
+    - int]
+  dim:
+    default: '0'
+    descp: 'A dimension along which to chunk `tensor`. Default: `0`.'
+    doc_dtype:
+    - int
+  out:
+    default: None
+    descp: the GPU tensors to store output results. Sizes of these tensors must match
+      that of `tensor`, except for `dim`, where the total size must sum to `tensor.size(dim)`.
+    doc_dtype:
+    - Sequence[Tensor]
+    - keyword-only
+  streams:
+    default: None
+    descp: an iterable of Streams, among which to execute the scatter. If not specified,
+      the default stream will be utilized.
+    doc_dtype:
+    - Iterable[Stream]
+  tensor:
+    descp: tensor to scatter. Can be on CPU or GPU.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - devices
+  - chunk_sizes
+  - dim
+  - streams
+  - out
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.comm.scatter
+package: torch
+target: scatter
+title: torch.cuda.comm.scatter
+version: 1.7.0

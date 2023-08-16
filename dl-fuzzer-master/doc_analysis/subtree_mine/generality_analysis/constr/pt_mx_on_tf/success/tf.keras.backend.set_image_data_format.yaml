@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.backend.set_image_data_format
+constraints:
+  data_format:
+    descp: 'string. `''channels_first''` or `''channels_last''`. Example: `python
+      from keras import backend as K K.image_data_format() >>> ''channels_first''
+      K.set_image_data_format(''channels_last'') K.image_data_format() >>> ''channels_last''`'
+    dtype:
+    - tf.string
+    enum:
+    - channels_first
+    - channels_last
+exceptions:
+- ValueError: In case of invalid `data_format` value.
+inputs:
+  optional: []
+  required:
+  - data_format
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/set_image_data_format
+package: tensorflow
+target: set_image_data_format
+title: tf.keras.backend.set_image_data_format
+version: 2.1.0

@@ -1,0 +1,72 @@
+constraints:
+  '**kwds':
+    descp: optional keyword parameters Any further parameters are passed directly
+      to the distance function. If using a scipy.spatial.distance metric, the parameters
+      are still metric dependent. See the scipy docs for usage examples.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  X:
+    descp: array [n_samples_a, n_samples_a] if metric == "precomputed", or,              [n_samples_a,
+      n_features] otherwise Array of pairwise distances between samples, or a feature
+      array.
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - ndarray
+  labels:
+    descp: array, shape = [n_samples] Predicted labels for each sample.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+    structure:
+    - ndarray
+  metric:
+    default: euclidean
+    descp: string, or callable The metric to use when calculating distance between
+      instances in a feature array. If metric is a string, it must be one of the options
+      allowed by :func:`metrics.pairwise.pairwise_distances <sklearn.metrics.pairwise.pairwise_distances>`.
+      If X is the distance array itself, use ``metric="precomputed"``.
+    dtype:
+    - boolean
+    - string
+    ndim:
+    - '0'
+    structure:
+    - ndarray
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) The generator
+      used to randomly select a subset of samples.  If int, random_state is the seed
+      used by the random number generator; If RandomState instance, random_state is
+      the random number generator; If None, the random number generator is the RandomState
+      instance used by `np.random`. Used when ``sample_size is not None``.
+  sample_size:
+    default: None
+    descp: int or None The size of the sample to use when computing the Silhouette
+      Coefficient on a random subset of the data. If ``sample_size is None``, no sampling
+      is used.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - metric
+  - sample_size
+  - random_state
+  required:
+  - X
+  - labels
+  - '**kwds'
+link: ''
+package: sklearn
+target: silhouette_score
+title: sklearn.metrics.silhouette_score
+version: 0.24.2

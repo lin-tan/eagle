@@ -1,0 +1,7 @@
+constraints:
+  map_location:
+    default: None
+    descp: a function or a dict specifying how to remap storage locations (see torch.load)
+    structure:
+    - 'dict'
+title: torch.hub.load_state_dict_from_url

@@ -1,0 +1,44 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: float64, float32, half,
+      complex64, complex128. A tensor of shape [..., M, M] whose inner-most 2 dimensions
+      form matrices of size [M, M].'
+    ndim:
+    - '2'
+    - '>2'
+    shape:
+    - '[...,m,m]'
+    - '[m,m]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_idx_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+dependency:
+- m
+inputs:
+  optional:
+  - output_idx_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Lu
+outputs:
+- A tuple of Tensor objects (lu, p).
+- lu: A Tensor. Has the same type as input.
+- p: A Tensor of type output_idx_type.
+package: tensorflow
+target: Lu
+title: tf.raw_ops.Lu
+version: 2.3.0

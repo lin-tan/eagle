@@ -1,0 +1,96 @@
+constraints:
+  backend:
+    descp: The backend to use. Depending on build-time configurations, valid values
+      include `mpi`, `gloo`, and `nccl`. This field should be given as a lowercase
+      string (e.g., `"gloo"`), which can also be accessed via `Backend` attributes
+      (e.g., `Backend.GLOO`). If using multiple processes per machine with `nccl`
+      backend, each process must have exclusive access to every GPU it uses, as sharing
+      GPUs between processes can result in deadlocks.
+    doc_dtype: str or Backend
+    normalized_descp:
+    - The backend to use
+    - Depending on build time configurations valid values include QSTR
+    - This field should be given as a lowercase D_TYPE e g QSTR which can also be
+      accessed via QSTR attributes e g Backend GLOO
+    - If using multiple processes per machine with QSTR backend each process must
+      have exclusive access to every GPU it uses as sharing GPUs between processes
+      can result in deadlocks
+    normalized_docdtype: D_TYPE or Backend
+  group_name:
+    default: ''
+    descp: Group name.
+    doc_dtype: str, optional, deprecated
+    normalized_default: ''
+    normalized_descp:
+    - Group name
+    normalized_docdtype: D_TYPE optional deprecated
+  init_method:
+    default: None
+    descp: URL specifying how to initialize the process group. Default is "env://"
+      if no `init_method` or `store` is specified. Mutually exclusive with `store`.
+    doc_dtype: str, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - URL specifying how to initialize the process group
+    - Default is env QSTR init_method or PARAM is specified
+    - Mutually exclusive with PARAM
+    normalized_docdtype: D_TYPE optional
+  rank:
+    default: '-1'
+    descp: Rank of the current process. Required if `store` is specified.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Rank of the current process
+    - Required if PARAM is specified
+    normalized_docdtype: D_TYPE optional
+  store:
+    default: None
+    descp: Key/value store accessible to all workers, used to exchange connection/address
+      information. Mutually exclusive with `init_method`.
+    doc_dtype: Store, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Key value store accessible to all workers used to exchange connection address
+      information
+    - Mutually exclusive with PARAM
+    normalized_docdtype: Store optional
+  timeout:
+    default: datetime.timedelta(0,1800)
+    descp: Timeout for operations executed against the process group. Default value
+      equals 30 minutes. This is applicable for the `gloo` backend. For `nccl`, this
+      is applicable only if the environment variable `NCCL_BLOCKING_WAIT` is set to
+      1.
+    doc_dtype: timedelta, optional
+    normalized_default: datetime timedelta CONSTANT_NUM CONSTANT_NUM
+    normalized_descp:
+    - Timeout for operations executed against the process group
+    - Default value equals CONSTANT_NUM minutes
+    - This is applicable for the QSTR PARAM
+    - For QSTR this is applicable only if the environment variable QSTR is set to
+      CONSTANT_NUM
+    normalized_docdtype: timedelta optional
+  world_size:
+    default: '-1'
+    descp: Number of processes participating in the job. Required if `store` is specified.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of processes participating in the job
+    - Required if PARAM is specified
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - init_method
+  - timeout
+  - world_size
+  - rank
+  - store
+  - group_name
+  required:
+  - backend
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.init_process_group
+package: torch
+target: init_process_group
+title: torch.distributed.init_process_group
+version: 1.5.0

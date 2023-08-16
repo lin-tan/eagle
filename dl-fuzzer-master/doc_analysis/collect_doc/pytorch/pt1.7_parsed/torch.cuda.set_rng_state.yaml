@@ -1,0 +1,25 @@
+constraints:
+  device:
+    default: cuda
+    descp: 'The device to set the RNG state. Default: `''cuda''` (i.e., `torch.device(''cuda'')`,
+      the current CUDA device).'
+    doc_dtype:
+    - torch.device
+    - int
+    sig_dtype: Union[int,str,torch.device]
+  new_state:
+    descp: The desired state
+    doc_dtype:
+    - torch.ByteTensor
+    sig_dtype: torch.Tensor
+inputs:
+  optional:
+  - device
+  required:
+  - new_state
+link: https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.set_rng_state
+package: torch
+ret_type: None
+target: set_rng_state
+title: torch.cuda.set_rng_state
+version: 1.7.0

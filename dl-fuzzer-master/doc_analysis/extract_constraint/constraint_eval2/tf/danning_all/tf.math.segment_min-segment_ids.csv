@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. A 1-D tensor whose size is equal to the size of `data`'s first dimension.  Values should be sorted and can be repeated.",,prim_dtype,"dtype(tf.int32, tf.int64)",1,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. A 1-D tensor whose size is equal to the size of `data`'s first dimension.  Values should be sorted and can be repeated.",,nonprim_dtype,tensor_t(tf.tensor),1,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. A 1-D tensor whose size is equal to the size of `data`'s first dimension.  Values should be sorted and can be repeated.",,shape,ndim(1),1,1

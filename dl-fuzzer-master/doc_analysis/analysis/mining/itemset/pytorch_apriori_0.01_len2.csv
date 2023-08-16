@@ -1,0 +1,201 @@
+,support,itemsets,length
+129,0.09899569583931134,"frozenset({'tensor', 'input'})",2
+143,0.0784313725490196,"frozenset({'output', 'tensor'})",2
+87,0.05738880918220947,"frozenset({'tensor', 'SOME_DTYPE'})",2
+146,0.053562888570062174,"frozenset({'tensor', 'returned'})",2
+114,0.04878048780487805,"frozenset({'none', 'default'})",2
+123,0.042085126733620276,"frozenset({'desired', 'tensor'})",2
+122,0.042085126733620276,"frozenset({'desired', 'returned'})",2
+211,0.042085126733620276,"frozenset({'desired', 'tensor', 'returned'})",3
+156,0.030607364897178385,"frozenset({'type', 'tensor'})",2
+113,0.029172644667623145,"frozenset({'false', 'default'})",2
+81,0.028216164514586323,"frozenset({'default', 'SOME_DTYPE'})",2
+80,0.027259684361549498,"frozenset({'current', 'SOME_DTYPE'})",2
+118,0.027259684361549498,"frozenset({'default', 'torch'})",2
+112,0.02582496413199426,"frozenset({'data', 'type'})",2
+94,0.0234337637494022,"frozenset({'single', 'SOME_STRUCTURE'})",2
+83,0.02295552367288379,"frozenset({'none', 'SOME_DTYPE'})",2
+85,0.021999043519846963,"frozenset({'returned', 'SOME_DTYPE'})",2
+111,0.021999043519846963,"frozenset({'data', 'tensor'})",2
+167,0.021520803443328552,"frozenset({'none', 'default', 'SOME_DTYPE'})",3
+171,0.021520803443328552,"frozenset({'desired', 'tensor', 'SOME_DTYPE'})",3
+82,0.021520803443328552,"frozenset({'desired', 'SOME_DTYPE'})",2
+176,0.021520803443328552,"frozenset({'returned', 'SOME_DTYPE', 'tensor'})",3
+170,0.021520803443328552,"frozenset({'desired', 'returned', 'SOME_DTYPE'})",3
+238,0.021520803443328552,"frozenset({'desired', 'returned', 'SOME_DTYPE', 'tensor'})",4
+92,0.020564323290291727,"frozenset({'SOME_STRUCTURE', 'number'})",2
+106,0.020564323290291727,"frozenset({'current', 'tensor'})",2
+164,0.01912960306073649,"frozenset({'current', 'tensor', 'SOME_DTYPE'})",3
+88,0.01912960306073649,"frozenset({'SOME_DTYPE', 'torch'})",2
+138,0.018651362984218076,"frozenset({'single', 'number'})",2
+149,0.018651362984218076,"frozenset({'torch', 'see'})",2
+95,0.018651362984218076,"frozenset({'SOME_STRUCTURE', 'tensor'})",2
+181,0.018651362984218076,"frozenset({'single', 'SOME_STRUCTURE', 'number'})",3
+197,0.018651362984218076,"frozenset({'data', 'type', 'tensor'})",3
+124,0.018173122907699665,"frozenset({'desired', 'type'})",2
+212,0.018173122907699665,"frozenset({'desired', 'type', 'returned'})",3
+213,0.018173122907699665,"frozenset({'desired', 'type', 'tensor'})",3
+121,0.018173122907699665,"frozenset({'default', 'uses'})",2
+248,0.018173122907699665,"frozenset({'desired', 'type', 'tensor', 'data'})",4
+247,0.018173122907699665,"frozenset({'desired', 'type', 'returned', 'data'})",4
+192,0.018173122907699665,"frozenset({'desired', 'data', 'returned'})",3
+249,0.018173122907699665,"frozenset({'data', 'type', 'returned', 'tensor'})",4
+193,0.018173122907699665,"frozenset({'desired', 'data', 'tensor'})",3
+110,0.018173122907699665,"frozenset({'data', 'returned'})",2
+109,0.018173122907699665,"frozenset({'desired', 'data'})",2
+246,0.018173122907699665,"frozenset({'desired', 'data', 'returned', 'tensor'})",4
+226,0.018173122907699665,"frozenset({'type', 'returned', 'tensor'})",3
+260,0.018173122907699665,"frozenset({'desired', 'type', 'returned', 'tensor'})",4
+147,0.018173122907699665,"frozenset({'type', 'returned'})",2
+269,0.018173122907699665,"frozenset({'desired', 'data', 'tensor', 'type', 'returned'})",5
+196,0.018173122907699665,"frozenset({'data', 'type', 'returned'})",3
+195,0.018173122907699665,"frozenset({'data', 'returned', 'tensor'})",3
+194,0.018173122907699665,"frozenset({'desired', 'type', 'data'})",3
+137,0.017694882831181254,"frozenset({'none', 'uses'})",2
+104,0.017694882831181254,"frozenset({'default', 'current'})",2
+203,0.017694882831181254,"frozenset({'none', 'default', 'uses'})",3
+135,0.017694882831181254,"frozenset({'none', 'torch'})",2
+162,0.017694882831181254,"frozenset({'default', 'current', 'SOME_DTYPE'})",3
+153,0.01721664275466284,"frozenset({'shape', 'tensor'})",2
+128,0.01721664275466284,"frozenset({'size', 'input'})",2
+201,0.01721664275466284,"frozenset({'none', 'default', 'torch'})",3
+155,0.01673840267814443,"frozenset({'tensor', 'torch'})",2
+115,0.01673840267814443,"frozenset({'default', 'see'})",2
+215,0.016260162601626018,"frozenset({'none', 'set_default_tensor_type', 'see'})",3
+207,0.016260162601626018,"frozenset({'default', 'set_default_tensor_type', 'torch'})",3
+216,0.016260162601626018,"frozenset({'none', 'torch', 'see'})",3
+217,0.016260162601626018,"frozenset({'none', 'uses', 'see'})",3
+206,0.016260162601626018,"frozenset({'default', 'uses', 'see'})",3
+210,0.016260162601626018,"frozenset({'default', 'uses', 'torch'})",3
+205,0.016260162601626018,"frozenset({'default', 'torch', 'see'})",3
+204,0.016260162601626018,"frozenset({'default', 'set_default_tensor_type', 'see'})",3
+208,0.016260162601626018,"frozenset({'default', 'uses', 'set_default_tensor_type'})",3
+218,0.016260162601626018,"frozenset({'none', 'set_default_tensor_type', 'torch'})",3
+199,0.016260162601626018,"frozenset({'none', 'default', 'set_default_tensor_type'})",3
+219,0.016260162601626018,"frozenset({'none', 'uses', 'set_default_tensor_type'})",3
+198,0.016260162601626018,"frozenset({'none', 'default', 'see'})",3
+221,0.016260162601626018,"frozenset({'none', 'uses', 'torch'})",3
+159,0.016260162601626018,"frozenset({'uses', 'torch'})",2
+276,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'torch', 'set_default_tensor_type', 'see'})",6
+152,0.016260162601626018,"frozenset({'uses', 'set_default_tensor_type'})",2
+256,0.016260162601626018,"frozenset({'default', 'set_default_tensor_type', 'torch', 'see'})",4
+275,0.016260162601626018,"frozenset({'none', 'uses', 'torch', 'set_default_tensor_type', 'see'})",5
+274,0.016260162601626018,"frozenset({'default', 'uses', 'torch', 'set_default_tensor_type', 'see'})",5
+273,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'torch', 'set_default_tensor_type'})",5
+272,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'torch', 'see'})",5
+271,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'set_default_tensor_type', 'see'})",5
+270,0.016260162601626018,"frozenset({'none', 'default', 'torch', 'set_default_tensor_type', 'see'})",5
+266,0.016260162601626018,"frozenset({'torch', 'uses', 'set_default_tensor_type', 'see'})",4
+264,0.016260162601626018,"frozenset({'torch', 'none', 'uses', 'set_default_tensor_type'})",4
+263,0.016260162601626018,"frozenset({'none', 'uses', 'torch', 'see'})",4
+262,0.016260162601626018,"frozenset({'none', 'uses', 'set_default_tensor_type', 'see'})",4
+261,0.016260162601626018,"frozenset({'none', 'set_default_tensor_type', 'torch', 'see'})",4
+259,0.016260162601626018,"frozenset({'torch', 'default', 'uses', 'set_default_tensor_type'})",4
+258,0.016260162601626018,"frozenset({'default', 'uses', 'torch', 'see'})",4
+257,0.016260162601626018,"frozenset({'default', 'uses', 'set_default_tensor_type', 'see'})",4
+255,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'torch'})",4
+151,0.016260162601626018,"frozenset({'set_default_tensor_type', 'torch'})",2
+116,0.016260162601626018,"frozenset({'default', 'set_default_tensor_type'})",2
+254,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'set_default_tensor_type'})",4
+253,0.016260162601626018,"frozenset({'none', 'default', 'set_default_tensor_type', 'torch'})",4
+252,0.016260162601626018,"frozenset({'none', 'default', 'uses', 'see'})",4
+251,0.016260162601626018,"frozenset({'none', 'default', 'torch', 'see'})",4
+250,0.016260162601626018,"frozenset({'none', 'default', 'set_default_tensor_type', 'see'})",4
+133,0.016260162601626018,"frozenset({'none', 'set_default_tensor_type'})",2
+230,0.016260162601626018,"frozenset({'torch', 'uses', 'set_default_tensor_type'})",3
+229,0.016260162601626018,"frozenset({'uses', 'torch', 'see'})",3
+228,0.016260162601626018,"frozenset({'uses', 'set_default_tensor_type', 'see'})",3
+227,0.016260162601626018,"frozenset({'set_default_tensor_type', 'torch', 'see'})",3
+148,0.016260162601626018,"frozenset({'set_default_tensor_type', 'see'})",2
+150,0.016260162601626018,"frozenset({'uses', 'see'})",2
+132,0.016260162601626018,"frozenset({'none', 'see'})",2
+232,0.015781922525107604,"frozenset({'none', 'current', 'default', 'SOME_DTYPE'})",4
+77,0.015781922525107604,"frozenset({'SOME_STRUCTURE', 'SOME_DTYPE'})",2
+163,0.015781922525107604,"frozenset({'none', 'current', 'SOME_DTYPE'})",3
+188,0.015781922525107604,"frozenset({'none', 'current', 'default'})",3
+119,0.015781922525107604,"frozenset({'default', 'true'})",2
+105,0.015781922525107604,"frozenset({'none', 'current'})",2
+154,0.014347202295552367,"frozenset({'size', 'tensor'})",2
+89,0.01291248206599713,"frozenset({'type', 'SOME_DTYPE'})",2
+93,0.012434241989478718,"frozenset({'SOME_STRUCTURE', 'output'})",2
+158,0.011956001912960305,"frozenset({'type', 'torch'})",2
+96,0.011956001912960305,"frozenset({'shape', '_channels'})",2
+134,0.011956001912960305,"frozenset({'none', 'tensor'})",2
+90,0.011956001912960305,"frozenset({'types', 'SOME_DTYPE'})",2
+79,0.011956001912960305,"frozenset({'cuda', 'SOME_DTYPE'})",2
+168,0.011956001912960305,"frozenset({'default', 'SOME_DTYPE', 'torch'})",3
+120,0.011477761836441894,"frozenset({'default', 'type'})",2
+136,0.011477761836441894,"frozenset({'none', 'type'})",2
+214,0.011477761836441894,"frozenset({'size', 'tensor', 'input'})",3
+108,0.010999521759923482,"frozenset({'current', 'uses'})",2
+99,0.010999521759923482,"frozenset({'autograd', 'returned'})",2
+117,0.010999521759923482,"frozenset({'default', 'tensor'})",2
+245,0.010999521759923482,"frozenset({'none', 'current', 'default', 'uses'})",4
+190,0.010999521759923482,"frozenset({'default', 'current', 'uses'})",3
+234,0.010999521759923482,"frozenset({'default', 'current', 'SOME_DTYPE', 'uses'})",4
+235,0.010999521759923482,"frozenset({'none', 'current', 'SOME_DTYPE', 'uses'})",4
+237,0.010999521759923482,"frozenset({'none', 'uses', 'default', 'SOME_DTYPE'})",4
+166,0.010999521759923482,"frozenset({'current', 'SOME_DTYPE', 'uses'})",3
+169,0.010999521759923482,"frozenset({'default', 'uses', 'SOME_DTYPE'})",3
+173,0.010999521759923482,"frozenset({'none', 'SOME_DTYPE', 'torch'})",3
+175,0.010999521759923482,"frozenset({'none', 'uses', 'SOME_DTYPE'})",3
+178,0.010999521759923482,"frozenset({'tensor', 'SOME_DTYPE', 'torch'})",3
+202,0.010999521759923482,"frozenset({'default', 'none', 'type'})",3
+267,0.010999521759923482,"frozenset({'none', 'default', 'uses', 'current', 'SOME_DTYPE'})",5
+180,0.010999521759923482,"frozenset({'type', 'SOME_DTYPE', 'torch'})",3
+91,0.010999521759923482,"frozenset({'uses', 'SOME_DTYPE'})",2
+84,0.010999521759923482,"frozenset({'output', 'SOME_DTYPE'})",2
+191,0.010999521759923482,"frozenset({'none', 'current', 'uses'})",3
+131,0.010999521759923482,"frozenset({'n', 'tensor'})",2
+244,0.010521281683405069,"frozenset({'record', 'autograd', 'tensor', 'returned'})",4
+130,0.010521281683405069,"frozenset({'zero', 'input'})",2
+243,0.010521281683405069,"frozenset({'operations', 'autograd', 'tensor', 'returned'})",4
+189,0.010521281683405069,"frozenset({'default', 'current', 'torch'})",3
+127,0.010521281683405069,"frozenset({'none', 'input'})",2
+126,0.010521281683405069,"frozenset({'group', 'process'})",2
+107,0.010521281683405069,"frozenset({'current', 'torch'})",2
+103,0.010521281683405069,"frozenset({'cuda', 'current'})",2
+102,0.010521281683405069,"frozenset({'cpu', 'tensor'})",2
+100,0.010521281683405069,"frozenset({'autograd', 'tensor'})",2
+241,0.010521281683405069,"frozenset({'operations', 'record', 'autograd', 'returned'})",4
+98,0.010521281683405069,"frozenset({'record', 'autograd'})",2
+97,0.010521281683405069,"frozenset({'operations', 'autograd'})",2
+265,0.010521281683405069,"frozenset({'operations', 'record', 'tensor', 'returned'})",4
+268,0.010521281683405069,"frozenset({'operations', 'tensor', 'record', 'autograd', 'returned'})",5
+242,0.010521281683405069,"frozenset({'operations', 'record', 'autograd', 'tensor'})",4
+233,0.010521281683405069,"frozenset({'default', 'current', 'SOME_DTYPE', 'torch'})",4
+240,0.010521281683405069,"frozenset({'tensor', 'type', 'SOME_DTYPE', 'torch'})",4
+200,0.010521281683405069,"frozenset({'none', 'default', 'tensor'})",3
+182,0.010521281683405069,"frozenset({'operations', 'record', 'autograd'})",3
+183,0.010521281683405069,"frozenset({'operations', 'autograd', 'returned'})",3
+172,0.010521281683405069,"frozenset({'none', 'tensor', 'SOME_DTYPE'})",3
+184,0.010521281683405069,"frozenset({'operations', 'autograd', 'tensor'})",3
+165,0.010521281683405069,"frozenset({'current', 'SOME_DTYPE', 'torch'})",3
+161,0.010521281683405069,"frozenset({'cuda', 'current', 'SOME_DTYPE'})",3
+185,0.010521281683405069,"frozenset({'record', 'autograd', 'returned'})",3
+157,0.010521281683405069,"frozenset({'tensor', 'uses'})",2
+186,0.010521281683405069,"frozenset({'record', 'autograd', 'tensor'})",3
+222,0.010521281683405069,"frozenset({'operations', 'record', 'returned'})",3
+223,0.010521281683405069,"frozenset({'operations', 'record', 'tensor'})",3
+224,0.010521281683405069,"frozenset({'operations', 'tensor', 'returned'})",3
+225,0.010521281683405069,"frozenset({'record', 'tensor', 'returned'})",3
+145,0.010521281683405069,"frozenset({'record', 'tensor'})",2
+187,0.010521281683405069,"frozenset({'autograd', 'tensor', 'returned'})",3
+144,0.010521281683405069,"frozenset({'record', 'returned'})",2
+142,0.010521281683405069,"frozenset({'size', 'output'})",2
+141,0.010521281683405069,"frozenset({'operations', 'tensor'})",2
+140,0.010521281683405069,"frozenset({'operations', 'returned'})",2
+231,0.010521281683405069,"frozenset({'tensor', 'type', 'torch'})",3
+139,0.010521281683405069,"frozenset({'operations', 'record'})",2
+236,0.010521281683405069,"frozenset({'none', 'default', 'SOME_DTYPE', 'torch'})",4
+179,0.010521281683405069,"frozenset({'type', 'SOME_DTYPE', 'tensor'})",3
+86,0.010043041606886656,"frozenset({'SOME_DTYPE', 'see'})",2
+160,0.010043041606886656,"frozenset({'cpu', 'current', 'SOME_DTYPE'})",3
+78,0.010043041606886656,"frozenset({'cpu', 'SOME_DTYPE'})",2
+174,0.010043041606886656,"frozenset({'none', 'type', 'SOME_DTYPE'})",3
+209,0.010043041606886656,"frozenset({'default', 'type', 'tensor'})",3
+101,0.010043041606886656,"frozenset({'cpu', 'current'})",2
+239,0.010043041606886656,"frozenset({'none', 'type', 'SOME_DTYPE', 'torch'})",4
+220,0.010043041606886656,"frozenset({'none', 'type', 'torch'})",3
+125,0.010043041606886656,"frozenset({'dimensions', 'input'})",2
+177,0.010043041606886656,"frozenset({'SOME_DTYPE', 'torch', 'see'})",3

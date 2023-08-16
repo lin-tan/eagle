@@ -1,0 +1,60 @@
+ARG UBUNTU_VERSION=18.04
+FROM ubuntu:${UBUNTU_VERSION}
+
+# Install required ubuntu packages
+ENV CONDA_DIR /miniconda
+RUN apt-get update && apt-get install -y screen vim wget git g++ && rm -rf /var/lib/apt/lists/*
+RUN wget \
+    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+    && bash Miniconda3-latest-Linux-x86_64.sh -p ${CONDA_DIR} -b \
+    && rm -f Miniconda3-latest-Linux-x86_64.sh
+ENV PATH=$CONDA_DIR/bin:$PATH
+
+RUN touch /root/.vimrc
+RUN echo 'syntax on\nset tabstop=2\nset softtabstop=2\nset showcmd\nset showmatch\nset incsearch\nset hlsearch\nset ruler'>> /root/.vimrc
+
+# Copy git repo
+ARG FUZZER_HOME="/home/code/dl-fuzzer/"
+WORKDIR ${FUZZER_HOME}
+COPY . .
+
+# install packages using conda
+# conda environment doesn't work well with docker
+# so directly install all the necessary packages without creating a new env
+RUN conda install      \
+          pip=20.0.2   \
+          python=3.7.6 \
+          numpy=1.18.1 \
+          ninja=1.9.0  \
+          pyyaml=5.3.1 \
+          mkl=2020.1   \
+          mkl-include=2020.1  \
+          setuptools=47.3.0   \
+          cmake=3.14.0        \
+          cffi=1.14.0         \
+          typing=3.7.4.1      \
+          ruamel.yaml=0.16.10 \
+          networkx=2.4       \
+          scikit-learn=0.22.1 \
+          nose=1.3.7
+
+ARG PYTORCH_SRC="/pytorch"
+WORKDIR ${PYTORCH_SRC}
+RUN git clone --recursive https://github.com/pytorch/pytorch
+WORKDIR ${PYTORCH_SRC}/pytorch
+RUN git checkout v1.5.0 && git submodule sync && git submodule update --init --recursive
+
+# adding code fixes to make pytorch v1.5.0 to work with pickling
+RUN sed -i 's/"torch._C._VariableFunctions"/"torch._C._VariableFunctionsClass"/' \
+           tools/autograd/templates/python_torch_functions.cpp
+RUN awk '/Py_INCREF\(&THPVariableFunctions\);/ { print; print "if (PyModule_AddObject(module, \"_VariableFunctionsClass\", reinterpret_cast<PyObject*>(&THPVariableFunctions)) < 0) { throw python_error(); }"; next }1' tools/autograd/templates/python_torch_functions.cpp > /tmp/tmpfile.cpp
+RUN mv /tmp/tmpfile.cpp tools/autograd/templates/python_torch_functions.cpp
+ENV USE_CUDA=0
+ENV USE_CUDNN=0
+ENV USE_MKLDNN=1
+
+RUN export CMAKE_PREFIX_PATH=/miniconda; \
+    python setup.py install
+
+WORKDIR ${FUZZER_HOME}
+CMD /bin/bash

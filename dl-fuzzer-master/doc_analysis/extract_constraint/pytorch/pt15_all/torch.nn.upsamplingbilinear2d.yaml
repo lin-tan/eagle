@@ -1,0 +1,41 @@
+constraints:
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size.
+    doc_dtype:
+    - float
+    - Tuple[float
+    - float]
+    dtype:
+    - torch.float32
+    ndim:
+    - '1'
+    structure:
+    - tuple(torch.float32)
+  size:
+    default: None
+    descp: output spatial sizes
+    doc_dtype:
+    - int
+    - Tuple[int
+    - int]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+inputs:
+  optional:
+  - size
+  - scale_factor
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.UpsamplingBilinear2d
+package: torch
+target: UpsamplingBilinear2d
+title: torch.nn.UpsamplingBilinear2d
+version: 1.5.0
+layer_constructor: true
+check_nan: true

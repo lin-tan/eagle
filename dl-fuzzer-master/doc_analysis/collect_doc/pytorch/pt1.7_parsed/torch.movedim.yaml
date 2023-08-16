@@ -1,0 +1,28 @@
+constraints:
+  destination:
+    descp: Destination positions for each of the original dims. These must also be
+      unique.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  source:
+    descp: Original positions of the dims to move. These must be unique.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+inputs:
+  optional: []
+  required:
+  - input
+  - source
+  - destination
+link: https://pytorch.org/docs/1.7.0/generated/torch.movedim.html#torch.movedim#torch.movedim
+package: torch
+ret_type: Tensor
+target: movedim
+title: torch.movedim
+version: 1.7.0

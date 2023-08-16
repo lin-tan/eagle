@@ -1,0 +1,14 @@
+constraints:
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`, `bfloat16`,
+      `half`, `float32`, `float64`.'
+    dtype:
+    - tf.bfloat16
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int32
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+title: tf.math.floormod

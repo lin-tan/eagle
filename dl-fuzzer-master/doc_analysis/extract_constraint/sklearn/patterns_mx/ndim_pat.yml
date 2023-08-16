@@ -1,0 +1,48 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: ndim
+
+split_word:
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '/'
+    - '>'
+    - '<'
+    - '='
+
+pat:
+
+    '(^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axis\s+':
+        ndim: 0
+
+    '(^|\.\s+)(the\s+)?((second|first|sequence)\s+)?axes\s+':
+        ndim: 1
+
+    
+    'n[\s-]dimensional\s+((?!\[).)*?\.':
+        ndim: '?'
+
+    '(\d)d\s+(array|feature)':
+        group: 1
+
+    'square\s+matrix':
+        ndim: 2
+        shape: '[sqm,sqm]'
+
+    'square\s+matrices':
+        ndim: '3'
+        shape: '[sqmd,sqm,sqm]'
+
+    
+        
+

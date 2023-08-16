@@ -1,0 +1,31 @@
+constraints:
+  diagonal:
+    descp: A Tensor. Must have the same type as input.
+    dtype:
+    - dtype:&input
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - diagonal
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BatchMatrixSetDiag
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: BatchMatrixSetDiag
+title: tf.raw_ops.BatchMatrixSetDiag
+version: 2.3.0

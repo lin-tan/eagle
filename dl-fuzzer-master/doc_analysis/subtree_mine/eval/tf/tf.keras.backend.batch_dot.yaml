@@ -1,0 +1,20 @@
+constraints:
+  axes:
+    default: None
+    descp: Tuple or list of integers with target dimensions, or single integer. The
+      sizes of `x.shape[axes[0]]` and `y.shape[axes[1]]` should be equal.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - list
+    - tuple
+  y:
+    descp: Keras tensor or variable with `ndim >= 2`.
+    ndim:
+    - '>=2'
+    tensor_t:
+    - tf.tensor
+title: tf.keras.backend.batch_dot

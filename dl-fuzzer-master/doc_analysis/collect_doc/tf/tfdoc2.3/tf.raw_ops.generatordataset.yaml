@@ -1,0 +1,40 @@
+constraints:
+  finalize_func:
+    descp: A function decorated with @Defun.
+  finalize_func_other_args:
+    descp: A list of Tensor objects.
+  init_func:
+    descp: A function decorated with @Defun.
+  init_func_other_args:
+    descp: A list of Tensor objects.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  next_func:
+    descp: A function decorated with @Defun.
+  next_func_other_args:
+    descp: A list of Tensor objects.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+inputs:
+  optional:
+  - name
+  required:
+  - init_func_other_args
+  - next_func_other_args
+  - finalize_func_other_args
+  - init_func
+  - next_func
+  - finalize_func
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GeneratorDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: GeneratorDataset
+title: tf.raw_ops.GeneratorDataset
+version: 2.3.0

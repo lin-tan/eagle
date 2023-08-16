@@ -1,0 +1,37 @@
+constraints:
+  input:
+    descp: 'A list of at least 1 Tensor objects with the same type in: half, float32,
+      float64, int32, int64.'
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  reduction:
+    descp: 'A string from: "min", "max", "prod", "sum".'
+    dtype:
+    - tf.string
+    enum:
+    - max
+    - min
+    - prod
+    - sum
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - reduction
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NcclReduce
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: NcclReduce
+title: tf.raw_ops.NcclReduce
+version: 2.3.0

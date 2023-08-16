@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,If autograd should record operations on the returned tensor. Default: `False`.,False,prim_dtype,dtype(torch.bool),,1
+bool,If autograd should record operations on the returned tensor. Default: `False`.,False,shape,ndim(0),,1

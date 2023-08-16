@@ -1,0 +1,9 @@
+rule infer
+  command = /anaconda3/envs/pytype/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.8 -o $out --no-report-errors --nofail --quick $in
+  description = infer $module
+rule check
+  command = /anaconda3/envs/pytype/bin/python -m pytype.single --imports_info $imports --module-name $module -V 3.8 -o $out --analyze-annotated --nofail --quick $in
+  description = check $module
+build /Users/danning/Desktop/deepflaw/exp2/code/dl-fuzzer/doc_analysis/extract_constraint/constraint_eval2/.pytype/pyi/tmp_compare_w_layer.pyi: check /Users/danning/Desktop/deepflaw/exp2/code/dl-fuzzer/doc_analysis/extract_constraint/constraint_eval2/tmp_compare_w_layer.py
+  imports = /Users/danning/Desktop/deepflaw/exp2/code/dl-fuzzer/doc_analysis/extract_constraint/constraint_eval2/.pytype/imports/tmp_compare_w_layer.imports
+  module = tmp_compare_w_layer

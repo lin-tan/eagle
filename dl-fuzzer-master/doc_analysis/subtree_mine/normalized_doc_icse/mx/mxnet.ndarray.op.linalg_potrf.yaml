@@ -1,0 +1,37 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  A:
+    default: None
+    descp: Tensor of input matrices to be decomposed
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of input matrices to be decomposed
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - A
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.linalg_potrf
+package: mxnet
+target: linalg_potrf
+title: mxnet.ndarray.op.linalg_potrf
+version: 1.6.0

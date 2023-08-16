@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.keras.layers.add
+constraints:
+  '**kwargs':
+    default: null
+    descp: Standard layer keyword arguments.
+  inputs:
+    descp: A list of input tensors (at least 2).
+    structure:
+    - list
+    - list(tf.tensor)
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/add
+outputs: A tensor, the sum of the inputs.
+package: tensorflow
+target: add
+title: tf.keras.layers.add
+version: 2.1.0

@@ -1,0 +1,63 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: Input array to extract sliding blocks.
+    doc_dtype:
+    - NDArray
+  dilate:
+    default: _Null
+    descp: 'The spacing between adjacent kernel points: (w,), (h, w) or (d, h, w).
+      Defaults to 1 for each dimension.'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+  kernel:
+    default: _Null
+    descp: 'Sliding kernel size: (w,), (h, w) or (d, h, w).'
+    doc_dtype:
+    - Shape(tuple)
+    - required
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  pad:
+    default: _Null
+    descp: 'The zero-value padding size on both sides of spatial dimension: (w,),
+      (h, w) or (d, h, w). Defaults to no padding.'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+  stride:
+    default: _Null
+    descp: 'The stride between adjacent sliding blocks in spatial dimension: (w,),
+      (h, w) or (d, h, w). Defaults to 1 for each dimension.'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+inputs:
+  optional:
+  - data
+  - kernel
+  - stride
+  - dilate
+  - pad
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.im2col
+package: mxnet
+target: im2col
+title: mxnet.ndarray.im2col
+version: 1.7.0

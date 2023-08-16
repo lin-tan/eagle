@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+dict,"A dict of shapes, str->shape (tuple), given input shapes.",None,prim_dtype,dtype(int),,1
+dict,"A dict of shapes, str->shape (tuple), given input shapes.",None,nonprim_dtype,structure(dict),,1
+dict,"A dict of shapes, str->shape (tuple), given input shapes.",None,shape,ndim(1),,1
+dict,"A dict of shapes, str->shape (tuple), given input shapes.",None,validvalue,"range([0,inf))",,1

@@ -1,0 +1,31 @@
+aliases:
+- tf.sqrt
+- tf.compat.v1.math.sqrt
+- tf.compat.v1.sqrt
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: A tf.Tensor of type bfloat16, half, float32, float64, complex64, complex128
+    dtype:
+    - tf.bfloat16
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/sqrt
+outputs:
+- A tf.Tensor of same size, type and sparsity as x. If x is a SparseTensor, returns
+  SparseTensor(x.indices, tf.math.sqrt(x.values, ...), x.dense_shape)
+package: tensorflow
+target: sqrt
+title: tf.math.sqrt
+version: 2.2.0

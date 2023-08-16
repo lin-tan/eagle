@@ -1,0 +1,95 @@
+aliases:
+- tf.compat.v1.deserialize_many_sparse
+- tf.compat.v1.io.deserialize_many_sparse
+constraints:
+  dtype:
+    descp: The `dtype` of the serialized `SparseTensor` objects.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[&dtype]'
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  rank:
+    default: None
+    descp: (optional) Python int, the rank of the `SparseTensor` objects.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - SparseTensor
+  serialized_sparse:
+    descp: 2-D `Tensor` of type `string` of shape `[N, 3]`. The serialized and packed
+      `SparseTensor` objects.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n,3]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - rank
+  - name
+  required:
+  - serialized_sparse
+  - dtype
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/deserialize_many_sparse
+outputs: A `SparseTensor` representing the deserialized `SparseTensor`s, concatenated
+  along the `SparseTensor`s' first dimension.
+package: tensorflow
+target: deserialize_many_sparse
+title: tf.io.deserialize_many_sparse
+version: 2.1.0

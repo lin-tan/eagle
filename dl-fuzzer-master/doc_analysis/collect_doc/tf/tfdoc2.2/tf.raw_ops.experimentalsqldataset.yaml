@@ -1,0 +1,32 @@
+constraints:
+  data_source_name:
+    descp: A Tensor of type string. A connection string to connect to the database.
+  driver_name:
+    descp: A Tensor of type string. The database type. Currently, the only supported
+      type is 'sqlite'.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  query:
+    descp: A Tensor of type string. A SQL query to execute.
+inputs:
+  optional:
+  - name
+  required:
+  - driver_name
+  - data_source_name
+  - query
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalSqlDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalSqlDataset
+title: tf.raw_ops.ExperimentalSqlDataset
+version: 2.2.0

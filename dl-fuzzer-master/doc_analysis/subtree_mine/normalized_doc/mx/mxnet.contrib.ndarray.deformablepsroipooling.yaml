@@ -1,0 +1,134 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data to the pooling operator, a 4D Feature maps
+    doc_dtype: Symbol
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the pooling operator, a CONSTANT_NUM-D Feature maps
+    normalized_docdtype: ONE_WORD Symbol
+  group_size:
+    default: _Null
+    descp: fix group size
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix group size
+    normalized_docdtype: D_TYPE, required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  no_trans:
+    default: _Null
+    descp: Whether to disable trans parameter.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to disable PARAM parameter
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  output_dim:
+    default: _Null
+    descp: fix output dim
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix output dim
+    normalized_docdtype: D_TYPE, required
+  part_size:
+    default: _Null
+    descp: fix part size
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix part size
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  pooled_size:
+    default: _Null
+    descp: fix pooled size
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix pooled size
+    normalized_docdtype: D_TYPE, required
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array of [[batch_index, x1, y1, x2, y2]].
+      (x1, y1) and (x2, y2) are top left and down right corners of designated region
+      of interest. batch_index indicates the index of corresponding image in the input
+      data
+    doc_dtype: Symbol
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Bounding box coordinates, a CONSTANT_NUM-D D_STRUCTURE of BSTR
+    - BSTR are top left and down right corners of designated region of interest
+    - batch_index indicates the index of corresponding image in the input PARAM
+    normalized_docdtype: ONE_WORD Symbol
+  sample_per_part:
+    default: _Null
+    descp: fix samples per part
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix samples per part
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or w) to raw image height (or w). Equals
+      the reciprocal of total stride in convolutional layers
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Ratio of input feature map height BSTR
+    - Equals the reciprocal of total stride in convolutional layers
+    normalized_docdtype: D_TYPE, required
+  trans:
+    default: None
+    descp: transition parameter
+    doc_dtype: Symbol
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - transition parameter
+    normalized_docdtype: ONE_WORD Symbol
+  trans_std:
+    default: _Null
+    descp: fix transition std
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - fix transition std
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - rois
+  - trans
+  - spatial_scale
+  - output_dim
+  - group_size
+  - pooled_size
+  - part_size
+  - sample_per_part
+  - trans_std
+  - no_trans
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.DeformablePSROIPooling
+package: mxnet
+target: DeformablePSROIPooling
+title: mxnet.contrib.ndarray.DeformablePSROIPooling
+version: 1.6.0

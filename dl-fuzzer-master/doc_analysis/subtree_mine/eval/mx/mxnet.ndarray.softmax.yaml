@@ -1,0 +1,27 @@
+constraints:
+  ignore_label:
+    default: _Null
+    descp: The instances whose labels == ignore_label will be ignored during backward,
+      if use_ignore is set to `true`).
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+    dtype:
+    - float
+    ndim:
+    - '0'
+  smooth_alpha:
+    default: _Null
+    descp: Constant for computing a label smoothed version of cross-entropyfor the
+      backwards pass.  This constant gets subtracted from theone-hot encoding of the
+      gold label and distributed uniformly toall other labels.
+    doc_dtype:
+    - float
+    - optional
+    - default=0
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.Softmax

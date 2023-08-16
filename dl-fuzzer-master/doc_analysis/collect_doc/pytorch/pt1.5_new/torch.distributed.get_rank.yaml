@@ -1,0 +1,14 @@
+constraints:
+  group:
+    default: <objectobject>
+    descp: The process group to work on
+    doc_dtype: ProcessGroup, optional
+inputs:
+  optional:
+  - group
+  required: []
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.get_rank
+package: torch
+target: get_rank
+title: torch.distributed.get_rank
+version: 1.5.0

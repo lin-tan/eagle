@@ -1,0 +1,36 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  heads:
+    default: _Null
+    descp: Set number of heads
+    doc_dtype:
+    - int
+    - required
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  queries_keys_values:
+    default: None
+    descp: Interleaved queries, keys and values
+    doc_dtype:
+    - NDArray
+inputs:
+  optional:
+  - queries_keys_values
+  - heads
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.interleaved_matmul_selfatt_qk
+package: mxnet
+target: interleaved_matmul_selfatt_qk
+title: mxnet.ndarray.contrib.interleaved_matmul_selfatt_qk
+version: 1.7.0

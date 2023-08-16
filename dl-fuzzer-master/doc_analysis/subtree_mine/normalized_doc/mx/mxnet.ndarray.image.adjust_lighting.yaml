@@ -1,0 +1,46 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: _Null
+    descp: The lighting alphas for the R, G, B channels.
+    doc_dtype: tuple of <float>, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The lighting alphas for the R, G, B channels
+    normalized_docdtype: D_STRUCTURE of REXPR , required
+  data:
+    default: None
+    descp: The input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - alpha
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/image/index.html#mxnet.ndarray.image.adjust_lighting
+package: mxnet
+target: adjust_lighting
+title: mxnet.ndarray.image.adjust_lighting
+version: 1.6.0

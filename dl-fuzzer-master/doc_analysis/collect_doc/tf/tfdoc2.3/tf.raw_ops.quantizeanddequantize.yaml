@@ -1,0 +1,39 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64.'
+  input_max:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  input_min:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_bits:
+    default: '8'
+    descp: An optional int. Defaults to 8.
+  range_given:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  signed_input:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - signed_input
+  - num_bits
+  - range_given
+  - input_min
+  - input_max
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/QuantizeAndDequantize
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: QuantizeAndDequantize
+title: tf.raw_ops.QuantizeAndDequantize
+version: 2.3.0

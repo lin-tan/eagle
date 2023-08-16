@@ -1,0 +1,28 @@
+constraints:
+  elem_type:
+    descp: A tf.DType. The type of the elements on the stack.
+  max_size:
+    descp: A Tensor of type int32. The maximum size of the stack if non-negative.
+      If negative, the stack size is unlimited.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  stack_name:
+    default: ''
+    descp: An optional string. Defaults to "". Overrides the name used for the temporary
+      stack resource. Default value is the name of the 'Stack' op (which is guaranteed
+      unique).
+inputs:
+  optional:
+  - stack_name
+  - name
+  required:
+  - max_size
+  - elem_type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StackV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: StackV2
+title: tf.raw_ops.StackV2
+version: 2.2.0

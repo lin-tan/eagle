@@ -1,0 +1,79 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype: '`torch.device`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired device of returned D_STRUCTURE
+    - Default if QSTR , uses the current device for the default D_STRUCTURE type see
+      torch set_default_tensor_type
+    - QSTR will be the CPU for CPU D_STRUCTURE types and the current CUDA device for
+      CUDA D_STRUCTURE types
+    normalized_docdtype: torch device , optional
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`). Only floating point types are
+      supported.'
+    doc_dtype: '`torch.dtype`, optional'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the desired data type of returned D_STRUCTURE
+    - Default if QSTR , uses a global default see torch set_default_tensor_type
+    - Only D_TYPE types are supported
+    normalized_docdtype: D_TYPE, optional
+  layout:
+    default: torch.strided
+    descp: the desired layout of returned window tensor. Only `torch.strided` (dense
+      layout) is supported.
+    doc_dtype: '`torch.layout`, optional'
+    normalized_default: torch strided
+    normalized_descp:
+    - the desired layout of returned window D_STRUCTURE
+    - Only torch strided BSTR is supported
+    normalized_docdtype: torch layout , optional
+  periodic:
+    default: 'True'
+    descp: If True, returns a window to be used as periodic function. If False, return
+      a symmetric window.
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, returns a window to be used as periodic function
+    - If CONSTANT_BOOL, return a symmetric window
+    normalized_docdtype: D_TYPE, optional
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If autograd should record operations on the returned D_STRUCTURE
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, optional
+  window_length:
+    descp: the size of returned window
+    doc_dtype: int
+    normalized_descp:
+    - the size of returned window
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - periodic
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - window_length
+link: https://pytorch.org/docs/stable/torch.html#torch.blackman_window
+package: torch
+ret_type: Tensor
+target: blackman_window
+title: torch.blackman_window
+version: 1.5.0

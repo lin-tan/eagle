@@ -1,0 +1,102 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: Input data to the pooling operator, a 4D Feature maps
+    doc_dtype: NDArray
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  pooled_size:
+    default: _Null
+    descp: RROI align output shape (h,w)
+    doc_dtype: Shape(tuple), required
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[h,w]'
+    - '[tuple]'
+    structure:
+    - tuple
+  rois:
+    default: None
+    descp: Bounding box coordinates, a 2D array
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - ndarray
+  sampling_ratio:
+    default: _Null
+    descp: Optional sampling ratio of RROI align, using adaptive size by default.
+    doc_dtype: int, optional, default='-1'
+    dtype:
+    - int
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  spatial_scale:
+    default: _Null
+    descp: Ratio of input feature map height (or width) to raw image height (or width).
+      Equals the reciprocal of total stride in convolutional layers
+    doc_dtype: float, required
+    dtype:
+    - float
+    - int
+    - numeric
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - data
+  - rois
+  - pooled_size
+  - spatial_scale
+  - sampling_ratio
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.RROIAlign
+package: mxnet
+target: RROIAlign
+title: mxnet.ndarray.contrib.RROIAlign
+version: 1.6.0

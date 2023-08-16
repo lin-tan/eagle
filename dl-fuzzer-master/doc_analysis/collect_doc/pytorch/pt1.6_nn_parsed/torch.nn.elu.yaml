@@ -1,0 +1,19 @@
+constraints:
+  alpha:
+    default: '1.0'
+    descp: 'the  alpha  value for the ELU formulation. Default: 1.0'
+    sig_dtype: float
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+    sig_dtype: bool
+inputs:
+  optional:
+  - alpha
+  - inplace
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.ELU.html#torch.nn.ELU#torch.nn.ELU
+package: torch
+target: ELU
+title: torch.nn.ELU
+version: 1.6.0

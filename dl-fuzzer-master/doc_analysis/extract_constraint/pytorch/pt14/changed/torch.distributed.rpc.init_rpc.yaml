@@ -1,0 +1,53 @@
+constraints:
+  backend:
+    default: BackendType.PROCESS_GROUP
+    descp: 'type of RPC backend implementation. Currently, process group backend is
+      the only available backend implementation. (default: `RpcBackend.PROCESS_GROUP`).'
+    doc_dtype:
+    - Enum
+  name:
+    descp: a globally unique name of this node. (e.g., `Trainer3`, `ParameterServer2`,
+      `Master`, `Worker1`) Name can only contain number, alphabet, underscore, and/or
+      dash, and must be shorter than 128 characters.
+    doc_dtype:
+    - str
+    dtype:
+    - string
+  rank:
+    default: '-1'
+    descp: a globally unique id/rank of this node.
+    doc_dtype:
+    - python:int
+    dtype:
+    - int
+    ndim:
+    - '0'
+  rpc_backend_options:
+    default: None
+    descp: The options passed to RpcAgent consturctor.
+    doc_dtype:
+    - RpcBackendOptions
+  world_size:
+    default: None
+    descp: The number of workers in the group.
+    doc_dtype:
+    - python:int
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - backend
+  - rank
+  - world_size
+  - rpc_backend_options
+  required:
+  - name
+link: https://pytorch.org/docs/1.4.0/rpc.html#torch.distributed.rpc.init_rpc
+package: torch
+target: init_rpc
+title: torch.distributed.rpc.init_rpc
+version: 1.4.0

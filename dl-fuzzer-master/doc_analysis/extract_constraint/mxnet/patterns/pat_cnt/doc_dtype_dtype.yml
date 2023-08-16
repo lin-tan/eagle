@@ -1,0 +1,46 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  ([\w.]+(/[\w.]+)+):
+    cnt: 1
+    group: 1
+  ^([\w.]+),*$:
+    cnt: 2114
+    group: 1
+  ^([\w.]+)\s+object:
+    cnt: 0
+    group: 1
+  ^(\w+)\s*\(non-negative\):
+    cnt: 49
+    group: 1
+    range: '[0,inf)'
+  ^data\s+type$:
+    cnt: 1
+    dtype: dtype
+  ^type$:
+    cnt: 4
+    dtype: dtype
+  a.*?callable\s+function:
+    cnt: 2
+    dtype: callable
+  a\s+python\s+(\w+):
+    cnt: 7
+    group: 1
+    ndim: 0
+  default\s+(true|false):
+    cnt: 72
+    dtype: bool
+  file\s+path:
+    cnt: 2
+    dtype: string
+  float\s+in\s+\(0,\s*1\]:
+    cnt: 1
+    dtype: float
+    range: (0,1]
+sep:
+- /
+target: dtype

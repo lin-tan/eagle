@@ -1,0 +1,19 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  absolute\s+number\s+of:
+    brakcets: false
+    cnt: 5
+    range: int:[0,inf)
+  if\s+`float`,\s+should\s+be\s+between\s+0.0\s+and\s+1.0:
+    brackets: false
+    cnt: 5
+    range: torch.float32:[0,1]
+  in\s+\[0,\s+infty\]:
+    cnt: 2
+    range: '[0,inf)'
+target: range

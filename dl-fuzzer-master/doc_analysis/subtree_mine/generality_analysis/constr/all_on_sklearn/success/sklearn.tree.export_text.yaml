@@ -1,0 +1,64 @@
+constraints:
+  decimals:
+    default: '2'
+    descp: int, optional (default=2) Number of decimal digits to display.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  decision_tree:
+    descp: object The decision tree estimator to be exported. It can be an instance
+      of DecisionTreeClassifier or DecisionTreeRegressor.
+  feature_names:
+    default: None
+    descp: list, optional (default=None) A list of length n_features containing the
+      feature names. If None generic names will be used ("feature_0", "feature_1",
+      ...).
+    structure:
+    - list
+  max_depth:
+    default: '10'
+    descp: int, optional (default=10) Only the first max_depth levels of the tree
+      are exported. Truncated branches will be marked with "...".
+    dtype:
+    - int
+    ndim:
+    - '0'
+  show_weights:
+    default: 'False'
+    descp: bool, optional (default=False) If true the classification weights will
+      be exported on each leaf. The classification weights are the number of samples
+      each class.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  spacing:
+    default: '3'
+    descp: int, optional (default=3) Number of spaces between edges. The higher it
+      is, the wider the result.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+inputs:
+  optional:
+  - feature_names
+  - max_depth
+  - spacing
+  - decimals
+  - show_weights
+  required:
+  - decision_tree
+link: ''
+package: sklearn
+target: export_text
+title: sklearn.tree.export_text
+version: 0.24.2

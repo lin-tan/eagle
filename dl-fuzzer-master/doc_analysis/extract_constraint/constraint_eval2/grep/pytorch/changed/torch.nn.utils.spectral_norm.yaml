@@ -1,0 +1,47 @@
+constraints:
+  dim:
+    default: None
+    descp: dimension corresponding to number of outputs, the default is `0`, except
+      for modules that are instances of ConvTranspose{1,2,3}d, when it is `1`
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  eps:
+    default: 1e-12
+    descp: epsilon for numerical stability in calculating norms
+    doc_dtype:
+    - float
+    dtype:
+    - torch.float32
+  module:
+    descp: containing module
+    doc_dtype:
+    - nn.Module
+  n_power_iterations:
+    default: '1'
+    descp: number of power iterations to calculate spectral norm
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  name:
+    default: weight
+    descp: name of weight parameter
+    doc_dtype:
+    - str
+    dtype:
+    - string
+inputs:
+  optional:
+  - name
+  - n_power_iterations
+  - eps
+  - dim
+  required:
+  - module
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.spectral_norm
+package: torch
+target: spectral_norm
+title: torch.nn.utils.spectral_norm
+version: 1.5.0

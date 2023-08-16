@@ -1,0 +1,40 @@
+aliases:
+- tf.compat.v1.estimator.experimental.call_logit_fn
+constraints:
+  config:
+    descp: The configuration object.
+    normalized_descp:
+    - The configuration object
+  features:
+    descp: The features dict.
+    normalized_descp:
+    - The features D_STRUCTURE
+  logit_fn:
+    descp: A logit_fn as defined above.
+    normalized_descp:
+    - A logit_fn as defined above
+  mode:
+    descp: TRAIN / EVAL / PREDICT ModeKeys.
+    normalized_descp:
+    - TRAIN EVAL PREDICT ModeKeys
+  params:
+    descp: The hyperparameter dict.
+    normalized_descp:
+    - The hyperparameter D_STRUCTURE
+exceptions:
+- ValueError: if logit_fn does not return a Tensor or a dictionary mapping strings
+    to Tensors.
+inputs:
+  optional: []
+  required:
+  - logit_fn
+  - features
+  - mode
+  - params
+  - config
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/estimator/experimental/call_logit_fn
+outputs: A logit Tensor, the output of logit_fn.
+package: tensorflow
+target: call_logit_fn
+title: tf.estimator.experimental.call_logit_fn
+version: 2.1.0

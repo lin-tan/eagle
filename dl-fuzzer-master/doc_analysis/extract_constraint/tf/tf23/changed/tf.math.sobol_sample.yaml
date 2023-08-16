@@ -1,0 +1,69 @@
+aliases:
+- tf.compat.v1.math.sobol_sample
+constraints:
+  dim:
+    descp: Positive scalar Tensor representing each sample's dimension.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - (0,inf)
+    tensor_t:
+    - tf.tensor
+  dtype:
+    default: tf.dtypes.float32
+    descp: '(Optional) The tf.Dtype of the sample. One of: tf.float32 or tf.float64.
+      Defaults to tf.float32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: (Optional) Python str name prefixed to ops created by this function.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_results:
+    descp: Positive scalar Tensor of dtype int32. The number of Sobol points to return
+      in the output.
+    dtype:
+    - tf.dtype
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - (0,inf)
+    tensor_t:
+    - tf.tensor
+  skip:
+    default: '0'
+    descp: (Optional) Positive scalar Tensor of dtype int32. The number of initial
+      points of the Sobol sequence to skip. Default value is 0.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - skip
+  - dtype
+  - name
+  required:
+  - dim
+  - num_results
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/math/sobol_sample
+outputs:
+- Tensor of samples from Sobol sequence with shape [num_results, dim].
+package: tensorflow
+target: sobol_sample
+title: tf.math.sobol_sample
+version: 2.3.0

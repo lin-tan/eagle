@@ -1,0 +1,35 @@
+constraints:
+  dt:
+    descp: A tf.DType. The type of the tensor to be restored.
+  file_pattern:
+    descp: A Tensor of type string. Must have a single element. The pattern of the
+      files from which we read the tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  preferred_shard:
+    default: '-1'
+    descp: An optional int. Defaults to -1. Index of file to open first if multiple
+      files match file_pattern. See the documentation for Restore.
+  shape_and_slice:
+    descp: A Tensor of type string. Scalar. The shapes and slice specifications to
+      use when restoring a tensors.
+  tensor_name:
+    descp: A Tensor of type string. Must have a single element. The name of the tensor
+      to be restored.
+inputs:
+  optional:
+  - preferred_shard
+  - name
+  required:
+  - file_pattern
+  - tensor_name
+  - shape_and_slice
+  - dt
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RestoreSlice
+outputs:
+- A Tensor of type dt.
+package: tensorflow
+target: RestoreSlice
+title: tf.raw_ops.RestoreSlice
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, sequence of int",Destination position for each of the original axes. Can be negative but must be unique.,,prim_dtype,dtype(int),,1
+"int, sequence of int",Destination position for each of the original axes. Can be negative but must be unique.,,nonprim_dtype,structure(sequence(int)),,1
+"int, sequence of int",Destination position for each of the original axes. Can be negative but must be unique.,,shape,ndim(1),,1

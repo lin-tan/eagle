@@ -1,0 +1,16 @@
+constraints:
+  sample_weight: {default: None, descp: 'array-like of shape (n_samples,), default=None
+      Sample weights.'}
+  y_score: {descp: 'array, shape = [n_samples, n_labels] Target scores, can either
+      be probability estimates of the positive class, confidence values, or non-thresholded
+      measure of decisions (as returned by "decision_function" on some classifiers).'}
+  y_true: {descp: 'array or sparse matrix, shape = [n_samples, n_labels] True binary
+      labels in binary indicator format.'}
+inputs:
+  optional: [sample_weight]
+  required: [y_true, y_score]
+link: ''
+package: sklearn
+target: label_ranking_average_precision_score
+title: sklearn.metrics.label_ranking_average_precision_score
+version: 0.24.2

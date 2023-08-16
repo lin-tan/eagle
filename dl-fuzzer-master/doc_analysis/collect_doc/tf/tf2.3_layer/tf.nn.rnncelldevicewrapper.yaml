@@ -1,0 +1,23 @@
+constraints:
+  '**kwargs':
+    descp: dict of keyword arguments for base layer.
+  '*args':
+    descp: ''
+  cell:
+    default: None
+    descp: An instance of RNNCell.
+  device:
+    default: None
+    descp: A device string or function, for passing to tf.device.
+inputs:
+  optional:
+  - cell
+  - device
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDeviceWrapper
+package: tensorflow
+target: RNNCellDeviceWrapper
+title: tf.nn.RNNCellDeviceWrapper
+version: 2.3.0

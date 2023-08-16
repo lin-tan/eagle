@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The destination type. The list of supported dtypes is the same as`x`.,,prim_dtype,dtype(tf.dtype),,1
+,The destination type. The list of supported dtypes is the same as`x`.,,nonprim_dtype,"structure(list, list(tf.dtype))",,1
+,The destination type. The list of supported dtypes is the same as`x`.,,shape,"ndim(0, 1)",,1

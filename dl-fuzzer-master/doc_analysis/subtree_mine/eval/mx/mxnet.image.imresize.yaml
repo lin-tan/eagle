@@ -1,0 +1,13 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  w:
+    descp: Width of resized image.
+    doc_dtype:
+    - int
+    - required
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+title: mxnet.image.imresize

@@ -1,0 +1,48 @@
+constraints:
+  generate_quantiles:
+    default: 'False'
+    descp: An optional bool. Defaults to False. bool; If True, the output will be
+      the num_quantiles for each stream where the ith entry is the ith quantile of
+      the input with an approximation error of epsilon. Duplicate values may be present.
+      If False, the output will be the points in the histogram that we got which roughly
+      translates to 1/epsilon boundaries and without any duplicates. Default to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_buckets:
+    descp: A Tensor of type int64. int; approximate number of buckets unless using
+      generate_quantiles.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource handle referring to a QuantileStreamResource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - generate_quantiles
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/BoostedTreesQuantileStreamResourceFlush
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesQuantileStreamResourceFlush
+title: tf.raw_ops.BoostedTreesQuantileStreamResourceFlush
+version: 2.3.0

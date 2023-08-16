@@ -1,0 +1,61 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  set1:
+    descp: 'A Tensor. Must be one of the following types: int8, int16, int32, int64,
+      uint8, uint16, string. Tensor with rank n. 1st n-1 dimensions must be the same
+      as set2. Dimension n contains values in a set, duplicates are allowed but ignored.'
+    dtype:
+    - tf.string
+    ndim:
+    - n
+    tensor_t:
+    - tf.tensor
+  set2:
+    descp: A Tensor. Must have the same type as set1. Tensor with rank n. 1st n-1
+      dimensions must be the same as set1. Dimension n contains values in a set, duplicates
+      are allowed but ignored.
+    dtype:
+    - dtype:&set1
+    ndim:
+    - n
+    tensor_t:
+    - tf.tensor
+  set_operation:
+    descp: A string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  validate_indices:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+dependency:
+- n
+inputs:
+  optional:
+  - validate_indices
+  - name
+  required:
+  - set1
+  - set2
+  - set_operation
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DenseToDenseSetOperation
+outputs:
+- A tuple of Tensor objects (result_indices, result_values, result_shape).
+- result_indices: A Tensor of type int64.
+- result_values: A Tensor. Has the same type as set1.
+- result_shape: A Tensor of type int64.
+package: tensorflow
+target: DenseToDenseSetOperation
+title: tf.raw_ops.DenseToDenseSetOperation
+version: 2.2.0

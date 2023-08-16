@@ -1,0 +1,31 @@
+constraints:
+  constant_values:
+    default: '0'
+    descp: In "CONSTANT" mode, the scalar pad value to use. Must be same type as tensor.
+  mode:
+    default: CONSTANT
+    descp: One of "CONSTANT", "REFLECT", or "SYMMETRIC" (case-insensitive)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  paddings:
+    descp: A Tensor of type int32.
+  tensor:
+    descp: A Tensor.
+exceptions:
+- ValueError: When mode is not one of "CONSTANT", "REFLECT", or "SYMMETRIC".
+inputs:
+  optional:
+  - mode
+  - constant_values
+  - name
+  required:
+  - tensor
+  - paddings
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/pad
+outputs:
+- A Tensor. Has the same type as tensor.
+package: tensorflow
+target: pad
+title: tf.pad
+version: 2.2.0

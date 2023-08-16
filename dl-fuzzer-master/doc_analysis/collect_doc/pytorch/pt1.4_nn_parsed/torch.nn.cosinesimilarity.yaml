@@ -1,0 +1,21 @@
+constraints:
+  dim:
+    default: '1'
+    descp: 'Dimension where cosine similarity is computed. Default: 1'
+    doc_dtype:
+    - python:int
+  eps:
+    default: 1e-08
+    descp: 'Small value to avoid division by zero. Default: 1e-8'
+    doc_dtype:
+    - python:float
+inputs:
+  optional:
+  - dim
+  - eps
+  required: []
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.CosineSimilarity
+package: torch
+target: CosineSimilarity
+title: torch.nn.CosineSimilarity
+version: 1.4.0

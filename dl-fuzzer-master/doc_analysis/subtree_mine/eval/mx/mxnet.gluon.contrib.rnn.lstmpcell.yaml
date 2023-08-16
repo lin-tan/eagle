@@ -1,0 +1,10 @@
+constraints:
+  prefix:
+    default: None
+    descp: Prefix for name of Block`s (and name of weight if params is `None).
+    doc_dtype:
+    - str
+    - "default `'lstmp_`\u2019"
+    dtype:
+    - string
+title: mxnet.gluon.contrib.rnn.LSTMPCell

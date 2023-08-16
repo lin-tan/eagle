@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.keras.datasets.mnist.load_data
+constraints:
+  path:
+    default: mnist.npz
+    descp: path where to cache the dataset locally (relative to ~/.keras/datasets).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - path
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/datasets/mnist/load_data
+outputs: 'Tuple of Numpy arrays: `(x_train, y_train), (x_test, y_test)`.'
+package: tensorflow
+target: load_data
+title: tf.keras.datasets.mnist.load_data
+version: 2.1.0

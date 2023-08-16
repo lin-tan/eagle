@@ -1,0 +1,83 @@
+constraints:
+  axis:
+    descp: Integer specifying the dimension index at which to expand the shape of
+      `input`. Given an input of D dimensions, `axis` must be in range`[-(D+1), D]`
+      (inclusive).
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (inclusive)
+    - '[-(D+1)'
+    - axis
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (inclusive)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[&axis]'
+    - '[1]'
+    - '[2]'
+    - '[inclusive]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: Optional string. The name of the output `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: If `axis` is not specified.
+- InvalidArgumentError: If `axis` is out of range `[-(D+1), D]`.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - axis
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/expand_dims
+outputs: A tensor with the same data as `input`, with an additional dimension inserted
+  at the index specified by `axis`.
+package: tensorflow
+target: expand_dims
+title: tf.expand_dims
+version: 2.1.0

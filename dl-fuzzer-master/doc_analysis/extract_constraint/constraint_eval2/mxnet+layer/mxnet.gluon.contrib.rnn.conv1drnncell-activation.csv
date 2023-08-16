@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, gluon.Block, default 'tanh'","Type of activation function. If argument type is string, it's equivalent to nn.Activation(act_type=str). See `Activation()` for available choices. Alternatively, other activation blocks such as nn.LeakyReLU can be used.",tanh,prim_dtype,dtype(string),,1

@@ -1,0 +1,20 @@
+constraints:
+  from:
+    descp: The original `torch.dtype`.
+    doc_dtype:
+    - dpython:type
+  to:
+    descp: The target `torch.dtype`.
+    doc_dtype:
+    - dpython:type
+inputs:
+  optional: []
+  required:
+  - from
+  - to
+link: https://pytorch.org/docs/1.7.0/generated/torch.can_cast.html#torch.can_cast#torch.can_cast
+package: torch
+ret_type: bool
+target: can_cast
+title: torch.can_cast
+version: 1.9.0

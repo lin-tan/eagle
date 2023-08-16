@@ -1,0 +1,10 @@
+constraints:
+  indices:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. Index
+      tensor.'
+    dtype:
+    - tf.int32
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+title: tf.tensor_scatter_nd_update

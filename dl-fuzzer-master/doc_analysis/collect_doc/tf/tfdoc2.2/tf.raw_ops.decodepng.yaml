@@ -1,0 +1,27 @@
+constraints:
+  channels:
+    default: '0'
+    descp: An optional int. Defaults to 0. Number of color channels for the decoded
+      image.
+  contents:
+    descp: A Tensor of type string. 0-D. The PNG-encoded image.
+  dtype:
+    default: tf.dtypes.uint8
+    descp: 'An optional tf.DType from: tf.uint8, tf.uint16. Defaults to tf.uint8.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - channels
+  - dtype
+  - name
+  required:
+  - contents
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DecodePng
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: DecodePng
+title: tf.raw_ops.DecodePng
+version: 2.2.0

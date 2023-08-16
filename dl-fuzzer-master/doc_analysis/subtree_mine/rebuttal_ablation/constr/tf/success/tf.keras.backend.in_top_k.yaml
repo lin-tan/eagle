@@ -1,0 +1,78 @@
+aliases:
+- tf.compat.v1.keras.backend.in_top_k
+constraints:
+  k:
+    descp: An `int`, number of top elements to consider.
+    dtype:
+    - int
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  predictions:
+    descp: A tensor of shape `(batch_size, classes)` and type `float32`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    enum:
+    - (batch_size
+    - classes)
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[batch_size,classes]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  targets:
+    descp: A 1D tensor of length `batch_size` and type `int32` or `int64`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int32
+    - tf.int64
+    - tf.string
+    enum:
+    - batch_size
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - batch_size
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[batch_size,batch_size]'
+    - '[batch_size]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - predictions
+  - targets
+  - k
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/in_top_k
+outputs: A 1D tensor of length `batch_size` and type `bool`.`output[i]` is `True`
+  if `predictions[i, targets[i]]` is within top-`k`values of `predictions[i]`.
+package: tensorflow
+target: in_top_k
+title: tf.keras.backend.in_top_k
+version: 2.1.0

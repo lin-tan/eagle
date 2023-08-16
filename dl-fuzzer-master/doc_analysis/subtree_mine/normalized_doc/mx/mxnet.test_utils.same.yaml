@@ -1,0 +1,21 @@
+constraints:
+  a:
+    descp: ''
+    doc_dtype: np.ndarray
+    normalized_descp: []
+    normalized_docdtype: np D_STRUCTURE
+  b:
+    descp: ''
+    doc_dtype: np.ndarray
+    normalized_descp: []
+    normalized_docdtype: np D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - a
+  - b
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.same
+package: mxnet
+target: same
+title: mxnet.test_utils.same
+version: 1.6.0

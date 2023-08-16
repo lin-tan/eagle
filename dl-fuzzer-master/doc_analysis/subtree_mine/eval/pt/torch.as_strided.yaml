@@ -1,0 +1,13 @@
+constraints:
+  stride:
+    descp: the stride of the output tensor
+    doc_dtype:
+    - tuple
+    - ints
+    dtype:
+    - int
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+title: torch.as_strided

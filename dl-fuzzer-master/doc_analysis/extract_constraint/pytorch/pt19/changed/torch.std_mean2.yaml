@@ -1,0 +1,49 @@
+constraints:
+  dim:
+    descp: the dimension or dimensions to reduce.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple(int)
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  unbiased:
+    default: 'True'
+    descp: whether to use the unbiased estimation or not
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - unbiased
+  - keepdim
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.std_mean.html#torch.std_mean#torch.std_mean
+package: torch
+ret_type: (Tensor, Tensor)
+target: std_mean
+title: torch.std_mean
+version: 1.9.0

@@ -1,0 +1,66 @@
+constraints:
+  dim:
+    default: None
+    descp: 'If `dim` is an int, vector norm will be calculated over the specified
+      dimension. If `dim` is a 2-tuple of ints, matrix norm will be calculated over
+      the specified dimensions. If `dim` is None, matrix norm will be calculated when
+      the input tensor has two dimensions, and vector norm will be calculated when
+      the input tensor has one dimension. Default: `None`'
+    doc_dtype:
+    - int
+    - 2-tuple of python:ints
+    - 2-list of python:ints
+  dtype:
+    default: None
+    descp: 'If specified, the input tensor is cast to `dtype` before performing the
+      operation, and the returned tensor''s type will be `dtype`. If this argument
+      is used in conjunction with the `out` argument, the output tensor''s type must
+      match this argument or a RuntimeError will be raised. This argument is not currently
+      supported for `ord=''nuc''` or `ord=''fro''`. Default: `None`'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: The input tensor. If dim is None, x must be 1-D or 2-D, unless `ord` is
+      None. If both `dim` and `ord` are None, the 2-norm of the input flattened to
+      1-D will be returned.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: 'If set to True, the reduced dimensions are retained in the result as dimensions
+      with size one. Default: `False`'
+    doc_dtype:
+    - bool
+  ord:
+    default: None
+    descp: ''
+    doc_dtype:
+    - int
+    - float
+    - inf
+    - -inf
+    - '''fro'''
+    - '''nuc'''
+  out:
+    default: None
+    descp: 'The output tensor. Ignored if `None`. Default: `None`'
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  - dtype
+  optional:
+  - ord
+  - dim
+  - keepdim
+  - out
+  - dtype
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/linalg.html#torch.linalg.norm
+package: torch
+ret_type: Tensor
+target: norm
+title: torch.linalg.norm
+version: 1.7.0

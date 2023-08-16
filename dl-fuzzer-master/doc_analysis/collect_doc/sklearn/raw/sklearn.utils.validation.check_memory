@@ -1,0 +1,19 @@
+sklearn.utils.validation.check_memory = check_memory(memory)
+    Check that ``memory`` is joblib.Memory-like.
+    
+    joblib.Memory-like means that ``memory`` can be converted into a
+    joblib.Memory instance (typically a str denoting the ``location``)
+    or has the same interface (has a ``cache`` method).
+    
+    Parameters
+    ----------
+    memory : None, str or object with the joblib.Memory interface
+    
+    Returns
+    -------
+    memory : object with the joblib.Memory interface
+    
+    Raises
+    ------
+    ValueError
+        If ``memory`` is not joblib.Memory-like.

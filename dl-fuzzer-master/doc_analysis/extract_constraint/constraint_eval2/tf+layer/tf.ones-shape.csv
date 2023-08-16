@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `list` of integers, a `tuple` of integers, or a 1-D `Tensor` of type `int32`.",,prim_dtype,"dtype(int, tf.int32)",,1
+,"A `list` of integers, a `tuple` of integers, or a 1-D `Tensor` of type `int32`.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list(int), tuple(int))",,1
+,"A `list` of integers, a `tuple` of integers, or a 1-D `Tensor` of type `int32`.",,shape,ndim(1),,1
+,"A `list` of integers, a `tuple` of integers, or a 1-D `Tensor` of type `int32`.",,validvalue,"range([0,inf))",,1

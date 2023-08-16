@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,List of integers representing the dimensions of tensor.,None,prim_dtype,dtype(int),,1
+,List of integers representing the dimensions of tensor.,None,nonprim_dtype,structure(list(int)),,1
+,List of integers representing the dimensions of tensor.,None,shape,ndim(1),,1
+,List of integers representing the dimensions of tensor.,None,validvalue,"range([0,inf))",,1

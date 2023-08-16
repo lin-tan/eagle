@@ -1,0 +1,70 @@
+constraints:
+  atol:
+    default: None
+    descp: '`Tensor`.  Same `dtype` as, and broadcastable to, `x`. The absolute tolerance.  Default
+      is `10 * eps`.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD D_STRUCTURE
+    - Same QSTR as, and broadcastable to, QSTR
+    - The absolute tolerance
+    - Default is CONSTANT_NUM eps
+  message:
+    default: None
+    descp: A string to prefix to the default message.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE to prefix to the default message
+  name:
+    default: None
+    descp: A name for this operation (optional).  Defaults to "assert_near".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+    - Defaults to QSTR
+  rtol:
+    default: None
+    descp: '`Tensor`.  Same `dtype` as, and broadcastable to, `x`. The relative tolerance.  Default
+      is `10 * eps`.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD D_STRUCTURE
+    - Same QSTR as, and broadcastable to, QSTR
+    - The relative tolerance
+    - Default is CONSTANT_NUM eps
+  summarize:
+    default: None
+    descp: Print this many entries of each tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Print this many entries of each D_STRUCTURE
+  x:
+    descp: Float or complex `Tensor`.
+    normalized_descp:
+    - D_TYPE D_STRUCTURE
+  y:
+    descp: Float or complex `Tensor`, same dtype as and broadcastable to `x`.
+    normalized_descp:
+    - D_TYPE D_STRUCTURE, same dtype as and broadcastable to QSTR
+exceptions:
+- InvalidArgumentError: if the check can be performed immediately and`x != y` is False
+    for any pair of elements in `x` and `y`. The check can be performed immediately
+    during eager execution or if `x` and `y` are statically known.
+inputs:
+  optional:
+  - rtol
+  - atol
+  - message
+  - summarize
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/assert_near
+outputs: Op that raises `InvalidArgumentError` if `x` and `y` are not close enough.   This
+  can be used with `tf.control_dependencies` inside of `tf.function`s   to block followup
+  computation until the check has executed.
+package: tensorflow
+target: assert_near
+title: tf.debugging.assert_near
+version: 2.1.0

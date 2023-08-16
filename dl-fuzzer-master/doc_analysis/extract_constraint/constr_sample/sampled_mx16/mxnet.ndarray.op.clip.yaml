@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  a_max:
+    default: _Null
+    descp: Maximum value
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+  a_min:
+    default: _Null
+    descp: Minimum value
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+  data:
+    default: None
+    descp: Input array.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+    dtype:
+    - string
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - data
+  - out
+  - name
+  required:
+  - '**kwargs'
+  - a_max
+  - a_min
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.clip
+package: mxnet
+target: clip
+title: mxnet.ndarray.op.clip
+version: 1.6.0

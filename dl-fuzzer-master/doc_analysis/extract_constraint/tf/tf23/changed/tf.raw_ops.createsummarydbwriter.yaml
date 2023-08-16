@@ -1,0 +1,58 @@
+constraints:
+  db_uri:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  experiment_name:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  run_name:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  user_name:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  writer:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+  - db_uri
+  - experiment_name
+  - run_name
+  - user_name
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/CreateSummaryDbWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: CreateSummaryDbWriter
+title: tf.raw_ops.CreateSummaryDbWriter
+version: 2.3.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"callable(label, pred)",Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.,,prim_dtype,dtype(int),,1
+"callable(label, pred)",Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.,,nonprim_dtype,structure(tuple),,1
+"callable(label, pred)",Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.,,shape,shape([2]),,1
+"callable(label, pred)",Custom evaluation function that receives labels and predictions for a minibatch as numpy arrays and returns the corresponding custom metric as a floating point number.,,validvalue,"range([0,inf))",,1

@@ -1,0 +1,12 @@
+constraints:
+  return_inverse:
+    default: 'False'
+    descp: Whether to also return the indices for where elements in the original input
+      ended up in the returned unique list.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.unique_consecutive

@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.tpu.experimental.shutdown_tpu_system
+constraints:
+  cluster_resolver:
+    default: None
+    descp: A tf.distribute.cluster_resolver.TPUClusterResolver, which provides information
+      about the TPU cluster.
+exceptions:
+- RuntimeError: If no TPU devices found for eager execution or if run in a tf.function.
+inputs:
+  optional:
+  - cluster_resolver
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/tpu/experimental/shutdown_tpu_system
+package: tensorflow
+target: shutdown_tpu_system
+title: tf.tpu.experimental.shutdown_tpu_system
+version: 2.3.0

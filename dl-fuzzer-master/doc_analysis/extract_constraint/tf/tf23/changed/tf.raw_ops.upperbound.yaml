@@ -1,0 +1,45 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  out_type:
+    default: tf.dtypes.int32
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int32.'
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  sorted_inputs:
+    descp: A Tensor. 2-D Tensor where each row is ordered.
+    ndim:
+    - '2'
+    tensor_t:
+    - tf.tensor
+  values:
+    descp: A Tensor. Must have the same type as sorted_inputs. 2-D Tensor with the
+      same numbers of rows as sorted_search_values. Contains the values that will
+      be searched for in sorted_search_values.
+    dtype:
+    - dtype:&sorted_inputs
+    ndim:
+    - '2'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - sorted_inputs
+  - values
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/UpperBound
+outputs:
+- A Tensor of type out_type.
+package: tensorflow
+target: UpperBound
+title: tf.raw_ops.UpperBound
+version: 2.3.0

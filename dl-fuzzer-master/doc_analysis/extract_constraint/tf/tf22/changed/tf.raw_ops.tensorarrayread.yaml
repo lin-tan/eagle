@@ -1,0 +1,45 @@
+constraints:
+  dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  flow_in:
+    descp: A Tensor of type float32.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  handle:
+    descp: A Tensor of type mutable string.
+    tensor_t:
+    - tf.tensor
+  index:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - index
+  - flow_in
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayRead
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: TensorArrayRead
+title: tf.raw_ops.TensorArrayRead
+version: 2.2.0

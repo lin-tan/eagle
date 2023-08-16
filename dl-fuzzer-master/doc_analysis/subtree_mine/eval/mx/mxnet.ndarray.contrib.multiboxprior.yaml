@@ -1,0 +1,24 @@
+constraints:
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+  ratios:
+    default: _Null
+    descp: List of aspect ratios of generated MultiBoxPriores.
+    doc_dtype:
+    - tuple of <float>
+    - optional
+    - default=[1]
+    dtype:
+    - float
+    ndim:
+    - '1'
+    structure:
+    - list
+    - tuple
+title: mxnet.ndarray.contrib.MultiBoxPrior

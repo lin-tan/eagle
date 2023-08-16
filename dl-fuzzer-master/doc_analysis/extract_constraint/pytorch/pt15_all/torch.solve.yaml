@@ -1,0 +1,50 @@
+constraints:
+  A:
+    descp: input square matrix of size (*, m, m) , where *  is zero or more batch
+      dimensions.
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,m,m]'
+    tensor_t:
+    - torch.tensor
+  input:
+    descp: input matrix B  of size (*, m, k)  , where *  is zero or more batch dimensions.
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,m,k]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: optional output tuple.
+    doc_dtype:
+    - (Tensor, Tensor)
+    ndim:
+    - '1'
+    structure:
+    - tuple
+dependency:
+- k
+- m
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - A
+link: https://pytorch.org/docs/stable/torch.html#torch.solve
+package: torch
+ret_type: (Tensor, Tensor)
+target: solve
+title: torch.solve
+version: 1.5.0

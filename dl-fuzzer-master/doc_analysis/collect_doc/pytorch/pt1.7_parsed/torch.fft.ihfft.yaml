@@ -1,0 +1,34 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: The dimension along which to take the one dimensional Hermitian IFFT.
+    doc_dtype:
+    - int
+  input:
+    descp: the real input tensor
+    doc_dtype:
+    - Tensor
+  n:
+    default: None
+    descp: Signal length. If given, the input will either be zero-padded or trimmed
+      to this length before computing the Hermitian IFFT.
+    doc_dtype:
+    - int
+  norm:
+    default: None
+    descp: ''
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - n
+  - dim
+  - norm
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/fft.html#torch.fft.ihfft
+package: torch
+ret_type: Tensor
+target: ihfft
+title: torch.fft.ihfft
+version: 1.7.0

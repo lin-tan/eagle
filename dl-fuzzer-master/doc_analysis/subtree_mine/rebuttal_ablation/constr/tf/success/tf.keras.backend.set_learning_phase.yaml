@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.keras.backend.set_learning_phase
+constraints:
+  value:
+    descp: Learning phase value, either 0 or 1 (integers).    0 = test, 1 = train
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[integers]'
+exceptions:
+- ValueError: if `value` is neither `0` nor `1`.
+inputs:
+  optional: []
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/set_learning_phase
+package: tensorflow
+target: set_learning_phase
+title: tf.keras.backend.set_learning_phase
+version: 2.1.0

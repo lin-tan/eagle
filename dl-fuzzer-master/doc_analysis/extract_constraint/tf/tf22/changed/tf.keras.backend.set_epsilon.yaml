@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.backend.set_epsilon
+constraints:
+  value:
+    descp: float. New value of epsilon.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/set_epsilon
+package: tensorflow
+target: set_epsilon
+title: tf.keras.backend.set_epsilon
+version: 2.2.0

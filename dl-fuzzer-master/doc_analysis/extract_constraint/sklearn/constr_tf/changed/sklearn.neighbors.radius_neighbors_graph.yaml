@@ -1,0 +1,86 @@
+constraints:
+  X:
+    descp: array-like of shape (n_samples, n_features) or BallTree Sample data, in
+      the form of a numpy array or a precomputed :class:`BallTree`.
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  include_self:
+    default: 'False'
+    descp: bool or 'auto', default=False Whether or not to mark each sample as the
+      first nearest neighbor to itself. If 'auto', then True is used for mode='connectivity'
+      and False for mode='distance'.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  metric:
+    default: minkowski
+    descp: string, default 'minkowski' The distance metric used to calculate the neighbors
+      within a given radius for each sample point. The DistanceMetric class gives
+      a list of available metrics. The default distance is 'euclidean' ('minkowski'
+      metric with the param equal to 2.)
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+  metric_params:
+    default: None
+    descp: dict, optional additional keyword arguments for the metric function.
+  mode:
+    default: connectivity
+    descp: '{''connectivity'', ''distance''}, optional Type of returned matrix: ''connectivity''
+      will return the connectivity matrix with ones and zeros, and ''distance'' will
+      return the distances between neighbors according to the given metric.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) The number of parallel jobs to run
+      for neighbors search. ``None`` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. ``-1`` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  p:
+    default: '2'
+    descp: int, default 2 Power parameter for the Minkowski metric. When p = 1, this
+      is equivalent to using manhattan_distance (l1), and euclidean_distance (l2)
+      for p = 2. For arbitrary p, minkowski_distance (l_p) is used.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  radius:
+    descp: float Radius of neighborhoods.
+    dtype:
+    - float
+    ndim:
+    - '0'
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - mode
+  - metric
+  - p
+  - metric_params
+  - include_self
+  - n_jobs
+  required:
+  - X
+  - radius
+link: ''
+package: scikit-learn
+target: radius_neighbors_graph
+title: sklearn.neighbors.radius_neighbors_graph
+version: 0.24.X

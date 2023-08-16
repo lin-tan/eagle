@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"{'None', 'float16', 'float32', 'float64'}, optional, default='None'",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).,_Null,prim_dtype,dtype(numpy.dtype),0,1
+"{'None', 'float16', 'float32', 'float64'}, optional, default='None'",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).,_Null,shape,ndim(0),1,1
+"{'None', 'float16', 'float32', 'float64'}, optional, default='None'",DType of the output in case this can't be inferred. Defaults to float32 if not defined (dtype=None).,_Null,validvalue,"enum(None, float16, float32, float64)",1,1
+"","","",prim_dtype,dtype(string),1,0

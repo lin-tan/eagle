@@ -1,0 +1,14 @@
+constraints:
+  maxlen:
+    default: None
+    descp: scalar integer tensor, size of last dimension of returned tensor. Default
+      is the maximum value in `lengths`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+title: tf.sequence_mask

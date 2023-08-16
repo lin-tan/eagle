@@ -1,0 +1,26 @@
+constraints:
+  X:
+    descp: array_like An array with shape (n_samples_X, n_features).
+  Y:
+    default: None
+    descp: array_like, optional An array with shape (n_samples_Y, n_features).
+  sum_over_features:
+    default: 'True'
+    descp: bool, default=True If True the function returns the pairwise distance matrix
+      else it returns the componentwise L1 pairwise-distances. Not supported for sparse
+      matrix inputs.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Y
+  - sum_over_features
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: manhattan_distances
+title: sklearn.metrics.pairwise.manhattan_distances
+version: 0.24.X

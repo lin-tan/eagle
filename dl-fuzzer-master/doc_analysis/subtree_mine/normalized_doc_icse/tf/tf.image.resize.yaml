@@ -1,0 +1,67 @@
+constraints:
+  antialias:
+    default: 'False'
+    descp: Whether to use an anti-aliasing filter when downsampling an image.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to use an anti aliasing filter when downsampling an image
+  images:
+    descp: 4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor of
+      shape `[height, width, channels]`.
+    normalized_descp:
+    - CONSTANT_NUM D D_STRUCTURE of shape BSTR or CONSTANT_NUM D D_STRUCTURE of shape
+      BSTR
+  method:
+    default: ResizeMethod.BILINEAR
+    descp: ResizeMethod.  Defaults to `bilinear`.
+    normalized_default: ResizeMethod BILINEAR
+    normalized_descp:
+    - ONE_WORD ResizeMethod
+    - Defaults to QSTR
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  preserve_aspect_ratio:
+    default: 'False'
+    descp: Whether to preserve the aspect ratio. If this is set, then `images` will
+      be resized to a size that fits in `size` while preserving the aspect ratio of
+      the original image. Scales up the image if`size` is bigger than the current
+      size of the `image`. Defaults to False.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to preserve the aspect ratio
+    - If this is set then PARAM will be resized to a PARAM that fits in PARAM while
+      preserving the aspect ratio of the original image
+    - Scales up the image if PARAM is bigger than the current PARAM of the QSTR
+    - Defaults to CONSTANT_BOOL
+  size:
+    descp: 'A 1-D int32 Tensor of 2 elements: `new_height, new_width`.  The new size
+      for the images.'
+    normalized_descp:
+    - A CONSTANT_NUM D D_TYPE D_STRUCTURE of CONSTANT_NUM elements new_height new_width
+    - The new size for the PARAM
+exceptions:
+- ValueError: if the shape of `images` is incompatible with the shape arguments to
+    this function
+- ValueError: if `size` has invalid shape or type.
+- ValueError: if an unsupported resize method is specified.
+inputs:
+  optional:
+  - method
+  - preserve_aspect_ratio
+  - antialias
+  - name
+  required:
+  - images
+  - size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/resize
+outputs: If `images` was 4-D, a 4-D float Tensor of shape`[batch, new_height, new_width,
+  channels]`. If `images` was 3-D, a 3-D float Tensor of shape`[new_height, new_width,
+  channels]`.
+package: tensorflow
+target: resize
+title: tf.image.resize
+version: 2.1.0

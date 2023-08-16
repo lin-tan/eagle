@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(Optional.) A `tf.int32` scalar `tf.Tensor`, representing the number of parsing processes to call in parallel.",1,prim_dtype,"dtype(int, tf.int32)",,1
+,"(Optional.) A `tf.int32` scalar `tf.Tensor`, representing the number of parsing processes to call in parallel.",1,nonprim_dtype,tensor_t(tf.tensor),,1
+,"(Optional.) A `tf.int32` scalar `tf.Tensor`, representing the number of parsing processes to call in parallel.",1,shape,ndim(0),,1
+,"(Optional.) A `tf.int32` scalar `tf.Tensor`, representing the number of parsing processes to call in parallel.",1,validvalue,"range([0,inf))",,1

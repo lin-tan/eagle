@@ -1,0 +1,26 @@
+constraints:
+  duration_ms:
+    descp: Duration of monitoring in ms.
+  level:
+    default: '1'
+    descp: Choose a monitoring level between 1 and 2 to monitor your job. Level 2
+      is more verbose than level 1 and shows more metrics.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  service_addr:
+    descp: gRPC address of profiler service e.g. grpc://10.0.0.2:8466.
+inputs:
+  optional:
+  - level
+  required:
+  - service_addr
+  - duration_ms
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/profiler/experimental/client/monitor
+outputs:
+- A string of monitoring output.
+package: tensorflow
+target: monitor
+title: tf.profiler.experimental.client.monitor
+version: 2.2.0

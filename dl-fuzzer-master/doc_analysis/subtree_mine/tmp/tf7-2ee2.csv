@@ -1,0 +1,14 @@
+API,Type,Count,Input
+tf.constant,Kill,2,/local1/xdanning/docter/expr/tensorflow/TF7-2_e3ddcef_ee/workdir/expect_exception_constr/tf.constant.yaml_workdir/Kill_script_record
+tf.unstack,Abort,4,tf11
+tf.linalg.tridiagonal_matmul,Segmentation_Fault,60,tf18
+tf.nn.max_pool3d,Floating_Point_Exception,2,tf32
+tf.fingerprint,Floating_Point_Exception,18,tf34
+tf.keras.layers.GlobalMaxPool1D,Abort,10,tf52
+tf.nn.max_pool3d,Abort,1,tf54
+tf.range,Kill,1,/local1/xdanning/docter/expr/tensorflow/TF7-2_e3ddcef_ee/workdir/expect_exception_constr/tf.range.yaml_workdir/Kill_script_record
+tf.image.extract_glimpse,Abort,8,tf58
+tf.transpose,Abort,1,tf59
+tf.range,Abort,2,tf62
+tf.strings.substr,Abort,215,tf63
+tf.unstack,Kill,5,/local1/xdanning/docter/expr/tensorflow/TF7-2_e3ddcef_ee/workdir/expect_exception_constr/tf.unstack.yaml_workdir/Kill_script_record

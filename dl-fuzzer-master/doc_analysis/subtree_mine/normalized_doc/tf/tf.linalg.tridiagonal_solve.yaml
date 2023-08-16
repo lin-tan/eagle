@@ -1,0 +1,79 @@
+aliases:
+- tf.compat.v1.linalg.tridiagonal_solve
+constraints:
+  conjugate_rhs:
+    default: 'False'
+    descp: If `True`, `rhs` is conjugated before solving.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, PARAM is conjugated before solving
+  diagonals:
+    descp: A `Tensor` or tuple of `Tensor`s describing left-hand sides. The shape
+      depends of `diagonals_format`, see description above. Must be`float32`, `float64`,
+      `complex64`, or `complex128`.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTUREs describing left hand sides
+    - The shape depends of PARAM, see description above
+    - Must beD_TYPE
+  diagonals_format:
+    default: compact
+    descp: one of `matrix`, `sequence`, or `compact`. Default is`compact`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - one of QSTR , D_STRUCTURE, or QSTR
+    - Default is QSTR
+  name:
+    default: None
+    descp: A name to give this `Op` (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name to give this QSTR BSTR
+  partial_pivoting:
+    default: 'True'
+    descp: whether to perform partial pivoting. `True` by default. Partial pivoting
+      makes the procedure more stable, but slower. Partial pivoting is unnecessary
+      in some cases, including diagonally dominant and symmetric positive definite
+      matrices (see e.g. theorem 9.12 in [1]).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - whether to perform partial pivoting
+    - CONSTANT_BOOL by default
+    - Partial pivoting makes the procedure more stable, but slower
+    - Partial pivoting is unnecessary in some cases, including diagonally dominant
+      and symmetric positive definite matrices see e g
+    - theorem CONSTANT_FLOAT in BSTR
+  rhs:
+    descp: A `Tensor` of shape [..., M] or [..., M, K] and with the same dtype as`diagonals`.
+      Note that if the shape of `rhs` and/or `diags` isn't known statically, `rhs`
+      will be treated as a matrix rather than a vector.
+    normalized_descp:
+    - A D_STRUCTURE of shape BSTR or BSTR and with the same dtype as PARAM
+    - Note that if the shape of QSTR isn t known statically, QSTR will be treated
+      as a matrix rather than a D_STRUCTURE
+  transpose_rhs:
+    default: 'False'
+    descp: If `True`, `rhs` is transposed before solving (has no effect if the shape
+      of rhs is [..., M]).
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, PARAM is transposed before solving has no effect if the shape
+      of PARAM is BSTR
+exceptions:
+- ValueError: An unsupported type is provided as input, or when the input tensors
+    have incorrect shapes.
+inputs:
+  optional:
+  - diagonals_format
+  - transpose_rhs
+  - conjugate_rhs
+  - name
+  - partial_pivoting
+  required:
+  - diagonals
+  - rhs
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/tridiagonal_solve
+outputs: A `Tensor` of shape [..., M] or [..., M, K] containing the solutions.
+package: tensorflow
+target: tridiagonal_solve
+title: tf.linalg.tridiagonal_solve
+version: 2.1.0

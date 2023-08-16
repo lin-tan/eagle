@@ -1,0 +1,13 @@
+constraints:
+  lambd:
+    default: '0.5'
+    descp: 'the  lambda  value for the Hardshrink formulation. Default: 0.5'
+inputs:
+  optional:
+  - lambd
+  required: []
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.Hardshrink
+package: torch
+target: Hardshrink
+title: torch.nn.Hardshrink
+version: 1.4.0

@@ -1,0 +1,13 @@
+constraints:
+  is_multiply:
+    default: _Null
+    descp: operation type is either multiplication or subduction
+    doc_dtype:
+    - boolean
+    - optional
+    - default=1
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.Correlation

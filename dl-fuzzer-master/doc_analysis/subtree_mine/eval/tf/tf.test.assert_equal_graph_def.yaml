@@ -1,0 +1,6 @@
+constraints:
+  actual:
+    descp: The `GraphDef` we have.
+  expected:
+    descp: The `GraphDef` we expected.
+title: tf.test.assert_equal_graph_def

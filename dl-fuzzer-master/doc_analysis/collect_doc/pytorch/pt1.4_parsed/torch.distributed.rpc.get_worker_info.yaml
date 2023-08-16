@@ -1,0 +1,16 @@
+constraints:
+  worker_name:
+    default: None
+    descp: the string name of a worker. If `None`, return the the id of the current
+      worker. (default `None`)
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - worker_name
+  required: []
+link: https://pytorch.org/docs/1.4.0/rpc.html#torch.distributed.rpc.get_worker_info
+package: torch
+target: get_worker_info
+title: torch.distributed.rpc.get_worker_info
+version: 1.4.0

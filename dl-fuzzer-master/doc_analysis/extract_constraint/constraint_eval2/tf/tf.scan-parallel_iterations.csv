@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,(optional) The number of iterations allowed to run in parallel.,10,prim_dtype,dtype(int),,1
+,(optional) The number of iterations allowed to run in parallel.,10,shape,ndim(0),,1
+,(optional) The number of iterations allowed to run in parallel.,10,validvalue,"range([0,inf))",,1

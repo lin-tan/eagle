@@ -1,0 +1,32 @@
+constraints:
+  external_state_policy:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource_handle:
+    descp: A Tensor of type resource. A handle to an iterator resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - external_state_policy
+  - name
+  required:
+  - resource_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SerializeIterator
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SerializeIterator
+title: tf.raw_ops.SerializeIterator
+version: 2.2.0

@@ -1,0 +1,64 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Axis along which to be sliced, supports negative indexes.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Axis along which to be sliced supports negative indexes
+    normalized_docdtype: D_TYPE required
+  begin:
+    default: _Null
+    descp: The beginning index along the axis to be sliced,  supports negative indexes.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The beginning index along the PARAM to be sliced supports negative indexes
+    normalized_docdtype: D_TYPE required
+  data:
+    default: None
+    descp: Source input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Source input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  end:
+    default: _Null
+    descp: The ending index along the axis to be sliced,  supports negative indexes.
+    doc_dtype: int or None, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The ending index along the PARAM to be sliced supports negative indexes
+    normalized_docdtype: D_TYPE or None required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - axis
+  - begin
+  - end
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.slice_axis
+package: mxnet
+target: slice_axis
+title: mxnet.ndarray.op.slice_axis
+version: 1.6.0

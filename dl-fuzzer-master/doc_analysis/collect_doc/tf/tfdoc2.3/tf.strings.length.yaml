@@ -1,0 +1,27 @@
+constraints:
+  input:
+    descp: A Tensor of type string. The strings for which to compute the length for
+      each element.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  unit:
+    default: BYTE
+    descp: 'An optional string from: "BYTE", "UTF8_CHAR". Defaults to "BYTE". The
+      unit that is counted to compute string length. One of: "BYTE" (for the number
+      of bytes in each string) or "UTF8_CHAR" (for the number of UTF-8 encoded Unicode
+      code points in each string). Results are undefined if unit=UTF8_CHAR and the
+      input strings do not contain structurally valid UTF-8.'
+inputs:
+  optional:
+  - unit
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/strings/length
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: length
+title: tf.strings.length
+version: 2.3.0

@@ -1,0 +1,66 @@
+constraints:
+  input:
+    descp: the input 2-D tensor u , a upper or lower triangular Cholesky factor
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    ndim:
+    - '&upper'
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '&upper'
+    - '[2]'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor for inv
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  upper:
+    default: 'False'
+    descp: whether to return a lower (default) or upper triangular matrix
+    doc_dtype: bool, optional
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - upper
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.cholesky_inverse
+package: torch
+ret_type: Tensor
+target: cholesky_inverse
+title: torch.cholesky_inverse
+version: 1.5.0

@@ -1,0 +1,57 @@
+aliases:
+- tf.compat.v1.keras.backend.set_value
+constraints:
+  value:
+    descp: Value to set the tensor to, as a Numpy array (of the same shape).
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (of
+    - same
+    - shape)
+    - the
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: Tensor to set to a new value.
+    dtype:
+    - '&value'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '&value'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/set_value
+package: tensorflow
+target: set_value
+title: tf.keras.backend.set_value
+version: 2.1.0

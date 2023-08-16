@@ -1,0 +1,26 @@
+constraints:
+  X: {descp: 'ndarray or DataFrame, shape (n_samples, n_features) Data on which permutation
+      importance will be computed.'}
+  estimator: {descp: 'object An estimator that has already been :term:`fitted` and
+      is compatible with :term:`scorer`.'}
+  n_jobs: {default: None, descp: 'int or None, default=None The number of jobs to
+      use for the computation. `None` means 1 unless in a :obj:`joblib.parallel_backend`
+      context. `-1` means using all processors. See :term:`Glossary <n_jobs>` for
+      more details.'}
+  n_repeats: {default: '5', descp: 'int, default=5 Number of times to permute a feature.'}
+  random_state: {default: None, descp: 'int, RandomState instance, or None, default=None
+      Pseudo-random number generator to control the permutations of each feature.
+      See :term:`random_state`.'}
+  scoring: {default: None, descp: 'string, callable or None, default=None Scorer to
+      use. It can be a single string (see :ref:`scoring_parameter`) or a callable
+      (see :ref:`scoring`). If None, the estimator''s default scorer is used.'}
+  y: {descp: 'array-like or None, shape (n_samples, ) or (n_samples, n_classes) Targets
+      for supervised or `None` for unsupervised.'}
+inputs:
+  optional: [scoring, n_repeats, n_jobs, random_state]
+  required: [estimator, X, y]
+link: ''
+package: sklearn
+target: permutation_importance
+title: sklearn.inspection.permutation_importance
+version: 0.24.2

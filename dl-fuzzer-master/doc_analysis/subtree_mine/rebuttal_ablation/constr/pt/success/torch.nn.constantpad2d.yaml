@@ -1,0 +1,33 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype: int, tuple
+    dtype:
+    - int
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[4]'
+    - '[c]'
+    structure:
+    - tuple
+  value:
+    descp: ''
+inputs:
+  optional: []
+  required:
+  - padding
+  - value
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ConstantPad2d
+package: torch
+target: ConstantPad2d
+title: torch.nn.ConstantPad2d
+version: 1.5.0

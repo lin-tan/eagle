@@ -1,0 +1,70 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: 'when True, will use ceil instead of floor in the formula to compute the
+      output shape. Default: `False`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will use ceil instead of floor in the formula to compute
+      the output shape
+    - Default CONSTANT_BOOL
+  count_include_pad:
+    default: 'True'
+    descp: 'when True, will include the zero-padding in the averaging calculation.
+      Default: `True`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL will include the zero PARAM in the averaging calculation
+    - Default CONSTANT_BOOL
+  divisor_override:
+    default: None
+    descp: 'if specified, it will be used as divisor, otherwise size of the pooling
+      region will be used. Default: None'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - if specified it will be used as divisor otherwise size of the pooling region
+      will be used
+    - Default None
+  input:
+    descp: 'input tensor (minibatch , in _channels , iH , iW) '
+    normalized_descp:
+    - input D_STRUCTURE BSTR
+  kernel_size:
+    descp: size of the pooling region. Can be a single number or a tuple (kH, kW)
+    normalized_descp:
+    - size of the pooling region
+    - Can be a single number or a D_STRUCTURE BSTR
+  padding:
+    default: '0'
+    descp: 'implicit zero paddings on both sides of the input. Can be a single number
+      or a tuple (padH, padW). Default: 0'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - implicit zero paddings on both sides of the PARAM
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  stride:
+    default: None
+    descp: 'stride of the pooling operation. Can be a single number or a tuple (sH,
+      sW). Default: `kernel_size`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - stride of the pooling operation
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default PARAM
+inputs:
+  optional:
+  - stride
+  - padding
+  - ceil_mode
+  - count_include_pad
+  - divisor_override
+  required:
+  - input
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.functional.html#torch.nn.functional.avg_pool2d
+package: torch
+ret_type: Tensor
+target: avg_pool2d
+title: torch.nn.functional.avg_pool2d
+version: 1.5.0

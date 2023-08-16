@@ -1,0 +1,89 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this reader is placed
+      in the given container. Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  encoding:
+    default: ''
+    descp: An optional string. Defaults to "". The type of encoding for the file.
+      Currently ZLIB and GZIP are supported. Defaults to none.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  footer_bytes:
+    default: '0'
+    descp: An optional int. Defaults to 0. Number of bytes in the footer, defaults
+      to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  header_bytes:
+    default: '0'
+    descp: An optional int. Defaults to 0. Number of bytes in the header, defaults
+      to 0.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  hop_bytes:
+    default: '0'
+    descp: An optional int. Defaults to 0. Number of bytes to hop before each read.
+      Default of 0 means using record_bytes.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  record_bytes:
+    descp: An int. Number of bytes in the record.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this reader is named
+      in the given bucket with this shared_name. Otherwise, the node name is used
+      instead.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - header_bytes
+  - footer_bytes
+  - hop_bytes
+  - container
+  - shared_name
+  - encoding
+  - name
+  required:
+  - record_bytes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/FixedLengthRecordReaderV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: FixedLengthRecordReaderV2
+title: tf.raw_ops.FixedLengthRecordReaderV2
+version: 2.2.0

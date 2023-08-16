@@ -1,0 +1,50 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: The data to train on. It can be passed either as a tf.data Dataset, or
+      as a numpy array.
+  invert:
+    default: 'False'
+    descp: ''
+  mask_value:
+    default: '0'
+    descp: ''
+  max_values:
+    default: None
+    descp: ''
+  num_oov_indices:
+    default: '1'
+    descp: ''
+  oov_value:
+    default: '-1'
+    descp: ''
+  reset_state:
+    default: None
+    descp: Optional argument specifying whether to clear the state of the layer at
+      the start of the call to adapt. This must be True for this layer, which does
+      not support repeated calls to adapt.
+  vocabulary:
+    default: None
+    descp: ''
+exceptions:
+- ValueError: If there are too many inputs, the inputs do not match, or input data
+    is missing.
+inputs:
+  optional:
+  - max_values
+  - num_oov_indices
+  - mask_value
+  - oov_value
+  - vocabulary
+  - invert
+  - data
+  - reset_state
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/IntegerLookup
+package: tensorflow
+target: IntegerLookup
+title: tf.keras.layers.experimental.preprocessing.IntegerLookup
+version: 2.3.0

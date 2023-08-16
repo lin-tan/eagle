@@ -1,0 +1,90 @@
+constraints:
+  accum:
+    descp: A mutable Tensor. Must have the same type as var. Should be from a Variable().
+    dtype:
+    - dtype:&var
+    tensor_t:
+    - tf.tensor
+  grad:
+    descp: A Tensor. Must have the same type as var. The gradient.
+    dtype:
+    - dtype:&var
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A vector of
+      indices into the first dimension of var and accum.'
+    dtype:
+    - int
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  lr:
+    descp: A Tensor. Must have the same type as var. Learning rate. Must be a scalar.
+    dtype:
+    - dtype:&var
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    tensor_t:
+    - tf.tensor
+  momentum:
+    descp: A Tensor. Must have the same type as var. Momentum. Must be a scalar.
+    dtype:
+    - dtype:&var
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, updating of the var and accum
+      tensors will be protected by a lock; otherwise the behavior is undefined, but
+      may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  use_nesterov:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, the tensor passed to compute
+      grad will be var - lr * momentum * accum, so in the end, the var you get is
+      actually var - lr * momentum * accum.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  var:
+    descp: 'A mutable Tensor. Must be one of the following types: float32, float64,
+      int32, uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16,
+      uint16, complex128, half, uint32, uint64. Should be from a Variable().'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - use_locking
+  - use_nesterov
+  - name
+  required:
+  - var
+  - accum
+  - lr
+  - grad
+  - indices
+  - momentum
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseApplyMomentum
+outputs:
+- A mutable Tensor. Has the same type as var.
+package: tensorflow
+target: SparseApplyMomentum
+title: tf.raw_ops.SparseApplyMomentum
+version: 2.3.0

@@ -1,0 +1,23 @@
+constraints:
+  dim:
+    descp: the dimension to do the operation over
+    doc_dtype: int
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+  out:
+    default: None
+    descp: the result tuple of two output tensors (values, indices)
+    doc_dtype: tuple, optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.cummax
+package: torch
+ret_type: (Tensor, LongTensor)
+target: cummax
+title: torch.cummax
+version: 1.5.0

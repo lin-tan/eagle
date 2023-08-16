@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.layers.Softmax
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: '-1'
+    descp: Integer, axis along which the softmax normalization is applied.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE, axis along which the softmax normalization is applied
+inputs:
+  optional:
+  - axis
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/Softmax
+package: tensorflow
+target: Softmax
+title: tf.keras.layers.Softmax
+version: 2.1.0

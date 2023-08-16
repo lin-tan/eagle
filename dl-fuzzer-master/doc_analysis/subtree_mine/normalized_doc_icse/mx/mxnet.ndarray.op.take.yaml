@@ -1,0 +1,75 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  a:
+    default: None
+    descp: The input array.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  axis:
+    default: _Null
+    descp: The axis of input array to be taken.For input tensor of rank r, it could
+      be in the range of [-r, r-1]
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axis of input D_STRUCTURE to be taken For input D_STRUCTURE of rank r it
+      could be in the range of BSTR
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  indices:
+    default: None
+    descp: The indices of the values to be extracted.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The indices of the values to be extracted
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mode:
+    default: _Null
+    descp: Specify how out-of-bound indices bahave. Default is "clip". "clip" means
+      clip to the range. So, if all indices mentioned are too large, they are replaced
+      by the index that addresses the last element along an axis. "wrap" means to
+      wrap around. "raise" means to raise an error when index out of range.
+    doc_dtype: '{''clip'', ''raise'', ''wrap''},optional, default=''clip'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Specify how PARAM of bound PARAM bahave
+    - Default is QSTR
+    - QSTR means clip to the range
+    - So if all PARAM mentioned are too large they are replaced by the index that
+      addresses the last element along an PARAM
+    - QSTR means to wrap around
+    - QSTR means to raise an error when index PARAM of range
+    normalized_docdtype: QSTR optional default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - a
+  - indices
+  - axis
+  - mode
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.take
+package: mxnet
+target: take
+title: mxnet.ndarray.op.take
+version: 1.6.0

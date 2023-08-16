@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, optional, default=1","Change the area (namely width * height) to a random value in `[min_random_area, max_random_area]`. Ignored if `random_resized_crop` is False.",None,prim_dtype,dtype(float),,1
+"float, optional, default=1","Change the area (namely width * height) to a random value in `[min_random_area, max_random_area]`. Ignored if `random_resized_crop` is False.",None,shape,ndim(0),,1

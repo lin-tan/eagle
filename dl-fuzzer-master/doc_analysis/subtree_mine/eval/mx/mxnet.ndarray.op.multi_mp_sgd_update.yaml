@@ -1,0 +1,10 @@
+constraints:
+  '*data':
+    descp: Weights
+    doc_dtype:
+    - NDArray[]
+    structure:
+    - ndarray
+    dtype:
+    - numeric
+title: mxnet.ndarray.op.multi_mp_sgd_update

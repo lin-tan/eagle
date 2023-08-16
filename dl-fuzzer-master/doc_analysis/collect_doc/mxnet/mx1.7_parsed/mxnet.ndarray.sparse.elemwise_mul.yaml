@@ -1,0 +1,35 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  lhs:
+    default: None
+    descp: first input
+    doc_dtype:
+    - NDArray
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  rhs:
+    default: None
+    descp: second input
+    doc_dtype:
+    - NDArray
+inputs:
+  optional:
+  - lhs
+  - rhs
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/ndarray/sparse/index.html#mxnet.ndarray.sparse.elemwise_mul
+package: mxnet
+target: elemwise_mul
+title: mxnet.ndarray.sparse.elemwise_mul
+version: 1.7.0

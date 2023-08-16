@@ -1,0 +1,920 @@
+idx,freq,sequence,len,cat
+0,757,"['output', 'SOME_STRUCTURE']",2,ds
+1,745,"['output', 'result']",2,not useful
+2,741,"['output', 'SOME_STRUCTURE', 'hold', 'result']",4,ds
+3,245,"['input', 'array']",2,ds
+4,129,"['input', 'data']",2,not useful
+5,122,"['input', 'function']",2,not useful
+6,106,"['clip_gradient', 'clip_gradient']",2,complex
+7,106,"['grad', 'grad']",2,complex
+8,98,"['first', 'input']",2,not useful
+9,91,"['second', 'input']",2,not useful
+10,80,"['load', 'pretrained', 'weights']",3,not useful
+11,65,"['set', 'true']",2,dtype
+12,63,"['clip', 'range']",2,validvalue
+13,58,"['gradient', 'gradient']",2,not useful
+14,57,"['max', 'min']",2,not useful
+15,57,"['clip', 'range', 'clipping', 'turned']",4,validvalue
+16,53,"['clip', 'gradient', 'range', 'clip_gradient', 'clip_gradient', 'clip_gradient', 'gradient', 'clipping', 'turned']",9,validvalue
+17,53,"['grad', 'max', 'min', 'grad', 'clip_gradient', 'clip_gradient']",6,complex
+18,53,"['rescale', 'gradient', 'grad', 'rescale_grad', 'grad']",5,complex
+19,52,"['tensor', 'matrices']",2,ds
+20,50,"['augmentation', 'param']",2,not useful
+21,49,"['first', 'input', 'function']",3,not useful
+22,49,"['second', 'input', 'function']",3,not useful
+23,48,"['SOME_DTYPE', 'SOME_DTYPE']",2,dtype
+24,48,"['h', 'w']",2,not useful
+25,47,"['shape', 'shape']",2,not useful
+26,45,"['data', 'type']",2,dtype
+27,45,"['weight', 'decay']",2,dtype
+28,44,"['dtype', 'output']",2,dtype
+29,44,"['function', 'penalizes']",2,not useful
+30,44,"['w', 'w']",2,not useful
+31,43,"['maximum', 'value']",2,not useful
+32,43,"['x', 'y']",2,not useful
+33,42,"['weight', 'decay', 'augments', 'objective', 'function', 'regularization', 'term', 'penalizes', 'large', 'weights']",10,dtype
+34,42,"['penalty', 'scales', 'square', 'magnitude', 'weight']",5,not useful
+35,41,"['whether', 'model']",2,dtype
+36,40,"['whether', 'load', 'pretrained', 'weights', 'model']",5,dtype
+37,40,"['context', 'load', 'pretrained', 'weights']",4,complex
+38,40,"['case', 'inferred']",2,not useful
+39,40,"['defaults', 'none']",2,not useful
+40,40,"['shape', 'output']",2,dtype+ds+validvalue
+41,40,"['learning', 'rate']",2,dtype+shape+validvalue
+42,39,"['output', 'type']",2,dtype
+43,39,"['minimum', 'value']",2,not useful
+44,39,"['decay', 'rate']",2,dtype+validvalue
+45,38,"['dtype', 'output', 'case', 'inferred']",4,dtype
+46,38,"['defaults', 'dtype']",2,not useful
+47,37,"['input', 'SOME_STRUCTURE']",2,ds
+48,37,"['y', 'x']",2,not useful
+49,36,"['defaults', 'defined', 'dtype', 'none']",4,not useful
+50,36,"['h', 'w', 'd', 'h', 'w']",5,not useful
+51,35,"['output', 'n']",2,not useful
+52,35,"['value', 'SOME_DTYPE']",2,not useful
+53,35,"['decay', 'rate', 'estimates']",3,dtype+validvalue
+54,34,"['size', 'one']",2,not useful
+55,34,"['SOME_DTYPE', 'none']",2,not useful
+56,34,"['SOME_DTYPE', 'value']",2,dtype
+57,33,"['result', 'dimension']",2,not useful
+58,33,"['width', 'height']",2,not useful
+59,32,"['SOME_STRUCTURE', 'SOME_DTYPE']",2,ds+dtype
+60,32,"['true', 'left']",2,dtype
+61,32,"['axis', 'along']",2,dtype+shape
+62,32,"['n', 'n']",2,not useful
+63,32,"['defaults', 'SOME_DTYPE']",2,not useful
+64,32,"['defaults', 'SOME_DTYPE', 'dtype']",3,not useful
+65,32,"['location', 'keeping', 'model', 'parameters']",4,complex
+66,32,"['x', 'x']",2,not useful
+67,31,"['true', 'size']",2,dtype
+68,31,"['SOME_DTYPE', 'factor']",2,dtype
+69,31,"['x', 'y', 'x']",3,not useful
+70,31,"['y', 'x', 'y']",3,not useful
+71,30,"['true', 'left', 'result', 'dimension', 'size', 'one']",6,dtype
+72,30,"['default', 'SOME_DTYPE']",2,not useful
+73,30,"['defaults', 'SOME_DTYPE', 'defined', 'dtype', 'none']",5,not useful
+74,29,"['set', 'size']",2,not useful
+75,29,"['whether', 'instead']",2,dtype
+76,29,"['along', 'axis']",2,not useful
+77,28,"['whether', 'axis']",2,dtype
+78,28,"['value', 'data']",2,not useful
+79,28,"['context', 'output']",2,complex
+80,28,"['convolution', 'h', 'w', 'd', 'h', 'w']",6,shape
+81,28,"['w', 'h', 'w', 'd', 'h', 'w']",6,shape
+82,27,"['set', 'true', 'size']",3,dtype
+83,27,"['output', 'shape']",2,shape
+84,27,"['input', 'matrices']",2,not useful
+85,27,"['diagonal', 'main', 'diagonal']",3,not useful
+86,27,"['device', 'context']",2,complex
+87,26,"['set', 'true', 'reduced', 'left', 'result', 'dimension', 'size', 'one']",8,dtype
+88,26,"['set', 'input']",2,complex
+89,26,"['perform', 'reduction']",2,not useful
+90,26,"['whether', 'data']",2,dtype
+91,26,"['whether', 'use']",2,dtype
+92,26,"['axis', 'axis']",2,not useful
+93,26,"['shape', 'n']",2,shape
+94,26,"['e', 'g']",2,not useful
+95,25,"['input', 'operator']",2,not useful
+96,25,"['default', 'context']",2,complex
+97,25,"['tensor', 'input', 'matrices']",3,ds
+98,25,"['supports', 'negative']",2,not useful
+99,24,"['input', 'feature']",2,not useful
+100,24,"['true', 'axis']",2,dtype
+101,24,"['whether', 'perform']",2,dtype
+102,24,"['axes', 'size']",2,not useful
+103,24,"['label', 'reserved']",2,complex
+104,24,"['label', 'reserved', 'blank']",3,complex
+105,24,"['label', 'reserved', 'blank', 'label']",4,complex
+106,24,"['default', 'current']",2,not useful
+107,24,"['SOME_DTYPE', 'value', 'SOME_DTYPE']",3,dtype
+108,24,"['triangular', 'matrix']",2,not useful
+109,24,"['current', 'context']",2,complex
+110,23,"['whether', 'axis', 'axis']",3,not useful
+111,23,"['default', 'current', 'context']",3,dtype
+112,23,"['shape', 'must']",2,not useful
+113,23,"['decay', 'momentum']",2,not useful
+114,22,"['set', 'true', 'reduced', 'axes', 'left', 'result', 'dimension', 'size', 'one']",9,dtype
+115,22,"['parameters', 'distributions']",2,complex
+116,22,"['true', 'input']",2,dtype
+117,22,"['whether', 'perform', 'reduction', 'axis', 'axis', 'instead']",6,dtype
+118,22,"['value', 'values']",2,not useful
+119,22,"['pooling', 'd']",2,not useful
+120,21,"['type', 'SOME_DTYPE']",2,dtype
+121,21,"['input', 'output']",2,not useful
+122,21,"['lower', 'triangular']",2,not useful
+123,21,"['shape', 'distribution']",2,dtype+ds+validvalue
+124,21,"['shape', '!', 'shape', 'must', 'broadcastable', 'common', 'shape']",7,complex
+125,21,"['decay', 'rate', 'momentum', 'estimates']",4,dtype+validvalue
+126,20,"['output', 'data']",2,not useful
+127,20,"['second', 'array']",2,ds
+128,20,"['n', 'm']",2,not useful
+129,20,"['defaults', 'dimension']",2,not useful
+130,20,"['SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",4,dtype
+131,20,"['bias', 'parameter']",2,complex
+132,20,"['convolution', 'w', 'h', 'w', 'd', 'h', 'w']",7,shape
+133,20,"['kernel', 'size']",2,not useful
+134,20,"['batch', 'norm']",2,not useful
+135,20,"['lhs', 'shape', '!', 'rhs', 'shape', 'must', 'broadcastable', 'common', 'shape']",9,not useful
+136,19,"['output', 'format']",2,complex
+137,19,"['type', 'output']",2,dtype
+138,19,"['first', 'array']",2,ds
+139,19,"['index', 'along']",2,dtype
+140,19,"['decay', 'rate', 'momentum', 'estimates', 'epoch']",5,dtype+validvalue
+141,19,"['e', 'g', 'shape']",3,not useful
+142,19,"['optional', 'default']",2,not useful
+143,19,"['x', 'y', 'x', 'y']",4,not useful
+144,18,"['set', 'instead']",2,dtype
+145,18,"['set', 'output']",2,not useful
+146,18,"['log', 'probability']",2,not useful
+147,18,"['storage', 'type']",2,complex
+148,18,"['input', 'd']",2,not useful
+149,18,"['true', 'row_ssparse']",2,dtype
+150,18,"['values', 'mask']",2,not useful
+151,18,"['context', 'output', 'format', 'cpu|gpu|cpu_pinned', 'n']",5,complex
+152,18,"['used', 'imperative', 'calls']",3,not useful
+153,18,"['shape', 'e', 'g']",3,not useful
+154,18,"['shape', 'm', 'n']",3,not useful
+155,18,"['shape', 'm', 'n', 'm', 'n']",5,not useful
+156,18,"['d', 'y']",2,not useful
+157,18,"['d', 'y', 'x']",3,shape
+158,18,"['tensor', 'square']",2,ds
+159,18,"['learning', 'rates']",2,dtype+validvalue
+160,17,"['output', 'data', 'type']",3,dtype
+161,17,"['output', 'samples']",2,not useful
+162,17,"['input', 'tensor']",2,not useful
+163,17,"['true', 'gradient']",2,dtype
+164,17,"['whether', 'bias']",2,dtype
+165,17,"['label', 'padding']",2,not useful
+166,17,"['data', 'samples']",2,not useful
+167,17,"['shape', 'array']",2,dtype+ds+validvalue
+168,17,"['shape', 'e', 'g', 'm', 'n', 'm', 'n']",7,not useful
+169,17,"['shape', 'e', 'g', 'output', 'shape', 'm', 'n']",7,not useful
+170,17,"['maximum', 'SOME_DTYPE']",2,dtype
+171,17,"['minimum', 'SOME_DTYPE']",2,dtype
+172,16,"['set', 'compute', 'density', 'log', 'probability', 'instead', 'probability']",7,dtype
+173,16,"['samples', 'distributions']",2,complex
+174,16,"['input', 'label']",2,complex
+175,16,"['first', 'label', 'reserved']",3,not useful
+176,16,"['first', 'label', 'reserved', 'label']",4,not useful
+177,16,"['array', 'compared']",2,ds
+178,16,"['whether', 'lenghts', 'decided']",3,dtype
+179,16,"['label', 'reserved', 'blank', 'label', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",11,complex
+180,16,"['label', 'reserved', 'blank', 'label', 'reserved']",5,complex
+181,16,"['last', 'label']",2,not useful
+182,16,"['last', 'label', 'reserved', 'blank']",4,complex
+183,16,"['value', 'reserved', 'blank']",3,complex
+184,16,"['value', 'reserved', 'blank', 'label']",4,complex
+185,16,"['value', 'label', 'label']",3,not useful
+186,16,"['value', 'padding_mask']",2,not useful
+187,16,"['lengths', 'samples']",2,dtype+shape+validvalue
+188,16,"['required', 'true']",2,not useful
+189,16,"['false', 'lengths']",2,dtype
+190,16,"['derived', 'padding_mask']",2,not useful
+191,16,"['default', 'value']",2,not useful
+192,16,"['shape', 'sampled', 'random', 'distribution']",4,dtype+ds+validvalue
+193,16,"['number', 'updated', 'weights']",3,dtype+shape+validvalue
+194,16,"['turn', 'cudnn']",2,not useful
+195,16,"['maximum', 'SOME_DTYPE', 'value']",3,dtype
+196,16,"['minimum', 'SOME_DTYPE', 'value']",3,dtype
+197,16,"['parameter', 'distribution']",2,not useful
+198,16,"['present', 'used']",2,not useful
+199,16,"['pooling', 'operator']",2,not useful
+200,16,"['feature', 'map']",2,not useful
+201,15,"['SOME_STRUCTURE', 'SOME_DTYPE', 'type']",3,ds
+202,15,"['input', 'dot']",2,not useful
+203,15,"['input', 'data', 'function']",3,not useful
+204,15,"['whether', 'disable', 'parameter']",3,dtype
+205,15,"['axis', 'input']",2,dtype+shape+validvalue
+206,15,"['data', 'array']",2,ds
+207,15,"['default', 'default']",2,not useful
+208,15,"['SOME_DTYPE', 'input']",2,dtype
+209,15,"['d', 'array']",2,shape
+210,15,"['numerical', 'stability']",2,not useful
+211,15,"['gradient', 'factor']",2,not useful
+212,15,"['height', 'height']",2,not useful
+213,15,"['main', 'diagonal', 'diagonal']",3,not useful
+214,15,"['negative', 'values']",2,not useful
+215,15,"['random', 'value']",2,not useful
+216,15,"['source', 'input']",2,not useful
+217,15,"['augmentation', 'param', 'channel']",3,not useful
+218,14,"['set', 'true', 'axis']",3,dtype
+219,14,"['lambda', 'rate']",2,complex
+220,14,"['output', 'h', 'w']",3,not useful
+221,14,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE']",3,ds
+222,14,"['input', 'feature', 'map']",3,not useful
+223,14,"['input', 'height']",2,not useful
+224,14,"['input', 'w']",2,not useful
+225,14,"['input', 'input']",2,not useful
+226,14,"['value', 'channel']",2,not useful
+227,14,"['data', 'type', 'output']",3,dtype
+228,14,"['data', 'SOME_DTYPE']",2,not useful
+229,14,"['ground', 'truth']",2,not useful
+230,14,"['means', 'means']",2,validvalue
+231,14,"['default', 'none']",2,not useful
+232,14,"['standard', 'deviation']",2,dtype
+233,14,"['context', 'context']",2,complex
+234,14,"['n', 'array']",2,shape
+235,14,"['used', 'batch']",2,not useful
+236,14,"['used', 'SOME_DTYPE']",2,not useful
+237,14,"['number', 'samples']",2,dtype+ds+validvalue
+238,14,"['d', 'd', 'd']",3,not useful
+239,14,"['maximum', 'value', 'data']",3,not useful
+240,14,"['minimum', 'value', 'data']",3,not useful
+241,14,"['batch', 'norm', 'scale']",3,not useful
+242,14,"['decay', 'rate', 'moment', 'estimates']",4,dtype+shape+validvalue
+243,14,"['height', 'width']",2,not useful
+244,14,"['epsilon', 'prevent']",2,not useful
+245,14,"['scale', 'output']",2,not useful
+246,14,"['scale', 'SOME_DTYPE']",2,not useful
+247,14,"['use', 'instead']",2,not useful
+248,14,"['main', 'diagonal', 'diagonals', 'main', 'diagonal']",5,not useful
+249,14,"['negative', 'positive']",2,not useful
+250,14,"['corner', 'center']",2,not useful
+251,14,"['encoded', 'center']",2,not useful
+252,14,"['center', 'x']",2,not useful
+253,14,"['center', 'y']",2,not useful
+254,14,"['y', 'x', 'y', 'x']",4,not useful
+255,14,"['image', 'height']",2,not useful
+256,14,"['supports', 'negative', 'indices']",3,not useful
+257,14,"['current', 'default', 'context']",3,not useful
+258,14,"['pooling', 'feature']",2,not useful
+259,14,"['bounding', 'box']",2,not useful
+260,13,"['SOME_STRUCTURE', 'SOME_DTYPE', 'type', 'SOME_DTYPE']",4,ds+dtype
+261,13,"['input', 'type']",2,dtype
+262,13,"['input', 'image']",2,not useful
+263,13,"['true', 'length']",2,dtype
+264,13,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype']",6,dtype
+265,13,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse']",7,dtype
+266,13,"['transpose', 'input']",2,not useful
+267,13,"['whether', 'disable', 'bias', 'parameter']",4,dtype
+268,13,"['whether', 'input']",2,dtype
+269,13,"['size', 'input']",2,dtype
+270,13,"['default', 'd']",2,not useful
+271,13,"['default', 'current', 'default', 'context']",4,complex
+272,13,"['context', 'current', 'default', 'context']",4,complex
+273,13,"['lower', 'upper']",2,not useful
+274,13,"['shape', 'k']",2,shape
+275,13,"['shape', 'input']",2,dtype+ds+validvalue
+276,13,"['number', 'output']",2,dtype+shape+validvalue
+277,13,"['batch', 'size']",2,not useful
+278,13,"['small', 'constant', 'numerical', 'stability']",4,dtype
+279,13,"['gradient', 'SOME_DTYPE', 'factor']",3,not useful
+280,13,"['calibration', 'dataset']",2,not useful
+281,13,"['use', 'input']",2,not useful
+282,13,"['main', 'diagonal', 'negative', 'value', 'diagonal']",5,not useful
+283,13,"['main', 'diagonal', 'positive', 'value', 'diagonal']",5,not useful
+284,13,"['x', 'd']",2,not useful
+285,13,"['augmentation', 'param', 'crop']",3,complex
+286,12,"['set', 'true', 'input']",3,dtype
+287,12,"['set', 'number']",2,complex
+288,12,"['set', 'layout', 'input', 'output']",4,complex
+289,12,"['set', 'softmax']",2,dtype
+290,12,"['input', 'data', 'operator']",3,not useful
+291,12,"['input', 'shape']",2,not useful
+292,12,"['input', 'pooling', 'operator']",3,not useful
+293,12,"['input', 'height', 'height']",3,not useful
+294,12,"['input', 'w', 'w']",3,not useful
+295,12,"['true', 'upper']",2,dtype
+296,12,"['true', 'along', 'axis']",3,not useful
+297,12,"['axis', 'elements']",2,dtype+ds+validvalue
+298,12,"['values', 'means']",2,not useful
+299,12,"['values', 'right', 'left']",3,not useful
+300,12,"['last', 'axis']",2,complex
+301,12,"['value', 'padding']",2,not useful
+302,12,"['value', 'mask']",2,not useful
+303,12,"['value', 'encoded', 'values']",3,not useful
+304,12,"['weights', 'weight']",2,not useful
+305,12,"['used', 'scale']",2,not useful
+306,12,"['used', 'data', 'SOME_DTYPE']",3,not useful
+307,12,"['defaults', 'padding']",2,not useful
+308,12,"['SOME_DTYPE', 'value', 'possibly', 'produced']",4,dtype
+309,12,"['SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",6,dtype
+310,12,"['SOME_DTYPE', 'data']",2,not useful
+311,12,"['SOME_DTYPE', 'shape']",2,not useful
+312,12,"['lower', 'triangular', 'upper']",3,not useful
+313,12,"['shape', 'h', 'w']",3,shape
+314,12,"['shape', 'SOME_DTYPE']",2,not useful
+315,12,"['cudnn', 'used']",2,not useful
+316,12,"['cudnn', 'used', 'kernel']",3,not useful
+317,12,"['cudnn', 'kernel']",2,not useful
+318,12,"['convolution', 'kernel']",2,not useful
+319,12,"['convolution', 'stride']",2,not useful
+320,12,"['kernel', 'size', 'd']",3,shape
+321,12,"['weight', 'matrix']",2,dtype
+322,12,"['empty', 'default', 'layout', 'ncw', 'd', 'nchw', 'd', 'ncdhw', 'd']",9,validvalue
+323,12,"['maximum', 'temporary']",2,not useful
+324,12,"['maximum', 'SOME_DTYPE', 'value', 'SOME_DTYPE']",4,dtype
+325,12,"['minimum', 'SOME_DTYPE', 'value', 'SOME_DTYPE']",4,dtype
+326,12,"['stride', 'd']",2,not useful
+327,12,"['form', 'batch_size']",2,not useful
+328,12,"['tensor', 'triangular', 'matrices']",3,ds
+329,12,"['top', 'k']",2,complex
+330,12,"['triangular', 'matrix', 'lower', 'upper']",4,not useful
+331,12,"['triangular', 'matrix', 'triangular']",3,not useful
+332,12,"['offset', 'diagonal', 'versus', 'main', 'diagonal']",5,complex
+333,12,"['corresponds', 'main', 'diagonal', 'negative', 'positive', 'value', 'diagonals', 'main', 'diagonal']",9,not useful
+334,12,"['box', 'encoding', 'type']",3,complex
+335,12,"['corner', 'means', 'boxes', 'encoded', 'xmin', 'ymin', 'xmax', 'ymax', 'center', 'means', 'boxes', 'encodes', 'x', 'y', 'width', 'height']",16,validvalue
+336,12,"['multiply', 'transposed', 'input']",3,not useful
+337,12,"['k', 'k']",2,not useful
+338,12,"['device', 'output']",2,complex
+339,12,"['pooling', 'y', 'x', 'd', 'y', 'x']",6,not useful
+340,12,"['feature', 'map', 'height']",3,not useful
+341,12,"['ratio', 'height']",2,complex
+342,12,"['augmentation', 'param', 'random']",3,complex
+343,11,"['set', 'padding']",2,not useful
+344,11,"['set', 'false']",2,dtype
+345,11,"['type', 'array']",2,not useful
+346,11,"['first', 'axis']",2,dtype+ds+validvalue
+347,11,"['whether', 'input', 'data']",3,dtype
+348,11,"['axis', 'result']",2,not useful
+349,11,"['axis', 'input', 'tensor']",3,not useful
+350,11,"['axis', 'size']",2,not useful
+351,11,"['axis', 'dimension']",2,not useful
+352,11,"['n', 'dimensional', 'array']",3,shape
+353,11,"['n', 'samples']",2,not useful
+354,11,"['SOME_DTYPE', 'result']",2,dtype
+355,11,"['SOME_DTYPE', 'output']",2,not useful
+356,11,"['index', 'along', 'axis']",3,not useful
+357,11,"['height', 'image']",2,not useful
+358,11,"['e', 'g', 'SOME_DTYPE']",3,not useful
+359,11,"['alpha', 'shape']",2,complex
+360,11,"['flattened', 'array']",2,not useful
+361,11,"['device', 'context', 'default', 'current', 'default', 'context']",6,complex
+362,11,"['ratio', 'image']",2,not useful
+363,11,"['raw', 'image']",2,not useful
+364,10,"['set', 'first']",2,not useful
+365,10,"['set', 'layer']",2,not useful
+366,10,"['set', 'computed']",2,not useful
+367,10,"['set', 'gradient']",2,not useful
+368,10,"['output', 'mean']",2,not useful
+369,10,"['output', 'size']",2,not useful
+370,10,"['output', 'shape', 'h', 'w']",4,not useful
+371,10,"['output', 'shape', 'x']",3,not useful
+372,10,"['output', 'shape', 'y']",3,not useful
+373,10,"['output', 'gradient']",2,not useful
+374,10,"['SOME_STRUCTURE', 'axis']",2,ds
+375,10,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",2,ds
+376,10,"['type', 'input']",2,not useful
+377,10,"['type', 'default']",2,not useful
+378,10,"['input', 'data', 'pooling', 'operator']",4,not useful
+379,10,"['input', 'weight']",2,not useful
+380,10,"['input', 'batch']",2,not useful
+381,10,"['input', 'pooling', 'operator', 'd', 'feature', 'maps']",6,not useful
+382,10,"['true', 'transpose', 'input', 'dot']",4,dtype
+383,10,"['true', 'SOME_STRUCTURE']",2,dtype
+384,10,"['true', 'false']",2,dtype
+385,10,"['array', 'array']",2,not useful
+386,10,"['whether', 'use', 'batch']",3,dtype
+387,10,"['axis', 'one']",2,not useful
+388,10,"['size', 'h', 'w']",3,shape
+389,10,"['size', 'convolution']",2,not useful
+390,10,"['th', 'values']",2,not useful
+391,10,"['value', 'values', 'mask']",3,not useful
+392,10,"['value', 'divided', 'encoded', 'values']",4,complex
+393,10,"['length', 'input']",2,not useful
+394,10,"['context', 'SOME_STRUCTURE']",2,not useful
+395,10,"['weights', 'gradients']",2,dtype
+396,10,"['n', 'dimensional', 'input', 'array']",4,shape
+397,10,"['used', 'set']",2,not useful
+398,10,"['dtype', 'dtype']",2,not useful
+399,10,"['SOME_DTYPE', 'uint']",2,dtype
+400,10,"['SOME_DTYPE', 'n']",2,not useful
+401,10,"['bound', 'distribution']",2,not useful
+402,10,"['shape', 'SOME_DTYPE', 'shape']",3,not useful
+403,10,"['shape', 'y', 'x']",3,not useful
+404,10,"['number', 'samples', 'draw']",3,dtype+shape+validvalue
+405,10,"['number', 'top']",2,dtype+shape+validvalue
+406,10,"['cudnn', 'cudnn']",2,complex
+407,10,"['cudnn', 'operator']",2,not useful
+408,10,"['weight', 'decays']",2,not useful
+409,10,"['empty', 'array']",2,not useful
+410,10,"['maximum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",5,dtype
+411,10,"['maximum', 'number']",2,dtype+shape+validvalue
+412,10,"['minimum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",5,dtype
+413,10,"['parameter', 'SOME_STRUCTURE']",2,not useful
+414,10,"['pad', 'd']",2,not useful
+415,10,"['workspace', 'mb']",2,not useful
+416,10,"['batch', 'output']",2,not useful
+417,10,"['along', 'compute']",2,not useful
+418,10,"['index', 'array']",2,ds
+419,10,"['index', 'input']",2,not useful
+420,10,"['min', 'max']",2,not useful
+421,10,"['top', 'nms']",2,not useful
+422,10,"['fix', 'size']",2,complex
+423,10,"['scale', 'scale']",2,not useful
+424,10,"['mean', 'value']",2,not useful
+425,10,"['negative', 'values', 'means', 'indexing', 'right', 'left']",6,not useful
+426,10,"['interpolation', 'method']",2,complex
+427,10,"['keep', 'nms']",2,not useful
+428,10,"['limit', 'set']",2,not useful
+429,10,"['indices', 'indices']",2,not useful
+430,10,"['device', 'context', 'output']",3,complex
+431,10,"['feature', 'map', 'height', 'w']",4,not useful
+432,10,"['bounding', 'box', 'coordinates', 'd', 'array']",5,shape
+433,10,"['ratio', 'input', 'feature', 'map', 'height', 'raw', 'image', 'height']",8,complex
+434,10,"['equals', 'reciprocal', 'total', 'stride', 'convolutional', 'layers']",6,complex
+435,10,"['store', 'output', 'existing', 'SOME_STRUCTURE']",4,ds
+436,10,"['activation', 'function']",2,not useful
+437,9,"['set', 'true', 'SOME_STRUCTURE']",3,dtype
+438,9,"['probability', 'random']",2,dtype+shape+validvalue
+439,9,"['output', 'given']",2,not useful
+440,9,"['output', 'input']",2,not useful
+441,9,"['output', 'array']",2,not useful
+442,9,"['output', 'height']",2,not useful
+443,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'names']",3,ds+dtype
+444,9,"['input', 'data', 'array']",3,ds
+445,9,"['input', 'label', 'function']",3,not useful
+446,9,"['whether', 'turn']",2,dtype
+447,9,"['whether', 'profile']",2,dtype
+448,9,"['axis', 'result', 'dimension']",3,not useful
+449,9,"['axis', 'arrays']",2,dtype+validvalue
+450,9,"['label', 'value']",2,not useful
+451,9,"['data', 'type', 'output', 'samples']",4,dtype
+452,9,"['data', 'd']",2,not useful
+453,9,"['standard', 'channel']",2,not useful
+454,9,"['n', 'array', 'n']",3,not useful
+455,9,"['n', 'n', 'samples']",3,not useful
+456,9,"['used', 'corresponding']",2,complex
+457,9,"['SOME_DTYPE', 'factor', 'applied', 'result']",4,dtype
+458,9,"['SOME_DTYPE', 'factor', 'multiplied']",3,dtype
+459,9,"['shape', 'process']",2,shape
+460,9,"['shape', 'e', 'g', 'm', 'n', 'SOME_DTYPE', 'output', 'shape', 'm', 'n']",10,complex
+461,9,"['shape', 'drawn']",2,not useful
+462,9,"['layer', 'layer']",2,not useful
+463,9,"['currently', 'supported']",2,validvalue
+464,9,"['tensor', 'square', 'matrices']",3,ds
+465,9,"['tensor', 'square', 'matrix']",3,ds
+466,9,"['tensor', 'lower', 'triangular', 'matrices']",4,not useful
+467,9,"['cropping', 'area']",2,not useful
+468,9,"['scale', 'gradient', 'SOME_DTYPE', 'factor']",4,not useful
+469,9,"['mean', 'std']",2,complex
+470,9,"['mean', 'distribution']",2,dtype
+471,9,"['use', 'matrix']",2,not useful
+472,9,"['optional', 'type', 'default']",3,not useful
+473,9,"['x', 'y', 'x', 'y', 'm']",5,not useful
+474,9,"['path', 'file']",2,dtype
+475,9,"['augmentation', 'param', 'value']",3,complex
+476,9,"['slice', 'operation', 'supports', 'negative']",4,not useful
+477,9,"['overridden', 'context', 'SOME_STRUCTURE']",3,not useful
+478,9,"['calib_mode', 'calibration']",2,not useful
+479,9,"['calib_mode', 'thresholds']",2,not useful
+480,9,"['users', 'want']",2,not useful
+481,8,"['set', 'true', 'layer', 'takes', 'extra', 'input', 'parameter', 'sequence_length', 'specify', 'variable', 'length', 'SOME_STRUCTURE']",12,dtype
+482,8,"['set', 'true', 'softmax', 'function', 'computed', 'along', 'axis']",7,dtype
+483,8,"['set', 'label', 'reserved', 'blank', 'label', 'first', 'th', 'label', 'reserved', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",16,complex
+484,8,"['set', 'number', 'heads']",3,not useful
+485,8,"['set', 'layout', 'input', 'output', 'weight']",5,complex
+486,8,"['set', 'divided']",2,not useful
+487,8,"['compute', 'softmax']",2,not useful
+488,8,"['lambda', 'rate', 'parameters', 'distributions']",4,complex
+489,8,"['output', 'storage', 'type']",3,complex
+490,8,"['output', 'mean', 'std']",3,not useful
+491,8,"['output', 'width']",2,dtype
+492,8,"['storage', 'type', 'row_ssparse']",3,not useful
+493,8,"['input', 'array', 'operator']",3,ds
+494,8,"['input', 'data', 'batch']",3,not useful
+495,8,"['input', 'data', 'input']",3,not useful
+496,8,"['input', 'data', 'pooling', 'operator', 'd', 'feature', 'maps']",7,shape
+497,8,"['input', 'SOME_DTYPE']",2,dtype
+498,8,"['input', 'b']",2,not useful
+499,8,"['first', 'array', 'compared']",3,ds
+500,8,"['second', 'array', 'compared']",3,ds
+501,8,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse', 'stype']",8,dtype
+502,8,"['true', 'axis', 'left', 'result', 'dimension', 'size', 'one']",7,dtype
+503,8,"['whether', 'data', 'lenghts', 'decided', 'data_lengths']",5,dtype
+504,8,"['whether', 'label', 'lenghts', 'decided', 'label_lengths', 'derived', 'padding_mask']",7,dtype
+505,8,"['whether', 'elements']",2,dtype
+506,8,"['axis', 'array']",2,dtype+shape+validvalue
+507,8,"['axis', 'swapped']",2,dtype+shape+validvalue
+508,8,"['axis', 'reduction']",2,dtype+shape+validvalue
+509,8,"['size', 'batch']",2,not useful
+510,8,"['last', 'last', 'label', 'value', 'alphabet_size', 'reserved', 'blank', 'label', 'instead', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",16,not useful
+511,8,"['value', 'padding_mask', 'first', 'ctc', 'label', 'reserved', 'blank', 'last', 'label', 'reserved', 'blank']",11,not useful
+512,8,"['value', 'bias']",2,not useful
+513,8,"['value', 'weight']",2,not useful
+514,8,"['value', 'used']",2,not useful
+515,8,"['lengths', 'data', 'samples']",3,dtype+shape+validvalue
+516,8,"['lengths', 'labels', 'samples']",3,dtype+shape+validvalue
+517,8,"['required', 'use_data_lengths', 'true']",3,not useful
+518,8,"['required', 'use_label_lengths', 'true']",3,not useful
+519,8,"['ground', 'truth', 'labels', 'loss']",4,not useful
+520,8,"['false', 'lengths', 'equal', 'max', 'SOME_STRUCTURE', 'length']",6,dtype
+521,8,"['false', 'lengths', 'derived', 'first', 'occurrence', 'value', 'padding_mask']",7,dtype
+522,8,"['see', 'blank_label']",2,not useful
+523,8,"['means', 'distributions']",2,dtype
+524,8,"['means', 'range']",2,not useful
+525,8,"['channel', 'color']",2,not useful
+526,8,"['default', 'used']",2,not useful
+527,8,"['weights', 'gradients', 'learning', 'rates', 'weight', 'decays']",6,not useful
+528,8,"['weights', 'clip_weights', 'clip_weights']",3,not useful
+529,8,"['model', 'name']",2,dtype
+530,8,"['n', 'dimensional', 'input', 'array', 'form']",5,shape
+531,8,"['n', 'dimensional', 'input', 'array', 'n']",5,shape
+532,8,"['n', 'form']",2,not useful
+533,8,"['n', 'k']",2,not useful
+534,8,"['used', 'convolution']",2,not useful
+535,8,"['used', 'generate', 'anchor', 'windows', 'enumerating']",5,not useful
+536,8,"['defaults', 'dtype', 'dtype']",3,not useful
+537,8,"['SOME_DTYPE', 'value', 'possibly', 'produced', 'input']",5,dtype
+538,8,"['SOME_DTYPE', 'value', 'data']",3,dtype
+539,8,"['SOME_DTYPE', 'data', 'SOME_DTYPE']",3,dtype
+540,8,"['upper', 'limit']",2,not useful
+541,8,"['lower', 'limit']",2,not useful
+542,8,"['shape', 'axis']",2,not useful
+543,8,"['shape', 'one']",2,dtype+shape+validvalue
+544,8,"['shape', 'e', 'g', 'x', 'y', 'output', 'shape', 'x', 'y', 'm', 'n', 'm', 'n', 'samples', 'drawn']",15,not useful
+545,8,"['shape', 'scale']",2,not useful
+546,8,"['name', 'SOME_STRUCTURE']",2,not useful
+547,8,"['number', 'group', 'partitions']",3,dtype+shape+validvalue
+548,8,"['number', 'input']",2,dtype+shape+validvalue
+549,8,"['number', 'top', 'scoring', 'boxes', 'keep', 'applying', 'nms', 'rpn', 'proposals']",9,dtype+shape+validvalue
+550,8,"['keys', 'values']",2,complex
+551,8,"['running', 'input']",2,not useful
+552,8,"['kernel', 'size', 'h', 'w', 'd', 'h', 'w']",7,shape
+553,8,"['kernel', 'used']",2,not useful
+554,8,"['maximum', 'workspace', 'allowed', 'mb']",4,complex
+555,8,"['maximum', 'used']",2,not useful
+556,8,"['maximum', 'calibration']",2,not useful
+557,8,"['zero', 'convolution', 'h', 'w', 'd', 'h', 'w']",7,shape
+558,8,"['stride', 'h', 'w', 'd', 'h', 'w']",6,shape
+559,8,"['constant', 'label']",2,not useful
+560,8,"['vector', 'SOME_STRUCTURE', 'lengths']",3,ds+shape
+561,8,"['index', 'along', 'dimensions']",3,dtype+shape
+562,8,"['momentum', 'average']",2,complex
+563,8,"['area', 'image']",2,complex
+564,8,"['epsilon', 'prevent', 'div']",3,not useful
+565,8,"['beta', 'array']",2,ds
+566,8,"['gamma', 'array']",2,ds
+567,8,"['gamma', 'distribution']",2,not useful
+568,8,"['present', 'used', 'quantized', 'batch', 'norm', 'op', 'calculate', 'primitive', 'scale', 'note', 'calib_range', 'calib', 'bn', 'output']",14,not useful
+569,8,"['present', 'used', 'data', 'SOME_DTYPE']",4,not useful
+570,8,"['scale', 'shape']",2,not useful
+571,8,"['mean', 'value', 'channel']",3,not useful
+572,8,"['mean', 'subtracted']",2,not useful
+573,8,"['negative', 'binomial', 'distribution']",3,not useful
+574,8,"['optional', 'class']",2,not useful
+575,8,"['optional', 'nms']",2,not useful
+576,8,"['optional', 'default', 'default']",3,not useful
+577,8,"['ignored', 'true']",2,not useful
+578,8,"['nms', 'boxes']",2,not useful
+579,8,"['apply', 'boxes']",2,complex
+580,8,"['boxes', 'scores']",2,not useful
+581,8,"['threshold', 'used']",2,not useful
+582,8,"['alpha', 'dispersion']",2,complex
+583,8,"['alpha', 'parameters', 'distributions']",3,complex
+584,8,"['image', 'data']",2,dtype+ds
+585,8,"['limit', 'norm', 'weight']",3,dtype
+586,8,"['quantize', 'data']",2,not useful
+587,8,"['auto', 'automatically', 'output', 'type', 'according']",5,not useful
+588,8,"['element', 'axis']",2,not useful
+589,8,"['corresponding', 'input']",2,not useful
+590,8,"['pooling', 'pooling']",2,not useful
+591,8,"['pooling', 'applied']",2,not useful
+592,8,"['ratio', 'input', 'feature', 'map', 'height', 'w', 'raw', 'image', 'height', 'w']",10,not useful
+593,8,"['b', 'n']",2,shape
+594,8,"['elements', 'input']",2,not useful
+595,8,"['augmentation', 'param', 'maximum']",3,complex
+596,8,"['augmentation', 'param', 'standard', 'deviation', 'channel']",5,complex
+597,8,"['error', 'raised']",2,not useful
+598,8,"['positional', 'input']",2,not useful
+599,8,"['unsuccessful', 'experiments']",2,not useful
+600,8,"['failure', 'experiment']",2,not useful
+601,8,"['jittering', 'range', 'percent']",3,validvalue
+602,8,"['bounds', 'distributions']",2,not useful
+603,8,"['ignore_label', 'backward']",2,not useful
+604,8,"['cropped', 'area']",2,not useful
+605,8,"['cropped', 'image']",2,complex
+606,7,"['compute', 'gradient']",2,not useful
+607,7,"['probability', 'apply']",2,dtype+shape+validvalue
+608,7,"['output', 'output']",2,not useful
+609,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'names', 'users', 'want', 'excluding']",6,ds
+610,7,"['SOME_STRUCTURE', 'arrays']",2,ds
+611,7,"['forward', 'output']",2,not useful
+612,7,"['input', 'output', 'type']",3,not useful
+613,7,"['true', 'first', 'input']",3,dtype
+614,7,"['true', 'otherwise']",2,dtype
+615,7,"['whether', 'first', 'input']",3,dtype
+616,7,"['whether', 'training']",2,dtype
+617,7,"['data', 'size']",2,not useful
+618,7,"['data', 'weight']",2,not useful
+619,7,"['default', 'd', 'gpu']",3,not useful
+620,7,"['standard', 'deviations']",2,dtype
+621,7,"['SOME_DTYPE', 'SOME_STRUCTURE']",2,dtype
+622,7,"['upper', 'bound']",2,dtype
+623,7,"['lower', 'bound']",2,dtype
+624,7,"['shape', 'empty']",2,dtype+shape+validvalue
+625,7,"['shape', 'n', 'k']",3,shape
+626,7,"['w', 'r']",2,not useful
+627,7,"['weight', 'momentum']",2,not useful
+628,7,"['gradient', 'weight']",2,not useful
+629,7,"['gradient', 'momentum']",2,not useful
+630,7,"['decay', 'rate', 'st', 'moment', 'estimates']",5,dtype+validvalue
+631,7,"['decay', 'rate', 'nd', 'moment', 'estimates']",5,dtype+validvalue
+632,7,"['width', 'size']",2,dtype
+633,7,"['beta', 'scale']",2,not useful
+634,7,"['moving', 'mean']",2,dtype
+635,7,"['moving', 'variance']",2,dtype
+636,7,"['optional', 'device', 'context']",3,not useful
+637,7,"['optional', 'value', 'type', 'default', 'SOME_DTYPE']",5,not useful
+638,7,"['alpha', 'parameter', 'distribution']",3,not useful
+639,7,"['indicates', 'whether']",2,dtype
+640,7,"['image', 'size']",2,dtype
+641,7,"['row', 'ssparse']",2,not useful
+642,7,"['g', 'b']",2,not useful
+643,7,"['augmentation', 'param', 'ground']",3,complex
+644,7,"['augmentation', 'param', 'value', 'channel']",4,complex
+645,7,"['augmentation', 'param', 'probability']",3,complex
+646,7,"['color', 'space']",2,not useful
+647,6,"['set', 'output', 'gradient']",3,not useful
+648,6,"['set', 'ignored']",2,not useful
+649,6,"['probability', 'apply', 'random']",3,dtype+shape+validvalue
+650,6,"['lambda', 'parameter', 'rate', 'distribution']",4,complex
+651,6,"['output', 'default']",2,not useful
+652,6,"['output', 'dim']",2,not useful
+653,6,"['output', 'defined']",2,not useful
+654,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'representing', 'names', 'users', 'want', 'excluding']",7,ds
+655,6,"['SOME_STRUCTURE', 'name', 'SOME_STRUCTURE']",3,ds
+656,6,"['desired', 'output']",2,not useful
+657,6,"['given', 'input']",2,not useful
+658,6,"['given', 'axis']",2,not useful
+659,6,"['given', 'flattened', 'array', 'used']",4,not useful
+660,6,"['input', 'array', 'array']",3,not useful
+661,6,"['input', 'data', 'normalization']",3,not useful
+662,6,"['input', 'data', 'size']",3,not useful
+663,6,"['input', 'arrays']",2,not useful
+664,6,"['input', 'h', 'w']",3,not useful
+665,6,"['second', 'axis']",2,dtype+shape+validvalue
+666,6,"['true', 'second']",2,dtype
+667,6,"['true', 'weight']",2,dtype
+668,6,"['true', 'triangular', 'matrix', 'lower', 'triangular', 'false', 'upper', 'triangular']",8,dtype
+669,6,"['array', 'indices']",2,ds
+670,6,"['whether', 'pick', 'convolution', 'running', 'performance', 'test']",6,dtype
+671,6,"['whether', 'use', 'global', 'moving', 'statistics', 'instead', 'local', 'batch', 'norm']",9,dtype
+672,6,"['whether', 'use', 'length', 'input', 'mask', 'data', 'input']",7,dtype
+673,6,"['whether', 'turn', 'cudnn']",3,dtype
+674,6,"['axis', 'channel']",2,dtype+shape+validvalue
+675,6,"['axis', 'along', 'input']",3,dtype+shape+validvalue
+676,6,"['axis', 'along', 'compute', 'softmax']",4,dtype+shape+validvalue
+677,6,"['axis', 'sub']",2,dtype+shape+validvalue
+678,6,"['axis', 'corresponding', 'matrix']",3,dtype+shape+validvalue
+679,6,"['axis', 'perform']",2,dtype+shape+validvalue
+680,6,"['axis', 'split']",2,dtype+shape+validvalue
+681,6,"['axis', 'sliced', 'supports', 'negative', 'indexes']",5,dtype+shape+validvalue
+682,6,"['axes', 'perform']",2,dtype+shape+validvalue
+683,6,"['axes', 'array']",2,dtype+shape+validvalue
+684,6,"['axes', 'input']",2,dtype+shape+validvalue
+685,6,"['dimension', 'd']",2,not useful
+686,6,"['size', 'height']",2,not useful
+687,6,"['size', 'width']",2,not useful
+688,6,"['size', 'layer']",2,dtype
+689,6,"['one', 'time']",2,not useful
+690,6,"['label', 'array']",2,not useful
+691,6,"['th', 'input']",2,not useful
+692,6,"['value', 'indices']",2,not useful
+693,6,"['data', 'type', 'array']",3,dtype
+694,6,"['see', 'details']",2,not useful
+695,6,"['means', 'top', 'k']",3,not useful
+696,6,"['means', 'values']",2,not useful
+697,6,"['default', 'threshold', 'used', 'set', 'none']",5,not useful
+698,6,"['default', 'clip']",2,not useful
+699,6,"['n', 'dimensional', 'input', 'array', 'form', 'max_sequence_length', 'batch_size', 'n']",8,shape
+700,6,"['used', 'padding']",2,not useful
+701,6,"['defaults', 'input', 'dtype', 'defined', 'dtype', 'none']",6,not useful
+702,6,"['SOME_DTYPE', 'factor', 'multiplied', 'b']",4,dtype
+703,6,"['SOME_DTYPE', 'used']",2,dtype
+704,6,"['SOME_DTYPE', 'axis']",2,dtype
+705,6,"['none', 'flattened']",2,not useful
+706,6,"['shape', 'k', 'process']",3,shape
+707,6,"['shape', 'empty', 'array']",3,dtype+shape+validvalue
+708,6,"['shape', 'label']",2,dtype+shape+validvalue
+709,6,"['shape', 'e', 'g', 'm', 'n', 'scale']",6,not useful
+710,6,"['shape', 'm', 'n', 'scale']",4,not useful
+711,6,"['number', 'arrays']",2,dtype+shape+validvalue
+712,6,"['number', 'elements']",2,not useful
+713,6,"['keys', 'values', 'interleaved']",3,complex
+714,6,"['turn', 'cudnn', 'layer']",3,not useful
+715,6,"['turn', 'cudnn', 'operator']",3,not useful
+716,6,"['cudnn', 'used', 'determines', 'effective', 'batch', 'size', 'kernel']",7,not useful
+717,6,"['cudnn', 'used', 'controls', 'maximum', 'temporary', 'storage', 'used', 'tuning', 'best', 'cudnn', 'kernel', 'limited_workspace', 'strategy', 'used']",14,not useful
+718,6,"['convolution', 'dilate', 'h', 'w', 'd', 'h', 'w']",7,shape
+719,6,"['convolution', 'kernel', 'size', 'h', 'w', 'd', 'h', 'w']",8,shape
+720,6,"['convolution', 'filter', 'channel', 'number']",4,not useful
+721,6,"['convolution', 'stride', 'h', 'w', 'd', 'h', 'w']",7,shape
+722,6,"['kernel', 'size', 'w', 'h', 'w', 'd', 'h', 'w']",8,shape
+723,6,"['kernel', 'input']",2,not useful
+724,6,"['empty', 'default', 'layout', 'ncw', 'd', 'nchw', 'd', 'ncdhw', 'd', 'nhwc', 'ndhwc', 'supported', 'gpu']",13,not useful
+725,6,"['maximum', 'temporary', 'workspace', 'allowed', 'mb', 'parameter', 'two', 'usages']",8,not useful
+726,6,"['maximum', 'workspace', 'allowed', 'convolution']",4,not useful
+727,6,"['maximum', 'SOME_DTYPE', 'value', 'possibly', 'produced']",5,dtype
+728,6,"['maximum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",7,dtype
+729,6,"['minimum', 'SOME_DTYPE', 'value', 'possibly', 'produced']",5,dtype
+730,6,"['minimum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",7,dtype
+731,6,"['parameter', 'gamma', 'distribution']",3,not useful
+732,6,"['parameter', 'negative']",2,not useful
+733,6,"['parameter', '\\', 'lrn', 'expression']",4,not useful
+734,6,"['zero', 'pad', 'convolution', 'h', 'w', 'd', 'h', 'w']",8,shape
+735,6,"['zero', 'convolution', 'w', 'h', 'w', 'd', 'h', 'w']",8,shape
+736,6,"['stride', 'w', 'h', 'w', 'd', 'h', 'w']",7,shape
+737,6,"['specify', 'bound', 'indices']",3,not useful
+738,6,"['along', 'split']",2,not useful
+739,6,"['along', 'sliced', 'supports', 'negative', 'indexes']",5,not useful
+740,6,"['vector', 'SOME_STRUCTURE', 'lengths', 'form', 'batch_size']",5,ds+shape
+741,6,"['index', 'along', 'dimensions', 'used', 'reshaping']",5,dtype+shape+validvalue
+742,6,"['clip', 'means', 'clip', 'range']",4,not useful
+743,6,"['momentum', 'moving', 'average']",3,not useful
+744,6,"['term', 'quadratic', 'function']",3,not useful
+745,6,"['width', 'height', 'random']",3,not useful
+746,6,"['top', 'elements']",2,not useful
+747,6,"['epsilon', 'parameter', 'prevent', 'division']",4,dtype
+748,6,"['usually', 'e']",2,not useful
+749,6,"['fix', 'gamma', 'training']",3,not useful
+750,6,"['scale', 'output', 'shape', 'm', 'n']",5,not useful
+751,6,"['mean', 'value', 'subtracted']",3,not useful
+752,6,"['use', 'transposed', 'triangular', 'matrix']",4,not useful
+753,6,"['use', 'mxnet']",2,not useful
+754,6,"['force', 'change', 'batch', 'norm', 'scale', 'shift', 'operator']",7,complex
+755,6,"['change', 'value']",2,not useful
+756,6,"['refer', 'lower', 'triangular', 'matrix', 'lower', 'true', 'refer', 'upper', 'otherwise']",9,not useful
+757,6,"['relevant', 'offset']",2,not useful
+758,6,"['optional', 'device', 'context', 'default', 'current', 'default', 'context']",7,not useful
+759,6,"['ignored', 'input']",2,not useful
+760,6,"['ignored', 'random_resized_crop']",2,not useful
+761,6,"['encoded', 'corner']",2,not useful
+762,6,"['x', 'y', 'x', 'y', 'top', 'left', 'right', 'corners', 'designated', 'region', 'interest']",11,not useful
+763,6,"['target', 'shape']",2,dtype+shape+validvalue
+764,6,"['multiply', 'triangular', 'matrix', 'right', 'non', 'triangular', 'one']",7,dtype+shape+validvalue
+765,6,"['multiply', 'transposed', 'first', 'input']",4,dtype+shape+validvalue
+766,6,"['multiply', 'transposed', 'second', 'input', 'b']",5,dtype+shape+validvalue
+767,6,"['sub', 'arrays']",2,not useful
+768,6,"['k', 'elements']",2,not useful
+769,6,"['operand', 'function']",2,not useful
+770,6,"['image', 'width']",2,not useful
+771,6,"['random', 'value', 'channel', 'hsl', 'color', 'space']",6,not useful
+772,6,"['random', 'seed']",2,not useful
+773,6,"['original', 'SOME_DTYPE', 'SOME_DTYPE']",3,dtype
+774,6,"['multi', 'indices']",2,not useful
+775,6,"['indices', 'mentioned', 'large', 'replaced', 'index', 'addresses', 'last', 'element', 'along', 'axis']",10,not useful
+776,6,"['indices', 'slice', 'operation', 'supports', 'negative', 'indices']",6,not useful
+777,6,"['fp', 'data']",2,not useful
+778,6,"['according', 'input']",2,not useful
+779,6,"['flattened', 'input']",2,not useful
+780,6,"['device', 'id']",2,dtype+validvalue
+781,6,"['internal', 'state']",2,not useful
+782,6,"['bounding', 'box', 'coordinates', 'd', 'array', 'batch_index', 'x', 'y', 'x', 'y']",10,shape
+783,6,"['batch_index', 'indicates', 'index', 'corresponding', 'image', 'input']",6,not useful
+784,6,"['transformation', 'type']",2,not useful
+785,6,"['elements', 'size']",2,not useful
+786,6,"['elements', 'set', 'false']",3,dtype
+787,6,"['augmentation', 'param', 'ground', 'truths']",4,complex
+788,6,"['augmentation', 'param', 'crop', 'ground']",4,complex
+789,6,"['augmentation', 'param', 'probability', 'random']",4,complex
+790,6,"['param', 'image']",2,not useful
+791,6,"['dataset', 'param']",2,not useful
+792,6,"['r', 'input']",2,not useful
+793,6,"['positional', 'input', 'arguments']",3,not useful
+794,6,"['valid', 'divided']",2,not useful
+795,6,"['valid', 'elements']",2,not useful
+796,6,"['wrap', 'means', 'wrap', 'around']",4,validvalue
+797,6,"['temperature', 'parameter', 'softmax']",3,not useful
+798,6,"['ndarrays', 'shape', 'e', 'g', 'x', 'y', 'output', 'shape', 'x', 'y', 'm', 'n', 'm', 'n', 'samples', 'drawn', 'pair']",17,not useful
+799,6,"['ndim', 'ndim']",2,not useful
+800,6,"['activation', 'function', 'applied']",3,complex
+801,6,"['calib_mode', 'calibration', 'thresholds']",3,not useful
+802,6,"['calib_mode', 'thresholds', 'quantization']",3,not useful
+803,6,"['calib_mode', 'min', 'max']",3,not useful
+804,6,"['calib_mode', 'layer', 'outputs', 'calibration', 'dataset']",5,not useful
+805,6,"['sampling', 'scale']",2,not useful
+806,6,"['target_shape', 'ignored']",2,not useful
+807,6,"['deconvolution', 'kernel']",2,not useful
+808,6,"['ending', 'index', 'along']",3,dtype+shape+validvalue
+809,6,"['beginning', 'index', 'along']",3,dtype+shape+validvalue
+810,6,"['cropped', 'area', 'image']",3,complex
+811,6,"['cropped', 'area', 'image', 'must']",4,complex
+812,6,"['cropped', 'area', 'supplied']",3,complex
+813,6,"['add', 'random', 'value']",3,not useful
+814,5,"['set', 'true', 'grad', 'storage', 'type', 'row_ssparse']",6,dtype
+815,5,"['set', 'dim']",2,not useful
+816,5,"['set', 'shape']",2,not useful
+817,5,"['set', 'valid']",2,complex
+818,5,"['set', 'value']",2,not useful
+819,5,"['compute', 'row', 'ssparse', 'gradient', 'backward', 'calculation']",6,not useful
+820,5,"['output', 'height', 'width']",3,not useful
+821,5,"['SOME_STRUCTURE', 'arrays', 'concatenate']",3,ds
+822,5,"['SOME_STRUCTURE', 'input']",2,ds
+823,5,"['desired', 'storage', 'type', 'forward', 'output', 'given', 'user', 'thecombination', 'input', 'storage', 'types', 'hint', 'matchany', 'implemented', 'ones', 'dot', 'operator', 'perform', 'fallback', 'operationand', 'still', 'produce', 'output', 'desired', 'storage', 'type']",26,not useful
+824,5,"['type', 'data']",2,dtype
+825,5,"['input', 'array', 'embedding', 'operator']",4,ds
+826,5,"['input', 'matrix']",2,not useful
+827,5,"['true', 'transpose', 'first', 'input', 'dot']",5,dtype
+828,5,"['true', 'transpose', 'second', 'input', 'dot']",5,dtype
+829,5,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse', 'weight', 'momentum', 'stype']",10,dtype
+830,5,"['true', 'output']",2,dtype
+831,5,"['true', 'shape']",2,dtype
+832,5,"['true', 'last']",2,dtype
+833,5,"['array', 'along']",2,not useful
+834,5,"['whether', 'sort']",2,dtype
+835,5,"['whether', 'numpy', 'semantics']",3,dtype
+836,5,"['whether', 'collapse', 'first', 'axis', 'input', 'data', 'tensor']",7,dtype
+837,5,"['whether', 'profile', 'kvstore', 'server', 'worker']",5,dtype
+838,5,"['whether', 'order']",2,dtype
+839,5,"['axis', 'along', 'split']",3,dtype+shape+validvalue
+840,5,"['axis', 'sub', 'arrays']",3,dtype+shape+validvalue
+841,5,"['axis', 'indices']",2,dtype+shape+validvalue
+842,5,"['dimension', 'embedding', 'vectors']",3,dtype
+843,5,"['dimension', 'concated']",2,dtype
+844,5,"['size', 'SOME_DTYPE']",2,not useful
+845,5,"['size', 'global']",2,not useful
+846,5,"['size', 'sub']",2,dtype
+847,5,"['vocabulary', 'size', 'input', 'indices']",4,dtype
+848,5,"['value', 'assigned']",2,not useful
+849,5,"['value', 'negative']",2,not useful
+850,5,"['data', 'type', 'output', 'array']",4,dtype
+851,5,"['data', 'type', 'weight']",3,dtype
+852,5,"['standard', 'deviation', 'distribution']",3,dtype
+853,5,"['context', 'data', 'loader', 'optimized']",4,not useful
+854,5,"['dtype', 'SOME_DTYPE']",2,not useful
+855,5,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",3,dtype
+856,5,"['SOME_DTYPE', 'width']",2,not useful
+857,5,"['none', 'means', 'change']",3,not useful
+858,5,"['upper', 'bound', 'distribution']",3,dtype
+859,5,"['lower', 'bound', 'distribution']",3,dtype
+860,5,"['shape', 'input', 'shape']",3,not useful
+861,5,"['shape', 'distributions']",2,not useful
+862,5,"['shape', 'scale', 'SOME_DTYPE']",3,not useful
+863,5,"['shape', 'scale', 'shape']",3,not useful
+864,5,"['shape', 'tensor']",2,dtype+shape+validvalue
+865,5,"['shape', 'instead']",2,not useful
+866,5,"['file', 'directory', 'path']",3,dtype
+867,5,"['number', 'element']",2,dtype+shape+validvalue
+868,5,"['number', 'times']",2,dtype+shape+validvalue
+869,5,"['number', 'hidden', 'nodes', 'output']",4,dtype+shape+validvalue
+870,5,"['number', 'channels']",2,not useful
+871,5,"['number', 'equal']",2,not useful
+872,5,"['maximum', 'number', 'batches', 'prefetch']",4,dtype+shape+validvalue
+873,5,"['index', 'negative']",2,not useful
+874,5,"['height', 'size']",2,not useful
+875,5,"['height', 'ignored']",2,not useful
+876,5,"['height', 'width', 'height']",3,not useful
+877,5,"['area', 'bilinear']",2,not useful
+878,5,"['area', 'interpolation']",2,not useful
+879,5,"['width', 'height', 'width']",3,not useful
+880,5,"['width', 'ignored']",2,dtype
+881,5,"['specified', 'type']",2,not useful
+882,5,"['must', 'less']",2,complex
+883,5,"['calibration', 'used']",2,not useful
+884,5,"['scale', 'shape', 'shape']",3,not useful
+885,5,"['scale', 'shape', 'scale']",3,not useful
+886,5,"['change', 'width', 'height']",3,not useful
+887,5,"['matrix', 'row']",2,not useful
+888,5,"['optional', 'size']",2,not useful
+889,5,"['indicates', 'data']",2,not useful
+890,5,"['interpolation', 'x', 'pixel']",3,not useful
+891,5,"['image', 'image']",2,not useful
+892,5,"['image', 'file']",2,not useful
+893,5,"['image', 'scale']",2,dtype
+894,5,"['bilinear', 'interpolation']",2,not useful
+895,5,"['random', 'cropping']",2,not useful
+896,5,"['shorter', 'edge']",2,not useful
+897,5,"['supports', 'negative', 'values']",3,not useful
+898,5,"['path', 'image']",2,dtype
+899,5,"['outputs', 'layer']",2,not useful
+900,5,"['numpy', 'SOME_STRUCTURE']",2,not useful
+901,5,"['passed', 'defaults', 'worker']",3,not useful
+902,5,"['would', 'like']",2,not useful
+903,5,"['align', 'using']",2,not useful
+904,5,"['augmentation', 'param', 'crop', 'ground', 'truths']",5,complex
+905,5,"['augmentation', 'param', 'color']",3,complex
+906,5,"['augmentation', 'param', 'mean']",3,complex
+907,5,"['augmentation', 'param', 'probability', 'apply']",4,complex
+908,5,"['param', 'data']",2,not useful
+909,5,"['param', 'whether']",2,not useful
+910,5,"['aspect', 'ratio']",2,not useful
+911,5,"['r', 'g', 'b']",3,not useful
+912,5,"['error', 'raised', 'data']",3,not useful
+913,5,"['valid', 'true']",2,not useful
+914,5,"['embedding', 'weight', 'matrix']",3,dtype
+915,5,"['server', 'profiled', 'kvstore', 'type', 'dist']",5,not useful
+916,5,"['ascending', 'order']",2,not useful
+917,5,"['deprecated!', 'use', 'instead']",3,not useful
+918,5,"['ending', 'supports', 'negative']",3,not useful

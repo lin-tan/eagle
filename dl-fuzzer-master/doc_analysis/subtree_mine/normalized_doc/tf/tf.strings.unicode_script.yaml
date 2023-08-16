@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.strings.unicode_script
+constraints:
+  input:
+    descp: A `Tensor` of type `int32`. A Tensor of int32 Unicode code points.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - A D_STRUCTURE of D_TYPE Unicode code points
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/unicode_script
+outputs: A `Tensor` of type `int32`.
+package: tensorflow
+target: unicode_script
+title: tf.strings.unicode_script
+version: 2.1.0

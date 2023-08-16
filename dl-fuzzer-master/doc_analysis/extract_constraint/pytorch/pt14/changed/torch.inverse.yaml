@@ -1,0 +1,31 @@
+constraints:
+  input:
+    descp: the input tensor of size (*, n, n)  where * is zero or more batch dimensions
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,n,n]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+dependency:
+- n
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.inverse
+package: torch
+ret_type: Tensor
+target: inverse
+title: torch.inverse
+version: 1.4.0

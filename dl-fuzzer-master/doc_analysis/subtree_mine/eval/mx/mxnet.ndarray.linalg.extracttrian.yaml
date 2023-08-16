@@ -1,0 +1,15 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  A:
+    default: None
+    descp: Tensor of square matrices
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    structure:
+    - ndarray
+    tensor_t:
+    - tensor
+title: mxnet.ndarray.linalg.extracttrian

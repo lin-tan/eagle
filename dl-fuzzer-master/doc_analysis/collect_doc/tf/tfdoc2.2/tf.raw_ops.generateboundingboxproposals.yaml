@@ -1,0 +1,52 @@
+constraints:
+  anchors:
+    descp: A Tensor of type float32. A 2-D float tensor of shape [num_anchors, 4]
+      describing the anchor boxes. Boxes are formatted in the form [y1, x1, y2, x2].
+  bbox_deltas:
+    descp: A Tensor of type float32. A 4-D float tensor of shape [num_images, height,
+      width, 4 x num_anchors]. encoding boxes with respec to each anchor. Coordinates
+      are given in the form [dy, dx, dh, dw].
+  image_info:
+    descp: A Tensor of type float32. A 2-D float tensor of shape [num_images, 5] containing
+      image information Height, Width, Scale.
+  min_size:
+    descp: A Tensor of type float32. A scalar float tensor. Any box that has a smaller
+      size than min_size will be discarded.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  nms_threshold:
+    descp: A Tensor of type float32. A scalar float tensor for non-maximal-suppression
+      threshold.
+  post_nms_topn:
+    default: '300'
+    descp: An optional int. Defaults to 300. An integer. Maximum number of rois in
+      the output.
+  pre_nms_topn:
+    descp: A Tensor of type int32. A scalar int tensor for the number of top scoring
+      boxes to be used as input.
+  scores:
+    descp: A Tensor of type float32. A 4-D float tensor of shape [num_images, height,
+      width, num_achors] containing scores of the boxes for given anchors, can be
+      unsorted.
+inputs:
+  optional:
+  - post_nms_topn
+  - name
+  required:
+  - scores
+  - bbox_deltas
+  - image_info
+  - anchors
+  - nms_threshold
+  - pre_nms_topn
+  - min_size
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/GenerateBoundingBoxProposals
+outputs:
+- A tuple of Tensor objects (rois, roi_probabilities).
+- rois: A Tensor of type float32.
+- roi_probabilities: A Tensor of type float32.
+package: tensorflow
+target: GenerateBoundingBoxProposals
+title: tf.raw_ops.GenerateBoundingBoxProposals
+version: 2.2.0

@@ -1,0 +1,141 @@
+constraints:
+  X:
+    descp: array-like, shape (n_samples, n_features) Training vector, where n_samples
+      is the number of samples and n_features is the number of features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+  algorithm:
+    default: parallel
+    descp: '{''parallel'', ''deflation''}, optional Apply a parallel or deflational
+      FASTICA algorithm.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+  compute_sources:
+    default: 'True'
+    descp: bool, optional If False, sources are not computed, but only the rotation
+      matrix. This can save memory when working with big data. Defaults to True.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  fun:
+    default: logcosh
+    descp: 'string or function, optional. Default: ''logcosh'' The functional form
+      of the G function used in the approximation to neg-entropy. Could be either
+      ''logcosh'', ''exp'', or ''cube''. You can also provide your own function. It
+      should return a tuple containing the value of the function, and of its derivative,
+      in the point. The derivative should be averaged along its last dimension. Example:
+      def my_g(x): return x ** 3, np.mean(3 * x ** 2, axis=-1)'
+    dtype:
+    - boolean
+    - string
+    enum:
+    - logcosh
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - tuple
+  fun_args:
+    default: None
+    descp: 'dictionary, optional Arguments to send to the functional form. If empty
+      or None and if fun=''logcosh'', fun_args will take value {''alpha'' : 1.0}'
+  max_iter:
+    default: '200'
+    descp: int, optional Maximum number of iterations to perform.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  n_components:
+    default: None
+    descp: int, optional Number of components to extract. If None no dimension reduction
+      is performed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`.
+  return_X_mean:
+    default: 'False'
+    descp: bool, optional If True, X_mean is returned too.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  return_n_iter:
+    default: 'False'
+    descp: bool, optional Whether or not to return the number of iterations.
+    dtype:
+    - boolean
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  tol:
+    default: '0.0001'
+    descp: float, optional A positive scalar giving the tolerance at which the un-mixing
+      matrix is considered to have converged.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  w_init:
+    default: None
+    descp: (n_components, n_components) array, optional Initial un-mixing array of
+      dimension (n.comp,n.comp). If None (default) then an array of normal r.v.'s
+      is used.
+    structure:
+    - ndarray
+  whiten:
+    default: 'True'
+    descp: 'boolean, optional If True perform an initial whitening of the data. If
+      False, the data is assumed to have already been preprocessed: it should be centered,
+      normed and white. Otherwise you will get incorrect results. In this case the
+      parameter n_components will be ignored.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - n_components
+  - algorithm
+  - whiten
+  - fun
+  - fun_args
+  - max_iter
+  - tol
+  - w_init
+  - random_state
+  - return_X_mean
+  - compute_sources
+  - return_n_iter
+  required:
+  - X
+link: ''
+package: sklearn
+target: fastica
+title: sklearn.decomposition.fastica
+version: 0.24.2

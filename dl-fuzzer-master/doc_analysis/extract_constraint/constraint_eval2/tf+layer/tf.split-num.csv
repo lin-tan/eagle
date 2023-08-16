@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional, used to specify the number of outputs when it cannot be inferred from the shape of `size_splits`.",None,prim_dtype,dtype(int),,1
+,"Optional, used to specify the number of outputs when it cannot be inferred from the shape of `size_splits`.",None,shape,ndim(0),,1
+,"Optional, used to specify the number of outputs when it cannot be inferred from the shape of `size_splits`.",None,validvalue,"range([0,inf))",,1

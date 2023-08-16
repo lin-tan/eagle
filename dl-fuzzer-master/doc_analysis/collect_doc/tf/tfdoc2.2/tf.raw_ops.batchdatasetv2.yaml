@@ -1,0 +1,37 @@
+constraints:
+  batch_size:
+    descp: A Tensor of type int64. A scalar representing the number of elements to
+      accumulate in a batch.
+  drop_remainder:
+    descp: A Tensor of type bool. A scalar representing whether the last batch should
+      be dropped in case its size is smaller than desired.
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  parallel_copy:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+inputs:
+  optional:
+  - parallel_copy
+  - name
+  required:
+  - input_dataset
+  - batch_size
+  - drop_remainder
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BatchDatasetV2
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: BatchDatasetV2
+title: tf.raw_ops.BatchDatasetV2
+version: 2.2.0

@@ -1,0 +1,2036 @@
+Running TreeMiner
+Parsing the Mining Results from ./mining_data/tf/mine_result.
+Parsing Succeed
+Begin building the mapping...
+[22705] Start 400 processes
+[22705] Finish 400 processes
+[22705] Start 400 processes
+[22705] Finish 400 processes
+865 subtree mined in total, 659 subtree rule, 206 subtree without constr
+Creating path ./constr/tf/fail
+Creating path ./constr/tf/success
+[25503] Extracting tf.grad_pass_through.yaml
+Finish tf.grad_pass_through.yaml, Time: 4.794462442398071
+[25503] Extracting tf.linalg.det.yaml
+Finish tf.linalg.det.yaml, Time: 5.447742700576782
+[25503] Extracting tf.math.nextafter.yaml
+Finish tf.math.nextafter.yaml, Time: 6.064664363861084
+[25503] Extracting tf.summary.experimental.write_raw_pb.yaml
+Finish tf.summary.experimental.write_raw_pb.yaml, Time: 6.097710371017456
+[25503] Extracting tf.keras.layers.upsampling1d.yaml
+Finish tf.keras.layers.upsampling1d.yaml, Time: 6.116538047790527
+[25503] Extracting tf.signal.ifft.yaml
+Finish tf.signal.ifft.yaml, Time: 6.153717279434204
+[25503] Extracting tf.keras.activations.tanh.yaml
+Finish tf.keras.activations.tanh.yaml, Time: 6.63335394859314
+[25503] Extracting tf.signal.fft3d.yaml
+Finish tf.signal.fft3d.yaml, Time: 7.20203423500061
+[25503] Extracting tf.debugging.assert_greater.yaml
+Finish tf.debugging.assert_greater.yaml, Time: 7.323147296905518
+[25503] Extracting tf.keras.backend.sum.yaml
+Finish tf.keras.backend.sum.yaml, Time: 7.406154632568359
+[25503] Extracting tf.linalg.svd.yaml
+Finish tf.linalg.svd.yaml, Time: 7.423836946487427
+[25503] Extracting tf.math.segment_min.yaml
+Finish tf.math.segment_min.yaml, Time: 7.5319740772247314
+[25503] Extracting tf.keras.backend.cast.yaml
+Finish tf.keras.backend.cast.yaml, Time: 7.746779203414917
+[25503] Extracting tf.io.decode_json_example.yaml
+Finish tf.io.decode_json_example.yaml, Time: 8.02617597579956
+[25503] Extracting tf.sparse.reorder.yaml
+Finish tf.sparse.reorder.yaml, Time: 8.078299283981323
+[25503] Extracting tf.estimator.experimental.build_raw_supervised_input_receiver_fn.yaml
+Finish tf.estimator.experimental.build_raw_supervised_input_receiver_fn.yaml, Time: 8.141425132751465
+[25503] Extracting tf.strings.upper.yaml
+Finish tf.strings.upper.yaml, Time: 8.084574222564697
+[25503] Extracting tf.math.bessel_i0e.yaml
+Finish tf.math.bessel_i0e.yaml, Time: 8.276987075805664
+[25503] Extracting tf.compat.path_to_str.yaml
+Finish tf.compat.path_to_str.yaml, Time: 8.270199537277222
+[25503] Extracting tf.keras.backend.permute_dimensions.yaml
+Finish tf.keras.backend.permute_dimensions.yaml, Time: 8.250370502471924
+[25503] Extracting tf.keras.backend.arange.yaml
+Finish tf.keras.backend.arange.yaml, Time: 8.19127869606018
+[25503] Extracting tf.math.multiply.yaml
+Finish tf.math.multiply.yaml, Time: 8.55397629737854
+[25503] Extracting tf.pad.yaml
+Finish tf.pad.yaml, Time: 8.541049718856812
+[25503] Extracting tf.keras.backend.ndim.yaml
+Finish tf.keras.backend.ndim.yaml, Time: 8.815773963928223
+[25503] Extracting tf.io.gfile.walk.yaml
+Finish tf.io.gfile.walk.yaml, Time: 9.080250024795532
+[25503] Extracting tf.keras.layers.add2.yaml
+Finish tf.keras.layers.add2.yaml, Time: 8.944164276123047
+[25503] Extracting tf.keras.optimizers.get.yaml
+Finish tf.keras.optimizers.get.yaml, Time: 8.98805046081543
+[25503] Extracting tf.case.yaml
+Finish tf.case.yaml, Time: 9.300982475280762
+[25503] Extracting tf.keras.backend.moving_average_update.yaml
+Finish tf.keras.backend.moving_average_update.yaml, Time: 9.062177419662476
+[25503] Extracting tf.unique_with_counts.yaml
+Finish tf.unique_with_counts.yaml, Time: 9.372491359710693
+[25503] Extracting tf.keras.backend.random_binomial.yaml
+Finish tf.keras.backend.random_binomial.yaml, Time: 9.342049598693848
+[25503] Extracting tf.keras.layers.stackedrnncells.yaml
+Finish tf.keras.layers.stackedrnncells.yaml, Time: 9.043874263763428
+[25503] Extracting tf.keras.layers.Concatenate.yaml
+Finish tf.keras.layers.Concatenate.yaml, Time: 9.484148502349854
+[25503] Extracting tf.linalg.logm.yaml
+Finish tf.linalg.logm.yaml, Time: 9.469315767288208
+[25503] Extracting tf.keras.activations.hard_sigmoid.yaml
+Finish tf.keras.activations.hard_sigmoid.yaml, Time: 9.29283881187439
+[25503] Extracting tf.sets.intersection.yaml
+Finish tf.sets.intersection.yaml, Time: 9.167821645736694
+[25503] Extracting tf.ones.yaml
+Finish tf.ones.yaml, Time: 9.771159410476685
+[25503] Extracting tf.nn.dilation2d.yaml
+Finish tf.nn.dilation2d.yaml, Time: 9.888564109802246
+[25503] Extracting tf.keras.backend.l2_normalize.yaml
+Finish tf.keras.backend.l2_normalize.yaml, Time: 9.333966732025146
+[25503] Extracting tf.tuple.yaml
+Finish tf.tuple.yaml, Time: 9.77551794052124
+[25503] Extracting tf.keras.losses.squared_hinge.yaml
+Finish tf.keras.losses.squared_hinge.yaml, Time: 9.682623147964478
+[25503] Extracting tf.signal.overlap_and_add.yaml
+Finish tf.signal.overlap_and_add.yaml, Time: 9.731869220733643
+[25503] Extracting tf.math.zero_fraction.yaml
+Finish tf.math.zero_fraction.yaml, Time: 9.759333848953247
+[25503] Extracting tf.keras.activations.exponential.yaml
+Finish tf.keras.activations.exponential.yaml, Time: 9.822129726409912
+[25503] Extracting tf.random.gamma.yaml
+Finish tf.random.gamma.yaml, Time: 10.18470025062561
+[25503] Extracting tf.train.load_variable.yaml
+Finish tf.train.load_variable.yaml, Time: 9.884234428405762
+[25503] Extracting tf.signal.ifftshift.yaml
+Finish tf.signal.ifftshift.yaml, Time: 10.102166652679443
+[25503] Extracting tf.device.yaml
+Finish tf.device.yaml, Time: 9.730047225952148
+[25503] Extracting tf.math.reciprocal_no_nan.yaml
+Finish tf.math.reciprocal_no_nan.yaml, Time: 9.816787004470825
+[25503] Extracting tf.random.log_uniform_candidate_sampler.yaml
+Finish tf.random.log_uniform_candidate_sampler.yaml, Time: 10.382619380950928
+[25503] Extracting tf.signal.idct.yaml
+Finish tf.signal.idct.yaml, Time: 10.532508611679077
+[25503] Extracting tf.identity_n.yaml
+Finish tf.identity_n.yaml, Time: 10.255781173706055
+[25503] Extracting tf.bitwise.right_shift.yaml
+Finish tf.bitwise.right_shift.yaml, Time: 10.371103286743164
+[25503] Extracting tf.math.divide_no_nan.yaml
+Finish tf.math.divide_no_nan.yaml, Time: 10.227040767669678
+[25503] Extracting tf.train.list_variables.yaml
+Finish tf.train.list_variables.yaml, Time: 10.155959129333496
+[25503] Extracting tf.sparse.reshape.yaml
+Finish tf.sparse.reshape.yaml, Time: 10.47394847869873
+[25503] Extracting tf.estimator.train_and_evaluate.yaml
+Finish tf.estimator.train_and_evaluate.yaml, Time: 10.434098720550537
+[25503] Extracting tf.math.logical_xor.yaml
+Finish tf.math.logical_xor.yaml, Time: 10.202616214752197
+[25503] Extracting tf.config.experimental_connect_to_host.yaml
+Finish tf.config.experimental_connect_to_host.yaml, Time: 10.163086891174316
+[25503] Extracting tf.nn.space_to_depth.yaml
+Finish tf.nn.space_to_depth.yaml, Time: 10.53507947921753
+[25503] Extracting tf.nest.pack_sequence_as.yaml
+Finish tf.nest.pack_sequence_as.yaml, Time: 10.636178255081177
+[25503] Extracting tf.math.lgamma.yaml
+Finish tf.math.lgamma.yaml, Time: 10.248276472091675
+[25503] Extracting tf.nn.compute_average_loss.yaml
+Finish tf.nn.compute_average_loss.yaml, Time: 10.28873896598816
+[25503] Extracting tf.tensor_scatter_nd_update.yaml
+Finish tf.tensor_scatter_nd_update.yaml, Time: 10.614436864852905
+[25503] Extracting tf.image.transpose.yaml
+Finish tf.image.transpose.yaml, Time: 10.38459038734436
+[25503] Extracting tf.bitwise.left_shift.yaml
+Finish tf.bitwise.left_shift.yaml, Time: 10.69453740119934
+[25503] Extracting tf.image.draw_bounding_boxes.yaml
+Finish tf.image.draw_bounding_boxes.yaml, Time: 10.691876411437988
+[25503] Extracting tf.audio.decode_wav.yaml
+Finish tf.audio.decode_wav.yaml, Time: 10.778199911117554
+[25503] Extracting tf.io.write_graph.yaml
+Finish tf.io.write_graph.yaml, Time: 10.443967819213867
+[25503] Extracting tf.linalg.lu.yaml
+Finish tf.linalg.lu.yaml, Time: 10.898452758789062
+[25503] Extracting tf.image.crop_to_bounding_box.yaml
+Finish tf.image.crop_to_bounding_box.yaml, Time: 10.737374067306519
+[25503] Extracting tf.keras.layers.densefeatures.yaml
+Finish tf.keras.layers.densefeatures.yaml, Time: 10.583767652511597
+[25503] Extracting tf.quantization.fake_quant_with_min_max_vars_per_channel.yaml
+Finish tf.quantization.fake_quant_with_min_max_vars_per_channel.yaml, Time: 10.563576698303223
+[25503] Extracting tf.keras.backend.random_uniform_variable.yaml
+Finish tf.keras.backend.random_uniform_variable.yaml, Time: 10.739856719970703
+[25503] Extracting tf.train.latest_checkpoint.yaml
+Finish tf.train.latest_checkpoint.yaml, Time: 10.93023681640625
+[25503] Extracting tf.squeeze.yaml
+Finish tf.squeeze.yaml, Time: 10.769392013549805
+[25503] Extracting tf.io.parse_single_sequence_example.yaml
+Finish tf.io.parse_single_sequence_example.yaml, Time: 10.876846313476562
+[25503] Extracting tf.gather.yaml
+Finish tf.gather.yaml, Time: 10.972718238830566
+[25503] Extracting tf.math.argmax.yaml
+Finish tf.math.argmax.yaml, Time: 11.037903308868408
+[25503] Extracting tf.random.stateless_uniform.yaml
+Finish tf.random.stateless_uniform.yaml, Time: 10.987545013427734
+[25503] Extracting tf.lite.RepresentativeDataset.yaml
+Finish tf.lite.RepresentativeDataset.yaml, Time: 11.245608806610107
+[25503] Extracting tf.linalg.lu_reconstruct.yaml
+Finish tf.linalg.lu_reconstruct.yaml, Time: 11.801199197769165
+[25503] Extracting tf.argsort.yaml
+Finish tf.argsort.yaml, Time: 11.751772165298462
+[25503] Extracting tf.keras.preprocessing.sequence.pad_sequences.yaml
+Finish tf.keras.preprocessing.sequence.pad_sequences.yaml, Time: 12.028501987457275
+[25503] Extracting tf.where.yaml
+Finish tf.where.yaml, Time: 12.3831307888031
+[25503] Extracting tf.nn.softmax_cross_entropy_with_logits.yaml
+Finish tf.nn.softmax_cross_entropy_with_logits.yaml, Time: 12.82653021812439
+[25503] Extracting tf.keras.backend.sparse_categorical_crossentropy.yaml
+Finish tf.keras.backend.sparse_categorical_crossentropy.yaml, Time: 12.681299924850464
+[25503] Extracting tf.ragged.constant.yaml
+Finish tf.ragged.constant.yaml, Time: 12.891308784484863
+[25503] Extracting tf.keras.layers.MaxPool1D.yaml
+Finish tf.keras.layers.MaxPool1D.yaml, Time: 13.794319152832031
+[25503] Extracting tf.keras.layers.GlobalAveragePooling3D.yaml
+Finish tf.keras.layers.GlobalAveragePooling3D.yaml, Time: 13.19617772102356
+[25503] Extracting tf.nn.safe_embedding_lookup_sparse.yaml
+Finish tf.nn.safe_embedding_lookup_sparse.yaml, Time: 15.055548667907715
+[25503] Extracting tf.linalg.tridiagonal_solve.yaml
+Finish tf.linalg.tridiagonal_solve.yaml, Time: 17.696665287017822
+[25503] Extracting tf.keras.layers.Conv2D.yaml
+Finish tf.keras.layers.Conv2D.yaml, Time: 18.65105938911438
+[25503] Extracting tf.keras.layers.BatchNormalization.yaml
+Finish tf.keras.layers.BatchNormalization.yaml, Time: 18.652103185653687
+[25503] Extracting tf.summary.histogram.yaml
+Finish tf.summary.histogram.yaml, Time: 20.23375105857849
+[25503] Extracting tf.image.resize.yaml
+Finish tf.image.resize.yaml, Time: 21.48464059829712
+[25503] Extracting tf.custom_gradient.yaml
+Finish tf.custom_gradient.yaml, Time: 27.586562633514404
+[25503] Extracting tf.data.experimental.group_by_window.yaml
+Finish tf.data.experimental.group_by_window.yaml, Time: 32.97371697425842
+[25503] Extracting tf.xla.experimental.compile.yaml
+Finish tf.xla.experimental.compile.yaml, Time: 36.758790016174316
+[25503] Extracting tf.keras.layers.lambda.yaml
+Finish tf.keras.layers.lambda.yaml, Time: 53.32955980300903
+[25503] Extracting tf.keras.backend.reshape.yaml
+Finish tf.keras.backend.reshape.yaml, Time: 5.4206037521362305
+[25503] Extracting tf.math.asin.yaml
+Finish tf.math.asin.yaml, Time: 5.72698974609375
+[25503] Extracting tf.summary.experimental.set_step.yaml
+Finish tf.summary.experimental.set_step.yaml, Time: 5.804784774780273
+[25503] Extracting tf.math.softplus.yaml
+Finish tf.math.softplus.yaml, Time: 5.9608166217803955
+[25503] Extracting tf.reduce_all.yaml
+Finish tf.reduce_all.yaml, Time: 6.173605918884277
+[25503] Extracting tf.keras.layers.spatialdropout1d.yaml
+Finish tf.keras.layers.spatialdropout1d.yaml, Time: 6.474731683731079
+[25503] Extracting tf.keras.utils.register_keras_serializable.yaml
+Finish tf.keras.utils.register_keras_serializable.yaml, Time: 6.577916860580444
+[25503] Extracting tf.scatter_nd.yaml
+Finish tf.scatter_nd.yaml, Time: 6.65082859992981
+[25503] Extracting tf.keras.backend.gradients.yaml
+Finish tf.keras.backend.gradients.yaml, Time: 6.7963502407073975
+[25503] Extracting tf.config.threading.set_intra_op_parallelism_threads.yaml
+Finish tf.config.threading.set_intra_op_parallelism_threads.yaml, Time: 6.85426664352417
+[25503] Extracting tf.image.resize_with_crop_or_pad.yaml
+Finish tf.image.resize_with_crop_or_pad.yaml, Time: 6.92246150970459
+[25503] Extracting tf.math.is_nan.yaml
+Finish tf.math.is_nan.yaml, Time: 7.046737194061279
+[25503] Extracting tf.math.truediv.yaml
+Finish tf.math.truediv.yaml, Time: 7.0389018058776855
+[25503] Extracting tf.keras.backend.in_train_phase.yaml
+Finish tf.keras.backend.in_train_phase.yaml, Time: 7.2435877323150635
+[25503] Extracting tf.math.is_non_decreasing.yaml
+Finish tf.math.is_non_decreasing.yaml, Time: 7.238928318023682
+[25503] Extracting tf.debugging.assert_rank_in.yaml
+Finish tf.debugging.assert_rank_in.yaml, Time: 7.389335632324219
+[25503] Extracting tf.register_tensor_conversion_function.yaml
+Finish tf.register_tensor_conversion_function.yaml, Time: 7.548421621322632
+[25503] Extracting tf.nn.relu.yaml
+Finish tf.nn.relu.yaml, Time: 7.638464689254761
+[25503] Extracting tf.dynamic_partition.yaml
+Finish tf.dynamic_partition.yaml, Time: 7.693359851837158
+[25503] Extracting tf.math.l2_normalize.yaml
+Finish tf.math.l2_normalize.yaml, Time: 7.90191388130188
+[25503] Extracting tf.math.logical_or.yaml
+Finish tf.math.logical_or.yaml, Time: 7.95554518699646
+[25503] Extracting tf.keras.backend.transpose.yaml
+Finish tf.keras.backend.transpose.yaml, Time: 8.23869252204895
+[25503] Extracting tf.no_gradient.yaml
+Finish tf.no_gradient.yaml, Time: 8.698355197906494
+[25503] Extracting tf.keras.backend.maximum.yaml
+Finish tf.keras.backend.maximum.yaml, Time: 8.69435167312622
+[25503] Extracting tf.random.shuffle.yaml
+Finish tf.random.shuffle.yaml, Time: 8.919303894042969
+[25503] Extracting tf.io.gfile.stat.yaml
+Finish tf.io.gfile.stat.yaml, Time: 8.93518614768982
+[25503] Extracting tf.io.gfile.makedirs.yaml
+Finish tf.io.gfile.makedirs.yaml, Time: 8.959120035171509
+[25503] Extracting tf.keras.backend.less_equal.yaml
+Finish tf.keras.backend.less_equal.yaml, Time: 8.936525821685791
+[25503] Extracting tf.keras.backend.local_conv1d.yaml
+Finish tf.keras.backend.local_conv1d.yaml, Time: 9.378050565719604
+[25503] Extracting tf.keras.layers.deserialize.yaml
+Finish tf.keras.layers.deserialize.yaml, Time: 9.264718294143677
+[25503] Extracting tf.cast.yaml
+Finish tf.cast.yaml, Time: 9.444571256637573
+[25503] Extracting tf.keras.backend.batch_set_value.yaml
+Finish tf.keras.backend.batch_set_value.yaml, Time: 9.211927652359009
+[25503] Extracting tf.keras.backend.ctc_decode.yaml
+Finish tf.keras.backend.ctc_decode.yaml, Time: 9.59193229675293
+[25503] Extracting tf.estimator.experimental.stop_if_higher_hook.yaml
+Finish tf.estimator.experimental.stop_if_higher_hook.yaml, Time: 9.588784456253052
+[25503] Extracting tf.keras.datasets.imdb.get_word_index.yaml
+Finish tf.keras.datasets.imdb.get_word_index.yaml, Time: 9.473669052124023
+[25503] Extracting tf.sparse.reduce_max.yaml
+Finish tf.sparse.reduce_max.yaml, Time: 9.77951455116272
+[25503] Extracting tf.sparse.retain.yaml
+Finish tf.sparse.retain.yaml, Time: 9.66802167892456
+[25503] Extracting tf.keras.backend.variable.yaml
+Finish tf.keras.backend.variable.yaml, Time: 9.828123331069946
+[25503] Extracting tf.keras.activations.linear.yaml
+Finish tf.keras.activations.linear.yaml, Time: 9.753725290298462
+[25503] Extracting tf.keras.backend.ones_like.yaml
+Finish tf.keras.backend.ones_like.yaml, Time: 9.87949013710022
+[25503] Extracting tf.sparse.reset_shape.yaml
+Finish tf.sparse.reset_shape.yaml, Time: 9.7589590549469
+[25503] Extracting tf.random.uniform_candidate_sampler.yaml
+Finish tf.random.uniform_candidate_sampler.yaml, Time: 10.182312250137329
+[25503] Extracting tf.dynamic_stitch.yaml
+Finish tf.dynamic_stitch.yaml, Time: 10.04373025894165
+[25503] Extracting tf.keras.backend.exp.yaml
+Finish tf.keras.backend.exp.yaml, Time: 9.824944019317627
+[25503] Extracting tf.signal.inverse_stft_window_fn.yaml
+Finish tf.signal.inverse_stft_window_fn.yaml, Time: 9.983298778533936
+[25503] Extracting tf.config.list_physical_devices.yaml
+Finish tf.config.list_physical_devices.yaml, Time: 9.78600287437439
+[25503] Extracting tf.keras.backend.softsign.yaml
+Finish tf.keras.backend.softsign.yaml, Time: 9.81117057800293
+[25503] Extracting tf.clip_by_norm.yaml
+Finish tf.clip_by_norm.yaml, Time: 10.482234954833984
+[25503] Extracting tf.linalg.band_part.yaml
+Finish tf.linalg.band_part.yaml, Time: 10.269017219543457
+[25503] Extracting tf.train.get_checkpoint_state.yaml
+Finish tf.train.get_checkpoint_state.yaml, Time: 10.222737550735474
+[25503] Extracting tf.image.flip_left_right.yaml
+Finish tf.image.flip_left_right.yaml, Time: 10.085163354873657
+[25503] Extracting tf.feature_column.sequence_categorical_column_with_hash_bucket.yaml
+Finish tf.feature_column.sequence_categorical_column_with_hash_bucket.yaml, Time: 10.292169094085693
+[25503] Extracting tf.io.gfile.glob.yaml
+Finish tf.io.gfile.glob.yaml, Time: 10.091374397277832
+[25503] Extracting tf.data.experimental.from_variant.yaml
+Finish tf.data.experimental.from_variant.yaml, Time: 10.189276218414307
+[25503] Extracting tf.keras.layers.timedistributed.yaml
+Finish tf.keras.layers.timedistributed.yaml, Time: 10.020015716552734
+[25503] Extracting tf.debugging.assert_rank.yaml
+Finish tf.debugging.assert_rank.yaml, Time: 10.132445096969604
+[25503] Extracting tf.sequence_mask.yaml
+Finish tf.sequence_mask.yaml, Time: 10.38404393196106
+[25503] Extracting tf.debugging.assert_positive.yaml
+Finish tf.debugging.assert_positive.yaml, Time: 10.327027797698975
+[25503] Extracting tf.keras.backend.in_top_k.yaml
+Finish tf.keras.backend.in_top_k.yaml, Time: 10.149348974227905
+[25503] Extracting tf.ones_like.yaml
+Finish tf.ones_like.yaml, Time: 10.418603897094727
+[25503] Extracting tf.linalg.inv.yaml
+Finish tf.linalg.inv.yaml, Time: 10.284022808074951
+[25503] Extracting tf.foldl.yaml
+Finish tf.foldl.yaml, Time: 10.654185771942139
+[25503] Extracting tf.summary.trace_export.yaml
+Finish tf.summary.trace_export.yaml, Time: 10.450716733932495
+[25503] Extracting tf.sparse.transpose.yaml
+Finish tf.sparse.transpose.yaml, Time: 10.440455436706543
+[25503] Extracting tf.keras.layers.leakyrelu.yaml
+Finish tf.keras.layers.leakyrelu.yaml, Time: 10.070943117141724
+[25503] Extracting tf.math.add_n.yaml
+Finish tf.math.add_n.yaml, Time: 10.102620601654053
+[25503] Extracting tf.keras.preprocessing.image.random_shift.yaml
+Finish tf.keras.preprocessing.image.random_shift.yaml, Time: 10.756026029586792
+[25503] Extracting tf.quantization.quantized_concat.yaml
+Finish tf.quantization.quantized_concat.yaml, Time: 10.580253839492798
+[25503] Extracting tf.nn.selu.yaml
+Finish tf.nn.selu.yaml, Time: 10.26805329322815
+[25503] Extracting tf.eig.yaml
+Finish tf.eig.yaml, Time: 10.4161536693573
+[25503] Extracting tf.math.cumprod.yaml
+Finish tf.math.cumprod.yaml, Time: 10.593610525131226
+[25503] Extracting tf.random.stateless_truncated_normal.yaml
+Finish tf.random.stateless_truncated_normal.yaml, Time: 10.444248914718628
+[25503] Extracting tf.bitcast.yaml
+Finish tf.bitcast.yaml, Time: 10.369822025299072
+[25503] Extracting tf.ragged.map_flat_values.yaml
+Finish tf.ragged.map_flat_values.yaml, Time: 10.391708612442017
+[25503] Extracting tf.truncatediv.yaml
+Finish tf.truncatediv.yaml, Time: 10.397547245025635
+[25503] Extracting tf.nn.moments.yaml
+Finish tf.nn.moments.yaml, Time: 10.759361982345581
+[25503] Extracting tf.keras.backend.var.yaml
+Finish tf.keras.backend.var.yaml, Time: 10.494279146194458
+[25503] Extracting tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient.yaml
+Finish tf.quantization.fake_quant_with_min_max_vars_per_channel_gradient.yaml, Time: 10.620602369308472
+[25503] Extracting tf.io.gfile.rename.yaml
+Finish tf.io.gfile.rename.yaml, Time: 10.734763622283936
+[25503] Extracting tf.nn.avg_pool1d.yaml
+Finish tf.nn.avg_pool1d.yaml, Time: 10.956345319747925
+[25503] Extracting tf.math.argmin.yaml
+Finish tf.math.argmin.yaml, Time: 10.953538656234741
+[25503] Extracting tf.linalg.pinv.yaml
+Finish tf.linalg.pinv.yaml, Time: 10.824108839035034
+[25503] Extracting tf.random.truncated_normal.yaml
+Finish tf.random.truncated_normal.yaml, Time: 10.976043939590454
+[25503] Extracting tf.foldr.yaml
+Finish tf.foldr.yaml, Time: 11.48591947555542
+[25503] Extracting tf.feature_column.categorical_column_with_identity.yaml
+Finish tf.feature_column.categorical_column_with_identity.yaml, Time: 12.096213340759277
+[25503] Extracting tf.keras.layers.spatialdropout2d.yaml
+Finish tf.keras.layers.spatialdropout2d.yaml, Time: 11.857354164123535
+[25503] Extracting tf.keras.datasets.imdb.load_data.yaml
+Finish tf.keras.datasets.imdb.load_data.yaml, Time: 12.618708372116089
+[25503] Extracting tf.linalg.lu_matrix_inverse.yaml
+Finish tf.linalg.lu_matrix_inverse.yaml, Time: 12.931223154067993
+[25503] Extracting tf.keras.activations.relu.yaml
+Finish tf.keras.activations.relu.yaml, Time: 13.1490957736969
+[25503] Extracting tf.keras.utils.plot_model.yaml
+Finish tf.keras.utils.plot_model.yaml, Time: 14.306269645690918
+[25503] Extracting tf.keras.preprocessing.sequence.skipgrams.yaml
+Finish tf.keras.preprocessing.sequence.skipgrams.yaml, Time: 15.719562292098999
+[25503] Extracting tf.summary.write.yaml
+Finish tf.summary.write.yaml, Time: 17.608224868774414
+[25503] Extracting tf.scan.yaml
+Finish tf.scan.yaml, Time: 18.539481163024902
+[25503] Extracting tf.estimator.regressor_parse_example_spec.yaml
+Finish tf.estimator.regressor_parse_example_spec.yaml, Time: 19.309997081756592
+[25503] Extracting tf.quantization.quantize_and_dequantize.yaml
+Finish tf.quantization.quantize_and_dequantize.yaml, Time: 20.660387992858887
+[25503] Extracting tf.nest.assert_same_structure.yaml
+Finish tf.nest.assert_same_structure.yaml, Time: 20.63702940940857
+[25503] Extracting tf.saved_model.save.yaml
+Finish tf.saved_model.save.yaml, Time: 21.607697010040283
+[25503] Extracting tf.feature_column.sequence_numeric_column.yaml
+Finish tf.feature_column.sequence_numeric_column.yaml, Time: 28.011961221694946
+[25503] Extracting tf.nn.atrous_conv2d.yaml
+Finish tf.nn.atrous_conv2d.yaml, Time: 52.698718309402466
+[25503] Extracting tf.nn.batch_norm_with_global_normalization.yaml
+Finish tf.nn.batch_norm_with_global_normalization.yaml, Time: 58.02789855003357
+[25503] Extracting tf.keras.backend.sign.yaml
+Finish tf.keras.backend.sign.yaml, Time: 3.7606754302978516
+[25503] Extracting tf.config.set_visible_devices.yaml
+Finish tf.config.set_visible_devices.yaml, Time: 5.276320457458496
+[25503] Extracting tf.debugging.assert_equal.yaml
+Finish tf.debugging.assert_equal.yaml, Time: 5.469769239425659
+[25503] Extracting tf.nn.collapse_repeated.yaml
+Finish tf.nn.collapse_repeated.yaml, Time: 5.513282775878906
+[25503] Extracting tf.keras.layers.subtract2.yaml
+Finish tf.keras.layers.subtract2.yaml, Time: 5.663259506225586
+[25503] Extracting tf.math.reduce_any.yaml
+Finish tf.math.reduce_any.yaml, Time: 5.909693479537964
+[25503] Extracting tf.keras.backend.manual_variable_initialization.yaml
+Finish tf.keras.backend.manual_variable_initialization.yaml, Time: 6.049219369888306
+[25503] Extracting tf.make_ndarray.yaml
+Finish tf.make_ndarray.yaml, Time: 6.179029226303101
+[25503] Extracting tf.math.polyval.yaml
+Finish tf.math.polyval.yaml, Time: 6.596988916397095
+[25503] Extracting tf.io.gfile.rmtree.yaml
+Finish tf.io.gfile.rmtree.yaml, Time: 6.641161918640137
+[25503] Extracting tf.linalg.logdet.yaml
+Finish tf.linalg.logdet.yaml, Time: 6.6439032554626465
+[25503] Extracting tf.keras.preprocessing.image.img_to_array.yaml
+Finish tf.keras.preprocessing.image.img_to_array.yaml, Time: 6.8784754276275635
+[25503] Extracting tf.keras.backend.all.yaml
+Finish tf.keras.backend.all.yaml, Time: 7.2937233448028564
+[25503] Extracting tf.linspace.yaml
+Finish tf.linspace.yaml, Time: 7.333911657333374
+[25503] Extracting tf.keras.backend.resize_volumes.yaml
+Finish tf.keras.backend.resize_volumes.yaml, Time: 7.4537880420684814
+[25503] Extracting tf.keras.backend.cumprod.yaml
+Finish tf.keras.backend.cumprod.yaml, Time: 7.796964645385742
+[25503] Extracting tf.math.tanh.yaml
+Finish tf.math.tanh.yaml, Time: 7.941010475158691
+[25503] Extracting tf.nn.elu.yaml
+Finish tf.nn.elu.yaml, Time: 7.89824914932251
+[25503] Extracting tf.keras.backend.function.yaml
+Finish tf.keras.backend.function.yaml, Time: 8.056486368179321
+[25503] Extracting tf.estimator.export.build_raw_serving_input_receiver_fn.yaml
+Finish tf.estimator.export.build_raw_serving_input_receiver_fn.yaml, Time: 8.149104118347168
+[25503] Extracting tf.keras.preprocessing.text.tokenizer_from_json.yaml
+Finish tf.keras.preprocessing.text.tokenizer_from_json.yaml, Time: 8.049773693084717
+[25503] Extracting tf.random.stateless_categorical.yaml
+Finish tf.random.stateless_categorical.yaml, Time: 8.416439056396484
+[25503] Extracting tf.nn.local_response_normalization.yaml
+Finish tf.nn.local_response_normalization.yaml, Time: 8.563443183898926
+[25503] Extracting tf.math.equal.yaml
+Finish tf.math.equal.yaml, Time: 8.716918468475342
+[25503] Extracting tf.keras.backend.argmax.yaml
+Finish tf.keras.backend.argmax.yaml, Time: 8.816498279571533
+[25503] Extracting tf.einsum.yaml
+Finish tf.einsum.yaml, Time: 9.053358793258667
+[25503] Extracting tf.keras.backend.round.yaml
+Finish tf.keras.backend.round.yaml, Time: 8.950825452804565
+[25503] Extracting tf.strings.reduce_join.yaml
+Finish tf.strings.reduce_join.yaml, Time: 9.155823230743408
+[25503] Extracting tf.keras.backend.repeat.yaml
+Finish tf.keras.backend.repeat.yaml, Time: 9.38292407989502
+[25503] Extracting tf.io.match_filenames_once.yaml
+Finish tf.io.match_filenames_once.yaml, Time: 9.293192386627197
+[25503] Extracting tf.keras.layers.thresholdedrelu.yaml
+Finish tf.keras.layers.thresholdedrelu.yaml, Time: 9.301342248916626
+[25503] Extracting tf.io.is_jpeg.yaml
+Finish tf.io.is_jpeg.yaml, Time: 9.603593111038208
+[25503] Extracting tf.keras.backend.get_value.yaml
+Finish tf.keras.backend.get_value.yaml, Time: 9.296018600463867
+[25503] Extracting tf.keras.backend.zeros.yaml
+Finish tf.keras.backend.zeros.yaml, Time: 9.63448715209961
+[25503] Extracting tf.keras.backend.set_value.yaml
+Finish tf.keras.backend.set_value.yaml, Time: 9.779673337936401
+[25503] Extracting tf.tensor_scatter_nd_add.yaml
+Finish tf.tensor_scatter_nd_add.yaml, Time: 9.807804346084595
+[25503] Extracting tf.test.assert_equal_graph_def.yaml
+Finish tf.test.assert_equal_graph_def.yaml, Time: 9.740420818328857
+[25503] Extracting tf.linalg.matmul.yaml
+Finish tf.linalg.matmul.yaml, Time: 9.934859037399292
+[25503] Extracting tf.feature_column.sequence_categorical_column_with_identity.yaml
+Finish tf.feature_column.sequence_categorical_column_with_identity.yaml, Time: 9.665866374969482
+[25503] Extracting tf.keras.activations.elu.yaml
+Finish tf.keras.activations.elu.yaml, Time: 9.419108867645264
+[25503] Extracting tf.keras.backend.greater_equal.yaml
+Finish tf.keras.backend.greater_equal.yaml, Time: 9.474255561828613
+[25503] Extracting tf.keras.activations.softmax.yaml
+Finish tf.keras.activations.softmax.yaml, Time: 9.856457948684692
+[25503] Extracting tf.shape.yaml
+Finish tf.shape.yaml, Time: 10.023621559143066
+[25503] Extracting tf.keras.layers.maximum2.yaml
+Finish tf.keras.layers.maximum2.yaml, Time: 10.113669633865356
+[25503] Extracting tf.sparse.maximum.yaml
+Finish tf.sparse.maximum.yaml, Time: 9.9467031955719
+[25503] Extracting tf.data.experimental.scan.yaml
+Finish tf.data.experimental.scan.yaml, Time: 10.26990008354187
+[25503] Extracting tf.math.atan.yaml
+Finish tf.math.atan.yaml, Time: 10.255563020706177
+[25503] Extracting tf.image.per_image_standardization.yaml
+Finish tf.image.per_image_standardization.yaml, Time: 10.604560852050781
+[25503] Extracting tf.io.gfile.exists.yaml
+Finish tf.io.gfile.exists.yaml, Time: 10.055147409439087
+[25503] Extracting tf.math.reduce_min.yaml
+Finish tf.math.reduce_min.yaml, Time: 10.473546028137207
+[25503] Extracting tf.keras.models.model_from_json.yaml
+Finish tf.keras.models.model_from_json.yaml, Time: 10.314406394958496
+[25503] Extracting tf.expand_dims.yaml
+Finish tf.expand_dims.yaml, Time: 10.476903438568115
+[25503] Extracting tf.ragged.boolean_mask.yaml
+Finish tf.ragged.boolean_mask.yaml, Time: 10.556804180145264
+[25503] Extracting tf.io.decode_png.yaml
+Finish tf.io.decode_png.yaml, Time: 10.391209125518799
+[25503] Extracting tf.nn.depthwise_conv2d.yaml
+Finish tf.nn.depthwise_conv2d.yaml, Time: 10.894287109375
+[25503] Extracting tf.signal.ifft3d.yaml
+Finish tf.signal.ifft3d.yaml, Time: 10.378198385238647
+[25503] Extracting tf.vectorized_map.yaml
+Finish tf.vectorized_map.yaml, Time: 10.714748859405518
+[25503] Extracting tf.bitwise.bitwise_and.yaml
+Finish tf.bitwise.bitwise_and.yaml, Time: 10.330540180206299
+[25503] Extracting tf.keras.layers.inputspec.yaml
+Finish tf.keras.layers.inputspec.yaml, Time: 10.826200485229492
+[25503] Extracting tf.keras.layers.prelu.yaml
+Finish tf.keras.layers.prelu.yaml, Time: 10.47254729270935
+[25503] Extracting tf.math.cos.yaml
+Finish tf.math.cos.yaml, Time: 10.533829689025879
+[25503] Extracting tf.keras.backend.pool3d.yaml
+Finish tf.keras.backend.pool3d.yaml, Time: 10.756271600723267
+[25503] Extracting tf.summary.trace_on.yaml
+Finish tf.summary.trace_on.yaml, Time: 10.77848219871521
+[25503] Extracting tf.math.zeta.yaml
+Finish tf.math.zeta.yaml, Time: 10.46856141090393
+[25503] Extracting tf.image.resize_with_pad.yaml
+Finish tf.image.resize_with_pad.yaml, Time: 10.675926923751831
+[25503] Extracting tf.keras.experimental.SequenceFeatures.yaml
+Finish tf.keras.experimental.SequenceFeatures.yaml, Time: 10.597096920013428
+[25503] Extracting tf.image.random_flip_up_down.yaml
+Finish tf.image.random_flip_up_down.yaml, Time: 10.581479549407959
+[25503] Extracting tf.eye.yaml
+Finish tf.eye.yaml, Time: 10.982165813446045
+[25503] Extracting tf.clip_by_global_norm.yaml
+Finish tf.clip_by_global_norm.yaml, Time: 10.672949314117432
+[25503] Extracting tf.keras.backend.batch_dot.yaml
+Finish tf.keras.backend.batch_dot.yaml, Time: 10.677186489105225
+[25503] Extracting tf.keras.backend.placeholder.yaml
+Finish tf.keras.backend.placeholder.yaml, Time: 11.001227378845215
+[25503] Extracting tf.random.all_candidate_sampler.yaml
+Finish tf.random.all_candidate_sampler.yaml, Time: 11.28801965713501
+[25503] Extracting tf.math.accumulate_n.yaml
+Finish tf.math.accumulate_n.yaml, Time: 11.39241909980774
+[25503] Extracting tf.summary.text.yaml
+Finish tf.summary.text.yaml, Time: 11.418607473373413
+[25503] Extracting tf.strings.unicode_encode.yaml
+Finish tf.strings.unicode_encode.yaml, Time: 11.662156820297241
+[25503] Extracting tf.signal.hann_window.yaml
+Finish tf.signal.hann_window.yaml, Time: 11.903924942016602
+[25503] Extracting tf.keras.backend.mean.yaml
+Finish tf.keras.backend.mean.yaml, Time: 11.661109685897827
+[25503] Extracting tf.keras.preprocessing.image.random_rotation.yaml
+Finish tf.keras.preprocessing.image.random_rotation.yaml, Time: 11.81880807876587
+[25503] Extracting tf.summary.create_file_writer.yaml
+Finish tf.summary.create_file_writer.yaml, Time: 12.401293516159058
+[25503] Extracting tf.estimator.add_metrics.yaml
+Finish tf.estimator.add_metrics.yaml, Time: 12.648213386535645
+[25503] Extracting tf.keras.backend.local_conv2d.yaml
+Finish tf.keras.backend.local_conv2d.yaml, Time: 12.749091863632202
+[25503] Extracting tf.mlir.experimental.convert_graph_def.yaml
+Finish tf.mlir.experimental.convert_graph_def.yaml, Time: 12.898365259170532
+[25503] Extracting tf.keras.backend.foldr.yaml
+Finish tf.keras.backend.foldr.yaml, Time: 13.405748844146729
+[25503] Extracting tf.nn.rnncellresidualwrapper.yaml
+Finish tf.nn.rnncellresidualwrapper.yaml, Time: 14.345865726470947
+[25503] Extracting tf.keras.layers.GlobalAveragePooling1D.yaml
+Finish tf.keras.layers.GlobalAveragePooling1D.yaml, Time: 14.739139795303345
+[25503] Extracting tf.keras.layers.flatten.yaml
+Finish tf.keras.layers.flatten.yaml, Time: 15.38006329536438
+[25503] Extracting tf.nn.bias_add.yaml
+Finish tf.nn.bias_add.yaml, Time: 15.923089742660522
+[25503] Extracting tf.train.experimental.enable_mixed_precision_graph_rewrite.yaml
+Finish tf.train.experimental.enable_mixed_precision_graph_rewrite.yaml, Time: 16.214813232421875
+[25503] Extracting tf.math.bincount.yaml
+Finish tf.math.bincount.yaml, Time: 18.3497793674469
+[25503] Extracting tf.keras.layers.Conv3D.yaml
+Finish tf.keras.layers.Conv3D.yaml, Time: 18.80159044265747
+[25503] Extracting tf.function.yaml
+Finish tf.function.yaml, Time: 20.14513611793518
+[25503] Extracting tf.nn.embedding_lookup_sparse.yaml
+Finish tf.nn.embedding_lookup_sparse.yaml, Time: 20.38047218322754
+[25503] Extracting tf.nn.convolution.yaml
+Finish tf.nn.convolution.yaml, Time: 21.18181538581848
+[25503] Extracting tf.space_to_batch.yaml
+Finish tf.space_to_batch.yaml, Time: 23.12412190437317
+[25503] Extracting tf.image.ssim.yaml
+Finish tf.image.ssim.yaml, Time: 30.200908660888672
+[25503] Extracting tf.keras.layers.experimental.preprocessing.normalization.yaml
+Finish tf.keras.layers.experimental.preprocessing.normalization.yaml, Time: 31.499486207962036
+[25503] Extracting tf.io.decode_image.yaml
+Finish tf.io.decode_image.yaml, Time: 40.83326745033264
+[25503] Extracting tf.linalg.diag.yaml
+Finish tf.linalg.diag.yaml, Time: 44.52780222892761
+[25503] Extracting tf.norm.yaml
+Finish tf.norm.yaml, Time: 100.47565793991089
+[25503] Extracting tf.keras.layers.rnn.yaml
+Finish tf.keras.layers.rnn.yaml, Time: 107.80262351036072
+[25503] Extracting tf.keras.backend.sin.yaml
+Finish tf.keras.backend.sin.yaml, Time: 4.463302373886108
+[25503] Extracting tf.strings.unicode_script.yaml
+Finish tf.strings.unicode_script.yaml, Time: 5.277076721191406
+[25503] Extracting tf.nn.ctc_beam_search_decoder.yaml
+Finish tf.nn.ctc_beam_search_decoder.yaml, Time: 5.502108335494995
+[25503] Extracting tf.keras.backend.not_equal.yaml
+Finish tf.keras.backend.not_equal.yaml, Time: 5.600294828414917
+[25503] Extracting tf.stop_gradient.yaml
+Finish tf.stop_gradient.yaml, Time: 6.543869256973267
+[25503] Extracting tf.keras.backend.ctc_label_dense_to_sparse.yaml
+Finish tf.keras.backend.ctc_label_dense_to_sparse.yaml, Time: 6.8152055740356445
+[25503] Extracting tf.nn.depth_to_space.yaml
+Finish tf.nn.depth_to_space.yaml, Time: 7.501232624053955
+[25503] Extracting tf.is_tensor.yaml
+Finish tf.is_tensor.yaml, Time: 7.698764801025391
+[25503] Extracting tf.nn.scale_regularization_loss.yaml
+Finish tf.nn.scale_regularization_loss.yaml, Time: 7.773376226425171
+[25503] Extracting tf.keras.backend.cos.yaml
+Finish tf.keras.backend.cos.yaml, Time: 7.845475912094116
+[25503] Extracting tf.debugging.assert_type.yaml
+Finish tf.debugging.assert_type.yaml, Time: 7.913644552230835
+[25503] Extracting tf.keras.backend.temporal_padding.yaml
+Finish tf.keras.backend.temporal_padding.yaml, Time: 7.924659490585327
+[25503] Extracting tf.keras.backend.less.yaml
+Finish tf.keras.backend.less.yaml, Time: 7.913393020629883
+[25503] Extracting tf.math.igamma.yaml
+Finish tf.math.igamma.yaml, Time: 8.098212003707886
+[25503] Extracting tf.keras.preprocessing.image.array_to_img.yaml
+Finish tf.keras.preprocessing.image.array_to_img.yaml, Time: 8.129509687423706
+[25503] Extracting tf.math.sinh.yaml
+Finish tf.math.sinh.yaml, Time: 8.25984263420105
+[25503] Extracting tf.keras.backend.set_learning_phase.yaml
+Finish tf.keras.backend.set_learning_phase.yaml, Time: 8.306674003601074
+[25503] Extracting tf.nn.max_pool1d.yaml
+Finish tf.nn.max_pool1d.yaml, Time: 8.486648797988892
+[25503] Extracting tf.keras.initializers.lecun_normal.yaml
+Finish tf.keras.initializers.lecun_normal.yaml, Time: 8.415298223495483
+[25503] Extracting tf.linalg.tensor_diag.yaml
+Finish tf.linalg.tensor_diag.yaml, Time: 8.719628810882568
+[25503] Extracting tf.io.gfile.copy.yaml
+Finish tf.io.gfile.copy.yaml, Time: 8.746160745620728
+[25503] Extracting tf.data.experimental.make_saveable_from_iterator.yaml
+Finish tf.data.experimental.make_saveable_from_iterator.yaml, Time: 8.687472820281982
+[25503] Extracting tf.random.set_seed.yaml
+Finish tf.random.set_seed.yaml, Time: 8.775120496749878
+[25503] Extracting tf.py_function.yaml
+Finish tf.py_function.yaml, Time: 8.952428579330444
+[25503] Extracting tf.math.is_strictly_increasing.yaml
+Finish tf.math.is_strictly_increasing.yaml, Time: 8.995163202285767
+[25503] Extracting tf.audio.encode_wav.yaml
+Finish tf.audio.encode_wav.yaml, Time: 9.119215965270996
+[25503] Extracting tf.linalg.qr.yaml
+Finish tf.linalg.qr.yaml, Time: 9.247944116592407
+[25503] Extracting tf.config.get_logical_device_configuration.yaml
+Finish tf.config.get_logical_device_configuration.yaml, Time: 9.011375904083252
+[25503] Extracting tf.io.serialize_many_sparse.yaml
+Finish tf.io.serialize_many_sparse.yaml, Time: 9.535636901855469
+[25503] Extracting tf.keras.layers.wrapper.yaml
+Finish tf.keras.layers.wrapper.yaml, Time: 9.52717924118042
+[25503] Extracting tf.math.unsorted_segment_min.yaml
+Finish tf.math.unsorted_segment_min.yaml, Time: 9.868191957473755
+[25503] Extracting tf.keras.backend.batch_get_value.yaml
+Finish tf.keras.backend.batch_get_value.yaml, Time: 9.306787967681885
+[25503] Extracting tf.nest.is_nested.yaml
+Finish tf.nest.is_nested.yaml, Time: 9.665352821350098
+[25503] Extracting tf.test.compute_gradient.yaml
+Finish tf.test.compute_gradient.yaml, Time: 9.63460898399353
+[25503] Extracting tf.math.is_finite.yaml
+Finish tf.math.is_finite.yaml, Time: 9.942247867584229
+[25503] Extracting tf.strings.split.yaml
+Finish tf.strings.split.yaml, Time: 9.807952642440796
+[25503] Extracting tf.math.confusion_matrix.yaml
+Finish tf.math.confusion_matrix.yaml, Time: 10.23451018333435
+[25503] Extracting tf.io.deserialize_many_sparse.yaml
+Finish tf.io.deserialize_many_sparse.yaml, Time: 10.23275899887085
+[25503] Extracting tf.keras.backend.ctc_batch_cost.yaml
+Finish tf.keras.backend.ctc_batch_cost.yaml, Time: 10.174885034561157
+[25503] Extracting tf.debugging.check_numerics.yaml
+Finish tf.debugging.check_numerics.yaml, Time: 10.167570114135742
+[25503] Extracting tf.debugging.Assert.yaml
+Finish tf.debugging.Assert.yaml, Time: 10.190956592559814
+[25503] Extracting tf.io.parse_tensor.yaml
+Finish tf.io.parse_tensor.yaml, Time: 10.577312231063843
+[25503] Extracting tf.debugging.assert_all_finite.yaml
+Finish tf.debugging.assert_all_finite.yaml, Time: 10.285249471664429
+[25503] Extracting tf.keras.backend.shape.yaml
+Finish tf.keras.backend.shape.yaml, Time: 10.084999084472656
+[25503] Extracting tf.keras.layers.inputlayer.yaml
+Finish tf.keras.layers.inputlayer.yaml, Time: 10.365689039230347
+[25503] Extracting tf.linalg.trace.yaml
+Finish tf.linalg.trace.yaml, Time: 10.423208713531494
+[25503] Extracting tf.data.experimental.choose_from_datasets.yaml
+Finish tf.data.experimental.choose_from_datasets.yaml, Time: 10.132536172866821
+[25503] Extracting tf.image.flip_up_down.yaml
+Finish tf.image.flip_up_down.yaml, Time: 10.319538831710815
+[25503] Extracting tf.io.gfile.isdir.yaml
+Finish tf.io.gfile.isdir.yaml, Time: 10.153861045837402
+[25503] Extracting tf.math.log_sigmoid.yaml
+Finish tf.math.log_sigmoid.yaml, Time: 10.475276708602905
+[25503] Extracting tf.io.parse_single_example.yaml
+Finish tf.io.parse_single_example.yaml, Time: 10.296608924865723
+[25503] Extracting tf.tpu.experimental.shutdown_tpu_system.yaml
+Finish tf.tpu.experimental.shutdown_tpu_system.yaml, Time: 10.393154859542847
+[25503] Extracting tf.nn.sigmoid_cross_entropy_with_logits.yaml
+Finish tf.nn.sigmoid_cross_entropy_with_logits.yaml, Time: 10.634616374969482
+[25503] Extracting tf.sparse.eye.yaml
+Finish tf.sparse.eye.yaml, Time: 10.685367822647095
+[25503] Extracting tf.strings.strip.yaml
+Finish tf.strings.strip.yaml, Time: 10.698812246322632
+[25503] Extracting tf.math.count_nonzero.yaml
+Finish tf.math.count_nonzero.yaml, Time: 10.696419954299927
+[25503] Extracting tf.math.square.yaml
+Finish tf.math.square.yaml, Time: 10.529250860214233
+[25503] Extracting tf.sparse.reduce_sum.yaml
+Finish tf.sparse.reduce_sum.yaml, Time: 10.774557113647461
+[25503] Extracting tf.linalg.slogdet.yaml
+Finish tf.linalg.slogdet.yaml, Time: 10.642338514328003
+[25503] Extracting tf.dtypes.complex.yaml
+Finish tf.dtypes.complex.yaml, Time: 10.659154891967773
+[25503] Extracting tf.math.acos.yaml
+Finish tf.math.acos.yaml, Time: 10.853052616119385
+[25503] Extracting tf.keras.layers.layernormalization.yaml
+Finish tf.keras.layers.layernormalization.yaml, Time: 11.109001159667969
+[25503] Extracting tf.fingerprint.yaml
+Finish tf.fingerprint.yaml, Time: 10.721335649490356
+[25503] Extracting tf.image.random_contrast.yaml
+Finish tf.image.random_contrast.yaml, Time: 10.645244121551514
+[25503] Extracting tf.math.log.yaml
+Finish tf.math.log.yaml, Time: 10.78943920135498
+[25503] Extracting tf.transpose.yaml
+Finish tf.transpose.yaml, Time: 10.972204685211182
+[25503] Extracting tf.keras.backend.random_normal_variable.yaml
+Finish tf.keras.backend.random_normal_variable.yaml, Time: 10.651072263717651
+[25503] Extracting tf.strided_slice.yaml
+Finish tf.strided_slice.yaml, Time: 10.759041547775269
+[25503] Extracting tf.linalg.tridiagonal_matmul.yaml
+Finish tf.linalg.tridiagonal_matmul.yaml, Time: 10.849451065063477
+[25503] Extracting tf.keras.utils.get_file.yaml
+Finish tf.keras.utils.get_file.yaml, Time: 11.591742515563965
+[25503] Extracting tf.debugging.assert_near.yaml
+Finish tf.debugging.assert_near.yaml, Time: 11.464110136032104
+[25503] Extracting tf.nn.weighted_moments.yaml
+Finish tf.nn.weighted_moments.yaml, Time: 11.380556583404541
+[25503] Extracting tf.quantization.fake_quant_with_min_max_vars_gradient.yaml
+Finish tf.quantization.fake_quant_with_min_max_vars_gradient.yaml, Time: 11.163594722747803
+[25503] Extracting tf.keras.datasets.reuters.load_data.yaml
+Finish tf.keras.datasets.reuters.load_data.yaml, Time: 11.81222128868103
+[25503] Extracting tf.strings.join.yaml
+Finish tf.strings.join.yaml, Time: 11.294472217559814
+[25503] Extracting tf.io.decode_proto.yaml
+Finish tf.io.decode_proto.yaml, Time: 11.403740167617798
+[25503] Extracting tf.nondifferentiable_batch_function.yaml
+Finish tf.nondifferentiable_batch_function.yaml, Time: 12.15560007095337
+[25503] Extracting tf.strings.unicode_split_with_offsets.yaml
+Finish tf.strings.unicode_split_with_offsets.yaml, Time: 12.782508373260498
+[25503] Extracting tf.nn.with_space_to_batch.yaml
+Finish tf.nn.with_space_to_batch.yaml, Time: 12.745587348937988
+[25503] Extracting tf.keras.layers.GlobalMaxPool3D.yaml
+Finish tf.keras.layers.GlobalMaxPool3D.yaml, Time: 13.080731868743896
+[25503] Extracting tf.keras.layers.Dot.yaml
+Finish tf.keras.layers.Dot.yaml, Time: 12.87787652015686
+[25503] Extracting tf.signal.dct.yaml
+Finish tf.signal.dct.yaml, Time: 13.48030972480774
+[25503] Extracting tf.keras.preprocessing.image.load_img.yaml
+Finish tf.keras.preprocessing.image.load_img.yaml, Time: 13.58342456817627
+[25503] Extracting tf.keras.layers.simplernncell.yaml
+Finish tf.keras.layers.simplernncell.yaml, Time: 13.537221908569336
+[25503] Extracting tf.ragged.stack.yaml
+Finish tf.ragged.stack.yaml, Time: 14.130439281463623
+[25503] Extracting tf.linalg.set_diag.yaml
+Finish tf.linalg.set_diag.yaml, Time: 14.410138130187988
+[25503] Extracting tf.keras.layers.cropping3d.yaml
+Finish tf.keras.layers.cropping3d.yaml, Time: 14.53275752067566
+[25503] Extracting tf.image.central_crop.yaml
+Finish tf.image.central_crop.yaml, Time: 14.905900716781616
+[25503] Extracting tf.keras.layers.AveragePooling1D.yaml
+Finish tf.keras.layers.AveragePooling1D.yaml, Time: 15.466213703155518
+[25503] Extracting tf.range.yaml
+Finish tf.range.yaml, Time: 15.728875637054443
+[25503] Extracting tf.nn.embedding_lookup.yaml
+Finish tf.nn.embedding_lookup.yaml, Time: 17.178546905517578
+[25503] Extracting tf.signal.linear_to_mel_weight_matrix.yaml
+Finish tf.signal.linear_to_mel_weight_matrix.yaml, Time: 18.33213973045349
+[25503] Extracting tf.signal.inverse_stft.yaml
+Finish tf.signal.inverse_stft.yaml, Time: 18.474609851837158
+[25503] Extracting tf.nn.conv_transpose.yaml
+Finish tf.nn.conv_transpose.yaml, Time: 18.730544567108154
+[25503] Extracting tf.keras.layers.SeparableConv1D.yaml
+Finish tf.keras.layers.SeparableConv1D.yaml, Time: 20.643962621688843
+[25503] Extracting tf.data.experimental.make_batched_features_dataset.yaml
+Finish tf.data.experimental.make_batched_features_dataset.yaml, Time: 21.15353035926819
+[25503] Extracting tf.keras.layers.experimental.preprocessing.textvectorization.yaml
+Finish tf.keras.layers.experimental.preprocessing.textvectorization.yaml, Time: 22.31529974937439
+[25503] Extracting tf.data.experimental.dense_to_sparse_batch.yaml
+Finish tf.data.experimental.dense_to_sparse_batch.yaml, Time: 22.318829774856567
+[25503] Extracting tf.feature_column.numeric_column.yaml
+Finish tf.feature_column.numeric_column.yaml, Time: 54.757566928863525
+[25503] Extracting tf.data.experimental.make_csv_dataset.yaml
+Finish tf.data.experimental.make_csv_dataset.yaml, Time: 74.57832646369934
+[25503] Extracting tf.keras.backend.softplus.yaml
+Finish tf.keras.backend.softplus.yaml, Time: 5.342303276062012
+[25503] Extracting tf.keras.backend.resize_images.yaml
+Finish tf.keras.backend.resize_images.yaml, Time: 5.946773290634155
+[25503] Extracting tf.keras.initializers.he_normal.yaml
+Finish tf.keras.initializers.he_normal.yaml, Time: 6.174555540084839
+[25503] Extracting tf.math.floordiv.yaml
+Finish tf.math.floordiv.yaml, Time: 6.067959785461426
+[25503] Extracting tf.keras.backend.dropout.yaml
+Finish tf.keras.backend.dropout.yaml, Time: 6.409723281860352
+[25503] Extracting tf.math.rint.yaml
+Finish tf.math.rint.yaml, Time: 6.5073182582855225
+[25503] Extracting tf.feature_column.indicator_column.yaml
+Finish tf.feature_column.indicator_column.yaml, Time: 6.727802038192749
+[25503] Extracting tf.math.segment_mean.yaml
+Finish tf.math.segment_mean.yaml, Time: 7.15201735496521
+[25503] Extracting tf.eigvals.yaml
+Finish tf.eigvals.yaml, Time: 7.228700399398804
+[25503] Extracting tf.config.experimental.get_memory_growth.yaml
+Finish tf.config.experimental.get_memory_growth.yaml, Time: 7.33117151260376
+[25503] Extracting tf.io.decode_compressed.yaml
+Finish tf.io.decode_compressed.yaml, Time: 7.530819416046143
+[25503] Extracting tf.image.total_variation.yaml
+Finish tf.image.total_variation.yaml, Time: 7.6429126262664795
+[25503] Extracting tf.nn.crelu.yaml
+Finish tf.nn.crelu.yaml, Time: 7.8186421394348145
+[25503] Extracting tf.image.rgb_to_yiq.yaml
+Finish tf.image.rgb_to_yiq.yaml, Time: 7.802642345428467
+[25503] Extracting tf.estimator.experimental.call_logit_fn.yaml
+Finish tf.estimator.experimental.call_logit_fn.yaml, Time: 7.920569181442261
+[25503] Extracting tf.debugging.assert_non_positive.yaml
+Finish tf.debugging.assert_non_positive.yaml, Time: 8.182137250900269
+[25503] Extracting tf.math.reduce_sum.yaml
+Finish tf.math.reduce_sum.yaml, Time: 8.387036085128784
+[25503] Extracting tf.math.greater.yaml
+Finish tf.math.greater.yaml, Time: 8.36217451095581
+[25503] Extracting tf.math.less.yaml
+Finish tf.math.less.yaml, Time: 8.552087306976318
+[25503] Extracting tf.keras.backend.pool2d.yaml
+Finish tf.keras.backend.pool2d.yaml, Time: 8.492897510528564
+[25503] Extracting tf.debugging.enable_check_numerics.yaml
+Finish tf.debugging.enable_check_numerics.yaml, Time: 8.578234910964966
+[25503] Extracting tf.keras.backend.spatial_2d_padding.yaml
+Finish tf.keras.backend.spatial_2d_padding.yaml, Time: 8.570945739746094
+[25503] Extracting tf.math.tan.yaml
+Finish tf.math.tan.yaml, Time: 8.740028381347656
+[25503] Extracting tf.io.gfile.listdir.yaml
+Finish tf.io.gfile.listdir.yaml, Time: 8.764186382293701
+[25503] Extracting tf.load_library.yaml
+Finish tf.load_library.yaml, Time: 8.825525760650635
+[25503] Extracting tf.random.learned_unigram_candidate_sampler.yaml
+Finish tf.random.learned_unigram_candidate_sampler.yaml, Time: 9.069166421890259
+[25503] Extracting tf.linalg.sqrtm.yaml
+Finish tf.linalg.sqrtm.yaml, Time: 9.498048305511475
+[25503] Extracting tf.keras.activations.get.yaml
+Finish tf.keras.activations.get.yaml, Time: 9.646791934967041
+[25503] Extracting tf.zeros_like.yaml
+Finish tf.zeros_like.yaml, Time: 9.75847339630127
+[25503] Extracting tf.signal.ifft2d.yaml
+Finish tf.signal.ifft2d.yaml, Time: 9.795738458633423
+[25503] Extracting tf.clip_by_value.yaml
+Finish tf.clip_by_value.yaml, Time: 9.84073781967163
+[25503] Extracting tf.math.atanh.yaml
+Finish tf.math.atanh.yaml, Time: 9.822835683822632
+[25503] Extracting tf.compat.forward_compatible.yaml
+Finish tf.compat.forward_compatible.yaml, Time: 9.612956762313843
+[25503] Extracting tf.keras.backend.dot.yaml
+Finish tf.keras.backend.dot.yaml, Time: 9.735894203186035
+[25503] Extracting tf.random.normal.yaml
+Finish tf.random.normal.yaml, Time: 10.132646799087524
+[25503] Extracting tf.image.adjust_gamma.yaml
+Finish tf.image.adjust_gamma.yaml, Time: 9.604722499847412
+[25503] Extracting tf.math.logical_not.yaml
+Finish tf.math.logical_not.yaml, Time: 9.97539234161377
+[25503] Extracting tf.no_op.yaml
+Finish tf.no_op.yaml, Time: 9.958495616912842
+[25503] Extracting tf.nn.rnncelldevicewrapper.yaml
+Finish tf.nn.rnncelldevicewrapper.yaml, Time: 10.16946530342102
+[25503] Extracting tf.keras.backend.conv2d_transpose.yaml
+Finish tf.keras.backend.conv2d_transpose.yaml, Time: 10.236591100692749
+[25503] Extracting tf.keras.activations.selu.yaml
+Finish tf.keras.activations.selu.yaml, Time: 9.76592755317688
+[25503] Extracting tf.keras.backend.equal.yaml
+Finish tf.keras.backend.equal.yaml, Time: 9.89923095703125
+[25503] Extracting tf.math.ndtri.yaml
+Finish tf.math.ndtri.yaml, Time: 9.992041110992432
+[25503] Extracting tf.random.experimental.create_rng_state.yaml
+Finish tf.random.experimental.create_rng_state.yaml, Time: 10.07348370552063
+[25503] Extracting tf.keras.backend.stack.yaml
+Finish tf.keras.backend.stack.yaml, Time: 10.081008434295654
+[25503] Extracting tf.keras.activations.sigmoid.yaml
+Finish tf.keras.activations.sigmoid.yaml, Time: 9.995765209197998
+[25503] Extracting tf.meshgrid.yaml
+Finish tf.meshgrid.yaml, Time: 10.377599716186523
+[25503] Extracting tf.keras.backend.to_dense.yaml
+Finish tf.keras.backend.to_dense.yaml, Time: 10.239075183868408
+[25503] Extracting tf.autograph.to_code.yaml
+Finish tf.autograph.to_code.yaml, Time: 10.241320610046387
+[25503] Extracting tf.keras.optimizers.deserialize.yaml
+Finish tf.keras.optimizers.deserialize.yaml, Time: 10.357494831085205
+[25503] Extracting tf.keras.backend.is_sparse.yaml
+Finish tf.keras.backend.is_sparse.yaml, Time: 10.069807291030884
+[25503] Extracting tf.math.maximum.yaml
+Finish tf.math.maximum.yaml, Time: 10.487053394317627
+[25503] Extracting tf.nn.erosion2d.yaml
+Finish tf.nn.erosion2d.yaml, Time: 10.11989140510559
+[25503] Extracting tf.image.pad_to_bounding_box.yaml
+Finish tf.image.pad_to_bounding_box.yaml, Time: 10.16326379776001
+[25503] Extracting tf.keras.backend.reverse.yaml
+Finish tf.keras.backend.reverse.yaml, Time: 10.322963953018188
+[25503] Extracting tf.io.decode_gif.yaml
+Finish tf.io.decode_gif.yaml, Time: 10.489405155181885
+[25503] Extracting tf.debugging.assert_negative.yaml
+Finish tf.debugging.assert_negative.yaml, Time: 10.421271800994873
+[25503] Extracting tf.data.experimental.prefetch_to_device.yaml
+Finish tf.data.experimental.prefetch_to_device.yaml, Time: 10.255187034606934
+[25503] Extracting tf.keras.losses.categorical_crossentropy.yaml
+Finish tf.keras.losses.categorical_crossentropy.yaml, Time: 10.695068359375
+[25503] Extracting tf.sparse.to_indicator.yaml
+Finish tf.sparse.to_indicator.yaml, Time: 10.672654628753662
+[25503] Extracting tf.debugging.assert_less.yaml
+Finish tf.debugging.assert_less.yaml, Time: 10.593363285064697
+[25503] Extracting tf.summary.flush.yaml
+Finish tf.summary.flush.yaml, Time: 10.30412769317627
+[25503] Extracting tf.tensor_scatter_nd_sub.yaml
+Finish tf.tensor_scatter_nd_sub.yaml, Time: 10.432312965393066
+[25503] Extracting tf.strings.as_string.yaml
+Finish tf.strings.as_string.yaml, Time: 11.01791262626648
+[25503] Extracting tf.math.invert_permutation.yaml
+Finish tf.math.invert_permutation.yaml, Time: 10.418470859527588
+[25503] Extracting tf.constant.yaml
+Finish tf.constant.yaml, Time: 10.53398323059082
+[25503] Extracting tf.math.unsorted_segment_sum.yaml
+Finish tf.math.unsorted_segment_sum.yaml, Time: 11.04436993598938
+[25503] Extracting tf.keras.backend.truncated_normal.yaml
+Finish tf.keras.backend.truncated_normal.yaml, Time: 10.67496943473816
+[25503] Extracting tf.math.cumsum.yaml
+Finish tf.math.cumsum.yaml, Time: 10.835526943206787
+[25503] Extracting tf.keras.layers.dense.yaml
+Finish tf.keras.layers.dense.yaml, Time: 10.863407611846924
+[25503] Extracting tf.config.optimizer.set_experimental_options.yaml
+Finish tf.config.optimizer.set_experimental_options.yaml, Time: 11.124159097671509
+[25503] Extracting tf.nn.compute_accidental_hits.yaml
+Finish tf.nn.compute_accidental_hits.yaml, Time: 10.83613657951355
+[25503] Extracting tf.saved_model.load.yaml
+Finish tf.saved_model.load.yaml, Time: 10.892860889434814
+[25503] Extracting tf.strings.unsorted_segment_join.yaml
+Finish tf.strings.unsorted_segment_join.yaml, Time: 11.111824989318848
+[25503] Extracting tf.feature_column.categorical_column_with_hash_bucket.yaml
+Finish tf.feature_column.categorical_column_with_hash_bucket.yaml, Time: 11.629796504974365
+[25503] Extracting tf.nn.max_pool3d.yaml
+Finish tf.nn.max_pool3d.yaml, Time: 11.392570972442627
+[25503] Extracting tf.estimator.experimental.stop_if_no_increase_hook.yaml
+Finish tf.estimator.experimental.stop_if_no_increase_hook.yaml, Time: 11.593526840209961
+[25503] Extracting tf.strings.format.yaml
+Finish tf.strings.format.yaml, Time: 11.942864894866943
+[25503] Extracting tf.nn.sampled_softmax_loss.yaml
+Finish tf.nn.sampled_softmax_loss.yaml, Time: 12.336710929870605
+[25503] Extracting tf.keras.layers.spatialdropout3d.yaml
+Finish tf.keras.layers.spatialdropout3d.yaml, Time: 12.94629454612732
+[25503] Extracting tf.image.non_max_suppression_padded.yaml
+Finish tf.image.non_max_suppression_padded.yaml, Time: 13.731348991394043
+[25503] Extracting tf.image.non_max_suppression_overlaps.yaml
+Finish tf.image.non_max_suppression_overlaps.yaml, Time: 14.04107141494751
+[25503] Extracting tf.keras.layers.GlobalAveragePooling2D.yaml
+Finish tf.keras.layers.GlobalAveragePooling2D.yaml, Time: 14.774649858474731
+[25503] Extracting tf.nn.conv2d_transpose.yaml
+Finish tf.nn.conv2d_transpose.yaml, Time: 15.776371240615845
+[25503] Extracting tf.summary.image.yaml
+Finish tf.summary.image.yaml, Time: 16.54486918449402
+[25503] Extracting tf.nn.avg_pool.yaml
+Finish tf.nn.avg_pool.yaml, Time: 16.321442365646362
+[25503] Extracting tf.image.sample_distorted_bounding_box.yaml
+Finish tf.image.sample_distorted_bounding_box.yaml, Time: 16.541890382766724
+[25503] Extracting tf.unravel_index.yaml
+Finish tf.unravel_index.yaml, Time: 16.316097021102905
+[25503] Extracting tf.feature_column.categorical_column_with_vocabulary_file.yaml
+Finish tf.feature_column.categorical_column_with_vocabulary_file.yaml, Time: 16.92377996444702
+[25503] Extracting tf.sparse.add.yaml
+Finish tf.sparse.add.yaml, Time: 17.333688974380493
+[25503] Extracting tf.keras.utils.model_to_dot.yaml
+Finish tf.keras.utils.model_to_dot.yaml, Time: 17.40009331703186
+[25503] Extracting tf.config.experimental.set_device_policy.yaml
+Finish tf.config.experimental.set_device_policy.yaml, Time: 21.905107021331787
+[25503] Extracting tf.convert_to_tensor.yaml
+Finish tf.convert_to_tensor.yaml, Time: 23.185879945755005
+[25503] Extracting tf.signal.stft.yaml
+Finish tf.signal.stft.yaml, Time: 36.112228870391846
+[25503] Extracting tf.strings.unicode_decode_with_offsets.yaml
+Finish tf.strings.unicode_decode_with_offsets.yaml, Time: 36.86742949485779
+[25503] Extracting tf.debugging.experimental.enable_dump_debug_info.yaml
+Finish tf.debugging.experimental.enable_dump_debug_info.yaml, Time: 37.77604031562805
+[25503] Extracting tf.roll.yaml
+Finish tf.roll.yaml, Time: 53.244760036468506
+[25503] Extracting tf.graph_util.import_graph_def.yaml
+Finish tf.graph_util.import_graph_def.yaml, Time: 77.7876648902893
+[25503] Extracting tf.nn.rnncelldropoutwrapper.yaml
+Finish tf.nn.rnncelldropoutwrapper.yaml, Time: 77.9080262184143
+[25503] Extracting tf.keras.layers.lstm.yaml
+Finish tf.keras.layers.lstm.yaml, Time: 100.75439977645874
+[25503] Extracting tf.keras.backend.in_test_phase.yaml
+Finish tf.keras.backend.in_test_phase.yaml, Time: 5.5042877197265625
+[25503] Extracting tf.math.erf.yaml
+Finish tf.math.erf.yaml, Time: 5.523179292678833
+[25503] Extracting tf.keras.backend.int_shape.yaml
+Finish tf.keras.backend.int_shape.yaml, Time: 5.615480184555054
+[25503] Extracting tf.keras.backend.abs.yaml
+Finish tf.keras.backend.abs.yaml, Time: 5.686973571777344
+[25503] Extracting tf.math.xdivy.yaml
+Finish tf.math.xdivy.yaml, Time: 5.740399122238159
+[25503] Extracting tf.truncatemod.yaml
+Finish tf.truncatemod.yaml, Time: 5.7978222370147705
+[25503] Extracting tf.config.set_soft_device_placement.yaml
+Finish tf.config.set_soft_device_placement.yaml, Time: 5.909370183944702
+[25503] Extracting tf.data.experimental.latency_stats.yaml
+Finish tf.data.experimental.latency_stats.yaml, Time: 6.096781253814697
+[25503] Extracting tf.config.optimizer.set_jit.yaml
+Finish tf.config.optimizer.set_jit.yaml, Time: 6.3795084953308105
+[25503] Extracting tf.io.serialize_tensor.yaml
+Finish tf.io.serialize_tensor.yaml, Time: 6.822782278060913
+[25503] Extracting tf.random.experimental.set_global_generator.yaml
+Finish tf.random.experimental.set_global_generator.yaml, Time: 6.943873643875122
+[25503] Extracting tf.keras.mixed_precision.experimental.set_policy.yaml
+Finish tf.keras.mixed_precision.experimental.set_policy.yaml, Time: 7.047944784164429
+[25503] Extracting tf.math.erfc.yaml
+Finish tf.math.erfc.yaml, Time: 7.126708984375
+[25503] Extracting tf.bitwise.bitwise_or.yaml
+Finish tf.bitwise.bitwise_or.yaml, Time: 7.21368145942688
+[25503] Extracting tf.keras.utils.get_source_inputs.yaml
+Finish tf.keras.utils.get_source_inputs.yaml, Time: 7.456175327301025
+[25503] Extracting tf.linalg.tensor_diag_part.yaml
+Finish tf.linalg.tensor_diag_part.yaml, Time: 7.439304828643799
+[25503] Extracting tf.math.angle.yaml
+Finish tf.math.angle.yaml, Time: 7.528984308242798
+[25503] Extracting tf.get_static_value.yaml
+Finish tf.get_static_value.yaml, Time: 7.644202947616577
+[25503] Extracting tf.compat.as_str_any.yaml
+Finish tf.compat.as_str_any.yaml, Time: 7.72570538520813
+[25503] Extracting tf.keras.backend.normalize_batch_in_training.yaml
+Finish tf.keras.backend.normalize_batch_in_training.yaml, Time: 7.941686630249023
+[25503] Extracting tf.sparse.expand_dims.yaml
+Finish tf.sparse.expand_dims.yaml, Time: 8.001320838928223
+[25503] Extracting tf.math.atan2.yaml
+Finish tf.math.atan2.yaml, Time: 7.988494396209717
+[25503] Extracting tf.math.pow.yaml
+Finish tf.math.pow.yaml, Time: 8.379824876785278
+[25503] Extracting tf.sparse.segment_mean.yaml
+Finish tf.sparse.segment_mean.yaml, Time: 8.664543151855469
+[25503] Extracting tf.make_tensor_proto.yaml
+Finish tf.make_tensor_proto.yaml, Time: 8.796310663223267
+[25503] Extracting tf.autograph.trace.yaml
+Finish tf.autograph.trace.yaml, Time: 8.866818189620972
+[25503] Extracting tf.keras.backend.pow.yaml
+Finish tf.keras.backend.pow.yaml, Time: 9.026259660720825
+[25503] Extracting tf.keras.backend.name_scope.yaml
+Finish tf.keras.backend.name_scope.yaml, Time: 9.17892575263977
+[25503] Extracting tf.keras.backend.eval.yaml
+Finish tf.keras.backend.eval.yaml, Time: 9.392074823379517
+[25503] Extracting tf.keras.layers.repeatvector.yaml
+Finish tf.keras.layers.repeatvector.yaml, Time: 9.35461688041687
+[25503] Extracting tf.nn.l2_loss.yaml
+Finish tf.nn.l2_loss.yaml, Time: 9.507448673248291
+[25503] Extracting tf.image.yiq_to_rgb.yaml
+Finish tf.image.yiq_to_rgb.yaml, Time: 9.536234378814697
+[25503] Extracting tf.image.random_brightness.yaml
+Finish tf.image.random_brightness.yaml, Time: 9.643693208694458
+[25503] Extracting tf.random.uniform.yaml
+Finish tf.random.uniform.yaml, Time: 9.793058633804321
+[25503] Extracting tf.estimator.experimental.stop_if_no_decrease_hook.yaml
+Finish tf.estimator.experimental.stop_if_no_decrease_hook.yaml, Time: 9.794204473495483
+[25503] Extracting tf.tpu.experimental.initialize_tpu_system.yaml
+Finish tf.tpu.experimental.initialize_tpu_system.yaml, Time: 9.637366533279419
+[25503] Extracting tf.math.subtract.yaml
+Finish tf.math.subtract.yaml, Time: 9.581260442733765
+[25503] Extracting tf.keras.layers.elu.yaml
+Finish tf.keras.layers.elu.yaml, Time: 9.824620485305786
+[25503] Extracting tf.data.experimental.get_single_element.yaml
+Finish tf.data.experimental.get_single_element.yaml, Time: 9.819865703582764
+[25503] Extracting tf.compat.forward_compatibility_horizon.yaml
+Finish tf.compat.forward_compatibility_horizon.yaml, Time: 9.870187759399414
+[25503] Extracting tf.keras.layers.gaussiandropout.yaml
+Finish tf.keras.layers.gaussiandropout.yaml, Time: 9.657402753829956
+[25503] Extracting tf.keras.layers.multiply2.yaml
+Finish tf.keras.layers.multiply2.yaml, Time: 9.958799123764038
+[25503] Extracting tf.keras.backend.count_params.yaml
+Finish tf.keras.backend.count_params.yaml, Time: 9.893018007278442
+[25503] Extracting tf.math.add.yaml
+Finish tf.math.add.yaml, Time: 10.044251203536987
+[25503] Extracting tf.keras.initializers.lecun_uniform.yaml
+Finish tf.keras.initializers.lecun_uniform.yaml, Time: 10.125772714614868
+[25503] Extracting tf.math.cosh.yaml
+Finish tf.math.cosh.yaml, Time: 10.19516658782959
+[25503] Extracting tf.keras.utils.convert_all_kernels_in_model.yaml
+Finish tf.keras.utils.convert_all_kernels_in_model.yaml, Time: 10.13049030303955
+[25503] Extracting tf.strings.to_hash_bucket_strong.yaml
+Finish tf.strings.to_hash_bucket_strong.yaml, Time: 10.259502172470093
+[25503] Extracting tf.switch_case.yaml
+Finish tf.switch_case.yaml, Time: 9.936269998550415
+[25503] Extracting tf.math.lbeta.yaml
+Finish tf.math.lbeta.yaml, Time: 9.997186183929443
+[25503] Extracting tf.keras.backend.cast_to_floatx.yaml
+Finish tf.keras.backend.cast_to_floatx.yaml, Time: 10.060605764389038
+[25503] Extracting tf.image.rgb_to_grayscale.yaml
+Finish tf.image.rgb_to_grayscale.yaml, Time: 10.17055368423462
+[25503] Extracting tf.stack.yaml
+Finish tf.stack.yaml, Time: 10.417809247970581
+[25503] Extracting tf.math.digamma.yaml
+Finish tf.math.digamma.yaml, Time: 10.025542259216309
+[25503] Extracting tf.keras.backend.depthwise_conv2d.yaml
+Finish tf.keras.backend.depthwise_conv2d.yaml, Time: 10.478317499160767
+[25503] Extracting tf.keras.initializers.he_uniform.yaml
+Finish tf.keras.initializers.he_uniform.yaml, Time: 10.171241283416748
+[25503] Extracting tf.linalg.matrix_transpose.yaml
+Finish tf.linalg.matrix_transpose.yaml, Time: 10.078050374984741
+[25503] Extracting tf.math.round.yaml
+Finish tf.math.round.yaml, Time: 10.099708318710327
+[25503] Extracting tf.image.adjust_jpeg_quality.yaml
+Finish tf.image.adjust_jpeg_quality.yaml, Time: 10.085116386413574
+[25503] Extracting tf.io.extract_jpeg_shape.yaml
+Finish tf.io.extract_jpeg_shape.yaml, Time: 10.136002779006958
+[25503] Extracting tf.slice.yaml
+Finish tf.slice.yaml, Time: 10.255096197128296
+[25503] Extracting tf.compat.as_text.yaml
+Finish tf.compat.as_text.yaml, Time: 10.234324932098389
+[25503] Extracting tf.math.unsorted_segment_max.yaml
+Finish tf.math.unsorted_segment_max.yaml, Time: 10.65877103805542
+[25503] Extracting tf.sparse.cross_hashed.yaml
+Finish tf.sparse.cross_hashed.yaml, Time: 10.534209728240967
+[25503] Extracting tf.math.not_equal.yaml
+Finish tf.math.not_equal.yaml, Time: 10.31956171989441
+[25503] Extracting tf.keras.backend.separable_conv2d.yaml
+Finish tf.keras.backend.separable_conv2d.yaml, Time: 10.283658742904663
+[25503] Extracting tf.keras.models.model_from_yaml.yaml
+Finish tf.keras.models.model_from_yaml.yaml, Time: 10.398200750350952
+[25503] Extracting tf.keras.utils.normalize.yaml
+Finish tf.keras.utils.normalize.yaml, Time: 10.504297733306885
+[25503] Extracting tf.keras.backend.constant.yaml
+Finish tf.keras.backend.constant.yaml, Time: 10.337916135787964
+[25503] Extracting tf.math.unsorted_segment_prod.yaml
+Finish tf.math.unsorted_segment_prod.yaml, Time: 10.699958801269531
+[25503] Extracting tf.data.experimental.dense_to_ragged_batch.yaml
+Finish tf.data.experimental.dense_to_ragged_batch.yaml, Time: 10.99901032447815
+[25503] Extracting tf.data.experimental.sample_from_datasets.yaml
+Finish tf.data.experimental.sample_from_datasets.yaml, Time: 10.58945894241333
+[25503] Extracting tf.sparse.to_dense.yaml
+Finish tf.sparse.to_dense.yaml, Time: 11.059468507766724
+[25503] Extracting tf.reverse.yaml
+Finish tf.reverse.yaml, Time: 10.691338300704956
+[25503] Extracting tf.nn.max_pool2d.yaml
+Finish tf.nn.max_pool2d.yaml, Time: 10.904235601425171
+[25503] Extracting tf.sparse.segment_sqrt_n.yaml
+Finish tf.sparse.segment_sqrt_n.yaml, Time: 10.785014867782593
+[25503] Extracting tf.keras.preprocessing.image.random_shear.yaml
+Finish tf.keras.preprocessing.image.random_shear.yaml, Time: 11.33215618133545
+[25503] Extracting tf.one_hot.yaml
+Finish tf.one_hot.yaml, Time: 11.196224927902222
+[25503] Extracting tf.linalg.cholesky_solve.yaml
+Finish tf.linalg.cholesky_solve.yaml, Time: 11.591271162033081
+[25503] Extracting tf.linalg.lu_solve.yaml
+Finish tf.linalg.lu_solve.yaml, Time: 12.211260795593262
+[25503] Extracting tf.keras.preprocessing.image.random_zoom.yaml
+Finish tf.keras.preprocessing.image.random_zoom.yaml, Time: 11.813359260559082
+[25503] Extracting tf.keras.layers.upsampling3d.yaml
+Finish tf.keras.layers.upsampling3d.yaml, Time: 12.851903915405273
+[25503] Extracting tf.control_dependencies.yaml
+Finish tf.control_dependencies.yaml, Time: 13.172908306121826
+[25503] Extracting tf.feature_column.categorical_column_with_vocabulary_list.yaml
+Finish tf.feature_column.categorical_column_with_vocabulary_list.yaml, Time: 15.00308632850647
+[25503] Extracting tf.nn.max_pool.yaml
+Finish tf.nn.max_pool.yaml, Time: 15.021873712539673
+[25503] Extracting tf.keras.layers.GlobalMaxPool2D.yaml
+Finish tf.keras.layers.GlobalMaxPool2D.yaml, Time: 15.143173456192017
+[25503] Extracting tf.nn.conv3d_transpose.yaml
+Finish tf.nn.conv3d_transpose.yaml, Time: 15.804545164108276
+[25503] Extracting tf.keras.layers.cropping2d.yaml
+Finish tf.keras.layers.cropping2d.yaml, Time: 15.56838870048523
+[25503] Extracting tf.xla.experimental.jit_scope.yaml
+Finish tf.xla.experimental.jit_scope.yaml, Time: 19.068200826644897
+[25503] Extracting tf.data.experimental.take_while.yaml
+Finish tf.data.experimental.take_while.yaml, Time: 20.42471957206726
+[25503] Extracting tf.data.experimental.bucket_by_sequence_length.yaml
+Finish tf.data.experimental.bucket_by_sequence_length.yaml, Time: 22.425297737121582
+[25503] Extracting tf.ragged.range.yaml
+Finish tf.ragged.range.yaml, Time: 22.494917631149292
+[25503] Extracting tf.strings.unicode_transcode.yaml
+Finish tf.strings.unicode_transcode.yaml, Time: 22.92687487602234
+[25503] Extracting tf.image.crop_and_resize.yaml
+Finish tf.image.crop_and_resize.yaml, Time: 24.384639501571655
+[25503] Extracting tf.nn.fractional_max_pool.yaml
+Finish tf.nn.fractional_max_pool.yaml, Time: 26.815147876739502
+[25503] Extracting tf.keras.layers.locallyconnected2d.yaml
+Finish tf.keras.layers.locallyconnected2d.yaml, Time: 29.73356032371521
+[25503] Extracting tf.keras.layers.dropout.yaml
+Finish tf.keras.layers.dropout.yaml, Time: 30.206474781036377
+[25503] Extracting tf.image.ssim_multiscale.yaml
+Finish tf.image.ssim_multiscale.yaml, Time: 31.696741342544556
+[25503] Extracting tf.image.combined_non_max_suppression.yaml
+Finish tf.image.combined_non_max_suppression.yaml, Time: 44.9447546005249
+[25503] Extracting tf.nn.atrous_conv2d_transpose.yaml
+Finish tf.nn.atrous_conv2d_transpose.yaml, Time: 53.80813241004944
+[25503] Extracting tf.config.experimental.set_memory_growth.yaml
+Finish tf.config.experimental.set_memory_growth.yaml, Time: 5.165329694747925
+[25503] Extracting tf.required_space_to_batch_paddings.yaml
+Finish tf.required_space_to_batch_paddings.yaml, Time: 5.180939674377441
+[25503] Extracting tf.sets.size.yaml
+Finish tf.sets.size.yaml, Time: 5.177269458770752
+[25503] Extracting tf.keras.datasets.reuters.get_word_index.yaml
+Finish tf.keras.datasets.reuters.get_word_index.yaml, Time: 5.559067726135254
+[25503] Extracting tf.keras.layers.average2.yaml
+Finish tf.keras.layers.average2.yaml, Time: 5.666405200958252
+[25503] Extracting tf.math.cumulative_logsumexp.yaml
+Finish tf.math.cumulative_logsumexp.yaml, Time: 5.6966893672943115
+[25503] Extracting tf.sparse.minimum.yaml
+Finish tf.sparse.minimum.yaml, Time: 6.060809135437012
+[25503] Extracting tf.io.matching_files.yaml
+Finish tf.io.matching_files.yaml, Time: 6.443906307220459
+[25503] Extracting tf.io.read_file.yaml
+Finish tf.io.read_file.yaml, Time: 6.564132928848267
+[25503] Extracting tf.compat.dimension_value.yaml
+Finish tf.compat.dimension_value.yaml, Time: 6.774017333984375
+[25503] Extracting tf.math.reduce_std.yaml
+Finish tf.math.reduce_std.yaml, Time: 6.9700539112091064
+[25503] Extracting tf.keras.backend.sqrt.yaml
+Finish tf.keras.backend.sqrt.yaml, Time: 7.044852256774902
+[25503] Extracting tf.math.unsorted_segment_sqrt_n.yaml
+Finish tf.math.unsorted_segment_sqrt_n.yaml, Time: 7.076332092285156
+[25503] Extracting tf.io.parse_sequence_example.yaml
+Finish tf.io.parse_sequence_example.yaml, Time: 7.235027074813843
+[25503] Extracting tf.nest.map_structure.yaml
+Finish tf.nest.map_structure.yaml, Time: 7.247158527374268
+[25503] Extracting tf.dtypes.saturate_cast.yaml
+Finish tf.dtypes.saturate_cast.yaml, Time: 7.321878433227539
+[25503] Extracting tf.keras.backend.get_uid.yaml
+Finish tf.keras.backend.get_uid.yaml, Time: 7.607651948928833
+[25503] Extracting tf.math.squared_difference.yaml
+Finish tf.math.squared_difference.yaml, Time: 7.88759446144104
+[25503] Extracting tf.keras.backend.ones.yaml
+Finish tf.keras.backend.ones.yaml, Time: 7.848413467407227
+[25503] Extracting tf.debugging.assert_greater_equal.yaml
+Finish tf.debugging.assert_greater_equal.yaml, Time: 7.972312688827515
+[25503] Extracting tf.concat.yaml
+Finish tf.concat.yaml, Time: 7.922385931015015
+[25503] Extracting tf.keras.activations.serialize.yaml
+Finish tf.keras.activations.serialize.yaml, Time: 7.546581268310547
+[25503] Extracting tf.math.betainc.yaml
+Finish tf.math.betainc.yaml, Time: 8.203591108322144
+[25503] Extracting tf.summary.experimental.summary_scope.yaml
+Finish tf.summary.experimental.summary_scope.yaml, Time: 8.21077823638916
+[25503] Extracting tf.math.reduce_mean.yaml
+Finish tf.math.reduce_mean.yaml, Time: 8.40771746635437
+[25503] Extracting tf.bitwise.invert.yaml
+Finish tf.bitwise.invert.yaml, Time: 8.41403317451477
+[25503] Extracting tf.math.segment_max.yaml
+Finish tf.math.segment_max.yaml, Time: 8.725525856018066
+[25503] Extracting tf.keras.backend.set_image_data_format.yaml
+Finish tf.keras.backend.set_image_data_format.yaml, Time: 8.720485925674438
+[25503] Extracting tf.debugging.assert_rank_at_least.yaml
+Finish tf.debugging.assert_rank_at_least.yaml, Time: 8.69700312614441
+[25503] Extracting tf.nn.batch_normalization.yaml
+Finish tf.nn.batch_normalization.yaml, Time: 8.940930128097534
+[25503] Extracting tf.data.experimental.get_structure.yaml
+Finish tf.data.experimental.get_structure.yaml, Time: 8.81486439704895
+[25503] Extracting tf.data.experimental.parse_example_dataset.yaml
+Finish tf.data.experimental.parse_example_dataset.yaml, Time: 8.857276678085327
+[25503] Extracting tf.data.experimental.cardinality.yaml
+Finish tf.data.experimental.cardinality.yaml, Time: 8.877894639968872
+[25503] Extracting tf.config.set_logical_device_configuration.yaml
+Finish tf.config.set_logical_device_configuration.yaml, Time: 9.143358707427979
+[25503] Extracting tf.boolean_mask.yaml
+Finish tf.boolean_mask.yaml, Time: 9.230409622192383
+[25503] Extracting tf.io.decode_base64.yaml
+Finish tf.io.decode_base64.yaml, Time: 9.045393705368042
+[25503] Extracting tf.summary.record_if.yaml
+Finish tf.summary.record_if.yaml, Time: 9.179906129837036
+[25503] Extracting tf.keras.backend.is_keras_tensor.yaml
+Finish tf.keras.backend.is_keras_tensor.yaml, Time: 8.878941059112549
+[25503] Extracting tf.keras.layers.AdditiveAttention.yaml
+Finish tf.keras.layers.AdditiveAttention.yaml, Time: 8.880951881408691
+[25503] Extracting tf.image.hsv_to_rgb.yaml
+Finish tf.image.hsv_to_rgb.yaml, Time: 9.221731901168823
+[25503] Extracting tf.keras.backend.one_hot.yaml
+Finish tf.keras.backend.one_hot.yaml, Time: 9.313110589981079
+[25503] Extracting tf.autograph.experimental.do_not_convert.yaml
+Finish tf.autograph.experimental.do_not_convert.yaml, Time: 9.385265588760376
+[25503] Extracting tf.math.logical_and.yaml
+Finish tf.math.logical_and.yaml, Time: 8.985888004302979
+[25503] Extracting tf.math.erfinv.yaml
+Finish tf.math.erfinv.yaml, Time: 9.509147644042969
+[25503] Extracting tf.math.minimum.yaml
+Finish tf.math.minimum.yaml, Time: 9.65045690536499
+[25503] Extracting tf.image.sobel_edges.yaml
+Finish tf.image.sobel_edges.yaml, Time: 9.246415138244629
+[25503] Extracting tf.keras.datasets.mnist.load_data.yaml
+Finish tf.keras.datasets.mnist.load_data.yaml, Time: 9.680178165435791
+[25503] Extracting tf.keras.backend.flatten.yaml
+Finish tf.keras.backend.flatten.yaml, Time: 9.588517904281616
+[25503] Extracting tf.math.unsorted_segment_mean.yaml
+Finish tf.math.unsorted_segment_mean.yaml, Time: 9.737531900405884
+[25503] Extracting tf.estimator.experimental.stop_if_lower_hook.yaml
+Finish tf.estimator.experimental.stop_if_lower_hook.yaml, Time: 10.039225101470947
+[25503] Extracting tf.keras.preprocessing.text.text_to_word_sequence.yaml
+Finish tf.keras.preprocessing.text.text_to_word_sequence.yaml, Time: 9.883210182189941
+[25503] Extracting tf.keras.backend.random_normal.yaml
+Finish tf.keras.backend.random_normal.yaml, Time: 10.046171426773071
+[25503] Extracting tf.image.encode_png.yaml
+Finish tf.image.encode_png.yaml, Time: 10.006864070892334
+[25503] Extracting tf.compat.dimension_at_index.yaml
+Finish tf.compat.dimension_at_index.yaml, Time: 9.762457609176636
+[25503] Extracting tf.image.convert_image_dtype.yaml
+Finish tf.image.convert_image_dtype.yaml, Time: 9.732319116592407
+[25503] Extracting tf.nn.softmax.yaml
+Finish tf.nn.softmax.yaml, Time: 9.854576110839844
+[25503] Extracting tf.image.random_flip_left_right.yaml
+Finish tf.image.random_flip_left_right.yaml, Time: 9.804289817810059
+[25503] Extracting tf.image.adjust_brightness.yaml
+Finish tf.image.adjust_brightness.yaml, Time: 9.769468784332275
+[25503] Extracting tf.signal.mfccs_from_log_mel_spectrograms.yaml
+Finish tf.signal.mfccs_from_log_mel_spectrograms.yaml, Time: 9.940824270248413
+[25503] Extracting tf.signal.fft.yaml
+Finish tf.signal.fft.yaml, Time: 10.019736289978027
+[25503] Extracting tf.image.adjust_saturation.yaml
+Finish tf.image.adjust_saturation.yaml, Time: 10.05530571937561
+[25503] Extracting tf.debugging.assert_proper_iterable.yaml
+Finish tf.debugging.assert_proper_iterable.yaml, Time: 9.70992636680603
+[25503] Extracting tf.keras.regularizers.l1_l2.yaml
+Finish tf.keras.regularizers.l1_l2.yaml, Time: 9.879224061965942
+[25503] Extracting tf.keras.layers.permute.yaml
+Finish tf.keras.layers.permute.yaml, Time: 10.093083620071411
+[25503] Extracting tf.math.is_inf.yaml
+Finish tf.math.is_inf.yaml, Time: 10.016011476516724
+[25503] Extracting tf.keras.backend.min.yaml
+Finish tf.keras.backend.min.yaml, Time: 10.121429681777954
+[25503] Extracting tf.data.experimental.copy_to_device.yaml
+Finish tf.data.experimental.copy_to_device.yaml, Time: 9.766944885253906
+[25503] Extracting tf.keras.backend.map_fn.yaml
+Finish tf.keras.backend.map_fn.yaml, Time: 10.069470405578613
+[25503] Extracting tf.feature_column.bucketized_column.yaml
+Finish tf.feature_column.bucketized_column.yaml, Time: 9.801419973373413
+[25503] Extracting tf.keras.losses.cosine_similarity.yaml
+Finish tf.keras.losses.cosine_similarity.yaml, Time: 9.874231100082397
+[25503] Extracting tf.guarantee_const.yaml
+Finish tf.guarantee_const.yaml, Time: 9.878202676773071
+[25503] Extracting tf.math.exp.yaml
+Finish tf.math.exp.yaml, Time: 10.027513027191162
+[25503] Extracting tf.math.floormod.yaml
+Finish tf.math.floormod.yaml, Time: 10.131788730621338
+[25503] Extracting tf.bitwise.bitwise_xor.yaml
+Finish tf.bitwise.bitwise_xor.yaml, Time: 10.07439637184143
+[25503] Extracting tf.io.decode_raw.yaml
+Finish tf.io.decode_raw.yaml, Time: 10.346070289611816
+[25503] Extracting tf.sets.union.yaml
+Finish tf.sets.union.yaml, Time: 10.040217876434326
+[25503] Extracting tf.math.polygamma.yaml
+Finish tf.math.polygamma.yaml, Time: 10.018520832061768
+[25503] Extracting tf.searchsorted.yaml
+Finish tf.searchsorted.yaml, Time: 10.23302960395813
+[25503] Extracting tf.reshape.yaml
+Finish tf.reshape.yaml, Time: 10.223943710327148
+[25503] Extracting tf.linalg.lstsq.yaml
+Finish tf.linalg.lstsq.yaml, Time: 10.163954019546509
+[25503] Extracting tf.quantization.fake_quant_with_min_max_args.yaml
+Finish tf.quantization.fake_quant_with_min_max_args.yaml, Time: 10.145846843719482
+[25503] Extracting tf.image.random_crop.yaml
+Finish tf.image.random_crop.yaml, Time: 10.31520414352417
+[25503] Extracting tf.quantization.fake_quant_with_min_max_vars.yaml
+Finish tf.quantization.fake_quant_with_min_max_vars.yaml, Time: 10.51774787902832
+[25503] Extracting tf.autograph.set_verbosity.yaml
+Finish tf.autograph.set_verbosity.yaml, Time: 10.467997789382935
+[25503] Extracting tf.math.segment_sum.yaml
+Finish tf.math.segment_sum.yaml, Time: 10.48209285736084
+[25503] Extracting tf.nn.avg_pool2d.yaml
+Finish tf.nn.avg_pool2d.yaml, Time: 10.655315637588501
+[25503] Extracting tf.keras.layers.dot2.yaml
+Finish tf.keras.layers.dot2.yaml, Time: 11.321561574935913
+[25503] Extracting tf.nn.separable_conv2d.yaml
+Finish tf.nn.separable_conv2d.yaml, Time: 11.555816650390625
+[25503] Extracting tf.nn.depthwise_conv2d_backprop_input.yaml
+Finish tf.nn.depthwise_conv2d_backprop_input.yaml, Time: 12.779263973236084
+[25503] Extracting tf.nn.depthwise_conv2d_backprop_filter.yaml
+Finish tf.nn.depthwise_conv2d_backprop_filter.yaml, Time: 13.221213579177856
+[25503] Extracting tf.keras.layers.zeropadding3d.yaml
+Finish tf.keras.layers.zeropadding3d.yaml, Time: 13.154908180236816
+[25503] Extracting tf.keras.layers.Conv1D.yaml
+Finish tf.keras.layers.Conv1D.yaml, Time: 13.192848205566406
+[25503] Extracting tf.nn.conv1d_transpose.yaml
+Finish tf.nn.conv1d_transpose.yaml, Time: 13.902751922607422
+[25503] Extracting tf.image.random_hue.yaml
+Finish tf.image.random_hue.yaml, Time: 14.788316488265991
+[25503] Extracting tf.keras.layers.locallyconnected1d.yaml
+Finish tf.keras.layers.locallyconnected1d.yaml, Time: 17.544646978378296
+[25503] Extracting tf.nn.sparse_softmax_cross_entropy_with_logits.yaml
+Finish tf.nn.sparse_softmax_cross_entropy_with_logits.yaml, Time: 18.657278299331665
+[25503] Extracting tf.keras.layers.conv2dtranspose.yaml
+Finish tf.keras.layers.conv2dtranspose.yaml, Time: 21.22700595855713
+[25503] Extracting tf.numpy_function.yaml
+Finish tf.numpy_function.yaml, Time: 27.987172603607178
+[25503] Extracting tf.strings.unicode_decode.yaml
+Finish tf.strings.unicode_decode.yaml, Time: 33.28259325027466
+[25503] Extracting tf.keras.layers.convlstm2d.yaml
+Finish tf.keras.layers.convlstm2d.yaml, Time: 81.09289526939392
+[25503] Extracting tf.keras.backend.learning_phase_scope.yaml
+Finish tf.keras.backend.learning_phase_scope.yaml, Time: 3.9086101055145264
+[25503] Extracting tf.keras.backend.print_tensor.yaml
+Finish tf.keras.backend.print_tensor.yaml, Time: 4.086647033691406
+[25503] Extracting tf.keras.backend.switch.yaml
+Finish tf.keras.backend.switch.yaml, Time: 4.598062753677368
+[25503] Extracting tf.keras.backend.hard_sigmoid.yaml
+Finish tf.keras.backend.hard_sigmoid.yaml, Time: 5.32079291343689
+[25503] Extracting tf.ensure_shape.yaml
+Finish tf.ensure_shape.yaml, Time: 6.267543792724609
+[25503] Extracting tf.math.negative.yaml
+Finish tf.math.negative.yaml, Time: 6.274627208709717
+[25503] Extracting tf.math.imag.yaml
+Finish tf.math.imag.yaml, Time: 6.288249492645264
+[25503] Extracting tf.strings.to_number.yaml
+Finish tf.strings.to_number.yaml, Time: 6.398370265960693
+[25503] Extracting tf.keras.backend.clip.yaml
+Finish tf.keras.backend.clip.yaml, Time: 6.613414287567139
+[25503] Extracting tf.keras.backend.stop_gradient.yaml
+Finish tf.keras.backend.stop_gradient.yaml, Time: 6.62515664100647
+[25503] Extracting tf.debugging.assert_none_equal.yaml
+Finish tf.debugging.assert_none_equal.yaml, Time: 6.673825025558472
+[25503] Extracting tf.math.acosh.yaml
+Finish tf.math.acosh.yaml, Time: 7.174874544143677
+[25503] Extracting tf.keras.backend.argmin.yaml
+Finish tf.keras.backend.argmin.yaml, Time: 7.2467358112335205
+[25503] Extracting tf.sparse.sparse_dense_matmul.yaml
+Finish tf.sparse.sparse_dense_matmul.yaml, Time: 7.395279884338379
+[25503] Extracting tf.math.sin.yaml
+Finish tf.math.sin.yaml, Time: 7.430037975311279
+[25503] Extracting tf.random.categorical.yaml
+Finish tf.random.categorical.yaml, Time: 7.685651779174805
+[25503] Extracting tf.keras.backend.batch_normalization.yaml
+Finish tf.keras.backend.batch_normalization.yaml, Time: 8.044829368591309
+[25503] Extracting tf.linalg.matvec.yaml
+Finish tf.linalg.matvec.yaml, Time: 7.956340551376343
+[25503] Extracting tf.keras.backend.relu.yaml
+Finish tf.keras.backend.relu.yaml, Time: 8.137720346450806
+[25503] Extracting tf.sets.difference.yaml
+Finish tf.sets.difference.yaml, Time: 8.16025185585022
+[25503] Extracting tf.sparse.segment_sum.yaml
+Finish tf.sparse.segment_sum.yaml, Time: 8.545001983642578
+[25503] Extracting tf.gather_nd.yaml
+Finish tf.gather_nd.yaml, Time: 8.504022359848022
+[25503] Extracting tf.debugging.set_log_device_placement.yaml
+Finish tf.debugging.set_log_device_placement.yaml, Time: 8.719404220581055
+[25503] Extracting tf.math.reduce_prod.yaml
+Finish tf.math.reduce_prod.yaml, Time: 9.027976512908936
+[25503] Extracting tf.math.bessel_i1e.yaml
+Finish tf.math.bessel_i1e.yaml, Time: 9.169150829315186
+[25503] Extracting tf.keras.backend.greater.yaml
+Finish tf.keras.backend.greater.yaml, Time: 8.986294269561768
+[25503] Extracting tf.image.adjust_hue.yaml
+Finish tf.image.adjust_hue.yaml, Time: 9.360655546188354
+[25503] Extracting tf.feature_column.make_parse_example_spec.yaml
+Finish tf.feature_column.make_parse_example_spec.yaml, Time: 9.138347864151001
+[25503] Extracting tf.shape_n.yaml
+Finish tf.shape_n.yaml, Time: 9.328280448913574
+[25503] Extracting tf.keras.layers.minimum2.yaml
+Finish tf.keras.layers.minimum2.yaml, Time: 9.25784707069397
+[25503] Extracting tf.distribute.experimental_set_strategy.yaml
+Finish tf.distribute.experimental_set_strategy.yaml, Time: 9.13373613357544
+[25503] Extracting tf.keras.backend.bias_add.yaml
+Finish tf.keras.backend.bias_add.yaml, Time: 9.510507345199585
+[25503] Extracting tf.data.experimental.get_next_as_optional.yaml
+Finish tf.data.experimental.get_next_as_optional.yaml, Time: 9.485261678695679
+[25503] Extracting tf.variable_creator_scope.yaml
+Finish tf.variable_creator_scope.yaml, Time: 9.666879177093506
+[25503] Extracting tf.linalg.matrix_rank.yaml
+Finish tf.linalg.matrix_rank.yaml, Time: 9.728241205215454
+[25503] Extracting tf.math.sigmoid.yaml
+Finish tf.math.sigmoid.yaml, Time: 9.613300323486328
+[25503] Extracting tf.keras.backend.binary_crossentropy.yaml
+Finish tf.keras.backend.binary_crossentropy.yaml, Time: 9.789490699768066
+[25503] Extracting tf.keras.experimental.terminate_keras_multiprocessing_pools.yaml
+Finish tf.keras.experimental.terminate_keras_multiprocessing_pools.yaml, Time: 9.709583520889282
+[25503] Extracting tf.math.abs.yaml
+Finish tf.math.abs.yaml, Time: 9.820070743560791
+[25503] Extracting tf.feature_column.weighted_categorical_column.yaml
+Finish tf.feature_column.weighted_categorical_column.yaml, Time: 9.887590646743774
+[25503] Extracting tf.keras.backend.tile.yaml
+Finish tf.keras.backend.tile.yaml, Time: 9.914191007614136
+[25503] Extracting tf.broadcast_dynamic_shape.yaml
+Finish tf.broadcast_dynamic_shape.yaml, Time: 9.90724492073059
+[25503] Extracting tf.keras.backend.max.yaml
+Finish tf.keras.backend.max.yaml, Time: 10.069705963134766
+[25503] Extracting tf.math.top_k.yaml
+Finish tf.math.top_k.yaml, Time: 10.074602603912354
+[25503] Extracting tf.nn.log_softmax.yaml
+Finish tf.nn.log_softmax.yaml, Time: 10.049484491348267
+[25503] Extracting tf.nn.log_poisson_loss.yaml
+Finish tf.nn.log_poisson_loss.yaml, Time: 10.180534839630127
+[25503] Extracting tf.repeat.yaml
+Finish tf.repeat.yaml, Time: 10.002770185470581
+[25503] Extracting tf.keras.backend.squeeze.yaml
+Finish tf.keras.backend.squeeze.yaml, Time: 9.852806806564331
+[25503] Extracting tf.keras.backend.update_add.yaml
+Finish tf.keras.backend.update_add.yaml, Time: 9.94560980796814
+[25503] Extracting tf.config.experimental_run_functions_eagerly.yaml
+Finish tf.config.experimental_run_functions_eagerly.yaml, Time: 9.941163539886475
+[25503] Extracting tf.config.threading.set_inter_op_parallelism_threads.yaml
+Finish tf.config.threading.set_inter_op_parallelism_threads.yaml, Time: 10.013182640075684
+[25503] Extracting tf.config.get_visible_devices.yaml
+Finish tf.config.get_visible_devices.yaml, Time: 9.958597421646118
+[25503] Extracting tf.keras.backend.conv3d.yaml
+Finish tf.keras.backend.conv3d.yaml, Time: 10.319213390350342
+[25503] Extracting tf.image.image_gradients.yaml
+Finish tf.image.image_gradients.yaml, Time: 10.208330631256104
+[25503] Extracting tf.sparse.cross.yaml
+Finish tf.sparse.cross.yaml, Time: 10.300860404968262
+[25503] Extracting tf.keras.backend.repeat_elements.yaml
+Finish tf.keras.backend.repeat_elements.yaml, Time: 10.02615475654602
+[25503] Extracting tf.math.sign.yaml
+Finish tf.math.sign.yaml, Time: 10.386022567749023
+[25503] Extracting tf.io.gfile.remove.yaml
+Finish tf.io.gfile.remove.yaml, Time: 10.028790712356567
+[25503] Extracting tf.math.bessel_i0.yaml
+Finish tf.math.bessel_i0.yaml, Time: 10.203036069869995
+[25503] Extracting tf.nn.softsign.yaml
+Finish tf.nn.softsign.yaml, Time: 10.155656814575195
+[25503] Extracting tf.math.log1p.yaml
+Finish tf.math.log1p.yaml, Time: 10.123649597167969
+[25503] Extracting tf.sparse.from_dense.yaml
+Finish tf.sparse.from_dense.yaml, Time: 10.090848207473755
+[25503] Extracting tf.keras.preprocessing.text.one_hot.yaml
+Finish tf.keras.preprocessing.text.one_hot.yaml, Time: 10.396173000335693
+[25503] Extracting tf.keras.backend.eye.yaml
+Finish tf.keras.backend.eye.yaml, Time: 10.22022032737732
+[25503] Extracting tf.group.yaml
+Finish tf.group.yaml, Time: 10.13014531135559
+[25503] Extracting tf.sparse.fill_empty_rows.yaml
+Finish tf.sparse.fill_empty_rows.yaml, Time: 10.298126220703125
+[25503] Extracting tf.keras.backend.zeros_like.yaml
+Finish tf.keras.backend.zeros_like.yaml, Time: 10.513487577438354
+[25503] Extracting tf.io.encode_base64.yaml
+Finish tf.io.encode_base64.yaml, Time: 10.238978385925293
+[25503] Extracting tf.strings.bytes_split.yaml
+Finish tf.strings.bytes_split.yaml, Time: 10.249252796173096
+[25503] Extracting tf.histogram_fixed_width_bins.yaml
+Finish tf.histogram_fixed_width_bins.yaml, Time: 10.79039740562439
+[25503] Extracting tf.io.write_file.yaml
+Finish tf.io.write_file.yaml, Time: 10.295261144638062
+[25503] Extracting tf.io.parse_example.yaml
+Finish tf.io.parse_example.yaml, Time: 10.62306022644043
+[25503] Extracting tf.nn.ctc_greedy_decoder.yaml
+Finish tf.nn.ctc_greedy_decoder.yaml, Time: 10.394213438034058
+[25503] Extracting tf.keras.backend.softmax.yaml
+Finish tf.keras.backend.softmax.yaml, Time: 10.292670011520386
+[25503] Extracting tf.keras.datasets.boston_housing.load_data.yaml
+Finish tf.keras.datasets.boston_housing.load_data.yaml, Time: 10.385642528533936
+[25503] Extracting tf.math.expm1.yaml
+Finish tf.math.expm1.yaml, Time: 10.495697736740112
+[25503] Extracting tf.config.experimental.set_synchronous_execution.yaml
+Finish tf.config.experimental.set_synchronous_execution.yaml, Time: 10.666897058486938
+[25503] Extracting tf.fill.yaml
+Finish tf.fill.yaml, Time: 10.813738346099854
+[25503] Extracting tf.io.encode_proto.yaml
+Finish tf.io.encode_proto.yaml, Time: 11.049764394760132
+[25503] Extracting tf.gradients.yaml
+Finish tf.gradients.yaml, Time: 11.263087749481201
+[25503] Extracting tf.keras.backend.categorical_crossentropy.yaml
+Finish tf.keras.backend.categorical_crossentropy.yaml, Time: 11.45314359664917
+[25503] Extracting tf.keras.layers.activation.yaml
+Finish tf.keras.layers.activation.yaml, Time: 11.314287424087524
+[25503] Extracting tf.nn.conv3d.yaml
+Finish tf.nn.conv3d.yaml, Time: 11.769262313842773
+[25503] Extracting tf.nn.max_pool_with_argmax.yaml
+Finish tf.nn.max_pool_with_argmax.yaml, Time: 11.872324705123901
+[25503] Extracting tf.linalg.diag_part.yaml
+Finish tf.linalg.diag_part.yaml, Time: 12.370583295822144
+[25503] Extracting tf.keras.Input.yaml
+Finish tf.keras.Input.yaml, Time: 12.446292161941528
+[25503] Extracting tf.nn.normalize_moments.yaml
+Finish tf.nn.normalize_moments.yaml, Time: 14.173636436462402
+[25503] Extracting tf.keras.models.save_model.yaml
+Finish tf.keras.models.save_model.yaml, Time: 14.097985982894897
+[25503] Extracting tf.keras.layers.zeropadding2d.yaml
+Finish tf.keras.layers.zeropadding2d.yaml, Time: 14.299464225769043
+[25503] Extracting tf.image.random_saturation.yaml
+Finish tf.image.random_saturation.yaml, Time: 15.22093653678894
+[25503] Extracting tf.data.experimental.group_by_reducer.yaml
+Finish tf.data.experimental.group_by_reducer.yaml, Time: 15.468164682388306
+[25503] Extracting tf.image.random_jpeg_quality.yaml
+Finish tf.image.random_jpeg_quality.yaml, Time: 15.857247591018677
+[25503] Extracting tf.keras.layers.AveragePooling2D.yaml
+Finish tf.keras.layers.AveragePooling2D.yaml, Time: 17.385646104812622
+[25503] Extracting tf.strings.ngrams.yaml
+Finish tf.strings.ngrams.yaml, Time: 20.604541063308716
+[25503] Extracting tf.nn.nce_loss.yaml
+Finish tf.nn.nce_loss.yaml, Time: 22.046197175979614
+[25503] Extracting tf.space_to_batch_nd.yaml
+Finish tf.space_to_batch_nd.yaml, Time: 22.30820894241333
+[25503] Extracting tf.strings.regex_replace.yaml
+Finish tf.strings.regex_replace.yaml, Time: 23.92401361465454
+[25503] Extracting tf.io.decode_csv.yaml
+Finish tf.io.decode_csv.yaml, Time: 24.429057359695435
+[25503] Extracting tf.keras.layers.lstmcell.yaml
+Finish tf.keras.layers.lstmcell.yaml, Time: 29.64828634262085
+[25503] Extracting tf.keras.layers.simplernn.yaml
+Finish tf.keras.layers.simplernn.yaml, Time: 79.05243873596191
+[25503] Extracting tf.keras.losses.poisson2.yaml
+Finish tf.keras.losses.poisson2.yaml, Time: 4.360130548477173
+[25503] Extracting tf.data.experimental.bytes_produced_stats.yaml
+Finish tf.data.experimental.bytes_produced_stats.yaml, Time: 5.119465351104736
+[25503] Extracting tf.keras.backend.gather.yaml
+Finish tf.keras.backend.gather.yaml, Time: 6.068509101867676
+[25503] Extracting tf.keras.backend.conv2d.yaml
+Finish tf.keras.backend.conv2d.yaml, Time: 6.264089822769165
+[25503] Extracting tf.sort.yaml
+Finish tf.sort.yaml, Time: 6.400158166885376
+[25503] Extracting tf.nn.relu6.yaml
+Finish tf.nn.relu6.yaml, Time: 6.414101839065552
+[25503] Extracting tf.keras.backend.log.yaml
+Finish tf.keras.backend.log.yaml, Time: 6.559786319732666
+[25503] Extracting tf.linalg.expm.yaml
+Finish tf.linalg.expm.yaml, Time: 6.695392847061157
+[25503] Extracting tf.lite.experimental.load_delegate.yaml
+Finish tf.lite.experimental.load_delegate.yaml, Time: 6.681446075439453
+[25503] Extracting tf.math.multiply_no_nan.yaml
+Finish tf.math.multiply_no_nan.yaml, Time: 6.800731420516968
+[25503] Extracting tf.keras.preprocessing.image.random_channel_shift.yaml
+Finish tf.keras.preprocessing.image.random_channel_shift.yaml, Time: 6.832151174545288
+[25503] Extracting tf.keras.backend.cumsum.yaml
+Finish tf.keras.backend.cumsum.yaml, Time: 6.873245000839233
+[25503] Extracting tf.math.igammac.yaml
+Finish tf.math.igammac.yaml, Time: 7.021358251571655
+[25503] Extracting tf.keras.models.model_from_config.yaml
+Finish tf.keras.models.model_from_config.yaml, Time: 7.0801005363464355
+[25503] Extracting tf.image.rgb_to_hsv.yaml
+Finish tf.image.rgb_to_hsv.yaml, Time: 7.246882438659668
+[25503] Extracting tf.config.list_logical_devices.yaml
+Finish tf.config.list_logical_devices.yaml, Time: 7.532219409942627
+[25503] Extracting tf.ragged.segment_ids_to_row_splits.yaml
+Finish tf.ragged.segment_ids_to_row_splits.yaml, Time: 7.862646579742432
+[25503] Extracting tf.test.create_local_cluster.yaml
+Finish tf.test.create_local_cluster.yaml, Time: 8.036404848098755
+[25503] Extracting tf.debugging.assert_same_float_dtype.yaml
+Finish tf.debugging.assert_same_float_dtype.yaml, Time: 7.984250783920288
+[25503] Extracting tf.realdiv.yaml
+Finish tf.realdiv.yaml, Time: 8.293558120727539
+[25503] Extracting tf.keras.backend.std.yaml
+Finish tf.keras.backend.std.yaml, Time: 8.361247539520264
+[25503] Extracting tf.data.experimental.to_variant.yaml
+Finish tf.data.experimental.to_variant.yaml, Time: 8.262498617172241
+[25503] Extracting tf.math.less_equal.yaml
+Finish tf.math.less_equal.yaml, Time: 8.773580312728882
+[25503] Extracting tf.math.bessel_i1.yaml
+Finish tf.math.bessel_i1.yaml, Time: 8.878684520721436
+[25503] Extracting tf.keras.layers.Attention.yaml
+Finish tf.keras.layers.Attention.yaml, Time: 9.103267908096313
+[25503] Extracting tf.strings.to_hash_bucket_fast.yaml
+Finish tf.strings.to_hash_bucket_fast.yaml, Time: 9.328885078430176
+[25503] Extracting tf.image.grayscale_to_rgb.yaml
+Finish tf.image.grayscale_to_rgb.yaml, Time: 9.290724277496338
+[25503] Extracting tf.linalg.eigh.yaml
+Finish tf.linalg.eigh.yaml, Time: 9.695077180862427
+[25503] Extracting tf.keras.layers.reshape.yaml
+Finish tf.keras.layers.reshape.yaml, Time: 9.423028707504272
+[25503] Extracting tf.debugging.assert_shapes.yaml
+Finish tf.debugging.assert_shapes.yaml, Time: 9.895021915435791
+[25503] Extracting tf.math.reciprocal.yaml
+Finish tf.math.reciprocal.yaml, Time: 9.947953939437866
+[25503] Extracting tf.strings.lower.yaml
+Finish tf.strings.lower.yaml, Time: 9.883499145507812
+[25503] Extracting tf.debugging.assert_integer.yaml
+Finish tf.debugging.assert_integer.yaml, Time: 9.921074628829956
+[25503] Extracting tf.ragged.row_splits_to_segment_ids.yaml
+Finish tf.ragged.row_splits_to_segment_ids.yaml, Time: 10.036373376846313
+[25503] Extracting tf.keras.regularizers.l2.yaml
+Finish tf.keras.regularizers.l2.yaml, Time: 9.916165590286255
+[25503] Extracting tf.linalg.adjoint.yaml
+Finish tf.linalg.adjoint.yaml, Time: 10.013701915740967
+[25503] Extracting tf.math.conj.yaml
+Finish tf.math.conj.yaml, Time: 9.919068098068237
+[25503] Extracting tf.strings.to_hash_bucket.yaml
+Finish tf.strings.to_hash_bucket.yaml, Time: 9.72745394706726
+[25503] Extracting tf.keras.backend.elu.yaml
+Finish tf.keras.backend.elu.yaml, Time: 9.933142185211182
+[25503] Extracting tf.linalg.global_norm.yaml
+Finish tf.linalg.global_norm.yaml, Time: 9.994267702102661
+[25503] Extracting tf.nn.weighted_cross_entropy_with_logits.yaml
+Finish tf.nn.weighted_cross_entropy_with_logits.yaml, Time: 10.332679510116577
+[25503] Extracting tf.estimator.experimental.make_early_stopping_hook.yaml
+Finish tf.estimator.experimental.make_early_stopping_hook.yaml, Time: 10.343662977218628
+[25503] Extracting tf.keras.layers.zeropadding1d.yaml
+Finish tf.keras.layers.zeropadding1d.yaml, Time: 10.00475811958313
+[25503] Extracting tf.io.gfile.mkdir.yaml
+Finish tf.io.gfile.mkdir.yaml, Time: 9.96648621559143
+[25503] Extracting tf.sparse.mask.yaml
+Finish tf.sparse.mask.yaml, Time: 9.93791937828064
+[25503] Extracting tf.image.rgb_to_yuv.yaml
+Finish tf.image.rgb_to_yuv.yaml, Time: 10.282864809036255
+[25503] Extracting tf.keras.backend.minimum.yaml
+Finish tf.keras.backend.minimum.yaml, Time: 10.10903263092041
+[25503] Extracting tf.image.psnr.yaml
+Finish tf.image.psnr.yaml, Time: 10.1318519115448
+[25503] Extracting tf.math.reduce_variance.yaml
+Finish tf.math.reduce_variance.yaml, Time: 10.431296586990356
+[25503] Extracting tf.keras.layers.softmax.yaml
+Finish tf.keras.layers.softmax.yaml, Time: 10.02817177772522
+[25503] Extracting tf.parallel_stack.yaml
+Finish tf.parallel_stack.yaml, Time: 10.00822901725769
+[25503] Extracting tf.keras.losses.logcosh2.yaml
+Finish tf.keras.losses.logcosh2.yaml, Time: 10.214374780654907
+[25503] Extracting tf.strings.regex_full_match.yaml
+Finish tf.strings.regex_full_match.yaml, Time: 10.545907735824585
+[25503] Extracting tf.data.experimental.rejection_resample.yaml
+Finish tf.data.experimental.rejection_resample.yaml, Time: 10.915097713470459
+[25503] Extracting tf.experimental.function_executor_type.yaml
+Finish tf.experimental.function_executor_type.yaml, Time: 11.017518758773804
+[25503] Extracting tf.nn.leaky_relu.yaml
+Finish tf.nn.leaky_relu.yaml, Time: 10.627974510192871
+[25503] Extracting tf.data.experimental.Counter.yaml
+Finish tf.data.experimental.Counter.yaml, Time: 10.591938495635986
+[25503] Extracting tf.debugging.assert_non_negative.yaml
+Finish tf.debugging.assert_non_negative.yaml, Time: 10.588649988174438
+[25503] Extracting tf.debugging.assert_less_equal.yaml
+Finish tf.debugging.assert_less_equal.yaml, Time: 10.96402645111084
+[25503] Extracting tf.quantization.fake_quant_with_min_max_args_gradient.yaml
+Finish tf.quantization.fake_quant_with_min_max_args_gradient.yaml, Time: 11.1873459815979
+[25503] Extracting tf.math.in_top_k.yaml
+Finish tf.math.in_top_k.yaml, Time: 10.919389486312866
+[25503] Extracting tf.dtypes.as_dtype.yaml
+Finish tf.dtypes.as_dtype.yaml, Time: 11.283560037612915
+[25503] Extracting tf.nn.avg_pool3d.yaml
+Finish tf.nn.avg_pool3d.yaml, Time: 11.264216661453247
+[25503] Extracting tf.quantization.dequantize.yaml
+Finish tf.quantization.dequantize.yaml, Time: 11.459583520889282
+[25503] Extracting tf.signal.hamming_window.yaml
+Finish tf.signal.hamming_window.yaml, Time: 11.653352737426758
+[25503] Extracting tf.extract_volume_patches.yaml
+Finish tf.extract_volume_patches.yaml, Time: 11.69272756576538
+[25503] Extracting tf.summary.scalar.yaml
+Finish tf.summary.scalar.yaml, Time: 11.803111791610718
+[25503] Extracting tf.io.encode_jpeg.yaml
+Finish tf.io.encode_jpeg.yaml, Time: 12.007503986358643
+[25503] Extracting tf.nn.dropout.yaml
+Finish tf.nn.dropout.yaml, Time: 11.867034912109375
+[25503] Extracting tf.feature_column.embedding_column.yaml
+Finish tf.feature_column.embedding_column.yaml, Time: 12.237676620483398
+[25503] Extracting tf.io.decode_jpeg.yaml
+Finish tf.io.decode_jpeg.yaml, Time: 12.192826509475708
+[25503] Extracting tf.strings.substr.yaml
+Finish tf.strings.substr.yaml, Time: 12.48185396194458
+[25503] Extracting tf.signal.frame.yaml
+Finish tf.signal.frame.yaml, Time: 12.506449937820435
+[25503] Extracting tf.image.non_max_suppression.yaml
+Finish tf.image.non_max_suppression.yaml, Time: 13.174536228179932
+[25503] Extracting tf.image.non_max_suppression_with_scores.yaml
+Finish tf.image.non_max_suppression_with_scores.yaml, Time: 13.635615587234497
+[25503] Extracting tf.feature_column.shared_embeddings.yaml
+Finish tf.feature_column.shared_embeddings.yaml, Time: 13.671615600585938
+[25503] Extracting tf.feature_column.sequence_categorical_column_with_vocabulary_list.yaml
+Finish tf.feature_column.sequence_categorical_column_with_vocabulary_list.yaml, Time: 14.70103120803833
+[25503] Extracting tf.keras.layers.GlobalMaxPool1D.yaml
+Finish tf.keras.layers.GlobalMaxPool1D.yaml, Time: 15.765284299850464
+[25503] Extracting tf.keras.layers.embedding.yaml
+Finish tf.keras.layers.embedding.yaml, Time: 19.57746171951294
+[25503] Extracting tf.keras.layers.MaxPool2D.yaml
+Finish tf.keras.layers.MaxPool2D.yaml, Time: 19.653356313705444
+[25503] Extracting tf.keras.layers.depthwiseconv2d.yaml
+Finish tf.keras.layers.depthwiseconv2d.yaml, Time: 20.210230112075806
+[25503] Extracting tf.print.yaml
+Finish tf.print.yaml, Time: 21.40679907798767
+[25503] Extracting tf.keras.layers.AveragePooling3D.yaml
+Finish tf.keras.layers.AveragePooling3D.yaml, Time: 21.613498210906982
+[25503] Extracting tf.keras.models.clone_model.yaml
+Finish tf.keras.models.clone_model.yaml, Time: 21.81577205657959
+[25503] Extracting tf.keras.layers.MaxPool3D.yaml
+Finish tf.keras.layers.MaxPool3D.yaml, Time: 21.69575834274292
+[25503] Extracting tf.keras.layers.SeparableConv2D.yaml
+Finish tf.keras.layers.SeparableConv2D.yaml, Time: 21.628103494644165
+[25503] Extracting tf.nn.pool.yaml
+Finish tf.nn.pool.yaml, Time: 22.439871311187744
+[25503] Extracting tf.nn.ctc_loss.yaml
+Finish tf.nn.ctc_loss.yaml, Time: 26.58499789237976
+[25503] Extracting tf.keras.preprocessing.text.hashing_trick.yaml
+Finish tf.keras.preprocessing.text.hashing_trick.yaml, Time: 27.197158813476562
+[25503] Extracting tf.nn.fractional_avg_pool.yaml
+Finish tf.nn.fractional_avg_pool.yaml, Time: 28.248064517974854
+[25503] Extracting tf.config.experimental_connect_to_cluster.yaml
+Finish tf.config.experimental_connect_to_cluster.yaml, Time: 29.06261444091797
+[25503] Extracting tf.ragged.stack_dynamic_partitions.yaml
+Finish tf.ragged.stack_dynamic_partitions.yaml, Time: 29.293632745742798
+[25503] Extracting tf.random.fixed_unigram_candidate_sampler.yaml
+Finish tf.random.fixed_unigram_candidate_sampler.yaml, Time: 31.39247703552246
+[25503] Extracting tf.quantization.quantize.yaml
+Finish tf.quantization.quantize.yaml, Time: 32.12245059013367
+[25503] Extracting tf.feature_column.crossed_column.yaml
+Finish tf.feature_column.crossed_column.yaml, Time: 36.4294011592865
+[25503] Extracting tf.image.extract_glimpse.yaml
+Finish tf.image.extract_glimpse.yaml, Time: 37.56277775764465
+[25503] Extracting tf.keras.layers.experimental.preprocessing.preprocessinglayer.yaml
+Finish tf.keras.layers.experimental.preprocessing.preprocessinglayer.yaml, Time: 41.472537994384766
+[25503] Extracting tf.map_fn.yaml
+Finish tf.map_fn.yaml, Time: 42.654977321624756
+[25503] Extracting tf.linalg.normalize.yaml
+Finish tf.linalg.normalize.yaml, Time: 99.60396027565002
+[25503] Extracting tf.keras.layers.gru.yaml
+Finish tf.keras.layers.gru.yaml, Time: 102.96455144882202
+[25503] Extracting tf.saved_model.contains_saved_model.yaml
+Finish tf.saved_model.contains_saved_model.yaml, Time: 3.8287672996520996
+[25503] Extracting tf.keras.backend.square.yaml
+Finish tf.keras.backend.square.yaml, Time: 4.320987939834595
+[25503] Extracting tf.keras.backend.expand_dims.yaml
+Finish tf.keras.backend.expand_dims.yaml, Time: 4.5104076862335205
+[25503] Extracting tf.math.ceil.yaml
+Finish tf.math.ceil.yaml, Time: 4.585618495941162
+[25503] Extracting tf.math.floor.yaml
+Finish tf.math.floor.yaml, Time: 4.712645530700684
+[25503] Extracting tf.compat.as_bytes.yaml
+Finish tf.compat.as_bytes.yaml, Time: 5.580401420593262
+[25503] Extracting tf.keras.preprocessing.sequence.make_sampling_table.yaml
+Finish tf.keras.preprocessing.sequence.make_sampling_table.yaml, Time: 5.5352623462677
+[25503] Extracting tf.keras.backend.prod.yaml
+Finish tf.keras.backend.prod.yaml, Time: 6.044320583343506
+[25503] Extracting tf.keras.utils.custom_object_scope.yaml
+Finish tf.keras.utils.custom_object_scope.yaml, Time: 6.2707679271698
+[25503] Extracting tf.unique.yaml
+Finish tf.unique.yaml, Time: 6.367032051086426
+[25503] Extracting tf.keras.backend.any.yaml
+Finish tf.keras.backend.any.yaml, Time: 6.462902784347534
+[25503] Extracting tf.linalg.eigvalsh.yaml
+Finish tf.linalg.eigvalsh.yaml, Time: 7.102153062820435
+[25503] Extracting tf.image.adjust_contrast.yaml
+Finish tf.image.adjust_contrast.yaml, Time: 7.6671764850616455
+[25503] Extracting tf.math.sqrt.yaml
+Finish tf.math.sqrt.yaml, Time: 7.87255859375
+[25503] Extracting tf.keras.backend.update_sub.yaml
+Finish tf.keras.backend.update_sub.yaml, Time: 7.978472709655762
+[25503] Extracting tf.keras.preprocessing.image.apply_channel_shift.yaml
+Finish tf.keras.preprocessing.image.apply_channel_shift.yaml, Time: 8.17967939376831
+[25503] Extracting tf.math.asinh.yaml
+Finish tf.math.asinh.yaml, Time: 8.233356714248657
+[25503] Extracting tf.keras.backend.random_uniform.yaml
+Finish tf.keras.backend.random_uniform.yaml, Time: 8.257007122039795
+[25503] Extracting tf.linalg.cholesky.yaml
+Finish tf.linalg.cholesky.yaml, Time: 8.0380859375
+[25503] Extracting tf.estimator.export.build_parsing_serving_input_receiver_fn.yaml
+Finish tf.estimator.export.build_parsing_serving_input_receiver_fn.yaml, Time: 8.117998600006104
+[25503] Extracting tf.math.rsqrt.yaml
+Finish tf.math.rsqrt.yaml, Time: 8.235846042633057
+[25503] Extracting tf.image.yuv_to_rgb.yaml
+Finish tf.image.yuv_to_rgb.yaml, Time: 8.44883918762207
+[25503] Extracting tf.unstack.yaml
+Finish tf.unstack.yaml, Time: 8.741861581802368
+[25503] Extracting tf.load_op_library.yaml
+Finish tf.load_op_library.yaml, Time: 8.682512283325195
+[25503] Extracting tf.keras.regularizers.l1.yaml
+Finish tf.keras.regularizers.l1.yaml, Time: 8.835313558578491
+[25503] Extracting tf.keras.backend.set_floatx.yaml
+Finish tf.keras.backend.set_floatx.yaml, Time: 8.93439269065857
+[25503] Extracting tf.keras.activations.softplus.yaml
+Finish tf.keras.activations.softplus.yaml, Time: 8.53627061843872
+[25503] Extracting tf.nest.flatten.yaml
+Finish tf.nest.flatten.yaml, Time: 9.16983962059021
+[25503] Extracting tf.keras.layers.relu.yaml
+Finish tf.keras.layers.relu.yaml, Time: 9.21098256111145
+[25503] Extracting tf.keras.losses.categorical_hinge.yaml
+Finish tf.keras.losses.categorical_hinge.yaml, Time: 9.217361688613892
+[25503] Extracting tf.keras.backend.dtype.yaml
+Finish tf.keras.backend.dtype.yaml, Time: 9.157952785491943
+[25503] Extracting tf.keras.backend.concatenate.yaml
+Finish tf.keras.backend.concatenate.yaml, Time: 9.331856489181519
+[25503] Extracting tf.signal.fftshift.yaml
+Finish tf.signal.fftshift.yaml, Time: 9.007473230361938
+[25503] Extracting tf.rank.yaml
+Finish tf.rank.yaml, Time: 9.422059535980225
+[25503] Extracting tf.histogram_fixed_width.yaml
+Finish tf.histogram_fixed_width.yaml, Time: 9.587955951690674
+[25503] Extracting tf.keras.losses.hinge2.yaml
+Finish tf.keras.losses.hinge2.yaml, Time: 9.514847993850708
+[25503] Extracting tf.broadcast_static_shape.yaml
+Finish tf.broadcast_static_shape.yaml, Time: 9.606684446334839
+[25503] Extracting tf.math.greater_equal.yaml
+Finish tf.math.greater_equal.yaml, Time: 9.679240942001343
+[25503] Extracting tf.keras.layers.cropping1d.yaml
+Finish tf.keras.layers.cropping1d.yaml, Time: 9.65500807762146
+[25503] Extracting tf.recompute_grad.yaml
+Finish tf.recompute_grad.yaml, Time: 9.719174861907959
+[25503] Extracting tf.keras.losses.KLD.yaml
+Finish tf.keras.losses.KLD.yaml, Time: 9.56643271446228
+[25503] Extracting tf.train.load_checkpoint.yaml
+Finish tf.train.load_checkpoint.yaml, Time: 9.734599351882935
+[25503] Extracting tf.keras.layers.gaussiannoise.yaml
+Finish tf.keras.layers.gaussiannoise.yaml, Time: 9.499195575714111
+[25503] Extracting tf.keras.layers.activityregularization.yaml
+Finish tf.keras.layers.activityregularization.yaml, Time: 9.8430335521698
+[25503] Extracting tf.identity.yaml
+Finish tf.identity.yaml, Time: 9.95290994644165
+[25503] Extracting tf.keras.layers.alphadropout.yaml
+Finish tf.keras.layers.alphadropout.yaml, Time: 9.960785627365112
+[25503] Extracting tf.keras.backend.tanh.yaml
+Finish tf.keras.backend.tanh.yaml, Time: 9.898406505584717
+[25503] Extracting tf.keras.backend.spatial_3d_padding.yaml
+Finish tf.keras.backend.spatial_3d_padding.yaml, Time: 9.942450046539307
+[25503] Extracting tf.math.reduce_euclidean_norm.yaml
+Finish tf.math.reduce_euclidean_norm.yaml, Time: 10.199846744537354
+[25503] Extracting tf.math.real.yaml
+Finish tf.math.real.yaml, Time: 9.892258644104004
+[25503] Extracting tf.keras.datasets.cifar100.load_data.yaml
+Finish tf.keras.datasets.cifar100.load_data.yaml, Time: 9.975494861602783
+[25503] Extracting tf.edit_distance.yaml
+Finish tf.edit_distance.yaml, Time: 10.100918292999268
+[25503] Extracting tf.timestamp.yaml
+Finish tf.timestamp.yaml, Time: 9.838196039199829
+[25503] Extracting tf.keras.activations.softsign.yaml
+Finish tf.keras.activations.softsign.yaml, Time: 10.171232461929321
+[25503] Extracting tf.debugging.assert_scalar.yaml
+Finish tf.debugging.assert_scalar.yaml, Time: 10.177502155303955
+[25503] Extracting tf.keras.backend.conv1d.yaml
+Finish tf.keras.backend.conv1d.yaml, Time: 10.149519681930542
+[25503] Extracting tf.math.xlogy.yaml
+Finish tf.math.xlogy.yaml, Time: 10.068914651870728
+[25503] Extracting tf.nn.ctc_unique_labels.yaml
+Finish tf.nn.ctc_unique_labels.yaml, Time: 10.177045106887817
+[25503] Extracting tf.keras.backend.set_epsilon.yaml
+Finish tf.keras.backend.set_epsilon.yaml, Time: 10.079974174499512
+[25503] Extracting tf.keras.utils.to_categorical.yaml
+Finish tf.keras.utils.to_categorical.yaml, Time: 10.266218662261963
+[25503] Extracting tf.image.extract_patches.yaml
+Finish tf.image.extract_patches.yaml, Time: 10.610714197158813
+[25503] Extracting tf.io.serialize_sparse.yaml
+Finish tf.io.serialize_sparse.yaml, Time: 10.130764484405518
+[25503] Extracting tf.io.decode_bmp.yaml
+Finish tf.io.decode_bmp.yaml, Time: 10.17593240737915
+[25503] Extracting tf.math.scalar_mul.yaml
+Finish tf.math.scalar_mul.yaml, Time: 10.219082355499268
+[25503] Extracting tf.math.reduce_max.yaml
+Finish tf.math.reduce_max.yaml, Time: 10.431104898452759
+[25503] Extracting tf.sparse.softmax.yaml
+Finish tf.sparse.softmax.yaml, Time: 10.135769367218018
+[25503] Extracting tf.signal.fft2d.yaml
+Finish tf.signal.fft2d.yaml, Time: 10.149451732635498
+[25503] Extracting tf.broadcast_to.yaml
+Finish tf.broadcast_to.yaml, Time: 10.218748569488525
+[25503] Extracting tf.linalg.cross.yaml
+Finish tf.linalg.cross.yaml, Time: 10.345725059509277
+[25503] Extracting tf.sparse.split.yaml
+Finish tf.sparse.split.yaml, Time: 10.460700273513794
+[25503] Extracting tf.tile.yaml
+Finish tf.tile.yaml, Time: 10.33443307876587
+[25503] Extracting tf.cond.yaml
+Finish tf.cond.yaml, Time: 10.515763521194458
+[25503] Extracting tf.autograph.to_graph.yaml
+Finish tf.autograph.to_graph.yaml, Time: 10.470332384109497
+[25503] Extracting tf.io.decode_and_crop_jpeg.yaml
+Finish tf.io.decode_and_crop_jpeg.yaml, Time: 11.010143518447876
+[25503] Extracting tf.linalg.solve.yaml
+Finish tf.linalg.solve.yaml, Time: 10.711199045181274
+[25503] Extracting tf.train.checkpoints_iterator.yaml
+Finish tf.train.checkpoints_iterator.yaml, Time: 11.185118913650513
+[25503] Extracting tf.linalg.triangular_solve.yaml
+Finish tf.linalg.triangular_solve.yaml, Time: 11.068737030029297
+[25503] Extracting tf.keras.preprocessing.image.save_img.yaml
+Finish tf.keras.preprocessing.image.save_img.yaml, Time: 10.758995294570923
+[25503] Extracting tf.math.segment_prod.yaml
+Finish tf.math.segment_prod.yaml, Time: 10.666760444641113
+[25503] Extracting tf.zeros.yaml
+Finish tf.zeros.yaml, Time: 11.016390800476074
+[25503] Extracting tf.random.stateless_normal.yaml
+Finish tf.random.stateless_normal.yaml, Time: 10.775103092193604
+[25503] Extracting tf.keras.models.load_model.yaml
+Finish tf.keras.models.load_model.yaml, Time: 11.791960000991821
+[25503] Extracting tf.random.poisson.yaml
+Finish tf.random.poisson.yaml, Time: 12.059025287628174
+[25503] Extracting tf.keras.backend.foldl.yaml
+Finish tf.keras.backend.foldl.yaml, Time: 12.45926022529602
+[25503] Extracting tf.nn.conv1d.yaml
+Finish tf.nn.conv1d.yaml, Time: 12.931461095809937
+[25503] Extracting tf.strings.unicode_split.yaml
+Finish tf.strings.unicode_split.yaml, Time: 13.167121410369873
+[25503] Extracting tf.keras.layers.upsampling2d.yaml
+Finish tf.keras.layers.upsampling2d.yaml, Time: 14.20937442779541
+[25503] Extracting tf.feature_column.sequence_categorical_column_with_vocabulary_file.yaml
+Finish tf.feature_column.sequence_categorical_column_with_vocabulary_file.yaml, Time: 14.195981979370117
+[25503] Extracting tf.while_loop.yaml
+Finish tf.while_loop.yaml, Time: 16.225460290908813
+[25503] Extracting tf.nn.sufficient_statistics.yaml
+Finish tf.nn.sufficient_statistics.yaml, Time: 19.549389839172363
+[25503] Extracting tf.batch_to_space.yaml
+Finish tf.batch_to_space.yaml, Time: 21.492486238479614
+[25503] Extracting tf.keras.layers.conv3dtranspose.yaml
+Finish tf.keras.layers.conv3dtranspose.yaml, Time: 21.46403455734253
+[25503] Extracting tf.keras.estimator.model_to_estimator.yaml
+Finish tf.keras.estimator.model_to_estimator.yaml, Time: 25.347074031829834
+[25503] Extracting tf.keras.backend.rnn.yaml
+Finish tf.keras.backend.rnn.yaml, Time: 26.37334704399109
+[25503] Extracting tf.estimator.classifier_parse_example_spec.yaml
+Finish tf.estimator.classifier_parse_example_spec.yaml, Time: 30.060203552246094
+[25503] Extracting tf.keras.layers.grucell.yaml
+Finish tf.keras.layers.grucell.yaml, Time: 31.287378549575806
+[25503] Extracting tf.keras.layers.bidirectional.yaml
+Finish tf.keras.layers.bidirectional.yaml, Time: 33.67331075668335
+[25503] Extracting tf.nn.conv2d.yaml
+Finish tf.nn.conv2d.yaml, Time: 35.04751467704773
+[25503] Extracting tf.summary.audio.yaml
+Finish tf.summary.audio.yaml, Time: 45.11450457572937
+[25503] Extracting tf.keras.layers.layer.yaml
+Finish tf.keras.layers.layer.yaml, Time: 54.98224115371704
+All finish
+[25503] Extracting tf.keras.backend.batch_flatten.yaml
+Finish tf.keras.backend.batch_flatten.yaml, Time: 1.864412546157837
+[25503] Extracting tf.keras.backend.sigmoid.yaml
+Finish tf.keras.backend.sigmoid.yaml, Time: 1.9460506439208984
+[25503] Extracting tf.keras.layers.concatenate2.yaml
+Finish tf.keras.layers.concatenate2.yaml, Time: 2.119020700454712
+[25503] Extracting tf.sparse.slice.yaml
+Finish tf.sparse.slice.yaml, Time: 2.211261034011841
+[25503] Extracting tf.math.reduce_logsumexp.yaml
+Finish tf.math.reduce_logsumexp.yaml, Time: 2.5990192890167236
+[25503] Extracting tf.keras.preprocessing.image.apply_affine_transform.yaml
+Finish tf.keras.preprocessing.image.apply_affine_transform.yaml, Time: 4.11417293548584
+[25503] Extracting tf.tensordot.yaml
+Finish tf.tensordot.yaml, Time: 17.70760989189148
+[25503] Extracting tf.split.yaml
+Finish tf.split.yaml, Time: 39.49244499206543
+Precision
+{'dtype': 0.9009009009009009, 'structure': 1.0, 'shape': 0.8863636363636364, 'validvalue': 0.8947368421052632, 'all': 0.9008620689655172}
+Recall
+{'dtype': 0.7352941176470589, 'structure': 0.8235294117647058, 'shape': 0.6724137931034483, 'validvalue': 0.37777777777777777, 'all': 0.6656050955414012}
+F1
+{'dtype': 0.8097165991902834, 'structure': 0.9032258064516129, 'shape': 0.7647058823529411, 'validvalue': 0.53125, 'all': 0.7655677655677654}
+accuracy
+0.5508982035928144

@@ -1,0 +1,36 @@
+constraints:
+  dim:
+    default: '-1'
+    descp: The dimension along which to take the one dimensional Hermitian FFT.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor representing a half-Hermitian signal
+    doc_dtype:
+    - Tensor
+  n:
+    default: None
+    descp: 'Output signal length. This determines the length of the real output. If
+      given, the input will either be zero-padded or trimmed to this length before
+      computing the Hermitian FFT. Defaults to even output: `n=2*(input.size(dim)
+      - 1)`.'
+    doc_dtype:
+    - int
+  norm:
+    default: None
+    descp: ''
+    doc_dtype:
+    - str
+inputs:
+  optional:
+  - n
+  - dim
+  - norm
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/fft.html#torch.fft.hfft
+package: torch
+ret_type: Tensor
+target: hfft
+title: torch.fft.hfft
+version: 1.7.0

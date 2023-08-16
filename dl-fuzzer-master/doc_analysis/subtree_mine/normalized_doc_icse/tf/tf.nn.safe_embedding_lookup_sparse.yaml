@@ -1,0 +1,72 @@
+constraints:
+  combiner:
+    default: mean
+    descp: A string specifying how to combine embedding results for each entry. Currently
+      "mean", "sqrtn" and "sum" are supported, with "mean" the default.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_TYPE specifying how to combine embedding results for each entry
+    - Currently QSTR are supported with QSTR the default
+  default_id:
+    default: None
+    descp: The id to use for an entry with no features.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The id to use for an entry with no features
+  embedding_weights:
+    descp: A list of `P` float `Tensor`s or values representing partitioned embedding
+      `Tensor`s.  Alternatively, a `PartitionedVariable`created by partitioning along
+      dimension 0.  The total unpartitioned shape should be `[e_0, e_1, ..., e_m]`,
+      where `e_0` represents the vocab size and `e_1, ..., e_m` are the embedding
+      dimensions.
+    normalized_descp:
+    - A D_STRUCTURE of QSTR D_TYPE D_STRUCTUREs or values representing partitioned
+      embedding D_STRUCTUREs
+    - Alternatively a QSTR created by partitioning along dimension CONSTANT_NUM
+    - The total unpartitioned shape should be BSTR where QSTR e CONSTANT_NUM e_m are
+      the embedding dimensions
+  max_norm:
+    default: None
+    descp: If not `None`, all embeddings are l2-normalized to max_norm before combining.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If not QSTR all embeddings are l2 normalized to max_norm before combining
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for this operation BSTR
+  sparse_ids:
+    descp: '`SparseTensor` of shape `[d_0, d_1, ..., d_n]` containing the ids. `d_0`
+      is typically batch size.'
+    normalized_descp:
+    - D_STRUCTURE of shape BSTR containing the ids
+    - d CONSTANT_NUM is typically batch size
+  sparse_weights:
+    default: None
+    descp: '`SparseTensor` of same shape as `sparse_ids`, containing float weights
+      corresponding to `sparse_ids`, or `None` if all weights are be assumed to be
+      1.0.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of same shape as PARAM containing D_TYPE weights corresponding to
+      PARAM or QSTR if all weights are be assumed to be CONSTANT_FLOAT
+exceptions:
+- ValueError: if `embedding_weights` is empty.
+inputs:
+  optional:
+  - sparse_weights
+  - combiner
+  - default_id
+  - max_norm
+  - name
+  required:
+  - embedding_weights
+  - sparse_ids
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/safe_embedding_lookup_sparse
+outputs: Dense `Tensor` of shape `[d_0, d_1, ..., d_{n-1}, e_1, ..., e_m]`.
+package: tensorflow
+target: safe_embedding_lookup_sparse
+title: tf.nn.safe_embedding_lookup_sparse
+version: 2.1.0

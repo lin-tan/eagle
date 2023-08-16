@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.load_op_library
+constraints:
+  library_filename:
+    descp: Path to the plugin. Relative or absolute filesystem path to a dynamic library
+      file.
+exceptions:
+- RuntimeError: when unable to load the library or get the python wrappers.
+inputs:
+  optional: []
+  required:
+  - library_filename
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/load_op_library
+outputs: A python module containing the Python wrappers for Ops defined in the plugin.
+package: tensorflow
+target: load_op_library
+title: tf.load_op_library
+version: 2.1.0

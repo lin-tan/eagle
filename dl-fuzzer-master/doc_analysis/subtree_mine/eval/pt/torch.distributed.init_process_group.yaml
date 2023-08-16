@@ -1,0 +1,11 @@
+constraints:
+  rank:
+    default: '-1'
+    descp: Rank of the current process. Required if `store` is specified.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.distributed.init_process_group

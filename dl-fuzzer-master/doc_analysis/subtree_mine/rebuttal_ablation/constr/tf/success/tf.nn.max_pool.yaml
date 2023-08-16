@@ -1,0 +1,145 @@
+aliases:
+- tf.compat.v1.nn.max_pool_v2
+constraints:
+  data_format:
+    default: None
+    descp: A string. Specifies the channel dimension. For N=1 it can be either "NWC"
+      (default) or "NCW", for N=2 it can be either "NHWC" (default) or "NCHW" and
+      for N=3 either "NDHWC" (default) or "NCDHW".
+    dtype:
+    - int
+    - numeric
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  input:
+    descp: Tensor of rank N+2, of shape `[batch_size] + input_spatial_shape + [num_channels]`
+      if `data_format` does not start with "NC" (default), or`[batch_size, num_channels]
+      + input_spatial_shape` if data_format starts with "NC". Pooling happens over
+      the spatial dimensions only.
+    dtype:
+    - '&data_format'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (default)
+    - '[batch_size'
+    - '[batch_size]'
+    - '[num_channels]'
+    - data_format
+    - num_channels]
+    - starts
+    - with
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - if_data_format_starts_with
+    - nc
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&data_format'
+    - '[1]'
+    - '[2]'
+    - '[batch_size,num_channels]'
+    - '[batch_size]'
+    - '[n]'
+    - '[nc,nc]'
+    - '[nc]'
+    - '[num_channels]'
+    tensor_t:
+    - tf.tensor
+  ksize:
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`. The size of
+      the window for each dimension of the input tensor.
+    dtype:
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: Optional name for the operation.
+    dtype:
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  padding:
+    descp: A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the
+      "returns" section of `tf.nn.convolution` for details.
+  strides:
+    descp: An int or list of `ints` that has length `1`, `N` or `N+2`. The stride
+      of the sliding window for each dimension of the input tensor.
+    dtype:
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - input
+  - ksize
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/max_pool
+outputs: A `Tensor` of format specified by `data_format`. The max pooled output tensor.
+package: tensorflow
+target: max_pool
+title: tf.nn.max_pool
+version: 2.1.0

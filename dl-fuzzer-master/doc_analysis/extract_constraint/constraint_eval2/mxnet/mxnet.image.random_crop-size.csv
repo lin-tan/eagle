@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Size of the crop formatted as (width, height). If the size is larger","than the image, then the source image is upsampled to size and returned.",,prim_dtype,dtype(numeric),,1
+"Size of the crop formatted as (width, height). If the size is larger","than the image, then the source image is upsampled to size and returned.",,nonprim_dtype,structure(tuple),,1
+"Size of the crop formatted as (width, height). If the size is larger","than the image, then the source image is upsampled to size and returned.",,shape,shape([2]),,1

@@ -1,0 +1,35 @@
+constraints:
+  Tout:
+    descp: A list of tf.DTypes. A list of output types.
+  branch_index:
+    descp: A Tensor of type int32. The branch selector, an int32 Tensor.
+  branches:
+    descp: A list of functions decorated with @Defun that has length >= 1. A list
+      of functions each of which takes 'inputs' and returns a list of tensors, whose
+      types are the same as what every other branch returns.
+  input:
+    descp: A list of Tensor objects. A list of input tensors passed to the branch
+      function.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    default: '[]'
+    descp: An optional list of shapes (each a tf.TensorShape or list of ints). Defaults
+      to [].
+inputs:
+  optional:
+  - output_shapes
+  - name
+  required:
+  - branch_index
+  - input
+  - Tout
+  - branches
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Case
+outputs:
+- A list of Tensor objects of type Tout.
+package: tensorflow
+target: Case
+title: tf.raw_ops.Case
+version: 2.3.0

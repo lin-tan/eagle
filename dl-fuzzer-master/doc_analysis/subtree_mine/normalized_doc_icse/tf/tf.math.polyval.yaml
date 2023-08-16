@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.math.polyval
+constraints:
+  coeffs:
+    descp: A list of `Tensor` representing the coefficients of the polynomial.
+    normalized_descp:
+    - A D_STRUCTURE of D_STRUCTURE representing the coefficients of the polynomial
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: A `Tensor` representing the variable of the polynomial.
+    normalized_descp:
+    - A D_STRUCTURE representing the variable of the polynomial
+inputs:
+  optional:
+  - name
+  required:
+  - coeffs
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/polyval
+outputs: A `tensor` of the shape as the expression p(x) with usual broadcasting rules
+  for element-wise addition and multiplication applied.
+package: tensorflow
+target: polyval
+title: tf.math.polyval
+version: 2.1.0

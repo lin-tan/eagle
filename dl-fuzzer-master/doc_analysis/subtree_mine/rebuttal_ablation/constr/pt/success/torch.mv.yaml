@@ -1,0 +1,52 @@
+constraints:
+  input:
+    descp: matrix to be multiplied
+    doc_dtype: Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  vec:
+    descp: vector to be multiplied
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - string
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[c]'
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - vec
+link: https://pytorch.org/docs/stable/torch.html#torch.mv
+package: torch
+ret_type: Tensor
+target: mv
+title: torch.mv
+version: 1.5.0

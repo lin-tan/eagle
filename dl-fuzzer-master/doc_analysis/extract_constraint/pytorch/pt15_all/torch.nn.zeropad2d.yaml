@@ -1,0 +1,23 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype:
+    - int
+    - tuple
+    dtype:
+    - int
+    structure:
+    - tuple
+inputs:
+  optional: []
+  required:
+  - padding
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.ZeroPad2d
+package: torch
+target: ZeroPad2d
+title: torch.nn.ZeroPad2d
+version: 1.5.0
+layer_constructor: true
+check_nan: true

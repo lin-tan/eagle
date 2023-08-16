@@ -1,0 +1,17 @@
+constraints:
+  kernel_size:
+    descp: Specifies the dimensions of the convolution window.
+    doc_dtype:
+    - int
+    - tuple/list of 3 int
+    dtype:
+    - int
+    structure:
+    - list
+    - tuple
+    ndim:
+    - '1'
+    shape:
+    - '[3]'
+
+title: mxnet.gluon.nn.Conv3DTranspose

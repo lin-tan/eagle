@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(Optional.) A `tf.int64` scalar `tf.Tensor`, representing the random seed that will be used to create the distribution. See`tf.compat.v1.set_random_seed` for behavior.",None,prim_dtype,dtype(tf.int64),,1
+,"(Optional.) A `tf.int64` scalar `tf.Tensor`, representing the random seed that will be used to create the distribution. See`tf.compat.v1.set_random_seed` for behavior.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"(Optional.) A `tf.int64` scalar `tf.Tensor`, representing the random seed that will be used to create the distribution. See`tf.compat.v1.set_random_seed` for behavior.",None,shape,ndim(0),,1

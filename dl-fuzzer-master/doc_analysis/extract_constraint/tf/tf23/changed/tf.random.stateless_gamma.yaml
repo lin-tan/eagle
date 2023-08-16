@@ -1,0 +1,70 @@
+aliases:
+- tf.compat.v1.random.stateless_gamma
+constraints:
+  alpha:
+    descp: Tensor. The concentration parameter of the gamma distribution. Must be
+      broadcastable with beta, and broadcastable with the rightmost dimensions of
+      shape.
+    tensor_t:
+    - tf.tensor
+  beta:
+    default: None
+    descp: Tensor. The inverse scale parameter of the gamma distribution. Must be
+      broadcastable with alpha and broadcastable with the rightmost dimensions of
+      shape.
+    tensor_t:
+    - tf.tensor
+  dtype:
+    default: tf.dtypes.float32
+    descp: Floating point dtype of alpha, beta, and the output.
+    dtype:
+    - float
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: A shape [2] Tensor, the seed to the random number generator. Must have
+      dtype int32 or int64. (When using XLA, only int32 is allowed.)
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - beta
+  - dtype
+  - name
+  required:
+  - shape
+  - seed
+  - alpha
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/random/stateless_gamma
+outputs:
+- samples: A Tensor of the specified shape filled with random gamma values. For each
+    i, each `samples[..., i] is an independent draw from the gamma distribution with
+    concentration alpha[i] and scale beta[i].
+package: tensorflow
+target: stateless_gamma
+title: tf.random.stateless_gamma
+version: 2.3.0

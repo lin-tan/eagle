@@ -1,0 +1,71 @@
+constraints:
+  beam_width:
+    descp: An int that is >= 1. A scalar >= 0 (beam search beam width).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  inputs:
+    descp: 'A Tensor. Must be one of the following types: float32, float64. 3-D, shape:
+      (max_time x batch_size x num_classes), the logits.'
+    ndim:
+    - '1'
+    shape:
+    - '[max_time_xbatch_size_xnum_classes]'
+    tensor_t:
+    - tf.tensor
+  merge_repeated:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true, merge repeated classes in
+      output.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  sequence_length:
+    descp: A Tensor of type int32. A vector containing sequence lengths, size (batch).
+    dtype:
+    - tf.int32
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  top_paths:
+    descp: An int that is >= 1. A scalar >= 0, <= beam_width (controls output size).
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- batch_size_x
+- max_time_x
+- num_classes
+inputs:
+  optional:
+  - merge_repeated
+  - name
+  required:
+  - inputs
+  - sequence_length
+  - beam_width
+  - top_paths
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CTCBeamSearchDecoder
+outputs:
+- A tuple of Tensor objects (decoded_indices, decoded_values, decoded_shape, log_probability).
+- decoded_indices: A list of top_paths Tensor objects with type int64.
+- decoded_values: A list of top_paths Tensor objects with type int64.
+- decoded_shape: A list of top_paths Tensor objects with type int64.
+- log_probability: A Tensor. Has the same type as inputs.
+package: tensorflow
+target: CTCBeamSearchDecoder
+title: tf.raw_ops.CTCBeamSearchDecoder
+version: 2.2.0

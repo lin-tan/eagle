@@ -1,0 +1,20 @@
+aliases:
+- tf.metrics.get
+- tf.compat.v1.keras.metrics.get
+constraints:
+  identifier:
+    descp: A metric identifier. One of None or string name of a metric function/class
+      or metric configuration dictionary or a metric function or a metric class instance
+exceptions:
+- ValueError: If identifier cannot be interpreted.
+inputs:
+  optional: []
+  required:
+  - identifier
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/metrics/get
+outputs:
+- A Keras metric as a function/ Metric class instance.
+package: tensorflow
+target: get
+title: tf.keras.metrics.get
+version: 2.3.0

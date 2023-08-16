@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Image data format, either ""channels_first"" or ""channels_last"".",None,prim_dtype,"dtype(image, tf.string)",0,1
+,"Image data format, either ""channels_first"" or ""channels_last"".",None,validvalue,"enum(channels_first, channels_last)",1,1
+,"Image data format, either ""channels_first"" or ""channels_last"".",None,prim_dtype,"dtype(tf.string)",1,0

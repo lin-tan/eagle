@@ -1,0 +1,21 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  sparse_input:
+    descp: A Tensor of type variant. A batched CSRSparseMatrix.
+  type:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.complex64, tf.complex128.'
+inputs:
+  optional:
+  - name
+  required:
+  - sparse_input
+  - type
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CSRSparseMatrixToDense
+outputs:
+- A Tensor of type type.
+package: tensorflow
+target: CSRSparseMatrixToDense
+title: tf.raw_ops.CSRSparseMatrixToDense
+version: 2.2.0

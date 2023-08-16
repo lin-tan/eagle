@@ -1,0 +1,10 @@
+class,Type,name,input,link,source_code
+,class,,,,
+,attribute,names,,https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.names,
+,method,rename,"*names,**rename_map",https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.rename,https://pytorch.org/docs/stable/_modules/torch/tensor.html#Tensor.rename
+,method,rename_,"*names,**rename_map",https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.rename_,https://pytorch.org/docs/stable/_modules/torch/tensor.html#Tensor.rename_
+,method,refine_names,*names,https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.refine_names,https://pytorch.org/docs/stable/_modules/torch/tensor.html#Tensor.refine_names
+,method,align_as,other,https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.align_as,
+,method,align_to,*names,https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.align_to,https://pytorch.org/docs/stable/_modules/torch/tensor.html#Tensor.align_to
+,method,unflatten,"dim,namedshape",https://pytorch.org/docs/stable/named_tensor.html#torch.Tensor.unflatten,https://pytorch.org/docs/stable/_modules/torch/tensor.html#Tensor.unflatten
+,method,flatten,"dims,out_dim",,

@@ -1,0 +1,35 @@
+constraints:
+  diagonal:
+    default: '0'
+    descp: the diagonal to consider
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the diagonal to consider
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - diagonal
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.tril
+package: torch
+ret_type: Tensor
+target: tril
+title: torch.tril
+version: 1.5.0

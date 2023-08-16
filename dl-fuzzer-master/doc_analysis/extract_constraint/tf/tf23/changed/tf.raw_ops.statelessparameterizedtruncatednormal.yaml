@@ -1,0 +1,71 @@
+constraints:
+  maxvals:
+    descp: A Tensor. Must have the same type as means. The maximum cutoff. May be
+      +infinity, and must be more than the minval for each batch.
+    dtype:
+    - dtype:&means
+    tensor_t:
+    - tf.tensor
+  means:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      The mean parameter of each batch.'
+    tensor_t:
+    - tf.tensor
+  minvals:
+    descp: A Tensor. Must have the same type as means. The minimum cutoff. May be
+      -infinity.
+    dtype:
+    - dtype:&means
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 2 seeds (shape
+      [2]).'
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  stddevs:
+    descp: A Tensor. Must have the same type as means. The standard deviation parameter
+      of each batch. Must be greater than 0.
+    dtype:
+    - dtype:&means
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - shape
+  - seed
+  - means
+  - stddevs
+  - minvals
+  - maxvals
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StatelessParameterizedTruncatedNormal
+outputs:
+- A Tensor. Has the same type as means.
+package: tensorflow
+target: StatelessParameterizedTruncatedNormal
+title: tf.raw_ops.StatelessParameterizedTruncatedNormal
+version: 2.3.0

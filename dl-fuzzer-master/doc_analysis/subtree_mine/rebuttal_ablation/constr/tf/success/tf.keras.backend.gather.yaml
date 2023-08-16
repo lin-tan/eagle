@@ -1,0 +1,48 @@
+aliases:
+- tf.compat.v1.keras.backend.gather
+constraints:
+  indices:
+    descp: An integer tensor of indices.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  reference:
+    descp: A tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - reference
+  - indices
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/gather
+outputs: A tensor of same type as `reference`.
+package: tensorflow
+target: gather
+title: tf.keras.backend.gather
+version: 2.1.0

@@ -1,0 +1,73 @@
+constraints:
+  default_value:
+    default: None
+    descp: The integer ID value to return for out-of-vocabulary feature values, defaults
+      to `-1`. This can not be specified with a positive`num_oov_buckets`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The D_TYPE ID value to return for out of vocabulary feature values, defaults
+      to CONSTANT_NUM
+    - This can not be specified with a positive PARAM
+  dtype:
+    default: tf.dtypes.string
+    descp: The type of features. Only string and integer types are supported.
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The type of features
+    - Only D_TYPE types are supported
+  key:
+    descp: A unique string identifying the input feature. It is used as the column
+      name and the dictionary key for feature parsing configs, feature`Tensor` objects,
+      and feature columns.
+    normalized_descp:
+    - A unique D_TYPE identifying the input feature
+    - It is used as the column name and the D_STRUCTURE key for feature parsing configs,
+      featureD_STRUCTURE objects, and feature columns
+  num_oov_buckets:
+    default: '0'
+    descp: Non-negative integer, the number of out-of-vocabulary buckets. All out-of-vocabulary
+      inputs will be assigned IDs in the range`[vocabulary_size, vocabulary_size+num_oov_buckets)`
+      based on a hash of the input value. A positive `num_oov_buckets` can not be
+      specified with`default_value`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Non negative D_TYPE, the number of out of vocabulary buckets
+    - All out of vocabulary inputs will be assigned IDs in the range BSTR based on
+      a hash of the input value
+    - A positive QSTR can not be specified with PARAM
+  vocabulary_file:
+    descp: The vocabulary file name.
+    normalized_descp:
+    - The vocabulary file name
+  vocabulary_size:
+    default: None
+    descp: Number of the elements in the vocabulary. This must be no greater than
+      length of `vocabulary_file`, if less than length, later values are ignored.
+      If None, it is set to the length of `vocabulary_file`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Number of the elements in the vocabulary
+    - This must be no greater than length of PARAM, if less than length, later values
+      are ignored
+    - If None, it is set to the length of PARAM
+exceptions:
+- ValueError: '`vocabulary_file` is missing or cannot be opened.'
+- ValueError: '`vocabulary_size` is missing or < 1.'
+- ValueError: '`num_oov_buckets` is a negative integer.'
+- ValueError: '`num_oov_buckets` and `default_value` are both specified.'
+- ValueError: '`dtype` is neither string nor integer.'
+inputs:
+  optional:
+  - vocabulary_size
+  - dtype
+  - default_value
+  - num_oov_buckets
+  required:
+  - key
+  - vocabulary_file
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/feature_column/categorical_column_with_vocabulary_file
+outputs: A `CategoricalColumn` with a vocabulary file.
+package: tensorflow
+target: categorical_column_with_vocabulary_file
+title: tf.feature_column.categorical_column_with_vocabulary_file
+version: 2.1.0

@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.compat.forward_compatibility_horizon
+constraints:
+  day:
+    descp: A day (1 <= day <= 31, or 30, or 29, or 28) in month. Must be an`int`.
+    normalized_descp:
+    - A day CONSTANT_NUM REXPR REXPR, or CONSTANT_NUM in PARAM
+    - Must be anD_TYPE
+  month:
+    descp: A month (1 <= month <= 12) in year. Must be an `int`.
+    normalized_descp:
+    - A month CONSTANT_NUM REXPR REXPR in PARAM
+    - Must be an D_TYPE
+  year:
+    descp: A year (e.g., 2018). Must be an `int`.
+    normalized_descp:
+    - A year BSTR
+    - Must be an D_TYPE
+inputs:
+  optional: []
+  required:
+  - year
+  - month
+  - day
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/compat/forward_compatibility_horizon
+outputs: Nothing.
+package: tensorflow
+target: forward_compatibility_horizon
+title: tf.compat.forward_compatibility_horizon
+version: 2.1.0

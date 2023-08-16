@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), required",The shape of one example.,,prim_dtype,dtype(int),,1
+"Shape(tuple), required",The shape of one example.,,nonprim_dtype,structure(tuple(int)),,1
+"Shape(tuple), required",The shape of one example.,,shape,ndim(1),,1
+"Shape(tuple), required",The shape of one example.,,validvalue,"range([0,inf))",,1

@@ -1,0 +1,16 @@
+constraints:
+  pos_label: {default: None, descp: 'int or str, default=None Label of the positive
+      class. Defaults to the greater label unless y_true is all 0 or all -1 in which
+      case pos_label defaults to 1.'}
+  sample_weight: {default: None, descp: 'array-like of shape (n_samples,), default=None
+      Sample weights.'}
+  y_prob: {descp: 'array, shape (n_samples,) Probabilities of the positive class.'}
+  y_true: {descp: 'array, shape (n_samples,) True targets.'}
+inputs:
+  optional: [sample_weight, pos_label]
+  required: [y_true, y_prob]
+link: ''
+package: sklearn
+target: brier_score_loss
+title: sklearn.metrics.brier_score_loss
+version: 0.24.2

@@ -1,0 +1,13 @@
+constraints:
+  keys:
+    descp: 'An iterable identifying the features to be crossed. Each element can be
+      either: string: Will use the corresponding feature which must be of string type.`CategoricalColumn`:
+      Will use the transformed tensor produced by this column. Does not support hashed
+      categorical column. '
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list
+title: tf.feature_column.crossed_column

@@ -1,0 +1,98 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.text.hashing_trick
+constraints:
+  filters:
+    default: '!"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n'
+    descp: 'list (or concatenation) of characters to filter out, such as     punctuation.
+      Default: ``!"#$%&()*+,-./:;<=>?@[\]^_`{|}~\t\n``,     includes basic punctuation,
+      tabs, and newlines.'
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - concatenation)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - list
+    tensor_t:
+    - tf.tensor
+  hash_function:
+    default: None
+    descp: defaults to python `hash` function, can be 'md5' or     any function that
+      takes in input a string and returns a int.     Note that 'hash' is not a stable
+      hashing function, so     it is not consistent across different runs, while 'md5'     is
+      a stable hashing function.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  lower:
+    default: 'True'
+    descp: boolean. Whether to set the text to lowercase.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  n:
+    descp: Dimension of the hashing space.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  split:
+    default: ' '
+    descp: str. Separator for word splitting.`
+    dtype:
+    - tf.dtype
+    - tf.string
+  text:
+    descp: Input text (string).
+inputs:
+  optional:
+  - hash_function
+  - filters
+  - lower
+  - split
+  required:
+  - text
+  - n
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/text/hashing_trick
+outputs: '`A list of integer word indices (unicity non-guaranteed).`'
+package: tensorflow
+target: hashing_trick
+title: tf.keras.preprocessing.text.hashing_trick
+version: 2.1.0

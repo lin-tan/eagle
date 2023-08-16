@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"1-D `int32` vector containing sequence lengths, having size`[batch_size]`.",,prim_dtype,dtype(tf.int32),,1
+,"1-D `int32` vector containing sequence lengths, having size`[batch_size]`.",,shape,"shape([batch_size]), ndim(0, 1)",,1
+,"1-D `int32` vector containing sequence lengths, having size`[batch_size]`.",,validvalue,"range([0,inf))",,1

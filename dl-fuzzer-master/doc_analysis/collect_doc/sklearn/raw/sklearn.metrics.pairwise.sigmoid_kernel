@@ -1,0 +1,21 @@
+sklearn.metrics.pairwise.sigmoid_kernel = sigmoid_kernel(X, Y=None, gamma=None, coef0=1)
+    Compute the sigmoid kernel between X and Y::
+    
+        K(X, Y) = tanh(gamma <X, Y> + coef0)
+    
+    Read more in the :ref:`User Guide <sigmoid_kernel>`.
+    
+    Parameters
+    ----------
+    X : ndarray of shape (n_samples_1, n_features)
+    
+    Y : ndarray of shape (n_samples_2, n_features)
+    
+    gamma : float, default None
+        If None, defaults to 1.0 / n_features
+    
+    coef0 : float, default 1
+    
+    Returns
+    -------
+    Gram matrix : array of shape (n_samples_1, n_samples_2)

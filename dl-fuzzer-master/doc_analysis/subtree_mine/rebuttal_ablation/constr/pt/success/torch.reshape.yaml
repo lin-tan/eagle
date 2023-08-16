@@ -1,0 +1,53 @@
+constraints:
+  input:
+    descp: the tensor to be reshaped
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  shape:
+    descp: the new shape
+    doc_dtype: tuple of python:ints
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    structure:
+    - tuple
+inputs:
+  optional: []
+  required:
+  - input
+  - shape
+link: https://pytorch.org/docs/stable/torch.html#torch.reshape
+package: torch
+ret_type: Tensor
+target: reshape
+title: torch.reshape
+version: 1.5.0

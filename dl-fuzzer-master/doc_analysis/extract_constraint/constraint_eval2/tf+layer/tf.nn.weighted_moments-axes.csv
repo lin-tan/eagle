@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,1-d tensor of int32 values; these are the axes along which to compute mean and variance.,,prim_dtype,dtype(tf.int32),,1
+,1-d tensor of int32 values; these are the axes along which to compute mean and variance.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,1-d tensor of int32 values; these are the axes along which to compute mean and variance.,,shape,ndim(1),,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A scalar string Tensor, a single serialized Example.",,prim_dtype,dtype(tf.string),,1
+,"A scalar string Tensor, a single serialized Example.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A scalar string Tensor, a single serialized Example.",,shape,ndim(0),,1

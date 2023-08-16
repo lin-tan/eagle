@@ -1,0 +1,29 @@
+constraints:
+  a:
+    descp: 'array or sparse matrix b : array or sparse matrix dense_output : boolean,
+      (default=False) When False, ``a`` and ``b`` both being sparse will yield sparse
+      output. When True, output will always be a dense array.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  b:
+    descp: ''
+  dense_output:
+    default: 'False'
+    descp: ''
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - dense_output
+  required:
+  - a
+  - b
+link: ''
+package: scikit-learn
+target: safe_sparse_dot
+title: sklearn.utils.extmath.safe_sparse_dot
+version: 0.24.X

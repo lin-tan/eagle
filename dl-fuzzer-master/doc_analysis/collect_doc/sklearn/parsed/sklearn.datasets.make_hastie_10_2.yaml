@@ -1,0 +1,14 @@
+constraints:
+  n_samples: {default: '12000', descp: 'int, optional (default=12000) The number of
+      samples.'}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset creation. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+inputs:
+  optional: [n_samples, random_state]
+  required: []
+link: ''
+package: sklearn
+target: make_hastie_10_2
+title: sklearn.datasets.make_hastie_10_2
+version: 0.24.2

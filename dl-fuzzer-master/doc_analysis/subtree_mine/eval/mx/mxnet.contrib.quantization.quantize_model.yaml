@@ -1,0 +1,9 @@
+constraints:
+  sym:
+    descp: Defines the structure of a neural network for FP32 data types.
+    doc_dtype:
+    - str
+    - Symbol
+    dtype:
+    - string
+title: mxnet.contrib.quantization.quantize_model

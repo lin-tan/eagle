@@ -1,0 +1,15 @@
+constraints:
+  y:
+    descp: A `Tensor` of type `float16`, `float32`, `float64`, `int32`, `int64`,`complex64`,
+      or `complex128`.
+    dtype:
+    - tf.complex128
+    - tf.complex64
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int32
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+title: tf.math.pow

@@ -1,0 +1,121 @@
+sklearn.decomposition.dict_learning_online = dict_learning_online(X, n_components=2, alpha=1, n_iter=100, return_code=True, dict_init=None, callback=None, batch_size=3, verbose=False, shuffle=True, n_jobs=None, method='lars', iter_offset=0, random_state=None, return_inner_stats=False, inner_stats=None, return_n_iter=False, positive_dict=False, positive_code=False, method_max_iter=1000)
+    Solves a dictionary learning matrix factorization problem online.
+    
+    Finds the best dictionary and the corresponding sparse code for
+    approximating the data matrix X by solving::
+    
+        (U^*, V^*) = argmin 0.5 || X - U V ||_2^2 + alpha * || U ||_1
+                     (U,V)
+                     with || V_k ||_2 = 1 for all  0 <= k < n_components
+    
+    where V is the dictionary and U is the sparse code. This is
+    accomplished by repeatedly iterating over mini-batches by slicing
+    the input data.
+    
+    Read more in the :ref:`User Guide <DictionaryLearning>`.
+    
+    Parameters
+    ----------
+    X : array of shape (n_samples, n_features)
+        Data matrix.
+    
+    n_components : int,
+        Number of dictionary atoms to extract.
+    
+    alpha : float,
+        Sparsity controlling parameter.
+    
+    n_iter : int,
+        Number of mini-batch iterations to perform.
+    
+    return_code : boolean,
+        Whether to also return the code U or just the dictionary V.
+    
+    dict_init : array of shape (n_components, n_features),
+        Initial value for the dictionary for warm restart scenarios.
+    
+    callback : callable or None, optional (default: None)
+        callable that gets invoked every five iterations
+    
+    batch_size : int,
+        The number of samples to take in each batch.
+    
+    verbose : bool, optional (default: False)
+        To control the verbosity of the procedure.
+    
+    shuffle : boolean,
+        Whether to shuffle the data before splitting it in batches.
+    
+    n_jobs : int or None, optional (default=None)
+        Number of parallel jobs to run.
+        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
+        ``-1`` means using all processors. See :term:`Glossary <n_jobs>`
+        for more details.
+    
+    method : {'lars', 'cd'}
+        lars: uses the least angle regression method to solve the lasso problem
+        (linear_model.lars_path)
+        cd: uses the coordinate descent method to compute the
+        Lasso solution (linear_model.Lasso). Lars will be faster if
+        the estimated components are sparse.
+    
+    iter_offset : int, default 0
+        Number of previous iterations completed on the dictionary used for
+        initialization.
+    
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+    
+    return_inner_stats : boolean, optional
+        Return the inner statistics A (dictionary covariance) and B
+        (data approximation). Useful to restart the algorithm in an
+        online setting. If return_inner_stats is True, return_code is
+        ignored
+    
+    inner_stats : tuple of (A, B) ndarrays
+        Inner sufficient statistics that are kept by the algorithm.
+        Passing them at initialization is useful in online settings, to
+        avoid losing the history of the evolution.
+        A (n_components, n_components) is the dictionary covariance matrix.
+        B (n_features, n_components) is the data approximation matrix
+    
+    return_n_iter : bool
+        Whether or not to return the number of iterations.
+    
+    positive_dict : bool
+        Whether to enforce positivity when finding the dictionary.
+    
+        .. versionadded:: 0.20
+    
+    positive_code : bool
+        Whether to enforce positivity when finding the code.
+    
+        .. versionadded:: 0.20
+    
+    method_max_iter : int, optional (default=1000)
+        Maximum number of iterations to perform when solving the lasso problem.
+    
+        .. versionadded:: 0.22
+    
+    Returns
+    -------
+    code : array of shape (n_samples, n_components),
+        the sparse code (only returned if `return_code=True`)
+    
+    dictionary : array of shape (n_components, n_features),
+        the solutions to the dictionary learning problem
+    
+    n_iter : int
+        Number of iterations run. Returned only if `return_n_iter` is
+        set to `True`.
+    
+    See also
+    --------
+    dict_learning
+    DictionaryLearning
+    MiniBatchDictionaryLearning
+    SparsePCA
+    MiniBatchSparsePCA

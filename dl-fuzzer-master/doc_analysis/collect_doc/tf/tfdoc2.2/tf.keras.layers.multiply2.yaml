@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.keras.layers.multiply
+constraints:
+  '**kwargs':
+    default: null
+    descp: Standard layer keyword arguments.
+  inputs:
+    descp: A list of input tensors (at least 2).
+inputs:
+  optional:
+  - '**kwargs'
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/multiply
+outputs:
+- A tensor, the element-wise product of the inputs.
+package: tensorflow
+target: multiply
+title: tf.keras.layers.multiply
+version: 2.2.0

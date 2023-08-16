@@ -1,0 +1,23 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: ''
+  model:
+    descp: input model
+  run_args:
+    descp: positional arguments for run_fn
+  run_fn:
+    descp: a function for evaluating the prepared model, can be a function that simply
+      runs the prepared model or a training loop
+inputs:
+  optional:
+  - inplace
+  required:
+  - model
+  - run_fn
+  - run_args
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.quantize_qat
+package: torch
+target: quantize_qat
+title: torch.quantization.quantize_qat
+version: 1.6.0

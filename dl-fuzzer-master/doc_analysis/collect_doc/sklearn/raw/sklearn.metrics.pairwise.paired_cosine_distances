@@ -1,0 +1,19 @@
+sklearn.metrics.pairwise.paired_cosine_distances = paired_cosine_distances(X, Y)
+    Computes the paired cosine distances between X and Y
+    
+    Read more in the :ref:`User Guide <metrics>`.
+    
+    Parameters
+    ----------
+    X : array-like, shape (n_samples, n_features)
+    
+    Y : array-like, shape (n_samples, n_features)
+    
+    Returns
+    -------
+    distances : ndarray, shape (n_samples, )
+    
+    Notes
+    -----
+    The cosine distance is equivalent to the half the squared
+    euclidean distance if each sample is normalized to unit norm

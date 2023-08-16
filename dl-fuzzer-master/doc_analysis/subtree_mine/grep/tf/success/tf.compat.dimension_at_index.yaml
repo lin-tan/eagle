@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.compat.dimension_at_index
+- tf.compat.v1.dimension_at_index
+constraints:
+  index:
+    descp: An integer index.
+    dtype:
+    - int
+  shape:
+    descp: A TensorShape instance.
+inputs:
+  optional: []
+  required:
+  - shape
+  - index
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/compat/dimension_at_index
+outputs: A dimension object.
+package: tensorflow
+target: dimension_at_index
+title: tf.compat.dimension_at_index
+version: 2.1.0

@@ -1,0 +1,14 @@
+constraints:
+  stream:
+    descp: selected stream. This manager is a no-op if it's `None`.
+    doc_dtype:
+    - Stream
+inputs:
+  optional: []
+  required:
+  - stream
+link: https://pytorch.org/docs/1.7.0/cuda.html#torch.cuda.stream
+package: torch
+target: stream
+title: torch.cuda.stream
+version: 1.9.0

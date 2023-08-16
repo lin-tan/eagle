@@ -1,0 +1,48 @@
+constraints:
+  dim:
+    default: None
+    descp: 'the dimension to apply unique. If `None`, the unique of the flattened
+      input is returned. default: `None`'
+    doc_dtype: int
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the dimension to apply unique
+    - If QSTR the unique of the flattened PARAM is returned
+    - default QSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  return_counts:
+    default: 'False'
+    descp: Whether to also return the counts for each unique element.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to also return the counts for each unique element
+    normalized_docdtype: ONE_WORD D_TYPE
+  return_inverse:
+    default: 'False'
+    descp: Whether to also return the indices for where elements in the original input
+      ended up in the returned unique list.
+    doc_dtype: bool
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to also return the indices for where elements in the original PARAM
+      ended up in the returned unique D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - return_inverse
+  - return_counts
+  - dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.unique_consecutive
+package: torch
+target: unique_consecutive
+title: torch.unique_consecutive
+version: 1.5.0

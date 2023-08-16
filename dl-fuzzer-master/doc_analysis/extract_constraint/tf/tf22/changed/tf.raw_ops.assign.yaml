@@ -1,0 +1,51 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  ref:
+    descp: A mutable Tensor. Should be from a Variable node. May be uninitialized.
+    tensor_t:
+    - tf.tensor
+  use_locking:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If True, the assignment will be protected
+      by a lock; otherwise the behavior is undefined, but may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  validate_shape:
+    default: 'True'
+    descp: An optional bool. Defaults to True. If true, the operation will validate
+      that the shape of 'value' matches the shape of the Tensor being assigned to.
+      If false, 'ref' will take on the shape of 'value'.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  value:
+    descp: A Tensor. Must have the same type as ref. The value to be assigned to the
+      variable.
+    dtype:
+    - dtype:&ref
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - validate_shape
+  - use_locking
+  - name
+  required:
+  - ref
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Assign
+outputs:
+- A mutable Tensor. Has the same type as ref.
+package: tensorflow
+target: Assign
+title: tf.raw_ops.Assign
+version: 2.2.0

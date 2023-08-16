@@ -1,0 +1,22 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_features:
+    descp: An int that is >= 0. inferred int; number of features to get bucket boundaries
+      for.
+  quantile_stream_resource_handle:
+    descp: A Tensor of type resource. resource handle referring to a QuantileStreamResource.
+inputs:
+  optional:
+  - name
+  required:
+  - quantile_stream_resource_handle
+  - num_features
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesQuantileStreamResourceGetBucketBoundaries
+outputs:
+- A list of num_features Tensor objects with type float32.
+package: tensorflow
+target: BoostedTreesQuantileStreamResourceGetBucketBoundaries
+title: tf.raw_ops.BoostedTreesQuantileStreamResourceGetBucketBoundaries
+version: 2.2.0

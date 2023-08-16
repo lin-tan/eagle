@@ -1,0 +1,13 @@
+constraints:
+  dlpack:
+    descp: input data
+    doc_dtype: PyCapsule (the pointer of DLManagedTensor
+inputs:
+  optional: []
+  required:
+  - dlpack
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.from_dlpack
+package: mxnet
+target: from_dlpack
+title: mxnet.ndarray.from_dlpack
+version: 1.6.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"size of the pooling region. Can be a single number or a tuple (kH, kW)",,prim_dtype,dtype(int),,1
+,"size of the pooling region. Can be a single number or a tuple (kH, kW)",,nonprim_dtype,"structure(tuple:(kh,kw))",,1
+,"size of the pooling region. Can be a single number or a tuple (kH, kW)",,shape,"shape([2]), ndim(0, 1)",,1
+,"size of the pooling region. Can be a single number or a tuple (kH, kW)",,validvalue,"range([0,inf))",,1

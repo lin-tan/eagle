@@ -1,0 +1,93 @@
+constraints:
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  host_reserved:
+    descp: A Tensor of type int8.
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.'
+  input_c:
+    descp: A Tensor. Must have the same type as input.
+  input_h:
+    descp: A Tensor. Must have the same type as input.
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_proj:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  output:
+    descp: A Tensor. Must have the same type as input.
+  output_backprop:
+    descp: A Tensor. Must have the same type as input.
+  output_c:
+    descp: A Tensor. Must have the same type as input.
+  output_c_backprop:
+    descp: A Tensor. Must have the same type as input.
+  output_h:
+    descp: A Tensor. Must have the same type as input.
+  output_h_backprop:
+    descp: A Tensor. Must have the same type as input.
+  params:
+    descp: A Tensor. Must have the same type as input.
+  reserve_space:
+    descp: A Tensor. Must have the same type as input.
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  sequence_lengths:
+    descp: A Tensor of type int32.
+  time_major:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - num_proj
+  - time_major
+  - name
+  required:
+  - input
+  - input_h
+  - input_c
+  - params
+  - sequence_lengths
+  - output
+  - output_h
+  - output_c
+  - output_backprop
+  - output_h_backprop
+  - output_c_backprop
+  - reserve_space
+  - host_reserved
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CudnnRNNBackpropV3
+outputs:
+- A tuple of Tensor objects (input_backprop, input_h_backprop, input_c_backprop, params_backprop).
+- input_backprop: A Tensor. Has the same type as input.
+- input_h_backprop: A Tensor. Has the same type as input.
+- input_c_backprop: A Tensor. Has the same type as input.
+- params_backprop: A Tensor. Has the same type as input.
+package: tensorflow
+target: CudnnRNNBackpropV3
+title: tf.raw_ops.CudnnRNNBackpropV3
+version: 2.2.0

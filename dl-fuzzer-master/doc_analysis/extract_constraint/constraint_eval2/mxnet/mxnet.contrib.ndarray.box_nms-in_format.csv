@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"{'center', 'corner'}, optional, default='corner'","The input box encoding type. ""corner"" means boxes are encoded as [xmin, ymin, xmax, ymax], ""center"" means boxes are encodes as [x, y, width, height].",_Null,validvalue,"enum(center, corner)",,1

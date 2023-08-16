@@ -1,0 +1,81 @@
+aliases:
+- tf.compat.v1.feature_column.sequence_categorical_column_with_identity
+constraints:
+  default_value:
+    default: None
+    descp: If `None`, this column's graph operations will fail for out-of-range inputs.
+      Otherwise, this value must be in the range`[0, num_buckets)`, and will replace
+      out-of-range inputs.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - None
+    - num_buckets)
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,&num_buckets)'
+    - '[0,inf)'
+    shape:
+    - '[0,&num_buckets]'
+    - '[2]'
+    - '[none]'
+    tensor_t:
+    - tf.tensor
+  key:
+    descp: A unique string identifying the input feature.
+    dtype:
+    - int
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  num_buckets:
+    descp: Range of inputs. Namely, inputs are expected to be in the range `[0, num_buckets)`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - num_buckets)
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,&num_buckets)'
+    - '[0,inf)'
+    shape:
+    - '[0,&num_buckets]'
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: if `num_buckets` is less than one.
+- ValueError: if `default_value` is not in range `[0, num_buckets)`.
+inputs:
+  optional:
+  - default_value
+  required:
+  - key
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/feature_column/sequence_categorical_column_with_identity
+outputs: A `SequenceCategoricalColumn`.
+package: tensorflow
+target: sequence_categorical_column_with_identity
+title: tf.feature_column.sequence_categorical_column_with_identity
+version: 2.1.0

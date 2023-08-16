@@ -1,0 +1,17 @@
+constraints:
+  shape:
+    default: _Null
+    descp: Shape of the output.
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=None
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple
+title: mxnet.ndarray.op.random_poisson

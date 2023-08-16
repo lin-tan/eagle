@@ -1,0 +1,17 @@
+constraints:
+  func:
+    descp: ''
+    doc_dtype: a user-provided callable function or class to be scoped by the NumPy-shape
+      semantics.
+    normalized_descp: []
+    normalized_docdtype: a user provided callable function or class to be scoped by
+      the NumPy shape semantics
+inputs:
+  optional: []
+  required:
+  - func
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/util/index.html#mxnet.util.use_np_shape
+package: mxnet
+target: use_np_shape
+title: mxnet.util.use_np_shape
+version: 1.6.0

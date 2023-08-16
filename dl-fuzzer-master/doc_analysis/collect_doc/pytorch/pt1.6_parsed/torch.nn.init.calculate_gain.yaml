@@ -1,0 +1,16 @@
+constraints:
+  nonlinearity:
+    descp: the non-linear function (nn.functional name)
+  param:
+    default: None
+    descp: optional parameter for the non-linear function
+inputs:
+  optional:
+  - param
+  required:
+  - nonlinearity
+link: https://pytorch.org/docs/1.6.0/nn.init.html#torch.nn.init.calculate_gain
+package: torch
+target: calculate_gain
+title: torch.nn.init.calculate_gain
+version: 1.6.0

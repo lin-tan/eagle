@@ -1,0 +1,18 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  axis:
+    default: _Null
+    descp: int or None. The axis to picking the elements. Negative values means indexing
+      from right to left. If is None, the elements in the index w.r.t the flattened
+      input will be picked.
+    doc_dtype:
+    - int
+    - None
+    - optional
+    - default='-1'
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.choose_element_0index

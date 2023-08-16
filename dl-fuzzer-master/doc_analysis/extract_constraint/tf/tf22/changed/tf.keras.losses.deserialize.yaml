@@ -1,0 +1,28 @@
+aliases:
+- tf.losses.deserialize
+- tf.compat.v1.keras.losses.deserialize
+constraints:
+  custom_objects:
+    default: None
+    descp: Optional dictionary mapping names (strings) to custom objects (classes
+      and functions) to be considered during deserialization.
+    structure:
+    - dict
+  name:
+    descp: Loss configuration.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - custom_objects
+  required:
+  - name
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/losses/deserialize
+outputs:
+- A Keras Loss instance or a loss function.
+package: tensorflow
+target: deserialize
+title: tf.keras.losses.deserialize
+version: 2.2.0

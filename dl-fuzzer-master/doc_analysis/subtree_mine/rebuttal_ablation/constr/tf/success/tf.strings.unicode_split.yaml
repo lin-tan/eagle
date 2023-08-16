@@ -1,0 +1,114 @@
+aliases:
+- tf.compat.v1.strings.unicode_split
+constraints:
+  errors:
+    default: replace
+    descp: 'Specifies the response when an input string can''t be converted using
+      the indicated encoding. One of: `''strict''`: Raise an exception for any illegal
+      substrings.`''replace''`: Replace illegal substrings with `replacement_char`.`''ignore''`:
+      Skip illegal substrings. '
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - ignore
+    - replace
+    - strict
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[ignore]'
+    - '[replace]'
+    - '[strict]'
+  input:
+    descp: An `N` dimensional potentially ragged `string` tensor with shape`[D1...DN]`.  `N`
+      must be statically known.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    - n
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n,n]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  input_encoding:
+    descp: String name for the unicode encoding that should be used to decode each
+      string.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  replacement_char:
+    default: '65533'
+    descp: The replacement codepoint to be used in place of invalid substrings in
+      `input` when `errors='replace'`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+inputs:
+  optional:
+  - errors
+  - replacement_char
+  - name
+  required:
+  - input
+  - input_encoding
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/unicode_split
+outputs: A `N+1` dimensional `int32` tensor with shape `[D1...DN, (num_chars)]`. The
+  returned tensor is a `tf.Tensor` if `input` is a scalar, or a`tf.RaggedTensor` otherwise.
+package: tensorflow
+target: unicode_split
+title: tf.strings.unicode_split
+version: 2.1.0

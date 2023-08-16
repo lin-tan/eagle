@@ -1,0 +1,32 @@
+constraints:
+  img:
+    dtype:
+    - float
+    ndim:
+    - '4'
+    range:
+    - '(0,1)'
+    shape:
+    - '[n,3,h,w]'
+    tensor_t:
+    - torch.tensor
+  saturation_factor:
+    dtype:
+    - float
+    range:
+    - '[0,inf)'
+    ndim:
+    - '0'
+dependency:
+- h
+- n
+- w
+inputs:
+  optional: []
+  required:
+  - img
+  - saturation_factor
+package: torchvision
+target: adjust_saturation
+title: torchvision.transforms.functional.adjust_saturation
+version: 0.7.0

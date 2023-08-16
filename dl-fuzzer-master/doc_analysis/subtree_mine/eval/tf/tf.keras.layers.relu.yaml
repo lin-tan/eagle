@@ -1,0 +1,7 @@
+constraints:
+  threshold:
+    default: '0'
+    descp: Float. Threshold value for thresholded activation.
+    dtype:
+    - float
+title: tf.keras.layers.ReLU

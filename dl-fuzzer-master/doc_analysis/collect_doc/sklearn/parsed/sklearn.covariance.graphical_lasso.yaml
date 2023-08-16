@@ -1,0 +1,35 @@
+constraints:
+  alpha: {descp: 'positive float The regularization parameter: the higher alpha, the
+      more regularization, the sparser the inverse covariance.'}
+  cov_init: {default: None, descp: '2D array (n_features, n_features), optional The
+      initial guess for the covariance.'}
+  emp_cov: {descp: '2D ndarray, shape (n_features, n_features) Empirical covariance
+      from which to compute the covariance estimate.'}
+  enet_tol: {default: '0.0001', descp: 'positive float, optional The tolerance for
+      the elastic net solver used to calculate the descent direction. This parameter
+      controls the accuracy of the search direction for a given column update, not
+      of the overall parameter estimate. Only used for mode=''cd''.'}
+  eps: {default: '2.220446049250313e-16', descp: 'float, optional The machine-precision
+      regularization in the computation of the Cholesky diagonal factors. Increase
+      this for very ill-conditioned systems.'}
+  max_iter: {default: '100', descp: 'integer, optional The maximum number of iterations.'}
+  mode: {default: cd, descp: '{''cd'', ''lars''} The Lasso solver to use: coordinate
+      descent or LARS. Use LARS for very sparse underlying graphs, where p > n. Elsewhere
+      prefer cd which is more numerically stable.'}
+  return_costs: {default: 'False', descp: 'boolean, optional If return_costs is True,
+      the objective function and dual gap at each iteration are returned.'}
+  return_n_iter: {default: 'False', descp: 'bool, optional Whether or not to return
+      the number of iterations.'}
+  tol: {default: '0.0001', descp: 'positive float, optional The tolerance to declare
+      convergence: if the dual gap goes below this value, iterations are stopped.'}
+  verbose: {default: 'False', descp: 'boolean, optional If verbose is True, the objective
+      function and dual gap are printed at each iteration.'}
+inputs:
+  optional: [cov_init, mode, tol, enet_tol, max_iter, verbose, return_costs, eps,
+    return_n_iter]
+  required: [emp_cov, alpha]
+link: ''
+package: sklearn
+target: graphical_lasso
+title: sklearn.covariance.graphical_lasso
+version: 0.24.2

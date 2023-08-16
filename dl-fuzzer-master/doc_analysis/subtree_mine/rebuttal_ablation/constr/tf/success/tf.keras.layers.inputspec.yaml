@@ -1,0 +1,98 @@
+aliases:
+- tf.compat.v1.keras.layers.InputSpec
+- tf.compat.v1.layers.InputSpec
+constraints:
+  axes:
+    default: None
+    descp: Dictionary mapping integer axes to a specific dimension value.
+  dtype:
+    default: None
+    descp: Expected DataType of the input.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  max_ndim:
+    default: None
+    descp: Integer, maximum rank of the input.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  min_ndim:
+    default: None
+    descp: Integer, minimum rank of the input.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  ndim:
+    default: None
+    descp: Integer, expected rank of the input.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  shape:
+    default: None
+    descp: Shape tuple, expected shape of the input (may include None for unchecked
+      axes).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (may
+    - None
+    - axes)
+    - for
+    - include
+    - unchecked
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (may_include_none_for_unchecked_axes)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    structure:
+    - tuple
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - dtype
+  - shape
+  - ndim
+  - max_ndim
+  - min_ndim
+  - axes
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/InputSpec
+package: tensorflow
+target: InputSpec
+title: tf.keras.layers.InputSpec
+version: 2.1.0

@@ -1,0 +1,8 @@
+constraints:
+  '*args':
+    descp: Positional input arguments
+    doc_dtype:
+    - NDArray[]
+    structure:
+    - ndarray
+title: mxnet.ndarray.sparse.ElementWiseSum

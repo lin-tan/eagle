@@ -1,0 +1,21 @@
+aliases:
+- tf.initializers.lecun_uniform
+constraints:
+  seed:
+    default: None
+    descp: A Python integer. Used to seed the random generator.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - seed
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/initializers/lecun_uniform
+outputs:
+- A callable Initializer with shape and dtype arguments which generates a tensor.
+package: tensorflow
+target: lecun_uniform
+title: tf.keras.initializers.lecun_uniform
+version: 2.2.0

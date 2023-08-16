@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"The maximum number of seconds to wait between checkpoints. If left as `None`, then the process will wait indefinitely.",None,prim_dtype,dtype(int),,1
+,"The maximum number of seconds to wait between checkpoints. If left as `None`, then the process will wait indefinitely.",None,shape,ndim(0),,1
+,"The maximum number of seconds to wait between checkpoints. If left as `None`, then the process will wait indefinitely.",None,validvalue,"range([0,inf))",,1

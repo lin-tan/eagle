@@ -1,0 +1,16 @@
+constraints:
+  seed:
+    descp: The desired seed.
+    doc_dtype:
+    - int
+    sig_dtype: int
+inputs:
+  optional: []
+  required:
+  - seed
+link: https://pytorch.org/docs/1.6.0/cuda.html#torch.cuda.manual_seed_all
+package: torch
+ret_type: None
+target: manual_seed_all
+title: torch.cuda.manual_seed_all
+version: 1.6.0

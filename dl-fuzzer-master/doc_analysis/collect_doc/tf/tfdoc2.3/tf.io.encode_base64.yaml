@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.encode_base64
+- tf.compat.v1.io.encode_base64
+constraints:
+  input:
+    descp: A Tensor of type string. Strings to be encoded.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  pad:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Bool whether padding is applied at
+      the ends.
+inputs:
+  optional:
+  - pad
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/io/encode_base64
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: encode_base64
+title: tf.io.encode_base64
+version: 2.3.0

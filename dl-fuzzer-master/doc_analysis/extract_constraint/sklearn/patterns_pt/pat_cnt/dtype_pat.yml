@@ -1,0 +1,155 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  ^((the|total)\s+)?number\s+(of|to):
+    cnt: 0
+    dtype: int
+    ndim: 0
+    prereq:
+    - number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1
+    range: '[0,inf)'
+  ^([\w]+)\s:
+    cnt: 192
+    group: 1
+    ndim: 0
+  ^(\w+)\s:
+    cnt: 192
+    group: 1
+  ^(a|an)\s+(\w+):
+    cnt: 0
+    group: 2
+    ndim: 0
+  ^(source|destination)\s+(tensor)*\s*rank:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^(the|a|first|second)?\s*dimension\s+(to|along|over):
+    cnt: 0
+    dtype: int
+    ndim: 0
+  ^the\s+(\w+)\s+(?!of):
+    cnt: 0
+    group: 1
+  ^the\s+optional\s+(\w+\s+\w+):
+    cnt: 0
+    group: 1
+  ^the\s+shape\s+of:
+    cnt: 0
+    dtype: shape
+    ndim: 1
+  a\s+(.*?),\s+or\s+`*[\w.]+`*:
+    cnt: 3
+    group: 1
+    update_structure: true
+  a\s+file-like\s+object:
+    cnt: 1
+    dtype: string
+  a\s+manual\s+rescaling\s+weight:
+    cnt: 0
+    dtype: numeric
+  a\s+number:
+    cnt: 1
+    dtype: int
+    ndim: 0
+  can\s+be\s+a\s+(((?<!\ba\b|\.).)*):
+    cnt: 1
+    group: 1
+    update_structure: true
+  default:*\s+`*(true|false)`*:
+    cnt: 40
+    dtype: bool
+    ndim: 0
+  defaults\s+to\s+`(false|true)`:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  defaults\s+to\s+the\s+(\w+)\s+of:
+    cnt: 0
+    group: 1
+    ndim: 0
+  if\s+`*(int|float)`*:
+    cnt: 16
+    group: 1
+    ndim: 0
+  if\s+`*(true|false)`*:
+    cnt: 85
+    dtype: bool
+    ndim: 0
+  if\s+autograd\s+should\s+record:
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  if\s+set,:
+    cnt: 1
+    dtype: bool
+    ndim: 0
+  if\s+set\s+to\s+`*(true|false)`*:
+    cnt: 5
+    dtype: bool
+    ndim: 0
+  must\s+be\s+(a|an)\s+(\w+):
+    cnt: 1
+    group: 2
+    ndim: 0
+  number\s+of\s+.*?\.\s+if\s+set\s+to\s+-1:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: int:[-1,inf)
+  of\s+type\s+([\w.]+):
+    cnt: 0
+    group: 1
+  parameter\s+name:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  quantity\s+of\s+:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    range: int:[0,inf)
+  set\s+(it)?\s*to\s+`*true`*:
+    cnt: 20
+    dtype: bool
+    ndim: 0
+  single\s+(number|integer):
+    cnt: 1
+    group: 1
+    ndim: 0
+  the\s+desired\s+(\w+)\s+of:
+    cnt: 0
+    group: 1
+    ndim: 0
+  the\s+desired\s+data\s+type\s+of:
+    cnt: 0
+    dtype: dtype
+  the\s+output\s+tensor\s+that\s+must\s+be\s+a\s+([\w]+):
+    cnt: 0
+    group: 1
+  the\s+size\s+of\s+returned\s+window:
+    cnt: 0
+    dtype: int
+    range: '[0,inf)'
+  when\s+(true|false):
+    cnt: 2
+    dtype: bool
+    ndim: 0
+  whether:
+    cnt: 92
+    dtype: bool
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+stop_word:
+- and
+- or
+- etc
+target: dtype

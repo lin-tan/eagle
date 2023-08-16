@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  stamp_token:
+    descp: A Tensor of type int64. Token to use as the new value of the resource stamp.
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the tree ensemble.
+  tree_ensemble_serialized:
+    descp: A Tensor of type string. Serialized proto of the ensemble.
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+  - stamp_token
+  - tree_ensemble_serialized
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesDeserializeEnsemble
+outputs:
+- The created Operation.
+package: tensorflow
+target: BoostedTreesDeserializeEnsemble
+title: tf.raw_ops.BoostedTreesDeserializeEnsemble
+version: 2.2.0

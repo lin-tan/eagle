@@ -1,0 +1,94 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: '1'
+    descp: The axis that will be excluded in the normalization process. This is typically
+      the channels (C) axis. For instance, after a Conv2D layer with layout='NCHW',
+      set axis=1 in InstanceNorm. If layout='NHWC', then set axis=3. Data will be
+      normalized along axes excluding the first axis and the axis given.
+    doc_dtype: int, default 1
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The axis that will be excluded in the normalization process
+    - This is typically the channels BSTR axis
+    - For instance, after a Conv2D layer with layout QSTR , set axis CONSTANT_NUM
+      in InstanceNorm
+    - If layout QSTR , then set axis CONSTANT_NUM
+    - Data will be normalized along axes excluding the first axis and the axis given
+    normalized_docdtype: D_TYPE, default CONSTANT_NUM
+  beta_initializer:
+    default: zeros
+    descp: Initializer for the beta weight.
+    doc_dtype: "str or Initializer, default \u2018zeros\u2019"
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the beta weight
+    normalized_docdtype: D_TYPE or Initializer, default zeros
+  center:
+    default: 'True'
+    descp: If True, add offset of beta to normalized tensor. If False, beta is ignored.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, add offset of beta to normalized D_STRUCTURE
+    - If CONSTANT_BOOL, beta is ignored
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  epsilon:
+    default: 1e-05
+    descp: Small float added to variance to avoid dividing by zero.
+    doc_dtype: float, default 1e-5
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Small D_TYPE added to variance to avoid dividing by zero
+    normalized_docdtype: D_TYPE, default CONSTANT_FLOAT
+  gamma_initializer:
+    default: ones
+    descp: Initializer for the gamma weight.
+    doc_dtype: "str or Initializer, default \u2018ones\u2019"
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the gamma weight
+    normalized_docdtype: D_TYPE or Initializer, default ones
+  in_channels:
+    default: '0'
+    descp: Number of channels (feature maps) in input data. If not specified, initialization
+      will be deferred to the first time forward is called and in_channels will be
+      inferred from the shape of input data.
+    doc_dtype: int, default 0
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of channels BSTR in input data
+    - If not specified, initialization will be deferred to the first time forward
+      is called and in_channels will be inferred from the shape of input data
+    normalized_docdtype: D_TYPE, default CONSTANT_NUM
+  scale:
+    default: 'False'
+    descp: If True, multiply by gamma. If False, gamma is not used. When the next
+      layer is linear (also e.g. nn.relu), this can be disabled since the scaling
+      will be done by the next layer.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, multiply by gamma
+    - If CONSTANT_BOOL, gamma is not used
+    - When the next layer is linear also e g
+    - nn relu , this can be disabled since the scaling will be done by the next layer
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+inputs:
+  optional:
+  - axis
+  - epsilon
+  - center
+  - scale
+  - beta_initializer
+  - gamma_initializer
+  - in_channels
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.InstanceNorm
+package: mxnet
+target: InstanceNorm
+title: mxnet.gluon.nn.InstanceNorm
+version: 1.6.0

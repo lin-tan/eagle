@@ -1,0 +1,14 @@
+constraints:
+  upper_bound:
+    default: _Null
+    descp: Upper limit of norm of weight. If upper_bound <= 0, Upper limit is not
+      set
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.lamb_update_phase2

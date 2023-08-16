@@ -1,0 +1,54 @@
+constraints:
+  X:
+    descp: '{array-like or sparse matrix} of shape (n_samples, n_features) Training
+      vector, where n_samples in the number of samples and n_features is the number
+      of features.'
+    dtype:
+    - numeric
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples,n_features]'
+  fit_intercept:
+    default: 'True'
+    descp: 'bool, default: True Specifies if the intercept should be fitted by the
+      model. It must match the fit() method parameter.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  intercept_scaling:
+    default: '1.0'
+    descp: 'float, default: 1 when fit_intercept is True, instance vector x becomes
+      [x, intercept_scaling], i.e. a "synthetic" feature with constant value equals
+      to intercept_scaling is appended to the instance vector. It must match the fit()
+      method parameter.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  loss:
+    default: squared_hinge
+    descp: '{''squared_hinge'', ''log''}, default ''squared_hinge'' Specifies the
+      loss function. With ''squared_hinge'' it is the squared hinge loss (a.k.a. L2
+      loss). With ''log'' it is the loss of logistic regression models.'
+    dtype:
+    - string
+  y:
+    descp: array, shape = [n_samples] Target vector relative to X
+dependency:
+- n_features
+- n_samples
+inputs:
+  optional:
+  - loss
+  - fit_intercept
+  - intercept_scaling
+  required:
+  - X
+  - y
+link: ''
+package: sklearn
+target: l1_min_c
+title: sklearn.svm.l1_min_c
+version: 0.24.2

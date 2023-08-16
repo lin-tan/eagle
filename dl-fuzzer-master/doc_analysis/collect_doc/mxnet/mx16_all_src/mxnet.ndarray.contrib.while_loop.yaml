@@ -1,0 +1,31 @@
+constraints:
+  cond:
+    descp: The loop condition.
+    doc_dtype:
+    - a Python function.
+  func:
+    descp: The loop body.
+    doc_dtype:
+    - a Python function.
+  loop_vars:
+    descp: The initial values of the loop variables.
+    doc_dtype:
+    - an NDArray
+    - nested lists of NDArrays.
+  max_iterations:
+    default: None
+    descp: Maximum number of iterations.
+    doc_dtype:
+    - a python int.
+inputs:
+  optional:
+  - max_iterations
+  required:
+  - cond
+  - func
+  - loop_vars
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.while_loop
+package: mxnet
+target: while_loop
+title: mxnet.ndarray.contrib.while_loop
+version: 1.6.0

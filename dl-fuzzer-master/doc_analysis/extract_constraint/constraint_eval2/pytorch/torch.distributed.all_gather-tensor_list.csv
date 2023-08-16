@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+list[Tensor],Output list. It should contain correctly-sized tensors to be used for output of the collective.,,nonprim_dtype,"tensor_t(torch.tensor), structure(list(torch.tensor))",,1

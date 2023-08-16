@@ -1,0 +1,23 @@
+constraints:
+  module:
+    descp: module containing the tensor to prune
+    doc_dtype:
+    - nn.Module
+  name:
+    descp: parameter name within `module` on which pruning will act.
+    doc_dtype:
+    - str
+    dtype:
+    - string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - module
+  - name
+link: https://pytorch.org/docs/1.7.0/generated/torch.nn.utils.prune.remove.html#torch.nn.utils.prune.remove#torch.nn.utils.prune.remove
+package: torch
+target: remove
+title: torch.nn.utils.prune.remove
+version: 1.9.0

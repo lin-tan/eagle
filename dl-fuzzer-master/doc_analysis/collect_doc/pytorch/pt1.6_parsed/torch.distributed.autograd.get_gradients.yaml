@@ -1,0 +1,16 @@
+constraints:
+  context_id:
+    descp: The autograd context id for which we should retrieve the gradients.
+    doc_dtype:
+    - int
+    sig_dtype: int
+inputs:
+  optional: []
+  required:
+  - context_id
+link: https://pytorch.org/docs/1.6.0/rpc.html#torch.distributed.autograd.get_gradients
+package: torch
+ret_type: Dict[Tensor, Tensor]
+target: get_gradients
+title: torch.distributed.autograd.get_gradients
+version: 1.6.0

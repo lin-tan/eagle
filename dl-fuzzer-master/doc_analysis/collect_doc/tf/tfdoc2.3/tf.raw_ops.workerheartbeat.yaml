@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  request:
+    descp: A Tensor of type string. A string tensor containing a serialized WorkerHeartbeatRequest
+inputs:
+  optional:
+  - name
+  required:
+  - request
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/WorkerHeartbeat
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: WorkerHeartbeat
+title: tf.raw_ops.WorkerHeartbeat
+version: 2.3.0

@@ -1,0 +1,19 @@
+constraints:
+  inputs:
+    descp: A list of at least 1 Tensor objects with type string. Can be of any shape.
+      Each must contain serialized Summary protocol buffers.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MergeSummary
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: MergeSummary
+title: tf.raw_ops.MergeSummary
+version: 2.2.0

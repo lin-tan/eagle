@@ -1,0 +1,21 @@
+constraints:
+  dataset:
+    descp: A Tensor of type variant.
+  iterator:
+    descp: A Tensor of type resource.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - dataset
+  - iterator
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MakeIterator
+outputs:
+- The created Operation.
+package: tensorflow
+target: MakeIterator
+title: tf.raw_ops.MakeIterator
+version: 2.3.0

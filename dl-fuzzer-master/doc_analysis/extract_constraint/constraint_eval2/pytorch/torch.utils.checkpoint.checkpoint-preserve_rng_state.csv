@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, default=True",Omit stashing and restoring the RNG state during each checkpoint.,None,prim_dtype,dtype(torch.bool),,1

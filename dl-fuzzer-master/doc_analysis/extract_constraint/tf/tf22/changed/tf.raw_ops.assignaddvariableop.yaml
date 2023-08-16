@@ -1,0 +1,30 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource. handle to the resource in which to store the
+      variable.
+    tensor_t:
+    - tf.tensor
+  value:
+    descp: A Tensor. the value by which the variable will be incremented.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AssignAddVariableOp
+outputs:
+- The created Operation.
+package: tensorflow
+target: AssignAddVariableOp
+title: tf.raw_ops.AssignAddVariableOp
+version: 2.2.0

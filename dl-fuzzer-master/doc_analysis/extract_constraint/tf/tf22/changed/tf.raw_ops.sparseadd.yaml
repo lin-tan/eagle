@@ -1,0 +1,104 @@
+constraints:
+  a_indices:
+    descp: A Tensor of type int64. 2-D. The indices of the first SparseTensor, size
+      [nnz, ndims] Matrix.
+    dtype:
+    - tf.int64
+    ndim:
+    - '2'
+    shape:
+    - '[nnz,ndims]'
+    tensor_t:
+    - tf.tensor
+  a_shape:
+    descp: A Tensor of type int64. 1-D. The shape of the first SparseTensor, size
+      [ndims] Vector.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    shape:
+    - '[ndims]'
+    tensor_t:
+    - tf.tensor
+  a_values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64. 1-D. The values of the first SparseTensor,
+      size [nnz] Vector.'
+    ndim:
+    - '1'
+    shape:
+    - '[nnz]'
+    tensor_t:
+    - tf.tensor
+  b_indices:
+    descp: A Tensor of type int64. 2-D. The indices of the second SparseTensor, size
+      [nnz, ndims] Matrix.
+    dtype:
+    - tf.int64
+    ndim:
+    - '2'
+    shape:
+    - '[nnz,ndims]'
+    tensor_t:
+    - tf.tensor
+  b_shape:
+    descp: A Tensor of type int64. 1-D. The shape of the second SparseTensor, size
+      [ndims] Vector.
+    dtype:
+    - tf.int64
+    ndim:
+    - '1'
+    shape:
+    - '[ndims]'
+    tensor_t:
+    - tf.tensor
+  b_values:
+    descp: A Tensor. Must have the same type as a_values. 1-D. The values of the second
+      SparseTensor, size [nnz] Vector.
+    dtype:
+    - dtype:&a_values
+    ndim:
+    - '1'
+    shape:
+    - '[nnz]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  thresh:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64. 0-D. The
+      magnitude threshold that determines if an output value/index pair takes space.'
+    tensor_t:
+    - tf.tensor
+dependency:
+- ndims
+- nnz
+inputs:
+  optional:
+  - name
+  required:
+  - a_indices
+  - a_values
+  - a_shape
+  - b_indices
+  - b_values
+  - b_shape
+  - thresh
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SparseAdd
+outputs:
+- A tuple of Tensor objects (sum_indices, sum_values, sum_shape).
+- sum_indices: A Tensor of type int64.
+- sum_values: A Tensor. Has the same type as a_values.
+- sum_shape: A Tensor of type int64.
+package: tensorflow
+target: SparseAdd
+title: tf.raw_ops.SparseAdd
+version: 2.2.0

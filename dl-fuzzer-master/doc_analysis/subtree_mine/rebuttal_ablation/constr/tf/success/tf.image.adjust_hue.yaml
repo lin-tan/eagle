@@ -1,0 +1,46 @@
+aliases:
+- tf.compat.v1.image.adjust_hue
+constraints:
+  delta:
+    descp: float.  How much to add to the hue channel.
+    dtype:
+    - float
+    - tf.dtype
+  image:
+    descp: RGB image or images. Size of the last dimension must be 3.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - image
+  - delta
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/adjust_hue
+outputs: Adjusted image(s), same shape and DType as `image`.
+package: tensorflow
+target: adjust_hue
+title: tf.image.adjust_hue
+version: 2.1.0

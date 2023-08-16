@@ -1,0 +1,17 @@
+constraints:
+  klass:
+    descp: A subclass of mx.init.Initializer that needs to be registered as a custom
+      initializer.
+    doc_dtype: class
+    normalized_descp:
+    - A subclass of mx init Initializer that needs to be registered as a custom initializer
+    normalized_docdtype: ONE_WORD class
+inputs:
+  optional: []
+  required:
+  - klass
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/initializer/index.html#mxnet.initializer.register
+package: mxnet
+target: register
+title: mxnet.initializer.register
+version: 1.6.0

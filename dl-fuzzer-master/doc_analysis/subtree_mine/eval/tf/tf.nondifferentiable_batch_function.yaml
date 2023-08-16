@@ -1,0 +1,8 @@
+constraints:
+  max_batch_size:
+    descp: Batch sizes will never be bigger than this.
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+title: tf.nondifferentiable_batch_function

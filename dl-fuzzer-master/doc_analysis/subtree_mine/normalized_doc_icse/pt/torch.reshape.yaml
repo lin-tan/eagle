@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: the tensor to be reshaped
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to be reshaped
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  shape:
+    descp: the new shape
+    doc_dtype: tuple of python:ints
+    normalized_descp:
+    - the new shape
+    normalized_docdtype: D_STRUCTURE of python D_TYPE
+inputs:
+  optional: []
+  required:
+  - input
+  - shape
+link: https://pytorch.org/docs/stable/torch.html#torch.reshape
+package: torch
+ret_type: Tensor
+target: reshape
+title: torch.reshape
+version: 1.5.0

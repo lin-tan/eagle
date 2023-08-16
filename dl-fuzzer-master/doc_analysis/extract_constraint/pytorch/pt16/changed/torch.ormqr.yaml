@@ -1,0 +1,49 @@
+constraints:
+  input:
+    descp: the a from `torch.geqrf()`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  input2:
+    descp: the tau from `torch.geqrf()`.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  input3:
+    descp: the matrix to be multiplied.
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    tensor_t:
+    - torch.tensor
+  left:
+    default: 'True'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  transpose:
+    default: 'False'
+    descp: ''
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - left
+  - transpose
+  required:
+  - input
+  - input2
+  - input3
+link: https://pytorch.org/docs/1.6.0/generated/torch.ormqr.html#torch.ormqr#torch.ormqr
+package: torch
+ret_type: Tensor
+target: ormqr
+title: torch.ormqr
+version: 1.6.0

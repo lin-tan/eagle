@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, float","quantity of parameters to prune. If `float`, should be between 0.0 and 1.0 and represent the fraction of parameters to prune. If `int`, it represents the absolute number of parameters to prune.",,prim_dtype,"dtype(int, torch.float32)",,1
+"int, float","quantity of parameters to prune. If `float`, should be between 0.0 and 1.0 and represent the fraction of parameters to prune. If `int`, it represents the absolute number of parameters to prune.",,shape,ndim(0),,1
+"int, float","quantity of parameters to prune. If `float`, should be between 0.0 and 1.0 and represent the fraction of parameters to prune. If `int`, it represents the absolute number of parameters to prune.",,validvalue,"range(int:[0,inf), torch.float32:[0,1])",,1

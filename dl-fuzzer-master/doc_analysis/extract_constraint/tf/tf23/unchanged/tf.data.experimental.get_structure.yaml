@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.data.experimental.get_structure
+constraints:
+  dataset_or_iterator:
+    descp: A tf.data.Dataset or an tf.data.Iterator.
+exceptions:
+- TypeError: If input is not a tf.data.Dataset or an tf.data.Iterator object.
+inputs:
+  optional: []
+  required:
+  - dataset_or_iterator
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/get_structure
+outputs:
+- A nested structure of tf.TypeSpec objects matching the structure of an element of
+  dataset_or_iterator and specifying the type of individual components.
+package: tensorflow
+target: get_structure
+title: tf.data.experimental.get_structure
+version: 2.3.0

@@ -1,0 +1,62 @@
+constraints:
+  dim:
+    default: None
+    descp: the dimension to sort along
+    doc_dtype: int, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the dimension to sort along
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  k:
+    descp: the k in "top-k"
+    doc_dtype: int
+    normalized_descp:
+    - the k in QSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  largest:
+    default: 'True'
+    descp: controls whether to return largest or smallest elements
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return largest or smallest elements
+    normalized_docdtype: D_TYPE optional
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) that can be optionally given to
+      be used as output buffers
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE of BSTR that can be optionally given to be used as output
+      buffers
+    normalized_docdtype: D_STRUCTURE optional
+  sorted:
+    default: 'True'
+    descp: controls whether to return the elements in sorted order
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to return the elements in sorted order
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - dim
+  - largest
+  - sorted
+  - out
+  required:
+  - input
+  - k
+link: https://pytorch.org/docs/stable/torch.html#torch.topk
+package: torch
+ret_type: (Tensor, LongTensor)
+target: topk
+title: torch.topk
+version: 1.5.0

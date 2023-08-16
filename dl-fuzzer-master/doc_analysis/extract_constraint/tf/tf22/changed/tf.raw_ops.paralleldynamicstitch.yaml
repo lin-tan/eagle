@@ -1,0 +1,36 @@
+constraints:
+  data:
+    descp: A list with the same length as indices of Tensor objects with the same
+      type.
+    ndim:
+    - '1'
+    shape:
+    - shape:&indices
+    structure:
+    - list
+  indices:
+    descp: A list of at least 1 Tensor objects with type int32.
+    dtype:
+    - tf.int32
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ParallelDynamicStitch
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: ParallelDynamicStitch
+title: tf.raw_ops.ParallelDynamicStitch
+version: 2.2.0

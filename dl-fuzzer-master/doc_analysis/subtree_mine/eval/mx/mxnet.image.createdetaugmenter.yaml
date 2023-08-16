@@ -1,0 +1,9 @@
+constraints:
+  rand_mirror:
+    default: 'False'
+    descp: Whether to apply horizontal flip to image with probability 0.5
+    doc_dtype:
+    - bool
+    dtype:
+    - boolean
+title: mxnet.image.CreateDetAugmenter

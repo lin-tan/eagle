@@ -1,0 +1,54 @@
+aliases:
+- tf.compat.v1.nn.compute_accidental_hits
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  num_true:
+    descp: An `int`.  The number of target classes per training example.
+    normalized_descp:
+    - An D_TYPE
+    - The number of target classes per training example
+  sampled_candidates:
+    descp: A tensor of type `int64` and shape `[num_sampled]`. The sampled_candidates
+      output of CandidateSampler.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE and shape BSTR
+    - The sampled_candidates output of CandidateSampler
+  seed:
+    default: None
+    descp: An `int`. An operation-specific seed. Default is 0.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An D_TYPE
+    - An operation specific seed
+    - Default is CONSTANT_NUM
+  true_classes:
+    descp: A `Tensor` of type `int64` and shape `[batch_size, num_true]`. The target
+      classes.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE and shape BSTR
+    - The target classes
+inputs:
+  optional:
+  - seed
+  - name
+  required:
+  - true_classes
+  - sampled_candidates
+  - num_true
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/compute_accidental_hits
+outputs:
+- indices: A `Tensor` of type `int32` and shape `[num_accidental_hits]`. Values indicate
+    rows in `true_classes`.
+- ids: A `Tensor` of type `int64` and shape `[num_accidental_hits]`. Values indicate
+    positions in `sampled_candidates`.
+- weights: A `Tensor` of type `float` and shape `[num_accidental_hits]`. Each value
+    is `-FLOAT_MAX`.
+package: tensorflow
+target: compute_accidental_hits
+title: tf.nn.compute_accidental_hits
+version: 2.1.0

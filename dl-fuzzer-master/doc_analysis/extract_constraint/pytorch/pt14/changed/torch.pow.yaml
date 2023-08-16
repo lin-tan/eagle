@@ -1,0 +1,33 @@
+constraints:
+  exponent:
+    descp: the exponent value
+    doc_dtype:
+    - python:float
+    - tensor
+    tensor_t:
+    - torch.tensor
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - exponent
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.pow
+package: torch
+ret_type: Tensor
+target: pow
+title: torch.pow
+version: 1.4.0

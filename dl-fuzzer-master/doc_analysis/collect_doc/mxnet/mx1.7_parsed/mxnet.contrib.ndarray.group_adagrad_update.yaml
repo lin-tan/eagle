@@ -1,0 +1,74 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  clip_gradient:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype:
+    - float
+    - optional
+    - default=-1
+  epsilon:
+    default: _Null
+    descp: Epsilon for numerical stability
+    doc_dtype:
+    - float
+    - optional
+    - default=9.99999975e-06
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype:
+    - NDArray
+  history:
+    default: None
+    descp: History
+    doc_dtype:
+    - NDArray
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype:
+    - float
+    - required
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype:
+    - float
+    - optional
+    - default=1
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype:
+    - NDArray
+inputs:
+  optional:
+  - weight
+  - grad
+  - history
+  - lr
+  - rescale_grad
+  - clip_gradient
+  - epsilon
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.group_adagrad_update
+package: mxnet
+target: group_adagrad_update
+title: mxnet.contrib.ndarray.group_adagrad_update
+version: 1.7.0

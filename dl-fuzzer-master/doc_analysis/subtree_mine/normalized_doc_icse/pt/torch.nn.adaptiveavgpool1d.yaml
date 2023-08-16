@@ -1,0 +1,14 @@
+constraints:
+  output_size:
+    descp: the target output size H
+    normalized_descp:
+    - the target output size H
+inputs:
+  optional: []
+  required:
+  - output_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.AdaptiveAvgPool1d
+package: torch
+target: AdaptiveAvgPool1d
+title: torch.nn.AdaptiveAvgPool1d
+version: 1.5.0

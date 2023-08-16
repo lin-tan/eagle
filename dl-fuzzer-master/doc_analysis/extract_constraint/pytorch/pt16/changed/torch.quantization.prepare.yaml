@@ -1,0 +1,32 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: carry out model transformations in-place, the original module is mutated
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  model:
+    descp: input model to be modified in-place
+  observer_non_leaf_module_list:
+    default: None
+    descp: list of non-leaf modules we want to add observer
+    structure:
+    - list
+  white_list:
+    default: '{<classtorch.nn.intrinsic.qat.modules.conv_fused.ConvReLU2d>,<classtorch.nn.intrinsic.modules.fused.BNReLU2d>,<classtorch.nn.intrinsic.qat.modules.conv_fused.ConvBnReLU2d>,<classtorch.nn.modules.rnn.LSTM>,<classtorch.nn.modules.activation.ReLU>,<classtorch.nn.modules.conv.Conv2d>,<classtorch.nn.modules.instancenorm.InstanceNorm2d>,<classtorch.nn.intrinsic.qat.modules.linear_relu.LinearReLU>,<classtorch.nn.modules.rnn.LSTMCell>,<classtorch.nn.qat.modules.linear.Linear>,<classtorch.nn.quantized.modules.functional_modules.FloatFunctional>,<classtorch.nn.intrinsic.modules.fused.ConvReLU3d>,<classtorch.nn.modules.activation.ELU>,<classtorch.nn.modules.batchnorm.BatchNorm3d>,<classtorch.nn.modules.container.Sequential>,<classtorch.nn.modules.activation.ReLU6>,<classtorch.quantization.stubs.QuantStub>,<classtorch.nn.modules.linear.Linear>,<classtorch.nn.modules.conv.Conv1d>,<classtorch.nn.modules.normalization.GroupNorm>,<classtorch.nn.modules.activation.Hardswish>,<classtorch.nn.modules.instancenorm.InstanceNorm3d>,<classtorch.nn.modules.rnn.RNNCell>,<classtorch.nn.intrinsic.modules.fused.ConvBnReLU2d>,<classtorch.nn.intrinsic.qat.modules.conv_fused.ConvBn2d>,<classtorch.nn.intrinsic.modules.fused.ConvBn2d>,<classtorch.nn.modules.instancenorm.InstanceNorm1d>,<classtorch.nn.intrinsic.modules.fused.BNReLU3d>,<classtorch.nn.intrinsic.modules.fused.LinearReLU>,<classtorch.nn.modules.conv.Conv3d>,<classtorch.nn.qat.modules.conv.Conv2d>,<classtorch.nn.modules.normalization.LayerNorm>,<classtorch.nn.modules.rnn.GRUCell>,<classtorch.nn.intrinsic.modules.fused.ConvReLU1d>,<classtorch.nn.intrinsic.modules.fused.ConvReLU2d>,<classtorch.nn.modules.batchnorm.BatchNorm2d>}'
+    descp: list of quantizable modules
+    structure:
+    - list
+inputs:
+  optional:
+  - inplace
+  - white_list
+  - observer_non_leaf_module_list
+  required:
+  - model
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.prepare
+package: torch
+target: prepare
+title: torch.quantization.prepare
+version: 1.6.0

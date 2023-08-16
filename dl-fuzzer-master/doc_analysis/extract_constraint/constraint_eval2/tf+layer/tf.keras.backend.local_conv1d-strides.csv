@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"a tuple of a single integer, specifying the stride length of the convolution.",,prim_dtype,dtype(int),,1
+,"a tuple of a single integer, specifying the stride length of the convolution.",,nonprim_dtype,structure(tuple(int)),,1
+,"a tuple of a single integer, specifying the stride length of the convolution.",,shape,"shape([1]), ndim(0, 1)",,1

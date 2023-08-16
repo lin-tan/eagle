@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `string`, only `""NHWC""` is currently supported.",,prim_dtype,dtype(tf.string),,1
+,"A `string`, only `""NHWC""` is currently supported.",,shape,ndim(0),,1
+,"A `string`, only `""NHWC""` is currently supported.",,validvalue,enum(NHWC),,1

@@ -1,0 +1,43 @@
+aliases:
+- tf.compat.v1.keras.backend.sparse_categorical_crossentropy
+constraints:
+  axis:
+    default: '-1'
+    descp: Int specifying the channels axis. `axis=-1` corresponds to data format
+      `channels_last', and`axis=1`corresponds to data format`channels_first`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE specifying the channels axis
+    - QSTR channels_last , and QSTR channels_first
+  from_logits:
+    default: 'False'
+    descp: Boolean, whether `output` is the result of a softmax, or is a tensor of
+      logits.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE, whether PARAM is the result of a softmax, or is a D_STRUCTURE of logits
+  output:
+    descp: A tensor resulting from a softmax (unless `from_logits` is True, in which
+      case `output` is expected to be the logits).
+    normalized_descp:
+    - A D_STRUCTURE resulting from a softmax unless PARAM is CONSTANT_BOOL, in which
+      case QSTR is expected to be the logits
+  target:
+    descp: An integer tensor.
+    normalized_descp:
+    - An D_TYPE D_STRUCTURE
+exceptions:
+- ValueError: if `axis` is neither -1 nor one of the axes of `output`.
+inputs:
+  optional:
+  - from_logits
+  - axis
+  required:
+  - target
+  - output
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/sparse_categorical_crossentropy
+outputs: Output tensor.
+package: tensorflow
+target: sparse_categorical_crossentropy
+title: tf.keras.backend.sparse_categorical_crossentropy
+version: 2.1.0

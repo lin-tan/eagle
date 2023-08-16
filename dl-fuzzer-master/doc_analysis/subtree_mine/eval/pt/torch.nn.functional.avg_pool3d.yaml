@@ -1,0 +1,16 @@
+constraints:
+  kernel_size:
+    descp: size of the pooling region. Can be a single number or a tuple (kT, kH,
+      kW)
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[3]'
+    structure:
+    - tuple
+title: torch.nn.functional.avg_pool3d

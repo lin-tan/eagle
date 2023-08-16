@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.log
+- tf.compat.v1.math.log
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, complex64, complex128.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/math/log
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: log
+title: tf.math.log
+version: 2.2.0

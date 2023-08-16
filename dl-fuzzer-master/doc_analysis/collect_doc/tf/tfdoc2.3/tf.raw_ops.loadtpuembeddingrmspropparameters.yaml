@@ -1,0 +1,45 @@
+constraints:
+  config:
+    default: ''
+    descp: An optional string. Defaults to "".
+  mom:
+    descp: A Tensor of type float32. Value of mom used in the RMSProp optimization
+      algorithm.
+  ms:
+    descp: A Tensor of type float32. Value of ms used in the RMSProp optimization
+      algorithm.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_shards:
+    descp: An int.
+  parameters:
+    descp: A Tensor of type float32. Value of parameters used in the RMSProp optimization
+      algorithm.
+  shard_id:
+    descp: An int.
+  table_id:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+  table_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - table_id
+  - table_name
+  - config
+  - name
+  required:
+  - parameters
+  - ms
+  - mom
+  - num_shards
+  - shard_id
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LoadTPUEmbeddingRMSPropParameters
+outputs:
+- The created Operation.
+package: tensorflow
+target: LoadTPUEmbeddingRMSPropParameters
+title: tf.raw_ops.LoadTPUEmbeddingRMSPropParameters
+version: 2.3.0

@@ -1,0 +1,76 @@
+constraints:
+  combiner:
+    default: None
+    descp: A string specifying the reduction op. Currently "mean", "sqrtn" and "sum"
+      are supported. "sum" computes the weighted sum of the embedding results for
+      each row. "mean" is the weighted sum divided by the total weight. "sqrtn" is
+      the weighted sum divided by the square root of the sum of the squares of the
+      weights.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE specifying the reduction op
+    - Currently QSTR are supported
+    - QSTR computes the weighted sum of the embedding results for each row
+    - QSTR is the weighted sum divided by the total weight
+    - QSTR is the weighted sum divided by the square root of the sum of the squares
+      of the weights
+  max_norm:
+    default: None
+    descp: If not `None`, each embedding is clipped if its l2-norm is larger than
+      this value, before combining.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If not QSTR each embedding is clipped if its l2 norm is larger than this value
+      before combining
+  name:
+    default: None
+    descp: Optional name for the op.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional name for the op
+  params:
+    descp: A single tensor representing the complete embedding tensor, or a list of
+      P tensors all of same shape except for the first dimension, representing sharded
+      embedding tensors.  Alternatively, a`PartitionedVariable`, created by partitioning
+      along dimension 0. Each element must be appropriately sized for `"div"` `partition_strategy`.
+    normalized_descp:
+    - A single D_STRUCTURE representing the complete embedding D_STRUCTURE of P D_STRUCTURE
+      all of same shape except for the first dimension representing sharded embedding
+      D_STRUCTURE
+    - Alternatively a QSTR created by partitioning along dimension CONSTANT_NUM
+    - Each element must be appropriately sized for QSTR
+  sp_ids:
+    descp: N x M `SparseTensor` of int64 ids where N is typically batch size and M
+      is arbitrary.
+    normalized_descp:
+    - N x M D_STRUCTURE of D_TYPE ids where N is typically batch size and M is arbitrary
+  sp_weights:
+    descp: either a `SparseTensor` of float / double weights, or `None` to indicate
+      all weights should be taken to be 1. If specified, `sp_weights`must have exactly
+      the same shape and indices as `sp_ids`.
+    normalized_descp:
+    - either a D_STRUCTURE of D_TYPE weights or QSTR to indicate all weights should
+      be taken to be CONSTANT_NUM
+    - If specified QSTR must have exactly the same shape and indices as PARAM
+exceptions:
+- TypeError: If `sp_ids` is not a `SparseTensor`, or if `sp_weights` is neither `None`
+    nor `SparseTensor`.
+- ValueError: If `combiner` is not one of {"mean", "sqrtn", "sum"}.
+inputs:
+  optional:
+  - combiner
+  - max_norm
+  - name
+  required:
+  - params
+  - sp_ids
+  - sp_weights
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/embedding_lookup_sparse
+outputs: A dense tensor representing the combined embeddings for the sparse ids. For
+  each row in the dense tensor represented by `sp_ids`, the op looks up the embeddings
+  for all ids in that row, multiplies them by the corresponding weight, and combines
+  these embeddings as specified.
+package: tensorflow
+target: embedding_lookup_sparse
+title: tf.nn.embedding_lookup_sparse
+version: 2.1.0

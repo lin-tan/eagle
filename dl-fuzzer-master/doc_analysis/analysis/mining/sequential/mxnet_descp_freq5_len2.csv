@@ -1,0 +1,920 @@
+,freq,sequence,len
+0,757,"['output', 'SOME_STRUCTURE']",2
+1,745,"['output', 'result']",2
+2,741,"['output', 'SOME_STRUCTURE', 'hold', 'result']",4
+3,245,"['input', 'array']",2
+4,129,"['input', 'data']",2
+5,122,"['input', 'function']",2
+6,106,"['clip_gradient', 'clip_gradient']",2
+7,106,"['grad', 'grad']",2
+8,98,"['first', 'input']",2
+9,91,"['second', 'input']",2
+10,80,"['load', 'pretrained', 'weights']",3
+11,65,"['set', 'true']",2
+12,63,"['clip', 'range']",2
+13,58,"['gradient', 'gradient']",2
+14,57,"['max', 'min']",2
+15,57,"['clip', 'range', 'clipping', 'turned']",4
+16,53,"['clip', 'gradient', 'range', 'clip_gradient', 'clip_gradient', 'clip_gradient', 'gradient', 'clipping', 'turned']",9
+17,53,"['grad', 'max', 'min', 'grad', 'clip_gradient', 'clip_gradient']",6
+18,53,"['rescale', 'gradient', 'grad', 'rescale_grad', 'grad']",5
+19,52,"['tensor', 'matrices']",2
+20,50,"['augmentation', 'param']",2
+21,49,"['first', 'input', 'function']",3
+22,49,"['second', 'input', 'function']",3
+23,48,"['SOME_DTYPE', 'SOME_DTYPE']",2
+24,48,"['h', 'w']",2
+25,47,"['shape', 'shape']",2
+26,45,"['data', 'type']",2
+27,45,"['weight', 'decay']",2
+28,44,"['dtype', 'output']",2
+29,44,"['function', 'penalizes']",2
+30,44,"['w', 'w']",2
+31,43,"['maximum', 'value']",2
+32,43,"['x', 'y']",2
+33,42,"['weight', 'decay', 'augments', 'objective', 'function', 'regularization', 'term', 'penalizes', 'large', 'weights']",10
+34,42,"['penalty', 'scales', 'square', 'magnitude', 'weight']",5
+35,41,"['whether', 'model']",2
+36,40,"['whether', 'load', 'pretrained', 'weights', 'model']",5
+37,40,"['context', 'load', 'pretrained', 'weights']",4
+38,40,"['case', 'inferred']",2
+39,40,"['defaults', 'none']",2
+40,40,"['shape', 'output']",2
+41,40,"['learning', 'rate']",2
+42,39,"['output', 'type']",2
+43,39,"['minimum', 'value']",2
+44,39,"['decay', 'rate']",2
+45,38,"['dtype', 'output', 'case', 'inferred']",4
+46,38,"['defaults', 'dtype']",2
+47,37,"['input', 'SOME_STRUCTURE']",2
+48,37,"['y', 'x']",2
+49,36,"['defaults', 'defined', 'dtype', 'none']",4
+50,36,"['h', 'w', 'd', 'h', 'w']",5
+51,35,"['output', 'n']",2
+52,35,"['value', 'SOME_DTYPE']",2
+53,35,"['decay', 'rate', 'estimates']",3
+54,34,"['size', 'one']",2
+55,34,"['SOME_DTYPE', 'none']",2
+56,34,"['SOME_DTYPE', 'value']",2
+57,33,"['result', 'dimension']",2
+58,33,"['width', 'height']",2
+59,32,"['SOME_STRUCTURE', 'SOME_DTYPE']",2
+60,32,"['true', 'left']",2
+61,32,"['axis', 'along']",2
+62,32,"['n', 'n']",2
+63,32,"['defaults', 'SOME_DTYPE']",2
+64,32,"['defaults', 'SOME_DTYPE', 'dtype']",3
+65,32,"['location', 'keeping', 'model', 'parameters']",4
+66,32,"['x', 'x']",2
+67,31,"['true', 'size']",2
+68,31,"['SOME_DTYPE', 'factor']",2
+69,31,"['x', 'y', 'x']",3
+70,31,"['y', 'x', 'y']",3
+71,30,"['true', 'left', 'result', 'dimension', 'size', 'one']",6
+72,30,"['default', 'SOME_DTYPE']",2
+73,30,"['defaults', 'SOME_DTYPE', 'defined', 'dtype', 'none']",5
+74,29,"['set', 'size']",2
+75,29,"['whether', 'instead']",2
+76,29,"['along', 'axis']",2
+77,28,"['whether', 'axis']",2
+78,28,"['value', 'data']",2
+79,28,"['context', 'output']",2
+80,28,"['convolution', 'h', 'w', 'd', 'h', 'w']",6
+81,28,"['w', 'h', 'w', 'd', 'h', 'w']",6
+82,27,"['set', 'true', 'size']",3
+83,27,"['output', 'shape']",2
+84,27,"['input', 'matrices']",2
+85,27,"['diagonal', 'main', 'diagonal']",3
+86,27,"['device', 'context']",2
+87,26,"['set', 'true', 'reduced', 'left', 'result', 'dimension', 'size', 'one']",8
+88,26,"['set', 'input']",2
+89,26,"['perform', 'reduction']",2
+90,26,"['whether', 'data']",2
+91,26,"['whether', 'use']",2
+92,26,"['axis', 'axis']",2
+93,26,"['shape', 'n']",2
+94,26,"['e', 'g']",2
+95,25,"['input', 'operator']",2
+96,25,"['default', 'context']",2
+97,25,"['tensor', 'input', 'matrices']",3
+98,25,"['supports', 'negative']",2
+99,24,"['input', 'feature']",2
+100,24,"['true', 'axis']",2
+101,24,"['whether', 'perform']",2
+102,24,"['axes', 'size']",2
+103,24,"['label', 'reserved']",2
+104,24,"['label', 'reserved', 'blank']",3
+105,24,"['label', 'reserved', 'blank', 'label']",4
+106,24,"['default', 'current']",2
+107,24,"['SOME_DTYPE', 'value', 'SOME_DTYPE']",3
+108,24,"['triangular', 'matrix']",2
+109,24,"['current', 'context']",2
+110,23,"['whether', 'axis', 'axis']",3
+111,23,"['default', 'current', 'context']",3
+112,23,"['shape', 'must']",2
+113,23,"['decay', 'momentum']",2
+114,22,"['set', 'true', 'reduced', 'axes', 'left', 'result', 'dimension', 'size', 'one']",9
+115,22,"['parameters', 'distributions']",2
+116,22,"['true', 'input']",2
+117,22,"['whether', 'perform', 'reduction', 'axis', 'axis', 'instead']",6
+118,22,"['value', 'values']",2
+119,22,"['pooling', 'd']",2
+120,21,"['type', 'SOME_DTYPE']",2
+121,21,"['input', 'output']",2
+122,21,"['lower', 'triangular']",2
+123,21,"['shape', 'distribution']",2
+124,21,"['shape', '!', 'shape', 'must', 'broadcastable', 'common', 'shape']",7
+125,21,"['decay', 'rate', 'momentum', 'estimates']",4
+126,20,"['output', 'data']",2
+127,20,"['second', 'array']",2
+128,20,"['n', 'm']",2
+129,20,"['defaults', 'dimension']",2
+130,20,"['SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",4
+131,20,"['bias', 'parameter']",2
+132,20,"['convolution', 'w', 'h', 'w', 'd', 'h', 'w']",7
+133,20,"['kernel', 'size']",2
+134,20,"['batch', 'norm']",2
+135,20,"['lhs', 'shape', '!', 'rhs', 'shape', 'must', 'broadcastable', 'common', 'shape']",9
+136,19,"['output', 'format']",2
+137,19,"['type', 'output']",2
+138,19,"['first', 'array']",2
+139,19,"['index', 'along']",2
+140,19,"['decay', 'rate', 'momentum', 'estimates', 'epoch']",5
+141,19,"['e', 'g', 'shape']",3
+142,19,"['optional', 'default']",2
+143,19,"['x', 'y', 'x', 'y']",4
+144,18,"['set', 'instead']",2
+145,18,"['set', 'output']",2
+146,18,"['log', 'probability']",2
+147,18,"['storage', 'type']",2
+148,18,"['input', 'd']",2
+149,18,"['true', 'row_ssparse']",2
+150,18,"['values', 'mask']",2
+151,18,"['context', 'output', 'format', 'cpu|gpu|cpu_pinned', 'n']",5
+152,18,"['used', 'imperative', 'calls']",3
+153,18,"['shape', 'e', 'g']",3
+154,18,"['shape', 'm', 'n']",3
+155,18,"['shape', 'm', 'n', 'm', 'n']",5
+156,18,"['d', 'y']",2
+157,18,"['d', 'y', 'x']",3
+158,18,"['tensor', 'square']",2
+159,18,"['learning', 'rates']",2
+160,17,"['output', 'data', 'type']",3
+161,17,"['output', 'samples']",2
+162,17,"['input', 'tensor']",2
+163,17,"['true', 'gradient']",2
+164,17,"['whether', 'bias']",2
+165,17,"['label', 'padding']",2
+166,17,"['data', 'samples']",2
+167,17,"['shape', 'array']",2
+168,17,"['shape', 'e', 'g', 'm', 'n', 'm', 'n']",7
+169,17,"['shape', 'e', 'g', 'output', 'shape', 'm', 'n']",7
+170,17,"['maximum', 'SOME_DTYPE']",2
+171,17,"['minimum', 'SOME_DTYPE']",2
+172,16,"['set', 'compute', 'density', 'log', 'probability', 'instead', 'probability']",7
+173,16,"['samples', 'distributions']",2
+174,16,"['input', 'label']",2
+175,16,"['first', 'label', 'reserved']",3
+176,16,"['first', 'label', 'reserved', 'label']",4
+177,16,"['array', 'compared']",2
+178,16,"['whether', 'lenghts', 'decided']",3
+179,16,"['label', 'reserved', 'blank', 'label', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",11
+180,16,"['label', 'reserved', 'blank', 'label', 'reserved']",5
+181,16,"['last', 'label']",2
+182,16,"['last', 'label', 'reserved', 'blank']",4
+183,16,"['value', 'reserved', 'blank']",3
+184,16,"['value', 'reserved', 'blank', 'label']",4
+185,16,"['value', 'label', 'label']",3
+186,16,"['value', 'padding_mask']",2
+187,16,"['lengths', 'samples']",2
+188,16,"['required', 'true']",2
+189,16,"['false', 'lengths']",2
+190,16,"['derived', 'padding_mask']",2
+191,16,"['default', 'value']",2
+192,16,"['shape', 'sampled', 'random', 'distribution']",4
+193,16,"['number', 'updated', 'weights']",3
+194,16,"['turn', 'cudnn']",2
+195,16,"['maximum', 'SOME_DTYPE', 'value']",3
+196,16,"['minimum', 'SOME_DTYPE', 'value']",3
+197,16,"['parameter', 'distribution']",2
+198,16,"['present', 'used']",2
+199,16,"['pooling', 'operator']",2
+200,16,"['feature', 'map']",2
+201,15,"['SOME_STRUCTURE', 'SOME_DTYPE', 'type']",3
+202,15,"['input', 'dot']",2
+203,15,"['input', 'data', 'function']",3
+204,15,"['whether', 'disable', 'parameter']",3
+205,15,"['axis', 'input']",2
+206,15,"['data', 'array']",2
+207,15,"['default', 'default']",2
+208,15,"['SOME_DTYPE', 'input']",2
+209,15,"['d', 'array']",2
+210,15,"['numerical', 'stability']",2
+211,15,"['gradient', 'factor']",2
+212,15,"['height', 'height']",2
+213,15,"['main', 'diagonal', 'diagonal']",3
+214,15,"['negative', 'values']",2
+215,15,"['random', 'value']",2
+216,15,"['source', 'input']",2
+217,15,"['augmentation', 'param', 'channel']",3
+218,14,"['set', 'true', 'axis']",3
+219,14,"['lambda', 'rate']",2
+220,14,"['output', 'h', 'w']",3
+221,14,"['SOME_STRUCTURE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+222,14,"['input', 'feature', 'map']",3
+223,14,"['input', 'height']",2
+224,14,"['input', 'w']",2
+225,14,"['input', 'input']",2
+226,14,"['value', 'channel']",2
+227,14,"['data', 'type', 'output']",3
+228,14,"['data', 'SOME_DTYPE']",2
+229,14,"['ground', 'truth']",2
+230,14,"['means', 'means']",2
+231,14,"['default', 'none']",2
+232,14,"['standard', 'deviation']",2
+233,14,"['context', 'context']",2
+234,14,"['n', 'array']",2
+235,14,"['used', 'batch']",2
+236,14,"['used', 'SOME_DTYPE']",2
+237,14,"['number', 'samples']",2
+238,14,"['d', 'd', 'd']",3
+239,14,"['maximum', 'value', 'data']",3
+240,14,"['minimum', 'value', 'data']",3
+241,14,"['batch', 'norm', 'scale']",3
+242,14,"['decay', 'rate', 'moment', 'estimates']",4
+243,14,"['height', 'width']",2
+244,14,"['epsilon', 'prevent']",2
+245,14,"['scale', 'output']",2
+246,14,"['scale', 'SOME_DTYPE']",2
+247,14,"['use', 'instead']",2
+248,14,"['main', 'diagonal', 'diagonals', 'main', 'diagonal']",5
+249,14,"['negative', 'positive']",2
+250,14,"['corner', 'center']",2
+251,14,"['encoded', 'center']",2
+252,14,"['center', 'x']",2
+253,14,"['center', 'y']",2
+254,14,"['y', 'x', 'y', 'x']",4
+255,14,"['image', 'height']",2
+256,14,"['supports', 'negative', 'indices']",3
+257,14,"['current', 'default', 'context']",3
+258,14,"['pooling', 'feature']",2
+259,14,"['bounding', 'box']",2
+260,13,"['SOME_STRUCTURE', 'SOME_DTYPE', 'type', 'SOME_DTYPE']",4
+261,13,"['input', 'type']",2
+262,13,"['input', 'image']",2
+263,13,"['true', 'length']",2
+264,13,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype']",6
+265,13,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse']",7
+266,13,"['transpose', 'input']",2
+267,13,"['whether', 'disable', 'bias', 'parameter']",4
+268,13,"['whether', 'input']",2
+269,13,"['size', 'input']",2
+270,13,"['default', 'd']",2
+271,13,"['default', 'current', 'default', 'context']",4
+272,13,"['context', 'current', 'default', 'context']",4
+273,13,"['lower', 'upper']",2
+274,13,"['shape', 'k']",2
+275,13,"['shape', 'input']",2
+276,13,"['number', 'output']",2
+277,13,"['batch', 'size']",2
+278,13,"['small', 'constant', 'numerical', 'stability']",4
+279,13,"['gradient', 'SOME_DTYPE', 'factor']",3
+280,13,"['calibration', 'dataset']",2
+281,13,"['use', 'input']",2
+282,13,"['main', 'diagonal', 'negative', 'value', 'diagonal']",5
+283,13,"['main', 'diagonal', 'positive', 'value', 'diagonal']",5
+284,13,"['x', 'd']",2
+285,13,"['augmentation', 'param', 'crop']",3
+286,12,"['set', 'true', 'input']",3
+287,12,"['set', 'number']",2
+288,12,"['set', 'layout', 'input', 'output']",4
+289,12,"['set', 'softmax']",2
+290,12,"['input', 'data', 'operator']",3
+291,12,"['input', 'shape']",2
+292,12,"['input', 'pooling', 'operator']",3
+293,12,"['input', 'height', 'height']",3
+294,12,"['input', 'w', 'w']",3
+295,12,"['true', 'upper']",2
+296,12,"['true', 'along', 'axis']",3
+297,12,"['axis', 'elements']",2
+298,12,"['values', 'means']",2
+299,12,"['values', 'right', 'left']",3
+300,12,"['last', 'axis']",2
+301,12,"['value', 'padding']",2
+302,12,"['value', 'mask']",2
+303,12,"['value', 'encoded', 'values']",3
+304,12,"['weights', 'weight']",2
+305,12,"['used', 'scale']",2
+306,12,"['used', 'data', 'SOME_DTYPE']",3
+307,12,"['defaults', 'padding']",2
+308,12,"['SOME_DTYPE', 'value', 'possibly', 'produced']",4
+309,12,"['SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",6
+310,12,"['SOME_DTYPE', 'data']",2
+311,12,"['SOME_DTYPE', 'shape']",2
+312,12,"['lower', 'triangular', 'upper']",3
+313,12,"['shape', 'h', 'w']",3
+314,12,"['shape', 'SOME_DTYPE']",2
+315,12,"['cudnn', 'used']",2
+316,12,"['cudnn', 'used', 'kernel']",3
+317,12,"['cudnn', 'kernel']",2
+318,12,"['convolution', 'kernel']",2
+319,12,"['convolution', 'stride']",2
+320,12,"['kernel', 'size', 'd']",3
+321,12,"['weight', 'matrix']",2
+322,12,"['empty', 'default', 'layout', 'ncw', 'd', 'nchw', 'd', 'ncdhw', 'd']",9
+323,12,"['maximum', 'temporary']",2
+324,12,"['maximum', 'SOME_DTYPE', 'value', 'SOME_DTYPE']",4
+325,12,"['minimum', 'SOME_DTYPE', 'value', 'SOME_DTYPE']",4
+326,12,"['stride', 'd']",2
+327,12,"['form', 'batch_size']",2
+328,12,"['tensor', 'triangular', 'matrices']",3
+329,12,"['top', 'k']",2
+330,12,"['triangular', 'matrix', 'lower', 'upper']",4
+331,12,"['triangular', 'matrix', 'triangular']",3
+332,12,"['offset', 'diagonal', 'versus', 'main', 'diagonal']",5
+333,12,"['corresponds', 'main', 'diagonal', 'negative', 'positive', 'value', 'diagonals', 'main', 'diagonal']",9
+334,12,"['box', 'encoding', 'type']",3
+335,12,"['corner', 'means', 'boxes', 'encoded', 'xmin', 'ymin', 'xmax', 'ymax', 'center', 'means', 'boxes', 'encodes', 'x', 'y', 'width', 'height']",16
+336,12,"['multiply', 'transposed', 'input']",3
+337,12,"['k', 'k']",2
+338,12,"['device', 'output']",2
+339,12,"['pooling', 'y', 'x', 'd', 'y', 'x']",6
+340,12,"['feature', 'map', 'height']",3
+341,12,"['ratio', 'height']",2
+342,12,"['augmentation', 'param', 'random']",3
+343,11,"['set', 'padding']",2
+344,11,"['set', 'false']",2
+345,11,"['type', 'array']",2
+346,11,"['first', 'axis']",2
+347,11,"['whether', 'input', 'data']",3
+348,11,"['axis', 'result']",2
+349,11,"['axis', 'input', 'tensor']",3
+350,11,"['axis', 'size']",2
+351,11,"['axis', 'dimension']",2
+352,11,"['n', 'dimensional', 'array']",3
+353,11,"['n', 'samples']",2
+354,11,"['SOME_DTYPE', 'result']",2
+355,11,"['SOME_DTYPE', 'output']",2
+356,11,"['index', 'along', 'axis']",3
+357,11,"['height', 'image']",2
+358,11,"['e', 'g', 'SOME_DTYPE']",3
+359,11,"['alpha', 'shape']",2
+360,11,"['flattened', 'array']",2
+361,11,"['device', 'context', 'default', 'current', 'default', 'context']",6
+362,11,"['ratio', 'image']",2
+363,11,"['raw', 'image']",2
+364,10,"['set', 'first']",2
+365,10,"['set', 'layer']",2
+366,10,"['set', 'computed']",2
+367,10,"['set', 'gradient']",2
+368,10,"['output', 'mean']",2
+369,10,"['output', 'size']",2
+370,10,"['output', 'shape', 'h', 'w']",4
+371,10,"['output', 'shape', 'x']",3
+372,10,"['output', 'shape', 'y']",3
+373,10,"['output', 'gradient']",2
+374,10,"['SOME_STRUCTURE', 'axis']",2
+375,10,"['SOME_STRUCTURE', 'SOME_STRUCTURE']",2
+376,10,"['type', 'input']",2
+377,10,"['type', 'default']",2
+378,10,"['input', 'data', 'pooling', 'operator']",4
+379,10,"['input', 'weight']",2
+380,10,"['input', 'batch']",2
+381,10,"['input', 'pooling', 'operator', 'd', 'feature', 'maps']",6
+382,10,"['true', 'transpose', 'input', 'dot']",4
+383,10,"['true', 'SOME_STRUCTURE']",2
+384,10,"['true', 'false']",2
+385,10,"['array', 'array']",2
+386,10,"['whether', 'use', 'batch']",3
+387,10,"['axis', 'one']",2
+388,10,"['size', 'h', 'w']",3
+389,10,"['size', 'convolution']",2
+390,10,"['th', 'values']",2
+391,10,"['value', 'values', 'mask']",3
+392,10,"['value', 'divided', 'encoded', 'values']",4
+393,10,"['length', 'input']",2
+394,10,"['context', 'SOME_STRUCTURE']",2
+395,10,"['weights', 'gradients']",2
+396,10,"['n', 'dimensional', 'input', 'array']",4
+397,10,"['used', 'set']",2
+398,10,"['dtype', 'dtype']",2
+399,10,"['SOME_DTYPE', 'uint']",2
+400,10,"['SOME_DTYPE', 'n']",2
+401,10,"['bound', 'distribution']",2
+402,10,"['shape', 'SOME_DTYPE', 'shape']",3
+403,10,"['shape', 'y', 'x']",3
+404,10,"['number', 'samples', 'draw']",3
+405,10,"['number', 'top']",2
+406,10,"['cudnn', 'cudnn']",2
+407,10,"['cudnn', 'operator']",2
+408,10,"['weight', 'decays']",2
+409,10,"['empty', 'array']",2
+410,10,"['maximum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",5
+411,10,"['maximum', 'number']",2
+412,10,"['minimum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE']",5
+413,10,"['parameter', 'SOME_STRUCTURE']",2
+414,10,"['pad', 'd']",2
+415,10,"['workspace', 'mb']",2
+416,10,"['batch', 'output']",2
+417,10,"['along', 'compute']",2
+418,10,"['index', 'array']",2
+419,10,"['index', 'input']",2
+420,10,"['min', 'max']",2
+421,10,"['top', 'nms']",2
+422,10,"['fix', 'size']",2
+423,10,"['scale', 'scale']",2
+424,10,"['mean', 'value']",2
+425,10,"['negative', 'values', 'means', 'indexing', 'right', 'left']",6
+426,10,"['interpolation', 'method']",2
+427,10,"['keep', 'nms']",2
+428,10,"['limit', 'set']",2
+429,10,"['indices', 'indices']",2
+430,10,"['device', 'context', 'output']",3
+431,10,"['feature', 'map', 'height', 'w']",4
+432,10,"['bounding', 'box', 'coordinates', 'd', 'array']",5
+433,10,"['ratio', 'input', 'feature', 'map', 'height', 'raw', 'image', 'height']",8
+434,10,"['equals', 'reciprocal', 'total', 'stride', 'convolutional', 'layers']",6
+435,10,"['store', 'output', 'existing', 'SOME_STRUCTURE']",4
+436,10,"['activation', 'function']",2
+437,9,"['set', 'true', 'SOME_STRUCTURE']",3
+438,9,"['probability', 'random']",2
+439,9,"['output', 'given']",2
+440,9,"['output', 'input']",2
+441,9,"['output', 'array']",2
+442,9,"['output', 'height']",2
+443,9,"['SOME_STRUCTURE', 'SOME_DTYPE', 'names']",3
+444,9,"['input', 'data', 'array']",3
+445,9,"['input', 'label', 'function']",3
+446,9,"['whether', 'turn']",2
+447,9,"['whether', 'profile']",2
+448,9,"['axis', 'result', 'dimension']",3
+449,9,"['axis', 'arrays']",2
+450,9,"['label', 'value']",2
+451,9,"['data', 'type', 'output', 'samples']",4
+452,9,"['data', 'd']",2
+453,9,"['standard', 'channel']",2
+454,9,"['n', 'array', 'n']",3
+455,9,"['n', 'n', 'samples']",3
+456,9,"['used', 'corresponding']",2
+457,9,"['SOME_DTYPE', 'factor', 'applied', 'result']",4
+458,9,"['SOME_DTYPE', 'factor', 'multiplied']",3
+459,9,"['shape', 'process']",2
+460,9,"['shape', 'e', 'g', 'm', 'n', 'SOME_DTYPE', 'output', 'shape', 'm', 'n']",10
+461,9,"['shape', 'drawn']",2
+462,9,"['layer', 'layer']",2
+463,9,"['currently', 'supported']",2
+464,9,"['tensor', 'square', 'matrices']",3
+465,9,"['tensor', 'square', 'matrix']",3
+466,9,"['tensor', 'lower', 'triangular', 'matrices']",4
+467,9,"['cropping', 'area']",2
+468,9,"['scale', 'gradient', 'SOME_DTYPE', 'factor']",4
+469,9,"['mean', 'std']",2
+470,9,"['mean', 'distribution']",2
+471,9,"['use', 'matrix']",2
+472,9,"['optional', 'type', 'default']",3
+473,9,"['x', 'y', 'x', 'y', 'm']",5
+474,9,"['path', 'file']",2
+475,9,"['augmentation', 'param', 'value']",3
+476,9,"['slice', 'operation', 'supports', 'negative']",4
+477,9,"['overridden', 'context', 'SOME_STRUCTURE']",3
+478,9,"['calib_mode', 'calibration']",2
+479,9,"['calib_mode', 'thresholds']",2
+480,9,"['users', 'want']",2
+481,8,"['set', 'true', 'layer', 'takes', 'extra', 'input', 'parameter', 'sequence_length', 'specify', 'variable', 'length', 'SOME_STRUCTURE']",12
+482,8,"['set', 'true', 'softmax', 'function', 'computed', 'along', 'axis']",7
+483,8,"['set', 'label', 'reserved', 'blank', 'label', 'first', 'th', 'label', 'reserved', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",16
+484,8,"['set', 'number', 'heads']",3
+485,8,"['set', 'layout', 'input', 'output', 'weight']",5
+486,8,"['set', 'divided']",2
+487,8,"['compute', 'softmax']",2
+488,8,"['lambda', 'rate', 'parameters', 'distributions']",4
+489,8,"['output', 'storage', 'type']",3
+490,8,"['output', 'mean', 'std']",3
+491,8,"['output', 'width']",2
+492,8,"['storage', 'type', 'row_ssparse']",3
+493,8,"['input', 'array', 'operator']",3
+494,8,"['input', 'data', 'batch']",3
+495,8,"['input', 'data', 'input']",3
+496,8,"['input', 'data', 'pooling', 'operator', 'd', 'feature', 'maps']",7
+497,8,"['input', 'SOME_DTYPE']",2
+498,8,"['input', 'b']",2
+499,8,"['first', 'array', 'compared']",3
+500,8,"['second', 'array', 'compared']",3
+501,8,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse', 'stype']",8
+502,8,"['true', 'axis', 'left', 'result', 'dimension', 'size', 'one']",7
+503,8,"['whether', 'data', 'lenghts', 'decided', 'data_lengths']",5
+504,8,"['whether', 'label', 'lenghts', 'decided', 'label_lengths', 'derived', 'padding_mask']",7
+505,8,"['whether', 'elements']",2
+506,8,"['axis', 'array']",2
+507,8,"['axis', 'swapped']",2
+508,8,"['axis', 'reduction']",2
+509,8,"['size', 'batch']",2
+510,8,"['last', 'last', 'label', 'value', 'alphabet_size', 'reserved', 'blank', 'label', 'instead', 'label', 'values', 'tokens', 'vocabulary', 'alphabet_size', 'padding', 'mask']",16
+511,8,"['value', 'padding_mask', 'first', 'ctc', 'label', 'reserved', 'blank', 'last', 'label', 'reserved', 'blank']",11
+512,8,"['value', 'bias']",2
+513,8,"['value', 'weight']",2
+514,8,"['value', 'used']",2
+515,8,"['lengths', 'data', 'samples']",3
+516,8,"['lengths', 'labels', 'samples']",3
+517,8,"['required', 'use_data_lengths', 'true']",3
+518,8,"['required', 'use_label_lengths', 'true']",3
+519,8,"['ground', 'truth', 'labels', 'loss']",4
+520,8,"['false', 'lengths', 'equal', 'max', 'SOME_STRUCTURE', 'length']",6
+521,8,"['false', 'lengths', 'derived', 'first', 'occurrence', 'value', 'padding_mask']",7
+522,8,"['see', 'blank_label']",2
+523,8,"['means', 'distributions']",2
+524,8,"['means', 'range']",2
+525,8,"['channel', 'color']",2
+526,8,"['default', 'used']",2
+527,8,"['weights', 'gradients', 'learning', 'rates', 'weight', 'decays']",6
+528,8,"['weights', 'clip_weights', 'clip_weights']",3
+529,8,"['model', 'name']",2
+530,8,"['n', 'dimensional', 'input', 'array', 'form']",5
+531,8,"['n', 'dimensional', 'input', 'array', 'n']",5
+532,8,"['n', 'form']",2
+533,8,"['n', 'k']",2
+534,8,"['used', 'convolution']",2
+535,8,"['used', 'generate', 'anchor', 'windows', 'enumerating']",5
+536,8,"['defaults', 'dtype', 'dtype']",3
+537,8,"['SOME_DTYPE', 'value', 'possibly', 'produced', 'input']",5
+538,8,"['SOME_DTYPE', 'value', 'data']",3
+539,8,"['SOME_DTYPE', 'data', 'SOME_DTYPE']",3
+540,8,"['upper', 'limit']",2
+541,8,"['lower', 'limit']",2
+542,8,"['shape', 'axis']",2
+543,8,"['shape', 'one']",2
+544,8,"['shape', 'e', 'g', 'x', 'y', 'output', 'shape', 'x', 'y', 'm', 'n', 'm', 'n', 'samples', 'drawn']",15
+545,8,"['shape', 'scale']",2
+546,8,"['name', 'SOME_STRUCTURE']",2
+547,8,"['number', 'group', 'partitions']",3
+548,8,"['number', 'input']",2
+549,8,"['number', 'top', 'scoring', 'boxes', 'keep', 'applying', 'nms', 'rpn', 'proposals']",9
+550,8,"['keys', 'values']",2
+551,8,"['running', 'input']",2
+552,8,"['kernel', 'size', 'h', 'w', 'd', 'h', 'w']",7
+553,8,"['kernel', 'used']",2
+554,8,"['maximum', 'workspace', 'allowed', 'mb']",4
+555,8,"['maximum', 'used']",2
+556,8,"['maximum', 'calibration']",2
+557,8,"['zero', 'convolution', 'h', 'w', 'd', 'h', 'w']",7
+558,8,"['stride', 'h', 'w', 'd', 'h', 'w']",6
+559,8,"['constant', 'label']",2
+560,8,"['vector', 'SOME_STRUCTURE', 'lengths']",3
+561,8,"['index', 'along', 'dimensions']",3
+562,8,"['momentum', 'average']",2
+563,8,"['area', 'image']",2
+564,8,"['epsilon', 'prevent', 'div']",3
+565,8,"['beta', 'array']",2
+566,8,"['gamma', 'array']",2
+567,8,"['gamma', 'distribution']",2
+568,8,"['present', 'used', 'quantized', 'batch', 'norm', 'op', 'calculate', 'primitive', 'scale', 'note', 'calib_range', 'calib', 'bn', 'output']",14
+569,8,"['present', 'used', 'data', 'SOME_DTYPE']",4
+570,8,"['scale', 'shape']",2
+571,8,"['mean', 'value', 'channel']",3
+572,8,"['mean', 'subtracted']",2
+573,8,"['negative', 'binomial', 'distribution']",3
+574,8,"['optional', 'class']",2
+575,8,"['optional', 'nms']",2
+576,8,"['optional', 'default', 'default']",3
+577,8,"['ignored', 'true']",2
+578,8,"['nms', 'boxes']",2
+579,8,"['apply', 'boxes']",2
+580,8,"['boxes', 'scores']",2
+581,8,"['threshold', 'used']",2
+582,8,"['alpha', 'dispersion']",2
+583,8,"['alpha', 'parameters', 'distributions']",3
+584,8,"['image', 'data']",2
+585,8,"['limit', 'norm', 'weight']",3
+586,8,"['quantize', 'data']",2
+587,8,"['auto', 'automatically', 'output', 'type', 'according']",5
+588,8,"['element', 'axis']",2
+589,8,"['corresponding', 'input']",2
+590,8,"['pooling', 'pooling']",2
+591,8,"['pooling', 'applied']",2
+592,8,"['ratio', 'input', 'feature', 'map', 'height', 'w', 'raw', 'image', 'height', 'w']",10
+593,8,"['b', 'n']",2
+594,8,"['elements', 'input']",2
+595,8,"['augmentation', 'param', 'maximum']",3
+596,8,"['augmentation', 'param', 'standard', 'deviation', 'channel']",5
+597,8,"['error', 'raised']",2
+598,8,"['positional', 'input']",2
+599,8,"['unsuccessful', 'experiments']",2
+600,8,"['failure', 'experiment']",2
+601,8,"['jittering', 'range', 'percent']",3
+602,8,"['bounds', 'distributions']",2
+603,8,"['ignore_label', 'backward']",2
+604,8,"['cropped', 'area']",2
+605,8,"['cropped', 'image']",2
+606,7,"['compute', 'gradient']",2
+607,7,"['probability', 'apply']",2
+608,7,"['output', 'output']",2
+609,7,"['SOME_STRUCTURE', 'SOME_DTYPE', 'names', 'users', 'want', 'excluding']",6
+610,7,"['SOME_STRUCTURE', 'arrays']",2
+611,7,"['forward', 'output']",2
+612,7,"['input', 'output', 'type']",3
+613,7,"['true', 'first', 'input']",3
+614,7,"['true', 'otherwise']",2
+615,7,"['whether', 'first', 'input']",3
+616,7,"['whether', 'training']",2
+617,7,"['data', 'size']",2
+618,7,"['data', 'weight']",2
+619,7,"['default', 'd', 'gpu']",3
+620,7,"['standard', 'deviations']",2
+621,7,"['SOME_DTYPE', 'SOME_STRUCTURE']",2
+622,7,"['upper', 'bound']",2
+623,7,"['lower', 'bound']",2
+624,7,"['shape', 'empty']",2
+625,7,"['shape', 'n', 'k']",3
+626,7,"['w', 'r']",2
+627,7,"['weight', 'momentum']",2
+628,7,"['gradient', 'weight']",2
+629,7,"['gradient', 'momentum']",2
+630,7,"['decay', 'rate', 'st', 'moment', 'estimates']",5
+631,7,"['decay', 'rate', 'nd', 'moment', 'estimates']",5
+632,7,"['width', 'size']",2
+633,7,"['beta', 'scale']",2
+634,7,"['moving', 'mean']",2
+635,7,"['moving', 'variance']",2
+636,7,"['optional', 'device', 'context']",3
+637,7,"['optional', 'value', 'type', 'default', 'SOME_DTYPE']",5
+638,7,"['alpha', 'parameter', 'distribution']",3
+639,7,"['indicates', 'whether']",2
+640,7,"['image', 'size']",2
+641,7,"['row', 'ssparse']",2
+642,7,"['g', 'b']",2
+643,7,"['augmentation', 'param', 'ground']",3
+644,7,"['augmentation', 'param', 'value', 'channel']",4
+645,7,"['augmentation', 'param', 'probability']",3
+646,7,"['color', 'space']",2
+647,6,"['set', 'output', 'gradient']",3
+648,6,"['set', 'ignored']",2
+649,6,"['probability', 'apply', 'random']",3
+650,6,"['lambda', 'parameter', 'rate', 'distribution']",4
+651,6,"['output', 'default']",2
+652,6,"['output', 'dim']",2
+653,6,"['output', 'defined']",2
+654,6,"['SOME_STRUCTURE', 'SOME_DTYPE', 'representing', 'names', 'users', 'want', 'excluding']",7
+655,6,"['SOME_STRUCTURE', 'name', 'SOME_STRUCTURE']",3
+656,6,"['desired', 'output']",2
+657,6,"['given', 'input']",2
+658,6,"['given', 'axis']",2
+659,6,"['given', 'flattened', 'array', 'used']",4
+660,6,"['input', 'array', 'array']",3
+661,6,"['input', 'data', 'normalization']",3
+662,6,"['input', 'data', 'size']",3
+663,6,"['input', 'arrays']",2
+664,6,"['input', 'h', 'w']",3
+665,6,"['second', 'axis']",2
+666,6,"['true', 'second']",2
+667,6,"['true', 'weight']",2
+668,6,"['true', 'triangular', 'matrix', 'lower', 'triangular', 'false', 'upper', 'triangular']",8
+669,6,"['array', 'indices']",2
+670,6,"['whether', 'pick', 'convolution', 'running', 'performance', 'test']",6
+671,6,"['whether', 'use', 'global', 'moving', 'statistics', 'instead', 'local', 'batch', 'norm']",9
+672,6,"['whether', 'use', 'length', 'input', 'mask', 'data', 'input']",7
+673,6,"['whether', 'turn', 'cudnn']",3
+674,6,"['axis', 'channel']",2
+675,6,"['axis', 'along', 'input']",3
+676,6,"['axis', 'along', 'compute', 'softmax']",4
+677,6,"['axis', 'sub']",2
+678,6,"['axis', 'corresponding', 'matrix']",3
+679,6,"['axis', 'perform']",2
+680,6,"['axis', 'split']",2
+681,6,"['axis', 'sliced', 'supports', 'negative', 'indexes']",5
+682,6,"['axes', 'perform']",2
+683,6,"['axes', 'array']",2
+684,6,"['axes', 'input']",2
+685,6,"['dimension', 'd']",2
+686,6,"['size', 'height']",2
+687,6,"['size', 'width']",2
+688,6,"['size', 'layer']",2
+689,6,"['one', 'time']",2
+690,6,"['label', 'array']",2
+691,6,"['th', 'input']",2
+692,6,"['value', 'indices']",2
+693,6,"['data', 'type', 'array']",3
+694,6,"['see', 'details']",2
+695,6,"['means', 'top', 'k']",3
+696,6,"['means', 'values']",2
+697,6,"['default', 'threshold', 'used', 'set', 'none']",5
+698,6,"['default', 'clip']",2
+699,6,"['n', 'dimensional', 'input', 'array', 'form', 'max_sequence_length', 'batch_size', 'n']",8
+700,6,"['used', 'padding']",2
+701,6,"['defaults', 'input', 'dtype', 'defined', 'dtype', 'none']",6
+702,6,"['SOME_DTYPE', 'factor', 'multiplied', 'b']",4
+703,6,"['SOME_DTYPE', 'used']",2
+704,6,"['SOME_DTYPE', 'axis']",2
+705,6,"['none', 'flattened']",2
+706,6,"['shape', 'k', 'process']",3
+707,6,"['shape', 'empty', 'array']",3
+708,6,"['shape', 'label']",2
+709,6,"['shape', 'e', 'g', 'm', 'n', 'scale']",6
+710,6,"['shape', 'm', 'n', 'scale']",4
+711,6,"['number', 'arrays']",2
+712,6,"['number', 'elements']",2
+713,6,"['keys', 'values', 'interleaved']",3
+714,6,"['turn', 'cudnn', 'layer']",3
+715,6,"['turn', 'cudnn', 'operator']",3
+716,6,"['cudnn', 'used', 'determines', 'effective', 'batch', 'size', 'kernel']",7
+717,6,"['cudnn', 'used', 'controls', 'maximum', 'temporary', 'storage', 'used', 'tuning', 'best', 'cudnn', 'kernel', 'limited_workspace', 'strategy', 'used']",14
+718,6,"['convolution', 'dilate', 'h', 'w', 'd', 'h', 'w']",7
+719,6,"['convolution', 'kernel', 'size', 'h', 'w', 'd', 'h', 'w']",8
+720,6,"['convolution', 'filter', 'channel', 'number']",4
+721,6,"['convolution', 'stride', 'h', 'w', 'd', 'h', 'w']",7
+722,6,"['kernel', 'size', 'w', 'h', 'w', 'd', 'h', 'w']",8
+723,6,"['kernel', 'input']",2
+724,6,"['empty', 'default', 'layout', 'ncw', 'd', 'nchw', 'd', 'ncdhw', 'd', 'nhwc', 'ndhwc', 'supported', 'gpu']",13
+725,6,"['maximum', 'temporary', 'workspace', 'allowed', 'mb', 'parameter', 'two', 'usages']",8
+726,6,"['maximum', 'workspace', 'allowed', 'convolution']",4
+727,6,"['maximum', 'SOME_DTYPE', 'value', 'possibly', 'produced']",5
+728,6,"['maximum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",7
+729,6,"['minimum', 'SOME_DTYPE', 'value', 'possibly', 'produced']",5
+730,6,"['minimum', 'SOME_DTYPE', 'value', 'form', 'SOME_DTYPE', 'obtained', 'calibration']",7
+731,6,"['parameter', 'gamma', 'distribution']",3
+732,6,"['parameter', 'negative']",2
+733,6,"['parameter', '\\', 'lrn', 'expression']",4
+734,6,"['zero', 'pad', 'convolution', 'h', 'w', 'd', 'h', 'w']",8
+735,6,"['zero', 'convolution', 'w', 'h', 'w', 'd', 'h', 'w']",8
+736,6,"['stride', 'w', 'h', 'w', 'd', 'h', 'w']",7
+737,6,"['specify', 'bound', 'indices']",3
+738,6,"['along', 'split']",2
+739,6,"['along', 'sliced', 'supports', 'negative', 'indexes']",5
+740,6,"['vector', 'SOME_STRUCTURE', 'lengths', 'form', 'batch_size']",5
+741,6,"['index', 'along', 'dimensions', 'used', 'reshaping']",5
+742,6,"['clip', 'means', 'clip', 'range']",4
+743,6,"['momentum', 'moving', 'average']",3
+744,6,"['term', 'quadratic', 'function']",3
+745,6,"['width', 'height', 'random']",3
+746,6,"['top', 'elements']",2
+747,6,"['epsilon', 'parameter', 'prevent', 'division']",4
+748,6,"['usually', 'e']",2
+749,6,"['fix', 'gamma', 'training']",3
+750,6,"['scale', 'output', 'shape', 'm', 'n']",5
+751,6,"['mean', 'value', 'subtracted']",3
+752,6,"['use', 'transposed', 'triangular', 'matrix']",4
+753,6,"['use', 'mxnet']",2
+754,6,"['force', 'change', 'batch', 'norm', 'scale', 'shift', 'operator']",7
+755,6,"['change', 'value']",2
+756,6,"['refer', 'lower', 'triangular', 'matrix', 'lower', 'true', 'refer', 'upper', 'otherwise']",9
+757,6,"['relevant', 'offset']",2
+758,6,"['optional', 'device', 'context', 'default', 'current', 'default', 'context']",7
+759,6,"['ignored', 'input']",2
+760,6,"['ignored', 'random_resized_crop']",2
+761,6,"['encoded', 'corner']",2
+762,6,"['x', 'y', 'x', 'y', 'top', 'left', 'right', 'corners', 'designated', 'region', 'interest']",11
+763,6,"['target', 'shape']",2
+764,6,"['multiply', 'triangular', 'matrix', 'right', 'non', 'triangular', 'one']",7
+765,6,"['multiply', 'transposed', 'first', 'input']",4
+766,6,"['multiply', 'transposed', 'second', 'input', 'b']",5
+767,6,"['sub', 'arrays']",2
+768,6,"['k', 'elements']",2
+769,6,"['operand', 'function']",2
+770,6,"['image', 'width']",2
+771,6,"['random', 'value', 'channel', 'hsl', 'color', 'space']",6
+772,6,"['random', 'seed']",2
+773,6,"['original', 'SOME_DTYPE', 'SOME_DTYPE']",3
+774,6,"['multi', 'indices']",2
+775,6,"['indices', 'mentioned', 'large', 'replaced', 'index', 'addresses', 'last', 'element', 'along', 'axis']",10
+776,6,"['indices', 'slice', 'operation', 'supports', 'negative', 'indices']",6
+777,6,"['fp', 'data']",2
+778,6,"['according', 'input']",2
+779,6,"['flattened', 'input']",2
+780,6,"['device', 'id']",2
+781,6,"['internal', 'state']",2
+782,6,"['bounding', 'box', 'coordinates', 'd', 'array', 'batch_index', 'x', 'y', 'x', 'y']",10
+783,6,"['batch_index', 'indicates', 'index', 'corresponding', 'image', 'input']",6
+784,6,"['transformation', 'type']",2
+785,6,"['elements', 'size']",2
+786,6,"['elements', 'set', 'false']",3
+787,6,"['augmentation', 'param', 'ground', 'truths']",4
+788,6,"['augmentation', 'param', 'crop', 'ground']",4
+789,6,"['augmentation', 'param', 'probability', 'random']",4
+790,6,"['param', 'image']",2
+791,6,"['dataset', 'param']",2
+792,6,"['r', 'input']",2
+793,6,"['positional', 'input', 'arguments']",3
+794,6,"['valid', 'divided']",2
+795,6,"['valid', 'elements']",2
+796,6,"['wrap', 'means', 'wrap', 'around']",4
+797,6,"['temperature', 'parameter', 'softmax']",3
+798,6,"['ndarrays', 'shape', 'e', 'g', 'x', 'y', 'output', 'shape', 'x', 'y', 'm', 'n', 'm', 'n', 'samples', 'drawn', 'pair']",17
+799,6,"['ndim', 'ndim']",2
+800,6,"['activation', 'function', 'applied']",3
+801,6,"['calib_mode', 'calibration', 'thresholds']",3
+802,6,"['calib_mode', 'thresholds', 'quantization']",3
+803,6,"['calib_mode', 'min', 'max']",3
+804,6,"['calib_mode', 'layer', 'outputs', 'calibration', 'dataset']",5
+805,6,"['sampling', 'scale']",2
+806,6,"['target_shape', 'ignored']",2
+807,6,"['deconvolution', 'kernel']",2
+808,6,"['ending', 'index', 'along']",3
+809,6,"['beginning', 'index', 'along']",3
+810,6,"['cropped', 'area', 'image']",3
+811,6,"['cropped', 'area', 'image', 'must']",4
+812,6,"['cropped', 'area', 'supplied']",3
+813,6,"['add', 'random', 'value']",3
+814,5,"['set', 'true', 'grad', 'storage', 'type', 'row_ssparse']",6
+815,5,"['set', 'dim']",2
+816,5,"['set', 'shape']",2
+817,5,"['set', 'valid']",2
+818,5,"['set', 'value']",2
+819,5,"['compute', 'row', 'ssparse', 'gradient', 'backward', 'calculation']",6
+820,5,"['output', 'height', 'width']",3
+821,5,"['SOME_STRUCTURE', 'arrays', 'concatenate']",3
+822,5,"['SOME_STRUCTURE', 'input']",2
+823,5,"['desired', 'storage', 'type', 'forward', 'output', 'given', 'user', 'thecombination', 'input', 'storage', 'types', 'hint', 'matchany', 'implemented', 'ones', 'dot', 'operator', 'perform', 'fallback', 'operationand', 'still', 'produce', 'output', 'desired', 'storage', 'type']",26
+824,5,"['type', 'data']",2
+825,5,"['input', 'array', 'embedding', 'operator']",4
+826,5,"['input', 'matrix']",2
+827,5,"['true', 'transpose', 'first', 'input', 'dot']",5
+828,5,"['true', 'transpose', 'second', 'input', 'dot']",5
+829,5,"['true', 'lazy', 'updates', 'applied', 'gradient', 'stype', 'row_ssparse', 'weight', 'momentum', 'stype']",10
+830,5,"['true', 'output']",2
+831,5,"['true', 'shape']",2
+832,5,"['true', 'last']",2
+833,5,"['array', 'along']",2
+834,5,"['whether', 'sort']",2
+835,5,"['whether', 'numpy', 'semantics']",3
+836,5,"['whether', 'collapse', 'first', 'axis', 'input', 'data', 'tensor']",7
+837,5,"['whether', 'profile', 'kvstore', 'server', 'worker']",5
+838,5,"['whether', 'order']",2
+839,5,"['axis', 'along', 'split']",3
+840,5,"['axis', 'sub', 'arrays']",3
+841,5,"['axis', 'indices']",2
+842,5,"['dimension', 'embedding', 'vectors']",3
+843,5,"['dimension', 'concated']",2
+844,5,"['size', 'SOME_DTYPE']",2
+845,5,"['size', 'global']",2
+846,5,"['size', 'sub']",2
+847,5,"['vocabulary', 'size', 'input', 'indices']",4
+848,5,"['value', 'assigned']",2
+849,5,"['value', 'negative']",2
+850,5,"['data', 'type', 'output', 'array']",4
+851,5,"['data', 'type', 'weight']",3
+852,5,"['standard', 'deviation', 'distribution']",3
+853,5,"['context', 'data', 'loader', 'optimized']",4
+854,5,"['dtype', 'SOME_DTYPE']",2
+855,5,"['SOME_DTYPE', 'SOME_DTYPE', 'SOME_DTYPE']",3
+856,5,"['SOME_DTYPE', 'width']",2
+857,5,"['none', 'means', 'change']",3
+858,5,"['upper', 'bound', 'distribution']",3
+859,5,"['lower', 'bound', 'distribution']",3
+860,5,"['shape', 'input', 'shape']",3
+861,5,"['shape', 'distributions']",2
+862,5,"['shape', 'scale', 'SOME_DTYPE']",3
+863,5,"['shape', 'scale', 'shape']",3
+864,5,"['shape', 'tensor']",2
+865,5,"['shape', 'instead']",2
+866,5,"['file', 'directory', 'path']",3
+867,5,"['number', 'element']",2
+868,5,"['number', 'times']",2
+869,5,"['number', 'hidden', 'nodes', 'output']",4
+870,5,"['number', 'channels']",2
+871,5,"['number', 'equal']",2
+872,5,"['maximum', 'number', 'batches', 'prefetch']",4
+873,5,"['index', 'negative']",2
+874,5,"['height', 'size']",2
+875,5,"['height', 'ignored']",2
+876,5,"['height', 'width', 'height']",3
+877,5,"['area', 'bilinear']",2
+878,5,"['area', 'interpolation']",2
+879,5,"['width', 'height', 'width']",3
+880,5,"['width', 'ignored']",2
+881,5,"['specified', 'type']",2
+882,5,"['must', 'less']",2
+883,5,"['calibration', 'used']",2
+884,5,"['scale', 'shape', 'shape']",3
+885,5,"['scale', 'shape', 'scale']",3
+886,5,"['change', 'width', 'height']",3
+887,5,"['matrix', 'row']",2
+888,5,"['optional', 'size']",2
+889,5,"['indicates', 'data']",2
+890,5,"['interpolation', 'x', 'pixel']",3
+891,5,"['image', 'image']",2
+892,5,"['image', 'file']",2
+893,5,"['image', 'scale']",2
+894,5,"['bilinear', 'interpolation']",2
+895,5,"['random', 'cropping']",2
+896,5,"['shorter', 'edge']",2
+897,5,"['supports', 'negative', 'values']",3
+898,5,"['path', 'image']",2
+899,5,"['outputs', 'layer']",2
+900,5,"['numpy', 'SOME_STRUCTURE']",2
+901,5,"['passed', 'defaults', 'worker']",3
+902,5,"['would', 'like']",2
+903,5,"['align', 'using']",2
+904,5,"['augmentation', 'param', 'crop', 'ground', 'truths']",5
+905,5,"['augmentation', 'param', 'color']",3
+906,5,"['augmentation', 'param', 'mean']",3
+907,5,"['augmentation', 'param', 'probability', 'apply']",4
+908,5,"['param', 'data']",2
+909,5,"['param', 'whether']",2
+910,5,"['aspect', 'ratio']",2
+911,5,"['r', 'g', 'b']",3
+912,5,"['error', 'raised', 'data']",3
+913,5,"['valid', 'true']",2
+914,5,"['embedding', 'weight', 'matrix']",3
+915,5,"['server', 'profiled', 'kvstore', 'type', 'dist']",5
+916,5,"['ascending', 'order']",2
+917,5,"['deprecated!', 'use', 'instead']",3
+918,5,"['ending', 'supports', 'negative']",3

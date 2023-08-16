@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.keras.activations.selu
+constraints:
+  x:
+    descp: A tensor or variable to compute the activation function for.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/activations/selu
+outputs:
+- 'The scaled exponential unit activation: scale * elu(x, alpha).'
+package: tensorflow
+target: selu
+title: tf.keras.activations.selu
+version: 2.3.0

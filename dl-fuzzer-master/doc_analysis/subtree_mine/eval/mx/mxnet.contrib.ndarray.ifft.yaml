@@ -1,0 +1,12 @@
+constraints:
+  data:
+    default: None
+    descp: Input data to the IFFTOp.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+title: mxnet.contrib.ndarray.ifft

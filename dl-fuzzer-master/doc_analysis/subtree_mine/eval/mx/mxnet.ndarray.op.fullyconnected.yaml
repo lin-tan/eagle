@@ -1,0 +1,9 @@
+constraints:
+  bias:
+    default: None
+    descp: Bias parameter.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.FullyConnected

@@ -1,0 +1,50 @@
+constraints:
+  atol:
+    default: '0.0001'
+    descp: The absolute error tolerance, default 1E-4. Default 1E-4.
+    doc_dtype:
+    - float
+    - optional
+  data_l:
+    descp: List of input ndarrays.
+    doc_dtype:
+    - list of mx.np.ndarray
+  net_builder:
+    descp: The builder of the HybridBlock that we are going to check the consistency.
+      Inside the implementation, we will call net_builder() to construct the hybrid
+      block. Also, the net_builder will need to support specifying the params
+    doc_dtype:
+    - function
+  numpy_func:
+    default: None
+    descp: The ground truth numpy function that has the same functionality as net_builder().
+      Default None.
+    doc_dtype:
+    - function
+    - optional
+  rtol:
+    default: '0.0001'
+    descp: The relative error tolerance, default 1E-4. Default 1E-4.
+    doc_dtype:
+    - float
+    - optional
+  test_grad:
+    default: 'True'
+    descp: Whether to test the consistency of the gradient. Default True.
+    doc_dtype:
+    - bool
+    - optional
+inputs:
+  optional:
+  - numpy_func
+  - test_grad
+  - rtol
+  - atol
+  required:
+  - net_builder
+  - data_l
+link: https://mxnet.apache.org/versions/1.7/api/python/docs/api/mxnet/test_utils/index.html#mxnet.test_utils.check_gluon_hybridize_consistency
+package: mxnet
+target: check_gluon_hybridize_consistency
+title: mxnet.test_utils.check_gluon_hybridize_consistency
+version: 1.7.0

@@ -1,0 +1,174 @@
+constraints:
+  X:
+    descp: array-like, shape (n_samples, n_features) Training vector, where n_samples
+      is the number of samples and n_features is the number of features.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list
+    - ndarray
+  cv:
+    default: None
+    descp: 'int, cross-validation generator or an iterable, optional Determines the
+      cross-validation splitting strategy. Possible inputs for cv are: - None, to
+      use the default 5-fold cross validation, - integer, to specify the number of
+      folds in a `(Stratified)KFold`, - :term:`CV splitter`, - An iterable yielding
+      (train, test) splits as arrays of indices. For integer/None inputs, if the estimator
+      is a classifier and ``y`` is either binary or multiclass, :class:`StratifiedKFold`
+      is used. In all other cases, :class:`KFold` is used. Refer :ref:`User Guide
+      <cross_validation>` for the various cross-validation strategies that can be
+      used here.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+    structure:
+    - list
+  error_score:
+    default: nan
+    descp: '''raise'' or numeric Value to assign to the score if an error occurs in
+      estimator fitting. If set to ''raise'', the error is raised. If a numeric value
+      is given, FitFailedWarning is raised. This parameter does not affect the refit
+      step, which will always raise the error.'
+    dtype:
+    - boolean
+    - numeric
+    - string
+    enum:
+    - raise
+    ndim:
+    - '0'
+  estimator:
+    descp: object type that implements the "fit" and "predict" methods An object of
+      that type which is cloned for each validation.
+  exploit_incremental_learning:
+    default: 'False'
+    descp: 'boolean, optional, default: False If the estimator supports incremental
+      learning, this will be used to speed up fitting for different training set sizes.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  groups:
+    default: None
+    descp: array-like, with shape (n_samples,), optional Group labels for the samples
+      used while splitting the dataset into train/test set. Only used in conjunction
+      with a "Group" :term:`cv` instance (e.g., :class:`GroupKFold`).
+    structure:
+    - ndarray
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) Number of jobs to run in parallel.
+      ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1``
+      means using all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  pre_dispatch:
+    default: all
+    descp: integer or string, optional Number of predispatched jobs for parallel execution
+      (default is all). The option can reduce the allocated memory. The string can
+      be an expression like '2*n_jobs'.
+    dtype:
+    - int
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  random_state:
+    default: None
+    descp: int, RandomState instance or None, optional (default=None) If int, random_state
+      is the seed used by the random number generator; If RandomState instance, random_state
+      is the random number generator; If None, the random number generator is the
+      RandomState instance used by `np.random`. Used when ``shuffle`` is True.
+  return_times:
+    default: 'False'
+    descp: 'boolean, optional (default: False) Whether to return the fit and score
+      times.'
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  scoring:
+    default: None
+    descp: 'string, callable or None, optional, default: None A string (see model
+      evaluation documentation) or a scorer callable object / function with signature
+      ``scorer(estimator, X, y)``.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+    - '1'
+  shuffle:
+    default: 'False'
+    descp: boolean, optional Whether to shuffle training data before taking prefixes
+      of it based on``train_sizes``.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  train_sizes:
+    default: array([0.1  , 0.325, 0.55 , 0.775, 1.   ])
+    descp: 'array-like, shape (n_ticks,), dtype float or int Relative or absolute
+      numbers of training examples that will be used to generate the learning curve.
+      If the dtype is float, it is regarded as a fraction of the maximum size of the
+      training set (that is determined by the selected validation method), i.e. it
+      has to be within (0, 1]. Otherwise it is interpreted as absolute sizes of the
+      training sets. Note that for classification the number of samples usually have
+      to be big enough to contain at least one sample from each class. (default: np.linspace(0.1,
+      1.0, 5))'
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  verbose:
+    default: '0'
+    descp: 'integer, optional Controls the verbosity: the higher, the more messages.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  y:
+    descp: array-like, shape (n_samples) or (n_samples, n_features), optional Target
+      relative to X for classification or regression; None for unsupervised learning.
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - groups
+  - train_sizes
+  - cv
+  - scoring
+  - exploit_incremental_learning
+  - n_jobs
+  - pre_dispatch
+  - verbose
+  - shuffle
+  - random_state
+  - error_score
+  - return_times
+  required:
+  - estimator
+  - X
+  - y
+link: ''
+package: sklearn
+target: learning_curve
+title: sklearn.model_selection.learning_curve
+version: 0.24.2

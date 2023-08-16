@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,number of times to rotate,,prim_dtype,dtype(int),,1
+int,number of times to rotate,,shape,ndim(0),,1
+int,number of times to rotate,,validvalue,"range([0,inf))",,1

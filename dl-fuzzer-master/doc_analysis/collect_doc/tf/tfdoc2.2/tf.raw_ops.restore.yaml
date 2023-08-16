@@ -1,0 +1,31 @@
+constraints:
+  dt:
+    descp: A tf.DType. The type of the tensor to be restored.
+  file_pattern:
+    descp: A Tensor of type string. Must have a single element. The pattern of the
+      files from which we read the tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  preferred_shard:
+    default: '-1'
+    descp: An optional int. Defaults to -1. Index of file to open first if multiple
+      files match file_pattern.
+  tensor_name:
+    descp: A Tensor of type string. Must have a single element. The name of the tensor
+      to be restored.
+inputs:
+  optional:
+  - preferred_shard
+  - name
+  required:
+  - file_pattern
+  - tensor_name
+  - dt
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Restore
+outputs:
+- A Tensor of type dt.
+package: tensorflow
+target: Restore
+title: tf.raw_ops.Restore
+version: 2.2.0

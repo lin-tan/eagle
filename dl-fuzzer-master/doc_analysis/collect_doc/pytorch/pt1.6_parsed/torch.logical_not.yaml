@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/1.6.0/generated/torch.logical_not.html#torch.logical_not#torch.logical_not
+package: torch
+ret_type: Tensor
+target: logical_not
+title: torch.logical_not
+version: 1.6.0

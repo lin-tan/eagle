@@ -1,0 +1,32 @@
+ARG UBUNTU_VERSION=18.04
+FROM ubuntu:${UBUNTU_VERSION}
+
+# Install required ubuntu packages
+RUN apt-get update && apt-get install -y screen vim wget git && rm -rf /var/lib/apt/lists/*
+RUN wget \
+    https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh \
+    && mkdir /root/.conda \
+    && bash Miniconda3-latest-Linux-x86_64.sh -b \
+    && rm -f Miniconda3-latest-Linux-x86_64.sh 
+RUN touch /root/.vimrc
+RUN echo 'syntax on\nset tabstop=2\nset softtabstop=2\nset showcmd\nset showmatch\nset incsearch\nset hlsearch\nset ruler'>> /root/.vimrc
+
+# Copy git repo
+#ARG FUZZER_HOME="/home/code/dl-fuzzer/" 
+#WORKDIR ${FUZZER_HOME}
+#COPY . .
+
+# Create conda environment
+#ARG CONDA="/root/miniconda3/bin/conda"
+#RUN ${CONDA} env create -f environment.yml 
+
+# Add conda path to bashrc
+RUN echo 'export PATH=/root/miniconda3/bin:$PATH' >> /root/.bashrc
+# Initialize conda bash
+RUN ${CONDA} init bash
+
+WORKDIR /home/dump
+CMD /bin/bash
+# Can't activate environment in Dockerfile
+# In the container, make sure running the following command to activate fuzzer-test environment
+# conda activate fuzzer-test

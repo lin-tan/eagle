@@ -1,0 +1,40 @@
+constraints:
+  binary_output:
+    descp: A bool. Whether to output the number of occurrences of each value or 1.
+  maxlength:
+    default: '-1'
+    descp: An optional int that is >= -1. Defaults to -1. Maximum value to count.
+      Can be set to -1 for no maximum.
+  minlength:
+    default: '-1'
+    descp: An optional int that is >= -1. Defaults to -1. Minimum value to count.
+      Can be set to -1 for no minimum.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  values:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Tensor containing
+      data to count.'
+  weights:
+    descp: 'A Tensor. Must be one of the following types: int32, int64, float32, float64.
+      A Tensor of the same shape as indices containing per-index weight values. May
+      also be the empty tensor if no weights are used.'
+inputs:
+  optional:
+  - minlength
+  - maxlength
+  - name
+  required:
+  - values
+  - weights
+  - binary_output
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DenseCountSparseOutput
+outputs:
+- A tuple of Tensor objects (output_indices, output_values, output_dense_shape).
+- output_indices: A Tensor of type int64.
+- output_values: A Tensor. Has the same type as weights.
+- output_dense_shape: A Tensor of type int64.
+package: tensorflow
+target: DenseCountSparseOutput
+title: tf.raw_ops.DenseCountSparseOutput
+version: 2.3.0

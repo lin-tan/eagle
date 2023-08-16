@@ -1,0 +1,31 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  start:
+    descp: A Tensor of type int64. corresponds to start in python's xrange().
+  step:
+    descp: A Tensor of type int64. corresponds to step in python's xrange().
+  stop:
+    descp: A Tensor of type int64. corresponds to stop in python's xrange().
+inputs:
+  optional:
+  - name
+  required:
+  - start
+  - stop
+  - step
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RangeDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: RangeDataset
+title: tf.raw_ops.RangeDataset
+version: 2.2.0

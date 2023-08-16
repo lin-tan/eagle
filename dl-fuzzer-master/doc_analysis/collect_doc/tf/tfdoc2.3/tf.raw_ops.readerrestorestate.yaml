@@ -1,0 +1,22 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  reader_handle:
+    descp: A Tensor of type mutable string. Handle to a Reader.
+  state:
+    descp: A Tensor of type string. Result of a ReaderSerializeState of a Reader with
+      type matching reader_handle.
+inputs:
+  optional:
+  - name
+  required:
+  - reader_handle
+  - state
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReaderRestoreState
+outputs:
+- The created Operation.
+package: tensorflow
+target: ReaderRestoreState
+title: tf.raw_ops.ReaderRestoreState
+version: 2.3.0

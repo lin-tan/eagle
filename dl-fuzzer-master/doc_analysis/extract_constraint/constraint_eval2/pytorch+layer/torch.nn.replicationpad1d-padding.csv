@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple","the size of the padding. If is int, uses the same padding in all boundaries. If a 2-tuple, uses (padding _left , padding _right )",,prim_dtype,dtype(int),,1
+"int, tuple","the size of the padding. If is int, uses the same padding in all boundaries. If a 2-tuple, uses (padding _left , padding _right )",,nonprim_dtype,structure(tuple),,1

@@ -1,0 +1,24 @@
+constraints:
+  handle:
+    descp: A Tensor of type mutable string.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StackClose
+outputs:
+- The created Operation.
+package: tensorflow
+target: StackClose
+title: tf.raw_ops.StackClose
+version: 2.3.0

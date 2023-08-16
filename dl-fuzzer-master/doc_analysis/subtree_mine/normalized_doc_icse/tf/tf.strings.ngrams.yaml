@@ -1,0 +1,85 @@
+aliases:
+- tf.compat.v1.strings.ngrams
+constraints:
+  data:
+    descp: A Tensor or RaggedTensor containing the source data for the ngrams.
+    normalized_descp:
+    - A D_STRUCTURE or RaggedTensor containing the source data for the ngrams
+  name:
+    default: None
+    descp: The op name.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The op name
+  ngram_width:
+    descp: The width(s) of the ngrams to create. If this is a list or tuple, the op
+      will return ngrams of all specified arities in list order. Values must be non-Tensor
+      integers greater than 0.
+    normalized_descp:
+    - The width BSTR of the ngrams to create
+    - If this is a D_STRUCTURE the op will return ngrams of all specified arities
+      in D_STRUCTURE order
+    - Values must be non D_STRUCTURE D_TYPE greater than CONSTANT_NUM
+  pad_values:
+    default: None
+    descp: A tuple of (left_pad_value, right_pad_value), a single string, or None.
+      If None, no padding will be added; if a single string, then that string will
+      be used for both left and right padding. Values must be Python strings.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_STRUCTURE of BSTR a single D_TYPE or None
+    - If None no padding will be added if a single D_TYPE then that D_TYPE will be
+      used for both left and right padding
+    - Values must be Python D_TYPE
+  padding_width:
+    default: None
+    descp: 'If set, `padding_width` pad values will be added to both sides of each
+      sequence. Defaults to `ngram_width`-1. Must be greater than (Note that 1-grams
+      are never padded, regardless of this value.) '
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If set QSTR pad values will be added to both sides of each D_STRUCTURE
+    - Defaults to PARAM CONSTANT_NUM
+    - Must be greater than BSTR
+  preserve_short_sequences:
+    default: 'False'
+    descp: If true, then ensure that at least one ngram is generated for each input
+      sequence.  In particular, if an input sequence is shorter than `min(ngram_width)
+      + 2*pad_width`, then generate a single ngram containing the entire sequence.  If
+      false, then no ngrams are generated for these short input sequences.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL then ensure that at least one ngram is generated for each input
+      D_STRUCTURE
+    - In particular if an input D_STRUCTURE is shorter than min BSTR CONSTANT_NUM
+      pad_width then generate a single ngram containing the entire D_STRUCTURE
+    - If CONSTANT_BOOL then no ngrams are generated for these short input sequences
+  separator:
+    default: ' '
+    descp: The separator string used between ngram elements. Must be a string constant,
+      not a Tensor.
+    normalized_default: ' '
+    normalized_descp:
+    - The separator D_TYPE used between ngram elements
+    - Must be a D_TYPE constant not a D_STRUCTURE
+exceptions:
+- TypeError: if `pad_values` is set to an invalid type.
+- ValueError: if `pad_values`, `padding_width`, or `ngram_width` is set to an invalid
+    value.
+inputs:
+  optional:
+  - separator
+  - pad_values
+  - padding_width
+  - preserve_short_sequences
+  - name
+  required:
+  - data
+  - ngram_width
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/ngrams
+outputs: A RaggedTensor of ngrams. If `data.shape=[D1...DN, S]`, then`output.shape=[D1...DN,
+  NUM_NGRAMS]`, where`NUM_NGRAMS=S-ngram_width+1+2*padding_width`.
+package: tensorflow
+target: ngrams
+title: tf.strings.ngrams
+version: 2.1.0

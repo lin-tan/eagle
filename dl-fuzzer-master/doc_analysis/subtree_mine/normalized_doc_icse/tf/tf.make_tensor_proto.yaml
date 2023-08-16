@@ -1,0 +1,53 @@
+aliases:
+- tf.compat.v1.make_tensor_proto
+constraints:
+  allow_broadcast:
+    default: 'False'
+    descp: Boolean that enables allowing scalars and 1 length vector broadcasting.
+      Cannot be true when verify_shape is true.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE that enables allowing scalars and CONSTANT_NUM length vector broadcasting
+    - Cannot be CONSTANT_BOOL when PARAM is CONSTANT_BOOL
+  dtype:
+    default: None
+    descp: Optional tensor_pb2 DataType value.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Optional tensor_pb2 DataType value
+  shape:
+    default: None
+    descp: List of integers representing the dimensions of tensor.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE of D_TYPE representing the dimensions of D_STRUCTURE
+  values:
+    descp: Values to put in the TensorProto.
+    normalized_descp:
+    - Values to put in the TensorProto
+  verify_shape:
+    default: 'False'
+    descp: Boolean that enables verification of a shape of values.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE that enables verification of a PARAM of PARAM
+exceptions:
+- TypeError: if unsupported types are provided.
+- ValueError: if arguments have inappropriate values or if verify_shape is True and
+    shape of values is not equals to a shape from the argument.
+inputs:
+  optional:
+  - dtype
+  - shape
+  - verify_shape
+  - allow_broadcast
+  required:
+  - values
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/make_tensor_proto
+outputs: A `TensorProto`. Depending on the type, it may contain data in the "tensor_content"
+  attribute, which is not directly useful to Python programs. To access the values
+  you should convert the proto back to a numpy ndarray with `tf.make_ndarray(proto)`.
+package: tensorflow
+target: make_tensor_proto
+title: tf.make_tensor_proto
+version: 2.1.0

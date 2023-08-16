@@ -1,0 +1,40 @@
+constraints:
+  element_dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  input_a:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  input_b:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input_a
+  - input_b
+  - element_dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListConcatLists
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListConcatLists
+title: tf.raw_ops.TensorListConcatLists
+version: 2.3.0

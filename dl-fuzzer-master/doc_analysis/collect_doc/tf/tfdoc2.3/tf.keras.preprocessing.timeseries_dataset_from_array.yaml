@@ -1,0 +1,61 @@
+constraints:
+  batch_size:
+    default: '128'
+    descp: Number of timeseries samples in each batch (except maybe the last one).
+  data:
+    descp: Numpy array or eager tensor containing consecutive data points (timesteps).
+      Axis 0 is expected to be the time dimension.
+  end_index:
+    default: None
+    descp: Optional int; data points later (exclusive) than end_index will not be
+      used in the output sequences. This is useful to reserve part of the data for
+      test or validation.
+  sampling_rate:
+    default: '1'
+    descp: Period between successive individual timesteps within sequences. For rate
+      r, timesteps data[i], data[i + r], ... data[i + sequence_length] are used for
+      create a sample sequence.
+  seed:
+    default: None
+    descp: Optional int; random seed for shuffling.
+  sequence_length:
+    descp: Length of the output sequences (in number of timesteps).
+  sequence_stride:
+    default: '1'
+    descp: Period between successive output sequences. For stride s, output samples
+      would start at index data[i], data[i + s], data[i + 2 * s], etc.
+  shuffle:
+    default: 'False'
+    descp: Whether to shuffle output samples, or instead draw them in chronological
+      order.
+  start_index:
+    default: None
+    descp: Optional int; data points earlier (exclusive) than start_index will not
+      be used in the output sequences. This is useful to reserve part of the data
+      for test or validation.
+  targets:
+    descp: Targets corresponding to timesteps in data. It should have same length
+      as data. targets[i] should be the target corresponding to the window that starts
+      at index i (see example 2 below). Pass None if you don't have target data (in
+      this case the dataset will only yield the input data).
+inputs:
+  optional:
+  - sequence_stride
+  - sampling_rate
+  - batch_size
+  - shuffle
+  - seed
+  - start_index
+  - end_index
+  required:
+  - data
+  - targets
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/preprocessing/timeseries_dataset_from_array
+outputs:
+- A tf.data.Dataset instance. If targets was passed, the dataset yields tuple (batch_of_sequences,
+  batch_of_targets). If not, the dataset yields only batch_of_sequences.
+package: tensorflow
+target: timeseries_dataset_from_array
+title: tf.keras.preprocessing.timeseries_dataset_from_array
+version: 2.3.0

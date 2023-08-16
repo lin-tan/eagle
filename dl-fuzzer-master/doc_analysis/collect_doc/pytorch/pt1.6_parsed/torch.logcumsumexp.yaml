@@ -1,0 +1,26 @@
+constraints:
+  dim:
+    descp: the dimension to do the operation over
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.6.0/generated/torch.logcumsumexp.html#torch.logcumsumexp#torch.logcumsumexp
+package: torch
+ret_type: Tensor
+target: logcumsumexp
+title: torch.logcumsumexp
+version: 1.6.0

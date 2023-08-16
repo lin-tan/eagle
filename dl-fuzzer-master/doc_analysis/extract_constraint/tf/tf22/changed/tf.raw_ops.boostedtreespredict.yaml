@@ -1,0 +1,42 @@
+constraints:
+  bucketized_features:
+    descp: A list of at least 1 Tensor objects with type int32. A list of rank 1 Tensors
+      containing bucket id for each feature.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    structure:
+    - list
+  logits_dimension:
+    descp: An int. scalar, dimension of the logits, to be used for partial logits
+      shape.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tree_ensemble_handle:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+  - bucketized_features
+  - logits_dimension
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesPredict
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: BoostedTreesPredict
+title: tf.raw_ops.BoostedTreesPredict
+version: 2.2.0

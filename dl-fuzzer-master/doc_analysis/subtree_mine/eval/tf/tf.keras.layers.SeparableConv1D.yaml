@@ -1,0 +1,8 @@
+constraints:
+  kernel_size:
+    descp: A single integer specifying the spatial dimensions of the filters.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.keras.layers.SeparableConv1D

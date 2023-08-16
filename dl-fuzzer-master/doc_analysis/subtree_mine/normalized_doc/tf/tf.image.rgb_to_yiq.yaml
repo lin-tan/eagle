@@ -1,0 +1,21 @@
+aliases:
+- tf.compat.v1.image.rgb_to_yiq
+constraints:
+  images:
+    descp: 2-D or higher rank. Image data to convert. Last dimension must be size
+      3.
+    normalized_descp:
+    - CONSTANT_NUM-D or higher rank
+    - Image data to convert
+    - Last dimension must be size CONSTANT_NUM
+inputs:
+  optional: []
+  required:
+  - images
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/rgb_to_yiq
+outputs:
+- images: tensor with the same shape as `images`.
+package: tensorflow
+target: rgb_to_yiq
+title: tf.image.rgb_to_yiq
+version: 2.1.0

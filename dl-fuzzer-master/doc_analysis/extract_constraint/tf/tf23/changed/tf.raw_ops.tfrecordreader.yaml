@@ -1,0 +1,46 @@
+constraints:
+  compression_type:
+    default: ''
+    descp: An optional string. Defaults to "".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this reader is placed
+      in the given container. Otherwise, a default container is used.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". If non-empty, this reader is named
+      in the given bucket with this shared_name. Otherwise, the node name is used
+      instead.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - compression_type
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TFRecordReader
+outputs:
+- A Tensor of type mutable string.
+package: tensorflow
+target: TFRecordReader
+title: tf.raw_ops.TFRecordReader
+version: 2.3.0

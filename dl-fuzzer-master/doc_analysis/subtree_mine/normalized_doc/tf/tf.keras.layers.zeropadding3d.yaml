@@ -1,0 +1,50 @@
+aliases:
+- tf.compat.v1.keras.layers.ZeroPadding3D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  data_format:
+    default: None
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      spatial_dim1, spatial_dim2, spatial_dim3, channels)`while `channels_first` corresponds
+      to inputs with shape`(batch, channels, spatial_dim1, spatial_dim2, spatial_dim3)`.
+      It defaults to the `image_data_format` value found in your Keras config file
+      at `~/.keras/keras.json`. If you never set it, then it will be "channels_last".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE, one of QSTR BSTR or QSTR
+    - The ordering of the dimensions in the inputs QSTR corresponds to inputs with
+      shape BSTRwhile QSTR corresponds to inputs with shape BSTR
+    - It defaults to the QSTR value found in your Keras config file at keras keras
+      json
+    - If you never set it, then it will be QSTR
+  padding:
+    default: (1, 1, 1)
+    descp: 'Int, or tuple of 3 ints, or tuple of 3 tuples of 2 ints. If int: the same
+      symmetric padding is applied to height and width.If tuple of 3 ints: interpreted
+      as two different symmetric padding values for height and width:`(symmetric_dim1_pad,
+      symmetric_dim2_pad, symmetric_dim3_pad)`.If tuple of 3 tuples of 2 ints: interpreted
+      as`((left_dim1_pad, right_dim1_pad), (left_dim2_pad, right_dim2_pad), (left_dim3_pad,
+      right_dim3_pad))` '
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE, or D_STRUCTURE of CONSTANT_NUM D_TYPE, or D_STRUCTURE of CONSTANT_NUM
+      tuples of CONSTANT_NUM D_TYPE
+    - If D_TYPE the same symmetric padding is applied to height and width If D_STRUCTURE
+      of CONSTANT_NUM D_TYPE interpreted as two different symmetric padding values
+      for height and width BSTR If D_STRUCTURE of CONSTANT_NUM tuples of CONSTANT_NUM
+      D_TYPE interpreted as BSTR
+inputs:
+  optional:
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/ZeroPadding3D
+package: tensorflow
+target: ZeroPadding3D
+title: tf.keras.layers.ZeroPadding3D
+version: 2.1.0

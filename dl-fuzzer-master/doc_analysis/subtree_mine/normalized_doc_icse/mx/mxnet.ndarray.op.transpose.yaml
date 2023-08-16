@@ -1,0 +1,47 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axes:
+    default: _Null
+    descp: Target axis order. By default the axes will be inverted.
+    doc_dtype: Shape(tuple), optional, default=[]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Target axis order
+    - By default the axes will be inverted
+    normalized_docdtype: Shape BSTR optional default
+  data:
+    default: None
+    descp: Source input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Source input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - axes
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.transpose
+package: mxnet
+target: transpose
+title: mxnet.ndarray.op.transpose
+version: 1.6.0

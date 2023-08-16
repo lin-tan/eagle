@@ -1,0 +1,40 @@
+constraints:
+  dtypes:
+    descp: A list of tf.DTypes that has length >= 1. The element types of each element
+      in outputs.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints). The shapes of
+      each tensor in outputs.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+inputs:
+  optional:
+  - name
+  required:
+  - dtypes
+  - shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/InfeedDequeueTuple
+outputs:
+- A list of Tensor objects of type dtypes.
+package: tensorflow
+target: InfeedDequeueTuple
+title: tf.raw_ops.InfeedDequeueTuple
+version: 2.2.0

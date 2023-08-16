@@ -1,0 +1,84 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: 'The axis or axes along which to perform the reduction.The default, axis=(),
+      will compute over all elements into a scalar array with shape (1,). If axis
+      is int, a reduction is performed on a particular axis. If axis is a 2-tuple,
+      it specifies the axes that hold 2-D matrices, and the matrix norms of these
+      matrices are computed.   '
+    doc_dtype: Shape or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axis or axes along which to perform the reduction The default axis BSTR
+    - If axis is D_TYPE a reduction is performed on a particular axis
+    - If axis is a CONSTANT_NUM D_STRUCTURE it specifies the axes that hold CONSTANT_NUM
+      D matrices and the matrix norms of these matrices are computed
+    normalized_docdtype: Shape or None optional default None
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  keepdims:
+    default: _Null
+    descp: If this is set to True, the reduced axis is left in the result as dimension
+      with size one.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If this is set to CONSTANT_BOOL the reduced PARAM is left in the result as dimension
+      with size one
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  ord:
+    default: _Null
+    descp: Order of the norm. Currently ord=1 and ord=2 is supported.
+    doc_dtype: int, optional, default='2'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Order of the norm
+    - Currently ord CONSTANT_NUM and ord CONSTANT_NUM is supported
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  out_dtype:
+    default: _Null
+    descp: The data type of the output.
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The PARAM type of the output
+    normalized_docdtype: None QSTR optional default QSTR
+inputs:
+  optional:
+  - data
+  - ord
+  - axis
+  - out_dtype
+  - keepdims
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.norm
+package: mxnet
+target: norm
+title: mxnet.ndarray.op.norm
+version: 1.6.0

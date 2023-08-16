@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.keras.layers.Add
+constraints:
+  '**kwargs':
+    descp: standard layer keyword arguments.
+inputs:
+  optional: []
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/Add
+package: tensorflow
+target: Add
+title: tf.keras.layers.Add
+version: 2.2.0

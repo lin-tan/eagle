@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  other:
+    descp: the Right-hand-side input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the Right hand side PARAM D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  p:
+    default: '2'
+    descp: the norm to be computed
+    doc_dtype: float, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the norm to be computed
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - p
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.dist
+package: torch
+ret_type: Tensor
+target: dist
+title: torch.dist
+version: 1.5.0

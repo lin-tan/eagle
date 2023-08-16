@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,How many epochs to wait before checkpointing. Defaults to 1.,1,prim_dtype,dtype(int),,1
+int,How many epochs to wait before checkpointing. Defaults to 1.,1,shape,ndim(0),,1
+int,How many epochs to wait before checkpointing. Defaults to 1.,1,validvalue,"range([0,inf))",,1

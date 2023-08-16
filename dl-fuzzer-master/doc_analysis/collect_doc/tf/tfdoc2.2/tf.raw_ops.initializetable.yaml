@@ -1,0 +1,24 @@
+constraints:
+  keys:
+    descp: A Tensor. Keys of type Tkey.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  table_handle:
+    descp: A Tensor of type mutable string. Handle to a table which will be initialized.
+  values:
+    descp: A Tensor. Values of type Tval.
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - keys
+  - values
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/InitializeTable
+outputs:
+- The created Operation.
+package: tensorflow
+target: InitializeTable
+title: tf.raw_ops.InitializeTable
+version: 2.2.0

@@ -1,0 +1,22 @@
+constraints:
+  config:
+    descp: A string. Serialized TPUEmbeddingConfiguration proto.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_outputs:
+    descp: An int that is >= 1. The number of output activation tensors, equal to
+      the number of embedding tables in the model.
+inputs:
+  optional:
+  - name
+  required:
+  - num_outputs
+  - config
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/RecvTPUEmbeddingActivations
+outputs:
+- A list of num_outputs Tensor objects with type float32.
+package: tensorflow
+target: RecvTPUEmbeddingActivations
+title: tf.raw_ops.RecvTPUEmbeddingActivations
+version: 2.2.0

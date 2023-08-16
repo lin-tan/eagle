@@ -1,0 +1,170 @@
+append: false
+break: true
+check_dt: false
+direct_map: true
+parse_sent: false
+pat:
+  (^|\.\s+)(the\s+)?((second|first|sequence)\s+)?(axis|axes)\s+:
+    append: false
+    cnt: 0
+    dtype: int
+    overwrite: false
+  (axes)\s+(to|along|of|that):
+    append: false
+    cnt: 1
+    dtype: int
+    ndim: 1
+    overwrite: false
+  (axis)\s+(to|along|of|that):
+    append: false
+    cnt: 1
+    dtype: int
+    overwrite: false
+  (dilation|learning|decay)\s+\brate\b:
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+    range: '[0,1]'
+  (height|width|size)\s*of\s*\w+:
+    append: false
+    cnt: 0
+    dtype: numeric
+    ndim: 0
+    overwrite: false
+    range: '[0,inf)'
+  (matrix|matrices):
+    append: false
+    cnt: 86
+    dtype: numeric
+    overwrite: false
+  (number|count)\s*of\s*\w+:
+    cnt: 4
+    dtype: int
+    ndim: 0
+    overwrite: false
+    range: '[0,inf)'
+  (representing|represents)\s+the\s+(output|tensor)?\s*(shape|size):
+    cnt: 0
+    dtype: int
+    ndim: 1
+    overwrite: false
+    range: '[0,inf)'
+  ^(batch|maximum|minimum|kernel|the|vocabulary)\s+size:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+    range: '[0,inf)'
+  ^(lower|upper)?\s*(bound|limit)s*:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^(the\s+)?(dimension)\s+(to|along|of|that):
+    append: true
+    cnt: 0
+    dtype: int
+    overwrite: true
+  ^(the\s+)?(dimensions)\s+(to|along|of|that):
+    append: true
+    cnt: 0
+    dtype: int
+    ndim: 1
+    overwrite: true
+  ^(the\s+)?(maximum|minimum|output)?\s*(height|width):
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+    range: '[0,inf)'
+  ^(the\s+)?(maximum|minimum|output)?\s*(value):
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^(the\s+)?(moving|running|rgb)?\s*(mean|variance):
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^(the\s+)?dimensions\s+to:
+    cnt: 0
+    dtype: int
+    ndim: 1
+    overwrite: false
+  ^(the\s+)?weight\s+decay:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^(width|height)\s+of\s+:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^a\s+small\s+constant:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^an\s+epsilon\s+parameter:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^constant:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  ^the\s+frequency:
+    cnt: 0
+    dtype: int
+    overwrite: true
+    range: '[0,inf)'
+  deviation:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  image\s+size:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  shape\s*of\s*\w+:
+    cnt: 2
+    dtype: shape
+    overwrite: false
+  size\s*of\s*\w+:
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+    range: '[0,inf)'
+  the\s+(minimum|maximum)\s+value\s+(of|to):
+    append: false
+    cnt: 1
+    dtype: numeric
+    overwrite: false
+  this\s+many:
+    cnt: 0
+    dtype: int
+    ndim: 0
+    overwrite: false
+    range: '[0,inf)'
+  type\s*of\s*\w+:
+    cnt: 0
+    dtype: dtype
+    ndim: 0
+    overwrite: false
+  weight\s+(of|for):
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+  weight\s+matrix:
+    append: false
+    cnt: 0
+    dtype: numeric
+    overwrite: false
+target: dtype

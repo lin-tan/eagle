@@ -1,0 +1,15 @@
+constraints:
+  input_size:
+    default: '0'
+    descp: The number of expected features in the input x. If not specified, it will
+      be inferred from input.
+    doc_dtype:
+    - int
+    - default 0
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: mxnet.gluon.rnn.LSTM

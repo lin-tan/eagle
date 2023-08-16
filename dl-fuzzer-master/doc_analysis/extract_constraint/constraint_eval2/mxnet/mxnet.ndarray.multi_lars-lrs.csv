@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,Learning rates to scale by LARS coefficient,None,prim_dtype,dtype(float),,1
+NDArray,Learning rates to scale by LARS coefficient,None,nonprim_dtype,structure(ndarray),,1
+NDArray,Learning rates to scale by LARS coefficient,None,shape,ndim(0),,1
+NDArray,Learning rates to scale by LARS coefficient,None,validvalue,"range([0,1])",,1

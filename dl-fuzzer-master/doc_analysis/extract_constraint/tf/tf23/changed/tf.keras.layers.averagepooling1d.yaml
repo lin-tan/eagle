@@ -1,0 +1,56 @@
+aliases:
+- tf.keras.layers.AvgPool1D
+- tf.compat.v1.keras.layers.AveragePooling1D
+- tf.compat.v1.keras.layers.AvgPool1D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  data_format:
+    default: channels_last
+    descp: A string, one of channels_last (default) or channels_first. The ordering
+      of the dimensions in the inputs. channels_last corresponds to inputs with shape
+      (batch, steps, features) while channels_first corresponds to inputs with shape
+      (batch, features, steps).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  padding:
+    default: valid
+    descp: One of "valid" or "same" (case-insensitive).
+    dtype:
+    - tf.string
+    enum:
+    - same
+    - valid
+  pool_size:
+    default: '2'
+    descp: Integer, size of the average pooling windows.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  strides:
+    default: None
+    descp: Integer, or None. Factor by which to downscale. E.g. 2 will halve the input.
+      If None, it will default to pool_size.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling1D
+package: tensorflow
+target: AveragePooling1D
+title: tf.keras.layers.AveragePooling1D
+version: 2.3.0

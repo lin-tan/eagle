@@ -1,0 +1,77 @@
+aliases:
+- tf.compat.v1.igamma
+- tf.compat.v1.math.igamma
+constraints:
+  a:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.float64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: A `Tensor`. Must have the same type as `a`.
+    dtype:
+    - '&a'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&a'
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/igamma
+outputs: A `Tensor`. Has the same type as `a`.
+package: tensorflow
+target: igamma
+title: tf.math.igamma
+version: 2.1.0

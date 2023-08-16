@@ -1,0 +1,49 @@
+constraints:
+  async_op:
+    default: 'False'
+    descp: Whether this op should be an async op
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+  dst:
+    default: '0'
+    descp: Destination rank (default is 0)
+    doc_dtype:
+    - int
+    dtype:
+    - int
+  gather_list:
+    default: None
+    descp: List of appropriately-sized tensors to use for gathered data (default is
+      None, must be specified on the destination rank)
+    doc_dtype:
+    - list[Tensor]
+    structure:
+    - list
+    tensor_t:
+    - torch.tensor
+  group:
+    default: <object object>
+    descp: The process group to work on
+    doc_dtype:
+    - ProcessGroup
+  tensor:
+    descp: Input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - gather_list
+  - dst
+  - group
+  - async_op
+  required:
+  - tensor
+link: https://pytorch.org/docs/stable/distributed.html#torch.distributed.gather
+package: torch
+target: gather
+title: torch.distributed.gather
+version: 1.5.0

@@ -1,0 +1,39 @@
+constraints:
+  dilations:
+    default: '[1, 1, 1, 1, 1]'
+    descp: An optional list of ints. Defaults to [1, 1, 1, 1, 1].
+  filter:
+    descp: A Tensor. Must have the same type as input. Shape [depth, rows, cols, in_channels,
+      out_channels]. in_channels must match between input and filter.
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      Shape [batch, depth, rows, cols, in_channels].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_backprop:
+    descp: A Tensor. Must have the same type as input. Backprop signal of shape [batch,
+      out_depth, out_rows, out_cols, out_channels].
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+  strides:
+    descp: A list of ints that has length >= 5. 1-D tensor of length 5. The stride
+      of the sliding window for each dimension of input. Must have strides[0] = strides[4]
+      = 1.
+inputs:
+  optional:
+  - dilations
+  - name
+  required:
+  - input
+  - filter
+  - out_backprop
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Conv3DBackpropFilter
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Conv3DBackpropFilter
+title: tf.raw_ops.Conv3DBackpropFilter
+version: 2.2.0

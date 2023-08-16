@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.div_no_nan
+- tf.compat.v1.math.divide_no_nan
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `float32`, `float64`.'
+  y:
+    descp: A `Tensor` whose dtype is compatible with `x`.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/divide_no_nan
+outputs: The element-wise value of the x divided by y.
+package: tensorflow
+target: divide_no_nan
+title: tf.math.divide_no_nan
+version: 2.1.0

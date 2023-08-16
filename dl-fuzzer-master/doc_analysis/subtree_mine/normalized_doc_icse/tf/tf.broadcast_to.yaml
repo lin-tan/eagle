@@ -1,0 +1,34 @@
+aliases:
+- tf.compat.v1.broadcast_to
+constraints:
+  input:
+    descp: A `Tensor`. A Tensor to broadcast.
+    normalized_descp:
+    - A D_STRUCTURE
+    - A D_STRUCTURE to broadcast
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  shape:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. An 1-D
+      `int` Tensor. The shape of the desired output.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - An CONSTANT_NUM D D_TYPE D_STRUCTURE
+    - The shape of the desired output
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/broadcast_to
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: broadcast_to
+title: tf.broadcast_to
+version: 2.1.0

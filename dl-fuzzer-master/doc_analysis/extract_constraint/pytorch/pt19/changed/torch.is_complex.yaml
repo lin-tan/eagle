@@ -1,0 +1,17 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.is_complex.html#torch.is_complex#torch.is_complex
+package: torch
+ret_type: (bool)
+target: is_complex
+title: torch.is_complex
+version: 1.9.0

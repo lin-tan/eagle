@@ -1,0 +1,32 @@
+constraints:
+  kernel_size:
+    descp: Size of the max pooling window.
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T]]
+  padding:
+    default: '0'
+    descp: Padding that was added to the input
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T]]
+  stride:
+    default: None
+    descp: Stride of the max pooling window. It is set to `kernel_size` by default.
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Optional[Union[T,Tuple[T,T]]]
+inputs:
+  optional:
+  - stride
+  - padding
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.MaxUnpool2d.html#torch.nn.MaxUnpool2d#torch.nn.MaxUnpool2d
+package: torch
+target: MaxUnpool2d
+title: torch.nn.MaxUnpool2d
+version: 1.6.0

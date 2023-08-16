@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"{'uniform', 'quantile'}, (default='uniform') Strategy used to define the widths of the bins. uniform All bins have identical widths. quantile All bins have the same number of points.",uniform,prim_dtype,dtype(string),,1
+,"{'uniform', 'quantile'}, (default='uniform') Strategy used to define the widths of the bins. uniform All bins have identical widths. quantile All bins have the same number of points.",uniform,shape,ndim(0),,1
+,"{'uniform', 'quantile'}, (default='uniform') Strategy used to define the widths of the bins. uniform All bins have identical widths. quantile All bins have the same number of points.",uniform,validvalue,"range([0,inf))",,1

@@ -1,0 +1,8 @@
+constraints:
+  ctx:
+    default: None
+    descp: The context in which to load the pretrained weights.
+    doc_dtype:
+    - Context
+    - default CPU
+title: mxnet.gluon.model_zoo.vision.resnet34_v1

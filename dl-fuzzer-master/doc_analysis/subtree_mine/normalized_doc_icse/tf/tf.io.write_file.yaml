@@ -1,0 +1,36 @@
+aliases:
+- tf.compat.v1.io.write_file
+- tf.compat.v1.write_file
+constraints:
+  contents:
+    descp: A `Tensor` of type `string`. scalar. The content to be written to the output
+      file.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - ONE_WORD scalar
+    - The content to be written to the output file
+  filename:
+    descp: A `Tensor` of type `string`. scalar. The name of the file to which we write
+      the contents.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - ONE_WORD scalar
+    - The PARAM of the file to which we write the PARAM
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+  - contents
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/write_file
+outputs: The created Operation.
+package: tensorflow
+target: write_file
+title: tf.io.write_file
+version: 2.1.0

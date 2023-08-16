@@ -1,0 +1,22 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T,T]]
+  value:
+    descp: ''
+    sig_dtype: float
+inputs:
+  optional: []
+  required:
+  - padding
+  - value
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.ConstantPad2d.html#torch.nn.ConstantPad2d#torch.nn.ConstantPad2d
+package: torch
+target: ConstantPad2d
+title: torch.nn.ConstantPad2d
+version: 1.6.0

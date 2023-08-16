@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"Total number of classes. If set to -1, the number of classes will be inferred as one greater than the largest class value in the input tensor.",-1,prim_dtype,dtype(int),,1
+int,"Total number of classes. If set to -1, the number of classes will be inferred as one greater than the largest class value in the input tensor.",-1,nonprim_dtype,tensor_t(torch.tensor),,1
+int,"Total number of classes. If set to -1, the number of classes will be inferred as one greater than the largest class value in the input tensor.",-1,shape,ndim(0),,1
+int,"Total number of classes. If set to -1, the number of classes will be inferred as one greater than the largest class value in the input tensor.",-1,validvalue,"range(int:[-1,inf))",,1

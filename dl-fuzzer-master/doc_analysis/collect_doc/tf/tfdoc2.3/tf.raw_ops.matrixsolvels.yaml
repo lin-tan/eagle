@@ -1,0 +1,29 @@
+constraints:
+  fast:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+  l2_regularizer:
+    descp: A Tensor of type float64. Scalar tensor.
+  matrix:
+    descp: 'A Tensor. Must be one of the following types: float64, float32, half,
+      complex64, complex128. Shape is [..., M, N].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  rhs:
+    descp: A Tensor. Must have the same type as matrix. Shape is [..., M, K].
+inputs:
+  optional:
+  - fast
+  - name
+  required:
+  - matrix
+  - rhs
+  - l2_regularizer
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MatrixSolveLs
+outputs:
+- A Tensor. Has the same type as matrix.
+package: tensorflow
+target: MatrixSolveLs
+title: tf.raw_ops.MatrixSolveLs
+version: 2.3.0

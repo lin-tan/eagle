@@ -1,0 +1,16 @@
+constraints:
+  ctx:
+    descp: GPU context whose corresponding cuda compute capability is to be retrieved.
+    doc_dtype: Context
+    normalized_descp:
+    - GPU context whose corresponding cuda compute capability is to be retrieved
+    normalized_docdtype: ONE_WORD Context
+inputs:
+  optional: []
+  required:
+  - ctx
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/util/index.html#mxnet.util.get_cuda_compute_capability
+package: mxnet
+target: get_cuda_compute_capability
+title: mxnet.util.get_cuda_compute_capability
+version: 1.6.0

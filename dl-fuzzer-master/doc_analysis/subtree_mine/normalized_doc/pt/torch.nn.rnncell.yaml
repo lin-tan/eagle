@@ -1,0 +1,38 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If `False`, then the layer does not use bias weights b_ih and b_hh. Default:
+      `True`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, then the layer does not use bias weights b_ih and b_hh
+    - Default CONSTANT_BOOL
+  hidden_size:
+    descp: The number of features in the hidden state h
+    normalized_descp:
+    - The number of features in the hidden state h
+  input_size:
+    descp: The number of expected features in the input x
+    normalized_descp:
+    - The number of expected features in the input x
+  nonlinearity:
+    default: tanh
+    descp: 'The non-linearity to use. Can be either `''tanh''` or `''relu''`. Default:
+      `''tanh''`'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - The non linearity to use
+    - Can be either QSTR
+    - Default QSTR
+inputs:
+  optional:
+  - bias
+  - nonlinearity
+  required:
+  - input_size
+  - hidden_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.RNNCell
+package: torch
+target: RNNCell
+title: torch.nn.RNNCell
+version: 1.5.0

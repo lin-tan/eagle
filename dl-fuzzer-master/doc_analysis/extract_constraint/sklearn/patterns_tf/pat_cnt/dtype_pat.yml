@@ -1,0 +1,160 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (([`'"]*([.\w]+)[`'"]*\s+or\s+)?[`'"]*([.\w]+)[`'"]*)\s+[`'"]*(tensor|tf.tensor)[`'"]*:
+    cnt: 0
+    group: 1
+  ([`'"]*([.\w]+)[`'"]*)\s+scalar:
+    cnt: 0
+    group: 1
+    ndim: 0
+  ([`'"]*sparsetensor[`'"]*\s+or\s+[`'"]*tensor[`'"]*):
+    cnt: 0
+    group: 1
+  ([`'"]*tensor[`'"]*\s+or\s+[`'"]*sparsetensor[`'"]*):
+    cnt: 0
+    group: 1
+  (\ba\b|an)?\s*([`'"]*[\w.]+[`'"]*\/[`'"]*[\w.]+[`'"]*):
+    cnt: 7
+    group: 2
+  (\ba\b|or)\s+single\s`*(\w+)`*:
+    cnt: 4
+    group: 2
+    ndim: 0
+  (a|an)\s+optional\s*[`'"]*([\w.]+)[`'"]*:
+    cnt: 0
+    group: 2
+    ndim: 0
+  (if|when)\s+(this\s+is\s+)?set\s+to\s*`*(true|false)`*:
+    cnt: 19
+    dtype: bool
+    ndim: 0
+  (if|when)\s+`*(true|false)`*:
+    cnt: 90
+    dtype: bool
+    ndim: 0
+  (of|with|and)\s+(type|dtype|types|dtypes)\s*(((and|or)*\s*[`'"][.\w]+[`'"][,]*\s*)+):
+    cnt: 0
+    group: 3
+  (of|with|and)\s+(type|dtype|types|dtypes)\s+([`'"]*([\w.]+)[`'"]*(\s+or\s+[`'"]*([\w.]+)[`'"]*)?):
+    cnt: 0
+    group: 3
+  (of|with|and|have|has)\s+(real\s+)?[`'"]*([\w.]+)[`'"]*\s+(type|dtype|types|dtypes):
+    cnt: 1
+    group: 3
+  (positive|negative)\s+`*([\w.]+)`*:
+    cnt: 6
+    group: 2
+  ? (the\s+)?same\s+(((dtype|type)\s+and\s+(shape|rank))|(shape\s+and\s+(type|dtype))|`*(dtype|type)`*)\s+(with|as)\s*`*([\w]+)`*[\s,.]
+  : cnt: 0
+    dependent: true
+    group: 10
+  '[`''"]*(true|false)[`''"]*\s+(if|when|enables|disables)\s+':
+    cnt: 35
+    dtype: bool
+  \bor\b\s+`*(sparsetensor)`*:
+    cnt: 0
+    group: 1
+  ^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required|expected)?\s*([`'"]*[\w.]+[`'"]*)[\s\.,;-s]:
+    cnt: 651
+    group: 4
+    prereq:
+    - ^(\(optional.*\))?\s*(the|\ba\b|an|optional)?\s*(python|input|keras|required)?\s*([`'"]*[\w.]+[`'"]*)[\s\.,;-s](?!`*tensor`*)
+  ? ^(\(optional.*\)|either)?\s*(the|\ba\b|an|optional)?\s*(python|input|output|other|keras|tensorflow|required|unique|expected|variable)?\s*(\(.*?\)\s*)?([`'"]*[\w.]+[`'"]*)[\s\.,;-s](?!`*tensor`*)
+  : cnt: 651
+    group: 5
+    ndim: 0
+  ^(\ba\b|\ban\b|the)?\s*(optional)?\s*([`'"]*[\w-]+[`'"]*\s+[`'"]*[\w-]+[`'"]*)(?!\s`*tensor`*):
+    cnt: 162
+    group: 3
+    ndim: 0
+  ^(\ba\b|an|the)?\s*([`'"]*[\w.]+[`'"]*\s+or\s+[`'"]*[\w.]+[`'"]*):
+    cnt: 85
+    group: 2
+  ^(\ba\b|an|the)?\s*directory\s:
+    cnt: 0
+    dtype: string
+  ^(the\s+)?index\s+of:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  '`*(dtype|data\s+type)`*\s+of':
+    cnt: 8
+    dtype: dtype
+  '`*(tensor)`*\s+of\s+(arbitrary|any)\s+(shape|dimension|dimensions)':
+    cnt: 0
+    group: 1
+  '`*(tf.tensor|tensor|sparsetensor)`*\s+(of|with)\)?\s+(?!type)(?!shape)`*([\w.]+)`*':
+    cnt: 0
+    group: 3
+  '`*(true|false)`*\s+iff':
+    cnt: 0
+    dtype: bool
+    ndim: 0
+  a\s+`*(tensor)`*\s+whose:
+    cnt: 0
+    group: 1
+  a\s+name\s+for:
+    cnt: 0
+    dtype: string
+    ndim: 0
+  a\s+python\s+number:
+    cnt: 0
+    dtype: int
+    ndim: 0
+  acceptable\s+types\s+are\s+(((and|or)*\s*[`'"][.\w]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  as\s+a\s+(constant\s+)?`*(\w+)`*:
+    cnt: 5
+    group: 2
+    ndim: 0
+  determines*\s+whether\s+:
+    cnt: 2
+    dtype: bool
+  must\s*be\s*:*(((and|or)*\s*[`'"][.\w\d]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  must\s+be\s*(((and|or)*\s*[`'"][.\w\d]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  must\s+be\s+(a|an)\s+(positive\s+)?(`*\w+`*):
+    cnt: 2
+    group: 3
+    ndim: 0
+  must\s+be\s+one\s+of\s+the\s+following\s+types\s*:(((and|or)*\s*[`'"][\w.]+[`'"]\s*[,\.]*\s*)+):
+    cnt: 0
+    group: 1
+  same\s+`*(dtype|type)`*\s+as,*\s+and\s+broadcastable\s+to,*\s*`*(\w+)`*:
+    cnt: 0
+    dependent: true
+    group: 2
+  the\s+strides*\s+of\s+:
+    cnt: 0
+    dtype: int
+    range: '[0,inf)'
+  this\s+must\s+be\s+(\ba\b|an)?\s*`*([\w]+)`*:
+    cnt: 0
+    group: 2
+  whether\s+:
+    cnt: 92
+    dtype: bool
+replace:
+  data\s+type: dtype
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+- \|
+stop_word:
+- and
+- or
+- etc
+target: dtype

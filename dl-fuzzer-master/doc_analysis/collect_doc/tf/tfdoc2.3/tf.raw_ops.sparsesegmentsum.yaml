@@ -1,0 +1,27 @@
+constraints:
+  data:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, int64, bfloat16, uint16, half, uint32, uint64.'
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A 1-D tensor.
+      Has same rank as segment_ids.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  segment_ids:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A 1-D tensor.
+      Values should be sorted and can be repeated.'
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - indices
+  - segment_ids
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseSegmentSum
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: SparseSegmentSum
+title: tf.raw_ops.SparseSegmentSum
+version: 2.3.0

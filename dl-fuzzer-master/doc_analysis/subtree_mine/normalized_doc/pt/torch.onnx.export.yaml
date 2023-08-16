@@ -1,0 +1,235 @@
+constraints:
+  _retain_param_name:
+    default: 'True'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  args:
+    descp: 'the inputs to the model, e.g., such that `model(*args)` is a valid invocation
+      of the model.  Any non-Tensor arguments will be hard-coded into the exported
+      model; any Tensor arguments will become inputs of the exported model, in the
+      order they occur in args.  If args is a Tensor, this is equivalent to having
+      called it with a 1-ary tuple of that Tensor. (Note: passing keyword arguments
+      to the model is not currently supported.  Give us a shout if you need it.)'
+    doc_dtype: tuple of arguments
+    normalized_descp:
+    - the inputs to the PARAM, e g , such that PARAM BSTR is a valid invocation of
+      the PARAM
+    - Any non D_STRUCTURE arguments will be hard coded into the exported PARAM any
+      D_STRUCTURE arguments will become inputs of the exported PARAM, in the order
+      they occur in args
+    - If args is a D_STRUCTURE, this is equivalent to having called it with a CONSTANT_NUM
+      ary D_STRUCTURE of that D_STRUCTURE
+    - Note passing keyword arguments to the PARAM is not currently supported
+    - Give us a shout if you need it
+    normalized_docdtype: D_STRUCTURE of arguments
+  aten:
+    default: 'False'
+    descp: '[DEPRECATED. use operator_export_type] export the model in aten mode.
+      If using aten mode, all the ops original exported by the functions in symbolic_opset<version>.py
+      are exported as ATen ops.'
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - ONE_WORD DEPRECATED
+    - use PARAM export the PARAM in aten mode
+    - If using aten mode, all the ops original exported by the functions in symbolic_opset
+      REXPR REXPR are exported as ATen ops
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  custom_opsets:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  do_constant_folding:
+    default: 'True'
+    descp: If True, the constant-folding optimization is applied to the model during
+      export. Constant-folding optimization will replace some of the ops that have
+      all constant inputs, with pre-computed constant nodes.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL, the constant folding optimization is applied to the PARAM
+      during export
+    - Constant folding optimization will replace some of the ops that have all constant
+      inputs, with pre computed constant nodes
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  dynamic_axes:
+    default: None
+    descp: ''
+    doc_dtype: dict<string, dict<python:int, string>> or dict<string, list(int)>,
+      default empty dict
+    normalized_default: DEFAULT None
+    normalized_descp: []
+    normalized_docdtype: D_STRUCTURE REXPR, D_STRUCTURE REXPR D_TYPE REXPR D_STRUCTURE
+      REXPR, D_STRUCTURE BSTR , default empty D_STRUCTURE
+  enable_onnx_checker:
+    default: 'True'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  example_outputs:
+    default: None
+    descp: Model's example outputs being exported. example_outputs must be provided
+      when exporting a ScriptModule or TorchScript Function.
+    doc_dtype: tuple of Tensors, default None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - PARAMs example outputs being exported
+    - example_outputs must be provided when exporting a ScriptModule or TorchScript
+      Function
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE, default None
+  export_params:
+    default: 'True'
+    descp: if specified, all parameters will be exported.  Set this to False if you
+      want to export an untrained model. In this case, the exported model will first
+      take all of its parameters as arguments, the ordering as specified by `model.state_dict().values()`
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if specified, all parameters will be exported
+    - Set this to CONSTANT_BOOL if you want to export an untrained PARAM
+    - In this case, the exported PARAM will first take all of its parameters as arguments,
+      the ordering as specified by PARAM state_dict BSTR
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  export_raw_ir:
+    default: 'False'
+    descp: '[DEPRECATED. use operator_export_type] export the internal IR directly
+      instead of converting it to ONNX ops.'
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - ONE_WORD DEPRECATED
+    - use PARAM export the internal IR directly instead of converting it to ONNX ops
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  f:
+    descp: a file-like object (has to implement fileno that returns a file descriptor)
+      or a string containing a file name.  A binary Protobuf will be written to this
+      file.
+    normalized_descp:
+    - a file like object BSTR or a D_TYPE containing a file name
+    - A binary Protobuf will be written to this file
+  input_names:
+    default: None
+    descp: names to assign to the input nodes of the graph, in order
+    doc_dtype: list of strings, default empty list
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - names to assign to the input nodes of the graph, in order
+    normalized_docdtype: D_STRUCTURE of D_TYPE, default empty D_STRUCTURE
+  keep_initializers_as_inputs:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  model:
+    descp: the model to be exported.
+    doc_dtype: torch.nn.Module
+    normalized_descp:
+    - the model to be exported
+    normalized_docdtype: torch nn Module
+  operator_export_type:
+    default: None
+    descp: 'OperatorExportTypes.ONNX: all ops are exported as regular ONNX ops. OperatorExportTypes.ONNX_ATEN:
+      all ops are exported as ATen ops. OperatorExportTypes.ONNX_ATEN_FALLBACK: if
+      symbolic is missing, fall back on ATen op. OperatorExportTypes.RAW: export raw
+      ir.'
+    doc_dtype: enum, default OperatorExportTypes.ONNX
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - OperatorExportTypes ONNX all ops are exported as regular ONNX ops
+    - OperatorExportTypes ONNX_ATEN all ops are exported as PARAM ops
+    - OperatorExportTypes ONNX_ATEN_FALLBACK if symbolic is missing, fall back on
+      PARAM op
+    - OperatorExportTypes RAW export raw ir
+    normalized_docdtype: enum, default OperatorExportTypes ONNX
+  opset_version:
+    default: None
+    descp: by default we export the model to the opset version of the onnx submodule.
+      Since ONNX's latest opset may evolve before next stable release, by default
+      we export to one stable opset version. Right now, supported stable opset version
+      is 9. The opset_version must be _onnx_master_opset or in _onnx_stable_opsets
+      which are defined in torch/onnx/symbolic_helper.py
+    doc_dtype: int, default is 9
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - by default we export the PARAM to the opset version of the onnx submodule
+    - Since ONNX latest opset may evolve before next stable release, by default we
+      export to one stable opset version
+    - Right now, supported stable opset version is CONSTANT_NUM
+    - The opset_version must be onnx_master_opset or in onnx_stable_opsets which are
+      defined in torch onnx symbolic_helper py
+    normalized_docdtype: D_TYPE, default is CONSTANT_NUM
+  output_names:
+    default: None
+    descp: names to assign to the output nodes of the graph, in order
+    doc_dtype: list of strings, default empty list
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - names to assign to the output nodes of the graph, in order
+    normalized_docdtype: D_STRUCTURE of D_TYPE, default empty D_STRUCTURE
+  strip_doc_string:
+    default: 'True'
+    descp: if True, strips the field "doc_string" from the exported model, which information
+      about the stack trace.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL, strips the field QSTR from the exported PARAM, which information
+      about the stack trace
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  training:
+    default: 'False'
+    descp: export the model in training mode.  At the moment, ONNX is oriented towards
+      exporting models for inference only, so you will generally not need to set this
+      to True.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - export the PARAM in training mode
+    - At the moment, ONNX is oriented towards exporting models for inference only,
+      so you will generally not need to set this to CONSTANT_BOOL
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+  use_external_data_format:
+    default: 'False'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+  verbose:
+    default: 'False'
+    descp: if specified, we will print out a debug description of the trace being
+      exported.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if specified, we will print out a debug description of the trace being exported
+    normalized_docdtype: D_TYPE, default CONSTANT_BOOL
+inputs:
+  optional:
+  - export_params
+  - verbose
+  - training
+  - input_names
+  - output_names
+  - aten
+  - export_raw_ir
+  - operator_export_type
+  - opset_version
+  - _retain_param_name
+  - do_constant_folding
+  - example_outputs
+  - strip_doc_string
+  - dynamic_axes
+  - keep_initializers_as_inputs
+  - custom_opsets
+  - enable_onnx_checker
+  - use_external_data_format
+  required:
+  - model
+  - args
+  - f
+link: https://pytorch.org/docs/stable/onnx.html#torch.onnx.export
+package: torch
+target: export
+title: torch.onnx.export
+version: 1.5.0

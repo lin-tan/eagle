@@ -1,0 +1,22 @@
+constraints:
+  estimator:
+    descp: estimator object, or list, tuple or set of objects The estimator or group
+      of estimators to be cloned
+  safe:
+    default: 'True'
+    descp: boolean, optional If safe is false, clone will fall back to a deep copy
+      on objects that are not estimators.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - safe
+  required:
+  - estimator
+link: ''
+package: sklearn
+target: clone
+title: sklearn.base.clone
+version: 0.24.2

@@ -1,0 +1,48 @@
+aliases:
+- tf.compat.v1.keras.layers.UpSampling2D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  data_format:
+    default: None
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      height, width, channels)` while `channels_first`corresponds to inputs with shape`(batch,
+      channels, height, width)`. It defaults to the `image_data_format` value found
+      in your Keras config file at `~/.keras/keras.json`. If you never set it, then
+      it will be "channels_last".
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE one of QSTR BSTR or QSTR
+    - The ordering of the dimensions in the inputs QSTR corresponds to inputs with
+      shape BSTR while QSTR corresponds to inputs with shape BSTR
+    - It defaults to the QSTR value found in your Keras config file at keras keras
+      json
+    - If you never set it then it will be QSTR
+  interpolation:
+    default: nearest
+    descp: A string, one of `nearest` or `bilinear`.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - A D_TYPE one of QSTR
+  size:
+    default: (2, 2)
+    descp: Int, or tuple of 2 integers. The upsampling factors for rows and columns.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - D_TYPE or D_STRUCTURE of CONSTANT_NUM D_TYPE
+    - The upsampling factors for rows and columns
+inputs:
+  optional:
+  - size
+  - data_format
+  - interpolation
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/UpSampling2D
+package: tensorflow
+target: UpSampling2D
+title: tf.keras.layers.UpSampling2D
+version: 2.1.0

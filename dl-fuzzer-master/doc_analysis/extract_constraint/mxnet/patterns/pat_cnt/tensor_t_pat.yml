@@ -1,0 +1,22 @@
+append: true
+break: false
+check_dt: true
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  ^(the\s+)?(target|input|output)?\s*(tensor):
+    cnt: 75
+    group: 3
+sep:
+- /
+- '`'
+- \'
+- \"
+- ' '
+- ','
+stop_word:
+- and
+- or
+- etc
+target: tensor_t

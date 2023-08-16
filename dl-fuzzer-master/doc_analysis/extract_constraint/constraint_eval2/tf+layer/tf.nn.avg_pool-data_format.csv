@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string. Specifies the channel dimension. For N=1 it can be either ""NWC"" (default) or ""NCW"", for N=2 it can be either ""NHWC"" (default) or ""NCHW"" and for N=3 either ""NDHWC"" (default) or ""NCDHW"".",None,prim_dtype,dtype(tf.string),,1
+,"A string. Specifies the channel dimension. For N=1 it can be either ""NWC"" (default) or ""NCW"", for N=2 it can be either ""NHWC"" (default) or ""NCHW"" and for N=3 either ""NDHWC"" (default) or ""NCDHW"".",None,shape,ndim(0),,1
+,"A string. Specifies the channel dimension. For N=1 it can be either ""NWC"" (default) or ""NCW"", for N=2 it can be either ""NHWC"" (default) or ""NCHW"" and for N=3 either ""NDHWC"" (default) or ""NCDHW"".",None,validvalue,"enum(NCDHW, NCHW, NCW, NDHWC, NHWC, NWC)",,1

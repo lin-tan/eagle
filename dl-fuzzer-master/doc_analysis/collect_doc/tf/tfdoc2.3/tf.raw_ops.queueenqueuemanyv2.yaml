@@ -1,0 +1,28 @@
+constraints:
+  components:
+    descp: A list of Tensor objects. One or more tensors from which the enqueued tensors
+      should be taken.
+  handle:
+    descp: A Tensor of type resource. The handle to a queue.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  timeout_ms:
+    default: '-1'
+    descp: 'An optional int. Defaults to -1. If the queue is too full, this operation
+      will block for up to timeout_ms milliseconds. Note: This option is not supported
+      yet.'
+inputs:
+  optional:
+  - timeout_ms
+  - name
+  required:
+  - handle
+  - components
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/QueueEnqueueManyV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: QueueEnqueueManyV2
+title: tf.raw_ops.QueueEnqueueManyV2
+version: 2.3.0

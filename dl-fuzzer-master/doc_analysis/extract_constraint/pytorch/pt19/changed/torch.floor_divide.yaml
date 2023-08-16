@@ -1,0 +1,40 @@
+constraints:
+  input:
+    descp: the dividend
+    doc_dtype:
+    - Tensor
+    - Number
+    dtype:
+    - int
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the divisor
+    doc_dtype:
+    - Tensor
+    - Number
+    dtype:
+    - int
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.floor_divide.html#torch.floor_divide#torch.floor_divide
+package: torch
+ret_type: Tensor
+target: floor_divide
+title: torch.floor_divide
+version: 1.9.0

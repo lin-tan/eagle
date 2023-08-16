@@ -1,0 +1,21 @@
+constraints:
+  image: {descp: 'array, shape = (image_height, image_width) or (image_height, image_width,
+      n_channels) The original image data. For color images, the last dimension specifies
+      the channel: a RGB image would have `n_channels=3`.'}
+  max_patches: {default: None, descp: 'integer or float, optional default is None
+      The maximum number of patches to extract. If max_patches is a float between
+      0 and 1, it is taken to be a proportion of the total number of patches.'}
+  patch_size: {descp: 'tuple of ints (patch_height, patch_width) the dimensions of
+      one patch'}
+  random_state: {default: None, descp: 'int, RandomState instance or None, optional
+      (default=None) Determines the random number generator used for random sampling
+      when `max_patches` is not None. Use an int to make the randomness deterministic.
+      See :term:`Glossary <random_state>`.'}
+inputs:
+  optional: [max_patches, random_state]
+  required: [image, patch_size]
+link: ''
+package: sklearn
+target: extract_patches_2d
+title: sklearn.feature_extraction.image.extract_patches_2d
+version: 0.24.2

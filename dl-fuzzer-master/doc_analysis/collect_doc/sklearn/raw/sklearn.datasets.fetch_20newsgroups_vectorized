@@ -1,0 +1,75 @@
+sklearn.datasets.fetch_20newsgroups_vectorized = fetch_20newsgroups_vectorized(subset='train', remove=(), data_home=None, download_if_missing=True, return_X_y=False, normalize=True)
+    Load the 20 newsgroups dataset and vectorize it into token counts (classification).
+    
+    Download it if necessary.
+    
+    This is a convenience function; the transformation is done using the
+    default settings for
+    :class:`sklearn.feature_extraction.text.CountVectorizer`. For more
+    advanced usage (stopword filtering, n-gram extraction, etc.), combine
+    fetch_20newsgroups with a custom
+    :class:`sklearn.feature_extraction.text.CountVectorizer`,
+    :class:`sklearn.feature_extraction.text.HashingVectorizer`,
+    :class:`sklearn.feature_extraction.text.TfidfTransformer` or
+    :class:`sklearn.feature_extraction.text.TfidfVectorizer`.
+    
+    The resulting counts are normalized using
+    :func:`sklearn.preprocessing.normalize` unless normalize is set to False.
+    
+    =================   ==========
+    Classes                     20
+    Samples total            18846
+    Dimensionality          130107
+    Features                  real
+    =================   ==========
+    
+    Read more in the :ref:`User Guide <20newsgroups_dataset>`.
+    
+    Parameters
+    ----------
+    subset : 'train' or 'test', 'all', optional
+        Select the dataset to load: 'train' for the training set, 'test'
+        for the test set, 'all' for both, with shuffled ordering.
+    
+    remove : tuple
+        May contain any subset of ('headers', 'footers', 'quotes'). Each of
+        these are kinds of text that will be detected and removed from the
+        newsgroup posts, preventing classifiers from overfitting on
+        metadata.
+    
+        'headers' removes newsgroup headers, 'footers' removes blocks at the
+        ends of posts that look like signatures, and 'quotes' removes lines
+        that appear to be quoting another post.
+    
+    data_home : optional, default: None
+        Specify an download and cache folder for the datasets. If None,
+        all scikit-learn data is stored in '~/scikit_learn_data' subfolders.
+    
+    download_if_missing : optional, True by default
+        If False, raise an IOError if the data is not locally available
+        instead of trying to download the data from the source site.
+    
+    return_X_y : bool, default=False
+        If True, returns ``(data.data, data.target)`` instead of a Bunch
+        object.
+    
+        .. versionadded:: 0.20
+    
+    normalize : bool, default=True
+        If True, normalizes each document's feature vector to unit norm using
+        :func:`sklearn.preprocessing.normalize`.
+    
+        .. versionadded:: 0.22
+    
+    Returns
+    -------
+    bunch : Bunch object with the following attribute:
+        - bunch.data: sparse matrix, shape [n_samples, n_features]
+        - bunch.target: array, shape [n_samples]
+        - bunch.target_names: a list of categories of the returned data,
+          length [n_classes].
+        - bunch.DESCR: a description of the dataset.
+    
+    (data, target) : tuple if ``return_X_y`` is True
+    
+        .. versionadded:: 0.20

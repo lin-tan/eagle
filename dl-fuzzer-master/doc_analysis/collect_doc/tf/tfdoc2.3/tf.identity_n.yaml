@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.identity_n
+constraints:
+  input:
+    descp: A list of Tensor objects.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/identity_n
+outputs:
+- A list of Tensor objects. Has the same type as input.
+package: tensorflow
+target: identity_n
+title: tf.identity_n
+version: 2.3.0

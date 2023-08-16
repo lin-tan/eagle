@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input array to normalize.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input D_STRUCTURE to normalize
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  eps:
+    default: _Null
+    descp: A small constant for numerical stability.
+    doc_dtype: float, optional, default=1.00000001e-10
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - A small constant for numerical stability
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  mode:
+    default: _Null
+    descp: Specify the dimension along which to compute L2 norm.
+    doc_dtype: '{''channel'', ''instance'', ''spatial''},optional, default=''instance'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Specify the dimension along which to compute L2 norm
+    normalized_docdtype: QSTR ,optional, default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - eps
+  - mode
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.L2Normalization
+package: mxnet
+target: L2Normalization
+title: mxnet.ndarray.L2Normalization
+version: 1.6.0

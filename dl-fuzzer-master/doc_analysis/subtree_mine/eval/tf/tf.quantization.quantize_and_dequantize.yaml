@@ -1,0 +1,9 @@
+constraints:
+  signed_input:
+    default: 'True'
+    descp: True if the quantization is signed or unsigned.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.quantization.quantize_and_dequantize

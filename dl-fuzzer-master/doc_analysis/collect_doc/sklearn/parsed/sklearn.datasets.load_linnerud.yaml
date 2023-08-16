@@ -1,0 +1,12 @@
+constraints:
+  return_X_y: {default: 'False', descp: 'boolean, default=False. If True, returns
+      ``(data, target)`` instead of a Bunch object. See below for more information
+      about the `data` and `target` object.'}
+inputs:
+  optional: [return_X_y]
+  required: []
+link: ''
+package: sklearn
+target: load_linnerud
+title: sklearn.datasets.load_linnerud
+version: 0.24.2

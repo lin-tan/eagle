@@ -1,0 +1,57 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: The data to train on. It can be passed either as a tf.data Dataset, as
+      a NumPy array, a string tensor, or as a list of texts.
+  max_tokens:
+    default: None
+    descp: ''
+  ngrams:
+    default: None
+    descp: ''
+  output_mode:
+    default: INT
+    descp: ''
+  output_sequence_length:
+    default: None
+    descp: ''
+  pad_to_max_tokens:
+    default: 'True'
+    descp: ''
+  reset_state:
+    default: None
+    descp: Optional argument specifying whether to clear the state of the layer at
+      the start of the call to adapt. This must be True for this layer, which does
+      not support repeated calls to adapt.
+  split:
+    default: SPLIT_ON_WHITESPACE
+    descp: ''
+  standardize:
+    default: LOWER_AND_STRIP_PUNCTUATION
+    descp: ''
+exceptions:
+- ValueError: If there are too many inputs, the inputs do not match, or input data
+    is missing.
+- RuntimeError: If the vocabulary cannot be set when this function is called. This
+    happens when "binary", "count", and "tfidf" modes, if "pad_to_max_tokens" is False
+    and the layer itself has already been called.
+inputs:
+  optional:
+  - max_tokens
+  - standardize
+  - split
+  - ngrams
+  - output_mode
+  - output_sequence_length
+  - pad_to_max_tokens
+  - data
+  - reset_state
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization
+package: tensorflow
+target: TextVectorization
+title: tf.keras.layers.experimental.preprocessing.TextVectorization
+version: 2.3.0

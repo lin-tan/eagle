@@ -1,0 +1,38 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  Inputs:
+    default: None
+    descp: ''
+  Output:
+    default: None
+    descp: ''
+  dtype:
+    default: float32
+    descp: Data type of output embeddings.
+    doc_dtype: str or np.dtype, default 'float32'
+  input_dim:
+    descp: Size of the vocabulary, i.e. maximum integer index + 1.
+    doc_dtype: int
+  output_dim:
+    descp: Dimension of the dense embedding.
+    doc_dtype: int
+  weight_initializer:
+    default: None
+    descp: Initializer for the embeddings matrix.
+    doc_dtype: Initializer
+inputs:
+  optional:
+  - dtype
+  - weight_initializer
+  - Inputs
+  - Output
+  required:
+  - input_dim
+  - output_dim
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.SparseEmbedding
+package: mxnet
+target: SparseEmbedding
+title: mxnet.gluon.contrib.nn.SparseEmbedding
+version: 1.6.0

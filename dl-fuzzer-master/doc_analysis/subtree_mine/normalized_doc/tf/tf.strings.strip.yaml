@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.string_strip
+- tf.compat.v1.strings.strip
+constraints:
+  input:
+    descp: A `Tensor` of type `string`. A string `Tensor` of any shape.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - A D_TYPE D_STRUCTURE of any shape
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strings/strip
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: strip
+title: tf.strings.strip
+version: 2.1.0

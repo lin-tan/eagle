@@ -1,0 +1,48 @@
+constraints:
+  dim1:
+    default: '0'
+    descp: 'first dimension with respect to which to take diagonal. Default: 0.'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - first dimension with respect to which to take diagonal
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  dim2:
+    default: '1'
+    descp: 'second dimension with respect to which to take diagonal. Default: 1.'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - second dimension with respect to which to take diagonal
+    - Default CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  input:
+    descp: the input tensor. Must be at least 2-dimensional.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    - Must be at least CONSTANT_NUM dimensional
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  offset:
+    default: '0'
+    descp: 'which diagonal to consider. Default: 0 (main diagonal).'
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - which diagonal to consider
+    - Default CONSTANT_NUM BSTR
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - offset
+  - dim1
+  - dim2
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.diagonal
+package: torch
+ret_type: Tensor
+target: diagonal
+title: torch.diagonal
+version: 1.5.0

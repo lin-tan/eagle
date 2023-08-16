@@ -1,0 +1,20 @@
+constraints:
+  epsilon:
+    default: _Null
+    descp: A small constant for numerical stability.
+    doc_dtype:
+    - float
+    - optional
+    - default=9.99999994e-09
+    dtype:
+    - float
+    ndim:
+    - '0'
+  n:
+    default: None
+    descp: n
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.rmsprop_update

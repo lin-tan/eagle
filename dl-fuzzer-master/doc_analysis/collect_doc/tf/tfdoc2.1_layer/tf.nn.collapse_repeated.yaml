@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.nn.collapse_repeated
+constraints:
+  labels:
+    descp: Tensor of shape [batch, max value in seq_length]
+  name:
+    default: None
+    descp: A name for this `Op`. Defaults to "collapse_repeated_labels".
+  seq_length:
+    descp: Tensor of shape [batch], sequence length of each batch element.
+inputs:
+  optional:
+  - name
+  required:
+  - labels
+  - seq_length
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/collapse_repeated
+outputs: A tuple `(collapsed_labels, new_seq_length)` where
+package: tensorflow
+target: collapse_repeated
+title: tf.nn.collapse_repeated
+version: 2.1.0

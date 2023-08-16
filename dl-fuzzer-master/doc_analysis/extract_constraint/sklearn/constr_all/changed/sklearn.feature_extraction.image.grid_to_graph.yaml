@@ -1,0 +1,48 @@
+constraints:
+  dtype:
+    default: <class int>
+    descp: ''
+    dtype:
+    - numpy.dtype
+  mask:
+    default: None
+    descp: ''
+  n_x:
+    descp: 'int Dimension in x axis n_y : int Dimension in y axis n_z : int, optional,
+      default 1 Dimension in z axis mask : ndarray of booleans, optional An optional
+      mask of the image, to consider only part of the pixels. return_as : np.ndarray
+      or a sparse matrix class, optional The class to use to build the returned adjacency
+      matrix. dtype : dtype, optional, default int The data of the returned sparse
+      matrix. By default it is int'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    structure:
+    - list
+  n_y:
+    descp: ''
+  n_z:
+    default: '1'
+    descp: ''
+    dtype:
+    - int
+    ndim:
+    - '0'
+  return_as:
+    default: <class scipy.sparse.coo.coo_matrix>
+    descp: ''
+inputs:
+  optional:
+  - n_z
+  - mask
+  - return_as
+  - dtype
+  required:
+  - n_x
+  - n_y
+link: ''
+package: sklearn
+target: grid_to_graph
+title: sklearn.feature_extraction.image.grid_to_graph
+version: 0.24.2

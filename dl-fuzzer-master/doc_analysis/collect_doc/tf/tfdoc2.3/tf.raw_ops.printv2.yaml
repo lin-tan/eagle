@@ -1,0 +1,27 @@
+constraints:
+  end:
+    default: \n
+    descp: An optional string. Defaults to "\n".
+  input:
+    descp: A Tensor of type string. The string scalar to print.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_stream:
+    default: stderr
+    descp: An optional string. Defaults to "stderr". A string specifying the output
+      stream or logging level to print to.
+inputs:
+  optional:
+  - output_stream
+  - end
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PrintV2
+outputs:
+- The created Operation.
+package: tensorflow
+target: PrintV2
+title: tf.raw_ops.PrintV2
+version: 2.3.0

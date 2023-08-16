@@ -1,0 +1,17 @@
+constraints:
+  axis:
+    default: _Null
+    descp: The axes to perform the broadcasting.
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+    dtype:
+    - int
+    structure:
+    - tuple
+    ndim:
+    - '1'
+    range: 
+    - '[0,inf)'
+title: mxnet.ndarray.op.broadcast_axis

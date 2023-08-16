@@ -1,0 +1,84 @@
+sklearn.utils.resample = resample(*arrays, **options)
+    Resample arrays or sparse matrices in a consistent way
+    
+    The default strategy implements one step of the bootstrapping
+    procedure.
+    
+    Parameters
+    ----------
+    *arrays : sequence of indexable data-structures
+        Indexable data-structures can be arrays, lists, dataframes or scipy
+        sparse matrices with consistent first dimension.
+    
+    Other Parameters
+    ----------------
+    replace : boolean, True by default
+        Implements resampling with replacement. If False, this will implement
+        (sliced) random permutations.
+    
+    n_samples : int, None by default
+        Number of samples to generate. If left to None this is
+        automatically set to the first dimension of the arrays.
+        If replace is False it should not be larger than the length of
+        arrays.
+    
+    random_state : int, RandomState instance or None, optional (default=None)
+        The seed of the pseudo random number generator to use when shuffling
+        the data.  If int, random_state is the seed used by the random number
+        generator; If RandomState instance, random_state is the random number
+        generator; If None, the random number generator is the RandomState
+        instance used by `np.random`.
+    
+    stratify : array-like or None (default=None)
+        If not None, data is split in a stratified fashion, using this as
+        the class labels.
+    
+    Returns
+    -------
+    resampled_arrays : sequence of indexable data-structures
+        Sequence of resampled copies of the collections. The original arrays
+        are not impacted.
+    
+    Examples
+    --------
+    It is possible to mix sparse and dense arrays in the same run::
+    
+      >>> X = np.array([[1., 0.], [2., 1.], [0., 0.]])
+      >>> y = np.array([0, 1, 2])
+    
+      >>> from scipy.sparse import coo_matrix
+      >>> X_sparse = coo_matrix(X)
+    
+      >>> from sklearn.utils import resample
+      >>> X, X_sparse, y = resample(X, X_sparse, y, random_state=0)
+      >>> X
+      array([[1., 0.],
+             [2., 1.],
+             [1., 0.]])
+    
+      >>> X_sparse
+      <3x2 sparse matrix of type '<... 'numpy.float64'>'
+          with 4 stored elements in Compressed Sparse Row format>
+    
+      >>> X_sparse.toarray()
+      array([[1., 0.],
+             [2., 1.],
+             [1., 0.]])
+    
+      >>> y
+      array([0, 1, 0])
+    
+      >>> resample(y, n_samples=2, random_state=0)
+      array([0, 1])
+    
+    Example using stratification::
+    
+      >>> y = [0, 0, 1, 1, 1, 1, 1, 1, 1]
+      >>> resample(y, n_samples=5, replace=False, stratify=y,
+      ...          random_state=0)
+      [1, 1, 1, 0, 1]
+    
+    
+    See also
+    --------
+    :func:`sklearn.utils.shuffle`

@@ -1,0 +1,21 @@
+constraints:
+  input:
+    descp: A Tensor of type string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_buckets:
+    descp: An int that is >= 1. The number of buckets.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - num_buckets
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/strings/to_hash_bucket
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: to_hash_bucket
+title: tf.strings.to_hash_bucket
+version: 2.2.0

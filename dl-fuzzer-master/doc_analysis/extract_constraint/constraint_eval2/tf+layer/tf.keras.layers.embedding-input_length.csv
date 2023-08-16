@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Length of input sequences, when it is constant. This argument is required if you are going to connect`Flatten` then `Dense` layers upstream (without it, the shape of the dense outputs cannot be computed).",None,prim_dtype,dtype(numeric),,1
+,"Length of input sequences, when it is constant. This argument is required if you are going to connect`Flatten` then `Dense` layers upstream (without it, the shape of the dense outputs cannot be computed).",None,validvalue,"range([0,inf))",,1

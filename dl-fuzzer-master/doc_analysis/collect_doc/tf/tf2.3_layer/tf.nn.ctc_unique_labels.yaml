@@ -1,0 +1,20 @@
+aliases:
+- tf.compat.v1.nn.ctc_unique_labels
+constraints:
+  labels:
+    descp: tensor of shape [batch_size, max_label_length] padded with 0.
+  name:
+    default: None
+    descp: A name for this Op. Defaults to "ctc_unique_labels".
+inputs:
+  optional:
+  - name
+  required:
+  - labels
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_unique_labels
+outputs: tuple of unique labels, tensor of shape [batch_size, max_label_length] indices
+  into unique labels, shape [batch_size, max_label_length]
+package: tensorflow
+target: ctc_unique_labels
+title: tf.nn.ctc_unique_labels
+version: 2.3.0

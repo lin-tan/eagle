@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Vector or scalar `Tensor`.  Specifies the first entry for each range if `limits` is not `None`; otherwise, specifies the range limits, and the first entries default to `0`.",,prim_dtype,dtype(numeric),,1
+,"Vector or scalar `Tensor`.  Specifies the first entry for each range if `limits` is not `None`; otherwise, specifies the range limits, and the first entries default to `0`.",,nonprim_dtype,structure(list),,1
+,"Vector or scalar `Tensor`.  Specifies the first entry for each range if `limits` is not `None`; otherwise, specifies the range limits, and the first entries default to `0`.",,shape,"ndim(0, 1)",,1

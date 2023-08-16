@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A Python integer. Used in combination with `tf.random.set_seed` to create a reproducible sequence of tensors across multiple calls.,None,prim_dtype,dtype(int),,1
+,A Python integer. Used in combination with `tf.random.set_seed` to create a reproducible sequence of tensors across multiple calls.,None,nonprim_dtype,structure(list(tf.tensor)),,1
+,A Python integer. Used in combination with `tf.random.set_seed` to create a reproducible sequence of tensors across multiple calls.,None,shape,ndim(0),,1

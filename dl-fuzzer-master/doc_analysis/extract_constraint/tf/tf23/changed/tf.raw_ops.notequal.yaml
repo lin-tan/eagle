@@ -1,0 +1,41 @@
+constraints:
+  incompatible_shape_error:
+    default: 'True'
+    descp: An optional bool. Defaults to True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, uint8, int8, int16, int32, int64, uint16, uint32, uint64, complex64,
+      quint8, qint8, qint32, string, bool, complex128.'
+    tensor_t:
+    - tf.tensor
+  y:
+    descp: A Tensor. Must have the same type as x.
+    dtype:
+    - dtype:&x
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - incompatible_shape_error
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/NotEqual
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: NotEqual
+title: tf.raw_ops.NotEqual
+version: 2.3.0

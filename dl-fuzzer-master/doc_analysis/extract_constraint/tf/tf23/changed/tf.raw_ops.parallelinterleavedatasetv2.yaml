@@ -1,0 +1,106 @@
+constraints:
+  block_length:
+    descp: A Tensor of type int64. Number of elements at a time to produce from each
+      interleaved invocation of a dataset returned by f.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  cycle_length:
+    descp: A Tensor of type int64. Number of datasets (each created by applying f
+      to the elements of input_dataset) among which the ParallelInterleaveDatasetV2
+      will cycle in a round-robin fashion.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  f:
+    descp: A function decorated with @Defun. A function mapping elements of input_dataset,
+      concatenated with other_arguments, to a Dataset variant that contains elements
+      matching output_types and output_shapes.
+    dtype:
+    - callable
+  input_dataset:
+    descp: A Tensor of type variant. Dataset that produces a stream of arguments for
+      the function f.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_parallel_calls:
+    descp: A Tensor of type int64. Determines the number of threads that should be
+      used for fetching data from input datasets in parallel. The Python API tf.data.experimental.AUTOTUNE
+      constant can be used to indicate that the level of parallelism should be autotuned.
+    dtype:
+    - tf.int64
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  other_arguments:
+    descp: A list of Tensor objects. Additional arguments to pass to f beyond those
+      produced by input_dataset. Evaluated once when the dataset is instantiated.
+    structure:
+    - list(tf.tensor)
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  sloppy:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - sloppy
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - cycle_length
+  - block_length
+  - num_parallel_calls
+  - f
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ParallelInterleaveDatasetV2
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ParallelInterleaveDatasetV2
+title: tf.raw_ops.ParallelInterleaveDatasetV2
+version: 2.3.0

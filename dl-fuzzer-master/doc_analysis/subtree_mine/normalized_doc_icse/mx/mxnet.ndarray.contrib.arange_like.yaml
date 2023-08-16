@@ -1,0 +1,93 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Arange elements according to the size of a certain axis of input array.
+      The negative numbers are interpreted counting from the backward. If not provided,
+      will arange elements according to the input shape.
+    doc_dtype: int or None, optional, default='None'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Arange elements according to the size of a certain axis of input D_STRUCTURE
+    - The negative numbers are interpreted counting from the backward
+    - If not provided will arange elements according to the input shape
+    normalized_docdtype: D_TYPE or None optional default QSTR
+  ctx:
+    default: _Null
+    descp: Context of output, in format [cpu|gpu|cpu_pinned](n).Only used for imperative
+      calls.
+    doc_dtype: string, optional, default=''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Context of output in format cpu gpu cpu_pinned BSTR Only used for imperative
+      calls
+    normalized_docdtype: D_TYPE optional default
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  repeat:
+    default: _Null
+    descp: The repeating time of all elements. E.g repeat=3, the element a will be
+      repeated three times -> a, a, a.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The repeating time of all elements
+    - E g repeat CONSTANT_NUM the element a will be repeated three times REXPR a a
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  start:
+    default: _Null
+    descp: Start of interval. The interval includes this value. The default start
+      value is 0.
+    doc_dtype: double, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Start of interval
+    - The interval includes this value
+    - The default start value is CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  step:
+    default: _Null
+    descp: Spacing between values.
+    doc_dtype: double, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Spacing between values
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - start
+  - step
+  - repeat
+  - ctx
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.arange_like
+package: mxnet
+target: arange_like
+title: mxnet.ndarray.contrib.arange_like
+version: 1.6.0

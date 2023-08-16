@@ -1,0 +1,12 @@
+constraints:
+  data:
+    descp: Initial data for the tensor. Can be a list, tuple, NumPy `ndarray`, scalar,
+      and other types.
+    doc_dtype:
+    - array_like
+    ndim:
+    - '0'
+    structure:
+    - list
+    - tuple
+title: torch.tensor

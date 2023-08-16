@@ -1,0 +1,73 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: Axis along which to split.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Axis along which to split
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  num_outputs:
+    default: _Null
+    descp: Number of splits. Note that this should evenly divide the length of the
+      axis.
+    doc_dtype: int, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Number of splits
+    - Note that this should evenly divide the length of the PARAM
+    normalized_docdtype: D_TYPE required
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  squeeze_axis:
+    default: _Null
+    descp: If true, Removes the axis with length 1 from the shapes of the output arrays.
+      Note that setting squeeze_axis to `true` removes axis with length 1 only along
+      the axis which it is split. Also squeeze_axis can be set to `true` only if `input.shape[axis]
+      == num_outputs`.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If CONSTANT_BOOL Removes the PARAM with length CONSTANT_NUM from the shapes
+      of the output D_STRUCTURE
+    - Note that setting squeeze_axis to CONSTANT_BOOL removes PARAM with length CONSTANT_NUM
+      only along the PARAM which it is split
+    - Also squeeze_axis can be set to CONSTANT_BOOL only if input shape BSTR PARAM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - num_outputs
+  - axis
+  - squeeze_axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.split
+package: mxnet
+target: split
+title: mxnet.ndarray.split
+version: 1.6.0

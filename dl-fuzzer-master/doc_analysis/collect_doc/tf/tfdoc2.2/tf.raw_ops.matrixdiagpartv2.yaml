@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: A Tensor. Rank r tensor where r >= 2.
+  k:
+    descp: A Tensor of type int32. Diagonal offset(s). Positive value means superdiagonal,
+      0 refers to the main diagonal, and negative value means subdiagonals. k can
+      be a single integer (for a single diagonal) or a pair of integers specifying
+      the low and high ends of a matrix band. k[0] must not be larger than k[1].
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  padding_value:
+    descp: A Tensor. Must have the same type as input. The value to fill the area
+      outside the specified diagonal band with. Default is 0.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - k
+  - padding_value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixDiagPartV2
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MatrixDiagPartV2
+title: tf.raw_ops.MatrixDiagPartV2
+version: 2.2.0

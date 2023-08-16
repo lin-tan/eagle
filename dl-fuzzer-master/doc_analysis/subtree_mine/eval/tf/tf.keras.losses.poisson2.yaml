@@ -1,0 +1,6 @@
+constraints:
+  y_true:
+    descp: Tensor of true targets.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.losses.poisson

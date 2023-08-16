@@ -1,0 +1,67 @@
+aliases:
+- tf.compat.v1.signal.frame
+constraints:
+  axis:
+    default: '-1'
+    descp: A scalar integer `Tensor` indicating the axis to frame. Defaults to the
+      last axis. Supports negative values for indexing from the end.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - A scalar D_TYPE D_STRUCTURE indicating the axis to frame
+    - Defaults to the last axis
+    - Supports negative values for indexing from the end
+  frame_length:
+    descp: The frame length in samples. An integer or scalar `Tensor`.
+    normalized_descp:
+    - The frame length in samples
+    - An D_TYPE or scalar D_STRUCTURE
+  frame_step:
+    descp: The frame hop size in samples. An integer or scalar `Tensor`.
+    normalized_descp:
+    - The frame hop size in samples
+    - An D_TYPE or scalar D_STRUCTURE
+  name:
+    default: None
+    descp: An optional name for the operation.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An optional name for the operation
+  pad_end:
+    default: 'False'
+    descp: Whether to pad the end of `signal` with `pad_value`.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to pad the end of PARAM with PARAM
+  pad_value:
+    default: '0'
+    descp: An optional scalar `Tensor` to use where the input signal does not exist
+      when `pad_end` is True.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional scalar D_STRUCTURE to use where the input PARAM does not exist when
+      PARAM is CONSTANT_BOOL
+  signal:
+    descp: A `[..., samples, ...]` `Tensor`. The rank and dimensions may be unknown.
+      Rank must be at least 1.
+    normalized_descp:
+    - A BSTR D_STRUCTURE
+    - The rank and dimensions may be unknown
+    - Rank must be at least CONSTANT_NUM
+exceptions:
+- ValueError: If `frame_length`, `frame_step`, `pad_value`, or `axis` are not scalar.
+inputs:
+  optional:
+  - pad_end
+  - pad_value
+  - axis
+  - name
+  required:
+  - signal
+  - frame_length
+  - frame_step
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/signal/frame
+outputs: A `Tensor` of frames with shape `[..., frames, frame_length, ...]`.
+package: tensorflow
+target: frame
+title: tf.signal.frame
+version: 2.1.0

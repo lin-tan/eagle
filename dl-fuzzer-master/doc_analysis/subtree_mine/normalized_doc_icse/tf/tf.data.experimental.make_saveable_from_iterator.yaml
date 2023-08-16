@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.data.experimental.make_saveable_from_iterator
+constraints:
+  iterator:
+    descp: Iterator.
+    normalized_descp:
+    - ONE_WORD Iterator
+exceptions:
+- ValueError: If iterator does not support checkpointing.
+inputs:
+  optional: []
+  required:
+  - iterator
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/data/experimental/make_saveable_from_iterator
+outputs: A SaveableObject for saving/restoring iterator state using Saver.
+package: tensorflow
+target: make_saveable_from_iterator
+title: tf.data.experimental.make_saveable_from_iterator
+version: 2.1.0

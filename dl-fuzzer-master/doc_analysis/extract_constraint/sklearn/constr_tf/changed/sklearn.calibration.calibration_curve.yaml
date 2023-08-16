@@ -1,0 +1,59 @@
+constraints:
+  n_bins:
+    default: '5'
+    descp: int Number of bins. A bigger number requires more data. Bins with no data
+      points (i.e. without corresponding values in y_prob) will not be returned, thus
+      there may be fewer than n_bins in the return value.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  normalize:
+    default: 'False'
+    descp: bool, optional, default=False Whether y_prob needs to be normalized into
+      the bin [0, 1], i.e. is not a proper probability. If True, the smallest value
+      in y_prob is mapped onto 0 and the largest one onto 1.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  strategy:
+    default: uniform
+    descp: '{''uniform'', ''quantile''}, (default=''uniform'') Strategy used to define
+      the widths of the bins. uniform All bins have identical widths. quantile All
+      bins have the same number of points.'
+    dtype:
+    - string
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  y_prob:
+    descp: array, shape (n_samples,) Probabilities of the positive class.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array, shape (n_samples,) True targets.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_samples
+inputs:
+  optional:
+  - normalize
+  - n_bins
+  - strategy
+  required:
+  - y_true
+  - y_prob
+link: ''
+package: scikit-learn
+target: calibration_curve
+title: sklearn.calibration.calibration_curve
+version: 0.24.X

@@ -1,0 +1,63 @@
+constraints:
+  maxval:
+    descp: A Tensor. Must have the same type as minval. 0-D. Exclusive upper bound
+      on the generated integers.
+    dtype:
+    - dtype:&minval
+    tensor_t:
+    - tf.tensor
+  minval:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D. Inclusive
+      lower bound on the generated integers.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to be non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. A second seed to avoid seed collision.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. The shape
+      of the output tensor.'
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - seed
+  - seed2
+  - name
+  required:
+  - shape
+  - minval
+  - maxval
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RandomUniformInt
+outputs:
+- A Tensor. Has the same type as minval.
+package: tensorflow
+target: RandomUniformInt
+title: tf.raw_ops.RandomUniformInt
+version: 2.3.0

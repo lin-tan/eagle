@@ -1,0 +1,20 @@
+constraints:
+  condition:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64, bool.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - condition
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Where
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: Where
+title: tf.raw_ops.Where
+version: 2.2.0

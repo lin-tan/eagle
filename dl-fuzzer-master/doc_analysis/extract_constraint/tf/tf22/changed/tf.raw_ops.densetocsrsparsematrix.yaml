@@ -1,0 +1,32 @@
+constraints:
+  dense_input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, complex64,
+      complex128. A Dense tensor.'
+    tensor_t:
+    - tf.tensor
+  indices:
+    descp: A Tensor of type int64. Indices of nonzero elements.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - dense_input
+  - indices
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DenseToCSRSparseMatrix
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: DenseToCSRSparseMatrix
+title: tf.raw_ops.DenseToCSRSparseMatrix
+version: 2.2.0

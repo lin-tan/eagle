@@ -1,0 +1,27 @@
+constraints:
+  a:
+    descp: 'array_like n-dimensional array of which to find mode(s). w : array_like
+      n-dimensional array of weights for each value axis : int, optional Axis along
+      which to operate. Default is 0, i.e. the first axis.'
+    ndim:
+    - '?'
+  axis:
+    default: '0'
+    descp: ''
+    dtype:
+    - int
+    ndim:
+    - '0'
+  w:
+    descp: ''
+inputs:
+  optional:
+  - axis
+  required:
+  - a
+  - w
+link: ''
+package: scikit-learn
+target: weighted_mode
+title: sklearn.utils.extmath.weighted_mode
+version: 0.24.X

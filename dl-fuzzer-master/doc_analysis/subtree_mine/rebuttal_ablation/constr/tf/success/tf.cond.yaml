@@ -1,0 +1,62 @@
+constraints:
+  false_fn:
+    default: None
+    descp: The callable to be performed if pred is false.
+  name:
+    default: None
+    descp: Optional name prefix for the returned tensors.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  pred:
+    descp: A scalar determining whether to return the result of `true_fn` or`false_fn`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&false_fn'
+    - '&true_fn'
+    tensor_t:
+    - tf.tensor
+  true_fn:
+    default: None
+    descp: The callable to be performed if pred is true.
+exceptions:
+- TypeError: if `true_fn` or `false_fn` is not callable.
+- ValueError: if `true_fn` and `false_fn` do not return the same number of tensors,
+    or return tensors of different types.
+inputs:
+  optional:
+  - true_fn
+  - false_fn
+  - name
+  required:
+  - pred
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/cond
+outputs: Tensors returned by the call to either `true_fn` or `false_fn`. If the callables
+  return a singleton list, the element is extracted from the list.
+package: tensorflow
+target: cond
+title: tf.cond
+version: 2.1.0

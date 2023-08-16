@@ -1,0 +1,27 @@
+constraints:
+  dst_format:
+    default: NCHW
+    descp: An optional string. Defaults to "NCHW". destination data format.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  src_format:
+    default: NHWC
+    descp: An optional string. Defaults to "NHWC". source data format.
+  x:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. Vector of
+      size 4 or Tensor of shape (4, 2) in source data format.'
+inputs:
+  optional:
+  - src_format
+  - dst_format
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DataFormatVecPermute
+outputs:
+- A Tensor. Has the same type as x.
+package: tensorflow
+target: DataFormatVecPermute
+title: tf.raw_ops.DataFormatVecPermute
+version: 2.3.0

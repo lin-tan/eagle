@@ -1,0 +1,108 @@
+sklearn.cluster.k_means = k_means(X, n_clusters, sample_weight=None, init='k-means++', precompute_distances='auto', n_init=10, max_iter=300, verbose=False, tol=0.0001, random_state=None, copy_x=True, n_jobs=None, algorithm='auto', return_n_iter=False)
+    K-means clustering algorithm.
+    
+    Read more in the :ref:`User Guide <k_means>`.
+    
+    Parameters
+    ----------
+    X : array-like or sparse matrix, shape (n_samples, n_features)
+        The observations to cluster. It must be noted that the data
+        will be converted to C ordering, which will cause a memory copy
+        if the given data is not C-contiguous.
+    
+    n_clusters : int
+        The number of clusters to form as well as the number of
+        centroids to generate.
+    
+    sample_weight : array-like, shape (n_samples,), optional
+        The weights for each observation in X. If None, all observations
+        are assigned equal weight (default: None)
+    
+    init : {'k-means++', 'random', or ndarray, or a callable}, optional
+        Method for initialization, default to 'k-means++':
+    
+        'k-means++' : selects initial cluster centers for k-mean
+        clustering in a smart way to speed up convergence. See section
+        Notes in k_init for more details.
+    
+        'random': choose k observations (rows) at random from data for
+        the initial centroids.
+    
+        If an ndarray is passed, it should be of shape (n_clusters, n_features)
+        and gives the initial centers.
+    
+        If a callable is passed, it should take arguments X, k and
+        and a random state and return an initialization.
+    
+    precompute_distances : {'auto', True, False}
+        Precompute distances (faster but takes more memory).
+    
+        'auto' : do not precompute distances if n_samples * n_clusters > 12
+        million. This corresponds to about 100MB overhead per job using
+        double precision.
+    
+        True : always precompute distances
+    
+        False : never precompute distances
+    
+    n_init : int, optional, default: 10
+        Number of time the k-means algorithm will be run with different
+        centroid seeds. The final results will be the best output of
+        n_init consecutive runs in terms of inertia.
+    
+    max_iter : int, optional, default 300
+        Maximum number of iterations of the k-means algorithm to run.
+    
+    verbose : boolean, optional
+        Verbosity mode.
+    
+    tol : float, optional
+        The relative increment in the results before declaring convergence.
+    
+    random_state : int, RandomState instance or None (default)
+        Determines random number generation for centroid initialization. Use
+        an int to make the randomness deterministic.
+        See :term:`Glossary <random_state>`.
+    
+    copy_x : bool, optional
+        When pre-computing distances it is more numerically accurate to center
+        the data first.  If copy_x is True (default), then the original data is
+        not modified, ensuring X is C-contiguous.  If False, the original data
+        is modified, and put back before the function returns, but small
+        numerical differences may be introduced by subtracting and then adding
+        the data mean, in this case it will also not ensure that data is
+        C-contiguous which may cause a significant slowdown.
+    
+    n_jobs : int or None, optional (default=None)
+        The number of jobs to use for the computation. This works by computing
+        each of the n_init runs in parallel.
+    
+        ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context.
+        ``-1`` means using all processors. See :term:`Glossary <n_jobs>`
+        for more details.
+    
+    algorithm : "auto", "full" or "elkan", default="auto"
+        K-means algorithm to use. The classical EM-style algorithm is "full".
+        The "elkan" variation is more efficient by using the triangle
+        inequality, but currently doesn't support sparse data. "auto" chooses
+        "elkan" for dense data and "full" for sparse data.
+    
+    return_n_iter : bool, optional
+        Whether or not to return the number of iterations.
+    
+    Returns
+    -------
+    centroid : float ndarray with shape (k, n_features)
+        Centroids found at the last iteration of k-means.
+    
+    label : integer ndarray with shape (n_samples,)
+        label[i] is the code or index of the centroid the
+        i'th observation is closest to.
+    
+    inertia : float
+        The final value of the inertia criterion (sum of squared distances to
+        the closest centroid for all observations in the training set).
+    
+    best_n_iter : int
+        Number of iterations corresponding to the best results.
+        Returned only if `return_n_iter` is set to True.

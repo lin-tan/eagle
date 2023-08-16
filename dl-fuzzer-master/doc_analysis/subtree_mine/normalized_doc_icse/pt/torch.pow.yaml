@@ -1,0 +1,33 @@
+constraints:
+  exponent:
+    descp: the exponent value
+    doc_dtype: float or tensor
+    normalized_descp:
+    - the exponent value
+    normalized_docdtype: D_TYPE or D_STRUCTURE
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - exponent
+link: https://pytorch.org/docs/stable/torch.html#torch.pow
+package: torch
+ret_type: Tensor
+target: pow
+title: torch.pow
+version: 1.5.0

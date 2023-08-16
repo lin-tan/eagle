@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A dictionary mapping input names (as strings) in `graph_def`to `Tensor` objects. The values of the named input tensors in the imported graph will be re-mapped to the respective `Tensor` values.,None,nonprim_dtype,structure(dict),,1

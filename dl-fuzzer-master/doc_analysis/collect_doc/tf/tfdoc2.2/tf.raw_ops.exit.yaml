@@ -1,0 +1,18 @@
+constraints:
+  data:
+    descp: A Tensor. The tensor to be made available to the parent frame.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - data
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Exit
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: Exit
+title: tf.raw_ops.Exit
+version: 2.2.0

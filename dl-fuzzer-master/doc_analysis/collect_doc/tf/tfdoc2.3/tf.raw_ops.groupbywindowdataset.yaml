@@ -1,0 +1,44 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant.
+  key_func:
+    descp: A function decorated with @Defun. A function mapping an element of input_dataset,
+      concatenated with key_func_other_arguments to a scalar value of type DT_INT64.
+  key_func_other_arguments:
+    descp: A list of Tensor objects.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  reduce_func:
+    descp: A function decorated with @Defun.
+  reduce_func_other_arguments:
+    descp: A list of Tensor objects.
+  window_size_func:
+    descp: A function decorated with @Defun.
+  window_size_func_other_arguments:
+    descp: A list of Tensor objects.
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - key_func_other_arguments
+  - reduce_func_other_arguments
+  - window_size_func_other_arguments
+  - key_func
+  - reduce_func
+  - window_size_func
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GroupByWindowDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: GroupByWindowDataset
+title: tf.raw_ops.GroupByWindowDataset
+version: 2.3.0

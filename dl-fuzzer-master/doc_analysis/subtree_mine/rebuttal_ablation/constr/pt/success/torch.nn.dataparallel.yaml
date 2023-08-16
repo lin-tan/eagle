@@ -1,0 +1,62 @@
+constraints:
+  device_ids:
+    default: None
+    descp: 'CUDA devices (default: all devices)'
+    doc_dtype: list of python:int or torch.device
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[b,p,m]'
+    - '[c]'
+    structure:
+    - list
+  dim:
+    default: '0'
+    descp: ''
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  module:
+    descp: module to be parallelized
+    doc_dtype: Module
+  output_device:
+    default: None
+    descp: 'device location of output (default: device_ids[0])'
+    doc_dtype: int or torch.device
+    dtype:
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[0]'
+inputs:
+  optional:
+  - device_ids
+  - output_device
+  - dim
+  required:
+  - module
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.DataParallel
+package: torch
+target: DataParallel
+title: torch.nn.DataParallel
+version: 1.5.0

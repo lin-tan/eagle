@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,"(B, N) value range [0, M)",None,nonprim_dtype,structure(ndarray),,1
+NDArray,"(B, N) value range [0, M)",None,shape,"shape([b,n]), ndim(2)",,1
+NDArray,"(B, N) value range [0, M)",None,validvalue,"range([0,m))",,1

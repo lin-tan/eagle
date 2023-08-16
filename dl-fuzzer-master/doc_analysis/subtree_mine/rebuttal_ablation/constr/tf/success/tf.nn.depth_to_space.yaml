@@ -1,0 +1,91 @@
+constraints:
+  block_size:
+    descp: An `int` that is `>= 2`. The size of the spatial block, same as in Space2Depth.
+    dtype:
+    - int
+    - tf.bool
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  data_format:
+    default: NHWC
+    descp: 'An optional `string` from: `"NHWC", "NCHW", "NCHW_VECT_C"`. Defaults to
+      `"NHWC"`.'
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - NCHW
+    - NCHW_VECT_C
+    - NHWC
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[nchw]'
+    - '[nchw_vect_c]'
+    - '[nhwc]'
+  input:
+    descp: A `Tensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - data_format
+  - name
+  required:
+  - input
+  - block_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/depth_to_space
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: depth_to_space
+title: tf.nn.depth_to_space
+version: 2.1.0

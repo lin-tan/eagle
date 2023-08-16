@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.activations.serialize
+constraints:
+  activation:
+    descp: Function object.
+exceptions:
+- ValueError: The input function is not a valid one.
+inputs:
+  optional: []
+  required:
+  - activation
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/activations/serialize
+outputs:
+- String denoting the name attribute of the input function
+package: tensorflow
+target: serialize
+title: tf.keras.activations.serialize
+version: 2.3.0

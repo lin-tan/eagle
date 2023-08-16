@@ -1,0 +1,20 @@
+constraints:
+  warn:
+    default: 'False'
+    descp: boolean, default False To control display of warnings.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  y:
+    descp: array-like
+inputs:
+  optional:
+  - warn
+  required:
+  - y
+link: ''
+package: scikit-learn
+target: column_or_1d
+title: sklearn.utils.validation.column_or_1d
+version: 0.24.X

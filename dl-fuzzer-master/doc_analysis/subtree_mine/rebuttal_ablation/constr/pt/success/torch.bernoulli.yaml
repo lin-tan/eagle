@@ -1,0 +1,60 @@
+constraints:
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype: '`torch.Generator`, optional'
+  input:
+    descp: the input tensor of probability values for the Bernoulli distribution
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - string
+    - torch.bool
+    - torch.dtype
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    - '[c]'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - generator
+  - out
+  optional:
+  - generator
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.bernoulli
+package: torch
+ret_type: Tensor
+target: bernoulli
+title: torch.bernoulli
+version: 1.5.0

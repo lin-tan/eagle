@@ -1,0 +1,29 @@
+constraints:
+  dtype:
+    default: None
+    descp: The type of the elements of the resulting tensor.
+  name:
+    default: Const
+    descp: Optional name for the tensor.
+  shape:
+    default: None
+    descp: Optional dimensions of resulting tensor.
+  value:
+    descp: A constant value (or list) of output type dtype.
+exceptions:
+- TypeError: if shape is incorrectly specified or unsupported.
+- ValueError: if called on a symbolic tensor.
+inputs:
+  optional:
+  - dtype
+  - shape
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/constant
+outputs:
+- A Constant Tensor.
+package: tensorflow
+target: constant
+title: tf.constant
+version: 2.2.0

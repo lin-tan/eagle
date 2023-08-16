@@ -1,0 +1,26 @@
+constraints:
+  inputs:
+    descp: 'A list of at least 1 Tensor objects with the same type in: float32, float64,
+      int32, uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16,
+      uint16, complex128, half, uint32, uint64, variant.'
+    structure:
+    - list
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - inputs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AddN
+outputs:
+- A Tensor. Has the same type as inputs.
+package: tensorflow
+target: AddN
+title: tf.raw_ops.AddN
+version: 2.2.0

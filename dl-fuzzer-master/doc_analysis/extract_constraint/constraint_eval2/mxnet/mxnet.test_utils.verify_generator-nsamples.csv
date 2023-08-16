@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,The number of samples to generate for the testing,1000000,prim_dtype,dtype(int),,1
+int,The number of samples to generate for the testing,1000000,shape,ndim(0),,1
+int,The number of samples to generate for the testing,1000000,validvalue,"range([0,inf))",,1

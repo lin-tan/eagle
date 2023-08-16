@@ -1,0 +1,101 @@
+constraints:
+  bias:
+    descp: non-quantized bias tensor of shape (out _channels) . The tensor type must
+      be torch.float.
+    normalized_descp:
+    - non quantized bias D_STRUCTURE of shape BSTR
+    - The D_STRUCTURE type must be D_TYPE
+  dilation:
+    default: '1'
+    descp: 'the spacing between kernel elements. Can be a single number or a tuple
+      (dD, dH, dW). Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the spacing between kernel elements
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  dtype:
+    default: torch.quint8
+    descp: 'quantization data type to use. Default: `torch.quint8`'
+    normalized_default: DEFAULT D_TYPE
+    normalized_descp:
+    - quantization data type to use
+    - Default D_TYPE
+  groups:
+    default: '1'
+    descp: 'split input into groups, in _channels  should be divisible by the number
+      of groups. Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - split PARAM into groups, in channels should be divisible by the number of groups
+    - Default CONSTANT_NUM
+  input:
+    descp: 'quantized input tensor of shape (minibatch , in _channels , iD , iH ,
+      iW) '
+    normalized_descp:
+    - quantized input D_STRUCTURE of shape BSTR
+  padding:
+    default: '0'
+    descp: 'implicit paddings on both sides of the input. Can be a single number or
+      a tuple (padD, padH, padW). Default: 0'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - implicit paddings on both sides of the PARAM
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  padding_mode:
+    default: zeros
+    descp: 'the padding mode to use. Only "zeros" is supported for quantized convolution
+      at the moment. Default: "zeros"'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - the PARAM mode to use
+    - Only QSTR is supported for quantized convolution at the moment
+    - Default QSTR
+  scale:
+    default: '1.0'
+    descp: 'quantization scale for the output. Default: 1.0'
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - quantization scale for the output
+    - Default CONSTANT_FLOAT
+  stride:
+    default: '1'
+    descp: 'the stride of the convolving kernel. Can be a single number or a tuple
+      (sD, sH, sW). Default: 1'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - the stride of the convolving kernel
+    - Can be a single number or a D_STRUCTURE BSTR
+    - Default CONSTANT_NUM
+  weight:
+    descp: 'quantized filters of shape (out _channels ,  in _channels/groups , kD
+      , kH , kW) '
+    normalized_descp:
+    - quantized filters of shape BSTR
+  zero_point:
+    default: '0'
+    descp: 'quantization zero_point for the output. Default: 0'
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - quantization zero_point for the output
+    - Default CONSTANT_NUM
+inputs:
+  optional:
+  - stride
+  - padding
+  - dilation
+  - groups
+  - padding_mode
+  - scale
+  - zero_point
+  - dtype
+  required:
+  - input
+  - weight
+  - bias
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.conv3d
+package: torch
+target: conv3d
+title: torch.nn.quantized.functional.conv3d
+version: 1.5.0

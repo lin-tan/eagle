@@ -1,0 +1,44 @@
+constraints:
+  element_dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  element_shape:
+    descp: A Tensor of type int32.
+    dtype:
+    - tf.int32
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+  input_handle:
+    descp: A Tensor of type variant.
+    dtype:
+    - tf.variant
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - element_shape
+  - element_dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorListPopBack
+outputs:
+- A tuple of Tensor objects (output_handle, tensor).
+- output_handle: A Tensor of type variant.
+- tensor: A Tensor of type element_dtype.
+package: tensorflow
+target: TensorListPopBack
+title: tf.raw_ops.TensorListPopBack
+version: 2.2.0

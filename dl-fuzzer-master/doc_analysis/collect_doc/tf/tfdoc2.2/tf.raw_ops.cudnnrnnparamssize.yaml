@@ -1,0 +1,61 @@
+constraints:
+  S:
+    descp: 'A tf.DType from: tf.int32, tf.int64.'
+  T:
+    descp: 'A tf.DType from: tf.half, tf.float32, tf.float64.'
+  direction:
+    default: unidirectional
+    descp: 'An optional string from: "unidirectional", "bidirectional". Defaults to
+      "unidirectional".'
+  dropout:
+    default: '0'
+    descp: An optional float. Defaults to 0.
+  input_mode:
+    default: linear_input
+    descp: 'An optional string from: "linear_input", "skip_input", "auto_select".
+      Defaults to "linear_input".'
+  input_size:
+    descp: A Tensor of type int32.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_layers:
+    descp: A Tensor of type int32.
+  num_proj:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  num_units:
+    descp: A Tensor of type int32.
+  rnn_mode:
+    default: lstm
+    descp: 'An optional string from: "rnn_relu", "rnn_tanh", "lstm", "gru". Defaults
+      to "lstm".'
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+inputs:
+  optional:
+  - rnn_mode
+  - input_mode
+  - direction
+  - dropout
+  - seed
+  - seed2
+  - num_proj
+  - name
+  required:
+  - num_layers
+  - num_units
+  - input_size
+  - T
+  - S
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/CudnnRNNParamsSize
+outputs:
+- A Tensor of type S.
+package: tensorflow
+target: CudnnRNNParamsSize
+title: tf.raw_ops.CudnnRNNParamsSize
+version: 2.2.0

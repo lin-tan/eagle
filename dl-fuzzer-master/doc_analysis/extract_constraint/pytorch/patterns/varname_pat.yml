@@ -1,0 +1,92 @@
+target: dtype
+pat:
+
+    # '^devices*$':
+    #     dtype: torch.device
+    #     ow: True
+    #     append: True
+    
+    '^(\w+_)?tensors*$':
+        tensor_t: torch.tensor
+        ow: True
+        append: True
+    
+
+    # '^layout$':
+    #     dtype: torch.layout
+    #     ow: True
+    #     append: True
+
+    # '^model$':  # weak
+    #     dtype: model
+    #     ow: False
+    #     append: False
+
+    # '^module$':
+    #     dtype: nn.Module
+    #     ow: True
+    #     append: True
+
+    '^dtype$':
+        dtype: torch.dtype
+        ow: True
+        append: True
+   
+    '^(\w+_)?func':
+        dtype: callable
+        ow: True
+        append: False
+
+    '^f$':
+        dtype: string
+        ow: True
+        append: False
+
+
+    '^mat\d*$':
+        dtype: numeric
+        ow: True
+        append: True
+
+    '^dim\d*$':
+        dtype: int
+        # range: '[-1,inf)'
+        ow: True
+        append: True
+
+    '_lists*$':
+        structure: list
+        ow: False
+        append: False
+
+    'sequence':   # weak
+        structure: sequence
+        ow: False
+        append: False
+
+    '^tensor_list$':
+        tensor_t: torch.tensor
+        ow: True
+        append: True
+
+    '^name$':
+        dtype: string
+        ow: True
+        append: True
+
+    '^vec\d*$':
+        ndim: 1
+        ow: True
+        append: True
+
+    '^(\w+_)?size$':  # weak
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False
+
+    '^(\w+_)?length$':  # weak
+        dtype: numeric
+        range: '[0,inf)'
+        ow: False
+        append: False

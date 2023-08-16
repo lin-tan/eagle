@@ -1,0 +1,26 @@
+constraints:
+  filename:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - filename
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ReadFile
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ReadFile
+title: tf.raw_ops.ReadFile
+version: 2.3.0

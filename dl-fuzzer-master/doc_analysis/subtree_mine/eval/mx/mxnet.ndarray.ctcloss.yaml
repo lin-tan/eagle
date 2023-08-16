@@ -1,0 +1,14 @@
+constraints:
+  label_lengths:
+    default: None
+    descp: Lengths of labels for each of the samples. Only required when use_label_lengths
+      is true.
+    doc_dtype:
+    - NDArray
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+title: mxnet.ndarray.CTCLoss

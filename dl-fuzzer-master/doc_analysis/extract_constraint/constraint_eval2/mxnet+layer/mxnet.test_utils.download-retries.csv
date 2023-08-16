@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"integer, default 5",The number of times to attempt the download in case of failure or non 200 return codes,5,prim_dtype,dtype(int),,1
+"integer, default 5",The number of times to attempt the download in case of failure or non 200 return codes,5,shape,ndim(0),,1
+"integer, default 5",The number of times to attempt the download in case of failure or non 200 return codes,5,validvalue,"range([0,inf))",,1

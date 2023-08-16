@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+float,"Percentage of elements to drop out, which is 1 - percentage to retain.",,prim_dtype,dtype(float),,1
+float,"Percentage of elements to drop out, which is 1 - percentage to retain.",,validvalue,"range([0,1])",,1

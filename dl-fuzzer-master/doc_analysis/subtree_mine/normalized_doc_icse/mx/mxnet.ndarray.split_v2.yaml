@@ -1,0 +1,56 @@
+constraints:
+  ary:
+    descp: Array to be divided into sub-arrays.
+    doc_dtype: NDArray
+    normalized_descp:
+    - D_STRUCTURE to be divided into sub D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  axis:
+    default: '0'
+    descp: The axis along which to split, default is 0.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The axis along which to split default is CONSTANT_NUM
+    normalized_docdtype: D_TYPE optional
+  indices_or_sections:
+    descp: If indices_or_sections is an integer, N, the array will be divided into
+      N equal arrays along axis.  If such a split is not possible, an error is raised.
+      If indices_or_sections is a 1-D array of sorted integers, the entries indicate
+      where along axis the array is split.  For example, `[2, 3]` would, for `axis=0`,
+      result in - ary[:2] - ary[2:3] - ary[3:] If an index exceeds the dimension of
+      the array along axis, an empty sub-array is returned correspondingly.
+    doc_dtype: int or tuple of ints
+    normalized_descp:
+    - If indices_or_sections is an D_TYPE N the D_STRUCTURE will be divided into N
+      equal D_STRUCTURE along PARAM
+    - If such a split is not possible an error is raised
+    - If indices_or_sections is a CONSTANT_NUM D D_STRUCTURE of sorted D_TYPE the
+      entries indicate where along PARAM the D_STRUCTURE is split
+    - For example BSTR would for PARAM CONSTANT_NUM result in PARAM CONSTANT_NUM PARAM
+      CONSTANT_NUM CONSTANT_NUM PARAM CONSTANT_NUM If an index exceeds the dimension
+      of the D_STRUCTURE along PARAM an empty sub D_STRUCTURE is returned correspondingly
+    normalized_docdtype: D_TYPE or D_STRUCTURE of D_TYPE
+  squeeze_axis:
+    default: 'False'
+    descp: Whether to squeeze the axis of sub-arrays or not, only useful when size
+      of the sub-arrays are 1 on the axis. Default is False.
+    doc_dtype: boolean, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - Whether to squeeze the PARAM of sub D_STRUCTURE or not only useful when size
+      of the sub D_STRUCTURE are CONSTANT_NUM on the PARAM
+    - Default is CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - axis
+  - squeeze_axis
+  required:
+  - ary
+  - indices_or_sections
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.split_v2
+package: mxnet
+target: split_v2
+title: mxnet.ndarray.split_v2
+version: 1.6.0

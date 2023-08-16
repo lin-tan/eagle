@@ -1,0 +1,27 @@
+constraints:
+  address:
+    descp: A Tensor of type string.
+  dataset:
+    descp: A Tensor of type variant.
+  external_state_policy:
+    descp: An int.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  protocol:
+    descp: A Tensor of type string.
+inputs:
+  optional:
+  - name
+  required:
+  - dataset
+  - address
+  - protocol
+  - external_state_policy
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RegisterDataset
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: RegisterDataset
+title: tf.raw_ops.RegisterDataset
+version: 2.3.0

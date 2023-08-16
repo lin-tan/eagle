@@ -1,0 +1,70 @@
+constraints:
+  align_corners:
+    default: None
+    descp: 'Geometrically, we consider the pixels of the input and output as squares
+      rather than points. If set to `True`, the input and output tensors are aligned
+      by the center points of their corner pixels, preserving the values at the corner
+      pixels. If set to `False`, the input and output tensors are aligned by the corner
+      points of their corner pixels, and the interpolation uses edge value padding
+      for out-of-boundary values, making this operation independent of input size
+      when `scale_factor` is kept the same. This only has an effect when `mode` is
+      `''bilinear''`. Default: `False`'
+    doc_dtype: bool, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Geometrically we consider the pixels of the PARAM and output as squares rather
+      than points
+    - If set to CONSTANT_BOOL the PARAM and output D_STRUCTURE are aligned by the
+      center points of their corner pixels preserving the values at the corner pixels
+    - If set to CONSTANT_BOOL the PARAM and output D_STRUCTURE are aligned by the
+      corner points of their corner pixels and the interpolation uses edge value padding
+      for out of boundary values making this operation independent of PARAM PARAM
+      when PARAM is kept the same
+    - This only has an effect when PARAM is QSTR
+    - Default CONSTANT_BOOL
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mode:
+    default: nearest
+    descp: 'algorithm used for upsampling: `''nearest''` | `''bilinear''`'
+    doc_dtype: str
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - algorithm used for upsampling QSTR QSTR
+    normalized_docdtype: ONE_WORD D_TYPE
+  scale_factor:
+    default: None
+    descp: multiplier for spatial size. Has to match input size if it is a tuple.
+    doc_dtype: float or Tuple[float]
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - multiplier for spatial PARAM
+    - Has to match PARAM PARAM if it is a D_STRUCTURE
+    normalized_docdtype: D_TYPE or D_STRUCTURE BSTR
+  size:
+    default: None
+    descp: output spatial size.
+    doc_dtype: int or Tuple[int] or Tuple[int, int] or Tuple[int, int, int]
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - output spatial size
+    normalized_docdtype: D_TYPE or D_STRUCTURE BSTR or D_STRUCTURE BSTR or D_STRUCTURE
+      BSTR
+inputs:
+  optional:
+  - size
+  - scale_factor
+  - mode
+  - align_corners
+  required:
+  - input
+link: https://pytorch.org/docs/stable/quantization.html#torch.nn.quantized.functional.interpolate
+package: torch
+target: interpolate
+title: torch.nn.quantized.functional.interpolate
+version: 1.5.0

@@ -1,0 +1,15 @@
+constraints:
+  upscale_factor:
+    descp: factor to increase spatial resolution by
+    doc_dtype:
+    - int
+    sig_dtype: int
+inputs:
+  optional: []
+  required:
+  - upscale_factor
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.PixelShuffle.html#torch.nn.PixelShuffle#torch.nn.PixelShuffle
+package: torch
+target: PixelShuffle
+title: torch.nn.PixelShuffle
+version: 1.6.0

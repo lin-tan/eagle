@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  writer:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - writer
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/FlushSummaryWriter
+outputs:
+- The created Operation.
+package: tensorflow
+target: FlushSummaryWriter
+title: tf.raw_ops.FlushSummaryWriter
+version: 2.2.0

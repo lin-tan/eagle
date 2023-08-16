@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.backend.eval
+constraints:
+  x:
+    descp: A variable.
+    normalized_descp:
+    - A variable
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/eval
+outputs: A Numpy array.
+package: tensorflow
+target: eval
+title: tf.keras.backend.eval
+version: 2.1.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `uint8`, `int8`,`int16`, `int32`, `int64`. 1-D, containing `[height, width, channels]`.",,prim_dtype,"dtype(tf.int16, tf.int32, tf.int64, tf.int8, tf.uint8)",,1
+,"A `Tensor`. Must be one of the following types: `uint8`, `int8`,`int16`, `int32`, `int64`. 1-D, containing `[height, width, channels]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `uint8`, `int8`,`int16`, `int32`, `int64`. 1-D, containing `[height, width, channels]`.",,validvalue,"range([0,inf))",,1

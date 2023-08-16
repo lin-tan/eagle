@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+tuple of arguments,"the inputs to the model, e.g., such that `model(*args)` is a valid invocation of the model.  Any non-Tensor arguments will be hard-coded into the exported model; any Tensor arguments will become inputs of the exported model, in the order they occur in args.  If args is a Tensor, this is equivalent to having called it with a 1-ary tuple of that Tensor. (Note: passing keyword arguments to the model is not currently supported.  Give us a shout if you need it.)",,nonprim_dtype,structure(tuple),,1

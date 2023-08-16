@@ -1,0 +1,19 @@
+parse_sent: False
+direct_map: False  # need to map group
+check_dt: False
+break: False   # keep going when pattern matched, don't break
+append: True
+findall: True
+target: enum
+
+stop_word:
+    - '|'
+    - 'or'
+pat:
+    '(([`''"]+\w+[`''"]+\s+\|\s+)+[`''"]+\w+[`''"]+)':
+        group: 1
+        dtype: string
+
+    'can\s+only\s+be\s+(([\w]+(,|\s|or)*)+)':
+        group: 1
+        dtype: int

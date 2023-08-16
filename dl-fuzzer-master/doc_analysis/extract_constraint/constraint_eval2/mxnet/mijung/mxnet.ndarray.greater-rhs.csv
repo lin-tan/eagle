@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"scalar, mxnet.ndarray.array","Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape.",,prim_dtype,dtype(numeric),1,1
+"scalar, mxnet.ndarray.array","Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape.",,nonprim_dtype,structure(ndarray),1,1
+"scalar, mxnet.ndarray.array","Second array to be compared. If `lhs.shape != rhs.shape`, they must be broadcastable to a common shape.",,shape,ndim(0),0,1

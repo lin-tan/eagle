@@ -1,0 +1,8 @@
+sklearn.utils.assert_all_finite = assert_all_finite(X, allow_nan=False)
+    Throw a ValueError if X contains NaN or infinity.
+    
+    Parameters
+    ----------
+    X : array or sparse matrix
+    
+    allow_nan : bool

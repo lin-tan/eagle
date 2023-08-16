@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"tuple of int, optional",The shape of the row sparse ndarray. (Default value = None),None,prim_dtype,dtype(int),,1
+"tuple of int, optional",The shape of the row sparse ndarray. (Default value = None),None,nonprim_dtype,structure(tuple(int)),,1
+"tuple of int, optional",The shape of the row sparse ndarray. (Default value = None),None,shape,ndim(1),,1
+"tuple of int, optional",The shape of the row sparse ndarray. (Default value = None),None,validvalue,"range([0,inf))",,1

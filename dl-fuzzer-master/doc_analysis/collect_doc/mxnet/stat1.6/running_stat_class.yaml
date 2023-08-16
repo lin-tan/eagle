@@ -1,0 +1,98 @@
+class_api: []
+collected:
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.cnn.deformableconvolution.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.cnn.DeformableConvolution
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.data.sampler.intervalsampler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.data.sampler.IntervalSampler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.data.text.wikitext103.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.data.text.WikiText103
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.data.text.wikitext2.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.data.text.WikiText2
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.checkpointhandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.CheckpointHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.earlystoppinghandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.EarlyStoppingHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.estimator.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.Estimator
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.logginghandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.LoggingHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.metrichandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.MetricHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.stoppinghandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.StoppingHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.estimator.validationhandler.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.estimator.ValidationHandler
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.concurrent.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.Concurrent
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.hybridconcurrent.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.HybridConcurrent
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.pixelshuffle1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.PixelShuffle1D
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.pixelshuffle2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.PixelShuffle2D
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.pixelshuffle3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.PixelShuffle3D
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.sparseembedding.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.SparseEmbedding
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.nn.syncbatchnorm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.SyncBatchNorm
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv1dgrucell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv1DGRUCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv1dlstmcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv1DLSTMCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv1drnncell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv1DRNNCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv2dgrucell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv2DGRUCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv2dlstmcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv2DLSTMCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv2drnncell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv2DRNNCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv3dgrucell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv3DGRUCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv3dlstmcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv3DLSTMCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.conv3drnncell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.Conv3DRNNCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.lstmpcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.LSTMPCell
+  ./mx1.6_nn_parsed/mxnet.gluon.contrib.rnn.variationaldropoutcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.rnn.VariationalDropoutCell
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.activation.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Activation
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.avgpool1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.AvgPool1D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.avgpool2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.AvgPool2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.avgpool3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.AvgPool3D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.batchnorm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.BatchNorm
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.block.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Block
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv1D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv1dtranspose.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv1DTranspose
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv2dtranspose.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv2DTranspose
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv3D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.conv3dtranspose.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Conv3DTranspose
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.dense.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Dense
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.dropout.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Dropout
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.elu.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.ELU
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.embedding.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Embedding
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalavgpool1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalAvgPool1D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalavgpool2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalAvgPool2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalavgpool3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalAvgPool3D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalmaxpool1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalMaxPool1D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalmaxpool2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalMaxPool2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.globalmaxpool3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GlobalMaxPool3D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.groupnorm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GroupNorm
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.hybridlambda.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.HybridLambda
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.instancenorm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.InstanceNorm
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.lambda.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Lambda
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.layernorm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.LayerNorm
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.leakyrelu.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.LeakyReLU
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.maxpool1d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.MaxPool1D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.maxpool2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.MaxPool2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.maxpool3d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.MaxPool3D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.prelu.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.PReLU
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.reflectionpad2d.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.ReflectionPad2D
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.swish.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Swish
+  ./mx1.6_nn_parsed/mxnet.gluon.nn.symbolblock.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.SymbolBlock
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.bidirectionalcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.BidirectionalCell
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.dropoutcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.DropoutCell
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.gru.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.GRU
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.grucell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.GRUCell
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.lstm.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.LSTM
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.lstmcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.LSTMCell
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.recurrentcell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.RecurrentCell
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.rnn.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.RNN
+  ./mx1.6_nn_parsed/mxnet.gluon.rnn.rnncell.yaml: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.RNNCell
+deprecated: []
+multi_func: {}
+no_arg_sect:
+- mxnet.gluon.contrib.nn.Identity: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html#mxnet.gluon.contrib.nn.Identity
+- mxnet.gluon.nn.Flatten: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Flatten
+- mxnet.gluon.nn.GELU: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.GELU
+- mxnet.gluon.nn.HybridBlock: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.HybridBlock
+- mxnet.gluon.nn.HybridSequential: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.HybridSequential
+- mxnet.gluon.nn.SELU: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.SELU
+- mxnet.gluon.nn.Sequential: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html#mxnet.gluon.nn.Sequential
+- mxnet.gluon.rnn.HybridRecurrentCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.HybridRecurrentCell
+- mxnet.gluon.rnn.HybridSequentialRNNCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.HybridSequentialRNNCell
+- mxnet.gluon.rnn.ModifierCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.ModifierCell
+- mxnet.gluon.rnn.ResidualCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.ResidualCell
+- mxnet.gluon.rnn.SequentialRNNCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.SequentialRNNCell
+- mxnet.gluon.rnn.ZoneoutCell: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.ZoneoutCell
+no_input: []
+symbol_related: []
+warning: []
+word_cnt:
+  https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/contrib/index.html: 7982
+  https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/nn/index.html: 9971
+  https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html: 6121

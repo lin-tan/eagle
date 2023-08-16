@@ -1,0 +1,29 @@
+constraints:
+  X:
+    descp: array-like of shape (n_samples_X, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_x,n_features]'
+  Y:
+    default: None
+    descp: array of shape (n_samples_Y, n_features)
+    ndim:
+    - '1'
+    - '2'
+    shape:
+    - '[n_samples_y,n_features]'
+dependency:
+- n_features
+- n_samples_x
+- n_samples_y
+inputs:
+  optional:
+  - Y
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: additive_chi2_kernel
+title: sklearn.metrics.pairwise.additive_chi2_kernel
+version: 0.24.X

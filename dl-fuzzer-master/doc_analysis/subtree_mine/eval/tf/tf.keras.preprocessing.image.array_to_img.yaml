@@ -1,0 +1,8 @@
+constraints:
+  data_format:
+    default: None
+    descp: Image data format. either "channels_first" or "channels_last".
+    enum:
+    - channels_first
+    - channels_last
+title: tf.keras.preprocessing.image.array_to_img

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"bool, default True","Whether the forward pass is in training or predicting mode. This controls the behavior of some layers such as Dropout, BatchNorm.",True,prim_dtype,dtype(boolean),1,1
+"bool, default True","Whether the forward pass is in training or predicting mode. This controls the behavior of some layers such as Dropout, BatchNorm.",True,shape,ndim(0),1,1

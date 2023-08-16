@@ -1,0 +1,79 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  (\bin\b|within)\s+`*([\[\(]([\w\.]+,\s*[\w\.]+)[\]\)])`*:
+    brackets: true
+    cnt: 4
+    full_range_group: 2
+    range_group: 3
+    replace:
+      \s: ''
+      len\((.*?)\): len:\1
+      rank\((.*?)\): ndim:\1
+  (`*tensor`*|values*|must\s+be\s+)\s*>=\s*0:
+    cnt: 0
+    range: '[0,inf)'
+  (`*tensor`*|values*|must\s+be\s+)\s*>=\s*1:
+    cnt: 0
+    range: '[1,inf)'
+  (`*tensor`*|values*|must\s+be\s+)\s*>\s*0:
+    cnt: 0
+    range: (0,inf)
+  (must|should)\s+be\s+(a\s+)?non[\s-]?negative:
+    cnt: 0
+    range: '[0,inf)'
+  (must|should)\s+be\s+(a\s+)?positive:
+    cnt: 1
+    range: (0,inf)
+  (tensor|list)\s+of\s+non[\s-]negative:
+    cnt: 0
+    range: '[0,inf)'
+  (tensor|list)\s+of\s+positive:
+    cnt: 0
+    range: (0,inf)
+  ^(\ba\b|an|the)?\s*(optional)?\s*non[\s-]negative:
+    cnt: 0
+    range: '[0,inf)'
+  ^(\ba\b|an|the|optional)?\s*positive:
+    cnt: 3
+    range: (0,inf)
+  be\s+in\s+(the)*\s*range\s*`*([\[\(]([\w\d\s\.,\(\)\+\-\*/{}]+)?[\]\)])`*:
+    brackets: true
+    cnt: 0
+    full_range_group: 2
+    range_group: 3
+    replace:
+      \s: ''
+      len\((.*?)\): len:\1
+      rank\((.*?)\): ndim:\1
+  values*\s+in\s+((the)*\s*range\s*)?`*([\[\(]([\w\d\s\.,\(\)\+\-\*/{}]+)?[\]\)])`*:
+    brackets: true
+    cnt: 0
+    full_range_group: 3
+    range_group: 4
+    replace:
+      \s: ''
+      len\((.*?)\): len:\1
+      rank\((.*?)\): ndim:\1
+split_word:
+- ','
+- '['
+- ']'
+- (
+- )
+- +
+- '-'
+- '*'
+- /
+- '>'
+- <
+- '='
+- 'len:'
+- 'ndim:'
+- 'max_value:'
+- inf
+target: range

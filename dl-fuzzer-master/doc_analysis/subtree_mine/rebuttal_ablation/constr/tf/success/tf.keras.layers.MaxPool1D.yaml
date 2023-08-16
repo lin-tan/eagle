@@ -1,0 +1,97 @@
+aliases:
+- tf.keras.layers.MaxPooling1D
+- tf.compat.v1.keras.layers.MaxPool1D
+- tf.compat.v1.keras.layers.MaxPooling1D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  data_format:
+    default: channels_last
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      steps, features)` while `channels_first`corresponds to inputs with shape`(batch,
+      features, steps)`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (default)
+    - channels_first
+    - channels_last
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    - '[batch,features,steps]'
+    - '[batch,steps,features]'
+    tensor_t:
+    - tf.tensor
+  padding:
+    default: valid
+    descp: One of `"valid"` or `"same"` (case-insensitive).
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (case-insensitive)
+    - same
+    - valid
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  pool_size:
+    default: '2'
+    descp: Integer, size of the max pooling windows.
+    dtype:
+    - int
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  strides:
+    default: None
+    descp: Integer, or None. Factor by which to downscale. E.g. 2 will halve the input.
+      If None, it will default to `pool_size`.
+    dtype:
+    - int
+    - tf.bool
+    - tf.dtype
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+inputs:
+  optional:
+  - pool_size
+  - strides
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/MaxPool1D
+package: tensorflow
+target: MaxPool1D
+title: tf.keras.layers.MaxPool1D
+version: 2.1.0

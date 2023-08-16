@@ -1,0 +1,16 @@
+constraints:
+  tensor:
+    descp: A tensor to check
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.isinf
+package: torch
+target: isinf
+title: torch.isinf
+version: 1.4.0

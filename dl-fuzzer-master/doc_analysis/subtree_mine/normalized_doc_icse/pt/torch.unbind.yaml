@@ -1,0 +1,26 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension to remove
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension to remove
+    normalized_docdtype: ONE_WORD D_TYPE
+  input:
+    descp: the tensor to unbind
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to unbind
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.unbind
+package: torch
+ret_type: seq
+target: unbind
+title: torch.unbind
+version: 1.5.0

@@ -1,0 +1,18 @@
+arg input: A Tensor. The input to reverse. seq_lengths: A Tensor. Must be one of the following types: int32, int64. 1-D with length input.dims(batch_dim) and max(seq_lengths) <= input.dims(seq_dim) seq_axis: An int. The dimension which is partially reversed. batch_axis: An optional int. Defaults to 0. The dimension along which reversal is performed. name: A name for the operation (optional). doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/compat/v1/reverse_sequence
+arg out_idx doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/compat/v1/setdiff1d
+arg colocate_gradients_with_ops doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/hessians
+Warning: more than one [inputs] found in, take the first one: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/activations/deserialize
+arg x doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/activations/deserialize
+Warning: more than one [outputs] found in, take the first one: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/backend/one_hot
+arg name doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/nn/swish
+Warning: more than one signature found in, take the longest one: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/range
+signature parsing failure: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/For
+arg input: A Tensor. The input to reverse. seq_lengths: A Tensor. Must be one of the following types: int32, int64. 1-D with length input.dims(batch_dim) and max(seq_lengths) <= input.dims(seq_dim) seq_axis: An int. The dimension which is partially reversed. batch_axis: An optional int. Defaults to 0. The dimension along which reversal is performed. name: A name for the operation (optional). doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/reverse_sequence
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/irfft
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/irfft2d
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/irfft3d
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/rfft
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/rfft2d
+arg input doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/signal/rfft3d
+arg expand_nonconcat_dim doesn't exist: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/sparse/concat
+None

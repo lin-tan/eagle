@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float array with shape (n_features,) Array of feature-wise means to update with the new data X.",,prim_dtype,dtype(float),1,1
+,"float array with shape (n_features,) Array of feature-wise means to update with the new data X.",,nonprim_dtype,structure(list),1,1
+,"float array with shape (n_features,) Array of feature-wise means to update with the new data X.",,shape,"shape([n_features]), ndim(0, 1)",0,1
+,,,shape,1d,1,0

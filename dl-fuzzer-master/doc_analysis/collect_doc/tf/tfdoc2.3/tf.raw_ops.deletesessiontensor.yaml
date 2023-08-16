@@ -1,0 +1,19 @@
+constraints:
+  handle:
+    descp: A Tensor of type string. The handle for a tensor stored in the session
+      state.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DeleteSessionTensor
+outputs:
+- The created Operation.
+package: tensorflow
+target: DeleteSessionTensor
+title: tf.raw_ops.DeleteSessionTensor
+version: 2.3.0

@@ -1,0 +1,117 @@
+constraints:
+  batch_size:
+    default: '32'
+    descp: 'Size of the batches of data. Default: 32.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  class_names:
+    default: None
+    descp: Only valid if "labels" is "inferred". This is the explict list of class
+      names (must match names of subdirectories). Used to control the order of the
+      classes (otherwise alphanumerical order is used).
+    dtype:
+    - tf.string
+    ndim:
+    - '1'
+    structure:
+    - list
+  directory:
+    descp: Directory where the data is located. If labels is "inferred", it should
+      contain subdirectories, each containing text files for a class. Otherwise, the
+      directory structure is ignored.
+    dtype:
+    - tf.string
+  follow_links:
+    default: 'False'
+    descp: Whether to visits subdirectories pointed to by symlinks. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  label_mode:
+    default: int
+    descp: '''int'': means that the labels are encoded as integers (e.g. for sparse_categorical_crossentropy
+      loss). ''categorical'' means that the labels are encoded as a categorical vector
+      (e.g. for categorical_crossentropy loss). ''binary'' means that the labels (there
+      can be only 2) are encoded as float32 scalars with values 0 or 1 (e.g. for binary_crossentropy).
+      None (no labels).'
+    dtype:
+    - tf.float32
+    ndim:
+    - '0'
+  labels:
+    default: inferred
+    descp: Either "inferred" (labels are generated from the directory structure),
+      or a list/tuple of integer labels of the same size as the number of text files
+      found in the directory. Labels should be sorted according to the alphanumeric
+      order of the text file paths (obtained via os.walk(directory) in Python).
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+  max_length:
+    default: None
+    descp: Maximum size of a text string. Texts longer than this will be truncated
+      to max_length.
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  seed:
+    default: None
+    descp: Optional random seed for shuffling and transformations.
+  shuffle:
+    default: 'True'
+    descp: 'Whether to shuffle the data. Default: True. If set to False, sorts the
+      data in alphanumeric order.'
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  subset:
+    default: None
+    descp: One of "training" or "validation". Only used if validation_split is set.
+    enum:
+    - training
+    - validation
+  validation_split:
+    default: None
+    descp: Optional float between 0 and 1, fraction of data to reserve for validation.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - labels
+  - label_mode
+  - class_names
+  - batch_size
+  - max_length
+  - shuffle
+  - seed
+  - validation_split
+  - subset
+  - follow_links
+  required:
+  - directory
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/preprocessing/text_dataset_from_directory
+outputs:
+- A tf.data.Dataset object. If label_mode is None, it yields string tensors of shape
+  (batch_size,), containing the contents of a batch of text files. Otherwise, it yields
+  a tuple (texts, labels), where texts has shape (batch_size,) and labels follows
+  the format described below.
+package: tensorflow
+target: text_dataset_from_directory
+title: tf.keras.preprocessing.text_dataset_from_directory
+version: 2.3.0

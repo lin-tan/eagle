@@ -1,0 +1,24 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'If set to `True`, will do this operation in-place. Default: `False`'
+  input:
+    descp: ''
+  p:
+    default: '0.5'
+    descp: 'probability of an element to be zeroed. Default: 0.5'
+  training:
+    default: 'True'
+    descp: 'apply dropout if is `True`. Default: `True`'
+inputs:
+  optional:
+  - p
+  - training
+  - inplace
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/nn.functional.html#torch.nn.functional.dropout
+package: torch
+target: dropout
+title: torch.nn.functional.dropout
+version: 1.7.0

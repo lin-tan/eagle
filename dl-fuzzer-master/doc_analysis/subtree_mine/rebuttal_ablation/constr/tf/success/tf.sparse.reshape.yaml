@@ -1,0 +1,89 @@
+aliases:
+- tf.compat.v1.sparse.reshape
+- tf.compat.v1.sparse_reshape
+constraints:
+  name:
+    default: None
+    descp: A name prefix for the returned tensors (optional)
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  shape:
+    descp: A 1-D (vector) int64 `Tensor` specifying the new dense shape of the represented
+      `SparseTensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    - '[sparsetensor]'
+    - '[tensor]'
+    - '[vector]'
+    structure:
+    - list
+    tensor_t:
+    - SparseTensor
+    - tf.tensor
+  sp_input:
+    descp: The input `SparseTensor`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - SparseTensor
+exceptions:
+- TypeError: If `sp_input` is not a `SparseTensor`.
+- ValueError: If argument `shape` requests a `SparseTensor` with a different number
+    of elements than `sp_input`.
+- ValueError: If `shape` has more than one inferred (== -1) dimension.
+inputs:
+  optional:
+  - name
+  required:
+  - sp_input
+  - shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/sparse/reshape
+outputs: A `SparseTensor` with the same non-empty values but with indices calculated
+  by the new dense shape.
+package: tensorflow
+target: reshape
+title: tf.sparse.reshape
+version: 2.1.0

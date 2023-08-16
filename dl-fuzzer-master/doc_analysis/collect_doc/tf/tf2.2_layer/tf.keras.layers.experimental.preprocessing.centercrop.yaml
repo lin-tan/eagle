@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.CenterCrop
+constraints:
+  '**kwargs':
+    descp: ''
+  height:
+    descp: Integer, the height of the output shape.
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  width:
+    descp: Integer, the width of the output shape.
+inputs:
+  optional:
+  - name
+  required:
+  - height
+  - width
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/experimental/preprocessing/CenterCrop
+package: tensorflow
+target: CenterCrop
+title: tf.keras.layers.experimental.preprocessing.CenterCrop
+version: 2.2.0

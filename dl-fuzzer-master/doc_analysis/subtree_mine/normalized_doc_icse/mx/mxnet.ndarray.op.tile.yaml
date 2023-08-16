@@ -1,0 +1,53 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: Input data array
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  reps:
+    default: _Null
+    descp: The number of times for repeating the tensor a. Each dim size of reps must
+      be a positive integer. If reps has length d, the result will have dimension
+      of max(d, a.ndim); If a.ndim < d, a is promoted to be d-dimensional by prepending
+      new axes. If a.ndim > d, reps is promoted to a.ndim by pre-pending 1's to it.
+    doc_dtype: Shape(tuple), required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The number of times for repeating the D_STRUCTURE a
+    - Each dim size of reps must be a positive D_TYPE
+    - If reps has length d the result will have dimension of max BSTR If a ndim REXPR
+      a is promoted to be d dimensional by prepending new axes
+    - If a ndim REXPR reps is promoted to a ndim by pre pending CONSTANT_NUMs to it
+    normalized_docdtype: Shape BSTR required
+inputs:
+  optional:
+  - data
+  - reps
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.tile
+package: mxnet
+target: tile
+title: mxnet.ndarray.op.tile
+version: 1.6.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An N+2 dimensional `Tensor` with the same type as `input` and shape `spatial_filter_shape + [in_channels, out_channels]`.",,prim_dtype,dtype(dtype:&input),,1
+,"An N+2 dimensional `Tensor` with the same type as `input` and shape `spatial_filter_shape + [in_channels, out_channels]`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An N+2 dimensional `Tensor` with the same type as `input` and shape `spatial_filter_shape + [in_channels, out_channels]`.",,shape,ndim(2),,1

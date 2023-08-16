@@ -1,0 +1,7 @@
+constraints:
+  split:
+    default: ' '
+    descp: str. Separator for word splitting.`
+    dtype:
+    - tf.string
+title: tf.keras.preprocessing.text.one_hot

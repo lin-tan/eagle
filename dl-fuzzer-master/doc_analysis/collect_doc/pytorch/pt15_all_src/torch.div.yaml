@@ -1,0 +1,24 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the number to be divided to each element of `input`
+    doc_dtype:
+    - Number
+  out:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/stable/torch.html#torch.div
+package: torch
+ret_type: Tensor
+target: div
+title: torch.div
+version: 1.5.0

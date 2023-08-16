@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+string,whether to return the aggregate stats in table of json format can take 'table' or 'json' defaults to 'table',table,prim_dtype,"dtype(boolean, string)",,1
+string,whether to return the aggregate stats in table of json format can take 'table' or 'json' defaults to 'table',table,shape,ndim(0),,1

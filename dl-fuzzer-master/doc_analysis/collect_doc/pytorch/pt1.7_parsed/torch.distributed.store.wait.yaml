@@ -1,0 +1,27 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  '*args':
+    descp: ''
+  keys:
+    default: None
+    descp: List of keys on which to wait until they are set in the store.
+    doc_dtype:
+    - list
+  timeout:
+    default: None
+    descp: Time to wait for the keys to be added before throwing an exception.
+    doc_dtype:
+    - timedelta
+inputs:
+  optional:
+  - keys
+  - timeout
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://pytorch.org/docs/1.7.0/distributed.html#torch.distributed.Store.wait
+package: torch
+target: wait
+title: torch.distributed.Store.wait
+version: 1.7.0

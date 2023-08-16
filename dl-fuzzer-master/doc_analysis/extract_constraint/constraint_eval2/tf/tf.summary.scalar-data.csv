@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A real numeric scalar value, convertible to a `float32` Tensor.",,prim_dtype,"dtype(numeric, tf.float32)",,1
+,"A real numeric scalar value, convertible to a `float32` Tensor.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A real numeric scalar value, convertible to a `float32` Tensor.",,shape,ndim(0),,1

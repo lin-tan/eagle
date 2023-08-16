@@ -1,0 +1,40 @@
+constraints:
+  include_dont_test:
+    default: None
+    descp: 'boolean, default=False Deprecated, ignored. .. deprecated:: 0.21 ``include_dont_test``
+      has been deprecated and has no effect in 0.21 and will be removed in 0.23.'
+    dtype:
+    - boolean
+  include_meta_estimators:
+    default: None
+    descp: 'boolean, default=False Deprecated, ignored. .. deprecated:: 0.21 ``include_meta_estimators``
+      has been deprecated and has no effect in 0.21 and will be removed in 0.23.'
+    dtype:
+    - boolean
+  include_other:
+    default: None
+    descp: 'boolean, default=False Deprecated, ignored. .. deprecated:: 0.21 ``include_other``
+      has been deprecated and has not effect in 0.21 and will be removed in 0.23.'
+    dtype:
+    - boolean
+  type_filter:
+    default: None
+    descp: string, list of string,  or None, default=None Which kind of estimators
+      should be returned. If None, no filter is applied and all estimators are returned.  Possible
+      values are 'classifier', 'regressor', 'cluster' and 'transformer' to get estimators
+      only of these specific types, or a list of these to get the estimators that
+      fit at least one of the types.
+    dtype:
+    - string
+inputs:
+  optional:
+  - include_meta_estimators
+  - include_other
+  - type_filter
+  - include_dont_test
+  required: []
+link: ''
+package: scikit-learn
+target: all_estimators
+title: sklearn.utils.all_estimators
+version: 0.24.X

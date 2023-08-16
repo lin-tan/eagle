@@ -1,0 +1,36 @@
+constraints:
+  error_msg:
+    default: ''
+    descp: An optional string. Defaults to "". A string which is the message associated
+      with the exception.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  exit_without_error:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - error_msg
+  - exit_without_error
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Abort
+outputs:
+- The created Operation.
+package: tensorflow
+target: Abort
+title: tf.raw_ops.Abort
+version: 2.2.0

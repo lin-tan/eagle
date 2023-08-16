@@ -1,0 +1,15 @@
+constraints:
+  wd:
+    default: _Null
+    descp: Weight decay augments the objective function with a regularization term
+      that penalizes large weights. The penalty scales with the square of the magnitude
+      of each weight.
+    doc_dtype:
+    - float
+    - optional
+    - default=0
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.ftml_update

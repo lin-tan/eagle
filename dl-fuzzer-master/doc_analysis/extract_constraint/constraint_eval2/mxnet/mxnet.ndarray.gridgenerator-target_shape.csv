@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"Shape(tuple), optional, default=[0,0]","Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored.",_Null,prim_dtype,dtype(int),,1
+"Shape(tuple), optional, default=[0,0]","Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored.",_Null,nonprim_dtype,"structure(tuple(int), tuple(int):(h,w))",,1
+"Shape(tuple), optional, default=[0,0]","Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored.",_Null,shape,"shape([2]), ndim(1)",,1
+"Shape(tuple), optional, default=[0,0]","Specifies the output shape (H, W). This is required if transformation type is affine. If transformation type is warp, this parameter is ignored.",_Null,validvalue,"range([0,inf))",,1

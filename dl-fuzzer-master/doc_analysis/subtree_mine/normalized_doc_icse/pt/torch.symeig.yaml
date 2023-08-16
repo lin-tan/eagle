@@ -1,0 +1,46 @@
+constraints:
+  eigenvectors:
+    default: 'False'
+    descp: controls whether eigenvectors have to be computed
+    doc_dtype: boolean, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether eigenvectors have to be computed
+    normalized_docdtype: D_TYPE optional
+  input:
+    descp: the input tensor of size (*, n, n)  where * is zero or more batch dimensions
+      consisting of symmetric matrices.
+    doc_dtype: Tensor
+    normalized_descp:
+    - the input D_STRUCTURE of size BSTR where is zero or more batch dimensions consisting
+      of symmetric matrices
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tuple of (Tensor, Tensor)
+    doc_dtype: tuple, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE of BSTR
+    normalized_docdtype: D_STRUCTURE optional
+  upper:
+    default: 'True'
+    descp: controls whether to consider upper-triangular or lower-triangular region
+    doc_dtype: boolean, optional
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - controls whether to consider upper triangular or lower triangular region
+    normalized_docdtype: D_TYPE optional
+inputs:
+  optional:
+  - eigenvectors
+  - upper
+  - out
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.symeig
+package: torch
+ret_type: (Tensor, Tensor)
+target: symeig
+title: torch.symeig
+version: 1.5.0

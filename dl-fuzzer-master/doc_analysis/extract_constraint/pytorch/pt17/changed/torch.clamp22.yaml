@@ -1,0 +1,35 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  max:
+    descp: maximal value of each element in the output
+    doc_dtype:
+    - Number
+    dtype:
+    - int
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  keyword_only:
+  - max
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - max
+link: https://pytorch.org/docs/1.7.0/generated/torch.clamp.html#torch.clamp#torch.clamp
+package: torch
+ret_type: Tensor
+target: clamp
+title: torch.clamp
+version: 1.7.0

@@ -1,0 +1,34 @@
+constraints:
+  deterministic:
+    default: 'False'
+    descp: 'flag to choose between a faster non-deterministic calculation, or a slower
+      deterministic calculation. This argument is only available for sparse-dense
+      CUDA bmm. Default: `False`'
+    doc_dtype:
+    - bool
+  input:
+    descp: the first batch of matrices to be multiplied
+    doc_dtype:
+    - Tensor
+  mat2:
+    descp: the second batch of matrices to be multiplied
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - deterministic
+  - out
+  required:
+  - input
+  - mat2
+link: https://pytorch.org/docs/1.6.0/generated/torch.bmm.html#torch.bmm#torch.bmm
+package: torch
+ret_type: Tensor
+target: bmm
+title: torch.bmm
+version: 1.6.0

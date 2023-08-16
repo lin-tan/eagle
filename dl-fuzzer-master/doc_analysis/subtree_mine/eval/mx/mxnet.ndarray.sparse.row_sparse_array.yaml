@@ -1,0 +1,12 @@
+constraints:
+  dtype:
+    default: None
+    descp: The data type of the output array. (Default value = None)
+    doc_dtype:
+    - str
+    - numpy.dtype
+    - optional
+    dtype:
+    - numpy.dtype
+    - string
+title: mxnet.ndarray.sparse.row_sparse_array

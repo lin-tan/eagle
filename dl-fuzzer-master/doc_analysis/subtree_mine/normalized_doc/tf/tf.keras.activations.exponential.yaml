@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.activations.exponential
+constraints:
+  x:
+    descp: Input tensor.
+    normalized_descp:
+    - Input D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/exponential
+outputs: 'Tensor with exponential activation: `exp(x)`. Tensor will be of same shape
+  and dtype of input `x`.'
+package: tensorflow
+target: exponential
+title: tf.keras.activations.exponential
+version: 2.1.0

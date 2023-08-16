@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"str, list of str",,write,prim_dtype,dtype(string),,1
+"str, list of str",,write,nonprim_dtype,structure(list(string)),,1
+"str, list of str",,write,shape,ndim(1),,1

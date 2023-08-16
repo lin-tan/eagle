@@ -1,0 +1,34 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". The container name for the SparseTensorsMap
+      created by this op.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". The shared name for the SparseTensorsMap
+      created by this op. If blank, the new Operation's unique name is used.
+  sparse_indices:
+    descp: A Tensor of type int64. 2-D. The indices of the SparseTensor.
+  sparse_shape:
+    descp: A Tensor of type int64. 1-D. The shape of the SparseTensor.
+  sparse_values:
+    descp: A Tensor. 1-D. The values of the SparseTensor.
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - sparse_indices
+  - sparse_values
+  - sparse_shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AddSparseToTensorsMap
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: AddSparseToTensorsMap
+title: tf.raw_ops.AddSparseToTensorsMap
+version: 2.2.0

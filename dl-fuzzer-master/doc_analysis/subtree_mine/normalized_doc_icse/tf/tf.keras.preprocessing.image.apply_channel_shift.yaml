@@ -1,0 +1,30 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.apply_channel_shift
+constraints:
+  channel_axis:
+    default: '0'
+    descp: Index of axis for channels in the input tensor.`
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Index of axis for channels in the input D_STRUCTURE
+  intensity:
+    descp: Transformation intensity.
+    normalized_descp:
+    - Transformation intensity
+  x:
+    descp: Input tensor. Must be 3D.
+    normalized_descp:
+    - Input D_STRUCTURE
+    - Must be CONSTANT_NUM D
+inputs:
+  optional:
+  - channel_axis
+  required:
+  - x
+  - intensity
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/preprocessing/image/apply_channel_shift
+outputs: '`Numpy image tensor.`'
+package: tensorflow
+target: apply_channel_shift
+title: tf.keras.preprocessing.image.apply_channel_shift
+version: 2.1.0

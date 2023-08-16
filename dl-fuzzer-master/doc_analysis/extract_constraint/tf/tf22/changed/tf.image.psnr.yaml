@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.image.psnr
+constraints:
+  a:
+    descp: First set of images.
+  b:
+    descp: Second set of images.
+  max_val:
+    descp: The dynamic range of the images (i.e., the difference between the maximum
+      the and minimum allowed values).
+  name:
+    default: None
+    descp: Namespace to embed the computation in.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - a
+  - b
+  - max_val
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/image/psnr
+outputs:
+- The scalar PSNR between a and b. The returned tensor has type tf.float32 and shape
+  [batch_size, 1].
+package: tensorflow
+target: psnr
+title: tf.image.psnr
+version: 2.2.0

@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.config.set_soft_device_placement
+constraints:
+  enabled:
+    descp: Whether to enable soft placement.
+    dtype:
+    - tf.bool
+inputs:
+  optional: []
+  required:
+  - enabled
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/config/set_soft_device_placement
+package: tensorflow
+target: set_soft_device_placement
+title: tf.config.set_soft_device_placement
+version: 2.1.0

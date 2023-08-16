@@ -1,0 +1,56 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  axes:
+    default: _Null
+    descp: Array of ints. Axes along which to compute mean and variance.
+    doc_dtype:
+    - Shape
+    - None
+    - optional
+    - default=None
+    dtype:
+    - int
+    structure:
+    - ndarray
+  data:
+    default: None
+    descp: Input ndarray
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  keepdims:
+    default: _Null
+    descp: produce moments with the same dimensionality as the input.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - data
+  - axes
+  - keepdims
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.moments
+package: mxnet
+target: moments
+title: mxnet.ndarray.op.moments
+version: 1.6.0

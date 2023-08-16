@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the second input tensor
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.lcm.html#torch.lcm#torch.lcm
+package: torch
+ret_type: Tensor
+target: lcm
+title: torch.lcm
+version: 1.7.0

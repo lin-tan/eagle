@@ -1,0 +1,31 @@
+constraints:
+  data:
+    descp: A Tensor. The tensor to be made available to the child frame.
+  frame_name:
+    descp: A string. The name of the child frame.
+  is_constant:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, the output is constant within
+      the child frame.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  parallel_iterations:
+    default: '10'
+    descp: An optional int. Defaults to 10. The number of iterations allowed to run
+      in parallel.
+inputs:
+  optional:
+  - is_constant
+  - parallel_iterations
+  - name
+  required:
+  - data
+  - frame_name
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Enter
+outputs:
+- A Tensor. Has the same type as data.
+package: tensorflow
+target: Enter
+title: tf.raw_ops.Enter
+version: 2.2.0

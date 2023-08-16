@@ -1,0 +1,29 @@
+constraints:
+  input:
+    descp: the dividend
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the divisor
+    doc_dtype:
+    - Tensor
+    - Number
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  keyword_only:
+  - out
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.7.0/generated/torch.div.html#torch.div#torch.div
+package: torch
+ret_type: Tensor
+target: div
+title: torch.div
+version: 1.7.0

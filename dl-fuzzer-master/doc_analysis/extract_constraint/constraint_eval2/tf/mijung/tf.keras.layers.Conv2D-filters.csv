@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).",,prim_dtype,dtype(int),1,1
+,"Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).",,shape,ndim(0),1,1
+,"Integer, the dimensionality of the output space (i.e. the number of output filters in the convolution).",,validvalue,"range([0,inf))",1,1

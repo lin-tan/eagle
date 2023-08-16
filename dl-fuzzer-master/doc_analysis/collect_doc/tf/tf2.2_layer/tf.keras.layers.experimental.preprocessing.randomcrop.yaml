@@ -1,0 +1,28 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.RandomCrop
+constraints:
+  '**kwargs':
+    descp: ''
+  height:
+    descp: Integer, the height of the output shape.
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  seed:
+    default: None
+    descp: Integer. Used to create a random seed.
+  width:
+    descp: Integer, the width of the output shape.
+inputs:
+  optional:
+  - seed
+  - name
+  required:
+  - height
+  - width
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomCrop
+package: tensorflow
+target: RandomCrop
+title: tf.keras.layers.experimental.preprocessing.RandomCrop
+version: 2.2.0

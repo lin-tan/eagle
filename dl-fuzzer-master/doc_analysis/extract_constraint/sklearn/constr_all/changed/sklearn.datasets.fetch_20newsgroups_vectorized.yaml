@@ -1,0 +1,59 @@
+constraints:
+  data_home:
+    default: None
+    descp: 'optional, default: None Specify an download and cache folder for the datasets.
+      If None, all scikit-learn data is stored in ''~/scikit_learn_data'' subfolders.'
+  download_if_missing:
+    default: 'True'
+    descp: optional, True by default If False, raise an IOError if the data is not
+      locally available instead of trying to download the data from the source site.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  normalize:
+    default: 'True'
+    descp: 'bool, default=True If True, normalizes each document''s feature vector
+      to unit norm using :func:`sklearn.preprocessing.normalize`. '
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  remove:
+    default: ()
+    descp: tuple May contain any subset of ('headers', 'footers', 'quotes'). Each
+      of these are kinds of text that will be detected and removed from the newsgroup
+      posts, preventing classifiers from overfitting on metadata. 'headers' removes
+      newsgroup headers, 'footers' removes blocks at the ends of posts that look like
+      signatures, and 'quotes' removes lines that appear to be quoting another post.
+    ndim:
+    - '1'
+  return_X_y:
+    default: 'False'
+    descp: bool, default=False If True, returns ``(data.data, data.target)`` instead
+      of a Bunch object.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  subset:
+    default: train
+    descp: '''train'' or ''test'', ''all'', optional Select the dataset to load: ''train''
+      for the training set, ''test'' for the test set, ''all'' for both, with shuffled
+      ordering.'
+    dtype:
+    - string
+inputs:
+  optional:
+  - subset
+  - remove
+  - data_home
+  - download_if_missing
+  - return_X_y
+  - normalize
+  required: []
+link: ''
+package: sklearn
+target: fetch_20newsgroups_vectorized
+title: sklearn.datasets.fetch_20newsgroups_vectorized
+version: 0.24.2

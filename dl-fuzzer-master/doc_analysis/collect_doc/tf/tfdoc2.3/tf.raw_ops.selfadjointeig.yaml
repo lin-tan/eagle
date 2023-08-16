@@ -1,0 +1,19 @@
+constraints:
+  input:
+    descp: 'A Tensor. Must be one of the following types: float64, float32, half.
+      Shape is [..., M, M].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SelfAdjointEig
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: SelfAdjointEig
+title: tf.raw_ops.SelfAdjointEig
+version: 2.3.0

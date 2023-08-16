@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Optional argument specifying whether to clear the state of the layer at the start of the call to `adapt`. This must be True for this layer, which does not support repeated calls to `adapt`.",None,prim_dtype,dtype(tf.bool),,1

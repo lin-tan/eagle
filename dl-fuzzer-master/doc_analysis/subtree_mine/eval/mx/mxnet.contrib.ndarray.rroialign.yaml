@@ -1,0 +1,19 @@
+constraints:
+  data:
+    default: None
+    descp: Input data to the pooling operator, a 4D Feature maps
+    doc_dtype:
+    - NDArray
+    ndim:
+    - '4'
+    structure:
+    - ndarray
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+title: mxnet.contrib.ndarray.RROIAlign

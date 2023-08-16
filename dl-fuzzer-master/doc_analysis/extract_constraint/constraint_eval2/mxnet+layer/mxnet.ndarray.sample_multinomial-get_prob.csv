@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"boolean, optional, default=0","Whether to also return the log probability of sampled result. This is usually used for differentiating through stochastic variables, e.g. in reinforcement learning.",_Null,prim_dtype,"dtype(boolean, float)",,1
+"boolean, optional, default=0","Whether to also return the log probability of sampled result. This is usually used for differentiating through stochastic variables, e.g. in reinforcement learning.",_Null,shape,ndim(0),,1
+"boolean, optional, default=0","Whether to also return the log probability of sampled result. This is usually used for differentiating through stochastic variables, e.g. in reinforcement learning.",_Null,validvalue,"range([0,1])",,1

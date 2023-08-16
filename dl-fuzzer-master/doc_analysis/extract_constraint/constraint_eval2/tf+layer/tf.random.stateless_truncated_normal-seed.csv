@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A shape [2] integer Tensor of seeds to the random number generator.,,prim_dtype,dtype(int),,1
+,A shape [2] integer Tensor of seeds to the random number generator.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A shape [2] integer Tensor of seeds to the random number generator.,,shape,"shape([2]), ndim(1)",,1
+,A shape [2] integer Tensor of seeds to the random number generator.,,validvalue,"range([0,inf))",,1

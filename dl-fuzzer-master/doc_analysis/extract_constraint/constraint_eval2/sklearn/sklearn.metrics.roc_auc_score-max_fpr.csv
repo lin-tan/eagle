@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"float > 0 and <= 1, default=None If not ``None``, the standardized partial AUC [2]_ over the range [0, max_fpr] is returned. For the multiclass case, ``max_fpr``, should be either equal to ``None`` or ``1.0`` as AUC ROC partial computation currently is not supported for multiclass.",None,prim_dtype,dtype(float),,1
+,"float > 0 and <= 1, default=None If not ``None``, the standardized partial AUC [2]_ over the range [0, max_fpr] is returned. For the multiclass case, ``max_fpr``, should be either equal to ``None`` or ``1.0`` as AUC ROC partial computation currently is not supported for multiclass.",None,shape,ndim(0),,1

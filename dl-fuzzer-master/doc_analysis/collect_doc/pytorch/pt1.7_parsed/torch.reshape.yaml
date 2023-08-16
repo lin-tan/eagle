@@ -1,0 +1,20 @@
+constraints:
+  input:
+    descp: the tensor to be reshaped
+    doc_dtype:
+    - Tensor
+  shape:
+    descp: the new shape
+    doc_dtype:
+    - tuple of python:ints
+inputs:
+  optional: []
+  required:
+  - input
+  - shape
+link: https://pytorch.org/docs/1.7.0/generated/torch.reshape.html#torch.reshape#torch.reshape
+package: torch
+ret_type: Tensor
+target: reshape
+title: torch.reshape
+version: 1.7.0

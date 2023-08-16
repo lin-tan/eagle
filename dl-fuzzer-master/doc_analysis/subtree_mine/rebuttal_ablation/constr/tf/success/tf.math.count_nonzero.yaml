@@ -1,0 +1,115 @@
+constraints:
+  axis:
+    default: None
+    descp: The dimensions to reduce. If `None` (the default), reduces all dimensions.
+      Must be in the range `[-rank(input), rank(input))`.
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - None
+    - '[-rank('
+    - input)
+    - input))
+    - rank(
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  dtype:
+    default: tf.dtypes.int64
+    descp: The output dtype; defaults to `tf.int64`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.int64
+    - tf.string
+    enum:
+    - int64
+    - tf.dtypes
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  input:
+    descp: The tensor to reduce. Should be of numeric type, `bool`, or `string`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - bool
+    - numeric
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  keepdims:
+    default: None
+    descp: If true, retains reduced dimensions with length 1.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[1]'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - axis
+  - keepdims
+  - dtype
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/count_nonzero
+outputs: The reduced tensor (number of nonzero values).
+package: tensorflow
+target: count_nonzero
+title: tf.math.count_nonzero
+version: 2.1.0

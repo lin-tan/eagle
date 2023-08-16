@@ -1,0 +1,17 @@
+class,Type,name,input,link,source_code
+,function,torch.distributed.rpc.init_rpc,"name,backend=BackendType.PROCESS_GROUP,rank=-1,world_size=None,rpc_backend_options=None",https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.init_rpc,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc.html#init_rpc
+,function,torch.distributed.rpc.rpc_sync,"to,func,args=None,kwargs=None",https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.rpc_sync,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc/api.html#rpc_sync
+,function,torch.distributed.rpc.rpc_async,"to,func,args=None,kwargs=None",https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.rpc_async,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc/api.html#rpc_async
+,function,torch.distributed.rpc.remote,"to,func,args=None,kwargs=None",https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.remote,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc/api.html#remote
+,function,torch.distributed.rpc.get_worker_info,worker_name=None,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.get_worker_info,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc/api.html#get_worker_info
+,function,torch.distributed.rpc.shutdown,graceful=True,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.shutdown,https://pytorch.org/docs/stable/_modules/torch/distributed/rpc/api.html#shutdown
+,function,torch.distributed.autograd.backward,roots: List[Tensor],https://pytorch.org/docs/stable/rpc.html#torch.distributed.autograd.backward,
+,function,torch.distributed.autograd.get_gradients,context_id: int,https://pytorch.org/docs/stable/rpc.html#torch.distributed.autograd.get_gradients,
+torch.distributed.rpc.RRef,class,,,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.RRef,
+torch.distributed.rpc.RRef,method,is_owner,self: torch.distributed.rpc.RRef,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.RRef.is_owner,
+torch.distributed.rpc.RRef,method,local_value,self: torch.distributed.rpc.RRef,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.RRef.local_value,
+torch.distributed.rpc.RRef,method,owner,self: torch.distributed.rpc.RRef,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.RRef.owner,
+torch.distributed.rpc.RRef,method,to_here,self: torch.distributed.rpc.RRef,https://pytorch.org/docs/stable/rpc.html#torch.distributed.rpc.RRef.to_here,
+torch.distributed.autograd.context,class,,,https://pytorch.org/docs/stable/rpc.html#torch.distributed.autograd.context,https://pytorch.org/docs/stable/_modules/torch/distributed/autograd.html#context
+torch.distributed.optim.DistributedOptimizer,class,,"optimizer_class,params_rref,*args,**kwargs",https://pytorch.org/docs/stable/rpc.html#torch.distributed.optim.DistributedOptimizer,https://pytorch.org/docs/stable/_modules/torch/distributed/optim/optimizer.html#DistributedOptimizer
+torch.distributed.optim.DistributedOptimizer,method,step,,https://pytorch.org/docs/stable/rpc.html#torch.distributed.optim.DistributedOptimizer.step,https://pytorch.org/docs/stable/_modules/torch/distributed/optim/optimizer.html#DistributedOptimizer.step

@@ -1,0 +1,11 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  '{([''\w,\s]+)}':
+    cnt: 185
+    group: 1
+target: enum

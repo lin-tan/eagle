@@ -1,0 +1,93 @@
+aliases:
+- tf.compat.v1.keras.backend.normalize_batch_in_training
+constraints:
+  beta:
+    descp: Tensor with which to center the input.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  epsilon:
+    default: '0.001'
+    descp: Fuzz factor.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  gamma:
+    descp: Tensor by which to scale the input.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  reduction_axes:
+    descp: iterable of integers, axes over which to normalize.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    structure:
+    - list
+  x:
+    descp: Input tensor or variable.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - epsilon
+  required:
+  - x
+  - gamma
+  - beta
+  - reduction_axes
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/normalize_batch_in_training
+outputs: A tuple length of 3, `(normalized_tensor, mean, variance)`.
+package: tensorflow
+target: normalize_batch_in_training
+title: tf.keras.backend.normalize_batch_in_training
+version: 2.1.0

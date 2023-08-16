@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The dtype that should be used for the `row_splits` of any new ragged tensors.  Existing `tf.RaggedTensor` elements do not have their row_splits dtype changed.,tf.dtypes.int64,prim_dtype,dtype(tf.dtype),,1
+,The dtype that should be used for the `row_splits` of any new ragged tensors.  Existing `tf.RaggedTensor` elements do not have their row_splits dtype changed.,tf.dtypes.int64,shape,ndim(0),,1

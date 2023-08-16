@@ -1,0 +1,30 @@
+constraints:
+  X:
+    descp: '{array-like, sparse matrix} shape = [n_samples, n_features] The set of
+      regressors that will be tested sequentially.'
+    dtype:
+    - numeric
+  y:
+    descp: array of shape(n_samples) The data matrix.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples]'
+    structure:
+    - list(shape)
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - X
+  - y
+link: ''
+package: sklearn
+target: f_classif
+title: sklearn.feature_selection.f_classif
+version: 0.24.2

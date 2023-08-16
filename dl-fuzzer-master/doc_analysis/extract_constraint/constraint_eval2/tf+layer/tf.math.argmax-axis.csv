@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. int32 or int64, must be in the range `-rank(input), rank(input))`. Describes which axis of the input Tensor to reduce across. For vectors, use axis = 0.",None,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. int32 or int64, must be in the range `-rank(input), rank(input))`. Describes which axis of the input Tensor to reduce across. For vectors, use axis = 0.",None,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. int32 or int64, must be in the range `-rank(input), rank(input))`. Describes which axis of the input Tensor to reduce across. For vectors, use axis = 0.",None,shape,ndim(0),,1

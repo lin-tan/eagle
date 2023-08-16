@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A `Tensor` containing the total count of the data (one value).,,prim_dtype,dtype(int),,1
+,A `Tensor` containing the total count of the data (one value).,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A `Tensor` containing the total count of the data (one value).,,shape,ndim(0),,1
+,A `Tensor` containing the total count of the data (one value).,,validvalue,"range([0,inf))",,1

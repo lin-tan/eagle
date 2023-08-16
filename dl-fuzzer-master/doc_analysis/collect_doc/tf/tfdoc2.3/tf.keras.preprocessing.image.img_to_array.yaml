@@ -1,0 +1,29 @@
+aliases:
+- tf.compat.v1.keras.preprocessing.image.img_to_array
+constraints:
+  data_format:
+    default: None
+    descp: Image data format, can be either "channels_first" or "channels_last". Defaults
+      to None, in which case the global setting tf.keras.backend.image_data_format()
+      is used (unless you changed it, it defaults to "channels_last").
+  dtype:
+    default: None
+    descp: Dtype to use. Default to None, in which case the global setting tf.keras.backend.floatx()
+      is used (unless you changed it, it defaults to "float32")
+  img:
+    descp: Input PIL Image instance.
+exceptions:
+- ValueError: if invalid img or data_format is passed.
+inputs:
+  optional:
+  - data_format
+  - dtype
+  required:
+  - img
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/preprocessing/image/img_to_array
+outputs:
+- A 3D Numpy array.
+package: tensorflow
+target: img_to_array
+title: tf.keras.preprocessing.image.img_to_array
+version: 2.3.0

@@ -1,0 +1,29 @@
+constraints:
+  flow_in:
+    descp: A Tensor of type float32. A float scalar that enforces proper chaining
+      of operations.
+  handle:
+    descp: A Tensor of type resource. The handle to a TensorArray.
+  lengths:
+    descp: A Tensor of type int64. The vector of lengths, how to split the rows of
+      value into the TensorArray.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  value:
+    descp: A Tensor. The concatenated tensor to write to the TensorArray.
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - value
+  - lengths
+  - flow_in
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArraySplitV3
+outputs:
+- A Tensor of type float32.
+package: tensorflow
+target: TensorArraySplitV3
+title: tf.raw_ops.TensorArraySplitV3
+version: 2.2.0

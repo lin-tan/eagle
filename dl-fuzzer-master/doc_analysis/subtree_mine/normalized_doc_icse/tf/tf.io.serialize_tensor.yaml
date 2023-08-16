@@ -1,0 +1,26 @@
+aliases:
+- tf.compat.v1.io.serialize_tensor
+- tf.compat.v1.serialize_tensor
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  tensor:
+    descp: A `Tensor`. A Tensor of type `T`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - A D_STRUCTURE of type QSTR
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/serialize_tensor
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: serialize_tensor
+title: tf.io.serialize_tensor
+version: 2.1.0

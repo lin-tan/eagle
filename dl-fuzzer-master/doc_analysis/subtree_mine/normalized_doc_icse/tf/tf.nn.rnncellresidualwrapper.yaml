@@ -1,0 +1,38 @@
+constraints:
+  '**kwargs':
+    default: null
+    descp: dict of keyword arguments for base layer.
+    normalized_descp:
+    - D_STRUCTURE of keyword arguments for base layer
+  '*args':
+    default: null
+    descp: ''
+    normalized_descp: []
+  cell:
+    default: None
+    descp: An instance of `RNNCell`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - An instance of QSTR
+  residual_fn:
+    default: None
+    descp: '(Optional) The function to map raw cell inputs and raw cell outputs to
+      the actual cell outputs of the residual network. Defaults to calling nest.map_structure
+      on (lambda i, o: i + o), inputs and outputs.'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - BSTR The function to map raw PARAM inputs and raw PARAM outputs to the actual
+      PARAM outputs of the residual network
+    - Defaults to calling nest map_structure on lambda i o i o inputs and outputs
+inputs:
+  optional:
+  - '*args'
+  - '**kwargs'
+  - cell
+  - residual_fn
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/RNNCellResidualWrapper
+package: tensorflow
+target: RNNCellResidualWrapper
+title: tf.nn.RNNCellResidualWrapper
+version: 2.1.0

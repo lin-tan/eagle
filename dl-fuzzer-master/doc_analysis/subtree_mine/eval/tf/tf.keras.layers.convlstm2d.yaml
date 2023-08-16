@@ -1,0 +1,12 @@
+constraints:
+  dropout:
+    default: '0.0'
+    descp: Float between 0 and 1. Fraction of the units to drop for the linear transformation
+      of the inputs.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+title: tf.keras.layers.ConvLSTM2D

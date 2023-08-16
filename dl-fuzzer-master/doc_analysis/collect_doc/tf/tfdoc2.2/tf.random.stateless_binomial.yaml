@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.random.stateless_binomial
+constraints:
+  counts:
+    descp: Tensor. The counts of the binomial distribution. Must be broadcastable
+      with probs, and broadcastable with the rightmost dimensions of shape.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_dtype:
+    default: tf.dtypes.int32
+    descp: 'The type of the output. Default: tf.int32'
+  probs:
+    descp: Tensor. The probability of success for the binomial distribution. Must
+      be broadcastable with counts and broadcastable with the rightmost dimensions
+      of shape.
+  seed:
+    descp: A shape [2] integer Tensor of seeds to the random number generator.
+  shape:
+    descp: A 1-D integer Tensor or Python array. The shape of the output tensor.
+inputs:
+  optional:
+  - output_dtype
+  - name
+  required:
+  - shape
+  - seed
+  - counts
+  - probs
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/random/stateless_binomial
+outputs:
+- samples: A Tensor of the specified shape filled with random binomial values. For
+    each i, each samples[..., i] is an independent draw from the binomial distribution
+    on counts[i] trials with probability of success probs[i].
+package: tensorflow
+target: stateless_binomial
+title: tf.random.stateless_binomial
+version: 2.2.0

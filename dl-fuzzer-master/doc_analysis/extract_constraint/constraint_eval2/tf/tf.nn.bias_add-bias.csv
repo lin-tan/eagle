@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used.",,prim_dtype,dtype(dtype:&value),,1
+,"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used.",,shape,ndim(1),,1

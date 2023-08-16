@@ -1,0 +1,43 @@
+aliases:
+- tf.compat.v1.data.experimental.rejection_resample
+constraints:
+  class_func:
+    descp: A function mapping an element of the input dataset to a scalar`tf.int32`
+      tensor. Values should be in `[0, num_classes)`.
+    normalized_descp:
+    - A function mapping an element of the input dataset to a scalarD_TYPE D_STRUCTURE
+    - Values should be in BSTR
+  initial_dist:
+    default: None
+    descp: (Optional.)  A floating point type tensor, shaped`[num_classes]`.  If not
+      provided, the true class distribution is estimated live in a streaming fashion.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - A D_TYPE type D_STRUCTURE, shaped BSTR
+    - If not provided, the CONSTANT_BOOL class distribution is estimated live in a
+      streaming fashion
+  seed:
+    default: None
+    descp: (Optional.) Python integer seed for the resampler.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD BSTR
+    - Python D_TYPE seed for the resampler
+  target_dist:
+    descp: A floating point type tensor, shaped `[num_classes]`.
+    normalized_descp:
+    - A D_TYPE type D_STRUCTURE, shaped BSTR
+inputs:
+  optional:
+  - initial_dist
+  - seed
+  required:
+  - class_func
+  - target_dist
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/data/experimental/rejection_resample
+outputs: A `Dataset` transformation function, which can be passed to`tf.data.Dataset.apply`.
+package: tensorflow
+target: rejection_resample
+title: tf.data.experimental.rejection_resample
+version: 2.1.0

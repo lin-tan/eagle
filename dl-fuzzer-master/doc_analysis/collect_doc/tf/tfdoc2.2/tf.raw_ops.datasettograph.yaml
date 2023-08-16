@@ -1,0 +1,31 @@
+constraints:
+  allow_stateful:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  input_dataset:
+    descp: A Tensor of type variant. A variant tensor representing the dataset to
+      return the graph representation for.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  stateful_whitelist:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+  strip_device_assignment:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+inputs:
+  optional:
+  - stateful_whitelist
+  - allow_stateful
+  - strip_device_assignment
+  - name
+  required:
+  - input_dataset
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DatasetToGraph
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: DatasetToGraph
+title: tf.raw_ops.DatasetToGraph
+version: 2.2.0

@@ -1,0 +1,141 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  A:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+    tensor_t:
+    - tensor
+  B:
+    default: None
+    descp: Tensor of input matrices
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+    tensor_t:
+    - tensor
+  alpha:
+    default: _Null
+    descp: Scalar factor multiplied with A*B.
+    doc_dtype: double, optional, default=1
+    dtype:
+    - int
+    - numpy.double
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  axis:
+    default: _Null
+    descp: Axis corresponding to the matrix row indices.
+    doc_dtype: int, optional, default='-2'
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.int64
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  name:
+    default: None
+    descp: ''
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  transpose_a:
+    default: _Null
+    descp: Multiply with transposed of first input (A).
+    doc_dtype: boolean, optional, default=0
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.int64
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (&A)
+    - '[0,inf)'
+    shape:
+    - '[&A]'
+  transpose_b:
+    default: _Null
+    descp: Multiply with transposed of second input (B).
+    doc_dtype: boolean, optional, default=0
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.int64
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (&B)
+    - '[0,inf)'
+    shape:
+    - '[&B]'
+inputs:
+  optional:
+  - A
+  - B
+  - transpose_a
+  - transpose_b
+  - alpha
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.linalg_gemm2
+package: mxnet
+target: linalg_gemm2
+title: mxnet.ndarray.linalg_gemm2
+version: 1.6.0

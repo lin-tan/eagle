@@ -1,0 +1,26 @@
+constraints:
+  size:
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - list
+  vertical_flip:
+    default: 'False'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - vertical_flip
+  required:
+  - size
+package: torchvision
+target: TenCrop
+title: torchvision.transforms.TenCrop
+version: 0.7.0
+

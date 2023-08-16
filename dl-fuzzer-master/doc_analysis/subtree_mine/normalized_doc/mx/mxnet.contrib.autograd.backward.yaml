@@ -1,0 +1,29 @@
+constraints:
+  out_grads:
+    default: None
+    descp: ''
+    doc_dtype: list of NDArray or None
+    normalized_default: DEFAULT None
+    normalized_descp: []
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE or None
+  outputs:
+    descp: ''
+    doc_dtype: list of NDArray
+    normalized_descp: []
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  retain_graph:
+    default: 'False'
+    descp: ''
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp: []
+inputs:
+  optional:
+  - out_grads
+  - retain_graph
+  required:
+  - outputs
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/autograd/index.html#mxnet.contrib.autograd.backward
+package: mxnet
+target: backward
+title: mxnet.contrib.autograd.backward
+version: 1.6.0

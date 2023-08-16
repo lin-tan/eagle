@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.activations.hard_sigmoid
+constraints:
+  x:
+    descp: Input tensor.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/activations/hard_sigmoid
+outputs:
+- 'The hard sigmoid activation: 0 if x < -2.5 1 if x > 2.5 0.2 * x + 0.5 if -2.5 <=
+  x <= 2.5.'
+package: tensorflow
+target: hard_sigmoid
+title: tf.keras.activations.hard_sigmoid
+version: 2.2.0

@@ -1,0 +1,35 @@
+constraints:
+  blank:
+    default: '0'
+    descp: blank label. Default 0 .
+    doc_dtype:
+    - int
+    sig_dtype: int
+  reduction:
+    default: mean
+    descp: 'Specifies the reduction to apply to the output: `''none''` | `''mean''`
+      | `''sum''`. `''none''`: no reduction will be applied, `''mean''`: the output
+      losses will be divided by the target lengths and then the mean over the batch
+      is taken. Default: `''mean''`'
+    doc_dtype:
+    - string
+    sig_dtype: str
+  zero_infinity:
+    default: 'False'
+    descp: 'Whether to zero infinite losses and the associated gradients. Default:
+      `False` Infinite losses mainly occur when the inputs are too short to be aligned
+      to the targets.'
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+inputs:
+  optional:
+  - blank
+  - reduction
+  - zero_infinity
+  required: []
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.CTCLoss.html#torch.nn.CTCLoss#torch.nn.CTCLoss
+package: torch
+target: CTCLoss
+title: torch.nn.CTCLoss
+version: 1.6.0

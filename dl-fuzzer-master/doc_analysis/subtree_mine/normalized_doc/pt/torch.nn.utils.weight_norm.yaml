@@ -1,0 +1,34 @@
+constraints:
+  dim:
+    default: '0'
+    descp: dimension over which to compute the norm
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - dimension over which to compute the norm
+    normalized_docdtype: D_TYPE, optional
+  module:
+    descp: containing module
+    doc_dtype: Module
+    normalized_descp:
+    - containing module
+    normalized_docdtype: ONE_WORD Module
+  name:
+    default: weight
+    descp: name of weight parameter
+    doc_dtype: str, optional
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - name of weight parameter
+    normalized_docdtype: D_TYPE, optional
+inputs:
+  optional:
+  - name
+  - dim
+  required:
+  - module
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.utils.weight_norm
+package: torch
+target: weight_norm
+title: torch.nn.utils.weight_norm
+version: 1.5.0

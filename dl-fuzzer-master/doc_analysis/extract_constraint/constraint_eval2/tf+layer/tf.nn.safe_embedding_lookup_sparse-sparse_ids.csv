@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`SparseTensor` of shape `[d_0, d_1, ..., d_n]` containing the ids. `d_0` is typically batch size.",,prim_dtype,dtype(int),,1
+,"`SparseTensor` of shape `[d_0, d_1, ..., d_n]` containing the ids. `d_0` is typically batch size.",,nonprim_dtype,tensor_t(SparseTensor),,1
+,"`SparseTensor` of shape `[d_0, d_1, ..., d_n]` containing the ids. `d_0` is typically batch size.",,shape,"shape([...]), ndim(?)",,1

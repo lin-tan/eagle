@@ -1,0 +1,9 @@
+constraints:
+  axis:
+    default: None
+    descp: An optional `int`. Defaults to `-1`.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.quantization.dequantize

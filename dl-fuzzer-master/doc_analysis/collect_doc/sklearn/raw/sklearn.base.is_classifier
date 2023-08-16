@@ -1,0 +1,12 @@
+sklearn.base.is_classifier = is_classifier(estimator)
+    Return True if the given estimator is (probably) a classifier.
+    
+    Parameters
+    ----------
+    estimator : object
+        Estimator object to test.
+    
+    Returns
+    -------
+    out : bool
+        True if estimator is a classifier and False otherwise.

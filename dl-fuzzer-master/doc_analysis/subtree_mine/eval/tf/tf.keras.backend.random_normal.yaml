@@ -1,0 +1,9 @@
+constraints:
+  mean:
+    default: '0.0'
+    descp: A float, mean of the normal distribution to draw samples.
+    dtype:
+    - float
+    ndim:
+    - '0'
+title: tf.keras.backend.random_normal

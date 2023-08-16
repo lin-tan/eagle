@@ -1,0 +1,9 @@
+constraints:
+  rhs:
+    default: None
+    descp: The second input
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.batch_dot

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"implicit paddings on both sides of the input. Can be a single number or a tuple (padH, padW). Default: 0",0,prim_dtype,dtype(int),,1
+,"implicit paddings on both sides of the input. Can be a single number or a tuple (padH, padW). Default: 0",0,nonprim_dtype,"structure(tuple:(padh,padw))",,1
+,"implicit paddings on both sides of the input. Can be a single number or a tuple (padH, padW). Default: 0",0,shape,"shape([2]), ndim(0, 1)",,1

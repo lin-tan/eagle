@@ -1,0 +1,56 @@
+aliases:
+- tf.truediv
+- tf.compat.v1.math.truediv
+- tf.compat.v1.truediv
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: '`Tensor` numerator of numeric type.'
+    dtype:
+    - numeric
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  y:
+    descp: '`Tensor` denominator of numeric type.'
+    dtype:
+    - numeric
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+exceptions:
+- TypeError: If `x` and `y` have different dtypes.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/truediv
+outputs: '`x / y` evaluated in floating point.'
+package: tensorflow
+target: truediv
+title: tf.math.truediv
+version: 2.1.0

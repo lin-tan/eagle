@@ -1,0 +1,30 @@
+sklearn.metrics.cluster.contingency_matrix = contingency_matrix(labels_true, labels_pred, eps=None, sparse=False)
+    Build a contingency matrix describing the relationship between labels.
+    
+    Parameters
+    ----------
+    labels_true : int array, shape = [n_samples]
+        Ground truth class labels to be used as a reference
+    
+    labels_pred : array-like of shape (n_samples,)
+        Cluster labels to evaluate
+    
+    eps : None or float, optional.
+        If a float, that value is added to all values in the contingency
+        matrix. This helps to stop NaN propagation.
+        If ``None``, nothing is adjusted.
+    
+    sparse : boolean, optional.
+        If True, return a sparse CSR continency matrix. If ``eps is not None``,
+        and ``sparse is True``, will throw ValueError.
+    
+        .. versionadded:: 0.18
+    
+    Returns
+    -------
+    contingency : {array-like, sparse}, shape=[n_classes_true, n_classes_pred]
+        Matrix :math:`C` such that :math:`C_{i, j}` is the number of samples in
+        true class :math:`i` and in predicted class :math:`j`. If
+        ``eps is None``, the dtype of this array will be integer. If ``eps`` is
+        given, the dtype will be float.
+        Will be a ``scipy.sparse.csr_matrix`` if ``sparse=True``.

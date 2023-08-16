@@ -1,0 +1,14 @@
+constraints:
+  sequence_length:
+    descp: 1-D `int32` vector containing sequence lengths, having size`[batch_size]`.
+    dtype:
+    - tf.int32
+    structure:
+    - list
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[batch_size]'
+title: tf.nn.ctc_beam_search_decoder

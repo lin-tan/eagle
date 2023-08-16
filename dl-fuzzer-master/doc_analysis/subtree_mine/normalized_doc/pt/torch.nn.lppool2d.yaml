@@ -1,0 +1,33 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: when True, will use ceil instead of floor to compute the output shape
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - when CONSTANT_BOOL, will use ceil instead of floor to compute the output shape
+  kernel_size:
+    descp: the size of the window
+    normalized_descp:
+    - the size of the window
+  norm_type:
+    descp: ''
+    normalized_descp: []
+  stride:
+    default: None
+    descp: the stride of the window. Default value is `kernel_size`
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the stride of the window
+    - Default value is PARAM
+inputs:
+  optional:
+  - stride
+  - ceil_mode
+  required:
+  - norm_type
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.LPPool2d
+package: torch
+target: LPPool2d
+title: torch.nn.LPPool2d
+version: 1.5.0

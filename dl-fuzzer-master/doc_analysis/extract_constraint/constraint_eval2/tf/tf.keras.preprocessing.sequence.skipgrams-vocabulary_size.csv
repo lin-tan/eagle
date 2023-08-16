@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Int, maximum possible word index + 1",,prim_dtype,dtype(int),,1
+,"Int, maximum possible word index + 1",,shape,ndim(0),,1
+,"Int, maximum possible word index + 1",,validvalue,"range([0,inf))",,1

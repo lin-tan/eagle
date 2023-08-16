@@ -1,0 +1,32 @@
+constraints:
+  init:
+    default: '0.25'
+    descp: 'the initial value of a . Default: 0.25'
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - the initial value of a
+    - Default CONSTANT_FLOAT
+    normalized_docdtype: ONE_WORD D_TYPE
+  num_parameters:
+    default: '1'
+    descp: 'number of a  to learn. Although it takes an int as input, there is only
+      two values are legitimate: 1, or the number of channels at input. Default: 1'
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - number of a to learn
+    - Although it takes an D_TYPE as input there is only two values are legitimate
+      CONSTANT_NUM or the number of channels at input
+    - Default CONSTANT_NUM
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - num_parameters
+  - init
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.PReLU
+package: torch
+target: PReLU
+title: torch.nn.PReLU
+version: 1.5.0

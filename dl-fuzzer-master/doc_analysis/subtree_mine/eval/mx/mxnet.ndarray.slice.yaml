@@ -1,0 +1,14 @@
+constraints:
+  begin:
+    default: _Null
+    descp: starting indices for the slice operation, supports negative indices.
+    doc_dtype:
+    - Shape(tuple)
+    - required
+    dtype:
+    - int
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+title: mxnet.ndarray.slice

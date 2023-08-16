@@ -1,0 +1,40 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  serialized_summary_metadata:
+    descp: A Tensor of type string. A serialized SummaryMetadata proto. Contains plugin
+      data.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  tag:
+    descp: A Tensor of type string. A string attached to this summary. Used for organization
+      in TensorBoard.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  tensor:
+    descp: A Tensor. A tensor to serialize.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tag
+  - tensor
+  - serialized_summary_metadata
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorSummaryV2
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: TensorSummaryV2
+title: tf.raw_ops.TensorSummaryV2
+version: 2.2.0

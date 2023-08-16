@@ -1,0 +1,492 @@
+class_api: []
+collected:
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Activation
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ActivityRegularization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Add
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AdditiveAttention
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AlphaDropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Attention
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Average
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/BatchNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Bidirectional
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Concatenate
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ConvLSTM2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dense
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DenseFeatures
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DepthwiseConv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dot
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ELU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Embedding
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Flatten
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRUCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianDropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianNoise
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputLayer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputSpec
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTM
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTMCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Lambda
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Layer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LayerNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LeakyReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Maximum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Minimum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Multiply
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/PReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Permute
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RNN
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RepeatVector
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Reshape
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNN
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNNCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Softmax
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/StackedRNNCells
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Subtract
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ThresholdedReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/TimeDistributed
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Wrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/add
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/average
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/concatenate
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/deserialize
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/dot
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/EinsumDense
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/RandomFourierFeatures
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/SyncBatchNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryCrossing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryEncoding
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CenterCrop
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Hashing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/IntegerLookup
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Normalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/PreprocessingLayer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomCrop
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomHeight
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomTranslation
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomWidth
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomZoom
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Rescaling
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Resizing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/StringLookup
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/maximum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/minimum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/multiply
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/subtract
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDeviceWrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDropoutWrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellResidualWrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/atrous_conv2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/atrous_conv2d_transpose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool1d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool3d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/batch_norm_with_global_normalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/batch_normalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/bias_add
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/collapse_repeated
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/compute_accidental_hits
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/compute_average_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv1d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv1d_transpose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv2d_transpose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv3d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv3d_transpose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv_transpose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/convolution
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/crelu
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_beam_search_decoder
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_greedy_decoder
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_unique_labels
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depth_to_space
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d_backprop_filter
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d_backprop_input
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/dilation2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/dropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/elu
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/embedding_lookup
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/embedding_lookup_sparse
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/erosion2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/fractional_avg_pool
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/fractional_max_pool
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/l2_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/local_response_normalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/log_poisson_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/log_softmax
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool1d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool3d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool_with_argmax
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/moments
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/nce_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/normalize_moments
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/pool
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/relu
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/relu6
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/safe_embedding_lookup_sparse
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sampled_softmax_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/scale_regularization_loss
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/selu
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/separable_conv2d
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sigmoid_cross_entropy_with_logits
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softmax
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softmax_cross_entropy_with_logits
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softsign
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/space_to_depth
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sparse_softmax_cross_entropy_with_logits
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sufficient_statistics
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/weighted_cross_entropy_with_logits
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/weighted_moments
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/with_space_to_batch
+deprecated: []
+module:
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing
+no_arg:
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AbstractRNNCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Masking
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Discretization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomContrast
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomFlip
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomRotation
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/serialize
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/leaky_relu
+no_signature: []
+no_tab: []
+warning:
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Activation
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ActivityRegularization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Add
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AdditiveAttention
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AlphaDropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Attention
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Average
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/BatchNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Bidirectional
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Concatenate
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3DTranspose
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ConvLSTM2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dense
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DenseFeatures
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DepthwiseConv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dot
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ELU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Embedding
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Flatten
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRUCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianDropout
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianNoise
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputLayer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputSpec
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTM
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTMCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Lambda
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Layer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LayerNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LeakyReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Maximum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Minimum
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Multiply
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/PReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Permute
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RNN
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RepeatVector
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Reshape
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNN
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNNCell
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Softmax
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/StackedRNNCells
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Subtract
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ThresholdedReLU
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/TimeDistributed
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Wrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding1D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding2D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding3D
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/EinsumDense
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/RandomFourierFeatures
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/SyncBatchNormalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryCrossing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryEncoding
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CenterCrop
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Hashing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/IntegerLookup
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Normalization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/PreprocessingLayer
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomCrop
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomHeight
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomTranslation
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomWidth
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomZoom
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Rescaling
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Resizing
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/StringLookup
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDeviceWrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDropoutWrapper
+- https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellResidualWrapper
+word_cnt:
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AbstractRNNCell: 295
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Activation: 115
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ActivityRegularization: 88
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Add: 118
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AdditiveAttention: 528
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AlphaDropout: 172
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Attention: 513
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Average: 129
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling1D: 151
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling2D: 210
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/AveragePooling3D: 199
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/BatchNormalization: 1077
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Bidirectional: 381
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Concatenate: 175
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1D: 589
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv1DTranspose: 487
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2D: 709
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv2DTranspose: 656
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3D: 689
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Conv3DTranspose: 680
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ConvLSTM2D: 862
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping1D: 144
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping2D: 235
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Cropping3D: 242
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dense: 411
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DenseFeatures: 223
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/DepthwiseConv2D: 485
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dot: 230
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Dropout: 302
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ELU: 93
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Embedding: 313
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Flatten: 140
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRU: 1326
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GRUCell: 816
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianDropout: 128
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GaussianNoise: 148
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling1D: 141
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling2D: 145
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalAveragePooling3D: 133
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool1D: 164
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool2D: 145
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/GlobalMaxPool3D: 133
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputLayer: 304
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/InputSpec: 165
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTM: 1267
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LSTMCell: 851
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Lambda: 486
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Layer: 2820
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LayerNormalization: 681
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LeakyReLU: 137
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected1D: 595
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/LocallyConnected2D: 660
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Masking: 213
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool1D: 342
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool2D: 523
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/MaxPool3D: 199
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Maximum: 94
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Minimum: 94
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Multiply: 94
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/PReLU: 170
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Permute: 142
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RNN: 1363
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ReLU: 196
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/RepeatVector: 82
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Reshape: 162
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv1D: 559
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SeparableConv2D: 573
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNN: 646
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SimpleRNNCell: 734
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Softmax: 77
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout1D: 166
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout2D: 229
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/SpatialDropout3D: 231
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/StackedRNNCells: 104
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Subtract: 100
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ThresholdedReLU: 89
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/TimeDistributed: 212
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling1D: 133
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling2D: 248
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/UpSampling3D: 201
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Wrapper: 73
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding1D: 189
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding2D: 273
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/ZeroPadding3D: 234
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/add: 118
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/average: 122
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/concatenate: 147
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/deserialize: 65
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/dot: 110
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/EinsumDense: 464
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/RandomFourierFeatures: 579
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/SyncBatchNormalization: 507
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryCrossing: 395
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CategoryEncoding: 436
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/CenterCrop: 107
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Discretization: 132
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Hashing: 392
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/IntegerLookup: 1013
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Normalization: 287
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/PreprocessingLayer: 126
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomContrast: 180
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomCrop: 151
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomFlip: 131
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomHeight: 216
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomRotation: 345
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomTranslation: 381
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomWidth: 216
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomZoom: 380
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Rescaling: 121
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/Resizing: 95
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/StringLookup: 1026
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/TextVectorization: 1224
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/maximum: 115
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/minimum: 55
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/multiply: 55
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/serialize: 24
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/subtract: 82
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDeviceWrapper: 62
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellDropoutWrapper: 399
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/RNNCellResidualWrapper: 89
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/atrous_conv2d: 800
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/atrous_conv2d_transpose: 290
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool: 214
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool1d: 172
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool2d: 153
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/avg_pool3d: 169
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/batch_norm_with_global_normalization: 185
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/batch_normalization: 328
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/bias_add: 218
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/collapse_repeated: 114
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/compute_accidental_hits: 257
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/compute_average_loss: 132
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv1d: 322
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv1d_transpose: 283
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv2d: 625
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv2d_transpose: 340
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv3d: 297
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv3d_transpose: 326
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/conv_transpose: 390
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/convolution: 606
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/crelu: 129
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_beam_search_decoder: 167
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_greedy_decoder: 223
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_loss: 297
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/ctc_unique_labels: 125
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depth_to_space: 557
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d: 445
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d_backprop_filter: 387
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/depthwise_conv2d_backprop_input: 380
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/dilation2d: 315
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/dropout: 409
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/elu: 75
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/embedding_lookup: 307
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/embedding_lookup_sparse: 544
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/erosion2d: 306
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/fractional_avg_pool: 325
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/fractional_max_pool: 494
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/l2_loss: 79
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/leaky_relu: 103
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/local_response_normalization: 201
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/log_poisson_loss: 295
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/log_softmax: 104
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool: 199
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool1d: 157
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool2d: 146
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool3d: 191
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/max_pool_with_argmax: 318
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/moments: 153
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/nce_loss: 441
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/normalize_moments: 131
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/pool: 417
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/relu: 80
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/relu6: 74
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/safe_embedding_lookup_sparse: 497
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sampled_softmax_loss: 343
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/scale_regularization_loss: 92
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/selu: 88
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/separable_conv2d: 399
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sigmoid_cross_entropy_with_logits: 280
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softmax: 98
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softmax_cross_entropy_with_logits: 369
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/softsign: 63
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/space_to_depth: 521
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sparse_softmax_cross_entropy_with_logits: 360
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/sufficient_statistics: 174
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/swish: 60
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/weighted_cross_entropy_with_logits: 348
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/weighted_moments: 79
+  https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/with_space_to_batch: 671

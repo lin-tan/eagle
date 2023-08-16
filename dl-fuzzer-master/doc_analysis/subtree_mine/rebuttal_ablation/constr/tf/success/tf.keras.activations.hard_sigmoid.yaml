@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.keras.activations.hard_sigmoid
+constraints:
+  x:
+    descp: Input tensor.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/hard_sigmoid
+outputs: 'The hard sigmoid activation:'
+package: tensorflow
+target: hard_sigmoid
+title: tf.keras.activations.hard_sigmoid
+version: 2.1.0

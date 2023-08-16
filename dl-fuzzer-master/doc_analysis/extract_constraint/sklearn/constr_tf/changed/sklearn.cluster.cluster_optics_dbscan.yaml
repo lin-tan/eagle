@@ -1,0 +1,40 @@
+constraints:
+  core_distances:
+    descp: array, shape (n_samples,) Distances at which points become core (``core_distances_``)
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  eps:
+    descp: float DBSCAN ``eps`` parameter. Must be set to < ``max_eps``. Results will
+      be close to DBSCAN algorithm if ``eps`` and ``max_eps`` are close to one another.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  ordering:
+    descp: array, shape (n_samples,) OPTICS ordered point indices (``ordering_``)
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  reachability:
+    descp: array, shape (n_samples,) Reachability distances calculated by OPTICS (``reachability_``)
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_samples
+inputs:
+  optional: []
+  required:
+  - reachability
+  - core_distances
+  - ordering
+  - eps
+link: ''
+package: scikit-learn
+target: cluster_optics_dbscan
+title: sklearn.cluster.cluster_optics_dbscan
+version: 0.24.X

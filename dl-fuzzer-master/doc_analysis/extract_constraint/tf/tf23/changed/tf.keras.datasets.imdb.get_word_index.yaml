@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.keras.datasets.imdb.get_word_index
+constraints:
+  path:
+    default: imdb_word_index.json
+    descp: where to cache the data (relative to ~/.keras/dataset).
+    dtype:
+    - tf.string
+inputs:
+  optional:
+  - path
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/datasets/imdb/get_word_index
+outputs:
+- The word index dictionary. Keys are word strings, values are their index.
+package: tensorflow
+target: get_word_index
+title: tf.keras.datasets.imdb.get_word_index
+version: 2.3.0

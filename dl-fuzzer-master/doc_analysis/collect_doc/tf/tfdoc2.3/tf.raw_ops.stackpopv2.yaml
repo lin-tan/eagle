@@ -1,0 +1,21 @@
+constraints:
+  elem_type:
+    descp: A tf.DType. The type of the elem that is popped.
+  handle:
+    descp: A Tensor of type resource. The handle to a stack.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - elem_type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StackPopV2
+outputs:
+- A Tensor of type elem_type.
+package: tensorflow
+target: StackPopV2
+title: tf.raw_ops.StackPopV2
+version: 2.3.0

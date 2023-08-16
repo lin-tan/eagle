@@ -1,0 +1,37 @@
+constraints:
+  input:
+    descp: the numerator tensor
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+  other:
+    descp: the denominator
+    doc_dtype:
+    - Tensor
+    - Scalar
+    dtype:
+    - numeric
+    ndim:
+    - '0'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.6.0/generated/torch.floor_divide.html#torch.floor_divide#torch.floor_divide
+package: torch
+ret_type: Tensor
+target: floor_divide
+title: torch.floor_divide
+version: 1.6.0

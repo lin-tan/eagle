@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  value:
+    descp: A Tensor. The tensor to be stored.
+inputs:
+  optional:
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GetSessionHandleV2
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: GetSessionHandleV2
+title: tf.raw_ops.GetSessionHandleV2
+version: 2.3.0

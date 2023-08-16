@@ -1,0 +1,8 @@
+constraints:
+  tensor:
+    descp: the string Tensor holding one or more serialized `Summary` protobufs
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+title: tf.summary.experimental.write_raw_pb

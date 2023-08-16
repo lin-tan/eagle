@@ -1,0 +1,51 @@
+constraints:
+  circular_buffer_size:
+    default: '1000'
+    descp: An optional int. Defaults to 1000.
+  debug_urls:
+    default: '[]'
+    descp: An optional list of strings. Defaults to []. List of URLs to debug targets,
+      e.g., file:///foo/tfdbg_dump.
+  input:
+    descp: A Tensor. Input tensor, non-Reference type
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  op_name:
+    default: ''
+    descp: An optional string. Defaults to "". Optional. Name of the op that the debug
+      op is concerned with. Used only for single-tensor trace.
+  output_slot:
+    default: '-1'
+    descp: An optional int. Defaults to -1. Optional. Output slot index of the tensor
+      that the debug op is concerned with. Used only for single-tensor trace.
+  tensor_debug_mode:
+    default: '-1'
+    descp: An optional int. Defaults to -1. TensorDebugMode enum value. See debug_event.proto
+      for details.
+  tfdbg_context_id:
+    default: ''
+    descp: An optional string. Defaults to "". A tfdbg-generated ID for the context
+      that the op belongs to, e.g., a concrete compiled tf.function.
+  tfdbg_run_id:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - tfdbg_context_id
+  - op_name
+  - output_slot
+  - tensor_debug_mode
+  - debug_urls
+  - circular_buffer_size
+  - tfdbg_run_id
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DebugIdentityV2
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: DebugIdentityV2
+title: tf.raw_ops.DebugIdentityV2
+version: 2.3.0

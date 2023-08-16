@@ -1,0 +1,132 @@
+dtype_map:
+    torch.float: torch.float32
+    torch.float32: torch.float32
+    float: torch.float32
+    float32: torch.float32
+    torch.floattensor: torch.float32
+    floating: torch.float32
+
+    torch.double: torch.float64
+    torch.float64: torch.float64
+    double: torch.float64
+    float64: torch.float64
+    torch.doubletensor: torch.float64
+    
+
+    torch.half: torch.float16
+    torch.float16: torch.float16
+    half: torch.float16
+    float16: torch.float16
+    torch.halftensor: torch.float16
+
+    torch.uint8: torch.uint8
+    uint8: torch.uint8
+    torch.bytetensor: torch.uint8
+    bytetensor: torch.uint8
+
+
+    torch.int8: torch.int8
+    int8: torch.int8
+    torch.chartensor: torch.int8
+
+
+
+    torch.int16: torch.int16
+    torch.short: torch.int16
+    int16: torch.int16
+    short: torch.int16
+    torch.shorttensor: torch.int16
+
+    torch.int: torch.int32
+    torch.int32: torch.int32
+    int32: torch.int32
+    torch.inttensor: torch.int32
+
+    torch.qint8: torch.int8
+    torch.qint16: torch.int16
+    torch.qint32: torch.int32 
+
+    torch.quint8: torch.int8
+    torch.quint16: torch.int16
+    torch.quint32: torch.int32
+
+    int: int
+    ints: int
+    integer: int
+    integers: int
+    number: int
+    python:int: int
+    python:integer: int
+    dimension: int
+    
+
+    torch.long: torch.int64
+    torch.int64: torch.int64
+    int64: torch.int64
+    long: torch.int64
+    torch.longtensor: torch.int64
+    longtensor: torch.int64
+
+    bool: torch.bool
+    boolean: torch.bool
+    torch.bool: torch.bool
+    torch.booltensor: torch.bool
+    booltensor: torch.bool
+
+    dtype: torch.dtype
+    torch.dtype: torch.dtype
+
+    str: string
+    string: string
+
+    scalar: scalar
+
+
+tensor_t_map:
+    tensor: torch.tensor
+    tensors: torch.tensor
+    sparsetensor: SparseTensor
+    torch.tensor: torch.tensor
+
+
+plural_map:
+    ints: int
+    python:ints: int
+    python:integers: int
+    dimensions: int
+    numeric: numeric
+    strings: string
+    shape: shape # 1d
+    size: shape
+    torch.size: shape
+
+
+
+    # torch.device: torch.device
+    # device: torch.device
+    # devices: torch.device
+    # layout: torch.layout
+    # torch.layout: torch.layout
+    # timedelta: timedelta
+
+    function: callable
+    callable: callable
+
+    # module: nn.Module
+    # nn.module: nn.Module
+    # modules: nn.Module
+    # nn.Module: nn.Module
+    
+    # model: model
+    # models: model
+
+    deprecated: deprecated
+structure:
+    dictionary: dict
+    dict: dict
+    list: list
+    tuple: tuple
+    iterable: list
+    sequence: sequence
+    array_like: list
+    

@@ -1,0 +1,33 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: when True, will use ceil instead of floor to compute the output shape
+    sig_dtype: bool
+  count_include_pad:
+    default: 'True'
+    descp: when True, will include the zero-padding in the averaging calculation
+    sig_dtype: bool
+  kernel_size:
+    descp: the size of the window
+    sig_dtype: Union[T,Tuple[T]]
+  padding:
+    default: '0'
+    descp: implicit zero padding to be added on both sides
+    sig_dtype: Union[T,Tuple[T]]
+  stride:
+    default: None
+    descp: the stride of the window. Default value is `kernel_size`
+    sig_dtype: Union[T,Tuple[T]]
+inputs:
+  optional:
+  - stride
+  - padding
+  - ceil_mode
+  - count_include_pad
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.AvgPool1d.html#torch.nn.AvgPool1d#torch.nn.AvgPool1d
+package: torch
+target: AvgPool1d
+title: torch.nn.AvgPool1d
+version: 1.6.0

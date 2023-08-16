@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.nn.batch_normalization
+constraints:
+  mean:
+    descp: A mean Tensor.
+  name:
+    default: None
+    descp: A name for this operation (optional).
+  offset:
+    descp: An offset Tensor, often denoted \(\beta\) in equations, or None. If present,
+      will be added to the normalized tensor.
+  scale:
+    descp: A scale Tensor, often denoted \(\gamma\) in equations, or None. If present,
+      the scale is applied to the normalized tensor.
+  variance:
+    descp: A variance Tensor.
+  variance_epsilon:
+    descp: A small float number to avoid dividing by 0.
+  x:
+    descp: Input Tensor of arbitrary dimensionality.
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - mean
+  - variance
+  - offset
+  - scale
+  - variance_epsilon
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/nn/batch_normalization
+outputs:
+- the normalized, scaled, offset tensor.
+package: tensorflow
+target: batch_normalization
+title: tf.nn.batch_normalization
+version: 2.3.0

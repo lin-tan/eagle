@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: A Tensor of type string. vector of strings to compute fingerprints on.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SdcaFprint
+outputs:
+- A Tensor of type int64.
+package: tensorflow
+target: SdcaFprint
+title: tf.raw_ops.SdcaFprint
+version: 2.3.0

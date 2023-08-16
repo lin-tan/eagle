@@ -1,0 +1,137 @@
+constraints:
+  class_names:
+    default: None
+    descp: list of strings, bool or None, optional (default=None) Names of each of
+      the target classes in ascending numerical order. Only relevant for classification
+      and not supported for multi-output. If ``True``, shows a symbolic representation
+      of the class name.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  decision_tree:
+    descp: decision tree classifier The decision tree to be exported to GraphViz.
+  feature_names:
+    default: None
+    descp: list of strings, optional (default=None) Names of each of the features.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  filled:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, paint nodes to indicate
+      majority class for classification, extremity of values for regression, or purity
+      of node for multi-output.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  impurity:
+    default: 'True'
+    descp: bool, optional (default=True) When set to ``True``, show the impurity at
+      each node.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  label:
+    default: all
+    descp: '{''all'', ''root'', ''none''}, optional (default=''all'') Whether to show
+      informative labels for impurity, etc. Options include ''all'' to show at every
+      node, ''root'' to show only at the top root node, or ''none'' to not show at
+      any node.'
+    dtype:
+    - string
+  leaves_parallel:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, draw all leaf nodes
+      at the bottom of the tree.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  max_depth:
+    default: None
+    descp: int, optional (default=None) The maximum depth of the representation. If
+      None, the tree is fully generated.
+    dtype:
+    - int
+  node_ids:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, show the ID number
+      on each node.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  out_file:
+    default: None
+    descp: file object or string, optional (default=None) Handle or name of the output
+      file. If ``None``, the result is returned as a string.
+  precision:
+    default: '3'
+    descp: int, optional (default=3) Number of digits of precision for floating point
+      in the values of impurity, threshold and value attributes of each node.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  proportion:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, change the display
+      of 'values' and/or 'samples' to be proportions and percentages respectively.
+    dtype:
+    - boolean
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,1]'
+  rotate:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, orient tree left to
+      right rather than top-down.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  rounded:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``True``, draw node boxes with
+      rounded corners and use Helvetica fonts instead of Times-Roman.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  special_characters:
+    default: 'False'
+    descp: bool, optional (default=False) When set to ``False``, ignore special characters
+      for PostScript compatibility.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - out_file
+  - max_depth
+  - feature_names
+  - class_names
+  - label
+  - filled
+  - leaves_parallel
+  - impurity
+  - node_ids
+  - proportion
+  - rotate
+  - rounded
+  - special_characters
+  - precision
+  required:
+  - decision_tree
+link: ''
+package: scikit-learn
+target: export_graphviz
+title: sklearn.tree.export_graphviz
+version: 0.24.X

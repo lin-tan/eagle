@@ -1,0 +1,21 @@
+constraints:
+  elem_type:
+    descp: A tf.DType.
+  handle:
+    descp: A Tensor of type mutable string.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - elem_type
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StackPop
+outputs:
+- A Tensor of type elem_type.
+package: tensorflow
+target: StackPop
+title: tf.raw_ops.StackPop
+version: 2.3.0

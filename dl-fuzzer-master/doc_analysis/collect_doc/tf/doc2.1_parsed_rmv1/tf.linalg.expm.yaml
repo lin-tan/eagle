@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.linalg.expm
+constraints:
+  input:
+    descp: A `Tensor`. Must be `float16`, `float32`, `float64`, `complex64`, or`complex128`
+      with shape `[..., M, M]`.
+  name:
+    default: None
+    descp: A name to give this `Op` (optional).
+exceptions:
+- ValueError: An unsupported type is provided as input.
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/expm
+outputs: the matrix exponential of the input.
+package: tensorflow
+target: expm
+title: tf.linalg.expm
+version: 2.1.0

@@ -1,0 +1,84 @@
+constraints:
+  atol:
+    default: 1e-05
+    descp: absolute tolerance
+    doc_dtype:
+    - float
+    sig_dtype: float
+  check_grad_dtypes:
+    default: 'False'
+    descp: ''
+    sig_dtype: bool
+  check_sparse_nnz:
+    default: 'False'
+    descp: if True, gradcheck allows for SparseTensor input, and for any SparseTensor
+      at input, gradcheck will perform check at nnz positions only.
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+  check_undefined_grad:
+    default: 'True'
+    descp: if True, check if undefined output grads are supported and treated as zeros
+    doc_dtype:
+    - bool
+    - options
+    sig_dtype: bool
+  eps:
+    default: 1e-06
+    descp: perturbation for finite differences
+    doc_dtype:
+    - float
+    sig_dtype: float
+  func:
+    descp: a Python function that takes Tensor inputs and returns a Tensor or a tuple
+      of Tensors
+    doc_dtype:
+    - function
+    sig_dtype: Callable[...,Union[torch.Tensor,Sequence[torch.Tensor]]]
+  inputs:
+    descp: inputs to the function
+    doc_dtype:
+    - tuple of Tensor
+    - Tensor
+    sig_dtype: Union[torch.Tensor,Sequence[torch.Tensor]]
+  nondet_tol:
+    default: '0.0'
+    descp: tolerance for non-determinism. When running identical inputs through the
+      differentiation, the results must either match exactly (default, 0.0) or be
+      within this tolerance.
+    doc_dtype:
+    - float
+    sig_dtype: float
+  raise_exception:
+    default: 'True'
+    descp: indicating whether to raise an exception if the check fails. The exception
+      gives more information about the exact nature of the failure. This is helpful
+      when debugging gradchecks.
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+  rtol:
+    default: '0.001'
+    descp: relative tolerance
+    doc_dtype:
+    - float
+    sig_dtype: float
+inputs:
+  optional:
+  - eps
+  - atol
+  - rtol
+  - raise_exception
+  - check_sparse_nnz
+  - nondet_tol
+  - check_undefined_grad
+  - check_grad_dtypes
+  required:
+  - func
+  - inputs
+link: https://pytorch.org/docs/1.7.0/autograd.html#torch.autograd.gradcheck
+package: torch
+ret_type: bool
+target: gradcheck
+title: torch.autograd.gradcheck
+version: 1.7.0

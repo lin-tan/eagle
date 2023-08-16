@@ -1,0 +1,50 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A tensor of
+      indices into the first dimension of ref.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  ref:
+    descp: 'A mutable Tensor. Must be one of the following types: half, bfloat16,
+      float32, float64, int32, int64. Should be from a Variable node.'
+    tensor_t:
+    - tf.tensor
+  updates:
+    descp: A Tensor. Must have the same type as ref. A tensor of updated values to
+      reduce into ref.
+    dtype:
+    - dtype:&ref
+    tensor_t:
+    - tf.tensor
+  use_locking:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If True, the update will be protected
+      by a lock; otherwise the behavior is undefined, but may exhibit less contention.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - use_locking
+  - name
+  required:
+  - ref
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ScatterMin
+outputs:
+- A mutable Tensor. Has the same type as ref.
+package: tensorflow
+target: ScatterMin
+title: tf.raw_ops.ScatterMin
+version: 2.3.0

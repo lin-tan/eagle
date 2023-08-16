@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A vector (1-D Tensor) of strings (optional), the names of the serialized protos in the batch.",None,prim_dtype,dtype(tf.string),,1
+,"A vector (1-D Tensor) of strings (optional), the names of the serialized protos in the batch.",None,nonprim_dtype,"tensor_t(tf.tensor), structure(list)",,1
+,"A vector (1-D Tensor) of strings (optional), the names of the serialized protos in the batch.",None,shape,ndim(1),,1

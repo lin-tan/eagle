@@ -1,0 +1,37 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  writer:
+    default: None
+    descp: The `tf.summary.SummaryWriter` resource to flush. The thread default will
+      be used if this parameter is None. Otherwise a `tf.no_op` is returned.
+inputs:
+  optional:
+  - writer
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/summary/flush
+outputs: The created `tf.Operation`.
+package: tensorflow
+target: flush
+title: tf.summary.flush
+version: 2.1.0

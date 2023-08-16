@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"shape for randomly generated keep/drop flags, must be broadcastable to the shape of `x`",None,prim_dtype,dtype(int),,1
+,"shape for randomly generated keep/drop flags, must be broadcastable to the shape of `x`",None,shape,ndim(1),,1
+,"shape for randomly generated keep/drop flags, must be broadcastable to the shape of `x`",None,validvalue,"range([0,inf))",,1

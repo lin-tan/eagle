@@ -1,0 +1,20 @@
+constraints:
+  input:
+    descp: the tensor to compute the multivariate log-gamma function
+    doc_dtype:
+    - Tensor
+  p:
+    descp: the number of dimensions
+    doc_dtype:
+    - python:int
+inputs:
+  optional: []
+  required:
+  - input
+  - p
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.mvlgamma
+package: torch
+ret_type: Tensor
+target: mvlgamma
+title: torch.mvlgamma
+version: 1.4.0

@@ -1,0 +1,82 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  clip:
+    default: _Null
+    descp: Whether to clip out-of-boundary boxes.
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to clip PARAM of boundary boxes
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: Input data.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  offsets:
+    default: _Null
+    descp: Priorbox center offsets, y and x respectively
+    doc_dtype: tuple of <float>, optional, default=[0.5,0.5]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Priorbox center offsets y and x respectively
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  ratios:
+    default: _Null
+    descp: List of aspect ratios of generated MultiBoxPriores.
+    doc_dtype: tuple of <float>, optional, default=[1]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - D_STRUCTURE of aspect ratios of generated MultiBoxPriores
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  sizes:
+    default: _Null
+    descp: List of sizes of generated MultiBoxPriores.
+    doc_dtype: tuple of <float>, optional, default=[1]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - D_STRUCTURE of sizes of generated MultiBoxPriores
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+  steps:
+    default: _Null
+    descp: Priorbox step across y and x, -1 for auto calculation.
+    doc_dtype: tuple of <float>, optional, default=[-1,-1]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Priorbox step across y and x CONSTANT_NUM for auto calculation
+    normalized_docdtype: D_STRUCTURE of REXPR optional default BSTR
+inputs:
+  optional:
+  - data
+  - sizes
+  - ratios
+  - clip
+  - steps
+  - offsets
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.MultiBoxPrior
+package: mxnet
+target: MultiBoxPrior
+title: mxnet.contrib.ndarray.MultiBoxPrior
+version: 1.6.0

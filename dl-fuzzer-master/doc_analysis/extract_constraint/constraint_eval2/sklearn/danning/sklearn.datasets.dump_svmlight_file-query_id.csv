@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array-like of shape (n_samples,) Array containing pairwise preference constraints (qid in svmlight format).",None,prim_dtype,dtype(int),1,1
+,"array-like of shape (n_samples,) Array containing pairwise preference constraints (qid in svmlight format).",None,shape,"shape([n_samples]), ndim(1)",1,1
+,"array-like of shape (n_samples,) Array containing pairwise preference constraints (qid in svmlight format).",None,validvalue,"range([0,inf))",1,1

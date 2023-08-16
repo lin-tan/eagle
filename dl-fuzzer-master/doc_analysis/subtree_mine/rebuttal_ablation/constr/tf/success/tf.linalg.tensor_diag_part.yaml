@@ -1,0 +1,64 @@
+aliases:
+- tf.compat.v1.diag_part
+- tf.compat.v1.linalg.tensor_diag_part
+constraints:
+  input:
+    descp: 'A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`,
+      `float64`, `int32`, `int64`, `complex64`, `complex128`. Rank k tensor where
+      k is even and not zero.'
+    dtype:
+    - int
+    - numeric
+    - tf.bfloat16
+    - tf.bool
+    - tf.complex128
+    - tf.complex64
+    - tf.dtype
+    - tf.float16
+    - tf.float32
+    - tf.float64
+    - tf.int32
+    - tf.int64
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/tensor_diag_part
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: tensor_diag_part
+title: tf.linalg.tensor_diag_part
+version: 2.1.0

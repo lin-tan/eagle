@@ -1,0 +1,12 @@
+constraints:
+  variable_creator:
+    descp: the passed creator
+inputs:
+  optional: []
+  required:
+  - variable_creator
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/variable_creator_scope
+package: tensorflow
+target: variable_creator_scope
+title: tf.variable_creator_scope
+version: 2.3.0

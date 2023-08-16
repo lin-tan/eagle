@@ -1,0 +1,7 @@
+constraints:
+  file_format:
+    default: None
+    descp: Optional file format override. If omitted, the format to use is determined
+      from the filename extension. If a file object was used instead of a filename,
+      this parameter should always be used.
+title: tf.keras.preprocessing.image.save_img

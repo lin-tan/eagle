@@ -1,0 +1,32 @@
+constraints:
+  input_dataset:
+    descp: A Tensor of type variant.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  other_arguments:
+    descp: A list of Tensor objects. A list of tensors, typically values that were
+      captured when building a closure for predicate.
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+  predicate:
+    descp: A function decorated with @Defun. A function returning a scalar boolean.
+inputs:
+  optional:
+  - name
+  required:
+  - input_dataset
+  - other_arguments
+  - predicate
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalTakeWhileDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalTakeWhileDataset
+title: tf.raw_ops.ExperimentalTakeWhileDataset
+version: 2.2.0

@@ -1,0 +1,13 @@
+constraints:
+  mode:
+    default: _Null
+    descp: Specify the dimension along which to compute L2 norm.
+    doc_dtype:
+    - '{''channel'', ''instance'', ''spatial''}'
+    - optional
+    - default='instance'
+    enum:
+    - channel
+    - instance
+    - spatial
+title: mxnet.ndarray.L2Normalization

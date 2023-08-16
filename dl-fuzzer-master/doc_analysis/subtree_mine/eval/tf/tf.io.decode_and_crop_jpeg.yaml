@@ -1,0 +1,10 @@
+constraints:
+  try_recover_truncated:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. If true try to recover an image
+      from truncated input.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+title: tf.io.decode_and_crop_jpeg

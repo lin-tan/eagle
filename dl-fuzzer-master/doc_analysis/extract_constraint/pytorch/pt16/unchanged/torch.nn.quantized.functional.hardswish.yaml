@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: quantized input
+  scale:
+    descp: quantization scale of the output tensor
+  zero_point:
+    descp: quantization zero point of the output tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - scale
+  - zero_point
+link: https://pytorch.org/docs/1.6.0/quantization.html#torch.nn.quantized.functional.hardswish
+package: torch
+target: hardswish
+title: torch.nn.quantized.functional.hardswish
+version: 1.6.0

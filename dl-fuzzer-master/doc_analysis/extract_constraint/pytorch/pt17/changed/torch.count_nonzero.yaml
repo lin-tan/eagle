@@ -1,0 +1,30 @@
+constraints:
+  dim:
+    default: None
+    descp: Dim or tuple of dims along which to count non-zeros.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - tuple(int)
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional:
+  - dim
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.count_nonzero.html#torch.count_nonzero#torch.count_nonzero
+package: torch
+ret_type: Tensor
+target: count_nonzero
+title: torch.count_nonzero
+version: 1.7.0

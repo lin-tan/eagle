@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.distribute.experimental.CollectiveHints
+constraints:
+  bytes_per_pack:
+    default: '0'
+    descp: A non-negative integer. Breaks collective operations into packs of certain
+      size. If it's zero, the value is determined automatically. This only applies
+      to all-reduce with MultiWorkerMirroredStrategy currently.
+exceptions:
+- ValueError: When arguments have invalid value.
+inputs:
+  optional:
+  - bytes_per_pack
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/distribute/experimental/CollectiveHints
+package: tensorflow
+target: CollectiveHints
+title: tf.distribute.experimental.CollectiveHints
+version: 2.2.0

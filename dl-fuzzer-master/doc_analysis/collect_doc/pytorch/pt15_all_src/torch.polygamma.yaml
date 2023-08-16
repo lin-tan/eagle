@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  n:
+    descp: the order of the polygamma function
+    doc_dtype:
+    - int
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - n
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.polygamma
+package: torch
+ret_type: Tensor
+target: polygamma
+title: torch.polygamma
+version: 1.5.0

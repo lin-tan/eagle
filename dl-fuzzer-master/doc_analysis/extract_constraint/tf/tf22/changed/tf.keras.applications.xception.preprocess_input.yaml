@@ -1,0 +1,38 @@
+aliases:
+- tf.compat.v1.keras.applications.xception.preprocess_input
+constraints:
+  data_format:
+    default: None
+    descp: Optional data format of the image tensor/array. Defaults to None, in which
+      case the global setting tf.keras.backend.image_data_format() is used (unless
+      you changed it, it defaults to "channels_last").
+    dtype:
+    - numeric
+    tensor_t:
+    - tf.tensor
+  x:
+    descp: A floating point numpy.array or a tf.Tensor, 3D or 4D with 3 color channels,
+      with values in the range [0, 255]. The preprocessed data are written over the
+      input data if the data types are compatible. To avoid this behaviour, numpy.copy(x)
+      can be used.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    range:
+    - '[0,255]'
+exceptions:
+- ValueError: In case of unknown data_format argument.
+inputs:
+  optional:
+  - data_format
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/applications/xception/preprocess_input
+outputs:
+- Preprocessed numpy.array or a tf.Tensor with type float32. The inputs pixel values
+  are scaled between -1 and 1, sample-wise.
+package: tensorflow
+target: preprocess_input
+title: tf.keras.applications.xception.preprocess_input
+version: 2.2.0

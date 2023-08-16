@@ -1,0 +1,14 @@
+sklearn.metrics.pairwise.paired_manhattan_distances = paired_manhattan_distances(X, Y)
+    Compute the L1 distances between the vectors in X and Y.
+    
+    Read more in the :ref:`User Guide <metrics>`.
+    
+    Parameters
+    ----------
+    X : array-like, shape (n_samples, n_features)
+    
+    Y : array-like, shape (n_samples, n_features)
+    
+    Returns
+    -------
+    distances : ndarray (n_samples, )

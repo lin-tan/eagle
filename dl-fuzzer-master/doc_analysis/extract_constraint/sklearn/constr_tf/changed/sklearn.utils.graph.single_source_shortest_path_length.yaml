@@ -1,0 +1,23 @@
+constraints:
+  cutoff:
+    default: None
+    descp: ''
+  graph:
+    descp: 'sparse matrix or 2D array (preferably LIL matrix) Adjacency matrix of
+      the graph source : integer Starting node for path cutoff : integer, optional
+      Depth to stop the search - only paths of length <= cutoff are returned.'
+    ndim:
+    - '2'
+  source:
+    descp: ''
+inputs:
+  optional:
+  - cutoff
+  required:
+  - graph
+  - source
+link: ''
+package: scikit-learn
+target: single_source_shortest_path_length
+title: sklearn.utils.graph.single_source_shortest_path_length
+version: 0.24.X

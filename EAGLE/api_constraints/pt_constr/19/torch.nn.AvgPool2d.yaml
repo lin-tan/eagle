@@ -1,0 +1,49 @@
+constraints:
+  ceil_mode:
+    default: 'False'
+    descp: when True, will use ceil instead of floor to compute the output shape
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  count_include_pad:
+    default: 'True'
+    descp: when True, will include the zero-padding in the averaging calculation
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  kernel_size:
+    dtype:
+      - int
+    ndim:
+      - '0'
+      - '1'
+    range:
+      - '[0,100]'
+    shape:
+      - '[2]'
+    structure:
+      - list(int)
+      - tuple(int)
+  padding:
+    default: '0'
+    descp: implicit zero padding to be added on both sides
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+      - '[0,100]'
+inputs:
+  optional:
+  - padding
+  - ceil_mode
+  - count_include_pad
+  required:
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.AvgPool2d
+package: torch
+target: AvgPool2d
+title: torch.nn.AvgPool2d
+version: 1.9.0

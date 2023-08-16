@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"(Optional.) A prefix that will be prepended to the names in`graph_def`. Note that this does not apply to imported function names. Defaults to `""import""`.",None,prim_dtype,dtype(tf.string),,1
+,"(Optional.) A prefix that will be prepended to the names in`graph_def`. Note that this does not apply to imported function names. Defaults to `""import""`.",None,shape,ndim(0),,1

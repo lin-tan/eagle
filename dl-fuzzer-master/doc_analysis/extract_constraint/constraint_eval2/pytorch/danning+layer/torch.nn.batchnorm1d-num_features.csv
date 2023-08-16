@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"C  from an expected input of size (N, C, L)  or L  from input of size (N, L) ",,shape,"shape([n,c,l], [n,l]), ndim(2, 3)",0,1
+"","","",prim_dtype,int,1,0
+"","","",shape,0D,1,0
+"","","",validvalue,positive,1,0

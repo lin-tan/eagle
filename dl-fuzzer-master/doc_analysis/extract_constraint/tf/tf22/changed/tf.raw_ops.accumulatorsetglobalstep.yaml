@@ -1,0 +1,31 @@
+constraints:
+  handle:
+    descp: A Tensor of type mutable string. The handle to an accumulator.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  new_global_step:
+    descp: A Tensor of type int64. The new global_step value to set.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - new_global_step
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/AccumulatorSetGlobalStep
+outputs:
+- The created Operation.
+package: tensorflow
+target: AccumulatorSetGlobalStep
+title: tf.raw_ops.AccumulatorSetGlobalStep
+version: 2.2.0

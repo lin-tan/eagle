@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"str or int, 1 by default The class to report if ``average='binary'`` and the data is binary. If the data are multiclass or multilabel, this will be ignored; setting ``labels=[pos_label]`` and ``average != 'binary'`` will report scores for that label only.",1,prim_dtype,"dtype(int, string)",,1
+,"str or int, 1 by default The class to report if ``average='binary'`` and the data is binary. If the data are multiclass or multilabel, this will be ignored; setting ``labels=[pos_label]`` and ``average != 'binary'`` will report scores for that label only.",1,shape,ndim(0),,1

@@ -1,0 +1,51 @@
+constraints:
+  X:
+    descp: ndarray of shape (n_samples_1, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_1,n_features]'
+    structure:
+    - ndarray
+  Y:
+    default: None
+    descp: ndarray of shape (n_samples_2, n_features)
+    ndim:
+    - '2'
+    shape:
+    - '[n_samples_2,n_features]'
+    structure:
+    - ndarray
+  coef0:
+    default: '1'
+    descp: float, default 1
+    dtype:
+    - float
+    - int
+    ndim:
+    - '0'
+  degree:
+    default: '3'
+    descp: int, default 3
+    dtype:
+    - int
+    ndim:
+    - '0'
+  gamma:
+    default: None
+    descp: float, default None if None, defaults to 1.0 / n_features
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Y
+  - degree
+  - gamma
+  - coef0
+  required:
+  - X
+link: ''
+package: sklearn
+target: polynomial_kernel
+title: sklearn.metrics.pairwise.polynomial_kernel
+version: 0.24.2

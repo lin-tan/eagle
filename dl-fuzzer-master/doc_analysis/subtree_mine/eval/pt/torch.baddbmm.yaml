@@ -1,0 +1,11 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: multiplier for batch1  mathbin{@} batch2  ( alpha )
+    doc_dtype:
+    - Number
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: torch.baddbmm

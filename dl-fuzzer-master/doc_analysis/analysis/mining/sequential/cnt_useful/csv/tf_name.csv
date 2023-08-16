@@ -1,0 +1,223 @@
+idx,freq,sequence,len,cat
+0,544,['name'],1,dtype
+1,241,['x'],1,not useful
+2,151,['input'],1,not useful
+3,98,['axis'],1,dtype+shape
+4,91,['data'],1,not useful
+5,83,['num'],1,dtype+validvalue
+6,80,['dtype'],1,dtype
+7,73,['y'],1,not useful
+8,72,['format'],1,not useful
+9,65,['size'],1,dtype
+10,64,"['data', 'format']",2,not useful
+11,61,['shape'],1,dtype+ds+validvalue
+12,57,['padding'],1,not useful
+13,53,['value'],1,not useful
+14,51,['seed'],1,not useful
+15,48,['tensor'],1,ds
+16,47,['strides'],1,dtype+validvalue
+17,43,['max'],1,not useful
+18,42,['kwargs'],1,not useful
+19,36,['inputs'],1,not useful
+20,31,['type'],1,dtype
+21,29,['image'],1,dtype
+22,28,['keepdims'],1,not useful
+23,28,['output'],1,not useful
+24,25,['range'],1,not useful
+25,25,['kernel'],1,not useful
+26,24,['message'],1,not useful
+27,24,['true'],1,not useful
+28,23,['bias'],1,not useful
+29,23,['initializer'],1,complex
+30,23,['sp'],1,not useful
+31,22,['indices'],1,dtype+shape
+32,21,['features'],1,not useful
+33,20,['filters'],1,not useful
+34,20,['batch'],1,not useful
+35,20,['ids'],1,dtype+shape
+36,20,['default'],1,not useful
+37,20,['fn'],1,dtype
+38,20,['regularizer'],1,complex
+39,19,['path'],1,dtype
+40,19,['key'],1,not useful
+41,19,['values'],1,not useful
+42,19,['length'],1,dtype+validvalue
+43,18,['min'],1,not useful
+44,18,['rate'],1,not useful
+45,18,['b'],1,not useful
+46,17,['step'],1,not useful
+47,16,"['segment', 'ids']",2,dtype+shape
+48,16,['mode'],1,complex
+49,16,"['sp', 'input']",2,not useful
+50,15,['dilations'],1,not useful
+51,15,['dir'],1,complex
+52,15,['constraint'],1,not useful
+53,15,['threshold'],1,not useful
+54,15,['summarize'],1,not useful
+55,14,['label'],1,not useful
+56,14,['target'],1,not useful
+57,14,['logits'],1,not useful
+58,14,['device'],1,not useful
+59,13,['images'],1,dtype
+60,13,['func'],1,dtype
+61,13,['width'],1,dtype
+62,12,"['input', 'tensor']",2,ds
+63,12,['axes'],1,dtype+validvalue
+64,12,['use'],1,not useful
+65,12,['mean'],1,not useful
+66,12,"['dilation', 'rate']",2,not useful
+67,12,['pred'],1,not useful
+68,12,['labels'],1,not useful
+69,12,['encoding'],1,not useful
+70,11,"['num', 'segments']",2,dtype+validvalue
+71,11,['lower'],1,not useful
+72,11,"['batch', 'size']",2,dtype+validvalue
+73,11,['file'],1,not useful
+74,11,['classes'],1,not useful
+75,11,['steps'],1,not useful
+76,11,['run'],1,not useful
+77,11,['validate'],1,not useful
+78,11,['buckets'],1,not useful
+79,11,['ssparse'],1,not useful
+80,10,"['y', 'pred']",2,not useful
+81,10,"['num', 'buckets']",2,dtype+validvalue
+82,10,['mask'],1,not useful
+83,10,"['default', 'value']",2,not useful
+84,10,['char'],1,not useful
+85,10,['k'],1,not useful
+86,10,['sampled'],1,not useful
+87,10,['pool'],1,not useful
+88,10,['filter'],1,not useful
+89,10,"['run', 'every']",2,not useful
+90,10,['norm'],1,not useful
+91,10,['contents'],1,not useful
+92,10,['args'],1,not useful
+93,10,['window'],1,not useful
+94,9,['weights'],1,not useful
+95,9,"['y', 'true']",2,not useful
+96,9,['row'],1,not useful
+97,9,"['narrow', 'range']",2,not useful
+98,9,['hash'],1,not useful
+99,9,['rhs'],1,not useful
+100,9,['ksize'],1,not useful
+101,9,['depthwise'],1,not useful
+102,9,['height'],1,dtype
+103,9,['scale'],1,not useful
+104,9,['boxes'],1,not useful
+105,8,"['num', 'true']",2,dtype+validvalue
+106,8,['pattern'],1,not useful
+107,8,['column'],1,not useful
+108,8,['names'],1,dtype+shape
+109,8,['columns'],1,not useful
+110,8,"['max', 'size']",2,dtype+validvalue
+111,8,['index'],1,dtype
+112,8,['beta'],1,not useful
+113,8,"['pool', 'size']",2,not useful
+114,8,['adjoint'],1,not useful
+115,8,['frame'],1,not useful
+116,8,['SOME_DTYPE'],1,not useful
+117,8,['pointwise'],1,not useful
+118,8,['pad'],1,not useful
+119,8,['factor'],1,not useful
+120,8,['model'],1,complex
+121,8,['elems'],1,not useful
+122,7,"['num', 'sampled']",2,dtype+validvalue
+123,7,"['num', 'bits']",2,dtype+validvalue
+124,7,['upper'],1,not useful
+125,7,['errors'],1,not useful
+126,7,['parallel'],1,not useful
+127,7,['shuffle'],1,not useful
+128,7,"['output', 'shape']",2,not useful
+129,7,['start'],1,not useful
+130,7,['alpha'],1,not useful
+131,7,"['kernel', 'size']",2,dtype+validvalue
+132,7,['ckpt'],1,not useful
+133,7,"['channel', 'axis']",2,dtype+shape
+134,7,['estimator'],1,not useful
+135,7,['gamma'],1,not useful
+136,7,['method'],1,dtype
+137,7,['vocabulary'],1,not useful
+138,7,['sequence'],1,not useful
+139,7,['config'],1,not useful
+140,7,"['custom', 'objects']",2,not useful
+141,7,['gradients'],1,not useful
+142,6,"['buffer', 'size']",2,dtype+validvalue
+143,6,['op'],1,complex
+144,6,['SOME_STRUCTURE'],1,ds
+145,6,['block'],1,not useful
+146,6,['filename'],1,not useful
+147,6,"['max', 'output', 'size']",3,dtype+validvalue
+148,6,['oov'],1,not useful
+149,6,['stddev'],1,not useful
+150,6,['activation'],1,not useful
+151,6,['delta'],1,not useful
+152,6,"['true', 'classes']",2,not useful
+153,6,['fill'],1,not useful
+154,6,['order'],1,not useful
+155,6,['unique'],1,not useful
+156,6,['bucket'],1,not useful
+157,6,['n'],1,not useful
+158,6,['split'],1,not useful
+159,6,['text'],1,dtype
+160,6,['secs'],1,not useful
+161,6,"['validate', 'indices']",2,not useful
+162,6,['epsilon'],1,not useful
+163,6,['ratio'],1,not useful
+164,6,['expand'],1,not useful
+165,6,['feature'],1,not useful
+166,6,['channels'],1,not useful
+167,6,['interpolation'],1,not useful
+168,6,['serialized'],1,not useful
+169,6,['experimental'],1,not useful
+170,6,['sizes'],1,dtype+validvalue
+171,6,['variance'],1,not useful
+172,6,"['replacement', 'char']",2,not useful
+173,6,['iterations'],1,not useful
+174,5,"['input', 'encoding']",2,not useful
+175,5,"['num', 'threads']",2,dtype+validvalue
+176,5,"['num', 'classes']",2,dtype+validvalue
+177,5,"['parallel', 'iterations']",2,not useful
+178,5,"['use', 'bias']",2,not useful
+179,5,"['row', 'axis']",2,dtype+shape
+180,5,['splits'],1,not useful
+181,5,"['max', 'norm']",2,not useful
+182,5,['top'],1,not useful
+183,5,"['bias', 'constraint']",2,not useful
+184,5,"['bias', 'initializer']",2,not useful
+185,5,"['bias', 'regularizer']",2,not useful
+186,5,['depth'],1,not useful
+187,5,['updates'],1,not useful
+188,5,"['activity', 'regularizer']",2,not useful
+189,5,['control'],1,not useful
+190,5,"['col', 'axis']",2,dtype+shape
+191,5,['cval'],1,not useful
+192,5,"['fill', 'mode']",2,not useful
+193,5,['dims'],1,dtype+shape
+194,5,['matrix'],1,not useful
+195,5,"['score', 'threshold']",2,not useful
+196,5,['scores'],1,not useful
+197,5,"['frame', 'step']",2,not useful
+198,5,['eval'],1,not useful
+199,5,['metric'],1,not useful
+200,5,"['run', 'every', 'secs']",3,not useful
+201,5,"['run', 'every', 'steps']",3,not useful
+202,5,"['validate', 'args']",2,not useful
+203,5,['dataset'],1,not useful
+204,5,['trainable'],1,not useful
+205,5,['clip'],1,not useful
+206,5,['shapes'],1,dtype+ds+validvalue
+207,5,['loss'],1,not useful
+208,5,['options'],1,not useful
+209,5,['weight'],1,dtype
+210,5,['l'],1,not useful
+211,5,['img'],1,not useful
+212,5,['end'],1,not useful
+213,5,['perm'],1,not useful
+214,5,['params'],1,not useful
+215,5,['categorical'],1,not useful
+216,5,['offset'],1,not useful
+217,5,['example'],1,not useful
+218,5,['description'],1,not useful
+219,5,"['back', 'prop']",2,not useful
+220,5,"['swap', 'memory']",2,not useful
+221,5,['bytes'],1,not useful

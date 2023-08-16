@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.autograph.trace
+constraints:
+  '*args':
+    descp: Arguments to print to `sys.stdout`.
+    normalized_descp:
+    - Arguments to print to sys stdout
+inputs:
+  optional: []
+  required:
+  - '*args'
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/autograph/trace
+package: tensorflow
+target: trace
+title: tf.autograph.trace
+version: 2.1.0

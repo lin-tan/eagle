@@ -1,0 +1,11 @@
+constraints:
+  momentum:
+    default: '0.1'
+    descp: 'the value used for the running_mean and running_var computation. Can be
+      set to `None` for cumulative moving average (i.e. simple average). Default:
+      0.1'
+    dtype:
+    - torch.float32
+    ndim:
+    - '0'
+title: torch.nn.BatchNorm1d

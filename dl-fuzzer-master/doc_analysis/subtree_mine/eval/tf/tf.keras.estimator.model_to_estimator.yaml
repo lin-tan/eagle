@@ -1,0 +1,11 @@
+constraints:
+  keras_model_path:
+    default: None
+    descp: Path to a compiled Keras model saved on disk, in HDF5 format, which can
+      be generated with the `save()` method of a Keras model. This argument is mutually
+      exclusive with `keras_model`.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.keras.estimator.model_to_estimator

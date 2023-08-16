@@ -1,0 +1,38 @@
+constraints:
+  include_dont_test:
+    default: None
+    descp: boolean, default=False Deprecated, ignored.
+  include_meta_estimators:
+    default: None
+    descp: boolean, default=False Deprecated, ignored.
+  include_other:
+    default: None
+    descp: boolean, default=False Deprecated, ignored.
+  type_filter:
+    default: None
+    descp: string, list of string,  or None, default=None Which kind of estimators
+      should be returned. If None, no filter is applied and all estimators are returned.  Possible
+      values are 'classifier', 'regressor', 'cluster' and 'transformer' to get estimators
+      only of these specific types, or a list of these to get the estimators that
+      fit at least one of the types.
+    dtype:
+    - string
+    enum:
+    - classifier
+    - cluster
+    - regressor
+    - transformer
+    structure:
+    - list
+inputs:
+  optional:
+  - include_meta_estimators
+  - include_other
+  - type_filter
+  - include_dont_test
+  required: []
+link: ''
+package: sklearn
+target: all_estimators
+title: sklearn.utils.all_estimators
+version: 0.24.2

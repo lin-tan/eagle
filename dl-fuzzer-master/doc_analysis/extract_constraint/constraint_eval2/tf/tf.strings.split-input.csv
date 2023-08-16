@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string `Tensor` of rank `N`, the strings to split.  If`rank(input)` is not known statically, then it is assumed to be `1`.",,prim_dtype,dtype(tf.string),,1
+,"A string `Tensor` of rank `N`, the strings to split.  If`rank(input)` is not known statically, then it is assumed to be `1`.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A string `Tensor` of rank `N`, the strings to split.  If`rank(input)` is not known statically, then it is assumed to be `1`.",,shape,ndim(n),,1

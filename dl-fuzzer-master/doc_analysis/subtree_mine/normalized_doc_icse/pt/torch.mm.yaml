@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: the first matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the first matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  mat2:
+    descp: the second matrix to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the second matrix to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - mat2
+link: https://pytorch.org/docs/stable/torch.html#torch.mm
+package: torch
+ret_type: Tensor
+target: mm
+title: torch.mm
+version: 1.5.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor` of shape `[num_classes, dim]`, or a list of `Tensor`objects whose concatenation along dimension 0 has shape [num_classes, dim].  The (possibly-sharded) class embeddings.",,prim_dtype,dtype(numeric),,1
+,"A `Tensor` of shape `[num_classes, dim]`, or a list of `Tensor`objects whose concatenation along dimension 0 has shape [num_classes, dim].  The (possibly-sharded) class embeddings.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list(tf.tensor))",,1
+,"A `Tensor` of shape `[num_classes, dim]`, or a list of `Tensor`objects whose concatenation along dimension 0 has shape [num_classes, dim].  The (possibly-sharded) class embeddings.",,shape,"shape([&num_classes,dim]), ndim(2)",,1

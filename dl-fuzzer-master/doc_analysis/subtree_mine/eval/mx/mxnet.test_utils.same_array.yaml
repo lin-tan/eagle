@@ -1,0 +1,8 @@
+constraints:
+  array1:
+    descp: First NDArray to be checked
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.test_utils.same_array

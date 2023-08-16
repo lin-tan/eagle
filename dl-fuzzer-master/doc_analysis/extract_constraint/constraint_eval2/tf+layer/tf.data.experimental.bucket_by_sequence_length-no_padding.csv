@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"`bool`, indicates whether to pad the batch features (features need to be either of type `tf.SparseTensor` or of same shape).",False,prim_dtype,dtype(tf.bool),,1
+,"`bool`, indicates whether to pad the batch features (features need to be either of type `tf.SparseTensor` or of same shape).",False,nonprim_dtype,tensor_t(SparseTensor),,1
+,"`bool`, indicates whether to pad the batch features (features need to be either of type `tf.SparseTensor` or of same shape).",False,shape,ndim(0),,1

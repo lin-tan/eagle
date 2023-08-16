@@ -1,0 +1,13 @@
+constraints:
+  no_bias:
+    default: _Null
+    descp: Whether to disable bias parameter.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.Convolution

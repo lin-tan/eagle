@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+dict,Dictionary of name to NDArray.,,prim_dtype,dtype(string),1,1
+dict,Dictionary of name to NDArray.,,nonprim_dtype,"structure(dict, dict(dict:string))",0,1
+dict,Dictionary of name to NDArray.,,nonprim_dtype,"structure(dict(string:ndarray))",1,1

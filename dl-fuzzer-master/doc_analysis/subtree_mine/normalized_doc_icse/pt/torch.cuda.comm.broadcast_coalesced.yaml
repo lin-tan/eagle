@@ -1,0 +1,36 @@
+constraints:
+  buffer_size:
+    default: '10485760'
+    descp: maximum size of the buffer used for coalescing
+    doc_dtype: int
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - maximum size of the buffer used for coalescing
+    normalized_docdtype: ONE_WORD D_TYPE
+  devices:
+    descp: an iterable of devices among which to broadcast. Note that it should be
+      like (src, dst1, dst2,  u2026), the first element of which is the source device
+      to broadcast from.
+    doc_dtype: Iterable
+    normalized_descp:
+    - an D_STRUCTURE of devices among which to broadcast
+    - Note that it should be like BSTR the first element of which is the source device
+      to broadcast from
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  tensors:
+    descp: tensors to broadcast.
+    doc_dtype: sequence
+    normalized_descp:
+    - D_STRUCTURE to broadcast
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - buffer_size
+  required:
+  - tensors
+  - devices
+link: https://pytorch.org/docs/stable/cuda.html#torch.cuda.comm.broadcast_coalesced
+package: torch
+target: broadcast_coalesced
+title: torch.cuda.comm.broadcast_coalesced
+version: 1.5.0

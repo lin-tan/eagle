@@ -1,0 +1,14 @@
+[torch.cuda.set_rng_state_all] Inconsistency detected, arg new_state doesn't exist https://pytorch.org/docs/1.6.0/cuda.html#torch.cuda.set_rng_state_all
+[torch.distributed.all_reduce_multigpu] Inconsistency detected, arg list doesn't exist https://pytorch.org/docs/1.6.0/distributed.html#torch.distributed.all_reduce_multigpu
+[torch.add] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.add.html#torch.add#torch.add
+[torch.clamp] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.clamp.html#torch.clamp#torch.clamp
+[torch.clamp] Inconsistency detected, arg value doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.clamp.html#torch.clamp#torch.clamp
+[torch.empty] Inconsistency detected, arg memory_format doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.empty.html#torch.empty#torch.empty
+[torch.lu_solve] Inconsistency detected, arg b doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.lu_solve.html#torch.lu_solve#torch.lu_solve
+[torch.mul] Inconsistency detected, arg {input} doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.mul.html#torch.mul#torch.mul
+[torch.take] Inconsistency detected, arg indices doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.take.html#torch.take#torch.take
+[torch.true_divide] Inconsistency detected, arg out doesn't exist https://pytorch.org/docs/1.6.0/generated/torch.true_divide.html#torch.true_divide#torch.true_divide
+[torch.nn.functional.hardsigmoid] Inconsistency detected, arg inplace doesn't exist https://pytorch.org/docs/1.6.0/nn.functional.html#torch.nn.functional.hardsigmoid
+[torch.nn.functional.embedding_bag] Inconsistency detected, arg last element is the size of the input, or the ending index position of the last bag doesn't exist https://pytorch.org/docs/1.6.0/nn.functional.html#torch.nn.functional.embedding_bag
+[torch.quantization.quantize_dynamic] Inconsistency detected, arg module doesn't exist https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.quantize_dynamic
+[torch.quantization.add_quant_dequant] Inconsistency detected, arg we want to quantize doesn't exist https://pytorch.org/docs/1.6.0/quantization.html#torch.quantization.add_quant_dequant

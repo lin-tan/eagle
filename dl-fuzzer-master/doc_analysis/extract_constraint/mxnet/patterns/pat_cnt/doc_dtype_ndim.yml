@@ -1,0 +1,14 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  default=[\[\(][\d.,\s]+[\]\)]:
+    cnt: 39
+    ndim: 1
+  default[=\s](')*[-\d.e]+(')*:
+    cnt: 1075
+    ndim: 0
+target: ndim

@@ -1,0 +1,79 @@
+constraints:
+  ctx:
+    default: None
+    descp: Device context. Default context is the current default context.
+    doc_dtype: Context, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Device context
+    - Default context is the current default context
+    normalized_docdtype: Context, optional
+  dtype:
+    default: <classnumpy.float32>
+    descp: The data type of the NDArray. The default datatype is np.float32.
+    doc_dtype: str or numpy.dtype, optional
+    normalized_default: DEFAULT REXPR
+    normalized_descp:
+    - The data type of the D_STRUCTURE
+    - The default datatype is D_TYPE
+    normalized_docdtype: D_TYPE, optional
+  infer_range:
+    default: None
+    descp: Infer the stop position from the start, step, repeat, and output tensor
+      size. Deprecated. Only False is supported.
+    doc_dtype: boolean, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Infer the PARAM position from the PARAM, PARAM, PARAM, and output D_STRUCTURE
+      size
+    - ONE_WORD Deprecated
+    - Only CONSTANT_BOOL is supported
+    normalized_docdtype: D_TYPE, optional
+  repeat:
+    default: '1'
+    descp: Number of times to repeat each element. The default repeat count is 1.
+    doc_dtype: int, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of times to repeat each element
+    - The default repeat count is CONSTANT_NUM
+    normalized_docdtype: D_TYPE, optional
+  start:
+    descp: Start of interval. The default start value is 0.
+    doc_dtype: number, optional
+    normalized_descp:
+    - Start of interval
+    - The default start value is CONSTANT_NUM
+    normalized_docdtype: number, optional
+  step:
+    default: '1.0'
+    descp: Spacing between values. The default step size is 1.
+    doc_dtype: number, optional
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Spacing between values
+    - The default step size is CONSTANT_NUM
+    normalized_docdtype: number, optional
+  stop:
+    default: None
+    descp: End of interval.
+    doc_dtype: number
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - End of interval
+    normalized_docdtype: ONE_WORD number
+inputs:
+  optional:
+  - stop
+  - step
+  - repeat
+  - infer_range
+  - ctx
+  - dtype
+  required:
+  - start
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.arange
+package: mxnet
+target: arange
+title: mxnet.ndarray.arange
+version: 1.6.0

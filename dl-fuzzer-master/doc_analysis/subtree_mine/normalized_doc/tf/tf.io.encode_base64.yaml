@@ -1,0 +1,36 @@
+aliases:
+- tf.compat.v1.encode_base64
+- tf.compat.v1.io.encode_base64
+constraints:
+  input:
+    descp: A `Tensor` of type `string`. Strings to be encoded.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - D_TYPE to be encoded
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  pad:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`. Bool whether padding is applied
+      at the ends.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_BOOL
+    - D_TYPE whether padding is applied at the ends
+inputs:
+  optional:
+  - pad
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/encode_base64
+outputs: A `Tensor` of type `string`.
+package: tensorflow
+target: encode_base64
+title: tf.io.encode_base64
+version: 2.1.0

@@ -1,0 +1,6 @@
+constraints:
+  x:
+    descp: Input tensor.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.activations.sigmoid

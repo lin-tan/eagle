@@ -1,0 +1,33 @@
+constraints:
+  dtype:
+    default: None
+    descp: A type for the returned Tensor. Must be float16, float32, float64, int8,
+      uint8, int16, uint16, int32, int64, complex64, complex128, bool or string.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  input:
+    descp: A Tensor.
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/ones_like
+outputs:
+- A Tensor with all elements set to one.
+package: tensorflow
+target: ones_like
+title: tf.ones_like
+version: 2.3.0

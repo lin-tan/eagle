@@ -1,0 +1,35 @@
+sklearn.datasets.make_circles = make_circles(n_samples=100, shuffle=True, noise=None, random_state=None, factor=0.8)
+    Make a large circle containing a smaller circle in 2d.
+    
+    A simple toy dataset to visualize clustering and classification
+    algorithms.
+    
+    Read more in the :ref:`User Guide <sample_generators>`.
+    
+    Parameters
+    ----------
+    n_samples : int, optional (default=100)
+        The total number of points generated. If odd, the inner circle will
+        have one point more than the outer circle.
+    
+    shuffle : bool, optional (default=True)
+        Whether to shuffle the samples.
+    
+    noise : double or None (default=None)
+        Standard deviation of Gaussian noise added to the data.
+    
+    random_state : int, RandomState instance or None (default)
+        Determines random number generation for dataset shuffling and noise.
+        Pass an int for reproducible output across multiple function calls.
+        See :term:`Glossary <random_state>`.
+    
+    factor : 0 < double < 1 (default=.8)
+        Scale factor between inner and outer circle.
+    
+    Returns
+    -------
+    X : array of shape [n_samples, 2]
+        The generated samples.
+    
+    y : array of shape [n_samples]
+        The integer labels (0 or 1) for class membership of each sample.

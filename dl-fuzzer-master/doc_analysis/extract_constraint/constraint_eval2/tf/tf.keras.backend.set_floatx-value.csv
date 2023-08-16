@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"String; 'float16', 'float32', or 'float64'. Example: `python from keras import backend as K K.floatx() >>> 'float32' K.set_floatx('float16') K.floatx() >>> 'float16'`",,prim_dtype,dtype(tf.string),,1
+,"String; 'float16', 'float32', or 'float64'. Example: `python from keras import backend as K K.floatx() >>> 'float32' K.set_floatx('float16') K.floatx() >>> 'float16'`",,shape,ndim(0),,1
+,"String; 'float16', 'float32', or 'float64'. Example: `python from keras import backend as K K.floatx() >>> 'float32' K.set_floatx('float16') K.floatx() >>> 'float16'`",,validvalue,"enum(float16, float32, float64)",,1

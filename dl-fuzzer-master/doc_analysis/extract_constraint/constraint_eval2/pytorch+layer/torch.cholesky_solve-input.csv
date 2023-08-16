@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions",,prim_dtype,dtype(numeric),,1
+Tensor,"input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions",,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,"input matrix b  of size (*, m, k) , where *  is zero or more batch dimensions",,shape,"shape([...,m,k]), ndim(>=2)",,1

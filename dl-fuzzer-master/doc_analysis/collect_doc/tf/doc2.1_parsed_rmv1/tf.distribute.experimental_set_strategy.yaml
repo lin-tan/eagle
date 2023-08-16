@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.distribute.experimental_set_strategy
+constraints:
+  strategy:
+    descp: A `tf.distribute.Strategy` object or None.
+exceptions:
+- RuntimeError: If called inside a `with strategy.scope():`.
+inputs:
+  optional: []
+  required:
+  - strategy
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/distribute/experimental_set_strategy
+package: tensorflow
+target: experimental_set_strategy
+title: tf.distribute.experimental_set_strategy
+version: 2.1.0

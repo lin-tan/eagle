@@ -1,0 +1,45 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    descp: Input data array.
+    doc_dtype: NDArray
+    dtype:
+    - boolean
+    - int
+    - numeric
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+  out:
+    default: None
+    descp: Array to store the result.
+    doc_dtype: NDArray, optional
+    dtype:
+    - boolean
+    - int
+    - numeric
+    - numpy.dtype
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - ndarray
+inputs:
+  optional:
+  - out
+  required:
+  - data
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.shuffle
+package: mxnet
+target: shuffle
+title: mxnet.ndarray.random.shuffle
+version: 1.6.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"{'float16', 'float32', 'float64', 'int32', 'int64', 'uint8'}, optional, default='float32'","DType of the output indices when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices.",_Null,prim_dtype,dtype(numpy.dtype),,1
+"{'float16', 'float32', 'float64', 'int32', 'int64', 'uint8'}, optional, default='float32'","DType of the output indices when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices.",_Null,shape,ndim(0),,1
+"{'float16', 'float32', 'float64', 'int32', 'int64', 'uint8'}, optional, default='float32'","DType of the output indices when ret_typ is ""indices"" or ""both"". An error will be raised if the selected data type cannot precisely represent the indices.",_Null,validvalue,"enum(float16, float32, float64, int32, int64, uint8)",,1

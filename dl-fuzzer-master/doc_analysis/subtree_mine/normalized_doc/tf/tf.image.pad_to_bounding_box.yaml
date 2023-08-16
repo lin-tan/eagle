@@ -1,0 +1,44 @@
+aliases:
+- tf.compat.v1.image.pad_to_bounding_box
+constraints:
+  image:
+    descp: 4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor of
+      shape `[height, width, channels]`.
+    normalized_descp:
+    - CONSTANT_NUM-D D_STRUCTURE of shape BSTR or CONSTANT_NUM-D D_STRUCTURE of shape
+      BSTR
+  offset_height:
+    descp: Number of rows of zeros to add on top.
+    normalized_descp:
+    - Number of rows of zeros to add on top
+  offset_width:
+    descp: Number of columns of zeros to add on the left.
+    normalized_descp:
+    - Number of columns of zeros to add on the left
+  target_height:
+    descp: Height of output image.
+    normalized_descp:
+    - Height of output PARAM
+  target_width:
+    descp: Width of output image.
+    normalized_descp:
+    - Width of output PARAM
+exceptions:
+- ValueError: If the shape of `image` is incompatible with the `offset_*` or`target_*`
+    arguments, or either `offset_height` or `offset_width` is negative.
+inputs:
+  optional: []
+  required:
+  - image
+  - offset_height
+  - offset_width
+  - target_height
+  - target_width
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/image/pad_to_bounding_box
+outputs: If `image` was 4-D, a 4-D float Tensor of shape`[batch, target_height, target_width,
+  channels]`If `image` was 3-D, a 3-D float Tensor of shape`[target_height, target_width,
+  channels]`
+package: tensorflow
+target: pad_to_bounding_box
+title: tf.image.pad_to_bounding_box
+version: 2.1.0

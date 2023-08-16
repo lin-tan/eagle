@@ -1,0 +1,34 @@
+constraints:
+  a:
+    descp: Left tensor to contract
+    doc_dtype: Tensor
+    normalized_descp:
+    - Left D_STRUCTURE to contract
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  b:
+    descp: Right tensor to contract
+    doc_dtype: Tensor
+    normalized_descp:
+    - Right D_STRUCTURE to contract
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dims:
+    default: '2'
+    descp: number of dimensions to contract or explicit lists of dimensions for `a`
+      and `b` respectively
+    doc_dtype: int or tuple of two lists of python:integers
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - number of dimensions to contract or explicit D_STRUCTURE of dimensions for QSTR
+      respectively
+    normalized_docdtype: D_TYPE or D_STRUCTURE of two D_STRUCTURE of python D_TYPE
+inputs:
+  optional:
+  - dims
+  required:
+  - a
+  - b
+link: https://pytorch.org/docs/stable/torch.html#torch.tensordot
+package: torch
+target: tensordot
+title: torch.tensordot
+version: 1.5.0

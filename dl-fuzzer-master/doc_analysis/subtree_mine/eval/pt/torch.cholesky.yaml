@@ -1,0 +1,11 @@
+constraints:
+  out:
+    default: None
+    descp: the output matrix
+    doc_dtype:
+    - Tensor
+    dtype:
+    - numeric
+    tensor_t:
+    - torch.tensor
+title: torch.cholesky

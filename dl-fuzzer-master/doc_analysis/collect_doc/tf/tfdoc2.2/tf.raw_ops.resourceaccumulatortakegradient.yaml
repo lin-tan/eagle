@@ -1,0 +1,28 @@
+constraints:
+  dtype:
+    descp: 'A tf.DType from: tf.float32, tf.float64, tf.int32, tf.uint8, tf.int16,
+      tf.int8, tf.complex64, tf.int64, tf.qint8, tf.quint8, tf.qint32, tf.bfloat16,
+      tf.uint16, tf.complex128, tf.half, tf.uint32, tf.uint64. The data type of accumulated
+      gradients. Needs to correspond to the type of the accumulator.'
+  handle:
+    descp: A Tensor of type resource. The handle to an accumulator.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_required:
+    descp: A Tensor of type int32. Number of gradients required before we return an
+      aggregate.
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+  - num_required
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ResourceAccumulatorTakeGradient
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: ResourceAccumulatorTakeGradient
+title: tf.raw_ops.ResourceAccumulatorTakeGradient
+version: 2.2.0

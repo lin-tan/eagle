@@ -1,0 +1,80 @@
+constraints:
+  example_names:
+    default: None
+    descp: (Optional) A scalar string Tensor, the associated name.
+    dtype:
+    - '&name'
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (Optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&name'
+    - '[1]'
+    - '[2]'
+    - '[n]'
+    - '[optional]'
+    tensor_t:
+    - tf.tensor
+  features:
+    descp: A `dict` mapping feature keys to `FixedLenFeature` or`VarLenFeature` values.
+  name:
+    default: None
+    descp: A name for this operation (optional).
+    dtype:
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  serialized:
+    descp: A scalar string Tensor, a single serialized Example.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: if any feature is invalid.
+inputs:
+  optional:
+  - example_names
+  - name
+  required:
+  - serialized
+  - features
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/parse_single_example
+outputs: A `dict` mapping feature keys to `Tensor` and `SparseTensor` values.
+package: tensorflow
+target: parse_single_example
+title: tf.io.parse_single_example
+version: 2.1.0

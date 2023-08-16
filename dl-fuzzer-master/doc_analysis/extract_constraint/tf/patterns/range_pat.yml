@@ -1,0 +1,120 @@
+append: True
+break: False
+check_dt: False
+direct_map: False
+findall: True
+parse_sent: False
+#save_as_list: True # save as key-value (save only one value)
+target: range
+
+# use this list to split the string when adding into shape_var
+split_word:
+    - ','
+    - '['
+    - ']'
+    - '('
+    - ')'
+    - '+'
+    - '-'
+    - '*'
+    - '/'
+    - '>'
+    - '<'
+    - '='
+    - 'len:'
+    - 'ndim:'
+    - 'max_value:'
+    - 'inf'
+
+
+pat:
+
+    # group1
+    # e.g. in the  range `[0, num_classes)`,
+    # group2: [0, num_classes)
+    # group3: 0, num_classes
+    # values should be in range .. / must be in the range ..
+    'be\s+in\s+(the)*\s*range\s*`*([\[\(]([\w\d\s\.,\(\)\+\-\*/{}]+)?[\]\)])`*' :
+        brackets: True
+        full_range_group: 2
+        range_group: 3
+        replace:
+            # .*? matches in a non-greedy way
+            'rank\((.*?)\)': 'ndim:\1'
+            'len\((.*?)\)': 'len:\1'
+            '\s': ''
+
+    # # group2
+    # 'whose\s+values*\s+(is|are)\s+in\s+the\s+range\s*`*([\[\(]([\w\d\s\.,\(\)\+\-\*/{}]+)?[\]\)])`*':
+    #     brackets: True
+    #     full_range_group: 2
+    #     range_group: 3
+    #     replace:
+    #         '\s': ''
+    
+    'values*\s+in\s+((the)*\s*range\s*)?`*([\[\(]([\w\d\s\.,\(\)\+\-\*/{}]+)?[\]\)])`*' :
+        brackets: True
+        full_range_group: 3
+        range_group: 4
+        replace:
+            # .*? matches in a non-greedy way
+            'rank\((.*?)\)': 'ndim:\1'
+            'len\((.*?)\)': 'len:\1'
+            '\s': ''
+
+    # group3
+    '(\bin\b|within)\s+`*([\[\(]([\w\.]+,\s*[\w\.]+)[\]\)])`*':
+        brackets: True
+        full_range_group: 2
+        range_group: 3
+        replace:
+            # .*? matches in a non-greedy way
+            'rank\((.*?)\)': 'ndim:\1'
+            'len\((.*?)\)': 'len:\1'
+            '\s': '' 
+
+
+    # group4 
+    # ^ non-negative
+    '^(\ba\b|an|the)?\s*(optional)?\s*non[\s-]negative':
+        range: '[0,inf)'
+
+    '^(\ba\b|an|the|optional)?\s*positive':
+        range: '(0,inf)'
+
+
+    # group 5
+    '(tensor|list)\s+of\s+non[\s-]negative':
+        range: '[0,inf)'
+
+    '(tensor|list)\s+of\s+positive':
+        range: '(0,inf)'
+
+
+    # group6
+    '(must|should)\s+be\s+(a\s+)?non[\s-]?negative':
+        range: '[0,inf)'
+                    
+
+    # positive
+    '(must|should)\s+be\s+(a\s+)?positive':
+        range: '(0,inf)'
+                
+
+    
+
+  
+    # group7 
+    # >0 
+    '(`*tensor`*|values*|must\s+be\s+)\s*>\s*0':
+        range: '(0,inf)'
+
+    # >=0
+    '(`*tensor`*|values*|must\s+be\s+)\s*>=\s*0':
+        range: '[0,inf)'
+        
+    # >=1
+    '(`*tensor`*|values*|must\s+be\s+)\s*>=\s*1':
+        range: '[1,inf)'
+
+   

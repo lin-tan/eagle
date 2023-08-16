@@ -1,0 +1,32 @@
+constraints:
+  arrays:
+    descp: ''
+    doc_dtype: list of NDArray
+    normalized_descp: []
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  check_isfinite:
+    default: 'True'
+    descp: If True, check that the total_norm is finite (not nan or inf). This requires
+      a blocking .asscalar() call.
+    doc_dtype: bool, default True
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL check that the total_norm is finite BSTR
+    - This requires a blocking asscalar call
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+  max_norm:
+    descp: ''
+    doc_dtype: float
+    normalized_descp: []
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - check_isfinite
+  required:
+  - arrays
+  - max_norm
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/gluon/utils/index.html#mxnet.gluon.utils.clip_global_norm
+package: mxnet
+target: clip_global_norm
+title: mxnet.gluon.utils.clip_global_norm
+version: 1.6.0

@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. A `batch_size` vector of class ids.",,prim_dtype,"dtype(tf.int32, tf.int64)",,1
+,"A `Tensor`. Must be one of the following types: `int32`, `int64`. A `batch_size` vector of class ids.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list)",,1

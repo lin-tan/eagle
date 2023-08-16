@@ -1,0 +1,53 @@
+constraints:
+  input:
+    descp: the tensor to be added
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to be added
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype: Tensor, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the output D_STRUCTURE
+    normalized_docdtype: D_STRUCTURE, optional
+  tensor1:
+    descp: the tensor to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  tensor2:
+    descp: the tensor to be multiplied
+    doc_dtype: Tensor
+    normalized_descp:
+    - the D_STRUCTURE to be multiplied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  value:
+    default: '1'
+    descp: 'multiplier for tensor1 .* tensor2 '
+    doc_dtype: Number, optional
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - multiplier for PARAM
+    - ONE_WORD PARAM
+    normalized_docdtype: Number, optional
+inputs:
+  keyword_only:
+  - value
+  - out
+  optional:
+  - value
+  - out
+  required:
+  - input
+  - tensor1
+  - tensor2
+link: https://pytorch.org/docs/stable/torch.html#torch.addcmul
+package: torch
+ret_type: Tensor
+target: addcmul
+title: torch.addcmul
+version: 1.5.0

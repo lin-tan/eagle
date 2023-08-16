@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"float, list of float, default=0.3","The minimum coverage of cropped sample w.r.t its original size. With this constraint, objects that have marginal area after crop will be discarded.",0.3,prim_dtype,dtype(float),,1
+"float, list of float, default=0.3","The minimum coverage of cropped sample w.r.t its original size. With this constraint, objects that have marginal area after crop will be discarded.",0.3,nonprim_dtype,structure(list(float)),,1
+"float, list of float, default=0.3","The minimum coverage of cropped sample w.r.t its original size. With this constraint, objects that have marginal area after crop will be discarded.",0.3,shape,"ndim(0, 1)",,1

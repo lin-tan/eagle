@@ -1,0 +1,47 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    default: None
+    descp: The input.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dtype:
+    default: _Null
+    descp: Output data type.
+    doc_dtype: '{''bool'', ''float16'', ''float32'', ''float64'', ''int32'', ''int64'',
+      ''int8'', ''uint8''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Output PARAM type
+    normalized_docdtype: QSTR required
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - data
+  - dtype
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.cast
+package: mxnet
+target: cast
+title: mxnet.ndarray.cast
+version: 1.6.0

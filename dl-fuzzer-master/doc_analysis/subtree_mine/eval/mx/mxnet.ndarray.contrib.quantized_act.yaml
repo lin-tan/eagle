@@ -1,0 +1,9 @@
+constraints:
+  min_data:
+    default: None
+    descp: Minimum value of data.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.contrib.quantized_act

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+Tensor,"optional, weight for each value in the input tensor. Should be of same size as input tensor.",None,prim_dtype,dtype(numeric),,1
+Tensor,"optional, weight for each value in the input tensor. Should be of same size as input tensor.",None,nonprim_dtype,tensor_t(torch.tensor),,1
+Tensor,"optional, weight for each value in the input tensor. Should be of same size as input tensor.",None,shape,shape(shape:&input),,1

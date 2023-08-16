@@ -1,0 +1,12 @@
+constraints:
+  estimator:
+    descp: object Estimator object to test.
+inputs:
+  optional: []
+  required:
+  - estimator
+link: ''
+package: scikit-learn
+target: is_classifier
+title: sklearn.base.is_classifier
+version: 0.24.X

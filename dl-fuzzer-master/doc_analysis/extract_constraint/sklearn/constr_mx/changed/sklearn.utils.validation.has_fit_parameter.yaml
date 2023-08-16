@@ -1,0 +1,17 @@
+constraints:
+  estimator:
+    descp: object An estimator to inspect.
+  parameter:
+    descp: str The searched parameter.
+    dtype:
+    - string
+inputs:
+  optional: []
+  required:
+  - estimator
+  - parameter
+link: ''
+package: scikit-learn
+target: has_fit_parameter
+title: sklearn.utils.validation.has_fit_parameter
+version: 0.24.X

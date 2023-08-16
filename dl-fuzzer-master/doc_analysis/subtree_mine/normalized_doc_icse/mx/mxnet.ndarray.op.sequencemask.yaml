@@ -1,0 +1,77 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: The sequence axis. Only values of 0 and 1 are currently supported.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The D_STRUCTURE axis
+    - Only values of CONSTANT_NUM are currently supported
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: n-dimensional input array of the form [max_sequence_length, batch_size,
+      other_feature_dims] where n>2
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - n dimensional input D_STRUCTURE of the form BSTR where n REXPR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  sequence_length:
+    default: None
+    descp: vector of sequence lengths of the form [batch_size]
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - vector of D_STRUCTURE lengths of the form BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  use_sequence_length:
+    default: _Null
+    descp: If set to true, this layer takes in an extra input parameter sequence_length
+      to specify variable length sequence
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - If set to CONSTANT_BOOL this layer takes in an extra input parameter PARAM to
+      specify variable length D_STRUCTURE
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  value:
+    default: _Null
+    descp: The value to be used as a mask.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The value to be used as a mask
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - sequence_length
+  - use_sequence_length
+  - value
+  - axis
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.SequenceMask
+package: mxnet
+target: SequenceMask
+title: mxnet.ndarray.op.SequenceMask
+version: 1.6.0

@@ -1,0 +1,29 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  data:
+    descp: Input data array.
+    doc_dtype: NDArray
+    normalized_descp:
+    - Input data D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: Array to store the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - D_STRUCTURE to store the result
+    normalized_docdtype: D_STRUCTURE optional
+inputs:
+  optional:
+  - out
+  required:
+  - data
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/random/index.html#mxnet.ndarray.random.shuffle
+package: mxnet
+target: shuffle
+title: mxnet.ndarray.random.shuffle
+version: 1.6.0

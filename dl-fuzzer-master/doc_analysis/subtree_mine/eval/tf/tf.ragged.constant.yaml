@@ -1,0 +1,14 @@
+constraints:
+  ragged_rank:
+    default: None
+    descp: 'An integer specifying the ragged rank of the returned`RaggedTensor`.  Must
+      be nonnegative and less than `K`. Defaults to`max(0, K - 1)` if `inner_shape`
+      is not specified.  Defaults to `max(0, K 1 - len(inner_shape))`if`inner_shape`
+      is specified. '
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,K)'
+title: tf.ragged.constant

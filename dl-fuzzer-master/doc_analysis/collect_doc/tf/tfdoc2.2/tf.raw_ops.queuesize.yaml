@@ -1,0 +1,18 @@
+constraints:
+  handle:
+    descp: A Tensor of type mutable string. The handle to a queue.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QueueSize
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: QueueSize
+title: tf.raw_ops.QueueSize
+version: 2.2.0

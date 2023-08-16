@@ -1,0 +1,57 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "". the container this variable is placed
+      in.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  dtype:
+    descp: A tf.DType. the type of this variable. Must agree with the dtypes of all
+      ops using this variable.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shape:
+    descp: A tf.TensorShape or list of ints. The (possibly partially specified) shape
+      of this variable.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - list(int)
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "". the name by which this variable is
+      referred to.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - dtype
+  - shape
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/VarHandleOp
+outputs:
+- A Tensor of type resource.
+package: tensorflow
+target: VarHandleOp
+title: tf.raw_ops.VarHandleOp
+version: 2.2.0

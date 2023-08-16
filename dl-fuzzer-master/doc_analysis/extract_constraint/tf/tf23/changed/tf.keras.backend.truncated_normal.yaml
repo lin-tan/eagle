@@ -1,0 +1,57 @@
+aliases:
+- tf.compat.v1.keras.backend.truncated_normal
+constraints:
+  dtype:
+    default: None
+    descp: String, dtype of returned tensor.
+    dtype:
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+  mean:
+    default: '0.0'
+    descp: Mean of the values.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  seed:
+    default: None
+    descp: Integer, random seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  shape:
+    descp: A tuple of integers, the shape of tensor to create.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple(int)
+  stddev:
+    default: '1.0'
+    descp: Standard deviation of the values.
+    dtype:
+    - float
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - mean
+  - stddev
+  - dtype
+  - seed
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/backend/truncated_normal
+outputs:
+- A tensor.
+package: tensorflow
+target: truncated_normal
+title: tf.keras.backend.truncated_normal
+version: 2.3.0

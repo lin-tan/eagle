@@ -1,0 +1,33 @@
+constraints:
+  data:
+    default: None
+    descp: Input tensor to the deconvolution operation.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+    tensor_t:
+    - tensor
+  dilate:
+    default: _Null
+    descp: 'Dilation factor for each dimension of the input: (w,), (h, w) or (d, h,
+      w). Defaults to 1 for each dimension.'
+    doc_dtype:
+    - Shape(tuple)
+    - optional
+    - default=[]
+    dtype:
+    - int
+    ndim:
+    - '1'
+    - '2'
+    - '3'
+    shape:
+    - '[d,h,w]'
+    - '[h,w]'
+    - '[w]'
+    structure:
+    - tuple
+    range:
+    - '[0,inf)'
+title: mxnet.ndarray.Deconvolution

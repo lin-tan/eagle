@@ -1,0 +1,48 @@
+constraints:
+  dims:
+    descp: axis to flip on
+    doc_dtype: a list or tuple
+    dtype:
+    - int
+    - string
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[c]'
+    structure:
+    - list
+    - tuple
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - dims
+link: https://pytorch.org/docs/stable/torch.html#torch.flip
+package: torch
+ret_type: Tensor
+target: flip
+title: torch.flip
+version: 1.5.0

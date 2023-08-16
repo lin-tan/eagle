@@ -1,0 +1,19 @@
+constraints:
+  handle:
+    descp: A Tensor of type resource. The handle to a TensorArray (output of TensorArray
+      or TensorArrayGrad).
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TensorArrayCloseV3
+outputs:
+- The created Operation.
+package: tensorflow
+target: TensorArrayCloseV3
+title: tf.raw_ops.TensorArrayCloseV3
+version: 2.2.0

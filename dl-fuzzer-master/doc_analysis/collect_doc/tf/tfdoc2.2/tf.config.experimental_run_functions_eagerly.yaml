@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.config.experimental_run_functions_eagerly
+constraints:
+  run_eagerly:
+    descp: Boolean. Whether to run functions eagerly.
+inputs:
+  optional: []
+  required:
+  - run_eagerly
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/config/experimental_run_functions_eagerly
+package: tensorflow
+target: experimental_run_functions_eagerly
+title: tf.config.experimental_run_functions_eagerly
+version: 2.2.0

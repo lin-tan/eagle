@@ -1,0 +1,13 @@
+constraints:
+  strides:
+    default: (1, 1)
+    descp: tuple of 2 integers.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    shape:
+    - '[2]'
+    structure:
+    - tuple
+title: tf.keras.backend.pool2d

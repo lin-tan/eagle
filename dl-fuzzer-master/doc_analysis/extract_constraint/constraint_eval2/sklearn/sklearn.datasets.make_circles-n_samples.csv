@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"int, optional (default=100) The total number of points generated. If odd, the inner circle will have one point more than the outer circle.",100,prim_dtype,dtype(int),,1
+,"int, optional (default=100) The total number of points generated. If odd, the inner circle will have one point more than the outer circle.",100,shape,ndim(0),,1
+,"int, optional (default=100) The total number of points generated. If odd, the inner circle will have one point more than the outer circle.",100,validvalue,"range([0,inf))",,1

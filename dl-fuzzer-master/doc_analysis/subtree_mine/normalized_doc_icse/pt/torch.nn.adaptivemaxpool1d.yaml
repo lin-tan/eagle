@@ -1,0 +1,24 @@
+constraints:
+  output_size:
+    descp: the target output size H
+    normalized_descp:
+    - the target output size H
+  return_indices:
+    default: 'False'
+    descp: 'if `True`, will return the indices along with the outputs. Useful to pass
+      to nn.MaxUnpool1d. Default: `False`'
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - if CONSTANT_BOOL will return the indices along with the outputs
+    - Useful to pass to nn MaxUnpool1d
+    - Default CONSTANT_BOOL
+inputs:
+  optional:
+  - return_indices
+  required:
+  - output_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.AdaptiveMaxPool1d
+package: torch
+target: AdaptiveMaxPool1d
+title: torch.nn.AdaptiveMaxPool1d
+version: 1.5.0

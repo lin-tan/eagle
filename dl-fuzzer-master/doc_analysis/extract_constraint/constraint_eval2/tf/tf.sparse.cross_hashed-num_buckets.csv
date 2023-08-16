@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,An `int` that is `>= 0`. output = hashed_value%num_buckets if num_buckets > 0 else hashed_value.,0,prim_dtype,dtype(int),,1
+,An `int` that is `>= 0`. output = hashed_value%num_buckets if num_buckets > 0 else hashed_value.,0,shape,ndim(0),,1
+,An `int` that is `>= 0`. output = hashed_value%num_buckets if num_buckets > 0 else hashed_value.,0,validvalue,"range([0,inf))",,1

@@ -1,0 +1,23 @@
+constraints:
+  cancel_pending_enqueues:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, all pending enqueue requests
+      that are blocked on the given queue will be canceled.
+  handle:
+    descp: A Tensor of type mutable string. The handle to a queue.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - cancel_pending_enqueues
+  - name
+  required:
+  - handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/QueueClose
+outputs:
+- The created Operation.
+package: tensorflow
+target: QueueClose
+title: tf.raw_ops.QueueClose
+version: 2.2.0

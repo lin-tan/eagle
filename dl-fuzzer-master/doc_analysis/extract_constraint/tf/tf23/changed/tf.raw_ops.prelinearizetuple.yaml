@@ -1,0 +1,48 @@
+constraints:
+  inputs:
+    descp: A list of Tensor objects. A list of tensors that will be provided using
+      the infeed mechanism.
+    structure:
+    - list(tf.tensor)
+  layouts:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. A vector holding the requested
+      layout in minor-to-major sequence for all the tuple shapes in the order the
+      shapes appear in the "shapes" input. The layout elements for a sub-shape can
+      be set to -1 in which case the corresponding layout will be computed by the
+      infeed operation.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints). The shapes of
+      each tensor in inputs.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+inputs:
+  optional:
+  - layouts
+  - name
+  required:
+  - inputs
+  - shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PrelinearizeTuple
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: PrelinearizeTuple
+title: tf.raw_ops.PrelinearizeTuple
+version: 2.3.0

@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.config.threading.set_inter_op_parallelism_threads
+constraints:
+  num_threads:
+    descp: Number of parallel threads
+    normalized_descp:
+    - Number of parallel threads
+inputs:
+  optional: []
+  required:
+  - num_threads
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/config/threading/set_inter_op_parallelism_threads
+package: tensorflow
+target: set_inter_op_parallelism_threads
+title: tf.config.threading.set_inter_op_parallelism_threads
+version: 2.1.0

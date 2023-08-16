@@ -1,0 +1,17 @@
+constraints:
+  inplace:
+    default: 'False'
+    descp: 'can optionally do the operation in-place. Default: `False`'
+  negative_slope:
+    default: '0.01'
+    descp: 'Controls the angle of the negative slope. Default: 1e-2'
+inputs:
+  optional:
+  - negative_slope
+  - inplace
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.LeakyReLU
+package: torch
+target: LeakyReLU
+title: torch.nn.LeakyReLU
+version: 1.5.0

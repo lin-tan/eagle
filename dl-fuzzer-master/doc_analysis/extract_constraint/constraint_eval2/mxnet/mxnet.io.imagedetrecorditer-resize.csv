@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, optional, default='-1'","Augmentation Param: scale shorter edge to size before applying other augmentations, -1 to disable.",None,prim_dtype,dtype(int),,1
+"int, optional, default='-1'","Augmentation Param: scale shorter edge to size before applying other augmentations, -1 to disable.",None,shape,ndim(0),,1

@@ -1,0 +1,9 @@
+constraints:
+  data:
+    default: None
+    descp: The input array.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.softmin

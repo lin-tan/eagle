@@ -1,0 +1,13 @@
+constraints:
+  name:
+    default: None
+    descp: A name for this operation (optional). Defaults to "assert_rank".
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  x:
+    descp: '`Tensor`.'
+    tensor_t:
+    - tf.tensor
+title: tf.debugging.assert_rank

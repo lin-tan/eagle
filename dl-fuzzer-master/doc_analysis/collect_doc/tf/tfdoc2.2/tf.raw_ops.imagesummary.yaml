@@ -1,0 +1,36 @@
+constraints:
+  bad_color:
+    default: '_execute.make_tensor(\n    dtype: DT_UINT8    tensor_shape { dim { size:
+      4 } } int_val: 255 int_val: 0 int_val: 0 int_val:    255\n    , bad_color)'
+    descp: 'An optional tf.TensorProto. Defaults to dtype: DT_UINT8 tensor_shape {
+      dim { size: 4 } } int_val: 255 int_val: 0 int_val: 0 int_val: 255. Color to
+      use for pixels with non-finite values.'
+  max_images:
+    default: '3'
+    descp: An optional int that is >= 1. Defaults to 3. Max number of batch elements
+      to generate images for.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tag:
+    descp: A Tensor of type string. Scalar. Used to build the tag attribute of the
+      summary values.
+  tensor:
+    descp: 'A Tensor. Must be one of the following types: uint8, float32, half, float64.
+      4-D of shape [batch_size, height, width, channels] where channels is 1, 3, or
+      4.'
+inputs:
+  optional:
+  - max_images
+  - bad_color
+  - name
+  required:
+  - tag
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ImageSummary
+outputs:
+- A Tensor of type string.
+package: tensorflow
+target: ImageSummary
+title: tf.raw_ops.ImageSummary
+version: 2.2.0

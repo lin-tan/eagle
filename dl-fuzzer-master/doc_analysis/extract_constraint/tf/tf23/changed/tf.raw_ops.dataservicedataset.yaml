@@ -1,0 +1,96 @@
+constraints:
+  address:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  dataset_id:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  iteration_counter:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+  job_name:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+  max_outstanding_requests:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  output_types:
+    descp: A list of tf.DTypes that has length >= 1.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '1'
+    shape:
+    - '[>=1]'
+    structure:
+    - list(tf.dtype)
+  processing_mode:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  protocol:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  task_refresh_interval_hint_ms:
+    default: '-1'
+    descp: An optional int. Defaults to -1.
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - task_refresh_interval_hint_ms
+  - name
+  required:
+  - dataset_id
+  - processing_mode
+  - address
+  - protocol
+  - job_name
+  - max_outstanding_requests
+  - iteration_counter
+  - output_types
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/DataServiceDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: DataServiceDataset
+title: tf.raw_ops.DataServiceDataset
+version: 2.3.0

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"Whether to preserve the aspect ratio. If this is set, then `images` will be resized to a size that fits in `size` while preserving the aspect ratio of the original image. Scales up the image if`size` is bigger than the current size of the `image`. Defaults to False.",False,prim_dtype,dtype(tf.bool),,1
+,"Whether to preserve the aspect ratio. If this is set, then `images` will be resized to a size that fits in `size` while preserving the aspect ratio of the original image. Scales up the image if`size` is bigger than the current size of the `image`. Defaults to False.",False,shape,ndim(0),,1
+,"Whether to preserve the aspect ratio. If this is set, then `images` will be resized to a size that fits in `size` while preserving the aspect ratio of the original image. Scales up the image if`size` is bigger than the current size of the `image`. Defaults to False.",False,validvalue,"range([0,inf))",,1

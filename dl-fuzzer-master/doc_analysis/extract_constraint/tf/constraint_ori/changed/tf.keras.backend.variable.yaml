@@ -1,0 +1,42 @@
+aliases:
+- tf.compat.v1.keras.backend.variable
+constraints:
+  constraint:
+    default: None
+    descp: Optional projection function to be applied to the variable after an optimizer
+      update.
+    dtype:
+    - callable
+  dtype:
+    default: None
+    descp: Tensor type.
+    dtype:
+    - tf.dtype
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: Optional name string for the tensor.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  value:
+    descp: Numpy array, initial value of the tensor.
+    ndim:
+    - '1'
+    structure:
+    - list
+inputs:
+  optional:
+  - dtype
+  - name
+  - constraint
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/variable
+outputs: A variable instance (with Keras metadata included).
+package: tensorflow
+target: variable
+title: tf.keras.backend.variable
+version: 2.1.0

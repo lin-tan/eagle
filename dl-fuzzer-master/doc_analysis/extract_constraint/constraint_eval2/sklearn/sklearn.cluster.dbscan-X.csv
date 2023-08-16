@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array or sparse (CSR) matrix of shape (n_samples, n_features), or             array of shape (n_samples, n_samples) A feature array, or array of distances between samples if ``metric='precomputed'``.",,prim_dtype,dtype(int),,1
+,"array or sparse (CSR) matrix of shape (n_samples, n_features), or             array of shape (n_samples, n_samples) A feature array, or array of distances between samples if ``metric='precomputed'``.",,nonprim_dtype,"structure(list, list(shape))",,1
+,"array or sparse (CSR) matrix of shape (n_samples, n_features), or             array of shape (n_samples, n_samples) A feature array, or array of distances between samples if ``metric='precomputed'``.",,shape,"shape([n_samples,n_features], [n_samples,n_samples]), ndim(1, 2)",,1
+,"array or sparse (CSR) matrix of shape (n_samples, n_features), or             array of shape (n_samples, n_samples) A feature array, or array of distances between samples if ``metric='precomputed'``.",,validvalue,"range([0,inf))",,1

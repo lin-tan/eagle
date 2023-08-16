@@ -1,0 +1,19 @@
+aliases:
+- tf.compat.v1.data.experimental.assert_cardinality
+constraints:
+  expected_cardinality:
+    descp: The expected cardinality of the input dataset.
+exceptions:
+- FailedPreconditionError: The assertion is checked at runtime (when iterating the
+    dataset) and an error is raised if the actual and expected cardinality differ.
+inputs:
+  optional: []
+  required:
+  - expected_cardinality
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/data/experimental/assert_cardinality
+outputs:
+- A Dataset transformation function, which can be passed to tf.data.Dataset.apply.
+package: tensorflow
+target: assert_cardinality
+title: tf.data.experimental.assert_cardinality
+version: 2.3.0

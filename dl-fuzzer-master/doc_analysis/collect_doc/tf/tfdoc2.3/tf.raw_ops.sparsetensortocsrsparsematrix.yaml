@@ -1,0 +1,25 @@
+constraints:
+  dense_shape:
+    descp: A Tensor of type int64. SparseTensor dense shape.
+  indices:
+    descp: A Tensor of type int64. SparseTensor indices.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  values:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, complex64,
+      complex128. SparseTensor values.'
+inputs:
+  optional:
+  - name
+  required:
+  - indices
+  - values
+  - dense_shape
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/SparseTensorToCSRSparseMatrix
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: SparseTensorToCSRSparseMatrix
+title: tf.raw_ops.SparseTensorToCSRSparseMatrix
+version: 2.3.0

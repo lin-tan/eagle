@@ -1,0 +1,44 @@
+constraints:
+  dilation:
+    default: '1'
+    descp: 'a parameter that controls the stride of elements within the neighborhood.
+      Default: 1'
+    doc_dtype:
+    - int
+    - tuple
+  kernel_size:
+    descp: the size of the sliding blocks
+    doc_dtype:
+    - int
+    - tuple
+  output_size:
+    descp: the shape of the spatial dimensions of the output (i.e., `output.sizes()[2:]`)
+    doc_dtype:
+    - int
+    - tuple
+  padding:
+    default: '0'
+    descp: 'implicit zero padding to be added on both sides of input. Default: 0'
+    doc_dtype:
+    - int
+    - tuple
+  stride:
+    default: '1'
+    descp: 'the stride of the sliding blocks in the input spatial dimensions. Default:
+      1'
+    doc_dtype:
+    - int
+    - tuple
+inputs:
+  optional:
+  - dilation
+  - padding
+  - stride
+  required:
+  - output_size
+  - kernel_size
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Fold
+package: torch
+target: Fold
+title: torch.nn.Fold
+version: 1.5.0

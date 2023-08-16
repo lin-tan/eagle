@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,The number of characters per line for the purpose of inserting line breaks (default = 80). Thresholded matrices will ignore this parameter.,None,prim_dtype,dtype(int),,1
+,The number of characters per line for the purpose of inserting line breaks (default = 80). Thresholded matrices will ignore this parameter.,None,shape,ndim(0),,1
+,The number of characters per line for the purpose of inserting line breaks (default = 80). Thresholded matrices will ignore this parameter.,None,validvalue,"range([0,inf))",,1

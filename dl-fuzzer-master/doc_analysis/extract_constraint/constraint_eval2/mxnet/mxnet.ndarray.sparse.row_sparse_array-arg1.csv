@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"NDArray, numpy.ndarray, RowSparseNDArray, tuple of int, tuple of array_like",The argument to help instantiate the row sparse ndarray. See above for further details.,,prim_dtype,dtype(int),,1
+"NDArray, numpy.ndarray, RowSparseNDArray, tuple of int, tuple of array_like",The argument to help instantiate the row sparse ndarray. See above for further details.,,nonprim_dtype,"structure(ndarray, tuple(array_like), tuple(int))",,1
+"NDArray, numpy.ndarray, RowSparseNDArray, tuple of int, tuple of array_like",The argument to help instantiate the row sparse ndarray. See above for further details.,,shape,ndim(1),,1

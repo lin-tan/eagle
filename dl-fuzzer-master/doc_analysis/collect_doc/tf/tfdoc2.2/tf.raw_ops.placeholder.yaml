@@ -1,0 +1,23 @@
+constraints:
+  dtype:
+    descp: A tf.DType. The type of elements in the tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    default: None
+    descp: An optional tf.TensorShape or list of ints. Defaults to None. (Optional)
+      The shape of the tensor. If the shape has 0 dimensions, the shape is unconstrained.
+inputs:
+  optional:
+  - shape
+  - name
+  required:
+  - dtype
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/Placeholder
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: Placeholder
+title: tf.raw_ops.Placeholder
+version: 2.2.0

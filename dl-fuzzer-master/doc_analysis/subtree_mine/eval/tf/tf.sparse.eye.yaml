@@ -1,0 +1,14 @@
+constraints:
+  num_rows:
+    descp: Non-negative integer or `int32` scalar `tensor` giving the number of rows
+      in the resulting matrix.
+    dtype:
+    - int
+    - tf.int32
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+title: tf.sparse.eye

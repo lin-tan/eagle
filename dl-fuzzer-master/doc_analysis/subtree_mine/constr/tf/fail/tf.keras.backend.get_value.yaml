@@ -1,0 +1,15 @@
+aliases:
+- tf.compat.v1.keras.backend.get_value
+constraints:
+  x:
+    descp: input variable.
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/get_value
+outputs: A Numpy array.
+package: tensorflow
+target: get_value
+title: tf.keras.backend.get_value
+version: 2.1.0

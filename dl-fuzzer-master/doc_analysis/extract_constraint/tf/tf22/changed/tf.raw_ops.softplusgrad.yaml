@@ -1,0 +1,33 @@
+constraints:
+  features:
+    descp: A Tensor. Must have the same type as gradients. The features passed as
+      input to the corresponding softplus operation.
+    dtype:
+    - dtype:&gradients
+    tensor_t:
+    - tf.tensor
+  gradients:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. The backpropagated gradients to the corresponding softplus operation.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - gradients
+  - features
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SoftplusGrad
+outputs:
+- A Tensor. Has the same type as gradients.
+package: tensorflow
+target: SoftplusGrad
+title: tf.raw_ops.SoftplusGrad
+version: 2.2.0

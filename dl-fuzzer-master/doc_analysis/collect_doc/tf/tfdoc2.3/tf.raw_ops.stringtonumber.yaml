@@ -1,0 +1,24 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  out_type:
+    default: tf.dtypes.float32
+    descp: 'An optional tf.DType from: tf.float32, tf.float64, tf.int32, tf.int64.
+      Defaults to tf.float32. The numeric type to interpret each string in string_tensor
+      as.'
+  string_tensor:
+    descp: A Tensor of type string.
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - string_tensor
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/StringToNumber
+outputs:
+- A Tensor of type out_type.
+package: tensorflow
+target: StringToNumber
+title: tf.raw_ops.StringToNumber
+version: 2.3.0

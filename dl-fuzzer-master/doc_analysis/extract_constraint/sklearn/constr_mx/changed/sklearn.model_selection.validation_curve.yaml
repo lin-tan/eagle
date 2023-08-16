@@ -1,0 +1,97 @@
+constraints:
+  X:
+    descp: array-like, shape (n_samples, n_features) Training vector, where n_samples
+      is the number of samples and n_features is the number of features.
+  cv:
+    default: None
+    descp: 'int, cross-validation generator or an iterable, optional Determines the
+      cross-validation splitting strategy. Possible inputs for cv are: - None, to
+      use the default 5-fold cross validation, - integer, to specify the number of
+      folds in a `(Stratified)KFold`, - :term:`CV splitter`, - An iterable yielding
+      (train, test) splits as arrays of indices. For integer/None inputs, if the estimator
+      is a classifier and ``y`` is either binary or multiclass, :class:`StratifiedKFold`
+      is used. In all other cases, :class:`KFold` is used. Refer :ref:`User Guide
+      <cross_validation>` for the various cross-validation strategies that can be
+      used here.'
+    dtype:
+    - int
+    enum:
+    - '5'
+  error_score:
+    default: nan
+    descp: '''raise'' or numeric Value to assign to the score if an error occurs in
+      estimator fitting. If set to ''raise'', the error is raised. If a numeric value
+      is given, FitFailedWarning is raised. This parameter does not affect the refit
+      step, which will always raise the error.'
+    dtype:
+    - float
+    ndim:
+    - '0'
+  estimator:
+    descp: object type that implements the "fit" and "predict" methods An object of
+      that type which is cloned for each validation.
+  groups:
+    default: None
+    descp: array-like, with shape (n_samples,), optional Group labels for the samples
+      used while splitting the dataset into train/test set. Only used in conjunction
+      with a "Group" :term:`cv` instance (e.g., :class:`GroupKFold`).
+  n_jobs:
+    default: None
+    descp: int or None, optional (default=None) Number of jobs to run in parallel.
+      ``None`` means 1 unless in a :obj:`joblib.parallel_backend` context. ``-1``
+      means using all processors. See :term:`Glossary <n_jobs>` for more details.
+    dtype:
+    - int
+  param_name:
+    descp: string Name of the parameter that will be varied.
+    dtype:
+    - string
+    ndim:
+    - '0'
+  param_range:
+    descp: array-like, shape (n_values,) The values of the parameter that will be
+      evaluated.
+  pre_dispatch:
+    default: all
+    descp: integer or string, optional Number of predispatched jobs for parallel execution
+      (default is all). The option can reduce the allocated memory. The string can
+      be an expression like '2*n_jobs'.
+    dtype:
+    - int
+  scoring:
+    default: None
+    descp: 'string, callable or None, optional, default: None A string (see model
+      evaluation documentation) or a scorer callable object / function with signature
+      ``scorer(estimator, X, y)``.'
+    dtype:
+    - string
+  verbose:
+    default: '0'
+    descp: 'integer, optional Controls the verbosity: the higher, the more messages.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+  y:
+    descp: array-like, shape (n_samples) or (n_samples, n_features), optional Target
+      relative to X for classification or regression; None for unsupervised learning.
+inputs:
+  optional:
+  - groups
+  - cv
+  - scoring
+  - n_jobs
+  - pre_dispatch
+  - verbose
+  - error_score
+  required:
+  - estimator
+  - X
+  - y
+  - param_name
+  - param_range
+link: ''
+package: scikit-learn
+target: validation_curve
+title: sklearn.model_selection.validation_curve
+version: 0.24.X

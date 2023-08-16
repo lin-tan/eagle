@@ -1,0 +1,22 @@
+constraints:
+  data:
+    descp: A Tensor. Must have rank 1 or higher.
+  method:
+    descp: A Tensor of type string. Fingerprint method used by this op. Currently
+      available method is farmhash::fingerprint64.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - data
+  - method
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Fingerprint
+outputs:
+- A Tensor of type uint8.
+package: tensorflow
+target: Fingerprint
+title: tf.raw_ops.Fingerprint
+version: 2.3.0

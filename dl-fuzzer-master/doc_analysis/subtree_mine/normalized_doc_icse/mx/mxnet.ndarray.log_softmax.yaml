@@ -1,0 +1,75 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  axis:
+    default: _Null
+    descp: The axis along which to compute softmax.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The axis along which to compute softmax
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: The input array.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  dtype:
+    default: _Null
+    descp: DType of the output in case this can't be inferred. Defaults to the same
+      as input's dtype if not defined (dtype=None).
+    doc_dtype: '{None, ''float16'', ''float32'', ''float64''},optional, default=''None'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - DType of the output in case this can t be inferred
+    - Defaults to the same as input dtype if not defined dtype None
+    normalized_docdtype: None QSTR optional default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  temperature:
+    default: _Null
+    descp: Temperature parameter in softmax
+    doc_dtype: double or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Temperature parameter in softmax
+    normalized_docdtype: D_TYPE or None optional default None
+  use_length:
+    default: _Null
+    descp: Whether to use the length input as a mask over the data input.
+    doc_dtype: boolean or None, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Whether to use the length input as a mask over the PARAM input
+    normalized_docdtype: D_TYPE or None optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - axis
+  - temperature
+  - dtype
+  - use_length
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.log_softmax
+package: mxnet
+target: log_softmax
+title: mxnet.ndarray.log_softmax
+version: 1.6.0

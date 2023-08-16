@@ -1,0 +1,16 @@
+aliases:
+- tf.compat.v1.debugging.set_log_device_placement
+constraints:
+  enabled:
+    descp: Whether to enabled device placement logging.
+    normalized_descp:
+    - Whether to enabled device placement logging
+inputs:
+  optional: []
+  required:
+  - enabled
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/debugging/set_log_device_placement
+package: tensorflow
+target: set_log_device_placement
+title: tf.debugging.set_log_device_placement
+version: 2.1.0

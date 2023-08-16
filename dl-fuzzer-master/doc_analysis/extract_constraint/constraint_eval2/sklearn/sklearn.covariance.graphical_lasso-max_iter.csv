@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"integer, optional The maximum number of iterations.",100,prim_dtype,dtype(int),,1
+,"integer, optional The maximum number of iterations.",100,shape,ndim(0),,1
+,"integer, optional The maximum number of iterations.",100,validvalue,"range([0,inf))",,1

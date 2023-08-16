@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Non-negative integer or `int32` scalar `tensor` giving the number of rows in the resulting matrix.,,prim_dtype,"dtype(int, tf.int32)",,1
+,Non-negative integer or `int32` scalar `tensor` giving the number of rows in the resulting matrix.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,Non-negative integer or `int32` scalar `tensor` giving the number of rows in the resulting matrix.,,shape,ndim(0),,1
+,Non-negative integer or `int32` scalar `tensor` giving the number of rows in the resulting matrix.,,validvalue,"range([0,inf))",,1

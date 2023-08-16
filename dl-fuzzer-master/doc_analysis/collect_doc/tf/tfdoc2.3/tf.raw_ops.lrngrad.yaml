@@ -1,0 +1,44 @@
+constraints:
+  alpha:
+    default: '1'
+    descp: An optional float. Defaults to 1. A scale factor, usually positive.
+  beta:
+    default: '0.5'
+    descp: An optional float. Defaults to 0.5. An exponent.
+  bias:
+    default: '1'
+    descp: An optional float. Defaults to 1. An offset (usually > 0 to avoid dividing
+      by 0).
+  depth_radius:
+    default: '5'
+    descp: An optional int. Defaults to 5. A depth radius.
+  input_grads:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32.
+      4-D with shape [batch, height, width, channels].'
+  input_image:
+    descp: A Tensor. Must have the same type as input_grads. 4-D with shape [batch,
+      height, width, channels].
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_image:
+    descp: A Tensor. Must have the same type as input_grads. 4-D with shape [batch,
+      height, width, channels].
+inputs:
+  optional:
+  - depth_radius
+  - bias
+  - alpha
+  - beta
+  - name
+  required:
+  - input_grads
+  - input_image
+  - output_image
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LRNGrad
+outputs:
+- A Tensor. Has the same type as input_grads.
+package: tensorflow
+target: LRNGrad
+title: tf.raw_ops.LRNGrad
+version: 2.3.0

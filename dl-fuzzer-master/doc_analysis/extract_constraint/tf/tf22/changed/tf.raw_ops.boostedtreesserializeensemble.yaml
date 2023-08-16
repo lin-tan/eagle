@@ -1,0 +1,26 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the tree ensemble.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesSerializeEnsemble
+outputs:
+- A tuple of Tensor objects (stamp_token, tree_ensemble_serialized).
+- stamp_token: A Tensor of type int64.
+- tree_ensemble_serialized: A Tensor of type string.
+package: tensorflow
+target: BoostedTreesSerializeEnsemble
+title: tf.raw_ops.BoostedTreesSerializeEnsemble
+version: 2.2.0

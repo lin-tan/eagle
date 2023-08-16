@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"list, torch.Size",the size of the original signal (without batch dimension). Default: `None`,None,prim_dtype,dtype(int),,1
+"list, torch.Size",the size of the original signal (without batch dimension). Default: `None`,None,nonprim_dtype,structure(list),,1
+"list, torch.Size",the size of the original signal (without batch dimension). Default: `None`,None,shape,ndim(1),,1
+"list, torch.Size",the size of the original signal (without batch dimension). Default: `None`,None,validvalue,"range([0,inf))",,1

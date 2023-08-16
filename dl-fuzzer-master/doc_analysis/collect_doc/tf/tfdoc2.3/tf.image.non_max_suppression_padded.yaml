@@ -1,0 +1,65 @@
+aliases:
+- tf.compat.v1.image.non_max_suppression_padded
+constraints:
+  boxes:
+    descp: a tensor of rank 2 or higher with a shape of [..., num_boxes, 4]. Dimensions
+      except the last two are batch dimensions.
+  canonicalized_coordinates:
+    default: 'False'
+    descp: if box coordinates are given as [y_min, x_min, y_max, x_max], settign to
+      True eliminate redundant computation to canonicalize box coordinates.
+  iou_threshold:
+    default: '0.5'
+    descp: a float representing the threshold for deciding whether boxes overlap too
+      much with respect to IoU (intersection over union).
+  max_output_size:
+    descp: a scalar integer Tensor representing the maximum number of boxes to be
+      selected by non max suppression.
+  name:
+    default: None
+    descp: name of operation.
+  pad_to_max_output_size:
+    default: 'False'
+    descp: whether to pad the output idx to max_output_size. Must be set to True when
+      the input is a batch of images.
+  score_threshold:
+    default: float(-inf)
+    descp: a float representing the threshold for box scores. Boxes with a score that
+      is not larger than this threshold will be suppressed.
+  scores:
+    descp: a tensor of rank 1 or higher with a shape of [..., num_boxes].
+  sorted_input:
+    default: 'False'
+    descp: a boolean indicating whether the input boxes and scores are sorted in descending
+      order by the score.
+  tile_size:
+    default: '512'
+    descp: an integer representing the number of boxes in a tile, i.e., the maximum
+      number of boxes per image that can be used to suppress other boxes in parallel;
+      larger tile_size means larger parallelism and potentially more redundant work.
+inputs:
+  optional:
+  - iou_threshold
+  - score_threshold
+  - pad_to_max_output_size
+  - name
+  - sorted_input
+  - canonicalized_coordinates
+  - tile_size
+  required:
+  - boxes
+  - scores
+  - max_output_size
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/image/non_max_suppression_padded
+outputs:
+- 'idx: a tensor with a shape of [..., num_boxes] representing the indices selected
+  by non-max suppression. The leadign dimensions are the batch dimensions of the input
+  boxes. All numbers are are within [0, num_boxes). For each image (i.e., idx[i]),
+  only the first num_valid[i] indices (i.e., idx[i][:num_valid[i]]) are valid. num_valid:
+  a tensor of rank 0 or higher with a shape of [...] representing the number of valid
+  indices in idx. Its dimensions are the batch dimensions of the input boxes.'
+- Raises: 'ValueError: When set pad_to_max_output_size to False for batched input.'
+package: tensorflow
+target: non_max_suppression_padded
+title: tf.image.non_max_suppression_padded
+version: 2.3.0

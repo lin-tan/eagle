@@ -1,0 +1,29 @@
+constraints:
+  labels_pred:
+    descp: array, shape = (``n_samples``, ) A clustering of the data into disjoint
+      subsets.
+  labels_true:
+    descp: int array, shape = (``n_samples``,) A clustering of the data into disjoint
+      subsets.
+    dtype:
+    - int
+    ndim:
+    - '0'
+  sparse:
+    default: 'False'
+    descp: bool Compute contingency matrix internally with sparse matrix.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - sparse
+  required:
+  - labels_true
+  - labels_pred
+link: ''
+package: scikit-learn
+target: fowlkes_mallows_score
+title: sklearn.metrics.fowlkes_mallows_score
+version: 0.24.X

@@ -1,0 +1,14 @@
+constraints:
+  dlcapsule:
+    descp: A PyCapsule named as dltensor
+inputs:
+  optional: []
+  required:
+  - dlcapsule
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/experimental/dlpack/from_dlpack
+outputs:
+- A Tensorflow eager tensor
+package: tensorflow
+target: from_dlpack
+title: tf.experimental.dlpack.from_dlpack
+version: 2.2.0

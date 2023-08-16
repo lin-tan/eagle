@@ -1,0 +1,13 @@
+constraints:
+  bidirectional:
+    default: _Null
+    descp: whether to use bidirectional recurrent layers
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.RNN

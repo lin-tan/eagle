@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, None","The maximum number of examples that user would like to use for calibration. If not provided, the whole calibration dataset will be used.",None,prim_dtype,dtype(int),1,1
+"int, None","The maximum number of examples that user would like to use for calibration. If not provided, the whole calibration dataset will be used.",None,shape,ndim(0),1,1
+"int, None","The maximum number of examples that user would like to use for calibration. If not provided, the whole calibration dataset will be used.",None,validvalue,"range([0,inf))",1,1

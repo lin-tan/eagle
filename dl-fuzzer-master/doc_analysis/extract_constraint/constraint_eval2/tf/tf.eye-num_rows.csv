@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Non-negative `int32` scalar `Tensor` giving the number of rows in each batch matrix.,,prim_dtype,dtype(tf.int32),,1
+,Non-negative `int32` scalar `Tensor` giving the number of rows in each batch matrix.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,Non-negative `int32` scalar `Tensor` giving the number of rows in each batch matrix.,,shape,ndim(0),,1
+,Non-negative `int32` scalar `Tensor` giving the number of rows in each batch matrix.,,validvalue,"range([0,inf))",,1

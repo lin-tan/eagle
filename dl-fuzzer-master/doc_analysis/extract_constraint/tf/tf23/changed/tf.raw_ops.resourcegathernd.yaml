@@ -1,0 +1,38 @@
+constraints:
+  dtype:
+    descp: A tf.DType.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  resource:
+    descp: A Tensor of type resource.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+  - indices
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ResourceGatherNd
+outputs:
+- A Tensor of type dtype.
+package: tensorflow
+target: ResourceGatherNd
+title: tf.raw_ops.ResourceGatherNd
+version: 2.3.0

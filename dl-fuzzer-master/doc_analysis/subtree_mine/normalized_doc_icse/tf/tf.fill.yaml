@@ -1,0 +1,37 @@
+aliases:
+- tf.compat.v1.fill
+constraints:
+  dims:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D.
+      Represents the shape of the output tensor.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D
+    - Represents the shape of the output D_STRUCTURE
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  value:
+    descp: A `Tensor`. 0-D (scalar). Value to fill the returned tensor. @compatibility(numpy)
+      Equivalent to np.full @end_compatibility
+    normalized_descp:
+    - A D_STRUCTURE
+    - CONSTANT_NUM D BSTR
+    - Value to fill the returned D_STRUCTURE
+    - compatibility BSTR Equivalent to np full end_compatibility
+inputs:
+  optional:
+  - name
+  required:
+  - dims
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/fill
+outputs: A `Tensor`. Has the same type as `value`.
+package: tensorflow
+target: fill
+title: tf.fill
+version: 2.1.0

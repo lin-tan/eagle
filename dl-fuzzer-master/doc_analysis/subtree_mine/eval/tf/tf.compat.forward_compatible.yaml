@@ -1,0 +1,10 @@
+constraints:
+  day:
+    descp: A day (1 <= day <= 31, or 30, or 29, or 28) in month. Must be an`int`.
+    dtype:
+    - int
+    range:
+    - '[1,31]'
+    ndim:
+    - '0'
+title: tf.compat.forward_compatible

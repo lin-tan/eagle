@@ -1,0 +1,21 @@
+aliases:
+- tf.eigvals
+constraints:
+  name:
+    default: None
+    descp: string, optional name of the operation.
+  tensor:
+    descp: Tensor of shape [..., N, N].
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/linalg/eigvals
+outputs:
+- e: Eigenvalues. Shape is [..., N]. The vector e[..., :] contains the N eigenvalues
+    of tensor[..., :, :].
+package: tensorflow
+target: eigvals
+title: tf.linalg.eigvals
+version: 2.2.0

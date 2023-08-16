@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"""auto"", ""full"" or ""elkan"", default=""auto"" K-means algorithm to use. The classical EM-style algorithm is ""full"". The ""elkan"" variation is more efficient by using the triangle inequality, but currently doesn't support sparse data. ""auto"" chooses ""elkan"" for dense data and ""full"" for sparse data.",auto,prim_dtype,dtype(string),,1

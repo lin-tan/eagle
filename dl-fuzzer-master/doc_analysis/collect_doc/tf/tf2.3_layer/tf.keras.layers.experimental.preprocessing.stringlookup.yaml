@@ -1,0 +1,54 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  data:
+    default: None
+    descp: The data to train on. It can be passed either as a tf.data Dataset, or
+      as a numpy array.
+  encoding:
+    default: None
+    descp: ''
+  invert:
+    default: 'False'
+    descp: ''
+  mask_token:
+    default: ''
+    descp: ''
+  max_tokens:
+    default: None
+    descp: ''
+  num_oov_indices:
+    default: '1'
+    descp: ''
+  oov_token:
+    default: '[UNK]'
+    descp: ''
+  reset_state:
+    default: None
+    descp: Optional argument specifying whether to clear the state of the layer at
+      the start of the call to adapt. This must be True for this layer, which does
+      not support repeated calls to adapt.
+  vocabulary:
+    default: None
+    descp: ''
+exceptions:
+- ValueError: If there are too many inputs, the inputs do not match, or input data
+    is missing.
+inputs:
+  optional:
+  - max_tokens
+  - num_oov_indices
+  - mask_token
+  - oov_token
+  - vocabulary
+  - encoding
+  - invert
+  - data
+  - reset_state
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/experimental/preprocessing/StringLookup
+package: tensorflow
+target: StringLookup
+title: tf.keras.layers.experimental.preprocessing.StringLookup
+version: 2.3.0

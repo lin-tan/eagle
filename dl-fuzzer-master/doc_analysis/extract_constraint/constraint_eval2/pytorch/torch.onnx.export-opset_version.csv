@@ -1,0 +1,2 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, default is 9","by default we export the model to the opset version of the onnx submodule. Since ONNX's latest opset may evolve before next stable release, by default we export to one stable opset version. Right now, supported stable opset version is 9. The opset_version must be _onnx_master_opset or in _onnx_stable_opsets which are defined in torch/onnx/symbolic_helper.py",None,prim_dtype,dtype(int),,1

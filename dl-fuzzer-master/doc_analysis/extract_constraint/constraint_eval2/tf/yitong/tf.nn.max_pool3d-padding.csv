@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",,prim_dtype,dtype(tf.string),1,1
+,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",,shape,ndim(0),1,1
+,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",,validvalue,"enum(SAME, VALID)",1,1

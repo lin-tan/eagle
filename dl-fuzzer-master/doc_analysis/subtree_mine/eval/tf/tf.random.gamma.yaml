@@ -1,0 +1,10 @@
+constraints:
+  seed:
+    default: None
+    descp: A Python integer. Used to create a random seed for the distributions. See`tf.compat.v1.set_random_seed`for
+      behavior.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.random.gamma

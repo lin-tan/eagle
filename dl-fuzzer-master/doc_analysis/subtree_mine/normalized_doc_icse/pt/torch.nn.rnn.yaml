@@ -1,0 +1,91 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  '*args':
+    descp: ''
+    normalized_descp: []
+  batch_first:
+    default: None
+    descp: 'If `True`, then the input and output tensors are provided as (batch, seq,
+      feature). Default: `False`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL then the input and output D_STRUCTURE are provided as BSTR
+    - Default CONSTANT_BOOL
+  bias:
+    default: None
+    descp: 'If `False`, then the layer does not use bias weights b_ih and b_hh. Default:
+      `True`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL then the layer does not use bias weights b_ih and b_hh
+    - Default CONSTANT_BOOL
+  bidirectional:
+    default: None
+    descp: 'If `True`, becomes a bidirectional RNN. Default: `False`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If CONSTANT_BOOL becomes a bidirectional RNN
+    - Default CONSTANT_BOOL
+  dropout:
+    default: None
+    descp: 'If non-zero, introduces a Dropout layer on the outputs of each RNN layer
+      except the last layer, with dropout probability equal to `dropout`. Default:
+      0'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - If non zero introduces a Dropout layer on the outputs of each RNN layer except
+      the last layer with dropout probability equal to QSTR
+    - Default CONSTANT_NUM
+  hidden_size:
+    default: None
+    descp: The number of features in the hidden state h
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The number of features in the hidden state h
+  input_size:
+    default: None
+    descp: The number of expected features in the input x
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The number of expected features in the input x
+  nonlinearity:
+    default: None
+    descp: 'The non-linearity to use. Can be either `''tanh''` or `''relu''`. Default:
+      `''tanh''`'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The non linearity to use
+    - Can be either QSTR
+    - Default QSTR
+  num_layers:
+    default: None
+    descp: 'Number of recurrent layers. E.g., setting `num_layers=2` would mean stacking
+      two RNNs together to form a stacked RNN, with the second RNN taking in outputs
+      of the first RNN and computing the final results. Default: 1'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Number of recurrent layers
+    - E g setting num_layers CONSTANT_NUM would mean stacking two RNNs together to
+      form a stacked RNN with the second RNN taking in outputs of the first RNN and
+      computing the final results
+    - Default CONSTANT_NUM
+inputs:
+  optional:
+  - input_size
+  - hidden_size
+  - num_layers
+  - nonlinearity
+  - bias
+  - batch_first
+  - dropout
+  - bidirectional
+  required:
+  - '*args'
+  - '**kwargs'
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.RNN
+package: torch
+target: RNN
+title: torch.nn.RNN
+version: 1.5.0

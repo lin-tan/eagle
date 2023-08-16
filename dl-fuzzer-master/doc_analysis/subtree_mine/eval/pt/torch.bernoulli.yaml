@@ -1,0 +1,7 @@
+constraints:
+  generator:
+    default: None
+    descp: a pseudorandom number generator for sampling
+    doc_dtype:
+    - torch.Generator
+title: torch.bernoulli

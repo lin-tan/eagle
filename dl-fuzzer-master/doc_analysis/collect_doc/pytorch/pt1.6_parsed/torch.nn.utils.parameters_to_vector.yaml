@@ -1,0 +1,14 @@
+constraints:
+  parameters:
+    descp: an iterator of Tensors that are the parameters of a model.
+    doc_dtype:
+    - Iterable[Tensor]
+inputs:
+  optional: []
+  required:
+  - parameters
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.utils.parameters_to_vector.html#torch.nn.utils.parameters_to_vector#torch.nn.utils.parameters_to_vector
+package: torch
+target: parameters_to_vector
+title: torch.nn.utils.parameters_to_vector
+version: 1.6.0

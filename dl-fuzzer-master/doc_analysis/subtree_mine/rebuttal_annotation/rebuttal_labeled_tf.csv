@@ -1,0 +1,88 @@
+API,Arg,Descp,Normalized_descp,dtype,structure,shape,ndim,range,enum
+tf.keras.estimator.model_to_estimator,custom_objects,Dictionary for custom objects.,D_STRUCTURE for custom objects,,D_STRUCTURE,,,,
+tf.keras.estimator.model_to_estimator,custom_objects,DF: None,DEFAULT None,,,,,,
+tf.keras.backend.conv2d_transpose,output_shape,1D int tensor for the output shape.,CONSTANT_NUM D D_TYPE D_STRUCTURE for the output shape,D_TYPE,D_STRUCTURE,,CONSTANT_NUM,,
+tf.nn.bias_add,bias,"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used.",A CONSTANT_NUM D D_STRUCTURE with size matching the channel dimension of PARAM,,D_STRUCTURE,,CONSTANT_NUM,,
+tf.nn.bias_add,bias,"A 1-D `Tensor` with size matching the channel dimension of `value`. Must be the same type as `value` unless `value` is a quantized type, in which case a different quantized type may be used.",Must be the same type as PARAM unless PARAM is a quantized type in which case a different quantized type may be used,&PARAM ,,,,,
+tf.math.not_equal,name,A name for the operation (optional).,A name for the operation BSTR,string,,,0,,
+tf.math.not_equal,name,DF: None,DEFAULT None,,,,,,
+tf.math.sign,x,"A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`, `float64`, `int32`, `int64`, `complex64`, `complex128`.",A D_STRUCTURE,,D_STRUCTURE,,,,
+tf.math.sign,x,"A `Tensor`. Must be one of the following types: `bfloat16`, `half`, `float32`, `float64`, `int32`, `int64`, `complex64`, `complex128`.",Must be one of the following types D_TYPE,D_TYPE,,,,,
+tf.keras.layers.experimental.preprocessing.Normalization,reset_state,"Optional argument specifying whether to clear the state of the layer at the start of the call to `adapt`, or whether to start from the existing state. Subclasses may choose to throw if reset_state is set to 'False'.",Optional argument specifying whether to clear the state of the layer at the start of the call to QSTR or whether to start from the existing state,,,,,,
+tf.keras.layers.experimental.preprocessing.Normalization,reset_state,"Optional argument specifying whether to clear the state of the layer at the start of the call to `adapt`, or whether to start from the existing state. Subclasses may choose to throw if reset_state is set to 'False'.",Subclasses may choose to throw if reset_state is set to CONSTANT_BOOL,bool,,,0,,
+tf.keras.layers.experimental.preprocessing.Normalization,reset_state,DF: None,DEFAULT None,,,,,,
+tf.data.experimental.make_batched_features_dataset,sloppy_ordering,"If `True`, reading performance will be improved at the cost of non-deterministic ordering. If `False`, the order of elements produced is deterministic prior to shuffling (elements are still randomized if `shuffle=True`. Note that if the seed is set, then order of elements after shuffling is deterministic). Defaults to `False`.",If CONSTANT_BOOL reading performance will be improved at the cost of non deterministic ordering,bool,,,0,,
+tf.data.experimental.make_batched_features_dataset,sloppy_ordering,"If `True`, reading performance will be improved at the cost of non-deterministic ordering. If `False`, the order of elements produced is deterministic prior to shuffling (elements are still randomized if `shuffle=True`. Note that if the seed is set, then order of elements after shuffling is deterministic). Defaults to `False`.",If CONSTANT_BOOL the order of elements produced is deterministic prior to shuffling elements are still randomized if PARAM CONSTANT_BOOL,bool,,,0,,
+tf.data.experimental.make_batched_features_dataset,sloppy_ordering,"If `True`, reading performance will be improved at the cost of non-deterministic ordering. If `False`, the order of elements produced is deterministic prior to shuffling (elements are still randomized if `shuffle=True`. Note that if the seed is set, then order of elements after shuffling is deterministic). Defaults to `False`.",Note that if the seed is set then order of elements after shuffling is deterministic,,,,,,
+tf.data.experimental.make_batched_features_dataset,sloppy_ordering,"If `True`, reading performance will be improved at the cost of non-deterministic ordering. If `False`, the order of elements produced is deterministic prior to shuffling (elements are still randomized if `shuffle=True`. Note that if the seed is set, then order of elements after shuffling is deterministic). Defaults to `False`.",Defaults to CONSTANT_BOOL,bool,,,0,,
+tf.data.experimental.make_batched_features_dataset,sloppy_ordering,DF: False,DEFAULT CONSTANT_BOOL,bool,,,0,,
+tf.keras.backend.reshape,shape,Target shape tuple.,Target shape D_STRUCTURE,,D_STRUCTURE,,,,
+tf.data.experimental.make_batched_features_dataset,shuffle,"A boolean, indicates whether the input should be shuffled. Defaults to `True`.",A D_TYPE indicates whether the input should be shuffled,D_TYPE,,,0,,
+tf.data.experimental.make_batched_features_dataset,shuffle,"A boolean, indicates whether the input should be shuffled. Defaults to `True`.",Defaults to CONSTANT_BOOL,bool,,,0,,
+tf.data.experimental.make_batched_features_dataset,shuffle,DF: True,DEFAULT CONSTANT_BOOL,bool,,,0,,
+tf.image.crop_to_bounding_box,image,"4-D Tensor of shape `[batch, height, width, channels]` or 3-D Tensor of shape `[height, width, channels]`.",CONSTANT_NUM D D_STRUCTURE of shape BSTR or CONSTANT_NUM D D_STRUCTURE of shape BSTR,,D_STRUCTURE,BSTR,CONSTANT_NUM,,
+tf.sparse.eye,num_columns,Optional non-negative integer or `int32` scalar `tensor` giving the number of columns in the resulting matrix. Defaults to `num_rows`.,Optional non negative D_TYPE scalar D_STRUCTURE giving the number of columns in the resulting matrix,D_TYPE,D_STRUCTURE,,0,"[0,inf)",
+tf.sparse.eye,num_columns,Optional non-negative integer or `int32` scalar `tensor` giving the number of columns in the resulting matrix. Defaults to `num_rows`.,Defaults to PARAM,,,,,,&PARAM
+tf.sparse.eye,num_columns,DF: None,DEFAULT None,,,,,,&PARAM
+tf.keras.layers.SimpleRNNCell,recurrent_dropout,Float between 0 and 1. Fraction of the units to drop for the linear transformation of the recurrent state. Default: 0.,D_TYPE between CONSTANT_NUM,D_TYPE,,,,CONSTANT_VAL,
+tf.keras.layers.SimpleRNNCell,recurrent_dropout,Float between 0 and 1. Fraction of the units to drop for the linear transformation of the recurrent state. Default: 0.,Fraction of the PARAM to drop for the linear transformation of the recurrent state,,,,,,
+tf.keras.layers.SimpleRNNCell,recurrent_dropout,Float between 0 and 1. Fraction of the units to drop for the linear transformation of the recurrent state. Default: 0.,Default CONSTANT_NUM,,,,0,,CONSTANT_NUM
+tf.keras.layers.SimpleRNNCell,recurrent_dropout,DF: 0.0,DEFAULT CONSTANT_FLOAT,,,,0,,CONSTANT_FLOAT
+tf.keras.preprocessing.image.load_img,interpolation,"Interpolation method used to resample the image if the     target size is different from that of the loaded image.     Supported methods are ""nearest"", ""bilinear"", and ""bicubic"".     If PIL version 1.1.3 or newer is installed, ""lanczos"" is also     supported. If PIL version 3.4.0 or newer is installed, ""box"" and     ""hamming"" are also supported. By default, ""nearest"" is used.`",Interpolation method used to resample the image if the target size is different from that of the loaded image,,,,,,
+tf.keras.preprocessing.image.load_img,interpolation,"Interpolation method used to resample the image if the     target size is different from that of the loaded image.     Supported methods are ""nearest"", ""bilinear"", and ""bicubic"".     If PIL version 1.1.3 or newer is installed, ""lanczos"" is also     supported. If PIL version 3.4.0 or newer is installed, ""box"" and     ""hamming"" are also supported. By default, ""nearest"" is used.`",Supported methods are QSTR,,,,,,QSTR
+tf.keras.preprocessing.image.load_img,interpolation,"Interpolation method used to resample the image if the     target size is different from that of the loaded image.     Supported methods are ""nearest"", ""bilinear"", and ""bicubic"".     If PIL version 1.1.3 or newer is installed, ""lanczos"" is also     supported. If PIL version 3.4.0 or newer is installed, ""box"" and     ""hamming"" are also supported. By default, ""nearest"" is used.`",If PIL version CONSTANT_NUM CONSTANT_NUM or newer is installed QSTR are also supported,,,,,,QSTR
+tf.keras.preprocessing.image.load_img,interpolation,"Interpolation method used to resample the image if the     target size is different from that of the loaded image.     Supported methods are ""nearest"", ""bilinear"", and ""bicubic"".     If PIL version 1.1.3 or newer is installed, ""lanczos"" is also     supported. If PIL version 3.4.0 or newer is installed, ""box"" and     ""hamming"" are also supported. By default, ""nearest"" is used.`",If PIL version CONSTANT_NUM CONSTANT_NUM or newer is installed QSTR is also supported,,,,,,QSTR
+tf.keras.preprocessing.image.load_img,interpolation,"Interpolation method used to resample the image if the     target size is different from that of the loaded image.     Supported methods are ""nearest"", ""bilinear"", and ""bicubic"".     If PIL version 1.1.3 or newer is installed, ""lanczos"" is also     supported. If PIL version 3.4.0 or newer is installed, ""box"" and     ""hamming"" are also supported. By default, ""nearest"" is used.`",By default QSTR is used,,,,,,QSTR
+tf.keras.preprocessing.image.load_img,interpolation,DF: nearest,DEFAULT DF_STR,string,,,0,,QSTR
+tf.image.psnr,max_val,"The dynamic range of the images (i.e., the difference between the maximum the and minimum allowed values).",The dynamic range of the images BSTR,float,,,0,,
+tf.summary.experimental.set_step,step,"An `int64`-castable default step value, or None to unset.",An D_TYPE castable default step value or None to unset,D_TYPE,,,0,,
+tf.nn.conv2d_transpose,padding,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",A D_TYPE either QSTR,D_TYPE,,,,,QSTR
+tf.nn.conv2d_transpose,padding,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",The padding algorithm,,,,,,
+tf.nn.conv2d_transpose,padding,"A string, either `'VALID'` or `'SAME'`. The padding algorithm. See the ""returns"" section of `tf.nn.convolution` for details.",See the QSTR section of tf nn convolution for details,,,,,,
+tf.nn.conv2d_transpose,padding,DF: SAME,DEFAULT DF_STR,string,,,0,,DF_STR
+tf.math.multiply_no_nan,x,"A `Tensor`. Must be one of the following types: `float32`, `float64`.",A D_STRUCTURE,,D_STRUCTURE,,,,
+tf.math.multiply_no_nan,x,"A `Tensor`. Must be one of the following types: `float32`, `float64`.",Must be one of the following types D_TYPE,D_TYPE,,,,,
+tf.math.logical_and,x,A `Tensor` of type `bool`.,A D_STRUCTURE of type D_TYPE,D_TYPE,D_STRUCTURE,,,,
+tf.data.experimental.from_variant,structure,A `tf.data.experimental.Structure` object representing the structure of each element in the dataset.,A tf data experimental Structure object representing the structure of each element in the dataset,,,,,,
+tf.image.draw_bounding_boxes,name,A name for the operation (optional).,A name for the operation BSTR,string,,,0,,
+tf.image.draw_bounding_boxes,name,DF: None,DEFAULT None,,,,,,
+tf.keras.backend.all,x,Tensor or variable.,D_STRUCTURE or variable,,D_STRUCTURE,,,,
+tf.debugging.assert_greater,name,"A name for this operation (optional).  Defaults to ""assert_greater"".",A name for this operation BSTR,string,,,0,,
+tf.debugging.assert_greater,name,"A name for this operation (optional).  Defaults to ""assert_greater"".",Defaults to QSTR,,,,,,QSTR
+tf.debugging.assert_greater,name,DF: None,DEFAULT None,,,,,,
+tf.data.experimental.dense_to_ragged_batch,row_splits_dtype,The dtype that should be used for the `row_splits` of any new ragged tensors.  Existing `tf.RaggedTensor` elements do not have their row_splits dtype changed.,The dtype that should be used for the QSTR of any new ragged D_STRUCTURE,dtype,,,,,
+tf.data.experimental.dense_to_ragged_batch,row_splits_dtype,The dtype that should be used for the `row_splits` of any new ragged tensors.  Existing `tf.RaggedTensor` elements do not have their row_splits dtype changed.,Existing tf RaggedTensor elements do not have their row_splits dtype changed,,,,,,
+tf.data.experimental.dense_to_ragged_batch,row_splits_dtype,DF: tf.dtypes.int64,ONE_WORD D_TYPE,,,,,,tf.dtypes.int64
+tf.io.parse_sequence_example,context_features,A `dict` mapping feature keys to `FixedLenFeature` or`VarLenFeature` or `RaggedFeature` values. These features are associated with a `SequenceExample` as a whole.,A D_STRUCTURE mapping feature keys to QSTR values,,D_STRUCTURE,,,,
+tf.io.parse_sequence_example,context_features,A `dict` mapping feature keys to `FixedLenFeature` or`VarLenFeature` or `RaggedFeature` values. These features are associated with a `SequenceExample` as a whole.,These features are associated with a QSTR as a whole,,,,,,
+tf.io.parse_sequence_example,context_features,DF: None,DEFAULT None,,,,,,
+tf.keras.layers.LocallyConnected1D,bias_constraint,Constraint function applied to the bias vector.,Constraint function applied to the bias D_STRUCTURE,,,,,,
+tf.keras.layers.LocallyConnected1D,bias_constraint,DF: None,DEFAULT None,,,,,,
+tf.keras.backend.any,axis,axis along which to perform the reduction.,axis along which to perform the reduction,int,,,0,,
+tf.keras.backend.any,axis,DF: None,DEFAULT None,,,,,,
+tf.keras.layers.LSTMCell,activation,"Activation function to use. Default: hyperbolic tangent (`tanh`). If you pass `None`, no activation is applied (ie. ""linear"" activation: `a(x) = x`).",Activation function to use,,,,,,
+tf.keras.layers.LSTMCell,activation,"Activation function to use. Default: hyperbolic tangent (`tanh`). If you pass `None`, no activation is applied (ie. ""linear"" activation: `a(x) = x`).",Default hyperbolic tangent QSTR,,,,,,QSTR
+tf.keras.layers.LSTMCell,activation,"Activation function to use. Default: hyperbolic tangent (`tanh`). If you pass `None`, no activation is applied (ie. ""linear"" activation: `a(x) = x`).",If you pass QSTR no activation is applied ie,,,,,,
+tf.keras.layers.LSTMCell,activation,"Activation function to use. Default: hyperbolic tangent (`tanh`). If you pass `None`, no activation is applied (ie. ""linear"" activation: `a(x) = x`).",QSTR activation a BSTR x,,,,,,
+tf.keras.layers.LSTMCell,activation,DF: tanh,DEFAULT DF_STR,string,,,0,,
+tf.math.reduce_logsumexp,name,A name for the operation (optional).,A name for the operation BSTR,string,,,0,,
+tf.math.reduce_logsumexp,name,DF: None,DEFAULT None,,,,,,
+tf.fingerprint,data,A `Tensor`. Must have rank 1 or higher.,A D_STRUCTURE,,D_STRUCTURE,,,,
+tf.fingerprint,data,A `Tensor`. Must have rank 1 or higher.,Must have rank CONSTANT_NUM or higher,,,,"[1,inf)",,
+tf.debugging.assert_non_positive,x,Numeric `Tensor`.,D_TYPE D_STRUCTURE,D_TYPE,D_STRUCTURE,,,,
+tf.signal.hamming_window,dtype,The data type to produce. Must be a floating point type.,The data type to produce,dtype,,,,,
+tf.signal.hamming_window,dtype,The data type to produce. Must be a floating point type.,Must be a D_TYPE type,D_TYPE,,,,,
+tf.signal.hamming_window,dtype,DF: tf.dtypes.float32,ONE_WORD D_TYPE,,,,,,tf.dtypes.float32
+tf.keras.layers.RNN,go_backwards,"Boolean (default `False`). If True, process the input sequence backwards and return the reversed sequence.",D_TYPE default CONSTANT_BOOL,D_TYPE,,,,,
+tf.keras.layers.RNN,go_backwards,"Boolean (default `False`). If True, process the input sequence backwards and return the reversed sequence.",If CONSTANT_BOOL process the input D_STRUCTURE backwards and return the reversed D_STRUCTURE,,,,,,
+tf.keras.layers.RNN,go_backwards,DF: False,DEFAULT CONSTANT_BOOL,bool,,,0,,
+tf.image.hsv_to_rgb,name,A name for the operation (optional).,A name for the operation BSTR,string,,,0,,
+tf.image.hsv_to_rgb,name,DF: None,DEFAULT None,,,,,,
+tf.keras.layers.Dense,bias_initializer,Initializer for the bias vector.,Initializer for the bias D_STRUCTURE,,,,,,
+tf.keras.layers.Dense,bias_initializer,DF: zeros,DEFAULT DF_STR,string,,,0,,
+tf.keras.models.save_model,signatures,Signatures to save with the SavedModel. Applicable to the 'tf' format only. Please see the `signatures` argument in`tf.saved_model.save` for details.,Signatures to save with the SavedModel,,,,,,
+tf.keras.models.save_model,signatures,Signatures to save with the SavedModel. Applicable to the 'tf' format only. Please see the `signatures` argument in`tf.saved_model.save` for details.,Applicable to the QSTR format only,,,,,,
+tf.keras.models.save_model,signatures,Signatures to save with the SavedModel. Applicable to the 'tf' format only. Please see the `signatures` argument in`tf.saved_model.save` for details.,Please see the signatures argument in tf saved_model save for details,,,,,,
+tf.keras.models.save_model,signatures,DF: None,DEFAULT None,,,,,,
+tf.keras.utils.register_keras_serializable,package,The package that this class belongs to.,The package that this class belongs to,,,,,,
+tf.keras.utils.register_keras_serializable,package,DF: Custom,DEFAULT DF_STR,D_TYPE,,,,,

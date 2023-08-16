@@ -1,0 +1,9 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+title: tf.random.learned_unigram_candidate_sampler

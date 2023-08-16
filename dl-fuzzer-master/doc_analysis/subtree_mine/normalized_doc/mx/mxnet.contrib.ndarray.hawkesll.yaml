@@ -1,0 +1,100 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: None
+    descp: Shape (K,) The infectivity factor (branching ratio) for each process
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR for each process
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  beta:
+    default: None
+    descp: Shape (K,) The decay parameter for each process
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR The decay parameter for each process
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lags:
+    default: None
+    descp: Shape (N, T) the interarrival times
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR the interarrival times
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lda:
+    default: None
+    descp: Shape (N, K) The intensity for each of the K processes, for each sample
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR The intensity for each of the K processes, for each sample
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  marks:
+    default: None
+    descp: Shape (N, T) the marks (process ids)
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  max_time:
+    default: None
+    descp: the length of the interval where the processes were sampled
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the length of the interval where the processes were sampled
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  state:
+    default: None
+    descp: Shape (N, K) the Hawkes state for each process
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shape BSTR the Hawkes state for each process
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  valid_length:
+    default: None
+    descp: The number of valid points in the process
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The number of valid points in the process
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - lda
+  - alpha
+  - beta
+  - state
+  - lags
+  - marks
+  - valid_length
+  - max_time
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.hawkesll
+package: mxnet
+target: hawkesll
+title: mxnet.contrib.ndarray.hawkesll
+version: 1.6.0

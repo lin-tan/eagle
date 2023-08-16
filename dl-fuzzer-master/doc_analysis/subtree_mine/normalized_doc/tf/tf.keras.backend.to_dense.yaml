@@ -1,0 +1,17 @@
+aliases:
+- tf.compat.v1.keras.backend.to_dense
+constraints:
+  tensor:
+    descp: A tensor instance (potentially sparse).
+    normalized_descp:
+    - A D_STRUCTURE instance BSTR
+inputs:
+  optional: []
+  required:
+  - tensor
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/to_dense
+outputs: A dense tensor.
+package: tensorflow
+target: to_dense
+title: tf.keras.backend.to_dense
+version: 2.1.0

@@ -1,0 +1,33 @@
+aliases:
+- tf.compat.v1.shape_n
+constraints:
+  input:
+    descp: A list of at least 1 `Tensor` object with the same type.
+    normalized_descp:
+    - A D_STRUCTURE of at least CONSTANT_NUM D_STRUCTURE object with the same type
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  out_type:
+    default: tf.dtypes.int32
+    descp: The specified output type of the operation (`int32` or `int64`). Defaults
+      to `tf.int32`(optional).
+    normalized_default: D_TYPE D_TYPE
+    normalized_descp:
+    - The specified output type of the operation BSTR
+    - Defaults to D_TYPE BSTR
+inputs:
+  optional:
+  - out_type
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/shape_n
+outputs: A list with the same length as `input` of `Tensor` objects with   type `out_type`.
+package: tensorflow
+target: shape_n
+title: tf.shape_n
+version: 2.1.0

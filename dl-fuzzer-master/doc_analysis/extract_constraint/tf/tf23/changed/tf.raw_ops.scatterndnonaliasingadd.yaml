@@ -1,0 +1,40 @@
+constraints:
+  indices:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A Tensor.
+      Must be one of the following types: int32, int64. A tensor of indices into input.'
+    dtype:
+    - int
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64, bool. A Tensor.'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  updates:
+    descp: A Tensor. Must have the same type as input. A Tensor. Must have the same
+      type as ref. A tensor of updated values to add to input.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - indices
+  - updates
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/ScatterNdNonAliasingAdd
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: ScatterNdNonAliasingAdd
+title: tf.raw_ops.ScatterNdNonAliasingAdd
+version: 2.3.0

@@ -1,0 +1,140 @@
+aliases:
+- tf.compat.v1.keras.layers.DepthwiseConv2D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  activation:
+    default: None
+    descp: 'Activation function to use. If you don''t specify anything, no activation
+      is applied (ie. ''linear'' activation: `a(x) = x`).'
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Activation function to use
+    - If you don t specify anything, no activation is applied ie
+    - QSTR activation a BSTR x
+  activity_regularizer:
+    default: None
+    descp: Regularizer function applied to the output of the layer (its 'activation').
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Regularizer function applied to the output of the layer BSTR
+  bias_constraint:
+    default: None
+    descp: Constraint function applied to the bias vector.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Constraint function applied to the bias D_STRUCTURE
+  bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the bias D_STRUCTURE
+  bias_regularizer:
+    default: None
+    descp: Regularizer function applied to the bias vector.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Regularizer function applied to the bias D_STRUCTURE
+  data_format:
+    default: None
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      height, width, channels)` while `channels_first`corresponds to inputs with shape`(batch,
+      channels, height, width)`. It defaults to the `image_data_format` value found
+      in your Keras config file at `~/.keras/keras.json`. If you never set it, then
+      it will be 'channels_last'.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A D_TYPE, one of QSTR BSTR or QSTR
+    - The ordering of the dimensions in the inputs QSTR corresponds to inputs with
+      shape BSTR while QSTR corresponds to inputs with shape BSTR
+    - It defaults to the QSTR value found in your Keras config file at keras keras
+      json
+    - If you never set it, then it will be QSTR
+  depth_multiplier:
+    default: '1'
+    descp: The number of depthwise convolution output channels for each input channel.
+      The total number of depthwise convolution output channels will be equal to `filters_in
+      * depth_multiplier`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The number of depthwise convolution output channels for each input channel
+    - The total number of depthwise convolution output channels will be equal to filters_in
+      depth_multiplier
+  depthwise_constraint:
+    default: None
+    descp: Constraint function applied to the depthwise kernel matrix.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Constraint function applied to the depthwise kernel matrix
+  depthwise_initializer:
+    default: glorot_uniform
+    descp: Initializer for the depthwise kernel matrix.
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the depthwise kernel matrix
+  depthwise_regularizer:
+    default: None
+    descp: Regularizer function applied to the depthwise kernel matrix.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Regularizer function applied to the depthwise kernel matrix
+  kernel_size:
+    descp: An integer or tuple/list of 2 integers, specifying the height and width
+      of the 2D convolution window. Can be a single integer to specify the same value
+      for all spatial dimensions.
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of CONSTANT_NUM D_TYPE, specifying the height and width
+      of the CONSTANT_NUM-D convolution window
+    - Can be a single D_TYPE to specify the same value for all spatial dimensions
+  padding:
+    default: valid
+    descp: one of `'valid'` or `'same'` (case-insensitive).
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - one of QSTR BSTR
+  strides:
+    default: (1, 1)
+    descp: An integer or tuple/list of 2 integers, specifying the strides of the convolution
+      along the height and width. Can be a single integer to specify the same value
+      for all spatial dimensions. Specifying any stride value != 1 is incompatible
+      with specifying any `dilation_rate` value != 1.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An D_TYPE or D_STRUCTURE of CONSTANT_NUM D_TYPE, specifying the strides of the
+      convolution along the height and width
+    - Can be a single D_TYPE to specify the same value for all spatial dimensions
+    - Specifying any stride value CONSTANT_NUM is incompatible with specifying any
+      QSTR value CONSTANT_NUM
+  use_bias:
+    default: 'True'
+    descp: Boolean, whether the layer uses a bias vector.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - D_TYPE, whether the layer uses a bias D_STRUCTURE
+inputs:
+  optional:
+  - strides
+  - padding
+  - depth_multiplier
+  - data_format
+  - activation
+  - use_bias
+  - depthwise_initializer
+  - bias_initializer
+  - depthwise_regularizer
+  - bias_regularizer
+  - activity_regularizer
+  - depthwise_constraint
+  - bias_constraint
+  - '**kwargs'
+  required:
+  - kernel_size
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/DepthwiseConv2D
+package: tensorflow
+target: DepthwiseConv2D
+title: tf.keras.layers.DepthwiseConv2D
+version: 2.1.0

@@ -1,0 +1,64 @@
+constraints:
+  area_range:
+    default: '[0.05, 1]'
+    descp: An optional list of floats. Defaults to [0.05, 1]. The cropped area of
+      the image must contain a fraction of the supplied image within this range.
+  aspect_ratio_range:
+    default: '[0.75, 1.33]'
+    descp: An optional list of floats. Defaults to [0.75, 1.33]. The cropped area
+      of the image must have an aspect ratio = width / height within this range.
+  bounding_boxes:
+    descp: A Tensor of type float32. 3-D with shape [batch, N, 4] describing the N
+      bounding boxes associated with the image.
+  image_size:
+    descp: 'A Tensor. Must be one of the following types: uint8, int8, int16, int32,
+      int64. 1-D, containing [height, width, channels].'
+  max_attempts:
+    default: '100'
+    descp: An optional int. Defaults to 100. Number of attempts at generating a cropped
+      region of the image of the specified constraints. After max_attempts failures,
+      return the entire image.
+  min_object_covered:
+    descp: A Tensor of type float32. The cropped area of the image must contain at
+      least this fraction of any bounding box supplied. The value of this parameter
+      should be non-negative. In the case of 0, the cropped area does not need to
+      overlap any of the bounding boxes supplied.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  seed:
+    default: '0'
+    descp: An optional int. Defaults to 0. If either seed or seed2 are set to non-zero,
+      the random number generator is seeded by the given seed. Otherwise, it is seeded
+      by a random seed.
+  seed2:
+    default: '0'
+    descp: An optional int. Defaults to 0. A second seed to avoid seed collision.
+  use_image_if_no_bounding_boxes:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Controls behavior if no bounding boxes
+      supplied. If true, assume an implicit bounding box covering the whole input.
+      If false, raise an error.
+inputs:
+  optional:
+  - seed
+  - seed2
+  - aspect_ratio_range
+  - area_range
+  - max_attempts
+  - use_image_if_no_bounding_boxes
+  - name
+  required:
+  - image_size
+  - bounding_boxes
+  - min_object_covered
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/SampleDistortedBoundingBoxV2
+outputs:
+- A tuple of Tensor objects (begin, size, bboxes).
+- begin: A Tensor. Has the same type as image_size.
+- size: A Tensor. Has the same type as image_size.
+- bboxes: A Tensor of type float32.
+package: tensorflow
+target: SampleDistortedBoundingBoxV2
+title: tf.raw_ops.SampleDistortedBoundingBoxV2
+version: 2.2.0

@@ -1,0 +1,9 @@
+constraints:
+  label:
+    default: None
+    descp: Class label for the input data.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.SVMOutput

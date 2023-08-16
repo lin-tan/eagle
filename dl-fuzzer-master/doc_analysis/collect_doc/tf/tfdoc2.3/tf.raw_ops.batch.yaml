@@ -1,0 +1,53 @@
+constraints:
+  allowed_batch_sizes:
+    default: '[]'
+    descp: An optional list of ints. Defaults to [].
+  batch_timeout_micros:
+    descp: An int.
+  batching_queue:
+    default: ''
+    descp: An optional string. Defaults to "".
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  grad_timeout_micros:
+    descp: An int.
+  in_tensors:
+    descp: A list of Tensor objects.
+  max_batch_size:
+    descp: An int.
+  max_enqueued_batches:
+    default: '10'
+    descp: An optional int. Defaults to 10.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_batch_threads:
+    descp: An int.
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - max_enqueued_batches
+  - allowed_batch_sizes
+  - container
+  - shared_name
+  - batching_queue
+  - name
+  required:
+  - in_tensors
+  - num_batch_threads
+  - max_batch_size
+  - batch_timeout_micros
+  - grad_timeout_micros
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Batch
+outputs:
+- A tuple of Tensor objects (batched_tensors, batch_index, id).
+- batched_tensors: A list of Tensor objects. Has the same type as in_tensors.
+- batch_index: A Tensor of type int64.
+- id: A Tensor of type int64.
+package: tensorflow
+target: Batch
+title: tf.raw_ops.Batch
+version: 2.3.0

@@ -1,0 +1,56 @@
+constraints:
+  l1:
+    descp: A Tensor of type float32. l1 regularization factor on leaf weights, per
+      instance based.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  l2:
+    descp: A Tensor of type float32. l2 regularization factor on leaf weights, per
+      instance based.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  mean_gradients:
+    descp: A Tensor of type float32. A tensor with shape=[logits_dimension] with mean
+      of gradients for a first node.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  mean_hessians:
+    descp: A Tensor of type float32. A tensor with shape=[logits_dimension] mean of
+      hessians for a first node.
+    dtype:
+    - tf.float32
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  tree_ensemble_handle:
+    descp: A Tensor of type resource. Handle to the tree ensemble.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - tree_ensemble_handle
+  - mean_gradients
+  - mean_hessians
+  - l1
+  - l2
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/BoostedTreesCenterBias
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: BoostedTreesCenterBias
+title: tf.raw_ops.BoostedTreesCenterBias
+version: 2.2.0

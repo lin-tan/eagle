@@ -1,0 +1,36 @@
+aliases:
+- tf.image.decode_bmp
+- tf.compat.v1.image.decode_bmp
+- tf.compat.v1.io.decode_bmp
+constraints:
+  channels:
+    default: '0'
+    descp: An optional `int`. Defaults to `0`.
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - An optional D_TYPE
+    - Defaults to CONSTANT_NUM
+  contents:
+    descp: A `Tensor` of type `string`. 0-D.  The BMP-encoded image.
+    normalized_descp:
+    - A D_STRUCTURE of type D_TYPE
+    - CONSTANT_NUM D
+    - The BMP encoded image
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+inputs:
+  optional:
+  - channels
+  - name
+  required:
+  - contents
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/decode_bmp
+outputs: A `Tensor` of type `uint8`.
+package: tensorflow
+target: decode_bmp
+title: tf.io.decode_bmp
+version: 2.1.0

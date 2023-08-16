@@ -1,0 +1,22 @@
+constraints:
+  dim:
+    default: None
+    descp: A dimension along which Softmin will be computed (so every slice along
+      dim will sum to 1).
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - dim
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.Softmin
+package: torch
+target: Softmin
+title: torch.nn.Softmin
+version: 1.5.0
+layer_constructor: true
+check_nan: true

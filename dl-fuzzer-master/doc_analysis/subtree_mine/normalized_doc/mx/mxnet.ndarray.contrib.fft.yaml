@@ -1,0 +1,46 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  compute_size:
+    default: _Null
+    descp: Maximum size of sub-batch to be forwarded at one time
+    doc_dtype: int, optional, default='128'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Maximum size of sub batch to be forwarded at one time
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  data:
+    default: None
+    descp: Input data to the FFTOp.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the FFTOp
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - data
+  - compute_size
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.fft
+package: mxnet
+target: fft
+title: mxnet.ndarray.contrib.fft
+version: 1.6.0

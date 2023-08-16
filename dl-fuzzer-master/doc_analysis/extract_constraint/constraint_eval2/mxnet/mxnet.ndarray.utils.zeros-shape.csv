@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+"int, tuple of int",The shape of the empty array,,prim_dtype,dtype(int),,1
+"int, tuple of int",The shape of the empty array,,nonprim_dtype,structure(tuple(int)),,1
+"int, tuple of int",The shape of the empty array,,shape,ndim(1),,1
+"int, tuple of int",The shape of the empty array,,validvalue,"range([0,inf))",,1

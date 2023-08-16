@@ -1,0 +1,16 @@
+constraints:
+  n_components: {descp: 'int, number of components in the dictionary'}
+  n_features: {descp: int number of features of the dataset to generate}
+  n_nonzero_coefs: {descp: int number of active (non-zero) coefficients in each sample}
+  n_samples: {descp: int number of samples to generate}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset creation. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+inputs:
+  optional: [random_state]
+  required: [n_samples, n_components, n_features, n_nonzero_coefs]
+link: ''
+package: sklearn
+target: make_sparse_coded_signal
+title: sklearn.datasets.make_sparse_coded_signal
+version: 0.24.2

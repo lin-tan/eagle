@@ -1,0 +1,12 @@
+constraints:
+  image:
+    descp: A `Tensor` of type `uint8`. 3-D with shape `[height, width, channels]`.
+    dtype:
+    - tf.uint8
+    ndim:
+    - '3'
+    shape:
+    - '[height,width,channels]'
+    tensor_t:
+    - tf.tensor
+title: tf.io.encode_jpeg

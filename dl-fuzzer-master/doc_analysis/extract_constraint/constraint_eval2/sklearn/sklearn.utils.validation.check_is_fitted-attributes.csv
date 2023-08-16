@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"str, list or tuple of str, default=None Attribute name(s) given as string or a list/tuple of strings Eg.: ``[""coef_"", ""estimator_"", ...], ""coef_""`` If `None`, `estimator` is considered fitted if there exist an attribute that ends with a underscore and does not start with double underscore.",None,prim_dtype,dtype(string),,1
+,"str, list or tuple of str, default=None Attribute name(s) given as string or a list/tuple of strings Eg.: ``[""coef_"", ""estimator_"", ...], ""coef_""`` If `None`, `estimator` is considered fitted if there exist an attribute that ends with a underscore and does not start with double underscore.",None,shape,"shape([s]), ndim(0, 1)",,1

@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A scalar (0-D Tensor) of type string, a single binary serialized `SequenceExample` proto.",,prim_dtype,dtype(tf.string),,1
+,"A scalar (0-D Tensor) of type string, a single binary serialized `SequenceExample` proto.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A scalar (0-D Tensor) of type string, a single binary serialized `SequenceExample` proto.",,shape,ndim(0),,1

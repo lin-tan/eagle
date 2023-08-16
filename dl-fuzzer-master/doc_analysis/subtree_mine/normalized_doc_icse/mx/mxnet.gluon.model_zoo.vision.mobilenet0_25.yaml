@@ -1,0 +1,31 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  ctx:
+    default: None
+    descp: The context in which to load the pretrained weights.
+    doc_dtype: Context, default CPU
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The context in which to load the PARAM weights
+    normalized_docdtype: Context default CPU
+  pretrained:
+    default: None
+    descp: Whether to load the pretrained weights for model.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Whether to load the pretrained weights for model
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+inputs:
+  optional:
+  - pretrained
+  - ctx
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/gluon/model_zoo/index.html#mxnet.gluon.model_zoo.vision.mobilenet0_25
+package: mxnet
+target: mobilenet0_25
+title: mxnet.gluon.model_zoo.vision.mobilenet0_25
+version: 1.6.0

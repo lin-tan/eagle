@@ -1,0 +1,40 @@
+constraints:
+  X:
+    descp: array-like, shape=(n_samples_1, n_features)
+  Y:
+    default: None
+    descp: array-like, shape=(n_samples_2, n_features)
+  copy:
+    default: 'True'
+    descp: boolean, default=True Make and use a deep copy of X and Y (if Y exists)
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+  missing_values:
+    default: nan
+    descp: np.nan or int, default=np.nan Representation of missing value
+    dtype:
+    - float
+    ndim:
+    - '0'
+  squared:
+    default: 'False'
+    descp: bool, default=False Return squared Euclidean distances.
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - Y
+  - squared
+  - missing_values
+  - copy
+  required:
+  - X
+link: ''
+package: scikit-learn
+target: nan_euclidean_distances
+title: sklearn.metrics.pairwise.nan_euclidean_distances
+version: 0.24.X

@@ -1,0 +1,9 @@
+sklearn.utils.check_consistent_length = check_consistent_length(*arrays)
+    Check that all arrays have consistent first dimensions.
+    
+    Checks whether all objects in arrays have the same shape or length.
+    
+    Parameters
+    ----------
+    *arrays : list or tuple of input objects.
+        Objects that will be checked for consistent length.

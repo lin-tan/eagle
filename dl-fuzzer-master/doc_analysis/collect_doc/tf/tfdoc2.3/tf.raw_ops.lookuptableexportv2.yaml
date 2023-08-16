@@ -1,0 +1,26 @@
+constraints:
+  Tkeys:
+    descp: A tf.DType.
+  Tvalues:
+    descp: A tf.DType.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  table_handle:
+    descp: A Tensor of type resource. Handle to the table.
+inputs:
+  optional:
+  - name
+  required:
+  - table_handle
+  - Tkeys
+  - Tvalues
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LookupTableExportV2
+outputs:
+- A tuple of Tensor objects (keys, values).
+- keys: A Tensor of type Tkeys.
+- values: A Tensor of type Tvalues.
+package: tensorflow
+target: LookupTableExportV2
+title: tf.raw_ops.LookupTableExportV2
+version: 2.3.0

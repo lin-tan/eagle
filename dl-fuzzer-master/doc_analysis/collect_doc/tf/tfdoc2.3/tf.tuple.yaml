@@ -1,0 +1,25 @@
+constraints:
+  control_inputs:
+    default: None
+    descp: List of additional ops to finish before returning.
+  name:
+    default: None
+    descp: (optional) A name to use as a name_scope for the operation.
+  tensors:
+    descp: A list of Tensors or IndexedSlices, some entries can be None.
+exceptions:
+- ValueError: If tensors does not contain any Tensor or IndexedSlices.
+- TypeError: If control_inputs is not a list of Operation or Tensor objects.
+inputs:
+  optional:
+  - control_inputs
+  - name
+  required:
+  - tensors
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/tuple
+outputs:
+- Same as tensors.
+package: tensorflow
+target: tuple
+title: tf.tuple
+version: 2.3.0

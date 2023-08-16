@@ -1,0 +1,16 @@
+constraints:
+  base_class:
+    descp: base class for classes that will be registered.
+    doc_dtype: type
+    normalized_descp:
+    - base class for classes that will be registered
+    normalized_docdtype: ONE_WORD type
+inputs:
+  optional: []
+  required:
+  - base_class
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/mxnet/registry/index.html#mxnet.registry.get_registry
+package: mxnet
+target: get_registry
+title: mxnet.registry.get_registry
+version: 1.6.0

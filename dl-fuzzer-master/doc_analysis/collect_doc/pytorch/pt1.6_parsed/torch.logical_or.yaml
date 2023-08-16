@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  other:
+    descp: the tensor to compute OR with
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - other
+link: https://pytorch.org/docs/1.6.0/generated/torch.logical_or.html#torch.logical_or#torch.logical_or
+package: torch
+ret_type: Tensor
+target: logical_or
+title: torch.logical_or
+version: 1.6.0

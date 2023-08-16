@@ -1,0 +1,12 @@
+constraints:
+  data:
+    default: None
+    descp: The input array.
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+  name:
+    default: None
+    descp: ''
+title: mxnet.ndarray.sparse.relu

@@ -1,0 +1,55 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  index_vector:
+    default: None
+    descp: Index vector
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Index D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  new_tensor:
+    default: None
+    descp: New tensor to be copied
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - New D_STRUCTURE to be copied
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  old_tensor:
+    default: None
+    descp: Old tensor
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Old D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+inputs:
+  optional:
+  - old_tensor
+  - index_vector
+  - new_tensor
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/contrib/index.html#mxnet.ndarray.contrib.index_copy
+package: mxnet
+target: index_copy
+title: mxnet.ndarray.contrib.index_copy
+version: 1.6.0

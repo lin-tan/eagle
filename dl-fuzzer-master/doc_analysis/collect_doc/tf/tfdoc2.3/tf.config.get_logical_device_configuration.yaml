@@ -1,0 +1,19 @@
+aliases:
+- tf.config.experimental.get_virtual_device_configuration
+- tf.compat.v1.config.experimental.get_virtual_device_configuration
+- tf.compat.v1.config.get_logical_device_configuration
+constraints:
+  device:
+    descp: PhysicalDevice to query
+inputs:
+  optional: []
+  required:
+  - device
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/config/get_logical_device_configuration
+outputs:
+- List of tf.config.LogicalDeviceConfiguration objects or None if no virtual device
+  configuration has been set for this physical device.
+package: tensorflow
+target: get_logical_device_configuration
+title: tf.config.get_logical_device_configuration
+version: 2.3.0

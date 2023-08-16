@@ -1,0 +1,22 @@
+aliases:
+- tf.losses.get
+- tf.compat.v1.keras.losses.get
+constraints:
+  identifier:
+    descp: A loss identifier. One of None or string name of a loss function/class
+      or loss configuration dictionary or a loss function or a loss class instance
+    dtype:
+    - callable
+exceptions:
+- ValueError: If identifier cannot be interpreted.
+inputs:
+  optional: []
+  required:
+  - identifier
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/losses/get
+outputs:
+- A Keras loss function/ Loss class instance.
+package: tensorflow
+target: get
+title: tf.keras.losses.get
+version: 2.2.0

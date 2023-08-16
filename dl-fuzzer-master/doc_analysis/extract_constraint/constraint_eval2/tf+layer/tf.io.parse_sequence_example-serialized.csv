@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A vector (1-D Tensor) of type string containing binary serialized `SequenceExample` protos.,,prim_dtype,dtype(tf.string),,1
+,A vector (1-D Tensor) of type string containing binary serialized `SequenceExample` protos.,,nonprim_dtype,"tensor_t(tf.tensor), structure(list)",,1
+,A vector (1-D Tensor) of type string containing binary serialized `SequenceExample` protos.,,shape,ndim(1),,1

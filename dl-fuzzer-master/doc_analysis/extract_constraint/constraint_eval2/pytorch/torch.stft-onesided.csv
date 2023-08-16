@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+bool,controls whether to return half of results to avoid redundancy Default: `True`,True,prim_dtype,dtype(torch.bool),,1
+bool,controls whether to return half of results to avoid redundancy Default: `True`,True,shape,ndim(0),,1

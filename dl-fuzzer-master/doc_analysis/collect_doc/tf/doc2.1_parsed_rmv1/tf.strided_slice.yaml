@@ -1,0 +1,53 @@
+aliases:
+- tf.compat.v1.strided_slice
+constraints:
+  begin:
+    descp: An `int32` or `int64` `Tensor`.
+  begin_mask:
+    default: '0'
+    descp: An `int32` mask.
+  ellipsis_mask:
+    default: '0'
+    descp: An `int32` mask.
+  end:
+    descp: An `int32` or `int64` `Tensor`.
+  end_mask:
+    default: '0'
+    descp: An `int32` mask.
+  input_:
+    descp: A `Tensor`.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  new_axis_mask:
+    default: '0'
+    descp: An `int32` mask.
+  shrink_axis_mask:
+    default: '0'
+    descp: An `int32` mask.
+  strides:
+    default: None
+    descp: An `int32` or `int64` `Tensor`.
+  var:
+    default: None
+    descp: The variable corresponding to `input_` or None
+inputs:
+  optional:
+  - strides
+  - begin_mask
+  - end_mask
+  - ellipsis_mask
+  - new_axis_mask
+  - shrink_axis_mask
+  - var
+  - name
+  required:
+  - input_
+  - begin
+  - end
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/strided_slice
+outputs: A `Tensor` the same type as `input`.
+package: tensorflow
+target: strided_slice
+title: tf.strided_slice
+version: 2.1.0

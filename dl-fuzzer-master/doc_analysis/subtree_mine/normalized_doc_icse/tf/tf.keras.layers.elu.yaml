@@ -1,0 +1,23 @@
+aliases:
+- tf.compat.v1.keras.layers.ELU
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+    normalized_descp: []
+  alpha:
+    default: '1.0'
+    descp: Scale for the negative factor.
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - Scale for the negative factor
+inputs:
+  optional:
+  - alpha
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/ELU
+package: tensorflow
+target: ELU
+title: tf.keras.layers.ELU
+version: 2.1.0

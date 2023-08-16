@@ -1,0 +1,19 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required: []
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/TPUOrdinalSelector
+outputs:
+- A Tensor of type int32.
+package: tensorflow
+target: TPUOrdinalSelector
+title: tf.raw_ops.TPUOrdinalSelector
+version: 2.2.0

@@ -1,0 +1,12 @@
+constraints:
+  labels_pred: {descp: 'array-like of shape (n_samples,) cluster labels to evaluate'}
+  labels_true: {descp: 'int array, shape = [n_samples] ground truth class labels to
+      be used as a reference'}
+inputs:
+  optional: []
+  required: [labels_true, labels_pred]
+link: ''
+package: sklearn
+target: homogeneity_score
+title: sklearn.metrics.homogeneity_score
+version: 0.24.2

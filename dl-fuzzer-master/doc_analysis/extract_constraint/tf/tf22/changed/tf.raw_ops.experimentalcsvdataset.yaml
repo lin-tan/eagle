@@ -1,0 +1,92 @@
+constraints:
+  buffer_size:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  compression_type:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  field_delim:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  filenames:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  header:
+    descp: A Tensor of type bool.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+  na_value:
+    descp: A Tensor of type string.
+    dtype:
+    - tf.string
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  output_shapes:
+    descp: A list of shapes (each a tf.TensorShape or list of ints) that has length
+      >= 1.
+    dtype:
+    - int
+    structure:
+    - list
+    - list(int)
+  record_defaults:
+    descp: 'A list of Tensor objects with types from: float32, float64, int32, int64,
+      string.'
+    structure:
+    - list(tf.tensor)
+  select_cols:
+    descp: A Tensor of type int64.
+    dtype:
+    - tf.int64
+    tensor_t:
+    - tf.tensor
+  use_quote_delim:
+    descp: A Tensor of type bool.
+    dtype:
+    - tf.bool
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - filenames
+  - compression_type
+  - buffer_size
+  - header
+  - field_delim
+  - use_quote_delim
+  - na_value
+  - select_cols
+  - record_defaults
+  - output_shapes
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ExperimentalCSVDataset
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: ExperimentalCSVDataset
+title: tf.raw_ops.ExperimentalCSVDataset
+version: 2.2.0

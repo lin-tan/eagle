@@ -1,0 +1,66 @@
+constraints:
+  data_format:
+    descp: A `string`, only `"NHWC"` is currently supported.
+    normalized_descp:
+    - A D_TYPE only QSTR is currently supported
+  dilations:
+    descp: 'A list of `ints` that has length `>= 4`. 1-D of length 4. The input stride
+      for atrous morphological dilation. Must be: `[1, rate_height, rate_width, 1]`.'
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE that has length REXPR
+    - CONSTANT_NUM D of length CONSTANT_NUM
+    - The input stride for atrous morphological dilation
+    - Must be BSTR
+  filters:
+    descp: A `Tensor`. Must have the same type as `value`. 3-D with shape `[filters_height,
+      filters_width, depth]`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as PARAM
+    - CONSTANT_NUM D with shape BSTR
+  name:
+    default: None
+    descp: A name for the operation (optional). If not specified "erosion2d" is used.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+    - If not specified QSTR is used
+  padding:
+    descp: 'A `string` from: `"SAME", "VALID"`. The type of padding algorithm to use.'
+    normalized_descp:
+    - A D_TYPE from QSTR
+    - The type of padding algorithm to use
+  strides:
+    descp: 'A list of `ints` that has length `>= 4`. 1-D of length 4. The stride of
+      the sliding window for each dimension of the input tensor. Must be: `[1, stride_height,
+      stride_width, 1]`.'
+    normalized_descp:
+    - A D_STRUCTURE of D_TYPE that has length REXPR
+    - CONSTANT_NUM D of length CONSTANT_NUM
+    - The stride of the sliding window for each dimension of the input D_STRUCTURE
+    - Must be BSTR
+  value:
+    descp: A `Tensor`. 4-D with shape `[batch, in_height, in_width, depth]`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - CONSTANT_NUM D with shape BSTR
+exceptions:
+- ValueError: If the `value` depth does not match `filters`' shape, or if padding
+    is other than `'VALID'` or `'SAME'`.
+inputs:
+  optional:
+  - name
+  required:
+  - value
+  - filters
+  - strides
+  - padding
+  - data_format
+  - dilations
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/erosion2d
+outputs: A `Tensor`. Has the same type as `value`. 4-D with shape `[batch, out_height,
+  out_width, depth]`.
+package: tensorflow
+target: erosion2d
+title: tf.nn.erosion2d
+version: 2.1.0

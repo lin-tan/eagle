@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An int specifying the number of times this dataset is repeated. If None, cycles through the dataset forever.",None,prim_dtype,dtype(int),,1
+,"An int specifying the number of times this dataset is repeated. If None, cycles through the dataset forever.",None,shape,ndim(0),,1
+,"An int specifying the number of times this dataset is repeated. If None, cycles through the dataset forever.",None,validvalue,"range([0,inf))",,1

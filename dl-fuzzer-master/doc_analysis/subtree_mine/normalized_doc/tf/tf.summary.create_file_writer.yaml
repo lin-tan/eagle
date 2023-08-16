@@ -1,0 +1,48 @@
+constraints:
+  filename_suffix:
+    default: None
+    descp: optional suffix for the event file name. Defaults to `.v2`.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - optional suffix for the event file PARAM
+    - Defaults to v2
+  flush_millis:
+    default: None
+    descp: the largest interval between flushes. Defaults to 120,000.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the largest interval between flushes
+    - Defaults to CONSTANT_NUM CONSTANT_NUM
+  logdir:
+    descp: a string specifying the directory in which to write an event file.
+    normalized_descp:
+    - a D_TYPE specifying the directory in which to write an event file
+  max_queue:
+    default: None
+    descp: the largest number of summaries to keep in a queue; will flush once the
+      queue gets bigger than this. Defaults to 10.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - the largest number of summaries to keep in a queue will flush once the queue
+      gets bigger than this
+    - Defaults to CONSTANT_NUM
+  name:
+    default: None
+    descp: a name for the op that creates the writer.
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - a name for the op that creates the writer
+inputs:
+  optional:
+  - max_queue
+  - flush_millis
+  - filename_suffix
+  - name
+  required:
+  - logdir
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/summary/create_file_writer
+outputs: A SummaryWriter object.
+package: tensorflow
+target: create_file_writer
+title: tf.summary.create_file_writer
+version: 2.1.0

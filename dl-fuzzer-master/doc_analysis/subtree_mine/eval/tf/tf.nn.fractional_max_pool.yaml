@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  seed:
+    default: '0'
+    descp: An optional `int`.  Defaults to `0`.  If set to be non-zero, the random
+      number generator is seeded by the given seed.  Otherwise it is seeded by a random
+      seed.
+    dtype:
+    - int
+    ndim:
+    - '0'
+title: tf.nn.fractional_max_pool

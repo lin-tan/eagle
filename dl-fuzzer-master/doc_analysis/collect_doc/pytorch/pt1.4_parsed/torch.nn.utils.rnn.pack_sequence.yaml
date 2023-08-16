@@ -1,0 +1,21 @@
+constraints:
+  enforce_sorted:
+    default: 'True'
+    descp: 'if `True`, checks that the input contains sequences sorted by length in
+      a decreasing order. If `False`, this condition is not checked. Default: `True`.'
+    doc_dtype:
+    - bool
+  sequences:
+    descp: A list of sequences of decreasing length.
+    doc_dtype:
+    - list[Tensor]
+inputs:
+  optional:
+  - enforce_sorted
+  required:
+  - sequences
+link: https://pytorch.org/docs/1.4.0/nn.html#torch.nn.utils.rnn.pack_sequence
+package: torch
+target: pack_sequence
+title: torch.nn.utils.rnn.pack_sequence
+version: 1.4.0

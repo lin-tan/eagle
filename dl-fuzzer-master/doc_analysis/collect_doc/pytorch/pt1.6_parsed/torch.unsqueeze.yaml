@@ -1,0 +1,20 @@
+constraints:
+  dim:
+    descp: the index at which to insert the singleton dimension
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional: []
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.6.0/generated/torch.unsqueeze.html#torch.unsqueeze#torch.unsqueeze
+package: torch
+ret_type: Tensor
+target: unsqueeze
+title: torch.unsqueeze
+version: 1.6.0

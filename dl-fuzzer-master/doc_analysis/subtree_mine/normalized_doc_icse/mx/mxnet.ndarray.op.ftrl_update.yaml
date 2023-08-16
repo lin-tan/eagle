@@ -1,0 +1,126 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  beta:
+    default: _Null
+    descp: Per-Coordinate Learning Rate beta.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Per Coordinate Learning Rate beta
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  clip_gradient:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip gradient to the range of BSTR If clip_gradient REXPR gradient clipping
+      is turned off
+    - PARAM max BSTR
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Gradient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lamda1:
+    default: _Null
+    descp: The L1 regularization coefficient.
+    doc_dtype: float, optional, default=0.00999999978
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The L1 regularization coefficient
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE required
+  n:
+    default: None
+    descp: Square of grad
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Square of PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Rescale gradient to PARAM rescale_grad PARAM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  wd:
+    default: _Null
+    descp: Weight decay augments the objective function with a regularization term
+      that penalizes large weights. The penalty scales with the square of the magnitude
+      of each weight.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM decay augments the objective function with a regularization term that
+      penalizes large weights
+    - The penalty scales with the square of the magnitude of each PARAM
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  z:
+    default: None
+    descp: z
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD z
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - grad
+  - z
+  - n
+  - lr
+  - lamda1
+  - beta
+  - wd
+  - rescale_grad
+  - clip_gradient
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/op/index.html#mxnet.ndarray.op.ftrl_update
+package: mxnet
+target: ftrl_update
+title: mxnet.ndarray.op.ftrl_update
+version: 1.6.0

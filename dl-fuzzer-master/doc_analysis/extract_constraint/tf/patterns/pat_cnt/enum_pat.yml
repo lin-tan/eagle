@@ -1,0 +1,53 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  ((,?\s+((or|and)\s*)?[`'"]+[\w.]+[`'"]+)+)\s+are\s+supported:
+    cnt: 12
+    dtype: tf.string
+    group: 1
+  (a|an)\s+(optional)?\s*[`'"]*([\w.]+)[`'"]*\s+from:*\s*`(.*?)`\.:
+    cnt: 0
+    group: 4
+    ndim: 0
+  (string|format)[,;]\s+(either\s+)?\(?(([`'"]+\w+[`'"]+,?\s+)+or\s+[`'"]+\w+[`'"]+)\)?:
+    cnt: 37
+    dtype: string
+    group: 3
+  either\s+([`'"]+\w+[`'"]+\s+(\(default\))?\s*or\s+[`'"]+\w+[`'"]+):
+    cnt: 32
+    group: 1
+  either\s+the\s+`*string`*\s*([`'"]+(\w+)[`'"]+\s+or\s+[`'"]+(\w+)[`'"]+):
+    cnt: 1
+    dtype: string
+    group: 1
+  it\s+can\s+be\s+either\s+((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+(\s*\(default\)\s*)?)+):
+    cnt: 4
+    group: 1
+  one\s+of:?\s*(`{\s*)?((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+(\s*\(.*?\)\s*)?)+)(}`)?:
+    cnt: 32
+    group: 2
+    replace:
+      \(.+?\): ''
+  only\s+[`'"]+(\w+)[`'"]+\s+is\s+currently\s+supported:
+    cnt: 3
+    group: 1
+  string`*\s+from:(([\s,`'"]+(\w+)[`'"]+)+)\.:
+    cnt: 172
+    dtype: tf.string
+    group: 1
+  supported\s+values\s+are\s*((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+)+):
+    cnt: 2
+    group: 1
+  valid\s+values\s+are\s*\[?((,?\s*((or|and)\s*)?[`'"]\w+[`'"](\s*\(default\))?)+)\]?:
+    cnt: 8
+    dtype: string
+    group: 1
+stop_word:
+- and
+- or
+- (default)
+target: enum

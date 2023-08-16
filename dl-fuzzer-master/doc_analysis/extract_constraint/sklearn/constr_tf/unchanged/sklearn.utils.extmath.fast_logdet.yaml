@@ -1,0 +1,12 @@
+constraints:
+  A:
+    descp: array_like The matrix
+inputs:
+  optional: []
+  required:
+  - A
+link: ''
+package: scikit-learn
+target: fast_logdet
+title: sklearn.utils.extmath.fast_logdet
+version: 0.24.X

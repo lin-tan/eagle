@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.keras.utils.convert_all_kernels_in_model
+constraints:
+  model:
+    descp: target model for the conversion.
+inputs:
+  optional: []
+  required:
+  - model
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/utils/convert_all_kernels_in_model
+package: tensorflow
+target: convert_all_kernels_in_model
+title: tf.keras.utils.convert_all_kernels_in_model
+version: 2.1.0

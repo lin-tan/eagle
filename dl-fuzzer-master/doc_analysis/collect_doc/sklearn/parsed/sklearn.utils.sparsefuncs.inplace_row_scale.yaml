@@ -1,0 +1,13 @@
+constraints:
+  X: {descp: 'CSR or CSC sparse matrix, shape (n_samples, n_features) Matrix to be
+      scaled.'}
+  scale: {descp: 'float array with shape (n_features,) Array of precomputed sample-wise
+      values to use for scaling.'}
+inputs:
+  optional: []
+  required: [X, scale]
+link: ''
+package: sklearn
+target: inplace_row_scale
+title: sklearn.utils.sparsefuncs.inplace_row_scale
+version: 0.24.2

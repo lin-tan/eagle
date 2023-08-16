@@ -1,0 +1,43 @@
+constraints:
+  labels:
+    descp: The labels of the data.
+    doc_dtype: list of NDArray
+    normalized_descp:
+    - The labels of the data
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  preds:
+    descp: Predicted values.
+    doc_dtype: list of NDArray
+    normalized_descp:
+    - Predicted values
+    normalized_docdtype: D_STRUCTURE of D_STRUCTURE
+  shape:
+    default: 'False'
+    descp: If True, check the shape of labels and preds; Otherwise only check their
+      length.
+    doc_dtype: boolean
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL check the shape of PARAM and PARAM Otherwise only check their
+      length
+    normalized_docdtype: ONE_WORD D_TYPE
+  wrap:
+    default: 'False'
+    descp: If True, wrap labels/preds in a list if they are single NDArray
+    doc_dtype: boolean
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL wrap PARAM PARAM in a D_STRUCTURE if they are single D_STRUCTURE
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - wrap
+  - shape
+  required:
+  - labels
+  - preds
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/metric/index.html#mxnet.metric.check_label_shapes
+package: mxnet
+target: check_label_shapes
+title: mxnet.metric.check_label_shapes
+version: 1.6.0

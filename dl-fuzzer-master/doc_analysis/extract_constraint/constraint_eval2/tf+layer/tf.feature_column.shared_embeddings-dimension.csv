@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An integer specifying dimension of the embedding, must be > 0.",,prim_dtype,dtype(int),,1
+,"An integer specifying dimension of the embedding, must be > 0.",,shape,ndim(0),,1
+,"An integer specifying dimension of the embedding, must be > 0.",,validvalue,"range((0,inf))",,1

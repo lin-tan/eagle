@@ -1,0 +1,16 @@
+constraints:
+  seed:
+    descp: The desired seed.
+    doc_dtype: int
+    normalized_descp:
+    - The desired seed
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional: []
+  required:
+  - seed
+link: https://pytorch.org/docs/stable/random.html#torch.random.manual_seed
+package: torch
+target: manual_seed
+title: torch.random.manual_seed
+version: 1.5.0

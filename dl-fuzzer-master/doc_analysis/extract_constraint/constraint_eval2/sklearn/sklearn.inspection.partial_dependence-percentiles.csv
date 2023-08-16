@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"tuple of float, optional (default=(0.05, 0.95)) The lower and upper percentile used to create the extreme values for the grid. Must be in [0, 1].","(0.05, 0.95)",prim_dtype,dtype(float),,1
+,"tuple of float, optional (default=(0.05, 0.95)) The lower and upper percentile used to create the extreme values for the grid. Must be in [0, 1].","(0.05, 0.95)",shape,ndim(1),,1
+,"tuple of float, optional (default=(0.05, 0.95)) The lower and upper percentile used to create the extreme values for the grid. Must be in [0, 1].","(0.05, 0.95)",validvalue,"range([0,1])",,1

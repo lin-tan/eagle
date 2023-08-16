@@ -1,0 +1,15 @@
+aliases:
+- tf.compat.v1.io.gfile.isdir
+constraints:
+  path:
+    descp: string, path to a potential directory
+inputs:
+  optional: []
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/gfile/isdir
+outputs: True, if the path is a directory; False otherwise
+package: tensorflow
+target: isdir
+title: tf.io.gfile.isdir
+version: 2.1.0

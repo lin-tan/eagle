@@ -1,0 +1,9 @@
+constraints:
+  variance:
+    descp: A 1D variance Tensor with size matching the last dimension of t. This is
+      the second output from tf.nn.moments, or a saved moving average thereof.
+    ndim:
+    - '1'
+    tensor_t:
+    - tf.tensor
+title: tf.nn.batch_norm_with_global_normalization

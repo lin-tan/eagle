@@ -1,0 +1,15 @@
+constraints:
+  get_prob:
+    default: _Null
+    descp: Whether to also return the log probability of sampled result. This is usually
+      used for differentiating through stochastic variables, e.g. in reinforcement
+      learning.
+    doc_dtype:
+    - boolean
+    - optional
+    - default=0
+    dtype:
+    - boolean
+    ndim:
+    - '0'
+title: mxnet.ndarray.op.sample_multinomial

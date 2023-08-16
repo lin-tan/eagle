@@ -1,0 +1,27 @@
+constraints:
+  dim:
+    descp: the dimension to reduce. If `None`, the argmax of the flattened input is
+      returned.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not. Ignored if `dim=None`.
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - keepdim
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.argmax.html#torch.argmax#torch.argmax
+package: torch
+ret_type: LongTensor
+target: argmax
+title: torch.argmax
+version: 1.7.0

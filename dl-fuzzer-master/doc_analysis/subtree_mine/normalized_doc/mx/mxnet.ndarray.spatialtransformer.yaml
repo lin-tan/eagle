@@ -1,0 +1,84 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  cudnn_off:
+    default: _Null
+    descp: whether to turn cudnn off
+    doc_dtype: boolean or None, optional, default=None
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - whether to turn cudnn off
+    normalized_docdtype: D_TYPE or None, optional, default None
+  data:
+    default: None
+    descp: Input data to the SpatialTransformerOp.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Input data to the SpatialTransformerOp
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  loc:
+    default: None
+    descp: localisation net, the output dim should be 6 when transform_type is affine.
+      You shold initialize the weight and bias with identity tranform.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - localisation net, the output dim should be CONSTANT_NUM when PARAM is affine
+    - You shold initialize the weight and bias with identity tranform
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  sampler_type:
+    default: _Null
+    descp: sampling type
+    doc_dtype: '{''bilinear''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - sampling type
+    normalized_docdtype: QSTR , required
+  target_shape:
+    default: _Null
+    descp: 'output shape(h, w) of spatial transformer: (y, x)'
+    doc_dtype: Shape(tuple), optional, default=[0,0]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - output shape BSTR of spatial transformer BSTR
+    normalized_docdtype: Shape BSTR, optional, default BSTR
+  transform_type:
+    default: _Null
+    descp: transformation type
+    doc_dtype: '{''affine''}, required'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - transformation type
+    normalized_docdtype: QSTR , required
+inputs:
+  optional:
+  - data
+  - loc
+  - target_shape
+  - transform_type
+  - sampler_type
+  - cudnn_off
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.SpatialTransformer
+package: mxnet
+target: SpatialTransformer
+title: mxnet.ndarray.SpatialTransformer
+version: 1.6.0

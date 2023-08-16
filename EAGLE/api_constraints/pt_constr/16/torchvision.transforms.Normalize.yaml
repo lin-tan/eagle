@@ -1,0 +1,36 @@
+constraints:
+  inplace:
+    default: 'False'
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  mean:
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[3]'
+    structure:
+    - list
+  std:
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[3]'
+    structure:
+    - list
+inputs:
+  optional:
+  - inplace
+  required:
+  - mean
+  - std
+package: torchvision
+target: Normalize
+title: torchvision.transforms.Normalize
+version: 0.7.0
+

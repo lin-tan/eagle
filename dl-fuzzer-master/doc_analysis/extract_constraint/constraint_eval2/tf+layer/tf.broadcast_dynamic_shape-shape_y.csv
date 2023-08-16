@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A rank 1 integer `Tensor`, representing the shape of y.",,prim_dtype,dtype(int),,1
+,"A rank 1 integer `Tensor`, representing the shape of y.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"A rank 1 integer `Tensor`, representing the shape of y.",,shape,ndim(1),,1
+,"A rank 1 integer `Tensor`, representing the shape of y.",,validvalue,"range([0,inf))",,1

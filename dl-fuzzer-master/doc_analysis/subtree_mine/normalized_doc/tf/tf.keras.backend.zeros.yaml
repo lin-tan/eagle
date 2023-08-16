@@ -1,0 +1,33 @@
+aliases:
+- tf.compat.v1.keras.backend.zeros
+constraints:
+  dtype:
+    default: None
+    descp: data type of returned Keras variable
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - data type of returned Keras variable
+  name:
+    default: None
+    descp: name of returned Keras variable
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - name of returned Keras variable
+  shape:
+    descp: Tuple or list of integers, shape of returned Keras variable
+    normalized_descp:
+    - D_STRUCTURE of D_TYPE, shape of returned Keras variable
+inputs:
+  optional:
+  - dtype
+  - name
+  required:
+  - shape
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/backend/zeros
+outputs: A variable (including Keras metadata), filled with `0.0`. Note that if `shape`
+  was symbolic, we cannot return a variable, and will return a dynamically-shaped
+  tensor instead.
+package: tensorflow
+target: zeros
+title: tf.keras.backend.zeros
+version: 2.1.0

@@ -1,0 +1,43 @@
+constraints:
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, defaults to
+      the device of `input`.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned Tensor. Default: if `None`, defaults
+      to the dtype of `input`.'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: the size of `input` will determine size of the output tensor.
+    doc_dtype:
+    - Tensor
+  layout:
+    default: None
+    descp: 'the desired layout of returned tensor. Default: if `None`, defaults to
+      the layout of `input`.'
+    doc_dtype:
+    - torch.layout
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - input
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.randn_like
+package: torch
+ret_type: Tensor
+target: randn_like
+title: torch.randn_like
+version: 1.4.0

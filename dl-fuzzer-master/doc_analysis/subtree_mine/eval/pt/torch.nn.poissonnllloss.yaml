@@ -1,0 +1,11 @@
+constraints:
+  full:
+    default: 'False'
+    descp: ''
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+title: torch.nn.PoissonNLLLoss

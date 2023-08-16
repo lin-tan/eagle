@@ -1,0 +1,69 @@
+aliases:
+- tf.nn.space_to_batch
+constraints:
+  block_shape:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 1-D
+      with shape `[M]`, all values must be >= 1.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D with shape BSTR all values must be REXPR
+  input:
+    descp: A `Tensor`. N-D with shape `input_shape = [batch] + spatial_shape + remaining_shape`,
+      where spatial_shape has `M` dimensions.
+    normalized_descp:
+    - A D_STRUCTURE
+    - N D with shape input_shape BSTR spatial_shape remaining_shape where spatial_shape
+      has QSTR dimensions
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  paddings:
+    descp: 'A `Tensor`. Must be one of the following types: `int32`, `int64`. 2-D
+      with shape `[M, 2]`, all values must be >= 0.`paddings[i] = [pad_start, pad_end]`
+      specifies the padding for input dimension`i + 1`, which corresponds to spatial
+      dimension `i`.  It is required that`block_shape[i]` divides `input_shape[i +
+      1] + pad_start + pad_end`.This operation is equivalent to the following steps:
+      Zero-pad the start and end of dimensions `[1, ..., M]` of the input according
+      to `paddings` to produce `padded` of shape `padded_shape`.Reshape `padded` to
+      `reshaped_padded` of shape:[batch] + [padded_shape[1] / block_shape[0],  block_shape[0],
+      ..., padded_shape[M] / block_shape[M-1], block_shape[M-1]] + remaining_shapePermute
+      dimensions of `reshaped_padded` to produce`permuted_reshaped_padded` of shape:block_shape
+      + [batch] + [padded_shape[1] / block_shape[0], ..., padded_shape[M] / block_shape[M-1]]
+      + remaining_shapeReshape `permuted_reshaped_padded` to flatten `block_shape`
+      into the batch dimension, producing an output tensor of shape:[batch * prod(block_shape)]
+      + [padded_shape[1] / block_shape[0], ..., padded_shape[M] / block_shape[M-1]]
+      + remaining_shape Some examples:(1) For the following input of shape `[1, 2,
+      2, 1]`, `block_shape = [2, 2]`, and   `paddings = [[0, 0], [0, 0]]`:'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+    - CONSTANT_NUM D with shape BSTR all values must be REXPRpaddings BSTR BSTR specifies
+      the padding for PARAM dimension i CONSTANT_NUM which corresponds to spatial
+      dimension QSTR
+    - It is required that PARAM BSTR divides QSTR This operation is equivalent to
+      the following steps Zero pad the start and end of dimensions BSTR of the PARAM
+      according to QSTR to produce QSTR of shape QSTR Reshape QSTR to QSTR of shape
+      BSTR padded_shape BSTR PARAM BSTR PARAM BSTR padded_shape BSTR PARAM BSTR PARAM
+      BSTR remaining_shapePermute dimensions of QSTR to produce QSTR of shape PARAM
+      BSTR padded_shape BSTR PARAM BSTR padded_shape BSTR PARAM BSTR remaining_shapeReshape
+      QSTR to flatten PARAM into the batch dimension producing an output D_STRUCTURE
+      of shape BSTR padded_shape BSTR PARAM BSTR padded_shape BSTR PARAM BSTR remaining_shape
+      Some examples BSTR For the following PARAM of shape BSTR PARAM BSTR and paddings
+      BSTR BSTR
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - block_shape
+  - paddings
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/space_to_batch
+outputs: A `Tensor`. Has the same type as `input`.
+package: tensorflow
+target: space_to_batch
+title: tf.space_to_batch
+version: 2.1.0

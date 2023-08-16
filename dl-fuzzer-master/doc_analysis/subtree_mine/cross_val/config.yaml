@@ -1,0 +1,28 @@
+num_fold: 5
+min_support:
+  # - 5
+  - 10
+  - 15
+  - 20
+min_conf:
+  - 0.9
+  - 0.7
+  - 0.6
+  # - 0.5
+  # - 0
+top_k:
+  - -1
+max_len:
+  - -1
+  # - 9
+  # - 7
+  # - 5
+
+# this is not max_len, it is max_iter that is directly passing to the treeminer. 
+# max_len is the length of the subtree excluding "-1"
+# max_iter = max_len - 1
+
+# The length of 10% param:
+# max_len: pt: 3. mx: 7, tf: 12
+# max_iter: pt: 2. mx: 6, tf: 11
+

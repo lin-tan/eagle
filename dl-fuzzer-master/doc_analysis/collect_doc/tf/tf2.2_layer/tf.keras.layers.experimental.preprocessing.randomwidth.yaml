@@ -1,0 +1,36 @@
+aliases:
+- tf.compat.v1.keras.layers.experimental.preprocessing.RandomWidth
+constraints:
+  '**kwargs':
+    descp: ''
+  factor:
+    descp: A positive float (fraction of original width), or a tuple of size 2 representing
+      lower and upper bound for resizing horizontally. When represented as a single
+      float, this value is used for both the upper and lower bound. For instance,
+      factor=(0.2, 0.3) results in an output width varying in the range [original
+      + 20%, original + 30%]. factor=(-0.2, 0.3) results in an output width varying
+      in the range [original - 20%, original + 30%]. factor=0.2 results in an output
+      width varying in the range [original - 20%, original + 20%].
+  interpolation:
+    default: bilinear
+    descp: String, the interpolation method. Defaults to bilinear. Supports bilinear,
+      nearest, bicubic, area, lanczos3, lanczos5, gaussian, mitchellcubic
+  name:
+    default: None
+    descp: A string, the name of the layer.
+  seed:
+    default: None
+    descp: Integer. Used to create a random seed.
+inputs:
+  optional:
+  - interpolation
+  - seed
+  - name
+  required:
+  - factor
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/experimental/preprocessing/RandomWidth
+package: tensorflow
+target: RandomWidth
+title: tf.keras.layers.experimental.preprocessing.RandomWidth
+version: 2.2.0

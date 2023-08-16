@@ -1,0 +1,39 @@
+constraints:
+  dim:
+    default: None
+    descp: the dimension to find the kth value along
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  k:
+    descp: k for the k-th smallest element
+    doc_dtype:
+    - int
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the output tuple of (Tensor, LongTensor) can be optionally given to be
+      used as output buffers
+    doc_dtype:
+    - tuple
+inputs:
+  optional:
+  - dim
+  - keepdim
+  - out
+  required:
+  - input
+  - k
+link: https://pytorch.org/docs/stable/torch.html#torch.kthvalue
+package: torch
+ret_type: (Tensor, LongTensor)
+target: kthvalue
+title: torch.kthvalue
+version: 1.5.0

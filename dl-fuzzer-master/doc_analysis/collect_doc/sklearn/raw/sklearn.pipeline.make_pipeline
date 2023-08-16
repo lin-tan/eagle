@@ -1,0 +1,41 @@
+sklearn.pipeline.make_pipeline = make_pipeline(*steps, **kwargs)
+    Construct a Pipeline from the given estimators.
+    
+    This is a shorthand for the Pipeline constructor; it does not require, and
+    does not permit, naming the estimators. Instead, their names will be set
+    to the lowercase of their types automatically.
+    
+    Parameters
+    ----------
+    *steps : list of estimators.
+    
+    memory : None, str or object with the joblib.Memory interface, optional
+        Used to cache the fitted transformers of the pipeline. By default,
+        no caching is performed. If a string is given, it is the path to
+        the caching directory. Enabling caching triggers a clone of
+        the transformers before fitting. Therefore, the transformer
+        instance given to the pipeline cannot be inspected
+        directly. Use the attribute ``named_steps`` or ``steps`` to
+        inspect estimators within the pipeline. Caching the
+        transformers is advantageous when fitting is time consuming.
+    
+    verbose : boolean, default=False
+        If True, the time elapsed while fitting each step will be printed as it
+        is completed.
+    
+    See Also
+    --------
+    sklearn.pipeline.Pipeline : Class for creating a pipeline of
+        transforms with a final estimator.
+    
+    Examples
+    --------
+    >>> from sklearn.naive_bayes import GaussianNB
+    >>> from sklearn.preprocessing import StandardScaler
+    >>> make_pipeline(StandardScaler(), GaussianNB(priors=None))
+    Pipeline(steps=[('standardscaler', StandardScaler()),
+                    ('gaussiannb', GaussianNB())])
+    
+    Returns
+    -------
+    p : Pipeline

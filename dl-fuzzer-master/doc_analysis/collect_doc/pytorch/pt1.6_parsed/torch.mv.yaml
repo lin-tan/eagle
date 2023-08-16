@@ -1,0 +1,26 @@
+constraints:
+  input:
+    descp: matrix to be multiplied
+    doc_dtype:
+    - Tensor
+  out:
+    default: None
+    descp: the output tensor.
+    doc_dtype:
+    - Tensor
+  vec:
+    descp: vector to be multiplied
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - out
+  required:
+  - input
+  - vec
+link: https://pytorch.org/docs/1.6.0/generated/torch.mv.html#torch.mv#torch.mv
+package: torch
+ret_type: Tensor
+target: mv
+title: torch.mv
+version: 1.6.0

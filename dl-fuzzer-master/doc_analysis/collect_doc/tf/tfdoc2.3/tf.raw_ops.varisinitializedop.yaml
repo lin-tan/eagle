@@ -1,0 +1,18 @@
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  resource:
+    descp: A Tensor of type resource. the input resource handle.
+inputs:
+  optional:
+  - name
+  required:
+  - resource
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/VarIsInitializedOp
+outputs:
+- A Tensor of type bool.
+package: tensorflow
+target: VarIsInitializedOp
+title: tf.raw_ops.VarIsInitializedOp
+version: 2.3.0

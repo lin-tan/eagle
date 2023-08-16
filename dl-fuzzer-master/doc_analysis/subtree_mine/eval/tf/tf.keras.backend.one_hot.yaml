@@ -1,0 +1,10 @@
+constraints:
+  num_classes:
+    descp: Integer, number of classes to consider.
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+title: tf.keras.backend.one_hot

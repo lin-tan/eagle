@@ -1,0 +1,17 @@
+constraints:
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype:
+    - float
+    - required
+    dtype:
+    - float
+  n:
+    default: None
+    descp: n
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.rmsprop_update

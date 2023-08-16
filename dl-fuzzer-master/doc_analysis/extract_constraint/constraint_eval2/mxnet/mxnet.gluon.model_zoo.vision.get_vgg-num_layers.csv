@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+int,"Number of layers for the variant of densenet. Options are 11, 13, 16, 19.",,prim_dtype,dtype(int),,1
+int,"Number of layers for the variant of densenet. Options are 11, 13, 16, 19.",,shape,ndim(0),,1
+int,"Number of layers for the variant of densenet. Options are 11, 13, 16, 19.",,validvalue,"range([0,inf))",,1

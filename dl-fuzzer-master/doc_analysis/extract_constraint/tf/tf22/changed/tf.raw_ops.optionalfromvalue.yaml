@@ -1,0 +1,24 @@
+constraints:
+  components:
+    descp: A list of Tensor objects.
+    structure:
+    - list(tf.tensor)
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - name
+  required:
+  - components
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/OptionalFromValue
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: OptionalFromValue
+title: tf.raw_ops.OptionalFromValue
+version: 2.2.0

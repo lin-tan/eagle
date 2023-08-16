@@ -1,0 +1,24 @@
+constraints:
+  index:
+    descp: A Tensor of type int32.
+  input_handle:
+    descp: A Tensor of type variant.
+  item:
+    descp: A Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input_handle
+  - index
+  - item
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TensorListSetItem
+outputs:
+- A Tensor of type variant.
+package: tensorflow
+target: TensorListSetItem
+title: tf.raw_ops.TensorListSetItem
+version: 2.3.0

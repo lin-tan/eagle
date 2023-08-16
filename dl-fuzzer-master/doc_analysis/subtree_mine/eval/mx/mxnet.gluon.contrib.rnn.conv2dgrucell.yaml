@@ -1,0 +1,14 @@
+constraints:
+  activation:
+    default: tanh
+    descp: Type of activation function used in n_t. If argument type is string, it's
+      equivalent to nn.Activation(act_type=str). See `Activation()` for available
+      choices. Alternatively, other activation blocks such as nn.LeakyReLU can be
+      used.
+    doc_dtype:
+    - str
+    - gluon.Block
+    - default 'tanh'
+    dtype:
+    - string
+title: mxnet.gluon.contrib.rnn.Conv2DGRUCell

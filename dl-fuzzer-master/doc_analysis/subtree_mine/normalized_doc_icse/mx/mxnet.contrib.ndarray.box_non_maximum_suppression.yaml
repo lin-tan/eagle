@@ -1,0 +1,133 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  background_id:
+    default: _Null
+    descp: Optional, id of the background class which will be ignored in nms.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Optional id of the background class which will be ignored in nms
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  coord_start:
+    default: _Null
+    descp: Start index of the consecutive 4 coordinates.
+    doc_dtype: int, optional, default='2'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Start index of the consecutive CONSTANT_NUM coordinates
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  data:
+    default: None
+    descp: The input
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The input
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  force_suppress:
+    default: _Null
+    descp: Optional, if set false and id_index is provided, nms will only apply to
+      boxes belongs to the same category
+    doc_dtype: boolean, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Optional if set CONSTANT_BOOL and PARAM is provided nms will only apply to boxes
+      belongs to the same category
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  id_index:
+    default: _Null
+    descp: Optional, index of the class categories, -1 to disable.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Optional index of the class categories CONSTANT_NUM to disable
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  in_format:
+    default: _Null
+    descp: The input box encoding type. "corner" means boxes are encoded as [xmin,
+      ymin, xmax, ymax], "center" means boxes are encodes as [x, y, width, height].
+    doc_dtype: '{''center'', ''corner''},optional, default=''corner'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The input box encoding type
+    - QSTR means boxes are encoded as BSTR QSTR means boxes are encodes as BSTR
+    normalized_docdtype: QSTR optional default QSTR
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE optional
+  out_format:
+    default: _Null
+    descp: The output box encoding type. "corner" means boxes are encoded as [xmin,
+      ymin, xmax, ymax], "center" means boxes are encodes as [x, y, width, height].
+    doc_dtype: '{''center'', ''corner''},optional, default=''corner'''
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The output box encoding type
+    - QSTR means boxes are encoded as BSTR QSTR means boxes are encodes as BSTR
+    normalized_docdtype: QSTR optional default QSTR
+  overlap_thresh:
+    default: _Null
+    descp: Overlapping(IoU) threshold to suppress object with smaller score.
+    doc_dtype: float, optional, default=0.5
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Overlapping BSTR threshold to suppress object with smaller score
+    normalized_docdtype: D_TYPE optional default CONSTANT_FLOAT
+  score_index:
+    default: _Null
+    descp: Index of the scores/confidence of boxes.
+    doc_dtype: int, optional, default='1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Index of the scores confidence of boxes
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  topk:
+    default: _Null
+    descp: Apply nms to topk boxes with descending scores, -1 to no restriction.
+    doc_dtype: int, optional, default='-1'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Apply nms to topk boxes with descending scores CONSTANT_NUM to no restriction
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+  valid_thresh:
+    default: _Null
+    descp: Filter input boxes to those whose scores greater than valid_thresh.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Filter input boxes to those whose scores greater than valid_thresh
+    normalized_docdtype: D_TYPE optional default CONSTANT_NUM
+inputs:
+  optional:
+  - data
+  - overlap_thresh
+  - valid_thresh
+  - topk
+  - coord_start
+  - score_index
+  - id_index
+  - background_id
+  - force_suppress
+  - in_format
+  - out_format
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.box_non_maximum_suppression
+package: mxnet
+target: box_non_maximum_suppression
+title: mxnet.contrib.ndarray.box_non_maximum_suppression
+version: 1.6.0

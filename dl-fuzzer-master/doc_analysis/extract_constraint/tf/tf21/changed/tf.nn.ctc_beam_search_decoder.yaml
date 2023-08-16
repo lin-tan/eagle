@@ -1,0 +1,59 @@
+aliases:
+- tf.compat.v1.nn.ctc_beam_search_decoder_v2
+constraints:
+  beam_width:
+    default: '100'
+    descp: An int scalar >= 0 (beam search beam width).
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+  inputs:
+    descp: 3-D `float` `Tensor`, size `[max_time, batch_size, num_classes]`. The logits.
+    dtype:
+    - float
+    ndim:
+    - '0'
+    - '3'
+    shape:
+    - '[max_time,batch_size,num_classes]'
+    tensor_t:
+    - tf.tensor
+  sequence_length:
+    descp: 1-D `int32` vector containing sequence lengths, having size`[batch_size]`.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[batch_size]'
+  top_paths:
+    default: '1'
+    descp: An int scalar >= 0, <= beam_width (controls output size).
+    dtype:
+    - int
+    ndim:
+    - '0'
+dependency:
+- batch_size
+- max_time
+- num_classes
+inputs:
+  optional:
+  - beam_width
+  - top_paths
+  required:
+  - inputs
+  - sequence_length
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/nn/ctc_beam_search_decoder
+outputs: A tuple `(decoded, log_probabilities)` where
+package: tensorflow
+target: ctc_beam_search_decoder
+title: tf.nn.ctc_beam_search_decoder
+version: 2.1.0
+check_nan: true

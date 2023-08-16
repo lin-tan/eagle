@@ -1,0 +1,13 @@
+constraints:
+  '**kwargs':
+    descp: ''
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype:
+    - NDArray
+    dtype:
+    - numeric
+    structure:
+    - ndarray
+title: mxnet.ndarray.op.nag_mom_update

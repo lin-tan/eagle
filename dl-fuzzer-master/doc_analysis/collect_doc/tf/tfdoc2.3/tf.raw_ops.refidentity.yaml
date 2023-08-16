@@ -1,0 +1,18 @@
+constraints:
+  input:
+    descp: A mutable Tensor.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/RefIdentity
+outputs:
+- A mutable Tensor. Has the same type as input.
+package: tensorflow
+target: RefIdentity
+title: tf.raw_ops.RefIdentity
+version: 2.3.0

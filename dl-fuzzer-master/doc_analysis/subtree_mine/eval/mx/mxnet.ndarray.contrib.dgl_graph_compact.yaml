@@ -1,0 +1,13 @@
+constraints:
+  graph_sizes:
+    descp: the number of vertices in each graph.
+    doc_dtype:
+    - tuple of <long>
+    - required
+    dtype:
+    - numpy.int64
+    range:
+    - '[0,inf)'
+    structure:
+    - tuple
+title: mxnet.ndarray.contrib.dgl_graph_compact

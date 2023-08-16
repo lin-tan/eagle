@@ -1,0 +1,33 @@
+constraints:
+  input:
+    descp: A Tensor. any tensor.
+    tensor_t:
+    - tf.tensor
+  message:
+    default: ''
+    descp: An optional string. Defaults to "". Will be printed in the error when anyone
+      tries to differentiate this operation.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional:
+  - message
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/PreventGradient
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: PreventGradient
+title: tf.raw_ops.PreventGradient
+version: 2.3.0

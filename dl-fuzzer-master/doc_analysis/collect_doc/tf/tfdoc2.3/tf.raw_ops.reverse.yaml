@@ -1,0 +1,23 @@
+constraints:
+  dims:
+    descp: A Tensor of type bool. 1-D. The dimensions to reverse.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor:
+    descp: 'A Tensor. Must be one of the following types: uint8, int8, uint16, int16,
+      int32, int64, bool, half, float32, float64, complex64, complex128, string. Up
+      to 8-D.'
+inputs:
+  optional:
+  - name
+  required:
+  - tensor
+  - dims
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Reverse
+outputs:
+- A Tensor. Has the same type as tensor.
+package: tensorflow
+target: Reverse
+title: tf.raw_ops.Reverse
+version: 2.3.0

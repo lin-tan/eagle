@@ -1,0 +1,22 @@
+aliases:
+- tf.compat.v1.keras.models.model_from_config
+constraints:
+  config:
+    descp: Configuration dictionary.
+  custom_objects:
+    default: None
+    descp: Optional dictionary mapping names (strings) to custom classes or functions
+      to be considered during deserialization.
+exceptions:
+- TypeError: if `config` is not a dictionary.
+inputs:
+  optional:
+  - custom_objects
+  required:
+  - config
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/models/model_from_config
+outputs: A Keras model instance (uncompiled).
+package: tensorflow
+target: model_from_config
+title: tf.keras.models.model_from_config
+version: 2.1.0

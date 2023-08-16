@@ -1,0 +1,31 @@
+aliases:
+- tf.compat.v1.assert_same_float_dtype
+- tf.compat.v1.debugging.assert_same_float_dtype
+constraints:
+  dtype:
+    default: None
+    descp: Expected type.
+    dtype:
+    - tf.dtype
+    ndim:
+    - '0'
+  tensors:
+    default: None
+    descp: Tensors of input values. Can include None elements, which will be ignored.
+    tensor_t:
+    - tf.tensor
+exceptions:
+- ValueError: if neither tensors nor dtype is supplied, or result is not float, or
+    the common type of the inputs is not a floating point type.
+inputs:
+  optional:
+  - tensors
+  - dtype
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/debugging/assert_same_float_dtype
+outputs:
+- Validated type.
+package: tensorflow
+target: assert_same_float_dtype
+title: tf.debugging.assert_same_float_dtype
+version: 2.3.0

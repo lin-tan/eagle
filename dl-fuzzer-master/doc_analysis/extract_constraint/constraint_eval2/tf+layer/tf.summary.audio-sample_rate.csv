@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"An `int` or rank-0 `int32` `Tensor` that represents the sample rate, in Hz. Must be positive.",,prim_dtype,"dtype(int, tf.int32)",,1
+,"An `int` or rank-0 `int32` `Tensor` that represents the sample rate, in Hz. Must be positive.",,nonprim_dtype,tensor_t(tf.tensor),,1
+,"An `int` or rank-0 `int32` `Tensor` that represents the sample rate, in Hz. Must be positive.",,shape,ndim(0),,1
+,"An `int` or rank-0 `int32` `Tensor` that represents the sample rate, in Hz. Must be positive.",,validvalue,"range((0,inf))",,1

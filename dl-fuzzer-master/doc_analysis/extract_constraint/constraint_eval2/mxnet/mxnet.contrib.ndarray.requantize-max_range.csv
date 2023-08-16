@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+NDArray,The original maximum scalar value in the form of float32 used for quantizing data into int32.,None,prim_dtype,dtype(numpy.float32),,1
+NDArray,The original maximum scalar value in the form of float32 used for quantizing data into int32.,None,nonprim_dtype,structure(ndarray),,1
+NDArray,The original maximum scalar value in the form of float32 used for quantizing data into int32.,None,shape,ndim(0),,1

@@ -1,0 +1,55 @@
+constraints:
+  debug_urls:
+    default: '[]'
+    descp: An optional list of strings. Defaults to []. List of URLs to debug targets,
+      e.g., file:///foo/tfdbg_dump, grpc:://localhost:11011.
+  device_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+  gated_grpc:
+    default: 'False'
+    descp: An optional bool. Defaults to False. Whether this op will be gated. If
+      any of the debug_urls of this debug node is of the grpc:// scheme, when the
+      value of this attribute is set to True, the data will not actually be sent via
+      the grpc stream unless this debug op has been enabled at the debug_url. If all
+      of the debug_urls of this debug node are of the grpc:// scheme and the debug
+      op is enabled at none of them, the output will be an empty Tensor.
+  input:
+    descp: A Tensor. Input tensor, non-Reference type.
+  lower_bound:
+    default: float(-inf)
+    descp: 'An optional float. Defaults to float(''-inf''). (float) The lower bound
+      <= which values will be included in the generalized -inf count. Default: -inf.'
+  mute_if_healthy:
+    default: 'False'
+    descp: An optional bool. Defaults to False. (bool) Do not send data to the debug
+      URLs unless at least one of elements [2], [3] and 7 is non-zero.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  tensor_name:
+    default: ''
+    descp: An optional string. Defaults to "". Name of the input tensor.
+  upper_bound:
+    default: float(inf)
+    descp: 'An optional float. Defaults to float(''inf''). (float) The upper bound
+      >= which values will be included in the generalized +inf count. Default: +inf.'
+inputs:
+  optional:
+  - device_name
+  - tensor_name
+  - debug_urls
+  - lower_bound
+  - upper_bound
+  - mute_if_healthy
+  - gated_grpc
+  - name
+  required:
+  - input
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/DebugNumericSummary
+outputs:
+- A Tensor of type float64.
+package: tensorflow
+target: DebugNumericSummary
+title: tf.raw_ops.DebugNumericSummary
+version: 2.2.0

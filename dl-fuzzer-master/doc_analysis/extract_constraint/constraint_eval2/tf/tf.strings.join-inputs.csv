@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"A list of at least 1 `Tensor` objects with type `string`. A list of string tensors.  The tensors must all have the same shape, or be scalars.  Scalars may be mixed in; these will be broadcast to the shape of non-scalar inputs.",,prim_dtype,dtype(tf.string),,1
+,"A list of at least 1 `Tensor` objects with type `string`. A list of string tensors.  The tensors must all have the same shape, or be scalars.  Scalars may be mixed in; these will be broadcast to the shape of non-scalar inputs.",,nonprim_dtype,"tensor_t(tf.tensor), structure(list, list(tf.string), list(tf.tensor))",,1

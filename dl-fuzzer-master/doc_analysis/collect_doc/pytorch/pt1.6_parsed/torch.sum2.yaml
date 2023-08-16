@@ -1,0 +1,35 @@
+constraints:
+  dim:
+    descp: the dimension or dimensions to reduce.
+    doc_dtype:
+    - int
+    - tuple of python:ints
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor.If specified, the input tensor
+      is casted to `dtype` before the operationis performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+inputs:
+  optional:
+  - keepdim
+  - dtype
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.6.0/generated/torch.sum.html#torch.sum#torch.sum
+package: torch
+ret_type: Tensor
+target: sum
+title: torch.sum
+version: 1.6.0

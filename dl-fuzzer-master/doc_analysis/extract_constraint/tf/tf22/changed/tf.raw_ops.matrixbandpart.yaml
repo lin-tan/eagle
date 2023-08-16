@@ -1,0 +1,52 @@
+constraints:
+  input:
+    descp: A Tensor. Rank k tensor.
+    ndim:
+    - k
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  num_lower:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. 0-D tensor.
+      Number of subdiagonals to keep. If negative, keep entire lower triangle.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+  num_upper:
+    descp: A Tensor. Must have the same type as num_lower. 0-D tensor. Number of superdiagonals
+      to keep. If negative, keep entire upper triangle.
+    dtype:
+    - dtype:&num_lower
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+dependency:
+- k
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - num_lower
+  - num_upper
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/MatrixBandPart
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MatrixBandPart
+title: tf.raw_ops.MatrixBandPart
+version: 2.2.0

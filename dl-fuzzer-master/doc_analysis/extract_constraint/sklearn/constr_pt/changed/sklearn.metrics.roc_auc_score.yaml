@@ -1,0 +1,99 @@
+constraints:
+  average:
+    default: macro
+    descp: '{''micro'', ''macro'', ''samples'', ''weighted''} or None,             default=''macro''
+      If ``None``, the scores for each class are returned. Otherwise, this determines
+      the type of averaging performed on the data: Note: multiclass ROC AUC currently
+      only handles the ''macro'' and ''weighted'' averages. ``''micro''``: Calculate
+      metrics globally by considering each element of the label indicator matrix as
+      a label. ``''macro''``: Calculate metrics for each label, and find their unweighted
+      mean.  This does not take label imbalance into account. ``''weighted''``: Calculate
+      metrics for each label, and find their average, weighted by support (the number
+      of true instances for each label). ``''samples''``: Calculate metrics for each
+      instance, and find their average. Will be ignored when ``y_true`` is binary.'
+    dtype:
+    - string
+  labels:
+    default: None
+    descp: array-like of shape (n_classes,), default=None Multiclass only. List of
+      labels that index the classes in ``y_score``. If ``None``, the numerical or
+      lexicographical order of the labels in ``y_true`` is used.
+    ndim:
+    - '1'
+    shape:
+    - '[n_classes]'
+  max_fpr:
+    default: None
+    descp: float > 0 and <= 1, default=None If not ``None``, the standardized partial
+      AUC [2]_ over the range [0, max_fpr] is returned. For the multiclass case, ``max_fpr``,
+      should be either equal to ``None`` or ``1.0`` as AUC ROC partial computation
+      currently is not supported for multiclass.
+    dtype:
+    - float
+    ndim:
+    - '0'
+  multi_class:
+    default: raise
+    descp: '{''raise'', ''ovr'', ''ovo''}, default=''raise'' Multiclass only. Determines
+      the type of configuration to use. The default value raises an error, so either
+      ``''ovr''`` or ``''ovo''`` must be passed explicitly. ``''ovr''``: Computes
+      the AUC of each class against the rest [3]_ [4]_. This treats the multiclass
+      case in the same way as the multilabel case. Sensitive to class imbalance even
+      when ``average == ''macro''``, because class imbalance affects the composition
+      of each of the ''rest'' groupings. ``''ovo''``: Computes the average AUC of
+      all possible pairwise combinations of classes [5]_. Insensitive to class imbalance
+      when ``average == ''macro''``.'
+    dtype:
+    - string
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_score:
+    descp: array-like of shape (n_samples,) or (n_samples, n_classes) Target scores.
+      In the binary and multilabel cases, these can be either probability estimates
+      or non-thresholded decision values (as returned by `decision_function` on some
+      classifiers). In the multiclass case, these must be probability estimates which
+      sum to 1. The binary case expects a shape (n_samples,), and the scores must
+      be the scores of the class with the greater label. The multiclass and multilabel
+      cases expect a shape (n_samples, n_classes). In the multiclass case, the order
+      of the class scores must correspond to the order of ``labels``, if provided,
+      or else to the numerical or lexicographical order of the labels in ``y_true``.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array-like of shape (n_samples,) or (n_samples, n_classes) True labels
+      or binary label indicators. The binary and multiclass cases expect labels with
+      shape (n_samples,) while the multilabel case expects binary label indicators
+      with shape (n_samples, n_classes).
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+dependency:
+- n_classes
+- n_samples
+inputs:
+  optional:
+  - average
+  - sample_weight
+  - max_fpr
+  - multi_class
+  - labels
+  required:
+  - y_true
+  - y_score
+link: ''
+package: scikit-learn
+target: roc_auc_score
+title: sklearn.metrics.roc_auc_score
+version: 0.24.X

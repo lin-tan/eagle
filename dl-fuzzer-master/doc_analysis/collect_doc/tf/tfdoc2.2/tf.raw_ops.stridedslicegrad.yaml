@@ -1,0 +1,50 @@
+constraints:
+  begin:
+    descp: A Tensor. Must have the same type as shape.
+  begin_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  dy:
+    descp: A Tensor.
+  ellipsis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  end:
+    descp: A Tensor. Must have the same type as shape.
+  end_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  new_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  shape:
+    descp: 'A Tensor. Must be one of the following types: int32, int64.'
+  shrink_axis_mask:
+    default: '0'
+    descp: An optional int. Defaults to 0.
+  strides:
+    descp: A Tensor. Must have the same type as shape.
+inputs:
+  optional:
+  - begin_mask
+  - end_mask
+  - ellipsis_mask
+  - new_axis_mask
+  - shrink_axis_mask
+  - name
+  required:
+  - shape
+  - begin
+  - end
+  - strides
+  - dy
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/StridedSliceGrad
+outputs:
+- A Tensor. Has the same type as dy.
+package: tensorflow
+target: StridedSliceGrad
+title: tf.raw_ops.StridedSliceGrad
+version: 2.2.0

@@ -1,0 +1,11 @@
+constraints:
+  X: {descp: '{array-like, sparse matrix} Data on which to apply mask.'}
+  mask: {descp: array Mask to be used on X.}
+inputs:
+  optional: []
+  required: [X, mask]
+link: ''
+package: sklearn
+target: safe_mask
+title: sklearn.utils.safe_mask
+version: 0.24.2

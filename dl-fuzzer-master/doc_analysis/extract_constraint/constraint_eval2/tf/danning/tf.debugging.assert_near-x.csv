@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,Float or complex `Tensor`.,,prim_dtype,"dtype(float, tf.complex)",1,1
+,Float or complex `Tensor`.,,nonprim_dtype,tensor_t(tf.tensor),1,1
+,Float or complex `Tensor`.,,shape,ndim(0),0,1

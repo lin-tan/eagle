@@ -1,0 +1,19 @@
+constraints:
+  save:
+    default: 'True'
+    descp: An optional variable to save the results to TensorBoard. Default True.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+exceptions:
+- UnavailableError: If there is no active profiling session.
+inputs:
+  optional:
+  - save
+  required: []
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/profiler/experimental/stop
+package: tensorflow
+target: stop
+title: tf.profiler.experimental.stop
+version: 2.3.0

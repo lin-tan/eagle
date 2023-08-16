@@ -1,0 +1,27 @@
+constraints:
+  descending:
+    default: 'False'
+    descp: controls the sorting order (ascending or descending)
+    doc_dtype:
+    - bool
+  dim:
+    default: '-1'
+    descp: the dimension to sort along
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+inputs:
+  optional:
+  - dim
+  - descending
+  required:
+  - input
+link: https://pytorch.org/docs/1.7.0/generated/torch.argsort.html#torch.argsort#torch.argsort
+package: torch
+ret_type: LongTensor
+target: argsort
+title: torch.argsort
+version: 1.7.0

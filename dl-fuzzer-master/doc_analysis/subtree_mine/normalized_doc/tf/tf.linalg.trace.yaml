@@ -1,0 +1,25 @@
+aliases:
+- tf.compat.v1.linalg.trace
+- tf.compat.v1.trace
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: tensor.
+    normalized_descp:
+    - ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - name
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/linalg/trace
+outputs: The trace of input tensor.
+package: tensorflow
+target: trace
+title: tf.linalg.trace
+version: 2.1.0

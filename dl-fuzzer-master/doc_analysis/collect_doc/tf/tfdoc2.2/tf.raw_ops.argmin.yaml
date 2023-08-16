@@ -1,0 +1,29 @@
+constraints:
+  dimension:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. int32 or int64,
+      must be in the range [-rank(input), rank(input)). Describes which dimension
+      of the input Tensor to reduce across. For vectors, use dimension = 0.'
+  input:
+    descp: 'A Tensor. Must be one of the following types: float32, float64, int32,
+      uint8, int16, int8, complex64, int64, qint8, quint8, qint32, bfloat16, uint16,
+      complex128, half, uint32, uint64.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  output_type:
+    default: tf.dtypes.int64
+    descp: 'An optional tf.DType from: tf.int32, tf.int64. Defaults to tf.int64.'
+inputs:
+  optional:
+  - output_type
+  - name
+  required:
+  - input
+  - dimension
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/ArgMin
+outputs:
+- A Tensor of type output_type.
+package: tensorflow
+target: ArgMin
+title: tf.raw_ops.ArgMin
+version: 2.2.0

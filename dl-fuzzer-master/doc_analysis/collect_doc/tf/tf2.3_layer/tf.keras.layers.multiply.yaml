@@ -1,0 +1,14 @@
+aliases:
+- tf.compat.v1.keras.layers.Multiply
+constraints:
+  '**kwargs':
+    descp: standard layer keyword arguments.
+inputs:
+  optional: []
+  required:
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/layers/Multiply
+package: tensorflow
+target: Multiply
+title: tf.keras.layers.Multiply
+version: 2.3.0

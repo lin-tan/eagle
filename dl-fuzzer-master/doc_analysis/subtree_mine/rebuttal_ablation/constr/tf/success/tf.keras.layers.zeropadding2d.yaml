@@ -1,0 +1,73 @@
+aliases:
+- tf.compat.v1.keras.layers.ZeroPadding2D
+constraints:
+  '**kwargs':
+    default: null
+    descp: ''
+  data_format:
+    default: None
+    descp: A string, one of `channels_last` (default) or `channels_first`. The ordering
+      of the dimensions in the inputs.`channels_last` corresponds to inputs with shape`(batch,
+      height, width, channels)` while `channels_first`corresponds to inputs with shape`(batch,
+      channels, height, width)`. It defaults to the `image_data_format` value found
+      in your Keras config file at `~/.keras/keras.json`. If you never set it, then
+      it will be "channels_last".
+    dtype:
+    - float
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (default)
+    - channels_first
+    - channels_last
+    ndim:
+    - '0'
+    - '1'
+    - '4'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    - '[batch,channels,height,width]'
+    - '[batch,height,width,channels]'
+    tensor_t:
+    - tf.tensor
+  padding:
+    default: (1, 1)
+    descp: 'Int, or tuple of 2 ints, or tuple of 2 tuples of 2 ints. If int: the same
+      symmetric padding is applied to height and width.If tuple of 2 ints: interpreted
+      as two different symmetric padding values for height and width:`(symmetric_height_pad,
+      symmetric_width_pad)`.If tuple of 2 tuples of 2 ints: interpreted as`((top_pad,
+      bottom_pad), (left_pad, right_pad))` '
+    dtype:
+    - int
+    - tf.dtype
+    enum:
+    - Int
+    - ints
+    ndim:
+    - '0'
+    - '1'
+    - '2'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[2]'
+    structure:
+    - tuple
+inputs:
+  optional:
+  - padding
+  - data_format
+  - '**kwargs'
+  required: []
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/layers/ZeroPadding2D
+package: tensorflow
+target: ZeroPadding2D
+title: tf.keras.layers.ZeroPadding2D
+version: 2.1.0

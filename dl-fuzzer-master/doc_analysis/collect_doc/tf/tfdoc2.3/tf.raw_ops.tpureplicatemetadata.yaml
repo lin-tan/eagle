@@ -1,0 +1,59 @@
+constraints:
+  allow_soft_placement:
+    default: 'False'
+    descp: An optional bool. Defaults to False.
+  computation_shape:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. DEPRECATED. Use num_cores_per_replica
+      instead.
+  device_assignment:
+    default: '[]'
+    descp: An optional list of ints. Defaults to []. The assignment of devices for
+      the computation.
+  host_compute_core:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  num_cores_per_replica:
+    default: '1'
+    descp: An optional int. Defaults to 1. Number of cores per replica. Used for model
+      parallelism.
+  num_replicas:
+    descp: An int that is >= 0. Number of replicas of the computation
+  padding_map:
+    default: '[]'
+    descp: An optional list of strings. Defaults to [].
+  step_marker_location:
+    default: STEP_MARK_AT_ENTRY
+    descp: An optional string. Defaults to "STEP_MARK_AT_ENTRY".
+  topology:
+    default: ''
+    descp: An optional string. Defaults to "". TopologyProto indicating the topology
+      of the TPU pod slice.
+  use_tpu:
+    default: 'True'
+    descp: An optional bool. Defaults to True. Whether to place the computation on
+      the TPU.
+inputs:
+  optional:
+  - num_cores_per_replica
+  - topology
+  - use_tpu
+  - device_assignment
+  - computation_shape
+  - host_compute_core
+  - padding_map
+  - step_marker_location
+  - allow_soft_placement
+  - name
+  required:
+  - num_replicas
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/TPUReplicateMetadata
+outputs:
+- The created Operation.
+package: tensorflow
+target: TPUReplicateMetadata
+title: tf.raw_ops.TPUReplicateMetadata
+version: 2.3.0

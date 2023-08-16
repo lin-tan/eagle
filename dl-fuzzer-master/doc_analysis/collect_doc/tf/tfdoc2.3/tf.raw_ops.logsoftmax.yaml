@@ -1,0 +1,19 @@
+constraints:
+  logits:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. 2-D with shape [batch_size, num_classes].'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - logits
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/LogSoftmax
+outputs:
+- A Tensor. Has the same type as logits.
+package: tensorflow
+target: LogSoftmax
+title: tf.raw_ops.LogSoftmax
+version: 2.3.0

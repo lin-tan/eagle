@@ -1,0 +1,138 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  bidirectional:
+    default: 'False'
+    descp: If True, becomes a bidirectional RNN.
+    doc_dtype: bool, default False
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL becomes a bidirectional RNN
+    normalized_docdtype: D_TYPE default CONSTANT_BOOL
+  dropout:
+    default: '0'
+    descp: If non-zero, introduces a dropout layer on the outputs of each RNN layer
+      except the last layer
+    doc_dtype: float, default 0
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - If non zero introduces a dropout layer on the outputs of each RNN layer except
+      the last layer
+    normalized_docdtype: D_TYPE default CONSTANT_NUM
+  dtype:
+    default: float32
+    descp: Type to initialize the parameters and default states to
+    doc_dtype: str, default 'float32'
+    normalized_default: DEFAULT D_TYPE
+    normalized_descp:
+    - Type to initialize the parameters and default states to
+    normalized_docdtype: D_TYPE default QSTR
+  h2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the bias vector
+    normalized_docdtype: D_TYPE or Initializer
+  h2h_weight_initializer:
+    default: None
+    descp: Initializer for the recurrent weights matrix, used for the linear transformation
+      of the recurrent state.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the recurrent weights matrix used for the linear transformation
+      of the recurrent state
+    normalized_docdtype: D_TYPE or Initializer
+  hidden_size:
+    descp: The number of features in the hidden state h
+    doc_dtype: int
+    normalized_descp:
+    - The number of features in the hidden state h
+    normalized_docdtype: ONE_WORD D_TYPE
+  i2h_bias_initializer:
+    default: zeros
+    descp: Initializer for the bias vector.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - Initializer for the bias vector
+    normalized_docdtype: D_TYPE or Initializer
+  i2h_weight_initializer:
+    default: None
+    descp: Initializer for the input weights matrix, used for the linear transformation
+      of the inputs.
+    doc_dtype: str or Initializer
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Initializer for the input weights matrix used for the linear transformation
+      of the inputs
+    normalized_docdtype: D_TYPE or Initializer
+  input_size:
+    default: '0'
+    descp: The number of expected features in the input x. If not specified, it will
+      be inferred from input.
+    doc_dtype: int, default 0
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - The number of expected features in the input x
+    - If not specified it will be inferred from input
+    normalized_docdtype: D_TYPE default CONSTANT_NUM
+  layout:
+    default: TNC
+    descp: The format of input and output tensors. T, N and C stand for sequence length,
+      batch size, and feature dimensions respectively.
+    doc_dtype: str, default 'TNC'
+    normalized_default: DEFAULT DF_STR
+    normalized_descp:
+    - The format of input and output D_STRUCTURE
+    - T N and C stand for D_STRUCTURE length batch size and feature dimensions respectively
+    normalized_docdtype: D_TYPE default QSTR
+  num_layers:
+    default: '1'
+    descp: Number of recurrent layers.
+    doc_dtype: int, default 1
+    normalized_default: DEFAULT CONSTANT_NUM
+    normalized_descp:
+    - Number of recurrent layers
+    normalized_docdtype: D_TYPE default CONSTANT_NUM
+  params:
+    default: None
+    descp: Shared Parameters for this Block.
+    doc_dtype: ParameterDict or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Shared Parameters for this Block
+    normalized_docdtype: ParameterDict or None
+  prefix:
+    default: None
+    descp: Prefix of this Block.
+    doc_dtype: str or None
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Prefix of this Block
+    normalized_docdtype: D_TYPE or None
+inputs:
+  optional:
+  - num_layers
+  - layout
+  - dropout
+  - bidirectional
+  - input_size
+  - i2h_weight_initializer
+  - h2h_weight_initializer
+  - i2h_bias_initializer
+  - h2h_bias_initializer
+  - dtype
+  - prefix
+  - params
+  required:
+  - hidden_size
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6.0/api/python/docs/api/gluon/rnn/index.html#mxnet.gluon.rnn.GRU
+package: mxnet
+target: GRU
+title: mxnet.gluon.rnn.GRU
+version: 1.6.0

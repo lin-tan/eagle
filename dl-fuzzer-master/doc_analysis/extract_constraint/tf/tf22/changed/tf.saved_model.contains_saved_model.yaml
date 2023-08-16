@@ -1,0 +1,18 @@
+constraints:
+  export_dir:
+    descp: Absolute string path to possible export location. For example, '/my/foo/model'.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+inputs:
+  optional: []
+  required:
+  - export_dir
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/saved_model/contains_saved_model
+outputs:
+- True if the export directory contains SavedModel files, False otherwise.
+package: tensorflow
+target: contains_saved_model
+title: tf.saved_model.contains_saved_model
+version: 2.2.0

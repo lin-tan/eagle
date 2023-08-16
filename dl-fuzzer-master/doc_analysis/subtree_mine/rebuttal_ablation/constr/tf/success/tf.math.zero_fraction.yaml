@@ -1,0 +1,56 @@
+aliases:
+- tf.nn.zero_fraction
+- tf.compat.v1.math.zero_fraction
+- tf.compat.v1.nn.zero_fraction
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  value:
+    descp: A tensor of numeric type.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - value
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/math/zero_fraction
+outputs: The fraction of zeros in `value`, with type `float32`.
+package: tensorflow
+target: zero_fraction
+title: tf.math.zero_fraction
+version: 2.1.0

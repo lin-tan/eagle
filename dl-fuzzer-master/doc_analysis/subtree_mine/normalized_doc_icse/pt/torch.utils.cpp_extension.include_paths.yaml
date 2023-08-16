@@ -1,0 +1,16 @@
+constraints:
+  cuda:
+    default: 'False'
+    descp: If True, includes CUDA-specific include paths.
+    normalized_default: DEFAULT CONSTANT_BOOL
+    normalized_descp:
+    - If CONSTANT_BOOL includes CUDA specific include paths
+inputs:
+  optional:
+  - cuda
+  required: []
+link: https://pytorch.org/docs/stable/cpp_extension.html#torch.utils.cpp_extension.include_paths
+package: torch
+target: include_paths
+title: torch.utils.cpp_extension.include_paths
+version: 1.5.0

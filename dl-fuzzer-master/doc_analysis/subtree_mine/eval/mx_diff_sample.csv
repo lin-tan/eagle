@@ -1,0 +1,11 @@
+API,Arg,Descp,default,doc_dtype,Catrgory,Label,Extracted
+mxnet.ndarray.op.SpatialTransformer,target_shape,"output shape(h, w) of spatial transformer: (y, x)",_Null,"['Shape(tuple)', 'optional', 'default=[0,0]']",ndim,['1'],[]
+mxnet.image.fixed_crop,size,"Optional, resize to new size after cropping",None,"['tuple of (w, h)']",dtype,['numeric'],[]
+mxnet.test_utils.chi_square_check,probs,The ground-truth probability of the random value fall in a specific bucket.,,"['list', 'tuple']",range,"['[0,1]']",[]
+mxnet.ndarray.contrib.quantized_pooling,kernel,"Pooling kernel size: (y, x) or (d, y, x)",_Null,"['Shape(tuple)', 'optional', 'default=[]']",structure,['tuple'],[]
+mxnet.random.seed,ctx,"The device context of the generator. The default is ""all"" which means seeding random number generators of all devices.",all,['Context'],ndim,[],['0']
+mxnet.ndarray.contrib.quantized_pooling,kernel,"Pooling kernel size: (y, x) or (d, y, x)",_Null,"['Shape(tuple)', 'optional', 'default=[]']",shape,"['[d,y,x]', '[y,x]']",[]
+mxnet.gluon.contrib.rnn.Conv3DGRUCell,h2h_bias_initializer,Initializer for the recurrent convolution bias vectors.,zeros,"['str', 'Initializer', 'default zeros']",ndim,[],['0']
+mxnet.ndarray.contrib.quantized_conv,stride,"Convolution stride: (w,), (h, w) or (d, h, w). Defaults to 1 for each dimension.",_Null,"['Shape(tuple)', 'optional', 'default=[]']",ndim,"['1', '2', '3']",['1']
+mxnet.ndarray.sparse.cast_storage,stype,Output storage type.,_Null,"[""{'csr', 'default', 'row_sparse'}"", 'required']",enum,"['csr', 'default', 'row_sparse']",[]
+mxnet.ndarray.op.multi_mp_sgd_update,*data,Weights,,['NDArray[]'],dtype,['numeric'],[]

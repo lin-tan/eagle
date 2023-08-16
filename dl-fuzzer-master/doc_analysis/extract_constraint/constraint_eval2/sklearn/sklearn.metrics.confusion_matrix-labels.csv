@@ -1,0 +1,3 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,"array-like of shape (n_classes), default=None List of labels to index the matrix. This may be used to reorder or select a subset of labels. If ``None`` is given, those that appear at least once in ``y_true`` or ``y_pred`` are used in sorted order.",None,prim_dtype,dtype(numeric),,1
+,"array-like of shape (n_classes), default=None List of labels to index the matrix. This may be used to reorder or select a subset of labels. If ``None`` is given, those that appear at least once in ``y_true`` or ``y_pred`` are used in sorted order.",None,shape,"shape([n_classes]), ndim(1)",,1

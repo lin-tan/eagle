@@ -1,0 +1,17 @@
+aliases:
+- tf.losses.serialize
+- tf.compat.v1.keras.losses.serialize
+constraints:
+  loss:
+    descp: A Keras Loss instance or a loss function.
+inputs:
+  optional: []
+  required:
+  - loss
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/keras/losses/serialize
+outputs:
+- Loss configuration dictionary.
+package: tensorflow
+target: serialize
+title: tf.keras.losses.serialize
+version: 2.3.0

@@ -1,0 +1,12 @@
+constraints:
+  condition:
+    descp: can be True, False, a bool Tensor, or a callable providing such.
+inputs:
+  optional: []
+  required:
+  - condition
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/summary/record_if
+package: tensorflow
+target: record_if
+title: tf.summary.record_if
+version: 2.2.0

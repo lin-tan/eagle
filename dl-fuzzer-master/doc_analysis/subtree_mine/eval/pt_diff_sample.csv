@@ -1,0 +1,8 @@
+API,Arg,Descp,default,doc_dtype,Catrgory,Label,Extracted
+torch.nn.functional.binary_cross_entropy_with_logits,size_average,"Deprecated (see `reduction`). By default, the losses are averaged over each loss element in the batch. Note that for some losses, there multiple elements per sample. If the field `size_average` is set to `False`, the losses are instead summed for each minibatch. Ignored when reduce is `False`. Default: `True`",None,['bool'],enum,[],['size_average']
+torch.nn.functional.adaptive_max_pool3d,output_size,the target output size (single integer or triple-integer tuple),None,,dtype,['int'],[]
+torch.utils.cpp_extension.load_inline,cuda_sources,"A string, or list of strings, containing CUDA source code.",None,,structure,[],['list']
+torch.mvlgamma,input,the tensor to compute the multivariate log-gamma function,,['Tensor'],dtype,[],['torch.bool']
+torch.nn.ReplicationPad2d,padding,"the size of the padding. If is int, uses the same padding in all boundaries. If a 4-tuple, uses (padding _left , padding _right , padding _top , padding _bottom )",,"['int', 'tuple']",ndim,"['0', '1']",[]
+torch.bartlett_window,device,"the desired device of returned tensor. Default: if `None`, uses the current device for the default tensor type (see `torch.set_default_tensor_type()`). `device` will be the CPU for CPU tensor types and the current CUDA device for CUDA tensor types.",None,['torch.device'],dtype,[],['torch.dtype']
+torch.nn.utils.prune.l1_unstructured,amount,"quantity of parameters to prune. If `float`, should be between 0.0 and 1.0 and represent the fraction of parameters to prune. If `int`, it represents the absolute number of parameters to prune.",,"['int', 'float']",range,"['[0,1]', '[0,inf)']","['[0,inf)']"

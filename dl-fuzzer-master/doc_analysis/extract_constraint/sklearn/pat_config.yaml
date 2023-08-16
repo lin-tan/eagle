@@ -1,0 +1,59 @@
+
+
+
+source_dir:  '../collect_doc/sklearn/parsed/'  
+save_to: './sklearn/constr_all/'   
+pat_dir: './sklearn/patterns_all/'
+pat_cnt_save_dir:  './sklearn/patterns_all/pat_cnt/'
+
+
+dt_map_file: 'dtype_map.yml'
+all_target_file: 'targets.yml'
+
+pat_file:   # with calling order
+
+
+    - 
+        file: 'ndim_pat.yml'
+        method: parse_descp
+
+
+    - 
+        file: 'shape_pat.yml'
+        method: parse_descp
+
+
+    - 
+        file: 'range_pat.yml'
+        method: parse_descp
+
+    
+    - 
+        file: 'enum_pat.yml'
+        method: parse_descp
+
+
+    - 
+        file: 'dtype_pat.yml'
+        method: parse_descp
+
+
+    - 
+        file: 'structure_pat.yml'
+        method: parse_descp
+
+    - 
+        method: match_default
+
+    - 
+        file: 'pat_varname.yml'
+        method: match_name
+
+    - 
+        file: 'weak_pat.yml'
+        method: parse_descp
+
+
+
+    - 
+        method: post_process

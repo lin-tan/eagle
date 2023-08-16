@@ -1,0 +1,29 @@
+constraints:
+  container:
+    default: ''
+    descp: An optional string. Defaults to "".
+  dtype:
+    descp: A tf.DType.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  shape:
+    descp: A tf.TensorShape or list of ints.
+  shared_name:
+    default: ''
+    descp: An optional string. Defaults to "".
+inputs:
+  optional:
+  - container
+  - shared_name
+  - name
+  required:
+  - shape
+  - dtype
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Variable
+outputs:
+- A mutable Tensor of type dtype.
+package: tensorflow
+target: Variable
+title: tf.raw_ops.Variable
+version: 2.3.0

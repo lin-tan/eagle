@@ -1,0 +1,252 @@
+aliases:
+- tf.compat.v1.quantization.quantize
+- tf.compat.v1.quantize
+constraints:
+  T:
+    descp: 'A `tf.DType` from: `tf.qint8, tf.quint8, tf.qint32, tf.qint16, tf.quint16`.'
+    dtype:
+    - int
+    - tf.dtype
+    - tf.qint16
+    - tf.qint32
+    - tf.qint8
+    - tf.quint16
+    - tf.quint8
+    enum:
+    - tf.DType
+    - tf.qint16
+    - tf.qint32
+    - tf.qint8
+    - tf.quint16
+    - tf.quint8
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  axis:
+    default: None
+    descp: An optional `int`. Defaults to `-1`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - int
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  ensure_minimum_range:
+    default: '0.01'
+    descp: An optional `float`. Defaults to `0.01`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - float
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  input:
+    descp: A `Tensor` of type `float32`.
+    dtype:
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  max_range:
+    descp: A `Tensor` of type `float32`. The maximum value of the quantization range.
+      This value may be adjusted by the op depending on other parameters. The adjusted
+      value is written to `output_max`. If the `axis` attribute is specified, this
+      must be a 1-D tensor whose size matches the `axis` dimension of the input and
+      output tensors.
+    dtype:
+    - '&axis'
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&axis'
+    - '&input'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  min_range:
+    descp: A `Tensor` of type `float32`. The minimum value of the quantization range.
+      This value may be adjusted by the op depending on other parameters. The adjusted
+      value is written to `output_min`. If the `axis` attribute is specified, this
+      must be a 1-D tensor whose size matches the `axis` dimension of the input and
+      output tensors.
+    dtype:
+    - '&axis'
+    - '&input'
+    - int
+    - numeric
+    - tf.bool
+    - tf.dtype
+    - tf.float32
+    - tf.string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&axis'
+    - '&input'
+    - '[1]'
+    - '[n]'
+    tensor_t:
+    - tf.tensor
+  mode:
+    default: MIN_COMBINED
+    descp: 'An optional `string` from: `"MIN_COMBINED", "MIN_FIRST", "SCALED"`. Defaults
+      to `"MIN_COMBINED"`.'
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - MIN_COMBINED
+    - MIN_FIRST
+    - SCALED
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[min_combined]'
+    - '[min_first]'
+    - '[scaled]'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - (optional)
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - (optional)
+    - '[0,inf)'
+    shape:
+    - '[2]'
+    tensor_t:
+    - tf.tensor
+  narrow_range:
+    default: 'False'
+    descp: An optional `bool`. Defaults to `False`.
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+  round_mode:
+    default: HALF_AWAY_FROM_ZERO
+    descp: 'An optional `string` from: `"HALF_AWAY_FROM_ZERO", "HALF_TO_EVEN"`. Defaults
+      to `"HALF_AWAY_FROM_ZERO"`.'
+    dtype:
+    - float
+    - int
+    - tf.bool
+    - tf.dtype
+    - tf.string
+    enum:
+    - HALF_AWAY_FROM_ZERO
+    - HALF_TO_EVEN
+    - string
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '[1]'
+    - '[half_away_from_zero]'
+    - '[half_to_even]'
+inputs:
+  optional:
+  - mode
+  - round_mode
+  - name
+  - narrow_range
+  - axis
+  - ensure_minimum_range
+  required:
+  - input
+  - min_range
+  - max_range
+  - T
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/quantization/quantize
+outputs: A tuple of `Tensor` objects (output, output_min, output_max).
+package: tensorflow
+target: quantize
+title: tf.quantization.quantize
+version: 2.1.0

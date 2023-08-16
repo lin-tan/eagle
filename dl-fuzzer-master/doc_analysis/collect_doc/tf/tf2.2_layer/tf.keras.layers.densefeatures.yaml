@@ -1,0 +1,29 @@
+constraints:
+  '**kwargs':
+    descp: Keyword arguments to construct a layer.
+  feature_columns:
+    descp: An iterable containing the FeatureColumns to use as inputs to your model.
+      All items should be instances of classes derived from DenseColumn such as numeric_column,
+      embedding_column, bucketized_column, indicator_column. If you have categorical
+      features, you can wrap them with an embedding_column or indicator_column.
+  name:
+    default: None
+    descp: Name to give to the DenseFeatures.
+  trainable:
+    default: 'True'
+    descp: Boolean, whether the layer's variables will be updated via gradient descent
+      during training.
+exceptions:
+- ValueError: if an item in feature_columns is not a DenseColumn.
+inputs:
+  optional:
+  - trainable
+  - name
+  required:
+  - feature_columns
+  - '**kwargs'
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/layers/DenseFeatures
+package: tensorflow
+target: DenseFeatures
+title: tf.keras.layers.DenseFeatures
+version: 2.2.0

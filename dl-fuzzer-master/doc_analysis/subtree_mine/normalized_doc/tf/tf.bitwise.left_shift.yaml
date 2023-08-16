@@ -1,0 +1,32 @@
+aliases:
+- tf.compat.v1.bitwise.left_shift
+constraints:
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A name for the operation BSTR
+  x:
+    descp: 'A `Tensor`. Must be one of the following types: `int8`, `int16`, `int32`,
+      `int64`, `uint8`, `uint16`, `uint32`, `uint64`.'
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must be one of the following types D_TYPE
+  y:
+    descp: A `Tensor`. Must have the same type as `x`.
+    normalized_descp:
+    - A D_STRUCTURE
+    - Must have the same type as QSTR
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - y
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/bitwise/left_shift
+outputs: A `Tensor`. Has the same type as `x`.
+package: tensorflow
+target: left_shift
+title: tf.bitwise.left_shift
+version: 2.1.0

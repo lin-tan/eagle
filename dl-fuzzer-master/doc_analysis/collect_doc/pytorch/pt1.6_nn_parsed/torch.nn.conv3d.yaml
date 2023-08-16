@@ -1,0 +1,75 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If `True`, adds a learnable bias to the output. Default: `True`'
+    doc_dtype:
+    - bool
+    sig_dtype: bool
+  dilation:
+    default: '1'
+    descp: 'Spacing between kernel elements. Default: 1'
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T]]
+  groups:
+    default: '1'
+    descp: 'Number of blocked connections from input channels to output channels.
+      Default: 1'
+    doc_dtype:
+    - int
+    sig_dtype: int
+  in_channels:
+    descp: Number of channels in the input image
+    doc_dtype:
+    - int
+    sig_dtype: int
+  kernel_size:
+    descp: Size of the convolving kernel
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T]]
+  out_channels:
+    descp: Number of channels produced by the convolution
+    doc_dtype:
+    - int
+    sig_dtype: int
+  padding:
+    default: '0'
+    descp: 'Zero-padding added to all three sides of the input. Default: 0'
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T]]
+  padding_mode:
+    default: zeros
+    descp: '`''zeros''`, `''reflect''`, `''replicate''` or `''circular''`. Default:
+      `''zeros''`'
+    doc_dtype:
+    - string
+    sig_dtype: str
+  stride:
+    default: '1'
+    descp: 'Stride of the convolution. Default: 1'
+    doc_dtype:
+    - int
+    - tuple
+    sig_dtype: Union[T,Tuple[T,T,T]]
+inputs:
+  optional:
+  - stride
+  - padding
+  - dilation
+  - groups
+  - bias
+  - padding_mode
+  required:
+  - in_channels
+  - out_channels
+  - kernel_size
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Conv3d.html#torch.nn.Conv3d#torch.nn.Conv3d
+package: torch
+target: Conv3d
+title: torch.nn.Conv3d
+version: 1.6.0

@@ -1,0 +1,13 @@
+constraints:
+  n_dim: {descp: int The matrix dimension.}
+  random_state: {default: None, descp: 'int, RandomState instance or None (default)
+      Determines random number generation for dataset creation. Pass an int for reproducible
+      output across multiple function calls. See :term:`Glossary <random_state>`.'}
+inputs:
+  optional: [random_state]
+  required: [n_dim]
+link: ''
+package: sklearn
+target: make_spd_matrix
+title: sklearn.datasets.make_spd_matrix
+version: 0.24.2

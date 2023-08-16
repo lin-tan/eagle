@@ -1,0 +1,117 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  clip_gradient:
+    default: _Null
+    descp: Clip gradient to the range of [-clip_gradient, clip_gradient] If clip_gradient
+      <= 0, gradient clipping is turned off. grad = max(min(grad, clip_gradient),
+      -clip_gradient).
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Clip gradient to the range of BSTR If clip_gradient REXPR, gradient clipping
+      is turned off
+    - PARAM max BSTR
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  grad:
+    default: None
+    descp: Gradient
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Gradient
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  lr:
+    default: _Null
+    descp: Learning rate
+    doc_dtype: float, required
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Learning rate
+    normalized_docdtype: D_TYPE, required
+  mom:
+    default: None
+    descp: Momentum
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD PARAM
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  momentum:
+    default: _Null
+    descp: The decay rate of momentum estimates at each epoch.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - The decay rate of momentum estimates at each epoch
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  rescale_grad:
+    default: _Null
+    descp: Rescale gradient to grad = rescale_grad*grad.
+    doc_dtype: float, optional, default=1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Rescale gradient to PARAM rescale_grad PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  wd:
+    default: _Null
+    descp: Weight decay augments the objective function with a regularization term
+      that penalizes large weights. The penalty scales with the square of the magnitude
+      of each weight.
+    doc_dtype: float, optional, default=0
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM decay augments the objective function with a regularization term that
+      penalizes large weights
+    - The penalty scales with the square of the magnitude of each PARAM
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  weight:
+    default: None
+    descp: Weight
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  weight32:
+    default: None
+    descp: Weight32
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - ONE_WORD Weight32
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+inputs:
+  optional:
+  - weight
+  - grad
+  - mom
+  - weight32
+  - lr
+  - momentum
+  - wd
+  - rescale_grad
+  - clip_gradient
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/ndarray/ndarray.html#mxnet.ndarray.mp_nag_mom_update
+package: mxnet
+target: mp_nag_mom_update
+title: mxnet.ndarray.mp_nag_mom_update
+version: 1.6.0

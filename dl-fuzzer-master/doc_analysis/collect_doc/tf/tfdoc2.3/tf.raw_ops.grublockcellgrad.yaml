@@ -1,0 +1,49 @@
+constraints:
+  b_c:
+    descp: A Tensor. Must have the same type as x.
+  b_ru:
+    descp: A Tensor. Must have the same type as x.
+  c:
+    descp: A Tensor. Must have the same type as x.
+  d_h:
+    descp: A Tensor. Must have the same type as x.
+  h_prev:
+    descp: A Tensor. Must have the same type as x.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  r:
+    descp: A Tensor. Must have the same type as x.
+  u:
+    descp: A Tensor. Must have the same type as x.
+  w_c:
+    descp: A Tensor. Must have the same type as x.
+  w_ru:
+    descp: A Tensor. Must have the same type as x.
+  x:
+    descp: 'A Tensor. Must be one of the following types: float32.'
+inputs:
+  optional:
+  - name
+  required:
+  - x
+  - h_prev
+  - w_ru
+  - w_c
+  - b_ru
+  - b_c
+  - r
+  - u
+  - c
+  - d_h
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/GRUBlockCellGrad
+outputs:
+- A tuple of Tensor objects (d_x, d_h_prev, d_c_bar, d_r_bar_u_bar).
+- d_x: A Tensor. Has the same type as x.
+- d_h_prev: A Tensor. Has the same type as x.
+- d_c_bar: A Tensor. Has the same type as x.
+- d_r_bar_u_bar: A Tensor. Has the same type as x.
+package: tensorflow
+target: GRUBlockCellGrad
+title: tf.raw_ops.GRUBlockCellGrad
+version: 2.3.0

@@ -1,0 +1,66 @@
+constraints:
+  dim:
+    descp: the dimension to reduce. If `None`, the argmin of the flattened input is
+      returned.
+    doc_dtype: int
+    dtype:
+    - int
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  input:
+    descp: the input tensor.
+    doc_dtype: Tensor
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    - '3'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    - '[b,p,m]'
+    tensor_t:
+    - torch.tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not. Ignored if `dim=None`.
+    doc_dtype: bool
+    dtype:
+    - int
+    - numeric
+    - torch.bool
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,1]'
+    - '[0,inf)'
+    shape:
+    - '&input'
+    tensor_t:
+    - torch.tensor
+  out:
+    default: None
+    descp: ''
+inputs:
+  optional:
+  - keepdim
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.argmin
+package: torch
+ret_type: LongTensor
+target: argmin
+title: torch.argmin
+version: 1.5.0

@@ -1,0 +1,14 @@
+constraints:
+  sampled_values:
+    default: None
+    descp: a tuple of (`sampled_candidates`, `true_expected_count`,`sampled_expected_count`)
+      returned by a `*_candidate_sampler` function. (if None, we default to `log_uniform_candidate_sampler`)
+    ndim:
+    - '1'
+    structure:
+    - tuple
+  seed:
+    default: None
+    descp: random seed for candidate sampling. Default to None, which doesn't set
+      the op-level random seed for candidate sampling.
+title: tf.nn.sampled_softmax_loss

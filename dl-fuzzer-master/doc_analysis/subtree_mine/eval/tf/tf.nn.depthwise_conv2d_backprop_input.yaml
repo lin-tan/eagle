@@ -1,0 +1,18 @@
+constraints:
+  input_sizes:
+    descp: A `Tensor` of type `int32`. An integer vector representing the shape of
+      `input`, based on `data_format`.  For example, if `data_format` is 'NHWC' then`input`
+      is a 4-D `[batch, height, width, channels]` tensor.
+    dtype:
+    - tf.int32
+    - int
+    ndim:
+    - '1'
+    - '4'
+    shape:
+    - '[batch, height, width, channels]'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+title: tf.nn.depthwise_conv2d_backprop_input

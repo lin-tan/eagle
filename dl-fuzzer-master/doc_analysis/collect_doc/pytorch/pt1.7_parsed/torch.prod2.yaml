@@ -1,0 +1,36 @@
+constraints:
+  dim:
+    descp: the dimension to reduce.
+    doc_dtype:
+    - int
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor.If specified, the input tensor
+      is casted to `dtype` before the operationis performed. This is useful for preventing
+      data type overflows. Default: None.'
+    doc_dtype:
+    - torch.dtype
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: whether the output tensor has `dim` retained or not.
+    doc_dtype:
+    - bool
+inputs:
+  keyword_only:
+  - dtype
+  optional:
+  - keepdim
+  - dtype
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/1.7.0/generated/torch.prod.html#torch.prod#torch.prod
+package: torch
+ret_type: Tensor
+target: prod
+title: torch.prod
+version: 1.7.0

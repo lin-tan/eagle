@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,A 1-D (vector) int64 `Tensor` specifying the new dense shape of the represented `SparseTensor`.,,prim_dtype,"dtype(int, tf.int64)",,1
+,A 1-D (vector) int64 `Tensor` specifying the new dense shape of the represented `SparseTensor`.,,nonprim_dtype,tensor_t(tf.tensor),,1
+,A 1-D (vector) int64 `Tensor` specifying the new dense shape of the represented `SparseTensor`.,,shape,ndim(1),,1
+,A 1-D (vector) int64 `Tensor` specifying the new dense shape of the represented `SparseTensor`.,,validvalue,"range([0,inf))",,1

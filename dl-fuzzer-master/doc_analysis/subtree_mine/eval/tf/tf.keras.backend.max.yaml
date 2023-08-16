@@ -1,0 +1,15 @@
+constraints:
+  keepdims:
+    default: 'False'
+    descp: A boolean, whether to keep the dimensions or not. If `keepdims` is `False`,
+      the rank of the tensor is reduced by 1. If `keepdims` is `True`, the reduced
+      dimension is retained with length 1.
+    dtype:
+    - tf.bool
+    ndim:
+    - '0'
+  x:
+    descp: A tensor or variable.
+    tensor_t:
+    - tf.tensor
+title: tf.keras.backend.max

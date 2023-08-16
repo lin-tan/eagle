@@ -1,0 +1,44 @@
+constraints:
+  back_prop:
+    default: 'True'
+    descp: (optional) Deprecated. False disables support for back propagation. Prefer
+      using tf.stop_gradient instead.
+  elems:
+    descp: A tensor or (possibly nested) sequence of tensors, each of which will be
+      unpacked along their first dimension. The nested sequence of the resulting slices
+      will be the first argument to fn.
+  fn:
+    descp: The callable to be performed.
+  initializer:
+    default: None
+    descp: (optional) A tensor or (possibly nested) sequence of tensors, as the initial
+      value for the accumulator.
+  name:
+    default: None
+    descp: (optional) Name prefix for the returned tensors.
+  parallel_iterations:
+    default: '10'
+    descp: (optional) The number of iterations allowed to run in parallel.
+  swap_memory:
+    default: 'False'
+    descp: (optional) True enables GPU-CPU memory swapping.
+exceptions:
+- TypeError: if fn is not callable.
+inputs:
+  optional:
+  - initializer
+  - parallel_iterations
+  - back_prop
+  - swap_memory
+  - name
+  required:
+  - fn
+  - elems
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/foldr
+outputs:
+- A tensor or (possibly nested) sequence of tensors, resulting from applying fn consecutively
+  to the list of tensors unpacked from elems, from last to first.
+package: tensorflow
+target: foldr
+title: tf.foldr
+version: 2.2.0

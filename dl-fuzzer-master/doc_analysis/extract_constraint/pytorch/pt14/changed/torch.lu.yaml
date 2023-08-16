@@ -1,0 +1,55 @@
+constraints:
+  A:
+    descp: 'the tensor to factor of size (*, m, n) '
+    doc_dtype:
+    - Tensor
+    ndim:
+    - '>=2'
+    shape:
+    - '[...,m,n]'
+    tensor_t:
+    - torch.tensor
+  get_infos:
+    default: 'False'
+    descp: 'if set to `True`, returns an info IntTensor. Default: `False`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  out:
+    default: None
+    descp: 'optional output tuple. If `get_infos` is `True`, then the elements in
+      the tuple are Tensor, IntTensor, and IntTensor. If `get_infos` is `False`, then
+      the elements in the tuple are Tensor, IntTensor. Default: `None`'
+    doc_dtype:
+    - tuple
+    ndim:
+    - '1'
+    structure:
+    - tuple
+  pivot:
+    default: 'True'
+    descp: 'controls whether pivoting is done. Default: `True`'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+dependency:
+- m
+- n
+inputs:
+  optional:
+  - pivot
+  - get_infos
+  - out
+  required:
+  - A
+link: https://pytorch.org/docs/1.4.0/torch.html#torch.lu
+package: torch
+target: lu
+title: torch.lu
+version: 1.4.0

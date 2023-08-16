@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.activations.tanh
+constraints:
+  x:
+    descp: Input tensor.
+    normalized_descp:
+    - Input D_STRUCTURE
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/keras/activations/tanh
+outputs: Tensor of same shape and dtype of input `x`, with tanh activation:`tanh(x)
+  = sinh(x)/cosh(x) = ((exp(x) - exp(-x))/(exp(x) + exp(-x)))`.
+package: tensorflow
+target: tanh
+title: tf.keras.activations.tanh
+version: 2.1.0

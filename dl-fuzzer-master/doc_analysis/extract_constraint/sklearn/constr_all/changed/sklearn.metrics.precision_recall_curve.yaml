@@ -1,0 +1,39 @@
+constraints:
+  pos_label:
+    default: None
+    descp: int or str, default=None The label of the positive class. When ``pos_label=None``,
+      if y_true is in {-1, 1} or {0, 1}, ``pos_label`` is set to 1, otherwise an error
+      will be raised.
+    dtype:
+    - int
+    - string
+    ndim:
+    - '0'
+  probas_pred:
+    descp: array, shape = [n_samples] Estimated probabilities or decision function.
+  sample_weight:
+    default: None
+    descp: array-like of shape (n_samples,), default=None Sample weights.
+    dtype:
+    - numeric
+    ndim:
+    - '1'
+    shape:
+    - '[n_samples]'
+  y_true:
+    descp: array, shape = [n_samples] True binary labels. If labels are not either
+      {-1, 1} or {0, 1}, then pos_label should be explicitly given.
+dependency:
+- n_samples
+inputs:
+  optional:
+  - pos_label
+  - sample_weight
+  required:
+  - y_true
+  - probas_pred
+link: ''
+package: sklearn
+target: precision_recall_curve
+title: sklearn.metrics.precision_recall_curve
+version: 0.24.2

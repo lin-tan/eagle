@@ -1,0 +1,32 @@
+constraints:
+  dim:
+    descp: the dimension to reduce.
+    doc_dtype:
+    - int
+  input:
+    descp: the input tensor.
+    doc_dtype:
+    - Tensor
+  keepdim:
+    default: 'False'
+    descp: 'whether the output tensor has `dim` retained or not. Default: `False`.'
+    doc_dtype:
+    - bool
+  out:
+    default: None
+    descp: the result tuple of two output tensors (max, max_indices)
+    doc_dtype:
+    - tuple
+inputs:
+  optional:
+  - keepdim
+  - out
+  required:
+  - input
+  - dim
+link: https://pytorch.org/docs/stable/torch.html#torch.max
+package: torch
+ret_type: (Tensor, LongTensor)
+target: max
+title: torch.max
+version: 1.5.0

@@ -1,0 +1,17 @@
+constraints:
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype:
+    - NDArray
+    - optional
+    structure:
+    - ndarray
+  rhs:
+    default: None
+    descp: Second input to the function
+    doc_dtype:
+    - NDArray
+    structure:
+    - ndarray
+title: mxnet.ndarray.broadcast_logical_xor

@@ -1,0 +1,30 @@
+API,Cause,Message
+sklearn.utils.Bunch,Sig, Fail to parse signature
+sklearn.pipeline.make_pipeline,Inconsistent, arg memory doesn't exist
+sklearn.utils.arrayfuncs.min_pos,Sig, Fail to parse signature
+sklearn.utils.estimator_checks.check_estimator,Inconsistent, arg estimator doesn't exist
+sklearn.manifold.locally_linear_embedding,Inconsistent, arg arpack doesn't exist
+sklearn.compose.make_column_transformer,Inconsistent, arg transformer doesn't exist
+sklearn.metrics.pairwise.distance_metrics,Sig, Fail to parse signature
+sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l1,Sig, Fail to parse signature
+sklearn.datasets.load_sample_images,Sig, Fail to parse signature
+sklearn.config_context,Inconsistent, arg assume_finite doesn't exist
+sklearn.show_versions,Sig, Fail to parse signature
+sklearn.utils.parallel_backend,Sig, Fail to parse signature
+sklearn.linear_model.PassiveAggressiveRegressor,Sig, Fail to parse signature
+sklearn.utils.graph_shortest_path.graph_shortest_path,Sig, Fail to parse signature
+sklearn.metrics.silhouette_samples,SPEC_Descp, Fail to parse descp section
+sklearn.utils.random.sample_without_replacement,Sig, Fail to parse signature
+sklearn.get_config,Sig, Fail to parse signature
+sklearn.compose.make_column_selector,Sig, Fail to parse signature
+sklearn.metrics.plot_confusion_matrix,Inconsistent, arg y doesn't exist
+sklearn.utils.resample,SPEC_Descp, Fail to parse descp section
+sklearn.pipeline.make_union,Inconsistent, arg n_jobs doesn't exist
+sklearn.model_selection.train_test_split,Inconsistent, arg test_size doesn't exist
+sklearn.utils.shuffle,SPEC_Descp, Fail to parse descp section
+sklearn.utils.sparsefuncs_fast.inplace_csr_row_normalize_l2,Sig, Fail to parse signature
+sklearn.metrics.pairwise_distances_chunked,SPEC_Descp, Fail to parse descp section
+sklearn.metrics.pairwise.kernel_metrics,Sig, Fail to parse signature
+sklearn.utils.deprecated,Sig, Fail to parse signature
+sklearn.utils.register_parallel_backend,Parameters, Fail to parse Parameters section
+sklearn.utils.murmurhash3_32,Sig, Fail to parse signature

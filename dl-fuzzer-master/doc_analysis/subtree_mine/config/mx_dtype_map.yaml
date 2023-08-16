@@ -1,0 +1,70 @@
+dtype:
+    np.uint8: numpy.uint8
+    uint8: numpy.uint8
+    numpy.uint8: numpy.uint8
+
+    np.int8: numpy.int8
+    int8: numpy.int8
+    numpy.int8: numpy.int8
+
+    int32: numpy.int32
+    np.int32: numpy.int32
+    numpy.int32: numpy.int32
+    
+    int64: numpy.int64
+    np.int64: numpy.int64
+    numpy.int64: numpy.int64
+
+    int: int
+    ints: int
+    integer: int
+    integers: int
+
+    float16: numpy.float16
+    np.float16: numpy.float16
+    numpy.float16: numpy.float16
+
+    float32: numpy.float32
+    fp32: numpy.float32
+    np.float32: numpy.float32
+    numpy.float32: numpy.float32
+
+    float64: numpy.float64
+    np.float64: numpy.float64
+    numpy.float64: numpy.float64
+
+    
+    float: float
+    floats: float
+    floating: float
+    double: numpy.double
+
+    bool: boolean
+    boolean: boolean
+
+    str: string
+    string: string
+    strings: string
+
+    np.dtype: numpy.dtype
+    numpy.dtype: numpy.dtype
+    numeric: numeric
+
+    
+structure:
+    list: list
+    lists: list
+    array: ndarray
+    arrays: ndarray
+    tuple: tuple
+    dict: dict
+    dictionary: dict
+    iterable: list
+    sequence: list
+    ndarray: ndarray
+    array_like: ndarray
+    vector: list
+    vectors: list
+tensor_t:
+    tensors: tensor
+    tensor: tensor

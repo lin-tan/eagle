@@ -1,0 +1,89 @@
+append: true
+break: false
+check_dt: false
+direct_map: false
+findall: true
+parse_sent: false
+pat:
+  '"(\w+)"\s+(means|-)\s':
+    cnt: 1
+    group: 1
+  ((,?\s+((or|and)\s*)?[`'"]+[\w.]+[`'"]+)+)\s+are\s+supported:
+    cnt: 0
+    dtype: tf.string
+    group: 1
+  (([`'"]+\w+[`'"]+\s+\|\s+)+[`'"]+\w+[`'"]+):
+    cnt: 3
+    dtype: string
+    group: 1
+  (\d)\s+for\s+[\w\s]+output:
+    cnt: 0
+    group: 1
+  (\d+):\s:
+    cnt: 2
+    group: 1
+  (a|an)\s+(optional)?\s*[`'"]*([\w.]+)[`'"]*\s+from:*\s*`(.*?)`\.:
+    cnt: 0
+    group: 4
+    ndim: 0
+  (string|format)[,;]\s+(either\s+)?\(?(([`'"]+\w+[`'"]+,?\s+)+or\s+[`'"]+\w+[`'"]+)\)?:
+    cnt: 1
+    dtype: string
+    group: 3
+  \s(\d+)-((?!d)(?!th)[a-zA-Z])+:
+    cnt: 10
+    group: 1
+  can\s+only\s+be\s+(([\w]+(,|\s|or)*)+):
+    cnt: 1
+    dtype: int
+    group: 1
+  currently\s+(.*?)\s+is\s+supported:
+    cnt: 0
+    group: 1
+    replace:
+      '=': ''
+      ord: ''
+  currently\s+support\s+(((\s*and\s*)?\'\w+\'[,\s]*)+)\.:
+    cnt: 0
+    group: 1
+  either\s+([`'"]+\w+[`'"]+\s+(\(default\))?\s*or\s+[`'"]+\w+[`'"]+):
+    cnt: 1
+    group: 1
+  either\s+the\s+`*string`*\s*([`'"]+(\w+)[`'"]+\s+or\s+[`'"]+(\w+)[`'"]+):
+    cnt: 0
+    dtype: string
+    group: 1
+  if\s+(\w+)='(\w+)':
+    check_arg: 1
+    cnt: 0
+    group: 2
+  it\s+can\s+be\s+either\s+((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+(\s*\(default\)\s*)?)+):
+    cnt: 0
+    group: 1
+  one\s+of:?\s*(`{\s*)?((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+(\s*\(.*?\)\s*)?)+)(}`)?:
+    cnt: 0
+    group: 2
+    replace:
+      \(.+?\): ''
+  only\s+(values\s+of\s+)?(.*?)\s+(are|is)\s+currently\s+supported:
+    cnt: 0
+    group: 2
+  only\s+[`'"]+(\w+)[`'"]+\s+is\s+currently\s+supported:
+    cnt: 0
+    group: 1
+  string`*\s+from:(([\s,`'"]+(\w+)[`'"]+)+)\.:
+    cnt: 0
+    dtype: tf.string
+    group: 1
+  supported\s+values\s+are\s*((,?\s*((or|and)\s*)?[`'"]+[\w.]+[`'"]+)+):
+    cnt: 0
+    group: 1
+  valid\s+values\s+are\s*\[?((,?\s*((or|and)\s*)?[`'"]\w+[`'"](\s*\(default\))?)+)\]?:
+    cnt: 0
+    dtype: string
+    group: 1
+stop_word:
+- and
+- or
+- (default)
+target: enum

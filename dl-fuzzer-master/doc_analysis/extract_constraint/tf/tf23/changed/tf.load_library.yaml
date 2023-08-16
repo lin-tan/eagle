@@ -1,0 +1,24 @@
+aliases:
+- tf.compat.v1.load_library
+constraints:
+  library_location:
+    descp: Path to the plugin or the folder of plugins. Relative or absolute filesystem
+      path to a dynamic library file or folder.
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+exceptions:
+- OSError: When the file to be loaded is not found.
+- RuntimeError: when unable to load the library.
+inputs:
+  optional: []
+  required:
+  - library_location
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/load_library
+outputs:
+- None
+package: tensorflow
+target: load_library
+title: tf.load_library
+version: 2.3.0

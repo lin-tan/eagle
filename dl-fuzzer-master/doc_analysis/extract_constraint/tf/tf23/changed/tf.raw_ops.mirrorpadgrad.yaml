@@ -1,0 +1,48 @@
+constraints:
+  input:
+    descp: A Tensor. The input tensor to be folded.
+    tensor_t:
+    - tf.tensor
+  mode:
+    descp: 'A string from: "REFLECT", "SYMMETRIC". The mode used in the MirrorPad
+      op.'
+    dtype:
+    - tf.string
+    enum:
+    - REFLECT
+    - SYMMETRIC
+    ndim:
+    - '0'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  paddings:
+    descp: 'A Tensor. Must be one of the following types: int32, int64. A two-column
+      matrix specifying the padding sizes. The number of rows must be the same as
+      the rank of input.'
+    dtype:
+    - int
+    ndim:
+    - '0'
+    range:
+    - '[0,inf)'
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional:
+  - name
+  required:
+  - input
+  - paddings
+  - mode
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MirrorPadGrad
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: MirrorPadGrad
+title: tf.raw_ops.MirrorPadGrad
+version: 2.3.0

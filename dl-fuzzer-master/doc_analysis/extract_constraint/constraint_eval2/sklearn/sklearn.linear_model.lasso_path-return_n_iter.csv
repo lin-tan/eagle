@@ -1,0 +1,4 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,bool whether to return the number of iterations or not.,False,prim_dtype,dtype(boolean),,1
+,bool whether to return the number of iterations or not.,False,shape,ndim(0),,1
+,bool whether to return the number of iterations or not.,False,validvalue,"range([0,inf))",,1

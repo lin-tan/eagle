@@ -1,0 +1,85 @@
+constraints:
+  beta:
+    default: '12.0'
+    descp: shape parameter for the window.
+    doc_dtype:
+    - float
+    dtype:
+    - int
+    - torch.float32
+    ndim:
+    - '0'
+    - '1'
+    range:
+    - '[0,inf)'
+  device:
+    default: None
+    descp: 'the desired device of returned tensor. Default: if `None`, uses the current
+      device for the default tensor type (see `torch.set_default_tensor_type()`).
+      `device` will be the CPU for CPU tensor types and the current CUDA device for
+      CUDA tensor types.'
+    doc_dtype:
+    - torch.device
+  dtype:
+    default: None
+    descp: 'the desired data type of returned tensor. Default: if `None`, uses a global
+      default (see `torch.set_default_tensor_type()`).'
+    doc_dtype:
+    - torch.dtype
+    dtype:
+    - torch.dtype
+  layout:
+    default: torch.strided
+    descp: the desired layout of returned window tensor. Only `torch.strided` (dense
+      layout) is supported.
+    doc_dtype:
+    - torch.layout
+  periodic:
+    default: 'True'
+    descp: If True, returns a periodic window suitable for use in spectral analysis.
+      If False, returns a symmetric window suitable for use in filter design.
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  requires_grad:
+    default: 'False'
+    descp: 'If autograd should record operations on the returned tensor. Default:
+      `False`.'
+    doc_dtype:
+    - bool
+    dtype:
+    - torch.bool
+    ndim:
+    - '0'
+  window_length:
+    descp: length of the window.
+    doc_dtype:
+    - int
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+inputs:
+  keyword_only:
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  optional:
+  - periodic
+  - beta
+  - dtype
+  - layout
+  - device
+  - requires_grad
+  required:
+  - window_length
+link: https://pytorch.org/docs/1.7.0/generated/torch.kaiser_window.html#torch.kaiser_window#torch.kaiser_window
+package: torch
+ret_type: Tensor
+target: kaiser_window
+title: torch.kaiser_window
+version: 1.7.0

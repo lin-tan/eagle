@@ -1,0 +1,20 @@
+constraints:
+  images:
+    descp: 'A Tensor. Must be one of the following types: half, bfloat16, float32,
+      float64. 1-D or higher rank. HSV data to convert. Last dimension must be size
+      3.'
+  name:
+    default: None
+    descp: A name for the operation (optional).
+inputs:
+  optional:
+  - name
+  required:
+  - images
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/raw_ops/HSVToRGB
+outputs:
+- A Tensor. Has the same type as images.
+package: tensorflow
+target: HSVToRGB
+title: tf.raw_ops.HSVToRGB
+version: 2.2.0

@@ -1,0 +1,23 @@
+constraints:
+  bias:
+    default: 'True'
+    descp: 'If set to `False`, the layer will not learn an additive bias. Default:
+      `True`'
+    sig_dtype: bool
+  in_features:
+    descp: size of each input sample
+    sig_dtype: int
+  out_features:
+    descp: size of each output sample
+    sig_dtype: int
+inputs:
+  optional:
+  - bias
+  required:
+  - in_features
+  - out_features
+link: https://pytorch.org/docs/1.6.0/generated/torch.nn.Linear.html#torch.nn.Linear#torch.nn.Linear
+package: torch
+target: Linear
+title: torch.nn.Linear
+version: 1.6.0

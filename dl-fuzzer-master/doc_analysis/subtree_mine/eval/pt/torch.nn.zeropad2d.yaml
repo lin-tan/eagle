@@ -1,0 +1,18 @@
+constraints:
+  padding:
+    descp: the size of the padding. If is int, uses the same padding in all boundaries.
+      If a 4-tuple, uses (padding _left , padding _right , padding _top , padding
+      _bottom )
+    doc_dtype:
+    - int
+    - tuple
+    dtype:
+    - int
+    range:
+    - '[0,inf)'
+    ndim:
+    - '0'
+    - '1'
+    structure:
+    - tuple
+title: torch.nn.ZeroPad2d

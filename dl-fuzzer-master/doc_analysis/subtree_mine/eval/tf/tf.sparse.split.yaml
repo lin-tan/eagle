@@ -1,0 +1,11 @@
+constraints:
+  axis:
+    default: None
+    descp: A 0-D `int32` `Tensor`. The dimension along which to split.
+    dtype:
+    - tf.int32
+    ndim:
+    - '0'
+    tensor_t:
+    - tf.tensor
+title: tf.sparse.split

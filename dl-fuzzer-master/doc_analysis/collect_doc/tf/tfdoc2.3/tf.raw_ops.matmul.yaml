@@ -1,0 +1,32 @@
+constraints:
+  a:
+    descp: 'A Tensor. Must be one of the following types: bfloat16, half, float32,
+      float64, int32, int64, complex64, complex128.'
+  b:
+    descp: A Tensor. Must have the same type as a.
+  name:
+    default: None
+    descp: A name for the operation (optional).
+  transpose_a:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, "a" is transposed before
+      multiplication.
+  transpose_b:
+    default: 'False'
+    descp: An optional bool. Defaults to False. If true, "b" is transposed before
+      multiplication.
+inputs:
+  optional:
+  - transpose_a
+  - transpose_b
+  - name
+  required:
+  - a
+  - b
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/MatMul
+outputs:
+- A Tensor. Has the same type as a.
+package: tensorflow
+target: MatMul
+title: tf.raw_ops.MatMul
+version: 2.3.0

@@ -1,0 +1,5 @@
+descp1,descp2,default,attribute,constraint,in_doc,extracted
+,the target output size (single integer or double-integer tuple),,prim_dtype,dtype(int),,1
+,the target output size (single integer or double-integer tuple),,nonprim_dtype,structure(tuple(int)),,1
+,the target output size (single integer or double-integer tuple),,shape,"shape([2]), ndim(0, 1)",,1
+,the target output size (single integer or double-integer tuple),,validvalue,"range([0,inf))",,1

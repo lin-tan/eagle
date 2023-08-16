@@ -1,0 +1,18 @@
+constraints:
+  dim:
+    default: None
+    descp: A dimension along which LogSoftmax will be computed.
+    doc_dtype: int
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - A dimension along which LogSoftmax will be computed
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - dim
+  required: []
+link: https://pytorch.org/docs/stable/nn.html#torch.nn.LogSoftmax
+package: torch
+target: LogSoftmax
+title: torch.nn.LogSoftmax
+version: 1.5.0

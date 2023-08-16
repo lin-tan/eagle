@@ -1,0 +1,28 @@
+constraints:
+  input:
+    descp: The input tensor of size (*, m, n)  where *  is zero or more batch dimensions
+    doc_dtype: Tensor
+    normalized_descp:
+    - The input D_STRUCTURE of size BSTR where is zero or more batch dimensions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  rcond:
+    default: 1e-15
+    descp: 'A floating point value to determine the cutoff for small singular values.
+      Default: 1e-15'
+    doc_dtype: float
+    normalized_default: DEFAULT CONSTANT_FLOAT
+    normalized_descp:
+    - A D_TYPE point value to determine the cutoff for small singular values
+    - Default CONSTANT_FLOAT
+    normalized_docdtype: ONE_WORD D_TYPE
+inputs:
+  optional:
+  - rcond
+  required:
+  - input
+link: https://pytorch.org/docs/stable/torch.html#torch.pinverse
+package: torch
+ret_type: Tensor
+target: pinverse
+title: torch.pinverse
+version: 1.5.0

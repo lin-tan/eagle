@@ -1,0 +1,109 @@
+constraints:
+  '**kwargs':
+    descp: ''
+    normalized_descp: []
+  anchor:
+    default: None
+    descp: Generated anchor boxes.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Generated anchor boxes
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  cls_pred:
+    default: None
+    descp: Class predictions.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Class predictions
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  ignore_label:
+    default: _Null
+    descp: Label for ignored anchors.
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM for ignored anchors
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  label:
+    default: None
+    descp: Object detection labels.
+    doc_dtype: NDArray
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - Object detection labels
+    normalized_docdtype: ONE_WORD D_STRUCTURE
+  minimum_negative_samples:
+    default: _Null
+    descp: Minimum number of negative samples.
+    doc_dtype: int, optional, default='0'
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Minimum number of negative samples
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  name:
+    default: None
+    descp: ''
+    normalized_default: DEFAULT None
+    normalized_descp: []
+  negative_mining_ratio:
+    default: _Null
+    descp: Max negative to positive samples ratio, use -1 to disable mining
+    doc_dtype: float, optional, default=-1
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Max negative to positive samples ratio, use CONSTANT_NUM to disable mining
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_NUM
+  negative_mining_thresh:
+    default: _Null
+    descp: Threshold used for negative mining.
+    doc_dtype: float, optional, default=0.5
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Threshold used for negative mining
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  out:
+    default: None
+    descp: The output NDArray to hold the result.
+    doc_dtype: NDArray, optional
+    normalized_default: DEFAULT None
+    normalized_descp:
+    - The output D_STRUCTURE to hold the result
+    normalized_docdtype: D_STRUCTURE, optional
+  overlap_threshold:
+    default: _Null
+    descp: Anchor-GT overlap threshold to be regarded as a positive match.
+    doc_dtype: float, optional, default=0.5
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - PARAM GT overlap threshold to be regarded as a positive match
+    normalized_docdtype: D_TYPE, optional, default CONSTANT_FLOAT
+  variances:
+    default: _Null
+    descp: Variances to be encoded in box regression target.
+    doc_dtype: tuple of <float>, optional, default=[0.1,0.1,0.2,0.2]
+    normalized_default: DEFAULT Null
+    normalized_descp:
+    - Variances to be encoded in box regression target
+    normalized_docdtype: D_STRUCTURE of REXPR , optional, default BSTR
+inputs:
+  optional:
+  - anchor
+  - label
+  - cls_pred
+  - overlap_threshold
+  - ignore_label
+  - negative_mining_ratio
+  - negative_mining_thresh
+  - minimum_negative_samples
+  - variances
+  - out
+  - name
+  required:
+  - '**kwargs'
+link: https://mxnet.apache.org/versions/1.6/api/python/docs/api/contrib/ndarray/index.html#mxnet.contrib.ndarray.MultiBoxTarget
+package: mxnet
+target: MultiBoxTarget
+title: mxnet.contrib.ndarray.MultiBoxTarget
+version: 1.6.0

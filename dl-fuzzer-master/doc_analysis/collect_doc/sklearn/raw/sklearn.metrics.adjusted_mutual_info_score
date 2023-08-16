@@ -1,0 +1,85 @@
+sklearn.metrics.adjusted_mutual_info_score = adjusted_mutual_info_score(labels_true, labels_pred, average_method='arithmetic')
+    Adjusted Mutual Information between two clusterings.
+    
+    Adjusted Mutual Information (AMI) is an adjustment of the Mutual
+    Information (MI) score to account for chance. It accounts for the fact that
+    the MI is generally higher for two clusterings with a larger number of
+    clusters, regardless of whether there is actually more information shared.
+    For two clusterings :math:`U` and :math:`V`, the AMI is given as::
+    
+        AMI(U, V) = [MI(U, V) - E(MI(U, V))] / [avg(H(U), H(V)) - E(MI(U, V))]
+    
+    This metric is independent of the absolute values of the labels:
+    a permutation of the class or cluster label values won't change the
+    score value in any way.
+    
+    This metric is furthermore symmetric: switching ``label_true`` with
+    ``label_pred`` will return the same score value. This can be useful to
+    measure the agreement of two independent label assignments strategies
+    on the same dataset when the real ground truth is not known.
+    
+    Be mindful that this function is an order of magnitude slower than other
+    metrics, such as the Adjusted Rand Index.
+    
+    Read more in the :ref:`User Guide <mutual_info_score>`.
+    
+    Parameters
+    ----------
+    labels_true : int array, shape = [n_samples]
+        A clustering of the data into disjoint subsets.
+    
+    labels_pred : int array-like of shape (n_samples,)
+        A clustering of the data into disjoint subsets.
+    
+    average_method : string, optional (default: 'arithmetic')
+        How to compute the normalizer in the denominator. Possible options
+        are 'min', 'geometric', 'arithmetic', and 'max'.
+    
+        .. versionadded:: 0.20
+    
+        .. versionchanged:: 0.22
+           The default value of ``average_method`` changed from 'max' to
+           'arithmetic'.
+    
+    Returns
+    -------
+    ami: float (upperlimited by 1.0)
+       The AMI returns a value of 1 when the two partitions are identical
+       (ie perfectly matched). Random partitions (independent labellings) have
+       an expected AMI around 0 on average hence can be negative.
+    
+    See also
+    --------
+    adjusted_rand_score: Adjusted Rand Index
+    mutual_info_score: Mutual Information (not adjusted for chance)
+    
+    Examples
+    --------
+    
+    Perfect labelings are both homogeneous and complete, hence have
+    score 1.0::
+    
+      >>> from sklearn.metrics.cluster import adjusted_mutual_info_score
+      >>> adjusted_mutual_info_score([0, 0, 1, 1], [0, 0, 1, 1])
+      ... # doctest: +SKIP
+      1.0
+      >>> adjusted_mutual_info_score([0, 0, 1, 1], [1, 1, 0, 0])
+      ... # doctest: +SKIP
+      1.0
+    
+    If classes members are completely split across different clusters,
+    the assignment is totally in-complete, hence the AMI is null::
+    
+      >>> adjusted_mutual_info_score([0, 0, 0, 0], [0, 1, 2, 3])
+      ... # doctest: +SKIP
+      0.0
+    
+    References
+    ----------
+    .. [1] `Vinh, Epps, and Bailey, (2010). Information Theoretic Measures for
+       Clusterings Comparison: Variants, Properties, Normalization and
+       Correction for Chance, JMLR
+       <http://jmlr.csail.mit.edu/papers/volume11/vinh10a/vinh10a.pdf>`_
+    
+    .. [2] `Wikipedia entry for the Adjusted Mutual Information
+       <https://en.wikipedia.org/wiki/Adjusted_Mutual_Information>`_

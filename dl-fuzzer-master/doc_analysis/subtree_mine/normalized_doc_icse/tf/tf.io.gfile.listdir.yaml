@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.io.gfile.listdir
+constraints:
+  path:
+    descp: string, path to a directory
+    normalized_descp:
+    - D_TYPE path to a directory
+exceptions: errors.NotFoundError if directory doesn't exist
+inputs:
+  optional: []
+  required:
+  - path
+link: https://www.tensorflow.org/versions/r2.1/api_docs/python/tf/io/gfile/listdir
+outputs: '[filename1, filename2, ... filenameN] as strings'
+package: tensorflow
+target: listdir
+title: tf.io.gfile.listdir
+version: 2.1.0

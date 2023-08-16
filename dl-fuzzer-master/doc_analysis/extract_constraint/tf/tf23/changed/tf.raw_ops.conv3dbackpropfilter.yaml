@@ -1,0 +1,101 @@
+constraints:
+  dilations:
+    default: '[1, 1, 1, 1, 1]'
+    descp: An optional list of ints. Defaults to [1, 1, 1, 1, 1].
+    dtype:
+    - int
+    ndim:
+    - '1'
+    structure:
+    - list(int)
+  filter:
+    descp: A Tensor. Must have the same type as input. Shape [depth, rows, cols, in_channels,
+      out_channels]. in_channels must match between input and filter.
+    dtype:
+    - dtype:&input
+    ndim:
+    - '5'
+    shape:
+    - '[depth,rows,cols,in_channels,out_channels]'
+    tensor_t:
+    - tf.tensor
+  input:
+    descp: 'A Tensor. Must be one of the following types: half, float32, float64.
+      Shape [batch, depth, rows, cols, in_channels].'
+    ndim:
+    - '5'
+    shape:
+    - '[batch,depth,rows,cols,in_channels]'
+    tensor_t:
+    - tf.tensor
+  name:
+    default: None
+    descp: A name for the operation (optional).
+    dtype:
+    - tf.string
+    ndim:
+    - '0'
+  out_backprop:
+    descp: A Tensor. Must have the same type as input. Backprop signal of shape [batch,
+      out_depth, out_rows, out_cols, out_channels].
+    dtype:
+    - dtype:&input
+    ndim:
+    - '5'
+    shape:
+    - '[batch,out_depth,out_rows,out_cols,out_channels]'
+    tensor_t:
+    - tf.tensor
+  padding:
+    descp: 'A string from: "SAME", "VALID". The type of padding algorithm to use.'
+    dtype:
+    - tf.string
+    enum:
+    - SAME
+    - VALID
+    ndim:
+    - '0'
+  strides:
+    descp: A list of ints that has length >= 5. 1-D tensor of length 5. The stride
+      of the sliding window for each dimension of input. Must have strides[0] = strides[4]
+      = 1.
+    dtype:
+    - int
+    ndim:
+    - '1'
+    range:
+    - '[0,inf)'
+    shape:
+    - '[5]'
+    - '[>=5]'
+    structure:
+    - list(int)
+    tensor_t:
+    - tf.tensor
+dependency:
+- batch
+- cols
+- depth
+- in_channels
+- out_channels
+- out_cols
+- out_depth
+- out_rows
+- rows
+inputs:
+  optional:
+  - dilations
+  - name
+  required:
+  - input
+  - filter
+  - out_backprop
+  - strides
+  - padding
+link: https://www.tensorflow.org/versions/r2.3/api_docs/python/tf/raw_ops/Conv3DBackpropFilter
+outputs:
+- A Tensor. Has the same type as input.
+package: tensorflow
+target: Conv3DBackpropFilter
+title: tf.raw_ops.Conv3DBackpropFilter
+version: 2.3.0

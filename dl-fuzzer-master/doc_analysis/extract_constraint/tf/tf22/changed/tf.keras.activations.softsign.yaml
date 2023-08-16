@@ -1,0 +1,18 @@
+aliases:
+- tf.compat.v1.keras.activations.softsign
+constraints:
+  x:
+    descp: Input tensor.
+    tensor_t:
+    - tf.tensor
+inputs:
+  optional: []
+  required:
+  - x
+link: https://www.tensorflow.org/versions/r2.2/api_docs/python/tf/keras/activations/softsign
+outputs:
+- 'The softsign activation: x / (abs(x) + 1).'
+package: tensorflow
+target: softsign
+title: tf.keras.activations.softsign
+version: 2.2.0
