@@ -7,7 +7,7 @@ This repo contains reproduction code for the [ICSE 2022](https://conf.researchr.
 
 The `EAGLE` directory contains codes for reproducing our experiment. It has four sub directories. 
 
-Dir `rules` contains the 16 rules described in the EAGLE paper, along with api config for each rule. The formats of api configs are defined [here]((./EAGLE/rules/README.md)). 
+Dir `rules` contains the 16 rules described in the EAGLE paper, along with api config for each rule. The formats of api configs are defined [here]((EAGLE/rules/README.md)). 
 
 Dir `docker_files` contains the docker file for creating containers for the specific enviroment. 
 
